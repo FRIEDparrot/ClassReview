@@ -18,8 +18,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a43b78344279644d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/Hertz接触问题.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "925d363b70c9646f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/简单热应力问题.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f33fbf31fc1c497c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/弹性波 初等理论.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,8 +122,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 316.5,
-    "collapsed": true
+    "width": 316.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -102,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/Boussinesq问题.md",
+                "file": "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/弹性波 初等理论.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/Boussinesq问题.md",
+                "file": "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/弹性波 初等理论.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/Boussinesq问题.md"
+                "file": "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/弹性波 初等理论.md"
               }
             }
           },
@@ -162,17 +198,17 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "faafd04c7b4d64f0",
+  "active": "f33fbf31fc1c497c",
   "lastOpenFiles": [
-    "Excalidraw/Boussinesq问题 2022-12-01 02.04.56.excalidraw.md",
+    "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/简单热应力问题.md",
+    "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/Hertz接触问题.md",
     "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/Boussinesq问题.md",
+    "Excalidraw/Boussinesq问题 2022-12-01 02.04.56.excalidraw.md",
     "Excalidraw/Boussinesq问题 2022-11-30 23.49.51.excalidraw.md",
     "attachments/应力极值计算.pdf",
     "Bring (en-US).md",
     "ClassNotes/力学内容/弹性力学/第九章：薄板问题/平面薄板问题的方程建立.md",
     "Excalidraw/平面薄板问题的方程建立 2022-11-30 23.35.57.excalidraw.md",
-    "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md",
-    "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/补充_应力极值计算.md",
-    "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md"
+    "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md"
   ]
 }

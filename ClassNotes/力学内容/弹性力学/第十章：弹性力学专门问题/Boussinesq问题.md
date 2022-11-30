@@ -34,4 +34,5 @@ $$\begin{cases}
 \end{cases} \qquad \qquad \text{不计体力}$$
 其中
 $$\nabla^2 = \frac{\partial}{\partial \rho^2} + \frac{1}{\rho} \frac{\partial}{\partial \rho} + \frac{\partial^2}{\partial z^2}$$
-借助于勒夫(Love)函数来求解上述方程
+借助于==勒夫(Love)函数==来求解上述方程
+
