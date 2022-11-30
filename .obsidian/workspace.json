@@ -4,35 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "cf0efcf4734d8543",
+        "id": "30e3700caa38139d",
         "type": "tabs",
         "children": [
           {
-            "id": "f5fe0d97c68ec799",
+            "id": "2df59ff98e643f42",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ClassNotes/其他东东/Git/oftenly-used commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7fd8b58d3e04835f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
+                "file": "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "4ed928b725be53da",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c390a07fb147feed",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/5. 加载，卸载准则 2022-11-30 10.58.02.excalidraw.md"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +85,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 219.5
+    "width": 219.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -98,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
+                "file": "Excalidraw/5. 加载，卸载准则 2022-11-30 10.58.02.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
+                "file": "Excalidraw/5. 加载，卸载准则 2022-11-30 10.58.02.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md"
+                "file": "Excalidraw/5. 加载，卸载准则 2022-11-30 10.58.02.excalidraw.md"
               }
             }
           },
@@ -158,17 +162,17 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "7fd8b58d3e04835f",
+  "active": "c390a07fb147feed",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
+    "Excalidraw/5. 加载，卸载准则 2022-11-30 10.58.02.excalidraw.md",
+    "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/Test for the Git sync.md",
     "ClassNotes/其他东东/Git/oftenly-used commands.md",
-    "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/🦊Test1.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md",
     "attachments/Git使用教程.pdf",
     "Excalidraw/Drawing 2022-11-30 01.24.38.excalidraw.md",
-    "Reading_Material/Tutorials/Note of Livelink for MATLAB.md",
-    "Reading_Material/Tutorials/COMSOL_ReferenceManual.pdf",
-    "attachments/Density based topology optimization.pdf"
+    "Reading_Material/Tutorials/Note of Livelink for MATLAB.md"
   ]
 }
