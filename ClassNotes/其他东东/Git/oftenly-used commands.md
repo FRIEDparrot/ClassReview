@@ -2,6 +2,8 @@
 CLI -> command line interface
 1.  创建公钥对应的SSH key
 
+how to create the SSH key
+
 ```Bash
 ssh-keygen -t rsa -C "your_email@example.com"
 ```
