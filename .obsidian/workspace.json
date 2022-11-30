@@ -4,33 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "91759c862cc1e711",
+        "id": "f02e7bb0f3102eb9",
         "type": "tabs",
         "children": [
           {
-            "id": "7f0c577630664b0d",
+            "id": "fbb36edf1bb0bd25",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/2. Drucker 公设 2022-11-30 11.57.47.excalidraw.md"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "e84c604160640658",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "2807ce064e036f4f",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/2. Drucker 公设 2022-11-30 13.34.48.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -83,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 242.5,
-    "collapsed": true
+    "width": 242.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -100,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/2. Drucker 公设 2022-11-30 11.57.47.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/2. Drucker 公设 2022-11-30 11.57.47.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Excalidraw/2. Drucker 公设 2022-11-30 11.57.47.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -160,12 +137,12 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "7f0c577630664b0d",
+  "active": "fbb36edf1bb0bd25",
   "lastOpenFiles": [
+    "Excalidraw/2. Drucker 公设 2022-11-30 11.57.47.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/2. Drucker 公设.md",
     "Excalidraw/2. Drucker 公设 2022-11-30 13.34.48.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/1. 相关概念.md",
-    "Excalidraw/2. Drucker 公设 2022-11-30 11.57.47.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
     "Excalidraw/5. 加载，卸载准则 2022-11-30 10.58.02.excalidraw.md",
     "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
