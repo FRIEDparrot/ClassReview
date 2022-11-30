@@ -162,31 +162,15 @@
       "key": "E"
     }
   ],
+  "obsidian-completr:completr-bypass-tab-key": [],
+  "obsidian-completr:completr-jump-to-next-snippet-placeholder": [],
+  "editor:toggle-bold": [],
   "obsidian-git:push": [
     {
       "modifiers": [
         "Mod"
       ],
       "key": "B"
-    }
-  ],
-  "obsidian-completr:completr-bypass-tab-key": [],
-  "obsidian-completr:completr-jump-to-next-snippet-placeholder": [],
-  "editor:toggle-bold": [],
-  "obsidian-git:commit": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "C"
-    }
-  ],
-  "obsidian-git:push2": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "P"
     }
   ]
 }
