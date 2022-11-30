@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "27c11c97e00bff41",
+        "id": "af991bdfffb24279",
         "type": "tabs",
         "children": [
           {
-            "id": "1b70527714b3614f",
+            "id": "dd198b910728a087",
             "type": "leaf",
             "state": {
-              "type": "pdf-annotator",
+              "type": "markdown",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/补充_应力极值计算.md"
+                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,8 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5,
-    "collapsed": true
+    "width": 318.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -100,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/补充_应力极值计算.md",
+                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/补充_应力极值计算.md",
+                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/补充_应力极值计算.md"
+                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md"
               }
             }
           },
@@ -160,10 +161,10 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "1b70527714b3614f",
+  "active": "dd198b910728a087",
   "lastOpenFiles": [
-    "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md",
     "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/补充_应力极值计算.md",
+    "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md",
     "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/典型截面应力应变求解的极值问题案例.md",
     "Excalidraw/三角形薄板切应力应变求解的极值问题案例 2022-11-30 15.22.03.excalidraw.md",
     "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
