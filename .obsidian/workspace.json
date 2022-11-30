@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
+                "file": "ClassNotes/其他东东/Git/oftenly-used commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
+                "file": "ClassNotes/其他东东/Git/oftenly-used commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
+                "file": "ClassNotes/其他东东/Git/oftenly-used commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md"
+                "file": "ClassNotes/其他东东/Git/oftenly-used commands.md"
               }
             }
           },
@@ -147,6 +147,7 @@
   },
   "active": "f5fe0d97c68ec799",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/🦊Test1.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md",
     "attachments/Git使用教程.pdf",
@@ -155,7 +156,6 @@
     "Reading_Material/Tutorials/COMSOL_ReferenceManual.pdf",
     "attachments/Density based topology optimization.pdf",
     "Reading_Material/Essays/1 Density based topology optimization of turbulent flow heat transfer.md",
-    "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
     "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md"
   ]
 }
