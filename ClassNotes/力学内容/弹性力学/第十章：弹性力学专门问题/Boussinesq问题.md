@@ -7,4 +7,5 @@
 
 
 Boussinesq问题
+![[Boussinesq问题 2022-11-30 23.49.51.excalidraw]]
 
