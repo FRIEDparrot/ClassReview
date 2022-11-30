@@ -4,20 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "f02e7bb0f3102eb9",
+        "id": "c2b6d866d7c97650",
         "type": "tabs",
         "children": [
           {
-            "id": "fbb36edf1bb0bd25",
+            "id": "f21219ff9df92ce4",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "1a1557fc75c8d0b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/2. Drucker 公设 2022-11-30 13.34.48.excalidraw.md"
+                "file": "ClassNotes/力学内容/弹性力学/第九章：薄板问题/补充/多元函数极值以及求法.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -64,10 +75,25 @@
             }
           }
         ]
+      },
+      {
+        "id": "55b9f52484f36e1c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1f47fb4941b82e0f",
+            "type": "leaf",
+            "state": {
+              "type": "mindmap",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 242.5
+    "width": 242.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -83,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/2. Drucker 公设 2022-11-30 13.34.48.excalidraw.md",
+                "file": "ClassNotes/力学内容/弹性力学/第九章：薄板问题/补充/多元函数极值以及求法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/2. Drucker 公设 2022-11-30 13.34.48.excalidraw.md",
+                "file": "ClassNotes/力学内容/弹性力学/第九章：薄板问题/补充/多元函数极值以及求法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/2. Drucker 公设 2022-11-30 13.34.48.excalidraw.md"
+                "file": "ClassNotes/力学内容/弹性力学/第九章：薄板问题/补充/多元函数极值以及求法.md"
               }
             }
           },
@@ -143,8 +169,9 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "fbb36edf1bb0bd25",
+  "active": "1a1557fc75c8d0b3",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/弹性力学/第九章：薄板问题/平面薄板问题的方程建立.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/2. Drucker 公设.md",
     "Excalidraw/2. Drucker 公设 2022-11-30 13.34.48.excalidraw.md",
     "Excalidraw/2. Drucker 公设 2022-11-30 11.57.47.excalidraw.md",
@@ -153,7 +180,6 @@
     "Excalidraw/5. 加载，卸载准则 2022-11-30 10.58.02.excalidraw.md",
     "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
     "Excalidraw/一、广义胡克定律,工程弹性常数 2022-11-30 11.19.02.excalidraw.md",
-    "ClassNotes/Markdown & Latex教程/obsidian教程/Test for the Git sync.md",
-    "ClassNotes/其他东东/Git/oftenly-used commands.md"
+    "ClassNotes/Markdown & Latex教程/obsidian教程/Test for the Git sync.md"
   ]
 }
