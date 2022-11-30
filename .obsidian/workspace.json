@@ -81,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 521.5
+    "width": 225.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -153,8 +153,9 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "e58ad6de2055b5f7",
+  "active": "8e604f243c64ae29",
   "lastOpenFiles": [
+    "Excalidraw/三角形薄板切应力应变求解的极值问题案例 2022-11-30 15.22.03.excalidraw.svg",
     "attachments/qq_pic_merged_1668572457585.jpg",
     "Excalidraw/三角形薄板切应力应变求解的极值问题案例 2022-11-30 15.22.03.excalidraw.md",
     "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/典型截面应力应变求解的极值问题案例.md",
@@ -163,7 +164,6 @@
     "ClassNotes/Markdown & Latex教程/obsidian教程/Test for the Git sync.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/Obsidian的一些基本语法.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md",
-    "ClassNotes/其他东东/Git/GitHub entry.md",
-    "ClassNotes/其他东东/Git/oftenly-used commands.md"
+    "ClassNotes/其他东东/Git/GitHub entry.md"
   ]
 }
