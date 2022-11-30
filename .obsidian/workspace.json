@@ -4,59 +4,32 @@
     "type": "split",
     "children": [
       {
-        "id": "e84c604160640658",
+        "id": "91759c862cc1e711",
         "type": "tabs",
         "children": [
-          {
-            "id": "754faef543483591",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
           {
             "id": "7f0c577630664b0d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/1. 相关概念.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2807ce064e036f4f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/2. Drucker 公设.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "ac301a9cbeb8a03d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "1f8ed9ddffd48380",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
                 "file": "Excalidraw/2. Drucker 公设 2022-11-30 11.57.47.excalidraw.md"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "e84c604160640658",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2807ce064e036f4f",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/2. Drucker 公设 2022-11-30 13.34.48.excalidraw.md"
               }
             }
           }
@@ -187,17 +160,17 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "1f8ed9ddffd48380",
+  "active": "7f0c577630664b0d",
   "lastOpenFiles": [
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/2. Drucker 公设.md",
-    "Excalidraw/2. Drucker 公设 2022-11-30 11.57.47.excalidraw.md",
+    "Excalidraw/2. Drucker 公设 2022-11-30 13.34.48.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/1. 相关概念.md",
+    "Excalidraw/2. Drucker 公设 2022-11-30 11.57.47.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
     "Excalidraw/5. 加载，卸载准则 2022-11-30 10.58.02.excalidraw.md",
     "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
     "Excalidraw/一、广义胡克定律,工程弹性常数 2022-11-30 11.19.02.excalidraw.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/Test for the Git sync.md",
-    "ClassNotes/其他东东/Git/oftenly-used commands.md",
-    "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/🦊Test1.md"
+    "ClassNotes/其他东东/Git/oftenly-used commands.md"
   ]
 }
