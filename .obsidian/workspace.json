@@ -11,8 +11,10 @@
             "id": "fbb36edf1bb0bd25",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/2. Drucker 公设 2022-11-30 13.34.48.excalidraw.md"
+              }
             }
           }
         ]
@@ -81,6 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Excalidraw/2. Drucker 公设 2022-11-30 13.34.48.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Excalidraw/2. Drucker 公设 2022-11-30 13.34.48.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +122,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Excalidraw/2. Drucker 公设 2022-11-30 13.34.48.excalidraw.md"
+              }
             }
           },
           {
@@ -139,9 +145,9 @@
   },
   "active": "fbb36edf1bb0bd25",
   "lastOpenFiles": [
-    "Excalidraw/2. Drucker 公设 2022-11-30 11.57.47.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/2. Drucker 公设.md",
     "Excalidraw/2. Drucker 公设 2022-11-30 13.34.48.excalidraw.md",
+    "Excalidraw/2. Drucker 公设 2022-11-30 11.57.47.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/1. 相关概念.md",
     "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
     "Excalidraw/5. 加载，卸载准则 2022-11-30 10.58.02.excalidraw.md",
