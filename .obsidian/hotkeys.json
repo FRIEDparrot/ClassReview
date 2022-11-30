@@ -52,5 +52,14 @@
       ],
       "key": "E"
     }
-  ]
+  ],
+  "obsidian-git:push": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "B"
+    }
+  ],
+  "editor:toggle-bold": []
 }
