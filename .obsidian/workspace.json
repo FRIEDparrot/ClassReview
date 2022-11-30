@@ -22,16 +22,16 @@
         ]
       },
       {
-        "id": "4ed928b725be53da",
+        "id": "1941e6e3f33545ae",
         "type": "tabs",
         "children": [
           {
-            "id": "c390a07fb147feed",
+            "id": "eb3ed383bab06327",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/5. 加载，卸载准则 2022-11-30 10.58.02.excalidraw.md"
+                "file": "Excalidraw/一、广义胡克定律,工程弹性常数 2022-11-30 11.19.02.excalidraw.md"
               }
             }
           }
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/5. 加载，卸载准则 2022-11-30 10.58.02.excalidraw.md",
+                "file": "Excalidraw/一、广义胡克定律,工程弹性常数 2022-11-30 11.19.02.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/5. 加载，卸载准则 2022-11-30 10.58.02.excalidraw.md",
+                "file": "Excalidraw/一、广义胡克定律,工程弹性常数 2022-11-30 11.19.02.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/5. 加载，卸载准则 2022-11-30 10.58.02.excalidraw.md"
+                "file": "Excalidraw/一、广义胡克定律,工程弹性常数 2022-11-30 11.19.02.excalidraw.md"
               }
             }
           },
@@ -162,17 +162,17 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "c390a07fb147feed",
+  "active": "eb3ed383bab06327",
   "lastOpenFiles": [
     "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
     "Excalidraw/5. 加载，卸载准则 2022-11-30 10.58.02.excalidraw.md",
+    "Excalidraw/一、广义胡克定律,工程弹性常数 2022-11-30 11.19.02.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/Test for the Git sync.md",
     "ClassNotes/其他东东/Git/oftenly-used commands.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/🦊Test1.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md",
     "attachments/Git使用教程.pdf",
-    "Excalidraw/Drawing 2022-11-30 01.24.38.excalidraw.md",
-    "Reading_Material/Tutorials/Note of Livelink for MATLAB.md"
+    "Excalidraw/Drawing 2022-11-30 01.24.38.excalidraw.md"
   ]
 }
