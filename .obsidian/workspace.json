@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ClassNotes/Markdown & Latex教程/obsidian教程/Test for the Git sync.md",
+                "file": "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/Markdown & Latex教程/obsidian教程/Test for the Git sync.md",
+                "file": "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/Markdown & Latex教程/obsidian教程/Test for the Git sync.md",
+                "file": "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/Markdown & Latex教程/obsidian教程/Test for the Git sync.md"
+                "file": "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md"
               }
             }
           },
@@ -160,6 +160,7 @@
   },
   "active": "7fd8b58d3e04835f",
   "lastOpenFiles": [
+    "ClassNotes/Markdown & Latex教程/obsidian教程/Test for the Git sync.md",
     "ClassNotes/其他东东/Git/oftenly-used commands.md",
     "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/🦊Test1.md",
@@ -168,7 +169,6 @@
     "Excalidraw/Drawing 2022-11-30 01.24.38.excalidraw.md",
     "Reading_Material/Tutorials/Note of Livelink for MATLAB.md",
     "Reading_Material/Tutorials/COMSOL_ReferenceManual.pdf",
-    "attachments/Density based topology optimization.pdf",
-    "Reading_Material/Essays/1 Density based topology optimization of turbulent flow heat transfer.md"
+    "attachments/Density based topology optimization.pdf"
   ]
 }
