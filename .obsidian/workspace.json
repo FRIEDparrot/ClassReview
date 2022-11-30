@@ -85,7 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5
+    "width": 285.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -101,6 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/典型截面应力应变求解的极值问题案例.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/典型截面应力应变求解的极值问题案例.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +140,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/典型截面应力应变求解的极值问题案例.md"
+              }
             }
           },
           {
@@ -157,7 +161,7 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "d60b35e474b08237",
+  "active": "e58ad6de2055b5f7",
   "lastOpenFiles": [
     "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/典型截面应力应变求解的极值问题案例.md",
     "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",

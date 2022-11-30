@@ -1,0 +1,48 @@
+{
+  "obsidian-excalidraw-plugin:insert-link-to-element": [],
+  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-popout": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "N"
+    }
+  ],
+  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-on-current": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ],
+  "obsidian-excalidraw-plugin:excalidraw-autocreate-on-current": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "M"
+    }
+  ],
+  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "T"
+    }
+  ],
+  "obsidian-excalidraw-plugin:excalidraw-autocreate": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "R"
+    }
+  ]
+}
