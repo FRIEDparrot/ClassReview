@@ -7,14 +7,6 @@
       "key": "Enter"
     }
   ],
-  "workspace:copy-url": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "C"
-    }
-  ],
   "workspace:copy-path": [
     {
       "modifiers": [
@@ -180,5 +172,13 @@
   ],
   "obsidian-completr:completr-bypass-tab-key": [],
   "obsidian-completr:completr-jump-to-next-snippet-placeholder": [],
-  "editor:toggle-bold": []
+  "editor:toggle-bold": [],
+  "obsidian-git:commit": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "C"
+    }
+  ]
 }
