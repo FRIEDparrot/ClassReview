@@ -11,9 +11,9 @@
             "id": "63f1e378ce574a09",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "pdf-annotator",
               "state": {
-                "file": "Excalidraw/三角形薄板切应力应变求解的极值问题案例 2022-11-30 15.22.03.excalidraw.md"
+                "file": "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md"
               }
             }
           }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/三角形薄板切应力应变求解的极值问题案例 2022-11-30 15.22.03.excalidraw.md",
+                "file": "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/三角形薄板切应力应变求解的极值问题案例 2022-11-30 15.22.03.excalidraw.md",
+                "file": "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/三角形薄板切应力应变求解的极值问题案例 2022-11-30 15.22.03.excalidraw.md"
+                "file": "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md"
               }
             }
           },
@@ -159,17 +159,17 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "63f1e378ce574a09",
+  "active": "e58ad6de2055b5f7",
   "lastOpenFiles": [
+    "ClassNotes/Markdown & Latex教程/obsidian教程/Obsidian的一些基本语法.md",
+    "ClassNotes/Markdown & Latex教程/obsidian教程/Test for the Git sync.md",
+    "Excalidraw/三角形薄板切应力应变求解的极值问题案例 2022-11-30 15.22.03.excalidraw.md",
     "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/典型截面应力应变求解的极值问题案例.md",
     "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
     "ClassNotes/力学内容/弹性力学/第九章：薄板问题/平面薄板问题的方程建立.md",
-    "Excalidraw/三角形薄板切应力应变求解的极值问题案例 2022-11-30 15.22.03.excalidraw.md",
     "ClassNotes/力学内容/弹性力学/第九章：薄板问题/补充/多元函数极值以及求法.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/2. Drucker 公设.md",
     "Excalidraw/2. Drucker 公设 2022-11-30 13.34.48.excalidraw.md",
-    "Excalidraw/2. Drucker 公设 2022-11-30 11.57.47.excalidraw.md",
-    "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/1. 相关概念.md",
-    "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/5. 加载，卸载准则.md"
+    "Excalidraw/2. Drucker 公设 2022-11-30 11.57.47.excalidraw.md"
   ]
 }
