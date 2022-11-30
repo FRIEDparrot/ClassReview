@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "44f09d8988591bbb",
+        "id": "27c11c97e00bff41",
         "type": "tabs",
         "children": [
           {
-            "id": "d60b35e474b08237",
+            "id": "1b70527714b3614f",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "pdf-annotator",
               "state": {
-                "file": "Excalidraw/三角形薄板切应力应变求解的极值问题案例 2022-11-30 15.22.03.excalidraw.md"
+                "file": "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/补充_应力极值计算.md"
               }
             }
           }
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 536.5
+    "width": 318.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -99,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/三角形薄板切应力应变求解的极值问题案例 2022-11-30 15.22.03.excalidraw.md",
+                "file": "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/补充_应力极值计算.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/三角形薄板切应力应变求解的极值问题案例 2022-11-30 15.22.03.excalidraw.md",
+                "file": "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/补充_应力极值计算.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/三角形薄板切应力应变求解的极值问题案例 2022-11-30 15.22.03.excalidraw.md"
+                "file": "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/补充_应力极值计算.md"
               }
             }
           },
@@ -159,17 +160,17 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "d60b35e474b08237",
+  "active": "1b70527714b3614f",
   "lastOpenFiles": [
+    "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md",
+    "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/补充_应力极值计算.md",
     "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/典型截面应力应变求解的极值问题案例.md",
+    "Excalidraw/三角形薄板切应力应变求解的极值问题案例 2022-11-30 15.22.03.excalidraw.md",
     "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
     "conflict-files-obsidian-git.md",
     "Excalidraw/三角形薄板切应力应变求解的极值问题案例 2022-11-30 15.22.03.excalidraw.svg",
     "attachments/qq_pic_merged_1668572457585.jpg",
-    "Excalidraw/三角形薄板切应力应变求解的极值问题案例 2022-11-30 15.22.03.excalidraw.md",
     "Excalidraw/扭转问题 2022-11-23 14.29.57.excalidraw.md",
-    "ClassNotes/Markdown & Latex教程/obsidian教程/Test for the Git sync.md",
-    "ClassNotes/Markdown & Latex教程/obsidian教程/Obsidian的一些基本语法.md",
-    "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md"
+    "ClassNotes/Markdown & Latex教程/obsidian教程/Test for the Git sync.md"
   ]
 }
