@@ -3,5 +3,11 @@
   "obsidian-mind-map",
   "obsidian-excalidraw-plugin",
   "obsidian-completr",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-annotator",
+  "obsidian-emoji-toolbar",
+  "convert-url-to-iframe",
+  "media-extended",
+  "oz-image-plugin",
+  "mx-bili-plugin"
 ]
