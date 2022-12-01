@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "0f28fce7e164bfdb",
+        "id": "4a085c5d92334e24",
         "type": "tabs",
         "children": [
           {
-            "id": "06e2d4124cc94bdd",
+            "id": "09e36940e830957d",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md"
+                "file": "ClassNotes/程序基础/深度学习/Openvino的使用/openvino_use.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,8 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 561.5,
-    "collapsed": true
+    "width": 561.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -100,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md",
+                "file": "ClassNotes/程序基础/深度学习/Openvino的使用/openvino_use.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md",
+                "file": "ClassNotes/程序基础/深度学习/Openvino的使用/openvino_use.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md"
+                "file": "ClassNotes/程序基础/深度学习/Openvino的使用/openvino_use.md"
               }
             }
           },
@@ -160,10 +161,10 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "06e2d4124cc94bdd",
+  "active": "09e36940e830957d",
   "lastOpenFiles": [
-    "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/1. 相关概念.md",
     "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md",
+    "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/1. 相关概念.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/2. Drucker 公设.md",
     "ClassNotes/力学内容/弹性力学/第一章：绪论/考点.md",
