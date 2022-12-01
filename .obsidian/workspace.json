@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/弹性波 初等理论.md",
+                "file": "ClassNotes/力学内容/弹性力学/第一章：绪论/1. 基本假定与研究方法.md",
                 "mode": "source",
                 "source": false
               }
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/弹性波 初等理论.md",
+                "file": "ClassNotes/力学内容/弹性力学/第一章：绪论/1. 基本假定与研究方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/弹性波 初等理论.md",
+                "file": "ClassNotes/力学内容/弹性力学/第一章：绪论/1. 基本假定与研究方法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/弹性波 初等理论.md"
+                "file": "ClassNotes/力学内容/弹性力学/第一章：绪论/1. 基本假定与研究方法.md"
               }
             }
           },
@@ -163,15 +163,15 @@
   },
   "active": "f33fbf31fc1c497c",
   "lastOpenFiles": [
-    "Excalidraw/弹性波 初等理论 2022-12-01 10.35.09.excalidraw.md",
     "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/弹性波 初等理论.md",
+    "Excalidraw/弹性波 初等理论 2022-12-01 10.47.13.excalidraw.md",
+    "Excalidraw/弹性波 初等理论 2022-12-01 10.35.09.excalidraw.md",
     "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/简单热应力问题.md",
     "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/Hertz接触问题.md",
     "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/Boussinesq问题.md",
     "Excalidraw/Boussinesq问题 2022-12-01 02.04.56.excalidraw.md",
     "Excalidraw/Boussinesq问题 2022-11-30 23.49.51.excalidraw.md",
     "attachments/应力极值计算.pdf",
-    "Bring (en-US).md",
-    "ClassNotes/力学内容/弹性力学/第九章：薄板问题/平面薄板问题的方程建立.md"
+    "Bring (en-US).md"
   ]
 }
