@@ -23,5 +23,5 @@
   "showedMobileNotice": true,
   "refreshSourceControlTimer": 7000,
   "showBranchStatusBar": true,
-  "setLastSaveToLastCommit": true
+  "setLastSaveToLastCommit": false
 }
