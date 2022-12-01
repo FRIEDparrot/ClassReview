@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/1. 变形与应变的概念.md",
+                "file": "ClassNotes/力学内容/弹性力学/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
                 "mode": "source",
                 "source": false
               }
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/1. 变形与应变的概念.md",
+                "file": "ClassNotes/力学内容/弹性力学/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/1. 变形与应变的概念.md",
+                "file": "ClassNotes/力学内容/弹性力学/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/1. 变形与应变的概念.md"
+                "file": "ClassNotes/力学内容/弹性力学/第二章：应力/1.应力基本概念,边界条件和坐标转换.md"
               }
             }
           },
@@ -175,15 +175,15 @@
   },
   "active": "f33fbf31fc1c497c",
   "lastOpenFiles": [
-    "ClassNotes/力学内容/弹性力学/第二章：应力/2.主应力和主方向，球张量，偏张量.md",
+    "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
     "ClassNotes/力学内容/弹性力学/第一章：绪论/考点.md",
+    "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md",
+    "弹性力学.md",
+    "ClassNotes/力学内容/弹性力学/第三章：应变/1. 变形与应变的概念.md",
+    "ClassNotes/力学内容/弹性力学/第二章：应力/2.主应力和主方向，球张量，偏张量.md",
     "ClassNotes/力学内容/弹性力学/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
     "ClassNotes/力学内容/弹性力学/第一章：绪论/1. 基本假定与研究方法.md",
     "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/弹性波 初等理论.md",
-    "Excalidraw/弹性波 初等理论 2022-12-01 10.47.13.excalidraw.md",
-    "Excalidraw/弹性波 初等理论 2022-12-01 10.35.09.excalidraw.md",
-    "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/简单热应力问题.md",
-    "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/Hertz接触问题.md",
-    "ClassNotes/力学内容/弹性力学/第十章：弹性力学专门问题/Boussinesq问题.md"
+    "Excalidraw/弹性波 初等理论 2022-12-01 10.47.13.excalidraw.md"
   ]
 }
