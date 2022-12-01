@@ -11,11 +11,9 @@
             "id": "09e36940e830957d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/Openvino的使用/openvino_use.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md"
               }
             }
           }
@@ -101,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/Openvino的使用/openvino_use.md",
+                "file": "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/Openvino的使用/openvino_use.md",
+                "file": "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/Openvino的使用/openvino_use.md"
+                "file": "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md"
               }
             }
           },
@@ -163,15 +161,15 @@
   },
   "active": "09e36940e830957d",
   "lastOpenFiles": [
-    "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md",
-    "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/1. 相关概念.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/2. Drucker 公设.md",
+    "ClassNotes/程序基础/深度学习/Openvino的使用/openvino_use.md",
+    "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md",
+    "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/1. 相关概念.md",
     "ClassNotes/力学内容/弹性力学/第一章：绪论/考点.md",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/2. 极坐标表示的基本方程.md",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
-    "ClassNotes/力学内容/弹性力学/第五章：弹性力学边值问题/1. 弹性力学基本方程.md",
-    "Excalidraw/1. 平面问题的基本方程 2022-12-01 11.33.24.excalidraw.md"
+    "ClassNotes/力学内容/弹性力学/第五章：弹性力学边值问题/1. 弹性力学基本方程.md"
   ]
 }
