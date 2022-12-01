@@ -13,9 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第一章：绪论/考点.md",
+                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "2ea8f56146eb7829",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a8fdd885bbed41cb",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md"
               }
             }
           }
@@ -85,7 +101,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 363.5
+    "width": 363.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -101,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第一章：绪论/考点.md",
+                "file": "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第一章：绪论/考点.md",
+                "file": "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第一章：绪论/考点.md"
+                "file": "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md"
               }
             }
           },
@@ -161,17 +178,17 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "06e2d4124cc94bdd",
+  "active": "a8fdd885bbed41cb",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md",
+    "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/2. Drucker 公设.md",
+    "ClassNotes/力学内容/弹性力学/第一章：绪论/考点.md",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/2. 极坐标表示的基本方程.md",
-    "ClassNotes/力学内容/弹性力学/第一章：绪论/考点.md",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
     "ClassNotes/力学内容/弹性力学/第五章：弹性力学边值问题/1. 弹性力学基本方程.md",
     "Excalidraw/1. 平面问题的基本方程 2022-12-01 11.33.24.excalidraw.md",
     "ClassNotes/力学内容/弹性力学/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
-    "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
-    "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md",
-    "弹性力学.md"
+    "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md"
   ]
 }
