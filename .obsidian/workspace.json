@@ -85,7 +85,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 315.5
+    "width": 315.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -158,9 +159,10 @@
       }
     ],
     "direction": "horizontal",
-    "width": 249.5
+    "width": 249.5,
+    "collapsed": true
   },
-  "active": "ef997382d83d6e43",
+  "active": "e58ad6de2055b5f7",
   "lastOpenFiles": [
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md",
     "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
