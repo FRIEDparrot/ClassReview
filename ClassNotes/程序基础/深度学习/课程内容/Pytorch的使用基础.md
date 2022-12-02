@@ -1,5 +1,10 @@
 OpenVINO加速pytorch的工作原理
 ![[0_s3DTtiZ5T03zpTMH.webp|400]]
+```
+pip install torch-ort
+python -m torch_ort.configure
+```
+
 使用openvino和对应的
 
 ### 增加维度或者减少维度
