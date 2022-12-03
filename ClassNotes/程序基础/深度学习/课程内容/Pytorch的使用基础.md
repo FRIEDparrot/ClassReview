@@ -76,6 +76,7 @@ $$
 
 ```python
 import numpy as np  
+import torch
 import matplotlib.pyplot as plt
 # 定义一个多变量函数
 w_target = np.array([0.5, 3, 2.4]) # 定义参数
@@ -86,4 +87,5 @@ f_des = 'y = {:.2f} + {:.2f} * x + {:.2f} * x^2 + {:.2f} * x^3'.format(
 
 print(f_des)
 ```
+
 
