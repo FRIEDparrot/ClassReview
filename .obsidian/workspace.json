@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
+                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,8 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 315.5,
-    "collapsed": true
+    "width": 315.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -102,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
+                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
+                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md"
+                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md"
               }
             }
           },
@@ -162,10 +161,10 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "e58ad6de2055b5f7",
+  "active": "ef997382d83d6e43",
   "lastOpenFiles": [
-    "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md",
     "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
+    "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md",
     "Excalidraw/3.本构方程的建立 2022-12-02 16.20.09.excalidraw.md",
     "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/2. Drucker 公设.md",
