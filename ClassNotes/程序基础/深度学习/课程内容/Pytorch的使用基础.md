@@ -88,4 +88,69 @@ f_des = 'y = {:.2f} + {:.2f} * x + {:.2f} * x^2 + {:.2f} * x^3'.format(
 print(f_des)
 ```
 
+```python
+import numpy as np  
+import matplotlib.pyplot as plt  
+import torch  
+  
+fig = plt.figure()  
+epochNum = 80  
+lr = 0.001  
+
+x_sample = np.arange(-3, 3.1, 0.1)    # 定义绘画数组区间  
+y_sample = b_target[0] + w_target[0] * x_sample + w_target[1] * x_sample ** 2 + w_target[2] * x_sample ** 3  
+# plt.plot(x_sample,y_sample)  
+# ----------------------------------------------------------  
+# 构建数据 x 和 y# x 是一个如下矩阵 [x, x^2, x^3]# y 是函数的结果 [y]x_train = np.stack([x_sample ** i for i in range(1, 4)], axis=1)  # 构建从相应的数据取得的自变量范围矩阵  
+x_train = torch.from_numpy(x_train).float() # 转换成 float tensory_train = torch.from_numpy(y_sample).float().unsqueeze(1) # 转化成 float tensor  
+# 定义参数 w和b  
+w = torch.randn((3, 1), dtype=torch.float, requires_grad=True)  # 每一次run得到的初始fit曲线不同  
+b = torch.zeros((1), dtype=torch.float, requires_grad=True)  
+# 定义模型  
+def multi_linear(x):  
+    return torch.mm(x, w) + b   # 注: mm可以使用matmul来进行代替  
+  
+def loss_func(y_, y):  # 使用平方函数作为损失函数  
+    return torch.mean((y_ - y) ** 2)  
+y_pred = multi_linear(x_train) # 构建多项式函数  
+  
+ax1 = fig.add_subplot(121)  
+ax1.plot(x_train.data.numpy()[:, 0], y_pred.data.numpy(), label='curve_prefit', color='r')  
+ax1.plot(x_train.data.numpy()[:, 0], y_sample, label='real curve', color='b')  
+  
+# 画出更新之前的模型  
+# ============ 训练数据集 ====================for epoch in range (epochNum):  
+    loss = loss_func(y_pred, y_train)  
+    try:  
+        w.grad.zero_()  
+        b.grad.zero_()  
+    except:  
+        pass  
+    loss.backward()  
+    w.data = w.data - lr * w.grad.data  
+    b.data = b.data - lr * b.grad.data  
+    y_pred = multi_linear(x_train)  
+  
+ax2 = fig.add_subplot(122)  
+ax2.plot(x_train.data.numpy()[:, 0], y_pred.data.numpy(), label='fitting curve-', color='r')  
+ax2.plot(x_train.data.numpy()[:, 0], y_sample, label='real curve', color='b')  
+  
+plt.legend()  
+plt.show()
+```
+
+
+#### Logistic 回归模型
+```python
+def logistic_regression(x):
+    return torch.sigmoid(torch.mm(x, w) + b)
+
+y_pred = logistic_regression(x_data)
+# 计算loss, 使用clamp的目的是防止数据过小而对结果产生较大影响。
+def binary_loss(y_pred, y):
+    logits = ( y * y_pred.clamp(1e-12).log() + \
+              (1 - y) * (1 - y_pred).clamp(1e-12).log() ).mean()
+    return -logits
+```
+只需要将loss改为这个即可
 
