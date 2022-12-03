@@ -64,3 +64,26 @@ print(x.grad)
 ```
 
 
+### 三、多项式回归模型
+
+下面更进一步尝试一下多项式回归，下面是关于 x 的多项式：
+
+$$
+\hat{y} = w_0 + w_1 x + w_2 x^2 + w_3 x^3 
+$$
+
+这样就能够拟合更加复杂的模型，这里使用了 $x$ 的更高次，同理还有多元回归模型，形式也是一样的，只是除了使用 $x$，还是更多的变量，比如 $y$、$z$ 等等，同时他们的 $loss$ 函数和简单的线性回归模型是一致的。
+
+```python
+import numpy as np  
+import matplotlib.pyplot as plt
+# 定义一个多变量函数
+w_target = np.array([0.5, 3, 2.4]) # 定义参数
+b_target = np.array([0.9]) # 定义参数
+
+f_des = 'y = {:.2f} + {:.2f} * x + {:.2f} * x^2 + {:.2f} * x^3'.format(
+    b_target[0], w_target[0], w_target[1], w_target[2]) # 打印出函数的式子
+
+print(f_des)
+```
+
