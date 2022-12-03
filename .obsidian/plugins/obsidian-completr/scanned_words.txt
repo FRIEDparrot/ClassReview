@@ -4079,6 +4079,7 @@ Osu
 ONe
 Olc
 ODD
+OpenVINO
 Swift
 SE
 Suppported
@@ -28794,6 +28795,7 @@ oYC
 oTG
 ocf
 oxo
+openvino
 sided
 shape
 spell
@@ -38688,6 +38690,7 @@ pRXm
 prCI
 pNz
 plasticity
+pytorch
 in
 influence
 is
