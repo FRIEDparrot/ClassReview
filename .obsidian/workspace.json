@@ -11,9 +11,9 @@
             "id": "6509411c8433ef4e",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "image",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第四章作业.md"
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第四章作业.png"
               }
             }
           },
@@ -111,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第四章作业.md",
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第四章作业.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第四章作业.md",
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第四章作业.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第四章作业.md"
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第四章作业.png"
               }
             }
           },
@@ -171,10 +171,10 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "e58ad6de2055b5f7",
+  "active": "6509411c8433ef4e",
   "lastOpenFiles": [
-    "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第四章作业.md",
+    "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
     "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第三章作业.md",
     "ClassNotes/力学内容/弹性力学/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
