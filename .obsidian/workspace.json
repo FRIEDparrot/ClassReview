@@ -4,15 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6ccccc2cadb6a298",
+        "id": "7410822b3b32d4c5",
         "type": "tabs",
         "children": [
           {
-            "id": "c09a03078f6241c4",
+            "id": "b18b325d9cc40485",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/Drawing 2022-12-04 19.08.59.excalidraw.md"
+              }
             }
           }
         ]
@@ -97,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/Drawing 2022-12-04 19.08.59.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/Drawing 2022-12-04 19.08.59.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/Drawing 2022-12-04 19.08.59.excalidraw.md"
+              }
             }
           },
           {
@@ -153,8 +159,9 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "c09a03078f6241c4",
+  "active": "b18b325d9cc40485",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/弹性力学/练习题总括/Untitled.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第二章作业.md",
     "ClassNotes/程序基础/深度学习/知识内容/torch的多层神经网络.md",
     "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
@@ -163,7 +170,6 @@
     "ClassNotes/力学内容/弹性力学/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
     "ClassNotes/力学内容/弹性力学/第二章：应力/2.主应力和主方向，球张量，偏张量.md",
     "ClassNotes/力学内容/弹性力学/第一章：绪论/1. 基本假定与研究方法.md",
-    "ClassNotes/力学内容/弹性力学/练习题总括/考点.md",
-    "ClassNotes/力学内容/弹性力学/Untitled.md"
+    "ClassNotes/力学内容/弹性力学/练习题总括/考点.md"
   ]
 }
