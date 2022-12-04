@@ -29,8 +29,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -112,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/Drawing 2022-12-04 19.08.59.excalidraw.md",
+                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/Drawing 2022-12-04 19.08.59.excalidraw.md",
+                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/Drawing 2022-12-04 19.08.59.excalidraw.md"
+                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md"
               }
             }
           },
@@ -172,12 +171,12 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "b18b325d9cc40485",
+  "active": "6509411c8433ef4e",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/弹性力学/练习题总括/Drawing 2022-12-04 19.08.59.excalidraw.md",
     "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md",
     "ClassNotes/力学内容/弹性力学/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
     "ClassNotes/力学内容/弹性力学/第二章：应力/2.主应力和主方向，球张量，偏张量.md",
-    "ClassNotes/力学内容/弹性力学/练习题总括/Drawing 2022-12-04 19.08.59.excalidraw.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/Untitled.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第二章作业.md",
     "ClassNotes/程序基础/深度学习/知识内容/torch的多层神经网络.md",
