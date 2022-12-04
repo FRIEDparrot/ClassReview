@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b30639b83c9c660c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ClassNotes/程序基础/深度学习/知识内容/torch的多层神经网络.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -101,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
+                "file": "ClassNotes/程序基础/深度学习/知识内容/torch的多层神经网络.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
+                "file": "ClassNotes/程序基础/深度学习/知识内容/torch的多层神经网络.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md"
+                "file": "ClassNotes/程序基础/深度学习/知识内容/torch的多层神经网络.md"
               }
             }
           },
@@ -161,8 +174,9 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "524471e8fb3192d2",
+  "active": "b30639b83c9c660c",
   "lastOpenFiles": [
+    "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
     "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md",
     "ClassNotes/力学内容/弹性力学/第三章：应变/1. 变形与应变的概念.md",
     "ClassNotes/力学内容/弹性力学/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
@@ -171,7 +185,6 @@
     "ClassNotes/力学内容/弹性力学/练习题总括/考点.md",
     "ClassNotes/力学内容/弹性力学/Untitled.md",
     "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md",
-    "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md",
-    "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md"
+    "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md"
   ]
 }

@@ -201,6 +201,9 @@ optimizer = torch.optim.SGD([w, b], 1.)
 y_pred = logistic_reg(x_data)
 loss = criterion(y_pred, y_data)  # 这样定义损失函数
 # 之后调用
-
+for ......
+	loss.backward()
+	optimizer.step()_
 print(loss.data)
 ```
+
