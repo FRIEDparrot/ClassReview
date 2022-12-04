@@ -13,10 +13,18 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/1. 变形与应变的概念.md",
-                "mode": "source",
+                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md",
+                "mode": "preview",
                 "source": false
               }
+            }
+          },
+          {
+            "id": "293bc74ce1e74f62",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -101,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/1. 变形与应变的概念.md",
+                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/1. 变形与应变的概念.md",
+                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/1. 变形与应变的概念.md"
+                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md"
               }
             }
           },
@@ -163,6 +171,8 @@
   },
   "active": "524471e8fb3192d2",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md",
+    "ClassNotes/力学内容/弹性力学/第三章：应变/1. 变形与应变的概念.md",
     "ClassNotes/力学内容/弹性力学/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
     "ClassNotes/力学内容/弹性力学/第二章：应力/2.主应力和主方向，球张量，偏张量.md",
     "ClassNotes/力学内容/弹性力学/第一章：绪论/1. 基本假定与研究方法.md",
@@ -170,8 +180,6 @@
     "ClassNotes/力学内容/弹性力学/Untitled.md",
     "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md",
-    "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
-    "Excalidraw/3.本构方程的建立 2022-12-02 16.20.09.excalidraw.md",
-    "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/2. Drucker 公设.md"
+    "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md"
   ]
 }
