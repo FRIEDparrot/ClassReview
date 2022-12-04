@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md",
-                "mode": "preview",
+                "file": "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md",
+                "file": "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md",
+                "file": "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md"
+                "file": "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md"
               }
             }
           },

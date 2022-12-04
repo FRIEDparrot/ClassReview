@@ -154,3 +154,53 @@ def binary_loss(y_pred, y):
 ```
 只需要将loss改为这个即可
 
+其中，pytorch提供了相关的函数，
+```python
+# 使用 torch.optim 更新参数
+from torch import nn
+import time
+# use the neural network model for training
+# 定义优化参数
+w = nn.Parameter(torch.randn(2, 1))
+b = nn.Parameter(torch.zeros(1))
+
+# 优化器的设定以及相关的使用
+optimizer = torch.optim.SGD([w, b], lr=0.1) # 使用SGD算法
+
+for e in range(1000):
+    # 前向传播
+    y_pred = logistic_regression(x_data)  # 这个y_pred和loss是自己定义函数计算的
+    loss = binary_loss(y_pred, y_data) # 计算 loss
+    # 反向传播
+    optimizer.zero_grad() #-----使用优化器将梯度归 0
+    loss.backward()
+    optimizer.step() # *******在这一步中，更新参数被封装，使用优化器来更新参数
+    # 计算正确率
+    mask = y_pred.ge(0.5).float()
+    acc = (mask == y_data).sum().item() / y_data.shape[0]
+```
+
+## 3. PyTorch的Loss函数
+
+前面使用了自己写的 loss函数，其实 PyTorch 已经提供了一些常见的 loss函数，比如线性回归里面的 loss 是 `nn.MSE()`，而 Logistic 回归的二分类 loss 在 PyTorch 中是 `nn.BCEWithLogitsLoss()`，关于更多的 loss，可以查看[文档](https://pytorch.org/docs/stable/nn.html#loss-functions)
+
+PyTorch 实现的 loss函数有两个好处：第一是方便使用，不需要重复造轮子；第二就是其实现是在底层 C++ 语言上的，所以速度上和稳定性上都要比自己实现的要好。
+
+另外，PyTorch 出于稳定性考虑，将模型的 Sigmoid 操作和最后的 loss 都合在了 `nn.BCEWithLogitsLoss()`，所以我们使用 PyTorch 自带的 loss 就不需要再加上 Sigmoid 操作了
+```python
+# 使用自带的loss
+criterion = nn.BCEWithLogitsLoss() # 将 sigmoid 和 loss 写在一层，有更快的速度、更好的稳定性
+w = nn.Parameter(torch.randn(2, 1))
+b = nn.Parameter(torch.zeros(1))
+
+def logistic_reg(x):
+    return torch.mm(x, w) + b
+    
+optimizer = torch.optim.SGD([w, b], 1.)
+
+y_pred = logistic_reg(x_data)
+loss = criterion(y_pred, y_data)  # 这样定义损失函数
+# 之后调用
+
+print(loss.data)
+```
