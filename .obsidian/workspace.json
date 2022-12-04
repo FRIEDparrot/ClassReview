@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "98d7ed5b1ee87a1f",
+        "id": "430e9c4aa17c8414",
         "type": "tabs",
         "children": [
           {
-            "id": "ef997382d83d6e43",
+            "id": "524471e8fb3192d2",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -99,7 +97,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +134,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -159,12 +153,12 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "ef997382d83d6e43",
+  "active": "524471e8fb3192d2",
   "lastOpenFiles": [
+    "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3.本构方程的建立.md",
     "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
     "Excalidraw/3.本构方程的建立 2022-12-02 16.20.09.excalidraw.md",
-    "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/2. Drucker 公设.md",
     "ClassNotes/程序基础/深度学习/Openvino的使用/openvino_use.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/1. 相关概念.md",
