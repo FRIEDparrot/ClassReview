@@ -81,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 581.5
+    "width": 344.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -153,7 +153,7 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "e58ad6de2055b5f7",
+  "active": "c09a03078f6241c4",
   "lastOpenFiles": [
     "ClassNotes/力学内容/弹性力学/练习题总括/第二章作业.md",
     "ClassNotes/程序基础/深度学习/知识内容/torch的多层神经网络.md",
