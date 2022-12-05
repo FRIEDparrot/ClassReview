@@ -20,22 +20,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "44ce2f6f02656dc9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "76b3cea87b5a8324",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/4. 全量型本构关系 2022-12-05 22.17.12.excalidraw.md"
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -101,8 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5,
-    "collapsed": true
+    "width": 344.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -118,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/4. 全量型本构关系 2022-12-05 22.17.12.excalidraw.md",
+                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/4. 全量型本构关系.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/4. 全量型本构关系 2022-12-05 22.17.12.excalidraw.md",
+                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/4. 全量型本构关系.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/4. 全量型本构关系 2022-12-05 22.17.12.excalidraw.md"
+                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/4. 全量型本构关系.md"
               }
             }
           },
@@ -178,10 +161,10 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "76b3cea87b5a8324",
+  "active": "646ef71e247ffd90",
   "lastOpenFiles": [
-    "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/4. 全量型本构关系.md",
     "Excalidraw/4. 全量型本构关系 2022-12-05 22.17.12.excalidraw.md",
+    "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/4. 全量型本构关系.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3. 增量型本构方程的建立.md",
     "ClassNotes/Markdown & Latex教程/Latex教程/Latex基本操作.md",
     "ClassNotes/其他东东/Git/oftenly-used commands.md",
