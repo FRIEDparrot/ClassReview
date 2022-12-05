@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/4. 全量型本构关系.md",
+                "file": "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/2. 应力空间,π平面和Lode参数.md",
                 "mode": "source",
                 "source": false
               }
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/4. 全量型本构关系.md",
+                "file": "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/2. 应力空间,π平面和Lode参数.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/4. 全量型本构关系.md",
+                "file": "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/2. 应力空间,π平面和Lode参数.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/4. 全量型本构关系.md"
+                "file": "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/2. 应力空间,π平面和Lode参数.md"
               }
             }
           },
@@ -163,8 +163,8 @@
   },
   "active": "646ef71e247ffd90",
   "lastOpenFiles": [
-    "Excalidraw/4. 全量型本构关系 2022-12-05 22.17.12.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/4. 全量型本构关系.md",
+    "Excalidraw/4. 全量型本构关系 2022-12-05 22.17.12.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3. 增量型本构方程的建立.md",
     "ClassNotes/Markdown & Latex教程/Latex教程/Latex基本操作.md",
     "ClassNotes/其他东东/Git/oftenly-used commands.md",
