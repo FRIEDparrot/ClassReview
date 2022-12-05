@@ -2,9 +2,6 @@
 
 [[Git使用教程.pdf]]
 
-
-
-
 1. [Proxy configuration](https://githubtraining.github.io/training-manual/#/01_getting_ready_for_class?id=proxy-configuration)
 
 - Git proxy
@@ -12,7 +9,7 @@ If the organization uses a proxy, we would need to configure the proxy settings 
 ```Bash
 git config --global http.proxy https://YOUR.PROXY.SERVER:8080
 ```
-where YOUR.PROXY.SERVER is the url of the proxy
+where YOUR.PROXY.SERVER is the url of the proxy 
 
 ```Bash
 git config --global http.proxy https://YOUR_PROXY_USERNAME:YOUR_PROXY_PASSWORD@YOUR.PROXY.SERVER:8080

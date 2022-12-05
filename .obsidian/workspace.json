@@ -11,8 +11,12 @@
             "id": "6509411c8433ef4e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "ClassNotes/Markdown & Latex教程/Latex教程/Latex基本操作.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -109,6 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ClassNotes/Markdown & Latex教程/Latex教程/Latex基本操作.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,6 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ClassNotes/Markdown & Latex教程/Latex教程/Latex基本操作.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +152,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "ClassNotes/Markdown & Latex教程/Latex教程/Latex基本操作.md"
+              }
             }
           },
           {
@@ -165,8 +173,10 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "e58ad6de2055b5f7",
+  "active": "6509411c8433ef4e",
   "lastOpenFiles": [
+    "ClassNotes/其他东东/Git/oftenly-used commands.md",
+    "ClassNotes/其他东东/Git/GitHub entry.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第四章作业.md",
     "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
     "ClassNotes/力学内容/弹性力学/第三章：应变/2. 主应变, 应变协调方程.md",
@@ -174,8 +184,6 @@
     "ClassNotes/力学内容/弹性力学/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
     "ClassNotes/力学内容/弹性力学/第二章：应力/2.主应力和主方向，球张量，偏张量.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/Untitled.md",
-    "ClassNotes/力学内容/弹性力学/练习题总括/第二章作业.md",
-    "ClassNotes/程序基础/深度学习/知识内容/torch的多层神经网络.md",
-    "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md"
+    "ClassNotes/力学内容/弹性力学/练习题总括/第二章作业.md"
   ]
 }

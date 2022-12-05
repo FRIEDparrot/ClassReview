@@ -58,8 +58,6 @@ Hi FRIEDparrot! You've successfully authenticated, but GitHub does not provide s
 ```
 
 
-
-
 更新仓库时，只需使用
 ```Bash
 git push
