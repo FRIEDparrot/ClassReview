@@ -11,8 +11,10 @@
             "id": "0cac3f301fe47b73",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2022-12-06 09.46.31.excalidraw.md"
+              }
             }
           }
         ]
@@ -97,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Excalidraw/Drawing 2022-12-06 09.46.31.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Excalidraw/Drawing 2022-12-06 09.46.31.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Excalidraw/Drawing 2022-12-06 09.46.31.excalidraw.md"
+              }
             }
           },
           {
@@ -155,15 +161,15 @@
   },
   "active": "0cac3f301fe47b73",
   "lastOpenFiles": [
+    "ClassNotes/Markdown & Latex教程/obsidian教程/Test for the Git sync.md",
+    "ClassNotes/Markdown & Latex教程/obsidian教程/Obsidian的一些基本语法.md",
+    "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/🦊Test1.md",
+    "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/4. 全量型本构关系.md",
     "Excalidraw/4. 全量型本构关系 2022-12-06 08.34.23.excalidraw.md",
     "Excalidraw/4. 全量型本构关系 2022-12-06 01.32.03.excalidraw.md",
     "Excalidraw/4. 全量型本构关系 2022-12-06 00.33.32.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/2. 应力空间,π平面和Lode参数.md",
-    "ClassNotes/力学内容/弹性力学/第三章：应变/1. 变形与应变的概念.md",
-    "Excalidraw/4. 全量型本构关系 2022-12-05 22.17.12.excalidraw.md",
-    "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/3. 增量型本构方程的建立.md",
-    "ClassNotes/Markdown & Latex教程/Latex教程/Latex基本操作.md",
-    "ClassNotes/其他东东/Git/oftenly-used commands.md"
+    "ClassNotes/力学内容/弹性力学/第三章：应变/1. 变形与应变的概念.md"
   ]
 }
