@@ -4,35 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "9c94173a4dbb6b53",
+        "id": "f2f0dc9c88ec0ba3",
         "type": "tabs",
         "children": [
           {
-            "id": "646ef71e247ffd90",
+            "id": "0cac3f301fe47b73",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/4. 全量型本构关系.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "8d824ae18e18663a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "652f5736676880b9",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/4. 全量型本构关系 2022-12-06 08.34.23.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -101,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5,
-    "collapsed": true
+    "width": 344.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -118,7 +97,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/4. 全量型本构关系 2022-12-06 08.34.23.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/4. 全量型本构关系 2022-12-06 08.34.23.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,9 +134,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Excalidraw/4. 全量型本构关系 2022-12-06 08.34.23.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -178,7 +153,7 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "652f5736676880b9",
+  "active": "0cac3f301fe47b73",
   "lastOpenFiles": [
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/4. 全量型本构关系.md",
     "Excalidraw/4. 全量型本构关系 2022-12-06 08.34.23.excalidraw.md",
