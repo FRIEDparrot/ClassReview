@@ -212,3 +212,6 @@ for ......
 print(loss.data)
 ```
 
+常见的损失函数：
+浅层： LR，SCM, ELm
+深层：CNN ..
