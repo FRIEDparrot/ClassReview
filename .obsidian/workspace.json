@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2e8dc9fa0395e2ac",
+        "id": "460ceb1d78cf7220",
         "type": "tabs",
         "children": [
           {
-            "id": "976b7f26d26e6c59",
+            "id": "c3c9fa4d98ba5fcf",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业1.md"
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2.md"
               }
             }
           }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业1.md",
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业1.md",
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业1.md"
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2.md"
               }
             }
           },
@@ -159,11 +159,11 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "976b7f26d26e6c59",
+  "active": "e58ad6de2055b5f7",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业1.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第四章作业.md",
     "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
-    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业1.md",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/Untitled.md",
     "Excalidraw/Drawing 2022-12-06 09.46.31.excalidraw.md",
