@@ -1,4 +1,5 @@
 {
   "attachmentFolderPath": "attachments",
-  "promptDelete": false
+  "promptDelete": false,
+  "autoPairBrackets": false
 }

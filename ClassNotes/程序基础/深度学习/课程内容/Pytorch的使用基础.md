@@ -65,6 +65,7 @@ print(x.grad)
 
 
 ### 三、多项式回归模型
+注意：需要使用grad.data.zero_()来归零梯度，否则将会使梯度累加
 
 下面更进一步尝试一下多项式回归，下面是关于 x 的多项式：
 
@@ -139,11 +140,15 @@ plt.legend()
 plt.show()
 ```
 
-
 #### Logistic 回归模型
+
+对于经典的$(0,1)$模型，
+使用交叉熵损失函数
+$$loss = -[y * log(\hat{y}) + (1-y) *log(1-y)]$$
 ```python
 def logistic_regression(x):
     return torch.sigmoid(torch.mm(x, w) + b)
+## mm: matmul
 
 y_pred = logistic_regression(x_data)
 # 计算loss, 使用clamp的目的是防止数据过小而对结果产生较大影响。
