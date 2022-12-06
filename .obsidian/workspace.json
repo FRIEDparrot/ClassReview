@@ -11,13 +11,26 @@
             "id": "0cac3f301fe47b73",
             "type": "leaf",
             "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "34d096530d880b20",
+            "type": "leaf",
+            "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/Drawing 2022-12-06 09.46.31.excalidraw.md"
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业1.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2022-12-06 09.46.31.excalidraw.md",
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2022-12-06 09.46.31.excalidraw.md",
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2022-12-06 09.46.31.excalidraw.md"
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业1.md"
               }
             }
           },
@@ -159,17 +172,17 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "0cac3f301fe47b73",
+  "active": "e58ad6de2055b5f7",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/弹性力学/练习题总括/Untitled.md",
+    "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
+    "Excalidraw/Drawing 2022-12-06 09.46.31.excalidraw.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/Test for the Git sync.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/Obsidian的一些基本语法.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/🦊Test1.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md",
     "ClassNotes/力学内容/塑性力学/第三章：本构方程的建立/4. 全量型本构关系.md",
     "Excalidraw/4. 全量型本构关系 2022-12-06 08.34.23.excalidraw.md",
-    "Excalidraw/4. 全量型本构关系 2022-12-06 01.32.03.excalidraw.md",
-    "Excalidraw/4. 全量型本构关系 2022-12-06 00.33.32.excalidraw.md",
-    "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/2. 应力空间,π平面和Lode参数.md",
-    "ClassNotes/力学内容/弹性力学/第三章：应变/1. 变形与应变的概念.md"
+    "Excalidraw/4. 全量型本构关系 2022-12-06 01.32.03.excalidraw.md"
   ]
 }
