@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/神经网络的实现.md",
+                "file": "ClassNotes/程序基础/深度学习/课程内容/多层神经网络.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/神经网络的实现.md",
+                "file": "ClassNotes/程序基础/深度学习/课程内容/多层神经网络.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/神经网络的实现.md",
+                "file": "ClassNotes/程序基础/深度学习/课程内容/多层神经网络.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/神经网络的实现.md"
+                "file": "ClassNotes/程序基础/深度学习/课程内容/多层神经网络.md"
               }
             }
           },
