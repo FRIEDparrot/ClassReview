@@ -13,22 +13,23 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.md"
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-1.md"
               }
             }
           },
           {
-            "id": "aa8491b7d02cee59",
+            "id": "518edc4dda7e08ba",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-1.md"
+                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -154,9 +155,10 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "aa8491b7d02cee59",
+  "active": "7efffdaa5bbfb821",
   "lastOpenFiles": [
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.md",
+    "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-1.md",
     "ClassNotes/程序基础/深度学习/课程内容/多层感知机讲解.md",
     "ClassNotes/程序基础/深度学习/课程内容/多层神经网络.md",
@@ -164,7 +166,6 @@
     "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
     "ClassNotes/程序基础/深度学习/知识内容/torch的多层神经网络.md",
     "ClassNotes/程序基础/深度学习/课程内容/线性回归.md",
-    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业1.md",
-    "ClassNotes/力学内容/弹性力学/练习题总括/第四章作业.md"
+    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业1.md"
   ]
 }
