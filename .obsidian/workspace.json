@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/多层神经网络.md",
-                "mode": "source",
+                "file": "ClassNotes/程序基础/深度学习/课程内容/多层感知机讲解.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/多层神经网络.md",
+                "file": "ClassNotes/程序基础/深度学习/课程内容/多层感知机讲解.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/多层神经网络.md",
+                "file": "ClassNotes/程序基础/深度学习/课程内容/多层感知机讲解.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/多层神经网络.md"
+                "file": "ClassNotes/程序基础/深度学习/课程内容/多层感知机讲解.md"
               }
             }
           },
@@ -160,6 +160,7 @@
   },
   "active": "7efffdaa5bbfb821",
   "lastOpenFiles": [
+    "ClassNotes/程序基础/深度学习/课程内容/多层神经网络.md",
     "ClassNotes/程序基础/深度学习/知识内容/多层感知机,神经网络.md",
     "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
     "ClassNotes/程序基础/深度学习/知识内容/torch的多层神经网络.md",
@@ -168,7 +169,6 @@
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业1.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第四章作业.md",
     "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
-    "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
-    "ClassNotes/力学内容/弹性力学/练习题总括/Untitled.md"
+    "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md"
   ]
 }
