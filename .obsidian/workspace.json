@@ -11,9 +11,11 @@
             "id": "bc08e6cc415e64f1",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/Drawing 2022-12-07 19.43.13.excalidraw.md"
+                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -29,6 +31,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
+        "dimension": 59.11764705882353,
         "children": [
           {
             "id": "e58ad6de2055b5f7",
@@ -64,10 +67,25 @@
             }
           }
         ]
+      },
+      {
+        "id": "c5e4e5a80118e2be",
+        "type": "tabs",
+        "dimension": 40.88235294117647,
+        "children": [
+          {
+            "id": "c8e70fc2364aba73",
+            "type": "leaf",
+            "state": {
+              "type": "mindmap",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 344.5
+    "width": 267.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -83,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/Drawing 2022-12-07 19.43.13.excalidraw.md",
+                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/Drawing 2022-12-07 19.43.13.excalidraw.md",
+                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/Drawing 2022-12-07 19.43.13.excalidraw.md"
+                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md"
               }
             }
           },
@@ -145,15 +163,15 @@
   },
   "active": "bc08e6cc415e64f1",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
+    "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
+    "Excalidraw/一、广义胡克定律,工程弹性常数 2022-11-30 11.19.02.excalidraw.md",
+    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业3.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.png",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2改正.md",
-    "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-1.md",
     "ClassNotes/程序基础/深度学习/课程内容/多层感知机讲解.md",
-    "ClassNotes/程序基础/深度学习/课程内容/多层神经网络.md",
-    "ClassNotes/程序基础/深度学习/知识内容/多层感知机,神经网络.md",
-    "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
-    "ClassNotes/程序基础/深度学习/知识内容/torch的多层神经网络.md"
+    "ClassNotes/程序基础/深度学习/课程内容/多层神经网络.md"
   ]
 }
