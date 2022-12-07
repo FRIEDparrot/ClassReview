@@ -11,11 +11,9 @@
             "id": "bc08e6cc415e64f1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
-                "mode": "source",
-                "source": false
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.md"
               }
             }
           }
@@ -85,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5
+    "width": 267.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -101,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md"
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.md"
               }
             }
           },
@@ -163,8 +162,8 @@
   },
   "active": "bc08e6cc415e64f1",
   "lastOpenFiles": [
-    "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
+    "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
     "Excalidraw/一、广义胡克定律,工程弹性常数 2022-11-30 11.19.02.excalidraw.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业3.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.md",
