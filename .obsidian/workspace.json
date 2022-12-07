@@ -11,9 +11,11 @@
             "id": "be5b3fa3302f576a",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第6章作业03.pdf"
+                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -178,14 +180,14 @@
   },
   "active": "12571b5469f92cda",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第6章作业03.pdf",
+    "ClassNotes/力学内容/弹性力学/第六章：平面问题/2. 极坐标表示的基本方程.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业3.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/PPT6-3.md",
-    "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/考点.md",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
-    "ClassNotes/力学内容/弹性力学/第六章：平面问题/2. 极坐标表示的基本方程.md",
     "ClassNotes/力学内容/弹性力学/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
     "Excalidraw/2. 极坐标表示的基本方程 2022-11-19 15.41.05.excalidraw.md"
   ]
