@@ -6,6 +6,7 @@
       {
         "id": "c59fff32756a1ba1",
         "type": "tabs",
+        "dimension": 62.45954692556634,
         "children": [
           {
             "id": "b43e774002f018ab",
@@ -24,13 +25,32 @@
               "type": "markdown",
               "state": {
                 "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/2. 极坐标表示的基本方程.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "51bf7d0119f08dc2",
+        "type": "tabs",
+        "dimension": 37.54045307443366,
+        "children": [
+          {
+            "id": "fb18498644e79d36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -60,7 +80,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "应力坐标转换",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +97,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "c5e4e5a80118e2be",
@@ -174,15 +195,15 @@
   },
   "active": "8ca95bd5ef948ab3",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/弹性力学/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
+    "ClassNotes/力学内容/弹性力学/第六章：平面问题/2. 极坐标表示的基本方程.md",
+    "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md",
+    "Excalidraw/2. 极坐标表示的基本方程 2022-11-19 15.41.05.excalidraw.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业3.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.md",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
     "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
     "Excalidraw/一、广义胡克定律,工程弹性常数 2022-11-30 11.19.02.excalidraw.md",
-    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.png",
-    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2改正.md",
-    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-1.md",
-    "ClassNotes/程序基础/深度学习/课程内容/多层感知机讲解.md",
-    "ClassNotes/程序基础/深度学习/课程内容/多层神经网络.md"
+    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.png"
   ]
 }
