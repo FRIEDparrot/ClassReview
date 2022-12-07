@@ -13,7 +13,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2错解.md"
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/Drawing 2022-12-07 19.43.13.excalidraw.md"
               }
             }
           }
@@ -67,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5,
-    "collapsed": true
+    "width": 344.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -84,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2错解.md",
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/Drawing 2022-12-07 19.43.13.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2错解.md",
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/Drawing 2022-12-07 19.43.13.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2错解.md"
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/Drawing 2022-12-07 19.43.13.excalidraw.md"
               }
             }
           },
@@ -146,9 +145,9 @@
   },
   "active": "bc08e6cc415e64f1",
   "lastOpenFiles": [
-    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2改正.md",
-    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2错解.md",
+    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.png",
+    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2改正.md",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-1.md",
     "ClassNotes/程序基础/深度学习/课程内容/多层感知机讲解.md",
