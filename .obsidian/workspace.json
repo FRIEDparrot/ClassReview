@@ -18,22 +18,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "47a850e79738ac3e",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "f99a2c329f19445a",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2改正.md"
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2改正.md",
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2错解.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +101,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2改正.md",
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2错解.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2改正.md"
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2错解.md"
               }
             }
           },
@@ -160,10 +144,10 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "f99a2c329f19445a",
+  "active": "bc08e6cc415e64f1",
   "lastOpenFiles": [
-    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2错解.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2改正.md",
+    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2错解.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.png",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-1.md",
