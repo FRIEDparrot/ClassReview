@@ -4,20 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "c005577b18c1f736",
+        "id": "c59fff32756a1ba1",
         "type": "tabs",
         "children": [
           {
-            "id": "bc08e6cc415e64f1",
+            "id": "b43e774002f018ab",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.md"
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业3.md"
+              }
+            }
+          },
+          {
+            "id": "8ca95bd5ef948ab3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/2. 极坐标表示的基本方程.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,8 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5,
-    "collapsed": true
+    "width": 267.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -100,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.md",
+                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/2. 极坐标表示的基本方程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.md",
+                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/2. 极坐标表示的基本方程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.md"
+                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/2. 极坐标表示的基本方程.md"
               }
             }
           },
@@ -160,13 +172,13 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "bc08e6cc415e64f1",
+  "active": "8ca95bd5ef948ab3",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业3.md",
+    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.md",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md",
     "ClassNotes/力学内容/弹性力学/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
     "Excalidraw/一、广义胡克定律,工程弹性常数 2022-11-30 11.19.02.excalidraw.md",
-    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业3.md",
-    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2.png",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-2改正.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-1.md",
