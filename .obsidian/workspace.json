@@ -42,9 +42,17 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b384ab0920444e2b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -126,7 +134,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/torch多层神经网络.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +150,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/torch多层神经网络.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,9 +171,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/torch多层神经网络.md"
-              }
+              "state": {}
             }
           },
           {
@@ -186,17 +190,17 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "c7896ce3f5921346",
+  "active": "b384ab0920444e2b",
   "lastOpenFiles": [
+    "ClassNotes/程序基础/深度学习/课程内容/torch深层神经网络.md",
+    "ClassNotes/程序基础/深度学习/课程内容/torch多层神经网络.md",
     "ClassNotes/程序基础/深度学习/课程内容/KNN,KMeans,SVM.md",
     "ClassNotes/程序基础/深度学习/课程内容/CNN神经网络讲解.md",
     "ClassNotes/程序基础/深度学习/知识内容/Scipy Basics.md",
-    "ClassNotes/程序基础/深度学习/课程内容/torch多层神经网络.md",
     "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业3.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第6章作业03.pdf",
-    "ClassNotes/力学内容/弹性力学/第六章：平面问题/2. 极坐标表示的基本方程.md",
-    "ClassNotes/力学内容/弹性力学/练习题总括/PPT6-3.md"
+    "ClassNotes/力学内容/弹性力学/第六章：平面问题/2. 极坐标表示的基本方程.md"
   ]
 }
