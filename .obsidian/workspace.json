@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c7896ce3f5921346",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ClassNotes/程序基础/深度学习/知识内容/Scipy Basics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5
+    "width": 290.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -114,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/CNN神经网络讲解.md",
+                "file": "ClassNotes/程序基础/深度学习/知识内容/Scipy Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/CNN神经网络讲解.md",
+                "file": "ClassNotes/程序基础/深度学习/知识内容/Scipy Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/程序基础/深度学习/课程内容/CNN神经网络讲解.md"
+                "file": "ClassNotes/程序基础/深度学习/知识内容/Scipy Basics.md"
               }
             }
           },
@@ -174,8 +187,9 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "d649bc3949ba4494",
+  "active": "c7896ce3f5921346",
   "lastOpenFiles": [
+    "ClassNotes/程序基础/深度学习/课程内容/CNN神经网络讲解.md",
     "ClassNotes/程序基础/深度学习/课程内容/torch多层神经网络.md",
     "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md",
@@ -184,7 +198,6 @@
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/2. 极坐标表示的基本方程.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/PPT6-3.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md",
-    "ClassNotes/力学内容/弹性力学/练习题总括/考点.md",
-    "ClassNotes/力学内容/弹性力学/第六章：平面问题/1. 平面问题的基本方程.md"
+    "ClassNotes/力学内容/弹性力学/练习题总括/考点.md"
   ]
 }
