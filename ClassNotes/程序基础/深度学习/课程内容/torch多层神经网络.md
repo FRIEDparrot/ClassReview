@@ -175,4 +175,45 @@ class 网络名字(nn.Module):
 
 注意的是，Module 里面也可以使用 Sequential，同时 Module 非常灵活，具体体现在 forward 中，如何复杂的操作都能直观的在 forward 里面执行
 
-下面我们照着模板实现一下上面的神经网络
+
+```python
+class SimpNet(nn.Module):
+    def __init__(self, num_input, num_hidden, num_output):
+        super(SimpNet, self).__init__()
+        self.layer1 = nn.Linear(num_input, num_hidden)
+        
+        self.layer2 = nn.Tanh()
+        
+        self.layer3 = nn.Linear(num_hidden, num_output)
+        
+    def forward(self, x):
+        x = self.layer1(x)
+        x = self.layer2(x)
+        x = self.layer3(x)
+        return x
+
+mo_net = SimpNet(2, 4, 1)
+# 访问模型中的某层可以直接通过名字
+
+# 第一层
+l1 = mo_net.layer1
+print(l1)
+
+# 打印出第一层的权重
+print(l1.weight)
+# 定义优化器
+optim = torch.optim.SGD(mo_net.parameters(), 1.)
+
+# 我们训练 10000 次
+for e in range(10000):
+    out = mo_net(x)
+    loss = criterion(out, y)
+    optim.zero_grad()
+    loss.backward()
+    optim.step()
+    if (e + 1) % 1000 == 0:
+        print('epoch: {}, loss: {}'.format(e+1, loss.item()))
+
+
+```
+
