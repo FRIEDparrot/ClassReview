@@ -5800,6 +5800,7 @@ Spu
 Suzmi
 SNy
 SKcQ
+SCM
 Ludwik
 Lame
 Logistic
@@ -63208,6 +63209,7 @@ gNu
 gVs
 gbib
 ggP
+grad
 quantities
 qq
 qN
