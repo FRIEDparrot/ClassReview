@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "12571b5469f92cda",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业3.md"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,8 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 363.5,
-    "collapsed": true
+    "width": 363.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -113,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业3.md",
+                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业3.md",
+                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业3.md"
+                "file": "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md"
               }
             }
           },
@@ -173,10 +161,10 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "12571b5469f92cda",
+  "active": "31b8a727144d7dfb",
   "lastOpenFiles": [
-    "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业3.md",
+    "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第6章作业03.pdf",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/2. 极坐标表示的基本方程.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/PPT6-3.md",
