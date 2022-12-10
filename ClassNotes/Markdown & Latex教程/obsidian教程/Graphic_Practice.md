@@ -17,8 +17,25 @@ classDef someclass fill:#f96;
 ```
 
 ```mermaid
-graph LR
-A[Problem introduction] --> B[]
+graph TB
+A[Problem introduction] --> B[training model]
+B --> C[result analysis]
+C --> D[low Prediction precision]
+D --> E[parameter Choose]
+D --> |error analysis|F[accuracy evaluation]
+F --> H[RMSE/MSE]
+E --> |retrain model|B
+
+C --> G[high Prediction precision]
+
+
 ```
+
+
+
+
+
+
+
 
 
