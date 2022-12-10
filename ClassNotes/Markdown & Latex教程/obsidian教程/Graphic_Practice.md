@@ -16,20 +16,32 @@ D --> C
 classDef someclass fill:#f96;
 ```
 
+
 ```mermaid
 graph TB
-A[Problem introduction] --> B[training model]
-B --> C[result analysis]
-C --> D[low Prediction precision]
-D --> E[parameter Choose]
+A
+A[Question] --> |analysis|B
+B --> |predict|C[result analysis]
+C --> D[low precision]
+D --> |optimization|E[parameter Choose]
 D --> |error analysis|F[accuracy evaluation]
-F --> H[RMSE/MSE]
+F --> H[RMSE/MSE error analysis]
 E --> |retrain model|B
 
-C --> G[high Prediction precision]
-
+C --> G[high precision]
+C --> H
+G --> I[over fitting analysis]
+I --> |train-test-split| J
 
 ```
+
+
+
+
+
+
+
+
 
 
 
