@@ -20,20 +20,38 @@ classDef someclass fill:#f96;
 ```mermaid
 graph TB
 A
-A[Question] --> |analysis|B
-B --> |predict|C[result analysis]
+A[Question] --> |analysis|B((Model))
+B:::someclass --> |fit and predict|C[(result analysis)]
 C --> D[low precision]
 D --> |optimization|E[parameter Choose]
-D --> |error analysis|F[accuracy evaluation]
-F --> H[RMSE/MSE error analysis]
-E --> |retrain model|B
+D --> F[accuracy evaluation]
+F:::someclass --> H[(RMSE/MSE error analysis)]
+E:::someclass --> |retrain model|B
 
 C --> G[high precision]
-C --> H
-G --> I[over fitting analysis]
-I --> |train-test-split| J
+G --> F
 
+G --> |train-test-split|I[over fitting analysis]
+I:::someclass --> J[(result analysis)]
+
+J --> K[How to prevent overfitting]
+classDef someclass fill:#f96;
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
