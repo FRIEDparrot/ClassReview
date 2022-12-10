@@ -8777,6 +8777,7 @@ cKY
 cFR
 cnY
 cMag
+click
 equatiion
 equations
 excalidraw
