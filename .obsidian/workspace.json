@@ -11,8 +11,12 @@
             "id": "dffe427c54f4d5ef",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/弹塑性理论复习.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5,
-    "collapsed": true
+    "width": 290.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -82,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/弹塑性理论复习.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/弹塑性理论复习.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/弹塑性理论复习.md"
+              }
             }
           },
           {
@@ -140,6 +147,7 @@
   },
   "active": "dffe427c54f4d5ef",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/弹塑性理论.md",
     "ClassNotes/程序基础/深度学习/课程内容/torch多层神经网络.md",
     "ClassNotes/程序基础/深度学习/课程内容/CNN神经网络讲解.md",
     "ClassNotes/Markdown & Latex教程/obsidian教程/Graphic_Practice.md",
@@ -148,7 +156,6 @@
     "ClassNotes/程序基础/深度学习/课程内容/KNN,KMeans,SVM.md",
     "ClassNotes/程序基础/深度学习/知识内容/Scipy Basics.md",
     "ClassNotes/程序基础/深度学习/课程内容/Pytorch的使用基础.md",
-    "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md",
-    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业3.md"
+    "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md"
   ]
 }
