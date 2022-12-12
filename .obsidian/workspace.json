@@ -6,6 +6,7 @@
       {
         "id": "33d036de664e5d69",
         "type": "tabs",
+        "dimension": 38.10679611650485,
         "children": [
           {
             "id": "794d66fdcbc77623",
@@ -22,16 +23,17 @@
         ]
       },
       {
-        "id": "ecc52b9536900081",
+        "id": "5fbc1ec0f8824073",
         "type": "tabs",
+        "dimension": 61.89320388349514,
         "children": [
           {
-            "id": "bc81e94a4494d964",
+            "id": "6703725cd3bc55e1",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.01.06.excalidraw.md"
+                "file": "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md"
               }
             }
           }
@@ -102,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.01.06.excalidraw.md",
+                "file": "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.01.06.excalidraw.md",
+                "file": "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.01.06.excalidraw.md"
+                "file": "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md"
               }
             }
           },
@@ -162,17 +164,17 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "bc81e94a4494d964",
+  "active": "6703725cd3bc55e1",
   "lastOpenFiles": [
     "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/2.  梁的纯弯曲问题的塑性力学解.md",
+    "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md",
+    "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.01.06.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/1. 弹塑性理论复习.md",
     "Excalidraw/1. 弹塑性理论复习 2022-12-12 11.46.25.excalidraw.md",
     "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第八章作业.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/Untitled.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第6章作业03.pdf",
-    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-1.md",
-    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-1.png",
-    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业1.md"
+    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-1.md"
   ]
 }
