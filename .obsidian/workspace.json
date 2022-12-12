@@ -4,28 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "33d036de664e5d69",
-        "type": "tabs",
-        "dimension": 38.10679611650485,
-        "children": [
-          {
-            "id": "794d66fdcbc77623",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/2.  梁的纯弯曲问题的塑性力学解.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "5fbc1ec0f8824073",
         "type": "tabs",
-        "dimension": 61.89320388349514,
         "children": [
           {
             "id": "6703725cd3bc55e1",
