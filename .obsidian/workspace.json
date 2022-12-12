@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第八章作业.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第八章作业.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/1. 柱体扭转问题的方程.md"
+                "file": "ClassNotes/力学内容/弹性力学/练习题总括/第八章作业.md"
               }
             }
           },
@@ -162,8 +162,9 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "4207eac8a74eb651",
+  "active": "dffe427c54f4d5ef",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第八章作业.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/Untitled.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第6章作业03.pdf",
@@ -172,7 +173,6 @@
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业1.md",
     "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/弹塑性理论复习.md",
     "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/弹塑性理论.md",
-    "ClassNotes/程序基础/深度学习/课程内容/torch多层神经网络.md",
-    "ClassNotes/程序基础/深度学习/课程内容/CNN神经网络讲解.md"
+    "ClassNotes/程序基础/深度学习/课程内容/torch多层神经网络.md"
   ]
 }
