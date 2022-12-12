@@ -6,6 +6,7 @@
       {
         "id": "33d036de664e5d69",
         "type": "tabs",
+        "dimension": 35.275080906148865,
         "children": [
           {
             "id": "794d66fdcbc77623",
@@ -16,6 +17,23 @@
                 "file": "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/1. 弹塑性理论复习.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "cb997909b8c71220",
+        "type": "tabs",
+        "dimension": 64.72491909385113,
+        "children": [
+          {
+            "id": "87b933bf2c7698b0",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/1. 弹塑性理论复习 2022-12-12 11.46.25.excalidraw.md"
               }
             }
           }
@@ -69,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -85,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/1. 弹塑性理论复习.md",
+                "file": "Excalidraw/1. 弹塑性理论复习 2022-12-12 11.46.25.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/1. 弹塑性理论复习.md",
+                "file": "Excalidraw/1. 弹塑性理论复习 2022-12-12 11.46.25.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/1. 弹塑性理论复习.md"
+                "file": "Excalidraw/1. 弹塑性理论复习 2022-12-12 11.46.25.excalidraw.md"
               }
             }
           },
@@ -145,8 +164,9 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "794d66fdcbc77623",
+  "active": "87b933bf2c7698b0",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/1. 弹塑性理论复习.md",
     "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第八章作业.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/Untitled.md",
@@ -154,7 +174,6 @@
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-1.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-1.png",
     "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业1.md",
-    "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/1. 弹塑性理论复习.md",
     "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/弹塑性理论.md",
     "ClassNotes/程序基础/深度学习/课程内容/torch多层神经网络.md"
   ]
