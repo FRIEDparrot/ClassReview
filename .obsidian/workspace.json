@@ -11,8 +11,10 @@
             "id": "826e284e156e2b86",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "Inspire/Drawing 2022-12-13 10.57.05.excalidraw.md"
+              }
             }
           }
         ]
@@ -65,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f7de553c162de521",
@@ -82,6 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Inspire/Drawing 2022-12-13 10.57.05.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Inspire/Drawing 2022-12-13 10.57.05.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +122,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Inspire/Drawing 2022-12-13 10.57.05.excalidraw.md"
+              }
             }
           },
           {
@@ -140,6 +145,7 @@
   },
   "active": "826e284e156e2b86",
   "lastOpenFiles": [
+    "Inspire/Untitled.md",
     "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/2.  梁的纯弯曲问题的塑性力学解.md",
     "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.01.06.excalidraw.md",
@@ -148,7 +154,6 @@
     "ClassNotes/力学内容/弹性力学/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/第八章作业.md",
     "ClassNotes/力学内容/弹性力学/练习题总括/Untitled.md",
-    "ClassNotes/力学内容/弹性力学/练习题总括/第6章作业03.pdf",
-    "ClassNotes/力学内容/弹性力学/练习题总括/第六章作业2-1.md"
+    "ClassNotes/力学内容/弹性力学/练习题总括/第6章作业03.pdf"
   ]
 }
