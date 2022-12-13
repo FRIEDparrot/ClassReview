@@ -13,9 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/3. 柱体的扭转问题.md",
+                "file": "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/3. 柱体的扭转, 厚壁球壳.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "32419e45b0f57761",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "db082aba06029e6a",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw.md"
               }
             }
           }
@@ -69,7 +85,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5
+    "width": 267.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -85,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/3. 柱体的扭转问题.md",
+                "file": "Excalidraw/3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/3. 柱体的扭转问题.md",
+                "file": "Excalidraw/3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/3. 柱体的扭转问题.md"
+                "file": "Excalidraw/3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw.md"
               }
             }
           },
@@ -145,10 +162,10 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "a9ad4e4f64360e6c",
+  "active": "db082aba06029e6a",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/3. 柱体的扭转, 厚壁球壳.md",
     "Excalidraw/3. 柱体的扭转问题 2022-12-13 15.00.19.excalidraw.md",
-    "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/3. 柱体的扭转问题.md",
     "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/2.  梁的纯弯曲问题的塑性力学解.md",
     "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-13 14.40.46.excalidraw.md",
     "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.01.06.excalidraw.md",
