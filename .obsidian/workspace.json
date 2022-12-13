@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "5fbc1ec0f8824073",
+        "id": "afa30df5caf25124",
         "type": "tabs",
         "children": [
           {
-            "id": "6703725cd3bc55e1",
+            "id": "826e284e156e2b86",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -84,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -144,10 +138,10 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "6703725cd3bc55e1",
+  "active": "826e284e156e2b86",
   "lastOpenFiles": [
-    "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/2.  梁的纯弯曲问题的塑性力学解.md",
     "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md",
+    "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/2.  梁的纯弯曲问题的塑性力学解.md",
     "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.01.06.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/1. 弹塑性理论复习.md",
     "Excalidraw/1. 弹塑性理论复习 2022-12-12 11.46.25.excalidraw.md",
