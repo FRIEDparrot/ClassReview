@@ -67,7 +67,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5
+    "width": 267.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -143,7 +144,7 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "e58ad6de2055b5f7",
+  "active": "b23c19c0377b308d",
   "lastOpenFiles": [
     "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/4. 厚壁圆筒问题.md",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md",
