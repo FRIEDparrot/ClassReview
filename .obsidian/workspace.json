@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "c673a33767b7ae52",
+        "id": "d970d8cfe5a0b03b",
         "type": "tabs",
         "children": [
           {
-            "id": "b23c19c0377b308d",
+            "id": "188f849772f707a0",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/4. 厚壁圆筒问题 2022-12-14 15.58.43.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -67,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5,
-    "collapsed": true
+    "width": 267.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -84,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/4. 厚壁圆筒问题 2022-12-14 15.58.43.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/4. 厚壁圆筒问题 2022-12-14 15.58.43.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Excalidraw/4. 厚壁圆筒问题 2022-12-14 15.58.43.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -144,17 +137,17 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "b23c19c0377b308d",
+  "active": "188f849772f707a0",
   "lastOpenFiles": [
+    "Inspiration/Drawing 2022-12-13 10.57.05.excalidraw.md",
+    "Excalidraw/4. 厚壁圆筒问题 2022-12-14 15.58.43.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/4. 厚壁圆筒问题.md",
     "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md",
-    "Excalidraw/4. 厚壁圆筒问题 2022-12-14 15.58.43.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/3. 柱体的扭转, 厚壁球壳.md",
     "Excalidraw/3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw.md",
     "Excalidraw/3. 柱体的扭转问题 2022-12-13 15.00.19.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/2.  梁的纯弯曲问题的塑性力学解.md",
     "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-13 14.40.46.excalidraw.md",
-    "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.01.06.excalidraw.md",
-    "Inspiration/Drawing 2022-12-13 10.57.05.excalidraw.md"
+    "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.01.06.excalidraw.md"
   ]
 }
