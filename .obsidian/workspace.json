@@ -11,11 +11,9 @@
             "id": "756466075fa1087d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "ClassNotes/数学内容/复变函数/2. 解析函数.md",
-                "mode": "source",
-                "source": false
+                "file": "ClassNotes/数学内容/复变函数/习题/第二章习题.md"
               }
             }
           }
@@ -31,6 +29,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
+        "dimension": 70.58823529411765,
         "children": [
           {
             "id": "e58ad6de2055b5f7",
@@ -66,6 +65,21 @@
             }
           }
         ]
+      },
+      {
+        "id": "bdfd0db44d1d310a",
+        "type": "tabs",
+        "dimension": 29.411764705882355,
+        "children": [
+          {
+            "id": "bcd13ae4fd9488f1",
+            "type": "leaf",
+            "state": {
+              "type": "mindmap",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
@@ -85,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/数学内容/复变函数/2. 解析函数.md",
+                "file": "ClassNotes/数学内容/复变函数/习题/第二章习题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/数学内容/复变函数/2. 解析函数.md",
+                "file": "ClassNotes/数学内容/复变函数/习题/第二章习题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/数学内容/复变函数/2. 解析函数.md"
+                "file": "ClassNotes/数学内容/复变函数/习题/第二章习题.md"
               }
             }
           },
@@ -145,17 +159,17 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "756466075fa1087d",
+  "active": "e58ad6de2055b5f7",
   "lastOpenFiles": [
+    "ClassNotes/数学内容/复变函数/2. 解析函数.md",
+    "ClassNotes/数学内容/复变函数/习题/Untitled.md",
+    "Excalidraw/2. 解析函数 2022-12-17 12.19.47.excalidraw.md",
     "ClassNotes/数学内容/复变函数/习题/第一章习题.md",
     "ClassNotes/数学内容/复变函数/1. 复数的基本运算,复变函数.md",
     "ClassNotes/数学内容/张量分析/tensor calculation.md",
     "ClassNotes/程序基础/深度学习/课程内容/深度学习/CNN神经网络讲解.md",
     "Inspiration/Drawing 2022-12-13 10.57.05.excalidraw.md",
     "Excalidraw/4. 厚壁圆筒问题 2022-12-14 15.58.43.excalidraw.md",
-    "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/4. 厚壁圆筒问题.md",
-    "ClassNotes/力学内容/弹性力学/第六章：平面问题/3. 极坐标下的经典问题.md",
-    "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/3. 柱体的扭转, 厚壁球壳.md",
-    "Excalidraw/3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw.md"
+    "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/4. 厚壁圆筒问题.md"
   ]
 }
