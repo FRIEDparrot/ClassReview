@@ -4,22 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "bfbc78c07252b003",
+        "id": "5736152ebcf8d347",
         "type": "tabs",
         "children": [
           {
-            "id": "0da99c435dcf563b",
+            "id": "59af1a354392eaf1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ClassNotes/程序基础/数据结构/数据结构概论.md",
+                "file": "ClassNotes/程序基础/数据结构/1. 数据结构概论.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c4738b26cb63f9dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ClassNotes/程序基础/数据结构/1. 数据结构概论.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3cb90a937031d0ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ClassNotes/程序基础/数据结构/1. 数据结构概论.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/程序基础/数据结构/数据结构概论.md",
+                "file": "ClassNotes/程序基础/数据结构/1. 数据结构概论.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/程序基础/数据结构/数据结构概论.md",
+                "file": "ClassNotes/程序基础/数据结构/1. 数据结构概论.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/程序基础/数据结构/数据结构概论.md"
+                "file": "ClassNotes/程序基础/数据结构/1. 数据结构概论.md"
               }
             }
           },
@@ -145,17 +170,17 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "0da99c435dcf563b",
+  "active": "3cb90a937031d0ea",
   "lastOpenFiles": [
+    "ClassNotes/程序基础/C++ 基础/textbook.md",
+    "ClassNotes/程序基础/数据结构/1. 数据结构概论.md",
+    "ClassNotes/程序基础/C++ 基础/1. 基本用法.md",
+    "ClassNotes/数学内容/张量分析/张量分析课本pdf.md",
+    "ClassNotes/数学内容/张量分析/tensor calculation.md",
+    "ClassNotes/数学内容/张量分析/张量分析 第3版.pdf",
+    "ClassNotes/Markdown & Latex教程/obsidian教程/plugins/💩annotator.md",
     "ClassNotes/力学内容/塑性力学/考试复习.md",
     "Excalidraw/考试复习 2022-12-17 16.04.58.excalidraw.md",
-    "ClassNotes/力学内容/塑性力学/考试复习2.md",
-    "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/2. 应力空间,π平面和Lode参数.md",
-    "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/3.弹塑性屈服条件的建立.md",
-    "ClassNotes/数学内容/复变函数/2. 解析函数.md",
-    "Excalidraw/4. 厚壁圆筒问题 2022-12-14 15.58.43.excalidraw.md",
-    "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/4. 厚壁圆筒问题.md",
-    "ClassNotes/程序基础/数据结构/数据结构概论.md",
-    "Excalidraw/2. 解析函数 2022-12-17 12.46.40.excalidraw.md"
+    "ClassNotes/力学内容/塑性力学/考试复习2.md"
   ]
 }
