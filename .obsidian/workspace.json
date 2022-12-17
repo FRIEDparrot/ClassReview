@@ -4,33 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "48fc58ed725a4435",
+        "id": "8561437fbed27988",
         "type": "tabs",
         "children": [
           {
-            "id": "57d7b59838fe61ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ClassNotes/数学内容/复变函数/2. 解析函数.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "655d9318e71680ad",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/4. 厚壁圆筒问题 2022-12-14 15.58.43.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "49366e63879120cc",
+            "id": "5d589c5fb91b0f6a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -41,15 +19,14 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
-        "id": "a6162c62210fa878",
+        "id": "2e8a79ad3d105aeb",
         "type": "tabs",
         "children": [
           {
-            "id": "df67ad7d701ca2d1",
+            "id": "b469d79b351dc3a9",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
@@ -185,17 +162,17 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "df67ad7d701ca2d1",
+  "active": "b469d79b351dc3a9",
   "lastOpenFiles": [
     "ClassNotes/力学内容/塑性力学/考试复习.md",
-    "Excalidraw/4. 厚壁圆筒问题 2022-12-14 15.58.43.excalidraw.md",
-    "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/4. 厚壁圆筒问题.md",
     "ClassNotes/数学内容/复变函数/2. 解析函数.md",
+    "Excalidraw/4. 厚壁圆筒问题 2022-12-14 15.58.43.excalidraw.md",
+    "Excalidraw/考试复习 2022-12-17 16.04.58.excalidraw.md",
+    "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/4. 厚壁圆筒问题.md",
     "ClassNotes/程序基础/数据结构/数据结构概论.md",
     "Excalidraw/2. 解析函数 2022-12-17 12.46.40.excalidraw.md",
     "ClassNotes/数学内容/复变函数/习题/第二章习题.md",
     "ClassNotes/数学内容/复变函数/习题/Untitled.md",
-    "Excalidraw/2. 解析函数 2022-12-17 12.19.47.excalidraw.md",
-    "ClassNotes/数学内容/复变函数/习题/第一章习题.md"
+    "Excalidraw/2. 解析函数 2022-12-17 12.19.47.excalidraw.md"
   ]
 }
