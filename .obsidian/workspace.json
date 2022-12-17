@@ -4,24 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "d970d8cfe5a0b03b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "188f849772f707a0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ClassNotes/数学内容/复变函数/1. 复数的基本运算,复变函数.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "73eeea9d375540c2",
         "type": "tabs",
         "children": [
@@ -102,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/数学内容/复变函数/1. 复数的基本运算,复变函数.md",
+                "file": "ClassNotes/数学内容/复变函数/习题/第一章习题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +101,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/数学内容/复变函数/1. 复数的基本运算,复变函数.md",
+                "file": "ClassNotes/数学内容/复变函数/习题/第一章习题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/数学内容/复变函数/1. 复数的基本运算,复变函数.md"
+                "file": "ClassNotes/数学内容/复变函数/习题/第一章习题.md"
               }
             }
           },
@@ -162,10 +144,10 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "188f849772f707a0",
+  "active": "bf899e4fd792f602",
   "lastOpenFiles": [
-    "ClassNotes/数学内容/复变函数/习题/第一章习题.md",
     "ClassNotes/数学内容/复变函数/1. 复数的基本运算,复变函数.md",
+    "ClassNotes/数学内容/复变函数/习题/第一章习题.md",
     "ClassNotes/数学内容/张量分析/tensor calculation.md",
     "ClassNotes/程序基础/深度学习/课程内容/深度学习/CNN神经网络讲解.md",
     "Inspiration/Drawing 2022-12-13 10.57.05.excalidraw.md",
