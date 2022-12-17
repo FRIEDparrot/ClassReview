@@ -11,9 +11,27 @@
             "id": "b176164ebdc8942d",
             "type": "leaf",
             "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ClassNotes/力学内容/塑性力学/考试复习.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ecb123648cb814ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c3377171cdb67206",
+            "type": "leaf",
+            "state": {
               "type": "excalidraw",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/Drawing 2022-12-17 17.20.04.excalidraw.md"
+                "file": "Excalidraw/考试复习 2022-12-17 16.04.58.excalidraw.md"
               }
             }
           }
@@ -67,8 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 219.5,
-    "collapsed": true
+    "width": 219.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -84,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/Drawing 2022-12-17 17.20.04.excalidraw.md",
+                "file": "Excalidraw/考试复习 2022-12-17 16.04.58.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/Drawing 2022-12-17 17.20.04.excalidraw.md",
+                "file": "Excalidraw/考试复习 2022-12-17 16.04.58.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/塑性力学/Drawing 2022-12-17 17.20.04.excalidraw.md"
+                "file": "Excalidraw/考试复习 2022-12-17 16.04.58.excalidraw.md"
               }
             }
           },
@@ -144,17 +161,17 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "b176164ebdc8942d",
+  "active": "c3377171cdb67206",
   "lastOpenFiles": [
+    "ClassNotes/力学内容/塑性力学/考试复习.md",
     "Excalidraw/考试复习 2022-12-17 16.04.58.excalidraw.md",
+    "ClassNotes/力学内容/塑性力学/考试复习2.md",
     "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/2. 应力空间,π平面和Lode参数.md",
     "ClassNotes/力学内容/塑性力学/第二章：屈服条件的本构方程/3.弹塑性屈服条件的建立.md",
-    "ClassNotes/力学内容/塑性力学/考试复习.md",
     "ClassNotes/数学内容/复变函数/2. 解析函数.md",
     "Excalidraw/4. 厚壁圆筒问题 2022-12-14 15.58.43.excalidraw.md",
     "ClassNotes/力学内容/塑性力学/第四章：弹塑性理论/4. 厚壁圆筒问题.md",
     "ClassNotes/程序基础/数据结构/数据结构概论.md",
-    "Excalidraw/2. 解析函数 2022-12-17 12.46.40.excalidraw.md",
-    "ClassNotes/数学内容/复变函数/习题/第二章习题.md"
+    "Excalidraw/2. 解析函数 2022-12-17 12.46.40.excalidraw.md"
   ]
 }
