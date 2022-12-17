@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "73eeea9d375540c2",
+        "id": "94a02718b4fb9ede",
         "type": "tabs",
         "children": [
           {
-            "id": "bf899e4fd792f602",
+            "id": "756466075fa1087d",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "ClassNotes/数学内容/复变函数/习题/第一章习题.md"
+                "file": "ClassNotes/数学内容/复变函数/2. 解析函数.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/数学内容/复变函数/习题/第一章习题.md",
+                "file": "ClassNotes/数学内容/复变函数/2. 解析函数.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/数学内容/复变函数/习题/第一章习题.md",
+                "file": "ClassNotes/数学内容/复变函数/2. 解析函数.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/数学内容/复变函数/习题/第一章习题.md"
+                "file": "ClassNotes/数学内容/复变函数/2. 解析函数.md"
               }
             }
           },
@@ -143,10 +145,10 @@
     "width": 249.5,
     "collapsed": true
   },
-  "active": "bf899e4fd792f602",
+  "active": "756466075fa1087d",
   "lastOpenFiles": [
-    "ClassNotes/数学内容/复变函数/1. 复数的基本运算,复变函数.md",
     "ClassNotes/数学内容/复变函数/习题/第一章习题.md",
+    "ClassNotes/数学内容/复变函数/1. 复数的基本运算,复变函数.md",
     "ClassNotes/数学内容/张量分析/tensor calculation.md",
     "ClassNotes/程序基础/深度学习/课程内容/深度学习/CNN神经网络讲解.md",
     "Inspiration/Drawing 2022-12-13 10.57.05.excalidraw.md",
