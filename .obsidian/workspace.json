@@ -44,7 +44,6 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 70.58823529411765,
         "children": [
           {
             "id": "e58ad6de2055b5f7",
@@ -76,21 +75,6 @@
             "type": "leaf",
             "state": {
               "type": "starred",
-              "state": {}
-            }
-          }
-        ]
-      },
-      {
-        "id": "bdfd0db44d1d310a",
-        "type": "tabs",
-        "dimension": 29.411764705882355,
-        "children": [
-          {
-            "id": "bcd13ae4fd9488f1",
-            "type": "leaf",
-            "state": {
-              "type": "mindmap",
               "state": {}
             }
           }
