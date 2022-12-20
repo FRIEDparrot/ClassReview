@@ -1,12 +1,14 @@
 {
   "attachmentFolderPath": "attachments",
   "promptDelete": false,
-  "autoPairBrackets": false,
+  "autoPairBrackets": true,
   "pdfExportSettings": {
     "pageSize": "Letter",
     "landscape": false,
     "margin": "0",
     "downscalePercent": 100
   },
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "autoPairMarkdown": false,
+  "readableLineLength": true
 }
