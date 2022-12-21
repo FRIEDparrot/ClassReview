@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8524ee170f0ef424",
+        "id": "417cec1adb7bd2f3",
         "type": "tabs",
         "children": [
           {
-            "id": "f0082345ced91e47",
+            "id": "9c6634cd5046e7ce",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -27,7 +27,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 67.79411764705883,
+        "dimension": 58.25503355704698,
         "children": [
           {
             "id": "e58ad6de2055b5f7",
@@ -67,7 +67,7 @@
       {
         "id": "6b136510c25e080a",
         "type": "tabs",
-        "dimension": 32.20588235294118,
+        "dimension": 41.74496644295302,
         "children": [
           {
             "id": "a61d9285b1aaf4ad",
@@ -81,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 227.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -145,25 +145,36 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 249.5,
     "collapsed": true
   },
-  "active": "f0082345ced91e47",
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "canvas:Create new canvas": false
+    }
+  },
+  "active": "e58ad6de2055b5f7",
   "lastOpenFiles": [
-    "ClassNotes/程序基础/C++ 基础/2. 一些补充笔记.md",
-    "ClassNotes/程序基础/C++ 基础/1. 基本用法.md",
-    "ClassNotes/程序基础/C++ 基础/textbook.md",
-    "ClassNotes/程序基础/C++ 基础/C-Programming-in-easy-steps-5th-Edition.pdf",
     "ClassNotes/数学内容/复变函数/习题/第三章习题_1.md",
+    "ClassNotes/数学内容/复变函数/3. 复变函数的积分.md",
+    "ClassNotes/数学内容/复变函数/Untitled.canvas",
+    "ClassNotes/力学内容/弹性力学/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
+    "Excalidraw/3. 复变函数的积分 2022-12-21 20.47.20.excalidraw.md",
+    "Excalidraw/3. 复变函数的积分 2022-12-18 15.47.32.excalidraw.md",
     "ClassNotes/数学内容/复变函数/4. 复变函数和级数.md",
-    "Excalidraw/4. 复变函数和级数 2022-12-19 16.25.05.excalidraw.md",
-    "ClassNotes/数学内容/复变函数/8. Fourier变换.md",
-    "ClassNotes/数学内容/复变函数/2. 解析函数.md",
-    "ClassNotes/数学内容/复变函数/习题/第二章习题_2.md"
+    "Learning_Notes/Topology_optimization/1. 拓扑优化基本方法.md",
+    "Excalidraw/1. 拓扑优化基本方法 2022-12-21 14.35.16.excalidraw.md",
+    "Untitled.canvas"
   ]
 }
