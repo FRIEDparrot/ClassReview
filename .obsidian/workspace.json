@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "417cec1adb7bd2f3",
+        "id": "9ffcb2cc9fd6ab5c",
         "type": "tabs",
         "children": [
           {
-            "id": "9c6634cd5046e7ce",
+            "id": "f0b76c05df477500",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "ClassNotes/数学内容/复变函数/4. 复变函数和级数.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -97,11 +101,11 @@
             "state": {
               "type": "backlink",
               "state": {
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": true,
-                "searchQuery": "imperable",
+                "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,11 +149,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 249.5,
+    "width": 250.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -164,17 +169,17 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "e58ad6de2055b5f7",
+  "active": "f0b76c05df477500",
   "lastOpenFiles": [
-    "ClassNotes/数学内容/复变函数/习题/第三章习题_1.md",
-    "ClassNotes/数学内容/复变函数/3. 复变函数的积分.md",
-    "ClassNotes/数学内容/复变函数/Untitled.canvas",
-    "ClassNotes/力学内容/弹性力学/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
-    "Excalidraw/3. 复变函数的积分 2022-12-21 20.47.20.excalidraw.md",
-    "Excalidraw/3. 复变函数的积分 2022-12-18 15.47.32.excalidraw.md",
+    "Excalidraw/4. 复变函数和级数 2022-12-29 20.33.53.excalidraw.md",
     "ClassNotes/数学内容/复变函数/4. 复变函数和级数.md",
+    "ClassNotes/数学内容/复变函数/3. 复变函数的积分.md",
+    "Excalidraw/4. 复变函数和级数 2022-12-29 20.21.20.excalidraw.md",
+    "Inspiration/Drawing 2022-12-13 10.57.05.excalidraw.md",
+    "Inspiration/1.png",
+    "ClassNotes/trash/故宫/1章，2章.md",
     "Learning_Notes/Topology_optimization/1. 拓扑优化基本方法.md",
-    "Excalidraw/1. 拓扑优化基本方法 2022-12-21 14.35.16.excalidraw.md",
-    "Untitled.canvas"
+    "Excalidraw/1. The basic method summary for topology optimization 2022-12-20 20.22.51.excalidraw.md",
+    "ClassNotes/程序基础/C++ 基础/2. 一些补充笔记.md"
   ]
 }
