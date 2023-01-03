@@ -5619,6 +5619,7 @@ RlN
 RlW
 RvA
 ReR
+RAMP
 Osgood
 OPTIONS
 Obsidian
@@ -8713,6 +8714,7 @@ OzlxA
 OSJ
 OXE
 Oti
+OJS
 Swift
 SE
 Suppported
@@ -17606,6 +17608,8 @@ cLZ
 cOJ
 cfQ
 cuT
+cout
+cerr
 equatiion
 equations
 excalidraw
@@ -35325,6 +35329,7 @@ dHB
 dpC
 dyob
 dQQj
+destructor
 Exper
 EXCALIDRAW
 EF
@@ -58576,7 +58581,6 @@ oMt
 oWh
 omj
 organization
-out
 ordinary
 offers
 opens
@@ -61135,6 +61139,8 @@ oAt
 oIe
 oGh
 oIz
+ofstream
+ostream
 sided
 shape
 spell
@@ -69785,6 +69791,8 @@ ftjQ
 fQv
 fLm
 feq
+fstream
+fstram
 hcp
 heat
 has
@@ -84806,6 +84814,8 @@ iwtu
 iNm
 iGz
 iCn
+ifstream
+istream
 menu
 material
 model
@@ -106993,6 +107003,7 @@ uCzQ
 udF
 uEk
 uZMYi
+union
 Quotation
 Qp
 QC
@@ -123452,6 +123463,7 @@ lIB
 lUS
 lHNm
 lkId
+lim
 Wilcox
 WX
 Wfjq

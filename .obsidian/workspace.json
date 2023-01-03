@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "71a0f3cb3152ef19",
+        "id": "284180c1b334f221",
         "type": "tabs",
         "children": [
           {
-            "id": "ead14084615e12ea",
+            "id": "b2fd6b80a9e72d8b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "ClassNotes/数学内容/复变函数/5. 留数.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -74,14 +78,17 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "ClassNotes/数学内容/复变函数/5. 留数.md"
+              }
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 227.5
+    "width": 249.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -97,6 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ClassNotes/数学内容/复变函数/5. 留数.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ClassNotes/数学内容/复变函数/5. 留数.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +143,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "ClassNotes/数学内容/复变函数/5. 留数.md"
+              }
             }
           },
           {
@@ -165,17 +176,17 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "ead14084615e12ea",
+  "active": "b2fd6b80a9e72d8b",
   "lastOpenFiles": [
-    "五、 柯西积分公式.md",
-    "ClassNotes/trash/Untitled.md",
-    "ClassNotes/数学内容/复变函数/4. 复变函数和级数.md",
+    "Excalidraw/5. 留数 2022-12-31 23.12.48.excalidraw.md",
     "ClassNotes/数学内容/复变函数/5. 留数.md",
+    "ClassNotes/数学内容/复变函数/习题/第五章例题.md",
+    "ClassNotes/trash/Drawing 2023-01-03 14.24.20.excalidraw.md",
     "ClassNotes/其他东东/考研.md",
-    "ClassNotes/数学内容/复变函数/6. 共型映射.md",
-    "Excalidraw/4. 复变函数和级数 2022-12-29 20.33.53.excalidraw.md",
-    "ClassNotes/数学内容/复变函数/3. 复变函数的积分.md",
-    "Excalidraw/3. 复变函数的积分 2022-12-30 11.59.17.excalidraw.md",
-    "Excalidraw/3. 复变函数的积分 2022-12-30 11.47.24.excalidraw.md"
+    "Learning_Notes/Material_Interpolation/Introduction of Material Interpolation.md",
+    "Excalidraw/Introduction of Material Interpolation 2023-01-03 09.12.18.excalidraw.md",
+    "Excalidraw/5. 留数 2023-01-01 15.44.50.excalidraw.md",
+    "Excalidraw/5. 留数 2023-01-02 20.31.54.excalidraw.md",
+    "ClassNotes/程序基础/数据结构/1. 数据结构概论.md"
   ]
 }

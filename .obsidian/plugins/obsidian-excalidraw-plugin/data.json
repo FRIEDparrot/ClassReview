@@ -67,7 +67,90 @@
     "type": "excalidrawlib",
     "version": 2,
     "source": "https://excalidraw.com",
-    "libraryItems": []
+    "libraryItems": [
+      {
+        "id": "QarNT0sJkgM6gcmVPkym_",
+        "status": "unpublished",
+        "elements": [
+          {
+            "type": "freedraw",
+            "version": 12,
+            "versionNonce": 233424527,
+            "isDeleted": false,
+            "id": "69_LwFRoxB1lFagSsSYmn",
+            "fillStyle": "hachure",
+            "strokeWidth": 0.5,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "angle": 0,
+            "x": 246.32676984248118,
+            "y": -97.65132550711783,
+            "strokeColor": "#000000",
+            "backgroundColor": "transparent",
+            "width": 5.421358198782144,
+            "height": 37.532313614381195,
+            "seed": 845748897,
+            "groupIds": [],
+            "roundness": null,
+            "boundElements": [],
+            "updated": 1672559740521,
+            "link": null,
+            "locked": false,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                -2.919171428094188,
+                -5.838360282829086
+              ],
+              [
+                -4.5872494708444265,
+                -9.59158815893906
+              ],
+              [
+                -5.421358198782144,
+                -11.676720565658172
+              ],
+              [
+                -5.421358198782144,
+                -10.842681544283039
+              ],
+              [
+                -5.421358198782144,
+                -10.425627180314194
+              ],
+              [
+                -5.421358198782144,
+                -0.4170195106875667
+              ],
+              [
+                -5.421358198782144,
+                9.174568648251523
+              ],
+              [
+                -5.0043038348132995,
+                21.26830872459726
+              ],
+              [
+                -5.421358198782144,
+                25.855593048723023
+              ],
+              [
+                -5.421358198782144,
+                25.855593048723023
+              ]
+            ],
+            "lastCommittedPoint": null,
+            "simulatePressure": true,
+            "pressures": []
+          }
+        ],
+        "created": 1672559740762
+      }
+    ]
   },
   "imageElementNotice": true,
   "mdSVGwidth": 500,
