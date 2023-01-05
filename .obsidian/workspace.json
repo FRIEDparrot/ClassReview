@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "284180c1b334f221",
+        "id": "9f07bf604d19b9fe",
         "type": "tabs",
         "children": [
           {
-            "id": "b2fd6b80a9e72d8b",
+            "id": "240f464dba038a23",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ClassNotes/数学内容/复变函数/5. 留数.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -78,9 +74,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "ClassNotes/数学内容/复变函数/5. 留数.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -104,7 +98,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/数学内容/复变函数/5. 留数.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +114,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/数学内容/复变函数/5. 留数.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,9 +135,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "ClassNotes/数学内容/复变函数/5. 留数.md"
-              }
+              "state": {}
             }
           },
           {
@@ -176,17 +166,17 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "b2fd6b80a9e72d8b",
+  "active": "240f464dba038a23",
   "lastOpenFiles": [
-    "Excalidraw/5. 留数 2022-12-31 23.12.48.excalidraw.md",
+    "ClassNotes/数学内容/复变函数/6. 共型映射.md",
+    "Excalidraw/6. 共型映射 2023-01-05 07.42.32.excalidraw.md",
+    "ClassNotes/数学内容/复变函数/8. Fourier变换.md",
     "ClassNotes/数学内容/复变函数/5. 留数.md",
-    "ClassNotes/数学内容/复变函数/习题/第五章例题.md",
-    "ClassNotes/trash/Drawing 2023-01-03 14.24.20.excalidraw.md",
-    "ClassNotes/其他东东/考研.md",
+    "Excalidraw/5. 留数 2023-01-04 18.05.06.excalidraw.md",
+    "Excalidraw/5. 留数 2023-01-03 18.41.03.excalidraw.md",
+    "ClassNotes/trash/Drawing 2023-01-04 08.31.42.excalidraw.md",
     "Learning_Notes/Material_Interpolation/Introduction of Material Interpolation.md",
-    "Excalidraw/Introduction of Material Interpolation 2023-01-03 09.12.18.excalidraw.md",
-    "Excalidraw/5. 留数 2023-01-01 15.44.50.excalidraw.md",
-    "Excalidraw/5. 留数 2023-01-02 20.31.54.excalidraw.md",
-    "ClassNotes/程序基础/数据结构/1. 数据结构概论.md"
+    "Untitled.md",
+    "ClassNotes/trash/Drawing 2023-01-04 07.02.34.excalidraw.md"
   ]
 }

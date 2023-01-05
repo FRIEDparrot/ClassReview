@@ -5620,6 +5620,7 @@ RlW
 RvA
 ReR
 RAMP
+Rational
 Osgood
 OPTIONS
 Obsidian
@@ -29523,6 +29524,7 @@ AIx
 AhQ
 AtH
 AiS
+According
 Deviation
 Drawing
 Dirichlet
@@ -58139,6 +58141,8 @@ wGXy
 wRJbi
 wHsq
 wpP
+weight
+written
 one
 of
 options
@@ -64306,6 +64310,8 @@ srYC
 sakn
 sqA
 spgiXXam
+slope
+substitute
 brackets
 bcc
 by
@@ -67042,6 +67048,7 @@ bSeCM
 bBDieB
 bXR
 byI
+bisectional
 fcc
 factor
 forced
@@ -69793,6 +69800,7 @@ fLm
 feq
 fstream
 fstram
+formula
 hcp
 heat
 has
@@ -81201,6 +81209,8 @@ pVrai
 pph
 ptN
 pUo
+properties
+performed
 in
 influence
 is
@@ -84816,6 +84826,10 @@ iGz
 iCn
 ifstream
 istream
+implement
+iteration
+iterative
+improved
 menu
 material
 model
@@ -88629,6 +88643,7 @@ mPK
 mpO
 mbU
 mUj
+microstructures
 Forced
 For
 Function
@@ -94628,6 +94643,7 @@ aoT
 akQf
 aEd
 aMU
+approximation
 General
 Governing
 GBb
@@ -123464,6 +123480,8 @@ lUS
 lHNm
 lkId
 lim
+limits
+lambda
 Wilcox
 WX
 Wfjq

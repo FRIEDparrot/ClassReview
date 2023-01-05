@@ -10,5 +10,6 @@
   },
   "alwaysUpdateLinks": true,
   "autoPairMarkdown": false,
-  "readableLineLength": true
+  "readableLineLength": true,
+  "spellcheck": true
 }
