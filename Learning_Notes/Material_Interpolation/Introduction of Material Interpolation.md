@@ -41,6 +41,7 @@ $$x_i^{(k+1)} = \left(\frac{2(1+q)e_i}{\lambda \nu_i(1 + q(1-x_i))} \right)^{(k)
 *iterative criterion of improved guide-weight method*
 
 
+---
 $$R(x) = -\frac{q}{1 + q} x_i  + 1$$
 for the form of the RAMP interpolation of the thermal conductive Factors
 $$k(\gamma) = \frac{\gamma(C_k(1 + q_k) -1 )}{C_k (1+ q_k \gamma)}$$

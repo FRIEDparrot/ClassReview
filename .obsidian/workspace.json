@@ -4,15 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9f07bf604d19b9fe",
+        "id": "ee61b8f7d5b7bbd9",
         "type": "tabs",
         "children": [
           {
-            "id": "240f464dba038a23",
+            "id": "9be7b82219cd54a2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "ClassNotes/trash/Drawing 2023-01-10 09.55.48.excalidraw.md"
+              }
             }
           }
         ]
@@ -27,7 +29,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 73.15436241610739,
+        "dimension": 66.97986577181209,
         "children": [
           {
             "id": "e58ad6de2055b5f7",
@@ -67,22 +69,23 @@
       {
         "id": "6b136510c25e080a",
         "type": "tabs",
-        "dimension": 26.845637583892618,
+        "dimension": 33.02013422818792,
         "children": [
           {
             "id": "a61d9285b1aaf4ad",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "ClassNotes/trash/Drawing 2023-01-10 09.55.48.excalidraw.md"
+              }
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 249.5110321044922,
-    "collapsed": true
+    "width": 246.5110321044922
   },
   "right": {
     "id": "f7de553c162de521",
@@ -98,6 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ClassNotes/trash/Drawing 2023-01-10 09.55.48.excalidraw.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ClassNotes/trash/Drawing 2023-01-10 09.55.48.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +140,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "ClassNotes/trash/Drawing 2023-01-10 09.55.48.excalidraw.md"
+              }
             }
           },
           {
@@ -166,17 +173,17 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "240f464dba038a23",
+  "active": "9be7b82219cd54a2",
   "lastOpenFiles": [
-    "ClassNotes/数学内容/复变函数/6. 共型映射.md",
-    "Excalidraw/6. 共型映射 2023-01-05 07.42.32.excalidraw.md",
+    "ClassNotes/数学内容/复变函数/8. The transforms of Applied Mathmatics.md",
+    "Excalidraw/8. The transforms of Applied Mathmatics 2023-01-09 20.22.54.excalidraw.md",
+    "Excalidraw/8. The transforms of Applied Mathmatics 2023-01-09 19.04.40.excalidraw.md",
     "ClassNotes/数学内容/复变函数/8. Fourier变换.md",
-    "ClassNotes/数学内容/复变函数/5. 留数.md",
-    "Excalidraw/5. 留数 2023-01-04 18.05.06.excalidraw.md",
-    "Excalidraw/5. 留数 2023-01-03 18.41.03.excalidraw.md",
-    "ClassNotes/trash/Drawing 2023-01-04 08.31.42.excalidraw.md",
+    "ClassNotes/数学内容/复变函数/7. 卷积积分.md",
+    "ClassNotes/力学内容/流体力学/第一章 绪论/1. 流体力学相关定义及假设.md",
+    "Reading_Material/Essays/2 Topology optimization for fluid–thermal interaction problems under constant input power.md",
     "Learning_Notes/Material_Interpolation/Introduction of Material Interpolation.md",
-    "Untitled.md",
-    "ClassNotes/trash/Drawing 2023-01-04 07.02.34.excalidraw.md"
+    "Reading_Material/Essays/4 Research on Thermofluid Topology Optimization.md",
+    "Reading_Material/Essays/3 Introduction  of Topology Optimization.md"
   ]
 }
