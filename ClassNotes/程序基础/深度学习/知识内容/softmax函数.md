@@ -7,5 +7,4 @@ $$S_{ij} = \frac{e^{z_i}}{\sum_k e^{z_k}}$$
 不同的值反映出取不同的部分的概率
 
 #### 2. 交叉熵损失函数
-
 $$C = -\underset{i}{\sum} y_iln\hat{y}_i$$
