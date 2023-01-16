@@ -12076,6 +12076,7 @@ SlqN
 SSm
 Structure
 Suppose
+Stefan
 Ludwik
 Lame
 Logistic
@@ -50622,6 +50623,7 @@ MIL
 MsPqV
 MxmD
 MITC
+Maxwell
 Vector
 VIEW
 VpI
@@ -94841,6 +94843,7 @@ FeH
 FDM
 Finite
 Formula
+Fick
 article
 applied
 and
