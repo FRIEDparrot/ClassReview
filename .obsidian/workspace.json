@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "c480cf43400f9e31",
+        "id": "59d25b03aa2203a3",
         "type": "tabs",
         "children": [
           {
-            "id": "df1c36be242cabb8",
+            "id": "ef89d4a731de5eca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ClassNotes/力学内容/流体力学/第四章 理想流体运动基础/一、理想流体流动基础.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "84a6d0e664c06a8e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ClassNotes/力学内容/流体力学/第四章 理想流体运动基础/二、伯努利方程的应用以及相关例题.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b47a73a3b7926868",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ClassNotes/力学内容/流体力学/第五章 粘性流体运动基础/粘性流体的运行模型建立.md",
+                "file": "📘ClassNotes/📐数学内容/高等数学/第一章 高数基本知识点.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -104,7 +79,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/流体力学/第五章 粘性流体运动基础/粘性流体的运行模型建立.md"
+                "file": "📘ClassNotes/📐数学内容/高等数学/第一章 高数基本知识点.md"
               }
             }
           }
@@ -128,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ClassNotes/力学内容/流体力学/第五章 粘性流体运动基础/粘性流体的运行模型建立.md",
+                "file": "📘ClassNotes/📐数学内容/高等数学/第一章 高数基本知识点.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ClassNotes/力学内容/流体力学/第五章 粘性流体运动基础/粘性流体的运行模型建立.md",
+                "file": "📘ClassNotes/📐数学内容/高等数学/第一章 高数基本知识点.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ClassNotes/力学内容/流体力学/第五章 粘性流体运动基础/粘性流体的运行模型建立.md"
+                "file": "📘ClassNotes/📐数学内容/高等数学/第一章 高数基本知识点.md"
               }
             }
           },
@@ -200,17 +175,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "b47a73a3b7926868",
+  "active": "e58ad6de2055b5f7",
   "lastOpenFiles": [
-    "ClassNotes/力学内容/流体力学/第四章 理想流体运动基础/二、伯努利方程的应用以及相关例题.md",
-    "ClassNotes/力学内容/流体力学/第四章 理想流体运动基础/一、理想流体流动基础.md",
-    "Excalidraw/一、理想流体流动基础 2023-01-16 15.29.23.excalidraw.md",
-    "Excalidraw/一、理想流体流动基础 2023-01-16 15.15.00.excalidraw.md",
-    "ClassNotes/数学内容/高等数学/第一章 高数基本知识点.md",
-    "Excalidraw/第一章 高数基本知识点 2023-01-16 11.39.07.excalidraw.md",
-    "Excalidraw/第一章 高数基本知识点 2023-01-15 10.30.58.excalidraw.md",
-    "ClassNotes/数学内容/高等数学/例题/Drawing 2023-01-16 11.07.53.excalidraw.md",
-    "ClassNotes/English/考研词汇2.md",
-    "Excalidraw/考研词汇2 2023-01-16 10.34.05.excalidraw.md"
+    "Excalidraw/第一章 高数基本知识点 2023-01-17 11.06.50.excalidraw.md",
+    "📘ClassNotes/📐数学内容/高等数学/第一章 高数基本知识点.md",
+    "📘ClassNotes/思政/🐴马原.md",
+    "ClassNotes/🗑️trash/Drawing 2023-01-17 08.45.10.excalidraw.md",
+    "📘ClassNotes/🗣️English/考研词汇2.md",
+    "📘ClassNotes/👨‍🔧力学内容/✈️Aerodynamics/Chapter1 Introductory Thoughts/Some Introductory Thoughts.md",
+    "📘ClassNotes/⌨️程序基础/深度学习/Dive into Deep Learning/Chapter 1.md",
+    "📘ClassNotes/⌨️程序基础/深度学习/深度学习进阶/CNN神经网络讲解.md",
+    "📘ClassNotes/⌨️程序基础/深度学习/深度学习进阶/RNN神经网络.md",
+    "📘ClassNotes/⌨️程序基础/深度学习/深度学习进阶/GAN生成对抗网络详解.md"
   ]
 }

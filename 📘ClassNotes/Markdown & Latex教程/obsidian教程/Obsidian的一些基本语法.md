@@ -39,7 +39,7 @@ print("Hello,world")
 	\end{array}\right]$$
 	
 [[Obsidian的一些基本语法]]    %%这个是不加图示的%%
-![[1.png]]  
+![[💡Inspiration/1.png]]  
 %%在前面加上感叹号可以显示%%
 
 在Obsidian中使用html代码
