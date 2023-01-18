@@ -5812,6 +5812,9 @@ Riemann
 Remark
 Richard
 Rates
+RQLR
+RzSA
+RFu
 Osgood
 OPTIONS
 Obsidian
@@ -12077,6 +12080,10 @@ SSm
 Structure
 Suppose
 Stefan
+Some
+Squishy
+SMYV
+Samm
 Ludwik
 Lame
 Logistic
@@ -14890,6 +14897,9 @@ LiveLink
 Laplace
 Let
 Laboratory
+LyqY
+LNmo
+LyF
 constitutive
 conditional
 curly
@@ -18207,6 +18217,10 @@ catalyst
 components
 concept
 collected
+concepts
+chapter
+cjWP
+cPLx
 equatiion
 equations
 excalidraw
@@ -21392,6 +21406,11 @@ evolve
 endurance
 endorsement
 evaluation
+experience
+ecfefc
+eQj
+eFDN
+eMDq
 Classification
 Clustering
 Convection
@@ -24305,6 +24324,7 @@ Carreau
 Compactness
 Corey
 CFL
+Cns
 Prediction
 Peierls
 Prandtl
@@ -27296,6 +27316,9 @@ Pfm
 Parrot
 Pretension
 Poiseuille
+Practical
+PcE
+PhY
 Association
 AD
 AE
@@ -30516,6 +30539,8 @@ Also
 Allen
 Ames
 Aeronautical
+Aerodynamics
+AFTu
 Deviation
 Drawing
 Dirichlet
@@ -33425,6 +33450,9 @@ Dissipation
 Design
 Definition
 Drag
+DDCF
+DkI
+DtT
 dedication
 dislocation
 document
@@ -36557,6 +36585,13 @@ deal
 drag
 doing
 dataset
+deformation
+directly
+dcefe
+dLwF
+dui
+dzHE
+dNmk
 Exper
 EXCALIDRAW
 EF
@@ -40142,6 +40177,8 @@ EIyn
 EIY
 Euler
 Examples
+EWg
+EiM
 Hilbert
 How
 Heaviside
@@ -43055,6 +43092,9 @@ HDi
 Hnx
 Hill
 Hoffman
+Hence
+HMJfO
+HHK
 KNN
 KP
 KD
@@ -46678,6 +46718,7 @@ KNA
 KPi
 KLAE
 Knudsen
+KaoZb
 Means
 Machine
 Mises
@@ -50641,6 +50682,10 @@ MsPqV
 MxmD
 MITC
 Maxwell
+MbR
+MLa
+MJIU
+MYZZ
 Vector
 VIEW
 VpI
@@ -53652,6 +53697,7 @@ VnN
 VfWL
 VhBn
 Venant
+Vode
 to
 tags
 the
@@ -56646,6 +56692,15 @@ therapy
 theta
 tangential
 typically
+tangentially
+travel
+tUuu
+tzIYj
+twPl
+tsI
+tdB
+tpHgw
+traces
 write
 with
 widely
@@ -60014,6 +60069,7 @@ wbL
 whenever
 were
 wave
+whL
 one
 of
 options
@@ -63100,6 +63156,9 @@ ought
 overrule
 organic
 overlook
+objectives
+oEw
+ogD
 sided
 shape
 spell
@@ -66391,6 +66450,14 @@ shock
 slender
 stride
 split
+subdivided
+similarity
+statics
+substance
+speed
+sXkI
+sNUU
+sYq
 brackets
 bcc
 by
@@ -69250,6 +69317,8 @@ bends
 ballistic
 blunt
 bodies
+built
+bcdebf
 fcc
 factor
 forced
@@ -72093,6 +72162,10 @@ fertilize
 fpt
 frequently
 fails
+forces
+fundamental
+fyi
+fBBA
 hcp
 heat
 has
@@ -75085,6 +75158,8 @@ harsh
 hiatus
 hydrodynamic
 held
+hydrodynamics
+high
 Nabarro
 Navier
 Number
@@ -77976,6 +78051,9 @@ NdfBf
 Now
 Newton
 NACA
+NSj
+NWh
+NVt
 Tresca
 Try
 The
@@ -80882,6 +80960,8 @@ Thermofluid
 Transform
 Theorems
 Theorem
+TgL
+TJHP
 plugin
 parsed
 performance
@@ -83920,6 +84000,9 @@ past
 perform
 partitions
 performs
+picture
+piTXtXML
+pdX
 in
 influence
 is
@@ -87649,6 +87732,9 @@ introduced
 increase
 impetus
 incurred
+integrating
+iJY
+icg
 menu
 material
 model
@@ -91548,6 +91634,10 @@ monopoly
 moving
 missiles
 maneuver
+moment
+molecular
+molecules
+motion
 Forced
 For
 Function
@@ -94901,6 +94991,7 @@ FDM
 Finite
 Formula
 Fick
+FdvH
 article
 applied
 and
@@ -97583,7 +97674,6 @@ atU
 aGn
 aSG
 arXs
-aERo
 aBu
 aEBX
 avs
@@ -97771,6 +97861,12 @@ aerodynamics
 along
 airflow
 available
+area
+areas
+atoms
+alJ
+awww
+aiiIh
 General
 Governing
 GBb
@@ -101065,6 +101161,8 @@ GLk
 GDF
 GKJ
 Greeno
+Gas
+GnYw
 number
 non
 no
@@ -104114,6 +104212,7 @@ naval
 normal
 noted
 nose
+noL
 vault
 velocity
 vector
@@ -107023,6 +107122,9 @@ vision
 venture
 verbalize
 viscid
+visualize
+vGw
+vhMI
 url
 uniform
 unit
@@ -110482,6 +110584,9 @@ underlying
 urban
 upon
 unseen
+usually
+uQm
+uPJ
 Quotation
 Qp
 QC
@@ -114075,6 +114180,7 @@ QGso
 QgI
 QryY
 Qskb
+QEN
 Introduction
 It
 Intrinsic
@@ -117388,6 +117494,8 @@ Intro
 Iteration
 Importance
 Inconsistency
+ICCProfile
+IrhI
 kinematic
 kinetic
 kernal
@@ -121335,6 +121443,9 @@ kTX
 knh
 kxy
 known
+kUfQ
+kDhQX
+kiFv
 rate
 representing
 represents
@@ -124460,6 +124571,11 @@ reentry
 rather
 rectilinear
 report
+randomly
+rattling
+rDKK
+rhmEXY
+rZMEQ
 large
 length
 laminar
@@ -127391,6 +127507,13 @@ leads
 law
 latter
 long
+liquids
+lls
+lPtm
+loos
+lmmQ
+lwaJ
+lXQ
 Wilcox
 WX
 Wfjq
@@ -131186,6 +131309,8 @@ WhM
 WnRP
 Wvzwd
 Waddoups
+Wbl
+WHQE
 given
 governing
 generalized
@@ -134066,6 +134191,9 @@ gGB
 generally
 guarantee
 generalize
+gases
+gFCJ
+gmgd
 quantities
 qq
 qN
@@ -137236,6 +137364,10 @@ qZzN
 qwh
 qNXXe
 qmN
+qualitatively
+qIj
+qlFW
+qAJ
 JULY
 Jacobian
 JQ
@@ -140046,6 +140178,8 @@ JuJS
 JQpm
 Jenkins
 Julian
+JErx
+Jtpf
 yield
 yt
 yk
@@ -143269,6 +143403,7 @@ yGPY
 yTzc
 yLx
 yplus
+yDm
 XM
 XeqP
 XR
@@ -146417,6 +146552,9 @@ XfYu
 XVB
 Xvke
 XuZ
+Xkuge
+XKnc
+XQU
 jc
 jl
 jx
@@ -149720,6 +149858,9 @@ jJS
 jvf
 jFb
 jAGq
+jpeg
+jYso
+jCVQy
 xK
 xH
 xtG
@@ -153268,6 +153409,7 @@ xjZR
 xra
 xnyb
 xzCza
+xZkD
 UhKR
 UH
 UP
@@ -156400,6 +156542,7 @@ UyL
 Uds
 UYa
 UAuHW
+UNm
 zm
 zmL
 zI
@@ -159441,6 +159584,9 @@ zsC
 zUR
 zTHfv
 znt
+zzzr
+zgL
+znH
 ZZ
 ZX
 ZdX
@@ -162946,6 +163092,8 @@ ZnNG
 ZbLq
 ZsFX
 ZifT
+ZJD
+ZrQ
 YB
 YY
 Yj
@@ -166321,6 +166469,7 @@ YUwu
 YvL
 YHGf
 YoA
+Ykc
 ÖE
 Özc
 ÖU
