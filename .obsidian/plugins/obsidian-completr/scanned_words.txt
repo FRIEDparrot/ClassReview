@@ -2596,6 +2596,7 @@ Bolt
 Baushinger
 Brooks
 Biot
+BeYp
 Ramberg
 Reynolds
 RANS
@@ -5815,6 +5816,7 @@ Rates
 RQLR
 RzSA
 RFu
+Relationship
 Osgood
 OPTIONS
 Obsidian
@@ -12084,6 +12086,9 @@ Some
 Squishy
 SMYV
 Samm
+Streamlines
+Shear
+Skin
 Ludwik
 Lame
 Logistic
@@ -14900,6 +14905,7 @@ Laboratory
 LyqY
 LNmo
 LyF
+Lift
 constitutive
 conditional
 curly
@@ -18221,6 +18227,18 @@ concepts
 chapter
 cjWP
 cPLx
+characterizes
+channel
+conversely
+comp
+calculated
+complete
+chord
+correspondingly
+clockwise
+convention
+counterclockwise
+conventional
 equatiion
 equations
 excalidraw
@@ -21411,6 +21429,10 @@ ecfefc
 eQj
 eFDN
 eMDq
+exerts
+effect
+edge
+extrude
 Classification
 Clustering
 Convection
@@ -24325,6 +24347,7 @@ Compactness
 Corey
 CFL
 Cns
+Coefficients
 Prediction
 Peierls
 Prandtl
@@ -27319,6 +27342,7 @@ Poiseuille
 Practical
 PcE
 PhY
+Pressure
 Association
 AD
 AE
@@ -30541,6 +30565,7 @@ Ames
 Aeronautical
 Aerodynamics
 AFTu
+Aerodynamic
 Deviation
 Drawing
 Dirichlet
@@ -33453,6 +33478,10 @@ Drag
 DDCF
 DkI
 DtT
+DWUt
+DsQmMovV
+Dimensionless
+Dynamic
 dedication
 dislocation
 document
@@ -36592,6 +36621,14 @@ dLwF
 dui
 dzHE
 dNmk
+drop
+drives
+decreasing
+dynamic
+deduce
+distributions
+described
+decrease
 Exper
 EXCALIDRAW
 EF
@@ -43095,6 +43132,7 @@ Hoffman
 Hence
 HMJfO
 HHK
+HughX
 KNN
 KP
 KD
@@ -46719,6 +46757,7 @@ KPi
 KLAE
 Knudsen
 KaoZb
+KXWn
 Means
 Machine
 Mises
@@ -50686,6 +50725,7 @@ MbR
 MLa
 MJIU
 MYZZ
+Moment
 Vector
 VIEW
 VpI
@@ -53698,6 +53738,8 @@ VfWL
 VhBn
 Venant
 Vode
+Viscosity
+VkV
 to
 tags
 the
@@ -56701,6 +56743,14 @@ tsI
 tdB
 tpHgw
 traces
+traced
+tangent
+trailing
+taken
+tend
+theoretical
+themselves
+terms
 write
 with
 widely
@@ -60070,6 +60120,8 @@ whenever
 were
 wave
 whL
+wind
+wing
 one
 of
 options
@@ -63159,6 +63211,7 @@ overlook
 objectives
 oEw
 ogD
+outlet
 sided
 shape
 spell
@@ -66458,6 +66511,12 @@ speed
 sXkI
 sNUU
 sYq
+study
+streamline
+streamlines
+slightly
+spatial
+span
 brackets
 bcc
 by
@@ -72166,6 +72225,12 @@ forces
 fundamental
 fyi
 fBBA
+filled
+factors
+follow
+friction
+freestream
+fCcC
 hcp
 heat
 has
@@ -75160,6 +75225,7 @@ hydrodynamic
 held
 hydrodynamics
 high
+horizontally
 Nabarro
 Navier
 Number
@@ -84003,6 +84069,11 @@ performs
 picture
 piTXtXML
 pdX
+porosity
+play
+proportionality
+piece
+progress
 in
 influence
 is
@@ -87735,6 +87806,12 @@ incurred
 integrating
 iJY
 icg
+interpreted
+internally
+infinitesimal
+interest
+integrated
+immediate
 menu
 material
 model
@@ -91638,6 +91715,11 @@ moment
 molecular
 molecules
 motion
+minimization
+mapping
+magnitude
+moments
+measured
 Forced
 For
 Function
@@ -94992,6 +95074,9 @@ Finite
 Formula
 Fick
 FdvH
+Force
+Forces
+Freestream
 article
 applied
 and
@@ -97856,7 +97941,6 @@ auction
 acquisition
 aeronautical
 affiliate
-aerodynamic
 aerodynamics
 along
 airflow
@@ -97867,6 +97951,13 @@ atoms
 alJ
 awww
 aiiIh
+adjacent
+acting
+away
+attack
+arc
+axial
+ahead
 General
 Governing
 GBb
@@ -104213,6 +104304,7 @@ normal
 noted
 nose
 noL
+negative
 vault
 velocity
 vector
@@ -107125,6 +107217,7 @@ viscid
 visualize
 vGw
 vhMI
+valued
 url
 uniform
 unit
@@ -110587,6 +110680,8 @@ unseen
 usually
 uQm
 uPJ
+units
+uppercase
 Quotation
 Qp
 QC
@@ -124576,6 +124671,10 @@ rattling
 rDKK
 rhmEXY
 rZMEQ
+role
+rubbing
+relative
+relationship
 large
 length
 laminar
@@ -127514,6 +127613,9 @@ loos
 lmmQ
 lwaJ
 lXQ
+limit
+leading
+lowercase
 Wilcox
 WX
 Wfjq
@@ -134194,6 +134296,9 @@ generalize
 gases
 gFCJ
 gmgd
+gradient
+goal
+geometry
 quantities
 qq
 qN
@@ -137368,6 +137473,7 @@ qualitatively
 qIj
 qlFW
 qAJ
+quality
 JULY
 Jacobian
 JQ
@@ -143404,6 +143510,7 @@ yTzc
 yLx
 yplus
 yDm
+yielding
 XM
 XeqP
 XR
@@ -166470,6 +166577,8 @@ YvL
 YHGf
 YoA
 Ykc
+YNUk
+YEwlqKN
 ÖE
 Özc
 ÖU

@@ -4,16 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "d98a29a259712c07",
+        "id": "81292fdf8049b855",
         "type": "tabs",
         "children": [
           {
-            "id": "0c5bf4e6284bc111",
+            "id": "0bf2969bf567b10a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word List2.md",
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7095f5b6e38c47db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/高阶导数公式.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b84e7220ebf818fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +55,6 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 66.97986577181209,
         "children": [
           {
             "id": "e58ad6de2055b5f7",
@@ -67,27 +90,10 @@
             }
           }
         ]
-      },
-      {
-        "id": "6b136510c25e080a",
-        "type": "tabs",
-        "dimension": 33.02013422818792,
-        "children": [
-          {
-            "id": "a61d9285b1aaf4ad",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "📘ClassNotes/🗣️English/Word List2.md"
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
-    "width": 256.5110321044922
+    "width": 279.5110321044922
   },
   "right": {
     "id": "f7de553c162de521",
@@ -103,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word List2.md",
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word List2.md",
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,21 +144,21 @@
             }
           },
           {
-            "id": "becbe00412862568",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "📘ClassNotes/🗣️English/Word List2.md"
-              }
-            }
-          },
-          {
             "id": "ccf3c49a7ac51afd",
             "type": "leaf",
             "state": {
               "type": "dictionary-view",
               "state": {}
+            }
+          },
+          {
+            "id": "a61d9285b1aaf4ad",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md"
+              }
             }
           }
         ],
@@ -160,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 250.5,
+    "width": 265.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -177,15 +183,15 @@
   },
   "active": "e58ad6de2055b5f7",
   "lastOpenFiles": [
-    "📘ClassNotes/🗑️trash/Drawing 2023-01-18 10.06.42.excalidraw.md",
-    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Some Introductory Thoughts.md",
-    "💡Inspiration/2.png",
-    "💡Inspiration/1.png",
-    "Excalidraw/Some Introductory Thoughts 2023-01-17 23.57.35.excalidraw.md",
-    "📘ClassNotes/👨‍🔧Mechanics/流体力学/第五章 粘性流体运动基础/粘性流体的运行模型建立.md",
-    "Excalidraw/粘性流体的运行模型建立 2023-01-17 21.09.18.excalidraw.md",
-    "Excalidraw/粘性流体的运行模型建立 2023-01-17 19.36.53.excalidraw.md",
-    "Excalidraw/粘性流体的运行模型建立 2023-01-17 15.39.20.excalidraw.md",
-    "Excalidraw/二、圆柱坐标系中的流体力学问题 2023-01-17 17.50.59.excalidraw.md"
+    "📘ClassNotes/Ⓜ️ Markdown & Latex Tutorial/Latex Tutorial/Mathematical Symbols.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/高阶导数公式.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md",
+    "Excalidraw/第二章 导数与微分 2023-01-19 12.47.10.excalidraw.md",
+    "Excalidraw/第二章 导数与微分 2023-01-19 11.55.41.excalidraw.md",
+    "Excalidraw/第二章 导数与微分 2023-01-19 11.43.50.excalidraw.md",
+    "Excalidraw/第二章 导数与微分 2023-01-19 11.28.18.excalidraw.md",
+    "Excalidraw/第一章 高数基本知识点 2023-01-17 11.06.50.excalidraw.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md"
   ]
 }

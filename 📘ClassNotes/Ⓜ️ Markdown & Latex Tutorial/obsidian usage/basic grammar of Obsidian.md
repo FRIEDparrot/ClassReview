@@ -38,7 +38,7 @@ print("Hello,world")
 		a_{21} & a_{22} & a_{23}
 	\end{array}\right]$$
 	
-[[Obsidian的一些基本语法]]    %%这个是不加图示的%%
+[[basic grammar of Obsidian]]    %%这个是不加图示的%%
 ![[💡Inspiration/1.png]]  
 %%在前面加上感叹号可以显示%%
 

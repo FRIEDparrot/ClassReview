@@ -7,9 +7,14 @@ The object of the topology optimization is to minimize:
 ![[Pasted image 20230114143230.png|500]]
 where r is the $\phi$ in  the calculation example, and the 
 where $\varepsilon$ denotes the volume fraction of solid catalyst
+
+note that $\alpha(\varepsilon)$ is calculated  as: 
+![[Pasted image 20230118175627.png|200]]
+where the $\varepsilon$ is the porosity (also defined as $\gamma$ in other essays)
 ![[Pasted image 20230114143521.png|500]]
 dtopo1.theta is
 ![[Pasted image 20230114144208.png|500]]
+$$dtopo1.theta = \frac{q(1- \varepsilon)}{q +\varepsilon}$$
 the Reaction Rates at the end of the reaction is set to $-\phi$
 ![[Pasted image 20230114144834.png|200]]
 The optimization problem is: 
