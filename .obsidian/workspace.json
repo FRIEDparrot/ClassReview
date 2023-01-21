@@ -4,40 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "81292fdf8049b855",
+        "id": "0f7343c85673b0b1",
         "type": "tabs",
         "children": [
           {
-            "id": "0bf2969bf567b10a",
+            "id": "2c4fcec19c3e610f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7095f5b6e38c47db",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/高阶导数公式.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b84e7220ebf818fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Some Introductory Thoughts.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,8 +49,8 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": true,
-                "explainSearch": false,
+                "matchingCase": false,
+                "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -93,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5110321044922
+    "width": 439.5110321044922
   },
   "right": {
     "id": "f7de553c162de521",
@@ -109,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Some Introductory Thoughts.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,20 +102,19 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Some Introductory Thoughts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "55e2f6198cbb96c3",
+            "id": "a61d9285b1aaf4ad",
             "type": "leaf",
             "state": {
-              "type": "tag",
+              "type": "outline",
               "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": false
+                "file": "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Some Introductory Thoughts.md"
               }
             }
           },
@@ -152,22 +127,22 @@
             }
           },
           {
-            "id": "a61d9285b1aaf4ad",
+            "id": "55e2f6198cbb96c3",
             "type": "leaf",
             "state": {
-              "type": "outline",
+              "type": "tag",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md"
+                "sortOrder": "frequency",
+                "useHierarchy": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 265.5,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,17 +156,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "e58ad6de2055b5f7",
+  "active": "2c4fcec19c3e610f",
   "lastOpenFiles": [
-    "📘ClassNotes/Ⓜ️ Markdown & Latex Tutorial/Latex Tutorial/Mathematical Symbols.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/高阶导数公式.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md",
-    "Excalidraw/第二章 导数与微分 2023-01-19 12.47.10.excalidraw.md",
-    "Excalidraw/第二章 导数与微分 2023-01-19 11.55.41.excalidraw.md",
-    "Excalidraw/第二章 导数与微分 2023-01-19 11.43.50.excalidraw.md",
-    "Excalidraw/第二章 导数与微分 2023-01-19 11.28.18.excalidraw.md",
-    "Excalidraw/第一章 高数基本知识点 2023-01-17 11.06.50.excalidraw.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md"
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第三章 微分中值定理和导数的应用.md",
+    "Excalidraw/第三章 微分中值定理和导数的应用 2023-01-21 15.23.53.excalidraw.md",
+    "Excalidraw/第三章 微分中值定理和导数的应用 2023-01-21 11.39.35.excalidraw.md",
+    "📘ClassNotes/🗑️trash/Drawing 2023-01-21 09.00.18.excalidraw.md",
+    "📘ClassNotes/🗑️trash/Drawing 2023-01-20 09.03.37.excalidraw.md",
+    "📘ClassNotes/🗑️trash/Drawing 2023-01-19 09.51.06.excalidraw.md",
+    "📘ClassNotes/🗣️English/Untitled.canvas",
+    "📘ClassNotes/🗣️English/Word List2.md",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Some Introductory Thoughts.md",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/📝Examples/Chapter 1/Example1.3.md"
   ]
 }

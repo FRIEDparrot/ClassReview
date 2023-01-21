@@ -120,11 +120,12 @@ the positive clockwise convention for $\theta$ must be followed
 if the $\tau$ is upper inclined,  the $\theta$ would be counterclockwise and hence negative. 
 
 hence the normal and the axial force ***per unit span*** can be written as the integration of the sum of the above two equations
-$$\boxed{N' = \int^{TE}_{LE} (-p_u ds_u cos\theta - \tau_u ds_u sin\theta)ds_u + \int^{TE}_{LE} (p_l ds_l cos\theta - \tau_l ds_l sin\theta) ds_u} $$
-$$\boxed{A' = \int^{TE}_{LE} (-p_u ds_u sin\theta + \tau_u ds_u cos\theta)ds_u  + \int^{TE}_{LE} (p_l ds_l sin\theta + \tau_l ds_l cos\theta) ds_u}$$
+$$\boxed{N' = \int^{TE}_{LE} (-p_u ds_u cos\theta - \tau_u ds_u sin\theta)ds_u + \int^{TE}_{LE} (p_l ds_l cos\theta - \tau_l ds_l sin\theta) ds_u} \tag{1.7}$$
+$$\boxed{A' = \int^{TE}_{LE} (-p_u ds_u sin\theta + \tau_u ds_u cos\theta)ds_u  + \int^{TE}_{LE} (p_l ds_l sin\theta + \tau_l ds_l cos\theta) ds_u} \tag{1.8}$$
 where the $LE$ is leading edge and the $TE$ is trailing edge
 
 note that if we substitute the equation above to the equation $(1.1)$, the lift and the drag would be solved
+
 ##### Aerodynamic Moment Equations
 The Aerodynamic moment depends on the point about which moments are taken. 
 
@@ -164,4 +165,37 @@ dx = ds \cos\theta \\
 dy = -(ds \sin\theta) \\
 S=  c(1)
 \end{matrix}$$
-![[Some Introductory Thoughts 2023-01-19 00.50.37.excalidraw]]
+![[Some Introductory Thoughts 2023-01-19 00.50.37.excalidraw|300]]
+
+also,
+![[integral forms of the force and the moments coefficients]]
+
+also note from the equation above that the Aerodynamic force and moment coefficients can  be obtained by integrating the *pressure and the skin friction coefficients* over the body. This is a common procedure in both theoretical and experimental aerodynamics. 
+
+## 1.6 Center of pressure
+[[Some Introductory Thoughts#Aerodynamic Force Equations|The Force Equations]]
+from the above equations$(1.7)$ and $(1.8)$, we can get that the normal and the axial force on the body are due to the *distributed loads* imposed by the pressure and the shear stress distributions.
+Moreover, the *distributed loads* generate a moment about the leading edge. as given by Equation $(1.11)$
+
+We can consider the situation that the aerodynamic force on a body is specified as a resultant single force $R$ or the component $N$ and $A$, then where the resultant force should be placed on -> firstly the moment and the force should be equivalent to the original pressure (i.e. produce the same effects). 
+
+Therefore, 
+
+If $A'$ is placed on the chord line, $N$ must be located at a distance $x_{cp}$ downstream of the leading edge. 
+$$M_{LE} = -(x_{cp}) N'$$
+so we get the distance of the $x_{cp}$ as:
+$$\boxed{x_{cp}= -\frac{M_{LE}'}{N'}}\tag{1.20}$$
+since the moment of the force is always positive(clockwise) for the leading edge, if we want to add a moment to reach the equilibrium of the moment, the moment of the resultant force at the center of pressure should be negative(counterclockwise). 
+
+The $x_{cp}$ is defined as the *center of pressure*, It's the location where the resultant moment of a 
+distributed loads loads would be zero. 
+
+In case where the angle of attack of the body is small, $sin \alpha \approx 0$ and $\cos \alpha\approx 1$, also $L' \approx N'$
+thus the equation becomes: 
+$$x_{cp} = -\frac{M_{LE}'}{L'}$$
+![[Some Introductory Thoughts 2023-01-20 21.56.12.excalidraw|650]]
+in the picture above, the different resultant forces were given at different point of the airfoil
+By inspection of the above three cases, we can get the equivalent relation ship of the different moments in Fig as: 
+$$M_{LE}' = M_{\frac{c}{4}}' - L' \cdot \frac{c}{4} = - L' x_{cp}$$
+## 1.7 The Buckingham PI theorem
+

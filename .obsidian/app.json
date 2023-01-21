@@ -1,7 +1,7 @@
 {
   "attachmentFolderPath": "attachments",
   "promptDelete": false,
-  "autoPairBrackets": true,
+  "autoPairBrackets": false,
   "pdfExportSettings": {
     "pageSize": "Letter",
     "landscape": false,
