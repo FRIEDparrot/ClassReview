@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0f7343c85673b0b1",
+        "id": "594cca51430b99f8",
         "type": "tabs",
         "children": [
           {
-            "id": "2c4fcec19c3e610f",
+            "id": "ef1781b476427248",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Some Introductory Thoughts.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第一章 绪论.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +49,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": false,
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 439.5110321044922
+    "width": 296.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Some Introductory Thoughts.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第一章 绪论.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Some Introductory Thoughts.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第一章 绪论.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Some Introductory Thoughts.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第一章 绪论.md"
               }
             }
           },
@@ -142,7 +142,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 231.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -156,17 +157,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "2c4fcec19c3e610f",
+  "active": "ef1781b476427248",
   "lastOpenFiles": [
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第三章 微分中值定理和导数的应用.md",
-    "Excalidraw/第三章 微分中值定理和导数的应用 2023-01-21 15.23.53.excalidraw.md",
-    "Excalidraw/第三章 微分中值定理和导数的应用 2023-01-21 11.39.35.excalidraw.md",
-    "📘ClassNotes/🗑️trash/Drawing 2023-01-21 09.00.18.excalidraw.md",
-    "📘ClassNotes/🗑️trash/Drawing 2023-01-20 09.03.37.excalidraw.md",
-    "📘ClassNotes/🗑️trash/Drawing 2023-01-19 09.51.06.excalidraw.md",
-    "📘ClassNotes/🗣️English/Untitled.canvas",
-    "📘ClassNotes/🗣️English/Word List2.md",
+    "Excalidraw/第1章 绪论 2023-01-23 01.30.14.excalidraw.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第一章 绪论.md",
+    "Excalidraw/第1章 绪论 2023-01-23 01.16.58.excalidraw.md",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Implements/lowest velocity.md",
     "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Some Introductory Thoughts.md",
-    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/📝Examples/Chapter 1/Example1.3.md"
+    "Excalidraw/Some Introductory Thoughts 2023-01-22 23.20.52.excalidraw.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/♎公式整理/常用拉普拉斯变换表.md",
+    "Excalidraw/Some Introductory Thoughts 2023-01-22 21.41.13.excalidraw.md",
+    "Excalidraw/Some Introductory Thoughts 2023-01-22 22.04.32.excalidraw.md",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/♎Important Conclusions and Lists/Important Variables and Numbers.md"
   ]
 }
