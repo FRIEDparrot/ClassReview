@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "594cca51430b99f8",
+        "id": "1269951f32c5ab6e",
         "type": "tabs",
         "children": [
           {
-            "id": "ef1781b476427248",
+            "id": "43bf757926e0ae95",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第一章 绪论.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.5
+    "width": 251.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第一章 绪论.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第一章 绪论.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -113,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第一章 绪论.md"
-              }
+              "state": {}
             }
           },
           {
@@ -157,17 +149,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "ef1781b476427248",
+  "active": "e58ad6de2055b5f7",
   "lastOpenFiles": [
-    "Excalidraw/第1章 绪论 2023-01-23 01.30.14.excalidraw.md",
+    "📘ClassNotes/🗣️English/Word List3.md",
     "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第一章 绪论.md",
+    "Excalidraw/第1章 绪论 2023-01-23 01.30.14.excalidraw.md",
     "Excalidraw/第1章 绪论 2023-01-23 01.16.58.excalidraw.md",
     "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Implements/lowest velocity.md",
     "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Some Introductory Thoughts.md",
     "Excalidraw/Some Introductory Thoughts 2023-01-22 23.20.52.excalidraw.md",
     "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/♎公式整理/常用拉普拉斯变换表.md",
     "Excalidraw/Some Introductory Thoughts 2023-01-22 21.41.13.excalidraw.md",
-    "Excalidraw/Some Introductory Thoughts 2023-01-22 22.04.32.excalidraw.md",
-    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/♎Important Conclusions and Lists/Important Variables and Numbers.md"
+    "Excalidraw/Some Introductory Thoughts 2023-01-22 22.04.32.excalidraw.md"
   ]
 }

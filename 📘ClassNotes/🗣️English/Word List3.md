@@ -1,8 +1,5 @@
 #### essential words
-monarch monetary revenue arouse constitution spouse principal conceive dilemma chronic gigantic 
-
-(Word List9)
-
+monarch monetary revenue arouse constitution spouse principal conceive dilemma chronic gigantic incentive legitimate -> legislation  celebrity integrity scrutiny census regime synthetic quota revive premise consensus charter exempt 
 
 #### words that should be reviewed periodically
-vague desperate segment sector convention prevalent propel institution acquaintance  speculate prospect perspective capable perceive agenda conscious secretary dispute embryo embody endure amateur originate prejudice enterprise reign interior prominent profitable linguistic 
+vague desperate segment sector convention prevalent propel institution acquaintance  speculate prospect perspective capable perceive agenda conscious secretary dispute embryo embody endure amateur originate prejudice enterprise reign interior prominent profitable linguistic commerce deprive narrative extensive legacy elegant substance norm utmost solar drama foremost anecdote  heritage immense suspicious reluctant empirical repel lottery competent comprise prestige pregnant vain consent practitioner incur compliment spacious expend cease
