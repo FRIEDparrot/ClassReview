@@ -45,3 +45,5 @@ print("Hello,world")
 在Obsidian中使用html代码
 
 <a href="https://google.com"><button>点这个进入谷歌</button></a>
+
+![[basic grammar of Obsidian 2023-01-23 11.07.00.excalidraw]]

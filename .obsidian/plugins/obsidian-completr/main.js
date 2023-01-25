@@ -78100,6 +78100,7 @@ var Suggestion = class {
 var DEFAULT_SETTINGS = {
   characterRegex: "a-zA-Z\xF6\xE4\xFC\xD6\xC4\xDC\xDF",
   maxLookBackDistance: 50,
+  autoFocus: true,
   minWordLength: 2,
   minWordTriggerLength: 3,
   wordInsertionMode: "Ignore-Case & Replace" /* IGNORE_CASE_REPLACE */,
@@ -79906,11 +79907,22 @@ var SuggestionPopup = class extends import_obsidian4.EditorSuggest {
   constructor(app, settings, snippetManager) {
     var _a;
     super(app);
+    this.focused = false;
     this.disableSnippets = (_a = app.vault.config) == null ? void 0 : _a.legacyEditor;
     this.settings = settings;
     this.snippetManager = snippetManager;
     let self = this;
     self.scope.keys = [];
+  }
+  open() {
+    super.open();
+    this.focused = this.settings.autoFocus;
+    for (const c of this.suggestions.containerEl.children)
+      c.removeClass("is-selected");
+  }
+  close() {
+    super.close();
+    this.focused = false;
   }
   getSuggestions(context) {
     let suggestions = [];
@@ -79995,6 +80007,10 @@ var SuggestionPopup = class extends import_obsidian4.EditorSuggest {
     this.justClosed = true;
   }
   selectNextItem(dir) {
+    if (!this.focused) {
+      this.focused = true;
+      dir = dir === SelectionDirection.PREVIOUS ? dir : SelectionDirection.NONE;
+    }
     const self = this;
     self.suggestions.setSelectedItem(self.suggestions.selectedItem + dir, new KeyboardEvent("keydown"));
   }
@@ -80009,6 +80025,9 @@ var SuggestionPopup = class extends import_obsidian4.EditorSuggest {
   isVisible() {
     return this.isOpen;
   }
+  isFocused() {
+    return this.focused;
+  }
   preventNextTrigger() {
     this.justClosed = true;
   }
@@ -80018,6 +80037,12 @@ var SuggestionPopup = class extends import_obsidian4.EditorSuggest {
     return this.compiledCharacterRegex;
   }
 };
+var SelectionDirection = /* @__PURE__ */ ((SelectionDirection2) => {
+  SelectionDirection2[SelectionDirection2["NEXT"] = 1] = "NEXT";
+  SelectionDirection2[SelectionDirection2["PREVIOUS"] = -1] = "PREVIOUS";
+  SelectionDirection2[SelectionDirection2["NONE"] = 0] = "NONE";
+  return SelectionDirection2;
+})(SelectionDirection || {});
 
 // src/settings_tab.ts
 var import_obsidian5 = require("obsidian");
@@ -80040,6 +80065,10 @@ var CompletrSettingsTab = class extends import_obsidian5.PluginSettingTab {
       } catch (e) {
         text.inputEl.addClass("completr-settings-error");
       }
+    }));
+    new import_obsidian5.Setting(containerEl).setName("Auto focus").setDesc("Whether the popup is automatically focused once it opens.").addToggle((toggle) => toggle.setValue(this.plugin.settings.autoFocus).onChange(async (val) => {
+      this.plugin.settings.autoFocus = val;
+      await this.plugin.saveSettings();
     }));
     new import_obsidian5.Setting(containerEl).setName("Minimum word length").setDesc("The minimum length a word has to be, to count as a valid suggestion. This value is used by the file scanner and word list provider.").addText((text) => {
       text.inputEl.type = "number";
@@ -80247,9 +80276,9 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
   setupCommands() {
     const app = this.app;
     app.scope.keys = [];
-    const isHotkeyMatch = (hotkey, context, id) => {
+    const isHotkeyMatch = (hotkey, context, isBypassCommand) => {
       const modifiers = hotkey.modifiers, key = hotkey.key;
-      if (modifiers !== null && (id.contains("completr-bypass") ? !context.modifiers.contains(modifiers) : modifiers !== context.modifiers))
+      if (modifiers !== null && (isBypassCommand ? !context.modifiers.contains(modifiers) : modifiers !== context.modifiers))
         return false;
       return !key || (key === context.vkey || !(!context.key || key.toLowerCase() !== context.key.toLowerCase()));
     };
@@ -80259,13 +80288,14 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
       for (let bakedHotkeys = hotkeyManager.bakedHotkeys, bakedIds = hotkeyManager.bakedIds, r = 0; r < bakedHotkeys.length; r++) {
         const hotkey = bakedHotkeys[r];
         const id = bakedIds[r];
-        if (isHotkeyMatch(hotkey, t, id)) {
-          const command = app.commands.findCommand(id);
+        const command = app.commands.findCommand(id);
+        const isBypassCommand = command && command.isBypassCommand && command.isBypassCommand();
+        if (isHotkeyMatch(hotkey, t, isBypassCommand)) {
           if (!command || e.repeat && !command.repeatable) {
             continue;
           } else if (command.isVisible && !command.isVisible()) {
             continue;
-          } else if (id.contains("completr-bypass")) {
+          } else if (isBypassCommand) {
             this._suggestionPopup.close();
             const validMods = t.modifiers.replace(new RegExp(`${hotkey.modifiers},*`), "").split(",");
             let event = new KeyboardEvent("keydown", {
@@ -80307,7 +80337,7 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
         }
       ],
       repeatable: true,
-      editorCallback: (editor) => {
+      editorCallback: (_) => {
         this.suggestionPopup.selectNextItem(1 /* NEXT */);
       },
       isVisible: () => this._suggestionPopup.isVisible()
@@ -80322,7 +80352,7 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
         }
       ],
       repeatable: true,
-      editorCallback: (editor) => {
+      editorCallback: (_) => {
         this.suggestionPopup.selectNextItem(-1 /* PREVIOUS */);
       },
       isVisible: () => this._suggestionPopup.isVisible()
@@ -80336,9 +80366,8 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
           modifiers: []
         }
       ],
-      editorCallback: (editor) => {
-        this.suggestionPopup.applySelectedItem();
-      },
+      editorCallback: (_) => this.suggestionPopup.applySelectedItem(),
+      isBypassCommand: () => !this._suggestionPopup.isFocused(),
       isVisible: () => this._suggestionPopup.isVisible()
     });
     this.addCommand({
@@ -80350,8 +80379,9 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
           modifiers: ["Ctrl"]
         }
       ],
-      editorCallback: (editor) => {
+      editorCallback: (_) => {
       },
+      isBypassCommand: () => true,
       isVisible: () => this._suggestionPopup.isVisible()
     });
     this.addCommand({
@@ -80363,8 +80393,9 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
           modifiers: ["Ctrl"]
         }
       ],
-      editorCallback: (editor) => {
+      editorCallback: (_) => {
       },
+      isBypassCommand: () => true,
       isVisible: () => this._suggestionPopup.isVisible()
     });
     this.addCommand({
@@ -80381,6 +80412,7 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
         SuggestionBlacklist.saveData(this.app.vault);
         this._suggestionPopup.trigger(editor, this.app.workspace.getActiveFile(), true);
       },
+      isBypassCommand: () => !this._suggestionPopup.isFocused(),
       isVisible: () => this._suggestionPopup.isVisible()
     });
     this.addCommand({
@@ -80392,9 +80424,7 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
           modifiers: []
         }
       ],
-      editorCallback: (editor) => {
-        this.suggestionPopup.close();
-      },
+      editorCallback: (_) => this.suggestionPopup.close(),
       isVisible: () => this._suggestionPopup.isVisible()
     });
     this.addCommand({
@@ -80406,7 +80436,7 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
           modifiers: []
         }
       ],
-      editorCallback: (editor, view) => {
+      editorCallback: (editor, _) => {
         const placeholder = this.snippetManager.placeholderAtPos(editor.getCursor());
         if (!placeholder)
           return;
@@ -80427,6 +80457,20 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
         const placeholder = this.snippetManager.placeholderAtPos(view.editor.getCursor());
         return placeholder != null;
       }
+    });
+    this.addCommand({
+      id: "completr-fake-tab",
+      name: "Press Tab",
+      hotkeys: [
+        {
+          key: "Tab",
+          modifiers: []
+        }
+      ],
+      editorCallback: (_) => {
+      },
+      isBypassCommand: () => true,
+      isVisible: () => this._suggestionPopup.isVisible()
     });
   }
   async onunload() {
@@ -80465,7 +80509,8 @@ var CursorActivityListener = class {
       this.cursorTriggeredByChange = true;
     };
     this.handleCursorActivity = (cursor) => {
-      if (this.lastCursorLine == cursor.line + 1)
+      const didChangeLine = this.lastCursorLine != cursor.line;
+      if (didChangeLine)
         this.suggestionPopup.preventNextTrigger();
       this.lastCursorLine = cursor.line;
       if (!this.snippetManager.placeholderAtPos(cursor)) {
@@ -80473,7 +80518,8 @@ var CursorActivityListener = class {
       }
       if (this.cursorTriggeredByChange) {
         this.cursorTriggeredByChange = false;
-        return;
+        if (!didChangeLine)
+          return;
       }
       this.suggestionPopup.close();
     };

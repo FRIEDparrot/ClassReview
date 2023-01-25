@@ -1,0 +1,2 @@
+The laminar flow is assumed as continuum in the analysis of the laminar flow and thus the streamline would be continuous and smooth. with the velocity of the fluid molecule increase, the streamline breakup. 
+In the laminar flow, the force between the Molecule works effectively, and thus the velocity of the flow can be seen as a continuous function, which is modeled as the velocity field. But with  the velocity become more random, the constraint of the molecular force dies down, so at that time the velocity can't be seen as continuous function.

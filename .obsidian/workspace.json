@@ -4,15 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "1269951f32c5ab6e",
+        "id": "5179b367f59c9e08",
         "type": "tabs",
         "children": [
           {
-            "id": "43bf757926e0ae95",
+            "id": "13a87c9a4fdaef03",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/🗣️English/Word List3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "1bfb28c18be8ed3c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "91075ff2bde2b6d0",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "📘ClassNotes/🗑️trash/Drawing 2023-01-25 08.37.36.excalidraw.md"
+              }
             }
           }
         ]
@@ -46,7 +66,7 @@
               "state": {
                 "query": "",
                 "matchingCase": true,
-                "explainSearch": true,
+                "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -65,7 +85,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 251.5
+    "width": 289.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -81,6 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "📘ClassNotes/🗑️trash/Drawing 2023-01-25 08.37.36.excalidraw.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "📘ClassNotes/🗑️trash/Drawing 2023-01-25 08.37.36.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -107,7 +130,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "📘ClassNotes/🗑️trash/Drawing 2023-01-25 08.37.36.excalidraw.md"
+              }
             }
           },
           {
@@ -146,20 +171,20 @@
       "command-palette:Open command palette": false,
       "audio-recorder:Start/stop recording": false,
       "canvas:Create new canvas": false,
-      "obsidian-excalidraw-plugin:New Excalidraw drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e58ad6de2055b5f7",
+  "active": "91075ff2bde2b6d0",
   "lastOpenFiles": [
     "📘ClassNotes/🗣️English/Word List3.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第一章 绪论.md",
-    "Excalidraw/第1章 绪论 2023-01-23 01.30.14.excalidraw.md",
-    "Excalidraw/第1章 绪论 2023-01-23 01.16.58.excalidraw.md",
-    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Implements/lowest velocity.md",
-    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Some Introductory Thoughts.md",
-    "Excalidraw/Some Introductory Thoughts 2023-01-22 23.20.52.excalidraw.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/♎公式整理/常用拉普拉斯变换表.md",
-    "Excalidraw/Some Introductory Thoughts 2023-01-22 21.41.13.excalidraw.md",
-    "Excalidraw/Some Introductory Thoughts 2023-01-22 22.04.32.excalidraw.md"
+    "📘ClassNotes/🗑️trash/Drawing 2023-01-25 08.37.36.excalidraw.md",
+    "Excalidraw/Word List3 2023-01-25 08.17.26.excalidraw.md",
+    "💡Inspiration/⌚Schedule & Todo List.md",
+    "💡Inspiration/building_base.md",
+    "💡Inspiration/之后再看.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Plastic Mechanics/第二章：屈服条件的本构方程/3.弹塑性屈服条件的建立.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Plastic Mechanics/作业题/第2次作业.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Plastic Mechanics/第一章：绪论/5. 塑性变形的微观解释.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Plastic Mechanics/第一章：绪论/4. 应变偏张量不变量，应变强度.md"
   ]
 }

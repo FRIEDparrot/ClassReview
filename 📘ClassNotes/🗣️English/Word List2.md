@@ -1,8 +1,5 @@
 #### essential words
-
 ==staple== enact problematic altogether disposal ==attorney== ==contingent== crunch ==attuned== asocial slipup ==depredation== ==hail== overrule ==tackle== councilor counselor impressionable ==assuage== painstakingly conceal confidant engender buzzword thorny ==pledge== arguably ==languid== ==furlough== ==sovereignty== feasible ==caveat== intensively ==arable== ==scrap== venture ==prospect== prominent momentum tactic utterance interplay subordinate ==deferential== ==counterpart== panicky tentatively debut probiotic impair prevalent ==compliance== ==promulgate== ==contrive== reap attribute provision confer superfluous settlement elite ==transaction== ==eligible== plausible precede ==expenditure== defendant ==prudent== constituent surplus auction illusion marine sentiment resent council ==contempt== ==radical== ==propel==
-
-to o
 
 ---
 #### words that should be reviewed periodically
