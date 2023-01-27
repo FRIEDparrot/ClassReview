@@ -5828,6 +5828,8 @@ Ratio
 Rectangular
 Regimes
 Rkwv
+Road
+Relations
 Osgood
 OPTIONS
 Obsidian
@@ -9017,6 +9019,7 @@ Obtain
 OxuPVqP
 ONfwS
 OHGo
+Orthogonal
 Swift
 SE
 Suppported
@@ -12111,6 +12114,10 @@ Similarity
 Statics
 Such
 Sharing
+Seversky
+Sktz
+Scalar
+Spherical
 Ludwik
 Lame
 Logistic
@@ -18334,6 +18341,14 @@ convective
 cdec
 conspicuous
 captive
+configurations
+comparison
+charts
+continuity
+coordinate
+cartesian
+cylindrical
+curl
 equatiion
 equations
 excalidraw
@@ -21576,6 +21591,8 @@ everywhere
 explanation
 entered
 extinguish
+exactly
+examine
 Classification
 Clustering
 Convection
@@ -24506,6 +24523,11 @@ Citation
 Compressible
 CqD
 Concepts
+Coefficient
+CWSsBnHT
+Central
+Cartesian
+Curl
 Prediction
 Peierls
 Prandtl
@@ -30734,6 +30756,7 @@ Area
 Assume
 Actually
 Archimedes
+Applied
 Deviation
 Drawing
 Dirichlet
@@ -33657,6 +33680,7 @@ Discussed
 DCTUEoDX
 DoVlBcM
 Different
+Divergence
 dedication
 dislocation
 document
@@ -36857,6 +36881,12 @@ discern
 divorce
 divert
 disclose
+decreases
+dropped
+directions
+directional
+derivative
+divergence
 Exper
 EXCALIDRAW
 EF
@@ -43368,6 +43398,7 @@ HLYu
 Hard
 HiUyS
 HKjPbFat
+HWii
 KNN
 KP
 KD
@@ -50976,6 +51007,7 @@ MMMtjlWC
 Molecule
 MlGirAl
 MUPeE
+MZRgJWT
 Vector
 VIEW
 VpI
@@ -53997,6 +54029,7 @@ Vmz
 Versus
 Viscous
 Velocity
+Vzfho
 to
 tags
 this
@@ -57034,6 +57067,10 @@ theoretically
 thickness
 tortuous
 temptation
+typical
+thing
+twPiMb
+translates
 write
 with
 widely
@@ -60417,6 +60454,7 @@ weary
 wake
 weak
 warn
+whereas
 one
 of
 options
@@ -63524,6 +63562,9 @@ obviously
 outside
 occur
 ornament
+orientation
+operational
+orthogonal
 sided
 shape
 spell
@@ -66898,6 +66939,15 @@ slips
 slows
 sign
 session
+shows
+separating
+streamlining
+streamlined
+shapes
+sharply
+sDfzGAc
+spherical
+sgpyeVfL
 brackets
 bcc
 by
@@ -69778,6 +69828,9 @@ break
 bdae
 bcbfbae
 bureaucracy
+breakdown
+bLDRvvRX
+bQFb
 fcc
 factor
 forced
@@ -72674,6 +72727,9 @@ fEEnocu
 fbXQ
 frictional
 fertile
+frontal
+full
+fba
 hcp
 heat
 has
@@ -75683,6 +75739,8 @@ horizontal
 hgqg
 here
 hBbxPe
+hyWis
+horsepower
 Nabarro
 Navier
 Number
@@ -78582,6 +78640,8 @@ NLgpO
 Npriorv
 NJjTX
 NVcFdoaZ
+NkUq
+NizWPMp
 Tresca
 Try
 The
@@ -81500,6 +81560,9 @@ Transonic
 Trailing
 Thin
 That
+These
+Typical
+Three
 plugin
 parsed
 performance
@@ -84601,6 +84664,11 @@ plateau
 predominant
 parliament
 premiere
+precipitously
+planform
+perpendicular
+purposes
+prove
 in
 influence
 is
@@ -88378,6 +88446,11 @@ indicates
 irregular
 indignant
 intact
+implies
+infinitely
+iincrease
+interested
+interpretation
 menu
 material
 model
@@ -92314,6 +92387,9 @@ mTqbLuyh
 miluA
 moves
 minus
+massive
+magnitudes
+mutually
 Forced
 For
 Function
@@ -95683,6 +95759,7 @@ FdunyM
 FsGuu
 FdnieCGQ
 Finally
+Friction
 article
 applied
 and
@@ -98623,6 +98700,13 @@ aefc
 axis
 absolutely
 avert
+address
+apply
+applies
+aedc
+adb
+aWy
+angular
 General
 Governing
 GBb
@@ -101924,6 +102008,8 @@ GDxiAIHo
 GcsyTk
 GyDFqfCD
 German
+GWuuNo
+Gradient
 number
 non
 no
@@ -104994,6 +105080,7 @@ neural
 negligible
 neglected
 nearly
+neRNUmv
 vault
 velocity
 vector
@@ -107920,6 +108007,7 @@ vicious
 vessel
 vEmNraPU
 verge
+vAArDRLq
 url
 uniform
 unit
@@ -118310,6 +118398,10 @@ ImbO
 ITECmq
 Inviscid
 Incompressible
+Indeed
+Impact
+Its
+Integrals
 kinematic
 kinetic
 kernal
@@ -125436,6 +125528,10 @@ resulting
 right
 retrospect
 residence
+recirculating
+ranges
+ranged
+rxT
 large
 length
 laminar
@@ -128403,6 +128499,9 @@ labeled
 locally
 lgsHgi
 layers
+lRLh
+lILUeFiG
+liquid
 Wilcox
 WX
 Wfjq
@@ -132202,6 +132301,7 @@ Wbl
 WHQE
 Where
 WrazDB
+Which
 given
 governing
 generalized
@@ -135100,6 +135200,7 @@ gives
 goes
 generated
 governs
+gross
 quantities
 qq
 qN
@@ -138280,6 +138381,7 @@ qKv
 qwRsEEDw
 qldfn
 quota
+quantity
 JULY
 Jacobian
 JQ
@@ -147475,6 +147577,7 @@ XKnc
 XQU
 XVVbTC
 XUun
+XQpJVU
 jc
 jl
 jx
@@ -154336,6 +154439,7 @@ xzCza
 xZkD
 xkohWHJU
 xZsH
+xBizBQhX
 UhKR
 UH
 UP
@@ -167404,6 +167508,7 @@ Ykc
 YNUk
 YEwlqKN
 YtZbjZYO
+YgtzHg
 ÖE
 Özc
 ÖU

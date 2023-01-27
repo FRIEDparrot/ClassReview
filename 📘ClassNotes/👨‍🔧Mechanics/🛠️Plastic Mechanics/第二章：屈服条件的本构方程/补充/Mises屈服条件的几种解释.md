@@ -23,8 +23,6 @@ W = \frac{1+\nu}{6E}\left[ (\sigma_1-\sigma_2)^2 +(\sigma_2-\sigma_3)^2 + (\sigm
 故在Mises屈服条件下，形状改变比能不变
 
 #### 二、 八面体切应力不变解释
-
-[[弹性力学]]
 $$\tau_8 = \sqrt{\frac{2J_2}{3}} = \frac{\sqrt2}{3} k$$
 为不变量
 
