@@ -5830,6 +5830,7 @@ Regimes
 Rkwv
 Road
 Relations
+RiYqQ
 Osgood
 OPTIONS
 Obsidian
@@ -9020,6 +9021,7 @@ OxuPVqP
 ONfwS
 OHGo
 Orthogonal
+OlstEeki
 Swift
 SE
 Suppported
@@ -12118,6 +12120,7 @@ Seversky
 Sktz
 Scalar
 Spherical
+Specification
 Ludwik
 Lame
 Logistic
@@ -18349,6 +18352,14 @@ coordinate
 cartesian
 cylindrical
 curl
+conserved
+constantly
+considerate
+cosine
+cabea
+contained
+concerning
+cRGtnxm
 equatiion
 equations
 excalidraw
@@ -21593,6 +21604,12 @@ entered
 extinguish
 exactly
 examine
+elemental
+enclosed
+entrenched
+ebcf
+express
+expressing
 Classification
 Clustering
 Convection
@@ -27527,6 +27544,9 @@ Picture
 PYgHqpi
 Peano
 PBqCOj
+Physical
+PKcrdH
+PPG
 Association
 AD
 AE
@@ -30757,6 +30777,7 @@ Assume
 Actually
 Archimedes
 Applied
+Applying
 Deviation
 Drawing
 Dirichlet
@@ -36887,6 +36908,13 @@ directions
 directional
 derivative
 divergence
+deeply
+divide
+display
+diminishing
+destroyed
+differential
+derivate
 Exper
 EXCALIDRAW
 EF
@@ -40476,6 +40504,7 @@ EWg
 EiM
 Example
 Expansion
+Energy
 Hilbert
 How
 Heaviside
@@ -51008,6 +51037,8 @@ Molecule
 MlGirAl
 MUPeE
 MZRgJWT
+Meaning
+Momentum
 Vector
 VIEW
 VpI
@@ -54030,6 +54061,7 @@ Versus
 Viscous
 Velocity
 Vzfho
+Volume
 to
 tags
 this
@@ -60455,6 +60487,9 @@ wake
 weak
 warn
 whereas
+ways
+wavy
+wavelength
 one
 of
 options
@@ -63565,6 +63600,10 @@ ornament
 orientation
 operational
 orthogonal
+observation
+outline
+observe
+oHLG
 sided
 shape
 spell
@@ -66948,6 +66987,10 @@ sharply
 sDfzGAc
 spherical
 sgpyeVfL
+statistical
+shrunk
+straight
+shearing
 brackets
 bcc
 by
@@ -69831,6 +69874,8 @@ bureaucracy
 breakdown
 bLDRvvRX
 bQFb
+bpAF
+bad
 fcc
 factor
 forced
@@ -72730,6 +72775,8 @@ fertile
 frontal
 full
 fba
+flowfield
+feea
 hcp
 heat
 has
@@ -75741,6 +75788,7 @@ here
 hBbxPe
 hyWis
 horsepower
+hand
 Nabarro
 Navier
 Number
@@ -84669,6 +84717,11 @@ planform
 perpendicular
 purposes
 prove
+principles
+purview
+physically
+passes
+pass
 in
 influence
 is
@@ -88451,6 +88504,9 @@ infinitely
 iincrease
 interested
 interpretation
+integrals
+imagine
+illustrated
 menu
 material
 model
@@ -92390,6 +92446,8 @@ minus
 massive
 magnitudes
 mutually
+mathematics
+movement
 Forced
 For
 Function
@@ -95760,6 +95818,8 @@ FsGuu
 FdnieCGQ
 Finally
 Friction
+FrNOQ
+Flux
 article
 applied
 and
@@ -98707,6 +98767,15 @@ aedc
 adb
 aWy
 angular
+advanced
+according
+analogous
+averaging
+amplitude
+aed
+abadae
+afb
+across
 General
 Governing
 GBb
@@ -105081,6 +105150,8 @@ negligible
 neglected
 nearly
 neRNUmv
+neither
+nor
 vault
 velocity
 vector
@@ -108008,6 +108079,8 @@ vessel
 vEmNraPU
 verge
 vAArDRLq
+vYCBH
+vqPilXOY
 url
 uniform
 unit
@@ -111482,6 +111555,7 @@ utmost
 underlie
 unanimous
 undertake
+uutCGSlu
 Quotation
 Qp
 QC
@@ -118402,6 +118476,7 @@ Indeed
 Impact
 Its
 Integrals
+Integral
 kinematic
 kinetic
 kernal
@@ -125532,6 +125607,9 @@ recirculating
 ranges
 ranged
 rxT
+ramification
+relations
+rVewmAld
 large
 length
 laminar
@@ -128502,6 +128580,7 @@ layers
 lRLh
 lILUeFiG
 liquid
+left
 Wilcox
 WX
 Wfjq
@@ -138382,6 +138461,8 @@ qwRsEEDw
 qldfn
 quota
 quantity
+qualitative
+qpNeR
 JULY
 Jacobian
 JQ
@@ -147578,6 +147659,7 @@ XQU
 XVVbTC
 XUun
 XQpJVU
+XyK
 jc
 jl
 jx
@@ -150888,6 +150970,9 @@ jVNgH
 juvenile
 jGgHl
 jhSal
+jiang
+jvAwMWHX
+juUU
 xK
 xH
 xtG
@@ -167509,6 +167594,7 @@ YNUk
 YEwlqKN
 YtZbjZYO
 YgtzHg
+YCXaYiiK
 ÖE
 Özc
 ÖU

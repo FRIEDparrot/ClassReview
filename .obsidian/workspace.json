@@ -4,15 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "61dd25f148c6a3b4",
+        "id": "c5c3dc5a55f1d94d",
         "type": "tabs",
         "children": [
           {
-            "id": "dc20bd20f352e5d9",
+            "id": "03efd13e31f295fb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/2. Drucker 公设 2023-01-29 00.59.54.excalidraw.md"
+              }
             }
           }
         ]
@@ -65,7 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 259.5
+    "width": 266.50152587890625
   },
   "right": {
     "id": "f7de553c162de521",
@@ -81,6 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Excalidraw/2. Drucker 公设 2023-01-29 00.59.54.excalidraw.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Excalidraw/2. Drucker 公设 2023-01-29 00.59.54.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -107,7 +111,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Excalidraw/2. Drucker 公设 2023-01-29 00.59.54.excalidraw.md"
+              }
             }
           },
           {
@@ -129,11 +135,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 231.5,
+    "width": 218.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -148,17 +155,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "dc20bd20f352e5d9",
+  "active": "e58ad6de2055b5f7",
   "lastOpenFiles": [
-    "📘ClassNotes/🗑️trash/Drawing 2023-01-27 09.25.57.excalidraw.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Plastic Mechanics/作业题/第3次作业2.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Plastic Mechanics/作业题/第3次作业1.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Plastic Mechanics/第二章：屈服条件的本构方程/2. 应力空间,π平面和Lode参数.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Plastic Mechanics/第二章：屈服条件的本构方程/3. 弹塑性屈服条件的建立.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Plastic Mechanics/作业题/第2次作业2.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Plastic Mechanics/第二章：屈服条件的本构方程/4. 后继屈服的强化准则建立.md",
-    "Excalidraw/4. 后继屈服的强化准则建立 2022-11-23 03.25.59.excalidraw.md",
-    "Excalidraw/4. 后继屈服的强化准则建立 2022-11-23 01.17.02.excalidraw.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Plastic Mechanics/第二章：屈服条件的本构方程/补充/Tresca 和 Mises 屈服曲线实验验证.md"
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/2. Drucker 公设.md",
+    "Excalidraw/2. Drucker 公设 2022-11-30 11.57.47.excalidraw.md",
+    "Excalidraw/2. Drucker 公设 2022-11-30 13.34.48.excalidraw.md",
+    "🧊Minecraft/🎶Programmable Music Box.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/1. 相关概念.md",
+    "Excalidraw/5. 加载，卸载准则 2022-11-30 10.58.02.excalidraw.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第一章：绪论/4. 应变偏张量不变量，应变强度.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第二章：屈服条件的本构方程/补充/Tresca 和 Mises 屈服曲线实验验证.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第二章：屈服条件的本构方程/补充/Mises屈服条件的几种解释.md"
   ]
 }
