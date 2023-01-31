@@ -7,12 +7,15 @@
   "media-extended",
   "oz-image-plugin",
   "mx-bili-plugin",
-  "obsidian-dictionary-plugin",
   "excalibrain",
   "dataview",
   "obsidian-dynamic-background",
   "obsidian-latex-environments",
   "obsidian-markmind",
   "convert-url-to-iframe",
-  "url-into-selection"
+  "url-into-selection",
+  "simple-embeds",
+  "calendar",
+  "obsidian-tasks-plugin",
+  "obsidian-dictionary-plugin"
 ]

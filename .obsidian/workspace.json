@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "c5c3dc5a55f1d94d",
+        "id": "354e7c9c76671c68",
         "type": "tabs",
         "children": [
           {
-            "id": "03efd13e31f295fb",
+            "id": "08b741b22336e627",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/2. Drucker 公设 2023-01-29 00.59.54.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -67,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 266.50152587890625
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -78,31 +77,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "46c5be77f8ff375b",
+            "id": "55e2f6198cbb96c3",
             "type": "leaf",
             "state": {
-              "type": "backlink",
+              "type": "tag",
               "state": {
-                "file": "Excalidraw/2. Drucker 公设 2023-01-29 00.59.54.excalidraw.md",
-                "collapseAll": true,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": true,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "8922f822f97b7315",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Excalidraw/2. Drucker 公设 2023-01-29 00.59.54.excalidraw.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "sortOrder": "frequency",
+                "useHierarchy": false
               }
             }
           },
@@ -111,9 +92,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Excalidraw/2. Drucker 公设 2023-01-29 00.59.54.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -125,28 +104,52 @@
             }
           },
           {
-            "id": "55e2f6198cbb96c3",
+            "id": "613ab51e61bf117e",
             "type": "leaf",
             "state": {
-              "type": "tag",
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "90c56e3ca15685e0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
               "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": false
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a00d19e8cc876772",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 218.5,
+    "width": 250.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
+      "switcher:Open quick switcher": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
@@ -155,17 +158,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e58ad6de2055b5f7",
+  "active": "08b741b22336e627",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/2. Drucker 公设.md",
-    "Excalidraw/2. Drucker 公设 2022-11-30 11.57.47.excalidraw.md",
-    "Excalidraw/2. Drucker 公设 2022-11-30 13.34.48.excalidraw.md",
-    "🧊Minecraft/🎶Programmable Music Box.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第二章：屈服条件的本构方程/5. 加载，卸载准则.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/1. 相关概念.md",
-    "Excalidraw/5. 加载，卸载准则 2022-11-30 10.58.02.excalidraw.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第一章：绪论/4. 应变偏张量不变量，应变强度.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第二章：屈服条件的本构方程/补充/Tresca 和 Mises 屈服曲线实验验证.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第二章：屈服条件的本构方程/补充/Mises屈服条件的几种解释.md"
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/📝Examples/Example2.9.md",
+    "💡Inspiration/⌚Todo List.md",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/9-16 The Application Concepts.md",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/♎Important Conclusions and Lists/Potential Function & Stream Function.md",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/♎Important Conclusions and Lists/Basic Aerodynamic Equations.md",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/📝Examples/Example2.7.md",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/📝Examples/Example2.8.md",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/📝Examples/Example2.1.md",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/2. 解析函数.md"
   ]
 }

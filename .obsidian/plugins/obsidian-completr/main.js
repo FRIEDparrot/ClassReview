@@ -78101,6 +78101,7 @@ var DEFAULT_SETTINGS = {
   characterRegex: "a-zA-Z\xF6\xE4\xFC\xD6\xC4\xDC\xDF",
   maxLookBackDistance: 50,
   autoFocus: true,
+  autoTrigger: true,
   minWordLength: 2,
   minWordTriggerLength: 3,
   wordInsertionMode: "Ignore-Case & Replace" /* IGNORE_CASE_REPLACE */,
@@ -79917,8 +79918,10 @@ var SuggestionPopup = class extends import_obsidian4.EditorSuggest {
   open() {
     super.open();
     this.focused = this.settings.autoFocus;
-    for (const c of this.suggestions.containerEl.children)
-      c.removeClass("is-selected");
+    if (!this.focused) {
+      for (const c of this.suggestions.containerEl.children)
+        c.removeClass("is-selected");
+    }
   }
   close() {
     super.close();
@@ -79950,8 +79953,15 @@ var SuggestionPopup = class extends import_obsidian4.EditorSuggest {
     return suggestions.length === 0 ? null : suggestions.filter((s) => !SuggestionBlacklist.has(s));
   }
   onTrigger(cursor, editor, file) {
+    return this.internalOnTrigger(editor, cursor, !file);
+  }
+  internalOnTrigger(editor, cursor, manualTrigger) {
     if (this.justClosed) {
       this.justClosed = false;
+      return null;
+    }
+    if (!this.settings.autoTrigger && !manualTrigger) {
+      this.close();
       return null;
     }
     let {
@@ -80068,6 +80078,10 @@ var CompletrSettingsTab = class extends import_obsidian5.PluginSettingTab {
     }));
     new import_obsidian5.Setting(containerEl).setName("Auto focus").setDesc("Whether the popup is automatically focused once it opens.").addToggle((toggle) => toggle.setValue(this.plugin.settings.autoFocus).onChange(async (val) => {
       this.plugin.settings.autoFocus = val;
+      await this.plugin.saveSettings();
+    }));
+    new import_obsidian5.Setting(containerEl).setName("Auto trigger").setDesc("Whether the popup opens automatically when typing.").addToggle((toggle) => toggle.setValue(this.plugin.settings.autoTrigger).onChange(async (val) => {
+      this.plugin.settings.autoTrigger = val;
       await this.plugin.saveSettings();
     }));
     new import_obsidian5.Setting(containerEl).setName("Minimum word length").setDesc("The minimum length a word has to be, to count as a valid suggestion. This value is used by the file scanner and word list provider.").addText((text) => {
@@ -80283,13 +80297,14 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
       return !key || (key === context.vkey || !(!context.key || key.toLowerCase() !== context.key.toLowerCase()));
     };
     this.app.scope.register(null, null, (e, t) => {
+      var _a;
       const hotkeyManager = app.hotkeyManager;
       hotkeyManager.bake();
       for (let bakedHotkeys = hotkeyManager.bakedHotkeys, bakedIds = hotkeyManager.bakedIds, r = 0; r < bakedHotkeys.length; r++) {
         const hotkey = bakedHotkeys[r];
         const id = bakedIds[r];
         const command = app.commands.findCommand(id);
-        const isBypassCommand = command && command.isBypassCommand && command.isBypassCommand();
+        const isBypassCommand = (_a = command == null ? void 0 : command.isBypassCommand) == null ? void 0 : _a.call(command);
         if (isHotkeyMatch(hotkey, t, isBypassCommand)) {
           if (!command || e.repeat && !command.repeatable) {
             continue;
@@ -80323,7 +80338,7 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
         }
       ],
       editorCallback: (editor) => {
-        this._suggestionPopup.trigger(editor, this.app.workspace.getActiveFile(), true);
+        this._suggestionPopup.trigger(editor, null, true);
       },
       isVisible: () => !this._suggestionPopup.isVisible()
     });
@@ -80460,10 +80475,52 @@ var CompletrPlugin = class extends import_obsidian6.Plugin {
     });
     this.addCommand({
       id: "completr-fake-tab",
-      name: "Press Tab",
+      name: "(internal)",
       hotkeys: [
         {
           key: "Tab",
+          modifiers: []
+        }
+      ],
+      editorCallback: (_) => {
+      },
+      isBypassCommand: () => true,
+      isVisible: () => this._suggestionPopup.isVisible()
+    });
+    this.addCommand({
+      id: "completr-fake-enter",
+      name: "(internal)",
+      hotkeys: [
+        {
+          key: "Enter",
+          modifiers: []
+        }
+      ],
+      editorCallback: (_) => {
+      },
+      isBypassCommand: () => true,
+      isVisible: () => this._suggestionPopup.isVisible()
+    });
+    this.addCommand({
+      id: "completr-fake-arrow-up",
+      name: "(internal)",
+      hotkeys: [
+        {
+          key: "ArrowUp",
+          modifiers: []
+        }
+      ],
+      editorCallback: (_) => {
+      },
+      isBypassCommand: () => true,
+      isVisible: () => this._suggestionPopup.isVisible()
+    });
+    this.addCommand({
+      id: "completr-fake-arrow-down",
+      name: "(internal)",
+      hotkeys: [
+        {
+          key: "ArrowDown",
           modifiers: []
         }
       ],
