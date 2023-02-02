@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "354e7c9c76671c68",
+        "id": "41730d73a77df1b2",
         "type": "tabs",
         "children": [
           {
-            "id": "08b741b22336e627",
+            "id": "9137c3fc94a5d53e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第八章 向量代数和空间解析几何.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "欧拉公式",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,7 +96,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第八章 向量代数和空间解析几何.md"
+              }
             }
           },
           {
@@ -112,11 +118,20 @@
             }
           },
           {
+            "id": "39b1ffed45f7c26b",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
+          },
+          {
             "id": "90c56e3ca15685e0",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第八章 向量代数和空间解析几何.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,6 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第八章 向量代数和空间解析几何.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +159,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 250.5,
+    "width": 251.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -155,20 +171,21 @@
       "command-palette:Open command palette": false,
       "audio-recorder:Start/stop recording": false,
       "canvas:Create new canvas": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "08b741b22336e627",
+  "active": "9137c3fc94a5d53e",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/📝Examples/Example2.9.md",
-    "💡Inspiration/⌚Todo List.md",
-    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/9-16 The Application Concepts.md",
-    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/♎Important Conclusions and Lists/Potential Function & Stream Function.md",
-    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/♎Important Conclusions and Lists/Basic Aerodynamic Equations.md",
-    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/📝Examples/Example2.7.md",
-    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/📝Examples/Example2.8.md",
-    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/📝Examples/Example2.1.md",
-    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/2. 解析函数.md"
+    "🗒️Templates/CODE_BLOCK_INSERT.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第八章 向量代数和空间解析几何.md",
+    "🗒️Templates/ADMONITION_TIP_INSERT.md",
+    "🗒️Templates/CASED_EQUATION_INSERT.md",
+    "Excalidraw/第八章 向量代数和空间解析几何 2023-02-02 23.42.25.excalidraw.md",
+    "🗒️Templates/BIG_HEAD_1.md",
+    "🗒️Templates/BIG_HEAD_2.md",
+    "🗒️Templates/BIG_HEAD_4.md",
+    "🗒️Templates/BIG_HEAD_5.md",
+    "🗒️Templates/BIG_HEAD_6.md"
   ]
 }

@@ -17,5 +17,9 @@
   "simple-embeds",
   "calendar",
   "obsidian-tasks-plugin",
-  "obsidian-dictionary-plugin"
+  "obsidian-dictionary-plugin",
+  "templater-obsidian",
+  "obsidian-admonition",
+  "tag-wrangler",
+  "obsidian-day-planner"
 ]

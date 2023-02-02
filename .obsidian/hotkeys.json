@@ -1,32 +1,8 @@
 {
   "obsidian-excalidraw-plugin:insert-link-to-element": [],
-  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-popout": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "N"
-    }
-  ],
-  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-on-current": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "P"
-    }
-  ],
-  "obsidian-excalidraw-plugin:excalidraw-autocreate-on-current": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "M"
-    }
-  ],
+  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-popout": [],
+  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-on-current": [],
+  "obsidian-excalidraw-plugin:excalidraw-autocreate-on-current": [],
   "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed": [
     {
       "modifiers": [
@@ -42,7 +18,7 @@
         "Alt",
         "Shift"
       ],
-      "key": "Y"
+      "key": "N"
     }
   ],
   "obsidian-emoji-toolbar:emoji-picker:open-picker": [
@@ -124,6 +100,131 @@
     {
       "modifiers": [
         "Alt"
+      ],
+      "key": "R"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/MATH_EQUATION_INSERT.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "E"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/BOXED_MATH_EQUATION.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "Q"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/BIG_HEAD_1.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "1"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/BIG_HEAD_2.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "2"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/BIG_HEAD_3.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "3"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/BIG_HEAD_4.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "4"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/BIG_HEAD_5.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "5"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/BIG_HEAD_6.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "6"
+    }
+  ],
+  "obsidian-excalidraw-plugin:toggle-lock": [],
+  "templater-obsidian:🗒️Templates/CASED_EQUATION_INSERT.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "W"
+    }
+  ],
+  "workspace:close-window": [],
+  "workspace:close": [],
+  "workspace:next-tab": [],
+  "editor:open-link-in-new-leaf": [],
+  "templater-obsidian:replace-in-file-templater": [],
+  "templater-obsidian:insert-templater": [],
+  "insert-current-date": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "D"
+    }
+  ],
+  "insert-current-time": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "T"
+    }
+  ],
+  "workspace:undo-close-pane": [],
+  "templater-obsidian:🗒️Templates/CODE_BLOCK_INSERT.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/ADMONITION_TIP_INSERT.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
       ],
       "key": "R"
     }

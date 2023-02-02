@@ -1,0 +1,40 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "🗒️Templates",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": false,
+  "auto_jump_to_cursor": false,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "",
+      "template": ""
+    }
+  ],
+  "syntax_highlighting": true,
+  "enabled_templates_hotkeys": [
+    "🗒️Templates/MATH_EQUATION_INSERT.md",
+    "🗒️Templates/BOXED_MATH_EQUATION.md",
+    "🗒️Templates/BIG_HEAD_1.md",
+    "🗒️Templates/BIG_HEAD_2.md",
+    "🗒️Templates/BIG_HEAD_3.md",
+    "🗒️Templates/BIG_HEAD_4.md",
+    "🗒️Templates/BIG_HEAD_5.md",
+    "🗒️Templates/BIG_HEAD_6.md",
+    "🗒️Templates/CASED_EQUATION_INSERT.md",
+    "🗒️Templates/CODE_BLOCK_INSERT.md",
+    "🗒️Templates/ADMONITION_TIP_INSERT.md"
+  ],
+  "startup_templates": [
+    ""
+  ],
+  "enable_ribbon_icon": true
+}
