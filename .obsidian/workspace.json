@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 260.50152587890625
   },
   "right": {
     "id": "f7de553c162de521",
@@ -175,7 +174,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "9137c3fc94a5d53e",
+  "active": "e58ad6de2055b5f7",
   "lastOpenFiles": [
     "🗒️Templates/CODE_BLOCK_INSERT.md",
     "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第八章 向量代数和空间解析几何.md",
