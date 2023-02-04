@@ -31,7 +31,17 @@
     "🗒️Templates/BIG_HEAD_6.md",
     "🗒️Templates/CASED_EQUATION_INSERT.md",
     "🗒️Templates/CODE_BLOCK_INSERT.md",
-    "🗒️Templates/ADMONITION_TIP_INSERT.md"
+    "🗒️Templates/ADMONITION_TIP_INSERT.md",
+    "🗒️Templates/INSERT_DELTA_UPPERCASE.md",
+    "🗒️Templates/INSERT_VERPHI.md",
+    "🗒️Templates/INSERT_POINT_WITHOUT_ZERO.md",
+    "🗒️Templates/INSERT_POINT_WITH_ZERO.md",
+    "🗒️Templates/INSERT_PARTIAL_FRACTION.md",
+    "🗒️Templates/INSERT_ROUND_BEACKETS.md",
+    "🗒️Templates/INSERT_SQUARE_BRACKETS.md",
+    "🗒️Templates/INSERT_BIG_BRACKETS.md",
+    "🗒️Templates/INSERT_VERTICALBAR_BRACKETS.md",
+    "🗒️Templates/INSERT_ABSOLUTE_VALUE_BRACKETS.md"
   ],
   "startup_templates": [
     ""

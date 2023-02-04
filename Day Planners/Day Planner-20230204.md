@@ -1,0 +1,12 @@
+## Day Planner
+- [x] 09:00 English
+- [ ] 10:30 English Words
+- [ ] 12:45 Math arrangements
+- [ ] 13:20 BREAK, have lunch
+- [ ] 14:00 sleep
+- [ ] 16:30 elastic mechanics
+- [ ] 18:40 comsol
+- [ ] 19:00 BREAK
+- [ ] 19:30 dinner
+- [ ] 21: 30 material mechanics 
+- [ ] 24:00 plastic mechanics

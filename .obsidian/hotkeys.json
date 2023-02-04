@@ -228,5 +228,92 @@
       ],
       "key": "R"
     }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_DELTA_UPPERCASE.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "D"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_VERPHI.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "F"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_POINT_WITH_ZERO.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "0"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_POINT_WITHOUT_ZERO.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "9"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_PARTIAL_FRACTION.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_ABSOLUTE_VALUE_BRACKETS.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "\\"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_BIG_BRACKETS.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "["
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_ROUND_BEACKETS.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "9"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_SQUARE_BRACKETS.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "["
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_VERTICALBAR_BRACKETS.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "\\"
+    }
   ]
 }
