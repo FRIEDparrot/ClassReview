@@ -41,7 +41,14 @@
     "🗒️Templates/INSERT_SQUARE_BRACKETS.md",
     "🗒️Templates/INSERT_BIG_BRACKETS.md",
     "🗒️Templates/INSERT_VERTICALBAR_BRACKETS.md",
-    "🗒️Templates/INSERT_ABSOLUTE_VALUE_BRACKETS.md"
+    "🗒️Templates/INSERT_ABSOLUTE_VALUE_BRACKETS.md",
+    "🗒️Templates/INSERT_VAREPSILON_LOWERCASE.md",
+    "🗒️Templates/INSERT_NEIGHBORHOOD_SPACE.md",
+    "🗒️Templates/INSERT_SIGMA_LOWERCASE.md",
+    "🗒️Templates/INSERT_DELTA_LOWERCASE.md",
+    "🗒️Templates/INSERT_PHI_UPPERCASE.md",
+    "🗒️Templates/INSERT_SIGMA_UPPERCASE.md",
+    "🗒️Templates/INSERT_UNDERLINE_TEXT.md"
   ],
   "startup_templates": [
     ""

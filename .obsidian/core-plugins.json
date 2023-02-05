@@ -9,13 +9,13 @@
   "tag-pane",
   "page-preview",
   "daily-notes",
-  "templates",
   "note-composer",
   "command-palette",
   "editor-status",
   "starred",
+  "zk-prefixer",
   "outline",
-  "word-count",
   "audio-recorder",
+  "workspaces",
   "file-recovery"
 ]

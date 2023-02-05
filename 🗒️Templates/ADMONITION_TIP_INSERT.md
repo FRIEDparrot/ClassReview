@@ -1,2 +1,5 @@
-```ad-tip
-```
+`````ad-note
+title: 
+collapse: true
+
+`````

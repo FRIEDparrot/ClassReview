@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c92f10e3d72cab9b",
+        "id": "05c521377770e364",
         "type": "tabs",
         "children": [
           {
-            "id": "dd183b73efb78c9f",
+            "id": "81f408d02238e63b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/Ⓜ️ Markdown & Latex Tutorial/obsidian usage/basic grammar of Obsidian.md",
-                "mode": "preview",
+                "file": "📘ClassNotes/🗣️English/Word List3.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -33,7 +33,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e58ad6de2055b5f7",
+            "id": "86820ad5b67d3064",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "|---",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,12 +65,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 260.50152587890625
+    "width": 273.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -88,16 +87,6 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": false
-              }
-            }
-          },
-          {
-            "id": "a61d9285b1aaf4ad",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "📘ClassNotes/Ⓜ️ Markdown & Latex Tutorial/obsidian usage/basic grammar of Obsidian.md"
               }
             }
           },
@@ -131,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/Ⓜ️ Markdown & Latex Tutorial/obsidian usage/basic grammar of Obsidian.md",
+                "file": "📘ClassNotes/🗣️English/Word List3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,49 +132,59 @@
             }
           },
           {
-            "id": "a00d19e8cc876772",
+            "id": "7778856753ec014b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "📘ClassNotes/🗣️English/Word List3.md"
+              }
+            }
+          },
+          {
+            "id": "45988039c8b25193",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/Ⓜ️ Markdown & Latex Tutorial/obsidian usage/basic grammar of Obsidian.md",
+                "file": "📘ClassNotes/🗣️English/Word List3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 225.5,
-    "collapsed": true
+    "width": 299.5
   },
   "left-ribbon": {
     "hiddenItems": {
       "graph:Open graph view": false,
       "switcher:Open quick switcher": false,
       "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "audio-recorder:Start/stop recording": false,
       "canvas:Create new canvas": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "zk-prefixer:Create new unique note": false,
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "dd183b73efb78c9f",
+  "active": "81f408d02238e63b",
   "lastOpenFiles": [
-    "📘ClassNotes/Ⓜ️ Markdown & Latex Tutorial/obsidian usage/plugins/admonition.md",
-    "📘ClassNotes/Ⓜ️ Markdown & Latex Tutorial/obsidian usage/plugins/🦊Test1.md",
-    "📘ClassNotes/Ⓜ️ Markdown & Latex Tutorial/Markdown Tutorial/Markdown documentation.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第九章 多元函数的微分法及应用.md",
-    "🗒️Templates/INSERT_ROUND_BEACKETS.md",
-    "🗒️Templates/INSERT_SQUARE_BRACKETS.md",
-    "🗒️Templates/INSERT_BIG_BRACKETS.md",
-    "🗒️Templates/INSERT_VERTICALBAR_BRACKETS.md",
-    "🗒️Templates/INSERT_ABSOLUTE_VALUE_BRACKETS.md",
-    "🗒️Templates/INSERT_PARTIAL_FRACTION.md"
+    "🗒️Templates/INSERT_UNDERLINE_TEXT.md",
+    "📘ClassNotes/🗣️English/Word List3.md",
+    "📘ClassNotes/🗣️English/Word List4.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/弹性力学基本问题思维导图.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第一章：绪论/1. 基本假定与研究方法.md",
+    "Excalidraw/1.应力基本概念,边界条件和坐标转换 2023-02-05 01.55.53.excalidraw.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第四章 扭转.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第三章 剪切, 挤压.md",
+    "Excalidraw/第三章 剪切, 挤压 2023-02-05 01.27.45.excalidraw.md"
   ]
 }

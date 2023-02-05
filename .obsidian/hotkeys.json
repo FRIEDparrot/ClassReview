@@ -54,15 +54,6 @@
       "key": "["
     }
   ],
-  "obsidian-excalidraw-plugin:insert-LaTeX-symbol": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "E"
-    }
-  ],
   "obsidian-latex-environments:insert-latex-env": [
     {
       "modifiers": [
@@ -241,8 +232,7 @@
   "templater-obsidian:🗒️Templates/INSERT_VERPHI.md": [
     {
       "modifiers": [
-        "Alt",
-        "Shift"
+        "Alt"
       ],
       "key": "F"
     }
@@ -314,6 +304,75 @@
         "Alt"
       ],
       "key": "\\"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_VAREPSILON_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "E"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_NEIGHBORHOOD_SPACE.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "U"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_SIGMA_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "S"
+    }
+  ],
+  "obsidian-excalidraw-plugin:insert-LaTeX-symbol": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "L"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_DELTA_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "D"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_PHI_UPPERCASE.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "F"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_SIGMA_UPPERCASE.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "S"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_UNDERLINE_TEXT.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "U"
     }
   ]
 }

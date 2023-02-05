@@ -1,1 +1,1 @@
-\varphi 
+\varphi
