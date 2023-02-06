@@ -1,5 +1,5 @@
 `````ad-note
 title: 
-collapse: true
+collapse: open
 
 `````

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "05c521377770e364",
+        "id": "65008a3012c1a84d",
         "type": "tabs",
         "children": [
           {
-            "id": "81f408d02238e63b",
+            "id": "b283d712ac3d571a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word List3.md",
+                "file": "💡Inspiration/⌚Todo List.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 273.5
+    "width": 200
   },
   "right": {
     "id": "f7de553c162de521",
@@ -120,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word List3.md",
+                "file": "💡Inspiration/⌚Todo List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word List3.md"
+                "file": "💡Inspiration/⌚Todo List.md"
               }
             }
           },
@@ -147,18 +147,19 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word List3.md",
+                "file": "💡Inspiration/⌚Todo List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 299.5
+    "width": 288.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -174,17 +175,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "81f408d02238e63b",
+  "active": "b283d712ac3d571a",
   "lastOpenFiles": [
-    "🗒️Templates/INSERT_UNDERLINE_TEXT.md",
-    "📘ClassNotes/🗣️English/Word List3.md",
-    "📘ClassNotes/🗣️English/Word List4.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/弹性力学基本问题思维导图.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第一章：绪论/1. 基本假定与研究方法.md",
-    "Excalidraw/1.应力基本概念,边界条件和坐标转换 2023-02-05 01.55.53.excalidraw.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第四章 扭转.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第三章 剪切, 挤压.md",
-    "Excalidraw/第三章 剪切, 挤压 2023-02-05 01.27.45.excalidraw.md"
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十一章 曲线积分和曲面积分.md",
+    "🗒️Templates/ADMONITION_TIP_INSERT.md",
+    "🗒️Templates/THREE_DIMENSION_POINT.md",
+    "🗒️Templates/THREE_DIMENSION_VARIBLES.md",
+    "🗒️Templates/CLOSED_SURFACE_INTEGRAL.md",
+    "🗒️Templates/CLOSED_VOLUME_INTEGRAL.md",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md",
+    "Excalidraw/第十一章 曲线积分和曲面积分 2023-02-06 00.41.49.excalidraw.md",
+    "Excalidraw/第十一章 曲线积分和曲面积分 2023-02-05 23.24.04.excalidraw.md",
+    "Excalidraw/第十一章 曲线积分和曲面积分 2023-02-05 21.39.26.excalidraw.md"
   ]
 }

@@ -48,7 +48,17 @@
     "🗒️Templates/INSERT_DELTA_LOWERCASE.md",
     "🗒️Templates/INSERT_PHI_UPPERCASE.md",
     "🗒️Templates/INSERT_SIGMA_UPPERCASE.md",
-    "🗒️Templates/INSERT_UNDERLINE_TEXT.md"
+    "🗒️Templates/INSERT_UNDERLINE_TEXT.md",
+    "🗒️Templates/INSERT_SINE_SIGNAL.md",
+    "🗒️Templates/INSERT_COSINE_SIGNAL.md",
+    "🗒️Templates/INSERT_OMEGA_LOWERCASE.md",
+    "🗒️Templates/INSERT_OMEGA_UPPERCASE.md",
+    "🗒️Templates/INSERT_PSI_LOWERCASE.md",
+    "🗒️Templates/INSERT_TAU_LOWERCASE.md",
+    "🗒️Templates/CLOSED_SURFACE_INTEGRAL.md",
+    "🗒️Templates/CLOSED_VOLUME_INTEGRAL.md",
+    "🗒️Templates/THREE_DIMENSION_POINT.md",
+    "🗒️Templates/THREE_DIMENSION_VARIBLES.md"
   ],
   "startup_templates": [
     ""

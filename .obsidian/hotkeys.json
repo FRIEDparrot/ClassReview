@@ -374,5 +374,91 @@
       ],
       "key": "U"
     }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_COSINE_SIGNAL.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "C"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_SINE_SIGNAL.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "X"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_OMEGA_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "W"
+    }
+  ],
+  "editor:insert-embed": [],
+  "templater-obsidian:🗒️Templates/INSERT_OMEGA_UPPERCASE.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "W"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_PSI_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "P"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_TAU_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "A"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/CLOSED_SURFACE_INTEGRAL.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "2"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/CLOSED_VOLUME_INTEGRAL.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "3"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/THREE_DIMENSION_POINT.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "8"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/THREE_DIMENSION_VARIBLES.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "7"
+    }
   ]
 }

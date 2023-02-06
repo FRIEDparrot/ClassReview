@@ -1,6 +1,8 @@
 {
   "characterRegex": "a-zA-ZöäüÖÄÜß",
   "maxLookBackDistance": 50,
+  "autoFocus": true,
+  "autoTrigger": true,
   "minWordLength": 2,
   "minWordTriggerLength": 3,
   "wordInsertionMode": "Ignore-Case & Replace",
@@ -14,5 +16,6 @@
   "wordListProviderEnabled": false,
   "frontMatterProviderEnabled": true,
   "frontMatterTagAppendSuffix": true,
-  "frontMatterIgnoreCase": true
+  "frontMatterIgnoreCase": true,
+  "calloutProviderEnabled": false
 }
