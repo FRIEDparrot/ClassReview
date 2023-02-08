@@ -18,7 +18,7 @@ thus:
 and finally we have: 
 $$x_i^{k+1} = \left( \frac{2pe_i}{\lambda \nu _i}\right)^{k} \qquad  i = 1,2,... N $$
 lambda can be obtained by a bisectional algorithm
-also,considering the upper and the lower limits of the design variable $x_i$and the optimization convergence,
+also, considering the upper and the lower limits of the design variable $x_i$and the optimization convergence,
 $$x_i^{(k+1)} = \begin{cases}
 \alpha (\frac{2pe_i}{\lambda \nu_i})^{(k)} + (1-\alpha) x_j^{(k)} ,  \qquad  x_{min} < x_i < x_{max} \\
 x_{min} ,  \qquad  x_j \leq x_{min} \\
@@ -31,7 +31,7 @@ x_{max}, \qquad    x_j \geq x_{max}
 2. RAMP interpolation model
 According to the variable density model, the RAMP interpolation model is defined as :
 $$k_i = \frac{x_i}{1 + q(1-x_i)} k_{i0}$$
-where $q$ is the weight coefficient off the RAMP  interpolation model 
+where $q$ is the weight coefficient of the RAMP  interpolation model 
 hence the weight coefficient of the RAMP interpolation model is defined as :
 
 $$f(x_i) = c_i = \frac{x_i}{1+ q(1-x_i)} u_i^T k_{i0} u_i$$
@@ -39,7 +39,6 @@ $$\frac{\partial C}{\partial x_i} = -U^T\frac{\partial K}{\partial x_i}U = \frac
 and if we substitute it into the equation (11), and the iteration formula is: 
 $$x_i^{(k+1)} = \left(\frac{2(1+q)e_i}{\lambda \nu_i(1 + q(1-x_i))} \right)^{(k)} $$
 *iterative criterion of improved guide-weight method*
-
 
 ---
 $$R(x) = -\frac{q}{1 + q} x_i  + 1$$

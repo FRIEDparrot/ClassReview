@@ -2,25 +2,23 @@
 [[Density based topology optimization.pdf]]
 ### 1. Introduction
 1. General influence factor of the convectional heat exchanger
-
-	forced convection is widely applied in the cooling electronic devices, and in this case the performance depends on 
-
-	-  amount of conductive material 
-	-  distribution of the material
+forced convection is widely applied in the cooling electronic devices, and in this case the performance depends on 
+-  amount of conductive material 
+-  distribution of the material
 2. we can also optimize the performance by
-	- change the number and the position of the fins
-	- optimizing their shape 
-	- changing completely in a non-uniform way the distribution of the conductive material
+- change the number and the position of the fins
+- optimizing their shape 
+- changing completely in a non-uniform way the distribution of the conductive material
 3. The trial of the topology optimization
-	- frozen turbulence assumption(2008).
-	- Spalart - Allmaras (SA) turbulent model(1 eq).
-	- 1-eq k-omega  model . 
-	- Reynolds-averaged Navier-Stokes(RANS) eqs.
-	- 2-eq k-omega model .
+- frozen turbulence assumption(2008).
+- Spalart - Allmaras (SA) turbulent model(1 eq).
+- 1-eq k-omega  model . 
+- Reynolds-averaged Navier-Stokes(RANS) eqs.
+- 2-eq k-omega model .
 
 ### 2. Governing Equations
 
-1. steady-state incompressible RANS eqs
+##### 1. steady-state incompressible RANS eqs
 
 $$\begin{matrix}
 \nabla \cdot \boldsymbol{u} = 0 \tag{1} \\
@@ -81,12 +79,11 @@ $$\sigma_d= \begin{cases}
 0  \qquad \text{when }\nabla k \cdot \nabla \omega < 0
 \end{cases}$$
 where $\Omega$ is the mean vorticity tensor, is defined as: 
-	$$\Omega  = \frac{1}{2}(\nabla \boldsymbol{u} - \nabla\boldsymbol{ u^T})$$
+$$\Omega  = \frac{1}{2}(\nabla \boldsymbol{u} - \nabla\boldsymbol{ u^T})$$
 the $\chi_\omega$ is the closure function.
 note that $\chi_\omega = 0$ for 2-D flows
 
-2. boundary conditions and expressions
-
+##### 2. boundary conditions and expressions
 $$\begin{matrix}
 k_b = 0 \\ \text{the boundary condition of turbulent kinetic energy}
 \end{matrix}$$
@@ -104,7 +101,7 @@ in the penalization process, both k and omega are penalized to their boundary co
 
 
 ### 3. heat transfer
-1. conjugate heat transfer equation
+##### 1. conjugate heat transfer equation
 
 the  temperature variations in the fluid and solid regions are captured using the conjugate heat transfer eq: 
 
@@ -123,7 +120,7 @@ where $Pr$ and $Pr_{t}$ are laminar and turbulent Prandtl numbers
 $K_s$ is thermal conductivity , $c_s$ is specific heat capacity
 
 
-2. discretization
+##### 2. discretization
 
 The system of PDEs is discretized using the finite volume method.
 The discrete set of the algebraic equations is solved using a segregated approach for the pressure-velocity coupling. 
@@ -131,8 +128,7 @@ The SIMPLE algorithm is used in the solution
 
 the solutions for the fluid velocity and the pressure are obtained from the discrete RANS set of eqs.
 
-3. topology optimization
-
+##### 3. topology optimization
 The topology optimization target:
 $$\begin{matrix}
 \underset{\gamma}{min}\quad\mathcal{C}(\gamma,U(\gamma),T(\gamma))\\ \\

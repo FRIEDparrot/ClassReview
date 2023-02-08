@@ -58,7 +58,26 @@
     "🗒️Templates/CLOSED_SURFACE_INTEGRAL.md",
     "🗒️Templates/CLOSED_VOLUME_INTEGRAL.md",
     "🗒️Templates/THREE_DIMENSION_POINT.md",
-    "🗒️Templates/THREE_DIMENSION_VARIBLES.md"
+    "🗒️Templates/THREE_DIMENSION_VARIBLES.md",
+    "🗒️Templates/INSERT_THETA_LOWERCASE.md",
+    "🗒️Templates/INSERT_GAMMA_LOWERCASE.md",
+    "🗒️Templates/INSERT_GAMMA_UPPERCASE.md",
+    "🗒️Templates/ADD_SUBSCRIPT.md",
+    "🗒️Templates/ADD_SUPERSCRIPT.md",
+    "🗒️Templates/INSERT_ALPHA_LOWERCASE.md",
+    "🗒️Templates/INSERT_BETA_LOWERCASE.md",
+    "🗒️Templates/INSERT_MIXED_PARTIAL_DERIVATE.md",
+    "🗒️Templates/INSERT_TANGENT_SIGNAL.md",
+    "🗒️Templates/INSERT_MU_LOWERCASE.md",
+    "🗒️Templates/INSERT_NU_LOWERCASE.md",
+    "🗒️Templates/INSERT_ETA_LOWERCASE.md",
+    "🗒️Templates/INSERT_ZETA_LOWERCASE.md",
+    "🗒️Templates/INSERT_LAMBDA_LOWERCASE.md",
+    "🗒️Templates/INSERT_KAPPA_LOWERCASE.md",
+    "🗒️Templates/INSERT_BAR_BEACKERTS.md",
+    "🗒️Templates/INSERT_RHO_LOWERCASE.md",
+    "🗒️Templates/INSERT_FRACTION.md",
+    "🗒️Templates/INSERT_XI_LOWERCASE.md"
   ],
   "startup_templates": [
     ""

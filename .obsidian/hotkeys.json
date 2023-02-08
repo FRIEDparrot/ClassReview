@@ -7,24 +7,18 @@
     {
       "modifiers": [
         "Alt",
+        "Mod",
         "Shift"
       ],
-      "key": "T"
+      "key": "D"
     }
   ],
-  "obsidian-excalidraw-plugin:excalidraw-autocreate": [
+  "obsidian-excalidraw-plugin:excalidraw-autocreate": [],
+  "obsidian-emoji-toolbar:emoji-picker:open-picker": [
     {
       "modifiers": [
         "Alt",
         "Shift"
-      ],
-      "key": "N"
-    }
-  ],
-  "obsidian-emoji-toolbar:emoji-picker:open-picker": [
-    {
-      "modifiers": [
-        "Alt"
       ],
       "key": "E"
     }
@@ -82,7 +76,9 @@
   "obsidian-tasks-plugin:edit-task": [
     {
       "modifiers": [
-        "Alt"
+        "Alt",
+        "Mod",
+        "Shift"
       ],
       "key": "T"
     }
@@ -90,7 +86,9 @@
   "obsidian-tasks-plugin:toggle-done": [
     {
       "modifiers": [
-        "Alt"
+        "Alt",
+        "Mod",
+        "Shift"
       ],
       "key": "R"
     }
@@ -309,8 +307,7 @@
   "templater-obsidian:🗒️Templates/INSERT_VAREPSILON_LOWERCASE.md": [
     {
       "modifiers": [
-        "Alt",
-        "Shift"
+        "Alt"
       ],
       "key": "E"
     }
@@ -352,6 +349,7 @@
     {
       "modifiers": [
         "Alt",
+        "Mod",
         "Shift"
       ],
       "key": "F"
@@ -378,7 +376,8 @@
   "templater-obsidian:🗒️Templates/INSERT_COSINE_SIGNAL.md": [
     {
       "modifiers": [
-        "Alt"
+        "Alt",
+        "Shift"
       ],
       "key": "C"
     }
@@ -386,7 +385,8 @@
   "templater-obsidian:🗒️Templates/INSERT_SINE_SIGNAL.md": [
     {
       "modifiers": [
-        "Alt"
+        "Alt",
+        "Shift"
       ],
       "key": "X"
     }
@@ -399,7 +399,6 @@
       "key": "W"
     }
   ],
-  "editor:insert-embed": [],
   "templater-obsidian:🗒️Templates/INSERT_OMEGA_UPPERCASE.md": [
     {
       "modifiers": [
@@ -422,7 +421,7 @@
       "modifiers": [
         "Alt"
       ],
-      "key": "A"
+      "key": "T"
     }
   ],
   "templater-obsidian:🗒️Templates/CLOSED_SURFACE_INTEGRAL.md": [
@@ -459,6 +458,159 @@
         "Shift"
       ],
       "key": "7"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_THETA_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "T"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/ADD_SUPERSCRIPT.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "6"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_ALPHA_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "A"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_BETA_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "B"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_GAMMA_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "G"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_GAMMA_UPPERCASE.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "G"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_MIXED_PARTIAL_DERIVATE.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/ADD_SUBSCRIPT.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "-"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_KAPPA_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "K"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_LAMBDA_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "L"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_MU_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "M"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_NU_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "N"
+    }
+  ],
+  "templater-obsidian:create-new-note-from-template": [],
+  "templater-obsidian:🗒️Templates/INSERT_ETA_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "Z"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_TANGENT_SIGNAL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "V"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_ZETA_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "Z"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_BAR_BEACKERTS.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "B"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_RHO_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "R"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_FRACTION.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "F"
     }
   ]
 }

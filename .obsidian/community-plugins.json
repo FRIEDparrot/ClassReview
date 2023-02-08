@@ -23,5 +23,7 @@
   "obsidian-day-planner",
   "obsidian-plugin-toc",
   "obsidian-sortable",
-  "obsidian-dynamic-background"
+  "obsidian-dynamic-background",
+  "table-editor-obsidian",
+  "obsidian-excel-to-markdown-table"
 ]
