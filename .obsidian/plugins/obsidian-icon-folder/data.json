@@ -3,9 +3,13 @@
     "migrated": true,
     "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
     "fontSize": 16,
-    "emojiStyle": "none",
-    "iconColor": null,
-    "recentlyUsedIcons": [],
+    "emojiStyle": "native",
+    "iconColor": "#4d4c4c",
+    "recentlyUsedIcons": [
+      "SiMarkdown",
+      "FabGithub",
+      "FabApple"
+    ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
     "extraMargin": {
@@ -14,5 +18,9 @@
       "bottom": 0,
       "left": 0
     }
-  }
+  },
+  "Day Planners/Day Planner-20230203.md": "FabApple",
+  "📘ClassNotes/others/Git/oftenly-used commands.md": "FabApple",
+  "📘ClassNotes/others/Git": "FabGithub",
+  "📘ClassNotes/Markdown & Latex Tutorial": "SiMarkdown"
 }

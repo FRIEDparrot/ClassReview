@@ -73,11 +73,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 260.5
+    "width": 260.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -189,20 +191,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
-      "random-note:Open random note": false
+      "random-note:Open random note": false,
+      "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "7857d839929f2378",
+  "active": "db0ad0041a71350b",
   "lastOpenFiles": [
-    "🧊Minecraft/redstone/Filter.md",
+    "🗒️Templates/INSERT_SQUARE_ROOT_EQUATION.md",
     "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/2. 弹性力学的边值问题提法.md",
-    "📘ClassNotes/Ⓜ️ Markdown & Latex Tutorial/obsidian usage/plugins/BiliBili Plugin.md",
-    "📘ClassNotes/Ⓜ️ Markdown & Latex Tutorial/obsidian usage/plugins/admonition.md",
-    "🧊Minecraft/redstone/No-delay Screen Clear.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/1-4章弹性力学基本问题思维导图.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/3.  梁的纯弯曲问题的塑性力学解.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/3. 柱体的扭转, 厚壁球壳.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/4. 全量型本构关系.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/第三章重要公式整理和思维导图.md"
+    "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/plugins/Pandoc.md",
+    "🗒️Templates/INSERT_PHI_LOWERCASE.md",
+    "🗒️Templates/ADD_TAG_AFTER_EQUATION.md",
+    "🗒️Templates/ADD_TEXT_IN_EQUATION.md",
+    "🗒️Templates/ADD_QUAD_INTERVAL.md",
+    "🗒️Templates/ADD_QQUAD_INTERVAL.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📙课本例题/例题4.1.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📝作业题/6-10/第6次作业2.pdf"
   ]
 }

@@ -5,16 +5,52 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/2. 弹性力学的边值问题提法.md"
     },
     {
+      "basename": "INSERT_SQUARE_ROOT_EQUATION",
+      "path": "🗒️Templates/INSERT_SQUARE_ROOT_EQUATION.md"
+    },
+    {
+      "basename": "Pandoc",
+      "path": "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/plugins/Pandoc.md"
+    },
+    {
+      "basename": "INSERT_PHI_LOWERCASE",
+      "path": "🗒️Templates/INSERT_PHI_LOWERCASE.md"
+    },
+    {
+      "basename": "ADD_TAG_AFTER_EQUATION",
+      "path": "🗒️Templates/ADD_TAG_AFTER_EQUATION.md"
+    },
+    {
+      "basename": "ADD_TEXT_IN_EQUATION",
+      "path": "🗒️Templates/ADD_TEXT_IN_EQUATION.md"
+    },
+    {
+      "basename": "ADD_QUAD_INTERVAL",
+      "path": "🗒️Templates/ADD_QUAD_INTERVAL.md"
+    },
+    {
+      "basename": "ADD_QQUAD_INTERVAL",
+      "path": "🗒️Templates/ADD_QQUAD_INTERVAL.md"
+    },
+    {
+      "basename": "例题4.1",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📙课本例题/例题4.1.pdf"
+    },
+    {
+      "basename": "第6次作业2",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📝作业题/6-10/第6次作业2.pdf"
+    },
+    {
       "basename": "Filter",
       "path": "🧊Minecraft/redstone/Filter.md"
     },
     {
       "basename": "BiliBili Plugin",
-      "path": "📘ClassNotes/Ⓜ️ Markdown & Latex Tutorial/obsidian usage/plugins/BiliBili Plugin.md"
+      "path": "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/plugins/BiliBili Plugin.md"
     },
     {
       "basename": "admonition",
-      "path": "📘ClassNotes/Ⓜ️ Markdown & Latex Tutorial/obsidian usage/plugins/admonition.md"
+      "path": "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/plugins/admonition.md"
     }
   ],
   "omittedPaths": [],

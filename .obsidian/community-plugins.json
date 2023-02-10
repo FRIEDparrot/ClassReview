@@ -27,5 +27,8 @@
   "obsidian-citation-plugin",
   "highlightr-plugin",
   "media-extended",
-  "mx-bili-plugin"
+  "mx-bili-plugin",
+  "obsidian-sortable",
+  "table-extended",
+  "obsidian-advanced-uri"
 ]

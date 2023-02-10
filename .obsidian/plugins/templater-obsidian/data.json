@@ -77,7 +77,15 @@
     "🗒️Templates/INSERT_BAR_BEACKERTS.md",
     "🗒️Templates/INSERT_RHO_LOWERCASE.md",
     "🗒️Templates/INSERT_FRACTION.md",
-    "🗒️Templates/INSERT_XI_LOWERCASE.md"
+    "🗒️Templates/INSERT_XI_LOWERCASE.md",
+    "🗒️Templates/INSERT_INTEGRAL_SIGNAL.md",
+    "🗒️Templates/INSERT_INTEGRAL_WITH_SCRIPT.md",
+    "🗒️Templates/ADD_QUAD_INTERVAL.md",
+    "🗒️Templates/ADD_QQUAD_INTERVAL.md",
+    "🗒️Templates/ADD_TAG_AFTER_EQUATION.md",
+    "🗒️Templates/ADD_TEXT_IN_EQUATION.md",
+    "🗒️Templates/INSERT_PHI_LOWERCASE.md",
+    "🗒️Templates/INSERT_SQUARE_ROOT_EQUATION.md"
   ],
   "startup_templates": [
     ""

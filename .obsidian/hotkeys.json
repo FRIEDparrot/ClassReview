@@ -580,9 +580,10 @@
   "templater-obsidian:🗒️Templates/CODE_BLOCK_INSERT.md": [
     {
       "modifiers": [
-        "Alt"
+        "Alt",
+        "Shift"
       ],
-      "key": "C"
+      "key": "Enter"
     }
   ],
   "templater-obsidian:🗒️Templates/INSERT_ZETA_LOWERCASE.md": [
@@ -632,5 +633,72 @@
       "key": "E"
     }
   ],
-  "templater-obsidian:create-new-note-from-template": []
+  "templater-obsidian:create-new-note-from-template": [],
+  "obsidian-citation-plugin:update-bib-data": [],
+  "workspace:close": [],
+  "table-editor-obsidian:next-row": [],
+  "templater-obsidian:🗒️Templates/ADD_QQUAD_INTERVAL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "Q"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/ADD_QUAD_INTERVAL.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "Q"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/ADD_TAG_AFTER_EQUATION.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "T"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/ADD_TEXT_IN_EQUATION.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "workspace:undo-close-pane": [],
+  "obsidian-citation-plugin:insert-citation": [],
+  "templater-obsidian:insert-templater": [],
+  "templater-obsidian:replace-in-file-templater": [],
+  "templater-obsidian:🗒️Templates/INSERT_PHI_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "F"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_SQUARE_ROOT_EQUATION.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "S"
+    },
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "S"
+    }
+  ]
 }
