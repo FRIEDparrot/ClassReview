@@ -18,6 +18,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2b330da26022a9cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧊Minecraft/redstone/Filter.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -186,15 +198,15 @@
   },
   "active": "7857d839929f2378",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/1-4章弹性力学基本问题思维导图.md",
+    "🧊Minecraft/redstone/No-delay Screen Clear.md",
+    "🧊Minecraft/redstone/Filter.md",
     "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/2. 弹性力学的边值问题提法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/1-4章弹性力学基本问题思维导图.md",
     "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/3.  梁的纯弯曲问题的塑性力学解.md",
     "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/3. 柱体的扭转, 厚壁球壳.md",
     "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/4. 全量型本构关系.md",
     "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/第三章重要公式整理和思维导图.md",
     "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/作业题/6-10/第6次作业1.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.md",
-    "2.  梁的纯弯曲问题的塑性力学解 2023-02-10 20.28.47.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第一章：绪论/1. 基本任务，基本假设.md"
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.md"
   ]
 }
