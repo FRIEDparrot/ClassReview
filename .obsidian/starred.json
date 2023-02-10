@@ -2,13 +2,13 @@
   "items": [
     {
       "type": "file",
-      "title": "1-4 ~ 1-5",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/习题/第一章习题/1-4 ~ 1-5.md"
+      "title": "3. 对塑性屈服条件的分析",
+      "path": "ClassNotes/力学内容/塑性力学/第一章：绪论/3. 对塑性屈服条件的分析.md"
     },
     {
       "type": "file",
-      "title": "第3次作业2",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/作业题/第3次作业2.md"
+      "title": "第十二次习题课作业",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📝作业题/6-10/第十二次习题课作业.pdf"
     }
   ]
 }
