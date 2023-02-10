@@ -2,7 +2,11 @@
   "commitMessage": "vault backup: {{date}}",
   "autoCommitMessage": "vault backup: {{date}}",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
+<<<<<<< Updated upstream
   "autoSaveInterval": 15,
+=======
+  "autoSaveInterval": 30,
+>>>>>>> Stashed changes
   "autoPushInterval": 0,
   "autoPullInterval": 0,
   "autoPullOnBoot": false,

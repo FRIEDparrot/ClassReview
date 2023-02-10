@@ -4,6 +4,7 @@
     "type": "split",
     "children": [
       {
+<<<<<<< Updated upstream
         "id": "38d9026cec3a0054",
         "type": "tabs",
         "children": [
@@ -29,10 +30,20 @@
                 "mode": "source",
                 "source": false
               }
+=======
+        "id": "69c6dbd6c975cb81",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "57d517c70227945e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+>>>>>>> Stashed changes
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -133,7 +144,10 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< Updated upstream
                 "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/2.  梁的纯弯曲问题的塑性力学解.md",
+=======
+>>>>>>> Stashed changes
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +164,10 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< Updated upstream
                 "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/2.  梁的纯弯曲问题的塑性力学解.md",
+=======
+>>>>>>> Stashed changes
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,9 +186,13 @@
             "type": "leaf",
             "state": {
               "type": "outline",
+<<<<<<< Updated upstream
               "state": {
                 "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/2.  梁的纯弯曲问题的塑性力学解.md"
               }
+=======
+              "state": {}
+>>>>>>> Stashed changes
             }
           }
         ],
@@ -195,6 +216,7 @@
       "zk-prefixer:Create new unique note": false,
       "workspaces:Manage workspace layouts": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
+<<<<<<< Updated upstream
       "random-note:Open random note": false
     }
   },
@@ -210,5 +232,23 @@
     "🗒️Templates/INSERT_ZETA_LOWERCASE.md",
     "🗒️Templates/INSERT_LAMBDA_LOWERCASE.md",
     "🗒️Templates/INSERT_KAPPA_LOWERCASE.md"
+=======
+      "templater-obsidian:Templater": false,
+      "random-note:Open random note": false
+    }
+  },
+  "active": "86820ad5b67d3064",
+  "lastOpenFiles": [
+    "🗒️Templates/INSERT_INTEGRAL_SIGNAL.md",
+    "🗒️Templates/ADD_SUBSCRIPT.md",
+    "🗒️Templates/INSERT_INTEGRAL_WITH_SCRIPT.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/2.  梁的纯弯曲问题的塑性力学解.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/1. 弹塑性理论复习.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/2. 梁的纯弯曲问题的塑性力学解.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/2. 简单的弹塑性问题.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📙课本例题/例题4.1.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📙课本例题/Untitled.md"
+>>>>>>> Stashed changes
   ]
 }
