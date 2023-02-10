@@ -4,43 +4,19 @@
     "type": "split",
     "children": [
       {
-<<<<<<< Updated upstream
-        "id": "38d9026cec3a0054",
+        "id": "819a2f1edf59764a",
         "type": "tabs",
         "children": [
           {
-            "id": "8ca89cdbb1e9fdd9",
+            "id": "7857d839929f2378",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/1. 弹塑性理论复习.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/2. 弹性力学的边值问题提法.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "d20ed503e7e86510",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/2.  梁的纯弯曲问题的塑性力学解.md",
-                "mode": "source",
-                "source": false
-              }
-=======
-        "id": "69c6dbd6c975cb81",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "57d517c70227945e",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
->>>>>>> Stashed changes
             }
           }
         ]
@@ -110,7 +86,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": false
+                "useHierarchy": true
               }
             }
           },
@@ -144,10 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< Updated upstream
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/2.  梁的纯弯曲问题的塑性力学解.md",
-=======
->>>>>>> Stashed changes
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/2. 弹性力学的边值问题提法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,10 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< Updated upstream
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/2.  梁的纯弯曲问题的塑性力学解.md",
-=======
->>>>>>> Stashed changes
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/2. 弹性力学的边值问题提法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,17 +156,13 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-<<<<<<< Updated upstream
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/2.  梁的纯弯曲问题的塑性力学解.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/2. 弹性力学的边值问题提法.md"
               }
-=======
-              "state": {}
->>>>>>> Stashed changes
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -211,44 +177,24 @@
       "command-palette:Open command palette": false,
       "audio-recorder:Start/stop recording": false,
       "canvas:Create new canvas": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "templater-obsidian:Templater": false,
-      "zk-prefixer:Create new unique note": false,
       "workspaces:Manage workspace layouts": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-<<<<<<< Updated upstream
-      "random-note:Open random note": false
-    }
-  },
-  "active": "d20ed503e7e86510",
-  "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/1. 弹塑性理论复习.md",
-    "🗒️Templates/INSERT_FRACTION.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/2.  梁的纯弯曲问题的塑性力学解.md",
-    "🗒️Templates/INSERT_XI_LOWERCASE.md",
-    "🗒️Templates/INSERT_RHO_LOWERCASE.md",
-    "🗒️Templates/INSERT_BAR_BEACKERTS.md",
-    "🗒️Templates/INSERT_ETA_LOWERCASE.md",
-    "🗒️Templates/INSERT_ZETA_LOWERCASE.md",
-    "🗒️Templates/INSERT_LAMBDA_LOWERCASE.md",
-    "🗒️Templates/INSERT_KAPPA_LOWERCASE.md"
-=======
       "templater-obsidian:Templater": false,
       "random-note:Open random note": false
     }
   },
-  "active": "86820ad5b67d3064",
+  "active": "7857d839929f2378",
   "lastOpenFiles": [
-    "🗒️Templates/INSERT_INTEGRAL_SIGNAL.md",
-    "🗒️Templates/ADD_SUBSCRIPT.md",
-    "🗒️Templates/INSERT_INTEGRAL_WITH_SCRIPT.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/2.  梁的纯弯曲问题的塑性力学解.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/1. 弹塑性理论复习.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/2. 梁的纯弯曲问题的塑性力学解.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/2. 简单的弹塑性问题.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/3.  梁的纯弯曲问题的塑性力学解.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/3. 柱体的扭转, 厚壁球壳.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/4. 全量型本构关系.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/第三章重要公式整理和思维导图.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/作业题/6-10/第6次作业1.md",
     "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📙课本例题/例题4.1.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📙课本例题/Untitled.md"
->>>>>>> Stashed changes
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：弹塑性理论/2. 弹性力学的边值问题提法.md",
+    "2.  梁的纯弯曲问题的塑性力学解 2023-02-10 20.28.47.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第一章：绪论/1. 基本任务，基本假设.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/作业题/考试复习讲解和例题.md"
   ]
 }

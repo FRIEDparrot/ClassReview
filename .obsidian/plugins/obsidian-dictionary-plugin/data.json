@@ -3,11 +3,11 @@
   "defaultLanguage": "en_US",
   "normalLang": "en_US",
   "shouldShowSynonymPopover": true,
-  "shouldShowCustomContextMenu": true,
+  "shouldShowCustomContextMenu": false,
   "apiSettings": {
     "en_US": {
-      "definitionApiName": "Google",
-      "synonymApiName": "Google"
+      "definitionApiName": "Free Dictionary API",
+      "synonymApiName": "Free Dictionary API"
     },
     "hi": {
       "definitionApiName": "Free Dictionary API",
