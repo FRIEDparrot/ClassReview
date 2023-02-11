@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e8c718535c56f7b0",
+        "id": "198e1398fc784972",
         "type": "tabs",
         "children": [
           {
-            "id": "be845b05c5081efc",
+            "id": "55f68937ae740111",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,20 +18,38 @@
                 "source": false
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "5d7d656d5a36baff",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "d42ea0773de641ab",
+            "id": "f6bee5f099dfee3f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🗒️Templates/INSERT_MAX_SIGN.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "afdc0c7781e889bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🗒️Templates/INSERT_MIN_SIGN.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "46eda1bb5b2bdbae",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md"
+                "file": "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 16.47.34.md"
               }
             }
           }
@@ -93,8 +111,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 260.5,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f7de553c162de521",
@@ -209,17 +226,17 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "be845b05c5081efc",
+  "active": "55f68937ae740111",
   "lastOpenFiles": [
-    "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md",
+    "🗒️Templates/INSERT_MAX_SIGN.md",
+    "🗒️Templates/INSERT_MIN_SIGN.md",
     "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/3.  梁的纯弯曲问题的塑性力学解.md",
-    "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 09.44.29.md",
-    "🗒️Templates/INSERT_GREATER_OR_EQUAL.md",
-    "🗒️Templates/INSERT_LESS_OR_EQUAL.md",
-    "🗒️Templates/INSERT_CUP_SIGN.md",
-    "🗒️Templates/INSERT_CAP_SIGN.md",
-    "🗒️Templates/INSERT_CDOT_SIGN.md",
-    "🗒️Templates/INSERT_TIMES_SIGN.md",
-    "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 09.29.10.md"
+    "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 17.49.33.md",
+    "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 16.47.34.md",
+    "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-13 14.40.46.excalidraw.md",
+    "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 12.58.07.md",
+    "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md",
+    "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 11.39.22.md",
+    "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.01.06.excalidraw.md"
   ]
 }

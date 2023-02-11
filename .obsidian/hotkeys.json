@@ -769,5 +769,32 @@
       ],
       "key": ","
     }
+  ],
+  "obsidian-latex-environments:change-latex-env": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "R"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_MAX_SIGN.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "M"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_MIN_SIGN.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "M"
+    }
   ]
 }

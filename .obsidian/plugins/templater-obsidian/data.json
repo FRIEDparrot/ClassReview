@@ -92,7 +92,9 @@
     "🗒️Templates/INSERT_CAP_SIGN.md",
     "🗒️Templates/INSERT_CUP_SIGN.md",
     "🗒️Templates/INSERT_LESS_OR_EQUAL.md",
-    "🗒️Templates/INSERT_GREATER_OR_EQUAL.md"
+    "🗒️Templates/INSERT_GREATER_OR_EQUAL.md",
+    "🗒️Templates/INSERT_MAX_SIGN.md",
+    "🗒️Templates/INSERT_MIN_SIGN.md"
   ],
   "startup_templates": [
     ""
