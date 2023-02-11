@@ -80,16 +80,7 @@
     }
   ],
   "obsidian-excalidraw-plugin:toggle-excalidraw-view": [],
-  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-on-current": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod",
-        "Shift"
-      ],
-      "key": "D"
-    }
-  ],
+  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-on-current": [],
   "obsidian-excalidraw-plugin:insert-link-to-element": [],
   "obsidian-excalidraw-plugin:insert-LaTeX-symbol": [
     {
@@ -100,7 +91,16 @@
       "key": "L"
     }
   ],
-  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed": [],
+  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "D"
+    }
+  ],
   "obsidian-excalidraw-plugin:excalidraw-autocreate": [],
   "obsidian-git:push": [
     {
@@ -385,7 +385,8 @@
   "templater-obsidian:🗒️Templates/INSERT_NEIGHBORHOOD_SPACE.md": [
     {
       "modifiers": [
-        "Alt"
+        "Alt",
+        "Shift"
       ],
       "key": "U"
     }
@@ -540,7 +541,7 @@
     {
       "modifiers": [
         "Alt",
-        "Shift"
+        "Mod"
       ],
       "key": "U"
     }
@@ -699,6 +700,74 @@
         "Shift"
       ],
       "key": "S"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_SECOND_DERIVATES.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "P"
+    }
+  ],
+  "slides:start": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "S"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_CDOT_SIGN.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "C"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_TIMES_SIGN.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "V"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_CAP_SIGN.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "U"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_CUP_SIGN.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "U"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_GREATER_OR_EQUAL.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "."
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_LESS_OR_EQUAL.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": ","
     }
   ]
 }

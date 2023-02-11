@@ -7535,6 +7535,7 @@ clllkk
 crE
 crY
 czo
+cdot
 equatiion
 equations
 excalidraw
@@ -29975,6 +29976,7 @@ fTH
 fGw
 fffnn
 fxf
+first
 hcp
 heat
 has
@@ -49308,6 +49310,7 @@ khF
 kooo
 kDR
 kvC
+kanban
 rate
 representing
 represents

@@ -85,7 +85,14 @@
     "🗒️Templates/ADD_TAG_AFTER_EQUATION.md",
     "🗒️Templates/ADD_TEXT_IN_EQUATION.md",
     "🗒️Templates/INSERT_PHI_LOWERCASE.md",
-    "🗒️Templates/INSERT_SQUARE_ROOT_EQUATION.md"
+    "🗒️Templates/INSERT_SQUARE_ROOT_EQUATION.md",
+    "🗒️Templates/INSERT_SECOND_DERIVATES.md",
+    "🗒️Templates/INSERT_CDOT_SIGN.md",
+    "🗒️Templates/INSERT_TIMES_SIGN.md",
+    "🗒️Templates/INSERT_CAP_SIGN.md",
+    "🗒️Templates/INSERT_CUP_SIGN.md",
+    "🗒️Templates/INSERT_LESS_OR_EQUAL.md",
+    "🗒️Templates/INSERT_GREATER_OR_EQUAL.md"
   ],
   "startup_templates": [
     ""
