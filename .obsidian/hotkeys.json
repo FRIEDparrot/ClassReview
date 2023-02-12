@@ -805,5 +805,14 @@
       ],
       "key": "P"
     }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_NABLA_OPERATOR.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "N"
+    }
   ]
 }
