@@ -1,8 +1,80 @@
 {
   "recentFiles": [
     {
+      "basename": "2. 极坐标下基本方程的建立",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/2. 极坐标下基本方程的建立.md"
+    },
+    {
+      "basename": "2. 极坐标表示的基本方程 2022-11-19 15.41.05.excalidraw",
+      "path": "Excalidraw/2. 极坐标表示的基本方程 2022-11-19 15.41.05.excalidraw.md"
+    },
+    {
+      "basename": "3. 极坐标下的经典问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下的经典问题.md"
+    },
+    {
+      "basename": "5. 厚壁球壳问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/5. 厚壁球壳问题.md"
+    },
+    {
+      "basename": "3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw",
+      "path": "Excalidraw/3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw.md"
+    },
+    {
+      "basename": "5. 厚壁球壳问题 2023-02-12 00.06.03",
+      "path": "Excalidraw/5. 厚壁球壳问题 2023-02-12 00.06.03.md"
+    },
+    {
+      "basename": "🎶Programmable Music Box",
+      "path": "🧊Minecraft/redstone/🎶Programmable Music Box.md"
+    },
+    {
+      "basename": "Filter",
+      "path": "🧊Minecraft/redstone/Filter.md"
+    },
+    {
       "basename": "3.  梁的纯弯曲问题的塑性力学解",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/3.  梁的纯弯曲问题的塑性力学解.md"
+    },
+    {
+      "basename": "4. 柱体的扭转问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/4. 柱体的扭转问题.md"
+    },
+    {
+      "basename": "3. 柱体的扭转问题 2022-12-13 15.00.19.excalidraw",
+      "path": "Excalidraw/3. 柱体的扭转问题 2022-12-13 15.00.19.excalidraw.md"
+    },
+    {
+      "basename": "4. 柱体的扭转问题 2023-02-11 21.59.25",
+      "path": "Excalidraw/4. 柱体的扭转问题 2023-02-11 21.59.25.md"
+    },
+    {
+      "basename": "4. 柱体的扭转问题 2023-02-11 20.20.37",
+      "path": "Excalidraw/4. 柱体的扭转问题 2023-02-11 20.20.37.md"
+    },
+    {
+      "basename": "INSERT_PI_LOWERCASE",
+      "path": "🗒️Templates/INSERT_PI_LOWERCASE.md"
+    },
+    {
+      "basename": "INSERT_INTEGRAL_WITH_SCRIPT",
+      "path": "🗒️Templates/INSERT_INTEGRAL_WITH_SCRIPT.md"
+    },
+    {
+      "basename": "INSERT_INTEGRAL_SIGNAL",
+      "path": "🗒️Templates/INSERT_INTEGRAL_SIGNAL.md"
+    },
+    {
+      "basename": "7. 旋转圆盘问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/7. 旋转圆盘问题.md"
+    },
+    {
+      "basename": "6. 厚壁圆筒问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/6. 厚壁圆筒问题.md"
+    },
+    {
+      "basename": "3.  梁的纯弯曲问题的塑性力学解 2023-02-11 18.57.51",
+      "path": "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 18.57.51.md"
     },
     {
       "basename": "INSERT_MAX_SIGN",
@@ -81,14 +153,6 @@
       "path": "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 09.29.10.md"
     },
     {
-      "basename": "INSERT_INTEGRAL_WITH_SCRIPT",
-      "path": "🗒️Templates/INSERT_INTEGRAL_WITH_SCRIPT.md"
-    },
-    {
-      "basename": "INSERT_INTEGRAL_SIGNAL",
-      "path": "🗒️Templates/INSERT_INTEGRAL_SIGNAL.md"
-    },
-    {
       "basename": "INSERT_SECOND_DERIVATES",
       "path": "🗒️Templates/INSERT_SECOND_DERIVATES.md"
     },
@@ -135,30 +199,6 @@
     {
       "basename": "ADD_QUAD_INTERVAL",
       "path": "🗒️Templates/ADD_QUAD_INTERVAL.md"
-    },
-    {
-      "basename": "ADD_QQUAD_INTERVAL",
-      "path": "🗒️Templates/ADD_QQUAD_INTERVAL.md"
-    },
-    {
-      "basename": "例题4.1",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📙课本例题/例题4.1.pdf"
-    },
-    {
-      "basename": "第6次作业2",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📝作业题/6-10/第6次作业2.pdf"
-    },
-    {
-      "basename": "Filter",
-      "path": "🧊Minecraft/redstone/Filter.md"
-    },
-    {
-      "basename": "BiliBili Plugin",
-      "path": "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/plugins/BiliBili Plugin.md"
-    },
-    {
-      "basename": "admonition",
-      "path": "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/plugins/admonition.md"
     }
   ],
   "omittedPaths": [],

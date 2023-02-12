@@ -4,56 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "198e1398fc784972",
+        "id": "a5e891b0e090ec11",
         "type": "tabs",
         "children": [
           {
-            "id": "55f68937ae740111",
+            "id": "cb2d834be0668bc6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/3.  梁的纯弯曲问题的塑性力学解.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/5. 厚壁球壳问题.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f6bee5f099dfee3f",
+            "id": "6ba52b18156db8f7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🗒️Templates/INSERT_MAX_SIGN.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下的经典问题.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "afdc0c7781e889bc",
+            "id": "f4a01bec1a1d765c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🗒️Templates/INSERT_MIN_SIGN.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/2. 极坐标下基本方程的建立.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "46eda1bb5b2bdbae",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 16.47.34.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -111,7 +102,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 307.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -162,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/3.  梁的纯弯曲问题的塑性力学解.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/2. 极坐标下基本方程的建立.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/3.  梁的纯弯曲问题的塑性力学解.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/2. 极坐标下基本方程的建立.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -199,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/3.  梁的纯弯曲问题的塑性力学解.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/2. 极坐标下基本方程的建立.md"
               }
             }
           }
@@ -226,17 +218,17 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "55f68937ae740111",
+  "active": "f4a01bec1a1d765c",
   "lastOpenFiles": [
-    "🗒️Templates/INSERT_MAX_SIGN.md",
-    "🗒️Templates/INSERT_MIN_SIGN.md",
+    "Excalidraw/2. 极坐标表示的基本方程 2022-11-19 15.41.05.excalidraw.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/2. 极坐标下基本方程的建立.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下的经典问题.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/5. 厚壁球壳问题.md",
+    "Excalidraw/3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw.md",
+    "Excalidraw/5. 厚壁球壳问题 2023-02-12 00.06.03.md",
+    "🧊Minecraft/redstone/🎶Programmable Music Box.md",
+    "🧊Minecraft/redstone/Filter.md",
     "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/3.  梁的纯弯曲问题的塑性力学解.md",
-    "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 17.49.33.md",
-    "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 16.47.34.md",
-    "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-13 14.40.46.excalidraw.md",
-    "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 12.58.07.md",
-    "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md",
-    "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 11.39.22.md",
-    "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.01.06.excalidraw.md"
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/4. 柱体的扭转问题.md"
   ]
 }

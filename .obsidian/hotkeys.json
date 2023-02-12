@@ -419,7 +419,7 @@
   "templater-obsidian:🗒️Templates/INSERT_PARTIAL_FRACTION.md": [
     {
       "modifiers": [
-        "Alt",
+        "Mod",
         "Shift"
       ],
       "key": "P"
@@ -456,7 +456,8 @@
   "templater-obsidian:🗒️Templates/INSERT_PSI_LOWERCASE.md": [
     {
       "modifiers": [
-        "Alt"
+        "Alt",
+        "Shift"
       ],
       "key": "P"
     }
@@ -795,6 +796,14 @@
         "Mod"
       ],
       "key": "M"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_PI_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "P"
     }
   ]
 }
