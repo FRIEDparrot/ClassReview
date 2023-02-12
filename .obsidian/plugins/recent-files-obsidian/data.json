@@ -1,8 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "5. 厚壁球壳问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/5. 厚壁球壳问题.md"
+    },
+    {
+      "basename": "5. 厚壁球壳问题 2023-02-13 00.48.19",
+      "path": "Excalidraw/5. 厚壁球壳问题 2023-02-13 00.48.19.md"
+    },
+    {
+      "basename": "3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw",
+      "path": "Excalidraw/3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw.md"
+    },
+    {
       "basename": "3. 极坐标下的经典问题",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下的经典问题.md"
+    },
+    {
+      "basename": "第十章 重积分",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十章 重积分.md"
+    },
+    {
+      "basename": "第十章 重积分 2023-02-05 14.34.00.excalidraw",
+      "path": "Excalidraw/第十章 重积分 2023-02-05 14.34.00.excalidraw.md"
     },
     {
       "basename": "INSERT_NABLA_OPERATOR",
@@ -13,20 +33,12 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/2. 极坐标下基本方程的建立.md"
     },
     {
-      "basename": "5. 厚壁球壳问题",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/5. 厚壁球壳问题.md"
-    },
-    {
       "basename": "2. 极坐标表示的基本方程 2022-11-19 16.52.45.excalidraw",
       "path": "Excalidraw/2. 极坐标表示的基本方程 2022-11-19 16.52.45.excalidraw.md"
     },
     {
       "basename": "2. 极坐标表示的基本方程 2022-11-19 15.41.05.excalidraw",
       "path": "Excalidraw/2. 极坐标表示的基本方程 2022-11-19 15.41.05.excalidraw.md"
-    },
-    {
-      "basename": "3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw",
-      "path": "Excalidraw/3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw.md"
     },
     {
       "basename": "5. 厚壁球壳问题 2023-02-12 00.06.03",
@@ -187,18 +199,6 @@
     {
       "basename": "INSERT_SQUARE_ROOT_EQUATION",
       "path": "🗒️Templates/INSERT_SQUARE_ROOT_EQUATION.md"
-    },
-    {
-      "basename": "Pandoc",
-      "path": "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/plugins/Pandoc.md"
-    },
-    {
-      "basename": "INSERT_PHI_LOWERCASE",
-      "path": "🗒️Templates/INSERT_PHI_LOWERCASE.md"
-    },
-    {
-      "basename": "ADD_TAG_AFTER_EQUATION",
-      "path": "🗒️Templates/ADD_TAG_AFTER_EQUATION.md"
     }
   ],
   "omittedPaths": [],
