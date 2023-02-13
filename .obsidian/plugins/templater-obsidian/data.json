@@ -98,7 +98,13 @@
     "🗒️Templates/INSERT_PI_LOWERCASE.md",
     "🗒️Templates/INSERT_NABLA_OPERATOR.md",
     "🗒️Templates/ADD_LN_OPERATOR.md",
-    "🗒️Templates/ADD_LOG_OPERATOR.md"
+    "🗒️Templates/ADD_LOG_OPERATOR.md",
+    "🗒️Templates/INSERT_EQUAV_SIGNAL.md",
+    "🗒️Templates/INSERT_NOT_EQUIV_SIGNAL.md",
+    "🗒️Templates/INSERT_SIMILIAR_SYMBOL.md",
+    "🗒️Templates/INSERT_SPACE_IN_EQUATION.md",
+    "🗒️Templates/INSERT_HAT.md",
+    "🗒️Templates/INSERT_MATHCAL_SYMBLE.md"
   ],
   "startup_templates": [
     ""

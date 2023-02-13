@@ -694,13 +694,6 @@
         "Mod"
       ],
       "key": "S"
-    },
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "S"
     }
   ],
   "templater-obsidian:🗒️Templates/INSERT_SECOND_DERIVATES.md": [
@@ -832,6 +825,59 @@
         "Shift"
       ],
       "key": "L"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_EQUAV_SIGNAL.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "="
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_NOT_EQUIV_SIGNAL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "="
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_SIMILIAR_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "S"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_SPACE_IN_EQUATION.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": " "
+    }
+  ],
+  "obsidian-completr:completr-open-suggestion-popup": [],
+  "templater-obsidian:🗒️Templates/INSERT_HAT.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "H"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_MATHCAL_SYMBLE.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "M"
     }
   ]
 }

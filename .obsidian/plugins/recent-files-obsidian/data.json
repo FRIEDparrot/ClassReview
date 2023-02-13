@@ -5,6 +5,70 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/6. 厚壁圆筒的弹塑性变形.md"
     },
     {
+      "basename": "6. 厚壁圆筒的弹塑性变形 2023-02-14 00.07.03",
+      "path": "Excalidraw/6. 厚壁圆筒的弹塑性变形 2023-02-14 00.07.03.md"
+    },
+    {
+      "basename": "厚壁圆筒屈服公式",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/补充/厚壁圆筒屈服公式.pdf"
+    },
+    {
+      "basename": "INSERT_MATHCAL_SYMBLE",
+      "path": "🗒️Templates/INSERT_MATHCAL_SYMBLE.md"
+    },
+    {
+      "basename": "INSERT_HAT",
+      "path": "🗒️Templates/INSERT_HAT.md"
+    },
+    {
+      "basename": "INSERT_SPACE_IN_EQUATION",
+      "path": "🗒️Templates/INSERT_SPACE_IN_EQUATION.md"
+    },
+    {
+      "basename": "INSERT_SIMILIAR_SYMBOL",
+      "path": "🗒️Templates/INSERT_SIMILIAR_SYMBOL.md"
+    },
+    {
+      "basename": "3. 极坐标下的经典问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下的经典问题.md"
+    },
+    {
+      "basename": "3. 极坐标下的经典问题 2023-02-13 16.54.05",
+      "path": "Excalidraw/3. 极坐标下的经典问题 2023-02-13 16.54.05.md"
+    },
+    {
+      "basename": "INSERT_NOT_EQUIV_SIGNAL",
+      "path": "🗒️Templates/INSERT_NOT_EQUIV_SIGNAL.md"
+    },
+    {
+      "basename": "INSERT_EQUAV_SIGNAL",
+      "path": "🗒️Templates/INSERT_EQUAV_SIGNAL.md"
+    },
+    {
+      "basename": "INSERT_NABLA_OPERATOR",
+      "path": "🗒️Templates/INSERT_NABLA_OPERATOR.md"
+    },
+    {
+      "basename": "Timoshenko对极坐标应力函数的证明",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/Timoshenko对极坐标应力函数的证明.pdf"
+    },
+    {
+      "basename": "⌚Todo List",
+      "path": "💡Inspiration/⌚Todo List.md"
+    },
+    {
+      "basename": "厚壁球壳应力公式推导",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/厚壁球壳应力公式推导.pdf"
+    },
+    {
+      "basename": "3. 极坐标下的经典问题 2023-02-13 12.47.25",
+      "path": "Excalidraw/3. 极坐标下的经典问题 2023-02-13 12.47.25.md"
+    },
+    {
+      "basename": "6. 厚壁圆筒的弹塑性变形 2023-02-13 12.15.40",
+      "path": "Excalidraw/6. 厚壁圆筒的弹塑性变形 2023-02-13 12.15.40.md"
+    },
+    {
       "basename": "6. 厚壁圆筒问题 2023-02-13 11.59.37",
       "path": "Excalidraw/6. 厚壁圆筒问题 2023-02-13 11.59.37.md"
     },
@@ -29,10 +93,6 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/补充/厚壁球壳屈服后分析.pdf"
     },
     {
-      "basename": "厚壁球壳应力公式推导",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/厚壁球壳应力公式推导.pdf"
-    },
-    {
       "basename": "第三章重要公式整理和思维导图",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/第三章重要公式整理和思维导图.md"
     },
@@ -49,20 +109,12 @@
       "path": "Excalidraw/5. 厚壁球壳问题 2023-02-13 00.48.19.md"
     },
     {
-      "basename": "3. 极坐标下的经典问题",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下的经典问题.md"
-    },
-    {
       "basename": "第十章 重积分",
       "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十章 重积分.md"
     },
     {
       "basename": "第十章 重积分 2023-02-05 14.34.00.excalidraw",
       "path": "Excalidraw/第十章 重积分 2023-02-05 14.34.00.excalidraw.md"
-    },
-    {
-      "basename": "INSERT_NABLA_OPERATOR",
-      "path": "🗒️Templates/INSERT_NABLA_OPERATOR.md"
     },
     {
       "basename": "2. 极坐标下基本方程的建立",
@@ -147,58 +199,6 @@
     {
       "basename": "2.  梁的纯弯曲问题的塑性力学解 2022-12-13 14.40.46.excalidraw",
       "path": "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-13 14.40.46.excalidraw.md"
-    },
-    {
-      "basename": "3.  梁的纯弯曲问题的塑性力学解 2023-02-11 12.58.07",
-      "path": "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 12.58.07.md"
-    },
-    {
-      "basename": "2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw",
-      "path": "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md"
-    },
-    {
-      "basename": "3.  梁的纯弯曲问题的塑性力学解 2023-02-11 11.39.22",
-      "path": "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 11.39.22.md"
-    },
-    {
-      "basename": "2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.01.06.excalidraw",
-      "path": "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.01.06.excalidraw.md"
-    },
-    {
-      "basename": "3.  梁的纯弯曲问题的塑性力学解 2023-02-11 11.12.07",
-      "path": "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 11.12.07.md"
-    },
-    {
-      "basename": "3.  梁的纯弯曲问题的塑性力学解 2023-02-11 11.02.55",
-      "path": "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 11.02.55.md"
-    },
-    {
-      "basename": "3.  梁的纯弯曲问题的塑性力学解 2023-02-11 09.44.29",
-      "path": "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 09.44.29.md"
-    },
-    {
-      "basename": "INSERT_GREATER_OR_EQUAL",
-      "path": "🗒️Templates/INSERT_GREATER_OR_EQUAL.md"
-    },
-    {
-      "basename": "INSERT_LESS_OR_EQUAL",
-      "path": "🗒️Templates/INSERT_LESS_OR_EQUAL.md"
-    },
-    {
-      "basename": "INSERT_CUP_SIGN",
-      "path": "🗒️Templates/INSERT_CUP_SIGN.md"
-    },
-    {
-      "basename": "INSERT_CAP_SIGN",
-      "path": "🗒️Templates/INSERT_CAP_SIGN.md"
-    },
-    {
-      "basename": "INSERT_CDOT_SIGN",
-      "path": "🗒️Templates/INSERT_CDOT_SIGN.md"
-    },
-    {
-      "basename": "INSERT_TIMES_SIGN",
-      "path": "🗒️Templates/INSERT_TIMES_SIGN.md"
     }
   ],
   "omittedPaths": [],
