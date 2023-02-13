@@ -814,5 +814,24 @@
       ],
       "key": "N"
     }
+  ],
+  "templater-obsidian:🗒️Templates/ADD_LN_OPERATOR.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "L"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/ADD_LOG_OPERATOR.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "L"
+    }
   ]
 }

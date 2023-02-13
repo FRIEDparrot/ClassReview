@@ -1,8 +1,44 @@
 {
   "recentFiles": [
     {
+      "basename": "6. 厚壁圆筒的弹塑性变形",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/6. 厚壁圆筒的弹塑性变形.md"
+    },
+    {
+      "basename": "6. 厚壁圆筒问题 2023-02-13 11.59.37",
+      "path": "Excalidraw/6. 厚壁圆筒问题 2023-02-13 11.59.37.md"
+    },
+    {
+      "basename": "4. 厚壁圆筒问题 2022-12-14 15.58.43.excalidraw",
+      "path": "Excalidraw/4. 厚壁圆筒问题 2022-12-14 15.58.43.excalidraw.md"
+    },
+    {
       "basename": "5. 厚壁球壳问题",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/5. 厚壁球壳问题.md"
+    },
+    {
+      "basename": "ADD_LN_OPERATOR",
+      "path": "🗒️Templates/ADD_LN_OPERATOR.md"
+    },
+    {
+      "basename": "ADD_LOG_OPERATOR",
+      "path": "🗒️Templates/ADD_LOG_OPERATOR.md"
+    },
+    {
+      "basename": "厚壁球壳屈服后分析",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/补充/厚壁球壳屈服后分析.pdf"
+    },
+    {
+      "basename": "厚壁球壳应力公式推导",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/厚壁球壳应力公式推导.pdf"
+    },
+    {
+      "basename": "第三章重要公式整理和思维导图",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/第三章重要公式整理和思维导图.md"
+    },
+    {
+      "basename": "轴对称问题相容方程的求解过程",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/轴对称问题相容方程的求解过程.pdf"
     },
     {
       "basename": "3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw",
@@ -89,10 +125,6 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/7. 旋转圆盘问题.md"
     },
     {
-      "basename": "6. 厚壁圆筒问题",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/6. 厚壁圆筒问题.md"
-    },
-    {
       "basename": "3.  梁的纯弯曲问题的塑性力学解 2023-02-11 18.57.51",
       "path": "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 18.57.51.md"
     },
@@ -167,38 +199,6 @@
     {
       "basename": "INSERT_TIMES_SIGN",
       "path": "🗒️Templates/INSERT_TIMES_SIGN.md"
-    },
-    {
-      "basename": "3.  梁的纯弯曲问题的塑性力学解 2023-02-11 09.29.10",
-      "path": "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 09.29.10.md"
-    },
-    {
-      "basename": "INSERT_SECOND_DERIVATES",
-      "path": "🗒️Templates/INSERT_SECOND_DERIVATES.md"
-    },
-    {
-      "basename": "🦊Test1",
-      "path": "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/plugins/🦊Test1.md"
-    },
-    {
-      "basename": "💩annotator",
-      "path": "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/plugins/💩annotator.md"
-    },
-    {
-      "basename": "Citation_Usage",
-      "path": "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/plugins/Citation_Usage.md"
-    },
-    {
-      "basename": "Untitled Kanban",
-      "path": "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/plugins/Untitled Kanban.md"
-    },
-    {
-      "basename": "2. 弹性力学的边值问题提法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/2. 弹性力学的边值问题提法.md"
-    },
-    {
-      "basename": "INSERT_SQUARE_ROOT_EQUATION",
-      "path": "🗒️Templates/INSERT_SQUARE_ROOT_EQUATION.md"
     }
   ],
   "omittedPaths": [],

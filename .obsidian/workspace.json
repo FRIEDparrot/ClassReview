@@ -8,36 +8,14 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cb2d834be0668bc6",
+            "id": "8e1aaeda0ceab9ea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/5. 厚壁球壳问题.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/6. 厚壁圆筒的弹塑性变形.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "6ba52b18156db8f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下的经典问题.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0b947995904293ca",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw.md"
               }
             }
           }
@@ -151,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/5. 厚壁球壳问题.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/6. 厚壁圆筒的弹塑性变形.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/5. 厚壁球壳问题.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/6. 厚壁圆筒的弹塑性变形.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,11 +166,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/5. 厚壁球壳问题.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/6. 厚壁圆筒的弹塑性变形.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -215,17 +194,17 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "cb2d834be0668bc6",
+  "active": "8e1aaeda0ceab9ea",
   "lastOpenFiles": [
-    "Excalidraw/3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw.md",
+    "Excalidraw/6. 厚壁圆筒问题 2023-02-13 11.59.37.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/6. 厚壁圆筒的弹塑性变形.md",
+    "Excalidraw/4. 厚壁圆筒问题 2022-12-14 15.58.43.excalidraw.md",
     "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/5. 厚壁球壳问题.md",
-    "Excalidraw/5. 厚壁球壳问题 2023-02-13 00.48.19.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下的经典问题.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十章 重积分.md",
-    "Excalidraw/第十章 重积分 2023-02-05 14.34.00.excalidraw.md",
-    "🗒️Templates/INSERT_NABLA_OPERATOR.md",
-    "Excalidraw/3. 极坐标下的经典问题 2023-02-12 10.41.36.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/2. 极坐标下基本方程的建立.md",
-    "Excalidraw/2. 极坐标表示的基本方程 2022-11-19 16.52.45.excalidraw.md"
+    "🗒️Templates/ADD_LN_OPERATOR.md",
+    "🗒️Templates/ADD_LOG_OPERATOR.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/补充/厚壁球壳屈服后分析.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/厚壁球壳应力公式推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/第三章重要公式整理和思维导图.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/轴对称问题相容方程的求解过程.pdf"
   ]
 }

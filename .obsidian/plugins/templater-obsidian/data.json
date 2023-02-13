@@ -96,7 +96,9 @@
     "🗒️Templates/INSERT_MAX_SIGN.md",
     "🗒️Templates/INSERT_MIN_SIGN.md",
     "🗒️Templates/INSERT_PI_LOWERCASE.md",
-    "🗒️Templates/INSERT_NABLA_OPERATOR.md"
+    "🗒️Templates/INSERT_NABLA_OPERATOR.md",
+    "🗒️Templates/ADD_LN_OPERATOR.md",
+    "🗒️Templates/ADD_LOG_OPERATOR.md"
   ],
   "startup_templates": [
     ""
