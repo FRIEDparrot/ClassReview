@@ -879,5 +879,14 @@
       ],
       "key": "M"
     }
+  ],
+  "templater-obsidian:🗒️Templates/ADD_TEXT_HIGHLIGHT_ZONE.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "H"
+    }
   ]
 }

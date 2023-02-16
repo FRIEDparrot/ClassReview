@@ -5,8 +5,16 @@
       "path": "📘ClassNotes/🤢politics/马原/马原复习.md"
     },
     {
+      "basename": "ADD_TEXT_HIGHLIGHT_ZONE",
+      "path": "🗒️Templates/ADD_TEXT_HIGHLIGHT_ZONE.md"
+    },
+    {
       "basename": "🐴马原",
       "path": "📘ClassNotes/🤢politics/马原/🐴马原.md"
+    },
+    {
+      "basename": "INSERT_UNDERLINE_TEXT",
+      "path": "🗒️Templates/INSERT_UNDERLINE_TEXT.md"
     },
     {
       "basename": "5. 厚壁球壳问题",
@@ -191,14 +199,6 @@
     {
       "basename": "INSERT_INTEGRAL_SIGNAL",
       "path": "🗒️Templates/INSERT_INTEGRAL_SIGNAL.md"
-    },
-    {
-      "basename": "7. 旋转圆盘问题",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/7. 旋转圆盘问题.md"
-    },
-    {
-      "basename": "3.  梁的纯弯曲问题的塑性力学解 2023-02-11 18.57.51",
-      "path": "Excalidraw/3.  梁的纯弯曲问题的塑性力学解 2023-02-11 18.57.51.md"
     }
   ],
   "omittedPaths": [],

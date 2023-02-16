@@ -9051,6 +9051,7 @@ ceo
 cMq
 cqtQ
 cgs
+color
 equatiion
 equations
 excalidraw
@@ -28579,6 +28580,7 @@ trGJ
 tiDDM
 tohv
 ttv
+transparent
 write
 with
 widely
@@ -34555,6 +34557,7 @@ bSC
 bLJFi
 bTfM
 bRDrD
+background
 fcc
 factor
 forced
@@ -43995,6 +43998,7 @@ ilj
 iqrf
 iSf
 iaodLI
+indigo
 menu
 material
 model
@@ -45731,6 +45735,7 @@ mkx
 mIfI
 mco
 mnhA
+mark
 Forced
 For
 Function

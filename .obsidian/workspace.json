@@ -90,8 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 273.5,
-    "collapsed": true
+    "width": 273.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -209,15 +208,15 @@
   },
   "active": "dddd97ae32c91e83",
   "lastOpenFiles": [
-    "📘ClassNotes/🤢politics/马原/🐴马原.md",
+    "🗒️Templates/ADD_TEXT_HIGHLIGHT_ZONE.md",
     "📘ClassNotes/🤢politics/马原/马原复习.md",
+    "📘ClassNotes/🤢politics/马原/🐴马原.md",
+    "🗒️Templates/INSERT_UNDERLINE_TEXT.md",
     "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/5. 厚壁球壳问题.md",
     "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下的经典问题.md",
     "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/厚壁圆筒受压应力公式推导.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/6. 厚壁圆筒的弹塑性变形.md",
     "Excalidraw/6. 厚壁圆筒的弹塑性变形 2023-02-14 03.32.20.md",
-    "Excalidraw/6. 厚壁圆筒的弹塑性变形 2023-02-14 01.43.45.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/补充/厚壁球壳屈服后分析.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/厚壁球壳应力公式推导.pdf"
+    "Excalidraw/6. 厚壁圆筒的弹塑性变形 2023-02-14 01.43.45.md"
   ]
 }

@@ -104,7 +104,8 @@
     "🗒️Templates/INSERT_SIMILIAR_SYMBOL.md",
     "🗒️Templates/INSERT_SPACE_IN_EQUATION.md",
     "🗒️Templates/INSERT_HAT.md",
-    "🗒️Templates/INSERT_MATHCAL_SYMBLE.md"
+    "🗒️Templates/INSERT_MATHCAL_SYMBLE.md",
+    "🗒️Templates/ADD_TEXT_HIGHLIGHT_ZONE.md"
   ],
   "startup_templates": [
     ""
