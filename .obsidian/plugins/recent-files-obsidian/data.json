@@ -1,12 +1,68 @@
 {
   "recentFiles": [
     {
+      "basename": "马原复习",
+      "path": "📘ClassNotes/🤢politics/马原/马原复习.md"
+    },
+    {
+      "basename": "🐴马原",
+      "path": "📘ClassNotes/🤢politics/马原/🐴马原.md"
+    },
+    {
+      "basename": "2. 经典的弹性力学应力问题求解",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/2. 经典的弹性力学应力问题求解.md"
+    },
+    {
+      "basename": "2. 经典的弹性力学应力问题求解 2023-02-17 00.13.56",
+      "path": "Excalidraw/2. 经典的弹性力学应力问题求解 2023-02-17 00.13.56.md"
+    },
+    {
+      "basename": "2. 经典的弹性力学应力问题求解 2023-02-16 23.57.19",
+      "path": "Excalidraw/2. 经典的弹性力学应力问题求解 2023-02-16 23.57.19.md"
+    },
+    {
       "basename": "1. 平面问题的基本方程",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/1. 平面问题的基本方程.md"
     },
     {
+      "basename": "3. 极坐标下基本方程的建立",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下基本方程的建立.md"
+    },
+    {
+      "basename": "4. 极坐标下的经典问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/4. 极坐标下的经典问题.md"
+    },
+    {
+      "basename": "1-4章弹性力学基本问题思维导图",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/1-4章弹性力学基本问题思维导图.md"
+    },
+    {
+      "basename": "二、应变能函数",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/二、应变能函数.md"
+    },
+    {
+      "basename": "一、广义胡克定律,工程弹性常数",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md"
+    },
+    {
+      "basename": "1. 平面问题的基本方程 2023-02-16 23.01.35",
+      "path": "Excalidraw/1. 平面问题的基本方程 2023-02-16 23.01.35.md"
+    },
+    {
+      "basename": "第二章例题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/✍️课本例题&练习/第二章例题.md"
+    },
+    {
       "basename": "5-10章弹性力学经典问题求解",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/5-10章弹性力学经典问题求解.md"
+    },
+    {
+      "basename": "2.主应力和主方向，球张量，偏张量",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第二章：应力/2.主应力和主方向，球张量，偏张量.md"
+    },
+    {
+      "basename": "1.应力基本概念,边界条件和坐标转换",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第二章：应力/1.应力基本概念,边界条件和坐标转换.md"
     },
     {
       "basename": "INSERT_LIMIT_SYMBOL",
@@ -29,10 +85,6 @@
       "path": "Excalidraw/1. 平面问题的基本方程 2022-12-01 11.33.24.excalidraw.md"
     },
     {
-      "basename": "一、广义胡克定律,工程弹性常数",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md"
-    },
-    {
       "basename": "1. 弹性力学基本方程",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第五章：弹性力学边值问题/1. 弹性力学基本方程.md"
     },
@@ -41,16 +93,8 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第四章作业.md"
     },
     {
-      "basename": "1-4章弹性力学基本问题思维导图",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/1-4章弹性力学基本问题思维导图.md"
-    },
-    {
       "basename": "第二章作业",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第二章作业.md"
-    },
-    {
-      "basename": "1.应力基本概念,边界条件和坐标转换",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第二章：应力/1.应力基本概念,边界条件和坐标转换.md"
     },
     {
       "basename": "1.应力基本概念,边界条件和坐标转换 2023-02-06 19.04.06",
@@ -61,20 +105,8 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第三章作业.md"
     },
     {
-      "basename": "第二章",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/✍️课本例题/第二章.md"
-    },
-    {
-      "basename": "马原复习",
-      "path": "📘ClassNotes/🤢politics/马原/马原复习.md"
-    },
-    {
       "basename": "ADD_TEXT_HIGHLIGHT_ZONE",
       "path": "🗒️Templates/ADD_TEXT_HIGHLIGHT_ZONE.md"
-    },
-    {
-      "basename": "🐴马原",
-      "path": "📘ClassNotes/🤢politics/马原/🐴马原.md"
     },
     {
       "basename": "INSERT_UNDERLINE_TEXT",
@@ -83,10 +115,6 @@
     {
       "basename": "5. 厚壁球壳问题",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/5. 厚壁球壳问题.md"
-    },
-    {
-      "basename": "3. 极坐标下的经典问题",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下的经典问题.md"
     },
     {
       "basename": "厚壁圆筒受压应力公式推导",
@@ -171,34 +199,6 @@
     {
       "basename": "3. 极坐标下的经典问题 2023-02-13 12.47.25",
       "path": "Excalidraw/3. 极坐标下的经典问题 2023-02-13 12.47.25.md"
-    },
-    {
-      "basename": "6. 厚壁圆筒的弹塑性变形 2023-02-13 12.15.40",
-      "path": "Excalidraw/6. 厚壁圆筒的弹塑性变形 2023-02-13 12.15.40.md"
-    },
-    {
-      "basename": "6. 厚壁圆筒问题 2023-02-13 11.59.37",
-      "path": "Excalidraw/6. 厚壁圆筒问题 2023-02-13 11.59.37.md"
-    },
-    {
-      "basename": "ADD_LN_OPERATOR",
-      "path": "🗒️Templates/ADD_LN_OPERATOR.md"
-    },
-    {
-      "basename": "ADD_LOG_OPERATOR",
-      "path": "🗒️Templates/ADD_LOG_OPERATOR.md"
-    },
-    {
-      "basename": "第三章重要公式整理和思维导图",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/第三章重要公式整理和思维导图.md"
-    },
-    {
-      "basename": "轴对称问题相容方程的求解过程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/轴对称问题相容方程的求解过程.pdf"
-    },
-    {
-      "basename": "3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw",
-      "path": "Excalidraw/3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw.md"
     }
   ],
   "omittedPaths": [],

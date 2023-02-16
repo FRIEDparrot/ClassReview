@@ -4,28 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "94a543195f22b356",
+        "id": "a51dfd1bd9899ebc",
         "type": "tabs",
         "children": [
           {
-            "id": "68d92aafa6b5efa5",
+            "id": "3f3595885af2eed8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/1. 平面问题的基本方程.md",
+                "file": "📘ClassNotes/🤢politics/马原/马原复习.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "598e729f4fc480a7",
+            "id": "b2c5b81adea64947",
             "type": "leaf",
             "state": {
-              "type": "mindmapview",
+              "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/5-10章弹性力学经典问题求解.md"
+                "file": "📘ClassNotes/🤢politics/马原/🐴马原.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -138,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/1. 平面问题的基本方程.md",
+                "file": "📘ClassNotes/🤢politics/马原/马原复习.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/1. 平面问题的基本方程.md",
+                "file": "📘ClassNotes/🤢politics/马原/马原复习.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,16 +177,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/1. 平面问题的基本方程.md"
+                "file": "📘ClassNotes/🤢politics/马原/马原复习.md"
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 288.5,
+    "width": 267.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -203,17 +205,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "68d92aafa6b5efa5",
+  "active": "3f3595885af2eed8",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/5-10章弹性力学经典问题求解.md",
-    "🗒️Templates/INSERT_LIMIT_SYMBOL.md",
+    "📘ClassNotes/🤢politics/马原/🐴马原.md",
+    "📘ClassNotes/🤢politics/马原/马原复习.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/2. 经典的弹性力学应力问题求解.md",
+    "Excalidraw/2. 经典的弹性力学应力问题求解 2023-02-17 00.13.56.md",
+    "Excalidraw/2. 经典的弹性力学应力问题求解 2023-02-16 23.57.19.md",
     "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/1. 平面问题的基本方程.md",
-    "🗒️Templates/INSERT_LEFTARROW.md",
-    "🗒️Templates/INSERT_RIGHTARROW.md",
-    "Excalidraw/1. 平面问题的基本方程 2023-02-16 22.23.05.md",
-    "Excalidraw/1. 平面问题的基本方程 2022-12-01 11.33.24.excalidraw.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
-    "Untitled.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第五章：弹性力学边值问题/1. 弹性力学基本方程.md"
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下基本方程的建立.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/4. 极坐标下的经典问题.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/1-4章弹性力学基本问题思维导图.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/二、应变能函数.md"
   ]
 }
