@@ -105,7 +105,10 @@
     "🗒️Templates/INSERT_SPACE_IN_EQUATION.md",
     "🗒️Templates/INSERT_HAT.md",
     "🗒️Templates/INSERT_MATHCAL_SYMBLE.md",
-    "🗒️Templates/ADD_TEXT_HIGHLIGHT_ZONE.md"
+    "🗒️Templates/ADD_TEXT_HIGHLIGHT_ZONE.md",
+    "🗒️Templates/INSERT_LIMIT_SYMBOL.md",
+    "🗒️Templates/INSERT_LEFTARROW.md",
+    "🗒️Templates/INSERT_RIGHTARROW.md"
   ],
   "startup_templates": [
     ""

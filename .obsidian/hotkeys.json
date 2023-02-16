@@ -82,15 +82,6 @@
   "obsidian-excalidraw-plugin:toggle-excalidraw-view": [],
   "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-on-current": [],
   "obsidian-excalidraw-plugin:insert-link-to-element": [],
-  "obsidian-excalidraw-plugin:insert-LaTeX-symbol": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "L"
-    }
-  ],
   "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed": [
     {
       "modifiers": [
@@ -811,7 +802,7 @@
   "templater-obsidian:🗒️Templates/ADD_LN_OPERATOR.md": [
     {
       "modifiers": [
-        "Mod",
+        "Alt",
         "Shift"
       ],
       "key": "L"
@@ -887,6 +878,45 @@
         "Mod"
       ],
       "key": "H"
+    }
+  ],
+  "file-explorer:new-file": [],
+  "obsidian-excalidraw-plugin:insert-LaTeX-symbol": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "Enter"
+    }
+  ],
+  "editor:open-link-in-new-window": [],
+  "templater-obsidian:🗒️Templates/INSERT_LEFTARROW.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": ","
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_LIMIT_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "L"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_RIGHTARROW.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "."
     }
   ]
 }
