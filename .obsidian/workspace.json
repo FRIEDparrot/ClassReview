@@ -8,6 +8,18 @@
         "type": "tabs",
         "children": [
           {
+            "id": "3ab6160b659bbf4e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/🤢politics/马原/🐴马原.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "e881ea047e86eb2d",
             "type": "leaf",
             "state": {
@@ -19,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
