@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6e3597656c176514",
+        "id": "063739005ebed589",
         "type": "tabs",
         "children": [
           {
-            "id": "3ab6160b659bbf4e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/🤢politics/马原/🐴马原.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e881ea047e86eb2d",
+            "id": "feddaba182a0e8df",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -44,6 +31,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
+        "dimension": 70.58823529411765,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -87,10 +75,27 @@
             }
           }
         ]
+      },
+      {
+        "id": "bf4a913e66cdd975",
+        "type": "tabs",
+        "dimension": 29.411764705882355,
+        "children": [
+          {
+            "id": "7778856753ec014b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "📘ClassNotes/🤢politics/马原/马原复习.md"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 273.5,
+    "width": 292.5,
     "collapsed": true
   },
   "right": {
@@ -172,19 +177,9 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
-          },
-          {
-            "id": "7778856753ec014b",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "📘ClassNotes/🤢politics/马原/马原复习.md"
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -207,17 +202,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e881ea047e86eb2d",
+  "active": "feddaba182a0e8df",
   "lastOpenFiles": [
     "📘ClassNotes/🤢politics/马原/🐴马原.md",
     "📘ClassNotes/🤢politics/马原/马原复习.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/2. 经典的弹性力学应力问题求解.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第二章：屈服条件的本构方程/4. 后继屈服的强化准则建立.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/4. 全量型本构关系.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/1. 弹塑性理论复习.md",
     "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/5. 厚壁球壳问题.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📝作业题/1-5/第5次作业3.md",
-    "🗒️Templates/BOXED_MATH_EQUATION.md",
-    "🗒️Templates/CASED_EQUATION_INSERT.md",
-    "Excalidraw/2. 经典的弹性力学应力问题求解 2023-02-17 10.16.41.md"
+    "Excalidraw/3. 柱体的扭转, 厚壁球壳 2022-12-13 16.49.39.excalidraw.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/4. 柱体的扭转问题.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/3.  梁的纯弯曲问题的塑性力学解.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/7. 旋转圆盘问题.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/2. 弹性力学的边值问题提法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/第三章重要公式整理和思维导图.md"
   ]
 }
