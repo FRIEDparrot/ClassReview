@@ -13,11 +13,11 @@ $$W_v = \frac{1}{2}\times  3 (\sigma_m\varepsilon_m)$$
 $$\begin{matrix}
 W_v = \frac{1}{2}(\frac{\sigma_1+\sigma_2 + \sigma_3}{3})(\varepsilon_1 +\varepsilon_2+\varepsilon_3) \\ 
 = \frac{1 - 2\nu}{6E}\left[ \sigma_1 + \sigma_2 + \sigma_3\right]^2
-\end{matrix}$$
-形状改变比能(弹性改变比能/歪斜能)定义为
+\end{matrix} \rightarrow = 0\quad  \text{if}\quad  \nu = \frac{1}{2}$$
+<mark style="background: transparent; color: yellow">形状改变比能</mark>(弹性改变比能/歪斜能)定义为
 $$W_d = W - W_v$$
 $$\begin{matrix}
-W = \frac{1+\nu}{6E}\left[ (\sigma_1-\sigma_2)^2 +(\sigma_2-\sigma_3)^2 + (\sigma_1 -\sigma_3)^2 \right] \\
+W= \frac{1+\nu}{6E}\left[ (\sigma_1-\sigma_2)^2 +(\sigma_2-\sigma_3)^2 + (\sigma_1 -\sigma_3)^2 \right] \\
 = \frac{1+\nu}{E}J_2 = \frac{(1+\nu)}{3E}k^2
 \end{matrix}$$
 故在Mises屈服条件下，形状改变比能不变
