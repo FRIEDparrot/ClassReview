@@ -1,28 +1,72 @@
 {
   "recentFiles": [
     {
-      "basename": "马原复习",
-      "path": "📘ClassNotes/🤢politics/马原/马原复习.md"
+      "basename": "2. 弹性力学的边值问题提法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/2. 弹性力学的边值问题提法.md"
+    },
+    {
+      "basename": "1. 弹塑性理论复习",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/1. 弹塑性理论复习.md"
     },
     {
       "basename": "重要公式整理",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/♎重要公式/重要公式整理.md"
     },
     {
-      "basename": "第4次作业1",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📝作业题/1-5/第4次作业1.md"
+      "basename": "4. 全量型本构关系",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/4. 全量型本构关系.md"
+    },
+    {
+      "basename": "4. 全量型本构关系 2022-12-06 00.33.32.excalidraw",
+      "path": "Excalidraw/4. 全量型本构关系 2022-12-06 00.33.32.excalidraw.md"
+    },
+    {
+      "basename": "4. 全量型本构关系 2022-12-06 08.34.23.excalidraw",
+      "path": "Excalidraw/4. 全量型本构关系 2022-12-06 08.34.23.excalidraw.md"
+    },
+    {
+      "basename": "重要概念记忆",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/♎重要公式/重要概念记忆.md"
+    },
+    {
+      "basename": "3. 柱体的扭转问题 2022-12-13 15.00.19.excalidraw",
+      "path": "Excalidraw/3. 柱体的扭转问题 2022-12-13 15.00.19.excalidraw.md"
+    },
+    {
+      "basename": "第十二次习题课作业",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📝作业题/6-10/第十二次习题课作业.pdf"
+    },
+    {
+      "basename": "3. 增量型本构方程的建立",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.md"
+    },
+    {
+      "basename": "3.本构方程的建立 2022-12-01 15.41.56.excalidraw",
+      "path": "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md"
     },
     {
       "basename": "2. Drucker 公设",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/2. Drucker 公设.md"
     },
     {
-      "basename": "4. 后继屈服的强化准则建立",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第二章：屈服条件的本构方程/4. 后继屈服的强化准则建立.md"
+      "basename": "马原复习",
+      "path": "📘ClassNotes/🤢politics/马原/马原复习.md"
     },
     {
-      "basename": "重要概念记忆",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/♎重要公式/重要概念记忆.md"
+      "basename": "马原关键题目的参考解答",
+      "path": "📘ClassNotes/🤢politics/马原/马原关键题目的参考解答.md"
+    },
+    {
+      "basename": "建站基本指导",
+      "path": "📘ClassNotes/⌨️Programming/🕸️Web/建站基本指导.md"
+    },
+    {
+      "basename": "第4次作业1",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📝作业题/1-5/第4次作业1.md"
+    },
+    {
+      "basename": "4. 后继屈服的强化准则建立",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第二章：屈服条件的本构方程/4. 后继屈服的强化准则建立.md"
     },
     {
       "basename": "2. Drucker 公设 2022-11-30 11.57.47.excalidraw",
@@ -105,10 +149,6 @@
       "path": "Day Planners/Day Planner-20230220.md"
     },
     {
-      "basename": "马原关键题目的参考解答",
-      "path": "📘ClassNotes/🤢politics/马原/马原关键题目的参考解答.md"
-    },
-    {
       "basename": "🐴马原",
       "path": "📘ClassNotes/🤢politics/马原/🐴马原.md"
     },
@@ -159,46 +199,6 @@
     {
       "basename": "第2次作业2",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📝作业题/1-5/第2次作业2.md"
-    },
-    {
-      "basename": "第2次作业1",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📝作业题/1-5/第2次作业1.md"
-    },
-    {
-      "basename": "第1次作业2",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📝作业题/1-5/第1次作业2.md"
-    },
-    {
-      "basename": "Tresca 和 Mises 屈服曲线实验验证",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第二章：屈服条件的本构方程/补充/Tresca 和 Mises 屈服曲线实验验证.md"
-    },
-    {
-      "basename": "4. 应变偏张量不变量，应变强度",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第一章：绪论/4. 应变偏张量不变量，应变强度.md"
-    },
-    {
-      "basename": "p29题目",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📙课本例题/p29题目.md"
-    },
-    {
-      "basename": "Day Planner-20230219",
-      "path": "Day Planners/Day Planner-20230219.md"
-    },
-    {
-      "basename": "1. 基本任务，基本假设",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第一章：绪论/1. 基本任务，基本假设.md"
-    },
-    {
-      "basename": "1. 基本任务，基本假设 2023-02-19 14.19.44",
-      "path": "Excalidraw/1. 基本任务，基本假设 2023-02-19 14.19.44.md"
-    },
-    {
-      "basename": "⌚Todo List",
-      "path": "💡Inspiration/⌚Todo List.md"
-    },
-    {
-      "basename": "1. 弹塑性理论复习",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/1. 弹塑性理论复习.md"
     }
   ],
   "omittedPaths": [],

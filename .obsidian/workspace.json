@@ -4,22 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "c30d2b01532ac3c2",
+        "id": "172aa2a685855845",
         "type": "tabs",
         "children": [
           {
-            "id": "913fd7b66ebec734",
+            "id": "437517076d7df08b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/🤢politics/马原/马原复习.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/♎重要公式/重要公式整理.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a05db6c67fbd11a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/♎重要公式/重要概念记忆.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3efbb99e9e9264ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/1. 弹塑性理论复习.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d6f2f06e9117cd2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/2. 弹性力学的边值问题提法.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -128,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/🤢politics/马原/马原复习.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/2. 弹性力学的边值问题提法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/🤢politics/马原/马原复习.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/2. 弹性力学的边值问题提法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,12 +202,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/🤢politics/马原/马原复习.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/2. 弹性力学的边值问题提法.md"
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -193,17 +230,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "913fd7b66ebec734",
+  "active": "d6f2f06e9117cd2e",
   "lastOpenFiles": [
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/1. 弹塑性理论复习.md",
     "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/♎重要公式/重要公式整理.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📝作业题/1-5/第4次作业1.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/2. Drucker 公设.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第二章：屈服条件的本构方程/4. 后继屈服的强化准则建立.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/4. 全量型本构关系.md",
+    "Excalidraw/4. 全量型本构关系 2022-12-06 00.33.32.excalidraw.md",
+    "Excalidraw/4. 全量型本构关系 2022-12-06 08.34.23.excalidraw.md",
     "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/♎重要公式/重要概念记忆.md",
-    "Excalidraw/2. Drucker 公设 2022-11-30 11.57.47.excalidraw.md",
-    "Excalidraw/2. Drucker 公设 2023-01-29 00.59.54.excalidraw.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/1. 相关概念.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📝作业题/1-5/第3次作业2.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第二章：屈服条件的本构方程/补充/Mises屈服条件的几种解释.md"
+    "Excalidraw/3. 柱体的扭转问题 2022-12-13 15.00.19.excalidraw.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/📝作业题/6-10/第十二次习题课作业.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.md",
+    "Excalidraw/3.本构方程的建立 2022-12-01 15.41.56.excalidraw.md"
   ]
 }
