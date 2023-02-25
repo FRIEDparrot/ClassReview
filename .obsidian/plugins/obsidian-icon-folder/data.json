@@ -6,6 +6,8 @@
     "emojiStyle": "native",
     "iconColor": "#4d4c4c",
     "recentlyUsedIcons": [
+      "FasDatabase",
+      "SiMysql",
       "SiMarkdown",
       "FabGithub",
       "FabApple"
@@ -22,5 +24,6 @@
   "Day Planners/Day Planner-20230203.md": "FabApple",
   "📘ClassNotes/others/Git/oftenly-used commands.md": "FabApple",
   "📘ClassNotes/others/Git": "FabGithub",
-  "📘ClassNotes/Markdown & Latex Tutorial": "SiMarkdown"
+  "📘ClassNotes/Markdown & Latex Tutorial": "SiMarkdown",
+  "DataBase": "FasDatabase"
 }

@@ -240,7 +240,7 @@
     {
       "modifiers": [
         "Alt",
-        "Shift"
+        "Mod"
       ],
       "key": "B"
     }
@@ -918,5 +918,15 @@
       ],
       "key": "."
     }
-  ]
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_INFITY_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "I"
+    }
+  ],
+  "markdown:toggle-preview": []
 }
