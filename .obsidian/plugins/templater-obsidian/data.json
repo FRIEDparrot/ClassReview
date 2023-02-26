@@ -8,7 +8,7 @@
     ]
   ],
   "trigger_on_file_creation": false,
-  "auto_jump_to_cursor": false,
+  "auto_jump_to_cursor": true,
   "enable_system_commands": false,
   "shell_path": "",
   "user_scripts_folder": "",
@@ -109,7 +109,11 @@
     "🗒️Templates/INSERT_LIMIT_SYMBOL.md",
     "🗒️Templates/INSERT_LEFTARROW.md",
     "🗒️Templates/INSERT_RIGHTARROW.md",
-    "🗒️Templates/INSERT_INFITY_SYMBOL.md"
+    "🗒️Templates/INSERT_INFITY_SYMBOL.md",
+    "🗒️Templates/OPEN_SURFACE_INTEGRAL_SIGNAL.md",
+    "🗒️Templates/OPEN_VOLUME_INTEGRAL.md",
+    "🗒️Templates/INSERT_VECTOR_SIGNAL.md",
+    "🗒️Templates/INSERT_BOLD_SYMBOL.md"
   ],
   "startup_templates": [
     ""

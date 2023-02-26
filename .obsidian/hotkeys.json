@@ -410,8 +410,8 @@
   "templater-obsidian:🗒️Templates/INSERT_PARTIAL_FRACTION.md": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Alt",
+        "Mod"
       ],
       "key": "P"
     }
@@ -690,8 +690,8 @@
   "templater-obsidian:🗒️Templates/INSERT_SECOND_DERIVATES.md": [
     {
       "modifiers": [
-        "Alt",
-        "Mod"
+        "Mod",
+        "Shift"
       ],
       "key": "P"
     }
@@ -928,5 +928,40 @@
       "key": "I"
     }
   ],
-  "markdown:toggle-preview": []
+  "markdown:toggle-preview": [],
+  "templater-obsidian:🗒️Templates/OPEN_SURFACE_INTEGRAL_SIGNAL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "2"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/OPEN_VOLUME_INTEGRAL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "3"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_VECTOR_SIGNAL.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowRight"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_BOLD_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "B"
+    }
+  ]
 }

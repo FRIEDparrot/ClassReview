@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "06eb39b71b9cf50a",
+        "id": "845b2c65fb91f0ea",
         "type": "tabs",
         "children": [
           {
-            "id": "3658f5de9398eec1",
+            "id": "1b3bf8765aa27f10",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第七章：能量原理/1. 虚位移原理,功的互等定理.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "92fce5eec44014fa",
+            "id": "971291d51dd41aad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第七章：能量原理/2. 最小势能原理,最小余能原理.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/典型截面应力应变求解的极值问题案例.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 241.5,
+    "width": 300.5,
     "collapsed": true
   },
   "right": {
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第七章：能量原理/1. 虚位移原理,功的互等定理.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第七章：能量原理/1. 虚位移原理,功的互等定理.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,12 +170,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第七章：能量原理/1. 虚位移原理,功的互等定理.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/1. 柱体扭转问题的方程.md"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -199,45 +199,45 @@
       "dbfolder:Create a new database table": false
     }
   },
-  "active": "3658f5de9398eec1",
+  "active": "1b3bf8765aa27f10",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/二、弹性应变能函数.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第七章：能量原理/2. 最小势能原理,最小余能原理.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第七章：能量原理/1. 虚位移原理,功的互等定理.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/补充/应变能函数表达式的推导.pdf",
-    "Excalidraw/Drawing 2022-11-20 13.24.30.excalidraw.md",
-    "Day Planners/Day Planner-20230225.md",
-    "Excalidraw/1. 虚位移原理,功的互等定理 2023-02-24 23.00.24.md",
-    "Excalidraw/1. 虚位移原理,功的互等定理 2023-02-24 23.06.55.md",
+    "Excalidraw/1. 柱体扭转问题的方程 2023-02-27 00.16.53.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/典型截面应力应变求解的极值问题案例.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第二章作业.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第六章作业2-2.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/弹性力学作业练习.pdf",
+    "Day Planners/Day Planner-20230227.md",
     "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/4. 极坐标下的经典问题.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第七章 微分方程.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第三章 微分中值定理和导数的应用.md",
-    "Excalidraw/Drawing 2022-11-20 12.35.36.excalidraw.md",
-    "Excalidraw/4. 极坐标下的经典问题 2023-02-24 18.19.17.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下基本方程的建立.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第六章作业2-1.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/2. 经典的弹性力学应力问题求解.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第六章作业3.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第二章：应力/2.主应力和主方向，球张量，偏张量.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第三章：应变/2. 主应变, 应变协调方程.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第三章：应变/补充/张量分析初步讲解.md",
+    "Excalidraw/张量分析初步讲解 2023-02-26 13.45.06.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/✍️课本例题&练习/PPT/张量初步p30.md",
+    "Excalidraw/张量分析初步讲解 2023-02-26 11.43.59.md",
+    "Excalidraw/张量分析初步讲解 2023-02-26 11.36.07.md",
+    "🗒️Templates/INSERT_BOLD_SYMBOL.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/✍️课本例题&练习/PPT/张量初步p17.md",
+    "🗒️Templates/INSERT_VECTOR_SIGNAL.md",
+    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/tensor calculation.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第三章：应变/补充",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第四章作业.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第九章：薄板问题/平面薄板问题的方程建立.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/补充/圆柱扭转的协调方程推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/补充",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/New folder",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/补充/应变能函数表达式的推导.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/孔边集中应力的剩余步骤.pdf",
     "attachments/Pasted Image 20230224195208_214.png",
-    "Excalidraw/4. 极坐标下的经典问题 2023-02-24 17.39.53.md",
-    "Excalidraw/4. 极坐标下的经典问题 2023-02-24 17.32.08.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下基本方程的建立.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/✍️课本例题&练习/PPT/6-2p19.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/2. 经典的弹性力学应力问题求解.md",
     "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/楔形体受重力和液体压力的求解.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/梁的纯弯曲的位移分量求解.pdf",
-    "Excalidraw/2. 经典的弹性力学应力问题求解 2023-02-24 10.45.39.md",
-    "Excalidraw/1. 平面问题的基本方程 2023-02-16 23.01.35.md",
     "💡Inspiration/4.png",
-    "Day Planners/Day Planner-20230224.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.md",
-    "💡Inspiration/Untitled.md",
-    "🗒️Templates/INSERT_INFITY_SYMBOL.md",
-    "💡Inspiration/Drawing 2023-02-23 22.30.07.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.synctex(busy)",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.synctex.gz",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.aux",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.log",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.tex",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/第三章重要公式整理和思维导图.md",
-    "DataBase/Untitled database.md"
+    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.synctex(busy)"
   ]
 }
