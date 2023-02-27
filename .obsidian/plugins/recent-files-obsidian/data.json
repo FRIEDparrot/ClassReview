@@ -1,8 +1,80 @@
 {
   "recentFiles": [
     {
+      "basename": "重要公式记忆整理",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/重要公式记忆整理.md"
+    },
+    {
       "basename": "1. 柱体扭转问题的方程",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/1. 柱体扭转问题的方程.md"
+    },
+    {
+      "basename": "1. 虚位移原理,功的互等定理",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第七章：能量原理/1. 虚位移原理,功的互等定理.md"
+    },
+    {
+      "basename": "4. 极坐标下的经典问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/4. 极坐标下的经典问题.md"
+    },
+    {
+      "basename": "3. 极坐标下基本方程的建立",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下基本方程的建立.md"
+    },
+    {
+      "basename": "2. 经典的弹性力学应力问题求解",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/2. 经典的弹性力学应力问题求解.md"
+    },
+    {
+      "basename": "楔形体受重力和液体压力的求解",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/楔形体受重力和液体压力的求解.pdf"
+    },
+    {
+      "basename": "梁的纯弯曲的位移分量求解",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/梁的纯弯曲的位移分量求解.pdf"
+    },
+    {
+      "basename": "1. 平面问题的基本方程",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/1. 平面问题的基本方程.md"
+    },
+    {
+      "basename": "1. 弹性力学基本方程",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第五章：弹性力学边值问题/1. 弹性力学基本方程.md"
+    },
+    {
+      "basename": "二、弹性应变能函数",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/二、弹性应变能函数.md"
+    },
+    {
+      "basename": "一、广义胡克定律,工程弹性常数",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md"
+    },
+    {
+      "basename": "2. 主应变, 应变协调方程",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第三章：应变/2. 主应变, 应变协调方程.md"
+    },
+    {
+      "basename": "1. 变形与应变的概念",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第三章：应变/1. 变形与应变的概念.md"
+    },
+    {
+      "basename": "张量分析初步讲解",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第三章：应变/补充/张量分析初步讲解.md"
+    },
+    {
+      "basename": "2.主应力和主方向，球张量，偏张量",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第二章：应力/2.主应力和主方向，球张量，偏张量.md"
+    },
+    {
+      "basename": "1.应力基本概念,边界条件和坐标转换",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第二章：应力/1.应力基本概念,边界条件和坐标转换.md"
+    },
+    {
+      "basename": "1. 基本假定与研究方法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第一章：绪论/1. 基本假定与研究方法.md"
+    },
+    {
+      "basename": "1-4章弹性力学基本问题思维导图",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/1-4章弹性力学基本问题思维导图.md"
     },
     {
       "basename": "1. 柱体扭转问题的方程 2023-02-27 00.16.53",
@@ -25,44 +97,12 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/弹性力学作业练习.pdf"
     },
     {
-      "basename": "4. 极坐标下的经典问题",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/4. 极坐标下的经典问题.md"
-    },
-    {
-      "basename": "3. 极坐标下基本方程的建立",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下基本方程的建立.md"
-    },
-    {
       "basename": "第六章作业2-1",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第六章作业2-1.md"
     },
     {
-      "basename": "2. 经典的弹性力学应力问题求解",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/2. 经典的弹性力学应力问题求解.md"
-    },
-    {
       "basename": "第六章作业3",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第六章作业3.md"
-    },
-    {
-      "basename": "一、广义胡克定律,工程弹性常数",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md"
-    },
-    {
-      "basename": "2.主应力和主方向，球张量，偏张量",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第二章：应力/2.主应力和主方向，球张量，偏张量.md"
-    },
-    {
-      "basename": "1.应力基本概念,边界条件和坐标转换",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第二章：应力/1.应力基本概念,边界条件和坐标转换.md"
-    },
-    {
-      "basename": "2. 主应变, 应变协调方程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第三章：应变/2. 主应变, 应变协调方程.md"
-    },
-    {
-      "basename": "张量分析初步讲解",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第三章：应变/补充/张量分析初步讲解.md"
     },
     {
       "basename": "张量初步p30",
@@ -109,14 +149,6 @@
       "path": "Excalidraw/平面薄板问题的求解 2022-11-25 16.08.11.excalidraw.md"
     },
     {
-      "basename": "1. 平面问题的基本方程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/1. 平面问题的基本方程.md"
-    },
-    {
-      "basename": "1. 基本假定与研究方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第一章：绪论/1. 基本假定与研究方法.md"
-    },
-    {
       "basename": "扭转问题 2022-11-23 14.29.57.excalidraw",
       "path": "Excalidraw/扭转问题 2022-11-23 14.29.57.excalidraw.md"
     },
@@ -131,10 +163,6 @@
     {
       "basename": "1. 柱体扭转问题的方程 2023-02-25 19.06.18",
       "path": "Excalidraw/1. 柱体扭转问题的方程 2023-02-25 19.06.18.md"
-    },
-    {
-      "basename": "1-4章弹性力学基本问题思维导图",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/1-4章弹性力学基本问题思维导图.md"
     },
     {
       "basename": "3. 有限元法简介",
@@ -165,40 +193,12 @@
       "path": "Excalidraw/2. 最小势能原理 2022-11-20 19.50.56.excalidraw.md"
     },
     {
-      "basename": "1. 虚位移原理,功的互等定理",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第七章：能量原理/1. 虚位移原理,功的互等定理.md"
-    },
-    {
       "basename": "7-1p20",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/✍️课本例题&练习/PPT/7-1p20.md"
     },
     {
       "basename": "水坝应力分布",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/✍️课本例题&练习/水坝应力分布.md"
-    },
-    {
-      "basename": "1. 能量原理的基本概念 2022-11-20 16.07.23.excalidraw",
-      "path": "Excalidraw/1. 能量原理的基本概念 2022-11-20 16.07.23.excalidraw.md"
-    },
-    {
-      "basename": "二、弹性应变能函数",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/二、弹性应变能函数.md"
-    },
-    {
-      "basename": "应变能函数表达式的推导",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/补充/应变能函数表达式的推导.pdf"
-    },
-    {
-      "basename": "Drawing 2022-11-20 13.24.30.excalidraw",
-      "path": "Excalidraw/Drawing 2022-11-20 13.24.30.excalidraw.md"
-    },
-    {
-      "basename": "1. 虚位移原理,功的互等定理 2023-02-24 23.00.24",
-      "path": "Excalidraw/1. 虚位移原理,功的互等定理 2023-02-24 23.00.24.md"
-    },
-    {
-      "basename": "第七章 微分方程",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第七章 微分方程.md"
     }
   ],
   "omittedPaths": [],
