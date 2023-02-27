@@ -105,7 +105,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -140,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/重要公式记忆整理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/重要公式记忆整理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/1. 柱体扭转问题的方程.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/重要公式记忆整理.md"
               }
             }
           }
@@ -206,10 +207,10 @@
       "dbfolder:Create a new database table": false
     }
   },
-  "active": "e0519361d4103fe5",
+  "active": "a83b3b141ad93df9",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/重要公式记忆整理.md",
     "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/重要公式记忆整理.md",
     "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第七章：能量原理/1. 虚位移原理,功的互等定理.md",
     "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/4. 极坐标下的经典问题.md",
     "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下基本方程的建立.md",
