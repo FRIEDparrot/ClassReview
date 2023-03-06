@@ -113,7 +113,9 @@
     "🗒️Templates/OPEN_SURFACE_INTEGRAL_SIGNAL.md",
     "🗒️Templates/OPEN_VOLUME_INTEGRAL.md",
     "🗒️Templates/INSERT_VECTOR_SIGNAL.md",
-    "🗒️Templates/INSERT_BOLD_SYMBOL.md"
+    "🗒️Templates/INSERT_BOLD_SYMBOL.md",
+    "🗒️Templates/INSERT_BASIC_BIG_BRACKETS.md",
+    "🗒️Templates/INSERT_MATRIX_BRACKETS.md"
   ],
   "startup_templates": [
     ""

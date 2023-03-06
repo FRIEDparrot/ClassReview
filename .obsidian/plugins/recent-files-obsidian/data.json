@@ -1,6 +1,130 @@
 {
   "recentFiles": [
     {
+      "basename": "1章 数据结构绪论",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/1章 数据结构绪论.md"
+    },
+    {
+      "basename": "2. 一些补充笔记",
+      "path": "📘ClassNotes/⌨️Programming/Languages/C++ basics/2. 一些补充笔记.md"
+    },
+    {
+      "basename": "1. 基本用法",
+      "path": "📘ClassNotes/⌨️Programming/Languages/C++ basics/1. 基本用法.md"
+    },
+    {
+      "basename": "第四章 扭转",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第四章 扭转.md"
+    },
+    {
+      "basename": "1. 数据结构概论",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++补充笔记/1. 数据结构概论.md"
+    },
+    {
+      "basename": "数据结构绪论 2023-03-06 17.28.18",
+      "path": "Excalidraw/数据结构绪论 2023-03-06 17.28.18.md"
+    },
+    {
+      "basename": "第四章 扭转 2023-03-06 16.58.57",
+      "path": "Excalidraw/第四章 扭转 2023-03-06 16.58.57.md"
+    },
+    {
+      "basename": "第四章 扭转 2023-03-06 16.08.09",
+      "path": "Excalidraw/第四章 扭转 2023-03-06 16.08.09.md"
+    },
+    {
+      "basename": "第四章 扭转 2023-03-06 15.40.42",
+      "path": "Excalidraw/第四章 扭转 2023-03-06 15.40.42.md"
+    },
+    {
+      "basename": "第四章 扭转 2023-03-06 14.19.45",
+      "path": "Excalidraw/第四章 扭转 2023-03-06 14.19.45.md"
+    },
+    {
+      "basename": "第四章 扭转 2023-03-06 12.57.49",
+      "path": "Excalidraw/第四章 扭转 2023-03-06 12.57.49.md"
+    },
+    {
+      "basename": "第四章 扭转 2023-03-06 11.44.19",
+      "path": "Excalidraw/第四章 扭转 2023-03-06 11.44.19.md"
+    },
+    {
+      "basename": "⌚Todo List",
+      "path": "💡Inspiration/⌚Todo List.md"
+    },
+    {
+      "basename": "第三章 剪切, 挤压",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第三章 剪切, 挤压.md"
+    },
+    {
+      "basename": "第二章 拉伸与压缩",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第二章 拉伸与压缩.md"
+    },
+    {
+      "basename": "第一章 杆件结构",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md"
+    },
+    {
+      "basename": "Chapter 1",
+      "path": "📘ClassNotes/⌨️Programming/Deep Learning/Dive into Deep Learning/Chapter 1.md"
+    },
+    {
+      "basename": "第一章 绪论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第一章 绪论.md"
+    },
+    {
+      "basename": "INSERT_MATRIX_BRACKETS",
+      "path": "🗒️Templates/INSERT_MATRIX_BRACKETS.md"
+    },
+    {
+      "basename": "INSERT_BASIC_BIG_BRACKETS",
+      "path": "🗒️Templates/INSERT_BASIC_BIG_BRACKETS.md"
+    },
+    {
+      "basename": "第一章 杆件结构 2023-03-06 08.18.00",
+      "path": "Excalidraw/第一章 杆件结构 2023-03-06 08.18.00.md"
+    },
+    {
+      "basename": "Chapter2",
+      "path": "📘ClassNotes/⌨️Programming/Deep Learning/Dive into Deep Learning/Chapter2.md"
+    },
+    {
+      "basename": "Intro of LiveLink for Matlab",
+      "path": "📘ClassNotes/💻softwares/🛩️FEM/Comsol/Comsol_Tutorial/Intro of LiveLink for Matlab.md"
+    },
+    {
+      "basename": "Chapter 1 2023-02-28 22.18.36",
+      "path": "Excalidraw/Chapter 1 2023-02-28 22.18.36.md"
+    },
+    {
+      "basename": "Chapter1 Mathematic Modeling, Numerical Methods and Problem Solving",
+      "path": "📘ClassNotes/⌨️Programming/Languages/➕Mathmatics/MATLAB/Applied Numerical Methods/Chapter1 Mathematic Modeling, Numerical Methods and Problem Solving.md"
+    },
+    {
+      "basename": "Basic tutorial for MATLAB app designer",
+      "path": "📘ClassNotes/⌨️Programming/Languages/➕Mathmatics/MATLAB/AppDesigner/Basic tutorial for MATLAB app designer.md"
+    },
+    {
+      "basename": "结构拓扑优化基本方法",
+      "path": "📘ClassNotes/💻softwares/🛩️FEM/Comsol/Comsol_Tutorial/结构拓扑优化基本方法.md"
+    },
+    {
+      "basename": "1 Density based topology optimization of turbulent flow heat transfer",
+      "path": "📖Reading_Material/Essays/1 Density based topology optimization of turbulent flow heat transfer.md"
+    },
+    {
+      "basename": "Turbulent flow",
+      "path": "💡Inspiration/Turbulent flow.md"
+    },
+    {
+      "basename": "Chapter1 Mathematic Modeling, Numerical Methods and Problem Solving 2023-02-28 04.26.41",
+      "path": "Excalidraw/Chapter1 Mathematic Modeling, Numerical Methods and Problem Solving 2023-02-28 04.26.41.md"
+    },
+    {
+      "basename": "Chapter1 Mathmatic Modeling, Numerical Methods and Problem Solving 2023-02-28 04.15.49",
+      "path": "Excalidraw/Chapter1 Mathmatic Modeling, Numerical Methods and Problem Solving 2023-02-28 04.15.49.md"
+    },
+    {
       "basename": "重要公式记忆整理",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/重要公式记忆整理.md"
     },
@@ -75,130 +199,6 @@
     {
       "basename": "1-4章弹性力学基本问题思维导图",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/1-4章弹性力学基本问题思维导图.md"
-    },
-    {
-      "basename": "1. 柱体扭转问题的方程 2023-02-27 00.16.53",
-      "path": "Excalidraw/1. 柱体扭转问题的方程 2023-02-27 00.16.53.md"
-    },
-    {
-      "basename": "典型截面应力应变求解的极值问题案例",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/典型截面应力应变求解的极值问题案例.md"
-    },
-    {
-      "basename": "第二章作业",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第二章作业.md"
-    },
-    {
-      "basename": "第六章作业2-2",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第六章作业2-2.md"
-    },
-    {
-      "basename": "弹性力学作业练习",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/弹性力学作业练习.pdf"
-    },
-    {
-      "basename": "第六章作业2-1",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第六章作业2-1.md"
-    },
-    {
-      "basename": "第六章作业3",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第六章作业3.md"
-    },
-    {
-      "basename": "张量初步p30",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/✍️课本例题&练习/PPT/张量初步p30.md"
-    },
-    {
-      "basename": "张量分析初步讲解 2023-02-26 11.43.59",
-      "path": "Excalidraw/张量分析初步讲解 2023-02-26 11.43.59.md"
-    },
-    {
-      "basename": "INSERT_BOLD_SYMBOL",
-      "path": "🗒️Templates/INSERT_BOLD_SYMBOL.md"
-    },
-    {
-      "basename": "张量初步p17",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/✍️课本例题&练习/PPT/张量初步p17.md"
-    },
-    {
-      "basename": "INSERT_VECTOR_SIGNAL",
-      "path": "🗒️Templates/INSERT_VECTOR_SIGNAL.md"
-    },
-    {
-      "basename": "tensor calculation",
-      "path": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/tensor calculation.md"
-    },
-    {
-      "basename": "第四章作业",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第四章作业.md"
-    },
-    {
-      "basename": "平面薄板问题的方程建立",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第九章：薄板问题/平面薄板问题的方程建立.md"
-    },
-    {
-      "basename": "平面薄板挠度方程推导",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第九章：薄板问题/补充/平面薄板挠度方程推导.md"
-    },
-    {
-      "basename": "多元函数极值以及求法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第九章：薄板问题/补充/多元函数极值以及求法.md"
-    },
-    {
-      "basename": "平面薄板问题的求解 2022-11-25 16.08.11.excalidraw",
-      "path": "Excalidraw/平面薄板问题的求解 2022-11-25 16.08.11.excalidraw.md"
-    },
-    {
-      "basename": "扭转问题 2022-11-23 14.29.57.excalidraw",
-      "path": "Excalidraw/扭转问题 2022-11-23 14.29.57.excalidraw.md"
-    },
-    {
-      "basename": "圆柱扭转的协调方程推导",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/补充/圆柱扭转的协调方程推导.pdf"
-    },
-    {
-      "basename": "扭转问题 2022-11-23 10.06.14.excalidraw",
-      "path": "Excalidraw/扭转问题 2022-11-23 10.06.14.excalidraw.md"
-    },
-    {
-      "basename": "1. 柱体扭转问题的方程 2023-02-25 19.06.18",
-      "path": "Excalidraw/1. 柱体扭转问题的方程 2023-02-25 19.06.18.md"
-    },
-    {
-      "basename": "3. 有限元法简介",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第七章：能量原理/3. 有限元法简介.md"
-    },
-    {
-      "basename": "2. 最小势能原理,最小余能原理",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第七章：能量原理/2. 最小势能原理,最小余能原理.md"
-    },
-    {
-      "basename": "ADD_LOG_OPERATOR",
-      "path": "🗒️Templates/ADD_LOG_OPERATOR.md"
-    },
-    {
-      "basename": "OPEN_SURFACE_INTEGRAL_SIGNAL",
-      "path": "🗒️Templates/OPEN_SURFACE_INTEGRAL_SIGNAL.md"
-    },
-    {
-      "basename": "INSERT_INTEGRAL_SIGNAL",
-      "path": "🗒️Templates/INSERT_INTEGRAL_SIGNAL.md"
-    },
-    {
-      "basename": "OPEN_VOLUME_INTEGRAL",
-      "path": "🗒️Templates/OPEN_VOLUME_INTEGRAL.md"
-    },
-    {
-      "basename": "2. 最小势能原理 2022-11-20 19.50.56.excalidraw",
-      "path": "Excalidraw/2. 最小势能原理 2022-11-20 19.50.56.excalidraw.md"
-    },
-    {
-      "basename": "7-1p20",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/✍️课本例题&练习/PPT/7-1p20.md"
-    },
-    {
-      "basename": "水坝应力分布",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/✍️课本例题&练习/水坝应力分布.md"
     }
   ],
   "omittedPaths": [],

@@ -4,42 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "845b2c65fb91f0ea",
+        "id": "c68516eac0738cef",
         "type": "tabs",
-        "dimension": 47.2972972972973,
         "children": [
           {
-            "id": "a83b3b141ad93df9",
+            "id": "2fe3c7202985370b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/重要公式记忆整理.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第四章 扭转.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "47340322292edfce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/1章 数据结构绪论.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
-      },
-      {
-        "id": "ec4ee87376f443a7",
-        "type": "tabs",
-        "dimension": 52.702702702702695,
-        "children": [
-          {
-            "id": "e0519361d4103fe5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -68,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "dive into deep learning",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 268.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -141,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/重要公式记忆整理.md",
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/1章 数据结构绪论.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/重要公式记忆整理.md",
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/1章 数据结构绪论.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,12 +170,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/重要公式记忆整理.md"
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/1章 数据结构绪论.md"
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -201,51 +193,59 @@
       "workspaces:Manage workspace layouts": false,
       "random-note:Open random note": false,
       "zk-prefixer:Create new unique note": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "dbfolder:Create a new database table": false
     }
   },
-  "active": "a83b3b141ad93df9",
+  "active": "86820ad5b67d3064",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/1. 柱体扭转问题的方程.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/重要公式记忆整理.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第七章：能量原理/1. 虚位移原理,功的互等定理.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/4. 极坐标下的经典问题.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下基本方程的建立.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/2. 经典的弹性力学应力问题求解.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/楔形体受重力和液体压力的求解.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/梁的纯弯曲的位移分量求解.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/1. 平面问题的基本方程.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第五章：弹性力学边值问题/1. 弹性力学基本方程.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/二、弹性应变能函数.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第三章：应变/2. 主应变, 应变协调方程.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第三章：应变/1. 变形与应变的概念.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第三章：应变/补充/张量分析初步讲解.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第二章：应力/2.主应力和主方向，球张量，偏张量.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第一章：绪论/1. 基本假定与研究方法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/1-4章弹性力学基本问题思维导图.md",
-    "Excalidraw/1. 柱体扭转问题的方程 2023-02-27 00.16.53.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/典型截面应力应变求解的极值问题案例.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第二章作业.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第六章作业2-2.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/弹性力学作业练习.pdf",
-    "Day Planners/Day Planner-20230227.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第六章作业2-1.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/📝作业题/第六章作业3.md",
-    "Excalidraw/张量分析初步讲解 2023-02-26 13.45.06.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/✍️课本例题&练习/PPT/张量初步p30.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第三章：应变/补充",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/补充/圆柱扭转的协调方程推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/补充",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/New folder",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/补充/应变能函数表达式的推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/孔边集中应力的剩余步骤.pdf",
-    "attachments/Pasted Image 20230224195208_214.png",
-    "💡Inspiration/4.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.synctex(busy)"
+    "📘ClassNotes/⌨️Programming/DataBase",
+    "📘ClassNotes/⌨️Programming/Languages",
+    "📘ClassNotes/⌨️Programming/Languages/C++ basics/2. 一些补充笔记.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/1章 数据结构绪论.md",
+    "📘ClassNotes/⌨️Programming/Languages/C++ basics/1. 基本用法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第四章 扭转.md",
+    "📘ClassNotes/⌨️Programming/C++ basics/textbook.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/C++补充笔记/1. 数据结构概论.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/C++补充笔记",
+    "Excalidraw/数据结构绪论 2023-03-06 17.28.18.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记",
+    "Excalidraw/第四章 扭转 2023-03-06 16.58.57.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/补充内容/密绕弹簧受拉的变形公式推导.pdf",
+    "Excalidraw/第四章 扭转 2023-03-06 16.08.09.md",
+    "Excalidraw/第四章 扭转 2023-03-06 15.40.42.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/课本例题",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/补充内容/斜截面上的扭转切应力推导.pdf",
+    "Excalidraw/第四章 扭转 2023-03-06 14.19.45.md",
+    "Excalidraw/第四章 扭转 2023-03-06 12.57.49.md",
+    "Excalidraw/第四章 扭转 2023-03-06 11.44.19.md",
+    "💡Inspiration/⌚Todo List.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第三章 剪切, 挤压.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第二章 拉伸与压缩.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
+    "📘ClassNotes/⌨️Programming/Deep Learning/Dive into Deep Learning/Chapter 1.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第一章 绪论.md",
+    "🗒️Templates/INSERT_MATRIX_BRACKETS.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM/Untitled",
+    "🗒️Templates/INSERT_BASIC_BIG_BRACKETS.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/重要定理",
+    "Excalidraw/第一章 杆件结构 2023-03-06 08.18.00.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis",
+    "📘ClassNotes/⌨️Programming/Deep Learning/Dive into Deep Learning/Chapter2.md",
+    "Day Planners/Day Planner-20230306.md",
+    "📃Essay/计算机实习作业报告.md",
+    "attachments/untitled6.png",
+    "attachments/untitled5 1.png",
+    "attachments/untitled5.png",
+    "attachments/untitled4.png",
+    "attachments/Pasted image 20230304203325.png",
+    "attachments/Pasted image 20230304203139.png",
+    "attachments/Pasted image 20230304202929.png",
+    "attachments/Pasted image 20230304171630.png",
+    "attachments/Pasted image 20230304170234.png",
+    "attachments/Pasted image 20230304165954.png"
   ]
 }

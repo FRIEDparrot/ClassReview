@@ -963,5 +963,31 @@
       ],
       "key": "B"
     }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_BASIC_BIG_BRACKETS.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "["
+    },
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "["
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_MATRIX_BRACKETS.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "["
+    }
   ]
 }
