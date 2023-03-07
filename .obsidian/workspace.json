@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "c68516eac0738cef",
+        "id": "2089d6f26f46871d",
         "type": "tabs",
         "children": [
           {
-            "id": "2fe3c7202985370b",
+            "id": "ae91251b61d7cddd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第四章 扭转.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "47340322292edfce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/1章 数据结构绪论.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter1 Philosophy of Computational Fluid Dynamics.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5
+    "width": 268.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -133,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/1章 数据结构绪论.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter1 Philosophy of Computational Fluid Dynamics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/1章 数据结构绪论.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter1 Philosophy of Computational Fluid Dynamics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,17 +158,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/1章 数据结构绪论.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter1 Philosophy of Computational Fluid Dynamics.md"
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 267.5,
-    "collapsed": true
+    "width": 204.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,44 +186,44 @@
       "dbfolder:Create a new database table": false
     }
   },
-  "active": "86820ad5b67d3064",
+  "active": "7778856753ec014b",
   "lastOpenFiles": [
+    "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/Graphic_Practice.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter1 Philosophy of Computational Fluid Dynamics.md",
+    "📘ClassNotes/Markdown & Latex Tutorial/Markdown Tutorial/Markdown documentation.md",
+    "Excalidraw/Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-07 17.07.39.md",
+    "Excalidraw/Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-07 17.03.53.md",
+    "Excalidraw/Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-07 17.01.04.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第一章 绪论.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第四章：广义胡克定律/补充/平面应力应变状态下的本构方程推导.pdf",
+    "Excalidraw/一、广义胡克定律,工程弹性常数 2022-11-29 22.13.24.excalidraw.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/补充",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/2. 经典的弹性力学应力问题求解.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/1. 平面问题的基本方程.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/补充/梁的纯弯曲的位移分量求解.pdf",
+    "Excalidraw/第一章 绪论 2023-03-07 14.23.07.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/复习 指针和链表的使用.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/C++补充笔记/C++ 数据结构概论.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/C++补充笔记/The Basics of the Data Structures.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/1章 数据结构绪论.md",
+    "📘ClassNotes/⌨️Programming/Deep Learning/Implements/多层感知机,神经网络.md",
+    "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/绪论.md",
+    "📘ClassNotes/⌨️Programming/Deep Learning/Advanced deeplearning/CNN神经网络讲解.md",
+    "📘ClassNotes/⌨️Programming/Deep Learning/Optimizer Introduction/The often-used optimizer and the principle.md",
+    "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为",
+    "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/复合材料力学",
+    "📘ClassNotes/⌨️Programming/Deep Learning/Optimizer Introduction",
+    "Day Planners/Day Planner-20230307.md",
+    "📘ClassNotes/⌨️Programming/Deep Learning/Dive into Deep Learning/Chapter2.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第四章 扭转.md",
     "📘ClassNotes/⌨️Programming/DataBase",
     "📘ClassNotes/⌨️Programming/Languages",
     "📘ClassNotes/⌨️Programming/Languages/C++ basics/2. 一些补充笔记.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/1章 数据结构绪论.md",
     "📘ClassNotes/⌨️Programming/Languages/C++ basics/1. 基本用法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第四章 扭转.md",
-    "📘ClassNotes/⌨️Programming/C++ basics/textbook.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/C++补充笔记/1. 数据结构概论.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/C++补充笔记",
-    "Excalidraw/数据结构绪论 2023-03-06 17.28.18.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记",
-    "Excalidraw/第四章 扭转 2023-03-06 16.58.57.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/补充内容/密绕弹簧受拉的变形公式推导.pdf",
-    "Excalidraw/第四章 扭转 2023-03-06 16.08.09.md",
-    "Excalidraw/第四章 扭转 2023-03-06 15.40.42.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/课本例题",
-    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/补充内容/斜截面上的扭转切应力推导.pdf",
-    "Excalidraw/第四章 扭转 2023-03-06 14.19.45.md",
-    "Excalidraw/第四章 扭转 2023-03-06 12.57.49.md",
-    "Excalidraw/第四章 扭转 2023-03-06 11.44.19.md",
-    "💡Inspiration/⌚Todo List.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第三章 剪切, 挤压.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第二章 拉伸与压缩.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
-    "📘ClassNotes/⌨️Programming/Deep Learning/Dive into Deep Learning/Chapter 1.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第一章 绪论.md",
-    "🗒️Templates/INSERT_MATRIX_BRACKETS.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM/Untitled",
-    "🗒️Templates/INSERT_BASIC_BIG_BRACKETS.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/重要定理",
-    "Excalidraw/第一章 杆件结构 2023-03-06 08.18.00.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis",
-    "📘ClassNotes/⌨️Programming/Deep Learning/Dive into Deep Learning/Chapter2.md",
-    "Day Planners/Day Planner-20230306.md",
-    "📃Essay/计算机实习作业报告.md",
     "attachments/untitled6.png",
     "attachments/untitled5 1.png",
     "attachments/untitled5.png",

@@ -1,8 +1,104 @@
 {
   "recentFiles": [
     {
+      "basename": "Chapter1 Philosophy of Computational Fluid Dynamics",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter1 Philosophy of Computational Fluid Dynamics.md"
+    },
+    {
+      "basename": "Graphic_Practice",
+      "path": "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/Graphic_Practice.md"
+    },
+    {
+      "basename": "Markdown documentation",
+      "path": "📘ClassNotes/Markdown & Latex Tutorial/Markdown Tutorial/Markdown documentation.md"
+    },
+    {
+      "basename": "Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-07 17.07.39",
+      "path": "Excalidraw/Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-07 17.07.39.md"
+    },
+    {
+      "basename": "Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-07 17.03.53",
+      "path": "Excalidraw/Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-07 17.03.53.md"
+    },
+    {
+      "basename": "Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-07 17.01.04",
+      "path": "Excalidraw/Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-07 17.01.04.md"
+    },
+    {
+      "basename": "第一章 绪论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第一章 绪论.md"
+    },
+    {
+      "basename": "一、广义胡克定律,工程弹性常数",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md"
+    },
+    {
+      "basename": "平面应力应变状态下的本构方程推导",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第四章：广义胡克定律/补充/平面应力应变状态下的本构方程推导.pdf"
+    },
+    {
+      "basename": "一、广义胡克定律,工程弹性常数 2022-11-29 22.13.24.excalidraw",
+      "path": "Excalidraw/一、广义胡克定律,工程弹性常数 2022-11-29 22.13.24.excalidraw.md"
+    },
+    {
+      "basename": "1.应力基本概念,边界条件和坐标转换",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第二章：应力/1.应力基本概念,边界条件和坐标转换.md"
+    },
+    {
+      "basename": "2. 经典的弹性力学应力问题求解",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/2. 经典的弹性力学应力问题求解.md"
+    },
+    {
+      "basename": "1. 平面问题的基本方程",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/1. 平面问题的基本方程.md"
+    },
+    {
+      "basename": "梁的纯弯曲的位移分量求解",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/补充/梁的纯弯曲的位移分量求解.pdf"
+    },
+    {
+      "basename": "第一章 绪论 2023-03-07 14.23.07",
+      "path": "Excalidraw/第一章 绪论 2023-03-07 14.23.07.md"
+    },
+    {
+      "basename": "复习 指针和链表的使用",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/复习 指针和链表的使用.md"
+    },
+    {
+      "basename": "C++ 数据结构概论",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++补充笔记/C++ 数据结构概论.md"
+    },
+    {
+      "basename": "The Basics of the Data Structures",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++补充笔记/The Basics of the Data Structures.md"
+    },
+    {
       "basename": "1章 数据结构绪论",
       "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/1章 数据结构绪论.md"
+    },
+    {
+      "basename": "多层感知机,神经网络",
+      "path": "📘ClassNotes/⌨️Programming/Deep Learning/Implements/多层感知机,神经网络.md"
+    },
+    {
+      "basename": "绪论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/绪论.md"
+    },
+    {
+      "basename": "CNN神经网络讲解",
+      "path": "📘ClassNotes/⌨️Programming/Deep Learning/Advanced deeplearning/CNN神经网络讲解.md"
+    },
+    {
+      "basename": "The often-used optimizer and the principle",
+      "path": "📘ClassNotes/⌨️Programming/Deep Learning/Optimizer Introduction/The often-used optimizer and the principle.md"
+    },
+    {
+      "basename": "Chapter2",
+      "path": "📘ClassNotes/⌨️Programming/Deep Learning/Dive into Deep Learning/Chapter2.md"
+    },
+    {
+      "basename": "第四章 扭转",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第四章 扭转.md"
     },
     {
       "basename": "2. 一些补充笔记",
@@ -11,14 +107,6 @@
     {
       "basename": "1. 基本用法",
       "path": "📘ClassNotes/⌨️Programming/Languages/C++ basics/1. 基本用法.md"
-    },
-    {
-      "basename": "第四章 扭转",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第四章 扭转.md"
-    },
-    {
-      "basename": "1. 数据结构概论",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++补充笔记/1. 数据结构概论.md"
     },
     {
       "basename": "数据结构绪论 2023-03-06 17.28.18",
@@ -85,10 +173,6 @@
       "path": "Excalidraw/第一章 杆件结构 2023-03-06 08.18.00.md"
     },
     {
-      "basename": "Chapter2",
-      "path": "📘ClassNotes/⌨️Programming/Deep Learning/Dive into Deep Learning/Chapter2.md"
-    },
-    {
       "basename": "Intro of LiveLink for Matlab",
       "path": "📘ClassNotes/💻softwares/🛩️FEM/Comsol/Comsol_Tutorial/Intro of LiveLink for Matlab.md"
     },
@@ -115,90 +199,6 @@
     {
       "basename": "Turbulent flow",
       "path": "💡Inspiration/Turbulent flow.md"
-    },
-    {
-      "basename": "Chapter1 Mathematic Modeling, Numerical Methods and Problem Solving 2023-02-28 04.26.41",
-      "path": "Excalidraw/Chapter1 Mathematic Modeling, Numerical Methods and Problem Solving 2023-02-28 04.26.41.md"
-    },
-    {
-      "basename": "Chapter1 Mathmatic Modeling, Numerical Methods and Problem Solving 2023-02-28 04.15.49",
-      "path": "Excalidraw/Chapter1 Mathmatic Modeling, Numerical Methods and Problem Solving 2023-02-28 04.15.49.md"
-    },
-    {
-      "basename": "重要公式记忆整理",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/重要公式记忆整理.md"
-    },
-    {
-      "basename": "1. 柱体扭转问题的方程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第八章：柱体的扭转/1. 柱体扭转问题的方程.md"
-    },
-    {
-      "basename": "1. 虚位移原理,功的互等定理",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第七章：能量原理/1. 虚位移原理,功的互等定理.md"
-    },
-    {
-      "basename": "4. 极坐标下的经典问题",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/4. 极坐标下的经典问题.md"
-    },
-    {
-      "basename": "3. 极坐标下基本方程的建立",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/3. 极坐标下基本方程的建立.md"
-    },
-    {
-      "basename": "2. 经典的弹性力学应力问题求解",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/2. 经典的弹性力学应力问题求解.md"
-    },
-    {
-      "basename": "楔形体受重力和液体压力的求解",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/楔形体受重力和液体压力的求解.pdf"
-    },
-    {
-      "basename": "梁的纯弯曲的位移分量求解",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/补充/梁的纯弯曲的位移分量求解.pdf"
-    },
-    {
-      "basename": "1. 平面问题的基本方程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第六章：平面问题/1. 平面问题的基本方程.md"
-    },
-    {
-      "basename": "1. 弹性力学基本方程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第五章：弹性力学边值问题/1. 弹性力学基本方程.md"
-    },
-    {
-      "basename": "二、弹性应变能函数",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/二、弹性应变能函数.md"
-    },
-    {
-      "basename": "一、广义胡克定律,工程弹性常数",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md"
-    },
-    {
-      "basename": "2. 主应变, 应变协调方程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第三章：应变/2. 主应变, 应变协调方程.md"
-    },
-    {
-      "basename": "1. 变形与应变的概念",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第三章：应变/1. 变形与应变的概念.md"
-    },
-    {
-      "basename": "张量分析初步讲解",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第三章：应变/补充/张量分析初步讲解.md"
-    },
-    {
-      "basename": "2.主应力和主方向，球张量，偏张量",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第二章：应力/2.主应力和主方向，球张量，偏张量.md"
-    },
-    {
-      "basename": "1.应力基本概念,边界条件和坐标转换",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第二章：应力/1.应力基本概念,边界条件和坐标转换.md"
-    },
-    {
-      "basename": "1. 基本假定与研究方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/第一章：绪论/1. 基本假定与研究方法.md"
-    },
-    {
-      "basename": "1-4章弹性力学基本问题思维导图",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/🧠Mind Map & Important conclusions/1-4章弹性力学基本问题思维导图.md"
     }
   ],
   "omittedPaths": [],

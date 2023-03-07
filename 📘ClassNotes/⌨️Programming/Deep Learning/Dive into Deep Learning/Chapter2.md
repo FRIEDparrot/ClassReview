@@ -37,3 +37,74 @@ A = X.numpy() # convert torch tensor to the numpy array
 B = torch.from_numpy(A) # convert numpy array to torch tensor
 ```
 
+
+for reading the Dataset, we just need the os package 
+```python
+import os 
+os.makedirs(os.path.join('..', 'data'), exist_ok = True);
+datafile = .....csv 
+with open(data_file, 'r') as f:
+	......
+```
+
+also load data using pandas is available
+
+### 2 data preparation
+
+```python
+inputs, targets = data.iloc[:, 0:2], data.iloc[:, 2]
+
+inputs = pd.get_dummies(inputs, dummy_na=True)print(inputs)
+
+inputs = inputs.fillna(inputs.mean())
+
+print(inputs)
+```
+
+Data visualization tools such as seaborn, Bokeh, or matplotlib can help you to manually inspect the data and develop intuitions about what problems you may need to address.
+
+
+### 3 Reduction 
+Invoking the sum function reduces a tensor along all of the axes, and eventually produce a scalar.
+To sum along the rows, we need to specify the axis as `axis = 0` in sum;
+
+if we specify that the `axis=1` , 
+
+### 4. Non-Reduction Sum 
+
+for keeping the number of axes unchanged, when invoking the function for calculating the sum 
+`sum_A = A.sum(axis =1,keepdims = True)` -> this will keep the two axes after summing each row. 
+
+`A / sum(A)`
+
+### 5. cumsum function 
+The cumsum function is for calculate the <mark style="background: transparent; color: yellow">cumulative sum of elements</mark> 
+
+```python
+A = torch.arange(3, dtype = torch.float32)
+A.cumsum()
+
+>> tensor([1.,3.,6.])
+```
+
+
+### 6. Dot product and vector product 
+
+```python 
+# for dot product 
+torch.dot(x,y);
+
+# for vector product 
+torch.mv(A,x); 
+
+# matrix-matrix multiplication 
+torch.mm(A,B)
+```
+
+```python
+torch.norm(u)
+```
+
+- scalars, vectors, matrices and the tensors are the basic mathmatical objects used in the linear algebra 
+- Comon vector norms include the $l_1$ norm and $l_2$ normm and the common matrix norm include the spectral and Frobenius norm. 
+
