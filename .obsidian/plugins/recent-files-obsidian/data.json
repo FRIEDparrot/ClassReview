@@ -1,8 +1,116 @@
 {
   "recentFiles": [
     {
+      "basename": "第一章、分析动力学基础",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第一章、分析动力学基础.md"
+    },
+    {
+      "basename": "第一章、分析动力学基础 2023-03-10 14.33.46",
+      "path": "Excalidraw/第一章、分析动力学基础 2023-03-10 14.33.46.md"
+    },
+    {
+      "basename": "Chapter 1 One-Dimensional boundary value problem",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Chapter 1 One-Dimensional boundary value problem.md"
+    },
+    {
+      "basename": "Preface and Introduction",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Preface and Introduction.md"
+    },
+    {
       "basename": "Chapter1 Philosophy of Computational Fluid Dynamics",
       "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter1 Philosophy of Computational Fluid Dynamics.md"
+    },
+    {
+      "basename": "Drawing 2023-03-10 09.24.13",
+      "path": "📝Homework_Drafts/Drawing 2023-03-10 09.24.13.md"
+    },
+    {
+      "basename": "复习 七大排序算法",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 七大排序算法.md"
+    },
+    {
+      "basename": "复习 七大排序算法 2023-03-09 23.40.42",
+      "path": "Excalidraw/复习 七大排序算法 2023-03-09 23.40.42.md"
+    },
+    {
+      "basename": "复习 七大排序算法 2023-03-09 23.11.25",
+      "path": "Excalidraw/复习 七大排序算法 2023-03-09 23.11.25.md"
+    },
+    {
+      "basename": "Pasted image 20230309082851",
+      "path": "attachments/Pasted image 20230309082851.png"
+    },
+    {
+      "basename": "Chapter2 Derivation of the Governing Equations",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter2 Derivation of the Governing Equations.md"
+    },
+    {
+      "basename": "Chapter3 Math",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter3 Math.md"
+    },
+    {
+      "basename": "第二章 平面问题的差分法和变分法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第二章 平面问题的差分法和变分法.md"
+    },
+    {
+      "basename": "2. 经典的弹性力学应力问题求解",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/2. 经典的弹性力学应力问题求解.md"
+    },
+    {
+      "basename": "第二章 平面问题的差分法和变分法 2023-03-09 14.34.10",
+      "path": "Excalidraw/第二章 平面问题的差分法和变分法 2023-03-09 14.34.10.md"
+    },
+    {
+      "basename": "第一章 杆件结构",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md"
+    },
+    {
+      "basename": "第一章 绪论和基本方法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第一章 绪论和基本方法.md"
+    },
+    {
+      "basename": "第二章 线性表",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 线性表.md"
+    },
+    {
+      "basename": "1章 数据结构绪论",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/1章 数据结构绪论.md"
+    },
+    {
+      "basename": "绪论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/绪论.md"
+    },
+    {
+      "basename": "复习 指针和链表的使用",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 指针和链表的使用.md"
+    },
+    {
+      "basename": "C++ 数据结构概论",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++补充笔记/C++ 数据结构概论.md"
+    },
+    {
+      "basename": "Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-08 12.39.06",
+      "path": "Excalidraw/Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-08 12.39.06.md"
+    },
+    {
+      "basename": "第一章 杆件结构 2023-03-08 11.25.21",
+      "path": "Excalidraw/第一章 杆件结构 2023-03-08 11.25.21.md"
+    },
+    {
+      "basename": "第一章 杆件结构 2023-03-08 09.51.32",
+      "path": "Excalidraw/第一章 杆件结构 2023-03-08 09.51.32.md"
+    },
+    {
+      "basename": "第一章 杆件结构 2023-03-08 09.13.27",
+      "path": "Excalidraw/第一章 杆件结构 2023-03-08 09.13.27.md"
+    },
+    {
+      "basename": "1-11 Some Introductory Thoughts",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts.md"
+    },
+    {
+      "basename": "Some Introductory Thoughts 2023-01-16 23.36.28.excalidraw",
+      "path": "Excalidraw/Some Introductory Thoughts 2023-01-16 23.36.28.excalidraw.md"
     },
     {
       "basename": "Graphic_Practice",
@@ -25,10 +133,6 @@
       "path": "Excalidraw/Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-07 17.01.04.md"
     },
     {
-      "basename": "第一章 绪论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第一章 绪论.md"
-    },
-    {
       "basename": "一、广义胡克定律,工程弹性常数",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md"
     },
@@ -45,10 +149,6 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第二章：应力/1.应力基本概念,边界条件和坐标转换.md"
     },
     {
-      "basename": "2. 经典的弹性力学应力问题求解",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/2. 经典的弹性力学应力问题求解.md"
-    },
-    {
       "basename": "1. 平面问题的基本方程",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/1. 平面问题的基本方程.md"
     },
@@ -61,28 +161,12 @@
       "path": "Excalidraw/第一章 绪论 2023-03-07 14.23.07.md"
     },
     {
-      "basename": "复习 指针和链表的使用",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/复习 指针和链表的使用.md"
-    },
-    {
-      "basename": "C++ 数据结构概论",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++补充笔记/C++ 数据结构概论.md"
-    },
-    {
       "basename": "The Basics of the Data Structures",
       "path": "📘ClassNotes/⌨️Programming/Data Structure/C++补充笔记/The Basics of the Data Structures.md"
     },
     {
-      "basename": "1章 数据结构绪论",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/1章 数据结构绪论.md"
-    },
-    {
       "basename": "多层感知机,神经网络",
       "path": "📘ClassNotes/⌨️Programming/Deep Learning/Implements/多层感知机,神经网络.md"
-    },
-    {
-      "basename": "绪论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/绪论.md"
     },
     {
       "basename": "CNN神经网络讲解",
@@ -115,90 +199,6 @@
     {
       "basename": "第四章 扭转 2023-03-06 16.58.57",
       "path": "Excalidraw/第四章 扭转 2023-03-06 16.58.57.md"
-    },
-    {
-      "basename": "第四章 扭转 2023-03-06 16.08.09",
-      "path": "Excalidraw/第四章 扭转 2023-03-06 16.08.09.md"
-    },
-    {
-      "basename": "第四章 扭转 2023-03-06 15.40.42",
-      "path": "Excalidraw/第四章 扭转 2023-03-06 15.40.42.md"
-    },
-    {
-      "basename": "第四章 扭转 2023-03-06 14.19.45",
-      "path": "Excalidraw/第四章 扭转 2023-03-06 14.19.45.md"
-    },
-    {
-      "basename": "第四章 扭转 2023-03-06 12.57.49",
-      "path": "Excalidraw/第四章 扭转 2023-03-06 12.57.49.md"
-    },
-    {
-      "basename": "第四章 扭转 2023-03-06 11.44.19",
-      "path": "Excalidraw/第四章 扭转 2023-03-06 11.44.19.md"
-    },
-    {
-      "basename": "⌚Todo List",
-      "path": "💡Inspiration/⌚Todo List.md"
-    },
-    {
-      "basename": "第三章 剪切, 挤压",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第三章 剪切, 挤压.md"
-    },
-    {
-      "basename": "第二章 拉伸与压缩",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第二章 拉伸与压缩.md"
-    },
-    {
-      "basename": "第一章 杆件结构",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md"
-    },
-    {
-      "basename": "Chapter 1",
-      "path": "📘ClassNotes/⌨️Programming/Deep Learning/Dive into Deep Learning/Chapter 1.md"
-    },
-    {
-      "basename": "第一章 绪论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第一章 绪论.md"
-    },
-    {
-      "basename": "INSERT_MATRIX_BRACKETS",
-      "path": "🗒️Templates/INSERT_MATRIX_BRACKETS.md"
-    },
-    {
-      "basename": "INSERT_BASIC_BIG_BRACKETS",
-      "path": "🗒️Templates/INSERT_BASIC_BIG_BRACKETS.md"
-    },
-    {
-      "basename": "第一章 杆件结构 2023-03-06 08.18.00",
-      "path": "Excalidraw/第一章 杆件结构 2023-03-06 08.18.00.md"
-    },
-    {
-      "basename": "Intro of LiveLink for Matlab",
-      "path": "📘ClassNotes/💻softwares/🛩️FEM/Comsol/Comsol_Tutorial/Intro of LiveLink for Matlab.md"
-    },
-    {
-      "basename": "Chapter 1 2023-02-28 22.18.36",
-      "path": "Excalidraw/Chapter 1 2023-02-28 22.18.36.md"
-    },
-    {
-      "basename": "Chapter1 Mathematic Modeling, Numerical Methods and Problem Solving",
-      "path": "📘ClassNotes/⌨️Programming/Languages/➕Mathmatics/MATLAB/Applied Numerical Methods/Chapter1 Mathematic Modeling, Numerical Methods and Problem Solving.md"
-    },
-    {
-      "basename": "Basic tutorial for MATLAB app designer",
-      "path": "📘ClassNotes/⌨️Programming/Languages/➕Mathmatics/MATLAB/AppDesigner/Basic tutorial for MATLAB app designer.md"
-    },
-    {
-      "basename": "结构拓扑优化基本方法",
-      "path": "📘ClassNotes/💻softwares/🛩️FEM/Comsol/Comsol_Tutorial/结构拓扑优化基本方法.md"
-    },
-    {
-      "basename": "1 Density based topology optimization of turbulent flow heat transfer",
-      "path": "📖Reading_Material/Essays/1 Density based topology optimization of turbulent flow heat transfer.md"
-    },
-    {
-      "basename": "Turbulent flow",
-      "path": "💡Inspiration/Turbulent flow.md"
     }
   ],
   "omittedPaths": [],

@@ -424,6 +424,13 @@
         "Shift"
       ],
       "key": "F"
+    },
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "F"
     }
   ],
   "templater-obsidian:🗒️Templates/INSERT_POINT_WITH_ZERO.md": [
@@ -989,5 +996,6 @@
       ],
       "key": "["
     }
-  ]
+  ],
+  "global-search:open": []
 }

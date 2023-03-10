@@ -12,7 +12,16 @@ for the theory of the long-range intercontinental ballistic missiles:
 in 1951 H. Julian Allen at the NACA Ames Aeronautical Laboratory,  introduced the concept of the *blunt* reentry body. 
 ![[Some Introductory Thoughts 2023-01-16 23.20.52.excalidraw]]
 in that case, the way  to increase the  heating of the airflow is to  create a strong shock wave at the nose -> so  we can **use the reentry bodies rather than slender bodies to minimize the aerodynamic heating**
-![[Some Introductory Thoughts 2023-01-16 23.36.28.excalidraw]]
+![[Some Introductory Thoughts 2023-01-16 23.36.28.excalidraw|550]]
+
+`````ad-note
+title: Implements
+collapse: open
+
+with the knowledge of computational fluid dynamics, we note that the strong shock wave detaches from the nose by the distance $\delta$, which is called ***the shock detachment distance***
+
+in the region of flow behind the nearly portion of the shock wave, the flow is  locally subsonic, and the further downstream is supersonic. 
+`````
 
 ## 1.2 Classification and Practical objectives
 When a force is applied tangentially to the surface of a solid, the solid will experience a finite deformation,  and the tangential force per unit area(shear stress) would usually be proportional to the amount of deformation. 
