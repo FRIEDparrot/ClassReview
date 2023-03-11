@@ -4,6 +4,11 @@
       "type": "file",
       "title": "3. 对塑性屈服条件的分析",
       "path": "ClassNotes/力学内容/塑性力学/第一章：绪论/3. 对塑性屈服条件的分析.md"
+    },
+    {
+      "type": "file",
+      "title": "Chapter 1 One-Dimensional Boundary Value Problem",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md"
     }
   ]
 }

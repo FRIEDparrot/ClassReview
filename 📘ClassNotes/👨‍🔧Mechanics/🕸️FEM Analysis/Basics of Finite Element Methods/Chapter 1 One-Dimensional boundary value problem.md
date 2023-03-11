@@ -1,1 +1,199 @@
+## 1. Strong or Classical form of the 1-D boundary problem 
+
+<mark style="background: transparent; color: yellow">Main constituents of a finite element method</mark> for the solution of a boundary-value problems are
+1. The variational or weak statement of the problem 
+2. <mark style="background: transparent; color: yellow">approximate solution of the variational equations</mark> through the use of "Finite Element Method". 
+
+Firstly we suppose we want to solute the following differential equations as : 
+
+$$u_{,xx} + l = 0\tag{1.1.1}$$
+This equation is the governing equation of the ==transverse displacement== of a string in tension. And this equation also can be considered as governing equation for  ==longitudinal displacement== of an elastic rod. 
+
+<mark style="background: transparent; color: yellow">Note that the comma stands for differential here</mark> ($u_{xx} = \frac{d^2 u}{d x^2}$)， and $l$ is a given smooth, scalar-valued function defined on the unit interval. 
+$$l : [0,1] \rightarrow  R$$
+where $[0,1]$ is unit interval. For each $x\in [0,1], l(x)\in R$. Also, we have that $[0,1]$ is said to be the ***domain*** of $l$ and $R$ is the ***range***. 
+we also use
+$$\begin{matrix}
+\Omega = ]0,1[ \qquad \text{(open)} \\
+\bar{\Omega} = [0,1] \qquad \text{(close)}
+\end{matrix}$$
+The **boundary conditions** on the function u are: 
+$$\begin{matrix}
+u(1) = q  \\
+-u_{,x}(0) = h 
+\end{matrix}$$
+In this condition, this type of boundary conditions lead to the so-called ***Two Point Boundary Value Problems*** 
+
+Hence the strong form of the boundary value can be written as : 
+
+
+$$(S)\quad \begin{cases}
+\text{Given $l$ : $\bar{\Omega} \rightarrow R$ and constants $q$ and $h$, and then find $u : \bar{\Omega}\rightarrow  R$, such that :  }\\
+u_{, xx}(x) + l(x) = 0 \qquad \text{on } \Omega \\
+u(1) = q \\
+-u_{,x}(0) = h
+\end{cases}$$
+When we write the $u_{,xx}+ l =0$ on $\Omega$, we mean $u_{,xx}(x) + l(x) = 0$ ==for all== $x\in \Omega$(whole zone are satisfy this differential equation), then we can easily obtain the exact solution of the $u$ as : 
+$$u = q + (1- x)h + \int_{x}^{1} \left\{\int_{0}^{y}l(z) dz\right\}dy\tag{1.2.3}$$
+where the $y$ and $z$ are used to <mark style="background: transparent; color: yellow">denote dummy variables</mark>.
+
+However , We are interested in developing schemes for obtaining approximate solutions to $(S)$ which can be applicable to much more complex situations in which exact solutions are not possible.
+
+## 2. Weak or Variational Form of the Problem 
+To define the weak, variational, counterpart of $(S)$, we need to characterize two classes of functions. 
+1. The trail solutions (candidate solutions): 
+In the solution of this problem, we require the solution to satisfy the boundary condition $u(1) = q$ , while <u>the other boundary condition will not be required in the definition</u>. Furthermore, for the solution make sense, we should require  that the <u>derivates of the trail solutions be squared-integrable</u>, which is, for a trial solution $u$, we have :
+$$\boxed{\int_{0}^{1} (u_{,x})^2 dx < \infty \tag{1.3.1}}$$
+`````ad-note
+title: H1 function
+collapse: open
+
+The functions that satisfy the equation $(1.3.1)$ is called $H^1-\text{functions}$, also we denote that $u$ is a solution of $H^1$ as $u \in H^1([0,1])$ or $u \in H^1$. 
+`````
+
+Thus <mark style="background: transparent; color: yellow">the collection of trail solutions</mark>, which is denoted by $\delta$, ==consists of all functions which have square-integrable derivates and  take on the value== at $x =1$, can be written as :
+$$\delta = \left\{u | u \in H^1, u(1) = q \right\}$$
+
+2. weighting functions 
+The ***Weighting functions*** is also called ***Variations*** 
+This collection is similar to the trail solutions except <mark style="background: transparent; color: yellow">we require the homogenous counterpart (using the same order) of the q-boundary condition</mark>. which denotes that the boundary condition satisfy $w(1) =0$, we require the **weighting functions**. to satisfy $w(1) = 0$. This collection is denoted by $\mathcal{V}$ as : 
+$$\mathcal{V} = \left\{ w|w\in H^1, w(1) = 0 \right\}$$
+also we simplify the question by assuming that $l: \Omega \rightarrow R$ as being smooth. 
+Given $l,q$ and $h$, as before. Find $u\in \delta$, such that for all $w \in\mathcal{V}$, then we have the suitable weak form of the boundary-value problem. 
+
+we derive the weak form by integral the $w_{,x} u_{,x}$ , <mark style="background: transparent; color: yellow">use partial integral and substitute the boundary condition</mark> into it. 
+$$\int_{0}^{1} w_{,x} u_{,x} dx = \int_{0}^{1}u_{,x} dw =\left. u_{x} w\right|_{0}^1 -  \int_{0}^{1} u_{,xx} w(x) dx = \int_{0}^{1} wl dx + w(0) h$$
+$$(W)\quad \boxed{\begin{cases}
+\text{Given $l$,q,and $h$, Find $u \in \delta\space $ s.t. for all $w\in \mathcal{V}$  } \\
+\int_{0}^{1} w_{,x} u_{,x} dx = \int_{0}^{1}wl dx + w(0)h
+\end{cases}}$$
+Formulations of this type are often called ***Virtual Work***. or ***Virtual Displacement***
+and in the function $w$ is ***Virtual Displacements***
+
+<mark style="background: transparent; color: yellow">Hence the Variational equation is also called The equation of virtual work</mark>, It's also the ***weak*** or ***generalized solution***. 
+
+Now we assume $u$ to be a weak solution, Thus $u \in \delta$; consequently $u(1) =  q$ and 
+$$\int_{0}^{1} w_{,x} u_{,x} dx = \int_{0}^{1} wl dx + w(0)h$$
+for all $w\in \mathcal{V}$, we  integrate it by parts and also make use of $w(1) = 0$, then
+$$0 = \int_{0}^{1} w(u_{,xx} + l ) dx + w(0)\left[ u_{,x}(0) +  h\right]$$
+The proof of the proposition can be found in [[Proof of the proposition of 1-D FEM problem.pdf]]
+
+`````ad-note
+title: 2 types of boundary conditions
+collapse: close
+
+In the problem above, the boudnary condition is not mentioned explicitly, this type boundary conditions are referred as ***Natural Boundary Conditions***. The trail solutions are explicitly required to satisfy $u(1) = q$, This type of boundary conditions are called essential boundary conditions. 
+
+$\space$
+
+The prove of the propsition goes under the name of ***fundamental lemma*** in the literature of the calculus of variations.  
+
+$\space$
+
+the methodology enables us to deduce the differential equations and boundary conditions implied by the weak problems. 
+`````
+
+for obtaining an <mark style="background: transparent; color: yellow">approximate solution to the original boundary-value problem</mark>, we have alternative starting points(i.e. The strong statement and the weak statement of the problem). FEM is based on the weak statement of the solution. 
+
+Then we Let
+$$\Large\boxed{\begin{matrix}
+a(w,u) = \int_{0}^{1} w_{,x} u_{,x} dx \\
+(w,l) = \int_{0}^{1} wl dx 
+\end{matrix}}$$
+so we have the equation : 
+$$\Large\boxed{a(w,u) = (w,l) + w(0)h}$$
+`````ad-note
+title: Symmetric & Bininear Forms
+collapse: open
+
+In the equation above, we note that $a(\cdot ,\cdot)$ and $(\cdot ,\cdot )$ are examples of symmertic and bilinear forms. 
+
+The property ***Symmetry*** is : 
+$$\begin{matrix}
+a(u,v) = a(v,u) \\
+(u,v) = (v,u)
+\end{matrix}$$
+
+The property ***Bilinearity*** is: 
+$$\begin{matrix}
+a(c_1 u  +c_2 v , w) = c_1 a(u,w) + c_2 a(v,w) \\
+(c_1 u + c_2 v, w) = c_1(u,w) + c_2 (v,w)
+\end{matrix}$$
+
+`````
+
+## 3. The Galerkin's Approximation method
+#### 1) Preferences 
+we now describe a method of obtaining an approximate solutions to boundary-value problems based on the weak formulations. The first step in developing the method is <mark style="background: transparent; color: yellow">to construct a finite-dimensional approximation</mark> of $\delta$ and $\mathcal{V}$. which we can describe the collections as $\delta^h$ and $\mathcal{V}^h$ with a ***mesh***, or discretization, of the domain $\Omega$, which is parameterized by a characteristic length scale $h$. We wish to think of $\delta^h$ and $\mathcal{V}^h$ <mark style="background: transparent; color: yellow">as being subset of</mark> $\delta$ and $\mathcal{V}$. 
+$$\begin{matrix}
+\delta^h \subset \delta \\
+\mathcal{V}^h \subset \mathcal{V}
+\end{matrix}$$
+where $w^h$ is the *virtual displacement*, i.e.
+$$\begin{matrix}
+\text{if} \space u^h \in \delta^h , \text{then} \space u^h\in \delta \\
+\text{if} \space w^h \in  \mathcal{V}^h, \text{then} \space w^h \in \mathcal{V}
+\end{matrix}$$
+The collections, $\delta, \mathcal{V},\delta^h, \mathcal{V}^h$ are often referred to as ***function spaces***
+
+#### 2) Galerkin method
+since the collection $\mathcal{V}^h$ is given, to each member $v^h\in \mathcal{V}^h$, we will construct a function $u^h \in \delta^h$ by 
+$$u^h = v^h + q^h\tag{1.5.5}$$
+where $q^h$ is a given function <mark style="background: transparent; color: yellow">satisfying the essential boundary condition</mark>. i.e.
+$$u^h(1) = v^h(1) + q^h(1)$$
+so we can now write a variational equation in terms of $w^h \in \mathcal{V}^h$ and $u^h \in \delta^h$, which is the ***discrete weak Form*** of the equation : 
+$$(W_h): \quad  \boxed{a(w^h, u^h) = (w^h , l) + w^h(0)h}\tag{1.5.8}$$
+substitute $(1.5.5)$ into $(1.5.8)$, and we reach the ***Galerkin Weak Form*** $G$ : 
+$$\Large (G): \quad \begin{cases}
+\text{Given $l,q,h$, find $u^h = v^h + q^h$, where $v^h\in \mathcal{V}^h$} \\
+\text{s.t. for all $w^h \in \mathcal{V}^h$}\\
+a(w^h, v^h) = (w^h, l) + w^h(0) h - a(w^h, q^h) 
+\end{cases}\tag{1.5.9}$$
+This equation is sometimes referred to as ***Galerkin equation***
+
+Approximation methods of the type considered are examples of so-called ***weighted residual methods***. 
+
+## 4. Matrix Equations, Stiffness Matrix $K$
+#### 1) Linear Combinations Definitions 
+we let the $\mathcal{V}^h$ <mark style="background: transparent; color: yellow">consists of all linear combinations of given functions denoted by</mark> $N_A: \bar{\Omega} \rightarrow R$, where $A = 1,2,....n$, as : 
+$$w^h = \sum^{n}_{A=1} c_A N_A$$
+where $N_A$'s are referred to as ***Shape, Basis or interpolation function***. Since $w^h(1) = 0$, we have $N_A(1) = 0$, hence obviously that the $\mathcal{V}^h$ have dimensions $n$. 
+
+For defining $\delta^h$, we need to specify $q^h$  and also we introduce  another ***Shape Function*** $N_{n+1}$as : 
+$$N_{n+1}: \bar{\Omega} \rightarrow R , \qquad  N_{n+1} (1) = 1$$
+thus the $q^h$ is given by 
+$$q^h = qN_{n+1}\qquad  q^h(1) = q$$
+Using this definitions, we can write $u^h$ in the linear combination form : 
+$$\boxed{u^h = \sum^{n}_{A=1} N_A d_A + q N_{n+1}}\tag{1.6.6}$$
+where the $d_A$'s are constants. 
+
+`````ad-bug
+collapse: open
+why are we let the $v^h$ as $\int d_B N_B$ while letting $w_h$ as $\int d_A N_A$?
+`````
+
+using the derivation process [[Derivations of the Stiffness Matrix in FEM.pdf]]
+
+we may state the matrix equivalent of the Galerkin problem as : 
+$$\Large (M) \begin{cases}
+\text{Given the coefficient matrix $K$ and the vector $F$, find $d$ s.t.} \\
+Kd = F
+\end{cases}$$
+if we assume the inverse of $K$ exists and we have the solution :
+$$d = K^{-1} F$$
+where
+$$K = [K_{AB}] = a(N_A,N_B)$$
+$$F_A = (N_A,l) + N_A(0) h - a(N_A,N_{n+1})q$$
+then the solution of the Galerkin Equation can be obtained at any point $x\in \Omega$ by equation $(1.6.6)$ as above.
+
+`````ad-note
+collapse: open
+1. The matrix K is Symmetric. This followsfromthe symmeric of $a(\cdot ,\cdot )$, that is : 
+$$K_{AB} = a(N_A, N_B) = a(N_B,N_A) = K_{BA}$$
+
+2. Sometimes It's also convenient to write 
+$$u^h(x) = \sum^{n+1}_{A=1} N_A(x) d_A$$
+where $d_{n+1} = q$
+`````
+
 

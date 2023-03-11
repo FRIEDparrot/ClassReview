@@ -2068,6 +2068,8 @@ Book
 BGyw
 BPc
 BJJsT
+BjY
+Basis
 Ramberg
 Reynolds
 RANS
@@ -6589,6 +6591,7 @@ ORC
 OCJT
 OliS
 OxIxM
+Omega
 Swift
 SE
 Suppported
@@ -13758,6 +13761,18 @@ ced
 cdtddxX
 cccw
 cqz
+cfade
+constituents
+constants
+counterpart
+characterize
+candidate
+collection
+consists
+consequently
+collections
+combinations
+combination
 equatiion
 equations
 excalidraw
@@ -16168,6 +16183,11 @@ eooo
 eVWO
 eyph
 etE
+eNJe
+efbd
+easily
+exact
+except
 Classification
 Clustering
 Convection
@@ -18382,6 +18402,8 @@ Concise
 Cum
 CZm
 CCCO
+Classical
+Combinations
 Prediction
 Peierls
 Prandtl
@@ -20785,6 +20807,8 @@ PHQa
 Pkm
 PjB
 PLg
+Problems
+Problem
 Association
 AD
 AE
@@ -23642,6 +23666,7 @@ ALdi
 Aga
 AWX
 ABPP
+Approximation
 Deviation
 Drawing
 Dirichlet
@@ -26066,6 +26091,7 @@ Difference
 Dfn
 Dfa
 DDO
+Displacements
 dedication
 dislocation
 document
@@ -28627,6 +28653,14 @@ dHh
 davj
 dKWs
 dynamic
+dDXmK
+displacement
+dummy
+denoted
+delta
+defining
+definitions
+derivation
 Exper
 EXCALIDRAW
 EF
@@ -33416,6 +33450,7 @@ HQph
 HExh
 HBH
 HJID
+Hughes
 KNN
 KP
 KD
@@ -40781,6 +40816,9 @@ VRZZ
 Vcn
 Vge
 VdR
+Value
+Variational
+Variations
 to
 tags
 this
@@ -43285,6 +43323,10 @@ tnHF
 tUT
 tBZ
 tlC
+transverse
+tension
+take
+think
 write
 with
 widely
@@ -45616,6 +45658,10 @@ whole
 widespread
 wvtn
 wExC
+while
+weighting
+wish
+weighted
 one
 of
 options
@@ -50272,6 +50318,15 @@ sKW
 sccc
 sIz
 skf
+suppose
+said
+satisfy
+schemes
+situations
+simplify
+step
+satisfying
+sometimes
 brackets
 bcc
 by
@@ -54860,6 +54915,7 @@ fAwVQ
 fttV
 fsMM
 fggo
+formulations
 hcp
 heat
 has
@@ -62081,6 +62137,7 @@ TVA
 TKKKMm
 TRR
 TYaO
+Tomas
 plugin
 parsed
 performance
@@ -64580,6 +64637,9 @@ predecessor
 pOr
 pey
 pVQ
+preliminaries
+possible
+proposition
 in
 influence
 is
@@ -67064,6 +67124,9 @@ iZmm
 imiyl
 iLN
 iwy
+interval
+integrable
+integrate
 menu
 material
 model
@@ -69516,6 +69579,9 @@ marked
 mmms
 mNbK
 mgff
+much
+mathcal
+member
 Forced
 For
 Function
@@ -71882,6 +71948,9 @@ Flows
 Finally
 Find
 FVveqq
+Firstly
+Furthermore
+Formulations
 article
 applied
 and
@@ -74047,6 +74116,9 @@ analytical
 aWi
 avj
 aHH
+assuming
+alternative
+approximation
 General
 Governing
 GBb
@@ -76310,6 +76382,8 @@ Gas
 German
 GISirtl
 GIY
+Given
+Galerkin
 number
 non
 no
@@ -80914,6 +80988,8 @@ vehicles
 void
 vuWpW
 vnf
+variational
+valued
 url
 uniform
 unit
@@ -85403,6 +85479,7 @@ QqH
 QINO
 QJtS
 QHK
+QMsGuJNs
 Introduction
 It
 Intrinsic
@@ -87799,6 +87876,7 @@ Ipw
 IhB
 IDATUwY
 IfKp
+Introductory
 kinematic
 kinetic
 kernal
@@ -92639,6 +92717,10 @@ rgw
 rki
 rbxr
 rnjbz
+remarks
+require
+required
+rightarrow
 large
 length
 laminar
@@ -95057,6 +95139,7 @@ lvb
 lio
 lycsc
 ltvv
+longitudinal
 Wilcox
 WX
 Wfjq
@@ -97324,6 +97407,8 @@ WYK
 Whole
 Which
 WWo
+WmdT
+Weighting
 given
 governing
 generalized
@@ -101817,6 +101902,7 @@ qBNHH
 qcck
 qhm
 qjlz
+question
 JULY
 Jacobian
 JQ
@@ -115793,6 +115879,7 @@ UCAY
 Unstructured
 Umoo
 Ues
+UhrcP
 zm
 zmL
 zI
@@ -117934,6 +118021,7 @@ zKKs
 zjF
 zmm
 zwOO
+zone
 ZZ
 ZX
 ZdX

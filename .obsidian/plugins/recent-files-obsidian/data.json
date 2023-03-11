@@ -1,20 +1,48 @@
 {
   "recentFiles": [
     {
+      "basename": "第五章 弯曲内力",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第五章 弯曲内力.md"
+    },
+    {
+      "basename": "第五章 弯曲内力 2023-03-11 20.22.15",
+      "path": "Excalidraw/第五章 弯曲内力 2023-03-11 20.22.15.md"
+    },
+    {
+      "basename": "第一章 数据结构绪论",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md"
+    },
+    {
+      "basename": "第四章 扭转",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第四章 扭转.md"
+    },
+    {
+      "basename": "第二章 线性表",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 线性表.md"
+    },
+    {
+      "basename": "Chapter2 Derivation of the Governing Equations",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter2 Derivation of the Governing Equations.md"
+    },
+    {
+      "basename": "Chapter 1 One-Dimensional Boundary Value Problem",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md"
+    },
+    {
+      "basename": "Abstract",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Abstract.md"
+    },
+    {
       "basename": "第一章、分析动力学基础",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第一章、分析动力学基础.md"
     },
     {
+      "basename": "第一章、分析动力学基础 2023-03-10 15.29.22",
+      "path": "Excalidraw/第一章、分析动力学基础 2023-03-10 15.29.22.md"
+    },
+    {
       "basename": "第一章、分析动力学基础 2023-03-10 14.33.46",
       "path": "Excalidraw/第一章、分析动力学基础 2023-03-10 14.33.46.md"
-    },
-    {
-      "basename": "Chapter 1 One-Dimensional boundary value problem",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Chapter 1 One-Dimensional boundary value problem.md"
-    },
-    {
-      "basename": "Preface and Introduction",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Preface and Introduction.md"
     },
     {
       "basename": "Chapter1 Philosophy of Computational Fluid Dynamics",
@@ -41,10 +69,6 @@
       "path": "attachments/Pasted image 20230309082851.png"
     },
     {
-      "basename": "Chapter2 Derivation of the Governing Equations",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter2 Derivation of the Governing Equations.md"
-    },
-    {
       "basename": "Chapter3 Math",
       "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter3 Math.md"
     },
@@ -67,14 +91,6 @@
     {
       "basename": "第一章 绪论和基本方法",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第一章 绪论和基本方法.md"
-    },
-    {
-      "basename": "第二章 线性表",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 线性表.md"
-    },
-    {
-      "basename": "1章 数据结构绪论",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/1章 数据结构绪论.md"
     },
     {
       "basename": "绪论",
@@ -181,24 +197,8 @@
       "path": "📘ClassNotes/⌨️Programming/Deep Learning/Dive into Deep Learning/Chapter2.md"
     },
     {
-      "basename": "第四章 扭转",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第四章 扭转.md"
-    },
-    {
       "basename": "2. 一些补充笔记",
       "path": "📘ClassNotes/⌨️Programming/Languages/C++ basics/2. 一些补充笔记.md"
-    },
-    {
-      "basename": "1. 基本用法",
-      "path": "📘ClassNotes/⌨️Programming/Languages/C++ basics/1. 基本用法.md"
-    },
-    {
-      "basename": "数据结构绪论 2023-03-06 17.28.18",
-      "path": "Excalidraw/数据结构绪论 2023-03-06 17.28.18.md"
-    },
-    {
-      "basename": "第四章 扭转 2023-03-06 16.58.57",
-      "path": "Excalidraw/第四章 扭转 2023-03-06 16.58.57.md"
     }
   ],
   "omittedPaths": [],
