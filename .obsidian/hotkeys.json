@@ -908,15 +908,6 @@
       "key": ","
     }
   ],
-  "templater-obsidian:🗒️Templates/INSERT_LIMIT_SYMBOL.md": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "L"
-    }
-  ],
   "templater-obsidian:🗒️Templates/INSERT_RIGHTARROW.md": [
     {
       "modifiers": [
@@ -997,5 +988,14 @@
       "key": "["
     }
   ],
-  "global-search:open": []
+  "global-search:open": [],
+  "templater-obsidian:🗒️Templates/INSERT_LIMIT_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "L"
+    }
+  ]
 }

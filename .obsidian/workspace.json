@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "b96deafb7158cdb5",
+        "id": "ba1981a155deb513",
         "type": "tabs",
         "children": [
           {
-            "id": "6392cbee17f01c78",
+            "id": "fa6fdb2b087d2d6c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a622529f8ce5d82f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第五章 弯曲内力.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -133,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第五章 弯曲内力.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第五章 弯曲内力.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第五章 弯曲内力.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md"
               }
             }
           }
@@ -199,53 +186,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a622529f8ce5d82f",
+  "active": "fa6fdb2b087d2d6c",
   "lastOpenFiles": [
-    "Excalidraw/第五章 弯曲内力 2023-03-11 20.22.15.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第五章 弯曲内力.md",
+    "Excalidraw/第一章 杆件结构 2023-03-13 19.41.41.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
+    "attachments/Pasted image 20230313192955.png",
+    "Excalidraw/第一章 杆件结构 2023-03-13 19.16.30.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容/梁的刚度矩阵的求出.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/New folder",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 一维结构的矩阵位移法.md",
+    "📘ClassNotes/⌨️Programming/Algorithms/二分查找方法.md",
+    "📘ClassNotes/⌨️Programming/Algorithms/Map 和 unordered Map.md",
+    "📘ClassNotes/⌨️Programming/Languages/C++ basics/3. 向量的定义和用法.md",
+    "attachments/Pasted image 20230313113659.png",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十二章 无穷级数.md",
+    "💡Inspiration/⌚Todo List.md",
+    "Day Planners/Day Planner-20230313.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十一章 曲线积分和曲面积分.md",
+    "📘ClassNotes/🗣️English/Word List1.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/考研课程笔记/Drawing 2023-02-07 20.42.12.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/考研课程笔记/Drawing 2023-02-07 20.24.08.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 树的基本知识.md",
+    "📘ClassNotes/⌨️Programming/Algorithms/动态规划算法.md",
+    "📘ClassNotes/⌨️Programming/Algorithms/分治法.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/二叉树部分复习.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 栈和队列.md",
+    "attachments/Pasted image 20230312175232.png",
+    "attachments/Pasted image 20230312175136.png",
+    "attachments/Pasted image 20230312174832.png",
+    "📘ClassNotes/⌨️Programming/Algorithms",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 七大排序算法.md",
+    "attachments/Pasted image 20230312160429.png",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第四章 扭转.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 线性表.md",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter2 Derivation of the Governing Equations.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第七章 弯曲变形.md",
+    "Excalidraw/第七章 弯曲变形 2023-03-12 09.59.29.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第五章 弯曲内力.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第六章 弯曲应力.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/补充内容/截面的静矩，惯性矩的计算.md",
+    "attachments/19B584F5.png",
     "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Implements/Derivations of the Stiffness Matrix in FEM.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Implements/Proof of the proposition of 1-D FEM problem.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Implements",
-    "Day Planners/Day Planner-20230311.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Abstract.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第一章、分析动力学基础.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/拉格朗日变换式和拉格朗日方程的推导.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充",
-    "Excalidraw/第一章、分析动力学基础 2023-03-10 15.29.22.md",
-    "Excalidraw/第一章、分析动力学基础 2023-03-10 14.33.46.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter1 Philosophy of Computational Fluid Dynamics.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods",
-    "📝Homework_Drafts/Drawing 2023-03-10 09.24.13.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 七大排序算法.md",
-    "Excalidraw/复习 七大排序算法 2023-03-09 23.40.42.md",
-    "Excalidraw/复习 七大排序算法 2023-03-09 23.11.25.md",
     "attachments/Pasted image 20230309082851.png",
-    "attachments/ps192F.tmp",
     "attachments/Stack_Sort.png",
-    "attachments/Untitled Diagram.png",
-    "Day Planners/Day Planner-20230310.md",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter3 Math.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第二章 平面问题的差分法和变分法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/2. 经典的弹性力学应力问题求解.md",
-    "Excalidraw/第二章 平面问题的差分法和变分法 2023-03-09 14.34.10.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第一章 绪论和基本方法.md",
-    "attachments/0CC357C2.png",
-    "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/绪论.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 指针和链表的使用.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识",
-    "attachments/Screenshot_20230308_165116_com.microsoft.skydrive.png",
-    "attachments/Screenshot_20230308_162904_com.tencent.mobileqq.jpg",
-    "attachments/Screenshot_20230308_162924_com.tencent.mobileqq.png",
-    "attachments/Screenshot_20230308_160003_com.adobe.reader.png",
-    "attachments/Screenshot_20230308_132919_com.adobe.reader.png",
-    "attachments/Screenshot_20230308_071506_com.adobe.reader.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分"
+    "attachments/Untitled Diagram.png"
   ]
 }
