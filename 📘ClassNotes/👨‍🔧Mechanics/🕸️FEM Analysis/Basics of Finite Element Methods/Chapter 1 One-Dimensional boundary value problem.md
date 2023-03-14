@@ -215,6 +215,6 @@ where $d_{n+1} = q$
 
 
 #### 2) Example : problem of 1 and 2 degree of freedom
-for $n = 1$ in the question above, then $u^h = v^h + q^h = d_1N_1 + qN_2$, Then the only unknown is $d_1$. The shape functions must satisfy 
+for $n = 1$ <mark style="background: transparent; color: yellow">in the question above</mark>, then $u^h = v^h + q^h = d_1N_1 + qN_2$, Then the only unknown is $d_1$. The shape functions must satisfy 
 $$K = [K_{11}] = K_{11}$$
 $$F = \left\{ F_1\right\}$$
