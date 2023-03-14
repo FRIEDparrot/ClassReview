@@ -1,6 +1,78 @@
 {
   "recentFiles": [
     {
+      "basename": "Chapter 1 One-Dimensional Boundary Value Problem",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md"
+    },
+    {
+      "basename": "Derivations of the Stiffness Matrix in FEM",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Implements/Derivations of the Stiffness Matrix in FEM.pdf"
+    },
+    {
+      "basename": "Proof of the proposition of 1-D FEM problem",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Implements/Proof of the proposition of 1-D FEM problem.pdf"
+    },
+    {
+      "basename": "第二章 平面问题的差分法和变分法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第二章 平面问题的差分法和变分法.md"
+    },
+    {
+      "basename": "Chapter1 Philosophy of Computational Fluid Dynamics",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter1 Philosophy of Computational Fluid Dynamics.md"
+    },
+    {
+      "basename": "Chapter2 Derivation of the Governing Equations",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter2 Derivation of the Governing Equations.md"
+    },
+    {
+      "basename": "第二章 平面问题的差分法和变分法 2023-03-14 13.59.40",
+      "path": "Excalidraw/第二章 平面问题的差分法和变分法 2023-03-14 13.59.40.md"
+    },
+    {
+      "basename": "第一章 绪论和基本方法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第一章 绪论和基本方法.md"
+    },
+    {
+      "basename": "第二章 表",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 表.md"
+    },
+    {
+      "basename": "复习 指针和链表的使用",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 指针和链表的使用.md"
+    },
+    {
+      "basename": "Map 和 unordered_map",
+      "path": "📘ClassNotes/⌨️Programming/Algorithms/Map 和 unordered_map.md"
+    },
+    {
+      "basename": "分治法",
+      "path": "📘ClassNotes/⌨️Programming/Algorithms/分治法.md"
+    },
+    {
+      "basename": "排序 + 双指针的查找算法",
+      "path": "📘ClassNotes/⌨️Programming/Algorithms/排序 + 双指针的查找算法.md"
+    },
+    {
+      "basename": "动态规划算法",
+      "path": "📘ClassNotes/⌨️Programming/Algorithms/动态规划算法.md"
+    },
+    {
+      "basename": "绪论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/绪论.md"
+    },
+    {
+      "basename": "3. 向量的定义和用法",
+      "path": "📘ClassNotes/⌨️Programming/Languages/C++ basics/3. 向量的定义和用法.md"
+    },
+    {
+      "basename": "第一章 数据结构绪论",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md"
+    },
+    {
+      "basename": "第十二章 无穷级数",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十二章 无穷级数.md"
+    },
+    {
       "basename": "第一章 杆件结构",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md"
     },
@@ -19,18 +91,6 @@
     {
       "basename": "二分查找方法",
       "path": "📘ClassNotes/⌨️Programming/Algorithms/二分查找方法.md"
-    },
-    {
-      "basename": "Map 和 unordered Map",
-      "path": "📘ClassNotes/⌨️Programming/Algorithms/Map 和 unordered Map.md"
-    },
-    {
-      "basename": "3. 向量的定义和用法",
-      "path": "📘ClassNotes/⌨️Programming/Languages/C++ basics/3. 向量的定义和用法.md"
-    },
-    {
-      "basename": "第十二章 无穷级数",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十二章 无穷级数.md"
     },
     {
       "basename": "⌚Todo List",
@@ -57,24 +117,12 @@
       "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 树的基本知识.md"
     },
     {
-      "basename": "动态规划算法",
-      "path": "📘ClassNotes/⌨️Programming/Algorithms/动态规划算法.md"
-    },
-    {
-      "basename": "分治法",
-      "path": "📘ClassNotes/⌨️Programming/Algorithms/分治法.md"
-    },
-    {
       "basename": "复习 栈和队列",
       "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 栈和队列.md"
     },
     {
       "basename": "复习 七大排序算法",
       "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 七大排序算法.md"
-    },
-    {
-      "basename": "第一章 数据结构绪论",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md"
     },
     {
       "basename": "第七章 弯曲变形",
@@ -121,18 +169,6 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第四章 扭转.md"
     },
     {
-      "basename": "第二章 线性表",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 线性表.md"
-    },
-    {
-      "basename": "Chapter2 Derivation of the Governing Equations",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter2 Derivation of the Governing Equations.md"
-    },
-    {
-      "basename": "Chapter 1 One-Dimensional Boundary Value Problem",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md"
-    },
-    {
       "basename": "Abstract",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Abstract.md"
     },
@@ -149,10 +185,6 @@
       "path": "Excalidraw/第一章、分析动力学基础 2023-03-10 14.33.46.md"
     },
     {
-      "basename": "Chapter1 Philosophy of Computational Fluid Dynamics",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter1 Philosophy of Computational Fluid Dynamics.md"
-    },
-    {
       "basename": "Drawing 2023-03-10 09.24.13",
       "path": "📝Homework_Drafts/Drawing 2023-03-10 09.24.13.md"
     },
@@ -167,38 +199,6 @@
     {
       "basename": "Pasted image 20230309082851",
       "path": "attachments/Pasted image 20230309082851.png"
-    },
-    {
-      "basename": "Chapter3 Math",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter3 Math.md"
-    },
-    {
-      "basename": "第二章 平面问题的差分法和变分法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第二章 平面问题的差分法和变分法.md"
-    },
-    {
-      "basename": "2. 经典的弹性力学应力问题求解",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/2. 经典的弹性力学应力问题求解.md"
-    },
-    {
-      "basename": "第二章 平面问题的差分法和变分法 2023-03-09 14.34.10",
-      "path": "Excalidraw/第二章 平面问题的差分法和变分法 2023-03-09 14.34.10.md"
-    },
-    {
-      "basename": "第一章 绪论和基本方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第一章 绪论和基本方法.md"
-    },
-    {
-      "basename": "绪论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/绪论.md"
-    },
-    {
-      "basename": "复习 指针和链表的使用",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 指针和链表的使用.md"
-    },
-    {
-      "basename": "C++ 数据结构概论",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++补充笔记/C++ 数据结构概论.md"
     }
   ],
   "omittedPaths": [],

@@ -158,56 +158,9 @@ collapse: close
 Numerical Heat transfer and fluid flow, by S.V.Patanker
 `````
 
-#### 3. Finite Element Method 
+### 3. Finite Element Method 
 
 we discrete the domain as the elements and  then use the interpolation. Then transform the governing equation into each element. finally consider the equation of elements together and solve the algebraic equations. 
 
-
-
-
-## (3) Example : 1-D thermal conductivity finite element method
-
-For a 1-D thermal conductivity FEM analysis: 
-
-**Strong Form(S)**
-$$\begin{cases}
-u_{xx} + l(x) = 0\quad 0<x<1 \\ 
--u_x(0) = h, \quad  u(1) = q
-\end{cases}$$
-$u(1) =  q$ -> first boundary condition 
-$u_x{0} = -h$ -> second boundary condition 
-
-**The analytical solution**
-$$\boxed{u (x) = q + (1-x)h + \int_{x}^{1}\left\{ \int_{0}^{y} l(z)dz\right\}dy}$$
-
-**Weak Form**
-condition : 1-order derivative exists. 
-
-For :
-FDM Method : strong form -> approximate strong form $(S^h)$
-FEM method: The Strong form -> weak form -> approximate weak form$(W^h)$
-
-For the solution of the weak form:
-
-we add two spaces as: 
-1. trail solution space
-$$\delta = \left\{ u  | u \in H^1, u(1) = q  \right\}$$
-
-2. test solution space 
-$$\mathcal{V} = \left\{w| w \in H^1, w(1) = 0 \right\}$$
-
-then we integral the equation on the both sides: 
-$$
-\int_{0}^{l} \left( u_{xx} + l \right)w_x dx = 0 \\
-$$
-
-then we get the **solution in the weak form**
-
-$$\int_{0}^{l} w_{x} u_{x} = \int_{0}^{l} wl dx + w(0) h$$
-
-This is the variation form of the solution
-
-
-
-
-
+The examples can be found as : 
+[[Chapter 1 One-Dimensional Boundary Value Problem|Galerkin's Method of the 1-D thermal conductivity FEM problem]]
