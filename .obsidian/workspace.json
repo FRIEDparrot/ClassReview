@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9276cc82613ec179",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Contest/Mechanics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "805ac36ebcaf05f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第七章 微分方程.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -120,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第一章、分析动力学基础.md",
+                "file": "Contest/Mechanics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第一章、分析动力学基础.md",
+                "file": "Contest/Mechanics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第一章、分析动力学基础.md"
+                "file": "Contest/Mechanics.md"
               }
             }
           }
@@ -166,8 +191,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,11 +210,26 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "86820ad5b67d3064",
+  "active": "9276cc82613ec179",
   "lastOpenFiles": [
+    "attachments/Pasted image 20230317200800.png",
+    "attachments/Pasted image 20230317200651.png",
+    "attachments/Pasted image 20230317200233.png",
+    "attachments/Pasted image 20230317200044.png",
+    "attachments/Pasted image 20230317195753.png",
+    "attachments/Pasted image 20230317195644.png",
+    "attachments/Pasted image 20230317195305.png",
+    "attachments/Pasted image 20230317195107.png",
+    "attachments/Pasted image 20230317194851.png",
+    "attachments/Pasted image 20230317194635.png",
+    "attachments/Pasted image 20230317194428.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第一章、分析动力学基础.md",
+    "Contest/Mechanics.md",
+    "Contest",
+    "Excalidraw/第一章、分析动力学基础 2023-03-17 15.21.43.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第七章 微分方程.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/课本例题",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/拉格朗日变换式和拉格朗日方程的推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第一章、分析动力学基础.md",
     "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md",
     "Excalidraw/Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 12.37.49.md",
     "Excalidraw/Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 11.16.05.md",
@@ -199,9 +238,6 @@
     "Day Planners/Day Planner-20230317.md",
     "📘ClassNotes/⌨️Programming/Algorithms/Map 和 unordered_map.md",
     "📘ClassNotes/⌨️Programming/Algorithms/更优化的遍历方法.md",
-    "attachments/Pasted image 20230316231506.png",
-    "attachments/Pasted image 20230316231317.png",
-    "attachments/Pasted image 20230316230952.png",
     "Excalidraw/Chapter 1 One-Dimensional Boundary Value Problem 2023-03-16 22.33.07.md",
     "Excalidraw/Chapter 1 One-Dimensional Boundary Value Problem 2023-03-16 22.23.04.md",
     "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Implements/Derivations of the Stiffness Matrix in FEM.pdf",
@@ -219,20 +255,8 @@
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 表.md",
     "📘ClassNotes/⌨️Programming/Algorithms/绪论.md",
-    "attachments/Pasted image 20230316085750.png",
     "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/绪论.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 指针和链表的使用.md",
-    "💡Inspiration/⌚Todo List.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md",
-    "attachments/Pasted image 20230315195437.png",
-    "attachments/Pasted image 20230315194634.png",
     "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容/梁的刚度矩阵的求出.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Implements/Proof of the proposition of 1-D FEM problem.pdf",
-    "attachments/Pasted image 20230314093608.png",
-    "attachments/Pasted image 20230313192955.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/New folder",
-    "attachments/Pasted image 20230313113659.png",
-    "attachments/Pasted image 20230312175232.png"
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Implements/Proof of the proposition of 1-D FEM problem.pdf"
   ]
 }

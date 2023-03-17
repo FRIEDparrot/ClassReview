@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "Mechanics",
+      "path": "Contest/Mechanics.md"
+    },
+    {
       "basename": "第一章、分析动力学基础",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第一章、分析动力学基础.md"
+    },
+    {
+      "basename": "第一章、分析动力学基础 2023-03-17 15.21.43",
+      "path": "Excalidraw/第一章、分析动力学基础 2023-03-17 15.21.43.md"
+    },
+    {
+      "basename": "第七章 微分方程",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第七章 微分方程.md"
     },
     {
       "basename": "拉格朗日变换式和拉格朗日方程的推导",
@@ -187,18 +199,6 @@
     {
       "basename": "分治法",
       "path": "📘ClassNotes/⌨️Programming/Algorithms/分治法.md"
-    },
-    {
-      "basename": "排序 + 双指针的查找算法",
-      "path": "📘ClassNotes/⌨️Programming/Algorithms/排序 + 双指针的查找算法.md"
-    },
-    {
-      "basename": "动态规划算法",
-      "path": "📘ClassNotes/⌨️Programming/Algorithms/动态规划算法.md"
-    },
-    {
-      "basename": "第一章 杆件结构 2023-03-13 19.41.41",
-      "path": "Excalidraw/第一章 杆件结构 2023-03-13 19.41.41.md"
     }
   ],
   "omittedPaths": [],
