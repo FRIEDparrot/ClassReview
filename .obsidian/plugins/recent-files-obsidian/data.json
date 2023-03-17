@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "第一章、分析动力学基础",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第一章、分析动力学基础.md"
+    },
+    {
+      "basename": "拉格朗日变换式和拉格朗日方程的推导",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/拉格朗日变换式和拉格朗日方程的推导.pdf"
+    },
+    {
       "basename": "Chapter 1 One-Dimensional Boundary Value Problem",
       "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md"
+    },
+    {
+      "basename": "Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 12.37.49",
+      "path": "Excalidraw/Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 12.37.49.md"
+    },
+    {
+      "basename": "Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 11.16.05",
+      "path": "Excalidraw/Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 11.16.05.md"
     },
     {
       "basename": "Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 09.18.21",
@@ -183,22 +199,6 @@
     {
       "basename": "第一章 杆件结构 2023-03-13 19.41.41",
       "path": "Excalidraw/第一章 杆件结构 2023-03-13 19.41.41.md"
-    },
-    {
-      "basename": "二分查找方法",
-      "path": "📘ClassNotes/⌨️Programming/Algorithms/二分查找方法.md"
-    },
-    {
-      "basename": "第十一章 曲线积分和曲面积分",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十一章 曲线积分和曲面积分.md"
-    },
-    {
-      "basename": "Word List1",
-      "path": "📘ClassNotes/🗣️English/Word List1.md"
-    },
-    {
-      "basename": "Drawing 2023-02-07 20.42.12",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/考研课程笔记/Drawing 2023-02-07 20.42.12.md"
     }
   ],
   "omittedPaths": [],

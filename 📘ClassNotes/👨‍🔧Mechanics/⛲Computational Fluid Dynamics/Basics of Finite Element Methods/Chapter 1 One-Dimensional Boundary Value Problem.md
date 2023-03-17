@@ -349,4 +349,68 @@ the section of the elimination theorem
 ```
 
 ## 8. The Element Point of View 
-with the different nodes and the different domains, shape functions 
+### 1) Local Coordinates 
+with the different nodes and the different domains, shape functions , the globally defined function can be written as follows, and also, for each element we can view it by ***the element (local) point of view***. Then the set of the local qualities are also written below (<mark style="background: transparent; color: yellow">note in the local description, the nodal number begins with 1</mark>):
+$$\text{global:}\begin{cases}
+\text{Domain: } [x_A, x_{A+1}] \\
+\text{Nodes: } {x_A, x_{A+1}} \\
+...
+\end{cases} \qquad \text{local:}\begin{cases}
+\text{Domain: } [x_1, x_2] \\ 
+\text{Nodes: } {x_1, x_2} \\
+...
+\end{cases}$$
+in the local description, the $u^h(\xi)$ can be calculated as : 
+$$u^h(\xi) = N_1 (\xi)d_1 + N_2(\xi)d_2$$
+we relate the domains of the global and local descriptions by an "affine" transformation $\xi :[X_A,X_{A+1}] \rightarrow [\xi_1,\xi_2]$ , then ==it's practical to take $\xi_1 = -1$ and $\xi_2 =1$==, then : 
+$$\xi(x) = c_1 + c_2 x, \quad \xi(x_A) = -1, \quad \xi(x_B) = 1$$
+we can easily solve the system and then : 
+$$\xi = \frac{x_A + x_B - 2x}{x_A - x_B} \quad \overset{B = A+1}{\rightarrow }\quad \xi = \frac{2x - x_A - x_{A+1}}{x_{A+1} - x_A}$$
+or if we set $x_{A+1} - x_A = h$, then we have : 
+$$\boxed{\xi(x) = \frac{2x - x_A - x_{A+1}}{h_A} \quad \text{and} \quad x(\xi)= \frac{h_A \xi + x_A +x_{A+1}}{2}} \tag{1.12.4}$$
+`````ad-quote
+title: stipulate
+collapse: open
+after that, we set the Uppercase characters $A,B,C....$ as the global function while using the Lowercase $a,b,c ...$ as the local function. 
+`````
+
+Then in terms of $\xi$, the shape functions in the local description take on a standard form, i.e. $(1.12.4)$ can be written as the following equations : 
+$$\boxed{N_a(\xi) = \frac{1}{2}(1 + \xi_a \xi) \qquad a = 1, 2}$$
+$$\boxed{x^e (\xi) = \sum^{2}_{a=1} N_a (\xi) x_a^e}$$
+where the superscript $e$ denote a quantity in the local description associated with element number $e$. <mark style="background: transparent; color: yellow">The equation above defines the interpolation between the point</mark> $\xi_1$ and $\xi_2$
+
+also note that $\xi_1 = -1\space  \text{and}\space \xi_2 = 1$, then $N_1 = \frac{1 - \xi}{2}, N_2 = \frac{1+ \xi}{2}$, for $\xi = -1, N_2 = 0$ and also $\xi = 1, N_1 = 0$ 
+![[Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 11.16.05|450]]
+
+`````ad-summary
+title: The steps for the FEM problems 
+collapse: close
+1. firstly write the weak form of the equation 
+2. discrete the solving field 
+3. write the basic functions of element (select the interpolation functions with suitable boundary conditions)
+4. analyze each element  
+5. assembly each matrix of element into a whole matrix
+6. deal with the boundary conditions 
+7. solve the equation and finally calculate the parameters
+`````
+
+### 2) The Element Basic Equations
+for the element of a 1-D problem, we assume our model consists of $n_{el}$ elements, which is numbered a shown in the Figure 
+![[Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 12.37.49|400]]
+then we recall the definition of the global stiffness matrix and the force vector : 
+$$K = [K_{AB}], \qquad F = \{F_A\}$$
+`````ad-bug
+collapse: open
+`````
+where 
+$$K_{AB} = a(N_A, N_B) =\int_{0}^{1} N_{A,x} N_{B,x} dx$$
+$$F_A = (N_A, l) + \delta_{A1}h - a(N_A, N_{n+1})q = \int_{0}^{1} N_{A} l dx + \delta_{A1} h -\int_{0}^{1} N_{A, x} N_{n+1,x} dx \space q$$
+note that in the equation above, we have assumed $N_A(x_1) = \delta_{A1}$, <mark style="background: transparent; color: yellow">as for the piecewise linear finite element space</mark>. The integrals over the element domains may be written as <mark style="background: transparent; color: red">sums of integrals over the element domains. </mark> as follows : 
+$$K = \sum^{n_{el}}_{e=1} K^e\qquad K^e = [K_{AB}^e]$$
+$$F = \sum^{n_{el}}_{e=1} F^e\qquad  F^e = \left\{F_A^e\right\}$$
+where 
+$$K_{AB}^e = a(N_A, N_B)^e = \int_{\Omega^e} N_{A,x} N_{B,x} dx\tag{1.13.6}$$
+$$F_A^e = (N_A, l)^e + \delta_{e1}\delta_{A1}h - a(N_A, N_{n+1})^e q = \int_{\Omega^e} N_A ldx + \delta_{e1}\delta_{A1}h - \int_{\Omega^e} N_{A,x} N_{n+1,x} dx\space q$$
+and $\Omega^e = [x^e_1, x^e_2]$ is the domain of $e^{th}$ element
+
+## 9. Global Stiffness Matrix
