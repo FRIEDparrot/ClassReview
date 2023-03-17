@@ -7,7 +7,7 @@ vector<int> twoSum(vector<int>& nums, int target) {
 	int n = nums.size();
 	for (int i = 0; i < n; ++i) { 
 		// 对于红黑树中的每一个元素
-		if (has.find(target = nums[i]) != has.end()) {
+		if (has.find(target - nums[i]) != has.end()) {
 			// find函数，如果找到返回指向关键词的迭代器，否则指向end的迭代器
 			return {has[target - nums[i]], i};
 			// 返回这两个数的下标

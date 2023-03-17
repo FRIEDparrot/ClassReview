@@ -139,7 +139,7 @@ since the collection $\mathcal{V}^h$ is given, to each member $v^h\in \mathcal{V
 $$u^h = v^h + q^h\tag{1.5.5}$$
 where $q^h$ is a given function <mark style="background: transparent; color: yellow">satisfying the essential boundary condition</mark>. i.e.
 $$u^h(1) = v^h(1) + q^h(1)$$
-so we can now write a variational equation in terms of $w^h \in \mathcal{V}^h$ and $u^h \in \delta^h$, which is the ***discrete weak Form*** of the equation : 
+so we can now write a variational equation in terms of $w^h \in \mathcal{V}^h$ and $u^h \in \delta^h$, which is the ***discrete weak Form*** of the equation :
 $$(W_h): \quad  \boxed{a(w^h, u^h) = (w^h , l) + w^h(0)h}\tag{1.5.8}$$
 substitute $(1.5.5)$ into $(1.5.8)$, and we reach the ***Galerkin Weak Form*** $G$ : 
 $$\Large (G): \quad \begin{cases}
@@ -164,11 +164,6 @@ $$q^h = qN_{n+1}\qquad  q^h(1) = q$$
 Using this definitions, we can write $u^h$ in the linear combination form : 
 $$\boxed{u^h = \sum^{n}_{A=1} N_A d_A + q N_{n+1}}\tag{1.6.6}$$
 where the $d_A$'s are constants. 
-
-`````ad-bug
-collapse: open
-real?
-`````
 
 `````ad-caution 
 collapse: close
@@ -201,7 +196,7 @@ then the solution of the Galerkin Equation can be obtained at any point $x\in \O
 
 `````ad-note
 collapse: open
-1. The matrix K is Symmetric. This followsfromthe symmeric of $a(\cdot ,\cdot )$, that is : 
+1. The matrix $K$ is Symmetric. This followsfromthe symmeric of $a(\cdot ,\cdot )$, that is : 
 $$K_{AB} = a(N_A, N_B) = a(N_B,N_A) = K_{BA}$$
 
 2. the finite element method for the given problem can be found
@@ -213,8 +208,145 @@ $$u^h(x) = \sum^{n+1}_{A=1} N_A(x) d_A$$
 where $d_{n+1} = q$
 `````
 
-
 #### 2) Example : problem of 1 and 2 degree of freedom
-for $n = 1$ <mark style="background: transparent; color: yellow">in the question above</mark>, then $u^h = v^h + q^h = d_1N_1 + qN_2$, Then the only unknown is $d_1$. The shape functions must satisfy 
-$$K = [K_{11}] = K_{11}$$
-$$F = \left\{ F_1\right\}$$
+##### 1) 1-D problem
+for $n = 1$ <mark style="background: transparent; color: yellow">in the question above</mark>, the $u^h$ only consist of 1 unknown function, then $u^h = v^h + q^h = d_1N_1 + qN_2$, Then the only unknown is $d_1$. The shape functions must satisfy 
+$$K = [K_{11}] = K_{11}\quad F = \left\{ F_1\right\}\quad  d= \left\{ d_1\right\} = d_1$$
+also we let $N_1(x) = 1-x$ and $N_2(x) = x$, then : 
+$$K_{11} = a(N_1,N_1) = \int_{0}^{1} N_{1,x},N_{1,x} dx = 1$$
+so 
+$$\begin{matrix}
+F_1=(N_1, l ) + N_1(0) h- a(N_1, N_2) q \\
+\qquad \qquad \space \space = \int_{0}^{1}(1-x) l(x) dx + h - \int_{0}^{1} N_{1,x}N_{2,x}dx q \\
+= \int_{0}^{1} (1-x) l(x) dx + h + q\quad \space 
+\end{matrix}$$
+then $d^1 = K_{11}^{-1}F_1 = F_1$, so we get the solution of 1-D of freedom problem: 
+$$u^{h}(x) = \left[\int_{0}^{1}(1-y)l(y)dy + h + q\right](1-x) + qx$$
+at that time, we assume the solution under the different $l$ : 
+at $l(y) = 0$, then 
+$$u^h(x) = \left[\int_{0}^{1}(1-y)l(y) dy + h +q\right](1-x) + qx $$
+we write it into the form:
+$$\boxed{u(x) = q(1-x)h + \int_{x}^{1}\left\{ \int_{0}^{y} l(z) dz\right\}dy}$$
+![[Chapter 1 One-Dimensional Boundary Value Problem 2023-03-16 17.01.31|200]]
+for $l = 0$, 
+$$\begin{matrix}
+u(x) = h(1-x) +q  \quad \text{exact solution} \\
+u^{(h)}(x) = h(1-x) + q \quad \text{numerical soltuion}
+\end{matrix}$$
+also, for $l = \rho = constant$ 
+$$u(x) = u^{h}(x) = \frac{\rho(1-x)^2}{2} + h(1-x) + q$$
+where the particular solution is: 
+$$\frac{\rho (1- x)^2}{2}$$
+note that on the node $u(0)$ and $u(1)$, the solution are exactly the same : 
+$$u(0) = u^h(0) = \frac{\rho}{2} + h + q$$
+also it can be derived when $l(x) = px$,the exact solution is the same as the numerical solution (derivation is put in the next part). 
+
+##### 2) 2-D problem 
+for case $n=2$, then $w^h = c_1 N_1 + c_2N_2$, where $N_1(1) = N_2(1) =0$, and $u^h = d_1 N_1 + d_2N_2 + qN_3$, where $N_3 = 1$. 
+we can define $N_1, N_2, \text{ and } N_3$ as : 
+$$N_1(x) = \begin{cases}
+1-2x\qquad 0\leq x\leq \frac{1}{2} \\
+0 \qquad \frac{1}{2}\leq x\leq  1
+\end{cases}
+\quad N_2(x) = \begin{cases}
+2x\qquad 0\leq x\leq \frac{1}{2} \\ 
+2(1-x) \quad \frac{1}{2}\leq x\leq  1
+\end{cases}, \quad N_3(x) = \begin{cases}
+0 \quad ...\\ 2x -1 \quad ....
+\end{cases}$$
+
+![[Chapter 1 One-Dimensional Boundary Value Problem 2023-03-14 21.46.50]]
+
+using $K_{AB} = \int_{0}^{1/2}N_A, N_B dx + \int_{1/2}^{1} N_{A,x}, N_{B,x} dx$, then finally : 
+$K_{11} = \int_{0}^{1/2} N_1 N_1dx = 4 \times 1/2 = 2$
+$$K = 2\left[\begin{matrix}
+1 & -1 \\ 
+-1 & 2
+\end{matrix}\right]$$
+with the derivation process in the [[Compare of 2D  exact solution and numerical solution.pdf]] we know that 
+
+in the case of $l(x) = 0,l(x) = p,l(x) =px$, the solutions can all derived to be the same. 
+
+Also note that the $W^h$ is a continuous function and the derivation of it is Piecewise continuous. (not continuous at the boundary of each element).
+
+## 5. Piecewise Linear Finite Element Space 
+To define <mark style="background: transparent; color: yellow">the general case</mark> in which $\mathcal{V}^h$ is $n$-dimensional, then we partition the domain into $n$ nonoverlapping subintervals. Which the typical subinterval us denoted by $[x_A, x_{A+1}]$, where $x_A < x_{A+1}$. $A = 1,2,... n$. So we require $x_1$ to be zero and $x_{n-1} = 1$, then the $x_A,x_{A+1},...$ are called ***nodal points***.
+![[Chapter 1 One-Dimensional Boundary Value Problem 2023-03-16 22.23.04|350]]
+then <mark style="background: transparent; color: yellow">the shape functions</mark> are defined as :
+$$N_A(x) = \begin{cases}
+\frac{(x - x_{A-1})}{h_{A-1}} \quad x_{A-1} \leq x \leq x_A \\
+\frac{(x_{A+1} - x)}{h_A} \quad  x_{A} \leq x_{A-1} \\
+0 \qquad \text{elsewhere}
+\end{cases}$$
+
+where $\delta_{AB}$ is the Kronecker delta. 
+
+A ==typical member $w^h \in \mathcal{V}^h$ has the form $\sum^{n}_{i=1} c_A N_A$ and appears as in Fig below.==
+![[Chapter 1 One-Dimensional Boundary Value Problem 2023-03-16 22.33.07]]
+also note the typical members of the $\delta^h$ are obtained by adding $q^h = qN_{n+1}$ to the typical members of $\mathcal{V}^h$, which ensures that $u^h(1) = q$
+
+In this case the <mark style="background: transparent; color: yellow">continuity condition is identically satisfied</mark> and the summation of integrals over the element interiors may be replaced by <mark style="background: transparent; color: yellow">an integral over the entire domain</mark>. 
+
+## 6. The Construction of Stiffness matrix $K$ 
+The shape functions $N_A$, $A =1,2,....n +1$, are <mark style="background: transparent; color: yellow">zero outside a neighborhood of node</mark> $A$. Also as a result, many of the entries of $K$ are zero. 
+$$\boxed{K_{AB} = \int_{0}^{1}N_{A,x}N_{B,x}dx = 0\qquad(B>A+1)}$$
+note the Symmetry of the matrix $K$ implies that <mark style="background: transparent; color: yellow">the equation holds for</mark> $A>B+1$. 
+The $K$ is ***banded***, that is :
+$$K = \left[\begin{matrix}
+K_{11} & K_{12} &  0 & ... \\
+K_{21} & K_{22} & K_{23} & 0 & ....\\
+0 & K_{32} & K_{33} & K_{34} & 0 & ...\\
+... & ... & ... & ... & ... & ... \\
+0 & ... & &0 & K_{n, n-1} & K_n
+\end{matrix}\right]$$
+
+**Theorem** : The $n\times  n$ matrix $K$ is <mark style="background: transparent; color: yellow">positive definite</mark>.
+[[Proof of the positive definite of the Stiffness Matrix.pdf]]
+
+## 7. Mathematical Analysis 
+We let the $\delta(x) = \delta (x-y)$ denote the ***Dirac Delta function***, which is not a function in the classical sense but rather an<mark style="background: transparent; color: yellow"> operator defined by its action on the continuous functions</mark>. We let $w$ be continuous on $[0,1]$, then we have : 
+$$\boxed{(w, \delta_y)= \int_{0}^{1}w(x) \delta(x-y) dx = w(y)}$$
+The **Green's function problem** may be state as : 
+Find a function $g$ such that : 
+$$\begin{matrix}
+g_{,xx} + \delta_y = 0 \quad \text{on }\Omega \\
+g(1) = 0;\\
+g_{,x}(0) = 0;
+\end{matrix}$$
+(we can compare it with the previous problem [[#1. Strong or Classical form of the 1-D boundary problem|Equation of 1-D FEM problem]])
+
+The problem may be solved by way of formal calculation with **distribution of generalized functions** such as $\delta_y$ we note that the formal integral of the $\delta_y$ is ***Heaviside function***, which is shown in the fig below : 
+
+![[Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 09.18.21|550]]
+
+Then to solve the Green function problem, we integrate the $g_{,xx} + \delta_y = 0$ twice, then 
+$$\begin{matrix}
+g_{,x} + H_y = c_1 \\
+g(x) + <x-y> = c_1 x + c_2
+\end{matrix}$$
+substitute the boundary condition into this function, we can easily derive that : 
+$$g(x) = (1 - y) - <x-y>$$
+Observe that the $g$ is piecewise linear (as the fig above), then if $y = x_A \text{ i.e.}\space  y\space   \text{is a node}$ and $g\in \mathcal{V}^h$, we can substitute the $u$ <mark style="background: transparent; color: yellow">in the example problem</mark> [[#2) Galerkin method|(Galerkin Method)]] by the $g(x)$ and the $l$ by $\delta_y$ and $q \text{ and } h$ by 0. then we have : 
+$$\Large\boxed{a(w,g) = (w, \delta_y) = w(y)\tag{1.10.10}}$$
+this function holds for all the continuous $w\in \mathcal{V}$ 
+
+`````ad-note
+title: Theorem  
+collapse: open
+
+$$u^h(x_A) = u(x_A) , A = 1,2... n+1$$
+i.e. $u^h$ is exact  at the nodes 
+
+````ad-todo 
+title: The proof of the Theorem 
+collapse: open
+````
+
+`````
+
+```ad-todo 
+the section of the elimination theorem
+```
+
+## 8. The Element Point of View 
+with the different nodes and the different domains, shape functions 

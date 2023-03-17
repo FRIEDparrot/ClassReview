@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2c81a7bc5e218c9a",
+        "id": "ef6b7910b83b89b5",
         "type": "tabs",
         "children": [
           {
-            "id": "8cc2cff45df3db8c",
+            "id": "05a64b51c5730196",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.5110321044922,
+    "width": 284.5110321044922,
     "collapsed": true
   },
   "right": {
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md"
               }
             }
           }
@@ -187,52 +187,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8cc2cff45df3db8c",
+  "active": "05a64b51c5730196",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Implements/Derivations of the Stiffness Matrix in FEM.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Implements/Proof of the proposition of 1-D FEM problem.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第二章 平面问题的差分法和变分法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter1 Philosophy of Computational Fluid Dynamics.md",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Chapter2 Derivation of the Governing Equations.md",
-    "Excalidraw/第二章 平面问题的差分法和变分法 2023-03-14 13.59.40.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第一章 绪论和基本方法.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 表.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 指针和链表的使用.md",
+    "Excalidraw/Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 09.18.21.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Implements/Proof of the positive definite of the Stiffness Matrix.pdf",
+    "Day Planners/Day Planner-20230317.md",
     "📘ClassNotes/⌨️Programming/Algorithms/Map 和 unordered_map.md",
-    "📘ClassNotes/⌨️Programming/Algorithms/分治法.md",
-    "📘ClassNotes/⌨️Programming/Algorithms/排序 + 双指针的查找算法.md",
-    "📘ClassNotes/⌨️Programming/Algorithms/动态规划算法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/绪论.md",
-    "attachments/Pasted image 20230314093608.png",
-    "📘ClassNotes/⌨️Programming/Languages/C++ basics/3. 向量的定义和用法.md",
+    "📘ClassNotes/⌨️Programming/Algorithms/更优化的遍历方法.md",
+    "attachments/Pasted image 20230316231506.png",
+    "attachments/Pasted image 20230316231317.png",
+    "attachments/Pasted image 20230316230952.png",
+    "Excalidraw/Chapter 1 One-Dimensional Boundary Value Problem 2023-03-16 22.33.07.md",
+    "Excalidraw/Chapter 1 One-Dimensional Boundary Value Problem 2023-03-16 22.23.04.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Implements/Derivations of the Stiffness Matrix in FEM.pdf",
+    "Excalidraw/Chapter 1 One-Dimensional Boundary Value Problem 2023-03-16 17.01.31.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第二章 平面问题的差分法和变分法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/补充/边界为曲线的泰勒展开公式推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/补充/边界为曲线的泰勒展开公式推导-annotate.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/2. 经典的弹性力学应力问题求解.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/补充/平面问题的按位移解法和按应力解法.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/1. 平面问题的基本方程.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/补充/平面问题的按位移解法和按应力解法-annotate.md",
+    "Excalidraw/第二章 平面问题的差分法和变分法 2023-03-09 14.34.10.md",
+    "📘ClassNotes/⌨️Programming/Algorithms/递归和迭代法.md",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十二章 无穷级数.md",
-    "Day Planners/Day Planner-20230314.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
-    "Excalidraw/第一章 杆件结构 2023-03-13 19.41.41.md",
-    "attachments/Pasted image 20230313192955.png",
-    "Excalidraw/第一章 杆件结构 2023-03-13 19.16.30.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 表.md",
+    "📘ClassNotes/⌨️Programming/Algorithms/绪论.md",
+    "attachments/Pasted image 20230316085750.png",
+    "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/绪论.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 指针和链表的使用.md",
+    "💡Inspiration/⌚Todo List.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/❔例题/Drawing 2023-01-16 11.07.53.excalidraw.md",
+    "Day Planners/Day Planner-20230316.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/双曲函数和反双曲函数.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/平面的方程.md",
+    "attachments/Pasted image 20230315195437.png",
+    "attachments/Pasted image 20230315194634.png",
     "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容/梁的刚度矩阵的求出.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Implements/Proof of the proposition of 1-D FEM problem.pdf",
+    "attachments/Pasted image 20230314093608.png",
+    "attachments/Pasted image 20230313192955.png",
     "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容",
     "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/New folder",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 一维结构的矩阵位移法.md",
-    "📘ClassNotes/⌨️Programming/Algorithms/二分查找方法.md",
     "attachments/Pasted image 20230313113659.png",
-    "💡Inspiration/⌚Todo List.md",
-    "Day Planners/Day Planner-20230313.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十一章 曲线积分和曲面积分.md",
     "attachments/Pasted image 20230312175232.png",
-    "attachments/Pasted image 20230312175136.png",
-    "attachments/Pasted image 20230312174832.png",
-    "📘ClassNotes/⌨️Programming/Algorithms",
-    "attachments/Pasted image 20230312160429.png",
-    "attachments/19B584F5.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Basics of Finite Element Methods/Implements",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/拉格朗日变换式和拉格朗日方程的推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics",
-    "attachments/Pasted image 20230309082851.png",
-    "attachments/Stack_Sort.png"
+    "📘ClassNotes/⌨️Programming/Algorithms"
   ]
 }
