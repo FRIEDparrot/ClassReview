@@ -10311,7 +10311,7 @@ __export(exports, {
 });
 init_polyfill_buffer();
 
-// node_modules/.pnpm/isomorphic-git@1.21.0/node_modules/isomorphic-git/index.js
+// node_modules/.pnpm/isomorphic-git@1.22.0/node_modules/isomorphic-git/index.js
 init_polyfill_buffer();
 var import_async_lock = __toModule(require_async_lock());
 var import_sha1 = __toModule(require_sha1());
@@ -10347,6 +10347,14 @@ var BaseError = class extends Error {
     return true;
   }
 };
+var UnmergedPathsError = class extends BaseError {
+  constructor(filepaths) {
+    super(`Modifying the index is not possible because you have unmerged files: ${filepaths.toString}. Fix them up in the work tree, and then use 'git add/rm as appropriate to mark resolution and make a commit.`);
+    this.code = this.name = UnmergedPathsError.code;
+    this.data = { filepaths };
+  }
+};
+UnmergedPathsError.code = "UnmergedPathsError";
 var InternalError = class extends BaseError {
   constructor(message) {
     super(`An internal error caused this command to fail. Please file a bug report at https://github.com/isomorphic-git/isomorphic-git/issues with this error message: ${message}`);
@@ -10524,9 +10532,25 @@ function renderCacheEntryFlags(entry) {
   return (flags.assumeValid ? 32768 : 0) + (flags.extended ? 16384 : 0) + ((flags.stage & 3) << 12) + (flags.nameLength & 4095);
 }
 var GitIndex = class {
-  constructor(entries) {
+  constructor(entries, unmergedPaths) {
     this._dirty = false;
+    this._unmergedPaths = unmergedPaths || new Set();
     this._entries = entries || new Map();
+  }
+  _addEntry(entry) {
+    if (entry.flags.stage === 0) {
+      entry.stages = [entry];
+      this._entries.set(entry.path, entry);
+      this._unmergedPaths.delete(entry.path);
+    } else {
+      let existingEntry = this._entries.get(entry.path);
+      if (!existingEntry) {
+        this._entries.set(entry.path, entry);
+        existingEntry = entry;
+      }
+      existingEntry.stages[entry.flags.stage] = entry;
+      this._unmergedPaths.add(entry.path);
+    }
   }
   static async from(buffer2) {
     if (Buffer2.isBuffer(buffer2)) {
@@ -10543,8 +10567,8 @@ var GitIndex = class {
     if (shaClaimed !== shaComputed) {
       throw new InternalError(`Invalid checksum in GitIndex buffer: expected ${shaClaimed} but saw ${shaComputed}`);
     }
+    const index2 = new GitIndex();
     const reader = new BufferCursor(buffer2);
-    const _entries = new Map();
     const magic = reader.toString("utf8", 4);
     if (magic !== "DIRC") {
       throw new InternalError(`Inavlid dircache magic file number: ${magic}`);
@@ -10589,10 +10613,14 @@ var GitIndex = class {
           throw new InternalError("Unexpected end of file");
         }
       }
-      _entries.set(entry.path, entry);
+      entry.stages = [];
+      index2._addEntry(entry);
       i++;
     }
-    return new GitIndex(_entries);
+    return index2;
+  }
+  get unmergedPaths() {
+    return [...this._unmergedPaths];
   }
   get entries() {
     return [...this._entries.values()].sort(comparePath);
@@ -10600,12 +10628,31 @@ var GitIndex = class {
   get entriesMap() {
     return this._entries;
   }
+  get entriesFlat() {
+    return [...this.entries].flatMap((entry) => {
+      return entry.stages.length > 1 ? entry.stages.filter((x) => x) : entry;
+    });
+  }
   *[Symbol.iterator]() {
     for (const entry of this.entries) {
       yield entry;
     }
   }
-  insert({ filepath, stats, oid }) {
+  insert({ filepath, stats, oid, stage = 0 }) {
+    if (!stats) {
+      stats = {
+        ctimeSeconds: 0,
+        ctimeNanoseconds: 0,
+        mtimeSeconds: 0,
+        mtimeNanoseconds: 0,
+        dev: 0,
+        ino: 0,
+        mode: 0,
+        uid: 0,
+        gid: 0,
+        size: 0
+      };
+    }
     stats = normalizeStats(stats);
     const bfilepath = Buffer2.from(filepath);
     const entry = {
@@ -10624,11 +10671,12 @@ var GitIndex = class {
       flags: {
         assumeValid: false,
         extended: false,
-        stage: 0,
+        stage,
         nameLength: bfilepath.length < 4095 ? bfilepath.length : 4095
-      }
+      },
+      stages: []
     };
-    this._entries.set(entry.path, entry);
+    this._addEntry(entry);
     this._dirty = true;
   }
   delete({ filepath }) {
@@ -10640,6 +10688,9 @@ var GitIndex = class {
           this._entries.delete(key2);
         }
       }
+    }
+    if (this._unmergedPaths.has(filepath)) {
+      this._unmergedPaths.delete(filepath);
     }
     this._dirty = true;
   }
@@ -10653,33 +10704,46 @@ var GitIndex = class {
   render() {
     return this.entries.map((entry) => `${entry.mode.toString(8)} ${entry.oid}    ${entry.path}`).join("\n");
   }
+  static async _entryToBuffer(entry) {
+    const bpath = Buffer2.from(entry.path);
+    const length = Math.ceil((62 + bpath.length + 1) / 8) * 8;
+    const written = Buffer2.alloc(length);
+    const writer = new BufferCursor(written);
+    const stat = normalizeStats(entry);
+    writer.writeUInt32BE(stat.ctimeSeconds);
+    writer.writeUInt32BE(stat.ctimeNanoseconds);
+    writer.writeUInt32BE(stat.mtimeSeconds);
+    writer.writeUInt32BE(stat.mtimeNanoseconds);
+    writer.writeUInt32BE(stat.dev);
+    writer.writeUInt32BE(stat.ino);
+    writer.writeUInt32BE(stat.mode);
+    writer.writeUInt32BE(stat.uid);
+    writer.writeUInt32BE(stat.gid);
+    writer.writeUInt32BE(stat.size);
+    writer.write(entry.oid, 20, "hex");
+    writer.writeUInt16BE(renderCacheEntryFlags(entry));
+    writer.write(entry.path, bpath.length, "utf8");
+    return written;
+  }
   async toObject() {
     const header = Buffer2.alloc(12);
     const writer = new BufferCursor(header);
     writer.write("DIRC", 4, "utf8");
     writer.writeUInt32BE(2);
-    writer.writeUInt32BE(this.entries.length);
-    const body = Buffer2.concat(this.entries.map((entry) => {
-      const bpath = Buffer2.from(entry.path);
-      const length = Math.ceil((62 + bpath.length + 1) / 8) * 8;
-      const written = Buffer2.alloc(length);
-      const writer2 = new BufferCursor(written);
-      const stat = normalizeStats(entry);
-      writer2.writeUInt32BE(stat.ctimeSeconds);
-      writer2.writeUInt32BE(stat.ctimeNanoseconds);
-      writer2.writeUInt32BE(stat.mtimeSeconds);
-      writer2.writeUInt32BE(stat.mtimeNanoseconds);
-      writer2.writeUInt32BE(stat.dev);
-      writer2.writeUInt32BE(stat.ino);
-      writer2.writeUInt32BE(stat.mode);
-      writer2.writeUInt32BE(stat.uid);
-      writer2.writeUInt32BE(stat.gid);
-      writer2.writeUInt32BE(stat.size);
-      writer2.write(entry.oid, 20, "hex");
-      writer2.writeUInt16BE(renderCacheEntryFlags(entry));
-      writer2.write(entry.path, bpath.length, "utf8");
-      return written;
-    }));
+    writer.writeUInt32BE(this.entriesFlat.length);
+    let entryBuffers = [];
+    for (const entry of this.entries) {
+      entryBuffers.push(GitIndex._entryToBuffer(entry));
+      if (entry.stages.length > 1) {
+        for (const stage of entry.stages) {
+          if (stage && stage !== entry) {
+            entryBuffers.push(GitIndex._entryToBuffer(stage));
+          }
+        }
+      }
+    }
+    entryBuffers = await Promise.all(entryBuffers);
+    const body = Buffer2.concat(entryBuffers);
     const main = Buffer2.concat([header, body]);
     const sum = await shasum(main);
     return Buffer2.concat([main, Buffer2.from(sum, "hex")]);
@@ -10718,18 +10782,22 @@ async function isIndexStale(fs, filepath, cache) {
   return compareStats(savedStats, currStats);
 }
 var GitIndexManager = class {
-  static async acquire({ fs, gitdir, cache }, closure) {
+  static async acquire({ fs, gitdir, cache, allowUnmerged = true }, closure) {
     if (!cache[IndexCache])
       cache[IndexCache] = createCache();
     const filepath = `${gitdir}/index`;
     if (lock === null)
       lock = new import_async_lock.default({ maxPending: Infinity });
     let result;
+    let unmergedPaths = [];
     await lock.acquire(filepath, async () => {
       if (await isIndexStale(fs, filepath, cache[IndexCache])) {
         await updateCachedIndexFile(fs, filepath, cache[IndexCache]);
       }
       const index2 = cache[IndexCache].map.get(filepath);
+      unmergedPaths = index2.unmergedPaths;
+      if (unmergedPaths.length && !allowUnmerged)
+        throw new UnmergedPathsError(unmergedPaths);
       result = await closure(index2);
       if (index2._dirty) {
         const buffer2 = await index2.toObject();
@@ -12641,7 +12709,8 @@ var Errors = /* @__PURE__ */ Object.freeze({
   UnknownTransportError,
   UnsafeFilepathError,
   UrlParseError,
-  UserCanceledError
+  UserCanceledError,
+  UnmergedPathsError
 });
 function formatAuthor({ name, email, timestamp, timezoneOffset }) {
   timezoneOffset = formatTimezoneOffset(timezoneOffset);
@@ -13568,7 +13637,7 @@ async function _commit({
       depth: 2
     });
   }
-  return GitIndexManager.acquire({ fs, gitdir, cache }, async function(index2) {
+  return GitIndexManager.acquire({ fs, gitdir, cache, allowUnmerged: false }, async function(index2) {
     const inodes = flatFileListToDirectoryStructure(index2.entries);
     const inode = inodes.get(".");
     if (!tree) {
@@ -13690,7 +13759,7 @@ async function _resolveFilepath({
           oid: entry.oid
         });
         if (type !== "tree") {
-          throw new ObjectTypeError(oid, type, "blob", filepath);
+          throw new ObjectTypeError(oid, type, "tree", filepath);
         }
         tree = GitTree.from(object);
         return _resolveFilepath({
@@ -15104,8 +15173,8 @@ function filterCapabilities(server, client) {
 }
 var pkg = {
   name: "isomorphic-git",
-  version: "1.21.0",
-  agent: "git/isomorphic-git@1.21.0"
+  version: "1.22.0",
+  agent: "git/isomorphic-git@1.22.0"
 };
 var FIFO = class {
   constructor() {
@@ -16298,21 +16367,26 @@ async function _merge({
     if (fastForwardOnly) {
       throw new FastForwardError();
     }
-    const tree = await mergeTree({
-      fs,
-      cache,
-      dir,
-      gitdir,
-      ourOid,
-      theirOid,
-      baseOid,
-      ourName: abbreviateRef(ours),
-      baseName: "base",
-      theirName: abbreviateRef(theirs),
-      dryRun,
-      abortOnConflict,
-      mergeDriver
+    const tree = await GitIndexManager.acquire({ fs, gitdir, cache, allowUnmerged: false }, async (index2) => {
+      return mergeTree({
+        fs,
+        cache,
+        dir,
+        gitdir,
+        index: index2,
+        ourOid,
+        theirOid,
+        baseOid,
+        ourName: abbreviateRef(ours),
+        baseName: "base",
+        theirName: abbreviateRef(theirs),
+        dryRun,
+        abortOnConflict,
+        mergeDriver
+      });
     });
+    if (tree instanceof MergeConflictError)
+      throw tree;
     if (!message) {
       message = `Merge branch '${abbreviateRef(theirs)}' into ${abbreviateRef(ours)}`;
     }
@@ -20139,6 +20213,11 @@ function splitRemoteBranch(remoteBranch) {
   const [remote, ...branch2] = remoteBranch.split("/");
   return [remote, branch2.length === 0 ? void 0 : branch2.join("/")];
 }
+function getDisplayPath(path2) {
+  if (path2.endsWith("/"))
+    return path2;
+  return path2.split("/").last().replace(".md", "");
+}
 
 // src/isomorphicGit.ts
 var IsomorphicGit = class extends GitManager {
@@ -20450,7 +20529,6 @@ var IsomorphicGit = class extends GitManager {
       }
       progressNotice == null ? void 0 : progressNotice.hide();
       const upstreamCommit = await this.resolveRef("HEAD");
-      this.plugin.lastUpdate = Date.now();
       const changedFiles = await this.getFileChangesCount(localCommit, upstreamCommit);
       this.showNotice("Finished pull", false);
       return changedFiles.map((file) => ({
@@ -20495,6 +20573,15 @@ var IsomorphicGit = class extends GitManager {
       this.plugin.displayError(error);
       throw error;
     }
+  }
+  async getUnpushedCommits() {
+    const status2 = await this.branchInfo();
+    const trackingBranch = status2.tracking;
+    const currentBranch2 = status2.current;
+    const localCommit = await this.resolveRef(currentBranch2);
+    const upstreamCommit = await this.resolveRef(trackingBranch);
+    const changedFiles = await this.getFileChangesCount(localCommit, upstreamCommit);
+    return changedFiles.length;
   }
   async canPush() {
     const status2 = await this.branchInfo();
@@ -20943,7 +21030,7 @@ var import_obsidian6 = __toModule(require("obsidian"));
 var path = __toModule(require("path"));
 var import_path = __toModule(require("path"));
 
-// node_modules/.pnpm/simple-git@3.16.1_supports-color@7.2.0/node_modules/simple-git/dist/esm/index.js
+// node_modules/.pnpm/simple-git@3.17.0_supports-color@7.2.0/node_modules/simple-git/dist/esm/index.js
 init_polyfill_buffer();
 var import_file_exists = __toModule(require_dist());
 var import_debug = __toModule(require_browser());
@@ -24688,7 +24775,9 @@ function spawnOptionsPlugin(spawnOptions) {
   };
 }
 function timeoutPlugin({
-  block
+  block,
+  stdErr = true,
+  stdOut = true
 }) {
   if (block > 0) {
     return {
@@ -24712,8 +24801,8 @@ function timeoutPlugin({
           stop();
           context.kill(new GitPluginError(void 0, "timeout", `block timeout reached`));
         }
-        (_a2 = context.spawned.stdout) == null ? void 0 : _a2.on("data", wait3);
-        (_b = context.spawned.stderr) == null ? void 0 : _b.on("data", wait3);
+        stdOut && ((_a2 = context.spawned.stdout) == null ? void 0 : _a2.on("data", wait3));
+        stdErr && ((_b = context.spawned.stderr) == null ? void 0 : _b.on("data", wait3));
         context.spawned.on("exit", stop);
         context.spawned.on("close", stop);
         wait3();
@@ -24980,6 +25069,13 @@ var SimpleGit = class extends GitManager {
     await this.git.env({ ...process.env, OBSIDIAN_GIT: 1 }).push((err) => this.onError(err));
     return remoteChangedFiles;
   }
+  async getUnpushedCommits() {
+    const status2 = await this.git.status();
+    const trackingBranch = status2.tracking;
+    const currentBranch2 = status2.current;
+    const remoteChangedFiles = (await this.git.diffSummary([currentBranch2, trackingBranch, "--"], (err) => this.onError(err))).changed;
+    return remoteChangedFiles;
+  }
   async canPush() {
     if (this.plugin.settings.updateSubmodules === true) {
       return true;
@@ -25206,7 +25302,7 @@ var ObsidianGitSettingsTab = class extends import_obsidian7.PluginSettingTab {
         }
       }));
       if (!plugin.settings.setLastSaveToLastCommit)
-        new import_obsidian7.Setting(containerEl).setName(`Auto Backup after file change`).setDesc(`If turned on, do auto ${commitOrBackup} every ${plugin.settings.autoSaveInterval} minutes after last change. This also prevents auto ${commitOrBackup} while editing a file. If turned off, it's independent from last the change.`).addToggle((toggle) => toggle.setValue(plugin.settings.autoBackupAfterFileChange).onChange((value) => {
+        new import_obsidian7.Setting(containerEl).setName(`Auto Backup after file change`).setDesc(`If turned on, do auto ${commitOrBackup} every ${plugin.settings.autoSaveInterval} minutes after last change. This also prevents auto ${commitOrBackup} while editing a file. If turned off, it's independent from the last change.`).addToggle((toggle) => toggle.setValue(plugin.settings.autoBackupAfterFileChange).onChange((value) => {
           plugin.settings.autoBackupAfterFileChange = value;
           this.display();
           plugin.saveSettings();
@@ -25333,6 +25429,10 @@ var ObsidianGitSettingsTab = class extends import_obsidian7.PluginSettingTab {
     }));
     new import_obsidian7.Setting(containerEl).setName("Show status bar").setDesc("Obsidian must be restarted for the changes to take affect").addToggle((toggle) => toggle.setValue(plugin.settings.showStatusBar).onChange((value) => {
       plugin.settings.showStatusBar = value;
+      plugin.saveSettings();
+    }));
+    new import_obsidian7.Setting(containerEl).setName("Show stage/unstage button in file menu").addToggle((toggle) => toggle.setValue(plugin.settings.showFileMenu).onChange((value) => {
+      plugin.settings.showFileMenu = value;
       plugin.saveSettings();
     }));
     new import_obsidian7.Setting(containerEl).setName("Show branch status bar").setDesc("Obsidian must be restarted for the changes to take affect").addToggle((toggle) => toggle.setValue(plugin.settings.showBranchStatusBar).onChange((value) => {
@@ -25485,6 +25585,7 @@ var StatusBar = class {
     this.messages = [];
     this.base = "obsidian-git-statusbar-";
     this.statusBarEl.setAttribute("aria-label-position", "top");
+    addEventListener("git-refresh", this.refreshCommitTimestamp.bind(this));
   }
   displayMessage(message, timeout) {
     this.messages.push({
@@ -25521,7 +25622,7 @@ var StatusBar = class {
     }
     switch (this.plugin.state) {
       case PluginState.idle:
-        this.displayFromNow(this.plugin.lastUpdate);
+        this.displayFromNow();
         break;
       case PluginState.status:
         this.statusBarEl.ariaLabel = "Checking repository status...";
@@ -25560,11 +25661,17 @@ var StatusBar = class {
         break;
     }
   }
-  displayFromNow(timestamp) {
+  displayFromNow() {
+    var _a2;
+    const timestamp = this.lastCommitTimestamp;
     if (timestamp) {
       const moment = window.moment;
       const fromNow = moment(timestamp).fromNow();
-      this.statusBarEl.ariaLabel = `${this.plugin.offlineMode ? "Offline: " : ""}Last Git update: ${fromNow}`;
+      this.statusBarEl.ariaLabel = `${this.plugin.offlineMode ? "Offline: " : ""}Last Commit: ${fromNow}`;
+      if ((_a2 = this.unPushedCommits) != null ? _a2 : 0 > 0) {
+        this.statusBarEl.ariaLabel += `
+(${this.unPushedCommits} unpushed commits)`;
+      }
     } else {
       this.statusBarEl.ariaLabel = this.plugin.offlineMode ? "Git is offline" : "Git is ready";
     }
@@ -25577,6 +25684,10 @@ var StatusBar = class {
       this.textEl.setText(this.plugin.cachedStatus.changed.length.toString());
     }
     this.statusBarEl.addClass(this.base + "idle");
+  }
+  async refreshCommitTimestamp() {
+    this.lastCommitTimestamp = await this.plugin.gitManager.getLastCommitTime();
+    this.unPushedCommits = await this.plugin.gitManager.getUnpushedCommits();
   }
 };
 
@@ -25682,7 +25793,8 @@ var DEFAULT_SETTINGS = {
   showBranchStatusBar: true,
   setLastSaveToLastCommit: false,
   submoduleRecurseCheckout: false,
-  gitDir: ""
+  gitDir: "",
+  showFileMenu: true
 };
 var GIT_VIEW_CONFIG = {
   type: "git-view",
@@ -25861,13 +25973,13 @@ async function getData(manager) {
 // src/ui/diff/diffView.ts
 init_polyfill_buffer();
 
-// node_modules/.pnpm/diff2html@3.4.31/node_modules/diff2html/lib-esm/diff2html.js
+// node_modules/.pnpm/diff2html@3.4.33/node_modules/diff2html/lib-esm/diff2html.js
 init_polyfill_buffer();
 
-// node_modules/.pnpm/diff2html@3.4.31/node_modules/diff2html/lib-esm/diff-parser.js
+// node_modules/.pnpm/diff2html@3.4.33/node_modules/diff2html/lib-esm/diff-parser.js
 init_polyfill_buffer();
 
-// node_modules/.pnpm/diff2html@3.4.31/node_modules/diff2html/lib-esm/types.js
+// node_modules/.pnpm/diff2html@3.4.33/node_modules/diff2html/lib-esm/types.js
 init_polyfill_buffer();
 var LineType;
 (function(LineType2) {
@@ -25889,7 +26001,7 @@ var DiffStyleType = {
   CHAR: "char"
 };
 
-// node_modules/.pnpm/diff2html@3.4.31/node_modules/diff2html/lib-esm/utils.js
+// node_modules/.pnpm/diff2html@3.4.33/node_modules/diff2html/lib-esm/utils.js
 init_polyfill_buffer();
 var specials = [
   "-",
@@ -25927,7 +26039,7 @@ function hashCode(text2) {
   return hash2;
 }
 
-// node_modules/.pnpm/diff2html@3.4.31/node_modules/diff2html/lib-esm/diff-parser.js
+// node_modules/.pnpm/diff2html@3.4.33/node_modules/diff2html/lib-esm/diff-parser.js
 var __spreadArray = function(to, from, pack) {
   if (pack || arguments.length === 2)
     for (var i = 0, l = from.length, ar; i < l; i++) {
@@ -26236,13 +26348,13 @@ function parse(diffInput, config) {
   return files;
 }
 
-// node_modules/.pnpm/diff2html@3.4.31/node_modules/diff2html/lib-esm/file-list-renderer.js
+// node_modules/.pnpm/diff2html@3.4.33/node_modules/diff2html/lib-esm/file-list-renderer.js
 init_polyfill_buffer();
 
-// node_modules/.pnpm/diff2html@3.4.31/node_modules/diff2html/lib-esm/render-utils.js
+// node_modules/.pnpm/diff2html@3.4.33/node_modules/diff2html/lib-esm/render-utils.js
 init_polyfill_buffer();
 
-// node_modules/.pnpm/diff2html@3.4.31/node_modules/diff2html/lib-esm/rematch.js
+// node_modules/.pnpm/diff2html@3.4.33/node_modules/diff2html/lib-esm/rematch.js
 init_polyfill_buffer();
 function levenshtein(a, b) {
   if (a.length === 0) {
@@ -26336,7 +26448,7 @@ function newMatcherFn(distance2) {
   return group;
 }
 
-// node_modules/.pnpm/diff2html@3.4.31/node_modules/diff2html/lib-esm/render-utils.js
+// node_modules/.pnpm/diff2html@3.4.33/node_modules/diff2html/lib-esm/render-utils.js
 var __assign = function() {
   __assign = Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -26526,7 +26638,7 @@ function diffHighlight(diffLine1, diffLine2, isCombined, config) {
   };
 }
 
-// node_modules/.pnpm/diff2html@3.4.31/node_modules/diff2html/lib-esm/file-list-renderer.js
+// node_modules/.pnpm/diff2html@3.4.33/node_modules/diff2html/lib-esm/file-list-renderer.js
 var baseTemplatesPath = "file-summary";
 var iconsBaseTemplatesPath = "icon";
 function render(diffFiles, hoganUtils) {
@@ -26548,7 +26660,7 @@ function render(diffFiles, hoganUtils) {
   });
 }
 
-// node_modules/.pnpm/diff2html@3.4.31/node_modules/diff2html/lib-esm/line-by-line-renderer.js
+// node_modules/.pnpm/diff2html@3.4.33/node_modules/diff2html/lib-esm/line-by-line-renderer.js
 init_polyfill_buffer();
 var __assign2 = function() {
   __assign2 = Object.assign || function(t) {
@@ -26630,14 +26742,14 @@ var LineByLineRenderer = function() {
         if (oldLines.length && newLines.length && !contextLines.length) {
           _this.applyRematchMatching(oldLines, newLines, matcher2).map(function(_a3) {
             var oldLines2 = _a3[0], newLines2 = _a3[1];
-            var _b2 = _this.processChangedLines(file.isCombined, oldLines2, newLines2), left2 = _b2.left, right2 = _b2.right;
+            var _b2 = _this.processChangedLines(file, file.isCombined, oldLines2, newLines2), left2 = _b2.left, right2 = _b2.right;
             lines += left2;
             lines += right2;
           });
         } else if (contextLines.length) {
           contextLines.forEach(function(line) {
             var _a3 = deconstructLine(line.content, file.isCombined), prefix = _a3.prefix, content = _a3.content;
-            lines += _this.generateSingleLineHtml({
+            lines += _this.generateSingleLineHtml(file, {
               type: CSSLineClass.CONTEXT,
               prefix,
               content,
@@ -26646,7 +26758,7 @@ var LineByLineRenderer = function() {
             });
           });
         } else if (oldLines.length || newLines.length) {
-          var _b = _this.processChangedLines(file.isCombined, oldLines, newLines), left = _b.left, right = _b.right;
+          var _b = _this.processChangedLines(file, file.isCombined, oldLines, newLines), left = _b.left, right = _b.right;
           lines += left;
           lines += right;
         } else {
@@ -26692,7 +26804,7 @@ var LineByLineRenderer = function() {
     var doMatching = comparisons < this.config.matchingMaxComparisons && maxLineSizeInBlock < this.config.maxLineSizeInBlockForComparison && (this.config.matching === "lines" || this.config.matching === "words");
     return doMatching ? matcher2(oldLines, newLines) : [[oldLines, newLines]];
   };
-  LineByLineRenderer2.prototype.processChangedLines = function(isCombined, oldLines, newLines) {
+  LineByLineRenderer2.prototype.processChangedLines = function(file, isCombined, oldLines, newLines) {
     var fileHtml = {
       right: "",
       left: ""
@@ -26712,19 +26824,19 @@ var LineByLineRenderer = function() {
         content: diff2.newLine.content,
         type: CSSLineClass.INSERT_CHANGES
       } : __assign2(__assign2({}, deconstructLine(newLine.content, isCombined)), { type: toCSSClass(newLine.type) })), { oldNumber: newLine.oldNumber, newNumber: newLine.newNumber }) : void 0;
-      var _a2 = this.generateLineHtml(preparedOldLine, preparedNewLine), left = _a2.left, right = _a2.right;
+      var _a2 = this.generateLineHtml(file, preparedOldLine, preparedNewLine), left = _a2.left, right = _a2.right;
       fileHtml.left += left;
       fileHtml.right += right;
     }
     return fileHtml;
   };
-  LineByLineRenderer2.prototype.generateLineHtml = function(oldLine, newLine) {
+  LineByLineRenderer2.prototype.generateLineHtml = function(file, oldLine, newLine) {
     return {
-      left: this.generateSingleLineHtml(oldLine),
-      right: this.generateSingleLineHtml(newLine)
+      left: this.generateSingleLineHtml(file, oldLine),
+      right: this.generateSingleLineHtml(file, newLine)
     };
   };
-  LineByLineRenderer2.prototype.generateSingleLineHtml = function(line) {
+  LineByLineRenderer2.prototype.generateSingleLineHtml = function(file, line) {
     if (line === void 0)
       return "";
     var lineNumberHtml = this.hoganUtils.render(baseTemplatesPath2, "numbers", {
@@ -26737,14 +26849,16 @@ var LineByLineRenderer = function() {
       contentClass: "d2h-code-line",
       prefix: line.prefix === " " ? "&nbsp;" : line.prefix,
       content: line.content,
-      lineNumber: lineNumberHtml
+      lineNumber: lineNumberHtml,
+      line,
+      file
     });
   };
   return LineByLineRenderer2;
 }();
 var line_by_line_renderer_default = LineByLineRenderer;
 
-// node_modules/.pnpm/diff2html@3.4.31/node_modules/diff2html/lib-esm/side-by-side-renderer.js
+// node_modules/.pnpm/diff2html@3.4.33/node_modules/diff2html/lib-esm/side-by-side-renderer.js
 init_polyfill_buffer();
 var __assign3 = function() {
   __assign3 = Object.assign || function(t) {
@@ -26953,11 +27067,11 @@ var SideBySideRenderer = function() {
 }();
 var side_by_side_renderer_default = SideBySideRenderer;
 
-// node_modules/.pnpm/diff2html@3.4.31/node_modules/diff2html/lib-esm/hoganjs-utils.js
+// node_modules/.pnpm/diff2html@3.4.33/node_modules/diff2html/lib-esm/hoganjs-utils.js
 init_polyfill_buffer();
 var Hogan3 = __toModule(require_hogan());
 
-// node_modules/.pnpm/diff2html@3.4.31/node_modules/diff2html/lib-esm/diff2html-templates.js
+// node_modules/.pnpm/diff2html@3.4.33/node_modules/diff2html/lib-esm/diff2html-templates.js
 init_polyfill_buffer();
 var Hogan2 = __toModule(require_hogan());
 var defaultTemplates = {};
@@ -27362,7 +27476,7 @@ defaultTemplates["tag-file-renamed"] = new Hogan2.Template({ code: function(c, p
   return t.fl();
 }, partials: {}, subs: {} });
 
-// node_modules/.pnpm/diff2html@3.4.31/node_modules/diff2html/lib-esm/hoganjs-utils.js
+// node_modules/.pnpm/diff2html@3.4.33/node_modules/diff2html/lib-esm/hoganjs-utils.js
 var __assign4 = function() {
   __assign4 = Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -27408,7 +27522,7 @@ var HoganJsUtils = function() {
 }();
 var hoganjs_utils_default = HoganJsUtils;
 
-// node_modules/.pnpm/diff2html@3.4.31/node_modules/diff2html/lib-esm/diff2html.js
+// node_modules/.pnpm/diff2html@3.4.33/node_modules/diff2html/lib-esm/diff2html.js
 var __assign5 = function() {
   __assign5 = Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -27577,7 +27691,7 @@ var import_obsidian22 = __toModule(require("obsidian"));
 // src/ui/sidebar/gitView.svelte
 init_polyfill_buffer();
 
-// node_modules/.pnpm/svelte@3.55.1/node_modules/svelte/internal/index.mjs
+// node_modules/.pnpm/svelte@3.56.0/node_modules/svelte/internal/index.mjs
 init_polyfill_buffer();
 function noop() {
 }
@@ -27813,7 +27927,7 @@ var dirty_components = [];
 var binding_callbacks = [];
 var render_callbacks = [];
 var flush_callbacks = [];
-var resolved_promise = Promise.resolve();
+var resolved_promise = /* @__PURE__ */ Promise.resolve();
 var update_scheduled = false;
 function schedule_update() {
   if (!update_scheduled) {
@@ -27874,6 +27988,13 @@ function update($$) {
     $$.fragment && $$.fragment.p($$.ctx, dirty);
     $$.after_update.forEach(add_render_callback);
   }
+}
+function flush_render_callbacks(fns) {
+  const filtered = [];
+  const targets = [];
+  render_callbacks.forEach((c) => fns.indexOf(c) === -1 ? filtered.push(c) : targets.push(c));
+  targets.forEach((c) => c());
+  render_callbacks = filtered;
 }
 var promise;
 function wait() {
@@ -28024,7 +28145,7 @@ function create_bidirectional_transition(node, fn, params, intro) {
   };
 }
 var globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : global;
-var boolean_attributes = new Set([
+var _boolean_attributes = [
   "allowfullscreen",
   "allowpaymentrequest",
   "async",
@@ -28051,7 +28172,8 @@ var boolean_attributes = new Set([
   "required",
   "reversed",
   "selected"
-]);
+];
+var boolean_attributes = new Set([..._boolean_attributes]);
 function create_component(block) {
   block && block.c();
 }
@@ -28074,6 +28196,7 @@ function mount_component(component, target, anchor, customElement) {
 function destroy_component(component, detaching) {
   const $$ = component.$$;
   if ($$.fragment !== null) {
+    flush_render_callbacks($$.after_update);
     run_all($$.on_destroy);
     $$.fragment && $$.fragment.d(detaching);
     $$.on_destroy = $$.fragment = null;
@@ -28251,35 +28374,38 @@ var {
 // src/ui/sidebar/gitView.svelte
 var import_obsidian21 = __toModule(require("obsidian"));
 
-// node_modules/.pnpm/svelte@3.55.1/node_modules/svelte/index.mjs
+// node_modules/.pnpm/svelte@3.56.0/node_modules/svelte/index.mjs
 init_polyfill_buffer();
 
-// node_modules/.pnpm/svelte@3.55.1/node_modules/svelte/transition/index.mjs
+// node_modules/.pnpm/svelte@3.56.0/node_modules/svelte/transition/index.mjs
 init_polyfill_buffer();
 
-// node_modules/.pnpm/svelte@3.55.1/node_modules/svelte/easing/index.mjs
+// node_modules/.pnpm/svelte@3.56.0/node_modules/svelte/easing/index.mjs
 init_polyfill_buffer();
 function cubicOut(t) {
   const f = t - 1;
   return f * f * f + 1;
 }
 
-// node_modules/.pnpm/svelte@3.55.1/node_modules/svelte/transition/index.mjs
-function slide(node, { delay: delay2 = 0, duration = 400, easing = cubicOut } = {}) {
+// node_modules/.pnpm/svelte@3.56.0/node_modules/svelte/transition/index.mjs
+function slide(node, { delay: delay2 = 0, duration = 400, easing = cubicOut, axis = "y" } = {}) {
   const style = getComputedStyle(node);
   const opacity = +style.opacity;
-  const height = parseFloat(style.height);
-  const padding_top = parseFloat(style.paddingTop);
-  const padding_bottom = parseFloat(style.paddingBottom);
-  const margin_top = parseFloat(style.marginTop);
-  const margin_bottom = parseFloat(style.marginBottom);
-  const border_top_width = parseFloat(style.borderTopWidth);
-  const border_bottom_width = parseFloat(style.borderBottomWidth);
+  const primary_property = axis === "y" ? "height" : "width";
+  const primary_property_value = parseFloat(style[primary_property]);
+  const secondary_properties = axis === "y" ? ["top", "bottom"] : ["left", "right"];
+  const capitalized_secondary_properties = secondary_properties.map((e) => `${e[0].toUpperCase()}${e.slice(1)}`);
+  const padding_start_value = parseFloat(style[`padding${capitalized_secondary_properties[0]}`]);
+  const padding_end_value = parseFloat(style[`padding${capitalized_secondary_properties[1]}`]);
+  const margin_start_value = parseFloat(style[`margin${capitalized_secondary_properties[0]}`]);
+  const margin_end_value = parseFloat(style[`margin${capitalized_secondary_properties[1]}`]);
+  const border_width_start_value = parseFloat(style[`border${capitalized_secondary_properties[0]}Width`]);
+  const border_width_end_value = parseFloat(style[`border${capitalized_secondary_properties[1]}Width`]);
   return {
     delay: delay2,
     duration,
     easing,
-    css: (t) => `overflow: hidden;opacity: ${Math.min(t * 20, 1) * opacity};height: ${t * height}px;padding-top: ${t * padding_top}px;padding-bottom: ${t * padding_bottom}px;margin-top: ${t * margin_top}px;margin-bottom: ${t * margin_bottom}px;border-top-width: ${t * border_top_width}px;border-bottom-width: ${t * border_bottom_width}px;`
+    css: (t) => `overflow: hidden;opacity: ${Math.min(t * 20, 1) * opacity};${primary_property}: ${t * primary_property_value}px;padding-${secondary_properties[0]}: ${t * padding_start_value}px;padding-${secondary_properties[1]}: ${t * padding_end_value}px;margin-${secondary_properties[0]}: ${t * margin_start_value}px;margin-${secondary_properties[1]}: ${t * margin_end_value}px;border-${secondary_properties[0]}-width: ${t * border_width_start_value}px;border-${secondary_properties[1]}-width: ${t * border_width_end_value}px;`
   };
 }
 
@@ -28342,10 +28468,10 @@ var DiscardModal = class extends import_obsidian16.Modal {
 init_polyfill_buffer();
 var import_obsidian18 = __toModule(require("obsidian"));
 
-// node_modules/.pnpm/obsidian-community-lib@2.0.2_6i3pfqogrrmqkwm5tm4xxq6xdu/node_modules/obsidian-community-lib/dist/index.js
+// node_modules/.pnpm/obsidian-community-lib@2.0.2_nhpyweho5i63az4d4hsuvsa7gy/node_modules/obsidian-community-lib/dist/index.js
 init_polyfill_buffer();
 
-// node_modules/.pnpm/obsidian-community-lib@2.0.2_6i3pfqogrrmqkwm5tm4xxq6xdu/node_modules/obsidian-community-lib/dist/utils.js
+// node_modules/.pnpm/obsidian-community-lib@2.0.2_nhpyweho5i63az4d4hsuvsa7gy/node_modules/obsidian-community-lib/dist/utils.js
 init_polyfill_buffer();
 var feather = __toModule(require_feather());
 var import_obsidian17 = __toModule(require("obsidian"));
@@ -28397,11 +28523,10 @@ function create_if_block(ctx) {
   };
 }
 function create_fragment(ctx) {
-  var _a2;
   let main;
   let div6;
   let div0;
-  let t0_value = ((_a2 = ctx[0].vault_path.split("/").last()) == null ? void 0 : _a2.replace(".md", "")) + "";
+  let t0_value = getDisplayPath(ctx[0].vault_path) + "";
   let t0;
   let t1;
   let div5;
@@ -28451,7 +28576,7 @@ function create_fragment(ctx) {
       attr(div5, "class", "tools svelte-wn85nz");
       attr(div6, "class", "nav-file-title");
       attr(div6, "aria-label-position", ctx[3]);
-      attr(div6, "aria-label", div6_aria_label_value = ctx[0].vault_path.split("/").last() != ctx[0].vault_path ? ctx[0].vault_path : "");
+      attr(div6, "aria-label", div6_aria_label_value = ctx[0].vault_path);
       attr(main, "class", "nav-file svelte-wn85nz");
     },
     m(target, anchor) {
@@ -28489,8 +28614,7 @@ function create_fragment(ctx) {
       }
     },
     p(ctx2, [dirty]) {
-      var _a3;
-      if (dirty & 1 && t0_value !== (t0_value = ((_a3 = ctx2[0].vault_path.split("/").last()) == null ? void 0 : _a3.replace(".md", "")) + ""))
+      if (dirty & 1 && t0_value !== (t0_value = getDisplayPath(ctx2[0].vault_path) + ""))
         set_data(t0, t0_value);
       if (dirty & 3)
         show_if = ctx2[1].app.vault.getAbstractFileByPath(ctx2[0].vault_path);
@@ -28514,7 +28638,7 @@ function create_fragment(ctx) {
       if (dirty & 8) {
         attr(div6, "aria-label-position", ctx2[3]);
       }
-      if (dirty & 1 && div6_aria_label_value !== (div6_aria_label_value = ctx2[0].vault_path.split("/").last() != ctx2[0].vault_path ? ctx2[0].vault_path : "")) {
+      if (dirty & 1 && div6_aria_label_value !== (div6_aria_label_value = ctx2[0].vault_path)) {
         attr(div6, "aria-label", div6_aria_label_value);
       }
     },
@@ -28540,8 +28664,8 @@ function instance($$self, $$props, $$invalidate) {
   let buttons = [];
   window.setTimeout(() => buttons.forEach((b) => (0, import_obsidian18.setIcon)(b, b.getAttr("data-icon"))), 0);
   function hover(event) {
-    if (!change.path.startsWith(view.app.vault.configDir) || !change.path.startsWith(".")) {
-      hoverPreview(event, view, change.vault_path.split("/").last().replace(".md", ""));
+    if (app.vault.getAbstractFileByPath(change.vault_path)) {
+      hoverPreview(event, view, change.vault_path);
     }
   }
   function open(event) {
@@ -28648,11 +28772,10 @@ function add_css2(target) {
   append_styles(target, "svelte-sajhpp", "main.svelte-sajhpp .nav-file-title-content.svelte-sajhpp{display:flex;align-items:center}main.svelte-sajhpp .tools.svelte-sajhpp{display:flex;margin-left:auto}main.svelte-sajhpp .tools .type.svelte-sajhpp{padding-left:var(--size-2-1);display:flex;align-items:center;justify-content:center}main.svelte-sajhpp .tools .type[data-type=M].svelte-sajhpp{color:orange}main.svelte-sajhpp .tools .type[data-type=D].svelte-sajhpp{color:red}");
 }
 function create_fragment2(ctx) {
-  var _a2;
   let main;
   let div2;
   let div0;
-  let t0_value = ((_a2 = ctx[0].vault_path.split("/").last()) == null ? void 0 : _a2.replace(".md", "")) + "";
+  let t0_value = getDisplayPath(ctx[0].vault_path) + "";
   let t0;
   let t1;
   let div1;
@@ -28679,7 +28802,7 @@ function create_fragment2(ctx) {
       attr(div1, "class", "tools svelte-sajhpp");
       attr(div2, "class", "nav-file-title");
       attr(div2, "aria-label-position", ctx[1]);
-      attr(div2, "aria-label", div2_aria_label_value = ctx[0].vault_path.split("/").last() != ctx[0].vault_path ? ctx[0].vault_path : "");
+      attr(div2, "aria-label", div2_aria_label_value = ctx[0].vault_path);
       attr(main, "class", "nav-file svelte-sajhpp");
     },
     m(target, anchor) {
@@ -28701,8 +28824,7 @@ function create_fragment2(ctx) {
       }
     },
     p(ctx2, [dirty]) {
-      var _a3;
-      if (dirty & 1 && t0_value !== (t0_value = ((_a3 = ctx2[0].vault_path.split("/").last()) == null ? void 0 : _a3.replace(".md", "")) + ""))
+      if (dirty & 1 && t0_value !== (t0_value = getDisplayPath(ctx2[0].vault_path) + ""))
         set_data(t0, t0_value);
       if (dirty & 1 && t2_value !== (t2_value = ctx2[0].working_dir + ""))
         set_data(t2, t2_value);
@@ -28712,7 +28834,7 @@ function create_fragment2(ctx) {
       if (dirty & 2) {
         attr(div2, "aria-label-position", ctx2[1]);
       }
-      if (dirty & 1 && div2_aria_label_value !== (div2_aria_label_value = ctx2[0].vault_path.split("/").last() != ctx2[0].vault_path ? ctx2[0].vault_path : "")) {
+      if (dirty & 1 && div2_aria_label_value !== (div2_aria_label_value = ctx2[0].vault_path)) {
         attr(div2, "aria-label", div2_aria_label_value);
       }
     },
@@ -28731,8 +28853,8 @@ function instance2($$self, $$props, $$invalidate) {
   let { change } = $$props;
   let { view } = $$props;
   function hover(event) {
-    if (!change.path.startsWith(view.app.vault.configDir) || !change.path.startsWith(".")) {
-      hoverPreview(event, view, change.vault_path.split("/").last().replace(".md", ""));
+    if (app.vault.getAbstractFileByPath(change.vault_path)) {
+      hoverPreview(event, view, change.vault_path);
     }
   }
   function open(event) {
@@ -28786,9 +28908,9 @@ function create_if_block2(ctx) {
     },
     m(target, anchor) {
       insert(target, div, anchor);
-      ctx[11](div);
+      ctx[10](div);
       if (!mounted) {
-        dispose = listen(div, "click", ctx[6]);
+        dispose = listen(div, "click", ctx[5]);
         mounted = true;
       }
     },
@@ -28796,23 +28918,22 @@ function create_if_block2(ctx) {
     d(detaching) {
       if (detaching)
         detach(div);
-      ctx[11](null);
+      ctx[10](null);
       mounted = false;
       dispose();
     }
   };
 }
 function create_fragment3(ctx) {
-  var _a2;
   let main;
   let div5;
   let div0;
-  let t0_value = ((_a2 = ctx[3].split("/").last()) == null ? void 0 : _a2.replace(".md", "")) + "";
+  let t0_value = getDisplayPath(ctx[0].vault_path) + "";
   let t0;
   let t1;
   let div4;
   let div2;
-  let show_if = ctx[1].app.vault.getAbstractFileByPath(ctx[3]);
+  let show_if = ctx[1].app.vault.getAbstractFileByPath(ctx[0].vault_path);
   let t2;
   let div1;
   let t3;
@@ -28849,8 +28970,8 @@ function create_fragment3(ctx) {
       attr(div3, "data-type", div3_data_type_value = ctx[0].index);
       attr(div4, "class", "tools svelte-wn85nz");
       attr(div5, "class", "nav-file-title");
-      attr(div5, "aria-label-position", ctx[4]);
-      attr(div5, "aria-label", div5_aria_label_value = ctx[3].split("/").last() != ctx[3] ? ctx[3] : "");
+      attr(div5, "aria-label-position", ctx[3]);
+      attr(div5, "aria-label", div5_aria_label_value = ctx[0].vault_path);
       attr(main, "class", "nav-file svelte-wn85nz");
     },
     m(target, anchor) {
@@ -28865,29 +28986,28 @@ function create_fragment3(ctx) {
         if_block.m(div2, null);
       append2(div2, t2);
       append2(div2, div1);
-      ctx[12](div1);
+      ctx[11](div1);
       append2(div4, t3);
       append2(div4, div3);
       append2(div3, t4);
       if (!mounted) {
         dispose = [
-          listen(div0, "click", ctx[7]),
-          listen(div0, "auxclick", ctx[7]),
-          listen(div1, "click", ctx[8]),
-          listen(div5, "click", self2(ctx[7])),
-          listen(main, "mouseover", ctx[5]),
-          listen(main, "focus", ctx[10]),
-          listen(main, "click", self2(ctx[7]))
+          listen(div0, "click", ctx[6]),
+          listen(div0, "auxclick", ctx[6]),
+          listen(div1, "click", ctx[7]),
+          listen(div5, "click", self2(ctx[6])),
+          listen(main, "mouseover", ctx[4]),
+          listen(main, "focus", ctx[9]),
+          listen(main, "click", self2(ctx[6]))
         ];
         mounted = true;
       }
     },
     p(ctx2, [dirty]) {
-      var _a3;
-      if (dirty & 8 && t0_value !== (t0_value = ((_a3 = ctx2[3].split("/").last()) == null ? void 0 : _a3.replace(".md", "")) + ""))
+      if (dirty & 1 && t0_value !== (t0_value = getDisplayPath(ctx2[0].vault_path) + ""))
         set_data(t0, t0_value);
-      if (dirty & 10)
-        show_if = ctx2[1].app.vault.getAbstractFileByPath(ctx2[3]);
+      if (dirty & 3)
+        show_if = ctx2[1].app.vault.getAbstractFileByPath(ctx2[0].vault_path);
       if (show_if) {
         if (if_block) {
           if_block.p(ctx2, dirty);
@@ -28905,10 +29025,10 @@ function create_fragment3(ctx) {
       if (dirty & 1 && div3_data_type_value !== (div3_data_type_value = ctx2[0].index)) {
         attr(div3, "data-type", div3_data_type_value);
       }
-      if (dirty & 16) {
-        attr(div5, "aria-label-position", ctx2[4]);
+      if (dirty & 8) {
+        attr(div5, "aria-label-position", ctx2[3]);
       }
-      if (dirty & 8 && div5_aria_label_value !== (div5_aria_label_value = ctx2[3].split("/").last() != ctx2[3] ? ctx2[3] : "")) {
+      if (dirty & 1 && div5_aria_label_value !== (div5_aria_label_value = ctx2[0].vault_path)) {
         attr(div5, "aria-label", div5_aria_label_value);
       }
     },
@@ -28919,7 +29039,7 @@ function create_fragment3(ctx) {
         detach(main);
       if (if_block)
         if_block.d();
-      ctx[12](null);
+      ctx[11](null);
       mounted = false;
       run_all(dispose);
     }
@@ -28934,8 +29054,8 @@ function instance3($$self, $$props, $$invalidate) {
   let buttons = [];
   window.setTimeout(() => buttons.forEach((b) => (0, import_obsidian20.setIcon)(b, b.getAttr("data-icon"), 16)), 0);
   function hover(event) {
-    if (!change.path.startsWith(view.app.vault.configDir) || !change.path.startsWith(".")) {
-      hoverPreview(event, view, formattedPath.split("/").last().replace(".md", ""));
+    if (app.vault.getAbstractFileByPath(change.vault_path)) {
+      hoverPreview(event, view, change.vault_path);
     }
   }
   function open(event) {
@@ -28979,23 +29099,22 @@ function instance3($$self, $$props, $$invalidate) {
     if ("view" in $$props2)
       $$invalidate(1, view = $$props2.view);
     if ("manager" in $$props2)
-      $$invalidate(9, manager = $$props2.manager);
+      $$invalidate(8, manager = $$props2.manager);
   };
   $$self.$$.update = () => {
     if ($$self.$$.dirty & 1) {
       $:
-        $$invalidate(3, formattedPath = change.vault_path);
+        formattedPath = change.vault_path;
     }
     if ($$self.$$.dirty & 2) {
       $:
-        $$invalidate(4, side = view.leaf.getRoot().side == "left" ? "right" : "left");
+        $$invalidate(3, side = view.leaf.getRoot().side == "left" ? "right" : "left");
     }
   };
   return [
     change,
     view,
     buttons,
-    formattedPath,
     side,
     hover,
     open,
@@ -29010,7 +29129,7 @@ function instance3($$self, $$props, $$invalidate) {
 var StagedFileComponent = class extends SvelteComponent {
   constructor(options) {
     super();
-    init2(this, options, instance3, create_fragment3, safe_not_equal, { change: 0, view: 1, manager: 9 }, add_css3);
+    init2(this, options, instance3, create_fragment3, safe_not_equal, { change: 0, view: 1, manager: 8 }, add_css3);
   }
 };
 var stagedFileComponent_default = StagedFileComponent;
@@ -29095,7 +29214,7 @@ function create_else_block(ctx) {
       attr(div5, "class", "tools svelte-148wteu");
       attr(div6, "class", "nav-folder-title");
       attr(div6, "aria-label-position", ctx[6]);
-      attr(div6, "aria-label", div6_aria_label_value = ctx[17].vaultPath.split("/").last() != ctx[17].vaultPath ? ctx[17].vaultPath : "");
+      attr(div6, "aria-label", div6_aria_label_value = ctx[17].vaultPath);
       attr(div7, "class", "nav-folder");
       toggle_class(div7, "is-collapsed", ctx[5][ctx[17].title]);
     },
@@ -29145,7 +29264,7 @@ function create_else_block(ctx) {
       if (!current || dirty & 64) {
         attr(div6, "aria-label-position", ctx[6]);
       }
-      if (!current || dirty & 1 && div6_aria_label_value !== (div6_aria_label_value = ctx[17].vaultPath.split("/").last() != ctx[17].vaultPath ? ctx[17].vaultPath : "")) {
+      if (!current || dirty & 1 && div6_aria_label_value !== (div6_aria_label_value = ctx[17].vaultPath)) {
         attr(div6, "aria-label", div6_aria_label_value);
       }
       if (!ctx[5][ctx[17].title]) {
@@ -29641,7 +29760,9 @@ function create_fragment4(ctx) {
     m(target, anchor) {
       insert(target, main, anchor);
       for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].m(main, null);
+        if (each_blocks[i]) {
+          each_blocks[i].m(main, null);
+        }
       }
       current = true;
     },
@@ -30201,7 +30322,9 @@ function create_else_block_2(ctx) {
     },
     m(target, anchor) {
       for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].m(target, anchor);
+        if (each_blocks[i]) {
+          each_blocks[i].m(target, anchor);
+        }
       }
       insert(target, each_1_anchor, anchor);
       current = true;
@@ -30438,7 +30561,9 @@ function create_else_block_12(ctx) {
     },
     m(target, anchor) {
       for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].m(target, anchor);
+        if (each_blocks[i]) {
+          each_blocks[i].m(target, anchor);
+        }
       }
       insert(target, each_1_anchor, anchor);
       current = true;
@@ -30777,7 +30902,9 @@ function create_else_block2(ctx) {
     },
     m(target, anchor) {
       for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].m(target, anchor);
+        if (each_blocks[i]) {
+          each_blocks[i].m(target, anchor);
+        }
       }
       insert(target, each_1_anchor, anchor);
       current = true;
@@ -31010,7 +31137,6 @@ function create_fragment5(ctx) {
       attr(div9, "class", "nav-header");
       attr(textarea, "rows", ctx[15]);
       attr(textarea, "class", "commit-msg-input svelte-fnxzfa");
-      attr(textarea, "type", "text");
       attr(textarea, "spellcheck", "true");
       attr(textarea, "placeholder", "Commit Message");
       attr(div10, "class", "git-commit-msg svelte-fnxzfa");
@@ -31221,7 +31347,7 @@ function instance5($$self, $$props, $$invalidate) {
       }
       if (status2) {
         const sort = (a, b) => {
-          return a.vault_path.split("/").last().localeCompare(b.vault_path.split("/").last());
+          return a.vault_path.split("/").last().localeCompare(getDisplayPath(b.vault_path));
         };
         status2.changed.sort(sort);
         status2.staged.sort(sort);
@@ -31843,6 +31969,8 @@ var ObsidianGit = class extends import_obsidian23.Plugin {
     }
   }
   handleFileMenu(menu, file, source) {
+    if (!this.settings.showFileMenu)
+      return;
     if (source !== "file-explorer-context-menu") {
       return;
     }
@@ -32102,7 +32230,6 @@ var ObsidianGit = class extends import_obsidian23.Plugin {
       }
     }
     dispatchEvent(new CustomEvent("git-refresh"));
-    this.lastUpdate = Date.now();
     this.setState(PluginState.idle);
   }
   async createBackup(fromAutoBackup, requestCustomMessage = false, commitMessage) {
@@ -32254,7 +32381,6 @@ var ObsidianGit = class extends import_obsidian23.Plugin {
       console.log("Pushing....");
       const pushedFiles = await this.gitManager.push();
       console.log("Pushed!", pushedFiles);
-      this.lastUpdate = Date.now();
       if (pushedFiles > 0) {
         this.displayMessage(`Pushed ${pushedFiles} ${pushedFiles == 1 ? "file" : "files"} to remote`);
       } else {
@@ -32436,7 +32562,7 @@ var ObsidianGit = class extends import_obsidian23.Plugin {
     this.clearAutoPull();
   }
   startAutoBackup(minutes) {
-    const time = (minutes != null ? minutes : this.settings.autoSaveInterval) * 6e4;
+    let time = (minutes != null ? minutes : this.settings.autoSaveInterval) * 6e4;
     if (this.settings.autoBackupAfterFileChange) {
       if (minutes === 0) {
         this.doAutoBackup();
@@ -32445,6 +32571,8 @@ var ObsidianGit = class extends import_obsidian23.Plugin {
         this.autoBackupDebouncer = (0, import_obsidian23.debounce)(() => this.doAutoBackup(), time, true);
       }
     } else {
+      if (time > 2147483647)
+        time = 2147483647;
       this.timeoutIDBackup = window.setTimeout(() => this.doAutoBackup(), time);
     }
   }
@@ -32461,20 +32589,26 @@ var ObsidianGit = class extends import_obsidian23.Plugin {
     this.startAutoBackup();
   }
   startAutoPull(minutes) {
+    let time = (minutes != null ? minutes : this.settings.autoPullInterval) * 6e4;
+    if (time > 2147483647)
+      time = 2147483647;
     this.timeoutIDPull = window.setTimeout(() => {
       this.promiseQueue.addTask(() => this.pullChangesFromRemote());
       this.saveLastAuto(new Date(), "pull");
       this.saveSettings();
       this.startAutoPull();
-    }, (minutes != null ? minutes : this.settings.autoPullInterval) * 6e4);
+    }, time);
   }
   startAutoPush(minutes) {
+    let time = (minutes != null ? minutes : this.settings.autoPushInterval) * 6e4;
+    if (time > 2147483647)
+      time = 2147483647;
     this.timeoutIDPush = window.setTimeout(() => {
       this.promiseQueue.addTask(() => this.push());
       this.saveLastAuto(new Date(), "push");
       this.saveSettings();
       this.startAutoPush();
-    }, (minutes != null ? minutes : this.settings.autoPushInterval) * 6e4);
+    }, time);
   }
   clearAutoBackup() {
     var _a2;

@@ -997,5 +997,14 @@
       ],
       "key": "L"
     }
+  ],
+  "templater-obsidian:🗒️Templates/ADD_SUPERSCRIPT_WITH_BRACKETS.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "6"
+    }
   ]
 }

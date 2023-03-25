@@ -1,16 +1,168 @@
 {
   "recentFiles": [
     {
-      "basename": "Mechanics",
-      "path": "Contest/Mechanics.md"
+      "basename": "Word List1",
+      "path": "📘ClassNotes/🗣️English/Word List1.md"
+    },
+    {
+      "basename": "第三章 栈和队列的链式存储",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md"
+    },
+    {
+      "basename": "复习 栈和队列",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 栈和队列.md"
+    },
+    {
+      "basename": "Pasted image 20230324195855",
+      "path": "attachments/Pasted image 20230324195855.png"
+    },
+    {
+      "basename": "Reverse_Poland_Expression.drawio 1",
+      "path": "attachments/Reverse_Poland_Expression.drawio 1.png"
+    },
+    {
+      "basename": "Mechanics 2",
+      "path": "🏁Contest/Mechanics 2.md"
+    },
+    {
+      "basename": "Mechanics 1",
+      "path": "🏁Contest/Mechanics 1.md"
+    },
+    {
+      "basename": "字符串的括号匹配问题",
+      "path": "❔LeeCode Problems/字符串的括号匹配问题.md"
+    },
+    {
+      "basename": "复习 指针和链表的使用",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 指针和链表的使用.md"
+    },
+    {
+      "basename": "第二章 表",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 表.md"
+    },
+    {
+      "basename": "第一章 数据结构绪论",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md"
+    },
+    {
+      "basename": "Chapter 1 One-Dimensional Boundary Value Problem",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md"
+    },
+    {
+      "basename": "第一章 集合,数列,函数,极限和连续",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md"
+    },
+    {
+      "basename": "第一章 集合,数列,函数,极限和连续 2023-03-23 21.18.35",
+      "path": "Excalidraw/第一章 集合,数列,函数,极限和连续 2023-03-23 21.18.35.md"
+    },
+    {
+      "basename": "第一章 高数基本知识点 2023-01-15 10.30.58.excalidraw",
+      "path": "Excalidraw/第一章 高数基本知识点 2023-01-15 10.30.58.excalidraw.md"
+    },
+    {
+      "basename": "双曲函数和反双曲函数",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/双曲函数和反双曲函数.md"
+    },
+    {
+      "basename": "第二章 平面问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md"
+    },
+    {
+      "basename": "第二章 平面问题的差分法和变分法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第二章 平面问题的差分法和变分法.md"
+    },
+    {
+      "basename": "第二章 平面问题的差分法和变分法 2023-03-23 14.58.14",
+      "path": "Excalidraw/第二章 平面问题的差分法和变分法 2023-03-23 14.58.14.md"
+    },
+    {
+      "basename": "内容整理",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/内容整理.md"
+    },
+    {
+      "basename": "第一章 杆件结构",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md"
+    },
+    {
+      "basename": "第一章 杆件结构 2023-03-23 09.24.00",
+      "path": "Excalidraw/第一章 杆件结构 2023-03-23 09.24.00.md"
+    },
+    {
+      "basename": "使用虚功原理推导三角形单元刚度矩阵",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容/使用虚功原理推导三角形单元刚度矩阵.pdf"
+    },
+    {
+      "basename": "第二章 平面问题 2023-03-22 09.32.36",
+      "path": "Excalidraw/第二章 平面问题 2023-03-22 09.32.36.md"
+    },
+    {
+      "basename": "第二章 平面问题 2023-03-21 20.43.02",
+      "path": "Excalidraw/第二章 平面问题 2023-03-21 20.43.02.md"
+    },
+    {
+      "basename": "第二章 平面问题 2023-03-21 20.24.55",
+      "path": "Excalidraw/第二章 平面问题 2023-03-21 20.24.55.md"
+    },
+    {
+      "basename": "ADD_SUPERSCRIPT_WITH_BRACKETS",
+      "path": "🗒️Templates/ADD_SUPERSCRIPT_WITH_BRACKETS.md"
+    },
+    {
+      "basename": "Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 11.16.05",
+      "path": "Excalidraw/Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 11.16.05.md"
+    },
+    {
+      "basename": "Chapter 1 One-Dimensional Boundary Value Problem 2023-03-21 18.48.37",
+      "path": "Excalidraw/Chapter 1 One-Dimensional Boundary Value Problem 2023-03-21 18.48.37.md"
+    },
+    {
+      "basename": "Mathematical Symbols",
+      "path": "📘ClassNotes/Markdown & Latex Tutorial/Latex Tutorial/Mathematical Symbols.md"
+    },
+    {
+      "basename": "mathematic formulas",
+      "path": "📘ClassNotes/Markdown & Latex Tutorial/Latex Tutorial/mathematic formulas.md"
+    },
+    {
+      "basename": "更优化的遍历方法",
+      "path": "📘ClassNotes/⌨️Programming/Algorithms/更优化的遍历方法.md"
+    },
+    {
+      "basename": "1. 弹塑性理论复习",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🛠️Theory of Plasticity/第四章：简单弹塑性问题/1. 弹塑性理论复习.md"
+    },
+    {
+      "basename": "1. 弹性力学基本方程",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第五章：弹性力学边值问题/1. 弹性力学基本方程.md"
+    },
+    {
+      "basename": "第二章 平面问题 2023-03-20 09.42.18",
+      "path": "Excalidraw/第二章 平面问题 2023-03-20 09.42.18.md"
+    },
+    {
+      "basename": "类的定义, Template和头文件编写典型案例",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/类的定义, Template和头文件编写典型案例.md"
+    },
+    {
+      "basename": "判断链表是否有环",
+      "path": "❔LeeCode Problems/判断链表是否有环.md"
     },
     {
       "basename": "第一章、分析动力学基础",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第一章、分析动力学基础.md"
     },
     {
+      "basename": "第一章、分析动力学基础 2023-03-17 21.57.05",
+      "path": "Excalidraw/第一章、分析动力学基础 2023-03-17 21.57.05.md"
+    },
+    {
       "basename": "第一章、分析动力学基础 2023-03-17 15.21.43",
       "path": "Excalidraw/第一章、分析动力学基础 2023-03-17 15.21.43.md"
+    },
+    {
+      "basename": "重复字符的查找问题",
+      "path": "❔LeeCode Problems/重复字符的查找问题.md"
     },
     {
       "basename": "第七章 微分方程",
@@ -21,16 +173,8 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/拉格朗日变换式和拉格朗日方程的推导.pdf"
     },
     {
-      "basename": "Chapter 1 One-Dimensional Boundary Value Problem",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Chapter 1 One-Dimensional Boundary Value Problem.md"
-    },
-    {
       "basename": "Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 12.37.49",
       "path": "Excalidraw/Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 12.37.49.md"
-    },
-    {
-      "basename": "Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 11.16.05",
-      "path": "Excalidraw/Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 11.16.05.md"
     },
     {
       "basename": "Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 09.18.21",
@@ -39,10 +183,6 @@
     {
       "basename": "Map 和 unordered_map",
       "path": "📘ClassNotes/⌨️Programming/Algorithms/Map 和 unordered_map.md"
-    },
-    {
-      "basename": "更优化的遍历方法",
-      "path": "📘ClassNotes/⌨️Programming/Algorithms/更优化的遍历方法.md"
     },
     {
       "basename": "Chapter 1 One-Dimensional Boundary Value Problem 2023-03-16 22.33.07",
@@ -59,146 +199,6 @@
     {
       "basename": "Chapter 1 One-Dimensional Boundary Value Problem 2023-03-16 17.01.31",
       "path": "Excalidraw/Chapter 1 One-Dimensional Boundary Value Problem 2023-03-16 17.01.31.md"
-    },
-    {
-      "basename": "第二章 平面问题的差分法和变分法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第二章 平面问题的差分法和变分法.md"
-    },
-    {
-      "basename": "边界为曲线的泰勒展开公式推导",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/补充/边界为曲线的泰勒展开公式推导.pdf"
-    },
-    {
-      "basename": "边界为曲线的泰勒展开公式推导-annotate",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/补充/边界为曲线的泰勒展开公式推导-annotate.md"
-    },
-    {
-      "basename": "2. 经典的弹性力学应力问题求解",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/2. 经典的弹性力学应力问题求解.md"
-    },
-    {
-      "basename": "平面问题的按位移解法和按应力解法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/补充/平面问题的按位移解法和按应力解法.pdf"
-    },
-    {
-      "basename": "1. 平面问题的基本方程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/1. 平面问题的基本方程.md"
-    },
-    {
-      "basename": "平面问题的按位移解法和按应力解法-annotate",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/补充/平面问题的按位移解法和按应力解法-annotate.md"
-    },
-    {
-      "basename": "第二章 平面问题的差分法和变分法 2023-03-09 14.34.10",
-      "path": "Excalidraw/第二章 平面问题的差分法和变分法 2023-03-09 14.34.10.md"
-    },
-    {
-      "basename": "递归和迭代法",
-      "path": "📘ClassNotes/⌨️Programming/Algorithms/递归和迭代法.md"
-    },
-    {
-      "basename": "第一章 数据结构绪论",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md"
-    },
-    {
-      "basename": "第二章 表",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 表.md"
-    },
-    {
-      "basename": "绪论",
-      "path": "📘ClassNotes/⌨️Programming/Algorithms/绪论.md"
-    },
-    {
-      "basename": "绪论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/绪论.md"
-    },
-    {
-      "basename": "复习 指针和链表的使用",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 指针和链表的使用.md"
-    },
-    {
-      "basename": "⌚Todo List",
-      "path": "💡Inspiration/⌚Todo List.md"
-    },
-    {
-      "basename": "第一章 集合,数列,函数,极限和连续",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md"
-    },
-    {
-      "basename": "Drawing 2023-01-16 11.07.53.excalidraw",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/❔例题/Drawing 2023-01-16 11.07.53.excalidraw.md"
-    },
-    {
-      "basename": "双曲函数和反双曲函数",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/双曲函数和反双曲函数.md"
-    },
-    {
-      "basename": "平面的方程",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/平面的方程.md"
-    },
-    {
-      "basename": "多元函数微分方程的常见解",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/多元函数微分方程的常见解.md"
-    },
-    {
-      "basename": "第一章 绪论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第一章 绪论.md"
-    },
-    {
-      "basename": "3. 向量的定义和用法",
-      "path": "📘ClassNotes/⌨️Programming/Languages/C++ basics/3. 向量的定义和用法.md"
-    },
-    {
-      "basename": "第二章 一维结构的矩阵位移法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 一维结构的矩阵位移法.md"
-    },
-    {
-      "basename": "第一章 杆件结构",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md"
-    },
-    {
-      "basename": "第一章 杆件结构 2023-03-13 19.16.30",
-      "path": "Excalidraw/第一章 杆件结构 2023-03-13 19.16.30.md"
-    },
-    {
-      "basename": "梁的刚度矩阵的求出",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容/梁的刚度矩阵的求出.pdf"
-    },
-    {
-      "basename": "第十二章 无穷级数",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十二章 无穷级数.md"
-    },
-    {
-      "basename": "Hilbert变换,HHT变换和EMD分解",
-      "path": "📘ClassNotes/⌨️Programming/Deep Learning/Implements/Hilbert变换,HHT变换和EMD分解.md"
-    },
-    {
-      "basename": "Chapter 1 One-Dimensional Boundary Value Problem 2023-03-14 21.46.50",
-      "path": "Excalidraw/Chapter 1 One-Dimensional Boundary Value Problem 2023-03-14 21.46.50.md"
-    },
-    {
-      "basename": "Proof of the proposition of 1-D FEM problem",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Implements/Proof of the proposition of 1-D FEM problem.pdf"
-    },
-    {
-      "basename": "Chapter1 Philosophy of Computational Fluid Dynamics",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Chapter1 Philosophy of Computational Fluid Dynamics.md"
-    },
-    {
-      "basename": "Chapter2 Derivation of the Governing Equations",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Chapter2 Derivation of the Governing Equations.md"
-    },
-    {
-      "basename": "第二章 平面问题的差分法和变分法 2023-03-14 13.59.40",
-      "path": "Excalidraw/第二章 平面问题的差分法和变分法 2023-03-14 13.59.40.md"
-    },
-    {
-      "basename": "第一章 绪论和基本方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第一章 绪论和基本方法.md"
-    },
-    {
-      "basename": "分治法",
-      "path": "📘ClassNotes/⌨️Programming/Algorithms/分治法.md"
     }
   ],
   "omittedPaths": [],

@@ -256,7 +256,6 @@ $$N_1(x) = \begin{cases}
 \end{cases}$$
 
 ![[Chapter 1 One-Dimensional Boundary Value Problem 2023-03-14 21.46.50]]
-
 using $K_{AB} = \int_{0}^{1/2}N_A, N_B dx + \int_{1/2}^{1} N_{A,x}, N_{B,x} dx$, then finally : 
 $K_{11} = \int_{0}^{1/2} N_1 N_1dx = 4 \times 1/2 = 2$
 $$K = 2\left[\begin{matrix}
@@ -349,7 +348,7 @@ the section of the elimination theorem
 ```
 
 ## 8. The Element Point of View 
-### 1) Local Coordinates 
+### 1) Local Coordinates and the Global Coordinates
 with the different nodes and the different domains, shape functions , the globally defined function can be written as follows, and also, for each element we can view it by ***the element (local) point of view***. Then the set of the local qualities are also written below (<mark style="background: transparent; color: yellow">note in the local description, the nodal number begins with 1</mark>):
 $$\text{global:}\begin{cases}
 \text{Domain: } [x_A, x_{A+1}] \\
@@ -376,6 +375,7 @@ after that, we set the Uppercase characters $A,B,C....$ as the global function w
 
 Then in terms of $\xi$, the shape functions in the local description take on a standard form, i.e. $(1.12.4)$ can be written as the following equations : 
 $$\boxed{N_a(\xi) = \frac{1}{2}(1 + \xi_a \xi) \qquad a = 1, 2}$$
+where $\xi_1 = -1, \xi_2 = 1$ is the local coordinates 
 $$\boxed{x^e (\xi) = \sum^{2}_{a=1} N_a (\xi) x_a^e}$$
 where the superscript $e$ denote a quantity in the local description associated with element number $e$. <mark style="background: transparent; color: yellow">The equation above defines the interpolation between the point</mark> $\xi_1$ and $\xi_2$
 
@@ -390,7 +390,7 @@ collapse: close
 3. write the basic functions of element (select the interpolation functions with suitable boundary conditions)
 4. analyze each element  
 5. assembly each matrix of element into a whole matrix
-6. deal with the boundary conditions 
+6. deal with the boundary conditions (modify the natural boundary condition to the essential boundary condition)
 7. solve the equation and finally calculate the parameters
 `````
 
@@ -398,10 +398,7 @@ collapse: close
 for the element of a 1-D problem, we assume our model consists of $n_{el}$ elements, which is numbered a shown in the Figure 
 ![[Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 12.37.49|400]]
 then we recall the definition of the global stiffness matrix and the force vector : 
-$$K = [K_{AB}], \qquad F = \{F_A\}$$
-`````ad-bug
-collapse: open
-`````
+$$K = [K_{AB}]\quad (n\times n), \qquad F = \{F_A\} \quad (n\times 1)$$
 where 
 $$K_{AB} = a(N_A, N_B) =\int_{0}^{1} N_{A,x} N_{B,x} dx$$
 $$F_A = (N_A, l) + \delta_{A1}h - a(N_A, N_{n+1})q = \int_{0}^{1} N_{A} l dx + \delta_{A1} h -\int_{0}^{1} N_{A, x} N_{n+1,x} dx \space q$$
@@ -413,4 +410,187 @@ $$K_{AB}^e = a(N_A, N_B)^e = \int_{\Omega^e} N_{A,x} N_{B,x} dx\tag{1.13.6}$$
 $$F_A^e = (N_A, l)^e + \delta_{e1}\delta_{A1}h - a(N_A, N_{n+1})^e q = \int_{\Omega^e} N_A ldx + \delta_{e1}\delta_{A1}h - \int_{\Omega^e} N_{A,x} N_{n+1,x} dx\space q$$
 and $\Omega^e = [x^e_1, x^e_2]$ is the domain of $e^{th}$ element
 
-## 9. Global Stiffness Matrix
+Also, the <mark style="background: transparent; color: yellow">important observation to make</mark> is that $K$ and $F$ can be constructed by *summing the contributions of element matrices and vectors respectively*. In the literature, the process is called ***the direct stiffness method***, also note that the stiffness matrix and the force vector for a element can be calculated as :  
+$$k^e = [k_{ab}^e]\quad(\text{for element}, 2\times 2)  \qquad f^e = \{f_a^e\}\quad (2\times 1)$$
+$$k_{ab}^e = a(N_a, N_b)^e = \int_{\Omega^e}N_{a,x} N_{b,x} dx$$
+$$f_a^e =\int_{\Omega^e} N_a l dx + \begin{cases}
+\delta_{a1} h \qquad e = 1 \\
+0 \qquad \quad\space  e = 2, 3...n_{el}-1 \\
+-k_{a2}^e  q \quad\space  e= n_{el}
+\end{cases}$$
+
+## 9. Assembly of Global Stiffness Matrix
+
+in a finite element computer program, it's a task of a **"finite element subroutine"** to produce $k^e$ and $f^e$ . where $e = 1,2... \text{to}\space  n_{el}$. from the given data and provide an "assembly subroutine" so that the terms in the $k^e$ and $f^e$ <mark style="background: transparent; color: yellow">can be added to the appropriate locations in</mark> $K$ and $F$, respectively. 
+
+The assembly information is stored in the *location matrix*.  we use $LM$ as it.
+the location matrix is showed as follows 
+
+![[Chapter 1 One-Dimensional Boundary Value Problem 2023-03-21 18.48.37]]
+
+| Local Element Number \ Element numbers | 1   | 2   | 3   | ... | e   | ... |
+| -------------------------------------- | --- | --- | --- | --- | --- | --- |
+| 1 (local)                              | 1   | 2   | 3   | ... | e   | ... |
+| 2 (local)                              | 2   | 3   | 4   | ... | e+1 | ... |
+
+note<mark style="background: transparent; color: yellow"> the element in the table is the global node number</mark> for the whole structure.
+
+from the $LM$ array, we can deduce the following assembly procedure : 
+
+The nonzero element of each line is indexed in the *location matrix*, for the example above, the first column of the table is 
+| ElemNumber\Local ElemNumber | 1(local) | 2(local) |
+| --------------------------- | -------- | -------- |
+| 1 (element)                 | 1        | 2        |
+
+then the transform from the global displacement vector to the local displacement vector becomes :
+$$\left[\begin{matrix}
+u_1^{(1)} \\ u_2^{(1)} 
+\end{matrix}\right] = \left[\begin{matrix}
+1 & 0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0
+\end{matrix}\right]\left[\begin{matrix}
+u_1 \\ u_2 \\ u_3 \\ u_4 \\  u_5
+\end{matrix}\right]$$
+where in the $e$ in the $u^{(e)}$ means the <mark style="background: transparent; color: yellow">element number. </mark>
+
+In the equation above, we let ***Boolean Matrix*** as 
+$$\Delta_{in}^{(e)} = \begin{cases}
+1 \qquad  \text{ the element i in the element } e \space \text{is the same node as  } n \text{in global coordinates}\\
+0 \qquad  \text{otherwise}  
+\end{cases}$$
+For example : 
+$$\Delta_{in}^{(2)} = \left[\begin{matrix}
+0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0
+\end{matrix}\right]$$
+
+also, <mark style="background: transparent; color: yellow">we set the</mark> **Basic function of the element** as $\Phi_i \qquad (i = 1, 2,.... I)$ 
+in the element, the ***Approximation Function*** is $u^{(e)}$, which can be expressed as the linear combination of the basic functions : 
+$$\Large\boxed{u^{(e)} = u_i^{(e)} \Phi_i}$$
+`````ad-note
+title: Properties of The Basic Functions  
+collapse: open
+(1) The number of the basic functions is <mark style="background: transparent; color: yellow">the same as the number of the nodes in the elements</mark>, the node with number $i$ has the basic function $\Phi_i \quad (i = 1, 2... I)$
+
+(2) $\Phi_i$ satisfies the condition (interpolation conditions):
+$$\Phi_i(p_j) = \delta_{ij}$$
+and
+$$\delta_{ij} = \begin{cases}
+1 \qquad i = j \\
+0 \qquad i\neq j
+\end{cases}$$
+
+```ad-hint
+if we use Polynomial Function as the Basic function of the element, we have that : 
+
+$$\Large\boxed{\Phi_i = \frac{x_j^{(e)} - x}{x_j^{(e)} - x_i^{(e)}}}$$
+
+also, we can use the ***Dimensionless local coordinates*** to express the basic function as : 
+
+$$\boxed{\begin{matrix}
+\Phi_1 = 1 - \xi \\ \Phi_2 = \xi
+\end{matrix}}$$
+
+where
+$$\xi = \frac{x - x_1^{(e)}}{\Delta x}$$
+```
+
+`````
+
+We can derive that the <mark style="background: transparent; color: yellow">expression of the basic function</mark> of the element $n$ is : 
+$$\Large\Phi_n(x) = \begin{cases}
+\frac{x- x_{n-1}}{x_n - x_{n-1}} \quad x \in [x_{n-1}, x) \\
+1  \qquad \quad \space \space \space x  = x_n\\
+\frac{x_{n+1} - x}{x_n - x_{n-1}} \quad x \in [x_{n}, x_{n+1})\\
+0 \qquad \qquad \quad \text{otherwise}
+\end{cases}$$
+also the approximate functions is Assembled by each element function
+
+## 10. Element FEM Characteristic Equation
+In the problem we formula to solve is : 
+$$\begin{cases}
+\frac{d^2 u}{dx^2} = c \quad  0 < x < h\\
+u(0) = 0 \\
+u(h) = 0
+\end{cases}\tag{2-1}$$
+and the weak form of the first function can be written as : 
+$$\int_{0}^{h} \left( \frac{du}{dx}\frac{dw}{dx} - cw \right)dx = 0 \tag{2-3}$$
+for the problem above, the integral of the weak form (i.e. the equation 2.3) can be set as the summation of integral of each element : 
+$$\int_{0}^{h} \frac{du}{dx} \frac{d(\delta u )}{dx}  + c \delta u dx = \sum^{E}_{e=1} \int_{x_1^{(e)}}^{x_2^{(e)}}\frac{du}{dx} \frac{d(\delta u)}{dx} + c\delta u dx$$
+Note that for single element, the ***Element FEM Equation*** is : 
+$$\int_{x_1^{(e)}}^{x_2^{(e)}}\frac{du}{dx} \frac{d(\delta u)}{dx} + c\delta u dx = 0$$
+In the equation above, we use the [[#9. Assembly of Global Stiffness Matrix|approximation expression of basic function]] $\Phi_i$ . 
+Then we derive the function in the process written in the [[Derivation of the Element FEM characteristic equation.pdf]]. Then we have : 
+
+**1. The general form of the element FEM equation**
+$$\Large \boxed{A_{ij} u_j^{(e)} = f_i^{(e)}}$$
+where 
+$$A_{ij} = \int_{x_1^{(e)}}^{x_2^{(e)}}\frac{d\Phi_i^{(e)}}{dx}\frac{d\Phi_j^{(e)}}{dx}$$
+$$f_i = \int_{x_1^{(e)}}^{x_2^{(e)}}c\Phi_i dx$$
+**2. Matrix Form of the element FEM equation**
+$$A_{ij}^{(e)} = \frac{1}{\Delta h}\left[\begin{matrix}
+1 & -1 \\ -1 & 1
+\end{matrix}\right]$$
+$$f_i^{(e)} = -\Delta h \cdot c \left[\begin{matrix}
+\frac{1}{2} \\ \frac{1}{2}
+\end{matrix}\right]$$
+
+## 11. Assembly of the Total characteristic Equation 
+For **single element** it has the characteristic equation in the local coordinates with form : 
+$$\Large \boxed{A_{ij} u_j^{(e)} = f_i^{(e)}}$$
+and the **Total FEM Equation** has the form of : 
+$$\Large\boxed{ A_{nm} u_m = f_n}$$
+where the $A_{nm}$ and $u_m$ is the summation of $A_{ij}^{(e)}$ and $f_i^{(e)}$ 
+with the derivation process [[Derivation of the Total FEM Equation.pdf]] , we can get the expression of $A_{nm}$ and $u_m$ :
+$$\boxed{A_{nm} = \sum^{E}_{e=1} \left[\Delta_{ni}^{(e)}A_{ij}^{(e)}\Delta_{jm}^{(e)}\right]}$$
+$$\boxed{f_n = \sum^{E}_{e=1}\Delta_{ni}^{(e)} f_i^{(e)}}$$
+## 12. Boundary Condition
+
+`````ad-caution
+title: The method for Refining the total FEM equations 
+collapse: open
+
+
+1. Eliminate the element of the row and the column
+if  we replace the diagonal element $A_{rr}$ with 1 and then the matrix would becomes : 
+$$A_{nm}^* = \left[\begin{matrix}
+A_{11} & A_{12} & ... &  A_{1, r-1} &   0 &  A_{1, r + 1} & ....  \\
+... \\\
+A_{r-1,1} & A_{r-1.2} & ... & A_{r-1, r-1} & 0 & A_{r-1, r+1} & .... \\
+0 & 0 & ... & 0 & 0 & 0 & .... \\
+...
+\end{matrix}\right]$$
+
+then we can modify the $f_n$ vector as :
+$$f_n^*  =\left[\begin{matrix}
+f_1 - A_{1,r} \bar{u}_r \\
+f_2 - A_{2,r} \bar{u}_r \\
+... \\
+f_{r-1} - A_{r-1,r} \bar{u}_r \\
+u_r \\
+f_{r+1} - A_{r+1, r}\bar{u}_r \\
+f_{N} - A_{N,r}\bar{u}_r
+\end{matrix}\right]$$
+Note that this method force the boudnary condition on the essential boundary as $u_r = \bar{u}_r$, then drop the element in the line and the column of the $u_r$
+
+2. Enlarge the diagonal elements 
+we can modify the $A_{pp}$ as : $10^{20}A_{pp}$
+
+$$\left[\begin{matrix}
+A_{11} & ... &  A_{1, p}  &  ... &  A_{1,N} \\
+... \\
+A_{p,1} & ...  & 10^{20} A_{p, p} & ... & A_{N, p}  \\
+... \\
+...
+\end{matrix}\right]$$
+
+also in this method, the force vector can be modified as :
+$$f_n^*  = \left[\begin{matrix}
+f_1 \\
+... \\
+10^{20} f_p \\
+... \\
+f_N
+\end{matrix}\right]$$
+
+`````
