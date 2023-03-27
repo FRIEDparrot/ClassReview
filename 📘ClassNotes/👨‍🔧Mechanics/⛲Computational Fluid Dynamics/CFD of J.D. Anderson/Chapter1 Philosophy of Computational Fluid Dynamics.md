@@ -163,4 +163,4 @@ Numerical Heat transfer and fluid flow, by S.V.Patanker
 we discrete the domain as the elements and  then use the interpolation. Then transform the governing equation into each element. finally consider the equation of elements together and solve the algebraic equations. 
 
 The examples can be found as : 
-[[Chapter 1 One-Dimensional Boundary Value Problem|Galerkin's Method of the 1-D thermal conductivity FEM problem]]
+[[📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem|Galerkin's Method of the 1-D thermal conductivity FEM problem]]
