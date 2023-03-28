@@ -118,3 +118,74 @@ since the coefficient of the second part is not a constant, which <mark style="b
 
 using the derivation process : 
 [[📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of Nonlinear steady problem.pdf|Derivation of Nonlinear steady problem.pdf]]
+
+## 2. The Interpolation Function of FEM method
+### (1) Two Basic types of Interpolation Functions 
+Lagrange interpolation basic function : 
+$$\Phi_i(x_j) =\delta_{ij}$$
+Hermit interpolation basic function : 
+$$\frac{d^k}{dx^k} H_{li} (x_j) = \delta_{ij}\delta_{lk}\equiv \begin{matrix}
+1 \quad i = j \text{ and } l = k \hfill \\ 
+0 \hfill
+\end{matrix}$$
+if the highest order of the derivation in the integral function is $r+1 ^{\text{th}}$ order : 
+The interpolation function should *satisfies the **continuity condition***: 
+1. the function has the continuity of $r^{\text{th}}$ derivative. 
+2. the interpolation function is a $(r+1)^{\text{th}}$ polynomial inside the element, i.e. it has a continuity on the $r^{\text{th}}$ derivative. 
+
+also note the freedom of the element is equal to the number of the nodes of the element. Then we construct the interpolation function according to the freedom of the element. **The number of the term of the interpolation function is equal to the freedom of element**(which is equal to the <mark style="background: transparent; color: yellow">number of the unknown parameters</mark>)
+
+note that the parameter should be chosen considering the **Symmetry method**. which means if there's 8 nodes on a element, the interpolation function term should be : 
+$$1, x , y, x^2 , xy , y^2 , x^2 y, xy^2 \quad  \text{or} \quad 1, x , y, x^2 , xy , y^2 , x^3 ,y^3$$
+
+### (2) The 1-D interpolation function of Element 
+in the condition that there's 2 nodes in a element, i.e. : 
+![[Excalidraw/Chapter2 Formulation of 2 and 3D Boundary Value Problems 2023-03-28 16.36.59|200]]
+we set there's $m$ nodes in a element, then the local coordinate of each element be denoted by $\xi$ , then the interpolation function is : 
+$$\Phi_i(\xi) = a_i + b_i \xi$$
+since the condition satisfies $\Phi_i{\xi_j} = \delta_{ij}$, we have : 
+$$\Phi_1 = 1 - \xi\quad  \Phi_2 = \xi $$
+in the element of 3 nodes : 
+
+$$\xi = \frac{x - x_i}{x_j - x_i}$$
+$$\begin{matrix}
+\Phi_1 = \frac{1}{2}\xi(\xi - 1) \\
+\Phi_2 = (1- \xi)(1+ \xi) \\
+\Phi_3 = \frac{1}{2}\xi(1+\xi)
+\end{matrix}$$
+![[Excalidraw/Chapter2 Formulation of 2 and 3D Boundary Value Problems 2023-03-28 16.41.29|300]]
+
+### (3) Different Coordinates of the problems  
+##### (1) The coordinates of the length in 1-D problem
+for the 1-D problem, the equation becomes : 
+$$\xi_1 = \frac{L_1}{L} \quad  \xi_2 = \frac{L_2}{L}$$
+it's apparently that $\xi_1 + \xi_2 =1$
+
+##### (2) Coordinates of Area in 2-D problem
+$$\xi_i = \frac{A_i}{A}$$
+then we can just transform the triangle to a standard right-angled triangle : 
+![[Excalidraw/Chapter2 Formulation of 2 and 3D Boundary Value Problems 2023-03-28 17.04.41|450]]
+<mark style="background: transparent; color: yellow">Note that later, the interpolation function becomes</mark>
+$$\Phi_1 = \xi_1 , \Phi_2 = \xi_2, \Phi_3 = \xi_3$$
+
+`````ad-note
+title: a Faster method for constructing the interpolation function 
+collapse: open
+
+firstly, the interpolation function of element satisfies : 
+
+
+
+`````
+
+![[Excalidraw/Chapter2 Formulation of 2 and 3D Boundary Value Problems 2023-03-28 17.25.15|250]]
+
+the construction using the 
+$$\Phi(\xi, \eta) = L_i(\xi), N_i(\eta)$$
+where $L_i(\xi)$ and $N_i(\xi)$ is the 1-D interpolation function in the $\xi$ and $\eta$ direction.
+$$\begin{cases}
+L_1 = L_4 = 1-\xi\\
+L_2 = L_3 = 1-\eta \\
+\end{cases}$$
+
+![[Excalidraw/Chapter2 Formulation of 2 and 3D Boundary Value Problems 2023-03-28 17.31.43|250]]
