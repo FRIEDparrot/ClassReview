@@ -33,13 +33,29 @@ B <--> C
 CFD is a strong role as a design tool, Along with its role as a research tool.  Along with its  role as  a research tool.  It is a tool for the research of the fluid dynamics and aerodynamics to do business. 
 
 ##### 2) Governing equations
+Derivation can be found in the [[📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Implements/Governing Equations of Flow.pdf|Governing Equations of Flow.pdf]]
 We have the following 3 fundamental physical principles: 
 1. Mass is conserved 
 $$\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho V) = 0$$
 2. <mark style="background: transparent; color: yellow">The Equation of momentum (N-S equation) -> Newton's Second law</mark>
-$$\rho \frac{\partial V}{\partial t} + \rho\left(V\cdot \nabla  \right)V = -\nabla p  + \nabla \cdot \left[ \mu \nabla V\right] +\rho f$$
+$$ \frac{\partial (\rho \vec{V})}{\partial t} + \left(V\cdot \nabla  \right)(\rho V) =  \rho \vec{f}-\nabla p  + \mathcal{F}_{viscous}$$
+where $\mathcal{F}_{viscous} = \frac{\partial }{\partial x_j}\left[ \mu\left(\frac{\partial u_i }{\partial x_j} + \frac{\partial u_j}{\partial x_i}\right) + \delta_{ij}\lambda \nabla\cdot V \right]$
+for example, in x direction : 
+$$\small\frac{\partial(\rho u)}{\partial t}   + \nabla \cdot (\rho u V)= - \frac{\partial p}{\partial x} + \rho f_x + (\mathcal{F_x})_{viscous}$$
 3. The Conservation of energy
-$$\frac{\partial T}{\partial t} +  V \cdot  \nabla T = \nabla\cdot  (a\nabla T)+ q$$
+Nonconservation form : 
+$$\rho\frac{D T}{D t} = \rho \dot{q} + \nabla\cdot  (k\nabla T) + \nabla \cdot (\tau_{ij} \cdot \vec{V}) + \rho \vec{f}\cdot \vec{V}$$
+also we can derive the conservation form :  
+$$\rho\frac{\partial T}{\partial t} +  \nabla\cdot (\rho \vec{V} T) = \rho\dot{q} + \nabla\cdot  (k\nabla T) + \nabla \cdot (\tau_{ij} \cdot  \vec{V}) + \rho\vec{f}\vec{V}$$
+
+`````ad-bug
+title: wrong in PPT
+collapse: open
+the $q$ should be fixed as $\dot{q}$
+
+1. the equation  in the PPT in 1.1 has the condition that It is inviscous and uncompressable flow, also the volume force is neglected. 
+2. the term of the volume force shouldn't be neglected
+`````
 
 ##### 3) Basic Steps for CFD analysis
 firstly, we discretize the integral computation in the domain of the governing equation 
@@ -56,9 +72,11 @@ Basic computational method for the analysis of the Fluid Dynamics
 
 | Method | Whole name               | Introduction                                                                            | Basic solving Method                                                                                                                                                                                                             |
 | ------ | ------------------------ | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| FDM    | Finite difference method | [[Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-07 17.01.04\|FDM Method]] | discretize the domain we need to solve, and use the difference as the differential in each domain                                                                                                                                |
+| FDM    | Finite difference method | [[Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-07 17.01.04\|FDM Method]] | discretize the domain we need to solve, and ***use the difference as the differential*** in each domain                                                                                                                                |
 | FVM    | Finite volume method     | [[Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-07 17.07.39\|FVM Method]] | use an approximate function as function of the whole domain, but it's difficult for solving the difficult problems                                                                                                               |
 | FEM    | Finite element method    | [[Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-07 17.03.53\|FEM Method]] | derive the equation through interpolation, and discretize the domain to solve. and construct the function in each element, then build a whole continuous function in the solving domain(solving the linear equations are needed) | 
+
+The most fundamental Thought for the FDM method is <mark style="background: transparent; color: yellow">using the difference quotient as the derivate</mark>
 
 Concise Steps for CFD computation 
 ```mermaid 

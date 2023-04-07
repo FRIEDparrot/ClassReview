@@ -82,16 +82,6 @@
   "obsidian-excalidraw-plugin:toggle-excalidraw-view": [],
   "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-on-current": [],
   "obsidian-excalidraw-plugin:insert-link-to-element": [],
-  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod",
-        "Shift"
-      ],
-      "key": "D"
-    }
-  ],
   "obsidian-excalidraw-plugin:excalidraw-autocreate": [],
   "obsidian-git:push": [
     {
@@ -865,7 +855,7 @@
       "modifiers": [
         "Alt"
       ],
-      "key": "H"
+      "key": "ArrowUp"
     }
   ],
   "templater-obsidian:🗒️Templates/INSERT_MATHCAL_SYMBLE.md": [
@@ -1014,6 +1004,47 @@
         "Shift"
       ],
       "key": "H"
+    }
+  ],
+  "graph:open": [],
+  "workspace:new-tab": [],
+  "templater-obsidian:🗒️Templates/ADD_TILDE_OVERSET.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "`"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/ADD_DOT_OVERSET.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "D"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/ADD_DDOT_OVERSET.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "D"
+    }
+  ],
+  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed": [
+    {
+      "modifiers": [],
+      "key": "F12"
+    }
+  ],
+  "obsidian-completr:completr-insert-selected-suggestion": [
+    {
+      "key": "Enter",
+      "modifiers": []
     }
   ]
 }

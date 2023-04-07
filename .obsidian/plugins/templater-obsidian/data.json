@@ -116,7 +116,10 @@
     "🗒️Templates/INSERT_BOLD_SYMBOL.md",
     "🗒️Templates/INSERT_BASIC_BIG_BRACKETS.md",
     "🗒️Templates/INSERT_MATRIX_BRACKETS.md",
-    "🗒️Templates/ADD_SUPERSCRIPT_WITH_BRACKETS.md"
+    "🗒️Templates/ADD_SUPERSCRIPT_WITH_BRACKETS.md",
+    "🗒️Templates/ADD_TILDE_OVERSET.md",
+    "🗒️Templates/ADD_DOT_OVERSET.md",
+    "🗒️Templates/ADD_DDOT_OVERSET.md"
   ],
   "startup_templates": [
     ""

@@ -418,7 +418,7 @@ B_1 =\text{rate of heat added to fluid inside control volume} \hfill \\
 B_2 =\text{rate  of the work done inside control volume} \hfill \\
 B_3 =\text{rate of change of energy of fluid as it flows through control volume} \hfill
 \end{matrix} $$
-then
+then 
 $$B_1 + B_2 = B_3\tag{2.86}$$
 each term of the above equation involves the *time rate of the energy change*, which is called ***Power***, and the equation above is called ***Power Equation***
 
@@ -456,7 +456,7 @@ If the flow is viscous, the **shear stress on the control volume** will also per
 $$B_2 = -∯_S pV\cdot dS + ∰_V \rho (f\cdot V) d\mathcal{V} + \dot{W}_{viscous}$$
 
 #### (3) Total Energy Change in the control volume
-Since the energy inside the control volume can be expressed as the summation of the kinetic energy and the internal energy. The internal energy $e$ is due to the random motion of the atoms and molecules inside the system. And the kinetic energy per unit mass is $\frac{V^2}{2}$ 
+Since the energy inside the control volume can be expressed as the summation of the kinetic energy and the internal energy. The ==internal energy== $e$ is due to the random motion of the atoms and molecules inside the system. And the ==kinetic energy per unit mass== is $\frac{V^2}{2}$ 
 hence 
 $$\text{energy per unit mass} = e + \frac{V^2}{2}$$
 The elemental mass flow across $dS$ is $\rho V \cdot dS$. so **the mass flows into the control volume bring it with its energy and the mass flows out of it takes its energy out**. and the energy change due to the flow in or out of the control volume is: s
@@ -486,8 +486,8 @@ this is the energy equation in the integral form. Note that if a shaft penetrate
 
 applying the divergence theorem, we can also reach the energy equation in the partial differential form:
 $$\boxed{\frac{\partial}{\partial t}\left[\rho (e + \frac{V^2}{2})\right] + \nabla\cdot \left[\rho (e+ \frac{V^2}{2})V\right] = \rho\dot{q} - \nabla \cdot(pV) + \rho (f\cdot V) + \dot{Q}'_{viscous} +\dot{W}'_{viscous}}$$
-#### (4) Energy Equation of the steady, inviscid, adiabatic flow
 
+#### (4) Energy Equation of the steady, inviscid, adiabatic flow
 for steady and inviscid flow,  $\frac{\partial }{\partial t} =0,Q_{viscous} = W_{viscous} =0$, and adiabatic flow $(\dot{q} =0)$, the equation becomes: 
 $$
 \boxed{∯_S pV \cdot dS + ∯_S \left[ p\space \left(e + \frac{V^2}{2}\right) V \cdot dS\right] =0}\tag{2.97}

@@ -4,18 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "0b1f3b77a7026d58",
+        "id": "a878f7b164198f2b",
         "type": "tabs",
         "children": [
           {
-            "id": "25a64dfef9248ca4",
+            "id": "d95707965d6f53aa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第八章 应力状态与应变状态分析.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Chapter2 Derivation of the Governing Equations.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "f94bf55ad5787d33",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Chapter3 Mathematical behavior of partial differential equations.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "3f009bb28a850186",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "410f7c9747221917",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Chapter3 Mathematical behavior of partial differential equations 2023-04-07 08.55.00.md"
               }
             }
           }
@@ -85,7 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5110321044922,
+    "width": 252.5110321044922,
     "collapsed": true
   },
   "right": {
@@ -96,6 +125,16 @@
         "id": "736ec7c11262503f",
         "type": "tabs",
         "children": [
+          {
+            "id": "7778856753ec014b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Excalidraw/Chapter3 Mathematical behavior of partial differential equations 2023-04-07 08.55.00.md"
+              }
+            }
+          },
           {
             "id": "55e2f6198cbb96c3",
             "type": "leaf",
@@ -121,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第八章 应力状态与应变状态分析.md",
+                "file": "Excalidraw/Chapter3 Mathematical behavior of partial differential equations 2023-04-07 08.55.00.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第八章 应力状态与应变状态分析.md",
+                "file": "Excalidraw/Chapter3 Mathematical behavior of partial differential equations 2023-04-07 08.55.00.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,19 +190,8 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
-          },
-          {
-            "id": "7778856753ec014b",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第八章 应力状态与应变状态分析.md"
-              }
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -187,52 +215,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "25a64dfef9248ca4",
+  "active": "410f7c9747221917",
   "lastOpenFiles": [
-    "Excalidraw/第八章 应力状态与应变状态分析 2023-03-29 00.03.31.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第八章 应力状态与应变状态分析.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/🧠Mind Map & Important conclusions/1-4章弹性力学基本问题思维导图.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/📝作业题/弹性力学作业练习.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/🧠Mind Map & Important conclusions/5-10章弹性力学经典问题求解.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第一章、分析动力学基础.md",
-    "Day Planners/Day Planner-20230329.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第四章：广义胡克定律/补充/刚度矩阵对称性的说明.md",
-    "Excalidraw/第八章 应力状态与应变状态分析 2023-03-28 22.16.59.md",
-    "Excalidraw/第八章 应力状态与应变状态分析 2023-03-28 00.01.54.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第七章 弯曲变形.md",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter2 Formulation of 2 and 3D Boundary Value Problems.md",
-    "Excalidraw/Chapter2 Formulation of 2 and 3D Boundary Value Problems 2023-03-28 17.31.43.md",
-    "Excalidraw/Chapter2 Formulation of 2 and 3D Boundary Value Problems 2023-03-28 17.25.15.md",
-    "Excalidraw/Chapter2 Formulation of 2 and 3D Boundary Value Problems 2023-03-28 17.04.41.md",
-    "Excalidraw/Chapter2 Formulation of 2 and 3D Boundary Value Problems 2023-03-28 16.41.29.md",
-    "Excalidraw/Chapter2 Formulation of 2 and 3D Boundary Value Problems 2023-03-28 16.36.59.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第二章 平面问题的差分法和变分法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第三章 平面问题的有限单元法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/Untitled",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第一章 绪论和基本方法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/补充/弹性力学位移变分方程与极小势能原理.pdf",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 树的基本知识.md",
-    "📘ClassNotes/🗣️English/Word List1.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Chapter3 Mathematical behavior of partial differential equations.md",
+    "Excalidraw/Chapter3 Mathematical behavior of partial differential equations 2023-04-07 08.55.00.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Chapter2 Derivation of the Governing Equations.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Implements/Governing Equations of Flow.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第十二章 动载荷.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/课本例题/第一章",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第十一章 压杆稳定.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Chapter1 Philosophy of Computational Fluid Dynamics.md",
+    "Day Planners/Day Planner-20230407.md",
+    "attachments/Screenshot_20230406_232735_com.tencent.mobileqq.png",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Implements",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/New folder",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts.md",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter1 Introductory Thoughts/12-15 Applied Aerodynamics & history.md",
     "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/内容整理.md",
-    "Day Planners/Day Planner-20230328.md",
-    "Excalidraw/Scripts/Downloaded/Invert colors.svg",
-    "attachments/Pasted image 20230327210131.png",
-    "attachments/Pasted image 20230327203403.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第三章 平面问题的有限单元法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/♎Important Conclusions and Lists/Important Variables and Numbers.md",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/9-16 The Application Concepts.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题的有限元法.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter2 Formulation of 2 and 3D Boundary Value Problems.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容/三角形三节点的刚度分析.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of transformation between the local Coordinate and the Cartesian Coordinate of triangle Element.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of the Total FEM Equation.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容/使用虚功原理推导三角形单元刚度矩阵.pdf",
-    "attachments/Iteraion_algorithm_of_past_travel.drawio.png",
-    "attachments/Iteraion_algorithm_of_mid_travel.drawio.png",
-    "attachments/Tree_Explaination.drawio.png",
-    "attachments/Pasted image 20230326125728.png",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of Nonlinear steady problem.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of 2D characteristic functions.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of the weak form of 2D Ellipse Boundary Problem.pdf",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.docx",
-    "attachments/Pasted image 20230324195855.png",
-    "attachments/Reverse_Poland_Expression.jpg",
-    "attachments/Reverse_Poland_Expression.drawio 1.png",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of the Total FEM Equation.pdf"
+    "attachments/Pasted image 20230406105911.png",
+    "attachments/Pasted image 20230406105811.png",
+    "📘ClassNotes/🗣️English/Word List1.md",
+    "Day Planners/Day Planner-20230406.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md",
+    "attachments/Sparse_Matrix.drawio.png",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md",
+    "Day Planners/Day Planner-20230405.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第四章 扭转.md",
+    "Excalidraw/第十一章 压杆稳定 2023-04-04 14.41.15.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/课本例题/例题1.6.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/课本例题/例题1.4.pdf",
+    "attachments/Pasted image 20230331205348.png",
+    "attachments/Pasted image 20230331205250.png",
+    "attachments/Pasted image 20230331205222.png",
+    "attachments/Pasted image 20230331205108.png",
+    "attachments/Pasted image 20230331205049.png",
+    "attachments/Pasted image 20230331204832.png"
   ]
 }

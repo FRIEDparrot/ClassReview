@@ -47,3 +47,76 @@
 ![[Pasted image 20230324193836.png|600]]
 ![[Pasted image 20230324193915.png|600]]
 ![[Pasted image 20230324193947.png|600]]
+
+---
+
+![[attachments/Pasted image 20230331190356.png]]
+
+![[attachments/Pasted image 20230331190430.png]]
+
+![[attachments/Pasted image 20230331190557.png]]
+![[attachments/Pasted image 20230331191355.png]]
+
+![[attachments/Pasted image 20230331191421.png]]
+![[attachments/Pasted image 20230331191815.png]]
+![[attachments/Pasted image 20230331192317.png]]
+
+![[attachments/Pasted image 20230331192632.png]]
+![[attachments/Pasted image 20230331193033.png]]
+![[attachments/Pasted image 20230331193615.png]]
+![[attachments/Pasted image 20230331193836.png]]
+
+![[attachments/Pasted image 20230331193918.png]]
+![[attachments/Pasted image 20230331194255.png]]
+![[attachments/Pasted image 20230331194457.png]]
+![[attachments/Pasted image 20230331194736.png]]
+![[attachments/Pasted image 20230331194831.png]]
+
+![[attachments/Pasted image 20230331195217.png]]
+![[attachments/Pasted image 20230331195626.png]]
+![[attachments/Pasted image 20230331195801.png]]
+![[attachments/Pasted image 20230331195827.png]]
+抛物线比圆弧阶高，因此不可能击中$A$点
+![[attachments/Pasted image 20230331200149.png]]
+![[attachments/Pasted image 20230331200339.png]]
+![[attachments/Pasted image 20230331200636.png]]
+![[attachments/Pasted image 20230331200829.png]]
+
+![[attachments/Pasted image 20230331201118.png]]
+![[attachments/Pasted image 20230331201454.png]]
+![[attachments/Pasted image 20230331201903.png]]
+
+$$S_1 + S_2 = 0$$
+![[attachments/Pasted image 20230331202044.png]]
+![[attachments/Pasted image 20230331202224.png]]
+![[attachments/Pasted image 20230331202440.png]]
+![[attachments/Pasted image 20230331202758.png]]
+![[attachments/Pasted image 20230331203032.png]]
+![[attachments/Pasted image 20230331203126.png]]
+![[attachments/Pasted image 20230331203312.png]]
+![[attachments/Pasted image 20230331203431.png]]
+![[attachments/Pasted image 20230331203515.png]]
+![[attachments/Pasted image 20230331203553.png]]
+![[attachments/Pasted image 20230331203656.png|400]]
+
+
+![[attachments/Pasted image 20230331203729.png|400]]
+不打滑时， 需要动摩擦系数满足相应条件
+![[attachments/Pasted image 20230331203821.png]]
+
+![[attachments/Pasted image 20230331204007.png]]
+1. 自由度：由于小球的运动已知，系统一共有6个自由度
+
+ 
+![[attachments/Pasted image 20230331204114.png]]
+![[attachments/Pasted image 20230331204421.png]]
+![[attachments/Pasted image 20230331204525.png]]
+![[attachments/Pasted image 20230331204716.png]]
+![[attachments/Pasted image 20230331204832.png]]
+$$-\frac{20}{7}$$
+![[attachments/Pasted image 20230331205049.png]]
+![[attachments/Pasted image 20230331205108.png]]
+$v_c = 0$
+![[attachments/Pasted image 20230331205222.png]]
+![[attachments/Pasted image 20230331205250.png|400]]
+![[attachments/Pasted image 20230331205348.png]]
