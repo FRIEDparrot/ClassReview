@@ -1046,5 +1046,15 @@
       "key": "Enter",
       "modifiers": []
     }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_INFINITE_MATRIX.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "\\"
+    }
   ]
 }

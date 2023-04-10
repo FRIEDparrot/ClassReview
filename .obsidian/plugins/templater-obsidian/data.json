@@ -119,7 +119,8 @@
     "🗒️Templates/ADD_SUPERSCRIPT_WITH_BRACKETS.md",
     "🗒️Templates/ADD_TILDE_OVERSET.md",
     "🗒️Templates/ADD_DOT_OVERSET.md",
-    "🗒️Templates/ADD_DDOT_OVERSET.md"
+    "🗒️Templates/ADD_DDOT_OVERSET.md",
+    "🗒️Templates/INSERT_INFINITE_MATRIX.md"
   ],
   "startup_templates": [
     ""

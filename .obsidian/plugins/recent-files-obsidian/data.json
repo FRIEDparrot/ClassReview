@@ -1,20 +1,148 @@
 {
   "recentFiles": [
     {
+      "basename": "第五章 稀疏数组和广义表",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md"
+    },
+    {
+      "basename": "第二章 刚体的空间运动学",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第二章 刚体的空间运动学.md"
+    },
+    {
+      "basename": "欧拉定理证明",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/欧拉定理证明.pdf"
+    },
+    {
+      "basename": "第五章 薄板的弯曲",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第五章 薄板的弯曲.md"
+    },
+    {
+      "basename": "第五章 薄板的弯曲 2023-04-10 09.54.05",
+      "path": "Excalidraw/第五章 薄板的弯曲 2023-04-10 09.54.05.md"
+    },
+    {
+      "basename": "平面薄板问题的方程建立",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md"
+    },
+    {
+      "basename": "Boussinesq问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第十章：弹性力学专门问题/Boussinesq问题.md"
+    },
+    {
+      "basename": "第四章 空间问题的有限元法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题的有限元法.md"
+    },
+    {
+      "basename": "第四章 空间问题的有限元法 2023-04-10 08.47.39",
+      "path": "Excalidraw/第四章 空间问题的有限元法 2023-04-10 08.47.39.md"
+    },
+    {
+      "basename": "刚体空间运动部分的推导",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/刚体空间运动部分的推导.pdf"
+    },
+    {
+      "basename": "复习 指针和链表的使用",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 指针和链表的使用.md"
+    },
+    {
+      "basename": "函数指针的定义",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/函数指针的定义.md"
+    },
+    {
+      "basename": "二叉树最近公共父节点",
+      "path": "❔LeeCode Problems/二叉树最近公共父节点.md"
+    },
+    {
+      "basename": "第一章 行列式",
+      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第一章 行列式.md"
+    },
+    {
+      "basename": "第四章 字符串",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第四章 字符串.md"
+    },
+    {
+      "basename": "第三章 栈和队列的链式存储",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md"
+    },
+    {
+      "basename": "第一章、分析动力学基础",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第一章、分析动力学基础.md"
+    },
+    {
+      "basename": "例题1.4",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/课本例题/例题1.4.pdf"
+    },
+    {
+      "basename": "例题1.4-annotate",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/课本例题/例题1.4-annotate.md"
+    },
+    {
+      "basename": "1章滑轮重物例题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/PPT等练习题/1章滑轮重物例题.pdf"
+    },
+    {
+      "basename": "INSERT_INFINITE_MATRIX",
+      "path": "🗒️Templates/INSERT_INFINITE_MATRIX.md"
+    },
+    {
+      "basename": "INSERT_BIG_BRACKETS",
+      "path": "🗒️Templates/INSERT_BIG_BRACKETS.md"
+    },
+    {
+      "basename": "INSERT_BAR_BEACKERTS",
+      "path": "🗒️Templates/INSERT_BAR_BEACKERTS.md"
+    },
+    {
+      "basename": "第一章 行列式 2023-04-07 20.53.15",
+      "path": "Excalidraw/第一章 行列式 2023-04-07 20.53.15.md"
+    },
+    {
+      "basename": "使用形状改变比能推导弹性常数关系式",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/补充内容/使用形状改变比能推导弹性常数关系式.pdf"
+    },
+    {
+      "basename": "1章大小圆环例题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/PPT等练习题/1章大小圆环例题.pdf"
+    },
+    {
+      "basename": "⌚Todo List",
+      "path": "💡Inspiration/⌚Todo List.md"
+    },
+    {
+      "basename": "第一章 行列式 2023-04-07 13.15.01",
+      "path": "Excalidraw/第一章 行列式 2023-04-07 13.15.01.md"
+    },
+    {
+      "basename": "Chapter4 Basic aspects of discretization",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Chapter4 Basic aspects of discretization.md"
+    },
+    {
+      "basename": "Chapter 1 One-Dimensional Boundary Value Problem",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md"
+    },
+    {
+      "basename": "Chapter2 Formulation of 2 and 3D Boundary Value Problems",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter2 Formulation of 2 and 3D Boundary Value Problems.md"
+    },
+    {
+      "basename": "Chapter4 Basic aspects of discretization 2023-04-07 11.09.46",
+      "path": "Excalidraw/Chapter4 Basic aspects of discretization 2023-04-07 11.09.46.md"
+    },
+    {
+      "basename": "Chapter2 Derivation of the Governing Equations",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter2 Derivation of the Governing Equations.md"
+    },
+    {
+      "basename": "Chapter3 Mathematical behavior of partial differential equations",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter3 Mathematical behavior of partial differential equations.md"
+    },
+    {
       "basename": "Chapter3 Mathematical behavior of partial differential equations 2023-04-07 08.55.00",
       "path": "Excalidraw/Chapter3 Mathematical behavior of partial differential equations 2023-04-07 08.55.00.md"
     },
     {
-      "basename": "Chapter3 Mathematical behavior of partial differential equations",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Chapter3 Mathematical behavior of partial differential equations.md"
-    },
-    {
-      "basename": "Chapter2 Derivation of the Governing Equations",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Chapter2 Derivation of the Governing Equations.md"
-    },
-    {
       "basename": "Governing Equations of Flow",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Implements/Governing Equations of Flow.pdf"
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Implements/Governing Equations of Flow.pdf"
     },
     {
       "basename": "第十二章 动载荷",
@@ -26,7 +154,7 @@
     },
     {
       "basename": "Chapter1 Philosophy of Computational Fluid Dynamics",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Chapter1 Philosophy of Computational Fluid Dynamics.md"
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md"
     },
     {
       "basename": "1-8 Fundamental Principles",
@@ -65,140 +193,12 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md"
     },
     {
-      "basename": "第四章 空间问题的有限元法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题的有限元法.md"
-    },
-    {
-      "basename": "第五章 稀疏数组和广义表",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md"
-    },
-    {
-      "basename": "Chapter2 Formulation of 2 and 3D Boundary Value Problems",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter2 Formulation of 2 and 3D Boundary Value Problems.md"
-    },
-    {
       "basename": "三角形三节点的刚度分析",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容/三角形三节点的刚度分析.pdf"
     },
     {
       "basename": "Derivation of transformation between the local Coordinate and the Cartesian Coordinate of triangle Element",
       "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of transformation between the local Coordinate and the Cartesian Coordinate of triangle Element.pdf"
-    },
-    {
-      "basename": "Derivation of the Total FEM Equation",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of the Total FEM Equation.pdf"
-    },
-    {
-      "basename": "使用虚功原理推导三角形单元刚度矩阵",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容/使用虚功原理推导三角形单元刚度矩阵.pdf"
-    },
-    {
-      "basename": "Word List1",
-      "path": "📘ClassNotes/🗣️English/Word List1.md"
-    },
-    {
-      "basename": "Chapter 1 One-Dimensional Boundary Value Problem",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md"
-    },
-    {
-      "basename": "第三章 栈和队列的链式存储",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md"
-    },
-    {
-      "basename": "第四章 扭转",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第四章 扭转.md"
-    },
-    {
-      "basename": "第十一章 压杆稳定 2023-04-04 14.41.15",
-      "path": "Excalidraw/第十一章 压杆稳定 2023-04-04 14.41.15.md"
-    },
-    {
-      "basename": "第十章 组合变形时的强度计算",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第十章 组合变形时的强度计算.md"
-    },
-    {
-      "basename": "第十章 组合变形时的强度计算 2023-04-04 00.28.45",
-      "path": "Excalidraw/第十章 组合变形时的强度计算 2023-04-04 00.28.45.md"
-    },
-    {
-      "basename": "第十章 组合变形时的强度计算 2023-04-04 00.19.05",
-      "path": "Excalidraw/第十章 组合变形时的强度计算 2023-04-04 00.19.05.md"
-    },
-    {
-      "basename": "第十章 组合变形时的强度计算 2023-04-04 00.08.41",
-      "path": "Excalidraw/第十章 组合变形时的强度计算 2023-04-04 00.08.41.md"
-    },
-    {
-      "basename": "第九章 强度理论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🚲Mechanics of materials/第九章 强度理论.md"
-    },
-    {
-      "basename": "第九章 强度理论 2023-04-03 21.17.04",
-      "path": "Excalidraw/第九章 强度理论 2023-04-03 21.17.04.md"
-    },
-    {
-      "basename": "第九章 强度理论 2023-04-03 21.30.31",
-      "path": "Excalidraw/第九章 强度理论 2023-04-03 21.30.31.md"
-    },
-    {
-      "basename": "第九章 强度理论 2023-04-03 21.08.16",
-      "path": "Excalidraw/第九章 强度理论 2023-04-03 21.08.16.md"
-    },
-    {
-      "basename": "二分查找方法",
-      "path": "📘ClassNotes/⌨️Programming/Algorithms/搜索和查找方法/二分查找方法.md"
-    },
-    {
-      "basename": "递归查找方法",
-      "path": "📘ClassNotes/⌨️Programming/Algorithms/搜索和查找方法/递归查找方法.md"
-    },
-    {
-      "basename": "第一章 数据结构绪论",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md"
-    },
-    {
-      "basename": "二叉树最近公共父节点",
-      "path": "❔LeeCode Problems/二叉树最近公共父节点.md"
-    },
-    {
-      "basename": "二叉树两数之和",
-      "path": "❔LeeCode Problems/二叉树两数之和.md"
-    },
-    {
-      "basename": "第一章、分析动力学基础",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第一章、分析动力学基础.md"
-    },
-    {
-      "basename": "双指针方法的使用",
-      "path": "📘ClassNotes/⌨️Programming/Algorithms/双指针方法的使用.md"
-    },
-    {
-      "basename": "排序 + 双指针的查找算法",
-      "path": "📘ClassNotes/⌨️Programming/Algorithms/搜索和查找方法/排序 + 双指针的查找算法.md"
-    },
-    {
-      "basename": "复习 指针和链表的使用",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 指针和链表的使用.md"
-    },
-    {
-      "basename": "复习 七大排序算法",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 七大排序算法.md"
-    },
-    {
-      "basename": "常见等价无穷小",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/常见等价无穷小.md"
-    },
-    {
-      "basename": "Derivation of Nonlinear steady problem",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of Nonlinear steady problem.pdf"
-    },
-    {
-      "basename": "第二章 刚体的空间运动学",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第二章 刚体的空间运动学.md"
-    },
-    {
-      "basename": "第六章 动力学系统的数值求解方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第六章 动力学系统的数值求解方法.md"
     }
   ],
   "omittedPaths": [],
