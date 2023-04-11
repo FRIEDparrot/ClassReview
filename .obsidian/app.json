@@ -12,6 +12,6 @@
   "alwaysUpdateLinks": true,
   "autoPairMarkdown": false,
   "readableLineLength": true,
-  "spellcheck": false,
+  "spellcheck": true,
   "newLinkFormat": "absolute"
 }
