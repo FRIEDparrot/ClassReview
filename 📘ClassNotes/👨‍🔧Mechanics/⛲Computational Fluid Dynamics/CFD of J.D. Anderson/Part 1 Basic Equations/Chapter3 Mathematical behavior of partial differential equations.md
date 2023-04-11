@@ -136,10 +136,9 @@ In that case, the boundary condition must be applied over the entire boundary $a
 **Also in the real problems, the boundary condition on the inlet outlet and the wall boundary condition (slip boundary condition or non-slip boundary condition) should be given**
 the pressure boundary condition on the wall is $\frac{\partial P}{\partial n} = 0$
 and also temperature condition: 
-1. For ***Isothermal wall***, $flux = \frac{\partial T}{\partial n} = 0$ 
-2. For ***Adiabatic wall*** 
+1. For ***Isothermal wall***,  $T = Constant$
+2. For ***Adiabatic wall***, $flux = \frac{\partial T}{\partial n} = 0$
 `````ad-todo
 title: 3.4.4 and summary
 collapse: open
-
 `````
