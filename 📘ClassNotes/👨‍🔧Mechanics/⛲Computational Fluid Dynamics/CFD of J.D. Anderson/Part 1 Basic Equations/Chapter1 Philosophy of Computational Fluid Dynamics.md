@@ -149,7 +149,7 @@ $$\left(\frac{\partial u}{\partial y}\right)_{i+1,j} = \left( \frac{\partial u}{
 $$\left( \frac{\partial u}{\partial y}\right)_{i-1,j} = \left( \frac{\partial u}{\partial y}\right)_{i,j} - \left(\frac{\partial^2 u}{\partial x\partial y}\right)_{i,j} \Delta x +  \left(\frac{\partial^3 u}{\partial^2 x\partial y}\right)_{i,j} \frac{\Delta x^2}{2 } +.....$$
 then we have 
 $$\left(\frac{\partial u}{\partial y}\right)_{i+1,j} - \left(\frac{\partial u}{\partial y} \right)_{i-1,j} = 2\left(\frac{\partial^2 u}{\partial x\partial y} \right)_{i,j} \Delta x + O(\Delta x^3)$$
-thus we can solve the mixed derivates as : 
+thus we can solve the mixed derivates as (process is in chapter 4):
 $$\left(\frac{\partial^2 u}{\partial x\partial y}\right)_{i,j} = \frac{\left(\frac{\partial u}{\partial x}\right)_{i+1,j} - \left( \frac{\partial u}{\partial x}\right)_{i-1,j}}{2\Delta  x} + O(\Delta x^2)$$
 substitute the partial derivate into the equation, we have :
 $$\boxed{\left(\frac{\partial^2 u}{\partial x\partial y}\right)_{i,j} = \frac{u_{i+1, j+1} - u_{i-1, j+1}- u_{i+1,j-1} + u_{i-1,j-1}}{4\Delta x \Delta  y} + O[(\Delta x)^2,(\Delta y)^2]}$$
