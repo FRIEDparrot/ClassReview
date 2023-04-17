@@ -171,7 +171,7 @@ for a ==Well-posed linear question which satisfy the compatibility condition of 
 
 
 ## 6. General difference forms of the differential function
-### (1) The Convection function 
+### (1) The Convection Function 
 $$\begin{cases}
 \frac{\partial \xi}{\partial t} + \alpha \frac{\partial \xi}{\partial x} = 0 \\
 \xi_{x,0} = \bar{\xi}(x)
@@ -204,9 +204,40 @@ $$\xi_i^{n+1} = \xi_i^n - \alpha\Delta t(\xi_x)_i^n + \frac{\alpha^2(\Delta t)^2
 Then the Lax-Wendroff Form of the difference equation can be written by substituting the difference form into the equation : 
 $$\xi_i^{n+1} = \xi_i^n -\frac{\lambda}{2}(\xi_{i+1}^n - \xi_{i-1}^n) + \frac{\lambda^2}{2}(\xi_{i+1}^n  - 2 \xi_{i}^n +\xi_{i-1}^n) + O((\Delta t)^3)$$
 where $\lambda = \frac{\alpha\Delta t}{\Delta x}$
-#### (3) Whole Implicit Form
+##### (3) Whole Implicit Form
 For the implicit form of the equation, there may be many terms of the time $n+1$ 
 the implicit form for the convection function is reached by writing $\left(\frac{\partial \xi}{\partial x} \right)_i^n = \frac{\xi_{i+1}^{n+1} - \xi_{i-1}^{n+1}}{2\Delta x}$
 then : 
 $$\xi_i^{n+1} - \frac{\lambda}{2}(\xi_{i+1}^{n+1} - \xi_{i-1}^{n+1}) = - \xi_i^n$$
-this form is unconditionally stable in solution. 
+this form is ***unconditionally stable*** in solution. 
+
+### (2) The Diffusion Function 
+$$\begin{cases}
+\frac{\partial \xi}{\partial t} = \beta\frac{\partial^2 \xi}{\partial t^2} \\
+\xi(x, 0) = \bar{\xi}(x)
+\end{cases}$$
+##### 1. Classical form
+$$\xi_{i}^{n+1} = \xi_{i}^n + \mu (\xi_{i+1}^n - 2\xi_i^n + \xi_{i-1}^n)$$
+where 
+$$\mu = \frac{\beta \Delta t}{(\Delta x)^2}$$
+the stable condition is $\mu \leq  \frac{1}{2}$
+
+##### 2. Implicit form of equation
+the difference method is : 
+$$\frac{\partial^2 \xi}{\partial x^2} = \frac{\xi_{i+1}^{n+1} - 2\xi_{i}^{n+1} + \xi_{i-1}^{n+1}}{(\Delta x)^2}$$
+$$\frac{\partial \xi}{\partial t} = \frac{1}{2}\left[\left(\frac{\xi_i^n - \xi_i^{n-1}}{\Delta t }\right) + \left( \frac{\xi_i^{n+1} - \xi_i^n}{\Delta t}\right) \right]$$
+
+`````ad-note
+title: The difference form of the convection-diffusion function. 
+collapse: open
+
+for the convection-diffusion function, i.e. 
+
+$$\begin{cases}
+\frac{\partial \xi}{\partial t} + \alpha \frac{\partial \xi}{\partial x} = \beta \frac{\partial^2 \xi}{\partial x^2} \\
+\xi(x,0) = \bar{\xi}(x)
+\end{cases}$$
+
+it also has the Upwind difference form, the implicit difference difference form and the central explicit difference form. 
+`````
+

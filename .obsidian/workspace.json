@@ -4,34 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "24f35c76dee57af1",
+        "id": "2d17023feb1efb9b",
         "type": "tabs",
         "children": [
           {
-            "id": "d4bac5659b1cfc78",
+            "id": "275ca5b495a4542e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Chapter4 Basic aspects of discretization.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第六章 动力学系统的数值求解方法.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2e9234e53f07a5fe",
+            "id": "d720eca103408805",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Chapter 5 Grids with appropriate transformations.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5110321044922,
+    "width": 336.5110321044922,
     "collapsed": true
   },
   "right": {
@@ -114,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Chapter4 Basic aspects of discretization.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第二章 刚体的空间运动学.md"
               }
             }
           },
@@ -143,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Chapter4 Basic aspects of discretization.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Chapter4 Basic aspects of discretization.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,53 +199,53 @@
       "dbfolder:Create a new database table": false
     }
   },
-  "active": "d4bac5659b1cfc78",
+  "active": "d720eca103408805",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Chapter 5 Grids with appropriate transformations.md",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Chapter4 Basic aspects of discretization.md",
+    "Excalidraw/第二章 刚体的空间运动学 2023-04-17 12.03.31.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第六章 动力学系统的数值求解方法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第五章 薄板的弯曲.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第六章 薄壳.md",
+    "Excalidraw/第六章 薄壳 2023-04-17 10.01.56.md",
+    "Excalidraw/第六章 薄壳 2023-04-17 09.55.56.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md",
+    "Excalidraw/第五章 薄板的弯曲 2023-04-17 09.27.33.md",
+    "Excalidraw/第四章 空间问题的有限元法 2023-03-29 09.25.49.md",
+    "Excalidraw/第四章 空间问题 2023-04-17 08.39.15.md",
+    "Day Planners/Day Planner-20230417.md",
+    "📘ClassNotes/⌨️Programming/Bot/QQ机器人和ChatGPT接入.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 表.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/ARC缓存算法.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/自适应缓存替换ARC算法.pdf",
+    "Day Planners/Day Planner-20230416.md",
+    "attachments/Pasted image 20230415204313.png",
+    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Chapter5 Grids with appropriate transformations.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Implements/Derivation for 2D Jacobian.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Implements/Derivation for transformation of 2-D computational plane.pdf",
+    "Excalidraw/Chapter5 Grids with appropriate transformations 2023-04-14 22.29.07.md",
+    "Excalidraw/Chapter5 Grids with appropriate transformations 2023-04-14 22.19.18.md",
+    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/9-16 The Application Concepts.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十一章 曲线积分和曲面积分.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊fluid dynamics/第五章 粘性流体运动基础/粘性流体的运行模型建立.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊fluid dynamics/第三章 流体运动概述/一、流体运动简介.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊fluid dynamics/第三章 流体运动概述/二、圆柱坐标系中的流体力学问题.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/欧拉定理证明.pdf",
     "attachments/Pasted image 20230414104715.png",
     "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Problems&Examples/3 examples for the convergence analysis.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Problems&Examples/PPTp66.pdf",
-    "Day Planners/Day Planner-20230414.md",
-    "Excalidraw/Chapter4 Basic aspects of discretization 2023-04-13 21.05.05.md",
-    "Excalidraw/Chapter4 Basic aspects of discretization 2023-04-12 22.14.17.md",
-    "Excalidraw/Chapter4 Basic aspects of discretization 2023-04-13 19.45.56.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题的有限元法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第三章 平面问题的有限单元法.md",
     "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of transformation between the local Coordinate and the Cartesian Coordinate of triangle Element.pdf",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/第一章 行列式.md",
-    "📘ClassNotes/⌨️Programming/Bot/QQ机器人和ChatGPT接入.md",
-    "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/内容整理.md",
     "📘ClassNotes/⌨️Programming/Bot",
-    "Day Planners/Day Planner-20230413.md",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
     "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Implements/Derivation for the Difference form of derivate.pdf",
-    "📘ClassNotes/⌨️Programming/Data Structure/C++补充笔记/C++ 数据结构概论.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 表.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md",
     "attachments/Pasted image 20230412155957.png",
     "attachments/Pasted image 20230412155954.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第五章 薄板的弯曲.md",
-    "Excalidraw/第五章 薄板的弯曲 2023-04-12 09.02.33.md",
-    "Excalidraw/第五章 薄板的弯曲 2023-04-12 08.34.20.md",
     "attachments/Pasted image 20230412013041.png",
-    "Day Planners/Day Planner-20230412.md",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter2 Derivation of the Governing Equations.md",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter3 Mathematical behavior of partial differential equations.md",
     "attachments/Screenshot_20230411_165650_com.microsoft.skydrive.png",
     "attachments/Screenshot_20230411_164956_com.microsoft.skydrive.png",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Problems&Examples/Example 3.1.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Problems&Examples",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/New folder",
     "attachments/Pasted image 20230411115341.png",
     "attachments/Pasted image 20230411114343.png",
-    "attachments/Pasted image 20230411103143.png",
-    "attachments/General_List.drawio.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/欧拉定理证明.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/刚体空间运动部分的推导.pdf"
+    "attachments/Pasted image 20230411103143.png"
   ]
 }
