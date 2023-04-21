@@ -4,35 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "2d17023feb1efb9b",
+        "id": "36859d11a59a9557",
         "type": "tabs",
         "children": [
           {
-            "id": "275ca5b495a4542e",
+            "id": "9a1224ae6922c1ed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第六章 动力学系统的数值求解方法.md",
+                "file": "📘ClassNotes/📐Mathmatics/📏linear algebra/第三章 矩阵的初等变换.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d720eca103408805",
+            "id": "c211ab248da07721",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
+                "file": "📘ClassNotes/📐Mathmatics/📏linear algebra/第二章 矩阵及其运算.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "template",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5110321044922,
+    "width": 275.0110321044922,
     "collapsed": true
   },
   "right": {
@@ -115,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第二章 刚体的空间运动学.md"
+                "file": "📘ClassNotes/📐Mathmatics/📏linear algebra/第三章 矩阵的初等变换.md"
               }
             }
           },
@@ -144,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
+                "file": "📘ClassNotes/📐Mathmatics/📏linear algebra/第三章 矩阵的初等变换.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
+                "file": "📘ClassNotes/📐Mathmatics/📏linear algebra/第三章 矩阵的初等变换.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +178,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -195,57 +194,57 @@
       "zk-prefixer:Create new unique note": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "dbfolder:Create a new database table": false
+      "dbfolder:Create a new database table": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d720eca103408805",
+  "active": "9a1224ae6922c1ed",
   "lastOpenFiles": [
-    "Excalidraw/第二章 刚体的空间运动学 2023-04-17 12.03.31.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第二章 矩阵及其运算.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第三章 矩阵的初等变换.md",
+    "Excalidraw/第三章 矩阵的初等变换 2023-04-21 10.43.00.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Homework/实验2 内置方形体的突然扩张.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/文件操作.md",
+    "📘ClassNotes/⌨️Programming/Languages/C++ basics/2. 一些补充笔记.md",
+    "Day Planners/Day Planner-20230421.md",
+    "Excalidraw/实验2 内置方形体的突然扩张 2023-04-20 20.26.09.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Homework",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第四章 等参数单元.md",
+    "Excalidraw/第四章 等参数单元 2023-04-20 14.58.34.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第三章 平面问题的有限单元法.md",
+    "Excalidraw/第三章 平面问题的有限单元法 2023-04-20 14.25.34.md",
+    "Excalidraw/第三章 平面问题的有限单元法 2023-04-20 14.17.03.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
+    "attachments/Pasted image 20230420113745.png",
+    "attachments/Pasted image 20230420113612.png",
+    "attachments/Pasted image 20230420113439.png",
+    "attachments/Pasted image 20230420113348.png",
+    "Excalidraw/第六章 树和二叉树 2023-04-20 11.12.27.md",
+    "attachments/Pasted Image 20230420111246_780.png",
+    "attachments/Pasted image 20230420111111.png",
+    "Excalidraw/第六章 树和二叉树 2023-04-20 11.01.24.md",
+    "Excalidraw/第六章 树和二叉树 2023-04-20 10.47.16.md",
+    "Excalidraw/第六章 树和二叉树 2023-04-20 10.38.47.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第一章 行列式.md",
+    "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/内容整理.md",
+    "Day Planners/Day Planner-20230420.md",
+    "Excalidraw/第一章 行列式 2023-04-19 23.46.39.md",
+    "attachments/Pasted image 20230419231836.png",
+    "attachments/Binary_Creation.drawio.png",
+    "Excalidraw/第六章 树和二叉树 2023-04-19 22.46.08.md",
+    "attachments/Pasted Image 20230419224709_380.png",
+    "attachments/Pasted image 20230419213600.png",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 树的基本知识.md",
+    "Excalidraw/第六章 树和二叉树 2023-04-19 15.49.59.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第六章 动力学系统的数值求解方法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第五章 薄板的弯曲.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第六章 薄壳.md",
-    "Excalidraw/第六章 薄壳 2023-04-17 10.01.56.md",
-    "Excalidraw/第六章 薄壳 2023-04-17 09.55.56.md",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md",
-    "Excalidraw/第五章 薄板的弯曲 2023-04-17 09.27.33.md",
-    "Excalidraw/第四章 空间问题的有限元法 2023-03-29 09.25.49.md",
-    "Excalidraw/第四章 空间问题 2023-04-17 08.39.15.md",
-    "Day Planners/Day Planner-20230417.md",
-    "📘ClassNotes/⌨️Programming/Bot/QQ机器人和ChatGPT接入.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 表.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/ARC缓存算法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/课本例题/第二章例题.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/牵连运动为定点运动的加速度合成定理及刚体空间一般运动推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/刚体定点运动速度加速度合成定理推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/刚体角速度多种形式表达式的推导.pdf",
     "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/自适应缓存替换ARC算法.pdf",
-    "Day Planners/Day Planner-20230416.md",
-    "attachments/Pasted image 20230415204313.png",
     "📘ClassNotes/⌨️Programming/Data Structure/实验大作业",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Chapter5 Grids with appropriate transformations.md",
     "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Implements/Derivation for 2D Jacobian.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Implements/Derivation for transformation of 2-D computational plane.pdf",
-    "Excalidraw/Chapter5 Grids with appropriate transformations 2023-04-14 22.29.07.md",
-    "Excalidraw/Chapter5 Grids with appropriate transformations 2023-04-14 22.19.18.md",
-    "📘ClassNotes/👨‍🔧Mechanics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/9-16 The Application Concepts.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十一章 曲线积分和曲面积分.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊fluid dynamics/第五章 粘性流体运动基础/粘性流体的运行模型建立.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊fluid dynamics/第三章 流体运动概述/一、流体运动简介.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊fluid dynamics/第三章 流体运动概述/二、圆柱坐标系中的流体力学问题.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/欧拉定理证明.pdf",
-    "attachments/Pasted image 20230414104715.png",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Problems&Examples/3 examples for the convergence analysis.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Problems&Examples/PPTp66.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of transformation between the local Coordinate and the Cartesian Coordinate of triangle Element.pdf",
-    "📘ClassNotes/⌨️Programming/Bot",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Implements/Derivation for the Difference form of derivate.pdf",
-    "attachments/Pasted image 20230412155957.png",
-    "attachments/Pasted image 20230412155954.png",
-    "attachments/Pasted image 20230412013041.png",
-    "attachments/Screenshot_20230411_165650_com.microsoft.skydrive.png",
-    "attachments/Screenshot_20230411_164956_com.microsoft.skydrive.png",
-    "attachments/Pasted image 20230411115341.png",
-    "attachments/Pasted image 20230411114343.png",
-    "attachments/Pasted image 20230411103143.png"
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/欧拉定理证明.pdf"
   ]
 }

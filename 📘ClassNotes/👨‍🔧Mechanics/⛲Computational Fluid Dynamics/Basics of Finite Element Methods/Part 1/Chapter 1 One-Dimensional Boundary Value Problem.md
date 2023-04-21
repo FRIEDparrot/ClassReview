@@ -520,7 +520,7 @@ $$\int_{0}^{h} \frac{du}{dx} \frac{d(\delta u )}{dx}  + c \delta u dx = \sum^{E}
 Note that for single element, the ***Element FEM Equation*** is : 
 $$\int_{x_1^{(e)}}^{x_2^{(e)}}\frac{du}{dx} \frac{d(\delta u)}{dx} + c\delta u dx = 0$$
 In the equation above, we use the [[#9. Assembly of Global Stiffness Matrix|approximation expression of basic function]] $\Phi_i$ . 
-Then we derive the function in the process written in the [[📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of the Element FEM characteristic equation.pdf]]. Then we have : 
+Then we derive the function in the process written in the [[📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of the Element FEM characteristic equation.pdf|Derivation of the Element FEM characteristic equation.pdf]]. Then we have : 
 
 **1. The general form of the element FEM equation**
 $$\Large \boxed{A_{ij} u_j^{(e)} = f_i^{(e)}}$$
@@ -557,7 +557,7 @@ $$A_{nm}^* = \left[\begin{matrix}
 A_{11} & A_{12} & ... &  A_{1, r-1} &   0 &  A_{1, r + 1} & ....  \\
 ... \\\
 A_{r-1,1} & A_{r-1.2} & ... & A_{r-1, r-1} & 0 & A_{r-1, r+1} & .... \\
-0 & 0 & ... & 0 & 0 & 0 & .... \\
+0 & 0 & ... & 0 & 1 & 0 & .... \\
 ...
 \end{matrix}\right]$$
 
