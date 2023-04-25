@@ -5,12 +5,20 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/内容整理.md"
     },
     {
-      "basename": "梁自动划分四节点和八节点单元网格MATLAB代码",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/梁自动划分四节点和八节点单元网格MATLAB代码.md"
+      "basename": "耐高温复合材料与力学行为讲义",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为讲义.pdf"
+    },
+    {
+      "basename": "内容整理 2023-04-25 08.39.10",
+      "path": "Excalidraw/内容整理 2023-04-25 08.39.10.md"
     },
     {
       "basename": "四节点和八节点单元的单元刚度矩阵计算MATLAB",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/四节点和八节点单元的单元刚度矩阵计算MATLAB.md"
+    },
+    {
+      "basename": "梁自动划分四节点和八节点单元网格MATLAB代码",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/梁自动划分四节点和八节点单元网格MATLAB代码.md"
     },
     {
       "basename": "第七章 参数单元",
@@ -191,14 +199,6 @@
     {
       "basename": "六节点三角形单元 2023-04-18 15.05.25",
       "path": "Excalidraw/六节点三角形单元 2023-04-18 15.05.25.md"
-    },
-    {
-      "basename": "Chapter 1 One-Dimensional Boundary Value Problem",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md"
-    },
-    {
-      "basename": "内容整理 2023-04-18 08.49.27",
-      "path": "Excalidraw/内容整理 2023-04-18 08.49.27.md"
     }
   ],
   "omittedPaths": [],

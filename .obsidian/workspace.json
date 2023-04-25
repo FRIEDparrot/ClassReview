@@ -188,9 +188,11 @@
   },
   "active": "6f1704753a983072",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/梁自动划分四节点和八节点单元网格MATLAB代码.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/四节点和八节点单元的单元刚度矩阵计算MATLAB.md",
+    "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为讲义.pdf",
+    "Excalidraw/内容整理 2023-04-25 08.39.10.md",
     "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/内容整理.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/四节点和八节点单元的单元刚度矩阵计算MATLAB.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/梁自动划分四节点和八节点单元网格MATLAB代码.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary",
     "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第七章 参数单元.md",
     "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Homework/结构有限元1 悬臂梁受到均布载荷.md",
@@ -216,8 +218,6 @@
     "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/✍️课本例题&练习/水坝应力分布.md",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/第四章 向量组的线性相关性.md",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/第二章 矩阵及其运算.md",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/第三章 矩阵的初等变换.md",
-    "Excalidraw/第三章 矩阵的初等变换 2023-04-21 11.12.23.md",
     "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Homework",
     "attachments/Pasted image 20230420113745.png",
     "attachments/Pasted image 20230420113612.png",
@@ -232,7 +232,6 @@
     "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/课本例题/第二章例题.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/刚体定点运动速度加速度合成定理推导.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/刚体角速度多种形式表达式的推导.pdf",
-    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/自适应缓存替换ARC算法.pdf",
-    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业"
+    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/自适应缓存替换ARC算法.pdf"
   ]
 }
