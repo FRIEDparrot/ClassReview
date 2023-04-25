@@ -120,7 +120,8 @@
     "🗒️Templates/ADD_TILDE_OVERSET.md",
     "🗒️Templates/ADD_DOT_OVERSET.md",
     "🗒️Templates/ADD_DDOT_OVERSET.md",
-    "🗒️Templates/INSERT_INFINITE_MATRIX.md"
+    "🗒️Templates/INSERT_INFINITE_MATRIX.md",
+    "🗒️Templates/INSERT_TODO_DERIVATION.md"
   ],
   "startup_templates": [
     ""

@@ -1056,5 +1056,15 @@
       ],
       "key": "\\"
     }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_TODO_DERIVATION.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "R"
+    }
   ]
 }

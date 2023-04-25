@@ -8654,6 +8654,7 @@ OSI
 OCWW
 OPT
 Oky
+Optical
 Swift
 SE
 Suppported
@@ -11820,6 +11821,8 @@ SKcm
 SuwE
 SwK
 SSO
+Scanning
+STEM
 Ludwik
 Lame
 Logistic
@@ -27379,6 +27382,7 @@ PTk
 Pya
 PreOrderTransverse
 PSQGqSor
+Polarizing
 Association
 AD
 AE
@@ -30935,6 +30939,7 @@ AaxpY
 ABDFGCEH
 Apa
 ABCEF
+Astigmatism
 Deviation
 Drawing
 Dirichlet
@@ -50182,6 +50187,7 @@ MucZ
 MDA
 MWYa
 MidOrderTransverse
+Microscope
 Vector
 VIEW
 VpI
@@ -81208,6 +81214,7 @@ TzXp
 TKI
 TIDM
 ThreadTree
+Transmission
 plugin
 parsed
 performance
@@ -90847,6 +90854,7 @@ mss
 mkSY
 mJrJ
 mOMW
+microscope
 Forced
 For
 Function
@@ -96777,6 +96785,8 @@ aChH
 axu
 aoz
 aiLv
+aberration
+automesh
 General
 Governing
 GBb
