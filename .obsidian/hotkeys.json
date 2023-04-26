@@ -93,7 +93,15 @@
   ],
   "obsidian-completr:completr-bypass-tab-key": [],
   "obsidian-completr:completr-jump-to-next-snippet-placeholder": [],
-  "editor:toggle-bold": [],
+  "editor:toggle-bold": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": " "
+    }
+  ],
   "templater-obsidian:🗒️Templates/ADD_SUBSCRIPT.md": [
     {
       "modifiers": [
@@ -807,7 +815,7 @@
     {
       "modifiers": [
         "Alt",
-        "Shift"
+        "Mod"
       ],
       "key": "L"
     }
@@ -1082,6 +1090,101 @@
         "Alt"
       ],
       "key": "]"
+    }
+  ],
+  "obsidian-day-planner:app:show-day-planner-today-note": [
+    {
+      "modifiers": [],
+      "key": "F5"
+    }
+  ],
+  "obsidian-day-planner:app:show-day-planner-timeline": [
+    {
+      "modifiers": [],
+      "key": "F3"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_FORALL_SIMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "ArrowDown"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_EXIST_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "ArrowLeft"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_IN_SET_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": ","
+    },
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "ArrowLeft"
+    }
+  ],
+  "app:go-back": [],
+  "app:go-forward": [],
+  "templater-obsidian:🗒️Templates/INSERT_SUBSET_EQUAL_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "9"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_SUBSET_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "9"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_SUPSET_EQUAL_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "0"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_SUPSET_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "0"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_LAMBDA_UPPERCASE.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "L"
     }
   ]
 }

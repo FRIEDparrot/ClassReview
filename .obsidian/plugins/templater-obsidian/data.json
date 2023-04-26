@@ -123,7 +123,15 @@
     "🗒️Templates/INSERT_INFINITE_MATRIX.md",
     "🗒️Templates/INSERT_TODO_DERIVATION.md",
     "🗒️Templates/INSERT_INVERSE_MATRIX.md",
-    "🗒️Templates/INSERT_TRANSPOSE_MATRIX.md"
+    "🗒️Templates/INSERT_TRANSPOSE_MATRIX.md",
+    "🗒️Templates/INSERT_FORALL_SIMBOL.md",
+    "🗒️Templates/INSERT_EXIST_SYMBOL.md",
+    "🗒️Templates/INSERT_IN_SET_SYMBOL.md",
+    "🗒️Templates/INSERT_SUBSET_SYMBOL.md",
+    "🗒️Templates/INSERT_SUBSET_EQUAL_SYMBOL.md",
+    "🗒️Templates/INSERT_SUPSET_SYMBOL.md",
+    "🗒️Templates/INSERT_SUPSET_EQUAL_SYMBOL.md",
+    "🗒️Templates/INSERT_LAMBDA_UPPERCASE.md"
   ],
   "startup_templates": [
     ""

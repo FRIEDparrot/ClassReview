@@ -4,35 +4,50 @@
     "type": "split",
     "children": [
       {
-        "id": "05417d99db8af96a",
+        "id": "dd21ec2ab2961154",
         "type": "tabs",
         "children": [
           {
-            "id": "24176f5852256c4c",
+            "id": "6df08a896358c98a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/梁自动划分四节点和八节点单元网格MATLAB代码部分.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "06bb78fb425c24f8",
+            "id": "34990c2f2d398f45",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/四节点和八节点单元的单元刚度矩阵计算MATLAB.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "39897403dd5b42d7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da8ff68e99d1cf0c",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/梁自动划分四节点和八节点单元网格MATLAB代码部分 2023-04-26 22.04.59.md"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -85,20 +100,12 @@
               "type": "recent-files",
               "state": {}
             }
-          },
-          {
-            "id": "fe9af49f8c7522fc",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 307.5110321044922,
+    "width": 274.5110321044922,
     "collapsed": true
   },
   "right": {
@@ -115,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/梁自动划分四节点和八节点单元网格MATLAB代码部分.md"
               }
             }
           },
@@ -144,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/梁自动划分四节点和八节点单元网格MATLAB代码部分.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/梁自动划分四节点和八节点单元网格MATLAB代码部分.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,12 +181,29 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "bb12604b600853fa",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
+          },
+          {
+            "id": "fe9af49f8c7522fc",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 301.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -199,46 +223,47 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "06bb78fb425c24f8",
+  "active": "6df08a896358c98a",
   "lastOpenFiles": [
-    "Excalidraw/第五章 稀疏数组和广义表 2023-04-26 11.09.08.md",
-    "attachments/Pasted Image 20230426110945_562.png",
+    "Excalidraw/梁自动划分四节点和八节点单元网格MATLAB代码部分 2023-04-26 22.04.59.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/梁自动划分四节点和八节点单元网格MATLAB代码部分.md",
+    "Excalidraw/梁自动划分四节点和八节点单元网格MATLAB代码 2023-04-26 21.46.00.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/四节点和八节点单元的单元刚度矩阵计算MATLAB.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第四章 向量组的线性相关性.md",
+    "📖Reading_Material/Essays/1 Density based topology optimization of turbulent flow heat transfer.md",
+    "🗒️Templates/INSERT_LAMBDA_UPPERCASE.md",
+    "🗒️Templates/INSERT_TRANSPOSE_MATRIX.md",
+    "🗒️Templates/INSERT_INVERSE_MATRIX.md",
+    "Day Planners/Day Planner-20230426.md",
+    "🗒️Templates/INSERT_SUBSET_SYMBOL.md",
+    "🗒️Templates/INSERT_SUBSET_EQUAL_SYMBOL.md",
+    "🗒️Templates/INSERT_SUPSET_SYMBOL.md",
+    "🗒️Templates/INSERT_SUPSET_EQUAL_SYMBOL.md",
+    "📘ClassNotes/Markdown & Latex Tutorial/Latex Tutorial/Mathematical Symbols.md",
+    "🗒️Templates/INSERT_IN_SET_SYMBOL.md",
+    "🗒️Templates/INSERT_FORALL_SIMBOL.md",
+    "🗒️Templates/INSERT_EXIST_SYMBOL.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第三章 矩阵的初等变换.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第十章：弹性力学专门问题/Boussinesq问题.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
+    "attachments/Pasted image 20230426155759.png",
+    "Excalidraw/第六章 树和二叉树 2023-04-26 15.57.39.md",
+    "attachments/Pasted Image 20230426155752_963.png",
+    "attachments/Pasted image 20230426155351.png",
+    "attachments/Pasted image 20230426155327.png",
+    "Excalidraw/第六章 树和二叉树 2023-04-26 14.59.06.md",
+    "Excalidraw/第六章 树和二叉树 2023-04-26 13.17.41.md",
+    "attachments/Pasted Image 20230426131749_240.png",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 树的基本知识.md",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
+    "attachments/Pasted Image 20230426111753_691.png",
+    "attachments/Pasted Image 20230426110945_562.png",
     "attachments/Pasted image 20230426110856.png",
     "attachments/Pasted image 20230426110740.png",
     "attachments/Pasted image 20230426110553.png",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 线性表和链表.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Homework/实验2 内置方形体的突然扩张.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第八章 结构有限元动力分析.md",
-    "🗒️Templates/INSERT_TRANSPOSE_MATRIX.md",
-    "🗒️Templates/INSERT_INVERSE_MATRIX.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/四节点和八节点单元的单元刚度矩阵计算MATLAB.md",
-    "📘ClassNotes/💻softwares/🛩️FEM/Fluent/Fluent 分析案例1.md",
-    "attachments/Pasted image 20230426012028.png",
-    "attachments/result.png",
-    "attachments/result.jpg",
-    "attachments/Pasted image 20230426010907.png",
-    "attachments/Pasted image 20230426010027.png",
-    "Day Planners/Day Planner-20230426.md",
-    "attachments/Pasted image 20230425212034.png",
     "📘ClassNotes/💻softwares/🛩️FEM/Fluent",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第四章 等参数单元.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第五章 空间问题的基本理论.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第二章：应力/2.主应力和主方向，球张量，偏张量.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第八章 向量代数和空间解析几何.md",
-    "Excalidraw/第六章 树和二叉树 2023-04-25 11.31.07.md",
-    "Excalidraw/第六章 树和二叉树 2023-04-25 11.04.54.md",
-    "Excalidraw/第六章 树和二叉树 2023-04-25 10.45.58.md",
-    "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/内容整理.md",
     "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为讲义.pdf",
-    "Excalidraw/内容整理 2023-04-25 08.39.10.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/梁自动划分四节点和八节点单元网格MATLAB代码.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第七章 参数单元.md",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Homework/结构有限元1 悬臂梁受到均布载荷.md",
-    "Day Planners/Day Planner-20230425.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容/三角形三节点的刚度分析.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/牵连运动为定点运动的加速度合成定理及刚体空间一般运动推导.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/📝作业题/弹性力学作业练习.pdf",
