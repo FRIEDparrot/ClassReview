@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "80f9514052029b17",
+        "id": "05417d99db8af96a",
         "type": "tabs",
         "children": [
           {
-            "id": "6f1704753a983072",
+            "id": "24176f5852256c4c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/内容整理.md",
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "06bb78fb425c24f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/内容整理.md"
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md"
               }
             }
           },
@@ -131,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/内容整理.md",
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/内容整理.md",
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,52 +199,52 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6f1704753a983072",
+  "active": "06bb78fb425c24f8",
   "lastOpenFiles": [
+    "Excalidraw/第五章 稀疏数组和广义表 2023-04-26 11.09.08.md",
+    "attachments/Pasted Image 20230426110945_562.png",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
+    "attachments/Pasted image 20230426110856.png",
+    "attachments/Pasted image 20230426110740.png",
+    "attachments/Pasted image 20230426110553.png",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 线性表和链表.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Homework/实验2 内置方形体的突然扩张.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第八章 结构有限元动力分析.md",
+    "🗒️Templates/INSERT_TRANSPOSE_MATRIX.md",
+    "🗒️Templates/INSERT_INVERSE_MATRIX.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/四节点和八节点单元的单元刚度矩阵计算MATLAB.md",
+    "📘ClassNotes/💻softwares/🛩️FEM/Fluent/Fluent 分析案例1.md",
+    "attachments/Pasted image 20230426012028.png",
+    "attachments/result.png",
+    "attachments/result.jpg",
+    "attachments/Pasted image 20230426010907.png",
+    "attachments/Pasted image 20230426010027.png",
+    "Day Planners/Day Planner-20230426.md",
+    "attachments/Pasted image 20230425212034.png",
+    "📘ClassNotes/💻softwares/🛩️FEM/Fluent",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第四章 等参数单元.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学与有限元法/第五章 空间问题的基本理论.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第二章：应力/2.主应力和主方向，球张量，偏张量.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第八章 向量代数和空间解析几何.md",
+    "Excalidraw/第六章 树和二叉树 2023-04-25 11.31.07.md",
+    "Excalidraw/第六章 树和二叉树 2023-04-25 11.04.54.md",
+    "Excalidraw/第六章 树和二叉树 2023-04-25 10.45.58.md",
+    "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/内容整理.md",
     "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为讲义.pdf",
     "Excalidraw/内容整理 2023-04-25 08.39.10.md",
-    "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/内容整理.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/四节点和八节点单元的单元刚度矩阵计算MATLAB.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/梁自动划分四节点和八节点单元网格MATLAB代码.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary",
     "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第七章 参数单元.md",
     "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Homework/结构有限元1 悬臂梁受到均布载荷.md",
     "Day Planners/Day Planner-20230425.md",
-    "📘ClassNotes/💻softwares/🛩️FEM/Ansys/显示壳单元厚度.md",
-    "Excalidraw/第七章 参数单元 2023-04-24 10.04.29.md",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Homework/实验2 内置方形体的突然扩张.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 表.md",
-    "Excalidraw/结构有限元1 悬臂梁受到均布载荷 2023-04-22 20.35.10.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/附加笔记/平面四节点单元.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第三章 刚体的空间运动动力学.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/附加笔记/六节点三角形单元.md",
-    "Day Planners/Day Planner-20230422.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/4. 极坐标下的经典问题.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容/三角形三节点的刚度分析.pdf",
-    "🗒️Templates/INSERT_TODO_DERIVATION.md",
-    "Excalidraw/第二章 刚体的空间运动学 2023-04-21 15.03.10.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/牵连运动为定点运动的加速度合成定理及刚体空间一般运动推导.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/📝作业题/弹性力学作业练习.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🔨Theory of Elasticity/弹性力学部分/✍️课本例题&练习/水坝应力分布.md",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/第四章 向量组的线性相关性.md",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/第二章 矩阵及其运算.md",
     "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Homework",
-    "attachments/Pasted image 20230420113745.png",
-    "attachments/Pasted image 20230420113612.png",
-    "attachments/Pasted image 20230420113439.png",
-    "attachments/Pasted image 20230420113348.png",
-    "attachments/Pasted Image 20230420111246_780.png",
-    "attachments/Pasted image 20230420111111.png",
-    "attachments/Pasted image 20230419231836.png",
-    "attachments/Binary_Creation.drawio.png",
-    "attachments/Pasted Image 20230419224709_380.png",
-    "attachments/Pasted image 20230419213600.png",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/课本例题/第二章例题.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/刚体定点运动速度加速度合成定理推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/刚体角速度多种形式表达式的推导.pdf",
-    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/自适应缓存替换ARC算法.pdf"
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/刚体角速度多种形式表达式的推导.pdf"
   ]
 }

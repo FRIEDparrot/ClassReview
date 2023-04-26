@@ -246,8 +246,15 @@
   "templater-obsidian:🗒️Templates/INSERT_BIG_BRACKETS.md": [
     {
       "modifiers": [
-        "Alt",
+        "Mod",
         "Shift"
+      ],
+      "key": "["
+    },
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
       ],
       "key": "["
     }
@@ -955,15 +962,8 @@
   "templater-obsidian:🗒️Templates/INSERT_BASIC_BIG_BRACKETS.md": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "["
-    },
-    {
-      "modifiers": [
         "Alt",
-        "Mod"
+        "Shift"
       ],
       "key": "["
     }
@@ -1065,6 +1065,23 @@
         "Shift"
       ],
       "key": "R"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_INVERSE_MATRIX.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "]"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_TRANSPOSE_MATRIX.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "]"
     }
   ]
 }

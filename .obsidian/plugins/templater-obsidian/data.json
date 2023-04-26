@@ -121,7 +121,9 @@
     "🗒️Templates/ADD_DOT_OVERSET.md",
     "🗒️Templates/ADD_DDOT_OVERSET.md",
     "🗒️Templates/INSERT_INFINITE_MATRIX.md",
-    "🗒️Templates/INSERT_TODO_DERIVATION.md"
+    "🗒️Templates/INSERT_TODO_DERIVATION.md",
+    "🗒️Templates/INSERT_INVERSE_MATRIX.md",
+    "🗒️Templates/INSERT_TRANSPOSE_MATRIX.md"
   ],
   "startup_templates": [
     ""

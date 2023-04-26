@@ -45,7 +45,8 @@ D = E * h/(1-nu^2) * [
 ];
 
 k_e = transpose(B) * D * B;
-Ke = vpa(int(int(k_e,x,[-1, 1]), y, [-1,1]), 4);  % 积分求解对应的四节点刚度矩阵
+Ke = int(int(k_e,x,[-1, 1]), y, [-1,1]);  % 积分求解对应的四节点刚度矩阵
+% 注意不能使用vpa函数, vpa函数会产生截断误差
 end
 % Ke = vpa(subs(K_e,[E,h,nu],[2e11,10,0.3]),4);
 % Test Code :  Elem401(2e11, 10, 0.3)
@@ -94,7 +95,7 @@ function Ke = Elem801(E, nu,h)
         ];
     
     ke_pre = B'*D*B;
-    Ke = vpa(h * int(int(ke_pre,x,[-1, 1]), y, [-1,1]), 4); % 积分得到刚度矩阵
+    Ke = h * int(int(ke_pre,x,[-1, 1]), y, [-1,1]); % 积分得到刚度矩阵
     clear ke_pre
 end
 ```

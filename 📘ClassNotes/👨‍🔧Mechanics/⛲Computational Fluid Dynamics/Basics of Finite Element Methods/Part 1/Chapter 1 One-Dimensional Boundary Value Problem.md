@@ -1,4 +1,4 @@
-## 1. Strong or Classical form of the 1-D boundary problem 
+\Delta ## 1. Strong or Classical form of the 1-D boundary problem 
 
 <mark style="background: transparent; color: yellow">Main constituents of a finite element method</mark> for the solution of a boundary-value problems are
 1. The variational or weak statement of the problem 
@@ -541,7 +541,7 @@ $$\Large \boxed{A_{ij} u_j^{(e)} = f_i^{(e)}}$$
 and the **Total FEM Equation** has the form of : 
 $$\Large\boxed{ A_{nm} u_m = f_n}$$
 where the $A_{nm}$ and $u_m$ is the summation of $A_{ij}^{(e)}$ and $f_i^{(e)}$ 
-with the derivation process [[📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of the Total FEM Equation.pdf]] , we can get the expression of $A_{nm}$ and $u_m$ :
+with the derivation process [[📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of the Total FEM Equation.pdf|Derivation of the Total FEM Equation.pdf]] , we can get the expression of $A_{nm}$ and $u_m$ :
 $$\boxed{A_{nm} = \sum^{E}_{e=1} \left[\Delta_{ni}^{(e)}A_{ij}^{(e)}\Delta_{jm}^{(e)}\right]}$$
 $$\boxed{f_n = \sum^{E}_{e=1}\Delta_{ni}^{(e)} f_i^{(e)}}$$
 ## 12. Boundary Condition
