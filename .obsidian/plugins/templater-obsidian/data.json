@@ -131,7 +131,8 @@
     "🗒️Templates/INSERT_SUBSET_EQUAL_SYMBOL.md",
     "🗒️Templates/INSERT_SUPSET_SYMBOL.md",
     "🗒️Templates/INSERT_SUPSET_EQUAL_SYMBOL.md",
-    "🗒️Templates/INSERT_LAMBDA_UPPERCASE.md"
+    "🗒️Templates/INSERT_LAMBDA_UPPERCASE.md",
+    "🗒️Templates/INSERT_SUM_WITHOUT_INDEX.md"
   ],
   "startup_templates": [
     ""

@@ -847,15 +847,6 @@
       "key": "="
     }
   ],
-  "templater-obsidian:🗒️Templates/INSERT_SIMILIAR_SYMBOL.md": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "S"
-    }
-  ],
   "templater-obsidian:🗒️Templates/INSERT_SPACE_IN_EQUATION.md": [
     {
       "modifiers": [
@@ -1185,6 +1176,24 @@
         "Shift"
       ],
       "key": "L"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_SIMILIAR_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "`"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_SUM_WITHOUT_INDEX.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "S"
     }
   ]
 }
