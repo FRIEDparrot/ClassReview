@@ -36,6 +36,9 @@ columns:
     skipPersist: false
     isDragDisabled: false
     csvCandidate: true
+    position: 0
+    isHidden: false
+    sortIndex: -1
     config:
       enable_media_view: true
       link_alias_enabled: true
@@ -74,6 +77,7 @@ config:
   metadata_date_format: "yyyy-MM-dd HH:mm:ss"
   enable_footer: false
   implementation: default
+  show_metadata_tags: false
 filters:
   enabled: false
   conditions:

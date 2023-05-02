@@ -14,7 +14,6 @@ using namespace std;
 // The definition of the class should be put here. 
 
 #pragma region Extend DataType
-
 #pragma region DyArray
 ///  dynamic Array
 template <typename ItemType>
