@@ -5,6 +5,30 @@
       "path": "🏚️Daily Life memo/五一待办.md"
     },
     {
+      "basename": "CFD",
+      "path": "📃Essay/CFD.md"
+    },
+    {
+      "basename": "Chapter4 Basic aspects of discretization",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Chapter4 Basic aspects of discretization.md"
+    },
+    {
+      "basename": "实验2 内置方形体的突然扩张",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Homework/实验2 内置方形体的突然扩张.md"
+    },
+    {
+      "basename": "Chapter 1 One-Dimensional Boundary Value Problem",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md"
+    },
+    {
+      "basename": "Proof of the proposition of 1-D FEM problem",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Proof of the proposition of 1-D FEM problem.pdf"
+    },
+    {
+      "basename": "第七章 图",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
+    },
+    {
       "basename": "第六章 树和二叉树",
       "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md"
     },
@@ -171,34 +195,6 @@
     {
       "basename": "平面梁四节点和八节点单元求解以及自动编号",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/平面梁四节点和八节点单元求解以及自动编号.md"
-    },
-    {
-      "basename": "第三章 势能极小原理的有限元解法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/第三章 势能极小原理的有限元解法.md"
-    },
-    {
-      "basename": "MATLAB中的队列的实现",
-      "path": "📘ClassNotes/⌨️Programming/➕Mathmatics/MATLAB/MATLAB中的队列的实现.md"
-    },
-    {
-      "basename": "第七章 图",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
-    },
-    {
-      "basename": "URA网格加密算法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/URA网格加密算法.md"
-    },
-    {
-      "basename": "内容整理",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/内容整理.md"
-    },
-    {
-      "basename": "耐高温复合材料与力学行为讲义",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为讲义.pdf"
-    },
-    {
-      "basename": "Delaunay triangulation 三角形网格自动划分算法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/Delaunay triangulation 三角形网格自动划分算法.md"
     }
   ],
   "omittedPaths": [],

@@ -24,7 +24,6 @@
   "media-extended",
   "mx-bili-plugin",
   "obsidian-sortable",
-  "table-extended",
   "obsidian-excel-to-markdown-table",
   "obsidian-latex-environments",
   "simple-embeds",
@@ -35,5 +34,6 @@
   "templater-obsidian",
   "highlightr-plugin",
   "dbfolder",
-  "obsidian-dynamic-background"
+  "obsidian-dynamic-background",
+  "table-extended"
 ]

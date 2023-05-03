@@ -1,0 +1,192 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={CFD},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{CFD}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\#include \textless{}iostream\textgreater{}}
+\NormalTok{\#include \textless{}algorithm\textgreater{}}
+\NormalTok{\#include \textless{}vector\textgreater{}}
+\NormalTok{\#include \textless{}fstream\textgreater{}}
+\NormalTok{using namespace std;}
+
+\NormalTok{int inlet\_velocity = 5;}
+
+\NormalTok{void boundary\_condition(vector\textless{}float\textgreater{}\& velocity\_vec, float length, float dx) \{}
+\NormalTok{    velocity\_vec[0] = inlet\_velocity;}
+\NormalTok{    int size = velocity\_vec.size() {-}1;}
+\NormalTok{    int x2 = length;}
+\NormalTok{    velocity\_vec[size] = velocity\_vec[size {-} 1] + (float)1/2 * (length + 3) * dx;}
+\NormalTok{\}}
+
+\NormalTok{float calcu\_err(vector\textless{}float\textgreater{} vec1, vector\textless{}float\textgreater{} vec2) \{}
+\NormalTok{    if (vec1.size() != vec2.size()) exit({-}1);}
+\NormalTok{    float sum = 0;}
+\NormalTok{    for (int i = 0; i \textless{} vec1.size(); i++) \{}
+\NormalTok{        sum +=abs(vec2[i] {-} vec1[i]);}
+\NormalTok{    \}}
+\NormalTok{    return sum;}
+\NormalTok{\}}
+
+\NormalTok{void writefile(vector\textless{}float\textgreater{} velocity, vector\textless{}float\textgreater{} error, float dx) \{}
+\NormalTok{    std::ofstream velocity\_data("velocity\_data.csv");}
+\NormalTok{    std::ofstream error\_data("error\_data.csv");}
+    
+\NormalTok{    if (!velocity\_data) \{}
+\NormalTok{        cout \textless{}\textless{} "error when opening the file" \textless{}\textless{} endl;}
+\NormalTok{        exit(0);}
+\NormalTok{    \}}
+\NormalTok{    for (int i = 0; i \textless{} velocity.size(); i++) \{}
+\NormalTok{        velocity\_data  \textless{}\textless{} i \textless{}\textless{} ","\textless{}\textless{} dx * i \textless{}\textless{} "," \textless{}\textless{} velocity[i] \textless{}\textless{} endl;}
+\NormalTok{    \}}
+\NormalTok{    for (int i = 0; i \textless{} error.size(); i++) \{}
+\NormalTok{        error\_data \textless{}\textless{} i \textless{}\textless{} "," \textless{}\textless{} error[i] \textless{}\textless{} endl;}
+\NormalTok{    \}}
+\NormalTok{    velocity\_data.close();}
+\NormalTok{    error\_data.close();}
+\NormalTok{\}}
+
+\NormalTok{int main()}
+\NormalTok{\{}
+\NormalTok{    float max\_error = 0.00001;}
+\NormalTok{    int xelem\_num = 10; }
+\NormalTok{    float length = 1; }
+    
+\NormalTok{    float dx = length / xelem\_num;}
+\NormalTok{    float error;}
+    
+\NormalTok{    vector\textless{}float\textgreater{} velocity\_vec(xelem\_num +1, 0);}
+\NormalTok{    vector\textless{}float\textgreater{} loc\_vec;}
+\NormalTok{    vector\textless{}float\textgreater{} error\_data;}
+    
+\NormalTok{    for (int i = 0; i \textless{} xelem\_num + 1; i++) loc\_vec.push\_back(i * dx);}
+    
+\NormalTok{    do\{}
+\NormalTok{        boundary\_condition(velocity\_vec,length, dx);}
+\NormalTok{        vector\textless{}float\textgreater{} new\_velocity\_vec(velocity\_vec);}
+\NormalTok{        for (int i = 1; i \textless{} xelem\_num; i++) \{}
+\NormalTok{            new\_velocity\_vec[i] = (float)1/2 * loc\_vec[i] * dx * dx }
+\NormalTok{            + (float)1/2 * (velocity\_vec[i{-}1] + velocity\_vec[i+1]) }
+\NormalTok{            {-} (float)1/8 * dx *(loc\_vec[i] * loc\_vec[i] + 5) * (velocity\_vec[i + 1] {-} velocity\_vec[i{-}1]);}
+\NormalTok{        \}}
+\NormalTok{        error = calcu\_err(velocity\_vec, new\_velocity\_vec);}
+\NormalTok{        error\_data.push\_back(error);}
+\NormalTok{        velocity\_vec = new\_velocity\_vec;}
+\NormalTok{    \}while (error \textgreater{}= max\_error);}
+    
+\NormalTok{    for (int i = 0; i \textless{} xelem\_num + 1; i++) \{}
+\NormalTok{        cout \textless{}\textless{} i \textless{}\textless{} " " \textless{}\textless{} velocity\_vec[i] \textless{}\textless{} endl;}
+\NormalTok{    \}}
+    
+\NormalTok{    vector\textless{}float\textgreater{} prof\_vec1(xelem\_num + 1,0);}
+\NormalTok{    vector\textless{}float\textgreater{} prof\_vec2(xelem\_num + 1,0);}
+\NormalTok{    for (int i = 1; i \textless{} xelem\_num; i++) \{}
+\NormalTok{        prof\_vec1[i] = (velocity\_vec[i + 1] {-} velocity\_vec[i {-} 1]) / (2 * dx);}
+\NormalTok{        prof\_vec2[i] = (velocity\_vec[i + 1] + velocity\_vec[i {-} 1] {-} 2 * velocity\_vec[i]) / (dx * dx);}
+\NormalTok{        float x = loc\_vec[i];}
+\NormalTok{        cout \textless{}\textless{} "calculated: " \textless{}\textless{} (x * x + 5) * prof\_vec1[i] {-} 2 * prof\_vec2[i] \textless{}\textless{} ";  predicted: " \textless{}\textless{} 2 * x \textless{}\textless{} endl;}
+\NormalTok{    \}}
+    
+\NormalTok{    writefile(velocity\_vec, error\_data, dx);}
+\NormalTok{    return 0;}
+\NormalTok{\}}
+\NormalTok{Copy}
+\end{Highlighting}
+\end{Shaded}
+
+
+\end{document}

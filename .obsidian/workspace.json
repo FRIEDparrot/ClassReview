@@ -4,29 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3715a49dd9a55c19",
+        "id": "8470dce5f4f0c06d",
         "type": "tabs",
         "children": [
           {
-            "id": "6cdf0e093272e14d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "8be39f5e00c1db92",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "68008faa8b56f7bb",
+            "id": "6e312e3db778e623",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -90,13 +72,20 @@
               "type": "recent-files",
               "state": {}
             }
+          },
+          {
+            "id": "8ac8022a81bd4918",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 266.5110321044922,
-    "collapsed": true
+    "width": 266.5110321044922
   },
   "right": {
     "id": "f7de553c162de521",
@@ -212,8 +201,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "68008faa8b56f7bb",
+  "active": "6e312e3db778e623",
   "lastOpenFiles": [
+    "1682644972882-download.png",
+    "📃Essay/CFD.md",
+    "📃Essay/CFD.synctex(busy)",
+    "📃Essay/CFD.synctex.gz",
+    "📃Essay/CFD.pdf",
+    "📃Essay/CFD.aux",
+    "📃Essay/CFD.log",
+    "📃Essay/CFD.tex",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Chapter4 Basic aspects of discretization.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Homework/实验2 内置方形体的突然扩张.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md",
+    "Day Planners/Day Planner-20230503.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Proof of the proposition of 1-D FEM problem.pdf",
+    "🏚️Daily Life memo/五一待办.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
+    "attachments/Pasted image 20230502201003.png",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
     "DataBase/Untitled database.md",
     "💡Inspiration/1.png",
@@ -221,7 +226,6 @@
     "🏚️Daily Life memo/SQ11 Usage tutorial.md",
     "📘ClassNotes/⌨️Programming/C++ libraries/C++ Eigen 安装.md",
     "📘ClassNotes/⌨️Programming/C++ libraries/Qt 库的安装方法以及使用.md",
-    "🏚️Daily Life memo/五一待办.md",
     "📘ClassNotes/⌨️Programming/C++ libraries/GUI 库.md",
     "📘ClassNotes/⌨️Programming/C++ libraries/GSL库.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第三章 刚体的空间运动动力学.md",
@@ -234,7 +238,6 @@
     "attachments/Pasted image 20230502105109.png",
     "Day Planners/Day Planner-20230502.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/第三章的定理证明.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/刚体空间运动部分的推导.pdf",
     "Excalidraw/第六章 树和二叉树 2023-05-01 16.09.13.md",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 七大排序算法.md",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/类的定义, Template和头文件编写典型案例.md",
@@ -244,21 +247,6 @@
     "attachments/Pasted image 20230501112316.png",
     "Excalidraw/第六章 树和二叉树 2023-05-01 10.37.27.md",
     "Excalidraw/第六章 树和二叉树 2023-05-01 10.22.53.md",
-    "Day Planners/Day Planner-20230501.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
-    "Excalidraw/第五章 运动稳定性基础 2023-04-30 16.54.05.md",
-    "Excalidraw/第五章 运动稳定性基础 2023-04-30 15.55.09.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第四章 多刚体系统动力学.md",
-    "Excalidraw/第三章 刚体的空间运动动力学 2023-04-30 15.33.37.md",
-    "Excalidraw/第三章 刚体的空间运动动力学 2023-04-30 12.45.29.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🔧Theoretical Mechanics",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/第三章的定理证明(1).pdf",
-    "📘ClassNotes/⌨️Programming/➕Mathmatics/MATLAB/Untitled",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/部分公式",
-    "1682644972882-download.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图",
-    "📘ClassNotes/👨‍🔧Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为讲义.pdf",
-    "attachments/Pasted image 20230426233925.png",
-    "attachments/Pasted image 20230426155759.png"
+    "attachments/Pasted image 20230426233925.png"
   ]
 }

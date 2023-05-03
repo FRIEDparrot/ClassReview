@@ -74,7 +74,7 @@ Now we assume $u$ to be a weak solution, Thus $u \in \delta$; consequently $u(1)
 $$\int_{0}^{1} w_{,x} u_{,x} dx = \int_{0}^{1} wl dx + w(0)h$$
 for all $w\in \mathcal{V}$, we integrate it by parts and also make use of $w(1) = 0$, then
 $$0 = \int_{0}^{1} w(u_{,xx} + l ) dx + w(0)\left[ u_{,x}(0) +  h\right]$$
-The proof of the proposition of this solution can be found in [[📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Proof of the proposition of 1-D FEM problem.pdf]]
+The proof of the proposition of this solution can be found in [[📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Proof of the proposition of 1-D FEM problem.pdf|Proof of the proposition of 1-D FEM problem.pdf]]
 
 `````ad-note
 title: 2 types of boundary conditions
