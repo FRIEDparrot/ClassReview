@@ -85,8 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.0110321044922,
-    "collapsed": true
+    "width": 559.5110321044922
   },
   "right": {
     "id": "f7de553c162de521",
@@ -205,7 +204,7 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "7e2d50a4e44d0097",
+  "active": "86820ad5b67d3064",
   "lastOpenFiles": [
     "Excalidraw/第五章 运动稳定性基础 2023-05-05 17.24.15.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
