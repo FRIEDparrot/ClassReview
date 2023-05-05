@@ -1195,5 +1195,25 @@
       ],
       "key": "S"
     }
+  ],
+  "ava:ava-complete": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "Enter"
+    }
+  ],
+  "ava:ava-generative-search": [],
+  "editor:open-link-in-new-split": [],
+  "obsidian-textgenerator-plugin:generate-text": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "Enter"
+    }
   ]
 }

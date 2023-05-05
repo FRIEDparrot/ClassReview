@@ -12,7 +12,6 @@
   "obsidian-tasks-plugin",
   "better-word-count",
   "url-into-selection",
-  "obsidian-markmind",
   "oz-image-plugin",
   "table-editor-obsidian",
   "dataview",
@@ -24,7 +23,6 @@
   "media-extended",
   "mx-bili-plugin",
   "obsidian-sortable",
-  "obsidian-excel-to-markdown-table",
   "obsidian-latex-environments",
   "simple-embeds",
   "tag-wrangler",
@@ -35,5 +33,7 @@
   "highlightr-plugin",
   "dbfolder",
   "obsidian-dynamic-background",
-  "table-extended"
+  "table-extended",
+  "obsidian-textgenerator-plugin",
+  "obsidian-markmind"
 ]

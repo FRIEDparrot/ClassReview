@@ -9026,6 +9026,7 @@ OSJ
 OvA
 OXE
 OUQQ
+OtherInfo
 Swift
 SE
 Suppported
@@ -22124,6 +22125,8 @@ eGoU
 efF
 eFMg
 ehUd
+ends
+expense
 Classification
 Clustering
 Convection
@@ -28467,6 +28470,7 @@ PliI
 Pbc
 PMj
 PKhL
+Program
 Association
 AD
 AE
@@ -35427,6 +35431,7 @@ DGZD
 DURZT
 DXx
 DXU
+Dijkstra
 dedication
 dislocation
 document
@@ -48720,6 +48725,7 @@ KqEI
 KNWa
 KkR
 KcF
+Kruskal
 Means
 Machine
 Mises
@@ -55366,6 +55372,9 @@ VdW
 VWzU
 VKL
 VuuuM
+VortexType
+VORTEX
+VortexData
 to
 tags
 this
@@ -77970,6 +77979,8 @@ hBUp
 hvYx
 hfht
 hBh
+hat
+hasWay
 Nabarro
 Navier
 Number
@@ -87811,6 +87822,8 @@ pXA
 pFJ
 pVrai
 pph
+panode
+pan
 in
 influence
 is
@@ -91185,6 +91198,9 @@ iNm
 iRN
 iCn
 ibbb
+ivex
+ilink
+initgraph
 menu
 material
 model
@@ -97632,6 +97648,8 @@ FcciH
 FRfS
 FhFn
 FocFce
+Floyd
+Floquet
 article
 applied
 and
@@ -100608,6 +100626,10 @@ akQf
 arm
 aRX
 aMU
+arcNode
+adjType
+adjMatrix
+arcNum
 General
 Governing
 GBb
@@ -103691,6 +103713,7 @@ GFx
 Gva
 GZqZ
 GTo
+GraphPractice
 number
 non
 no
@@ -106831,6 +106854,8 @@ nQoo
 nbOV
 nCS
 nejjjgccc
+nodeList
+newVec
 vault
 velocity
 vector
@@ -109922,6 +109947,12 @@ vfwRK
 vJh
 vQe
 vmPX
+vortex
+vexNum
+vexVec
+vexNode
+visited
+vexList
 url
 uniform
 unit
@@ -125965,6 +125996,9 @@ rdqN
 rKEKn
 rqmO
 rlHi
+rank
+route
+routeVec
 large
 length
 laminar
@@ -135368,6 +135402,8 @@ gbbT
 gJj
 gIX
 gnnnD
+graphType
+graph
 quantities
 qq
 qN
@@ -141490,6 +141526,7 @@ JfB
 JKX
 Jlm
 JvQPVWW
+Jordan
 yield
 yt
 yk
@@ -150985,6 +151022,8 @@ jnUh
 jpv
 jtU
 jEFCJ
+jvex
+jlink
 xK
 xH
 xtG
@@ -157367,6 +157406,7 @@ UATa
 UjK
 Urd
 Uzyy
+UDN
 zm
 zmL
 zI

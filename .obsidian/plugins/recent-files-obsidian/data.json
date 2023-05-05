@@ -1,8 +1,112 @@
 {
   "recentFiles": [
     {
+      "basename": "第五章 运动稳定性基础",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md"
+    },
+    {
+      "basename": "第五章 运动稳定性基础 2023-05-05 17.24.15",
+      "path": "Excalidraw/第五章 运动稳定性基础 2023-05-05 17.24.15.md"
+    },
+    {
+      "basename": "MindMap for Advanced Dynamics",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/MindMap for Advanced Dynamics.md"
+    },
+    {
+      "basename": "第六章 二次型",
+      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第六章 二次型.md"
+    },
+    {
       "basename": "五一待办",
       "path": "🏚️Daily Life memo/五一待办.md"
+    },
+    {
+      "basename": "第七章 图",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
+    },
+    {
+      "basename": "第一章",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第一章.md"
+    },
+    {
+      "basename": "tensor calculation",
+      "path": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/tensor calculation.md"
+    },
+    {
+      "basename": "第五章 稀疏数组和广义表",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md"
+    },
+    {
+      "basename": "类的定义, Template和头文件编写典型案例",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/类的定义, Template和头文件编写典型案例.md"
+    },
+    {
+      "basename": "Chapter1 Philosophy of Computational Fluid Dynamics",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md"
+    },
+    {
+      "basename": "MindMap for CFD",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/MindMap for CFD.md"
+    },
+    {
+      "basename": "第一章 随机事件及其概率",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md"
+    },
+    {
+      "basename": "Governing Equations of Flow",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Implements/Governing Equations of Flow.pdf"
+    },
+    {
+      "basename": "第五章 矩阵的相似变换",
+      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第五章 矩阵的相似变换.md"
+    },
+    {
+      "basename": "第四章 线性方程组解的结构",
+      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第四章 线性方程组解的结构.md"
+    },
+    {
+      "basename": "第四章 线性方程组解的结构 2023-05-04 17.19.22",
+      "path": "Excalidraw/第四章 线性方程组解的结构 2023-05-04 17.19.22.md"
+    },
+    {
+      "basename": "第一章 绪论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第一章 绪论.md"
+    },
+    {
+      "basename": "第三章 矩阵的初等变换",
+      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第三章 矩阵的初等变换.md"
+    },
+    {
+      "basename": "实验",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/实验.md"
+    },
+    {
+      "basename": "平面梁四节点和八节点单元求解以及自动编号",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Code Summary/平面梁四节点和八节点单元求解以及自动编号.md"
+    },
+    {
+      "basename": "第六章 弯曲应力",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第六章 弯曲应力.md"
+    },
+    {
+      "basename": "第五章 弯曲内力",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第五章 弯曲内力.md"
+    },
+    {
+      "basename": "第三章 剪切, 挤压",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第三章 剪切, 挤压.md"
+    },
+    {
+      "basename": "梁自动划分四节点和八节点单元网格MATLAB代码 2023-04-26 21.46.00",
+      "path": "Excalidraw/梁自动划分四节点和八节点单元网格MATLAB代码 2023-04-26 21.46.00.md"
+    },
+    {
+      "basename": "平面梁四节点和八节点单元求解 2023-04-26 22.17.24",
+      "path": "Excalidraw/平面梁四节点和八节点单元求解 2023-04-26 22.17.24.md"
+    },
+    {
+      "basename": "Ansys导出结果到文件",
+      "path": "📘ClassNotes/💻softwares/🛩️FEM/Ansys/Ansys导出结果到文件.md"
     },
     {
       "basename": "CFD",
@@ -10,23 +114,19 @@
     },
     {
       "basename": "Chapter4 Basic aspects of discretization",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Chapter4 Basic aspects of discretization.md"
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Chapter4 Basic aspects of discretization.md"
     },
     {
       "basename": "实验2 内置方形体的突然扩张",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Homework/实验2 内置方形体的突然扩张.md"
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/实验2 内置方形体的突然扩张.md"
     },
     {
       "basename": "Chapter 1 One-Dimensional Boundary Value Problem",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md"
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md"
     },
     {
       "basename": "Proof of the proposition of 1-D FEM problem",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Proof of the proposition of 1-D FEM problem.pdf"
-    },
-    {
-      "basename": "第七章 图",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Proof of the proposition of 1-D FEM problem.pdf"
     },
     {
       "basename": "第六章 树和二叉树",
@@ -62,19 +162,19 @@
     },
     {
       "basename": "第三章 刚体的空间运动动力学",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第三章 刚体的空间运动动力学.md"
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第三章 刚体的空间运动动力学.md"
     },
     {
       "basename": "第二章 刚体的空间运动学",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第二章 刚体的空间运动学.md"
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md"
     },
     {
       "basename": "第三章的定理证明",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/第三章的定理证明.pdf"
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/第三章的定理证明.pdf"
     },
     {
       "basename": "刚体空间运动部分的推导",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/刚体空间运动部分的推导.pdf"
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/刚体空间运动部分的推导.pdf"
     },
     {
       "basename": "第六章 树和二叉树 2023-05-01 16.09.13",
@@ -83,10 +183,6 @@
     {
       "basename": "复习 七大排序算法",
       "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 七大排序算法.md"
-    },
-    {
-      "basename": "类的定义, Template和头文件编写典型案例",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/类的定义, Template和头文件编写典型案例.md"
     },
     {
       "basename": "第六章 树和二叉树 2023-05-01 12.21.03",
@@ -103,98 +199,6 @@
     {
       "basename": "第六章 树和二叉树 2023-05-01 10.37.27",
       "path": "Excalidraw/第六章 树和二叉树 2023-05-01 10.37.27.md"
-    },
-    {
-      "basename": "第六章 树和二叉树 2023-05-01 10.22.53",
-      "path": "Excalidraw/第六章 树和二叉树 2023-05-01 10.22.53.md"
-    },
-    {
-      "basename": "第五章 运动稳定性基础",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第五章 运动稳定性基础.md"
-    },
-    {
-      "basename": "第五章 运动稳定性基础 2023-04-30 16.54.05",
-      "path": "Excalidraw/第五章 运动稳定性基础 2023-04-30 16.54.05.md"
-    },
-    {
-      "basename": "第五章 运动稳定性基础 2023-04-30 15.55.09",
-      "path": "Excalidraw/第五章 运动稳定性基础 2023-04-30 15.55.09.md"
-    },
-    {
-      "basename": "第四章 多刚体系统动力学",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第四章 多刚体系统动力学.md"
-    },
-    {
-      "basename": "第三章 刚体的空间运动动力学 2023-04-30 15.33.37",
-      "path": "Excalidraw/第三章 刚体的空间运动动力学 2023-04-30 15.33.37.md"
-    },
-    {
-      "basename": "第三章 刚体的空间运动动力学 2023-04-30 12.45.29",
-      "path": "Excalidraw/第三章 刚体的空间运动动力学 2023-04-30 12.45.29.md"
-    },
-    {
-      "basename": "第一章 牛顿第二定律",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🔧Theoretical Mechanics/第一章 牛顿第二定律.md"
-    },
-    {
-      "basename": "第三章 刚体的空间运动动力学 2023-04-30 10.47.42",
-      "path": "Excalidraw/第三章 刚体的空间运动动力学 2023-04-30 10.47.42.md"
-    },
-    {
-      "basename": "matlab中布尔矩阵的创建",
-      "path": "📘ClassNotes/⌨️Programming/➕Mathmatics/MATLAB/matlab中布尔矩阵的创建.md"
-    },
-    {
-      "basename": "⌚Todo List",
-      "path": "🏚️Daily Life memo/⌚Todo List.md"
-    },
-    {
-      "basename": "第一章 杆件结构",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md"
-    },
-    {
-      "basename": "结构有限元分析思维导图",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md"
-    },
-    {
-      "basename": "第一章 杆件结构 2023-03-08 09.51.32",
-      "path": "Excalidraw/第一章 杆件结构 2023-03-08 09.51.32.md"
-    },
-    {
-      "basename": "第二章 平面问题",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md"
-    },
-    {
-      "basename": "第五章 薄板的弯曲",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第五章 薄板的弯曲.md"
-    },
-    {
-      "basename": "四节点和八节点单元的单元刚度矩阵计算MATLAB",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/四节点和八节点单元的单元刚度矩阵计算MATLAB.md"
-    },
-    {
-      "basename": "常见形状的惯性主轴",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/部分公式/常见形状的惯性主轴.md"
-    },
-    {
-      "basename": "INSERT_SUM_WITHOUT_INDEX",
-      "path": "🗒️Templates/INSERT_SUM_WITHOUT_INDEX.md"
-    },
-    {
-      "basename": "常见形状的惯性主轴 2023-04-28 14.49.06",
-      "path": "Excalidraw/常见形状的惯性主轴 2023-04-28 14.49.06.md"
-    },
-    {
-      "basename": "常见形状的惯性主轴 2023-04-28 14.46.26",
-      "path": "Excalidraw/常见形状的惯性主轴 2023-04-28 14.46.26.md"
-    },
-    {
-      "basename": "第六章 动力学系统的数值求解方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第六章 动力学系统的数值求解方法.md"
-    },
-    {
-      "basename": "平面梁四节点和八节点单元求解以及自动编号",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕸️FEM Analysis/Code Summary/平面梁四节点和八节点单元求解以及自动编号.md"
     }
   ],
   "omittedPaths": [],
