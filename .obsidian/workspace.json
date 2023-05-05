@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8470dce5f4f0c06d",
+        "id": "3c547bd35f218d5d",
         "type": "tabs",
         "children": [
           {
-            "id": "6e312e3db778e623",
+            "id": "7e2d50a4e44d0097",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🏚️Daily Life memo/五一待办.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 266.5110321044922
+    "width": 255.0110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -101,7 +102,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🏚️Daily Life memo/五一待办.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md"
               }
             }
           },
@@ -130,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🏚️Daily Life memo/五一待办.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🏚️Daily Life memo/五一待办.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +178,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -198,55 +200,57 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
       "dbfolder:Create a new database table": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-textgenerator-plugin:Generate Text!": false,
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "6e312e3db778e623",
+  "active": "7e2d50a4e44d0097",
   "lastOpenFiles": [
-    "1682644972882-download.png",
-    "📃Essay/CFD.md",
-    "📃Essay/CFD.synctex(busy)",
-    "📃Essay/CFD.synctex.gz",
-    "📃Essay/CFD.pdf",
-    "📃Essay/CFD.aux",
-    "📃Essay/CFD.log",
-    "📃Essay/CFD.tex",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Chapter4 Basic aspects of discretization.md",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Homework/实验2 内置方形体的突然扩张.md",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md",
-    "Day Planners/Day Planner-20230503.md",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Proof of the proposition of 1-D FEM problem.pdf",
+    "Excalidraw/第五章 运动稳定性基础 2023-05-05 17.24.15.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/第五章定理证明.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/MindMap for Advanced Dynamics.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第六章 二次型.md",
     "🏚️Daily Life memo/五一待办.md",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第一章.md",
+    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/tensor calculation.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls",
+    "📘ClassNotes/👨‍🔧Mechanics/Untitled.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/类的定义, Template和头文件编写典型案例.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/MindMap for CFD.md",
+    "Day Planners/Day Planner-20230505.md",
+    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Homework/Untitled mindmap.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Implements/Governing Equations of Flow.pdf",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第五章 矩阵的相似变换.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/矩阵求逆的C++求解.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第四章 线性方程组解的结构.md",
+    "Excalidraw/第四章 线性方程组解的结构 2023-05-04 17.19.22.md",
+    "Excalidraw/第四章 线性方程组解的结构 2023-05-04 17.01.48.md",
+    "textgenerator/prompts/huggingface/summarizeBART.md",
+    "textgenerator/prompts/huggingface/completeTextBloom.md",
+    "textgenerator/prompts/huggingface/classify-bart-large-mnli.md",
+    "textgenerator/prompts/huggingface",
+    "textgenerator/prompts/dalle-2/artSynthwave.md",
+    "textgenerator/prompts/dalle-2",
+    "textgenerator/prompts/default",
+    "1682644972882-download.png",
     "attachments/Pasted image 20230502201003.png",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
-    "DataBase/Untitled database.md",
     "💡Inspiration/1.png",
-    "🏚️Daily Life memo",
-    "🏚️Daily Life memo/SQ11 Usage tutorial.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/C++ Eigen 安装.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Qt 库的安装方法以及使用.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/GUI 库.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/GSL库.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第三章 刚体的空间运动动力学.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
     "attachments/Pasted image 20230502121431.png",
     "attachments/Pasted image 20230502121342.png",
     "attachments/Pasted image 20230502121235.png",
-    "📘ClassNotes/⌨️Programming/C++ libraries",
     "attachments/Pasted image 20230502105217.png",
     "attachments/Pasted image 20230502105109.png",
-    "Day Planners/Day Planner-20230502.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Advanced Dynamics/补充/第三章的定理证明.pdf",
-    "Excalidraw/第六章 树和二叉树 2023-05-01 16.09.13.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 七大排序算法.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/类的定义, Template和头文件编写典型案例.md",
-    "Excalidraw/第六章 树和二叉树 2023-05-01 12.21.03.md",
-    "Excalidraw/第六章 树和二叉树 2023-05-01 11.32.50.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 树的基本知识.md",
     "attachments/Pasted image 20230501112316.png",
-    "Excalidraw/第六章 树和二叉树 2023-05-01 10.37.27.md",
-    "Excalidraw/第六章 树和二叉树 2023-05-01 10.22.53.md",
     "attachments/Pasted image 20230426233925.png"
   ]
 }
