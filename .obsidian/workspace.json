@@ -4,22 +4,57 @@
     "type": "split",
     "children": [
       {
-        "id": "3c547bd35f218d5d",
+        "id": "b839b64784739a25",
         "type": "tabs",
         "children": [
           {
-            "id": "7e2d50a4e44d0097",
+            "id": "6994827ede202677",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "8e4bd0358f7a24ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b3a4fc990e835271",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "167b9bc7b53cb051",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "attachments/Reverse_Poland_Expression.jpg"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +120,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 559.5110321044922
+    "width": 276.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -101,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md"
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
               }
             }
           },
@@ -130,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,8 +213,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "horizontal",
@@ -204,15 +239,29 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "86820ad5b67d3064",
+  "active": "8e4bd0358f7a24ab",
   "lastOpenFiles": [
-    "Excalidraw/第五章 运动稳定性基础 2023-05-05 17.24.15.md",
+    "attachments/Reverse_Poland_Expression.jpg",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 树的基本知识.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md",
+    "🏚️Daily Life memo/待办事项.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/MindMap for CFD.md",
+    "Day Planners/Day Planner-20230507.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivations of the Stiffness Matrix in FEM.pdf",
+    "1683363677036-1683358340597-download.png",
+    "1683358340597-download.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter3 Mathematical behavior of partial differential equations.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter2 Derivation of the Governing Equations.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
+    "Day Planners/Day Planner-20230506.md",
+    "Excalidraw/第五章 运动稳定性基础 2023-05-05 17.24.15.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/第五章定理证明.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/MindMap for Advanced Dynamics.md",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/第六章 二次型.md",
-    "🏚️Daily Life memo/五一待办.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第一章.md",
     "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/tensor calculation.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls",
@@ -223,33 +272,19 @@
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/类的定义, Template和头文件编写典型案例.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/MindMap for CFD.md",
     "Day Planners/Day Planner-20230505.md",
     "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Homework/Untitled mindmap.md",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Implements/Governing Equations of Flow.pdf",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/第五章 矩阵的相似变换.md",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/矩阵求逆的C++求解.md",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/第四章 线性方程组解的结构.md",
-    "Excalidraw/第四章 线性方程组解的结构 2023-05-04 17.19.22.md",
-    "Excalidraw/第四章 线性方程组解的结构 2023-05-04 17.01.48.md",
-    "textgenerator/prompts/huggingface/summarizeBART.md",
-    "textgenerator/prompts/huggingface/completeTextBloom.md",
-    "textgenerator/prompts/huggingface/classify-bart-large-mnli.md",
     "textgenerator/prompts/huggingface",
-    "textgenerator/prompts/dalle-2/artSynthwave.md",
     "textgenerator/prompts/dalle-2",
-    "textgenerator/prompts/default",
     "1682644972882-download.png",
     "attachments/Pasted image 20230502201003.png",
     "💡Inspiration/1.png",
     "attachments/Pasted image 20230502121431.png",
     "attachments/Pasted image 20230502121342.png",
     "attachments/Pasted image 20230502121235.png",
-    "attachments/Pasted image 20230502105217.png",
-    "attachments/Pasted image 20230502105109.png",
-    "attachments/Pasted image 20230501112316.png",
-    "attachments/Pasted image 20230426233925.png"
+    "attachments/Pasted image 20230502105217.png"
   ]
 }

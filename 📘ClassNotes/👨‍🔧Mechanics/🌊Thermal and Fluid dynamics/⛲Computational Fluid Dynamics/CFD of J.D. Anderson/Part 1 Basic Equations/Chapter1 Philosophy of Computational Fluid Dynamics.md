@@ -63,15 +63,13 @@ the $q$ should be fixed as $\dot{q}$
 
 ##### 3) Basic Steps for CFD analysis
 firstly, we discretize the integral computation in the domain of the governing equation 
-
-Steps: 
+Steps:
 ```mermaid 
 graph TB
 A[Discretization domain] -->  B
 B[discretize equation ] --> C 
 C[Solving the algebraic equation ] --> D[Analyzing numerical results] 
 ```
-
 Basic computational method for the analysis of the Fluid Dynamics 
 
 | Method | Whole name               | Introduction                                                                            | Basic solving Method                                                                                                                                                                                                             |
@@ -118,14 +116,12 @@ Road map of three basic finite method
 
 in this book we will not discuss finite-volume method or finite-element methods which have been in widespread use in computational mechanics. 
 
-
 ### 1. The Finite Difference Method
 As is frequently done in CFD, the numerical calculations are carried out in a transformed computational space which has the <mark style="background: transparent; color: yellow">uniform spacing in the transformed independent variables</mark>. but which correspond to nonuniform spacing in the transformed independent variables in the physical plane.
 
 note the recent CFD has focused on unstructured grids. 
 The analysis of the grids are as the following process 
 ![[Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-08 12.39.06|200]]
-
 
 The grid points are identified by index $i,j$ runs in $x,y$ direction 
 

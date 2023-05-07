@@ -1,6 +1,54 @@
 {
   "recentFiles": [
     {
+      "basename": "第七章 图",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
+    },
+    {
+      "basename": "Reverse_Poland_Expression",
+      "path": "attachments/Reverse_Poland_Expression.jpg"
+    },
+    {
+      "basename": "第三章 栈和队列的链式存储",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md"
+    },
+    {
+      "basename": "第六章 树和二叉树",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md"
+    },
+    {
+      "basename": "复习 树的基本知识",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 树的基本知识.md"
+    },
+    {
+      "basename": "Chapter 1 One-Dimensional Boundary Value Problem",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md"
+    },
+    {
+      "basename": "待办事项",
+      "path": "🏚️Daily Life memo/待办事项.md"
+    },
+    {
+      "basename": "MindMap for CFD",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/MindMap for CFD.md"
+    },
+    {
+      "basename": "Derivations of the Stiffness Matrix in FEM",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivations of the Stiffness Matrix in FEM.pdf"
+    },
+    {
+      "basename": "Chapter3 Mathematical behavior of partial differential equations",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter3 Mathematical behavior of partial differential equations.md"
+    },
+    {
+      "basename": "Chapter2 Derivation of the Governing Equations",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter2 Derivation of the Governing Equations.md"
+    },
+    {
+      "basename": "Chapter1 Philosophy of Computational Fluid Dynamics",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md"
+    },
+    {
       "basename": "第五章 运动稳定性基础",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md"
     },
@@ -17,14 +65,6 @@
       "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第六章 二次型.md"
     },
     {
-      "basename": "五一待办",
-      "path": "🏚️Daily Life memo/五一待办.md"
-    },
-    {
-      "basename": "第七章 图",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
-    },
-    {
       "basename": "第一章",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第一章.md"
     },
@@ -39,14 +79,6 @@
     {
       "basename": "类的定义, Template和头文件编写典型案例",
       "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/类的定义, Template和头文件编写典型案例.md"
-    },
-    {
-      "basename": "Chapter1 Philosophy of Computational Fluid Dynamics",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md"
-    },
-    {
-      "basename": "MindMap for CFD",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/MindMap for CFD.md"
     },
     {
       "basename": "第一章 随机事件及其概率",
@@ -121,16 +153,8 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/实验2 内置方形体的突然扩张.md"
     },
     {
-      "basename": "Chapter 1 One-Dimensional Boundary Value Problem",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md"
-    },
-    {
       "basename": "Proof of the proposition of 1-D FEM problem",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Proof of the proposition of 1-D FEM problem.pdf"
-    },
-    {
-      "basename": "第六章 树和二叉树",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md"
     },
     {
       "basename": "Untitled database",
@@ -175,30 +199,6 @@
     {
       "basename": "刚体空间运动部分的推导",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/刚体空间运动部分的推导.pdf"
-    },
-    {
-      "basename": "第六章 树和二叉树 2023-05-01 16.09.13",
-      "path": "Excalidraw/第六章 树和二叉树 2023-05-01 16.09.13.md"
-    },
-    {
-      "basename": "复习 七大排序算法",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 七大排序算法.md"
-    },
-    {
-      "basename": "第六章 树和二叉树 2023-05-01 12.21.03",
-      "path": "Excalidraw/第六章 树和二叉树 2023-05-01 12.21.03.md"
-    },
-    {
-      "basename": "第六章 树和二叉树 2023-05-01 11.32.50",
-      "path": "Excalidraw/第六章 树和二叉树 2023-05-01 11.32.50.md"
-    },
-    {
-      "basename": "复习 树的基本知识",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 树的基本知识.md"
-    },
-    {
-      "basename": "第六章 树和二叉树 2023-05-01 10.37.27",
-      "path": "Excalidraw/第六章 树和二叉树 2023-05-01 10.37.27.md"
     }
   ],
   "omittedPaths": [],

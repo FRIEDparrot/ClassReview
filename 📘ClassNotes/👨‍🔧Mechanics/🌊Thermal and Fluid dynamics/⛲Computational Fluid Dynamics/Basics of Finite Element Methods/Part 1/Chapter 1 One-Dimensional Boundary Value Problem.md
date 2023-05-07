@@ -1,11 +1,10 @@
-\Delta ## 1. Strong or Classical form of the 1-D boundary problem 
+## 1. Strong or Classical form of the 1-D boundary problem 
 
 <mark style="background: transparent; color: yellow">Main constituents of a finite element method</mark> for the solution of a boundary-value problems are
 1. The variational or weak statement of the problem 
 2. <mark style="background: transparent; color: yellow">approximate solution of the variational equations</mark> through the use of "Finite Element Method". 
 
 Firstly we suppose we want to solute the following differential equations as : 
-
 $$u_{,xx} + l = 0\tag{1.1.1}$$
 This equation is the governing equation of the ==transverse displacement== of a string in tension. And this equation also can be considered as governing equation for  ==longitudinal displacement== of an elastic rod. 
 
@@ -24,7 +23,7 @@ u(1) = q  \\
 \end{matrix}$$
 In this condition, this type of boundary conditions lead to the so-called ***Two Point Boundary Value Problems*** 
 
-Hence the strong form of the boundary value can be written as : 
+Hence the <mark style="background: transparent; color: yellow">strong form</mark> of the boundary value can be written as : 
 $$(S)\quad \begin{cases}
 \text{Given $l$ : $\bar{\Omega} \rightarrow R$ and constants $q$ and $h$, and then find $u : \bar{\Omega}\rightarrow  R$, such that :  }\\
 u_{, xx}(x) + l(x) = 0 \qquad \text{on } \Omega \\
@@ -40,7 +39,7 @@ However , We are interested in developing schemes for obtaining approximate solu
 ## 2. Weak or Variational Form of the Problem 
 To define the weak, variational, counterpart of $(S)$, we need to characterize **two classes of functions**. 
 1. The trail solutions (candidate solutions): 
-In the solution of this problem, we require the solution to satisfy the boundary condition $u(1) = q$ , while <u>the other boundary condition will not be required in the definition</u>. Furthermore, for the solution make sense, we should require  that the <u>derivates of the trail solutions be squared-integrable</u>, which is, for a trial solution $u$, we have :
+In the solution of this problem, we require the solution to <u>satisfy the boundary condition</u> $u(1) = q$ , while <u>the other boundary condition will not be required in the definition</u>. Furthermore, for the solution make sense, we should require that the <u>derivates of the trail solutions be squared-integrable</u>, which is, for a trial solution $u$, we have :
 $$\boxed{\int_{0}^{1} (u_{,x})^2 dx < \infty \tag{1.3.1}}$$
 `````ad-note
 title: H1 function
@@ -80,7 +79,7 @@ The proof of the proposition of this solution can be found in [[📘ClassNotes/�
 title: 2 types of boundary conditions
 collapse: close
 
-In the problem above, the boudnary condition is not mentioned explicitly, this type boundary conditions are referred as ***Natural Boundary Conditions***. The trail solutions are explicitly required to satisfy $u(1) = q$, This type of boundary conditions are called essential boundary conditions. 
+In the problem above, the boudnary condition is not mentioned explicitly, this type boundary conditions are referred as ***Natural Boundary Conditions***. The trail solutions are explicitly required to satisfy $u(1) = q$, This type of boundary conditions are called ***essential boundary conditions***. 
 
 $\space$
 
@@ -180,7 +179,7 @@ $$u^h = \sum^{n}_{A=1} d_A N_A + q^hN_{n+1}$$
 we wrote $d_B N_B$ in the derivation for the distinction of different functions 
 `````
 
-using the derivation process [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivations of the Stiffness Matrix in FEM.pdf]]
+using the derivation process [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivations of the Stiffness Matrix in FEM.pdf|Derivations of the Stiffness Matrix in FEM.pdf]]
 
 we may state the matrix equivalent of the Galerkin problem as : 
 $$\Large (M) \begin{cases}
@@ -189,7 +188,7 @@ Kd = F
 \end{cases}$$
 if we assume the inverse of $K$ exists and we have the solution :
 $$d = K^{-1} F$$
-where
+where 
 $$K = [K_{AB}] = a(N_A,N_B)$$
 $$F_A = (N_A,l) + N_A(0) h - a(N_A,N_{n+1})q$$
 then the solution of the Galerkin Equation can be obtained at any point $x\in \Omega$ by equation $(1.6.6)$ as above.
@@ -262,9 +261,9 @@ $$K = 2\left[\begin{matrix}
 1 & -1 \\ 
 -1 & 2
 \end{matrix}\right]$$
-with the derivation process in the [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Compare of 2D  exact solution and numerical solution.pdf]] we know that 
+with the derivation process in the [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Compare of 2D  exact solution and numerical solution.pdf|Compare of 2D  exact solution and numerical solution.pdf]] we know that 
 
-in the case of $l(x) = 0,l(x) = p,l(x) =px$, the solutions can all derived to be the same. 
+in the case of $l(x) = 0,l(x) = p,l(x) =px$, the solutions on the nodes can all derived to be the same. 
 
 Also note that the $W^h$ is a continuous function and the derivation of it is Piecewise continuous. (not continuous at the boundary of each element).
 
@@ -300,7 +299,7 @@ K_{21} & K_{22} & K_{23} & 0 & ....\\
 \end{matrix}\right]$$
 
 **Theorem** : The $n\times  n$ matrix $K$ is <mark style="background: transparent; color: yellow">positive definite</mark>.
-[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Proof of the positive definite of the Stiffness Matrix.pdf]]
+[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Proof of the positive definite of the Stiffness Matrix.pdf|Proof of the positive definite of the Stiffness Matrix.pdf]]
 
 ## 7. Mathematical Analysis 
 We let the $\delta(x) = \delta (x-y)$ denote the ***Dirac Delta function***, which is not a function in the classical sense but rather an<mark style="background: transparent; color: yellow"> operator defined by its action on the continuous functions</mark>. We let $w$ be continuous on $[0,1]$, then we have : 
@@ -317,7 +316,6 @@ g_{,x}(0) = 0;
 The problem may be solved by way of formal calculation with **distribution of generalized functions** such as $\delta_y$ we note that the formal integral of the $\delta_y$ is ***Heaviside function***, which is shown in the fig below : 
 
 ![[Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 09.18.21|550]]
-
 Then to solve the Green function problem, we integrate the $g_{,xx} + \delta_y = 0$ twice, then 
 $$\begin{matrix}
 g_{,x} + H_y = c_1 \\
