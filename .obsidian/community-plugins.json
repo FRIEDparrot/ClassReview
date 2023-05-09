@@ -32,8 +32,8 @@
   "templater-obsidian",
   "highlightr-plugin",
   "dbfolder",
-  "obsidian-dynamic-background",
   "table-extended",
   "obsidian-textgenerator-plugin",
-  "obsidian-markmind"
+  "obsidian-markmind",
+  "obsidian-dynamic-background"
 ]

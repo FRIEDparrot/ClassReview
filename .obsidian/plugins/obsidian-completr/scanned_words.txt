@@ -2931,6 +2931,7 @@ BMSZ
 BBW
 BBf
 BvFH
+BUUU
 Ramberg
 Reynolds
 RANS
@@ -6001,6 +6002,8 @@ RNV
 RYv
 RTN
 RwJ
+Recently
+Rcache
 Osgood
 OPTIONS
 Obsidian
@@ -9031,6 +9034,7 @@ OUQQ
 OtherInfo
 Opxq
 OHQ
+OKHH
 Swift
 SE
 Suppported
@@ -12311,6 +12315,7 @@ SNqk
 SCD
 SUM
 SVVv
+Subtract
 Ludwik
 Lame
 Logistic
@@ -15475,6 +15480,10 @@ Lbu
 LnS
 LMgw
 LDKh
+LRU
+Least
+LRUcache
+LFUcache
 constitutive
 conditional
 curly
@@ -18786,6 +18795,8 @@ cXX
 cJhl
 cOJ
 cSq
+cache
+cur
 equatiion
 equations
 excalidraw
@@ -25197,6 +25208,8 @@ CsK
 Ckc
 CZk
 Cwi
+Capacity
+CacheList
 Prediction
 Peierls
 Prandtl
@@ -32149,6 +32162,9 @@ Aqzw
 AIZH
 AiS
 Adiabatic
+ARCcacheHeader
+ARCcache
+ARCCACHEHEADER
 Deviation
 Drawing
 Dirichlet
@@ -35438,6 +35454,10 @@ DURZT
 DXx
 DXU
 Dijkstra
+DeleteTail
+DetachNode
+Detach
+Duffing
 dedication
 dislocation
 document
@@ -38932,6 +38952,7 @@ dXg
 dFr
 dyob
 dQQj
+downsampling
 Exper
 EXCALIDRAW
 EF
@@ -52159,6 +52180,7 @@ MCPs
 MVr
 MRf
 MMMy
+MaU
 Vector
 VIEW
 VpI
@@ -58808,6 +58830,8 @@ tfF
 tWXLRu
 ttw
 tmPp
+tailvex
+tailevex
 write
 with
 widely
@@ -68416,6 +68440,11 @@ sakn
 scf
 srrB
 specification
+subtract
+stemming
+stopword
+superharmonic
+subharmonic
 brackets
 bcc
 by
@@ -78000,6 +78029,7 @@ hfht
 hBh
 hat
 hasWay
+headvex
 Nabarro
 Navier
 Number
@@ -81183,6 +81213,7 @@ NvT
 NbJ
 NExT
 Newman
+NLTK
 Tresca
 Try
 The
@@ -84468,6 +84499,7 @@ TcHs
 Too
 TXg
 Twj
+Transfrom
 plugin
 parsed
 performance
@@ -87844,6 +87876,8 @@ pVrai
 pph
 panode
 pan
+prev
+putting
 in
 influence
 is
@@ -91222,6 +91256,7 @@ ivex
 ilink
 initgraph
 influences
+insert
 menu
 material
 model
@@ -97672,6 +97707,8 @@ FhFn
 FocFce
 Floyd
 Floquet
+Fcache
+FRUfunc
 article
 applied
 and
@@ -103736,6 +103773,7 @@ Gva
 GZqZ
 GTo
 GraphPractice
+GoEDD
 number
 non
 no
@@ -106879,6 +106917,7 @@ nejjjgccc
 nodeList
 newVec
 ntMDw
+nothing
 vault
 velocity
 vector
@@ -109976,6 +110015,7 @@ vexVec
 vexNode
 visited
 vexList
+vortexType
 url
 uniform
 unit
@@ -113081,6 +113121,7 @@ uZMYi
 ugj
 uHq
 udGr
+upsampling
 Quotation
 Qp
 QC
@@ -119442,6 +119483,7 @@ IZbr
 IDG
 IpZ
 IIIW
+Init
 kinematic
 kinetic
 kernal
@@ -126024,6 +126066,11 @@ rlHi
 rank
 route
 routeVec
+runtime
+remove
+recently
+reinit
+resonance
 large
 length
 laminar
@@ -135431,6 +135478,7 @@ gnnnD
 graphType
 graph
 gnZi
+ghost
 quantities
 qq
 qN
@@ -163596,6 +163644,7 @@ ZwT
 ZsVO
 ZbD
 Zca
+Zkq
 YB
 YY
 Yj

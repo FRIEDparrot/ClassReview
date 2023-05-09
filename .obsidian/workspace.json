@@ -4,57 +4,43 @@
     "type": "split",
     "children": [
       {
-        "id": "b839b64784739a25",
+        "id": "9a4b188d11c8e44b",
         "type": "tabs",
         "children": [
           {
-            "id": "6994827ede202677",
+            "id": "20682f2766e5a58c",
+            "type": "leaf",
+            "state": {
+              "type": "mindmapview",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/MindMap for CFD.md"
+              }
+            }
+          },
+          {
+            "id": "b0d0ed6626abaf0f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8e4bd0358f7a24ab",
+            "id": "86769e7032978831",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "release-notes",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b3a4fc990e835271",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "167b9bc7b53cb051",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "attachments/Reverse_Poland_Expression.jpg"
+                "currentVersion": "1.2.8"
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -120,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5110321044922,
-    "collapsed": true
+    "width": 291.5110321044922
   },
   "right": {
     "id": "f7de553c162de521",
@@ -137,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md"
               }
             }
           },
@@ -166,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -239,52 +224,53 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "8e4bd0358f7a24ab",
+  "active": "86769e7032978831",
   "lastOpenFiles": [
-    "attachments/Reverse_Poland_Expression.jpg",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
+    "Day Planners/Day Planner-20230510.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/MindMap for CFD.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第二章、流固耦合中的基本解题方法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Introduction.md",
+    "Excalidraw/第二章、流固耦合中的基本解题方法 2023-05-09 15.10.00.md",
+    "1683358340597-download.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第一章 绪论.md",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 树的基本知识.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md",
+    "attachments/Pasted image 20230509111450.png",
+    "Excalidraw/第七章 图 2023-05-09 11.00.45.md",
+    "Excalidraw/第七章 图 2023-05-09 10.38.24.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter2 Formulation of 2 and 3D Boundary Value Problems.md",
     "🏚️Daily Life memo/待办事项.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/MindMap for CFD.md",
-    "Day Planners/Day Planner-20230507.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of the weak form of 2D Ellipse Boundary Problem.pdf",
+    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/基于稀疏矩阵算法实现文本的搜索引擎.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/~$矩阵方法的文本搜索引擎.docx",
+    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/稀疏矩阵方法的文本搜索引擎.docx",
+    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/作业2源码.zip",
+    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/nzp3DE5.tmp",
+    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/数据结构实验二2020303828薛茵午.docx",
+    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/作业和源码.zip",
+    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/自适应缓存替换ARC算法.pdf",
+    "Day Planners/Day Planner-20230509.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/判断字母.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/C++指定目录下的文件读取.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/文件操作.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
+    "📘ClassNotes/⌨️Programming/C++ libraries/C++ Eigen 安装.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md",
+    "❔LeeCode Problems/杂务.md",
+    "Day Planners/Day Planner-20230508.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/ARC缓存算法.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md",
+    "attachments/Reverse_Poland_Expression.jpg",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
+    "attachments/Pasted image 20230507215152.png",
+    "attachments/Pasted image 20230507194830.png",
+    "attachments/Pasted image 20230507194622.png",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 树的基本知识.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivations of the Stiffness Matrix in FEM.pdf",
     "1683363677036-1683358340597-download.png",
-    "1683358340597-download.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter3 Mathematical behavior of partial differential equations.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter2 Derivation of the Governing Equations.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
-    "Day Planners/Day Planner-20230506.md",
-    "Excalidraw/第五章 运动稳定性基础 2023-05-05 17.24.15.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/第五章定理证明.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/MindMap for Advanced Dynamics.md",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/第六章 二次型.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第一章.md",
-    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/tensor calculation.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls",
-    "📘ClassNotes/👨‍🔧Mechanics/Untitled.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/类的定义, Template和头文件编写典型案例.md",
-    "Day Planners/Day Planner-20230505.md",
-    "📘ClassNotes/👨‍🔧Mechanics/⛲Computational Fluid Dynamics/Homework/Untitled mindmap.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Implements/Governing Equations of Flow.pdf",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/第五章 矩阵的相似变换.md",
-    "textgenerator/prompts/huggingface",
-    "textgenerator/prompts/dalle-2",
     "1682644972882-download.png",
     "attachments/Pasted image 20230502201003.png",
-    "💡Inspiration/1.png",
-    "attachments/Pasted image 20230502121431.png",
-    "attachments/Pasted image 20230502121342.png",
-    "attachments/Pasted image 20230502121235.png",
-    "attachments/Pasted image 20230502105217.png"
+    "💡Inspiration/1.png"
   ]
 }
