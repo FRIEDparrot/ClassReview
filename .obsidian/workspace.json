@@ -4,43 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "9a4b188d11c8e44b",
+        "id": "21c5632ff844fe25",
         "type": "tabs",
         "children": [
           {
-            "id": "20682f2766e5a58c",
-            "type": "leaf",
-            "state": {
-              "type": "mindmapview",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/MindMap for CFD.md"
-              }
-            }
-          },
-          {
-            "id": "b0d0ed6626abaf0f",
+            "id": "78bed09016191bbb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "86769e7032978831",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.2.8"
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 291.5110321044922
+    "width": 273.5110321044922
   },
   "right": {
     "id": "f7de553c162de521",
@@ -122,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md"
               }
             }
           },
@@ -151,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,15 +162,7 @@
             }
           },
           {
-            "id": "bb12604b600853fa",
-            "type": "leaf",
-            "state": {
-              "type": "timeline",
-              "state": {}
-            }
-          },
-          {
-            "id": "fe9af49f8c7522fc",
+            "id": "fc126ed021ecee63",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -208,7 +179,6 @@
   "left-ribbon": {
     "hiddenItems": {
       "graph:Open graph view": false,
-      "switcher:Open quick switcher": false,
       "daily-notes:Open today's daily note": false,
       "command-palette:Open command palette": false,
       "audio-recorder:Start/stop recording": false,
@@ -216,31 +186,48 @@
       "workspaces:Manage workspace layouts": false,
       "random-note:Open random note": false,
       "zk-prefixer:Create new unique note": false,
+      "switcher:Open quick switcher": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
-      "dbfolder:Create a new database table": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
+      "dbfolder:Create a new database table": false
     }
   },
-  "active": "86769e7032978831",
+  "active": "86820ad5b67d3064",
   "lastOpenFiles": [
-    "Day Planners/Day Planner-20230510.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/MindMap for CFD.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第二章、流固耦合中的基本解题方法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Introduction.md",
-    "Excalidraw/第二章、流固耦合中的基本解题方法 2023-05-09 15.10.00.md",
-    "1683358340597-download.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第一章 绪论.md",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
-    "attachments/Pasted image 20230509111450.png",
-    "Excalidraw/第七章 图 2023-05-09 11.00.45.md",
-    "Excalidraw/第七章 图 2023-05-09 10.38.24.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter2 Formulation of 2 and 3D Boundary Value Problems.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
+    "💡Inspiration/2 - Copy.png",
+    "💡Inspiration/2.png",
+    "💡Inspiration/4.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md",
+    "Excalidraw/第七章 图 2023-05-11 17.32.33.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第二章、流固耦合中的基本解题方法.md",
     "🏚️Daily Life memo/待办事项.md",
+    "❔LeeCode Problems/杂务.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/类的定义, Template和头文件编写典型案例.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/C++预置数据结构和用法.md",
+    "❔LeeCode Problems/二叉树两数之和.md",
+    "Excalidraw/第七章 图 2023-05-11 08.26.38.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/MindMap for CFD.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/预备知识  张量分析初步.md",
+    "Excalidraw/张量分析初步 2023-05-10 10.37.52.md",
+    "Excalidraw/预备知识  张量分析初步 2023-05-10 11.02.55.md",
+    "attachments/Pasted Image 20230510110257_993.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第一章.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第三章 刚体的空间运动动力学.md",
+    "excalibrain.md",
+    "Excalidraw/ExcaliBrain Snapshot - 👨‍🔧Mechanics.excalidraw.md",
+    "📘ClassNotes/others/考研.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/欧拉定理证明.pdf",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
+    "Untitled mindmap.md",
+    "Day Planners/Day Planner-20230510.md",
+    "1683358340597-download.png",
+    "attachments/Pasted image 20230509111450.png",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of the weak form of 2D Ellipse Boundary Problem.pdf",
-    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/基于稀疏矩阵算法实现文本的搜索引擎.md",
     "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/~$矩阵方法的文本搜索引擎.docx",
     "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/稀疏矩阵方法的文本搜索引擎.docx",
     "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/作业2源码.zip",
@@ -248,29 +235,10 @@
     "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/数据结构实验二2020303828薛茵午.docx",
     "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/作业和源码.zip",
     "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/自适应缓存替换ARC算法.pdf",
-    "Day Planners/Day Planner-20230509.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/判断字母.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/C++指定目录下的文件读取.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/文件操作.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/C++ Eigen 安装.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md",
-    "❔LeeCode Problems/杂务.md",
-    "Day Planners/Day Planner-20230508.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/ARC缓存算法.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md",
     "attachments/Reverse_Poland_Expression.jpg",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
     "attachments/Pasted image 20230507215152.png",
     "attachments/Pasted image 20230507194830.png",
     "attachments/Pasted image 20230507194622.png",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 树的基本知识.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivations of the Stiffness Matrix in FEM.pdf",
-    "1683363677036-1683358340597-download.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/第五章定理证明.pdf",
-    "1682644972882-download.png",
-    "attachments/Pasted image 20230502201003.png",
-    "💡Inspiration/1.png"
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivations of the Stiffness Matrix in FEM.pdf"
   ]
 }

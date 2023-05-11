@@ -32,3 +32,6 @@ LeE
 LEe
 Leec
 LeEvM
+aBC
+abc
+AbC
