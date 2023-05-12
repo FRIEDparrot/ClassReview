@@ -1,8 +1,64 @@
 {
   "recentFiles": [
     {
+      "basename": "第二章 刚体的空间运动学",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md"
+    },
+    {
+      "basename": "第二章 刚体的空间运动学 2023-04-21 15.03.10",
+      "path": "Excalidraw/第二章 刚体的空间运动学 2023-04-21 15.03.10.md"
+    },
+    {
+      "basename": "第一章 分析动力学基础",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md"
+    },
+    {
+      "basename": "常见形状的转动惯量计算公式",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/部分公式/常见形状的转动惯量计算公式.md"
+    },
+    {
+      "basename": "常见形状的惯性主轴 2023-05-12 20.17.18",
+      "path": "Excalidraw/常见形状的惯性主轴 2023-05-12 20.17.18.md"
+    },
+    {
+      "basename": "常见形状的惯性主轴 2023-05-12 20.10.48",
+      "path": "Excalidraw/常见形状的惯性主轴 2023-05-12 20.10.48.md"
+    },
+    {
+      "basename": "待办事项",
+      "path": "🏚️Daily Life memo/待办事项.md"
+    },
+    {
       "basename": "第五章 运动稳定性基础",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md"
+    },
+    {
+      "basename": "预备知识  张量分析初步",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/预备知识  张量分析初步.md"
+    },
+    {
+      "basename": "预备知识  张量分析初步 2023-05-12 12.05.37",
+      "path": "Excalidraw/预备知识  张量分析初步 2023-05-12 12.05.37.md"
+    },
+    {
+      "basename": "预备知识  张量分析初步 2023-05-12 11.51.19",
+      "path": "Excalidraw/预备知识  张量分析初步 2023-05-12 11.51.19.md"
+    },
+    {
+      "basename": "预备知识  张量分析初步 2023-05-12 11.39.19",
+      "path": "Excalidraw/预备知识  张量分析初步 2023-05-12 11.39.19.md"
+    },
+    {
+      "basename": "预备知识  张量分析初步 2023-05-12 11.33.26",
+      "path": "Excalidraw/预备知识  张量分析初步 2023-05-12 11.33.26.md"
+    },
+    {
+      "basename": "参考部分",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/参考部分.md"
+    },
+    {
+      "basename": "SQ11 Usage tutorial",
+      "path": "🏚️Daily Life memo/SQ11 Usage tutorial.md"
     },
     {
       "basename": "第七章 图",
@@ -33,10 +89,6 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第二章、流固耦合中的基本解题方法.md"
     },
     {
-      "basename": "待办事项",
-      "path": "🏚️Daily Life memo/待办事项.md"
-    },
-    {
       "basename": "杂务",
       "path": "❔LeeCode Problems/杂务.md"
     },
@@ -61,10 +113,6 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/MindMap for CFD.md"
     },
     {
-      "basename": "预备知识  张量分析初步",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/预备知识  张量分析初步.md"
-    },
-    {
       "basename": "张量分析初步 2023-05-10 10.37.52",
       "path": "Excalidraw/张量分析初步 2023-05-10 10.37.52.md"
     },
@@ -75,10 +123,6 @@
     {
       "basename": "Pasted Image 20230510110257_993",
       "path": "attachments/Pasted Image 20230510110257_993.png"
-    },
-    {
-      "basename": "第一章",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第一章.md"
     },
     {
       "basename": "第三章 刚体的空间运动动力学",
@@ -155,50 +199,6 @@
     {
       "basename": "C++ Eigen 安装",
       "path": "📘ClassNotes/⌨️Programming/C++ libraries/C++ Eigen 安装.md"
-    },
-    {
-      "basename": "ARC缓存算法",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/ARC缓存算法.md"
-    },
-    {
-      "basename": "第三章 栈和队列的链式存储",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md"
-    },
-    {
-      "basename": "Reverse_Poland_Expression",
-      "path": "attachments/Reverse_Poland_Expression.jpg"
-    },
-    {
-      "basename": "第六章 树和二叉树",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md"
-    },
-    {
-      "basename": "复习 树的基本知识",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/复习 树的基本知识.md"
-    },
-    {
-      "basename": "Chapter 1 One-Dimensional Boundary Value Problem",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md"
-    },
-    {
-      "basename": "Derivations of the Stiffness Matrix in FEM",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivations of the Stiffness Matrix in FEM.pdf"
-    },
-    {
-      "basename": "Chapter3 Mathematical behavior of partial differential equations",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter3 Mathematical behavior of partial differential equations.md"
-    },
-    {
-      "basename": "Chapter2 Derivation of the Governing Equations",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter2 Derivation of the Governing Equations.md"
-    },
-    {
-      "basename": "第五章 运动稳定性基础 2023-05-05 17.24.15",
-      "path": "Excalidraw/第五章 运动稳定性基础 2023-05-05 17.24.15.md"
-    },
-    {
-      "basename": "MindMap for Advanced Dynamics",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/MindMap for Advanced Dynamics.md"
     }
   ],
   "omittedPaths": [],

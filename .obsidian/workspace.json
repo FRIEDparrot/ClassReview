@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "21c5632ff844fe25",
+        "id": "cb08ea8f351e5fe7",
         "type": "tabs",
         "children": [
           {
-            "id": "78bed09016191bbb",
+            "id": "e882ad7361b2c12c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b35ca976b577076a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,11 +94,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 273.5110321044922
+    "width": 273.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -101,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md"
               }
             }
           },
@@ -130,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,10 +208,28 @@
       "dbfolder:Create a new database table": false
     }
   },
-  "active": "86820ad5b67d3064",
+  "active": "b35ca976b577076a",
   "lastOpenFiles": [
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
+    "Day Planners/Day Planner-20230513.md",
+    "Excalidraw/第二章 刚体的空间运动学 2023-04-21 15.03.10.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/部分公式/常见形状的转动惯量计算公式.md",
+    "Excalidraw/常见形状的惯性主轴 2023-05-12 20.17.18.md",
+    "Excalidraw/常见形状的惯性主轴 2023-05-12 20.10.48.md",
+    "🏚️Daily Life memo/待办事项.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/预备知识  张量分析初步.md",
+    "Excalidraw/预备知识  张量分析初步 2023-05-12 12.05.37.md",
+    "Excalidraw/预备知识  张量分析初步 2023-05-12 11.51.19.md",
+    "Excalidraw/预备知识  张量分析初步 2023-05-12 11.39.19.md",
+    "Excalidraw/预备知识  张量分析初步 2023-05-12 11.33.26.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/例题部分1 张量分析基础.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/参考部分.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充",
+    "🏚️Daily Life memo/SQ11 Usage tutorial.md",
+    "Day Planners/Day Planner-20230512.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
     "💡Inspiration/2 - Copy.png",
     "💡Inspiration/2.png",
     "💡Inspiration/4.png",
@@ -204,27 +237,12 @@
     "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md",
     "Excalidraw/第七章 图 2023-05-11 17.32.33.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第二章、流固耦合中的基本解题方法.md",
-    "🏚️Daily Life memo/待办事项.md",
     "❔LeeCode Problems/杂务.md",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/类的定义, Template和头文件编写典型案例.md",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/C++预置数据结构和用法.md",
     "❔LeeCode Problems/二叉树两数之和.md",
-    "Excalidraw/第七章 图 2023-05-11 08.26.38.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/MindMap for CFD.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/预备知识  张量分析初步.md",
-    "Excalidraw/张量分析初步 2023-05-10 10.37.52.md",
-    "Excalidraw/预备知识  张量分析初步 2023-05-10 11.02.55.md",
     "attachments/Pasted Image 20230510110257_993.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第一章.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第三章 刚体的空间运动动力学.md",
-    "excalibrain.md",
-    "Excalidraw/ExcaliBrain Snapshot - 👨‍🔧Mechanics.excalidraw.md",
-    "📘ClassNotes/others/考研.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/欧拉定理证明.pdf",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
-    "Untitled mindmap.md",
-    "Day Planners/Day Planner-20230510.md",
     "1683358340597-download.png",
     "attachments/Pasted image 20230509111450.png",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of the weak form of 2D Ellipse Boundary Problem.pdf",
@@ -234,11 +252,9 @@
     "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/nzp3DE5.tmp",
     "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/数据结构实验二2020303828薛茵午.docx",
     "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/作业和源码.zip",
-    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/自适应缓存替换ARC算法.pdf",
     "attachments/Reverse_Poland_Expression.jpg",
     "attachments/Pasted image 20230507215152.png",
     "attachments/Pasted image 20230507194830.png",
-    "attachments/Pasted image 20230507194622.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivations of the Stiffness Matrix in FEM.pdf"
+    "attachments/Pasted image 20230507194622.png"
   ]
 }
