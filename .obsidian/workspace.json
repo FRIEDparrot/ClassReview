@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "cb08ea8f351e5fe7",
+        "id": "d8d6744f66171712",
         "type": "tabs",
         "children": [
           {
-            "id": "e882ad7361b2c12c",
+            "id": "c7009307fadad485",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b35ca976b577076a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,8 +81,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -116,7 +102,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md"
               }
             }
           },
@@ -145,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -208,16 +194,18 @@
       "dbfolder:Create a new database table": false
     }
   },
-  "active": "b35ca976b577076a",
+  "active": "c7009307fadad485",
   "lastOpenFiles": [
+    "💡Inspiration/4.jpg",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md",
+    "🏚️Daily Life memo/待办事项.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
     "Day Planners/Day Planner-20230513.md",
     "Excalidraw/第二章 刚体的空间运动学 2023-04-21 15.03.10.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/部分公式/常见形状的转动惯量计算公式.md",
     "Excalidraw/常见形状的惯性主轴 2023-05-12 20.17.18.md",
     "Excalidraw/常见形状的惯性主轴 2023-05-12 20.10.48.md",
-    "🏚️Daily Life memo/待办事项.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/预备知识  张量分析初步.md",
     "Excalidraw/预备知识  张量分析初步 2023-05-12 12.05.37.md",
@@ -239,8 +227,6 @@
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第二章、流固耦合中的基本解题方法.md",
     "❔LeeCode Problems/杂务.md",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/类的定义, Template和头文件编写典型案例.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/C++预置数据结构和用法.md",
-    "❔LeeCode Problems/二叉树两数之和.md",
     "attachments/Pasted Image 20230510110257_993.png",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/欧拉定理证明.pdf",
     "1683358340597-download.png",

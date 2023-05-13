@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "大作业笔记部分",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md"
+    },
+    {
+      "basename": "4",
+      "path": "💡Inspiration/4.jpg"
+    },
+    {
+      "basename": "待办事项",
+      "path": "🏚️Daily Life memo/待办事项.md"
+    },
+    {
       "basename": "第二章 刚体的空间运动学",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md"
     },
@@ -23,10 +35,6 @@
     {
       "basename": "常见形状的惯性主轴 2023-05-12 20.10.48",
       "path": "Excalidraw/常见形状的惯性主轴 2023-05-12 20.10.48.md"
-    },
-    {
-      "basename": "待办事项",
-      "path": "🏚️Daily Life memo/待办事项.md"
     },
     {
       "basename": "第五章 运动稳定性基础",
@@ -191,14 +199,6 @@
     {
       "basename": "C++指定目录下的文件读取",
       "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/C++指定目录下的文件读取.md"
-    },
-    {
-      "basename": "文件操作",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/文件操作.md"
-    },
-    {
-      "basename": "C++ Eigen 安装",
-      "path": "📘ClassNotes/⌨️Programming/C++ libraries/C++ Eigen 安装.md"
     }
   ],
   "omittedPaths": [],
