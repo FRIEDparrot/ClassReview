@@ -3012,6 +3012,10 @@ Bkxg
 Bra
 BaRxp
 BNtr
+Boost
+BOOST
+Below
+Before
 Ramberg
 Reynolds
 RANS
@@ -6173,6 +6177,7 @@ RWD
 Run
 RnX
 ROQ
+ROOT
 Osgood
 OPTIONS
 Obsidian
@@ -12626,6 +12631,7 @@ SMIW
 SLlXe
 SZLi
 SXC
+Scholes
 Ludwik
 Lame
 Logistic
@@ -15866,6 +15872,9 @@ LlS
 LLg
 Lue
 Lcjc
+Linker
+Laplace
+Laplacian
 constitutive
 conditional
 curly
@@ -19248,6 +19257,10 @@ cnsn
 cutE
 cXr
 cAUl
+cygwin
+calling
+calculates
+containing
 equatiion
 equations
 excalidraw
@@ -22683,6 +22696,8 @@ eHv
 eGe
 eEE
 eKa
+expiration
+exotic
 Classification
 Clustering
 Convection
@@ -25825,6 +25840,7 @@ CHk
 ClbG
 CUJm
 CRIS
+Cygwin
 Prediction
 Peierls
 Prandtl
@@ -36291,6 +36307,7 @@ DtYV
 Dhr
 Dbaa
 DKD
+Directories
 dedication
 dislocation
 document
@@ -39855,6 +39872,9 @@ dFbLi
 dHv
 dhBE
 dON
+decimal
+digits
+describing
 Exper
 EXCALIDRAW
 EF
@@ -53384,6 +53404,8 @@ MOp
 MDtv
 Mfs
 MDbgr
+Makefile
+MatrixXd
 Vector
 VIEW
 VpI
@@ -60172,6 +60194,7 @@ tafm
 tiEt
 twQyjRN
 tIg
+terminal
 write
 with
 widely
@@ -69988,6 +70011,9 @@ ssL
 sXn
 skkn
 sph
+skip
+shared
+scoped
 brackets
 bcc
 by
@@ -73066,6 +73092,8 @@ biAL
 baWq
 ban
 bGy
+binutils
+boost
 fcc
 factor
 forced
@@ -76347,6 +76375,7 @@ fDftB
 fjFY
 fCAw
 fKpf
+filesystem
 hcp
 heat
 has
@@ -89853,6 +89882,10 @@ pnhq
 ptH
 pCqIqZ
 pQAb
+precision
+pricing
+price
+pixels
 in
 influence
 is
@@ -93289,6 +93322,7 @@ iAjH
 iBb
 imEziUv
 iTdd
+interes
 menu
 material
 model
@@ -96607,6 +96641,7 @@ mvza
 mffS
 mGaxF
 mRpS
+mathematically
 Forced
 For
 Function
@@ -99885,6 +99920,8 @@ FRj
 FDmm
 FvnQ
 FOe
+Full
+Filesystem
 article
 applied
 and
@@ -102949,6 +102986,7 @@ aWmBd
 aqI
 aElc
 aIQ
+autodiff
 General
 Governing
 GBb
@@ -112464,6 +112502,7 @@ vFDb
 vAda
 vVb
 vcIaC
+volatility
 url
 uniform
 unit
@@ -128865,6 +128904,8 @@ reo
 rTBGc
 rhke
 rBi
+returns
+regular
 large
 length
 laminar
@@ -138462,6 +138503,8 @@ ghG
 gGNv
 gVof
 gIS
+greek
+greeks
 quantities
 qq
 qN
@@ -164035,6 +164078,7 @@ zWUe
 zcfw
 zmi
 zqBS
+zip
 ZZ
 ZX
 ZdX

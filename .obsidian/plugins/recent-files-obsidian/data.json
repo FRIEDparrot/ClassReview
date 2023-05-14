@@ -1,12 +1,80 @@
 {
   "recentFiles": [
     {
+      "basename": "第四章 空间问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题.md"
+    },
+    {
+      "basename": "第二章 平面问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md"
+    },
+    {
+      "basename": "结构有限元分析思维导图",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md"
+    },
+    {
+      "basename": "第一章 杆件结构",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md"
+    },
+    {
+      "basename": "第五章 稀疏数组和广义表",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md"
+    },
+    {
+      "basename": "C++自定义哈希函数",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/C++自定义哈希函数.md"
+    },
+    {
+      "basename": "矩阵和稀疏矩阵的定义",
+      "path": "📘ClassNotes/⌨️Programming/C++ libraries/Eigen/矩阵和稀疏矩阵的定义.md"
+    },
+    {
+      "basename": "使用Boost进行的数值微积分",
+      "path": "📘ClassNotes/⌨️Programming/C++ libraries/Boost/使用Boost进行的数值微积分.md"
+    },
+    {
+      "basename": "Boost库的配置方法",
+      "path": "📘ClassNotes/⌨️Programming/C++ libraries/Boost/Boost库的配置方法.md"
+    },
+    {
+      "basename": "第二章 线性表和链表",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 线性表和链表.md"
+    },
+    {
+      "basename": "第七章 图",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
+    },
+    {
       "basename": "大作业笔记部分",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md"
     },
     {
+      "basename": "函数求导和积分运算",
+      "path": "📘ClassNotes/⌨️Programming/C++ libraries/GSL/函数求导和积分运算.md"
+    },
+    {
+      "basename": "Make 安装教程",
+      "path": "📘ClassNotes/⌨️Programming/C++ libraries/Make 安装教程.md"
+    },
+    {
+      "basename": "GSL库",
+      "path": "📘ClassNotes/⌨️Programming/C++ libraries/GSL库.md"
+    },
+    {
+      "basename": "C++ Eigen 安装",
+      "path": "📘ClassNotes/⌨️Programming/C++ libraries/C++ Eigen 安装.md"
+    },
+    {
+      "basename": "Chapter2 Formulation of 2 and 3D Boundary Value Problems",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter2 Formulation of 2 and 3D Boundary Value Problems.md"
+    },
+    {
+      "basename": "Chapter1 Philosophy of Computational Fluid Dynamics",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md"
+    },
+    {
       "basename": "4",
-      "path": "💡Inspiration/4.jpg"
+      "path": "wallpaper/4.jpg"
     },
     {
       "basename": "待办事项",
@@ -69,24 +137,12 @@
       "path": "🏚️Daily Life memo/SQ11 Usage tutorial.md"
     },
     {
-      "basename": "第七章 图",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
-    },
-    {
       "basename": "2",
-      "path": "💡Inspiration/2.png"
+      "path": "wallpaper/2.png"
     },
     {
       "basename": "4",
-      "path": "💡Inspiration/4.png"
-    },
-    {
-      "basename": "第一章 杆件结构",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md"
-    },
-    {
-      "basename": "结构有限元分析思维导图",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md"
+      "path": "wallpaper/4.png"
     },
     {
       "basename": "第七章 图 2023-05-11 17.32.33",
@@ -143,62 +199,6 @@
     {
       "basename": "欧拉定理证明",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/欧拉定理证明.pdf"
-    },
-    {
-      "basename": "第一章 数据结构绪论",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md"
-    },
-    {
-      "basename": "Chapter1 Philosophy of Computational Fluid Dynamics",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md"
-    },
-    {
-      "basename": "Introduction",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Introduction.md"
-    },
-    {
-      "basename": "第二章、流固耦合中的基本解题方法 2023-05-09 15.10.00",
-      "path": "Excalidraw/第二章、流固耦合中的基本解题方法 2023-05-09 15.10.00.md"
-    },
-    {
-      "basename": "第一章 绪论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第一章 绪论.md"
-    },
-    {
-      "basename": "第七章 图 2023-05-09 11.00.45",
-      "path": "Excalidraw/第七章 图 2023-05-09 11.00.45.md"
-    },
-    {
-      "basename": "第七章 图 2023-05-09 10.38.24",
-      "path": "Excalidraw/第七章 图 2023-05-09 10.38.24.md"
-    },
-    {
-      "basename": "Chapter2 Formulation of 2 and 3D Boundary Value Problems",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter2 Formulation of 2 and 3D Boundary Value Problems.md"
-    },
-    {
-      "basename": "Derivation of the weak form of 2D Ellipse Boundary Problem",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of the weak form of 2D Ellipse Boundary Problem.pdf"
-    },
-    {
-      "basename": "基于稀疏矩阵算法实现文本的搜索引擎",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/基于稀疏矩阵算法实现文本的搜索引擎.md"
-    },
-    {
-      "basename": "自适应缓存替换ARC算法",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/自适应缓存替换ARC算法.pdf"
-    },
-    {
-      "basename": "第五章 稀疏数组和广义表",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md"
-    },
-    {
-      "basename": "判断字母",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/判断字母.md"
-    },
-    {
-      "basename": "C++指定目录下的文件读取",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/C++指定目录下的文件读取.md"
     }
   ],
   "omittedPaths": [],

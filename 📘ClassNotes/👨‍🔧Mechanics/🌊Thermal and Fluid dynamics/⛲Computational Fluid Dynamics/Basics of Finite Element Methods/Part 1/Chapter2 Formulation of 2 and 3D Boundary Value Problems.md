@@ -13,6 +13,15 @@ so we can then write the weak form of the problem by the derivation process :
 [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of the weak form of 2D Ellipse Boundary Problem.pdf|derivation of the weak form of 2D ellipse Boundary Problem.pdf]]
 the weak form of the problem is : 
 $$\iint_{\Omega} \left(\frac{\partial u}{\partial x} \frac{\partial (\delta u)}{\partial x} + \frac{\partial u}{\partial y}\frac{\partial (\delta u)}{\partial y}\right)d\Omega + \iint_{\Omega} p \delta u d\Omega = \int_{\Gamma_2}g \delta u d\Gamma$$
+
+`````ad-caution
+title: the test function $\delta u$
+collapse: open
+
+Note that here we choose $\delta u$ as the test solution, in this case, if a boundary condition is given as essential boundary condition(not a natural boundary condition), we set $\delta u$ as zero. 
+
+`````
+
 `````ad-attention 
 title: The Gauss's law for 1-D problem 
 collapse: open

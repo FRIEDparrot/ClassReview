@@ -4,22 +4,45 @@
     "type": "split",
     "children": [
       {
-        "id": "d8d6744f66171712",
+        "id": "0e3768c288ae4ea5",
         "type": "tabs",
         "children": [
           {
-            "id": "c7009307fadad485",
+            "id": "cb3ce8af0f64022d",
+            "type": "leaf",
+            "state": {
+              "type": "mindmapview",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md"
+              }
+            }
+          },
+          {
+            "id": "baa4248152f95c54",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "48abec73324afea2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,8 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 273.5110321044922,
-    "collapsed": true
+    "width": 270
   },
   "right": {
     "id": "f7de553c162de521",
@@ -102,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题.md"
               }
             }
           },
@@ -131,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,39 +216,44 @@
       "dbfolder:Create a new database table": false
     }
   },
-  "active": "c7009307fadad485",
+  "active": "48abec73324afea2",
   "lastOpenFiles": [
-    "💡Inspiration/4.jpg",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md",
+    "wallpaper",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/C++自定义哈希函数.md",
+    "📘ClassNotes/⌨️Programming/C++ libraries/Eigen/矩阵和稀疏矩阵的定义.md",
+    "📘ClassNotes/⌨️Programming/C++ libraries/Eigen/基本矩阵定义.md",
+    "📘ClassNotes/⌨️Programming/C++ libraries/Boost/使用Boost进行的数值微积分.md",
+    "📘ClassNotes/⌨️Programming/C++ libraries/Boost/Boost库的配置方法.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 线性表和链表.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md",
+    "📘ClassNotes/⌨️Programming/C++ libraries/GSL/函数求导和积分运算.md",
+    "Day Planners/Day Planner-20230514.md",
+    "📘ClassNotes/⌨️Programming/C++ libraries/Make 安装教程.md",
+    "📘ClassNotes/⌨️Programming/C++ libraries/Boost",
+    "attachments/Pasted image 20230513215716.png",
+    "📘ClassNotes/⌨️Programming/C++ libraries/GSL库.md",
+    "📘ClassNotes/⌨️Programming/C++ libraries/GSL",
+    "📘ClassNotes/⌨️Programming/C++ libraries/C++ Eigen 安装.md",
+    "📘ClassNotes/⌨️Programming/C++ libraries/Eigen",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter2 Formulation of 2 and 3D Boundary Value Problems.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
+    "wallpaper/4.jpg",
     "🏚️Daily Life memo/待办事项.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
     "Day Planners/Day Planner-20230513.md",
     "Excalidraw/第二章 刚体的空间运动学 2023-04-21 15.03.10.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/部分公式/常见形状的转动惯量计算公式.md",
-    "Excalidraw/常见形状的惯性主轴 2023-05-12 20.17.18.md",
-    "Excalidraw/常见形状的惯性主轴 2023-05-12 20.10.48.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/预备知识  张量分析初步.md",
-    "Excalidraw/预备知识  张量分析初步 2023-05-12 12.05.37.md",
-    "Excalidraw/预备知识  张量分析初步 2023-05-12 11.51.19.md",
-    "Excalidraw/预备知识  张量分析初步 2023-05-12 11.39.19.md",
-    "Excalidraw/预备知识  张量分析初步 2023-05-12 11.33.26.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/例题部分1 张量分析基础.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/参考部分.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充",
-    "🏚️Daily Life memo/SQ11 Usage tutorial.md",
-    "Day Planners/Day Planner-20230512.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
     "💡Inspiration/2 - Copy.png",
-    "💡Inspiration/2.png",
-    "💡Inspiration/4.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md",
-    "Excalidraw/第七章 图 2023-05-11 17.32.33.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第二章、流固耦合中的基本解题方法.md",
-    "❔LeeCode Problems/杂务.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/类的定义, Template和头文件编写典型案例.md",
+    "wallpaper/2.png",
+    "wallpaper/4.png",
     "attachments/Pasted Image 20230510110257_993.png",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/欧拉定理证明.pdf",
     "1683358340597-download.png",
@@ -234,13 +261,7 @@
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of the weak form of 2D Ellipse Boundary Problem.pdf",
     "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/~$矩阵方法的文本搜索引擎.docx",
     "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/稀疏矩阵方法的文本搜索引擎.docx",
-    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/作业2源码.zip",
-    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/nzp3DE5.tmp",
-    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/数据结构实验二2020303828薛茵午.docx",
-    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/作业和源码.zip",
     "attachments/Reverse_Poland_Expression.jpg",
-    "attachments/Pasted image 20230507215152.png",
-    "attachments/Pasted image 20230507194830.png",
-    "attachments/Pasted image 20230507194622.png"
+    "attachments/Pasted image 20230507215152.png"
   ]
 }
