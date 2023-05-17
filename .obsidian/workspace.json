@@ -4,45 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "0e3768c288ae4ea5",
+        "id": "953f118fb3fd7667",
         "type": "tabs",
         "children": [
           {
-            "id": "cb3ce8af0f64022d",
-            "type": "leaf",
-            "state": {
-              "type": "mindmapview",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md"
-              }
-            }
-          },
-          {
-            "id": "baa4248152f95c54",
+            "id": "10547628f0b433b3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "48abec73324afea2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/预备知识  张量分析初步.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +85,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270
+    "width": 307.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -124,7 +102,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/预备知识  张量分析初步.md"
               }
             }
           },
@@ -153,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/预备知识  张量分析初步.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/预备知识  张量分析初步.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,58 +188,59 @@
       "random-note:Open random note": false,
       "zk-prefixer:Create new unique note": false,
       "switcher:Open quick switcher": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
-      "dbfolder:Create a new database table": false
+      "dbfolder:Create a new database table": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "48abec73324afea2",
+  "active": "10547628f0b433b3",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md",
-    "wallpaper",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/C++自定义哈希函数.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Eigen/矩阵和稀疏矩阵的定义.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Eigen/基本矩阵定义.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Boost/使用Boost进行的数值微积分.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Boost/Boost库的配置方法.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 线性表和链表.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/张量的梯度与积分推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第三章 刚体的空间运动动力学.md",
+    "Day Planners/Day Planner-20230517.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第三章 非线性振动系统的数值分析方法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/CFD_problem.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第二章、流固耦合中的基本解题方法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第一章 绪论.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/大作业/振动信号处理和振动控制技术在工程领域中的应用.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/大作业/振动信号处理和振动控制技术在工程领域中的应用.docx",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第八章 查找算法.md",
+    "attachments/Pasted image 20230516115545.png",
+    "attachments/Pasted image 20230516114600.png",
+    "Excalidraw/第七章 图 2023-05-16 11.02.57.md",
+    "Excalidraw/第七章 图 2023-05-16 10.41.30.md",
+    "attachments/Pasted Image 20230516104135_540.png",
+    "attachments/Pasted image 20230516103950.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/实验.md",
+    "Day Planners/Day Planner-20230516.md",
+    "🏚️Daily Life memo/待办事项.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/大作业",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/C++指定目录下的文件读取.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/文件操作.md",
+    "📘ClassNotes/⌨️Programming/C++ libraries/Eigen/稀疏矩阵线性方程组求解.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/GSL/函数求导和积分运算.md",
-    "Day Planners/Day Planner-20230514.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Make 安装教程.md",
+    "📘ClassNotes/⌨️Programming/Bot/QQ机器人和ChatGPT接入.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/一、理想流体流动基础.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第五章 矩阵的相似变换.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第六章 二次型.md",
+    "📘ClassNotes/⌨️Programming/C++ libraries/Eigen/矩阵数值类型转换方法.md",
+    "📘ClassNotes/⌨️Programming/C++ libraries/Eigen/LU和QR分解方法求解稀疏矩阵的det和秩.md",
+    "📘ClassNotes/⌨️Programming/C++ libraries/Eigen/矩阵和稀疏矩阵的定义.md",
+    "wallpaper",
     "📘ClassNotes/⌨️Programming/C++ libraries/Boost",
     "attachments/Pasted image 20230513215716.png",
-    "📘ClassNotes/⌨️Programming/C++ libraries/GSL库.md",
     "📘ClassNotes/⌨️Programming/C++ libraries/GSL",
-    "📘ClassNotes/⌨️Programming/C++ libraries/C++ Eigen 安装.md",
     "📘ClassNotes/⌨️Programming/C++ libraries/Eigen",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter2 Formulation of 2 and 3D Boundary Value Problems.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
     "wallpaper/4.jpg",
-    "🏚️Daily Life memo/待办事项.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
-    "Day Planners/Day Planner-20230513.md",
-    "Excalidraw/第二章 刚体的空间运动学 2023-04-21 15.03.10.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/例题部分1 张量分析基础.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充",
     "💡Inspiration/2 - Copy.png",
     "wallpaper/2.png",
     "wallpaper/4.png",
     "attachments/Pasted Image 20230510110257_993.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/欧拉定理证明.pdf",
-    "1683358340597-download.png",
-    "attachments/Pasted image 20230509111450.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of the weak form of 2D Ellipse Boundary Problem.pdf",
-    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/~$矩阵方法的文本搜索引擎.docx",
-    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/稀疏矩阵方法的文本搜索引擎.docx",
-    "attachments/Reverse_Poland_Expression.jpg",
-    "attachments/Pasted image 20230507215152.png"
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/欧拉定理证明.pdf"
   ]
 }

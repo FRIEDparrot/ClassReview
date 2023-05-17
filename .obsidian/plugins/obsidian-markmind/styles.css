@@ -138,7 +138,7 @@
 
 .mm-node .mm-node-content table tr {
   background-color: #ffffff;
-  border-top: 1px solid hsla(210,18%,87%,1);
+  border-top: 1px solid hsla(210, 18%, 87%, 1);
 }
 
 .mm-node .mm-node-content table tr:nth-child(2n) {
@@ -1302,7 +1302,6 @@
 }
 
 .block-language-mindmap {
-
   height: 600px;
 }
 
@@ -1320,6 +1319,137 @@
 }
 
 
+/* theme black */
+.mm-mindmap.mm-theme-black {
+  background-color: #f1f1f1;
+}
+
+.theme-dark .mm-mindmap.mm-theme-black .mm-node .mm-node-content {
+  color: #333;
+}
+
+.mm-mindmap.mm-theme-black .mm-node.mm-root .mm-node-content {
+  color: white;
+  background-color: #c31105;
+}
+
+.mm-mindmap.mm-theme-black .mm-node.mm-node-second .mm-node-content {
+  background-color: #333;
+  color: white;
+}
+
+
+/* theme white */
+
+.mm-mindmap.mm-theme-white {
+  background-color: #fff;
+}
+
+.theme-dark .mm-mindmap.mm-theme-white .mm-node .mm-node-content {
+  color: #333;
+}
+
+.mm-mindmap.mm-theme-white .mm-node.mm-root .mm-node-content {
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+}
+
+
+.mm-mindmap.mm-theme-white .mm-node.mm-node-second .mm-node-content {
+  color: #333;
+}
+
+
+/* theme warm */
+.mm-mindmap.mm-theme-warm {
+  background-color: #FFF8E1;
+}
+
+.theme-dark .mm-mindmap.mm-theme-warm .mm-node .mm-node-content {
+  color: #333;
+}
+
+.mm-mindmap.mm-theme-warm .mm-node.mm-root .mm-node-content {
+  color: white;
+  background-color: #FFD180;
+}
+
+.mm-mindmap.mm-theme-warm .mm-node.mm-node-second .mm-node-content {
+  color: white;
+  background-color: #4E342E;
+}
+
+
+/* theme cold */
+.mm-mindmap.mm-theme-cold {
+  background-color: rgb(35, 39, 62);
+}
+
+.theme-dark .mm-mindmap.mm-theme-cold .mm-node .mm-node-content {
+  color: white;
+}
+
+.theme-light .mm-mindmap.mm-theme-cold .mm-node .mm-node-content {
+  color: rgb(115, 154, 163);
+}
+
+.mm-mindmap.mm-theme-cold .mm-node.mm-root .mm-node-content {
+  color: white;
+  background-color: rgb(5, 196, 235);
+}
+
+.mm-mindmap.mm-theme-cold .mm-node.mm-node-second .mm-node-content {
+  color: white;
+  background-color: rgb(35, 39, 62);
+}
+
+/* theme normal */
+
+.mm-mindmap.mm-theme-normal {
+  background-color: #555;
+}
+
+.theme-dark .mm-mindmap.mm-theme-normal .mm-node .mm-node-content {
+  color: white;
+}
+
+.theme-light .mm-mindmap.mm-theme-normal .mm-node .mm-node-content {
+  color: white;
+}
+
+.mm-mindmap.mm-theme-normal .mm-node.mm-root .mm-node-content {
+  color: rgb(82, 50, 0);
+  background-color: rgb(232, 222, 153);
+}
+
+.mm-mindmap.mm-theme-normal .mm-node.mm-node-second .mm-node-content {
+  color: #333;
+  background-color: rgb(164, 195, 190);
+}
+
+/* theme relax */
+.mm-mindmap.mm-theme-relax {
+  background-color: #56a3b3;
+}
+
+.theme-dark .mm-mindmap.mm-theme-relax .mm-node .mm-node-content {
+  color: white;
+}
+
+.theme-light .mm-mindmap.mm-theme-relax .mm-node .mm-node-content {
+  color: white;
+}
+
+.mm-mindmap.mm-theme-relax .mm-node.mm-root .mm-node-content {
+  color: #333;
+  background-color: #fbffff;
+}
+
+.mm-mindmap.mm-theme-relax .mm-node.mm-node-second .mm-node-content {
+  color: #333;
+  background-color: rgb(255, 235, 204);
+}
 
 
 /* node style */
@@ -1719,5 +1849,21 @@ th {
 
 .mm-change-layout:hover {
   opacity: 0.9;
+}
 
+/* 主题切换选框 */
+.mm-theme-select {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  z-index: 8000;
+  width: 450px;
+  border-radius: 6px;
+}
+
+.mm-theme-select select {
+  outline: none;
+  border: 0;
+  padding: 4px 6px;
+  width: 100px;
 }
