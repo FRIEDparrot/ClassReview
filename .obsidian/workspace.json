@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2a4b29214d05c4b2",
+            "id": "8d640f5212e5bf46",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第七章 参数单元.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第七章 参数单元.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md"
               }
             }
           },
@@ -131,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第七章 参数单元.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第七章 参数单元.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -191,19 +192,21 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
       "dbfolder:Create a new database table": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2a4b29214d05c4b2",
+  "active": "8d640f5212e5bf46",
   "lastOpenFiles": [
-    "Excalidraw/第七章 参数单元 2023-05-19 01.04.22.md",
+    "Excalidraw/第一章、分析动力学基础 2023-03-17 21.57.05.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/部分公式/常见形状的转动惯量计算公式.md",
+    "Day Planners/Day Planner-20230519.md",
     "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第七章 参数单元.md",
+    "Excalidraw/第七章 参数单元 2023-05-19 09.06.21.md",
+    "Excalidraw/第七章 参数单元 2023-05-19 01.04.22.md",
     "Excalidraw/第七章 参数单元 2023-05-19 00.58.56.md",
     "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第六章 薄壳.md",
     "Excalidraw/第六章 薄壳 2023-05-19 00.08.20.md",
-    "Day Planners/Day Planner-20230519.md",
     "🏚️Daily Life memo/待办事项.md",
     "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第五章 薄板的弯曲.md",
     "Excalidraw/第六章 薄壳 2023-05-18 20.28.27.md",
@@ -224,10 +227,6 @@
     "Excalidraw/第五章 薄板的弯曲 2023-04-12 08.34.20.md",
     "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题的有限元法.md",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十三章 能量原理在杆件位移分析的应用.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/3. 极坐标下基本方程的建立.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/2. 经典的弹性力学应力问题求解.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/补充/Timoshenko对极坐标应力函数的证明.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/补充/Timoshenko对极坐标应力函数的证明.annos",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/梁的横向振动推导过程.pdf",

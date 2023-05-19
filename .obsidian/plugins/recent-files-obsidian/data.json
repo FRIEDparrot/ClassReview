@@ -1,8 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "第一章 分析动力学基础",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md"
+    },
+    {
+      "basename": "第一章、分析动力学基础 2023-03-17 21.57.05",
+      "path": "Excalidraw/第一章、分析动力学基础 2023-03-17 21.57.05.md"
+    },
+    {
+      "basename": "常见形状的转动惯量计算公式",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/部分公式/常见形状的转动惯量计算公式.md"
+    },
+    {
+      "basename": "Day Planner-20230519",
+      "path": "Day Planners/Day Planner-20230519.md"
+    },
+    {
       "basename": "第七章 参数单元",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第七章 参数单元.md"
+    },
+    {
+      "basename": "第七章 参数单元 2023-05-19 09.06.21",
+      "path": "Excalidraw/第七章 参数单元 2023-05-19 09.06.21.md"
     },
     {
       "basename": "第七章 参数单元 2023-05-19 01.04.22",
@@ -125,10 +145,6 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十一章 压杆稳定.md"
     },
     {
-      "basename": "常见形状的转动惯量计算公式",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/部分公式/常见形状的转动惯量计算公式.md"
-    },
-    {
       "basename": "第二章 连续体的分析力学方法",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第二章 连续体的分析力学方法.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "C++指定目录下的文件读取",
       "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/基础知识/C++指定目录下的文件读取.md"
-    },
-    {
-      "basename": "稀疏矩阵线性方程组求解",
-      "path": "📘ClassNotes/⌨️Programming/C++ libraries/Eigen/稀疏矩阵线性方程组求解.md"
-    },
-    {
-      "basename": "大作业笔记部分",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md"
-    },
-    {
-      "basename": "QQ机器人和ChatGPT接入",
-      "path": "📘ClassNotes/⌨️Programming/Bot/QQ机器人和ChatGPT接入.md"
-    },
-    {
-      "basename": "一、理想流体流动基础",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/一、理想流体流动基础.md"
     }
   ],
   "omittedPaths": [],

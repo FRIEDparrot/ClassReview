@@ -15,7 +15,6 @@
   "oz-image-plugin",
   "table-editor-obsidian",
   "dataview",
-  "obsidian-day-planner",
   "obsidian-kanban",
   "recent-files-obsidian",
   "obsidian-icon-folder",
@@ -34,5 +33,5 @@
   "dbfolder",
   "table-extended",
   "obsidian-markmind",
-  "obsidian-textgenerator-plugin"
+  "obsidian-day-planner"
 ]
