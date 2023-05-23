@@ -7,8 +7,14 @@
 ![[Pasted image 20230317191429.png|500]]
 ![[Pasted image 20230317191608.png|500]]
 
+
+
 ![[Pasted image 20230317191800.png|500]]
 ![[Pasted image 20230317192151.png|500]]
+
+
+
+
 
 ![[Pasted image 20230317192411.png|600]]
 每次进行碰撞时，在对应方向上的速度直接设置为 0 

@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "4a59d530fc73583a",
+        "id": "c9ac70579b2c3599",
         "type": "tabs",
         "children": [
           {
-            "id": "8d640f5212e5bf46",
+            "id": "7f239866ba8ac94d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 309,
-    "collapsed": true
+    "width": 309
   },
   "right": {
     "id": "f7de553c162de521",
@@ -101,9 +96,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md"
-              }
+              "state": {}
             }
           },
           {
@@ -131,7 +124,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +140,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,8 +161,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "horizontal",
@@ -195,53 +185,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8d640f5212e5bf46",
+  "active": "7f239866ba8ac94d",
   "lastOpenFiles": [
-    "Excalidraw/第一章、分析动力学基础 2023-03-17 21.57.05.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/部分公式/常见形状的转动惯量计算公式.md",
-    "Day Planners/Day Planner-20230519.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第七章 参数单元.md",
-    "Excalidraw/第七章 参数单元 2023-05-19 09.06.21.md",
-    "Excalidraw/第七章 参数单元 2023-05-19 01.04.22.md",
-    "Excalidraw/第七章 参数单元 2023-05-19 00.58.56.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第六章 薄壳.md",
-    "Excalidraw/第六章 薄壳 2023-05-19 00.08.20.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
     "🏚️Daily Life memo/待办事项.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第五章 薄板的弯曲.md",
-    "Excalidraw/第六章 薄壳 2023-05-18 20.28.27.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Code Summary/蓝图.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第二章 流固耦合中的基本解题方法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of transformation between the local Coordinate & Cartesian Coordinate.pdf",
-    "Excalidraw/第五章 薄板的弯曲 2023-05-18 17.26.49.md",
-    "Excalidraw/第五章 薄板的弯曲 2023-05-18 16.44.44.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/2. 一些补充笔记.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/向量的合并.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/3. 向量的定义和用法.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/1. 基本用法.md",
+    "Excalidraw/第七章 图 2023-05-23 10.31.48.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第三章 非线性振动系统的数值分析方法.md",
-    "Excalidraw/第三章 非线性振动系统的数值分析方法 2023-05-18 15.29.27.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第八章 查找算法.md",
+    "Excalidraw/第八章 查找算法 2023-05-23 11.12.18.md",
+    "Excalidraw/第八章 查找算法 2023-05-23 10.38.04.md",
+    "Excalidraw/第八章 查找算法 2023-05-23 11.06.32.md",
+    "Excalidraw/第八章 查找算法 2023-05-23 10.34.12.md",
+    "Day Planners/Day Planner-20230523.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/复习.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/内容整理.md",
+    "Excalidraw/复习 2023-05-23 09.05.01.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为讲义.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/基本方程和分析方法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/黎曼问题.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/Untitled.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第三章 刚体的空间运动动力学.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/第三章的定理证明.pdf",
+    "Day Planners/Day Planner-20230522.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/复习 指针和链表的使用.md",
+    "attachments/Pasted image 20230317192411.png",
+    "attachments/Pasted image 20230317192151.png",
+    "attachments/Pasted image 20230317190719.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/牵连运动为定点运动的加速度合成定理及刚体空间一般运动推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/刚体定点运动速度加速度合成定理推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/刚体空间运动部分的推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/第一类拉格朗日方程的推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of transformation between the local Coordinate & Cartesian Coordinate.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/补充/非共振受迫振动的推导.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/补充",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/New folder",
-    "📘ClassNotes/Markdown & Latex Tutorial/Latex Tutorial/Matrix_With_Dash.md",
-    "Excalidraw/第五章 薄板的弯曲 2023-04-10 09.54.05.md",
-    "Excalidraw/第五章 薄板的弯曲 2023-04-12 08.34.20.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题的有限元法.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/补充/Timoshenko对极坐标应力函数的证明.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/补充/Timoshenko对极坐标应力函数的证明.annos",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/梁的横向振动推导过程.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/张量的梯度与积分推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/CFD_problem.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/大作业/振动信号处理和振动控制技术在工程领域中的应用.docx",
     "attachments/Pasted image 20230516115545.png",
     "attachments/Pasted image 20230516114600.png",
     "attachments/Pasted Image 20230516104135_540.png",
     "attachments/Pasted image 20230516103950.png",
     "attachments/Pasted image 20230513215716.png",
     "wallpaper/4.jpg",
-    "💡Inspiration/2 - Copy.png",
-    "wallpaper/2.png",
-    "wallpaper/4.png",
-    "attachments/Pasted Image 20230510110257_993.png"
+    "💡Inspiration/2 - Copy.png"
   ]
 }
