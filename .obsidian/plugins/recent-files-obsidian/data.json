@@ -1,6 +1,66 @@
 {
   "recentFiles": [
     {
+      "basename": "第八章 结构有限元动力分析",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第八章 结构有限元动力分析.md"
+    },
+    {
+      "basename": "第二章 流体力学的基本方程组 2023-05-24 16.17.35",
+      "path": "Excalidraw/第二章 流体力学的基本方程组 2023-05-24 16.17.35.md"
+    },
+    {
+      "basename": "差分格式的记号",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/差分格式的记号.md"
+    },
+    {
+      "basename": "第二章 流体力学的基本方程组",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/第二章 流体力学的基本方程组.md"
+    },
+    {
+      "basename": "1. 流体力学相关定义及假设",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第一章 绪论/1. 流体力学相关定义及假设.md"
+    },
+    {
+      "basename": "第七章 参数单元",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第七章 参数单元.md"
+    },
+    {
+      "basename": "第四章 空间问题的有限元法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题的有限元法.md"
+    },
+    {
+      "basename": "第七章 参数单元 2023-05-19 00.58.56",
+      "path": "Excalidraw/第七章 参数单元 2023-05-19 00.58.56.md"
+    },
+    {
+      "basename": "第五章 薄板的弯曲",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第五章 薄板的弯曲.md"
+    },
+    {
+      "basename": "第二章 平面问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md"
+    },
+    {
+      "basename": "使用虚功原理推导三角形单元刚度矩阵",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容/使用虚功原理推导三角形单元刚度矩阵.pdf"
+    },
+    {
+      "basename": "第三章 势能极小原理的有限元解法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第三章 势能极小原理的有限元解法.md"
+    },
+    {
+      "basename": "结构有限元分析思维导图",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md"
+    },
+    {
+      "basename": "平面薄板问题的方程建立",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md"
+    },
+    {
+      "basename": "SQ11 Usage tutorial",
+      "path": "🏚️Daily Life memo/SQ11 Usage tutorial.md"
+    },
+    {
       "basename": "第七章 图",
       "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
     },
@@ -49,10 +109,6 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md"
     },
     {
-      "basename": "第二章 平面问题",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md"
-    },
-    {
       "basename": "复习",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/复习.md"
     },
@@ -67,10 +123,6 @@
     {
       "basename": "耐高温复合材料与力学行为讲义",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为讲义.pdf"
-    },
-    {
-      "basename": "基本方程和分析方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/基本方程和分析方法.md"
     },
     {
       "basename": "黎曼问题",
@@ -147,58 +199,6 @@
     {
       "basename": "第十三章 能量原理在杆件位移分析的应用",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十三章 能量原理在杆件位移分析的应用.md"
-    },
-    {
-      "basename": "第十一章 压杆稳定",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十一章 压杆稳定.md"
-    },
-    {
-      "basename": "第十三章 能量原理在杆件位移分析的应用 2023-05-19 15.45.19",
-      "path": "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-05-19 15.45.19.md"
-    },
-    {
-      "basename": "第一类拉格朗日方程的推导",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/第一类拉格朗日方程的推导.pdf"
-    },
-    {
-      "basename": "第一章、分析动力学基础 2023-03-17 21.57.05",
-      "path": "Excalidraw/第一章、分析动力学基础 2023-03-17 21.57.05.md"
-    },
-    {
-      "basename": "Day Planner-20230519",
-      "path": "Day Planners/Day Planner-20230519.md"
-    },
-    {
-      "basename": "第七章 参数单元",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第七章 参数单元.md"
-    },
-    {
-      "basename": "第七章 参数单元 2023-05-19 09.06.21",
-      "path": "Excalidraw/第七章 参数单元 2023-05-19 09.06.21.md"
-    },
-    {
-      "basename": "第七章 参数单元 2023-05-19 01.04.22",
-      "path": "Excalidraw/第七章 参数单元 2023-05-19 01.04.22.md"
-    },
-    {
-      "basename": "第七章 参数单元 2023-05-19 00.58.56",
-      "path": "Excalidraw/第七章 参数单元 2023-05-19 00.58.56.md"
-    },
-    {
-      "basename": "第六章 薄壳",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第六章 薄壳.md"
-    },
-    {
-      "basename": "第六章 薄壳 2023-05-19 00.08.20",
-      "path": "Excalidraw/第六章 薄壳 2023-05-19 00.08.20.md"
-    },
-    {
-      "basename": "第五章 薄板的弯曲",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第五章 薄板的弯曲.md"
-    },
-    {
-      "basename": "第六章 薄壳 2023-05-18 20.28.27",
-      "path": "Excalidraw/第六章 薄壳 2023-05-18 20.28.27.md"
     }
   ],
   "omittedPaths": [],
