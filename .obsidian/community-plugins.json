@@ -33,6 +33,9 @@
   "dbfolder",
   "table-extended",
   "obsidian-markmind",
+  "theme-picker",
+  "obsidian-citation-plugin",
+  "obsidian-projects",
   "obsidian-day-planner",
-  "obsidian-dynamic-background"
+  "obsidian-textgenerator-plugin"
 ]

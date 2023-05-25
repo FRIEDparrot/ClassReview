@@ -922,7 +922,12 @@
       "key": "I"
     }
   ],
-  "markdown:toggle-preview": [],
+  "markdown:toggle-preview": [
+    {
+      "modifiers": [],
+      "key": "F2"
+    }
+  ],
   "templater-obsidian:🗒️Templates/OPEN_SURFACE_INTEGRAL_SIGNAL.md": [
     {
       "modifiers": [
@@ -1083,18 +1088,8 @@
       "key": "]"
     }
   ],
-  "obsidian-day-planner:app:show-day-planner-today-note": [
-    {
-      "modifiers": [],
-      "key": "F5"
-    }
-  ],
-  "obsidian-day-planner:app:show-day-planner-timeline": [
-    {
-      "modifiers": [],
-      "key": "F3"
-    }
-  ],
+  "obsidian-day-planner:app:show-day-planner-today-note": [],
+  "obsidian-day-planner:app:show-day-planner-timeline": [],
   "templater-obsidian:🗒️Templates/INSERT_FORALL_SIMBOL.md": [
     {
       "modifiers": [
@@ -1215,5 +1210,12 @@
       ],
       "key": "Enter"
     }
-  ]
+  ],
+  "theme-picker:open-theme-picker": [
+    {
+      "modifiers": [],
+      "key": "F5"
+    }
+  ],
+  "workspace:edit-file-title": []
 }

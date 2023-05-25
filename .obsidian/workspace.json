@@ -4,16 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "71c6c5761c6121a9",
+        "id": "ce6637042664374b",
         "type": "tabs",
         "children": [
           {
-            "id": "82cf0751f652aa89",
+            "id": "242aac735f5b0dd3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第八章 结构有限元动力分析.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第五章 薄板的弯曲.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "8e034004740e0877",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "87c910bb71e553d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,6 +49,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
+        "dimension": 55.21844660194175,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -58,22 +77,6 @@
             }
           },
           {
-            "id": "74492e67b703d037",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
-            }
-          },
-          {
-            "id": "db0ad0041a71350b",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {}
-            }
-          },
-          {
             "id": "8ac8022a81bd4918",
             "type": "leaf",
             "state": {
@@ -82,10 +85,25 @@
             }
           }
         ]
+      },
+      {
+        "id": "3dfa7e76a36534a1",
+        "type": "tabs",
+        "dimension": 44.78155339805826,
+        "children": [
+          {
+            "id": "db0ad0041a71350b",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 309,
+    "width": 306.5,
     "collapsed": true
   },
   "right": {
@@ -102,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第八章 结构有限元动力分析.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md"
               }
             }
           },
@@ -131,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第八章 结构有限元动力分析.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第八章 结构有限元动力分析.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +179,13 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "c66022855b90b53c",
+        "type": "tabs",
+        "children": [
           {
             "id": "fc126ed021ecee63",
             "type": "leaf",
@@ -169,12 +193,20 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "3b71fbf11d71ff54",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 270.5,
+    "width": 318.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -191,49 +223,53 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
       "dbfolder:Create a new database table": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-projects:Open projects": false,
+      "obsidian-textgenerator-plugin:Generate Text!": false,
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "82cf0751f652aa89",
+  "active": "87c910bb71e553d9",
   "lastOpenFiles": [
-    "Excalidraw/第二章 流体力学的基本方程组 2023-05-24 16.17.35.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/差分格式的记号.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/第二章 流体力学的基本方程组.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第八章 结构有限元动力分析.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/补充/2.1基本方程组的分类.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/补充",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/New folder",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第一章 绪论/1. 流体力学相关定义及假设.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第七章 参数单元.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题的有限元法.md",
-    "Excalidraw/第七章 参数单元 2023-05-19 00.58.56.md",
     "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第五章 薄板的弯曲.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容/使用虚功原理推导三角形单元刚度矩阵.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第三章 势能极小原理的有限元解法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md",
-    "Day Planners/Day Planner-20230524.md",
-    "🏚️Daily Life memo/SQ11 Usage tutorial.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题的有限元法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/3. 极坐标下基本方程的建立.md",
     "🏚️Daily Life memo/待办事项.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/2. 一些补充笔记.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/向量的合并.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/3. 向量的定义和用法.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/1. 基本用法.md",
-    "Excalidraw/第七章 图 2023-05-23 10.31.48.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第三章 非线性振动系统的数值分析方法.md",
+    "Day Planners/Day Planner-20230525.md",
+    "Projects - Demo Project/5 Mistakes I Made When I Started Using Obsidian.md",
+    "Projects - Demo Project/What I Learned From Taking 15,000 Notes.md",
+    "Projects - Demo Project/Why You Should Be Taking More Notes.md",
+    "Projects - Demo Project/The Easiest Way to Start Taking Notes.md",
+    "Projects - Demo Project/The Best Notes You'll Ever Make.md",
+    "Projects - Demo Project",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第三章 势能极小原理的有限元解法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第二章 流固耦合中的基本解题方法.md",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第八章 查找算法.md",
-    "Excalidraw/第八章 查找算法 2023-05-23 11.12.18.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为讲义.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/第三章的定理证明.pdf",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第八章 结构有限元动力分析.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容/梁的刚度矩阵的求出.pdf",
+    "📃Essay/CFD.pdf",
+    "📘ClassNotes/Markdown & Latex Tutorial/Latex Tutorial/Latex文献引用方法.md",
+    "textgenerator/prompts/default/summarize.md",
+    "textgenerator/prompts/default/simplify.md",
+    "textgenerator/prompts/default/rewrite.md",
+    "textgenerator/prompts/default/getTitles.md",
+    "textgenerator/prompts/default/getTags.md",
+    "textgenerator/prompts/default/getParagraph.md",
+    "textgenerator/prompts/default",
+    "textgenerator/prompts/huggingface",
+    "textgenerator/prompts/dalle-2",
+    "textgenerator/prompts",
+    "textgenerator",
+    "📖Reading_Material/Reading_Notes",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/补充/2.1基本方程组的分类.pdf",
     "attachments/Pasted image 20230317192411.png",
     "attachments/Pasted image 20230317192151.png",
     "attachments/Pasted image 20230317190719.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/牵连运动为定点运动的加速度合成定理及刚体空间一般运动推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/刚体定点运动速度加速度合成定理推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/刚体空间运动部分的推导.pdf",
     "attachments/Pasted image 20230516115545.png",
     "attachments/Pasted image 20230516114600.png",
     "attachments/Pasted Image 20230516104135_540.png",

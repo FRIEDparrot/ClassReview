@@ -1,7 +1,7 @@
 {
   "customFolder": "Day Planners",
   "mode": 0,
-  "mermaid": false,
+  "mermaid": true,
   "notesToDates": [],
   "completePastItems": true,
   "circularProgress": true,
