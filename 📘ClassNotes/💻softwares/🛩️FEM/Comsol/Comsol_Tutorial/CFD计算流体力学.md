@@ -49,7 +49,7 @@ $$\rho \frac{Du}{Dt} = \rho\left(\frac{\partial u}{\partial t} + \left(u \cdot \
 
 #### 4. 方程综述
 共5个方程(3个动量方程), 有11个变量
-![[Screenshot_20230107_190714_tv.danmaku.bilibilihd.jpg]]
+![[Screenshot_20230107_190714_tv.danmaku.bilibilihd.jpg|600]]
 
 #### 5. 本构关系
 例如牛顿流体：

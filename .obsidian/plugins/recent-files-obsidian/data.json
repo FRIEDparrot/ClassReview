@@ -1,40 +1,156 @@
 {
   "recentFiles": [
     {
+      "basename": "特殊陶瓷材料物质及其应用整理",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/特殊陶瓷材料物质及其应用整理.md"
+    },
+    {
+      "basename": "INSERT_CELSIUS_DEGREE",
+      "path": "🗒️Templates/INSERT_CELSIUS_DEGREE.md"
+    },
+    {
+      "basename": "复习",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/复习.md"
+    },
+    {
+      "basename": "ICEM CFD 中的网格设置",
+      "path": "📘ClassNotes/💻softwares/🛩️FEM/ICEM CFD/ICEM CFD 中的网格设置.md"
+    },
+    {
+      "basename": "耐高温复合材料与力学行为讲义",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为讲义.pdf"
+    },
+    {
+      "basename": "URA网格加密算法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Code Summary/URA网格加密算法.md"
+    },
+    {
+      "basename": "耐高温复合材料与力学行为-内容整理",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为-内容整理.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "📘ClassNotes/💻softwares/AutoCAD/Untitled.md"
+    },
+    {
+      "basename": "AutoCAD中点的导入",
+      "path": "📘ClassNotes/💻softwares/AutoCAD/AutoCAD中点的导入.md"
+    },
+    {
+      "basename": "CFD计算流体力学",
+      "path": "📘ClassNotes/💻softwares/🛩️FEM/Comsol/Comsol_Tutorial/CFD计算流体力学.md"
+    },
+    {
+      "basename": "桁架单元的建立",
+      "path": "📘ClassNotes/💻softwares/🛩️FEM/Comsol/Comsol_Tutorial/桁架单元的建立.md"
+    },
+    {
+      "basename": "单位设置",
+      "path": "📘ClassNotes/💻softwares/🛩️FEM/Workbench/单位设置.md"
+    },
+    {
+      "basename": "Workbench梁单元的建立",
+      "path": "📘ClassNotes/💻softwares/🛩️FEM/Workbench/Workbench梁单元的建立.md"
+    },
+    {
+      "basename": "Ansys Workbench 设置空间变化的载荷",
+      "path": "📘ClassNotes/💻softwares/🛩️FEM/Workbench/Ansys Workbench 设置空间变化的载荷.md"
+    },
+    {
+      "basename": "Fluent 分析案例1",
+      "path": "📘ClassNotes/💻softwares/🛩️FEM/Fluent/Fluent 分析案例1.md"
+    },
+    {
+      "basename": "Workbench 材料设置",
+      "path": "📘ClassNotes/💻softwares/🛩️FEM/Workbench/Workbench 材料设置.md"
+    },
+    {
+      "basename": "第八章 查找算法",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第八章 查找算法.md"
+    },
+    {
+      "basename": "Todo",
+      "path": "🏚️Daily Life memo/Todo.md"
+    },
+    {
+      "basename": "第六章 树和二叉树",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md"
+    },
+    {
+      "basename": "第七章 图",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
+    },
+    {
+      "basename": "第七章 图 2023-05-26 21.11.32",
+      "path": "Excalidraw/第七章 图 2023-05-26 21.11.32.md"
+    },
+    {
+      "basename": "第七章 图 2023-05-11 08.26.38",
+      "path": "Excalidraw/第七章 图 2023-05-11 08.26.38.md"
+    },
+    {
+      "basename": "第七章 图 2023-05-27 07.59.50",
+      "path": "Excalidraw/第七章 图 2023-05-27 07.59.50.md"
+    },
+    {
+      "basename": "Day Planner-20230526",
+      "path": "Day Planners/Day Planner-20230526.md"
+    },
+    {
+      "basename": "第六章 薄壳",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第六章 薄壳.md"
+    },
+    {
       "basename": "第五章 薄板的弯曲",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第五章 薄板的弯曲.md"
     },
     {
-      "basename": "平面薄板问题的方程建立",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md"
+      "basename": "第一章 杆件结构",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md"
+    },
+    {
+      "basename": "第六章 薄壳 2023-05-26 11.26.04",
+      "path": "Excalidraw/第六章 薄壳 2023-05-26 11.26.04.md"
+    },
+    {
+      "basename": "第六章 薄壳 2023-05-26 10.33.27",
+      "path": "Excalidraw/第六章 薄壳 2023-05-26 10.33.27.md"
+    },
+    {
+      "basename": "第七章 参数单元",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第七章 参数单元.md"
+    },
+    {
+      "basename": "第八章 结构有限元动力分析",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第八章 结构有限元动力分析.md"
     },
     {
       "basename": "第四章 空间问题的有限元法",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题的有限元法.md"
     },
     {
-      "basename": "3. 极坐标下基本方程的建立",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/3. 极坐标下基本方程的建立.md"
-    },
-    {
-      "basename": "待办事项",
-      "path": "🏚️Daily Life memo/待办事项.md"
+      "basename": "平面薄板问题的方程建立",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md"
     },
     {
       "basename": "Day Planner-20230525",
       "path": "Day Planners/Day Planner-20230525.md"
     },
     {
-      "basename": "结构有限元分析思维导图",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md"
-    },
-    {
       "basename": "第三章 势能极小原理的有限元解法",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第三章 势能极小原理的有限元解法.md"
     },
     {
-      "basename": "第一章 杆件结构",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md"
+      "basename": "待办事项",
+      "path": "🏚️Daily Life memo/待办事项.md"
+    },
+    {
+      "basename": "3. 极坐标下基本方程的建立",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/3. 极坐标下基本方程的建立.md"
+    },
+    {
+      "basename": "结构有限元分析思维导图",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md"
     },
     {
       "basename": "第二章 平面问题",
@@ -43,18 +159,6 @@
     {
       "basename": "第二章 流固耦合中的基本解题方法",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第二章 流固耦合中的基本解题方法.md"
-    },
-    {
-      "basename": "第八章 查找算法",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第八章 查找算法.md"
-    },
-    {
-      "basename": "第七章 图",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
-    },
-    {
-      "basename": "第八章 结构有限元动力分析",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第八章 结构有限元动力分析.md"
     },
     {
       "basename": "梁的刚度矩阵的求出",
@@ -89,116 +193,12 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第一章 绪论/1. 流体力学相关定义及假设.md"
     },
     {
-      "basename": "第七章 参数单元",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第七章 参数单元.md"
-    },
-    {
       "basename": "第七章 参数单元 2023-05-19 00.58.56",
       "path": "Excalidraw/第七章 参数单元 2023-05-19 00.58.56.md"
     },
     {
       "basename": "使用虚功原理推导三角形单元刚度矩阵",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容/使用虚功原理推导三角形单元刚度矩阵.pdf"
-    },
-    {
-      "basename": "SQ11 Usage tutorial",
-      "path": "🏚️Daily Life memo/SQ11 Usage tutorial.md"
-    },
-    {
-      "basename": "2. 一些补充笔记",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/2. 一些补充笔记.md"
-    },
-    {
-      "basename": "向量的合并",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/向量的合并.md"
-    },
-    {
-      "basename": "3. 向量的定义和用法",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/3. 向量的定义和用法.md"
-    },
-    {
-      "basename": "1. 基本用法",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/1. 基本用法.md"
-    },
-    {
-      "basename": "第三章 非线性振动系统的数值分析方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第三章 非线性振动系统的数值分析方法.md"
-    },
-    {
-      "basename": "第八章 查找算法 2023-05-23 11.12.18",
-      "path": "Excalidraw/第八章 查找算法 2023-05-23 11.12.18.md"
-    },
-    {
-      "basename": "第八章 查找算法 2023-05-23 10.38.04",
-      "path": "Excalidraw/第八章 查找算法 2023-05-23 10.38.04.md"
-    },
-    {
-      "basename": "第八章 查找算法 2023-05-23 10.34.12",
-      "path": "Excalidraw/第八章 查找算法 2023-05-23 10.34.12.md"
-    },
-    {
-      "basename": "复习",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/复习.md"
-    },
-    {
-      "basename": "内容整理",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/内容整理.md"
-    },
-    {
-      "basename": "复习 2023-05-23 09.05.01",
-      "path": "Excalidraw/复习 2023-05-23 09.05.01.md"
-    },
-    {
-      "basename": "耐高温复合材料与力学行为讲义",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为讲义.pdf"
-    },
-    {
-      "basename": "黎曼问题",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/黎曼问题.md"
-    },
-    {
-      "basename": "第三章 刚体的空间运动动力学",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第三章 刚体的空间运动动力学.md"
-    },
-    {
-      "basename": "第三章的定理证明",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/第三章的定理证明.pdf"
-    },
-    {
-      "basename": "第六章 树和二叉树",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md"
-    },
-    {
-      "basename": "复习 指针和链表的使用",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/复习 指针和链表的使用.md"
-    },
-    {
-      "basename": "函数指针的定义",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/函数指针的定义.md"
-    },
-    {
-      "basename": "Pasted image 20230317192411",
-      "path": "attachments/Pasted image 20230317192411.png"
-    },
-    {
-      "basename": "Mechanics 1",
-      "path": "🏁Contest/Mechanics 1.md"
-    },
-    {
-      "basename": "Pasted image 20230317192151",
-      "path": "attachments/Pasted image 20230317192151.png"
-    },
-    {
-      "basename": "Pasted image 20230317190719",
-      "path": "attachments/Pasted image 20230317190719.png"
-    },
-    {
-      "basename": "常见形状的转动惯量计算公式",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/部分公式/常见形状的转动惯量计算公式.md"
-    },
-    {
-      "basename": "常见形状的惯性主轴 2023-04-28 14.49.06",
-      "path": "Excalidraw/常见形状的惯性主轴 2023-04-28 14.49.06.md"
     }
   ],
   "omittedPaths": [],

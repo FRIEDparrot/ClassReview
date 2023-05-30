@@ -1,6 +1,9 @@
 {
-  "baseFontSize": 16,
+  "baseFontSize": 17,
   "accentColor": "",
   "theme": "obsidian",
-  "cssTheme": "Wikipedia"
+  "cssTheme": "Wikipedia",
+  "interfaceFontFamily": "Times New Roman",
+  "textFontFamily": "Times New Roman",
+  "monospaceFontFamily": "Corbel"
 }

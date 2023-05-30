@@ -4,22 +4,45 @@
     "type": "split",
     "children": [
       {
-        "id": "ce6637042664374b",
+        "id": "ef8baecf17a8807a",
         "type": "tabs",
         "children": [
           {
-            "id": "242aac735f5b0dd3",
+            "id": "4d3462512970b4a9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第五章 薄板的弯曲.md",
+                "file": "📘ClassNotes/💻softwares/🛩️FEM/ICEM CFD/ICEM CFD 中的网格设置.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "75a65e4438193157",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为讲义.pdf"
+              }
+            }
+          },
+          {
+            "id": "fa18f7aed18974c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/特殊陶瓷材料物质及其应用整理.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -31,7 +54,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 55.21844660194175,
+        "dimension": 60.92233009708738,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -71,7 +94,7 @@
       {
         "id": "3dfa7e76a36534a1",
         "type": "tabs",
-        "dimension": 44.78155339805826,
+        "dimension": 39.07766990291262,
         "children": [
           {
             "id": "db0ad0041a71350b",
@@ -80,13 +103,21 @@
               "type": "recent-files",
               "state": {}
             }
+          },
+          {
+            "id": "3b71fbf11d71ff54",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 306.5,
-    "collapsed": true
+    "width": 293.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -95,6 +126,7 @@
       {
         "id": "736ec7c11262503f",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "7778856753ec014b",
@@ -102,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第五章 薄板的弯曲.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/特殊陶瓷材料物质及其应用整理.md"
               }
             }
           },
@@ -131,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第五章 薄板的弯曲.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/特殊陶瓷材料物质及其应用整理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +180,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第五章 薄板的弯曲.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/特殊陶瓷材料物质及其应用整理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,11 +194,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "c66022855b90b53c",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "fc126ed021ecee63",
@@ -175,21 +209,12 @@
               "type": "calendar",
               "state": {}
             }
-          },
-          {
-            "id": "3b71fbf11d71ff54",
-            "type": "leaf",
-            "state": {
-              "type": "timeline",
-              "state": {}
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 318.5,
-    "collapsed": true
+    "width": 299.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,58 +231,56 @@
       "templater-obsidian:Templater": false,
       "dbfolder:Create a new database table": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-projects:Open projects": false,
-      "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
+      "obsidian-projects:Open projects": false
     }
   },
-  "active": "242aac735f5b0dd3",
+  "active": "fa18f7aed18974c0",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第五章 薄板的弯曲.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题的有限元法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/3. 极坐标下基本方程的建立.md",
-    "🏚️Daily Life memo/待办事项.md",
-    "Day Planners/Day Planner-20230525.md",
-    "Projects - Demo Project/5 Mistakes I Made When I Started Using Obsidian.md",
-    "Projects - Demo Project/What I Learned From Taking 15,000 Notes.md",
-    "Projects - Demo Project/Why You Should Be Taking More Notes.md",
-    "Projects - Demo Project/The Easiest Way to Start Taking Notes.md",
-    "Projects - Demo Project/The Best Notes You'll Ever Make.md",
-    "Projects - Demo Project",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/思维导图/结构有限元分析思维导图.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第三章 势能极小原理的有限元解法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid solid coupling/第二章 流固耦合中的基本解题方法.md",
+    "🗒️Templates/INSERT_CELSIUS_DEGREE.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/特殊陶瓷材料物质及其应用整理.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/实验.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/复习.md",
+    "📘ClassNotes/💻softwares/🛩️FEM/ICEM CFD/ICEM CFD 中的网格设置.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为讲义.pdf",
+    "Day Planners/Day Planner-20230530.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Code Summary/URA网格加密算法.md",
+    "📘ClassNotes/💻softwares/🛩️FEM/ICEM CFD",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为-内容整理.md",
+    "📘ClassNotes/💻softwares/AutoCAD/Untitled.md",
+    "attachments/Pasted image 20230529011217.png",
+    "📘ClassNotes/💻softwares/AutoCAD/AutoCAD中点的导入.md",
+    "📘ClassNotes/💻softwares/🛩️FEM/Comsol/Comsol_Tutorial/CFD计算流体力学.md",
+    "📘ClassNotes/💻softwares/🛩️FEM/Comsol/Comsol_Tutorial/桁架单元的建立.md",
+    "Day Planners/Day Planner-20230529.md",
+    "attachments/Pasted image 20230528233718.png",
+    "📘ClassNotes/💻softwares/🛩️FEM/Workbench/单位设置.md",
+    "attachments/Pasted image 20230528171533.png",
+    "📘ClassNotes/💻softwares/🛩️FEM/Workbench/Workbench梁单元的建立.md",
+    "attachments/Pasted image 20230528151029.png",
+    "attachments/Pasted image 20230528150601.png",
+    "attachments/Pasted image 20230528150042.png",
+    "📘ClassNotes/💻softwares/🛩️FEM/Workbench",
+    "attachments/Pasted image 20230528143437.png",
+    "📘ClassNotes/💻softwares/🛩️FEM/Workbench/Ansys Workbench 设置空间变化的载荷.md",
+    "📘ClassNotes/💻softwares/AutoCAD",
+    "📘ClassNotes/💻softwares/🛩️FEM/Fluent/Fluent 分析案例1.md",
+    "📘ClassNotes/💻softwares/🛩️FEM/Workbench/Workbench 材料设置.md",
+    "attachments/Pasted image 20230528113920.png",
+    "attachments/Pasted image 20230528111122.png",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第八章 查找算法.md",
+    "Day Planners/Day Planner-20230528.md",
+    "🏚️Daily Life memo/Todo.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第八章 结构有限元动力分析.md",
+    "Excalidraw/第七章 图 2023-05-26 21.11.32.md",
+    "Excalidraw/第七章 图 2023-05-11 08.26.38.md",
+    "Excalidraw/第七章 图 2023-05-27 07.59.50.md",
+    "attachments/Pasted Image 20230526211224_380.png",
+    "📃Essay/FriskFEA",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/~$内容整理.docx",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/内容整理.docx",
+    "Projects - Demo Project",
     "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/补充内容/梁的刚度矩阵的求出.pdf",
-    "📃Essay/CFD.pdf",
-    "📘ClassNotes/Markdown & Latex Tutorial/Latex Tutorial/Latex文献引用方法.md",
-    "textgenerator/prompts/default/summarize.md",
-    "textgenerator/prompts/default/simplify.md",
-    "textgenerator/prompts/default/rewrite.md",
-    "textgenerator/prompts/default/getTitles.md",
-    "textgenerator/prompts/default/getTags.md",
-    "textgenerator/prompts/default/getParagraph.md",
-    "textgenerator/prompts/default",
-    "textgenerator/prompts/huggingface",
-    "textgenerator/prompts/dalle-2",
-    "textgenerator/prompts",
-    "textgenerator",
-    "📖Reading_Material/Reading_Notes",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/补充/2.1基本方程组的分类.pdf",
-    "attachments/Pasted image 20230317192411.png",
-    "attachments/Pasted image 20230317192151.png",
-    "attachments/Pasted image 20230317190719.png",
-    "attachments/Pasted image 20230516115545.png",
-    "attachments/Pasted image 20230516114600.png",
-    "attachments/Pasted Image 20230516104135_540.png",
-    "attachments/Pasted image 20230516103950.png",
-    "attachments/Pasted image 20230513215716.png",
-    "wallpaper/4.jpg",
-    "💡Inspiration/2 - Copy.png"
+    "📃Essay/CFD.pdf"
   ]
 }

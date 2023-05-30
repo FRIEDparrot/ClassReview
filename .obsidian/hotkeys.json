@@ -1217,5 +1217,20 @@
       "key": "F5"
     }
   ],
-  "workspace:edit-file-title": []
+  "workspace:edit-file-title": [],
+  "editor:toggle-source": [
+    {
+      "modifiers": [],
+      "key": "F3"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_CELSIUS_DEGREE.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "C"
+    }
+  ]
 }
