@@ -5,4 +5,5 @@
 对于圆柱坐标系的载荷定义，可以参考: 
 https://www.youtube.com/watch?v=BONKvfp5dsg
 
-
+查看截面上的载荷： 在Resuts `->` section Plane `->` new section plane
+![[attachments/Pasted image 20230603011750.png]]

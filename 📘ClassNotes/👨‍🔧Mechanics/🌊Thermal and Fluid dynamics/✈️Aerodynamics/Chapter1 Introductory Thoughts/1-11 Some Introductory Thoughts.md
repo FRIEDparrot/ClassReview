@@ -78,7 +78,6 @@ $$\tau = \mu \frac{dV}{dy}$$
 and $\frac{dV}{dy}$ is the velocity gradient.  (note that $\mu$ is not really a constant)
 we deduce that in the regions where the velocity in the flow is large, the shear force $\tau$ is large
 
-
 ### 1.4.1 Units 
 
 ![[Pasted image 20230118204646.png|450]]
@@ -330,8 +329,8 @@ The criteria to ensure the two flows are dynamically similar is:
 for many aerodynamic applications, the Reynolds number and the Mach number are the dominant similarity parameters. -> so in a limited sense, we can say that ==flows over geometrically similar bodies at the same **Mach** and **Reynold** number are dynamically similar== and hence the ***lift, drag, and moment coefficients will be identical*** for the bodies for the free-flight case in the test-section flow. also note that this statement is not always precise because there are other similarity parameters that influence the flow.
 
 Differences  in the freestream turbulence between the wind tunnel and free flight can have an important impact on $C_D$ and the maximum of the $C_L$. 
-[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/📝Examples/Example1.5]]
-[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/📝Examples/Example1.6]]
+[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/📝Examples/Example1.5|Example1.5]]
+[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/📝Examples/Example1.6|Example1.6]]
 through the example above, we can reach that the wind tunnel should be pressurized to reach correct similarity parameters. one of the schematic is shown below: 
 ![[Pasted image 20230122213217.png|500]]
 #### 2. Design utilities

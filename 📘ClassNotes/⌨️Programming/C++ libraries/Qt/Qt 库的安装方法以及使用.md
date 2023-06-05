@@ -2,6 +2,8 @@ Qt库是一个开源的C语言(C++)的GUI图形界面库，对于Ansys等软件�
 [Qt库的安装方法](https://www.bilibili.com/video/BV1TS4y1J7TV)
 本电脑的安装路径为`E:/Qt`
 
+需要说明: Design Studio是用于设计界面的程序，而Qt Creator 是用于设计程序的内部逻辑的。
+
 在安装Qt库之后， 我们可以将Qt库配置到visual Studio
 
 只需在visual studio 的Extensions中，选择安装Qt Tools即可
@@ -10,3 +12,5 @@ Qt库是一个开源的C语言(C++)的GUI图形界面库，对于Ansys等软件�
 找到`qmake.exe`文件并添加即可
 
 接下来就可以使用qt widgets application 创建最简单的应用程序了
+
+可能需要将Qt/tools/MinGW/bin 并添加到环境变量中
