@@ -32266,9 +32266,11 @@ var ObsidianGitSettingsTab = class extends import_obsidian8.PluginSettingTab {
           plugin.saveSettings();
         })
       );
-      containerEl.createEl("br");
-      containerEl.createEl("h3", { text: "Line author information" });
-      this.addLineAuthorInfoSettings();
+      if (plugin.gitManager instanceof SimpleGit) {
+        containerEl.createEl("br");
+        containerEl.createEl("h3", { text: "Line author information" });
+        this.addLineAuthorInfoSettings();
+      }
     }
     containerEl.createEl("br");
     containerEl.createEl("h3", { text: "Miscellaneous" });
@@ -35836,9 +35838,12 @@ var DiffView = class extends import_obsidian17.ItemView {
     super(leaf);
     this.plugin = plugin;
     this.gettingDiff = false;
+    this.gitRefreshBind = this.refresh.bind(this);
+    this.gitViewRefreshBind = this.refresh.bind(this);
     this.parser = new DOMParser();
     this.navigation = true;
-    addEventListener("git-refresh", this.refresh.bind(this));
+    addEventListener("git-refresh", this.gitRefreshBind);
+    addEventListener("git-view-refresh", this.gitViewRefreshBind);
   }
   getViewType() {
     return DIFF_VIEW_CONFIG.type;
@@ -35865,7 +35870,8 @@ var DiffView = class extends import_obsidian17.ItemView {
     return this.state;
   }
   onClose() {
-    removeEventListener("git-refresh", this.refresh.bind(this));
+    removeEventListener("git-refresh", this.gitRefreshBind);
+    removeEventListener("git-view-refresh", this.gitViewRefreshBind);
     return super.onClose();
   }
   onOpen() {
@@ -35884,16 +35890,26 @@ var DiffView = class extends import_obsidian17.ItemView {
         );
         this.contentEl.empty();
         if (!diff2) {
-          const content = await this.app.vault.adapter.read(
-            this.plugin.gitManager.getVaultPath(this.state.file)
-          );
-          const header = `--- /dev/null
+          if (this.plugin.gitManager instanceof SimpleGit && await this.plugin.gitManager.isTracked(
+            this.state.file
+          )) {
+            diff2 = [
+              `--- ${this.state.file}`,
+              `+++ ${this.state.file}`,
+              ""
+            ].join("\n");
+          } else {
+            const content = await this.app.vault.adapter.read(
+              this.plugin.gitManager.getVaultPath(this.state.file)
+            );
+            const header = `--- /dev/null
 +++ ${this.state.file}
 @@ -0,0 +1,${content.split("\n").length} @@`;
-          diff2 = [
-            ...header.split("\n"),
-            ...content.split("\n").map((line) => `+${line}`)
-          ].join("\n");
+            diff2 = [
+              ...header.split("\n"),
+              ...content.split("\n").map((line) => `+${line}`)
+            ].join("\n");
+          }
         }
         const diffEl = this.parser.parseFromString(html(diff2), "text/html").querySelector(".d2h-file-diff");
         this.contentEl.append(diffEl);
@@ -41968,12 +41984,12 @@ function instance9($$self, $$props, $$invalidate) {
           plugin.setState(0 /* idle */);
           return false;
         }
-        plugin.gitManager.commit(commitMessage).then(() => {
+        plugin.promiseQueue.addTask(() => plugin.gitManager.commit(commitMessage).then(() => {
           if (commitMessage !== plugin.settings.commitMessage) {
             $$invalidate(2, commitMessage = "");
           }
           plugin.setUpAutoBackup();
-        }).finally(triggerRefresh2);
+        }).finally(triggerRefresh2));
       }
     });
   }
@@ -41981,11 +41997,11 @@ function instance9($$self, $$props, $$invalidate) {
     return __awaiter(this, void 0, void 0, function* () {
       $$invalidate(5, loading = true);
       if (status2) {
-        plugin.createBackup(false, false, commitMessage).then(() => {
+        plugin.promiseQueue.addTask(() => plugin.createBackup(false, false, commitMessage).then(() => {
           if (commitMessage !== plugin.settings.commitMessage) {
             $$invalidate(2, commitMessage = "");
           }
-        }).finally(triggerRefresh2);
+        }).finally(triggerRefresh2));
       }
     });
   }
@@ -42039,26 +42055,26 @@ function instance9($$self, $$props, $$invalidate) {
   }
   function stageAll() {
     $$invalidate(5, loading = true);
-    plugin.gitManager.stageAll({ status: status2 }).finally(triggerRefresh2);
+    plugin.promiseQueue.addTask(() => plugin.gitManager.stageAll({ status: status2 }).finally(triggerRefresh2));
   }
   function unstageAll() {
     $$invalidate(5, loading = true);
-    plugin.gitManager.unstageAll({ status: status2 }).finally(triggerRefresh2);
+    plugin.promiseQueue.addTask(() => plugin.gitManager.unstageAll({ status: status2 }).finally(triggerRefresh2));
   }
   function push2() {
     $$invalidate(5, loading = true);
-    plugin.push().finally(triggerRefresh2);
+    plugin.promiseQueue.addTask(() => plugin.push().finally(triggerRefresh2));
   }
   function pull2() {
     $$invalidate(5, loading = true);
-    plugin.pullChangesFromRemote().finally(triggerRefresh2);
+    plugin.promiseQueue.addTask(() => plugin.pullChangesFromRemote().finally(triggerRefresh2));
   }
   function discard() {
     new DiscardModal(view.app, false, plugin.gitManager.getVaultPath("/")).myOpen().then((shouldDiscard) => {
       if (shouldDiscard === true) {
-        plugin.gitManager.discardAll({ status: plugin.cachedStatus }).finally(() => {
+        plugin.promiseQueue.addTask(() => plugin.gitManager.discardAll({ status: plugin.cachedStatus }).finally(() => {
           dispatchEvent(new CustomEvent("git-refresh"));
-        });
+        }));
       }
     });
   }
@@ -42815,7 +42831,7 @@ var ObsidianGit = class extends import_obsidian30.Plugin {
     (_a2 = this.settingsTab) == null ? void 0 : _a2.beforeSaveSettings();
     await this.saveData(this.settings);
   }
-  async saveLastAuto(date, mode) {
+  saveLastAuto(date, mode) {
     if (mode === "backup") {
       this.localStorage.setLastAutoBackup(date.toString());
     } else if (mode === "pull") {
@@ -42824,7 +42840,7 @@ var ObsidianGit = class extends import_obsidian30.Plugin {
       this.localStorage.setLastAutoPush(date.toString());
     }
   }
-  async loadLastAuto() {
+  loadLastAuto() {
     var _a2, _b, _c;
     return {
       backup: new Date((_a2 = this.localStorage.getLastAutoBackup()) != null ? _a2 : ""),
@@ -43044,13 +43060,17 @@ var ObsidianGit = class extends import_obsidian30.Plugin {
   }) {
     if (!await this.isAllInitialized())
       return false;
-    const hadConflict = this.localStorage.getConflict() === "true";
+    let hadConflict = this.localStorage.getConflict() === "true";
     let changedFiles;
     let status2;
     let unstagedFiles;
     if (this.gitManager instanceof SimpleGit) {
       this.mayDeleteConflictFile();
       status2 = await this.updateCachedStatus();
+      if (status2.conflicted.length == 0) {
+        this.localStorage.setConflict("false");
+        hadConflict = false;
+      }
       if (fromAutoBackup && status2.conflicted.length > 0) {
         this.displayError(
           `Did not commit, because you have conflicts in ${status2.conflicted.length} ${status2.conflicted.length == 1 ? "file" : "files"}. Please resolve them and commit per command.`
@@ -43115,6 +43135,11 @@ var ObsidianGit = class extends import_obsidian30.Plugin {
           status: status2,
           unstagedFiles
         });
+      }
+      if (this.gitManager instanceof SimpleGit) {
+        if ((await this.updateCachedStatus()).conflicted.length == 0) {
+          this.localStorage.setConflict("false");
+        }
       }
       let roughly = false;
       if (committedFiles === void 0) {

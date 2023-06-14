@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e4ec9a0c26b104fd",
+        "id": "9858bac7111994d1",
         "type": "tabs",
         "children": [
           {
-            "id": "005457d192d96696",
+            "id": "ed9d8d942ad32abe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第八章 查找算法.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9d138ffd32228256",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第九章 内部排序.md",
+                "file": "📘ClassNotes/💻softwares/Qt/Qt Creator/基本概念和基本操作/9. 打包Qt文件为exe可执行文件.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,7 +31,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 60.92233009708738,
+        "dimension": 74.8076923076923,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -83,7 +71,7 @@
       {
         "id": "3dfa7e76a36534a1",
         "type": "tabs",
-        "dimension": 39.07766990291262,
+        "dimension": 25.192307692307693,
         "children": [
           {
             "id": "db0ad0041a71350b",
@@ -105,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 387.5,
-    "collapsed": true
+    "width": 294.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -123,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第八章 查找算法.md"
+                "file": "📘ClassNotes/💻softwares/Qt/Qt Creator/基本概念和基本操作/9. 打包Qt文件为exe可执行文件.md"
               }
             }
           },
@@ -152,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第八章 查找算法.md",
+                "file": "📘ClassNotes/💻softwares/Qt/Qt Creator/基本概念和基本操作/9. 打包Qt文件为exe可执行文件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第八章 查找算法.md",
+                "file": "📘ClassNotes/💻softwares/Qt/Qt Creator/基本概念和基本操作/9. 打包Qt文件为exe可执行文件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +189,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 299.5,
+    "width": 301.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -219,57 +206,57 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
       "dbfolder:Create a new database table": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-projects:Open projects": false
+      "obsidian-projects:Open projects": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "005457d192d96696",
+  "active": "ed9d8d942ad32abe",
   "lastOpenFiles": [
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第八章 查找算法.docx",
-    "attachments/Pasted image 20230605091250.png",
-    "attachments/Pasted image 20230605091024.png",
-    "attachments/Pasted image 20230605091021.png",
-    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/平衡二叉树的失衡情况.pdf",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第八章 查找算法.md",
-    "Day Planners/Day Planner-20230605.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第九章 内部排序.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Qt/Design Studio/3D界面的编写.md",
-    "attachments/Pasted image 20230604124256.png",
-    "attachments/Pasted image 20230604122022.png",
-    "attachments/Pasted image 20230604102321.png",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Qt/Design Studio/部分组件的创建方法介绍.md",
-    "Excalidraw/第八章 查找算法 2023-06-04 06.52.24.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Qt/Design Studio/组件Component 的使用方法.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Qt/Design Studio/基本介绍.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Qt/Design Studio/Design Studio 的状态控制逻辑.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Qt/Design Studio/部分UI控制组件讲解.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Qt/Design Studio/Design Studio 中的动画组件添加.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Qt/Design Studio/Design Studio 基本教程.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Qt/Qt 库的安装方法以及使用.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Qt/Design Studio",
-    "Day Planners/Day Planner-20230604.md",
-    "attachments/Pasted image 20230603222536.png",
-    "attachments/Pasted image 20230603222242.png",
-    "attachments/Pasted image 20230603213138.png",
-    "attachments/Pasted image 20230603205726.png",
+    "attachments/Pasted image 20230614133505.png",
+    "attachments/Pasted image 20230614122907.png",
+    "attachments/Pasted image 20230614122715.png",
+    "attachments/Pasted image 20230614122610.png",
+    "📘ClassNotes/💻softwares/Qt/Qt Creator/基本概念和基本操作/8. QPainter 创建二维的建模图像界面.md",
+    "📘ClassNotes/💻softwares/Qt/Qt Creator/基本概念和基本操作/9. 打包Qt文件为exe可执行文件.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/一维形式的熵流动控制方程.pdf",
+    "📘ClassNotes/💻softwares/Qt/Qt Creator/基本概念和基本操作/0. Qt 库的安装方法以及使用.md",
+    "attachments/Pasted image 20230614012252.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第三章 双曲型方程组及其间断解.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第二章 流体力学的基本方程组.md",
+    "Day Planners/Day Planner-20230614.md",
+    "Excalidraw/第二章 流体力学的基本方程组 2023-06-13 22.45.19.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/2.1基本方程组的分类.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/复习课程.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Code Summary/URA网格加密算法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Code Summary/平面梁四节点和八节点单元求解以及自动编号.md",
+    "attachments/Pasted image 20230613211921.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Code Summary/科技论文的写法.md",
+    "attachments/Pasted image 20230613192515.png",
+    "attachments/Pasted image 20230613190404.png",
+    "Excalidraw/科技论文的写法 2023-06-13 18.00.22.md",
+    "attachments/Pasted Image 20230613180707_304.png",
+    "attachments/Pasted Image 20230613180119_348.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/约化原理.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/复习.md",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
-    "Excalidraw/第八章 查找算法 2023-05-23 10.34.12.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
-    "🏚️Daily Life memo/待办事项.md",
-    "📘ClassNotes/💻softwares/🛩️FEM/Workbench/Ansys Workbench 设置空间变化的载荷.md",
-    "📘ClassNotes/💻softwares/🛩️FEM/Workbench/Workbench梁单元的建立.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Qt/Qt的main函数简介.md",
-    "Day Planners/Day Planner-20230603.md",
-    "📘ClassNotes/⌨️Programming/C++ libraries/Qt",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/♎Important Conclusions and Lists/Important Variables and Numbers.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/补充/第三章 双曲型方程组及其间断解.md",
-    "Excalidraw/第三章 双曲型方程组及其间断解 2023-06-02 11.32.53.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/补充/一维形式的熵流动控制方程.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/补充/Euler方程组的基本微分格式推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/CFD_problem.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为讲义.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/应变理论.pdf",
-    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/自适应缓存替换ARC算法.pdf",
-    "📘ClassNotes/💻softwares/🛩️FEM/ICEM CFD"
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第九章 内部排序.md",
+    "📘ClassNotes/💻softwares/Qt/Qt Creator/基本概念和基本操作/3. 信号和槽.md",
+    "📘ClassNotes/⌨️Programming/C++ libraries/CGAL/CGAL划分网格.md",
+    "Day Planners/Day Planner-20230613.md",
+    "📘ClassNotes/⌨️Programming/C++ libraries/CGAL/CGAL库的安装教程.md",
+    "📘ClassNotes/⌨️Programming/C++ libraries/CGAL",
+    "attachments/Pasted image 20230612203257.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/黎曼问题.md",
+    "📘ClassNotes/💻softwares/Qt/Qt Creator/GUI 部件整体概要/5. Qt中的事件与事件分发器.md",
+    "📘ClassNotes/💻softwares/Qt/Design Studio/Qt Quick Compiler 的使用.md",
+    "📘ClassNotes/💻softwares/Qt/Qt Creator/GUI 部件整体概要/2. Qt GUI 界面的常用控件.md",
+    "📘ClassNotes/💻softwares/Qt/Qt Creator/实战代码",
+    "📘ClassNotes/💻softwares/Qt/Qt Creator/基本概念和基本操作",
+    "📘ClassNotes/💻softwares/Qt/Qt Creator/GUI 部件整体概要",
+    "📘ClassNotes/💻softwares/Qt/Qt Creator/补充",
+    "📘ClassNotes/💻softwares/🛩️FEM/ICEM CFD/机翼网格的建立方法",
+    "📘ClassNotes/💻softwares/Qt/Qt Creator/常见报错",
+    "📘ClassNotes/💻softwares/Qt/Qt Creator"
   ]
 }

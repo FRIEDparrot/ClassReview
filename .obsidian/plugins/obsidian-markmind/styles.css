@@ -125,27 +125,36 @@
   padding-left: 20px;
 }
 
+/* 笔记渲染表格 */
 
-.mm-node .mm-node-content table th {
+
+
+.mm-node .mm-node-content table th,
+.mm-node-note-container table th {
   font-weight: 600;
 }
 
 .mm-node .mm-node-content table th,
-.mm-node .mm-node-content table td {
+.mm-node .mm-node-content table td,
+.mm-node-note-container table th,
+.mm-node-note-container table td {
   padding: 6px 13px;
   border: 1px solid #d0d7de;
 }
 
-.mm-node .mm-node-content table tr {
+.mm-node .mm-node-content table tr,
+.mm-node-note-container table tr {
   background-color: #ffffff;
   border-top: 1px solid hsla(210, 18%, 87%, 1);
 }
 
-.mm-node .mm-node-content table tr:nth-child(2n) {
+.mm-node .mm-node-content table tr:nth-child(2n),
+.mm-node-note-container table tr:nth-child(2n) {
   background-color: #f6f8fa;
 }
 
-.mm-node .mm-node-content table img {
+.mm-node .mm-node-content table img,
+.mm-node-note-container table img {
   background-color: transparent;
 }
 
