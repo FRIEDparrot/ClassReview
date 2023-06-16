@@ -309,13 +309,11 @@ just as the method we used to derive the Continuum equation, we have:
 $$∰_V \rho f d\mathcal{V} -∯_S p dS + F_{viscous} = ∰\frac{\partial (\rho V)}{\partial S} d\mathcal{V} + ∯_S (\rho V \cdot dS) V$$
 [[1-16 Fundamental Principles 2023-01-28 20.31.38.excalidraw|Implements and the clarification]]
 and also use the [[1-16 Fundamental Principles#2.2.11 Relations between the Line, surface and the Volume integral|divergence theorem]], then we have
-$$∯_S(\rho V \cdot dS )V=  ∰_V \nabla\cdot V d\mathcal{V} \space V $$
-(note that it has three components in three directions)
-and also
+$$∯_S(\rho V \cdot dS )V=  ∰_V \nabla\cdot \rho V d\mathcal{V} \space V $$
+(note that it has three components in three directions), and also
 $$∯_S p dS = ∰_V \nabla p d\mathcal{V}$$
-thus the equation becomes (note that the divergence of the vector is a scalar):
-the equations in the 
-x direction ,y direction, and z direction are as following: 
+thus the equation becomes (note that the divergence of the vector is a scalar)
+the equations in the x direction ,y direction, and z direction are as following: 
 $$∰_V \frac{\partial(\rho u)}{\partial t} d\mathcal{V}  + ∰_V\nabla \cdot (\rho u V) d\mathcal{V}= ∰_V \left[\rho f_x - \frac{\partial p}{\partial x} \right] d\mathcal{V} + F_{viscous,x}$$
 $$∰_V \frac{\partial(\rho v)}{\partial t} d\mathcal{V}+ ∰_V \nabla \cdot (\rho v V)d\mathcal{V}= ∰_V \left[\rho f_y - \frac{\partial p}{\partial y}\right] d\mathcal{V} + F_{viscous,y}$$
 $$∰_V \frac{\partial(\rho w)}{\partial t}d\mathcal{V} + ∰_V \nabla \cdot (\rho w V)d\mathcal{V}= ∰_V \left[\rho f_z - \frac{\partial p}{\partial z}\right] d\mathcal{V} + F_{viscous,z}$$
@@ -326,7 +324,7 @@ $$\boxed{\frac{\partial(\rho w)}{\partial t}   + \nabla \cdot (\rho w V)= - \fra
 where $(\mathcal{F_x})_{viscous}$ is the proper form of the x component of the viscous shear stress when placed inside the volume integral
 we know that in the fluid dynamics, the viscous force term in the equation is calculated as
 $$\mu \left(\nabla^2 V + \nabla \cdot (\nabla \cdot V)\right)$$
-so we can compare it with [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第五章 粘性流体运动基础/粘性流体的运行模型建立|the momentum equation in the fluid dynamics]]
+so we can compare it with [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第五章 粘性流体运动基础/五、粘性流体的运行模型建立|the momentum equation in the fluid dynamics]]
 
 ##### (3) momentum equation for steady and inviscid flow
 Specialized for a steady$(\frac{\partial}{\partial t} =0, F_{viscous} =0)$ and inviscid flow $(\nabla \cdot V =0)$, the equation becomes: 
@@ -341,7 +339,7 @@ The moment equation for an inviscid flow is called ***Euler Equations*** [[📘C
 and the momentum equations for a viscous flow is called ***Navier - Stokes Equations***
 
 ## 2.6 Application of the momentum equations
-Note that the important basic equations are arranged into the note [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/♎Important Conclusions and Lists/Basic Aerodynamic Equations]]
+Note that the important basic equations are arranged into the note [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/♎Important Conclusions and Lists/Basic Aerodynamic Equations|Important Conclusions and Lists/Basic Aerodynamic Equations]]
 
 at a tunnel experiment of NACA, the lift and drag characteristics of airfoil shapes are carried out in a specially designed wind tunnel where the wing models spanned the entire test section. 
 

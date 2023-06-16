@@ -7,7 +7,7 @@ the Navier-Stokes equations are presented as follows:
 ![[Pasted image 20230118164845.png]]
 or in the COMSOL model: s
 ![[Pasted image 20230118183050.png|300]]
-[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第五章 粘性流体运动基础/粘性流体的运行模型建立#3. N-S方程|Compare to the N-S equation of the steady flow]]
+[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第五章 粘性流体运动基础/五、粘性流体的运行模型建立#3. N-S方程|Compare to the N-S equation of the steady flow]]
 
 compare to the N-S equation, it add the part $\alpha(\gamma) u$, which is a force term where the coefficient 
 $$\alpha(\gamma) \equiv \alpha_{max}\frac{q(1-\gamma)}{q+ \gamma}$$

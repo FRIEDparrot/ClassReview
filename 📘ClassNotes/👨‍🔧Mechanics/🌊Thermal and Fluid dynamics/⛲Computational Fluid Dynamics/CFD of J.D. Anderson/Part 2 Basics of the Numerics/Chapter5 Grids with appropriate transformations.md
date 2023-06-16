@@ -13,7 +13,7 @@ $$\boxed{\Large \Delta \psi = -\xi}$$
 where 
 $$\Delta  = \frac{\partial^2 }{\partial x^2} + \frac{\partial^2 }{\partial y^2}$$
 We note a new stream function for the incompressible flow is :
-[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第五章 粘性流体运动基础/粘性流体的运行模型建立#3. N-S方程|Reference : N-S equation]] : For example : 
+[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第五章 粘性流体运动基础/五、粘性流体的运行模型建立#3. N-S方程|Reference : N-S equation]] : For example : 
 $$\frac{\partial u}{\partial t} + u\frac{\partial u}{\partial x} + v\frac{\partial u}{\partial y} + w \frac{\partial u}{\partial z} = g_x + \nu \nabla^2 u$$
 we can write it into the form of vector, <mark style="background: transparent; color: yellow">then neglect the volume force</mark> and it becomes: 
 $$\Large\boxed{\frac{\partial \xi}{\partial t} + \frac{\partial \psi}{\partial y}\frac{\partial \xi}{\partial x} - \frac{\partial \psi}{\partial x}\frac{\partial \xi}{\partial y} = 0}$$

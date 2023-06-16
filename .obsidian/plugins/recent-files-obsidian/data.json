@@ -1,6 +1,94 @@
 {
   "recentFiles": [
     {
+      "basename": "第二章 流固耦合中的基本解题方法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第二章 流固耦合中的基本解题方法.md"
+    },
+    {
+      "basename": "第三章 非线性振动系统的数值分析方法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第三章 非线性振动系统的数值分析方法.md"
+    },
+    {
+      "basename": "第六章 多尺度法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第六章 多尺度法.md"
+    },
+    {
+      "basename": "第二章 流固耦合中的基本解题方法 2023-06-16 09.55.44",
+      "path": "Excalidraw/第二章 流固耦合中的基本解题方法 2023-06-16 09.55.44.md"
+    },
+    {
+      "basename": "ADD_TEXT_HIGHLIGHT_ZONE",
+      "path": "🗒️Templates/ADD_TEXT_HIGHLIGHT_ZONE.md"
+    },
+    {
+      "basename": "第四章 自激振动",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第四章 自激振动.md"
+    },
+    {
+      "basename": "第五章 参激振动",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第五章 参激振动.md"
+    },
+    {
+      "basename": "复习课程",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/复习课程.md"
+    },
+    {
+      "basename": "1-16 Fundamental Principles 2023-01-28 20.31.38.excalidraw",
+      "path": "Excalidraw/1-16 Fundamental Principles 2023-01-28 20.31.38.excalidraw.md"
+    },
+    {
+      "basename": "黎曼问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/黎曼问题.md"
+    },
+    {
+      "basename": "第三章 双曲型方程组及其间断解",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第三章 双曲型方程组及其间断解.md"
+    },
+    {
+      "basename": "Euler方程组的基本微分格式推导",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/Euler方程组的基本微分格式推导.pdf"
+    },
+    {
+      "basename": "9-16 The Application Concepts",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/9-16 The Application Concepts.md"
+    },
+    {
+      "basename": "一、流体运动简介",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第三章 流体运动概述/一、流体运动简介.md"
+    },
+    {
+      "basename": "五、粘性流体的运行模型建立",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第五章 粘性流体运动基础/五、粘性流体的运行模型建立.md"
+    },
+    {
+      "basename": "1-8 Fundamental Principles",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md"
+    },
+    {
+      "basename": "一、理想流体流动基础",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/一、理想流体流动基础.md"
+    },
+    {
+      "basename": "二、伯努利方程的应用以及相关例题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/二、伯努利方程的应用以及相关例题.md"
+    },
+    {
+      "basename": "一维形式的熵流动控制方程",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/一维形式的熵流动控制方程.pdf"
+    },
+    {
+      "basename": "第二章 流体力学的基本方程组",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第二章 流体力学的基本方程组.md"
+    },
+    {
+      "basename": "样式存储",
+      "path": "📘ClassNotes/💻softwares/TecPlot/样式存储.md"
+    },
+    {
+      "basename": "Pasted image 20230613190404",
+      "path": "attachments/Pasted image 20230613190404.png"
+    },
+    {
       "basename": "9. 打包Qt文件为exe可执行文件",
       "path": "📘ClassNotes/💻softwares/Qt/Qt Creator/基本概念和基本操作/9. 打包Qt文件为exe可执行文件.md"
     },
@@ -9,20 +97,8 @@
       "path": "📘ClassNotes/💻softwares/Qt/Qt Creator/基本概念和基本操作/8. QPainter 创建二维的建模图像界面.md"
     },
     {
-      "basename": "一维形式的熵流动控制方程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/一维形式的熵流动控制方程.pdf"
-    },
-    {
       "basename": "0. Qt 库的安装方法以及使用",
       "path": "📘ClassNotes/💻softwares/Qt/Qt Creator/基本概念和基本操作/0. Qt 库的安装方法以及使用.md"
-    },
-    {
-      "basename": "第三章 双曲型方程组及其间断解",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第三章 双曲型方程组及其间断解.md"
-    },
-    {
-      "basename": "第二章 流体力学的基本方程组",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第二章 流体力学的基本方程组.md"
     },
     {
       "basename": "第二章 流体力学的基本方程组 2023-06-13 22.45.19",
@@ -31,10 +107,6 @@
     {
       "basename": "2.1基本方程组的分类",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/2.1基本方程组的分类.pdf"
-    },
-    {
-      "basename": "复习课程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/复习课程.md"
     },
     {
       "basename": "URA网格加密算法",
@@ -85,10 +157,6 @@
       "path": "📘ClassNotes/⌨️Programming/C++ libraries/CGAL/CGAL库的安装教程.md"
     },
     {
-      "basename": "黎曼问题",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/黎曼问题.md"
-    },
-    {
       "basename": "5. Qt中的事件与事件分发器",
       "path": "📘ClassNotes/💻softwares/Qt/Qt Creator/GUI 部件整体概要/5. Qt中的事件与事件分发器.md"
     },
@@ -131,74 +199,6 @@
     {
       "basename": "Push Button 等Qt类的创建",
       "path": "📘ClassNotes/💻softwares/Qt/Design Studio/Push Button 等Qt类的创建.md"
-    },
-    {
-      "basename": "C++ Eigen 安装",
-      "path": "📘ClassNotes/⌨️Programming/C++ libraries/Eigen/C++ Eigen 安装.md"
-    },
-    {
-      "basename": "1. Qt 中的登录界面创建知识要点",
-      "path": "📘ClassNotes/💻softwares/Qt/Qt Creator/GUI 部件整体概要/1. Qt 中的登录界面创建知识要点.md"
-    },
-    {
-      "basename": "部分UI控制组件讲解",
-      "path": "📘ClassNotes/💻softwares/Qt/Design Studio/部分UI控制组件讲解.md"
-    },
-    {
-      "basename": "组件Component 的使用方法",
-      "path": "📘ClassNotes/💻softwares/Qt/Design Studio/组件Component 的使用方法.md"
-    },
-    {
-      "basename": "7. QFile 的文件读写操作",
-      "path": "📘ClassNotes/💻softwares/Qt/Qt Creator/GUI 部件整体概要/7. QFile 的文件读写操作.md"
-    },
-    {
-      "basename": "6. QPainter 绘图 2023-06-08 23.00.56",
-      "path": "Excalidraw/6. QPainter 绘图 2023-06-08 23.00.56.md"
-    },
-    {
-      "basename": "5. Qt中的事件与事件分发器 2023-06-08 20.35.00",
-      "path": "Excalidraw/5. Qt中的事件与事件分发器 2023-06-08 20.35.00.md"
-    },
-    {
-      "basename": "第四章 自激振动",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第四章 自激振动.md"
-    },
-    {
-      "basename": "第五章 参激振动",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第五章 参激振动.md"
-    },
-    {
-      "basename": "第二章 流固耦合中的基本解题方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第二章 流固耦合中的基本解题方法.md"
-    },
-    {
-      "basename": "QString的相关设置和转换操作",
-      "path": "📘ClassNotes/💻softwares/Qt/Qt Creator/补充/QString的相关设置和转换操作.md"
-    },
-    {
-      "basename": "待办事项",
-      "path": "🏚️Daily Life memo/待办事项.md"
-    },
-    {
-      "basename": "第七章 图",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
-    },
-    {
-      "basename": "复习 树的基本知识",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/复习 树的基本知识.md"
-    },
-    {
-      "basename": "1. 建模和基本网格控制划分模块",
-      "path": "📘ClassNotes/💻softwares/🛩️FEM/ICEM CFD/1. 建模和基本网格控制划分模块.md"
-    },
-    {
-      "basename": "wing",
-      "path": "📘ClassNotes/💻softwares/🛩️FEM/ICEM CFD/机翼网格的建立方法/wing.md"
-    },
-    {
-      "basename": "wing 2023-06-07 16.49.02",
-      "path": "Excalidraw/wing 2023-06-07 16.49.02.md"
     }
   ],
   "omittedPaths": [],
