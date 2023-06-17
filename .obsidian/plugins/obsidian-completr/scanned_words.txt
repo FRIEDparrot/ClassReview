@@ -6442,6 +6442,7 @@ RRz
 RbXz
 RJw
 RQIi
+Rankine
 Osgood
 OPTIONS
 Obsidian
@@ -20061,6 +20062,7 @@ cJX
 cYx
 cDM
 ckfI
+ccac
 equatiion
 equations
 excalidraw
@@ -23621,6 +23623,7 @@ eZTLy
 eijm
 ekN
 ezYD
+ebrr
 Classification
 Clustering
 Convection
@@ -34272,6 +34275,8 @@ Ahkk
 AMAuQ
 APJj
 Axpv
+ATAlmegQ
+Arb
 Deviation
 Drawing
 Dirichlet
@@ -41457,6 +41462,7 @@ dIHE
 dIh
 dUC
 dPW
+ddefbf
 Exper
 EXCALIDRAW
 EF
@@ -48346,6 +48352,7 @@ HDs
 HjUv
 Had
 HZjiIqQ
+Hugoniot
 KNN
 KP
 KD
@@ -75890,6 +75897,8 @@ bPqp
 bRg
 bvO
 bOPowe
+bbae
+bee
 fcc
 factor
 forced
@@ -79285,6 +79294,7 @@ fJen
 fhqS
 fac
 fugs
+fbae
 hcp
 heat
 has
@@ -140496,6 +140506,7 @@ WALc
 WDmjp
 WIGf
 WtAU
+WFhv
 given
 governing
 generalized
@@ -173577,6 +173588,7 @@ ZgRg
 ZPlK
 ZuYG
 ZvFs
+ZzxEHO
 YB
 YY
 Yj

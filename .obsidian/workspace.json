@@ -4,40 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "6184c8df8e5fa26b",
+        "id": "7876655794adb96d",
         "type": "tabs",
         "children": [
           {
-            "id": "f0ebce98c039d73e",
+            "id": "38cf66e5fc09bc68",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "537457e42aa8a3c0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第二章 流固耦合中的基本解题方法.md",
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/立体八数码问题.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
-      },
-      {
-        "id": "d8292691bf2dc747",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "f1311e0a7eba1750",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第六章 多尺度法.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +40,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 74.8076923076923,
+        "dimension": 70.1923076923077,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -89,7 +80,7 @@
       {
         "id": "3dfa7e76a36534a1",
         "type": "tabs",
-        "dimension": 25.192307692307693,
+        "dimension": 29.807692307692307,
         "children": [
           {
             "id": "db0ad0041a71350b",
@@ -111,8 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5,
-    "collapsed": true
+    "width": 376.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -129,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第二章 流固耦合中的基本解题方法.md"
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/立体八数码问题.md"
               }
             }
           },
@@ -158,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第二章 流固耦合中的基本解题方法.md",
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/立体八数码问题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第二章 流固耦合中的基本解题方法.md",
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/立体八数码问题.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -208,8 +198,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 399.5,
-    "collapsed": true
+    "width": 399.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -229,48 +218,48 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f0ebce98c039d73e",
+  "active": "537457e42aa8a3c0",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第三章 非线性振动系统的数值分析方法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第六章 多尺度法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第二章 流固耦合中的基本解题方法.md",
-    "Excalidraw/第二章 流固耦合中的基本解题方法 2023-06-16 09.55.44.md",
-    "Day Planners/Day Planner-20230616.md",
-    "🗒️Templates/ADD_TEXT_HIGHLIGHT_ZONE.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/立体八数码问题.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第四章 自激振动.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第五章 参激振动.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第三章 非线性振动系统的数值分析方法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第二章 流固耦合中的基本解题方法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/补充/单自由度振动的主要结论.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第一章 绪论与定性分析方法.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/复习课程.md",
-    "Excalidraw/1-16 Fundamental Principles 2023-01-28 20.31.38.excalidraw.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/黎曼问题.md",
+    "Excalidraw/第二章 流固耦合中的基本解题方法 2023-06-17 14.57.16.md",
     "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第三章 双曲型方程组及其间断解.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/Euler方程组的基本微分格式推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/9-16 The Application Concepts.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第三章 流体运动概述/一、流体运动简介.md",
-    "Day Planners/Day Planner-20230615.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第五章 粘性流体运动基础/五、粘性流体的运行模型建立.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/一、理想流体流动基础.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/二、伯努利方程的应用以及相关例题.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/一维形式的熵流动控制方程.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第一章 偏微分方程概念与分类.md",
+    "Excalidraw/第一章 偏微分方程概念与分类 2023-06-17 14.30.00.md",
+    "Excalidraw/第一章 偏微分方程概念与分类 2023-06-17 13.37.20.md",
+    "Excalidraw/第一章 偏微分方程概念与分类 2023-06-17 11.38.21.md",
+    "Excalidraw/第一章 偏微分方程概念与分类 2023-06-17 11.10.02.md",
+    "Excalidraw/第一章 偏微分方程概念与分类 2023-06-17 10.47.03.md",
     "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第二章 流体力学的基本方程组.md",
-    "📘ClassNotes/💻softwares/TecPlot/样式存储.md",
+    "Excalidraw/第一章 偏微分方程概念与分类 2023-06-17 09.40.59.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md",
+    "Day Planners/Day Planner-20230617.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/重要概念与思维导图.md",
+    "❔LeeCode Problems/字符串的括号匹配问题.md",
+    "attachments/Reverse_Poland_Expression.jpg",
+    "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/复习 栈和队列.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 线性表和链表.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/2.1基本方程组的分类.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/Euler方程组的基本微分格式推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/一维形式的熵流动控制方程.pdf",
     "attachments/Pasted image 20230614170227.png",
     "📘ClassNotes/💻softwares/TecPlot",
     "attachments/Pasted image 20230613190404.png",
-    "📘ClassNotes/💻softwares/Qt/Qt Creator/基本概念和基本操作/9. 打包Qt文件为exe可执行文件.md",
     "attachments/Pasted image 20230614133505.png",
     "attachments/Pasted image 20230614122907.png",
     "attachments/Pasted image 20230614122715.png",
     "attachments/Pasted image 20230614122610.png",
-    "📘ClassNotes/💻softwares/Qt/Qt Creator/基本概念和基本操作/8. QPainter 创建二维的建模图像界面.md",
-    "📘ClassNotes/💻softwares/Qt/Qt Creator/基本概念和基本操作/0. Qt 库的安装方法以及使用.md",
     "attachments/Pasted image 20230614012252.png",
-    "Day Planners/Day Planner-20230614.md",
-    "Excalidraw/第二章 流体力学的基本方程组 2023-06-13 22.45.19.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/2.1基本方程组的分类.pdf",
     "attachments/Pasted image 20230613211921.png",
     "attachments/Pasted image 20230613192515.png",
-    "attachments/Pasted Image 20230613180707_304.png",
     "📘ClassNotes/⌨️Programming/C++ libraries/CGAL",
     "📘ClassNotes/💻softwares/Qt/Qt Creator/实战代码",
     "📘ClassNotes/💻softwares/Qt/Qt Creator/基本概念和基本操作",

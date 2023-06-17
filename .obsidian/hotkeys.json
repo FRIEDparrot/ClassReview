@@ -1037,6 +1037,13 @@
         "Shift"
       ],
       "key": "D"
+    },
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "D"
     }
   ],
   "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed": [
@@ -1233,5 +1240,7 @@
       "key": "C"
     }
   ],
-  "obsidian-completr:completr-blacklist-current-word": []
+  "obsidian-completr:completr-blacklist-current-word": [],
+  "file-explorer:new-file-in-new-pane": [],
+  "table-editor-obsidian:table-control-bar": []
 }
