@@ -15,5 +15,7 @@
   "spellcheck": true,
   "newLinkFormat": "absolute",
   "showFrontmatter": true,
-  "showInlineTitle": true
+  "showInlineTitle": true,
+  "showLineNumber": false,
+  "rightToLeft": false
 }

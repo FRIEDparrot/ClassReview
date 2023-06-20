@@ -1570,7 +1570,24 @@ th {
   font-size: inherit;
   margin: 0;
   overflow: visible;
+  box-sizing: border-box;
+}
 
+.theme-light .mm-table th {
+   background-color: rgb(16, 151, 232);
+   color:#fff;
+}
+
+.theme-dark .mm-table th {
+  background-color: #fff;
+}
+
+.theme-dark .mm-table th .mm-node{
+   color: #333;
+}
+
+.mm-table td {
+  max-width: 600px;
 }
 
 /* .mm-table td:hover,.mm-table th:hover{
