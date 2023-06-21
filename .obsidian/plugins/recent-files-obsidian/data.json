@@ -1,48 +1,76 @@
 {
   "recentFiles": [
     {
-      "basename": "重要概念与思维导图",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/重要概念与思维导图.md"
+      "basename": "补充内容",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充内容.md"
     },
     {
-      "basename": "第七章 图",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
-    },
-    {
-      "basename": "第六章 树和二叉树",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md"
-    },
-    {
-      "basename": "第一章 数据结构绪论",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md"
-    },
-    {
-      "basename": "第八章 查找算法",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第八章 查找算法.md"
-    },
-    {
-      "basename": "第九章 内部排序",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第九章 内部排序.md"
+      "basename": "差分格式的记号",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/差分格式的记号.md"
     },
     {
       "basename": "第三章 双曲型方程组及其间断解",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第三章 双曲型方程组及其间断解.md"
     },
     {
-      "basename": "1-8 Fundamental Principles",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md"
+      "basename": "五、粘性流体的运行模型建立",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第五章 粘性流体运动基础/五、粘性流体的运行模型建立.md"
     },
     {
       "basename": "第二章 流体力学的基本方程组",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第二章 流体力学的基本方程组.md"
     },
     {
-      "basename": "一、理想流体流动基础",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/一、理想流体流动基础.md"
-    },
-    {
       "basename": "复习课程与考试要点",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/复习课程与考试要点.md"
+    },
+    {
+      "basename": "第四章 有限体积法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第四章 有限体积法.md"
+    },
+    {
+      "basename": "连续介质热力学",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/连续介质热力学.md"
+    },
+    {
+      "basename": "复习课程",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/复习课程.md"
+    },
+    {
+      "basename": "连续介质热力学 2023-06-21 10.38.35",
+      "path": "Excalidraw/连续介质热力学 2023-06-21 10.38.35.md"
+    },
+    {
+      "basename": "第一章 数据结构绪论",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md"
+    },
+    {
+      "basename": "第九章 内部排序",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第九章 内部排序.md"
+    },
+    {
+      "basename": "第六章 树和二叉树",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md"
+    },
+    {
+      "basename": "第七章 图",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
+    },
+    {
+      "basename": "第八章 查找算法",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第八章 查找算法.md"
+    },
+    {
+      "basename": "重要概念与思维导图",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/重要概念与思维导图.md"
+    },
+    {
+      "basename": "1-8 Fundamental Principles",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md"
+    },
+    {
+      "basename": "一、理想流体流动基础",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/一、理想流体流动基础.md"
     },
     {
       "basename": "一、流体运动简介",
@@ -57,16 +85,8 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/Euler方程组的基本微分格式推导.pdf"
     },
     {
-      "basename": "五、粘性流体的运行模型建立",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第五章 粘性流体运动基础/五、粘性流体的运行模型建立.md"
-    },
-    {
       "basename": "二、伯努利方程的应用以及相关例题",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/二、伯努利方程的应用以及相关例题.md"
-    },
-    {
-      "basename": "复习课程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/复习课程.md"
     },
     {
       "basename": "复习",
@@ -87,10 +107,6 @@
     {
       "basename": "SQ11 Usage tutorial",
       "path": "🏚️Daily Life memo/SQ11 Usage tutorial.md"
-    },
-    {
-      "basename": "第四章 有限体积法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第四章 有限体积法.md"
     },
     {
       "basename": "1. 流体力学相关定义及假设",
@@ -183,22 +199,6 @@
     {
       "basename": "第一章 偏微分方程概念与分类 2023-06-17 09.40.59",
       "path": "Excalidraw/第一章 偏微分方程概念与分类 2023-06-17 09.40.59.md"
-    },
-    {
-      "basename": "字符串的括号匹配问题",
-      "path": "❔LeeCode Problems/字符串的括号匹配问题.md"
-    },
-    {
-      "basename": "Reverse_Poland_Expression",
-      "path": "attachments/Reverse_Poland_Expression.jpg"
-    },
-    {
-      "basename": "复习 栈和队列",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/复习 栈和队列.md"
-    },
-    {
-      "basename": "第二章 线性表和链表",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第二章 线性表和链表.md"
     }
   ],
   "omittedPaths": [],

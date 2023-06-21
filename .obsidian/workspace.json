@@ -4,71 +4,86 @@
     "type": "split",
     "children": [
       {
-        "id": "ce3bc45727c34715",
+        "id": "5acd0d9204fb73a0",
         "type": "tabs",
+        "dimension": 45.19893899204244,
         "children": [
           {
-            "id": "8ab3b3c9cf8b5370",
+            "id": "78b6f9ee35425177",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f753330c0af26d22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第九章 内部排序.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/差分格式的记号.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3dc4ce2cfb37f005",
+            "id": "00f115302e784375",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第三章 双曲型方程组及其间断解.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "94915d3c021a7780",
+            "id": "b4368b90873a52e0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第二章 流体力学的基本方程组.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "518b9b4a42be7d3e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/复习课程与考试要点.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3b9d283e2bb4afd2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第四章 有限体积法.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
-        "id": "bc258844e814e0fe",
+        "id": "5f6230ec0ac5d82b",
         "type": "tabs",
+        "dimension": 54.801061007957564,
         "children": [
           {
-            "id": "37c58e02a14a3502",
+            "id": "d244e030b027a50e",
             "type": "leaf",
             "state": {
-              "type": "mindmapview",
+              "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/重要概念与思维导图.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充内容.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -146,8 +161,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.5,
-    "collapsed": true
+    "width": 296.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -164,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/重要概念与思维导图.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充内容.md"
               }
             }
           },
@@ -193,7 +207,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/重要概念与思维导图.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充内容.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +224,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/重要概念与思维导图.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充内容.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -264,33 +278,37 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "37c58e02a14a3502",
+  "active": "d244e030b027a50e",
   "lastOpenFiles": [
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/重要概念与思维导图.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第八章 查找算法.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第九章 内部排序.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/差分格式的记号.md",
     "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第三章 双曲型方程组及其间断解.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第五章 粘性流体运动基础/五、粘性流体的运行模型建立.md",
     "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第二章 流体力学的基本方程组.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/一、理想流体流动基础.md",
     "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/复习课程与考试要点.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充内容.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第四章 有限体积法.md",
+    "attachments/Pasted image 20230621141103.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/连续介质热力学.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/复习课程.md",
+    "Excalidraw/连续介质热力学 2023-06-21 10.38.35.md",
+    "Day Planners/Day Planner-20230621.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第一章 数据结构绪论.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第九章 内部排序.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第八章 查找算法.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/重要概念与思维导图.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/一、理想流体流动基础.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第三章 流体运动概述/一、流体运动简介.md",
     "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/一维形式的熵流动控制方程.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/Euler方程组的基本微分格式推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第五章 粘性流体运动基础/五、粘性流体的运行模型建立.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/二、伯努利方程的应用以及相关例题.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/复习课程.md",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/复习.md",
     "Day Planners/Day Planner-20230620.md",
     "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/复习 七大排序算法.md",
     "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/复习 树的基本知识.md",
     "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md",
-    "🏚️Daily Life memo/SQ11 Usage tutorial.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第四章 有限体积法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第一章 绪论/1. 流体力学相关定义及假设.md",
     "attachments/Recording 20230619173918.webm",
     "attachments/Recording 20230619170955.webm",
     "attachments/Recording 20230619170219.webm",
@@ -299,9 +317,6 @@
     "attachments/Recording 20230619163310.webm",
     "attachments/Recording 20230619161525.webm",
     "attachments/Recording 20230619160112.webm",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第一章 绪论与定性分析方法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第二章 流固耦合中的基本解题方法.md",
-    "🏚️Daily Life memo/待办事项.md",
     "attachments/Reverse_Poland_Expression.jpg",
     "attachments/Pasted image 20230614170227.png",
     "attachments/Pasted image 20230613190404.png",
@@ -310,7 +325,6 @@
     "attachments/Pasted image 20230614122715.png",
     "attachments/Pasted image 20230614122610.png",
     "attachments/Pasted image 20230614012252.png",
-    "attachments/Pasted image 20230613211921.png",
-    "attachments/Pasted image 20230613192515.png"
+    "attachments/Pasted image 20230613211921.png"
   ]
 }
