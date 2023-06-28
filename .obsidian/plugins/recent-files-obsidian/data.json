@@ -1,44 +1,172 @@
 {
   "recentFiles": [
     {
-      "basename": "补充内容",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充内容.md"
+      "basename": "第五章 雷诺输运定理",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第五章 雷诺输运定理.md"
     },
     {
-      "basename": "差分格式的记号",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/差分格式的记号.md"
+      "basename": "第四章 应力理论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第四章 应力理论.md"
     },
     {
-      "basename": "第三章 双曲型方程组及其间断解",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第三章 双曲型方程组及其间断解.md"
+      "basename": "应力理论证明例题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/例题/应力理论证明例题.pdf"
     },
     {
-      "basename": "五、粘性流体的运行模型建立",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第五章 粘性流体运动基础/五、粘性流体的运行模型建立.md"
+      "basename": "第三章 应变理论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第三章 应变理论.md"
     },
     {
-      "basename": "第二章 流体力学的基本方程组",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第二章 流体力学的基本方程组.md"
+      "basename": "应变和变形 2023-05-31 10.03.50",
+      "path": "Excalidraw/应变和变形 2023-05-31 10.03.50.md"
     },
     {
-      "basename": "复习课程与考试要点",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/复习课程与考试要点.md"
+      "basename": "第二章 连续体的分析力学方法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第二章 连续体的分析力学方法.md"
     },
     {
-      "basename": "第四章 有限体积法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第四章 有限体积法.md"
+      "basename": "第一章 张量分析初步",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第一章 张量分析初步.md"
     },
     {
-      "basename": "连续介质热力学",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/连续介质热力学.md"
+      "basename": "张量的梯度与积分推导",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/张量的梯度与积分推导.pdf"
+    },
+    {
+      "basename": "例题部分1 张量分析基础",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/例题/例题部分1 张量分析基础.pdf"
+    },
+    {
+      "basename": "第五章 参激振动",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第五章 参激振动.md"
+    },
+    {
+      "basename": "第四章 自激振动",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第四章 自激振动.md"
+    },
+    {
+      "basename": "第一章 绪论与定性分析方法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第一章 绪论与定性分析方法.md"
     },
     {
       "basename": "复习课程",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/复习课程.md"
     },
     {
-      "basename": "连续介质热力学 2023-06-21 10.38.35",
-      "path": "Excalidraw/连续介质热力学 2023-06-21 10.38.35.md"
+      "basename": "第一章 绪论与定性分析方法 2023-06-27 21.26.58",
+      "path": "Excalidraw/第一章 绪论与定性分析方法 2023-06-27 21.26.58.md"
+    },
+    {
+      "basename": "第五章 参激振动 2023-05-30 15.31.32",
+      "path": "Excalidraw/第五章 参激振动 2023-05-30 15.31.32.md"
+    },
+    {
+      "basename": "第二章 导数与微分",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md"
+    },
+    {
+      "basename": "第一章 集合,数列,函数,极限和连续",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md"
+    },
+    {
+      "basename": "第五章 参激振动 2023-06-01 14.09.40",
+      "path": "Excalidraw/第五章 参激振动 2023-06-01 14.09.40.md"
+    },
+    {
+      "basename": "梁的横向振动推导过程",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/梁的横向振动推导过程.pdf"
+    },
+    {
+      "basename": "杆件的轴向振动方程推导",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/杆件的轴向振动方程推导.md"
+    },
+    {
+      "basename": "应变梯度和压强的概念",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/应变梯度和压强的概念.pdf"
+    },
+    {
+      "basename": "第四章 应力理论 2023-06-27 08.53.24",
+      "path": "Excalidraw/第四章 应力理论 2023-06-27 08.53.24.md"
+    },
+    {
+      "basename": "第三章 应变理论 2023-06-26 22.21.53",
+      "path": "Excalidraw/第三章 应变理论 2023-06-26 22.21.53.md"
+    },
+    {
+      "basename": "例题 F矩阵的RU, VR分解",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/例题/例题 F矩阵的RU, VR分解.pdf"
+    },
+    {
+      "basename": "应变和变形 2023-05-31 10.48.06",
+      "path": "Excalidraw/应变和变形 2023-05-31 10.48.06.md"
+    },
+    {
+      "basename": "参考部分",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/参考部分.md"
+    },
+    {
+      "basename": "应变和变形 2023-05-31 10.39.32",
+      "path": "Excalidraw/应变和变形 2023-05-31 10.39.32.md"
+    },
+    {
+      "basename": "连续介质热力学",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/连续介质热力学.md"
+    },
+    {
+      "basename": "应变和变形 2023-05-31 09.40.18",
+      "path": "Excalidraw/应变和变形 2023-05-31 09.40.18.md"
+    },
+    {
+      "basename": "第一章 张量分析初步 2023-06-26 01.37.00",
+      "path": "Excalidraw/第一章 张量分析初步 2023-06-26 01.37.00.md"
+    },
+    {
+      "basename": "第四章 自激振动 2023-05-30 14.40.38",
+      "path": "Excalidraw/第四章 自激振动 2023-05-30 14.40.38.md"
+    },
+    {
+      "basename": "第二章 流固耦合中的基本解题方法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第二章 流固耦合中的基本解题方法.md"
+    },
+    {
+      "basename": "非线性振动系统的数值分析方法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/非线性振动系统的数值分析方法.md"
+    },
+    {
+      "basename": "第三章 分叉与混沌",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/补充/第三章 分叉与混沌.md"
+    },
+    {
+      "basename": "大作业3",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/大作业/大作业3.md"
+    },
+    {
+      "basename": "振动信号处理和振动控制技术在工程领域中的应用",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/大作业/振动信号处理和振动控制技术在工程领域中的应用.md"
+    },
+    {
+      "basename": "第六章 多尺度法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第六章 多尺度法.md"
+    },
+    {
+      "basename": "谐波平衡法求解Duffing振动方程",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/例题/谐波平衡法求解Duffing振动方程.pdf"
+    },
+    {
+      "basename": "常见的三角函数的展开式",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/补充/常见的三角函数的展开式.md"
+    },
+    {
+      "basename": "常见的三角积式展开的推导",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/补充/常见的三角积式展开的推导.pdf"
+    },
+    {
+      "basename": "第七章 图",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
+    },
+    {
+      "basename": "待办事项",
+      "path": "🏚️Daily Life memo/待办事项.md"
     },
     {
       "basename": "第一章 数据结构绪论",
@@ -49,156 +177,28 @@
       "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第九章 内部排序.md"
     },
     {
-      "basename": "第六章 树和二叉树",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第六章 树和二叉树.md"
-    },
-    {
-      "basename": "第七章 图",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
-    },
-    {
       "basename": "第八章 查找算法",
       "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第八章 查找算法.md"
-    },
-    {
-      "basename": "重要概念与思维导图",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/重要概念与思维导图.md"
-    },
-    {
-      "basename": "1-8 Fundamental Principles",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md"
-    },
-    {
-      "basename": "一、理想流体流动基础",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/一、理想流体流动基础.md"
-    },
-    {
-      "basename": "一、流体运动简介",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第三章 流体运动概述/一、流体运动简介.md"
-    },
-    {
-      "basename": "一维形式的熵流动控制方程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/一维形式的熵流动控制方程.pdf"
-    },
-    {
-      "basename": "Euler方程组的基本微分格式推导",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/补充/Euler方程组的基本微分格式推导.pdf"
-    },
-    {
-      "basename": "二、伯努利方程的应用以及相关例题",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/二、伯努利方程的应用以及相关例题.md"
-    },
-    {
-      "basename": "复习",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/复习.md"
-    },
-    {
-      "basename": "复习 七大排序算法",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/复习 七大排序算法.md"
-    },
-    {
-      "basename": "复习 树的基本知识",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/复习 树的基本知识.md"
-    },
-    {
-      "basename": "第五章 稀疏数组和广义表",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第五章 稀疏数组和广义表.md"
-    },
-    {
-      "basename": "SQ11 Usage tutorial",
-      "path": "🏚️Daily Life memo/SQ11 Usage tutorial.md"
-    },
-    {
-      "basename": "1. 流体力学相关定义及假设",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第一章 绪论/1. 流体力学相关定义及假设.md"
-    },
-    {
-      "basename": "Recording 20230619170219",
-      "path": "attachments/Recording 20230619170219.webm"
-    },
-    {
-      "basename": "第一章 绪论与定性分析方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第一章 绪论与定性分析方法.md"
-    },
-    {
-      "basename": "第二章 流固耦合中的基本解题方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第二章 流固耦合中的基本解题方法.md"
-    },
-    {
-      "basename": "平均法推导弱非线性系统的自由振动",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/补充/平均法推导弱非线性系统的自由振动.pdf"
-    },
-    {
-      "basename": "待办事项",
-      "path": "🏚️Daily Life memo/待办事项.md"
-    },
-    {
-      "basename": "Graphic_Practice",
-      "path": "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/Graphic_Practice.md"
-    },
-    {
-      "basename": "立体八数码问题",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/立体八数码问题.md"
-    },
-    {
-      "basename": "第二章 流固耦合中的基本解题方法 2023-06-19 01.38.16",
-      "path": "Excalidraw/第二章 流固耦合中的基本解题方法 2023-06-19 01.38.16.md"
-    },
-    {
-      "basename": "第二章 流固耦合中的基本解题方法 2023-06-19 01.05.55",
-      "path": "Excalidraw/第二章 流固耦合中的基本解题方法 2023-06-19 01.05.55.md"
     },
     {
       "basename": "第三章 栈和队列的链式存储",
       "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md"
     },
     {
-      "basename": "第四章 自激振动",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第四章 自激振动.md"
+      "basename": "实验复习 关键代码",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/实验大作业/实验复习 关键代码.md"
     },
     {
-      "basename": "第五章 参激振动",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第五章 参激振动.md"
+      "basename": "INSERT_BLUE_HEIGHT_TEXT",
+      "path": "🗒️Templates/INSERT_BLUE_HEIGHT_TEXT.md"
     },
     {
-      "basename": "第三章 非线性振动系统的数值分析方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第三章 非线性振动系统的数值分析方法.md"
+      "basename": "第五章 运动稳定性基础",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md"
     },
     {
-      "basename": "单自由度振动的主要结论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/补充/单自由度振动的主要结论.md"
-    },
-    {
-      "basename": "第二章 流固耦合中的基本解题方法 2023-06-17 14.57.16",
-      "path": "Excalidraw/第二章 流固耦合中的基本解题方法 2023-06-17 14.57.16.md"
-    },
-    {
-      "basename": "第一章 偏微分方程概念与分类",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第一章 偏微分方程概念与分类.md"
-    },
-    {
-      "basename": "第一章 偏微分方程概念与分类 2023-06-17 14.30.00",
-      "path": "Excalidraw/第一章 偏微分方程概念与分类 2023-06-17 14.30.00.md"
-    },
-    {
-      "basename": "第一章 偏微分方程概念与分类 2023-06-17 13.37.20",
-      "path": "Excalidraw/第一章 偏微分方程概念与分类 2023-06-17 13.37.20.md"
-    },
-    {
-      "basename": "第一章 偏微分方程概念与分类 2023-06-17 11.38.21",
-      "path": "Excalidraw/第一章 偏微分方程概念与分类 2023-06-17 11.38.21.md"
-    },
-    {
-      "basename": "第一章 偏微分方程概念与分类 2023-06-17 11.10.02",
-      "path": "Excalidraw/第一章 偏微分方程概念与分类 2023-06-17 11.10.02.md"
-    },
-    {
-      "basename": "第一章 偏微分方程概念与分类 2023-06-17 10.47.03",
-      "path": "Excalidraw/第一章 偏微分方程概念与分类 2023-06-17 10.47.03.md"
-    },
-    {
-      "basename": "第一章 偏微分方程概念与分类 2023-06-17 09.40.59",
-      "path": "Excalidraw/第一章 偏微分方程概念与分类 2023-06-17 09.40.59.md"
+      "basename": "第四章 有限体积法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第四章 有限体积法.md"
     }
   ],
   "omittedPaths": [],

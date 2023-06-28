@@ -84,7 +84,7 @@
 
 .mm-node .mm-node-content {
   padding: 2px 4px;
-  max-width: 600px;
+  max-width: 400px;
   word-break: break-word;
   white-space: normal;
   display: flex;
@@ -92,6 +92,12 @@
   min-height: 24px;
   min-width: 10px;
   border-radius: 4px;
+}
+.mm-node.node-wireFrame .mm-node-content {
+  border-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-top: -1px;
 }
 
 .mm-node .mm-node-content>p,
@@ -589,7 +595,7 @@
 }
 
 .mm-assist-board svg {
-  fill: #666;
+  fill: #817f7f;
 }
 
 .mm-assist-lineType span {
@@ -630,8 +636,10 @@
   background-color: purple
 }
 
-.mm-assist-delete {
+.mm-assist-delete ,
+.mm-assist-group-name{
   padding: 4px;
+  cursor: pointer;
 }
 
 .mm-color-black {
