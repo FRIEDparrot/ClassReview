@@ -134,7 +134,13 @@
     "🗒️Templates/INSERT_LAMBDA_UPPERCASE.md",
     "🗒️Templates/INSERT_SUM_WITHOUT_INDEX.md",
     "🗒️Templates/INSERT_CELSIUS_DEGREE.md",
-    "🗒️Templates/INSERT_BLUE_HEIGHT_TEXT.md"
+    "🗒️Templates/INSERT_BLUE_HEIGHT_TEXT.md",
+    "🗒️Templates/INSERT_COTANGENT_SYMBOL.md",
+    "🗒️Templates/INSERT_SECENT_SYMBOL.md",
+    "🗒️Templates/INSERT_COSECENT_SYMBOL.md",
+    "🗒️Templates/INSERT_ARCSIN_SYMBOL.md",
+    "🗒️Templates/INSERT_ARCCOS_SYMBOL.md",
+    "🗒️Templates/INSERT_ARCTAN_SYMBOL.md"
   ],
   "startup_templates": [
     ""

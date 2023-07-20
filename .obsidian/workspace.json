@@ -4,45 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "b4a9be972d6e81d2",
+        "id": "b16f4dc57cd3bd95",
         "type": "tabs",
         "children": [
           {
-            "id": "9f1fac42b126f580",
+            "id": "82dc250bbf56caaf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第四章 应力理论.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十二章 动载荷.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e6a08497d61e0545",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/例题/应力理论证明例题.pdf"
-              }
-            }
-          },
-          {
-            "id": "58dfd8fb13e13c34",
+            "id": "661b529de2c35187",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第五章 雷诺输运定理.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十三章 能量原理在杆件位移分析的应用.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -54,7 +44,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 70.1923076923077,
+        "dimension": 75.09615384615384,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -94,7 +84,7 @@
       {
         "id": "3dfa7e76a36534a1",
         "type": "tabs",
-        "dimension": 29.807692307692307,
+        "dimension": 24.903846153846153,
         "children": [
           {
             "id": "db0ad0041a71350b",
@@ -116,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.5
+    "width": 374.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -125,18 +115,8 @@
       {
         "id": "736ec7c11262503f",
         "type": "tabs",
-        "dimension": 58.75,
+        "dimension": 34.32692307692308,
         "children": [
-          {
-            "id": "7778856753ec014b",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第五章 雷诺输运定理.md"
-              }
-            }
-          },
           {
             "id": "55e2f6198cbb96c3",
             "type": "leaf",
@@ -162,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第五章 雷诺输运定理.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十三章 能量原理在杆件位移分析的应用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第五章 雷诺输运定理.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十三章 能量原理在杆件位移分析的应用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,14 +172,7 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
-          }
-        ]
-      },
-      {
-        "id": "c66022855b90b53c",
-        "type": "tabs",
-        "dimension": 41.25,
-        "children": [
+          },
           {
             "id": "fc126ed021ecee63",
             "type": "leaf",
@@ -208,11 +181,29 @@
               "state": {}
             }
           }
+        ],
+        "currentTab": 5
+      },
+      {
+        "id": "91a9ba92dd5ebb95",
+        "type": "tabs",
+        "dimension": 65.67307692307692,
+        "children": [
+          {
+            "id": "7778856753ec014b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十三章 能量原理在杆件位移分析的应用.md"
+              }
+            }
+          }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 399.5,
+    "width": 388.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -233,52 +224,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "58dfd8fb13e13c34",
+  "active": "661b529de2c35187",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第四章 应力理论.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/例题/应力理论证明例题.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第三章 应变理论.md",
-    "Excalidraw/应变和变形 2023-05-31 10.03.50.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第二章 连续体的分析力学方法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第一章 张量分析初步.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/张量的梯度与积分推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/例题/例题部分1 张量分析基础.pdf",
-    "Day Planners/Day Planner-20230628.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第五章 参激振动.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第四章 自激振动.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/第一章 绪论与定性分析方法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/复习课程.md",
-    "Excalidraw/第一章 绪论与定性分析方法 2023-06-27 21.26.58.md",
-    "Excalidraw/第五章 参激振动 2023-05-30 15.31.32.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第五章 雷诺输运定理.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/补充/多尺度法.pdf",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
+    "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-07-20 09.28.10.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十三章 能量原理在杆件位移分析的应用.md",
+    "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-07-20 09.16.19.md",
+    "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-05-19 15.45.19.md",
+    "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-07-19 23.57.06.md",
+    "Day Planners/Day Planner-20230720.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第三章 剪切, 挤压.md",
+    "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-07-19 21.40.45.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十二章 动载荷.md",
+    "📘ClassNotes/🗣️English/Word Notes/Word List3.md",
+    "📘ClassNotes/🗣️English/Word Notes/Word List2.md",
     "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md",
-    "Excalidraw/第五章 参激振动 2023-06-01 14.09.40.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/梁的横向振动推导过程.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/杆件的轴向振动方程推导.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/应变梯度和压强的概念.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/应力理论.pdf",
-    "Excalidraw/第四章 应力理论 2023-06-27 08.53.24.md",
-    "Day Planners/Day Planner-20230627.md",
-    "Excalidraw/第三章 应变理论 2023-06-26 22.21.53.md",
-    "attachments/Pasted Image 20230626222157_488.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/例题/例题 F矩阵的RU, VR分解.pdf",
-    "Excalidraw/应变和变形 2023-05-31 10.48.06.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/双点积重要性质证明.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/参考部分.md",
-    "Excalidraw/应变和变形 2023-05-31 10.39.32.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/连续介质热力学.md",
-    "Excalidraw/应变和变形 2023-05-31 09.40.18.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/例题",
-    "attachments/1E3E7035.png",
-    "attachments/Pasted image 20230625000541.png",
-    "attachments/Pasted image 20230625000300.png",
-    "attachments/Pasted image 20230621141103.png",
-    "attachments/Reverse_Poland_Expression.jpg",
-    "attachments/Pasted image 20230614170227.png",
-    "attachments/Pasted image 20230613190404.png",
-    "attachments/Pasted image 20230614133505.png",
-    "attachments/Pasted image 20230614122907.png"
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/常见等价无穷小.md",
+    "🗒️Templates/INSERT_ARCTAN_SYMBOL.md",
+    "🗒️Templates/INSERT_ARCCOS_SYMBOL.md",
+    "🗒️Templates/INSERT_ARCSIN_SYMBOL.md",
+    "Excalidraw/第一章 集合,数列,函数,极限和连续 2023-03-27 11.56.08.md",
+    "Day Planners/Day Planner-20230719.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/双曲函数和反双曲函数.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第五章 定积分.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md",
+    "Excalidraw/第二章 热力学第一定律 2023-07-18 00.58.19.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/熵概念推导与产生.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/continuum_report.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充",
+    "Day Planners/Day Planner-20230718.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/幂指函数性质与解题重要方法.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/三角函数的重要性质整理.md",
+    "📃Essay/CFD.pdf",
+    "attachments/Pasted image 20230707022512.png",
+    "attachments/Pasted image 20230707022241.png",
+    "attachments/Pasted image 20230707021544.png",
+    "attachments/Pasted image 20230707020753.png",
+    "attachments/Pasted image 20230707002150.png",
+    "attachments/Pasted image 20230706085624.png",
+    "attachments/Pasted image 20230705222410.png",
+    "attachments/Pasted image 20230705222029.png",
+    "attachments/Pasted image 20230705222017.png",
+    "attachments/Pasted image 20230705195044.png",
+    "🧊Minecraft/红石音乐",
+    "🧊Minecraft/redstone/Untitled",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/补充/谐波平衡推导Duffing方程自由振动.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/例题/应力理论证明例题.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/补充/平均法推导Duffing方程的自由振动.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/张量的梯度与积分推导.pdf"
   ]
 }

@@ -1263,5 +1263,62 @@
       ],
       "key": "Delete"
     }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_COTANGENT_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "V"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_COSECENT_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_SECENT_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "X"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_ARCCOS_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_ARCSIN_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "X"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_ARCTAN_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "V"
+    }
   ]
 }
