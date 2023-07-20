@@ -106,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 374.5
+    "width": 374.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -226,8 +227,9 @@
   },
   "active": "661b529de2c35187",
   "lastOpenFiles": [
-    "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-07-20 09.28.10.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/重要公式/常用图形的面积与形心位置.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十三章 能量原理在杆件位移分析的应用.md",
+    "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-07-20 09.28.10.md",
     "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-07-20 09.16.19.md",
     "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-05-19 15.45.19.md",
     "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-07-19 23.57.06.md",
@@ -254,7 +256,6 @@
     "Day Planners/Day Planner-20230718.md",
     "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/幂指函数性质与解题重要方法.md",
     "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/三角函数的重要性质整理.md",
     "📃Essay/CFD.pdf",
     "attachments/Pasted image 20230707022512.png",
     "attachments/Pasted image 20230707022241.png",
