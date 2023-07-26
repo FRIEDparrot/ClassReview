@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "b16f4dc57cd3bd95",
+        "id": "40065b1895adea40",
         "type": "tabs",
         "children": [
           {
-            "id": "82dc250bbf56caaf",
+            "id": "d639e553b15f1b62",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十二章 动载荷.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "661b529de2c35187",
+            "id": "8450fdbf786100e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十三章 能量原理在杆件位移分析的应用.md",
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 374.5,
-    "collapsed": true
+    "width": 374.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -143,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十三章 能量原理在杆件位移分析的应用.md",
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十三章 能量原理在杆件位移分析的应用.md",
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,7 +195,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十三章 能量原理在杆件位移分析的应用.md"
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md"
               }
             }
           }
@@ -225,37 +224,38 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "661b529de2c35187",
+  "active": "8450fdbf786100e3",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/重要公式/常用图形的面积与形心位置.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十三章 能量原理在杆件位移分析的应用.md",
-    "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-07-20 09.28.10.md",
-    "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-07-20 09.16.19.md",
-    "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-05-19 15.45.19.md",
-    "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-07-19 23.57.06.md",
-    "Day Planners/Day Planner-20230720.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第三章 剪切, 挤压.md",
-    "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-07-19 21.40.45.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十二章 动载荷.md",
-    "📘ClassNotes/🗣️English/Word Notes/Word List3.md",
-    "📘ClassNotes/🗣️English/Word Notes/Word List2.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/常见等价无穷小.md",
-    "🗒️Templates/INSERT_ARCTAN_SYMBOL.md",
-    "🗒️Templates/INSERT_ARCCOS_SYMBOL.md",
-    "🗒️Templates/INSERT_ARCSIN_SYMBOL.md",
-    "Excalidraw/第一章 集合,数列,函数,极限和连续 2023-03-27 11.56.08.md",
-    "Day Planners/Day Planner-20230719.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/双曲函数和反双曲函数.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第五章 定积分.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程.md",
+    "Day Planners/Day Planner-20230726.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第二章 流体力学的基本方程组.md",
+    "Excalidraw/第三章 理想气体的性质与过程 2023-07-25 18.50.02.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第十章 喷管内的流动方程.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第三章 双曲型方程组及其间断解.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md",
-    "Excalidraw/第二章 热力学第一定律 2023-07-18 00.58.19.md",
+    "🏚️Daily Life memo/⌚Todo List.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/常见等价无穷小与极限.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md",
+    "Excalidraw/第一章 集合,数列,函数,极限和连续 2023-01-17 14.08.42.excalidraw.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/基本积分表.md",
+    "Day Planners/Day Planner-20230725.md",
+    "Day Planners/Day Planner-20230724.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要的泰勒展开公式.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/高阶导数公式.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/补充部分/归纳法+单调有界求极限例题.md",
+    "attachments/Pasted Image 20230723075515_629.png",
+    "Day Planners/Day Planner-20230723.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第三章 微分中值定理和导数的应用.md",
+    "Excalidraw/第三章 微分中值定理和导数的应用 2023-01-21 11.39.35.excalidraw.md",
+    "Excalidraw/第二章 热力学第一定律 2023-07-20 20.38.14.md",
+    "Excalidraw/第二章 热力学第一定律 2023-07-22 08.45.36.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/方程曲线曲率常用公式.md",
+    "Day Planners/Day Planner-20230722.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/熵概念推导与产生.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/continuum_report.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充",
-    "Day Planners/Day Planner-20230718.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/幂指函数性质与解题重要方法.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md",
     "📃Essay/CFD.pdf",
     "attachments/Pasted image 20230707022512.png",
     "attachments/Pasted image 20230707022241.png",
@@ -266,7 +266,6 @@
     "attachments/Pasted image 20230705222410.png",
     "attachments/Pasted image 20230705222029.png",
     "attachments/Pasted image 20230705222017.png",
-    "attachments/Pasted image 20230705195044.png",
     "🧊Minecraft/红石音乐",
     "🧊Minecraft/redstone/Untitled",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/补充/谐波平衡推导Duffing方程自由振动.pdf",

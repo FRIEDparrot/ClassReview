@@ -3414,6 +3414,8 @@ BAZF
 BSLdyQ
 BtFC
 BQjc
+Bernoulli
+BbCZi
 Ramberg
 Reynolds
 RANS
@@ -17748,6 +17750,8 @@ LfN
 LREZSD
 LONUHU
 LQMv
+Leftrightarrow
+Leibniz
 constitutive
 conditional
 curly
@@ -21556,6 +21560,7 @@ contend
 catalogue
 conform
 captive
+circ
 equatiion
 equations
 excalidraw
@@ -73931,6 +73936,7 @@ overlook
 outrage
 originate
 ornament
+overset
 sided
 shape
 spell
@@ -77736,6 +77742,7 @@ slippery
 stern
 savage
 session
+sim
 brackets
 bcc
 by
@@ -81219,6 +81226,7 @@ bureaucracy
 bypass
 biography
 benign
+beaf
 fcc
 factor
 forced
@@ -103723,6 +103731,7 @@ indignation
 ignorant
 ideology
 inferior
+infty
 menu
 material
 model
