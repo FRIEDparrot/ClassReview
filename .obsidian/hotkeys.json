@@ -1350,5 +1350,22 @@
       "modifiers": [],
       "key": "F6"
     }
+  ],
+  "highlightr-plugin:Blue": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "H"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/TOOGLE_BOLD_HTML_FORM.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "B"
+    }
   ]
 }

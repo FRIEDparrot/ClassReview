@@ -141,7 +141,8 @@
     "🗒️Templates/INSERT_ARCSIN_SYMBOL.md",
     "🗒️Templates/INSERT_ARCCOS_SYMBOL.md",
     "🗒️Templates/INSERT_ARCTAN_SYMBOL.md",
-    "🗒️Templates/INSERT_OVERLINE.md"
+    "🗒️Templates/INSERT_OVERLINE.md",
+    "🗒️Templates/TOOGLE_BOLD_HTML_FORM.md"
   ],
   "startup_templates": [
     ""

@@ -4,35 +4,50 @@
     "type": "split",
     "children": [
       {
-        "id": "40065b1895adea40",
+        "id": "a247fa0d45d65ef0",
         "type": "tabs",
         "children": [
           {
-            "id": "d639e553b15f1b62",
+            "id": "25610fb48f1a01c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程.md",
+                "file": "🧊Minecraft/红石数电/数电基本元件与逻辑电路.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8450fdbf786100e3",
+            "id": "289b4c9b4038390b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
+                "file": "🧊Minecraft/红石数电/Circuit Basics.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "84c79cec6a4e1d0d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2f1bffa674afd4b9",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/数电基本元件与逻辑电路 2023-07-28 09.53.05.md"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -44,7 +59,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 75.09615384615384,
+        "dimension": 56.34615384615385,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -84,7 +99,7 @@
       {
         "id": "3dfa7e76a36534a1",
         "type": "tabs",
-        "dimension": 24.903846153846153,
+        "dimension": 43.65384615384615,
         "children": [
           {
             "id": "db0ad0041a71350b",
@@ -106,7 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 374.5
+    "width": 291.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -142,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
+                "file": "🧊Minecraft/红石数电/数电基本元件与逻辑电路.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +174,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
+                "file": "🧊Minecraft/红石数电/数电基本元件与逻辑电路.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md"
+                "file": "🧊Minecraft/红石数电/数电基本元件与逻辑电路.md"
               }
             }
           }
@@ -217,60 +232,60 @@
       "random-note:Open random note": false,
       "zk-prefixer:Create new unique note": false,
       "switcher:Open quick switcher": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
       "dbfolder:Create a new database table": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-projects:Open projects": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8450fdbf786100e3",
+  "active": "25610fb48f1a01c8",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程.md",
-    "Day Planners/Day Planner-20230726.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第二章 流体力学的基本方程组.md",
-    "Excalidraw/第三章 理想气体的性质与过程 2023-07-25 18.50.02.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第十章 喷管内的流动方程.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第三章 双曲型方程组及其间断解.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md",
-    "🏚️Daily Life memo/⌚Todo List.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/常见等价无穷小与极限.md",
+    "attachments/Pasted image 20230728101256.png",
+    "attachments/Pasted image 20230728101221.png",
+    "Excalidraw/数电基本元件与逻辑电路 2023-07-28 09.53.05.md",
+    "🧊Minecraft/红石数电/数电基本元件与逻辑电路.md",
+    "🧊Minecraft/红石数电/Circuit Basics.md",
     "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md",
-    "Excalidraw/第一章 集合,数列,函数,极限和连续 2023-01-17 14.08.42.excalidraw.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/基本积分表.md",
-    "Day Planners/Day Planner-20230725.md",
-    "Day Planners/Day Planner-20230724.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要的泰勒展开公式.md",
+    "🧊Minecraft/红石数电",
     "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/高阶导数公式.md",
+    "🐸 Daily Life memo/需要养成的习惯.md",
+    "🗒️Templates/INSERT_BLUE_HEIGHT_TEXT.md",
+    "🗒️Templates/TOOGLE_BOLD_HTML_FORM.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第一章 基本概念.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程.md",
+    "Day Planners/Day Planner-20230728.md",
+    "Excalidraw/第三章 理想气体的性质与过程 2023-07-27 23.33.16.md",
+    "🧊Minecraft/红石音乐/漏斗时序装置.md",
+    "attachments/Pasted image 20230727221354.png",
+    "attachments/Pasted image 20230727215305.png",
+    "attachments/Pasted image 20230727215013.png",
+    "attachments/0D8F2F0C.gif",
+    "attachments/Pasted image 20230727214656.png",
     "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/补充部分/归纳法+单调有界求极限例题.md",
-    "attachments/Pasted Image 20230723075515_629.png",
-    "Day Planners/Day Planner-20230723.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第三章 微分中值定理和导数的应用.md",
-    "Excalidraw/第三章 微分中值定理和导数的应用 2023-01-21 11.39.35.excalidraw.md",
-    "Excalidraw/第二章 热力学第一定律 2023-07-20 20.38.14.md",
-    "Excalidraw/第二章 热力学第一定律 2023-07-22 08.45.36.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/方程曲线曲率常用公式.md",
-    "Day Planners/Day Planner-20230722.md",
+    "Excalidraw/第二章 导数与微分 2023-07-27 17.59.15.md",
+    "attachments/Pasted Image 20230727175921_646.png",
+    "Excalidraw/第二章 导数与微分 2023-07-27 17.28.26.md",
+    "attachments/Pasted Image 20230727175149_522.png",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第九章 多元函数的微分法及应用.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/补充部分/复合函数的求导法则证明.md",
+    "Excalidraw/第二章 导数与微分 2023-01-19 12.47.10.excalidraw.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/补充部分/导数的四则运算法则证明.md",
+    "Excalidraw/第二章 导数与微分 2023-01-19 11.55.41.excalidraw.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/补充部分/第二章 导数与微分 2023-01-19 11.55.41.excalidraw.md",
+    "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/Graphic_Practice.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/课本例题",
+    "attachments/Pasted Image 20230726142812_678.png",
+    "attachments/Pasted image 20230726092350 1.png",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/熵概念推导与产生.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/continuum_report.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充",
     "📃Essay/CFD.pdf",
-    "attachments/Pasted image 20230707022512.png",
-    "attachments/Pasted image 20230707022241.png",
-    "attachments/Pasted image 20230707021544.png",
-    "attachments/Pasted image 20230707020753.png",
-    "attachments/Pasted image 20230707002150.png",
-    "attachments/Pasted image 20230706085624.png",
-    "attachments/Pasted image 20230705222410.png",
-    "attachments/Pasted image 20230705222029.png",
-    "attachments/Pasted image 20230705222017.png",
     "🧊Minecraft/红石音乐",
     "🧊Minecraft/redstone/Untitled",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/补充/谐波平衡推导Duffing方程自由振动.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/例题/应力理论证明例题.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/补充/平均法推导Duffing方程的自由振动.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/补充/张量的梯度与积分推导.pdf"
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/例题/应力理论证明例题.pdf"
   ]
 }

@@ -1,20 +1,140 @@
 {
   "recentFiles": [
     {
+      "basename": "数电基本元件与逻辑电路",
+      "path": "🧊Minecraft/红石数电/数电基本元件与逻辑电路.md"
+    },
+    {
+      "basename": "数电基本元件与逻辑电路 2023-07-28 09.53.05",
+      "path": "Excalidraw/数电基本元件与逻辑电路 2023-07-28 09.53.05.md"
+    },
+    {
+      "basename": "Circuit Basics",
+      "path": "🧊Minecraft/红石数电/Circuit Basics.md"
+    },
+    {
       "basename": "第二章 导数与微分",
       "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md"
+    },
+    {
+      "basename": "高阶导数公式",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/高阶导数公式.md"
+    },
+    {
+      "basename": "需要养成的习惯",
+      "path": "🐸 Daily Life memo/需要养成的习惯.md"
+    },
+    {
+      "basename": "INSERT_BLUE_HEIGHT_TEXT",
+      "path": "🗒️Templates/INSERT_BLUE_HEIGHT_TEXT.md"
+    },
+    {
+      "basename": "TOOGLE_BOLD_HTML_FORM",
+      "path": "🗒️Templates/TOOGLE_BOLD_HTML_FORM.md"
+    },
+    {
+      "basename": "第一章 基本概念",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第一章 基本概念.md"
+    },
+    {
+      "basename": "第二章 热力学第一定律",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md"
     },
     {
       "basename": "第三章 理想气体的性质与过程",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程.md"
     },
     {
-      "basename": "第二章 流体力学的基本方程组",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第二章 流体力学的基本方程组.md"
+      "basename": "第三章 理想气体的性质与过程 2023-07-27 23.33.16",
+      "path": "Excalidraw/第三章 理想气体的性质与过程 2023-07-27 23.33.16.md"
+    },
+    {
+      "basename": "漏斗时序装置",
+      "path": "🧊Minecraft/红石音乐/漏斗时序装置.md"
+    },
+    {
+      "basename": "重要导数公式",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md"
+    },
+    {
+      "basename": "第二章 导数与微分 2023-07-27 17.59.15",
+      "path": "Excalidraw/第二章 导数与微分 2023-07-27 17.59.15.md"
+    },
+    {
+      "basename": "第二章 导数与微分 2023-07-27 17.28.26",
+      "path": "Excalidraw/第二章 导数与微分 2023-07-27 17.28.26.md"
+    },
+    {
+      "basename": "第九章 多元函数的微分法及应用",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第九章 多元函数的微分法及应用.md"
+    },
+    {
+      "basename": "复合函数的求导法则证明",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/补充部分/复合函数的求导法则证明.md"
+    },
+    {
+      "basename": "第二章 导数与微分 2023-01-19 12.47.10.excalidraw",
+      "path": "Excalidraw/第二章 导数与微分 2023-01-19 12.47.10.excalidraw.md"
+    },
+    {
+      "basename": "第一章 集合,数列,函数,极限和连续",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md"
+    },
+    {
+      "basename": "导数的四则运算法则证明",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/补充部分/导数的四则运算法则证明.md"
+    },
+    {
+      "basename": "Graphic_Practice",
+      "path": "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/Graphic_Practice.md"
+    },
+    {
+      "basename": "⌚近期计划书",
+      "path": "🐸 Daily Life memo/⌚近期计划书.md"
+    },
+    {
+      "basename": "CSDN 鸽的文章",
+      "path": "🐸 Daily Life memo/CSDN 鸽的文章.md"
+    },
+    {
+      "basename": "第二章 导数与微分 2023-01-20 15.27.17.excalidraw",
+      "path": "Excalidraw/第二章 导数与微分 2023-01-20 15.27.17.excalidraw.md"
+    },
+    {
+      "basename": "第二章 拉伸与压缩",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第二章 拉伸与压缩.md"
+    },
+    {
+      "basename": "Word List3",
+      "path": "📘ClassNotes/🗣️English/Word Notes/Word List3.md"
+    },
+    {
+      "basename": "第一章 绪论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第一章 绪论.md"
+    },
+    {
+      "basename": "第三章 理想气体的性质与过程 2023-07-26 19.28.44",
+      "path": "Excalidraw/第三章 理想气体的性质与过程 2023-07-26 19.28.44.md"
     },
     {
       "basename": "第三章 理想气体的性质与过程 2023-07-25 18.50.02",
       "path": "Excalidraw/第三章 理想气体的性质与过程 2023-07-25 18.50.02.md"
+    },
+    {
+      "basename": "第二章 导数与微分 2023-07-26 14.28.10",
+      "path": "Excalidraw/第二章 导数与微分 2023-07-26 14.28.10.md"
+    },
+    {
+      "basename": "编码后的批处理和回收装置",
+      "path": "🧊Minecraft/红石音乐/编码后的批处理和回收装置.md"
+    },
+    {
+      "basename": "倒序装填",
+      "path": "🧊Minecraft/红石音乐/倒序装填.md"
+    },
+    {
+      "basename": "第二章 流体力学的基本方程组",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第二章 流体力学的基本方程组.md"
     },
     {
       "basename": "第十章 喷管内的流动方程",
@@ -25,20 +145,8 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第三章 双曲型方程组及其间断解.md"
     },
     {
-      "basename": "第二章 热力学第一定律",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md"
-    },
-    {
-      "basename": "⌚Todo List",
-      "path": "🏚️Daily Life memo/⌚Todo List.md"
-    },
-    {
       "basename": "常见等价无穷小与极限",
       "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/常见等价无穷小与极限.md"
-    },
-    {
-      "basename": "第一章 集合,数列,函数,极限和连续",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md"
     },
     {
       "basename": "第一章 集合,数列,函数,极限和连续 2023-01-17 14.08.42.excalidraw",
@@ -51,14 +159,6 @@
     {
       "basename": "重要的泰勒展开公式",
       "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要的泰勒展开公式.md"
-    },
-    {
-      "basename": "高阶导数公式",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/高阶导数公式.md"
-    },
-    {
-      "basename": "重要导数公式",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md"
     },
     {
       "basename": "归纳法+单调有界求极限例题",
@@ -99,106 +199,6 @@
     {
       "basename": "第十四章 能量原理求解超静定结构",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十四章 能量原理求解超静定结构.md"
-    },
-    {
-      "basename": "第十四章 能量原理求解超静定结构 2023-07-21 16.33.20",
-      "path": "Excalidraw/第十四章 能量原理求解超静定结构 2023-07-21 16.33.20.md"
-    },
-    {
-      "basename": "第十四章 能量原理求解超静定结构 2023-07-21 16.19.44",
-      "path": "Excalidraw/第十四章 能量原理求解超静定结构 2023-07-21 16.19.44.md"
-    },
-    {
-      "basename": "第十四章 能量原理求解超静定结构 2023-07-21 15.15.06",
-      "path": "Excalidraw/第十四章 能量原理求解超静定结构 2023-07-21 15.15.06.md"
-    },
-    {
-      "basename": "第十四章 能量原理求解超静定结构 2023-07-21 14.47.44",
-      "path": "Excalidraw/第十四章 能量原理求解超静定结构 2023-07-21 14.47.44.md"
-    },
-    {
-      "basename": "第十三章 能量原理在杆件位移分析的应用",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十三章 能量原理在杆件位移分析的应用.md"
-    },
-    {
-      "basename": "第五章 定积分",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第五章 定积分.md"
-    },
-    {
-      "basename": "第二章 热力学第一定律 2023-07-20 19.42.20",
-      "path": "Excalidraw/第二章 热力学第一定律 2023-07-20 19.42.20.md"
-    },
-    {
-      "basename": "第十二章 动载荷",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十二章 动载荷.md"
-    },
-    {
-      "basename": "INSERT_OVERLINE",
-      "path": "🗒️Templates/INSERT_OVERLINE.md"
-    },
-    {
-      "basename": "常用图形的面积与形心位置",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/重要公式/常用图形的面积与形心位置.md"
-    },
-    {
-      "basename": "第十三章 能量原理在杆件位移分析的应用 2023-07-20 09.16.19",
-      "path": "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-07-20 09.16.19.md"
-    },
-    {
-      "basename": "第十三章 能量原理在杆件位移分析的应用 2023-05-19 15.45.19",
-      "path": "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-05-19 15.45.19.md"
-    },
-    {
-      "basename": "第十三章 能量原理在杆件位移分析的应用 2023-07-19 23.57.06",
-      "path": "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-07-19 23.57.06.md"
-    },
-    {
-      "basename": "第三章 剪切, 挤压",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第三章 剪切, 挤压.md"
-    },
-    {
-      "basename": "第十三章 能量原理在杆件位移分析的应用 2023-07-19 21.40.45",
-      "path": "Excalidraw/第十三章 能量原理在杆件位移分析的应用 2023-07-19 21.40.45.md"
-    },
-    {
-      "basename": "Word List3",
-      "path": "📘ClassNotes/🗣️English/Word Notes/Word List3.md"
-    },
-    {
-      "basename": "Word List2",
-      "path": "📘ClassNotes/🗣️English/Word Notes/Word List2.md"
-    },
-    {
-      "basename": "INSERT_ARCTAN_SYMBOL",
-      "path": "🗒️Templates/INSERT_ARCTAN_SYMBOL.md"
-    },
-    {
-      "basename": "INSERT_ARCCOS_SYMBOL",
-      "path": "🗒️Templates/INSERT_ARCCOS_SYMBOL.md"
-    },
-    {
-      "basename": "INSERT_ARCSIN_SYMBOL",
-      "path": "🗒️Templates/INSERT_ARCSIN_SYMBOL.md"
-    },
-    {
-      "basename": "第一章 集合,数列,函数,极限和连续 2023-03-27 11.56.08",
-      "path": "Excalidraw/第一章 集合,数列,函数,极限和连续 2023-03-27 11.56.08.md"
-    },
-    {
-      "basename": "双曲函数和反双曲函数",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/双曲函数和反双曲函数.md"
-    },
-    {
-      "basename": "第二章 热力学第一定律 2023-07-18 00.58.19",
-      "path": "Excalidraw/第二章 热力学第一定律 2023-07-18 00.58.19.md"
-    },
-    {
-      "basename": "熵概念推导与产生",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/熵概念推导与产生.pdf"
-    },
-    {
-      "basename": "幂指函数性质与解题重要方法",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/幂指函数性质与解题重要方法.md"
     }
   ],
   "omittedPaths": [],

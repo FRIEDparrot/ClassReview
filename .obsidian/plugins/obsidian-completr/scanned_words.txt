@@ -132068,6 +132068,7 @@ QCgev
 QpNq
 QZp
 QEec
+QJbFN
 Introduction
 It
 Intrinsic
@@ -153814,6 +153815,7 @@ gWS
 gvO
 gDx
 gigantic
+grad
 quantities
 qq
 qN
@@ -160756,6 +160758,7 @@ Jkqd
 Jde
 JfC
 JbId
+Jacobi
 yield
 yt
 yk

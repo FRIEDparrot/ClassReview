@@ -1,1 +1,1 @@
-<mark style="background: transparent; color: blue"></mark>
+<b><mark style="background: transparent; color: blue"></mark></b>
