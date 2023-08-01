@@ -4,46 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "a247fa0d45d65ef0",
+        "id": "651a174d0fc919d0",
         "type": "tabs",
         "children": [
           {
-            "id": "25610fb48f1a01c8",
+            "id": "5f40066f3b921895",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧊Minecraft/红石数电/数电基本元件与逻辑电路.md",
+                "file": "📘ClassNotes/🗣️English/Word Notes/Word List4.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "289b4c9b4038390b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧊Minecraft/红石数电/Circuit Basics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "84c79cec6a4e1d0d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "2f1bffa674afd4b9",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/数电基本元件与逻辑电路 2023-07-28 09.53.05.md"
               }
             }
           }
@@ -121,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 291.5
+    "width": 345.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -157,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🧊Minecraft/红石数电/数电基本元件与逻辑电路.md",
+                "file": "📘ClassNotes/🗣️English/Word Notes/Word List4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🧊Minecraft/红石数电/数电基本元件与逻辑电路.md",
+                "file": "📘ClassNotes/🗣️English/Word Notes/Word List4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🧊Minecraft/红石数电/数电基本元件与逻辑电路.md"
+                "file": "📘ClassNotes/🗣️English/Word Notes/Word List4.md"
               }
             }
           }
@@ -239,53 +212,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "25610fb48f1a01c8",
+  "active": "5f40066f3b921895",
   "lastOpenFiles": [
-    "attachments/Pasted image 20230728101256.png",
-    "attachments/Pasted image 20230728101221.png",
-    "Excalidraw/数电基本元件与逻辑电路 2023-07-28 09.53.05.md",
-    "🧊Minecraft/红石数电/数电基本元件与逻辑电路.md",
-    "🧊Minecraft/红石数电/Circuit Basics.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
-    "🧊Minecraft/红石数电",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/高阶导数公式.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第四章 不定积分.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第五章 定积分.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/积分常见的技巧总结.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/基本积分表.md",
+    "Day Planners/Day Planner-20230802.md",
+    "Excalidraw/积分常见的技巧总结 2023-08-01 21.57.18.md",
+    "attachments/Pasted image 20230801163451.png",
+    "attachments/Pasted image 20230801163448.png",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/积分的性质.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/变上下限的积分公式.md",
+    "Excalidraw/变上下限的积分公式 2023-08-01 11.45.14.md",
+    "Excalidraw/变上下限的积分公式 2023-08-01 11.17.33.md",
+    "Excalidraw/第五章 定积分 2023-08-01 09.54.18.md",
+    "attachments/Pasted Image 20230801100335_885.png",
+    "attachments/Pasted Image 20230801095612_708.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第二章 拉伸与压缩.md",
+    "Excalidraw/第二章 拉伸与压缩 2023-08-01 05.27.11.md",
+    "attachments/Pasted Image 20230801080524_360.png",
+    "attachments/Pasted Image 20230801080524_343.png",
+    "🧊Minecraft/redstone/单倍速卸货机单片(1宽).md",
+    "Day Planners/Day Planner-20230801.md",
+    "attachments/Pasted image 20230731220555.png",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第三章 微分中值定理和导数的应用.md",
     "🐸 Daily Life memo/需要养成的习惯.md",
-    "🗒️Templates/INSERT_BLUE_HEIGHT_TEXT.md",
-    "🗒️Templates/TOOGLE_BOLD_HTML_FORM.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第一章 基本概念.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程.md",
-    "Day Planners/Day Planner-20230728.md",
-    "Excalidraw/第三章 理想气体的性质与过程 2023-07-27 23.33.16.md",
-    "🧊Minecraft/红石音乐/漏斗时序装置.md",
-    "attachments/Pasted image 20230727221354.png",
-    "attachments/Pasted image 20230727215305.png",
-    "attachments/Pasted image 20230727215013.png",
-    "attachments/0D8F2F0C.gif",
-    "attachments/Pasted image 20230727214656.png",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md",
-    "Excalidraw/第二章 导数与微分 2023-07-27 17.59.15.md",
-    "attachments/Pasted Image 20230727175921_646.png",
-    "Excalidraw/第二章 导数与微分 2023-07-27 17.28.26.md",
-    "attachments/Pasted Image 20230727175149_522.png",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第九章 多元函数的微分法及应用.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/补充部分/复合函数的求导法则证明.md",
-    "Excalidraw/第二章 导数与微分 2023-01-19 12.47.10.excalidraw.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/补充部分/导数的四则运算法则证明.md",
-    "Excalidraw/第二章 导数与微分 2023-01-19 11.55.41.excalidraw.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/补充部分/第二章 导数与微分 2023-01-19 11.55.41.excalidraw.md",
-    "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/Graphic_Practice.md",
+    "🐸 Daily Life memo/⌚近期计划书.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/曲线的渐近线的求解方法.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/弧微分和曲率公式.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/方程曲线曲率常用公式.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/重要的奇函数和偶函数.md",
+    "Day Planners/Day Planner-20230731.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/微分中值定理.md",
+    "🧊Minecraft/redstone/缓存编码原理(二次编码原理).md",
+    "🧊Minecraft/redstone/计数器时钟.md",
+    "attachments/Pasted image 20230730174355.png",
+    "attachments/Pasted image 20230730172145.png",
+    "🧊Minecraft/红石音乐/译码原理",
+    "attachments/Pasted image 20230730115035.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/多变过程方程的推进功和技术功推导.pdf",
+    "🧊Minecraft/红石数电",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/课本例题",
-    "attachments/Pasted Image 20230726142812_678.png",
-    "attachments/Pasted image 20230726092350 1.png",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/熵概念推导与产生.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/continuum_report.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充",
     "📃Essay/CFD.pdf",
     "🧊Minecraft/红石音乐",
-    "🧊Minecraft/redstone/Untitled",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🛩️Fluid structure interaction/补充/谐波平衡推导Duffing方程自由振动.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/例题/应力理论证明例题.pdf"
+    "🧊Minecraft/redstone/Untitled"
   ]
 }

@@ -6,25 +6,17 @@
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [
-    {
-      "query": "path:ClassNotes",
-      "color": {
-        "a": 1,
-        "rgb": 12776760
-      }
-    }
-  ],
+  "colorGroups": [],
   "collapse-display": false,
   "showArrow": true,
   "textFadeMultiplier": 2.6,
-  "nodeSizeMultiplier": 1.21272097053726,
-  "lineSizeMultiplier": 1.70664329431339,
+  "nodeSizeMultiplier": 2.29479166666667,
+  "lineSizeMultiplier": 0.1,
   "collapse-forces": false,
-  "centerStrength": 0.518713248970312,
+  "centerStrength": 0.838541666666667,
   "repelStrength": 10,
   "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.19286935275586872,
-  "close": true
+  "linkDistance": 30,
+  "scale": 0.1648848973011507,
+  "close": false
 }
