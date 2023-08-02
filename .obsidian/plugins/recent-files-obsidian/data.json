@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "Word List4",
       "path": "📘ClassNotes/🗣️English/Word Notes/Word List4.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "编码后的批处理和回收装置",
       "path": "🧊Minecraft/红石音乐/编码后的批处理和回收装置.md"
-    },
-    {
-      "basename": "译码器和缓存器",
-      "path": "🧊Minecraft/红石音乐/译码器和缓存器.md"
     }
   ],
   "omittedPaths": [],
