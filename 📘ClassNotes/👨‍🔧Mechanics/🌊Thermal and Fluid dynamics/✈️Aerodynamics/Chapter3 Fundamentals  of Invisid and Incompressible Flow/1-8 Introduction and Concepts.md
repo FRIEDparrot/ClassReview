@@ -87,4 +87,3 @@ we consider a flow with pressure $p_1$ moving with velocity $V_1$. this pressure
 However, the fluid of the flow in  streamline DB slow down as the as they get closer to the Pitot tube. and **the gas velocity go to zero right at the point B**.
 
 Any point in a flow *where the velocity becomes zero* is called a **stagnation point**. 
-
