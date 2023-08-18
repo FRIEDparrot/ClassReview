@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "651a174d0fc919d0",
+        "id": "71df95c587dcb5c9",
         "type": "tabs",
         "children": [
           {
-            "id": "5f40066f3b921895",
+            "id": "dbc79bcf906df066",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List4.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6f2503c0f8dfa923",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow/1-8 Introduction and Concepts.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -44,7 +31,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 56.34615384615385,
+        "dimension": 63.17307692307693,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -78,13 +65,21 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "6485083dc35382a4",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-tab-tree",
+              "state": {}
+            }
           }
         ]
       },
       {
         "id": "3dfa7e76a36534a1",
         "type": "tabs",
-        "dimension": 43.65384615384615,
+        "dimension": 36.82692307692308,
         "children": [
           {
             "id": "db0ad0041a71350b",
@@ -106,7 +101,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 345.5
+    "width": 340.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -115,7 +111,7 @@
       {
         "id": "736ec7c11262503f",
         "type": "tabs",
-        "dimension": 34.32692307692308,
+        "dimension": 50.76923076923076,
         "children": [
           {
             "id": "55e2f6198cbb96c3",
@@ -142,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow/1-8 Introduction and Concepts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow/1-8 Introduction and Concepts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +183,7 @@
       {
         "id": "91a9ba92dd5ebb95",
         "type": "tabs",
-        "dimension": 65.67307692307692,
+        "dimension": 49.23076923076924,
         "children": [
           {
             "id": "7778856753ec014b",
@@ -195,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow/1-8 Introduction and Concepts.md"
               }
             }
           }
@@ -208,69 +204,70 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "surfing:surfing-bookmark-manager": false,
+      "dbfolder:Create a new database table": false,
+      "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "command-palette:Open command palette": false,
-      "audio-recorder:Start/stop recording": false,
-      "canvas:Create new canvas": false,
-      "workspaces:Manage workspace layouts": false,
-      "random-note:Open random note": false,
       "zk-prefixer:Create new unique note": false,
-      "switcher:Open quick switcher": false,
+      "random-note:Open random note": false,
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
       "templater-obsidian:Templater": false,
-      "dbfolder:Create a new database table": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-projects:Open projects": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6f2503c0f8dfa923",
+  "active": "dbc79bcf906df066",
   "lastOpenFiles": [
-    "📘ClassNotes/🗣️English/Word Notes/Word List4.md",
-    "README.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第四章 不定积分.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow/1-8 Introduction and Concepts.md",
+    "Excalidraw/1-8 Introduction and Concepts 2023-08-18 09.44.01.md",
+    "📘ClassNotes/🗣️English/Word Notes/Fundamental aerodynamic words.md",
+    "Day Planners/Day Planner-20230818.md",
+    "Excalidraw/1-8 Introduction and Concepts 2023-08-17 20.20.54.md",
+    "📘ClassNotes/💻softwares/🗽2D & 3D design/Blender/Blender基本操作方法.md",
+    "attachments/Pasted image 20230817185429.png",
+    "attachments/Pasted image 20230817183007.png",
+    "attachments/Pasted image 20230817182009.png",
+    "📘ClassNotes/💻softwares/🗽2D & 3D design/Blender",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/傅里叶级数展开方法.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要的泰勒展开公式(佩亚诺余项).md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十二章 无穷级数.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/平面的方程.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第九章 多元函数的微分法及应用.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十章 重积分.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十一章 曲线积分和曲面积分.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/格林公式, 高斯公式和斯托克斯公式以及几个重要概念.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第一章 张量分析初步.md",
     "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第五章 定积分.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/积分常见的技巧总结.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/基本积分表.md",
-    "Day Planners/Day Planner-20230802.md",
-    "Excalidraw/积分常见的技巧总结 2023-08-01 21.57.18.md",
-    "attachments/Pasted image 20230801163451.png",
-    "attachments/Pasted image 20230801163448.png",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/积分的性质.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/变上下限的积分公式.md",
-    "Excalidraw/变上下限的积分公式 2023-08-01 11.45.14.md",
-    "Excalidraw/变上下限的积分公式 2023-08-01 11.17.33.md",
-    "Excalidraw/第五章 定积分 2023-08-01 09.54.18.md",
-    "attachments/Pasted Image 20230801100335_885.png",
-    "attachments/Pasted Image 20230801095612_708.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第二章 拉伸与压缩.md",
-    "Excalidraw/第二章 拉伸与压缩 2023-08-01 05.27.11.md",
-    "attachments/Pasted Image 20230801080524_360.png",
-    "attachments/Pasted Image 20230801080524_343.png",
-    "🧊Minecraft/redstone/单倍速卸货机单片(1宽).md",
-    "Day Planners/Day Planner-20230801.md",
-    "attachments/Pasted image 20230731220555.png",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第三章 微分中值定理和导数的应用.md",
-    "🐸 Daily Life memo/需要养成的习惯.md",
-    "🐸 Daily Life memo/⌚近期计划书.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/曲线的渐近线的求解方法.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/弧微分和曲率公式.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/方程曲线曲率常用公式.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/重要的奇函数和偶函数.md",
-    "Day Planners/Day Planner-20230731.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/微分中值定理.md",
-    "attachments/Pasted image 20230730174355.png",
-    "attachments/Pasted image 20230730172145.png",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第七章 微分方程.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第六章 定积分的应用.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第八章 向量代数和空间解析几何.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/多元函数积分表.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/几何定积分公式.md",
+    "attachments/Screenshot_20230817_103015_com.microsoft.skydrive.png",
+    "Excalidraw/1-8 Introduction and Concepts 2023-08-17 09.08.30.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第四章 热力学第二定律与熵.md",
+    "Excalidraw/第四章 热力学第二定律与熵 2023-08-17 00.12.02.md",
+    "Day Planners/Day Planner-20230817.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/熵概念推导与产生.pdf",
+    "attachments/Pasted image 20230816211412.png",
+    "attachments/Pasted image 20230816194142.png",
+    "attachments/Pasted image 20230816190952.png",
+    "attachments/Pasted image 20230816184402.png",
+    "attachments/Pasted image 20230816182742.png",
+    "attachments/Pasted image 20230816181828.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow",
+    "🧊Minecraft/redstone/储电小装置",
+    "📘ClassNotes/💻softwares/⚡Circuit",
     "🧊Minecraft/红石音乐/译码原理",
-    "attachments/Pasted image 20230730115035.png",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/多变过程方程的推进功和技术功推导.pdf",
     "🧊Minecraft/红石数电",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/课本例题",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/熵概念推导与产生.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/continuum_report.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充",
-    "📃Essay/CFD.pdf",
-    "🧊Minecraft/红石音乐",
-    "🧊Minecraft/redstone/Untitled"
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/continuum_report.pdf"
   ]
 }

@@ -11,9 +11,8 @@ this is the definition of the substantial derivative, which is the combination o
 
 the substantial derivate **states the change of properties of the fluid elements**.
 
-also we note that the divergence of velocity equals the time rate of change of a moving fluid with fixed mass per unit volume, Which can be inferred from the following two notes
-[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/Implements/Rate of Volume Change & Jacobian transformation]] 
-[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/Implements/Note - Transformation Jacobian]]
+also we note that the divergence of velocity equals the time rate of change of a moving fluid with fixed mass per unit volume, Which can be inferred from the following two notes : [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/Implements/Rate of Volume Change & Jacobian transformation|Rate of Volume Change & Jacobian transformation]] 
+[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/Implements/Note - Transformation Jacobian|Note - Transformation Jacobian]]
 
 ## 2.10 Fundamental Equations in terms of substantial derivative
 In this process, we express the continuity, momentum and the energy equation in forms of the substantial derivate, and also we would make use of the equation 
@@ -40,23 +39,25 @@ we can derive it from the following process:
 [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/📝Examples/Energy equation in substantial derivative|The Derivation process]]
 
 And the detailed derivation can also be referenced from the following pdf: 
-[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/Implements/fluidsreview-1.pdf]]
+[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/Implements/fluidsreview-1.pdf|fluidsreview-1.pdf]]
 
 we called the form that we derived previously *the conservation form of the fundamental equations* 
 then the form of Equation we have just derived is called *nonconservation form* 
 Note that for the numerical solution of some aerodynamic problems, the conservation form sometimes leads to more accurate results.
 
 ## 2.11 Path line, streamline and Streak line of a flow
-the path line describe the path of the fluid elements
+### (1) Path Line
+the path line <b><mark style="background: transparent; color: blue">describe the path of the fluid elements</mark></b>
 and the definition is just as it in [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第三章 流体运动概述/一、流体运动简介#2. 流线，迹线和脉线|fluid dynamics]]
-
-the equation of the path line is : 
+the **equation of the path line** is : 
 $$\frac{dx}{dt} = u(x,y,z,t) \quad \frac{dy}{dt} = v(x,y,z,t)$$
-the concept of the stream line is a curve whose tangent at any point is in the direction of the velocity vector 
-we let $ds$ be a direct element along the streamline, then we have : 
+
+### (2) Stream Line
+<b><mark style="background: transparent; color: red">the concept of the stream line is a curve whose tangent at any point is in the direction of the velocity vector</mark> </b>
+we let $ds$ be a **direct element along the streamline**, then we have : 
 $$\boxed{ds \times V =  0}$$
 and if the ds is described as $dx \vec{i} + dy \vec{j}+ dz\vec{k}$
-then the streamline is:
+then **the equation of the streamline** is:
 $$\boxed{\frac{dx}{u(x,y,z,t)} = \frac{dy}{v(x,y,z,t)} = \frac{dz}{w(x,y,z,t)}}$$
 or
 $$ds\times V = \left|
@@ -67,7 +68,10 @@ u & v & w
 \end{matrix}
 \right| = 0$$
 then 
-![[Pasted image 20230130180356.png|250]]
+$$\begin{matrix} wdy - v dz = 0 \\
+u dz - w dx = 0\\
+v dx - u dy = 0
+\end{matrix}\tag{2.117}$$
 note the mass flow  across all cross sections of a stream tube is constant.
 
 **Note that For a steady flow, path line, stream line and the streak lines are all the same curves, and only in unsteady flow they are different**
@@ -226,10 +230,13 @@ for the irrotational flow $V = \nabla\phi$, a line of constant $\phi$ is an isol
 and a **streamline** is a constant line of $\bar{\psi}$ for a two-dimension body $\psi(x,y) = constant$
 
 from above equation, we have 
-1. streamline
+**1. streamline**
 $$d\psi = -v dx + u dy = 0$$
-2. equipotential line
+then we have:
+$$\left.\frac{dy}{dx}\right|_{\psi = \text{const}} = \frac{v}{u}$$
+**2. equipotential line**
 $$d\phi = u dx + v dy = 0$$
-then we have 
+$$\left.\frac{dy }{dx}\right|_{\phi  = \text{const}} = -\frac{u}{v}$$
+then we have
 $$(\frac{dy}{dx})_{d\psi = 0} = -\frac{1}{(\frac{dy}{dx})_{d\phi =0}}$$
 hence **The streamline and the equipotential line are mutually perpendicular**

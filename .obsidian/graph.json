@@ -6,17 +6,25 @@
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "path:\"Day Planners\"",
+      "color": {
+        "a": 1,
+        "rgb": 15004928
+      }
+    }
+  ],
   "collapse-display": false,
   "showArrow": true,
   "textFadeMultiplier": 2.6,
-  "nodeSizeMultiplier": 2.29479166666667,
+  "nodeSizeMultiplier": 2.3203125,
   "lineSizeMultiplier": 0.1,
   "collapse-forces": false,
-  "centerStrength": 0.838541666666667,
-  "repelStrength": 10,
+  "centerStrength": 0,
+  "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 30,
-  "scale": 0.1648848973011507,
+  "scale": 0.0078125,
   "close": false
 }

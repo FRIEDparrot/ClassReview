@@ -114,7 +114,7 @@ $$\vec{V} = \vec{V}(x,y,z) = \vec{V}(r,\theta, z) = \vec{V}(r,\theta,\Phi)$$
 and the $\vec{V}$ is a vector that can represent vector quantity. however, for the practical purposes and to aid in physical interpretation. Consider $V$ to be the flow velocity.
 
 In the section 2.3, we will prove the time rate of the change of the volume of a moving liquid element is equal to the ***divergence*** of the $\vec{V}$, which is expressed as
-***divergence*** of $\vec{V}$: 
+***divergence*** of $\vec{V}$:
 $$\nabla \cdot V$$
 note that **==the divergence of a vector is a scalar quantity==**. then the divergence in different vectors are shown as: 
 1. Cartesian system
@@ -263,27 +263,27 @@ then we have:
 $$\underset{V}{∰} (\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho V)) d\mathcal{V} = 0$$
 that is 
 $$\boxed{\Large \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho V) = 0\tag{2.52}}$$
-this is the continuity equation in the form of a partial differential equation. 
+this is the **continuity equation in the form of a partial differential equation**. 
 we can also compare it to [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第三章 流体运动概述/一、流体运动简介#5. 连续方程|the continuity equation in the fluid dynamics and its derivation process]]
 
 note that in the derivation of the above equations, the only assumption is about the nature of the fluid is that it is a continuum.
 
 ###### (3) Continuum equation for the steady flow
-For the steady flow, $\frac{\partial}{\partial t}$ is 0, and the [[1-16 Fundamental Principles#(1) Continuum equation in integral form|equation (2.48)]] becomes
+**For the steady flow**, $\frac{\partial}{\partial t}$ is 0, and the [[1-16 Fundamental Principles#(1) Continuum equation in integral form|equation (2.48)]] becomes
 $$\Large\boxed{{∯_s} \rho V \cdot dS =  0}$$
 and equation (2.52) is 
 $$\Large\boxed{\nabla \cdot (\rho V) =0}$$
 ## 2.5 Momentum equation
 ##### (1) The momentum equation in the integral form
-The Newton's second law is written as (for a general form): 
+The Newton's second law gives the relationship of the force and momentum as (for a general form): 
 $$\boxed{F =  \frac{d}{dt}(m V)}\tag{2.56}$$
 by expressing force as the summation of the ***body force*** and the ***surface force***
 where body force is 
 $$F_V = ∰_V \rho f d\mathcal{V}$$
-and the surface force on a surface in a viscous fluid is the summation of the pressure applied on the surface and the shearing stress. 
-$$F_s = -p dS + F_{viscous}$$
+and the surface force on a surface in a viscous fluid is the summation of the pressure applied on the surface and the shearing stress.
+$$\boxed{F_s = -p dS + F_{viscous}}$$
 and thus
-$$\boxed{F = ∰_V \rho f d\mathcal{V} - ∯_S p dS + F_{viscous}} \tag{2.59}$$
+$$\Large \boxed{F = ∰_V \rho f d\mathcal{V} - ∯_S p dS + F_{viscous}} \tag{2.59}$$
 and for the control volume, the time rate of the change of the moment of the fluid should take **the Net flow of the moment out of control volume across** $S$ into consideration.
 so we have 
 $$\begin{matrix}
@@ -294,29 +294,32 @@ $$\begin{matrix}
 \text{Time rate of change of moment due to} \\
 \text{unsteady fluctuations of flow properties inside } \mathcal{V}
 \end{matrix} \equiv H$$
-where
+where 
 $$\text{the flow moment per second across }dS = \rho V n dA \cdot V$$
 $$G = ∯_S (\rho V \cdot dS) \space V $$
-and we have the momentum per volume is $\rho V$, then
+and we have the **momentum per volume** is $\rho V$, then
 $$H = \frac{\partial}{\partial t}∰_V (\rho V)  d\mathcal{V}$$
 then the equation is: 
 $$\boxed{\frac{d}{dt}(mV) =  ∯_S (\rho V \cdot dS) \space V  +  \frac{\partial}{\partial t}∰_V (\rho V)  d\mathcal{V}}$$
-then we substitute the $F \text{ (equation 2.59)}$ and the above equation into the eq$(2.56)$, we get the momentum formula in the integral form
-$$\boxed{∰_V \rho f d\mathcal{V} -∯_S p dS + F_{viscous} =\frac{\partial}{\partial t}∰_V (\rho V)  d\mathcal{V} + ∯_S (\rho V \cdot dS) \space V}$$
+then we substitute the $F \text{ (equation 2.59)}$ and the above equation into the eq$(2.56)$, we get <mark style="background: transparent; color: red">the momentum formula in the integral form</mark> as : 
+$$\boxed{∰_V \rho f d\mathcal{V} -∯_S p dS + F_{viscous} =\frac{\partial}{\partial t}\left(\iiint_V (\rho V)  d\mathcal{V}\right) + ∯_S (\rho V \cdot dS) \space V}$$
 
 ##### (2) partial differential equation of the momentum formula 
 just as the method we used to derive the Continuum equation, we have: 
-$$∰_V \rho f d\mathcal{V} -∯_S p dS + F_{viscous} = ∰\frac{\partial (\rho V)}{\partial S} d\mathcal{V} + ∯_S (\rho V \cdot dS) V$$
+$$∰_V \rho f d\mathcal{V} -∯_S p dS + F_{viscous} = ∰\frac{\partial (\rho V)}{\partial t} d\mathcal{V} + ∯_S (\rho V \cdot dS) V$$
 [[1-16 Fundamental Principles 2023-01-28 20.31.38.excalidraw|Implements and the clarification]]
-and also use the [[1-16 Fundamental Principles#2.2.11 Relations between the Line, surface and the Volume integral|divergence theorem]], then we have
+and also use the [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles#2.2.11 Relations between the Line, surface and the Volume integral|Divergence theorem]], then we have
 $$∯_S(\rho V \cdot dS )V=  ∰_V \nabla\cdot \rho V d\mathcal{V} \space V $$
 (note that it has three components in three directions), and also
 $$∯_S p dS = ∰_V \nabla p d\mathcal{V}$$
 thus the equation becomes (note that the divergence of the vector is a scalar)
 the equations in the x direction ,y direction, and z direction are as following: 
+
+---
 $$∰_V \frac{\partial(\rho u)}{\partial t} d\mathcal{V}  + ∰_V\nabla \cdot (\rho u V) d\mathcal{V}= ∰_V \left[\rho f_x - \frac{\partial p}{\partial x} \right] d\mathcal{V} + F_{viscous,x}$$
 $$∰_V \frac{\partial(\rho v)}{\partial t} d\mathcal{V}+ ∰_V \nabla \cdot (\rho v V)d\mathcal{V}= ∰_V \left[\rho f_y - \frac{\partial p}{\partial y}\right] d\mathcal{V} + F_{viscous,y}$$
 $$∰_V \frac{\partial(\rho w)}{\partial t}d\mathcal{V} + ∰_V \nabla \cdot (\rho w V)d\mathcal{V}= ∰_V \left[\rho f_z - \frac{\partial p}{\partial z}\right] d\mathcal{V} + F_{viscous,z}$$
+---
 thus  we have : 
 $$ \boxed{\frac{\partial(\rho u)}{\partial t}   + \nabla \cdot (\rho u V)= - \frac{\partial p}{\partial x} + \rho f_x + (\mathcal{F_x})_{viscous}}$$
 $$\boxed{\frac{\partial(\rho v)}{\partial t}   + \nabla \cdot (\rho v V)= - \frac{\partial p}{\partial y} + \rho f_y + (\mathcal{F_y})_{viscous}}$$
@@ -478,7 +481,7 @@ $$
 ∰_V \dot{q} \rho dV + \dot{Q}_{viscous} -∯_S pV\cdot dS + ∰_V \rho (f\cdot V) d\mathcal{V} + \dot{W}_{viscous}\\
 = \frac{\partial }{\partial t}∰ \rho (e + \frac{V^2}{2}) d\mathcal{V} + ∯_S (\rho V\cdot dS ) (e + \frac{V^2}{2})
 \end{split}
-\end{equation}}
+\end{equation}} \tag{2.95}
 $$
 this is the energy equation in the integral form. Note that if a shaft penetrates the control volume surface, the work done by it ($\dot{W}_{shaft}$) should be added into the equation.
 
@@ -486,13 +489,11 @@ applying the divergence theorem, we can also reach the energy equation in the pa
 $$\boxed{\frac{\partial}{\partial t}\left[\rho (e + \frac{V^2}{2})\right] + \nabla\cdot \left[\rho (e+ \frac{V^2}{2})V\right] = \rho\dot{q} - \nabla \cdot(pV) + \rho (f\cdot V) + \dot{Q}'_{viscous} +\dot{W}'_{viscous}}$$
 
 #### (4) Energy Equation of the steady, inviscid, adiabatic flow
-for steady and inviscid flow,  $\frac{\partial }{\partial t} =0,Q_{viscous} = W_{viscous} =0$, and adiabatic flow $(\dot{q} =0)$, the equation becomes: 
-$$
-\boxed{∯_S pV \cdot dS + ∯_S \left[ p\space \left(e + \frac{V^2}{2}\right) V \cdot dS\right] =0}\tag{2.97}
-$$
+for steady and inviscid flow,  $\frac{\partial }{\partial t} =0,Q_{viscous} = W_{viscous} =0$, and adiabatic flow $(\dot{q} =0)$, the equation (2.95) becomes: 
+$$\boxed{∯_S p V \cdot dS + ∯_S \left[ \rho  \left(e + \frac{V^2}{2}\right) V \cdot dS\right] =0}\tag{2.97}$$
 and 
 $$\boxed{\nabla \cdot \left[ \rho(e+ \frac{V^2}{2}) V\right] = -\nabla\cdot(pV) } \tag{2.98}$$
 also , if the gas if perfect, 
 $$e = c_v T$$
-and also the perfect gas equation is applicable:
+and also the **perfect gas equation is applicable**:
 $$p = \rho RT$$

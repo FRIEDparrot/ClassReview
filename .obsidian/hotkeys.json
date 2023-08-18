@@ -1367,5 +1367,8 @@
       ],
       "key": "B"
     }
-  ]
+  ],
+  "quick-latex:addAlignBlock": [],
+  "quick-latex:addCasesBlock": [],
+  "quick-latex:addMatrixBlock": []
 }

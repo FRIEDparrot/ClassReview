@@ -1,0 +1,58 @@
+{
+  "bookmarks": [
+    {
+      "id": "1170205316",
+      "name": "Minecraft Wiki – The Ultimate Resource for Minecraft",
+      "url": "https://minecraft.fandom.com/wiki/Minecraft_Wiki",
+      "description": "",
+      "category": [
+        "ROOT"
+      ],
+      "tags": "",
+      "created": 1692325985345,
+      "modified": 1692325985345
+    }
+  ],
+  "categories": [
+    {
+      "value": "ROOT",
+      "text": "ROOT",
+      "label": "ROOT",
+      "children": []
+    },
+    {
+      "value": "Computer",
+      "text": "Computer",
+      "label": "Computer",
+      "children": [
+        {
+          "value": "算法",
+          "text": "算法",
+          "label": "算法"
+        },
+        {
+          "value": "数据结构",
+          "text": "数据结构",
+          "label": "数据结构"
+        }
+      ]
+    },
+    {
+      "value": "obsidian",
+      "text": "obsidian",
+      "label": "obsidian",
+      "children": [
+        {
+          "value": "surfing",
+          "text": "surfing",
+          "label": "surfing"
+        },
+        {
+          "value": "dataview",
+          "text": "dataview",
+          "label": "dataview"
+        }
+      ]
+    }
+  ]
+}
