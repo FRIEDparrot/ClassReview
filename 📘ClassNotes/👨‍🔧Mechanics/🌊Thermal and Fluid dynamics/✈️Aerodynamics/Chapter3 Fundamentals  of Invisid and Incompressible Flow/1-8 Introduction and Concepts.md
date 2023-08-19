@@ -86,4 +86,41 @@ The Pitot Tube is worked as the figure below. The **Pitot tube is the most commo
 we consider a flow with pressure $p_1$ moving with velocity $V_1$. this pressure is called **Static Pressure**, which is <u>totally caused by the random motion of the molecules in the gas.</u> 
 However, the fluid of the flow in  streamline DB slow down as the as they get closer to the Pitot tube. and **the gas velocity go to zero right at the point B**.
 
-Any point in a flow *where the velocity becomes zero* is called a **stagnation point**. 
+Any point in a flow *where the velocity becomes zero* is called a **stagnation point**. Since the pressure increases as the velocity decrease, we have $p_B > p_1$. The pressure stagnation point is called **stagnation pressure**, which is denoted by $p_0$. so we have $p_B = p_0$. stagnation pressure is also called **total pressure**. (this pressure is exerted by the flow at the tube inlet)
+
+the pressure gage at point C ==reads $p_0$and this also allows the calculation of $V_1$ in Bernoulli's equation==, so we can write the following solution: 
+`````ad-caution 
+collapse: open
+the pressure of $C$ is directly reads $p_0$(since pitot tube is vacuum), but when calculation we should subtract the $p_1$ (static pressure) `->` for standard sea level pressure, it's $2116 lb/ft^2$
+`````
+$$\boxed{p_1 + \frac{1}{2} \rho V_1^2 = p_0}$$
+then we have : 
+$$\Large \boxed{V_1 = \sqrt{\frac{2(p_0 - p_1)}{\rho}}}\tag{3.34}$$
+also it's possible to combine the pressure measurement of the total and static pressure. we set the term  $\frac{1}{2}\rho V_1^2$ as the **dynamic pressure** and also denote it by $q_1$, then we have:
+$$p_1 + q_1 = p_0\qquad \text{or}\qquad \boxed{q_1 = p_0 - p_1}\tag{3.35}$$
+## 3.5 Pressure Coefficient 
+The pressure is a dimensional quantity. also in [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/♎Important Conclusions and Lists/Dimensionless force and moment coefficients|Chapter 1]] we have introduced many essential dimensionless quantities. we can get the definition of *pressure coefficient* as : 
+$$C_p = \frac{p - p_{\infty}}{q} = \frac{\frac{1}{2} \rho (V_{\infty}^2 - V^2)}{\frac{1}{2} \rho V_{\infty}^2} \tag{3.36}$$
+then we get : 
+$$\Large\boxed{C_p = 1 - \left(\frac{V}{V_{\infty}}\right)^2}\tag{3.38}$$
+this equation is a useful equation for the pressure coefficient. <mark style="background: transparent; color: red">but it just holds for incompressible flow only</mark>
+
+`````ad-caution
+collapse: open
+keep in mind that for the location where $V > V_{\infty}$ or $p < p_{\infty}$, $C_p$ is a negative value.
+`````
+
+another property of the pressure coefficient can be seen by using the equation 3.36 as:
+$$p = p_{\infty}  + C_p \cdot  q_{\infty}$$
+this situation $C_p$ tells us **how much differs from $p_{\infty}$  in multiples of the dynamic pressure q**. then if $C_p = 1$, we have $p = p_{\infty} + q_{\infty}$, that is *"one times the dynamic pressure above the static pressure"*.
+
+we also note that the $C_p$ is *given* in most of the problems because $C_p$ is almost unchanged when the velocity increase. in [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts#1.8 Flow Similarity|Flow Similarity]] we know that $C_p$ is a similarity parameter and **depend only on Mach, Reynolds number, shape and the orientation of the body**. 
+
+`````ad-note
+title: Mach number Condition 
+collapse: open
+The condition is that freestream Mach number is less than 0.3 is essential. as the sound of speed at standard sea level is $1117ft/s$, if the freestream velocity is greater than $335ft/s$, the air should be considered compressible and the formula is no longer fit.
+`````
+
+## 3.6 Condition on velocity for incompressible flow 
+We firstly introduce a 

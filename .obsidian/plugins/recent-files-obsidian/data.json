@@ -5,12 +5,84 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow/1-8 Introduction and Concepts.md"
     },
     {
-      "basename": "1-8 Introduction and Concepts 2023-08-18 09.44.01",
-      "path": "Excalidraw/1-8 Introduction and Concepts 2023-08-18 09.44.01.md"
+      "basename": "第七章 微分方程",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第七章 微分方程.md"
+    },
+    {
+      "basename": "特殊线性微分方程的通解",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/特殊线性微分方程的通解.md"
+    },
+    {
+      "basename": "第七章 微分方程 2023-01-31 23.52.04.excalidraw",
+      "path": "Excalidraw/第七章 微分方程 2023-01-31 23.52.04.excalidraw.md"
+    },
+    {
+      "basename": "基本积分表",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/基本积分表.md"
+    },
+    {
+      "basename": "几何定积分公式",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/几何定积分公式.md"
+    },
+    {
+      "basename": "第十二章 无穷级数",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十二章 无穷级数.md"
+    },
+    {
+      "basename": "傅里叶级数展开方法",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/傅里叶级数展开方法.md"
+    },
+    {
+      "basename": "8. The transforms of Applied Mathematics",
+      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/8. The transforms of Applied Mathematics.md"
+    },
+    {
+      "basename": "8. The transforms of Applied Mathmatics 2023-01-09 19.04.40.excalidraw",
+      "path": "Excalidraw/8. The transforms of Applied Mathmatics 2023-01-09 19.04.40.excalidraw.md"
+    },
+    {
+      "basename": "Word List2",
+      "path": "📘ClassNotes/🗣️English/Word Notes/Word List2.md"
+    },
+    {
+      "basename": "Word List3",
+      "path": "📘ClassNotes/🗣️English/Word Notes/Word List3.md"
+    },
+    {
+      "basename": "考研",
+      "path": "🐸 Daily Life memo/考研.md"
+    },
+    {
+      "basename": "Word List4",
+      "path": "📘ClassNotes/🗣️English/Word Notes/Word List4.md"
+    },
+    {
+      "basename": "重要的泰勒&麦克劳林展开式(佩亚诺余项)",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要的泰勒&麦克劳林展开式(佩亚诺余项).md"
+    },
+    {
+      "basename": "第三章 微分中值定理和导数的应用",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第三章 微分中值定理和导数的应用.md"
+    },
+    {
+      "basename": "重要导数公式",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md"
+    },
+    {
+      "basename": "5 Mistakes I Made When I Started Using Obsidian",
+      "path": "Projects - Demo Project/5 Mistakes I Made When I Started Using Obsidian.md"
     },
     {
       "basename": "Fundamental aerodynamic words",
       "path": "📘ClassNotes/🗣️English/Word Notes/Fundamental aerodynamic words.md"
+    },
+    {
+      "basename": "1-11 Some Introductory Thoughts",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts.md"
+    },
+    {
+      "basename": "1-8 Introduction and Concepts 2023-08-18 09.44.01",
+      "path": "Excalidraw/1-8 Introduction and Concepts 2023-08-18 09.44.01.md"
     },
     {
       "basename": "1-8 Introduction and Concepts 2023-08-17 20.20.54",
@@ -19,18 +91,6 @@
     {
       "basename": "Blender基本操作方法",
       "path": "📘ClassNotes/💻softwares/🗽2D & 3D design/Blender/Blender基本操作方法.md"
-    },
-    {
-      "basename": "傅里叶级数展开方法",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/傅里叶级数展开方法.md"
-    },
-    {
-      "basename": "重要的泰勒展开公式(佩亚诺余项)",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要的泰勒展开公式(佩亚诺余项).md"
-    },
-    {
-      "basename": "第十二章 无穷级数",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十二章 无穷级数.md"
     },
     {
       "basename": "第九章 多元函数的微分法及应用",
@@ -57,10 +117,6 @@
       "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第五章 定积分.md"
     },
     {
-      "basename": "第七章 微分方程",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第七章 微分方程.md"
-    },
-    {
       "basename": "第六章 定积分的应用",
       "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第六章 定积分的应用.md"
     },
@@ -71,10 +127,6 @@
     {
       "basename": "多元函数积分表",
       "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/多元函数积分表.md"
-    },
-    {
-      "basename": "几何定积分公式",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/几何定积分公式.md"
     },
     {
       "basename": "1-8 Introduction and Concepts 2023-08-17 09.08.30",
@@ -147,58 +199,6 @@
     {
       "basename": "一、理想流体流动基础",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/一、理想流体流动基础.md"
-    },
-    {
-      "basename": "9-16 The Application Concepts",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/9-16 The Application Concepts.md"
-    },
-    {
-      "basename": "五、粘性流体的运行模型建立",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第五章 粘性流体运动基础/五、粘性流体的运行模型建立.md"
-    },
-    {
-      "basename": "1-8 Fundamental Principles",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md"
-    },
-    {
-      "basename": "一、流体运动简介",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第三章 流体运动概述/一、流体运动简介.md"
-    },
-    {
-      "basename": "1-16 Fundamental Principles 2023-01-28 20.31.38.excalidraw",
-      "path": "Excalidraw/1-16 Fundamental Principles 2023-01-28 20.31.38.excalidraw.md"
-    },
-    {
-      "basename": "二、伯努利方程的应用以及相关例题",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/二、伯努利方程的应用以及相关例题.md"
-    },
-    {
-      "basename": "第三章 双曲型方程组及其间断解",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/计算流体力学技术与应用/第三章 双曲型方程组及其间断解.md"
-    },
-    {
-      "basename": "Note - Transformation Jacobian",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/Implements/Note - Transformation Jacobian.md"
-    },
-    {
-      "basename": "需要养成的习惯",
-      "path": "🐸 Daily Life memo/需要养成的习惯.md"
-    },
-    {
-      "basename": "⌚近期计划书",
-      "path": "🐸 Daily Life memo/⌚近期计划书.md"
-    },
-    {
-      "basename": "第十章 重积分 2023-08-14 20.01.00",
-      "path": "Excalidraw/第十章 重积分 2023-08-14 20.01.00.md"
-    },
-    {
-      "basename": "基本积分表",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/基本积分表.md"
-    },
-    {
-      "basename": "第十章 重积分 2023-02-05 14.09.59.excalidraw",
-      "path": "Excalidraw/第十章 重积分 2023-02-05 14.09.59.excalidraw.md"
     }
   ],
   "omittedPaths": [],

@@ -22,8 +22,8 @@
     },
     "iconInTabsEnabled": false
   },
-  "📘ClassNotes/others/Git/oftenly-used commands.md": "FabApple",
-  "📘ClassNotes/others/Git": "FabGithub",
   "📘ClassNotes/Markdown & Latex Tutorial": "SiMarkdown",
-  "DataBase": "FasDatabase"
+  "DataBase": "FasDatabase",
+  "📘ClassNotes/💻softwares/Git": "FabGithub",
+  "📘ClassNotes/💻softwares/Git/oftenly-used commands.md": "FabApple"
 }

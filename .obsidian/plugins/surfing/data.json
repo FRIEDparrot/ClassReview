@@ -23,9 +23,9 @@
   "useCustomIcons": false,
   "useWebview": false,
   "useIconList": true,
-  "darkMode": true,
+  "darkMode": false,
   "bookmarkManager": {
-    "openBookMark": true,
+    "openBookMark": false,
     "saveBookMark": true,
     "sendToReadWise": true,
     "pagination": "12",
@@ -45,32 +45,10 @@
   },
   "treeData": [
     {
-      "id": "7224d5bc188a060d",
+      "id": "1f67cadae63f1ab1",
       "parent": 0,
       "droppable": true,
-      "text": "Minecraft Wiki – The Ultimate Resource for Minecraft",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    },
-    {
-      "id": "1d99f45ba24bb386",
-      "parent": 0,
-      "droppable": true,
-      "text": "Minecraft Wiki – The Ultimate Resource for Minecraft",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    },
-    {
-      "id": "772c07e702bf38c2",
-      "parent": 0,
-      "droppable": true,
-      "text": "Minecraft Wiki – The Ultimate Resource for Minecraft",
+      "text": "ChatGPT",
       "data": {
         "fileType": "site",
         "fileSize": "",

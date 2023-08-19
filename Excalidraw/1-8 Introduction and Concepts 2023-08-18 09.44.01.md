@@ -20,8 +20,8 @@ Total pressure measured ^b5VhQmkf
 	"elements": [
 		{
 			"type": "line",
-			"version": 493,
-			"versionNonce": 1602008115,
+			"version": 497,
+			"versionNonce": 1294840848,
 			"isDeleted": false,
 			"id": "oBp3vhCQbAhXssgy3MMmI",
 			"fillStyle": "hachure",
@@ -43,7 +43,7 @@ Total pressure measured ^b5VhQmkf
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -76,8 +76,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "line",
-			"version": 507,
-			"versionNonce": 1795038333,
+			"version": 511,
+			"versionNonce": 750998768,
 			"isDeleted": false,
 			"id": "zwQLR5mxf0Ab9WxgVU7VI",
 			"fillStyle": "hachure",
@@ -99,7 +99,7 @@ Total pressure measured ^b5VhQmkf
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -140,8 +140,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "line",
-			"version": 141,
-			"versionNonce": 1625142739,
+			"version": 145,
+			"versionNonce": 1937551888,
 			"isDeleted": false,
 			"id": "DeXCpY0LBMO824hyQhc1N",
 			"fillStyle": "hachure",
@@ -163,7 +163,7 @@ Total pressure measured ^b5VhQmkf
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -188,8 +188,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 27,
-			"versionNonce": 1834976477,
+			"version": 31,
+			"versionNonce": 359347952,
 			"isDeleted": false,
 			"id": "2qV0yndFF9pu7_SKWoY_l",
 			"fillStyle": "hachure",
@@ -209,7 +209,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -288,8 +288,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 26,
-			"versionNonce": 1038975859,
+			"version": 30,
+			"versionNonce": 859566096,
 			"isDeleted": false,
 			"id": "e4A1LS82LnV3yLYa1FLHl",
 			"fillStyle": "hachure",
@@ -309,7 +309,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -384,8 +384,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 20,
-			"versionNonce": 70574397,
+			"version": 24,
+			"versionNonce": 583457008,
 			"isDeleted": false,
 			"id": "304STq-QeoZVsdOVrlxhs",
 			"fillStyle": "hachure",
@@ -405,7 +405,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -456,8 +456,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 28,
-			"versionNonce": 787651859,
+			"version": 32,
+			"versionNonce": 1952673296,
 			"isDeleted": false,
 			"id": "jH1N08CCcn9ge9gpnpjJq",
 			"fillStyle": "hachure",
@@ -477,7 +477,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -560,8 +560,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 19,
-			"versionNonce": 1692381597,
+			"version": 23,
+			"versionNonce": 140393200,
 			"isDeleted": false,
 			"id": "wq1edw_tEmvZEeOlnnIUU",
 			"fillStyle": "hachure",
@@ -581,7 +581,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -628,8 +628,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 18,
-			"versionNonce": 526615219,
+			"version": 22,
+			"versionNonce": 1609247760,
 			"isDeleted": false,
 			"id": "zve6wFZEaWGbjgfqPFqrn",
 			"fillStyle": "hachure",
@@ -649,7 +649,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -692,8 +692,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 27,
-			"versionNonce": 479294973,
+			"version": 31,
+			"versionNonce": 1220107504,
 			"isDeleted": false,
 			"id": "uZUMZpvT0XkqdgGxAR-3m",
 			"fillStyle": "hachure",
@@ -713,7 +713,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -792,8 +792,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 32,
-			"versionNonce": 1206301779,
+			"version": 36,
+			"versionNonce": 1070279184,
 			"isDeleted": false,
 			"id": "NRw30DuL0i9AVmwe_Qkay",
 			"fillStyle": "hachure",
@@ -813,7 +813,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -912,8 +912,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 18,
-			"versionNonce": 374058589,
+			"version": 22,
+			"versionNonce": 1432370928,
 			"isDeleted": false,
 			"id": "51-6bncQy5HC41uMQqUiH",
 			"fillStyle": "hachure",
@@ -933,7 +933,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -976,8 +976,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 28,
-			"versionNonce": 139637235,
+			"version": 32,
+			"versionNonce": 1593534480,
 			"isDeleted": false,
 			"id": "HxdK3R8We9bIkkJFG2c6t",
 			"fillStyle": "hachure",
@@ -997,7 +997,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -1080,8 +1080,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 19,
-			"versionNonce": 1625283261,
+			"version": 23,
+			"versionNonce": 786096368,
 			"isDeleted": false,
 			"id": "0b918AZmu9M7iBiNUph9Q",
 			"fillStyle": "hachure",
@@ -1101,7 +1101,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -1148,8 +1148,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 18,
-			"versionNonce": 28179347,
+			"version": 22,
+			"versionNonce": 1769203216,
 			"isDeleted": false,
 			"id": "E8m7FpcjRruK3ebDhvAKW",
 			"fillStyle": "hachure",
@@ -1169,7 +1169,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -1211,113 +1211,9 @@ Total pressure measured ^b5VhQmkf
 			"pressures": []
 		},
 		{
-			"type": "freedraw",
-			"version": 26,
-			"versionNonce": 888109853,
-			"isDeleted": false,
-			"id": "D9LPsAvH_QashM9BivRy1",
-			"fillStyle": "hachure",
-			"strokeWidth": 0.5,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -32.32037156887418,
-			"y": -31.968274249599517,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 10.306934365915751,
-			"height": 20.15578276001301,
-			"seed": 1962190995,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1692324107822,
-			"link": null,
-			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					-0.22904298590923133,
-					0
-				],
-				[
-					-0.6871289577277082,
-					-0.22904298590924554
-				],
-				[
-					-1.3742579154554306,
-					-1.1452149295461993
-				],
-				[
-					-2.51947284500163,
-					-2.977558816820107
-				],
-				[
-					-2.977558816820107,
-					-6.871289577277167
-				],
-				[
-					-2.061386873183153,
-					-11.681192281371182
-				],
-				[
-					0,
-					-16.26205199955595
-				],
-				[
-					2.061386873183153,
-					-18.55248185864835
-				],
-				[
-					4.3518167322755374,
-					-19.468653802285303
-				],
-				[
-					6.4132036054586905,
-					-18.781524844557595
-				],
-				[
-					7.329375549095644,
-					-16.26205199955595
-				],
-				[
-					6.871289577277167,
-					-12.139278253189673
-				],
-				[
-					5.497031661821737,
-					-7.3293755490956585
-				],
-				[
-					3.4356447886385837,
-					-2.061386873183153
-				],
-				[
-					1.6033009013646762,
-					0.6871289577277082
-				],
-				[
-					-0.9161719436369538,
-					-1.8323438872739075
-				],
-				[
-					-0.9161719436369538,
-					-1.8323438872739075
-				]
-			],
-			"lastCommittedPoint": null,
-			"simulatePressure": true,
-			"pressures": []
-		},
-		{
 			"type": "ellipse",
-			"version": 201,
-			"versionNonce": 1882132787,
+			"version": 205,
+			"versionNonce": 78725872,
 			"isDeleted": false,
 			"id": "VEV215BrWhkfEZ5AXFfJk",
 			"fillStyle": "hachure",
@@ -1339,14 +1235,14 @@ Total pressure measured ^b5VhQmkf
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "freedraw",
-			"version": 59,
-			"versionNonce": 988548989,
+			"version": 63,
+			"versionNonce": 1277994000,
 			"isDeleted": false,
 			"id": "qwBU9he8bUaO5qTy5NFxJ",
 			"fillStyle": "hachure",
@@ -1366,7 +1262,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -1581,8 +1477,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 22,
-			"versionNonce": 1161589459,
+			"version": 26,
+			"versionNonce": 1433101552,
 			"isDeleted": false,
 			"id": "93SVfq9FWNmdLletUrWM7",
 			"fillStyle": "hachure",
@@ -1602,7 +1498,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -1673,8 +1569,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 26,
-			"versionNonce": 286726109,
+			"version": 30,
+			"versionNonce": 354263568,
 			"isDeleted": false,
 			"id": "8WLL5O-pzJMP9XKwT1QeG",
 			"fillStyle": "hachure",
@@ -1694,7 +1590,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -1781,8 +1677,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 24,
-			"versionNonce": 23896179,
+			"version": 28,
+			"versionNonce": 244401904,
 			"isDeleted": false,
 			"id": "xuZRKJgYRmieoLZFpV9xl",
 			"fillStyle": "hachure",
@@ -1802,7 +1698,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -1881,8 +1777,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 24,
-			"versionNonce": 293737533,
+			"version": 28,
+			"versionNonce": 1396629520,
 			"isDeleted": false,
 			"id": "9hJRm6a0VzC0x0weNKNeI",
 			"fillStyle": "hachure",
@@ -1902,7 +1798,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -1981,8 +1877,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 22,
-			"versionNonce": 1317411347,
+			"version": 26,
+			"versionNonce": 749398256,
 			"isDeleted": false,
 			"id": "heHTq_Qh8X-qBFkwBR8ML",
 			"fillStyle": "hachure",
@@ -2002,7 +1898,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -2073,8 +1969,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 20,
-			"versionNonce": 1477346461,
+			"version": 24,
+			"versionNonce": 1988648464,
 			"isDeleted": false,
 			"id": "nwuxWa4DADVymo3fGYjf_",
 			"fillStyle": "hachure",
@@ -2094,7 +1990,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -2157,8 +2053,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 31,
-			"versionNonce": 1501519795,
+			"version": 35,
+			"versionNonce": 1530940144,
 			"isDeleted": false,
 			"id": "HqT3AkdFDqTVzBUOOYE-L",
 			"fillStyle": "hachure",
@@ -2178,7 +2074,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107822,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -2285,8 +2181,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 24,
-			"versionNonce": 141420797,
+			"version": 28,
+			"versionNonce": 804396048,
 			"isDeleted": false,
 			"id": "VrjDUQirZmi2751MazMei",
 			"fillStyle": "hachure",
@@ -2306,7 +2202,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -2385,8 +2281,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 25,
-			"versionNonce": 1820258643,
+			"version": 29,
+			"versionNonce": 349793520,
 			"isDeleted": false,
 			"id": "BmqzVZ3ExxeNW-Bb7zpdN",
 			"fillStyle": "hachure",
@@ -2406,7 +2302,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -2493,8 +2389,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 31,
-			"versionNonce": 1411498333,
+			"version": 35,
+			"versionNonce": 1366563344,
 			"isDeleted": false,
 			"id": "zp_pofRK9fIEIrlUZWF36",
 			"fillStyle": "hachure",
@@ -2514,7 +2410,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -2633,8 +2529,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 27,
-			"versionNonce": 1222332147,
+			"version": 31,
+			"versionNonce": 1123962608,
 			"isDeleted": false,
 			"id": "tcIbyzhaFFjXBXqaOrXzB",
 			"fillStyle": "hachure",
@@ -2654,7 +2550,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -2757,8 +2653,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 30,
-			"versionNonce": 1081839037,
+			"version": 34,
+			"versionNonce": 772167696,
 			"isDeleted": false,
 			"id": "ZLiDdqd3KHjdOcC993IGM",
 			"fillStyle": "hachure",
@@ -2778,7 +2674,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -2893,8 +2789,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 21,
-			"versionNonce": 1092286611,
+			"version": 25,
+			"versionNonce": 1580658928,
 			"isDeleted": false,
 			"id": "bDwAdbf_5qwxaYBiQymKO",
 			"fillStyle": "hachure",
@@ -2914,7 +2810,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644769,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -2993,8 +2889,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "arrow",
-			"version": 196,
-			"versionNonce": 748473885,
+			"version": 200,
+			"versionNonce": 2040583696,
 			"isDeleted": false,
 			"id": "MWC-X7-rpF7t-bi09aNh4",
 			"fillStyle": "hachure",
@@ -3016,7 +2912,7 @@ Total pressure measured ^b5VhQmkf
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -3049,8 +2945,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "arrow",
-			"version": 107,
-			"versionNonce": 318008883,
+			"version": 111,
+			"versionNonce": 235623152,
 			"isDeleted": false,
 			"id": "39fhZdtsl7hG2TBS-pcWj",
 			"fillStyle": "hachure",
@@ -3072,7 +2968,7 @@ Total pressure measured ^b5VhQmkf
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -3097,8 +2993,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "line",
-			"version": 84,
-			"versionNonce": 393675389,
+			"version": 88,
+			"versionNonce": 691770384,
 			"isDeleted": false,
 			"id": "x3A9KNljor7nsniu_JM1D",
 			"fillStyle": "hachure",
@@ -3120,7 +3016,7 @@ Total pressure measured ^b5VhQmkf
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -3141,8 +3037,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "text",
-			"version": 97,
-			"versionNonce": 21901267,
+			"version": 101,
+			"versionNonce": 1224963312,
 			"isDeleted": false,
 			"id": "b5VhQmkf",
 			"fillStyle": "hachure",
@@ -3167,7 +3063,7 @@ Total pressure measured ^b5VhQmkf
 					"type": "arrow"
 				}
 			],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -3183,8 +3079,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "arrow",
-			"version": 38,
-			"versionNonce": 634104541,
+			"version": 42,
+			"versionNonce": 1389269520,
 			"isDeleted": false,
 			"id": "KH3MXlcHAdg-oVXCGOuRX",
 			"fillStyle": "hachure",
@@ -3206,7 +3102,7 @@ Total pressure measured ^b5VhQmkf
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -3227,8 +3123,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 16,
-			"versionNonce": 775863667,
+			"version": 20,
+			"versionNonce": 1957123824,
 			"isDeleted": false,
 			"id": "4xpPaSiW7KFj8EudktrYc",
 			"fillStyle": "hachure",
@@ -3248,7 +3144,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -3311,8 +3207,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 10,
-			"versionNonce": 1747732285,
+			"version": 14,
+			"versionNonce": 223465488,
 			"isDeleted": false,
 			"id": "SUrWYOVieKSxaSlu_w7lg",
 			"fillStyle": "hachure",
@@ -3332,7 +3228,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -3371,8 +3267,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 10,
-			"versionNonce": 890017555,
+			"version": 14,
+			"versionNonce": 92207344,
 			"isDeleted": false,
 			"id": "7A7X0DARSn9EcX-nMNNon",
 			"fillStyle": "hachure",
@@ -3392,7 +3288,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -3431,8 +3327,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 16,
-			"versionNonce": 1627019165,
+			"version": 20,
+			"versionNonce": 1354583568,
 			"isDeleted": false,
 			"id": "r1G4KAK6Qjh5TiWHd8Z7p",
 			"fillStyle": "hachure",
@@ -3452,7 +3348,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -3515,8 +3411,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 9,
-			"versionNonce": 70139059,
+			"version": 13,
+			"versionNonce": 521296624,
 			"isDeleted": false,
 			"id": "ppcSkJGb2jJXkTrR7N4Lu",
 			"fillStyle": "hachure",
@@ -3536,7 +3432,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -3575,8 +3471,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "rectangle",
-			"version": 109,
-			"versionNonce": 1248287741,
+			"version": 113,
+			"versionNonce": 1443433488,
 			"isDeleted": false,
 			"id": "HBSsL7Res3o4OyyoGre3w",
 			"fillStyle": "hachure",
@@ -3598,14 +3494,14 @@ Total pressure measured ^b5VhQmkf
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "freedraw",
-			"version": 16,
-			"versionNonce": 2001350227,
+			"version": 20,
+			"versionNonce": 870939888,
 			"isDeleted": false,
 			"id": "hPr4nczOfFgby4p4cmgiw",
 			"fillStyle": "hachure",
@@ -3625,7 +3521,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -3692,8 +3588,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 9,
-			"versionNonce": 477418589,
+			"version": 13,
+			"versionNonce": 1999440400,
 			"isDeleted": false,
 			"id": "orywcuzPQ_n0nClNJHa7j",
 			"fillStyle": "hachure",
@@ -3713,7 +3609,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -3752,8 +3648,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 12,
-			"versionNonce": 825682931,
+			"version": 16,
+			"versionNonce": 629956336,
 			"isDeleted": false,
 			"id": "9PRGS5nNfF5GVsN-kka1a",
 			"fillStyle": "hachure",
@@ -3773,7 +3669,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -3824,8 +3720,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 22,
-			"versionNonce": 1391739069,
+			"version": 26,
+			"versionNonce": 253839376,
 			"isDeleted": false,
 			"id": "vQKxayjwLE_WdaQTa2KJs",
 			"fillStyle": "hachure",
@@ -3845,7 +3741,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -3936,8 +3832,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 10,
-			"versionNonce": 905639315,
+			"version": 14,
+			"versionNonce": 1686307056,
 			"isDeleted": false,
 			"id": "xEU0VxjKhkFRkpXUZrims",
 			"fillStyle": "hachure",
@@ -3957,7 +3853,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -4000,8 +3896,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 14,
-			"versionNonce": 1938235677,
+			"version": 18,
+			"versionNonce": 1507706384,
 			"isDeleted": false,
 			"id": "4DDfVTQS4of_FriGAwl-b",
 			"fillStyle": "hachure",
@@ -4021,7 +3917,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -4080,8 +3976,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 12,
-			"versionNonce": 1154272051,
+			"version": 16,
+			"versionNonce": 274031344,
 			"isDeleted": false,
 			"id": "fGskBiUftl8ztgKxP2hiD",
 			"fillStyle": "hachure",
@@ -4101,7 +3997,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -4152,8 +4048,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 10,
-			"versionNonce": 1402926461,
+			"version": 14,
+			"versionNonce": 1415218192,
 			"isDeleted": false,
 			"id": "WoUsMxwvK6qE0v7cumfl7",
 			"fillStyle": "hachure",
@@ -4173,7 +4069,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -4212,8 +4108,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 12,
-			"versionNonce": 1913842899,
+			"version": 16,
+			"versionNonce": 395019504,
 			"isDeleted": false,
 			"id": "41q6fbIy69_2_ahtIou5R",
 			"fillStyle": "hachure",
@@ -4233,7 +4129,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -4284,8 +4180,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 20,
-			"versionNonce": 477108659,
+			"version": 24,
+			"versionNonce": 479166992,
 			"isDeleted": false,
 			"id": "0E_3ti0G5osKhtFvWPPfB",
 			"fillStyle": "hachure",
@@ -4305,7 +4201,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -4388,8 +4284,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 20,
-			"versionNonce": 897437437,
+			"version": 24,
+			"versionNonce": 1470981872,
 			"isDeleted": false,
 			"id": "yMd8pPHQEEtbWIqTIY8vk",
 			"fillStyle": "hachure",
@@ -4409,7 +4305,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -4492,8 +4388,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 17,
-			"versionNonce": 1162373971,
+			"version": 21,
+			"versionNonce": 1366605840,
 			"isDeleted": false,
 			"id": "Hnsye-HvytieFHYjzA5Ug",
 			"fillStyle": "hachure",
@@ -4513,7 +4409,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -4584,8 +4480,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 16,
-			"versionNonce": 1648682845,
+			"version": 20,
+			"versionNonce": 1027803376,
 			"isDeleted": false,
 			"id": "v2e1fJFQry-6rP48IC2W7",
 			"fillStyle": "hachure",
@@ -4605,7 +4501,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -4672,8 +4568,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 17,
-			"versionNonce": 2120583411,
+			"version": 21,
+			"versionNonce": 1929526800,
 			"isDeleted": false,
 			"id": "GciSbkmV74DlVGcV7_fTK",
 			"fillStyle": "hachure",
@@ -4693,7 +4589,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -4764,8 +4660,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 22,
-			"versionNonce": 726266813,
+			"version": 26,
+			"versionNonce": 1674865392,
 			"isDeleted": false,
 			"id": "fYeBIqF3j--fma8FUQ8Hu",
 			"fillStyle": "hachure",
@@ -4785,7 +4681,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -4876,8 +4772,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 18,
-			"versionNonce": 2102260371,
+			"version": 22,
+			"versionNonce": 1110440976,
 			"isDeleted": false,
 			"id": "_ZCAAn8CiZZV5LlDsVute",
 			"fillStyle": "hachure",
@@ -4897,7 +4793,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -4972,8 +4868,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 19,
-			"versionNonce": 1018065949,
+			"version": 23,
+			"versionNonce": 904498416,
 			"isDeleted": false,
 			"id": "k50PoPC4yqBLwWGV9Getd",
 			"fillStyle": "hachure",
@@ -4993,7 +4889,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -5072,8 +4968,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 14,
-			"versionNonce": 45623347,
+			"version": 18,
+			"versionNonce": 552991248,
 			"isDeleted": false,
 			"id": "9YSchSQQToLa9OQDUyeAm",
 			"fillStyle": "hachure",
@@ -5093,7 +4989,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -5152,8 +5048,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 10,
-			"versionNonce": 1113843837,
+			"version": 14,
+			"versionNonce": 218787568,
 			"isDeleted": false,
 			"id": "uoRDTvEHHot4AKnwa-HNn",
 			"fillStyle": "hachure",
@@ -5173,7 +5069,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -5216,8 +5112,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 24,
-			"versionNonce": 1955244499,
+			"version": 28,
+			"versionNonce": 1917597712,
 			"isDeleted": false,
 			"id": "IOgZ2M_4SkkbeIorD-0vh",
 			"fillStyle": "hachure",
@@ -5237,7 +5133,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -5336,8 +5232,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 15,
-			"versionNonce": 1848365277,
+			"version": 19,
+			"versionNonce": 1371476208,
 			"isDeleted": false,
 			"id": "F3RFMUn704gCgHLumECmG",
 			"fillStyle": "hachure",
@@ -5357,7 +5253,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -5420,8 +5316,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 20,
-			"versionNonce": 937162611,
+			"version": 24,
+			"versionNonce": 2049619472,
 			"isDeleted": false,
 			"id": "tujkt3y90c0gom7QC9MhJ",
 			"fillStyle": "hachure",
@@ -5441,7 +5337,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -5524,8 +5420,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 27,
-			"versionNonce": 1033350461,
+			"version": 31,
+			"versionNonce": 462385904,
 			"isDeleted": false,
 			"id": "vuEq1eLBYB9Q6CSoFAdeS",
 			"fillStyle": "hachure",
@@ -5545,7 +5441,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -5656,8 +5552,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 11,
-			"versionNonce": 1257410835,
+			"version": 15,
+			"versionNonce": 1032418320,
 			"isDeleted": false,
 			"id": "i5pyQte7r8xoHf5a4K3ZA",
 			"fillStyle": "hachure",
@@ -5677,7 +5573,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324107823,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -5724,8 +5620,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 14,
-			"versionNonce": 1649991741,
+			"version": 18,
+			"versionNonce": 1359189232,
 			"isDeleted": false,
 			"id": "txUHUarIfSKyc07WCvl7w",
 			"fillStyle": "hachure",
@@ -5745,7 +5641,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324108617,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -5808,8 +5704,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 23,
-			"versionNonce": 618881011,
+			"version": 27,
+			"versionNonce": 1650487824,
 			"isDeleted": false,
 			"id": "UNl3qJvdtepUN9-a-Nq6J",
 			"fillStyle": "hachure",
@@ -5829,7 +5725,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324109706,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -5928,8 +5824,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 12,
-			"versionNonce": 154504627,
+			"version": 16,
+			"versionNonce": 1201895152,
 			"isDeleted": false,
 			"id": "PUg-YNPkxj_KabzDWMj8x",
 			"fillStyle": "hachure",
@@ -5949,7 +5845,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324110053,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -6004,8 +5900,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 24,
-			"versionNonce": 74316083,
+			"version": 28,
+			"versionNonce": 262647824,
 			"isDeleted": false,
 			"id": "5zo5nmY8MDXsXGXZdvU_J",
 			"fillStyle": "hachure",
@@ -6025,7 +5921,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324110437,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -6128,8 +6024,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 24,
-			"versionNonce": 1179722931,
+			"version": 28,
+			"versionNonce": 1677138160,
 			"isDeleted": false,
 			"id": "I9jOk9CPjFZM39cWSvbuc",
 			"fillStyle": "hachure",
@@ -6149,7 +6045,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324112449,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -6252,8 +6148,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 10,
-			"versionNonce": 2036651219,
+			"version": 14,
+			"versionNonce": 1297559056,
 			"isDeleted": false,
 			"id": "ZRAWJJ_2l61puAujBtEXt",
 			"fillStyle": "hachure",
@@ -6273,7 +6169,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324112734,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -6320,8 +6216,8 @@ Total pressure measured ^b5VhQmkf
 		},
 		{
 			"type": "freedraw",
-			"version": 20,
-			"versionNonce": 1619163411,
+			"version": 24,
+			"versionNonce": 965114608,
 			"isDeleted": false,
 			"id": "P9HzlKrrCgvtPgEguW5IL",
 			"fillStyle": "hachure",
@@ -6341,7 +6237,7 @@ Total pressure measured ^b5VhQmkf
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1692324113116,
+			"updated": 1692328644770,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -6425,6 +6321,2002 @@ Total pressure measured ^b5VhQmkf
 			"lastCommittedPoint": null,
 			"simulatePressure": true,
 			"pressures": []
+		},
+		{
+			"type": "freedraw",
+			"version": 26,
+			"versionNonce": 1684466704,
+			"isDeleted": false,
+			"id": "_KsIxruAOcpVSyao0qMcL",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -33.14030675203939,
+			"y": -48.662749536380744,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 11.321931128601918,
+			"height": 26.661321689933573,
+			"seed": 1380860656,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1692328644770,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					0.36522358479361117,
+					-0.3652235847936254
+				],
+				[
+					1.4608943391744447,
+					-0.3652235847936254
+				],
+				[
+					3.2870122631425005,
+					0
+				],
+				[
+					5.843577356697779,
+					0.36522358479359696
+				],
+				[
+					7.66969528066582,
+					2.191341508761667
+				],
+				[
+					8.400142450253043,
+					4.382683017523306
+				],
+				[
+					6.939248111078598,
+					6.208800941491376
+				],
+				[
+					5.113130187110556,
+					7.66969528066582
+				],
+				[
+					2.191341508761667,
+					8.400142450253043
+				],
+				[
+					-1.0956707543808335,
+					1.8261179239680416
+				],
+				[
+					-0.7304471695872223,
+					1.0956707543808193
+				],
+				[
+					-0.36522358479361117,
+					1.8261179239680416
+				],
+				[
+					0,
+					5.478353771904153
+				],
+				[
+					-0.36522358479361117,
+					11.687154713395529
+				],
+				[
+					-1.4608943391744447,
+					18.626402824474127
+				],
+				[
+					-2.191341508761667,
+					23.739533011584683
+				],
+				[
+					-2.921788678348875,
+					26.296098105139947
+				],
+				[
+					-2.556565093555278,
+					25.200427350759128
+				],
+				[
+					-2.191341508761667,
+					23.739533011584683
+				],
+				[
+					-2.191341508761667,
+					23.739533011584683
+				]
+			],
+			"lastCommittedPoint": null,
+			"simulatePressure": true,
+			"pressures": []
+		},
+		{
+			"type": "freedraw",
+			"version": 18,
+			"versionNonce": 718904560,
+			"isDeleted": false,
+			"id": "4b7O4cnwFm1mgAqibs3Ft",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -25.470611471373573,
+			"y": -28.210228787938547,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 7.66969528066582,
+			"height": 5.113130187110528,
+			"seed": 792459504,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1692328644770,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-1.4608943391744305,
+					1.8261179239680416
+				],
+				[
+					-2.191341508761653,
+					1.8261179239680416
+				],
+				[
+					-2.191341508761653,
+					0.36522358479359696
+				],
+				[
+					-1.0956707543808335,
+					-1.82611792396807
+				],
+				[
+					1.4608943391744447,
+					-2.9217886783488893
+				],
+				[
+					4.017459432729723,
+					-2.5565650935552924
+				],
+				[
+					5.4783537719041675,
+					-0.7304471695872223
+				],
+				[
+					5.113130187110556,
+					1.0956707543808193
+				],
+				[
+					3.2870122631425005,
+					2.1913415087616386
+				],
+				[
+					1.4608943391744447,
+					1.0956707543808193
+				],
+				[
+					0,
+					0
+				]
+			],
+			"lastCommittedPoint": null,
+			"simulatePressure": true,
+			"pressures": []
+		},
+		{
+			"type": "freedraw",
+			"version": 11,
+			"versionNonce": 1053747728,
+			"isDeleted": false,
+			"id": "SQaC7Q1U_Fg3HiaSjpSS6",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -109.7770583004113,
+			"y": -150.76552233054667,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 3.8203366991098022,
+			"height": 0.881616161333028,
+			"seed": 11968016,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1692328644770,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-0.293872053777676,
+					0.293872053777676
+				],
+				[
+					0.293872053777676,
+					-0.293872053777676
+				],
+				[
+					1.46936026888838,
+					-0.587744107555352
+				],
+				[
+					2.938720537776774,
+					-0.587744107555352
+				],
+				[
+					3.5264646453321262,
+					-0.293872053777676
+				],
+				[
+					3.5264646453321262,
+					-0.293872053777676
+				]
+			],
+			"lastCommittedPoint": null,
+			"simulatePressure": true,
+			"pressures": []
+		},
+		{
+			"type": "freedraw",
+			"version": 12,
+			"versionNonce": 158891760,
+			"isDeleted": false,
+			"id": "fRhtHso_lZ4huefPZM4m0",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -110.952546515522,
+			"y": -147.8268017927699,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 6.17131312933121,
+			"height": 1.763232322666056,
+			"seed": 1521423888,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1692328644770,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-1.175488215110704,
+					1.763232322666056
+				],
+				[
+					-0.881616161333028,
+					1.763232322666056
+				],
+				[
+					0.293872053777676,
+					1.763232322666056
+				],
+				[
+					2.644848483999084,
+					1.46936026888838
+				],
+				[
+					4.70195286044283,
+					0.881616161333028
+				],
+				[
+					4.995824914220506,
+					0.881616161333028
+				],
+				[
+					4.995824914220506,
+					0.881616161333028
+				]
+			],
+			"lastCommittedPoint": null,
+			"simulatePressure": true,
+			"pressures": []
+		},
+		{
+			"type": "freedraw",
+			"version": 27,
+			"versionNonce": 1200039952,
+			"isDeleted": false,
+			"id": "EZIGjf_0QMPZcmJKvF9qL",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -101.25476874085868,
+			"y": -159.28781189009928,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 10.873265989774012,
+			"height": 25.860740732435488,
+			"seed": 1143479024,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1692328644770,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-0.293872053777676,
+					-0.587744107555352
+				],
+				[
+					0.587744107555352,
+					-0.881616161333028
+				],
+				[
+					3.232592591554436,
+					-1.175488215110704
+				],
+				[
+					5.87744107555352,
+					-0.881616161333028
+				],
+				[
+					8.228417505774928,
+					-0.293872053777676
+				],
+				[
+					9.403905720885632,
+					0.881616161333028
+				],
+				[
+					9.697777774663308,
+					2.350976430221408
+				],
+				[
+					7.640673398219576,
+					4.114208752887464
+				],
+				[
+					4.995824914220492,
+					4.995824914220492
+				],
+				[
+					2.644848483999084,
+					4.701952860442816
+				],
+				[
+					1.46936026888838,
+					2.93872053777676
+				],
+				[
+					1.175488215110704,
+					0.881616161333028
+				],
+				[
+					1.175488215110704,
+					0
+				],
+				[
+					0.293872053777676,
+					7.934545451997252
+				],
+				[
+					0.293872053777676,
+					9.110033667107956
+				],
+				[
+					0,
+					12.048754204884716
+				],
+				[
+					-0.587744107555352,
+					17.63232322666056
+				],
+				[
+					-1.175488215110704,
+					22.334276087103376
+				],
+				[
+					-1.175488215110704,
+					24.685252517324784
+				],
+				[
+					-1.175488215110704,
+					23.50976430221408
+				],
+				[
+					-1.175488215110704,
+					22.628148140881052
+				],
+				[
+					-1.175488215110704,
+					22.628148140881052
+				]
+			],
+			"lastCommittedPoint": null,
+			"simulatePressure": true,
+			"pressures": []
+		},
+		{
+			"type": "freedraw",
+			"version": 10,
+			"versionNonce": 904601840,
+			"isDeleted": false,
+			"id": "XHVekO9UV3ivcxetxAdHK",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -93.02635123508375,
+			"y": -146.06356947010386,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 1.763232322666056,
+			"height": 7.052929290664224,
+			"seed": 1174745840,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1692328644770,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-0.587744107555352,
+					2.057104376443732
+				],
+				[
+					-1.175488215110704,
+					4.114208752887464
+				],
+				[
+					-1.763232322666056,
+					6.171313129331196
+				],
+				[
+					-1.763232322666056,
+					7.052929290664224
+				],
+				[
+					-1.763232322666056,
+					7.052929290664224
+				]
+			],
+			"lastCommittedPoint": null,
+			"simulatePressure": true,
+			"pressures": []
+		},
+		{
+			"type": "freedraw",
+			"version": 24,
+			"versionNonce": 1250403856,
+			"isDeleted": false,
+			"id": "tb6nvu6BN74DmabgIcdVL",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": 111.80247024795645,
+			"y": 27.027070204947336,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 10.579393935996336,
+			"height": 23.803636355991756,
+			"seed": 1073717776,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1692328644770,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-0.293872053777676,
+					-0.293872053777676
+				],
+				[
+					0.881616161333028,
+					-0.587744107555352
+				],
+				[
+					2.93872053777676,
+					-0.587744107555352
+				],
+				[
+					9.110033667107956,
+					1.763232322666056
+				],
+				[
+					10.28552188221866,
+					2.644848483999084
+				],
+				[
+					10.28552188221866,
+					4.40808080666514
+				],
+				[
+					8.228417505774928,
+					5.87744107555352
+				],
+				[
+					5.583569021775844,
+					6.465185183108872
+				],
+				[
+					2.93872053777676,
+					5.87744107555352
+				],
+				[
+					0.881616161333028,
+					4.995824914220492
+				],
+				[
+					0.293872053777676,
+					4.701952860442816
+				],
+				[
+					0.587744107555352,
+					6.171313129331196
+				],
+				[
+					1.46936026888838,
+					10.579393935996336
+				],
+				[
+					2.057104376443732,
+					14.987474742661476
+				],
+				[
+					2.350976430221408,
+					19.10168349554894
+				],
+				[
+					2.057104376443732,
+					22.0404040333257
+				],
+				[
+					1.763232322666056,
+					23.215892248436404
+				],
+				[
+					1.763232322666056,
+					22.334276087103376
+				],
+				[
+					1.763232322666056,
+					22.334276087103376
+				]
+			],
+			"lastCommittedPoint": null,
+			"simulatePressure": true,
+			"pressures": []
+		},
+		{
+			"type": "freedraw",
+			"version": 12,
+			"versionNonce": 1069122288,
+			"isDeleted": false,
+			"id": "f8kGp_YwdyRy5gwZ1KI5d",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": 126.20220088306257,
+			"y": 38.4880803022767,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 3.820336699109788,
+			"height": 10.873265989774012,
+			"seed": 1976589040,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1692328644770,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					0,
+					2.057104376443732
+				],
+				[
+					-1.46936026888838,
+					4.40808080666514
+				],
+				[
+					-2.644848483999084,
+					7.052929290664224
+				],
+				[
+					-3.526464645332112,
+					9.697777774663308
+				],
+				[
+					-3.820336699109788,
+					10.873265989774012
+				],
+				[
+					-3.820336699109788,
+					10.579393935996336
+				],
+				[
+					-3.820336699109788,
+					10.579393935996336
+				]
+			],
+			"lastCommittedPoint": null,
+			"simulatePressure": true,
+			"pressures": []
+		},
+		{
+			"type": "freedraw",
+			"version": 19,
+			"versionNonce": 1422418960,
+			"isDeleted": false,
+			"id": "CRt45CIEqbGloIhqWNUX6",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": 126.49607293684025,
+			"y": 39.07582440983205,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 5.87744107555352,
+			"height": 12.342626258662392,
+			"seed": 796689424,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1692328644770,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					1.46936026888838,
+					0.587744107555352
+				],
+				[
+					2.057104376443732,
+					3.232592591554436
+				],
+				[
+					2.644848483999084,
+					6.759057236886548
+				],
+				[
+					2.93872053777676,
+					9.697777774663308
+				],
+				[
+					3.232592591554436,
+					11.75488215110704
+				],
+				[
+					2.93872053777676,
+					12.342626258662392
+				],
+				[
+					1.46936026888838,
+					11.75488215110704
+				],
+				[
+					-0.293872053777676,
+					9.697777774663308
+				],
+				[
+					-2.057104376443732,
+					6.465185183108872
+				],
+				[
+					-2.644848483999084,
+					4.995824914220492
+				],
+				[
+					0,
+					4.114208752887464
+				],
+				[
+					0.881616161333028,
+					4.114208752887464
+				],
+				[
+					2.644848483999084,
+					4.114208752887464
+				],
+				[
+					2.644848483999084,
+					4.114208752887464
+				]
+			],
+			"lastCommittedPoint": null,
+			"simulatePressure": true,
+			"pressures": []
+		},
+		{
+			"type": "freedraw",
+			"version": 11,
+			"versionNonce": 90940656,
+			"isDeleted": false,
+			"id": "Mz9RhOVNSSqNF951fOprc",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": 136.7815948190589,
+			"y": 36.43097592583297,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 4.114208752887464,
+			"height": 1.175488215110704,
+			"seed": 1454076944,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1692328644770,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-0.881616161333028,
+					0.587744107555352
+				],
+				[
+					0,
+					0.587744107555352
+				],
+				[
+					2.644848483999084,
+					0.881616161333028
+				],
+				[
+					2.93872053777676,
+					0.881616161333028
+				],
+				[
+					3.232592591554436,
+					1.175488215110704
+				],
+				[
+					3.232592591554436,
+					1.175488215110704
+				]
+			],
+			"lastCommittedPoint": null,
+			"simulatePressure": true,
+			"pressures": []
+		},
+		{
+			"type": "freedraw",
+			"version": 11,
+			"versionNonce": 339829264,
+			"isDeleted": false,
+			"id": "z1S-am4Cj1q7VUTA6lxXe",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": 136.19385071150356,
+			"y": 40.251312624942756,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 7.052929290664224,
+			"height": 2.057104376443732,
+			"seed": 1552477200,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1692328644770,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-0.881616161333028,
+					2.057104376443732
+				],
+				[
+					-0.293872053777676,
+					2.057104376443732
+				],
+				[
+					1.763232322666056,
+					1.763232322666056
+				],
+				[
+					4.114208752887464,
+					1.175488215110704
+				],
+				[
+					6.171313129331196,
+					0.293872053777676
+				],
+				[
+					6.171313129331196,
+					0.293872053777676
+				]
+			],
+			"lastCommittedPoint": null,
+			"simulatePressure": true,
+			"pressures": []
+		},
+		{
+			"type": "freedraw",
+			"version": 26,
+			"versionNonce": 1418299120,
+			"isDeleted": false,
+			"id": "6hxb-9MCxlv6p4IrzZBuL",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": 146.47937259372222,
+			"y": 26.439326097391984,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 10.28552188221866,
+			"height": 29.093333323989924,
+			"seed": 736781328,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1692328644770,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					0.293872053777676,
+					0.293872053777676
+				],
+				[
+					1.46936026888838,
+					0
+				],
+				[
+					4.40808080666514,
+					0
+				],
+				[
+					6.759057236886548,
+					0
+				],
+				[
+					8.81616161333028,
+					0.881616161333028
+				],
+				[
+					10.28552188221866,
+					2.350976430221408
+				],
+				[
+					7.3468013444419,
+					6.465185183108872
+				],
+				[
+					5.289696967998168,
+					6.759057236886548
+				],
+				[
+					2.644848483999084,
+					5.87744107555352
+				],
+				[
+					1.46936026888838,
+					3.820336699109788
+				],
+				[
+					1.46936026888838,
+					1.46936026888838
+				],
+				[
+					1.763232322666056,
+					0.293872053777676
+				],
+				[
+					2.057104376443732,
+					1.46936026888838
+				],
+				[
+					2.350976430221408,
+					4.701952860442816
+				],
+				[
+					2.057104376443732,
+					9.697777774663308
+				],
+				[
+					1.46936026888838,
+					15.869090903994504
+				],
+				[
+					0.881616161333028,
+					22.628148140881052
+				],
+				[
+					0.293872053777676,
+					27.623973055101544
+				],
+				[
+					0,
+					29.093333323989924
+				],
+				[
+					0.293872053777676,
+					28.799461270212248
+				],
+				[
+					0.293872053777676,
+					28.799461270212248
+				]
+			],
+			"lastCommittedPoint": null,
+			"simulatePressure": true,
+			"pressures": []
+		},
+		{
+			"type": "freedraw",
+			"version": 10,
+			"versionNonce": 938123280,
+			"isDeleted": false,
+			"id": "fOPIIu_V9T5KCaf7hR3i3",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": 163.23007965904975,
+			"y": 43.190033162719516,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 1.175488215110704,
+			"height": 7.640673398219576,
+			"seed": 913873648,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1692328644770,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-0.293872053777676,
+					4.995824914220492
+				],
+				[
+					-0.587744107555352,
+					5.87744107555352
+				],
+				[
+					-1.175488215110704,
+					7.3468013444419
+				],
+				[
+					-1.175488215110704,
+					7.640673398219576
+				],
+				[
+					-1.175488215110704,
+					7.640673398219576
+				]
+			],
+			"lastCommittedPoint": null,
+			"simulatePressure": true,
+			"pressures": []
+		},
+		{
+			"id": "-owwbIDb_SA4Gjf_ZX38P",
+			"type": "arrow",
+			"x": 222.56429704774135,
+			"y": -46.627964753146045,
+			"width": 25.607067312505194,
+			"height": 132.60802715404483,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 1796061424,
+			"version": 123,
+			"versionNonce": 1337728528,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1692328644770,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-25.607067312505194,
+					-132.60802715404483
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": null,
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "7RKEgBZwgElazbHI7bXCg",
+			"type": "freedraw",
+			"x": 155.78582118286576,
+			"y": -34.25565081511451,
+			"width": 15.723417073422041,
+			"height": 23.171351476621965,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 174198288,
+			"version": 42,
+			"versionNonce": 1245943312,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1692328651309,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					0,
+					-1.655096534044418
+				],
+				[
+					0,
+					-3.310193068088836
+				],
+				[
+					0.4137741335111116,
+					-2.8964189345777527
+				],
+				[
+					1.655096534044418,
+					0
+				],
+				[
+					3.310193068088836,
+					5.792837869155505
+				],
+				[
+					4.551515468622171,
+					11.58567573831101
+				],
+				[
+					6.2066120026665885,
+					14.895868806399847
+				],
+				[
+					7.447934403199923,
+					14.895868806399847
+				],
+				[
+					9.930579204266564,
+					10.344353337777704
+				],
+				[
+					15.309642939910958,
+					-7.8617085367110064
+				],
+				[
+					15.723417073422041,
+					-8.275482670222118
+				],
+				[
+					15.723417073422041,
+					-8.275482670222118
+				]
+			],
+			"pressures": [],
+			"simulatePressure": true,
+			"lastCommittedPoint": [
+				15.723417073422041,
+				-8.275482670222118
+			]
+		},
+		{
+			"id": "or63WwtvRkWcwOX6fYJW8",
+			"type": "freedraw",
+			"x": 183.5086881281099,
+			"y": -33.84187668160337,
+			"width": 14.482094672888735,
+			"height": 15.309642939910987,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 2012315664,
+			"version": 47,
+			"versionNonce": 502567664,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1692328651309,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					0,
+					-0.8275482670222232
+				],
+				[
+					0,
+					-2.068870667555558
+				],
+				[
+					-0.8275482670221948,
+					-3.3101930680888927
+				],
+				[
+					-7.034160269688812,
+					-2.896418934577781
+				],
+				[
+					-9.103030937244341,
+					0.8275482670221663
+				],
+				[
+					-10.344353337777648,
+					6.2066120026665885
+				],
+				[
+					-10.344353337777648,
+					10.75812747128873
+				],
+				[
+					-8.275482670222118,
+					11.999449871822094
+				],
+				[
+					-5.379063735644365,
+					9.930579204266564
+				],
+				[
+					-2.482644801066641,
+					5.379063735644365
+				],
+				[
+					-0.8275482670221948,
+					0.41377413351108316
+				],
+				[
+					0,
+					-2.4826448010666695
+				],
+				[
+					-0.41377413351108316,
+					0
+				],
+				[
+					-0.41377413351108316,
+					3.723967201599919
+				],
+				[
+					0.4137741335111116,
+					7.034160269688812
+				],
+				[
+					4.137741335111087,
+					9.103030937244341
+				],
+				[
+					4.137741335111087,
+					9.103030937244341
+				]
+			],
+			"pressures": [],
+			"simulatePressure": true,
+			"lastCommittedPoint": [
+				4.137741335111087,
+				9.103030937244341
+			]
+		},
+		{
+			"id": "-PYi-mbSCpdMJH0vT1Boy",
+			"type": "freedraw",
+			"x": 195.50813799993202,
+			"y": -35.49697321564781,
+			"width": 8.689256803733258,
+			"height": 13.65454640586654,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1085790736,
+			"version": 39,
+			"versionNonce": 1468421136,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1692328651309,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-0.4137741335111116,
+					-0.4137741335111116
+				],
+				[
+					-2.068870667555558,
+					-0.8275482670222232
+				],
+				[
+					-3.723967201599976,
+					0
+				],
+				[
+					-5.379063735644394,
+					2.4826448010666127
+				],
+				[
+					-6.6203861361777285,
+					5.792837869155505
+				],
+				[
+					-6.206612002666617,
+					9.516805070755424
+				],
+				[
+					-5.379063735644394,
+					11.999449871822094
+				],
+				[
+					-3.3101930680888643,
+					12.826998138844317
+				],
+				[
+					-0.8275482670222232,
+					12.413224005333177
+				],
+				[
+					2.0688706675555295,
+					9.930579204266564
+				],
+				[
+					2.0688706675555295,
+					9.930579204266564
+				]
+			],
+			"pressures": [],
+			"simulatePressure": true,
+			"lastCommittedPoint": [
+				2.0688706675555295,
+				9.930579204266564
+			]
+		},
+		{
+			"id": "MBhGLykwF9juxV1RsFah7",
+			"type": "freedraw",
+			"x": 201.3009758690875,
+			"y": -36.73829561618115,
+			"width": 8.275482670222146,
+			"height": 13.240772272355429,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1471847152,
+			"version": 49,
+			"versionNonce": 163886320,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1692328651309,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-0.4137741335111116,
+					-0.4137741335111116
+				],
+				[
+					-0.4137741335111116,
+					1.655096534044418
+				],
+				[
+					-0.4137741335111116,
+					2.068870667555558
+				],
+				[
+					-0.4137741335111116,
+					3.3101930680888643
+				],
+				[
+					-0.4137741335111116,
+					7.447934403199923
+				],
+				[
+					-0.4137741335111116,
+					10.344353337777676
+				],
+				[
+					0.4137741335111116,
+					11.999449871822122
+				],
+				[
+					0.8275482670222232,
+					11.999449871822122
+				],
+				[
+					2.0688706675555295,
+					10.344353337777676
+				],
+				[
+					3.723967201599976,
+					6.206612002666617
+				],
+				[
+					4.965289602133282,
+					1.655096534044418
+				],
+				[
+					5.379063735644394,
+					-0.4137741335111116
+				],
+				[
+					5.379063735644394,
+					-1.2413224005333063
+				],
+				[
+					5.379063735644394,
+					-0.8275482670221948
+				],
+				[
+					5.379063735644394,
+					1.655096534044418
+				],
+				[
+					4.965289602133282,
+					4.965289602133311
+				],
+				[
+					6.6203861361777,
+					10.75812747128876
+				],
+				[
+					7.034160269688812,
+					10.344353337777676
+				],
+				[
+					7.861708536711035,
+					9.10303093724437
+				],
+				[
+					7.861708536711035,
+					8.68925680373323
+				],
+				[
+					7.861708536711035,
+					8.68925680373323
+				]
+			],
+			"pressures": [],
+			"simulatePressure": true,
+			"lastCommittedPoint": [
+				7.861708536711035,
+				8.68925680373323
+			]
+		},
+		{
+			"id": "cJ1aCb3m7_8lTrewJlk03",
+			"type": "freedraw",
+			"x": 211.64532920686517,
+			"y": -38.393392150225566,
+			"width": 7.034160269688812,
+			"height": 15.72341707342207,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1006532112,
+			"version": 47,
+			"versionNonce": 1774277136,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1692328651309,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					0,
+					0.8275482670222232
+				],
+				[
+					0,
+					3.723967201599976
+				],
+				[
+					-0.4137741335111116,
+					6.2066120026665885
+				],
+				[
+					-0.4137741335111116,
+					9.930579204266564
+				],
+				[
+					0,
+					11.999449871822094
+				],
+				[
+					0.4137741335111116,
+					12.826998138844317
+				],
+				[
+					1.2413224005333063,
+					12.413224005333177
+				],
+				[
+					2.8964189345777527,
+					9.930579204266564
+				],
+				[
+					4.137741335111059,
+					5.792837869155505
+				],
+				[
+					5.379063735644394,
+					2.482644801066641
+				],
+				[
+					5.792837869155505,
+					-0.8275482670222232
+				],
+				[
+					5.379063735644394,
+					0.4137741335111116
+				],
+				[
+					5.379063735644394,
+					3.310193068088836
+				],
+				[
+					4.965289602133282,
+					6.2066120026665885
+				],
+				[
+					5.379063735644394,
+					9.516805070755481
+				],
+				[
+					5.792837869155505,
+					11.58567573831101
+				],
+				[
+					6.2066120026665885,
+					14.068320539377623
+				],
+				[
+					6.6203861361777,
+					14.895868806399847
+				],
+				[
+					6.6203861361777,
+					14.895868806399847
+				]
+			],
+			"pressures": [],
+			"simulatePressure": true,
+			"lastCommittedPoint": [
+				6.6203861361777,
+				14.895868806399847
+			]
+		},
+		{
+			"id": "EszLY0grXgP8H-GpUFAEx",
+			"type": "freedraw",
+			"x": 222.40345667815393,
+			"y": -37.979618016714454,
+			"width": 12.413224005333177,
+			"height": 15.723417073422041,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1770112752,
+			"version": 55,
+			"versionNonce": 188782320,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1692328651310,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					0,
+					0.4137741335111116
+				],
+				[
+					0.41377413351114,
+					2.8964189345777243
+				],
+				[
+					0.41377413351114,
+					6.206612002666617
+				],
+				[
+					0,
+					9.516805070755453
+				],
+				[
+					0,
+					11.585675738310982
+				],
+				[
+					0,
+					12.413224005333205
+				],
+				[
+					-0.41377413351108316,
+					11.585675738310982
+				],
+				[
+					-0.41377413351108316,
+					8.68925680373323
+				],
+				[
+					0.41377413351114,
+					5.379063735644394
+				],
+				[
+					1.2413224005333632,
+					2.0688706675555295
+				],
+				[
+					2.4826448010666695,
+					0.4137741335111116
+				],
+				[
+					3.723967201599976,
+					0.4137741335111116
+				],
+				[
+					4.965289602133339,
+					2.482644801066641
+				],
+				[
+					5.792837869155505,
+					9.10303093724437
+				],
+				[
+					5.792837869155505,
+					9.516805070755453
+				],
+				[
+					5.792837869155505,
+					9.10303093724437
+				],
+				[
+					6.6203861361777285,
+					7.034160269688783
+				],
+				[
+					7.447934403199952,
+					3.7239672015999474
+				],
+				[
+					8.689256803733258,
+					0.8275482670221948
+				],
+				[
+					9.516805070755481,
+					1.2413224005333063
+				],
+				[
+					10.344353337777704,
+					3.7239672015999474
+				],
+				[
+					10.758127471288788,
+					7.034160269688783
+				],
+				[
+					11.171901604799928,
+					10.344353337777676
+				],
+				[
+					11.58567573831101,
+					13.654546405866512
+				],
+				[
+					11.999449871822094,
+					15.309642939910958
+				],
+				[
+					11.999449871822094,
+					15.723417073422041
+				],
+				[
+					11.999449871822094,
+					15.723417073422041
+				]
+			],
+			"pressures": [],
+			"simulatePressure": true,
+			"lastCommittedPoint": [
+				11.999449871822094,
+				15.723417073422041
+			]
+		},
+		{
+			"id": "KoQrxB2bzolEV6lVOp4oz",
+			"type": "arrow",
+			"x": 178.66646736916098,
+			"y": -165.51792013263454,
+			"width": 37.0387937913022,
+			"height": 110.20184325560277,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 1255376400,
+			"version": 36,
+			"versionNonce": 161163504,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1692328644770,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					37.0387937913022,
+					110.20184325560277
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": null,
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "WiMqnf8SBlMtNHJMN9Hnv",
+			"type": "freedraw",
+			"x": 232.74781001593166,
+			"y": -36.73829561618115,
+			"width": 9.103030937244341,
+			"height": 14.482094672888763,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1393408752,
+			"version": 17,
+			"versionNonce": 582593776,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1692328644770,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					0,
+					-0.4137741335111116
+				],
+				[
+					-0.4137741335111116,
+					-2.0688706675555295
+				],
+				[
+					-1.2413224005333348,
+					-2.482644801066641
+				],
+				[
+					-2.482644801066641,
+					-2.482644801066641
+				],
+				[
+					-4.137741335111087,
+					-1.2413224005333348
+				],
+				[
+					-6.206612002666617,
+					2.068870667555558
+				],
+				[
+					-7.447934403199923,
+					6.206612002666617
+				],
+				[
+					-7.034160269688812,
+					10.75812747128876
+				],
+				[
+					-0.4137741335111116,
+					11.999449871822122
+				],
+				[
+					0.4137741335111116,
+					11.1719016047999
+				],
+				[
+					1.655096534044418,
+					10.344353337777676
+				],
+				[
+					1.655096534044418,
+					9.930579204266536
+				],
+				[
+					1.655096534044418,
+					9.930579204266536
+				]
+			],
+			"pressures": [],
+			"simulatePressure": true,
+			"lastCommittedPoint": [
+				1.655096534044418,
+				9.930579204266536
+			]
+		},
+		{
+			"id": "Z-kVgbwIojAvkjj3WBKOk",
+			"type": "freedraw",
+			"x": 241.850840953176,
+			"y": -37.56584388320337,
+			"width": 8.275482670222146,
+			"height": 14.068320539377652,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 0.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1193336336,
+			"version": 16,
+			"versionNonce": 1682387696,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1692328644479,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-0.4137741335111116,
+					-0.4137741335111116
+				],
+				[
+					-0.8275482670222232,
+					-0.4137741335111116
+				],
+				[
+					-1.655096534044418,
+					-1.2413224005333063
+				],
+				[
+					-3.723967201599976,
+					-0.8275482670221948
+				],
+				[
+					-4.137741335111059,
+					0.4137741335111116
+				],
+				[
+					-4.965289602133282,
+					4.137741335111087
+				],
+				[
+					-5.379063735644394,
+					7.861708536711063
+				],
+				[
+					-4.965289602133282,
+					10.75812747128876
+				],
+				[
+					-3.723967201599976,
+					12.826998138844345
+				],
+				[
+					-1.655096534044418,
+					12.826998138844345
+				],
+				[
+					0.4137741335111116,
+					11.585675738310982
+				],
+				[
+					2.8964189345777527,
+					8.275482670222146
+				],
+				[
+					2.8964189345777527,
+					8.275482670222146
+				]
+			],
+			"pressures": [],
+			"simulatePressure": true,
+			"lastCommittedPoint": [
+				2.8964189345777527,
+				8.275482670222146
+			]
 		}
 	],
 	"appState": {
@@ -6442,10 +8334,10 @@ Total pressure measured ^b5VhQmkf
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 167.1946856456909,
-		"scrollY": 357.67771855949087,
+		"scrollX": 170.38817433069894,
+		"scrollY": 439.3962607775952,
 		"zoom": {
-			"value": 1.8
+			"value": 1.454127230451193
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

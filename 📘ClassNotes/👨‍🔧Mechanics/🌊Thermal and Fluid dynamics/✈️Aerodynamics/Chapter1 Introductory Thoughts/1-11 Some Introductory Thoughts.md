@@ -306,12 +306,11 @@ For the case involve the thermal dynamics | heat transfer, the dimensional analy
 
 additional similarity parameters like
 the ratio of the specific heat at constant pressure to that at constant value  $\Large\frac{c_p}{c_v}$ 
-[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Implements/The specific heat and Thermal conductivity]]
+[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Implements/The specific heat and Thermal conductivity|The specific heat and Thermal conductivity]]
 the ratio of the wall temperature to freestream temperature $\Large\frac{T_w}{T_\infty}$
 the Prandtl number $\Large Pr=\frac{\mu_\infty c_p}{k_\infty}$
 
 note that the thermal dynamics are in the Chapter 7 to 14, and the heat transfer (part of the study of the viscous flow) is in the Chapter 15 to 20.
-
 
 ## 1.8 Flow Similarity
 #### 1. Conditions of similarity
@@ -320,13 +319,13 @@ We consider two different flows over two different bodies, and **by definition, 
 2. he distributions of the $V/V_\infty, p/p_\infty,T/T_\infty$ etc., throughout the flow field are the same when plotted against the common nondimensional coordinates. 
 3. The force coefficients are the same 
 
-Note that if the nondimensional pressure and the shear stress distributions over different bodies are the same, then the nondimensional force coefficients will be the same. ->  so in reality the condition 3 is a consequence of the condition 2.  
+Note that *if the nondimensional pressure and the shear stress distributions over different bodies are the same, then the nondimensional force coefficients will be the same*. ->  so in reality the condition 3 is a consequence of the condition 2.  
 
 The criteria to ensure the two flows are dynamically similar is: 
 1. The  bodies and any other solid boundaries are geometrically similar for both flows
 2. The ==similarity parameters== are the same for both flows
 
-for many aerodynamic applications, the Reynolds number and the Mach number are the dominant similarity parameters. -> so in a limited sense, we can say that ==flows over geometrically similar bodies at the same **Mach** and **Reynold** number are dynamically similar== and hence the ***lift, drag, and moment coefficients will be identical*** for the bodies for the free-flight case in the test-section flow. also note that this statement is not always precise because there are other similarity parameters that influence the flow.
+**for many aerodynamic applications, the Reynolds number and the Mach number are the dominant similarity parameters**. -> so in a limited sense, we can say that ==flows over geometrically similar bodies at the same **Mach** and **Reynold** number are dynamically similar== and hence the ***lift, drag, and moment coefficients will be identical*** for the bodies for the free-flight case in the test-section flow. also note that<u> this statement is not always precise</u> because there are other similarity parameters that influence the flow.
 
 Differences  in the freestream turbulence between the wind tunnel and free flight can have an important impact on $C_D$ and the maximum of the $C_L$. 
 [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/📝Examples/Example1.5|Example1.5]]
