@@ -1,9 +1,0 @@
-{
-  "citationExportFormat": "biblatex",
-  "literatureNoteTitleTemplate": "@{{citekey}}",
-  "literatureNoteFolder": "📖Reading_Material\\Reading_Notes",
-  "literatureNoteContentTemplate": "---\ntitle: {{title}}\nauthors: {{authorString}}\nyear: {{year}}\n---\n\n",
-  "markdownCitationTemplate": "[@{{citekey}}]",
-  "alternativeMarkdownCitationTemplate": "@{{citekey}}",
-  "citationExportPath": "C:\\Users\\Parrot\\Desktop\\Utilities\\BiBdataBase\\Topology optimization for turbulent flow.bib"
-}

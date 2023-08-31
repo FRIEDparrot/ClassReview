@@ -107,7 +107,7 @@ also, if $\nabla \times V \neq 0$, the flow is called *rotational* and if $\nabl
 
 for a two-dimensional flow $\xi =\xi k =(\frac{\partial v}{\partial x } - \frac{\partial u}{\partial y})k$ 
 then for a irrotational flow, $\xi = 0$, then 
-$$\frac{\partial v}{\partial x } - \frac{\partial u}{\partial y} =0$$
+$$\frac{\partial v}{\partial x } - \frac{\partial u}{\partial y} =0\tag{2.131}$$
 is **the condition of irrotationality for two-dimension flow**
 
 we make a distinction between rotational and irrotational flows because of the answer becomes the irrotational flows are much easier to analyze than rotational flows. 
@@ -212,7 +212,7 @@ we can refer the [definition in wiki](https://en.wikipedia.org/wiki/Velocity_pot
 then if $\nabla \times V=0$ for a flow which is satisfies [[2. 解析函数|the Cauchy-Riemann Equation]] (i.e. is an analytic function):
 $$\frac{\partial u}{\partial y} = \frac{\partial v}{\partial x}$$
 then we can find a function $\phi$ with $\frac{\partial \phi}{\partial x} =u,\frac{\partial \phi}{\partial y} = v$, s.t 
-$$\boxed{\Large V = \nabla \phi} \qquad \text{or} \qquad\boxed{u = \frac{\partial \phi}{\partial x}, v= \frac{\partial \phi}{\partial y}, w= \frac{\partial \phi}{\partial z}}$$
+$$\boxed{\Large V = \nabla \phi} \qquad \text{or} \qquad\boxed{u = \frac{\partial \phi}{\partial x}, v= \frac{\partial \phi}{\partial y}, w= \frac{\partial \phi}{\partial z}}\tag{2.154}$$
 then if $\phi$ is a scalar function, we have: 
 $$\nabla \times (\nabla \phi) = 0$$
 in the cylindrical coordinates, we have:

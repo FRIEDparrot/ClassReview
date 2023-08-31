@@ -23,13 +23,13 @@
   "useCustomIcons": false,
   "useWebview": false,
   "useIconList": true,
-  "darkMode": false,
+  "darkMode": true,
   "bookmarkManager": {
     "openBookMark": false,
     "saveBookMark": true,
     "sendToReadWise": true,
     "pagination": "12",
-    "category": "- Computer\n    - 算法\n    - 数据结构\n- obsidian\n    - surfing\n    - dataview\n",
+    "category": "-utilities\n",
     "defaultCategory": "ROOT",
     "defaultColumnList": [
       "name",
@@ -49,6 +49,281 @@
       "parent": 0,
       "droppable": true,
       "text": "ChatGPT",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "6c5de389e5482a50",
+      "parent": 0,
+      "droppable": true,
+      "text": "github - Google Search",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "5fc882025e81982d",
+      "parent": 0,
+      "droppable": true,
+      "text": "GitHub",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "c7504a65b63c4cf6",
+      "parent": 0,
+      "droppable": true,
+      "text": "GitHub Dashboard",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "9a5077575e364743",
+      "parent": 0,
+      "droppable": true,
+      "text": "youtube - Google Search",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "b0074942c5bafcc1",
+      "parent": 0,
+      "droppable": true,
+      "text": "New Tab",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "a074a4672723acc7",
+      "parent": 0,
+      "droppable": true,
+      "text": "New Tab",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "aa770d0ad705f895",
+      "parent": 0,
+      "droppable": true,
+      "text": "YouTube",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "c1b7a8f7911f17f4",
+      "parent": 0,
+      "droppable": true,
+      "text": "twitter - Google Search",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "c98c976952578ca5",
+      "parent": 0,
+      "droppable": true,
+      "text": "Home / X",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "8d5ca567c055e7ad",
+      "parent": 0,
+      "droppable": true,
+      "text": "New Tab",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "5332707fa38546c3",
+      "parent": 0,
+      "droppable": true,
+      "text": "Sign In - Google Accounts",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "809c8a487fa67f73",
+      "parent": 0,
+      "droppable": true,
+      "text": "Sign In - Google Accounts",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "541b3bd0baab255d",
+      "parent": 0,
+      "droppable": true,
+      "text": "Sign In - Google Accounts",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "92b1da7ddbacab3a",
+      "parent": 0,
+      "droppable": true,
+      "text": "google - Google Search",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "af76f87c06f10c39",
+      "parent": 0,
+      "droppable": true,
+      "text": "Google",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "832ef9ab9fbdc754",
+      "parent": 0,
+      "droppable": true,
+      "text": "New Tab",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "f361e818a6f9b687",
+      "parent": 0,
+      "droppable": true,
+      "text": "google - Google Search",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "9431d4d6a9698814",
+      "parent": 0,
+      "droppable": true,
+      "text": "youtube - Google Search",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "e60e9394a4dabc5c",
+      "parent": 0,
+      "droppable": true,
+      "text": "YouTube",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "e7a917b09debe35f",
+      "parent": 0,
+      "droppable": true,
+      "text": "youtube - Google Search",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "8e210c810dc5d8b4",
+      "parent": 0,
+      "droppable": true,
+      "text": "How to use jmc2obj in 1 minute | Blender 2.8 Minecraft Animation Tutorial #4b - YouTube",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "1bda08dc6b769545",
+      "parent": 0,
+      "droppable": true,
+      "text": "New Tab",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "2f756a18b6e53929",
+      "parent": 0,
+      "droppable": true,
+      "text": "New Tab",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "ee85c40cf897a29c",
+      "parent": 0,
+      "droppable": true,
+      "text": "电路 石群老师主讲【80集全 带目录】 通俗易懂，讲得十分仔细，【适用于大学学习 考研备考】 邱关源电路第五版 电路考研_哔哩哔哩_bilibili",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "c37a86215e681c26",
+      "parent": 0,
+      "droppable": true,
+      "text": "New Tab",
       "data": {
         "fileType": "site",
         "fileSize": "",

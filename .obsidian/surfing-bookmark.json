@@ -1,6 +1,18 @@
 {
   "bookmarks": [
     {
+      "id": "-312307766",
+      "name": "GitHub: Let’s build from here · GitHub",
+      "url": "https://github.com/",
+      "description": "",
+      "category": [
+        "ROOT"
+      ],
+      "tags": "",
+      "created": 1692432795828,
+      "modified": 1692432795828
+    },
+    {
       "id": "468810371",
       "name": "ChatGPT",
       "url": "https://chat.openai.com/",

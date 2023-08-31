@@ -98,25 +98,33 @@ and $\frac{dp}{ds}$ is called the ***directional derivative***.
 
 ![[Pasted image 20230126174659.png|200]]
 the expression for the $\nabla p$ in the different coordinate system are given as: 
-1. cartesian:
+`````ad-caution 
+title: important !!!!
+collapse: open
+`````
+**1. cartesian:**
 $$p = p(x,y,z)$$
 $$\boxed{\nabla p = \frac{\partial p}{\partial x}\vec{i} +\frac{\partial p}{\partial y} \vec{j} + \frac{\partial p}{\partial z}\vec{k}}$$
-2. Cylindrical: 
+**2. Cylindrical:** 
 $$p = p(r,\theta ,z)$$
 $$\boxed{\nabla p = \frac{\partial p}{\partial r} e_r + \frac{1}{r}\frac{\partial p}{\partial \theta} + \frac{\partial p}{\partial z} e_z}$$
-3. Spherical
+**3. Spherical**
 $$p = p(r, \theta, \varphi)$$
-$$\nabla  p = \frac{\partial p}{\partial r}\vec{e_r} + \frac{1}{r}\frac{\partial p}{\partial\theta}\vec{e_\theta} + \frac{1}{r \sin \theta}\frac{\partial p}{\partial \varphi} e_\varphi$$
+$$\boxed{\nabla  p = \frac{\partial p}{\partial r}\vec{e_r} + \frac{1}{r}\frac{\partial p}{\partial\theta}\vec{e_\theta} + \frac{1}{r \sin \theta}\frac{\partial p}{\partial \varphi} e_\varphi}$$
 
 #### 2.2.6 Divergence of a Vector Field 
 Consider a vector field 
 $$\vec{V} = \vec{V}(x,y,z) = \vec{V}(r,\theta, z) = \vec{V}(r,\theta,\Phi)$$
 and the $\vec{V}$ is a vector that can represent vector quantity. however, for the practical purposes and to aid in physical interpretation. Consider $V$ to be the flow velocity.
 
-In the section 2.3, we will prove the time rate of the change of the volume of a moving liquid element is equal to the ***divergence*** of the $\vec{V}$, which is expressed as
+In the section 2.3, we will prove **the time rate of the change of the volume of a moving liquid element** is equal to the ***divergence*** of the $\vec{V}$, which is expressed as
 ***divergence*** of $\vec{V}$:
 $$\nabla \cdot V$$
-note that **==the divergence of a vector is a scalar quantity==**. then the divergence in different vectors are shown as: 
+note that **==the divergence of a vector is a scalar quantity==**. then the divergence in different vectors are shown as:
+`````ad-caution 
+title: important !!!!
+collapse: open
+`````
 1. Cartesian system
 $$\boxed{\nabla \cdot V = \frac{\partial V_x}{\partial x} + \frac{\partial V_y}{\partial y} + \frac{\partial V_z}{\partial z}}$$
 2. Cylindrical: 
@@ -127,9 +135,12 @@ $$\boxed{\nabla \cdot V = \frac{1}{r^2} \frac{\partial}{\partial r}(r^2 V_r) + \
 We consider a vector field:
 $$\vec{V} = \vec{V}(x,y,z) = \vec{V}(r,\theta, z) = \vec{V}(r,\theta,\Phi)$$
 for $V$ is the velocity of the fluid element, it rotate with an *angular velocity* $\omega$  as it translates along the streamline. And we will prove the $\omega$ is one-half of the curl of $V$ 
-
-Cartesian: 
-$$\nabla \times V =
+`````ad-caution 
+title: important !!!!
+collapse: open
+`````
+**Cartesian:** 
+$$\Large \nabla \times V =
 \left|
 \begin{matrix}
 \vec{i} & \vec{j} & \vec{k} \\
@@ -138,11 +149,18 @@ V_x & V_y & V_z
 \end{matrix}
 \right|$$
 and for the Cylindrical and Spherical system, we should pay attention to the coefficient before the bracket :
-Cylindrical:
-![[Pasted image 20230126192350.png|200]]
-Spherical:
-![[Pasted image 20230126192432.png|250]]
-
+**Cylindrical:**
+$$\Large\nabla \times V = \frac{1}{r} \left| \begin{matrix}
+\vec{e}_r & r \vec{e}_{\theta} & \vec{e}_z \\
+\frac{\partial }{\partial r} & \frac{\partial }{\partial \theta} & \frac{\partial }{\partial z} \\
+V_r & r V_{\theta}  & V_z
+\end{matrix} \right|$$
+**Spherical**:
+$$\Large\nabla \times  V = \frac{1}{r^2 \sin \theta} \left| \begin{matrix}
+\vec{e}_r & r \vec{e}_\theta & (r \sin \theta) \vec{e}_{\varphi}  \\
+\frac{\partial }{\partial r} & \frac{\partial }{\partial \theta} & \frac{\partial }{\partial \varphi} \\
+V_r  & r V_{\theta} & (r \sin \theta) V_{\varphi}
+\end{matrix} \right|$$
 #### 2.2.8 Line Integrals
 ![[1-16 Fundamental Principles 2023-01-26 19.26.24.excalidraw]]
 we define the vector $d\vec{s}=\vec{n}ds$, and the ***line Integral along the curve C from point a to b is***
@@ -257,7 +275,7 @@ but when solving the problems at a given point, this equation may not be useful.
 we assume the control volume is at a specific point, *since the space of the volume is fixed, the limits of the integration is also fixed*, and the time derivate can be placed inside the volume integral (also we can reference the [Leibniz Integral rule](https://en.wikipedia.org/wiki/Leibniz_integral_rule))
 so
 $$\frac{\partial}{\partial t}\underset{V}{∰} \rho d\mathcal{V} = \underset{V}{∰}\frac{\partial \rho}{\partial t} d\mathcal{V}$$
-Applying the [[1-16 Fundamental Principles#2.2.11 Relations between the Line, surface and the Volume integral|Divergence theorem]]
+Applying the [[1-8 Fundamental Principles#2.2.11 Relations between the Line, surface and the Volume integral|Divergence theorem]]
 $$∯_S(\rho V)dS  =∰_V \nabla \cdot (\rho V) d\mathcal{V}$$
 then we have: 
 $$\underset{V}{∰} (\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho V)) d\mathcal{V} = 0$$

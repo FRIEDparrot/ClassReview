@@ -86,34 +86,35 @@ For example, units of pressure and shear stress are $lb/ft^2$ or $N/m^2$
 density are $slug/ft^3$ or $kg/m^3$
 
 ## 1.5 Aerodynamic Forces and moments
-##### Basic concepts
+### (1) Basic concepts
 the **aerodynamic forces and moment** on the body are due to only two sources:
 1. Pressure distribution over the body surface
 2. shear stress distribution over the body surface
 the net effect of the p and $\tau$ distributions integrated over the complete body surface is a resultant aerodynamic force $R$ and moment $M$ on the body 
-![[Some Introductory Thoughts 2023-01-18 20.59.42.excalidraw|600]]
+![[Some Introductory Thoughts 2023-01-18 20.59.42.excalidraw|700]]
 the flow far away from the freestream is called freestream.
 we define the $V_\infty$ as the ***relative wind***, also called ***freestream velocity*** 
 
-##### Relationship between normal | axial force and Lift | Drag
-$$L \equiv lift \equiv \text{component of } R \text{ prependicular to }V_\infty$$
-$$D \equiv drag \equiv \text{component of } R \text{ parallel  to }V_\infty$$
-$$N \equiv \text{normal force}  $$
-$$A = \text{axial force }$$
+### (2) Relationship between normal | axial force and Lift | Drag
+$$\Large \boxed{\begin{matrix}
+L \equiv \text{lift }\equiv \text{component of } R \text{ prependicular to }V_\infty \\
+D \equiv \text{drag} \equiv \text{component of } R \text{ parallel  to }V_\infty \\
+N \equiv \text{normal force}  \\
+A = \text{axial force }
+\end{matrix}}$$
 where the $\alpha$ is the angle of attack 
-we also have the relationship: 
+we also have the **relationship**: 
 $$\boxed{\begin{matrix}
 L =  N \cos\alpha - A \sin\alpha \\
 D = N \sin \alpha + A \cos \alpha 
 \end{matrix} } \tag{1.1}$$
-for the detailed integration of the pressure and shear stress distributions to obtain the aerodynamics forces and the moments
+for the detailed **integration of the pressure and shear stress distributions to obtain the aerodynamics forces and the moments**
 we draw the chord line horizontally, and thus the relative wind inclined by the angle of $\alpha$ 
 
-the distance from the leading edge measured along the body surface to an arbitrary point $A$ on the upper surface is $s_u$  and the the distance to an arbitrary point B on the lower surface is $s_l$. The ==pressure and the shear stress on the upper surface== is $p_u$ and $\tau_u$, and correspondingly we define $p_l$ and $\tau_l$ 
-![[Some Introductory Thoughts 2023-01-18 21.36.06.excalidraw|600]]
+the distance from the leading edge measured along the body surface to an arbitrary point $A$ on the upper surface is $s_u$  and the the distance to an arbitrary point B on the lower surface is $s_l$. The ==pressure and the shear stress on the upper surface== is $p_u$ and $\tau_u$, and <b><mark style="background: transparent; color: blue">correspondingly we define the pressure and the stress on the lower surface</mark></b> $p_l$ and $\tau_l$ 
+![[Some Introductory Thoughts 2023-01-18 21.36.06.excalidraw|800]]
 
-##### Aerodynamic Force Equations
-
+### (3) Aerodynamic Force Equations
 if we consider the shape of the wing that has extrude as a long cylinder, the arc becomes a piece of area $dS$, and the relation of  the force and the pressure can be described as follows: 
 $$\boxed{\begin{matrix}
 dN_u' = -p_u ds_u cos\theta - \tau_u ds_u sin\theta \\
@@ -130,11 +131,9 @@ if the $\tau$ is upper inclined,  the $\theta$ would be counterclockwise and hen
 hence the normal and the axial force ***per unit span*** can be written as the integration of the sum of the above two equations
 $$\boxed{N' = \int^{TE}_{LE} (-p_u ds_u cos\theta - \tau_u ds_u sin\theta)ds_u + \int^{TE}_{LE} (p_l ds_l cos\theta - \tau_l ds_l sin\theta) ds_u} \tag{1.7}$$
 $$\boxed{A' = \int^{TE}_{LE} (-p_u ds_u sin\theta + \tau_u ds_u cos\theta)ds_u  + \int^{TE}_{LE} (p_l ds_l sin\theta + \tau_l ds_l cos\theta) ds_u} \tag{1.8}$$
-where the $LE$ is leading edge and the $TE$ is trailing edge
-
+where the $LE$ is <b><mark style="background: transparent; color: blue">leading edge</mark></b> and the $TE$ is <b><mark style="background: transparent; color: blue">trailing edge</mark></b>
 note that if we substitute the equation above to the equation $(1.1)$, the lift and the drag would be solved
-
-##### Aerodynamic Moment Equations
+### (4) Aerodynamic Moment Equations
 The Aerodynamic moment depends on the point about which moments are taken. 
 
 We consider the moments about the leading edge. By convection, the moments that tend to increase $\alpha$ are positive and decrease $\alpha$ is negative
@@ -149,7 +148,7 @@ M_{LE} = \int^{TE}_{LE} \left[(p_u cos \theta + \tau_u \sin \theta) x +(-p_u sin
 \end{matrix} $$
 a  major goal of theoretical aerodynamics is  to calculate the $p(s)$ and  $\tau(s)$ for a given body shape and freestream conditions. thus yielding the aerodynamics forces and moments. 
 
-##### Dimensionless Force and Moment coefficients
+### (5) Dimensionless Force and Moment coefficients
 as the discussion of aerodynamics progress, there are quantities  of an even more fundamental nature than aerodynamic forces and moments themselves. -> The ***Dimensionless Force*** and the ***Moment Coefficients***
 
 ![[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/♎Important Conclusions and Lists/Dimensionless force and moment coefficients]]
@@ -164,7 +163,7 @@ S=  c(1)
 \end{matrix}$$
 ![[Some Introductory Thoughts 2023-01-19 00.50.37.excalidraw|300]]
 
-also,
+also, we have the **integral forms of the force and moment coefficients**
 ![[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/♎Important Conclusions and Lists/integral forms of the force and the moments coefficients]]
 
 also note from the equation above that the Aerodynamic force and moment coefficients can  be obtained by integrating the *pressure and the skin friction coefficients* over the body. This is a common procedure in both theoretical and experimental aerodynamics. 
