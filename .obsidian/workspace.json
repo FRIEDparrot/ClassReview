@@ -4,59 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "8dfaf1446731843f",
+        "id": "cab4a166006389c6",
         "type": "tabs",
         "children": [
           {
-            "id": "0fb8ac21eaaf4faf",
+            "id": "4270106e5d99807e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/📏linear algebra/第三章 矩阵的初等变换.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "12370fa2787adfb2",
+            "id": "a9be2534383d97d1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/📏linear algebra/第二章 矩阵及其运算.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "93802dc16a71ae31",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/📐Mathmatics/📏linear algebra/第一章 行列式.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "935000c6e30c66ea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List2.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow/8-16 Elementary Flow Patterns.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -68,7 +44,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 57.65158806544755,
+        "dimension": 54.17032484635646,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -108,7 +84,7 @@
       {
         "id": "3dfa7e76a36534a1",
         "type": "tabs",
-        "dimension": 42.34841193455245,
+        "dimension": 45.82967515364354,
         "children": [
           {
             "id": "db0ad0041a71350b",
@@ -162,15 +138,16 @@
             "state": {
               "type": "surfing-view",
               "state": {
-                "url": "https://twitter.com/notifications"
+                "url": "https://twitter.com/home"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 459.5110321044922
+    "width": 433.51422119140625
   },
   "right": {
     "id": "f7de553c162de521",
@@ -206,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List2.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow/8-16 Elementary Flow Patterns.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List2.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow/8-16 Elementary Flow Patterns.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -254,7 +231,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       },
       {
         "id": "91a9ba92dd5ebb95",
@@ -267,7 +244,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List2.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow/8-16 Elementary Flow Patterns.md"
               }
             }
           },
@@ -283,7 +260,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 445.5
+    "width": 565.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -304,54 +282,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "935000c6e30c66ea",
+  "active": "86820ad5b67d3064",
   "lastOpenFiles": [
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/第二章 矩阵及其运算.md",
-    "Day Planners/Day Planner-20230901.md",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/第三章 矩阵的初等变换.md",
-    "README.md",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/第一章 行列式.md",
-    "📘ClassNotes/Markdown & Latex Tutorial/Latex Tutorial/Mathematical Symbols.md",
-    "📘ClassNotes/Markdown & Latex Tutorial/Latex Tutorial/mathematic formulas.md",
+    "📃Essay/CFD.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md",
-    "Excalidraw/1-8 Introduction and overall  Analysis 2023-08-31 14.43.23.md",
+    "Day Planners/Day Planner-20230904.md",
+    "Day Planners",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow/8-16 Elementary Flow Patterns.md",
+    "Excalidraw/1-8 Introduction and overall  Analysis 2023-09-04 20.18.58.md",
+    "Excalidraw/1-8 Introduction and overall  Analysis 2023-09-04 20.00.17.md",
+    "Excalidraw/1-8 Introduction and overall  Analysis 2023-09-03 14.49.40.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第一章 电路基本概念与定律.md",
+    "Excalidraw/第一章 电路基本概念与定律 2023-09-04 17.06.49.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/章节例题/第一二章例题.pdf",
+    "📘ClassNotes/⚡Circuit/电路分析基础/章节例题",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/积分常见技巧.md",
+    "Excalidraw/1-8 Introduction and overall  Analysis 2023-09-04 10.16.33.md",
+    "Excalidraw/1-8 Introduction and overall  Analysis 2023-09-04 09.33.49.md",
+    "Excalidraw/1-8 Introduction and overall  Analysis 2023-08-29 23.56.00.md",
+    "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/格林公式, 高斯公式和斯托克斯公式以及几个重要概念.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十一章 曲线积分和曲面积分.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第四章 线性方程组解的结构.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第三章 矩阵的初等变换.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第二章 矩阵及其运算.md",
+    "Excalidraw/1-8 Introduction and overall  Analysis 2023-09-03 14.41.30.md",
+    "Excalidraw/第一章 电路基本概念与定律 2023-09-03 13.41.52.md",
+    "Excalidraw/第一章 电路基本概念与定律 2023-09-03 13.33.39.md",
+    "Excalidraw/第一章 电路基本概念 2023-09-03 11.37.39.md",
+    "Excalidraw/第一章 电路基本概念 2023-09-03 11.21.05.md",
+    "Excalidraw/第一章 电路基本概念 2023-09-03 11.04.45.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/数学公式",
+    "📘ClassNotes/📐Mathmatics/数学公式",
+    "📘ClassNotes/📐Mathmatics/♎重要公式",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/声速的推导过程.pdf",
+    "src/site/notes/📘ClassNotes/📐Mathmatics/📏linear algebra",
+    "src/site/notes/📘ClassNotes/📐Mathmatics",
+    "src/site/notes/📘ClassNotes",
     "attachments/Untitled-1.jpg",
-    "Excalidraw/1-8 Introduction and overall  Analysis 2023-08-31 13.36.38.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/Design Utilities/Design Box 1.8.2.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts.md",
-    "Excalidraw/第一章 行列式 2023-08-23 16.37.55.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md",
-    "📘ClassNotes/🗣️English/Word Notes/Word List3.md",
-    "📘ClassNotes/🗣️English/Word Notes/Word List2.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/重要概念/常用的单位前缀.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第一章 电路基本概念.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/重要概念",
-    "Day Planners/Day Planner-20230831.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础",
-    "📘ClassNotes/⚡Circuit",
-    "Excalidraw/第二章 矩阵及其运算 2023-08-30 20.00.47.md",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/方阵乘积的行列式的证明.pdf",
-    "💻softwares/⚡Circuit/Altium Designer 项目创建.md",
     "attachments/Pasted image 20230830145100.png",
     "attachments/Pasted image 20230830143859.png",
     "attachments/Pasted image 20230830143427.png",
-    "🐸 Daily Life memo/买书部分.md",
     "attachments/Pasted image 20230830121557.png",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第三章 微分中值定理和导数的应用.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
-    "🐸 Daily Life memo/社会实践课程.md",
-    "🐸 Daily Life memo/SQ11 Usage tutorial.md",
     "attachments/Pasted image 20230830092232.png",
     "attachments/Pasted image 20230830092149.png",
     "attachments/Pasted image 20230830084627.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/重要公式",
     "attachments/Pasted image 20230828140122.png",
-    "💻softwares/🎵Media",
     "attachments/Screenshot_20230826_225434_com.microsoft.skydrive.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow/Implements & Examples/The Pressure distribution of the cylinder under a lifting force.pdf",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/Cramer 法则证明.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow/important summaries",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }
