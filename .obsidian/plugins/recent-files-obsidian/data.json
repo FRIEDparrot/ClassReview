@@ -1,12 +1,56 @@
 {
   "recentFiles": [
     {
-      "basename": "8-16 Elementary Flow Patterns",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow/8-16 Elementary Flow Patterns.md"
+      "basename": "第一章 绪论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/Plate Theory/第一章 绪论.md"
+    },
+    {
+      "basename": "平面薄板问题的方程建立",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md"
     },
     {
       "basename": "1-8 Introduction and overall  Analysis",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md"
+    },
+    {
+      "basename": "Boussinesq问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第十章：弹性力学专门问题/Boussinesq问题.md"
+    },
+    {
+      "basename": "第一章 电路基本概念与定律",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第一章 电路基本概念与定律.md"
+    },
+    {
+      "basename": "第一章 电路基本概念 2023-09-03 11.21.05",
+      "path": "Excalidraw/第一章 电路基本概念 2023-09-03 11.21.05.md"
+    },
+    {
+      "basename": "第一章 电路基本概念 2023-09-03 00.04.40",
+      "path": "Excalidraw/第一章 电路基本概念 2023-09-03 00.04.40.md"
+    },
+    {
+      "basename": "第一章 电路基本概念与定律 2023-09-05 14.58.21",
+      "path": "Excalidraw/第一章 电路基本概念与定律 2023-09-05 14.58.21.md"
+    },
+    {
+      "basename": "第一章 绪论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🦾Fatigue and Facture/第一章 绪论.md"
+    },
+    {
+      "basename": "Word List1",
+      "path": "📘ClassNotes/🗣️English/Word Notes/Word List1.md"
+    },
+    {
+      "basename": "Derivation of Lift Coefficient for symmetric airfoil",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/implements & Examples/Derivation of Lift Coefficient for symmetric airfoil.pdf"
+    },
+    {
+      "basename": "1-8 Introduction and overall  Analysis 2023-08-31 13.36.38",
+      "path": "Excalidraw/1-8 Introduction and overall  Analysis 2023-08-31 13.36.38.md"
+    },
+    {
+      "basename": "8-16 Elementary Flow Patterns",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow/8-16 Elementary Flow Patterns.md"
     },
     {
       "basename": "1-8 Introduction and overall  Analysis 2023-09-04 20.18.58",
@@ -19,10 +63,6 @@
     {
       "basename": "1-8 Introduction and overall  Analysis 2023-09-03 14.49.40",
       "path": "Excalidraw/1-8 Introduction and overall  Analysis 2023-09-03 14.49.40.md"
-    },
-    {
-      "basename": "第一章 电路基本概念与定律",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第一章 电路基本概念与定律.md"
     },
     {
       "basename": "第一章 电路基本概念与定律 2023-09-04 17.06.49",
@@ -43,10 +83,6 @@
     {
       "basename": "1-8 Introduction and overall  Analysis 2023-08-29 23.56.00",
       "path": "Excalidraw/1-8 Introduction and overall  Analysis 2023-08-29 23.56.00.md"
-    },
-    {
-      "basename": "Word List1",
-      "path": "📘ClassNotes/🗣️English/Word Notes/Word List1.md"
     },
     {
       "basename": "格林公式, 高斯公式和斯托克斯公式以及几个重要概念",
@@ -83,10 +119,6 @@
     {
       "basename": "第一章 电路基本概念 2023-09-03 11.37.39",
       "path": "Excalidraw/第一章 电路基本概念 2023-09-03 11.37.39.md"
-    },
-    {
-      "basename": "第一章 电路基本概念 2023-09-03 11.21.05",
-      "path": "Excalidraw/第一章 电路基本概念 2023-09-03 11.21.05.md"
     },
     {
       "basename": "第一章 电路基本概念 2023-09-03 11.04.45",
@@ -153,10 +185,6 @@
       "path": "📘ClassNotes/🗣️English/Word Notes/Word List3.md"
     },
     {
-      "basename": "第一章 电路基本概念 2023-09-03 00.04.40",
-      "path": "Excalidraw/第一章 电路基本概念 2023-09-03 00.04.40.md"
-    },
-    {
       "basename": "第一章 电路基本概念 2023-09-02 23.46.47",
       "path": "Excalidraw/第一章 电路基本概念 2023-09-02 23.46.47.md"
     },
@@ -171,30 +199,6 @@
     {
       "basename": "⌚近期计划书",
       "path": "🐸 Daily Life memo/⌚近期计划书.md"
-    },
-    {
-      "basename": "第十章 热力学微分关系式与气体性质",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第十章 热力学微分关系式与气体性质.md"
-    },
-    {
-      "basename": "第十一章 喷管内的流动方程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第十一章 喷管内的流动方程.md"
-    },
-    {
-      "basename": "声速的推导过程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/声速的推导过程.pdf"
-    },
-    {
-      "basename": "第三章 理想气体的性质与过程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程.md"
-    },
-    {
-      "basename": "第二章 热力学第一定律",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md"
-    },
-    {
-      "basename": "1-7 Introduction, Concepts and basic theorems",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow/1-7 Introduction, Concepts and basic theorems.md"
     }
   ],
   "omittedPaths": [],

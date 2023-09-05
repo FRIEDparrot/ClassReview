@@ -5,3 +5,7 @@ indispensable assessment ==verdict== supervise intimately elaborate chapel trium
 #### words that should be reviewed periodically
 
 *abdomen* *ritual* *commute* *endure* *resident* *tropical* *hygiene* *impose* *superficially* *disintegrate* ==*predecessor*== *restoration* <mark style="background: #FFF3A3A6;">dispute</mark> *subtle* *skeptic* *psychiatry* *encyclopedia* *fluctuation* *hasten* *moisture* *lumber* 
+
+## implements 
+--- 
+<u>manipulate</u>  brochure captive casualty 

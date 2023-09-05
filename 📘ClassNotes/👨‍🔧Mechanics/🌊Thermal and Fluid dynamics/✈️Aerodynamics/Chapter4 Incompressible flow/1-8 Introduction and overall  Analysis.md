@@ -145,10 +145,37 @@ $$w'(s) \approx w(s)$$
 The **expression for $w(s)$ in terms of the strength of vortex sheet $\gamma(s)$** is easily obtained from [[#4.4 The Vortex Sheet|the equation (4.1)]], then the vortex at the chord line `->` we consider **a elemental vortex of strength $\gamma d\xi$ located at the distance $\xi$ from the origin along the chord line**, then $\gamma = \gamma(\xi)$, then 
 the velocity (note that is the total velocity) $dw$ at point $x$ induced by the elemental vortex at the point $\xi$ is given as : 
 $$\boxed{dw = - \frac{\gamma(\xi) d\xi}{2 \pi (x - \xi)}}\tag{4.16}$$
+where $r = x - \xi$ 
 or in the integral form :
 $$\Large \boxed{w(x) = - \int_{0}^{c} \frac{\gamma (\xi) d \xi}{2\pi (x - \xi)}}\tag{4.17}$$
 Since the [[#4.7 Thin Airfoil Theory The Symmetric airfoil|the normal component of velocity is 0 (4.12)]] is the condition for the camber line to be a stream line, then we also have equation (4.14) above which gives the expression of the $V_{\infty, n}$, then we have : 
 $$V_{\infty, n} = - w'(s) = V_{\infty} \left(\alpha - \frac{dz}{dx}\right)= \int_{0}^{c} \frac{\gamma(\xi) d\xi}{2 \pi (x - \xi)}$$
 then we get 
 $$\Large\boxed{\frac{1}{2 \pi } \int_{0}^{c} \frac{\gamma (\xi) d \xi}{x - \xi} = V_{\infty} \left(\alpha - \frac{dz}{dx}\right)}\tag{4.18}$$
-This equation is the <b><mark style="background: transparent; color: blue">fundamental equation of thin airfoil theory</mark></b>, it is a statement that the camber line is a streamline of the flow. 
+This equation is the <b><mark style="background: transparent; color: blue">fundamental equation of thin airfoil theory</mark></b>, it is a statement that the camber line is a streamline of the flow. We also give an important standard integral that frequently used :
+`````ad-caution 
+title: Essential Standard integral that frequently used in airfoil theory
+collapse: open
+$$\Large \int_{0}^{\pi} \frac{\cos n \theta}{\cos \theta - \cos \theta_{0}} d\theta = \pi \frac{\sin n \theta_{0}}{ \sin \theta_{0}}$$
+`````
+
+For a given point $x$ on the chord line, If we only consider a given airfoil at a given angle of attack, both $\alpha$ and $\frac{dz}{dx}$ are know values. Then <mark style="background: transparent; color: red">the central is the solution of the equation (4.18) under the Kutta Condition</mark> $\gamma(c) = 0$. 
+we <b><mark style="background: transparent; color: orange">treat the case of a symmetric airfoil</mark></b>, then according to [[#4.2 Airfoil NomenClature]], the chord is zero. Hence $\frac{dz}{dx}$ is zero, then 
+$$\frac{1}{2\pi} \int_{0}^{c} \frac{\gamma(\xi) d \xi}{x - \xi} = V_{\infty}\alpha$$
+through [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/implements & Examples/Derivation of Lift Coefficient for symmetric airfoil.pdf|Derivation of Lift Coefficient for symmetric airfoil.pdf]], we can derive the following results : For symmetric airfoil: (note that we set $\xi = \frac{1}{2} (1 - \cos \theta)$,then from the leading edge to trailing edge $\theta$ vary from 0 to $\pi$)
+**Circulation**:
+$$\gamma = \frac{2 V_{\infty}  \alpha}{\sin \theta} (\cos \theta + 1)$$
+**Total Circulation**:
+$$\Gamma = \pi \alpha c V_{\infty}$$
+**Lift Coefficient**: 
+$$c_{l} = 2 \pi \alpha$$
+**Lift Slope**:
+$$\frac{dc_{l}}{d\alpha} = 2 \pi$$
+the expression of lift slope can be referenced from [[#4.3 Airfoil Characteristics]] 
+
+We consider the **theoretical result the lift is linearly proportion to angle of attack**, then we consider the elemental vortex of strength $\gamma(\xi)$ located at distance $\xi$ from the leading edge. We can calculate the moment about the leading edge as follows : 
+Since the circulation that produced by the elemental vortex is $d \Gamma = \gamma (\xi ) d\xi$, then the increment of the lift $dL$ contributed by the elemental vortex is $dL = \rho V_{\infty} d\Gamma$, which **create a moment $-\xi dL$ about the leading edge**. 
+then we can obtain the moments of the airfoil is : 
+$$\boxed{M'_{LE} = - \int_{0}^{c} \xi dL  = - \rho V_{\infty} \int_{0}^{c} \xi \gamma(\xi) d\xi}\tag{4.35}$$
+then the equation becomes :
+
