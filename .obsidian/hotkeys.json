@@ -1370,5 +1370,14 @@
       ],
       "key": "B"
     }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_ELLIPSE_DOTS.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "."
+    }
   ]
 }

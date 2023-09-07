@@ -175,9 +175,7 @@ Moreover, the *distributed loads* generate a moment about the leading edge. as g
 
 We can consider the situation that the aerodynamic force on a body is specified as a resultant single force $R$ or the component $N$ and $A$, then where the resultant force should be placed on -> firstly the moment and the force should be equivalent to the original pressure (i.e. produce the same effects). 
 
-Therefore, 
-
-If $A'$ is placed on the chord line, $N$ must be located at a distance $x_{cp}$ downstream of the leading edge. 
+Therefore, If $A'$ is placed on the chord line, $N$ must be located at a distance $x_{cp}$ downstream of the leading edge. 
 $$M_{LE} = -(x_{cp}) N'$$
 so we get the distance of the $x_{cp}$ as:
 $$\boxed{x_{cp}= -\frac{M_{LE}'}{N'}}\tag{1.20}$$
@@ -192,7 +190,8 @@ $$x_{cp} = -\frac{M_{LE}'}{L'}$$
 ![[Some Introductory Thoughts 2023-01-20 21.56.12.excalidraw|650]]
 in the picture above, the different resultant forces were given at different point of the airfoil
 By inspection of the above three cases, we can get the equivalent relation ship of the different moments in Fig as: 
-$$M_{LE}' = M_{\frac{c}{4}}' - L' \cdot \frac{c}{4} = - L' x_{cp}$$
+$$M_{LE}' = M_{\frac{c}{4}}' - L' \cdot \frac{c}{4} = - L' x_{cp}\tag{1.22}$$
+for axisymmetric airfoil, the center of pressure is at $\frac{c}{4}$ (referencing [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis#4.7 Thin Airfoil Theory The Symmetric airfoil|Thin Airfoil Theory]])
 ## 1.7 The Buckingham PI theorem (Dimensional Analysis)
 we consider what physical quantities determine the variation of these force and moments
 -> the answer can be found by powerful method of ***dimensional analysis***

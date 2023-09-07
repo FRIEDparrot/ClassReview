@@ -14027,6 +14027,7 @@ Octokit.plugins = [];
 // src/utils.ts
 var import_slugify = __toModule(require_slugify());
 var import_sha1 = __toModule(require_sha1());
+var REWRITE_RULE_DELIMITER = ":";
 function arrayBufferToBase64(buffer) {
   let binary = "";
   const bytes = new Uint8Array(buffer);
@@ -14064,17 +14065,19 @@ var wrapAround = (value, size) => {
   return (value % size + size) % size;
 };
 function getRewriteRules(pathRewriteRules) {
-  return pathRewriteRules.split("\n").map((line) => {
-    return line.split(":");
-  }).filter((rule) => {
-    return rule.length == 2;
+  return pathRewriteRules.split("\n").filter((line) => line.includes(REWRITE_RULE_DELIMITER)).map((line) => {
+    const [searchPath, newPath] = line.split(REWRITE_RULE_DELIMITER);
+    return { from: searchPath, to: newPath };
   });
 }
 function getGardenPathForNote(vaultPath, rules) {
-  for (let index = 0; index < rules.length; index++) {
-    const rule = rules[index];
-    if (vaultPath.startsWith(rule[0])) {
-      return rule[1] + vaultPath.slice(rule[0].length);
+  for (const { from, to } of rules) {
+    if (vaultPath.startsWith(from)) {
+      const newPath = vaultPath.replace(from, to);
+      if (newPath.startsWith("/")) {
+        return newPath.replace("/", "");
+      }
+      return newPath;
     }
   }
   return vaultPath;
@@ -14092,6 +14095,15 @@ function fixSvgForXmlSerializer(svgElement) {
       }
     }
   }
+}
+function sanitizePermalink(permalink) {
+  if (!permalink.endsWith("/")) {
+    permalink += "/";
+  }
+  if (!permalink.startsWith("/")) {
+    permalink = "/" + permalink;
+  }
+  return permalink;
 }
 
 // src/Validator.ts
@@ -14116,6 +14128,7 @@ var import_lz_string = __toModule(require_lz_string());
 var Publisher = class {
   constructor(vault, metadataCache, settings) {
     this.frontmatterRegex = /^\s*?---\n([\s\S]*?)\n---/g;
+    this.blockrefRegex = /(\^\w+(\n|$))/g;
     this.codeFenceRegex = /`(.*?)`/g;
     this.codeBlockRegex = /```.*?\n[\s\S]+?```/g;
     this.excaliDrawRegex = /:\[\[(\d*?,\d*?)\],.*?\]\]/g;
@@ -14194,7 +14207,7 @@ var Publisher = class {
         return false;
       }
       try {
-        const response = yield octokit.request("DELETE /repos/{owner}/{repo}/contents/{path}", payload);
+        yield octokit.request("DELETE /repos/{owner}/{repo}/contents/{path}", payload);
       } catch (e) {
         console.log(e);
         return false;
@@ -14490,13 +14503,7 @@ ${frontMatterString}
     }
     if (baseFrontMatter && baseFrontMatter["dg-permalink"]) {
       publishedFrontMatter["dg-permalink"] = baseFrontMatter["dg-permalink"];
-      publishedFrontMatter["permalink"] = baseFrontMatter["dg-permalink"];
-      if (!publishedFrontMatter["permalink"].endsWith("/")) {
-        publishedFrontMatter["permalink"] += "/";
-      }
-      if (!publishedFrontMatter["permalink"].startsWith("/")) {
-        publishedFrontMatter["permalink"] = "/" + publishedFrontMatter["permalink"];
-      }
+      publishedFrontMatter["permalink"] = sanitizePermalink(baseFrontMatter["dg-permalink"]);
     } else {
       publishedFrontMatter["permalink"] = "/" + generateUrlPath(gardenPath, this.settings.slugifyEnabled);
     }
@@ -14505,7 +14512,7 @@ ${frontMatterString}
   addPageTags(baseFrontMatter, newFrontMatter) {
     const publishedFrontMatter = __spreadValues({}, newFrontMatter);
     if (baseFrontMatter) {
-      const tags = (typeof baseFrontMatter["tags"] === "string" ? [baseFrontMatter["tags"]] : baseFrontMatter["tags"]) || [];
+      const tags = (typeof baseFrontMatter["tags"] === "string" ? baseFrontMatter["tags"].split(/,\s*/) : baseFrontMatter["tags"]) || [];
       if (baseFrontMatter["dg-home"]) {
         tags.push("gardenEntry");
       }
@@ -14656,8 +14663,8 @@ ${frontMatterString}
               transcludedText = transcludedText.replace(transclusionMatch, excaliDrawCode);
             } else if (linkedFile.extension === "md") {
               let fileText = yield this.vault.cachedRead(linkedFile);
+              const metadata = this.metadataCache.getFileCache(linkedFile);
               if (tranclusionFileName.includes("#^")) {
-                const metadata = this.metadataCache.getFileCache(linkedFile);
                 const refBlock = tranclusionFileName.split("#^")[1];
                 sectionID = `#${(0, import_slugify2.default)(refBlock)}`;
                 const blockInFile = metadata.blocks[refBlock];
@@ -14665,7 +14672,6 @@ ${frontMatterString}
                   fileText = fileText.split("\n").slice(blockInFile.position.start.line, blockInFile.position.end.line + 1).join("\n").replace(`^${refBlock}`, "");
                 }
               } else if (tranclusionFileName.includes("#")) {
-                const metadata = this.metadataCache.getFileCache(linkedFile);
                 const refHeader = tranclusionFileName.split("#")[1];
                 const headerInFile = (_a = metadata.headings) == null ? void 0 : _a.find((header2) => header2.heading === refHeader);
                 sectionID = `#${(0, import_slugify2.default)(refHeader)}`;
@@ -14682,6 +14688,7 @@ ${frontMatterString}
               }
               fileText = fileText.replace(this.frontmatterRegex, "");
               fileText = yield this.convertCustomFilters(fileText);
+              fileText = fileText.replace(this.blockrefRegex, "");
               const header = this.generateTransclusionHeader(headerName, linkedFile);
               const headerSection = header ? `$<div class="markdown-embed-title">
 
@@ -14691,7 +14698,8 @@ ${header}
 ` : "";
               let embedded_link = "";
               if (publishedFiles.find((f) => f.path == linkedFile.path)) {
-                embedded_link = `<a class="markdown-embed-link" href="/${generateUrlPath(getGardenPathForNote(linkedFile.path, this.rewriteRules))}${sectionID}" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a>`;
+                const gardenPath = metadata.frontmatter["dg-permalink"] ? sanitizePermalink(metadata.frontmatter["dg-permalink"]) : `/${generateUrlPath(getGardenPathForNote(linkedFile.path, this.rewriteRules))}`;
+                embedded_link = `<a class="markdown-embed-link" href="${gardenPath}${sectionID}" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a>`;
               }
               fileText = `
 <div class="transclusion internal-embed is-loaded">${embedded_link}<div class="markdown-embed">
@@ -17376,6 +17384,7 @@ var SettingView = class {
     list.createEl("li", { text: `The format is [from_vault_path]:[to_garden_path]` });
     list.createEl("li", { text: `Matching will exit on first match` });
     rewritesettingContainer.createEl("div", { text: `Example: If you want the vault folder "Personal/Journal" to be shown as only "Journal" in the left file sidebar in the garden, add the line "Personal/Journal:Journal"`, attr: { class: "setting-item-description" } });
+    rewritesettingContainer.createEl("div", { text: `Note: rewriting a folder to the base path "[from_vault_path]:" is not supported at the moment.`, attr: { class: "setting-item-description" } });
     rewritesettingContainer.createEl("div", { text: `Any affected notes will show up as changed in the publication center`, attr: { class: "setting-item-description" } });
     new import_obsidian7.Setting(rewritesettingContainer).setName("Rules").addTextArea((field) => {
       field.setPlaceholder("Personal/Journal:Journal");
@@ -17386,6 +17395,15 @@ var SettingView = class {
         yield this.saveSettings();
       }));
     });
+    rewritesettingContainer.createEl("div", { text: `Type a path below to test that your rules are working as expected`, attr: { class: "test-rewrite-rules-description" } });
+    const rewriteSettingsPreviewContainer = rewritesettingContainer.createEl("div", { attr: { style: "display: flex; align-items: center; margin-top: 10px;" } });
+    const previewInput = rewriteSettingsPreviewContainer.createEl("input", { attr: { type: "text", placeholder: "type a vault path", style: "margin-right: 10px;" } });
+    previewInput.addEventListener("input", () => {
+      const testPath = previewInput.value;
+      const rewriteTestResult = getGardenPathForNote(testPath, getRewriteRules(this.settings.pathRewriteRules));
+      testResultDiv.innerHTML = `Garden path: "${rewriteTestResult}"`;
+    });
+    const testResultDiv = rewriteSettingsPreviewContainer.createEl("div", { text: `Garden path: ""`, attr: { class: "test-rewrite-rules-new-path" } });
   }
   initializeCustomFilterSettings() {
     const customFilterModal = new import_obsidian7.Modal(this.app);

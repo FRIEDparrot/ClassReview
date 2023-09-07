@@ -31,7 +31,7 @@ we give the following figure to give detailed designation for the lifting coeffi
 ![[Excalidraw/1-8 Introduction and overall  Analysis 2023-08-31 13.36.38|400]]
 We note that $c_l$ increases linearly with $\alpha$ at the left side of the curve, and become Nonlinear at the top. The maximum of $c_l$ occurs just prior to the stall, We note the lift at $\alpha$ = 0 is finite. **the lift goes to zero only when the airfoil is pitched to some negative angle of attack**, this angle $\alpha$ (when lift equals zero) is ***called zero-lift angle of attack*** and denoted by $\alpha_{L = 0} =0$, and <mark style="background: transparent; color: red">for a symmetric airfoil</mark>, $\alpha_{L = 0} = 0$. 
 
-we review [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts#1.5 Aerodynamic Forces and moments|section 1.5]], We also note the **quarter- chord point is commonly used**.
+We review [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts#1.5 Aerodynamic Forces and moments|section 1.5]], We also note the **quarter- chord point is commonly used**.
 
 The drag of airfoil is <u>due to both body friction drag and pressure drag due to flow separation</u>. The sum of two effects yields the profile drag coefficient $c_d$ for the airfoil. We also note $c_{d}$ is sensitive to $\text{Re}$ 
 ![[Excalidraw/1-8 Introduction and overall  Analysis 2023-08-31 14.43.23|1000]]
@@ -137,10 +137,10 @@ For the camber line to be a streamline, the component of velocity normal to the 
 $$\Large \boxed{V_{\infty,n} + w'(s) = 0}\tag{4.12}$$
 so an expression for $V_{\infty, n}$ is obtained by analyze the airfoil shape. 
 ![[Excalidraw/1-8 Introduction and overall  Analysis 2023-09-04 20.18.58|900]]
-we use the velocity at infinite distance $V_{\infty}$ and the angle of attack $\alpha$, then the normal component along the airfoil is:  $V_{\infty, n} = V_{\infty} \sin (\alpha - \theta)$
-for small $\theta$ we have $\sin \theta \approx \tan\theta \approx \theta$, We assume that both the angle of attack and $\theta$ are small angl, then use the shape function $z = z(x)$ as the description of $\theta$ as 
+we use the velocity at infinite distance $V_{\infty}$ and the angle of attack $\alpha$, then the normal component along the airfoil is:  $V_{\infty, n} = V_{\infty} \sin (\alpha - \theta)$ 
+for small $\theta$ we have $\sin \theta \approx \tan\theta \approx \theta$, We assume that both the angle of attack and $\theta$ are small angle, then use the shape function $z = z(x)$ as the description of $\theta$ as 
 $$\Large\boxed{V_{\infty, n} = V_{\infty} (\alpha - \frac{dz}{dx})}\tag{4.14}$$
-also in the  figure 1, if the camber line is close to the chord line, we can use the approxiamtion: 
+also in the  figure 1, if the camber line is close to the chord line, we can use the approximation: 
 $$w'(s) \approx w(s)$$
 The **expression for $w(s)$ in terms of the strength of vortex sheet $\gamma(s)$** is easily obtained from [[#4.4 The Vortex Sheet|the equation (4.1)]], then the vortex at the chord line `->` we consider **a elemental vortex of strength $\gamma d\xi$ located at the distance $\xi$ from the origin along the chord line**, then $\gamma = \gamma(\xi)$, then 
 the velocity (note that is the total velocity) $dw$ at point $x$ induced by the elemental vortex at the point $\xi$ is given as : 
@@ -152,23 +152,24 @@ Since the [[#4.7 Thin Airfoil Theory The Symmetric airfoil|the normal component 
 $$V_{\infty, n} = - w'(s) = V_{\infty} \left(\alpha - \frac{dz}{dx}\right)= \int_{0}^{c} \frac{\gamma(\xi) d\xi}{2 \pi (x - \xi)}$$
 then we get 
 $$\Large\boxed{\frac{1}{2 \pi } \int_{0}^{c} \frac{\gamma (\xi) d \xi}{x - \xi} = V_{\infty} \left(\alpha - \frac{dz}{dx}\right)}\tag{4.18}$$
-This equation is the <b><mark style="background: transparent; color: blue">fundamental equation of thin airfoil theory</mark></b>, it is a statement that the camber line is a streamline of the flow. We also give an important standard integral that frequently used :
+This equation is the <b><mark style="background: transparent; color: blue">fundamental equation of thin airfoil theory</mark></b>, it is a statement that the camber line is a streamline of the flow. We also give important standard integral that frequently used :
 `````ad-caution 
 title: Essential Standard integral that frequently used in airfoil theory
 collapse: open
 $$\Large \int_{0}^{\pi} \frac{\cos n \theta}{\cos \theta - \cos \theta_{0}} d\theta = \pi \frac{\sin n \theta_{0}}{ \sin \theta_{0}}$$
+$$\Large \int_{0}^{\pi} \frac{\sin n\theta \sin \theta }{\cos \theta - \cos \theta_{0}} = - \pi \cos n \theta_{0}$$
 `````
 
 For a given point $x$ on the chord line, If we only consider a given airfoil at a given angle of attack, both $\alpha$ and $\frac{dz}{dx}$ are know values. Then <mark style="background: transparent; color: red">the central is the solution of the equation (4.18) under the Kutta Condition</mark> $\gamma(c) = 0$. 
 we <b><mark style="background: transparent; color: orange">treat the case of a symmetric airfoil</mark></b>, then according to [[#4.2 Airfoil NomenClature]], the chord is zero. Hence $\frac{dz}{dx}$ is zero, then 
 $$\frac{1}{2\pi} \int_{0}^{c} \frac{\gamma(\xi) d \xi}{x - \xi} = V_{\infty}\alpha$$
-through [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/implements & Examples/Derivation of Lift Coefficient for symmetric airfoil.pdf|Derivation of Lift Coefficient for symmetric airfoil.pdf]], we can derive the following results : For symmetric airfoil: (note that we set $\xi = \frac{1}{2} (1 - \cos \theta)$,then from the leading edge to trailing edge $\theta$ vary from 0 to $\pi$)
+through [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/implements & Examples/Derivation of Lift Coefficient for symmetric airfoil.pdf|Derivation of Lift Coefficient for symmetric airfoil.pdf]], we can derive the following results : For symmetric airfoil: (note that we set $\xi = \frac{1}{2} (1 - \cos \theta) ,\space  d\xi = \frac{c}{2} \sin \theta$,then from the leading edge to trailing edge $\theta$ vary from 0 to $\pi$)
 **Circulation**:
-$$\gamma = \frac{2 V_{\infty}  \alpha}{\sin \theta} (\cos \theta + 1)$$
+$$\Large \boxed{\gamma = \frac{2 V_{\infty}  \alpha}{\sin \theta} (\cos \theta + 1)}$$
 **Total Circulation**:
 $$\Gamma = \pi \alpha c V_{\infty}$$
 **Lift Coefficient**: 
-$$c_{l} = 2 \pi \alpha$$
+$$c_{l} = 2 \pi \alpha\tag{4.33}$$
 **Lift Slope**:
 $$\frac{dc_{l}}{d\alpha} = 2 \pi$$
 the expression of lift slope can be referenced from [[#4.3 Airfoil Characteristics]] 
@@ -177,5 +178,71 @@ We consider the **theoretical result the lift is linearly proportion to angle of
 Since the circulation that produced by the elemental vortex is $d \Gamma = \gamma (\xi ) d\xi$, then the increment of the lift $dL$ contributed by the elemental vortex is $dL = \rho V_{\infty} d\Gamma$, which **create a moment $-\xi dL$ about the leading edge**. 
 then we can obtain the moments of the airfoil is : 
 $$\boxed{M'_{LE} = - \int_{0}^{c} \xi dL  = - \rho V_{\infty} \int_{0}^{c} \xi \gamma(\xi) d\xi}\tag{4.35}$$
-then the equation becomes :
+we easily derive the moment for the symmetric airfoil as :
+$$M'_{LE} = - \frac{\pi \alpha c^{2}}{4} \rho V_{\infty}^{2} = - \frac{\pi \alpha}{2} q_{\infty} c^{2}$$
+then we can calculate the moment coefficient as 
+$$\Large c_{m,le} = \frac{M'_{LE}}{q_{\infty} S c} = - \frac{\pi \alpha }{2}$$
+then we have the **relationship between the Lift Coefficient and the moment coefficient** as : $c_{m,le} = - \frac{c_{l}}{4}$
+we recall the [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts#1.6 Center of pressure|equation (1.22)]] which gives $M'_{LE} = M'_{\frac{c}{4}} - L' \cdot \frac{c}{4}$,then we get 
+$$c_{m, le} = c_{m, \frac{c}{4}} - \frac{L'}{4q_{\infty}S} = c_{m,\frac{c}{4}} -\frac{c_{l}}{4} \qquad \rightarrow  \qquad \boxed{\Large  c_{m, \frac{c}{4}} = 0}$$
+That is,**the quarter chord is both the center of pressure and the aerodynamic center**. the experimental value of $c_{m, \frac{c}{4}}$ is constant over a wide range of $\alpha$, as shown below 
+![[attachments/Screenshot_20230905_214902_com.microsoft.skydrive.png|400]]
+## 4.8 The Cambered Airfoil
+The airfoil theory for a cambered airfoil is analogous to that of axisymmetric airfoil. we just use [[#4.7 Thin Airfoil Theory The Symmetric airfoil]] and modify the equation (4.18) where $\frac{dz}{dx}$ is not zero : 
+$$\frac{1}{2 \pi } \int_{0}^{c} \frac{\gamma (\xi) d \xi}{x - \xi} = V_{\infty} \left(\alpha - \frac{dz}{dx}\right)\tag{4.18}$$
+then we firstly substitute $\xi = \frac{c}{2} (1 - \cos \theta)$ and obtain : 
+$$\boxed{\frac{1}{2\pi} \int_{0}^{c} \frac{\gamma(\theta) \sin \theta d\theta}{\cos \theta - \cos \theta_{0}} = V_{\infty}\left(\alpha - \frac{dz}{dx}\right)}\tag{4.42}$$
+also we use the Kutta Condition $\gamma(\pi) = 0$, then (the process is complex so we don't derive it)
+$$\gamma(\theta) = 2 V_{0} \left(A_{0} \frac{1+ \cos \theta}{\sin \theta} + \sum^{n}_{i=1}A_{n} \sin n \theta\right)\tag{4.43}$$
+**The values of $A_n$ depends on the shape of the airfoil (that is, depend on $\frac{dz}{dx}$)**, this is in order that the camber line is a streamline of the flow. We can substitute the expression of $\gamma(\theta)$ into equation (4.42), the substitution and the integral implies: 
+$$A_{0} - \sum^{\infty}_{i=1} A_{n} \cos n \theta_{0} = \alpha - \frac{dz}{dx}$$
+then we can get
+$$\frac{dz}{dx} = (\alpha - A_{0}) + \sum^{\infty}_{i=1} A_{n}\cos n \theta_{0}\tag{4.46}$$
+this equation is <b><mark style="background: transparent; color: blue">the transformed version of the fundamental equation of thin airfoil theory</mark></b>. we also note the original fundamental equation is evaluated at the given point $x$, then we have $\theta_{0}$ correspond to the same point $x$ on the  chord line. 
+We also refer to the [[📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十二章 无穷级数#五、傅里叶级数|Fourier series expansion]], we just **use a ==cosine series== to represent the function $f(\theta)$ over an interval $0 \leq \theta \leq \pi$**(since we only simulate the function in the interval 0 to $\pi$), then the equation (4.42), the function $\frac{dz}{dx}$ is analogous to $f(\theta)$ and can be expand into cosine Fourier expansion on the left, then we **write the coefficient according to the order of $\cos(n\theta)$ then compare every coefficient, we have**: 
+$$A_{0} =\alpha -  \frac{1}{\pi} \int_{0}^{\pi} \frac{dz}{dx} d\theta_{0}\tag{4.50}$$
+which gives the calculation of $A_0$. and the coefficient $A_n$ as :
+$$\Large \boxed{A_{n} = \frac{2}{\pi} \int_{0}^{\pi} \frac{dz}{dx} \cos n \theta_{0} d \theta_{0}}\tag{4.51}$$
+In this case, we obtain the liftin coefficient for a cambered airfoil. Then the circulation is calculated as: 
+$$\Gamma = \int_{0}^{c} \gamma(\xi) d\xi  =\frac{c}{2} \int_{0}^{\pi} r(\theta) \sin \theta d\theta$$
+then we obtain the circulation around a cambered airfoil as : 
+$$\Gamma = cV_{\infty} \left[ A_{0} \int_{0}^{\pi} (1+ \cos \theta) d\theta +\sum^{\infty}_{n=1} A_{n} \int_{0}^{\pi} \sin n \theta \sin \theta d\theta \right]$$
+by [[Excalidraw/1-8 Introduction and overall  Analysis 2023-09-06 21.42.44|derivation process]] we can derive the **expression of total circulation :**
+$$\Gamma = c V_{\infty}\pi \left(  A_{0} + \frac{A_{1}}{2} \right) \tag{4.54}$$
+then the lift per unit span is calculated as : 
+$$\Large L' =  \rho_{\infty} V_{\infty} \Gamma  = \rho V_{\infty}^{2} c\left(\pi A_{0} + \frac{\pi}{2} A_{1}\right)\tag{4.55}$$
+we know $c_l$ is equal to the $2 \pi A_{0} + \pi A_{1}$, then we <mark style="background: transparent; color: red">substitute the equation (4.51) and the equation (4.50) </mark>into this equation, then we have: 
+$$\Large \boxed {c_{l} = 2 \pi  \left[\alpha + \frac{1}{\pi } \int_{0}^{\pi} \frac{dz}{dx} (\cos \theta_{0} - 1 ) d\theta_{0}\right]}\tag{4.57}$$
+and the lift slope is calculated as 
+$$\boxed{\text{Lift Slope} = \frac{d c_{l}}{d \alpha} = 2 \pi}\tag{4.58}$$
+we note this result is a general result from thin airfoil theory that $\frac{dc_l}{d\alpha} = 2\pi$, but the expression for $c_{l}$ itself  <mark style="background: transparent; color: red">differs between a symmetric airfoil to a cambered airfoil</mark>, we note that this difference being the integral term in the equation (4.57). **The angle of zero lift is denoted by $\alpha_{L = 0}$.  Which is a negative value**.
 
+We know $c_{l}$ can be calculated as :
+$$c_{l} = 0 + \frac{d c_{l}}{d\alpha }(\alpha - \alpha_{L = 0}) =2 \pi (\alpha - \alpha_{L = 0})$$
+the figure of $c_l$ can be referenced from the [[#4.3 Airfoil Characteristics]]. We also have 
+$$\boxed{\alpha_{L = 0} = - \frac{1}{\pi} \int_{0}^{\pi} \frac{dz}{dx} (\cos\theta_{0} -1) d\theta_{0}\tag{4.61}}$$
+we also calculate **the moment about the leading edge**, which is shown in [[#4.7 Thin Airfoil Theory The Symmetric airfoil|figure (2)]] can be **obtained by substituting $\gamma(\theta)$ from equation (4.43) into the equation (3.35)** then we just give the integration of it as : 
+$$c_{m,le} = - \frac{\pi}{2} \left(A_{0} + A_{1} - \frac{A_{2}}{2}\right)$$
+`````ad-todo 
+title: The derivation process is at problem 4.9  
+collapse: open
+`````
+considering the equation lifting coefficient is given above as $2 \pi A_{0} + \pi A_{1}$, we have : 
+$$\Large \boxed{c_{m,le} = -\left[ \frac{c_{l}}{4}  +  \frac{\pi}{4} (A_{1} - A_{2})\right]}\tag{4.63}$$
+then we use [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts#1.6 Center of pressure|equation (1.22)]] then get the equation, which give the <b><mark style="background: transparent; color: blue">quarter chord point is the theoretical location of the aerodynamic center for a camber airfoil.</mark></b> (this is not equal to 0 as the symmetric airfoil). 
+$$\Large\boxed{c_{m, \frac{c}{4}} = \frac{\pi}{4} (A_{2} - A_{1})}$$
+
+we also gives the location of center of pressure as :
+$$x_{cp} =  \frac{M'_{LE}}{L'} = - \frac{c_{m} q_{\infty} c^{2}}{ c_{l} q_{\infty} c} = - \frac{c_{m} c}{c_{l}}$$
+then from equation (4.63) we can easily derive the 
+$$\boxed{x_{cp} = \frac{c}{4} \left[ 1 + \frac{\pi }{c_{l}} (A_{1}  - A_{2})\right]}\tag{4.66}$$
+This equation gives the center of pressure. We note <u>when the lift approaches zero, the distance between the center of pressure and leading edge become infinite.</u> hence <mark style="background: transparent; color: red">we use the aerodynamic center rather than pressure center to analyze an aerodynamic problem</mark>. 
+
+## 4.9 Aerodynamic Center 
+We have given the definition of aerodynamic center in section [[#4.3 Airfoil Characteristics]] which is defined as the point where **the moment is independent of angle of attack**. 
+
+With the assumptions embodied in [[#4.7 Thin Airfoil Theory The Symmetric airfoil|the theory of thin airfoil]], the aerodynamic center for a thin airfoil is located at the quarter chord point. We also set $x_{ac}$ as the the location of aerodynamic center (or $c\bar{x}_{ac}$). Then we have 
+$$M'_{ac} = L' \left(c\bar{x}_{ac} - \frac{c}{4}\right)+ \frac{M'_{\frac{c}{4}}}{q_{\infty} S c}$$
+![[Excalidraw/1-8 Introduction and overall  Analysis 2023-09-07 18.54.16|300]]
+so we have : 
+$$c_{m, ac} = c_{l} (\bar{x}_{ac} - 0.25) + c_{m, \frac{c}{4}}$$
