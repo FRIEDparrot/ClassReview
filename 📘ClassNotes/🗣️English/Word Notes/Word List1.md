@@ -9,4 +9,7 @@ indispensable assessment ==verdict== supervise intimately elaborate chapel trium
 ## implements 
 --- 
 <u>manipulate</u>  brochure captive casualty counterbalance coverage cult decade dome enlist 
-courteous augment deduce mutability demographic cosmic  suspension endeavor primeval fallacy offend referee infirm folk aeronautics homogenize 
+==courteous== augment deduce mutability demographic cosmic  suspension endeavor primeval  fallacy offend ==referee== <mark style="background: transparent; color: red">infirm</mark> folk aeronautics homogenize ==profound== wastage charity adjoint disjunction irresponsible ==jury== <mark style="background: transparent; color: red">lateral</mark> dilute liberal literacy 
+
+penalize plausible 
+

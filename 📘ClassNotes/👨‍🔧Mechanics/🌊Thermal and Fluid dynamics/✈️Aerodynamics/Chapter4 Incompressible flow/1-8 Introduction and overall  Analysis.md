@@ -245,4 +245,53 @@ With the assumptions embodied in [[#4.7 Thin Airfoil Theory The Symmetric airfoi
 $$M'_{ac} = L' \left(c\bar{x}_{ac} - \frac{c}{4}\right)+ \frac{M'_{\frac{c}{4}}}{q_{\infty} S c}$$
 ![[Excalidraw/1-8 Introduction and overall  Analysis 2023-09-07 18.54.16|300]]
 so we have : 
-$$c_{m, ac} = c_{l} (\bar{x}_{ac} - 0.25) + c_{m, \frac{c}{4}}$$
+$$c_{m, ac} = c_{l} (\bar{x}_{ac} - 0.25) + c_{m, \frac{c}{4}}\tag{4.68}$$
+we difference this equation with respect to angle $\alpha$. Then **since the point is aerodynamic center**,we have $\frac{d c_{m, ac}}{d \alpha} = 0$, Then the equation becomes: 
+$$0 = \frac{dc_{l}}{d\alpha}\left(\bar{x}_{ac} - 0.25\right) + \frac{dc_{m, \frac{c}{4}}}{d\alpha}$$
+and we know for the airfoils below the stall angle of attack, the **slopes of the lift coefficient** 
+is a constant, then Designating these slopes by : 
+$$\boxed {\frac{dc_{l}}{d \alpha} \equiv a_{0} \qquad  \frac{d c_{m}}{d\alpha}\equiv m_{0}}$$
+so we get : **For a body with linear lift and moment curves, the aerodynamic center exists as a fixed point on the airfoil**. 
+$$\Large \boxed{\bar{x}_{ac} = -\frac{m_{0}}{a_{0}} +0.25}$$
+## 4.10 Airfoil Drag for Viscous flow 
+We know for an airfoil the lift is primarily due to the pressure distribution exerted on the surface of it. When integrated <u>in the lift direction, the shear stress is usually negligible</u>. The lift can be accurately calculated assuming inviscid flow in  conjunction with the Kutta condition. But this same approach yields zero drag, which is called **d'Alembert's paradox**. 
+
+The paradox is removed when the friction is included in the flow, we note that **the viscosity in the flow is responsible for the aerodynamic drag on the airfoil** through : 
+1. **Skin- friction drag** 
+2. **Pressure Drag** due to <u>flow separation</u>, which called **form drag**.
+![[Excalidraw/1-8 Introduction and overall  Analysis 2023-09-09 15.10.32|400]]
+### (1) Skin Friction Drag for laminar flow
+For the viscid low-speed incompressible flow, the boundary layer thickness for incompressible laminar flow over the airfoil is shown in figure below.
+![[Excalidraw/1-8 Introduction and overall  Analysis 2023-09-09 15.14.48|800]]
+the boundary layer thickness is given as : 
+$$\boxed{\delta = \frac{5.0 x}{\sqrt{\text{Re}_{x}}}}$$
+where the Reynolds Number is : 
+$$\boxed{\text{Re}_{x} = \frac{\rho_{\infty} V_{\infty} x}{\mu_{\infty}}}$$
+hence $\delta \propto \sqrt{x}$ `->` boundary layer shape. 
+
+We choose the top surface for integral of the shear stress, and then yields the net friction as $D_f$ on the plate. for a plate we have $D_{f, bottom} = D_{f, top}$, then $D_{f} = 2D_{f, top} =  2D_{f, bottom}$. 
+then the **skin-friction for the flow over one surface is defined as :** 
+$$C_{f} \equiv  \frac{D_{f, top}}{q_{\infty} S} = \frac{D_{f,bottom}}{q_{\infty} S}$$
+the skin friction drag is a function of Reynolds number, which is given as : 
+$$C_{f} = \frac{1.328}{\sqrt{\text{Re}_{c}}}\qquad  \text{Re}_{c} = \frac{\rho_{\infty} V_{\infty} c}{\mu_{\infty}}$$
+### (2) Skin Friction Drag for turbulent flow
+The analysis of the turbulent flow are **approximate**. the analysis of the turbulent boundary layer over a flat plate is no exception. so we give the experimental formula as : 
+$$\delta = \frac{0.37 x}{Re_{x}^{\frac{1}{5}}}$$
+and the friction coefficients as : 
+$$C_{f} = \frac{0.0074}{\text{Re}_{c}^{\frac{1}{5}}}$$
+### (3) Transition 
+In reality, the flow always starts out from the leading edge as laminar. Then **at some point downstream of leading edge**, the laminar boundary layer becomes turbulent flow. 
+![[Excalidraw/1-8 Introduction and overall  Analysis 2023-09-09 15.14.48|800]]
+The value of $x$ <u>where transition is said to take place</u> is the **critical value** $x_{cr}$, which allows the definition for the **critical Reynolds number**. (often it is given experimentally)
+$$\text{Re}_{x_{cr}} = \frac{\rho_{\infty} V_{\infty} x_{cr}}{\mu_{\infty}}\rightarrow\quad  x_{cr} = \frac{\mu_{\infty} \text{Re}_{x_{cr}}}{\rho_{\infty} V_{\infty}}$$
+
+## 4.11 Flow Separation 
+For a <mark style="background: transparent; color: red">completely attached flow</mark> **over** an airfoil, <u>the pressure acting on the rear surface gives rise to a force in the forward direction</u>  while <u>the pressure acting on the front surface produce force in rearward direction</u>. Which completely counteracts and **result in zero drag**. (if the trailing edge is the same height as leading edge, the area projection are the same). 
+
+When the flow separate over the rear surface, the pressure on the rear surface will be smaller (since the flow rapidly expands over the top surface). 
+
+note that [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/♎Important Conclusions and Lists/Dimensionless force and moment coefficients|the pressure coefficient]] : 
+$$C_p \equiv \frac{p-p_\infty}{q_\infty}$$
+![[attachments/Screenshot_20230909_163757_com.microsoft.skydrive.png|500]]
+We also have [[attachments/Screenshot_20230909_164121_com.microsoft.skydrive.png|pressure variance caused by flow separation]]. (due to a sharp decrease of the pressure coefficient when the angle of attack is large). Then we have [[attachments/Screenshot_20230909_164645_com.microsoft.skydrive.png|pressure distribution figure]] shown.
+

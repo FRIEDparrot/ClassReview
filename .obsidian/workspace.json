@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8f19e3d2ea582e04",
+        "id": "5e3c1049fdc355be",
         "type": "tabs",
         "children": [
           {
-            "id": "2e9aadd6964f279d",
+            "id": "06666b61c8589051",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md",
+                "file": "📘ClassNotes/⚡Circuit/电路分析基础/第四章 正弦稳态电路的分析.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +31,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 56.44230769230769,
+        "dimension": 71.99230028873917,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -71,7 +71,7 @@
       {
         "id": "3dfa7e76a36534a1",
         "type": "tabs",
-        "dimension": 43.55769230769231,
+        "dimension": 28.007699711260827,
         "children": [
           {
             "id": "db0ad0041a71350b",
@@ -87,7 +87,7 @@
             "state": {
               "type": "surfing-view",
               "state": {
-                "url": "https://chat.openai.com/c/e2b91a97-1af2-44d1-b200-3d3d932b039e"
+                "url": "https://chat.openai.com/?model=text-davinci-002-render-sha"
               }
             }
           },
@@ -125,7 +125,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 375.5
+    "width": 405.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md",
+                "file": "📘ClassNotes/⚡Circuit/电路分析基础/第四章 正弦稳态电路的分析.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md",
+                "file": "📘ClassNotes/⚡Circuit/电路分析基础/第四章 正弦稳态电路的分析.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md"
+                "file": "📘ClassNotes/⚡Circuit/电路分析基础/第四章 正弦稳态电路的分析.md"
               }
             }
           },
@@ -238,7 +238,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 425.5
+    "width": 434.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -260,35 +260,41 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2e9aadd6964f279d",
+  "active": "06666b61c8589051",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第一章 绪论.md",
-    "Excalidraw/第一章 绪论 2023-09-07 19.38.39.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/补充/平面薄板挠度方程推导.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
-    "Excalidraw/第一章 绪论 2023-09-07 19.06.17.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md",
-    "Excalidraw/1-8 Introduction and overall  Analysis 2023-09-07 18.54.16.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/implements & Examples/Derivation of Lift Coefficient for symmetric airfoil.pdf",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/特殊线性微分方程的通解.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第七章 微分方程.md",
-    "Excalidraw/第一章 绪论 2023-09-07 11.54.12.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🦾Fatigue and Facture/第一章 绪论.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十五章 疲劳强度.md",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/第四章 线性方程组解的结构.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第二章 电路分析基本方法.md",
-    "Excalidraw/第二章 电路分析基本方法 2023-09-07 09.30.21.md",
-    "Excalidraw/第二章 电路分析基本方法 2023-09-07 09.01.29.md",
+    "Excalidraw/第四章 正弦稳态电路的分析 2023-09-10 21.03.39.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第四章 正弦稳态电路的分析.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第五章 矩阵的相似变换.md",
+    "🐸 Daily Life memo/⌚近期计划书.md",
+    "🐸 Daily Life memo/买书部分.md",
+    "Excalidraw/第四章 正弦稳态电路的分析 2023-09-10 17.03.36.md",
+    "Excalidraw/第四章 正弦稳态电路的分析 2023-09-10 16.21.24.md",
+    "Excalidraw/第四章 正弦稳态电路的分析 2023-09-10 16.03.58.md",
     "📘ClassNotes/⚡Circuit/电路分析基础/第一章 电路基本概念与定律.md",
+    "Excalidraw/第四章 正弦稳态电路的分析 2023-09-10 15.19.16.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第一章 绪论.md",
+    "Excalidraw/第一章 绪论 2023-09-10 14.34.26.md",
+    "🐸 Daily Life memo/答辩.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第四章 线性方程组解的结构.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md",
+    "attachments/Screenshot_20230909_164645_com.microsoft.skydrive.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/♎Important Conclusions and Lists/Dimensionless force and moment coefficients.md",
+    "attachments/Screenshot_20230909_164121_com.microsoft.skydrive.png",
+    "attachments/Screenshot_20230909_163757_com.microsoft.skydrive.png",
+    "Excalidraw/1-8 Introduction and overall  Analysis 2023-09-09 15.14.48.md",
+    "Excalidraw/1-8 Introduction and overall  Analysis 2023-09-09 15.10.32.md",
+    "Excalidraw/第四章 正弦稳态电路的分析 2023-09-09 13.39.48.md",
+    "Excalidraw/第四章 正弦稳态电路的分析 2023-09-09 12.13.02.md",
+    "🗒️Templates/INSERT_ANGLE_SIGN.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第三章 电路基本定理.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第七章 微分方程.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第九章 多元函数的微分法及应用.md",
     "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
-    "Excalidraw/1-8 Introduction and overall  Analysis 2023-08-31 13.36.38.md",
-    "Excalidraw/1-8 Introduction and overall  Analysis 2023-09-06 21.42.44.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Fundamental aerodynamic words.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/重要概念/常用的单位前缀.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第一章 振动测试技术概论.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/傅里叶级数展开方法.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/最大功率传输定理推导.pdf",
+    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分",
+    "📘ClassNotes/⚡Circuit/电路分析基础/New folder",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/implements & Examples/Derivation of Lift Coefficient for symmetric airfoil.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/齐次线性方程组的通解推导.pdf",
     "attachments/Screenshot_20230905_214902_com.microsoft.skydrive.png",
@@ -296,18 +302,12 @@
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🦾Fatigue and Facture",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/implements & Examples",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/implements",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/New folder",
-    "📃Essay/CFD.pdf",
-    "Day Planners",
     "attachments/Untitled-1.jpg",
     "attachments/Pasted image 20230830145100.png",
     "attachments/Pasted image 20230830143859.png",
     "attachments/Pasted image 20230830143427.png",
     "attachments/Pasted image 20230830121557.png",
     "attachments/Pasted image 20230830092232.png",
-    "attachments/Pasted image 20230830092149.png",
-    "attachments/Pasted image 20230830084627.png",
-    "attachments/Pasted image 20230828140122.png",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

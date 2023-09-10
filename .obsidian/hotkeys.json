@@ -1379,5 +1379,21 @@
       ],
       "key": "."
     }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_ANGLE_SIGN.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "A"
+    },
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "/"
+    }
   ]
 }
