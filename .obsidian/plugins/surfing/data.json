@@ -329,6 +329,17 @@
         "fileSize": "",
         "icon": {}
       }
+    },
+    {
+      "id": "81f57027a28a6792",
+      "parent": 0,
+      "droppable": true,
+      "text": "variational method - Google Search",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
     }
   ]
 }

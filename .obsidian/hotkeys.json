@@ -1395,5 +1395,14 @@
       ],
       "key": "/"
     }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_SIMEQUAL_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "`"
+    }
   ]
 }
