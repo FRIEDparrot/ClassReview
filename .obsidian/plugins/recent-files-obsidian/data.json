@@ -1,12 +1,88 @@
 {
   "recentFiles": [
     {
-      "basename": "第四章 线性方程组解的结构",
-      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第四章 线性方程组解的结构.md"
+      "basename": "第六章 弯曲应力",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第六章 弯曲应力.md"
+    },
+    {
+      "basename": "第一章 绪论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第一章 绪论.md"
+    },
+    {
+      "basename": "⌚近期计划书",
+      "path": "🐸 Daily Life memo/⌚近期计划书.md"
     },
     {
       "basename": "第六章 二次型",
       "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第六章 二次型.md"
+    },
+    {
+      "basename": "二次型内容的证明",
+      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/二次型内容的证明.pdf"
+    },
+    {
+      "basename": "第六章 二次型 2023-09-17 06.55.11",
+      "path": "Excalidraw/第六章 二次型 2023-09-17 06.55.11.md"
+    },
+    {
+      "basename": "第四章 线性方程组解的结构",
+      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第四章 线性方程组解的结构.md"
+    },
+    {
+      "basename": "第五章 矩阵的相似变换",
+      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第五章 矩阵的相似变换.md"
+    },
+    {
+      "basename": "第三章 矩阵的初等变换",
+      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第三章 矩阵的初等变换.md"
+    },
+    {
+      "basename": "实对称矩阵的相关性质证明",
+      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/实对称矩阵的相关性质证明.pdf"
+    },
+    {
+      "basename": "第一章 电路基本概念与定律",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第一章 电路基本概念与定律.md"
+    },
+    {
+      "basename": "第三章 传感器工作原理",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第三章 传感器工作原理.md"
+    },
+    {
+      "basename": "第三章 电路基本定理",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第三章 电路基本定理.md"
+    },
+    {
+      "basename": "第二章 电路分析基本方法",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第二章 电路分析基本方法.md"
+    },
+    {
+      "basename": "第三章 传感器工作原理 2023-09-15 20.25.57",
+      "path": "Excalidraw/第三章 传感器工作原理 2023-09-15 20.25.57.md"
+    },
+    {
+      "basename": "第二章 振动测试原理",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md"
+    },
+    {
+      "basename": "第二章 振动测试原理 2023-09-15 19.34.29",
+      "path": "Excalidraw/第二章 振动测试原理 2023-09-15 19.34.29.md"
+    },
+    {
+      "basename": "第二章 振动测试原理 2023-09-15 19.04.35",
+      "path": "Excalidraw/第二章 振动测试原理 2023-09-15 19.04.35.md"
+    },
+    {
+      "basename": "特征多项式与特征值的性质证明",
+      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/特征多项式与特征值的性质证明.pdf"
+    },
+    {
+      "basename": "第一章 行列式",
+      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第一章 行列式.md"
+    },
+    {
+      "basename": "Word List1",
+      "path": "📘ClassNotes/🗣️English/Word Notes/Word List1.md"
     },
     {
       "basename": "第二章 矩形薄板的弯曲",
@@ -23,10 +99,6 @@
     {
       "basename": "三角函数的重要性质整理",
       "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/三角函数的重要性质整理.md"
-    },
-    {
-      "basename": "第一章 绪论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第一章 绪论.md"
     },
     {
       "basename": "2. 最小势能原理,最小余能原理",
@@ -47,10 +119,6 @@
     {
       "basename": "第一章 绪论 2023-09-14 19.22.30",
       "path": "Excalidraw/第一章 绪论 2023-09-14 19.22.30.md"
-    },
-    {
-      "basename": "第三章 矩阵的初等变换",
-      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第三章 矩阵的初等变换.md"
     },
     {
       "basename": "线性方程组部分性质证明",
@@ -81,20 +149,8 @@
       "path": "Excalidraw/第一章 绪论 2023-09-12 11.11.40.md"
     },
     {
-      "basename": "第一章 行列式",
-      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第一章 行列式.md"
-    },
-    {
-      "basename": "Word List1",
-      "path": "📘ClassNotes/🗣️English/Word Notes/Word List1.md"
-    },
-    {
       "basename": "Graphic_Practice",
       "path": "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/Graphic_Practice.md"
-    },
-    {
-      "basename": "第二章 振动测试原理",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md"
     },
     {
       "basename": "第二章 振动测试原理 2023-09-13 19.56.17",
@@ -115,10 +171,6 @@
     {
       "basename": "Mathematical Symbols",
       "path": "📘ClassNotes/Markdown & Latex Tutorial/Latex Tutorial/Mathematical Symbols.md"
-    },
-    {
-      "basename": "第五章 矩阵的相似变换",
-      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第五章 矩阵的相似变换.md"
     },
     {
       "basename": "第五章 矩阵的相似变换 2023-09-13 08.58.20",
@@ -147,58 +199,6 @@
     {
       "basename": "耐高温复合材料与力学行为讲义",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为讲义.pdf"
-    },
-    {
-      "basename": "IMG_20230912_111246",
-      "path": "attachments/IMG_20230912_111246.jpg"
-    },
-    {
-      "basename": "第一章 绪论 2023-09-12 11.02.20",
-      "path": "Excalidraw/第一章 绪论 2023-09-12 11.02.20.md"
-    },
-    {
-      "basename": "第一章 绪论 2023-09-07 11.54.12",
-      "path": "Excalidraw/第一章 绪论 2023-09-07 11.54.12.md"
-    },
-    {
-      "basename": "电路作业",
-      "path": "🐸 Daily Life memo/电路作业.md"
-    },
-    {
-      "basename": "第一章 电路基本概念与定律",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第一章 电路基本概念与定律.md"
-    },
-    {
-      "basename": "第二章 电路分析基本方法",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第二章 电路分析基本方法.md"
-    },
-    {
-      "basename": "⌚近期计划书",
-      "path": "🐸 Daily Life memo/⌚近期计划书.md"
-    },
-    {
-      "basename": "第九章 多元函数的微分法及应用",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第九章 多元函数的微分法及应用.md"
-    },
-    {
-      "basename": "第二章 导数与微分",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md"
-    },
-    {
-      "basename": "第四章 不定积分",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第四章 不定积分.md"
-    },
-    {
-      "basename": "第十章 重积分",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十章 重积分.md"
-    },
-    {
-      "basename": "第四章 正弦稳态电路的分析",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第四章 正弦稳态电路的分析.md"
-    },
-    {
-      "basename": "第四章 正弦稳态电路的分析 2023-09-11 10.29.27",
-      "path": "Excalidraw/第四章 正弦稳态电路的分析 2023-09-11 10.29.27.md"
     }
   ],
   "omittedPaths": [],
