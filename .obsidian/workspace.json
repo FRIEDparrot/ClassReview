@@ -4,58 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6c8d9115bd1fc6fa",
+        "id": "acd85843195d1cfe",
         "type": "tabs",
         "children": [
           {
-            "id": "fdb5fa07815aa9ce",
+            "id": "ceb7798907bf0e2c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6d81bf90ebf86b7f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第二章 高周疲劳.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "82f73d01fded4c00",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "391b41fe40f0d41d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c615528d247808f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md",
+                "file": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md",
                 "mode": "source",
                 "source": false
               }
@@ -196,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md",
+                "file": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -213,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md",
+                "file": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -258,7 +216,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md"
+                "file": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md"
               }
             }
           }
@@ -266,7 +224,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 520.5,
+    "width": 457.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -289,16 +247,28 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "fdb5fa07815aa9ce",
+  "active": "ceb7798907bf0e2c",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第一章 绪论.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第二章 高周疲劳.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第五章 三相电路.md",
+    "Excalidraw/第五章 三相电路 2023-09-19 15.33.40.md",
+    "Excalidraw/第五章 三相电路 2023-09-19 15.05.19.md",
+    "Excalidraw/第五章 三相电路 2023-09-19 14.53.38.md",
+    "Excalidraw/第五章 三相电路 2023-09-19 15.21.41.md",
+    "Excalidraw/第五章 三相电路 2023-09-19 09.45.21.md",
+    "Excalidraw/第五章 三相电路 2023-09-19 14.37.18.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/三相电路的电压和电流关系推导.pdf",
+    "Excalidraw/第五章 三相电路 2023-09-19 09.18.55.md",
+    "Excalidraw/第四章 低周疲劳 2023-09-19 11.45.41.md",
+    "Excalidraw/第四章 低周疲劳 2023-09-19 11.34.54.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md",
     "attachments/IMG_20230919_104343.jpg",
-    "Excalidraw/第五章 三相电路 2023-09-19 09.45.21.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第五章 三相电路.md",
-    "Excalidraw/第五章 三相电路 2023-09-19 09.18.55.md",
     "Excalidraw/第五章 三相电路 2023-09-19 09.00.02.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter5 Incompressible flow over finite wings/1-8 Introduction and fundamental Concepts.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Fundamental aerodynamic words.md",
@@ -307,33 +277,21 @@
     "2023-09-17.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md",
     "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-18 20.15.19.md",
-    "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-18 19.20.54.md",
     "📘ClassNotes/⚡Circuit/电工电子技术",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/9-16 Applied Concepts.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第一章 绪论.md",
-    "Excalidraw/第六章 弯曲应力 2023-03-11 21.38.46.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第二章 矩形薄板的弯曲.md",
-    "🐸 Daily Life memo/⌚近期计划书.md",
     "attachments/Screenshot_20230918_145202_com.microsoft.skydrive.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/♎Important Conclusions and Lists/Dimensionless force and moment coefficients.md",
-    "Excalidraw/9-16 Applied Concepts 2023-09-18 14.03.41.md",
     "attachments/Screenshot_20230918_141252_com.microsoft.skydrive.png",
     "attachments/Screenshot_20230918_135548_com.microsoft.skydrive.png",
     "attachments/Screenshot_20230918_133027_com.microsoft.skydrive.png",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter5 Incompressible flow over finite wings",
     "attachments/Screenshot_20230909_164645_com.microsoft.skydrive.png",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/格林公式, 高斯公式和斯托克斯公式以及几个重要概念.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板的变形能与余变形能公式导出.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/New folder",
-    "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/二次型内容的证明.pdf",
     "attachments/Pasted Image 20230917065513_967.png",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/哈密顿-凯莱定理的证明.pdf",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/实对称矩阵的相关性质证明.pdf",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/矩阵相似对角化的部分定理推导.pdf",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/特征多项式与特征值的性质证明.pdf",
     "attachments/Pasted Image 20230913174214_944.png",
     "attachments/Pasted Image 20230913085823_528.png",
     "attachments/IMG_20230912_111246.jpg",
