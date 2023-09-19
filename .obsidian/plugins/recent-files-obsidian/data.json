@@ -1,16 +1,148 @@
 {
   "recentFiles": [
     {
-      "basename": "第六章 弯曲应力",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第六章 弯曲应力.md"
+      "basename": "第四章 低周疲劳",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md"
+    },
+    {
+      "basename": "3. 增量型本构方程的建立",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.md"
+    },
+    {
+      "basename": "第二章 高周疲劳",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第二章 高周疲劳.md"
+    },
+    {
+      "basename": "第一章 绪论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md"
+    },
+    {
+      "basename": "第五章 三相电路 2023-09-19 09.45.21",
+      "path": "Excalidraw/第五章 三相电路 2023-09-19 09.45.21.md"
+    },
+    {
+      "basename": "第五章 三相电路",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第五章 三相电路.md"
+    },
+    {
+      "basename": "第五章 三相电路 2023-09-19 09.18.55",
+      "path": "Excalidraw/第五章 三相电路 2023-09-19 09.18.55.md"
+    },
+    {
+      "basename": "第五章 三相电路 2023-09-19 09.00.02",
+      "path": "Excalidraw/第五章 三相电路 2023-09-19 09.00.02.md"
+    },
+    {
+      "basename": "1-8 Introduction and fundamental Concepts",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter5 Incompressible flow over finite wings/1-8 Introduction and fundamental Concepts.md"
+    },
+    {
+      "basename": "Fundamental aerodynamic words",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Fundamental aerodynamic words.md"
+    },
+    {
+      "basename": "1-8 Introduction and fundamental Concepts 2023-09-18 21.48.07",
+      "path": "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-18 21.48.07.md"
+    },
+    {
+      "basename": "2023-09-18",
+      "path": "2023-09-18.md"
+    },
+    {
+      "basename": "2023-09-17",
+      "path": "2023-09-17.md"
+    },
+    {
+      "basename": "1-8 Introduction and overall  Analysis",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md"
+    },
+    {
+      "basename": "1-8 Introduction and fundamental Concepts 2023-09-18 20.15.19",
+      "path": "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-18 20.15.19.md"
+    },
+    {
+      "basename": "1-8 Introduction and fundamental Concepts 2023-09-18 19.20.54",
+      "path": "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-18 19.20.54.md"
+    },
+    {
+      "basename": "9-16 Applied Concepts",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/9-16 Applied Concepts.md"
     },
     {
       "basename": "第一章 绪论",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第一章 绪论.md"
     },
     {
+      "basename": "第六章 弯曲应力 2023-03-11 21.38.46",
+      "path": "Excalidraw/第六章 弯曲应力 2023-03-11 21.38.46.md"
+    },
+    {
       "basename": "⌚近期计划书",
       "path": "🐸 Daily Life memo/⌚近期计划书.md"
+    },
+    {
+      "basename": "1-11 Some Introductory Thoughts",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts.md"
+    },
+    {
+      "basename": "Dimensionless force and moment coefficients",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/♎Important Conclusions and Lists/Dimensionless force and moment coefficients.md"
+    },
+    {
+      "basename": "9-16 Applied Concepts 2023-09-18 14.03.41",
+      "path": "Excalidraw/9-16 Applied Concepts 2023-09-18 14.03.41.md"
+    },
+    {
+      "basename": "Screenshot_20230909_164645_com.microsoft.skydrive",
+      "path": "attachments/Screenshot_20230909_164645_com.microsoft.skydrive.png"
+    },
+    {
+      "basename": "格林公式, 高斯公式和斯托克斯公式以及几个重要概念",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/格林公式, 高斯公式和斯托克斯公式以及几个重要概念.md"
+    },
+    {
+      "basename": "2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw",
+      "path": "Excalidraw/2.  梁的纯弯曲问题的塑性力学解 2022-12-12 15.33.14.excalidraw.md"
+    },
+    {
+      "basename": "1.应力基本概念,边界条件和坐标转换",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第二章：应力/1.应力基本概念,边界条件和坐标转换.md"
+    },
+    {
+      "basename": "第一章 绪论 2023-09-17 20.02.23",
+      "path": "Excalidraw/第一章 绪论 2023-09-17 20.02.23.md"
+    },
+    {
+      "basename": "第一章 绪论 2023-09-17 19.30.00",
+      "path": "Excalidraw/第一章 绪论 2023-09-17 19.30.00.md"
+    },
+    {
+      "basename": "第四章 扭转",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第四章 扭转.md"
+    },
+    {
+      "basename": "第一章 绪论 2023-09-12 19.25.38",
+      "path": "Excalidraw/第一章 绪论 2023-09-12 19.25.38.md"
+    },
+    {
+      "basename": "第一章 绪论 2023-09-12 19.15.40",
+      "path": "Excalidraw/第一章 绪论 2023-09-12 19.15.40.md"
+    },
+    {
+      "basename": "第一章 绪论 2023-09-17 15.07.45",
+      "path": "Excalidraw/第一章 绪论 2023-09-17 15.07.45.md"
+    },
+    {
+      "basename": "第一章 绪论 2023-09-17 13.54.16",
+      "path": "Excalidraw/第一章 绪论 2023-09-17 13.54.16.md"
+    },
+    {
+      "basename": "第一章 绪论 2023-09-05 20.14.58",
+      "path": "Excalidraw/第一章 绪论 2023-09-05 20.14.58.md"
+    },
+    {
+      "basename": "第六章 弯曲应力",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第六章 弯曲应力.md"
     },
     {
       "basename": "第六章 二次型",
@@ -67,138 +199,6 @@
     {
       "basename": "第二章 振动测试原理 2023-09-15 19.34.29",
       "path": "Excalidraw/第二章 振动测试原理 2023-09-15 19.34.29.md"
-    },
-    {
-      "basename": "第二章 振动测试原理 2023-09-15 19.04.35",
-      "path": "Excalidraw/第二章 振动测试原理 2023-09-15 19.04.35.md"
-    },
-    {
-      "basename": "特征多项式与特征值的性质证明",
-      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/特征多项式与特征值的性质证明.pdf"
-    },
-    {
-      "basename": "第一章 行列式",
-      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第一章 行列式.md"
-    },
-    {
-      "basename": "Word List1",
-      "path": "📘ClassNotes/🗣️English/Word Notes/Word List1.md"
-    },
-    {
-      "basename": "第二章 矩形薄板的弯曲",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第二章 矩形薄板的弯曲.md"
-    },
-    {
-      "basename": "傅里叶级数展开方法",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/傅里叶级数展开方法.md"
-    },
-    {
-      "basename": "基本积分表",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/基本积分表.md"
-    },
-    {
-      "basename": "三角函数的重要性质整理",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/三角函数的重要性质整理.md"
-    },
-    {
-      "basename": "2. 最小势能原理,最小余能原理",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第七章：能量原理/2. 最小势能原理,最小余能原理.md"
-    },
-    {
-      "basename": "1. 虚位移原理,功的互等定理",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第七章：能量原理/1. 虚位移原理,功的互等定理.md"
-    },
-    {
-      "basename": "第十章 热力学微分关系式与气体性质",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第十章 热力学微分关系式与气体性质.md"
-    },
-    {
-      "basename": "第一章 分析动力学基础",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md"
-    },
-    {
-      "basename": "第一章 绪论 2023-09-14 19.22.30",
-      "path": "Excalidraw/第一章 绪论 2023-09-14 19.22.30.md"
-    },
-    {
-      "basename": "线性方程组部分性质证明",
-      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/线性方程组部分性质证明.md"
-    },
-    {
-      "basename": "第二章 矩阵及其运算",
-      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第二章 矩阵及其运算.md"
-    },
-    {
-      "basename": "齐次线性方程组的通解推导",
-      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/齐次线性方程组的通解推导.pdf"
-    },
-    {
-      "basename": "第一章 绪论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🦾Fatigue and Facture/第一章 绪论.md"
-    },
-    {
-      "basename": "第一章 绪论 2023-09-14 11.11.36",
-      "path": "Excalidraw/第一章 绪论 2023-09-14 11.11.36.md"
-    },
-    {
-      "basename": "第一章 绪论 2023-09-14 11.03.34",
-      "path": "Excalidraw/第一章 绪论 2023-09-14 11.03.34.md"
-    },
-    {
-      "basename": "第一章 绪论 2023-09-12 11.11.40",
-      "path": "Excalidraw/第一章 绪论 2023-09-12 11.11.40.md"
-    },
-    {
-      "basename": "Graphic_Practice",
-      "path": "📘ClassNotes/Markdown & Latex Tutorial/obsidian usage/Graphic_Practice.md"
-    },
-    {
-      "basename": "第二章 振动测试原理 2023-09-13 19.56.17",
-      "path": "Excalidraw/第二章 振动测试原理 2023-09-13 19.56.17.md"
-    },
-    {
-      "basename": "第二章 振动测试原理 2023-09-13 19.26.37",
-      "path": "Excalidraw/第二章 振动测试原理 2023-09-13 19.26.37.md"
-    },
-    {
-      "basename": "第六章 二次型 2023-09-13 17.42.11",
-      "path": "Excalidraw/第六章 二次型 2023-09-13 17.42.11.md"
-    },
-    {
-      "basename": "INSERT_SIMEQUAL_SYMBOL",
-      "path": "🗒️Templates/INSERT_SIMEQUAL_SYMBOL.md"
-    },
-    {
-      "basename": "Mathematical Symbols",
-      "path": "📘ClassNotes/Markdown & Latex Tutorial/Latex Tutorial/Mathematical Symbols.md"
-    },
-    {
-      "basename": "第五章 矩阵的相似变换 2023-09-13 08.58.20",
-      "path": "Excalidraw/第五章 矩阵的相似变换 2023-09-13 08.58.20.md"
-    },
-    {
-      "basename": "第一章 绪论 2023-09-12 19.25.38",
-      "path": "Excalidraw/第一章 绪论 2023-09-12 19.25.38.md"
-    },
-    {
-      "basename": "第一章 绪论 2023-09-12 19.15.40",
-      "path": "Excalidraw/第一章 绪论 2023-09-12 19.15.40.md"
-    },
-    {
-      "basename": "第一章 绪论",
-      "path": "📘ClassNotes/⚗️materials and chemicals/Engineering Chemicals/第一章 绪论.md"
-    },
-    {
-      "basename": "第一章 绪论 2023-09-12 12.05.36",
-      "path": "Excalidraw/第一章 绪论 2023-09-12 12.05.36.md"
-    },
-    {
-      "basename": "耐高温复合材料与力学行为-内容整理",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为-内容整理.md"
-    },
-    {
-      "basename": "耐高温复合材料与力学行为讲义",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📦Mechanics of Composite Materials/耐高温复合材料与力学行为/耐高温复合材料与力学行为讲义.pdf"
     }
   ],
   "omittedPaths": [],
