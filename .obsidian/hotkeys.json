@@ -370,15 +370,6 @@
       "key": "M"
     }
   ],
-  "templater-obsidian:🗒️Templates/INSERT_NEIGHBORHOOD_SPACE.md": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "U"
-    }
-  ],
   "templater-obsidian:🗒️Templates/INSERT_NU_LOWERCASE.md": [
     {
       "modifiers": [
@@ -574,15 +565,6 @@
       "key": "X"
     }
   ],
-  "templater-obsidian:🗒️Templates/CODE_BLOCK_INSERT.md": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "Enter"
-    }
-  ],
   "templater-obsidian:🗒️Templates/INSERT_ZETA_LOWERCASE.md": [
     {
       "modifiers": [
@@ -730,6 +712,13 @@
     {
       "modifiers": [
         "Mod",
+        "Shift"
+      ],
+      "key": "U"
+    },
+    {
+      "modifiers": [
+        "Alt",
         "Shift"
       ],
       "key": "U"
@@ -1403,6 +1392,25 @@
         "Mod"
       ],
       "key": "`"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_NEIGHBORHOOD_SPACE.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "U"
+    }
+  ],
+  "editor:insert-codeblock": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "Enter"
     }
   ]
 }

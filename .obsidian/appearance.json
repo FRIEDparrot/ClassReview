@@ -1,7 +1,7 @@
 {
-  "baseFontSize": 30,
-  "accentColor": "",
-  "theme": "moonstone",
+  "baseFontSize": 28,
+  "accentColor": "#cb9325",
+  "theme": "obsidian",
   "cssTheme": "Wikipedia",
   "interfaceFontFamily": "Times New Roman",
   "textFontFamily": "Times New Roman",

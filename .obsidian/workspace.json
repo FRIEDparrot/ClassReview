@@ -4,22 +4,69 @@
     "type": "split",
     "children": [
       {
-        "id": "acd85843195d1cfe",
+        "id": "1fe326404dcaddff",
         "type": "tabs",
         "children": [
           {
-            "id": "ceb7798907bf0e2c",
+            "id": "05e3f259e7bb9612",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6775d9a881bf8948",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第二章 高周疲劳.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1f26a0c3c7711ebf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🐸 Daily Life memo/CSDN 鸽的文章.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7fd7bd7202422772",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "🐸 Daily Life memo/Drawing 2023-09-25 09.16.02.md"
+              }
+            }
+          },
+          {
+            "id": "79c8703aff3ce63c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2023-09-24.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -31,7 +78,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 54.9318364073777,
+        "dimension": 52.16346153846154,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -79,21 +126,13 @@
       {
         "id": "066eddf15a13dd56",
         "type": "tabs",
-        "dimension": 45.0681635926223,
+        "dimension": 47.83653846153847,
         "children": [
           {
             "id": "db0ad0041a71350b",
             "type": "leaf",
             "state": {
               "type": "recent-files",
-              "state": {}
-            }
-          },
-          {
-            "id": "39b1ffed45f7c26b",
-            "type": "leaf",
-            "state": {
-              "type": "timeline",
               "state": {}
             }
           },
@@ -106,12 +145,21 @@
                 "url": "https://chat.openai.com/c/fa0fee2c-5b34-434f-9c5d-b48feeaf2cd3"
               }
             }
+          },
+          {
+            "id": "a91b46b2acac26ea",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 444.5124969482422
+    "width": 470.5124969482422
   },
   "right": {
     "id": "f7de553c162de521",
@@ -154,7 +202,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md",
+                "file": "🐸 Daily Life memo/Drawing 2023-09-25 09.16.02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +219,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md",
+                "file": "🐸 Daily Life memo/Drawing 2023-09-25 09.16.02.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -216,7 +264,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md"
+                "file": "🐸 Daily Life memo/Drawing 2023-09-25 09.16.02.md"
               }
             }
           }
@@ -224,8 +272,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 457.5,
-    "collapsed": true
+    "width": 445.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -247,36 +294,42 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "ceb7798907bf0e2c",
+  "active": "7fd7bd7202422772",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第一章 绪论.md",
+    "🐸 Daily Life memo/CSDN 鸽的文章.md",
+    "🐸 Daily Life memo/Drawing 2023-09-25 09.16.02.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第二章 高周疲劳.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第五章 三相电路.md",
-    "Excalidraw/第五章 三相电路 2023-09-19 15.33.40.md",
-    "Excalidraw/第五章 三相电路 2023-09-19 15.05.19.md",
-    "Excalidraw/第五章 三相电路 2023-09-19 14.53.38.md",
-    "Excalidraw/第五章 三相电路 2023-09-19 15.21.41.md",
-    "Excalidraw/第五章 三相电路 2023-09-19 09.45.21.md",
-    "Excalidraw/第五章 三相电路 2023-09-19 14.37.18.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/三相电路的电压和电流关系推导.pdf",
-    "Excalidraw/第五章 三相电路 2023-09-19 09.18.55.md",
-    "Excalidraw/第四章 低周疲劳 2023-09-19 11.45.41.md",
+    "Excalidraw/第四章 低周疲劳 2023-09-24 15.33.00.md",
+    "Excalidraw/第四章 低周疲劳 2023-09-24 15.18.28.md",
+    "Excalidraw/第四章 低周疲劳 2023-09-21 11.14.03.md",
+    "Excalidraw/第四章 低周疲劳 2023-09-24 13.59.53.md",
+    "2023-09-24.md",
     "Excalidraw/第四章 低周疲劳 2023-09-19 11.34.54.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🛠️Theory of Plasticity/第三章：本构方程的建立/3. 增量型本构方程的建立.md",
+    "Excalidraw/第四章 低周疲劳 2023-09-19 11.45.41.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第二章 高周疲劳.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md",
+    "Excalidraw/第二章 高周疲劳 2023-09-21 11.46.33.md",
+    "Excalidraw/第一章 绪论 2023-09-14 11.11.36.md",
+    "Excalidraw/第二章 高周疲劳 2023-09-24 08.55.07.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
+    "Excalidraw/第四章 随机变量的数字特征 2023-09-23 19.14.24.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第十一章 含有运算放大器的电路分析.md",
+    "Excalidraw/第十一章 含有运算放大器的电路分析 2023-09-23 18.04.34.md",
+    "Excalidraw/第十一章 含有运算放大器的电路分析 2023-09-20 22.53.28.md",
+    "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第二章 矩形薄板的弯曲.md",
+    "2023-09-23.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第四章 振动测试设备与电子仪器.md",
+    "Excalidraw/第四章 振动测试设备与电子仪器 2023-09-22 19.09.10.md",
+    "attachments/Pasted image 20230921161722.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/补充内容",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/补充内容/疲劳极限估计公式推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板弯曲问题的双三角级数解(附带例题).pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板弯曲变分方程的推导.pdf",
+    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/电路的Y-△型变换推导.pdf",
+    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/三相电路的电压和电流关系推导.pdf",
     "attachments/IMG_20230919_104343.jpg",
-    "Excalidraw/第五章 三相电路 2023-09-19 09.00.02.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter5 Incompressible flow over finite wings/1-8 Introduction and fundamental Concepts.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Fundamental aerodynamic words.md",
-    "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-18 21.48.07.md",
-    "2023-09-18.md",
-    "2023-09-17.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md",
-    "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-18 20.15.19.md",
     "📘ClassNotes/⚡Circuit/电工电子技术",
     "attachments/Screenshot_20230918_145202_com.microsoft.skydrive.png",
     "attachments/Screenshot_20230918_141252_com.microsoft.skydrive.png",
@@ -286,15 +339,9 @@
     "attachments/Screenshot_20230909_164645_com.microsoft.skydrive.png",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板的变形能与余变形能公式导出.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/New folder",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/二次型内容的证明.pdf",
     "attachments/Pasted Image 20230917065513_967.png",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/哈密顿-凯莱定理的证明.pdf",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/实对称矩阵的相关性质证明.pdf",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/矩阵相似对角化的部分定理推导.pdf",
     "attachments/Pasted Image 20230913174214_944.png",
     "attachments/Pasted Image 20230913085823_528.png",
-    "attachments/IMG_20230912_111246.jpg",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

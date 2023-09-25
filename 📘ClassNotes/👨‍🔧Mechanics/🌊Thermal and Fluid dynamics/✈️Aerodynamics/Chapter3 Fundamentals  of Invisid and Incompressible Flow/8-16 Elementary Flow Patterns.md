@@ -154,11 +154,11 @@ the calculation can reference the [[📘ClassNotes/👨‍🔧Mechanics/🌊Ther
 to evaluate the constant $C$, we **take the circulation around a given circular streamline** of radius r : 
 $$\Gamma = - \oint_C V\cdot  dS = - V_{\theta} (2 \pi r) \rightarrow C =- \frac{\Gamma}{2 \pi}$$
 the $\Gamma$ is called **the strength** of the vortex flow. 
-$$\Large\boxed{V_{\theta} = - \frac{\Gamma}{2 \pi r}}$$
+$$\Large\boxed{V_{\theta} = - \frac{\Gamma}{2 \pi r}}\tag{3.105}$$
 also, we can easily derive the velocity potential : 
-$$\Large\boxed{\phi = - \frac{\Gamma}{2 \pi} \theta}$$
+$$\Large\boxed{\phi = - \frac{\Gamma}{2 \pi} \theta}\tag{3.112}$$
 and the stream function : 
-$$\Large\boxed{\psi = \frac{\Gamma}{2 \pi} \ln r}$$
+$$\Large\boxed{\psi = \frac{\Gamma}{2 \pi} \ln r}\tag{3.114}$$
 `````ad-note
 collapse: close
 the origin form of the streamline function all have a constant, that is : 
