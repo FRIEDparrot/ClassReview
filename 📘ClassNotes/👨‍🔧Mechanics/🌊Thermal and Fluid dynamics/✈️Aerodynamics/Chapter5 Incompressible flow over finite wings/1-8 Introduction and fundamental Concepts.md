@@ -106,4 +106,3 @@ $$\boxed{\alpha_{i} = \frac{C_{L}}{\pi \text{AR}}\qquad\qquad  \text{where AR}  
 note aspect ratio AR is a important geometry property. Also, we have the coefficient of drag : 
 $$\boxed{C_{D,i} = \frac{C_{L}^{2}}{\pi \text{AR}}}$$
 that equation states that <u>the drag coefficient is directly proportional to the square of lift coefficient</u>, and inverse proportional to aspect ratio. 
-

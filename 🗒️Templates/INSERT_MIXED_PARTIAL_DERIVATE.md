@@ -1,1 +1,1 @@
-\frac{\partial^2 }{\partial \partial}
+\frac{\partial^{2} }{\partial \partial}
