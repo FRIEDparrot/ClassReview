@@ -34,10 +34,10 @@ $$dB = \frac{\mu I}{4 \pi} \frac{dl \times  r}{|r|^{3}}$$
 where $\mu$ is the permeability of the surrounding medium of the wire. Indeed, the Bitot-Savart law is <mark style="background: transparent; color: red">a general result of potential theory</mark>. 
 `````
 
-We give that <u>when a number of fliaments are used in conjunction with a uniform freestream</u>, Then it's possible to synthesize a flow which has a practical application. Then we apply the Bitot-Savart law to a straight vortex filament of infinite length, we note that the strength of the filament is $\Gamma$, then the velocity induced at point P by segment of the vortex filament $dl$ is given by equation (5.5) above, then we can calculate the velocity indeced at point P as :
+We give that <u>when a number of fliaments are used in conjunction with a uniform freestream</u>, Then it's possible to synthesize a flow which has a practical application. Then we apply the Bitot-Savart law to a straight vortex filament of infinite length, we note that the strength of the filament is $\Gamma$, then the velocity induced at point P by segment of the vortex filament $dl$ is given by equation (5.5) above, then we can calculate the velocity indeced at point P as : 
 ![[Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-20 06.18.31|450]]
 $$\vec{V} = \int_{- \infty}^{\infty} \frac{\Gamma}{4 \pi} \frac{dl\times r}{|r|^{3}}$$
-With [[Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-20 06.23.23|a simple derivation process]], we get the <mark style="background: transparent; color: red">velocity induced by the entire vortex filament</mark> is:
+With [[Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-20 06.23.23|a simple derivation process]], we get the <mark style="background: transparent; color: red">velocity induced by the entire vortex filament</mark> is: 
 $$\Large\boxed{V = \frac{\Gamma}{2 \pi h}}\tag{5.10}$$
 we compare it to [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter3 Fundamentals  of Invisid and Incompressible Flow/8-16 Elementary Flow Patterns#3.13 Vortex Flow|equation 3.105]] and know that this is precisely the same result as it for the point vortex. (the result here is just the magnitude). 
 also, for a semi-infinite vortex filament (the perpendicular feet is boundary of flow), the velocity is given by:
@@ -78,14 +78,14 @@ $$c_l = a_0 \left[ \alpha_{eff}(y_0) - \alpha_{L = 0}\right]= 2\pi [\alpha_{eff}
 If there is <b><mark style="background: transparent; color: blue">no aerodynamic twist</mark></b>, the $\alpha_{L= 0}$ not vary with $y_0$ and remains constant across the span. Then we know:
 $$c_l'  = \frac{L'}{q_{\infty}S}= \frac{\rho_{\infty} V_{\infty} \Gamma(y_0)}{ q_{\infty} S}  = \frac{2\Gamma (y_0)}{V_{\infty} c(y_0)}$$
 then considering [[#5.1 Downwash and Induced Drag]], $\alpha = \alpha_i + \alpha_{eff}$, then : 
-$$\boxed {\alpha_{eff} = \alpha_{L= 0} + \frac{\Gamma(y_0)}{\pi V_\infty c(y_0)}\qquad  \alpha  = \alpha_{L= 0} + \frac{\Gamma(y_0)}{\pi V_\infty c(y_0)} + \frac{1}{4\pi V_{\infty}} \int_{- \frac{h}{2}}^{\frac{h}{2}}\frac{\frac{d\Gamma}{dy} dy}{y_0  - y}}$$
-This is <b><mark style="background: transparent; color: blue">The Fundamental Equation of Prandtl's lifting-line theory</mark></b>. which state the calculation of geometry angle. We can obtain the 3 aerodynamic characters of a finite wing by the following equation:
+$$\boxed {\alpha_{eff} = \alpha_{L= 0} + \frac{\Gamma(y_0)}{\pi V_\infty c(y_0)}\qquad  \alpha  = \alpha_{L= 0} + \frac{\Gamma(y_0)}{\pi V_\infty c(y_0)} + \frac{1}{4\pi V_{\infty}} \int_{- \frac{h}{2}}^{\frac{h}{2}}\frac{\frac{d\Gamma}{dy} dy}{y_0  - y}}\tag{5.23}$$
+This is <b><mark style="background: transparent; color: blue">The Fundamental Equation of Prandtl's lifting-line theory</mark></b>. which state the calculation of geometry angle. We can obtain the 3 aerodynamic characters of a finite wing by the following equation: 
 Lift Distribution 
-$$L'(y_{0}) = \rho_{\infty}V_{\infty} \Gamma(y_{0})$$
+$$L'(y_{0}) = \rho_{\infty}V_{\infty} \Gamma(y_{0})\tag{5.24}$$
 then the total lift is obtained by integrating the equation over the span : 
 $$L = \int_{-\frac{b}{2}}^{\frac{b}{2}} L'(y)dy = \rho_{\infty}V_{\infty} \int_{\frac{-b}{2}}^{\frac{b}{2}} \Gamma(y)dy\tag{5.25}$$
 and the lift coefficient follows immediately from the equation as :
-$$C_{L} = \frac{2}{V_{\infty} S}  \int_{\frac{-b}{2}}^{\frac{b}{2}} L(y)dy\tag{5.26}$$
+$$C_{L} = \frac{2}{V_{\infty} S}  \int_{\frac{-b}{2}}^{\frac{b}{2}} \Gamma(y)dy\tag{5.26}$$
 also we have : 
 $$D'_{i} = L'_{i}\sin \alpha_{i} \approx L'_{i}\alpha_{i}\rightarrow  \quad D = \rho_{\infty}V_{\infty} \int_{\frac{-b}{2}}^{\frac{b}{2}} \Gamma(y)\alpha_{i}(y)dy$$
 $$C_{D,i} = \frac{D_{i}}{q_{\infty} S} = \frac{2}{V_{\infty} S}  \int_{\frac{-b}{2}}^{\frac{b}{2}} L(y) \alpha_{i}(y)dy\tag{5.30}$$
@@ -102,7 +102,59 @@ $$\alpha_{i}= - \frac{w}{V_{\infty}} = \frac{\Gamma_{0}}{2b V_{\infty}} = \text{
 Hence <mark style="background: transparent; color: red">the downwash is constant over the span for an elliptic lift distribution</mark>. We also reach a more useful expression for $\alpha_{i}$ by substituting $\Gamma_{0}$ into the expression of lift(note we also use $y = \frac{b}{2}\cos \theta$),  and get: 
 $$\Large\boxed{L  = \rho_{\infty} V_{\infty}\Gamma_{0} \frac{\pi  b }{4}}\qquad \boxed{\Gamma_{0} = \frac{4L}{\rho_{\infty}  V_{\infty} b \pi }}\tag{5.38}$$
 through the [[Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-22 08.19.57|simple derivation]], we can reach the expression 
-$$\boxed{\alpha_{i} = \frac{C_{L}}{\pi \text{AR}}\qquad\qquad  \text{where AR}  \equiv  \frac{b^{2}}{S} \quad \text{ (aspect ratio)}}$$
+$$\boxed{\alpha_{i} = \frac{C_{L}}{\pi \text{AR}}\qquad\qquad  \text{where AR}  \equiv  \frac{b^{2}}{S} \quad \text{ (aspect ratio)}}\tag{5.42}$$
 note aspect ratio AR is a important geometry property. Also, we have the coefficient of drag : 
 $$\boxed{C_{D,i} = \frac{C_{L}^{2}}{\pi \text{AR}}}$$
-that equation states that <u>the drag coefficient is directly proportional to the square of lift coefficient</u>, and inverse proportional to aspect ratio. 
+that equation states that <u>the drag coefficient is directly proportional to the square of lift coefficient</u>, and inverse proportional to <mark style="background: transparent; color: red">aspect ratio</mark>. 
+
+We also note that because $C_{D}\propto C_{L}^{2}$, the <mark style="background: transparent; color: red">induced drag coefficient increases rapidly with the lifting coefficient</mark>. (which gives that when we want to increase the lifting coefficient to take off, we have higher drag coefficient that the plane flies slower). Also we gives the effect of the aspect ratio below: 
+![[Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-28 17.22.00|500]]
+
+We consider a wing with <mark style="background: transparent; color: red">no geometric twist and no aerodynamic twist</mark>. From the equation [[#5.1 Downwash and Induced Drag|effect angle of attack]] and [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/9-16 Applied Concepts#4.9 Aerodynamic Center|the lifting coefficient curve]], we have $\frac{dc_{l}}{d\alpha} = a_{0}$, then: 
+$$c_{l} = a_{0} (\alpha_{eff} - \alpha_{L = 0})$$
+(note $a_{0}= 2\pi$ for the thin airfoil theory), $c_{l}$ persists a constant along the span of the airfoil. Hence the lift per unit span is given by (we note that in the equation $L'(y)$ varies elliptically along the span):
+$$L'(y) = q_{\infty} S_{\text{per unit length}} c_{l} = q_{\infty} c c_{l}\quad  c(y) = \frac{L'(y)}{q_{\infty} c_{l}}$$
+This solution gives the concolutsion: <mark style="background: transparent; color: red">for an elliptic lift distribution, the chord must vary elliptically along the span</mark>. <mark style="background: transparent; color: blue">or the wing platform must be elliptical to reach the elliptic lift distribution</mark>. Which is shown below. 
+![[Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-28 19.30.00|550]]
+
+### 5.3.2 The General Lift Distribution 
+we can use  the transformation $y = -\frac{b}{2} \cos \theta$ for the camber line. We also gives the spanwise direction by $\theta$ and use the elliptic lift distribution as : $\Gamma(\theta) = \Gamma_{0} \sin \theta$ 
+$$ \text{General Lift } \Gamma(\theta) \overset{\text{Fourier Expansion}}{\rightarrow }\quad \Gamma(\theta) = 2 b V_{\infty} \sum^{N}_{1} A_{n} \sin n \theta\tag{5.48}$$
+the expansion above must satisfy [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter5 Incompressible flow over finite wings/1-8 Introduction and fundamental Concepts#5.3 Prandtl's Classical Lifting-Line Theory|Fundamental equation of Prandtl's lifting-line theory]], Substituting the $\Gamma(\theta)$ into it and use [[Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-28 20.34.55|the derivation process]] and obtain : 
+$$\alpha_{i}(\theta_{0}) = \frac{\sum_{1}^{N} n A_{n} \sin n \theta_{0}}{\sin \theta_{0}}$$
+$$\boxed{\alpha(\theta_{0}) = \frac{2b}{\pi c(\theta_{0})} \sum_{1}^{N} A_{n}\sin n\theta_{0} + \alpha_{L = 0} (\theta_{0}) + \sum_{1}^{N} n A_{n} \frac{\sin n \theta_{0}}{\sin \theta_{0}}}\tag{5.51}$$
+In the equation above, $\alpha_{L = 0}$ is know by the airfoil properties and the only unknowns are the $A_{n}$'s, then we can write the equation <u>at a given spanwise location</u>. The numerical values that ensure that <mark style="background: transparent; color: red">the general circulation distribution satisfies</mark> [[#5.3 Prandtl's Classical Lifting-Line Theory]]. We give the lifting coefficient of the airfoil by [[#5.3 Prandtl's Classical Lifting-Line Theory|the equation (5.26)]] as : 
+$$C_{L} = \frac{2}{V_{\infty} S} \int_{- \frac{b}{2}}^{\frac{b}{2}}\Gamma(y) dy = \frac{2 b^{2}}{S} \sum_{1}^{N}A_{n}\int_{0}^{\pi}  \sin n \theta \sin \theta  d\theta$$
+we reference the [[📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/基本积分表|integral form of the high-order triangle function]], then 
+$$\small\sum_{1}^{N} A_{n} \int_{0}^{\pi} \sin n \theta \sin \theta = \frac{\pi}{2} A_{1} $$
+then we have the relationship 
+$$\Large\boxed{C_{L}= \frac{b^{2}\pi A_{1}}{S} = A_{1} \pi \text{AR}}$$
+From the [[#5.3 Prandtl's Classical Lifting-Line Theory|equation (5.30)]], we know the expression of the $C_{D,i}$, then use the [[Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-28 21.57.20|Derivation process]], We can reach the result : 
+$$\boxed{C_{D,i} = \frac{C_{L}^{2}}{\pi\text{AR}} (1 + \delta) \qquad \text{where}\quad  \delta = \sum_{2}^{N} n\left(\frac{A_{n}}{A_{1}}\right)^{2}}$$
+we define a<mark style="background: transparent; color: red"> span efficiency factor</mark> by $e = (1 + \delta)^{-1}$(note that $e\leq  1$, for elliptic distribution, $e = 1$), then the equation can be written as: 
+$$\Large\boxed{C_{D,i} = \frac{C_{L}^{2}}{\pi e \text{AR}}}$$
+`````ad-check
+title: conclusion
+collapse: open
+From the derivation above, we know that **the lift distribution which yields the minimum drag** is the **elliptical lift distribution**. 
+`````
+![[Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-29 00.26.53|900]]
+### 5.3.3 Effect of the Aspect ratio 
+we know from [[#5.1 Downwash and Induced Drag]] that the total drag of a fninite wing is the sum of the profile drag coefficient and the <mark style="background: transparent; color: red">induced drag coefficient</mark> : 
+$$C_{D} = c_{d} + \frac{C_{L}^{2}}{\pi e \text{AR}}\qquad C_{D,i} = \frac{C_{L}^{2}}{\pi e \text{AR}}\space \text{induced  drag coefficient}$$
+the variation of $C_{D}$ with $C_{L}$ is a parabolic variation, which is shown in the figure below. 
+![[attachments/Screenshot_20230929_004837_com.microsoft.skydrive.png|700]]
+We consider <mark style="background: transparent; color: red">two wings with different aspect ratio</mark>, which gives 
+$$C_{D,1} - C_{D,2} = \frac{C_{L}^{2}}{\pi e \text{AR}_{1}} - \frac{C_{L}^{2}}{\pi e \text{AR}_{2}}$$
+we consider that when $C_{D, 2}$and$\text{AR}_1$ is fixed, we note if we increase $\text{AR}_2$, $C_{D,1}$ will decrease. In the figure below, we observe the angle between chord line and the relative wind $\alpha$, but the real lift coefficient is a function of $\alpha_{eff}$, then <u>the bottom abscissa of finite elliptic wing is stretched</u>. Also, since there's no induced effects when zero lift, the $\alpha_{L = 0}$ of infinite and finite wings are the same. 
+![[Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-29 01.20.20|550]]
+We know from above that <mark style="background: transparent; color: red">the function of the finite wing is to reduce the lift slope</mark>. 
+$$\frac{dC_{L}}{d (\alpha - \alpha_{i})} = a_{0} \quad \rightarrow\quad  C_{L}= a_{0}(\alpha - \alpha_{i} ) + \text{const} $$
+we know from [[#5.3 Prandtl's Classical Lifting-Line Theory#5.3.1 Elliptic Lift Distribution|Elliptic Lift Distribution]] that for a elliptic wing the $\alpha_i$ can be written as : 
+$$\alpha_{i} = \frac{C_{L}}{\pi \text{AR}} \rightarrow C_{L} = a_{0}\left(\alpha -\frac{C_{L}}{\pi  \text{AR}}\right) + \text{const}$$
+we got (when $\text{AR} \rightarrow \infty, a\rightarrow a_0$) 
+$$\Large\frac{dC_{L}}{d\alpha} = a = \begin{cases}
+\frac{a_{0}}{1 + \frac{a_{0}}{\pi\text{AR}}} \qquad \space \space \space \space \text{Elliptic form} \\ 
+\frac{a_{0}}{1 + \frac{a_{0}}{\pi \text{AR}} (1 + \tau)} \quad \text{General form}\\
+\end{cases}$$
+We note in the equation above, $\tau$ is the **lift efficiency factor**, and in some examples we can assume $\tau = \delta$ (induced drag factor, can be referenced from [[Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-29 00.26.53|Figure]]) also,  $a_{0}$ is a constant (that is the ideal slop for the Infinite wing).

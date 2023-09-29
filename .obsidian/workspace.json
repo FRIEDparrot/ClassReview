@@ -4,28 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "358df5b7c0330593",
+        "id": "da356a2a10488ccd",
         "type": "tabs",
         "children": [
           {
-            "id": "e7bc5b9b798648a5",
+            "id": "46f8fee3ee0940a8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
+                "file": "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c6f1361b77b28af5",
+            "id": "73621cfb2798e5de",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第二章 高周疲劳.md",
+                "file": "📘ClassNotes/⚡Circuit/电路分析基础/第五章 三相电路.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b7e922c0899a6c49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/Markdown & Latex Tutorial/Latex Tutorial/Mathematical Symbols.md",
                 "mode": "source",
                 "source": false
               }
@@ -115,7 +127,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 328.5124969482422
+    "width": 558.5124969482422
   },
   "right": {
     "id": "f7de553c162de521",
@@ -158,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
+                "file": "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
+                "file": "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -220,7 +232,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md"
+                "file": "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md"
               }
             }
           },
@@ -236,7 +248,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 643.5
+    "width": 514.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -258,37 +270,42 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "e7bc5b9b798648a5",
+  "active": "46f8fee3ee0940a8",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第二章 高周疲劳.md",
-    "🐸 Daily Life memo/⌚近期计划书.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter5 Incompressible flow over finite wings/1-8 Introduction and fundamental Concepts.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第四章 振动测试设备与电子仪器.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
-    "🐸 Daily Life memo/考研.md",
-    "🐸 Daily Life memo/需要养成的习惯.md",
-    "🐸 Daily Life memo/社会实践课程.md",
-    "🐸 Daily Life memo/CSDN及公众号教程存档/Python绘制低周疲劳试验滞回环以及应力-循环次数曲线.md",
-    "🐸 Daily Life memo/CSDN以及公众号教程/CSDN 鸽的文章.md",
-    "🐸 Daily Life memo/买书部分.md",
-    "🐸 Daily Life memo/作业部分.md",
+    "Excalidraw/第六章 耦合电感和理想变压器 2023-09-29 16.04.44.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md",
+    "Excalidraw/第六章 耦合电感和理想变压器 2023-09-29 15.43.01.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第五章 三相电路.md",
+    "📘ClassNotes/Markdown & Latex Tutorial/Latex Tutorial/Mathematical Symbols.md",
+    "Excalidraw/第六章 耦合电感和理想变压器 2023-09-29 13.35.38.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第三章 电路基本定理.md",
     "📘ClassNotes/⚡Circuit/电路分析基础/第一章 电路基本概念与定律.md",
     "📘ClassNotes/⚡Circuit/电路分析基础/第二章 电路分析基本方法.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第三章 电路基本定理.md",
-    "Excalidraw/第一章 电路基本概念与定律 2023-09-27 15.59.25.md",
-    "attachments/Pasted Image 20230927155945_485.png",
-    "Excalidraw/第一章 电路基本概念与定律 2023-09-27 15.27.34.md",
-    "Excalidraw/第一章 电路基本概念与定律 2023-09-27 15.05.26.md",
+    "🐸 Daily Life memo/⌚近期计划书.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter5 Incompressible flow over finite wings/1-8 Introduction and fundamental Concepts.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/重要公式/常用图形的面积与形心位置.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/📝Examples/Example1.7.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/📝Examples/Example1.6.md",
+    "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-29 01.20.20.md",
+    "attachments/Pasted Image 20230929084900_773.png",
+    "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-29 00.26.53.md",
+    "attachments/Screenshot_20230929_004837_com.microsoft.skydrive.png",
+    "attachments/Screenshot_20230929_003844_com.microsoft.skydrive.png",
+    "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-28 21.57.20.md",
+    "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-28 20.34.55.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/基本积分表.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第二章 矩形薄板的弯曲.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第一章 绪论.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/4. 极坐标下的经典问题.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/3. 极坐标下基本方程的建立.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/1. 平面问题的基本方程.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/2. 经典的弹性力学应力问题求解.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/补充/平面问题的按位移解法和按应力解法.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/补充/简支梁受均布载荷的问题求解.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md",
+    "attachments/Pasted Image 20230927155945_485.png",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板弯曲变分方程的推导.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板的变形能与余变形能公式导出.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第七章：能量原理/2. 最小势能原理,最小余能原理.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第四章：广义胡克定律/二、弹性应变能函数.md",
-    "Excalidraw/2. 最小势能原理 2022-11-20 19.50.56.excalidraw.md",
     "attachments/Pasted image 20230925171423.png",
     "🐸 Daily Life memo/CSDN以及公众号教程/~$thon绘制低周疲劳试验滞回环以及应力-循环次数曲线.docx",
     "🐸 Daily Life memo/CSDN以及公众号教程/Python绘制低周疲劳试验滞回环以及应力-循环次数曲线.docx",
@@ -299,13 +316,8 @@
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/补充内容",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/补充内容/疲劳极限估计公式推导.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板弯曲问题的双三角级数解(附带例题).pdf",
-    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/电路的Y-△型变换推导.pdf",
-    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/三相电路的电压和电流关系推导.pdf",
     "attachments/IMG_20230919_104343.jpg",
     "attachments/Screenshot_20230918_145202_com.microsoft.skydrive.png",
-    "attachments/Screenshot_20230918_141252_com.microsoft.skydrive.png",
-    "attachments/Screenshot_20230918_135548_com.microsoft.skydrive.png",
-    "attachments/Screenshot_20230918_133027_com.microsoft.skydrive.png",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

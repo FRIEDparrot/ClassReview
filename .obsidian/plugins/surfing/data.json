@@ -54,6 +54,28 @@
         "fileSize": "",
         "icon": {}
       }
+    },
+    {
+      "id": "790f7f091285abde",
+      "parent": 0,
+      "droppable": true,
+      "text": "New Tab",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "4c1ae2a3fdc44f82",
+      "parent": 0,
+      "droppable": true,
+      "text": "google - Google Search",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
     }
   ]
 }

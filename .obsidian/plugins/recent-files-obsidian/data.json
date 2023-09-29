@@ -1,24 +1,156 @@
 {
   "recentFiles": [
     {
-      "basename": "第六章 样本及抽样分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md"
+      "basename": "第六章 耦合电感和理想变压器",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md"
     },
     {
-      "basename": "第二章 高周疲劳",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第二章 高周疲劳.md"
+      "basename": "第六章 耦合电感和理想变压器 2023-09-29 16.04.44",
+      "path": "Excalidraw/第六章 耦合电感和理想变压器 2023-09-29 16.04.44.md"
+    },
+    {
+      "basename": "第六章 耦合电感和理想变压器 2023-09-29 15.43.01",
+      "path": "Excalidraw/第六章 耦合电感和理想变压器 2023-09-29 15.43.01.md"
+    },
+    {
+      "basename": "第五章 三相电路",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第五章 三相电路.md"
+    },
+    {
+      "basename": "Mathematical Symbols",
+      "path": "📘ClassNotes/Markdown & Latex Tutorial/Latex Tutorial/Mathematical Symbols.md"
+    },
+    {
+      "basename": "第六章 耦合电感和理想变压器 2023-09-29 13.35.38",
+      "path": "Excalidraw/第六章 耦合电感和理想变压器 2023-09-29 13.35.38.md"
+    },
+    {
+      "basename": "第三章 电路基本定理",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第三章 电路基本定理.md"
+    },
+    {
+      "basename": "第一章 电路基本概念与定律",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第一章 电路基本概念与定律.md"
+    },
+    {
+      "basename": "第二章 电路分析基本方法",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第二章 电路分析基本方法.md"
     },
     {
       "basename": "⌚近期计划书",
       "path": "🐸 Daily Life memo/⌚近期计划书.md"
     },
     {
-      "basename": "第一章 绪论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md"
-    },
-    {
       "basename": "1-8 Introduction and fundamental Concepts",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter5 Incompressible flow over finite wings/1-8 Introduction and fundamental Concepts.md"
+    },
+    {
+      "basename": "常用图形的面积与形心位置",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/重要公式/常用图形的面积与形心位置.md"
+    },
+    {
+      "basename": "Example1.7",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/📝Examples/Example1.7.md"
+    },
+    {
+      "basename": "Example1.6",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/📝Examples/Example1.6.md"
+    },
+    {
+      "basename": "1-8 Introduction and fundamental Concepts 2023-09-29 01.20.20",
+      "path": "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-29 01.20.20.md"
+    },
+    {
+      "basename": "1-8 Introduction and fundamental Concepts 2023-09-29 00.26.53",
+      "path": "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-29 00.26.53.md"
+    },
+    {
+      "basename": "1-8 Introduction and fundamental Concepts 2023-09-28 21.57.20",
+      "path": "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-28 21.57.20.md"
+    },
+    {
+      "basename": "1-8 Introduction and fundamental Concepts 2023-09-28 20.34.55",
+      "path": "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-28 20.34.55.md"
+    },
+    {
+      "basename": "基本积分表",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/基本积分表.md"
+    },
+    {
+      "basename": "1-8 Introduction and overall  Analysis",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md"
+    },
+    {
+      "basename": "第二章 矩形薄板的弯曲",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第二章 矩形薄板的弯曲.md"
+    },
+    {
+      "basename": "4. 极坐标下的经典问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/4. 极坐标下的经典问题.md"
+    },
+    {
+      "basename": "3. 极坐标下基本方程的建立",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/3. 极坐标下基本方程的建立.md"
+    },
+    {
+      "basename": "1. 平面问题的基本方程",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/1. 平面问题的基本方程.md"
+    },
+    {
+      "basename": "2. 经典的弹性力学应力问题求解",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/2. 经典的弹性力学应力问题求解.md"
+    },
+    {
+      "basename": "平面问题的按位移解法和按应力解法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/补充/平面问题的按位移解法和按应力解法.pdf"
+    },
+    {
+      "basename": "简支梁受均布载荷的问题求解",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/补充/简支梁受均布载荷的问题求解.pdf"
+    },
+    {
+      "basename": "平面薄板问题的方程建立",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md"
+    },
+    {
+      "basename": "Fundamental aerodynamic words",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Fundamental aerodynamic words.md"
+    },
+    {
+      "basename": "1-8 Introduction and fundamental Concepts 2023-09-28 19.30.00",
+      "path": "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-28 19.30.00.md"
+    },
+    {
+      "basename": "第一章 绪论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第一章 绪论.md"
+    },
+    {
+      "basename": "一、流体运动简介",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第三章 流体运动概述/一、流体运动简介.md"
+    },
+    {
+      "basename": "二、圆柱坐标系中的流体力学问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第三章 流体运动概述/二、圆柱坐标系中的流体力学问题.md"
+    },
+    {
+      "basename": "9-16 Applied Concepts",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/9-16 Applied Concepts.md"
+    },
+    {
+      "basename": "1-8 Introduction and fundamental Concepts 2023-09-28 17.22.00",
+      "path": "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-28 17.22.00.md"
+    },
+    {
+      "basename": "第二章 高周疲劳",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第二章 高周疲劳.md"
+    },
+    {
+      "basename": "第六章 样本及抽样分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md"
+    },
+    {
+      "basename": "第一章 绪论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md"
     },
     {
       "basename": "第五章 大数定律以及中心极限定理",
@@ -45,18 +177,6 @@
       "path": "🐸 Daily Life memo/买书部分.md"
     },
     {
-      "basename": "第一章 电路基本概念与定律",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第一章 电路基本概念与定律.md"
-    },
-    {
-      "basename": "第二章 电路分析基本方法",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第二章 电路分析基本方法.md"
-    },
-    {
-      "basename": "第三章 电路基本定理",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第三章 电路基本定理.md"
-    },
-    {
       "basename": "第一章 电路基本概念与定律 2023-09-27 15.59.25",
       "path": "Excalidraw/第一章 电路基本概念与定律 2023-09-27 15.59.25.md"
     },
@@ -69,14 +189,6 @@
       "path": "Excalidraw/第一章 电路基本概念与定律 2023-09-27 15.05.26.md"
     },
     {
-      "basename": "第二章 矩形薄板的弯曲",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第二章 矩形薄板的弯曲.md"
-    },
-    {
-      "basename": "第一章 绪论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第一章 绪论.md"
-    },
-    {
       "basename": "薄板弯曲变分方程的推导",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板弯曲变分方程的推导.pdf"
     },
@@ -87,118 +199,6 @@
     {
       "basename": "2. 最小势能原理,最小余能原理",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第七章：能量原理/2. 最小势能原理,最小余能原理.md"
-    },
-    {
-      "basename": "二、弹性应变能函数",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第四章：广义胡克定律/二、弹性应变能函数.md"
-    },
-    {
-      "basename": "2. 最小势能原理 2022-11-20 19.50.56.excalidraw",
-      "path": "Excalidraw/2. 最小势能原理 2022-11-20 19.50.56.excalidraw.md"
-    },
-    {
-      "basename": "第一章 绪论 2023-09-26 21.58.26",
-      "path": "Excalidraw/第一章 绪论 2023-09-26 21.58.26.md"
-    },
-    {
-      "basename": "Word List1",
-      "path": "📘ClassNotes/🗣️English/Word Notes/Word List1.md"
-    },
-    {
-      "basename": "薄板的大挠度问题",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板的大挠度问题.md"
-    },
-    {
-      "basename": "INSERT_SECOND_DERIVATES",
-      "path": "🗒️Templates/INSERT_SECOND_DERIVATES.md"
-    },
-    {
-      "basename": "INSERT_MIXED_PARTIAL_DERIVATE",
-      "path": "🗒️Templates/INSERT_MIXED_PARTIAL_DERIVATE.md"
-    },
-    {
-      "basename": "1. 变形与应变的概念",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第三章：应变/1. 变形与应变的概念.md"
-    },
-    {
-      "basename": "INSERT_PARTIAL_FRACTION",
-      "path": "🗒️Templates/INSERT_PARTIAL_FRACTION.md"
-    },
-    {
-      "basename": "第三章 物质结构基础",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第三章 物质结构基础.md"
-    },
-    {
-      "basename": "第三章 物质结构基础 2023-09-26 17.05.08",
-      "path": "Excalidraw/第三章 物质结构基础 2023-09-26 17.05.08.md"
-    },
-    {
-      "basename": "第三章 物质结构基础 2023-09-26 16.26.16",
-      "path": "Excalidraw/第三章 物质结构基础 2023-09-26 16.26.16.md"
-    },
-    {
-      "basename": "第十一章 含有运算放大器的电路分析 2023-09-26 15.00.45",
-      "path": "Excalidraw/第十一章 含有运算放大器的电路分析 2023-09-26 15.00.45.md"
-    },
-    {
-      "basename": "第十一章 含有运算放大器的电路分析",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第十一章 含有运算放大器的电路分析.md"
-    },
-    {
-      "basename": "第十一章 含有运算放大器的电路分析 2023-09-26 15.56.17",
-      "path": "Excalidraw/第十一章 含有运算放大器的电路分析 2023-09-26 15.56.17.md"
-    },
-    {
-      "basename": "第十一章 含有运算放大器的电路分析 2023-09-26 15.29.46",
-      "path": "Excalidraw/第十一章 含有运算放大器的电路分析 2023-09-26 15.29.46.md"
-    },
-    {
-      "basename": "第十一章 含有运算放大器的电路分析 2023-09-26 14.47.42",
-      "path": "Excalidraw/第十一章 含有运算放大器的电路分析 2023-09-26 14.47.42.md"
-    },
-    {
-      "basename": "第十一章 含有运算放大器的电路分析 2023-09-26 14.27.07",
-      "path": "Excalidraw/第十一章 含有运算放大器的电路分析 2023-09-26 14.27.07.md"
-    },
-    {
-      "basename": "第十一章 含有运算放大器的电路分析 2023-09-26 09.17.19",
-      "path": "Excalidraw/第十一章 含有运算放大器的电路分析 2023-09-26 09.17.19.md"
-    },
-    {
-      "basename": "第十一章 含有运算放大器的电路分析 2023-09-26 13.52.33",
-      "path": "Excalidraw/第十一章 含有运算放大器的电路分析 2023-09-26 13.52.33.md"
-    },
-    {
-      "basename": "第十一章 含有运算放大器的电路分析 2023-09-26 11.18.20",
-      "path": "Excalidraw/第十一章 含有运算放大器的电路分析 2023-09-26 11.18.20.md"
-    },
-    {
-      "basename": "第四章 低周疲劳",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md"
-    },
-    {
-      "basename": "第二章 高周疲劳 2023-09-26 11.08.35",
-      "path": "Excalidraw/第二章 高周疲劳 2023-09-26 11.08.35.md"
-    },
-    {
-      "basename": "第二章 高周疲劳 2023-09-26 11.05.45",
-      "path": "Excalidraw/第二章 高周疲劳 2023-09-26 11.05.45.md"
-    },
-    {
-      "basename": "第二章 高周疲劳 2023-09-21 11.46.33",
-      "path": "Excalidraw/第二章 高周疲劳 2023-09-21 11.46.33.md"
-    },
-    {
-      "basename": "第十一章 含有运算放大器的电路分析 2023-09-26 10.06.57",
-      "path": "Excalidraw/第十一章 含有运算放大器的电路分析 2023-09-26 10.06.57.md"
-    },
-    {
-      "basename": "马原复习",
-      "path": "📘ClassNotes/🤢politics/马原/马原复习.md"
-    },
-    {
-      "basename": "Pasted image 20230925171423",
-      "path": "attachments/Pasted image 20230925171423.png"
     }
   ],
   "omittedPaths": [],
