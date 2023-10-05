@@ -12,4 +12,4 @@ $$\begin{matrix}
 ..................\hfill \\
 \Pi_{N-K} = f_5 (P_1, P_2,... P_K, P_{N})   \hfill \\
 \end{matrix}\tag{1.26}$$
-The Choice of the repeating variables, $P_1, P_2,.....P_K$ should be such that they include all the $K$ dimensions used in the problem. Also the dependent variable (like $R$ in the equation [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts#1.7 The Buckingham PI theorem (Dimensional Analysis)|eq 1.23]]) should ==appear in only one of== the $\Pi$ products
+The Choice of the repeating variables, $P_1, P_2,.....P_K$ should be such that they include all the $K$ dimensions used in the problem. Also the dependent variable (like $R$ in the equation [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts#1.7 The Buckingham PI theorem (Dimensional Analysis)|eq 1.23]]) should ==appear in only one of== the $\Pi$ products

@@ -37,22 +37,6 @@
   "editor:follow-link": [],
   "editor:insert-embed": [],
   "obsidian-mind-map:app:markmap-preview": [],
-  "obsidian-dictionary-plugin:dictionary-open-language-switcher": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "["
-    }
-  ],
-  "obsidian-dictionary-plugin:dictionary-open-view": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "]"
-    }
-  ],
   "obsidian-languagetool-plugin:ltcheck-text": [],
   "obsidian-languagetool-plugin:ltclear": [
     {
@@ -1411,6 +1395,22 @@
         "Shift"
       ],
       "key": "Enter"
+    }
+  ],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "["
+    }
+  ],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "]"
     }
   ]
 }

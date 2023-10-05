@@ -1,4 +1,4 @@
-> Note: The source is [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts#Dimensionless Force and Moment coefficients|Source]]
+> Note: The source is [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts#Dimensionless Force and Moment coefficients|Source]]
 
 in the freestream, far ahead the body, We define a dimensionless quality called ***Freestream Pressure*** as
 

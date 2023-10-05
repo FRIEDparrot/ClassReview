@@ -4,46 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "da356a2a10488ccd",
+        "id": "7cb6365a67843477",
         "type": "tabs",
         "children": [
           {
-            "id": "46f8fee3ee0940a8",
+            "id": "35ed398cb9e4b537",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
-            "id": "73621cfb2798e5de",
+            "id": "cb49624758207ad5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电路分析基础/第五章 三相电路.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b7e922c0899a6c49",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/Markdown & Latex Tutorial/Latex Tutorial/Mathematical Symbols.md",
+                "file": "🐸 Daily Life memo/CSDN及公众号教程存档/计算流体力学 有限差分法和有限元法.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -55,7 +40,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 50.68163592622293,
+        "dimension": 58.81410256410257,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -95,7 +80,7 @@
       {
         "id": "066eddf15a13dd56",
         "type": "tabs",
-        "dimension": 49.31836407377707,
+        "dimension": 41.18589743589743,
         "children": [
           {
             "id": "db0ad0041a71350b",
@@ -111,7 +96,7 @@
             "state": {
               "type": "surfing-view",
               "state": {
-                "url": "https://chat.openai.com/c/2b70e4a6-b51e-4e14-91f0-79c2267d3538"
+                "url": "https://chat.openai.com/c/fbe14aa3-b637-45e2-a602-ed01a3999b9c"
               }
             }
           },
@@ -127,7 +112,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 558.5124969482422
+    "width": 581.5124969482422
   },
   "right": {
     "id": "f7de553c162de521",
@@ -136,6 +121,7 @@
       {
         "id": "736ec7c11262503f",
         "type": "tabs",
+        "dimension": 37.82051282051282,
         "children": [
           {
             "id": "55e2f6198cbb96c3",
@@ -165,35 +151,6 @@
             }
           },
           {
-            "id": "90c56e3ca15685e0",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "45988039c8b25193",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
             "id": "befa702227dffd48",
             "type": "leaf",
             "state": {
@@ -218,13 +175,49 @@
               "type": "QUICKSHARE_SIDE_VIEW",
               "state": {}
             }
+          },
+          {
+            "id": "f05de46e81e6540c",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "🐸 Daily Life memo/CSDN及公众号教程存档/计算流体力学 有限差分法和有限元法.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.6508459271103795,
+                  "close": true
+                }
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       },
       {
         "id": "bdaa9cad5f6d59b7",
         "type": "tabs",
+        "dimension": 62.17948717948719,
         "children": [
           {
             "id": "7778856753ec014b",
@@ -232,7 +225,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md"
+                "file": "🐸 Daily Life memo/CSDN及公众号教程存档/计算流体力学 有限差分法和有限元法.md"
               }
             }
           },
@@ -243,12 +236,42 @@
               "type": "surfing-tab-tree",
               "state": {}
             }
+          },
+          {
+            "id": "90c56e3ca15685e0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "🐸 Daily Life memo/CSDN及公众号教程存档/计算流体力学 有限差分法和有限元法.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "45988039c8b25193",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "🐸 Daily Life memo/CSDN及公众号教程存档/计算流体力学 有限差分法和有限元法.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 514.5
+    "width": 479.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -270,54 +293,54 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "46f8fee3ee0940a8",
+  "active": "86820ad5b67d3064",
   "lastOpenFiles": [
-    "Excalidraw/第六章 耦合电感和理想变压器 2023-09-29 16.04.44.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md",
-    "Excalidraw/第六章 耦合电感和理想变压器 2023-09-29 15.43.01.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第五章 三相电路.md",
-    "📘ClassNotes/Markdown & Latex Tutorial/Latex Tutorial/Mathematical Symbols.md",
-    "Excalidraw/第六章 耦合电感和理想变压器 2023-09-29 13.35.38.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第三章 电路基本定理.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第一章 电路基本概念与定律.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第二章 电路分析基本方法.md",
-    "🐸 Daily Life memo/⌚近期计划书.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter5 Incompressible flow over finite wings/1-8 Introduction and fundamental Concepts.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/重要公式/常用图形的面积与形心位置.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/📝Examples/Example1.7.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/📝Examples/Example1.6.md",
-    "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-29 01.20.20.md",
+    "📘ClassNotes/⚡Circuit/常见电路英文词汇.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md",
+    "Excalidraw/第四章 半导体器件 2023-10-05 16.29.00.md",
+    "Excalidraw/第四章 半导体器件 2023-10-05 17.26.40.md",
+    "Excalidraw/第四章 半导体器件 2023-10-05 17.33.01.md",
+    "Excalidraw/第四章 半导体器件 2023-10-05 15.20.07.md",
+    "Excalidraw/第四章 半导体器件 2023-10-05 15.26.15.md",
+    "Excalidraw/第四章 半导体器件 2023-10-05 14.38.28.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第二章 流体静力学/流体静力学基本内容.md",
+    "🐸 Daily Life memo/CSDN及公众号教程存档/Python绘制低周疲劳试验滞回环以及应力-循环次数曲线.md",
+    "🐸 Daily Life memo/CSDN及公众号教程存档/计算流体力学 有限差分法和有限元法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/CFD_problem.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 3 Compressible Flow/Chapter7 Compressible flow/1-8 Derivation for Basic equations.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/一、理想流体流动基础.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter2 Derivation of the Governing Equations.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第三章 流体运动概述/一、流体运动简介.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第一章 绪论/1. 流体力学相关定义及假设.md",
+    "Excalidraw/计算流体力学 有限差分法和有限元法 2023-10-05 09.48.48.md",
+    "Excalidraw/粘性流体的运行模型建立 2023-01-16 16.09.18.excalidraw.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第五章 粘性流体运动基础/五、粘性流体的运行模型建立.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter3 Mathematical behavior of partial differential equations.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第三章：应变/1. 变形与应变的概念.md",
+    "Excalidraw/一、流体运动简介 2023-01-14 22.24.39.excalidraw.md",
+    "attachments/Pasted Image 20231004172111_656.jpg",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板问题的里兹法和伽辽金法思路.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/连续简支矩形薄板的挠度计算.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/矩形薄板的叠加法原理示例.pdf",
+    "attachments/Pasted Image 20231003213510_001.jpg",
+    "📘ClassNotes/⚡Circuit/电路分析基础/章节例题/第二章作业题.pdf",
+    "attachments/Pasted Image 20231002171030_478.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 3 Compressible Flow",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 2 Equations for Incompressible Flow",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 3 Compressible Flow/Chapter7 Compressible flow",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/矩形薄板的初参数法求解过程.pdf",
     "attachments/Pasted Image 20230929084900_773.png",
-    "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-29 00.26.53.md",
     "attachments/Screenshot_20230929_004837_com.microsoft.skydrive.png",
     "attachments/Screenshot_20230929_003844_com.microsoft.skydrive.png",
-    "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-28 21.57.20.md",
-    "Excalidraw/1-8 Introduction and fundamental Concepts 2023-09-28 20.34.55.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/基本积分表.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第二章 矩形薄板的弯曲.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/4. 极坐标下的经典问题.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/3. 极坐标下基本方程的建立.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/1. 平面问题的基本方程.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/2. 经典的弹性力学应力问题求解.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/补充/平面问题的按位移解法和按应力解法.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第六章：平面问题/补充/简支梁受均布载荷的问题求解.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md",
     "attachments/Pasted Image 20230927155945_485.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板弯曲变分方程的推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板的变形能与余变形能公式导出.pdf",
     "attachments/Pasted image 20230925171423.png",
-    "🐸 Daily Life memo/CSDN以及公众号教程/~$thon绘制低周疲劳试验滞回环以及应力-循环次数曲线.docx",
-    "🐸 Daily Life memo/CSDN以及公众号教程/Python绘制低周疲劳试验滞回环以及应力-循环次数曲线.docx",
     "attachments/Pasted image 20230925192649.png",
     "attachments/Pasted image 20230925174543.png",
-    "🐸 Daily Life memo/CSDN及公众号教程存档",
-    "attachments/Pasted image 20230921161722.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/补充内容",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/补充内容/疲劳极限估计公式推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板弯曲问题的双三角级数解(附带例题).pdf",
-    "attachments/IMG_20230919_104343.jpg",
-    "attachments/Screenshot_20230918_145202_com.microsoft.skydrive.png",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

@@ -1,12 +1,12 @@
 ## 1. Difference Equation for CFD solution 
 ### (1) Vorticity equation for the Uncompressible Inviscid Flow 
-We note the [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/9-16 The Application Concepts#2.14 Stream Function|Definition of the Stream Function]] at here. also gives that : 
+We note the [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter2 Fundamental Principles and Equations/9-16 The Application Concepts#2.14 Stream Function|Definition of the Stream Function]] at here. also gives that : 
 $$\begin{cases}
 u = \frac{\partial \psi}{\partial y} \\
 v = -\frac{\partial \psi}{\partial x}
 \end{cases} \qquad  d\psi = -v dx + udy$$
 For a 2-D Uncompressible viscid flow, the vorticity is defined as twice of the angular velocity.  
-[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter2 Fundamental Principles and Equations/9-16 The Application Concepts#(2) Vorticity|Definition of the Vorticity]]
+[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter2 Fundamental Principles and Equations/9-16 The Application Concepts#(2) Vorticity|Definition of the Vorticity]]
 $$\xi = \nabla \times V = \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y} = - \frac{\partial^2 \psi}{\partial y^2} - \frac{\partial^2 \psi}{\partial x^2}$$
 so we have the relationship of vorticity and the stream function: 
 $$\boxed{\Large \Delta \psi = -\xi}$$

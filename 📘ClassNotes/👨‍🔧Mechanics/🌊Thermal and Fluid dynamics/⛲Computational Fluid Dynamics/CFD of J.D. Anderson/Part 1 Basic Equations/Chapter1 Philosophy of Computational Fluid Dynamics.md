@@ -4,15 +4,11 @@ for the experiments in which we can simultaneously simulate the higher Mach numb
 
 CFD numerical  methods allow us to study in detail the physics differences between the laminar and turbulent flows. 
 
-For [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts#1.1 Importance of aerodynamics & Examples|blunt body example analysis]], the CFD is a breakthrough in the blunt body problem, and a time dependent approach to the steady state is applied approach to the steady state.
+For [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts#1.1 Importance of aerodynamics & Examples|blunt body example analysis]], the CFD is a breakthrough in the blunt body problem, and a time dependent approach to the steady state is applied approach to the steady state.
 
 `````ad-note
 title: Reference 
 collapse: open
-
-
-
-### 2. Famous CFD international journal
 (1) Computational methods of Applied Mechanics and Engineering
 
 (2) Journal of computational Physics 
@@ -31,7 +27,7 @@ B <--> C
 2. the experiment method have a long period and very high expense 
 
 #### 3. Basic method for CFD
-##### 1) Definition of the computational fluid dynamics 
+##### 1) Definition of the computational fluid dynamics  
 *Computational fluid dynamics is the art of replacing the integrals or the partial derivates in the governing equations with discretized algebraic forms, which is in turn are solved to obtain numbers for the flow field values at discrete points in time and/or space*
 
 CFD is a strong role as a design tool, Along with its role as a research tool.  Along with its  role as  a research tool.  It is a tool for the research of the fluid dynamics and aerodynamics to do business. 
@@ -41,7 +37,7 @@ Derivation can be found in the [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal
 We have the following 3 fundamental physical principles: 
 1. Mass is conserved 
 $$\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho V) = 0$$
-2. <mark style="background: transparent; color: yellow">The Equation of momentum (N-S equation) -> Newton's Second law</mark>
+2. <mark style="background: transparent; color: red">The Equation of momentum (N-S equation) -> Newton's Second law</mark>
 $$ \frac{\partial (\rho \vec{V})}{\partial t} + \left(V\cdot \nabla  \right)(\rho V) =  \rho \vec{f}-\nabla p  + \mathcal{F}_{viscous}$$
 where $\mathcal{F}_{viscous} = \frac{\partial }{\partial x_j}\left[ \mu\left(\frac{\partial u_i }{\partial x_j} + \frac{\partial u_j}{\partial x_i}\right) + \delta_{ij}\lambda \nabla\cdot V \right]$
 for example, in x direction : 
@@ -51,15 +47,6 @@ Nonconservation form :
 $$\rho\frac{D (e + \frac{v^2}{2})}{D t} = \rho \dot{q} + \nabla\cdot  (k\nabla T) + \nabla \cdot (\tau_{ij} \cdot \vec{V}) + \rho \vec{f}\cdot \vec{V}$$
 also we can derive the conservation form :  
 $$\rho\frac{\partial (e + \frac{v^2}{2})}{\partial t} +  \nabla\cdot (\rho \vec{V} (e + \frac{v^2}{2})) = \rho\dot{q} + \nabla\cdot  (k\nabla T) + \nabla \cdot (\tau_{ij} \cdot  \vec{V}) + \rho\vec{f}\vec{V}$$
-
-`````ad-bug
-title: wrong in PPT
-collapse: open
-the $q$ should be fixed as $\dot{q}$
-
-1. the equation  in the PPT in 1.1 has the condition that It is inviscous and uncompressable flow, also the volume force is neglected. 
-2. the term of the volume force shouldn't be neglected
-`````
 
 ##### 3) Basic Steps for CFD analysis
 firstly, we discretize the integral computation in the domain of the governing equation 
@@ -78,8 +65,7 @@ Basic computational method for the analysis of the Fluid Dynamics
 | FVM    | Finite volume method     | [[Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-07 17.07.39\|FVM Method]] | use an approximate function as function of the whole domain, but it's difficult for solving the difficult problems                                                                                                               |
 | FEM    | Finite element method    | [[Chapter1 Philosophy of Computational Fluid Dynamics 2023-03-07 17.03.53\|FEM Method]] | derive the equation through interpolation, and discretize the domain to solve. and construct the function in each element, then build a whole continuous function in the solving domain(solving the linear equations are needed) | 
 
-The most fundamental Thought for the FDM method is <mark style="background: transparent; color: yellow">using the difference quotient as the derivate</mark>
-
+The most fundamental Thought for the FDM method is <mark style="background: transparent; color: yellow">using the difference quotient as the derivate</mark> 
 Concise Steps for CFD computation 
 ```mermaid 
 graph TB 

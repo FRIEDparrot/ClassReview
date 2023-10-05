@@ -1,4 +1,4 @@
-the definition of $p_u, p_l, ....$  and relevant parameters can be found in [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts#1.5 Aerodynamic Forces and moments|1-11 Some Introductory Thoughts]] 
+the definition of $p_u, p_l, ....$  and relevant parameters can be found in [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts#1.5 Aerodynamic Forces and moments|1-11 Some Introductory Thoughts]] 
 and we can find the definition of dimensionless force and moment coefficients [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/♎Important Conclusions and Lists/Dimensionless force and moment coefficients|here]] 
 we can obtain the integral forms of the dimensionless parameters of the force and the moments coefficients:
 $$\boxed{c_n = \frac{1}{c}\left[ \int^{c}_{0} (C_{p,l} -C_{p,u})dx  + \int^{c}_{0}(c_{f,u} \frac{dy_u}{du}  + c_{f,l}\frac{dy_l}{dx})dx \right]} \tag{1.15}$$

@@ -1,5 +1,4 @@
 ## 1. Strong or Classical form of the 1-D boundary problem 
-
 <mark style="background: transparent; color: yellow">Main constituents of a finite element method</mark> for the solution of a boundary-value problems are
 1. The variational or weak statement of the problem 
 2. <mark style="background: transparent; color: yellow">approximate solution of the variational equations</mark> through the use of "Finite Element Method". 
@@ -375,10 +374,9 @@ Then in terms of $\xi$, the shape functions in the local description take on a s
 $$\boxed{N_a(\xi) = \frac{1}{2}(1 + \xi_a \xi) \qquad a = 1, 2}$$
 where $\xi_1 = -1, \xi_2 = 1$ is the local coordinates 
 $$\boxed{x^e (\xi) = \sum^{2}_{a=1} N_a (\xi) x_a^e}$$
-where the superscript $e$ denote a quantity in the local description associated with element number $e$. <mark style="background: transparent; color: yellow">The equation above defines the interpolation between the point</mark> $\xi_1$ and $\xi_2$
-
+where the superscript $e$ denote a quantity in the local description associated with element number $e$. <mark style="background: transparent; color: yellow">The equation above defines the interpolation between the point</mark> $\xi_1$ and $\xi_2$ 
 also note that $\xi_1 = -1\space  \text{and}\space \xi_2 = 1$, then $N_1 = \frac{1 - \xi}{2}, N_2 = \frac{1+ \xi}{2}$, for $\xi = -1, N_2 = 0$ and also $\xi = 1, N_1 = 0$ 
-![[Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 11.16.05|450]]
+![[Chapter 1 One-Dimensional Boundary Value Problem 2023-03-17 11.16.05|650]]
 
 `````ad-summary
 title: The steps for the FEM problems 
@@ -416,9 +414,7 @@ $$f_a^e =\int_{\Omega^e} N_a l dx + \begin{cases}
 0 \qquad \quad\space  e = 2, 3...n_{el}-1 \\
 -k_{a2}^e  q \quad\space  e= n_{el}
 \end{cases}$$
-
 ## 9. Assembly of Global Stiffness Matrix
-
 in a finite element computer program, it's a task of a **"finite element subroutine"** to produce $k^e$ and $f^e$ . where $e = 1,2... \text{to}\space  n_{el}$. from the given data and provide an "assembly subroutine" so that the terms in the $k^e$ and $f^e$ <mark style="background: transparent; color: yellow">can be added to the appropriate locations in</mark> $K$ and $F$, respectively. 
 
 The assembly information is stored in the *location matrix*.  we use $LM$ as it.
@@ -436,6 +432,7 @@ note<mark style="background: transparent; color: yellow"> the element in the tab
 from the $LM$ array, we can deduce the following assembly procedure : 
 
 The nonzero element of each line is indexed in the *location matrix*, for the example above, the first column of the table is 
+
 | ElemNumber\Local ElemNumber | 1(local) | 2(local) |
 | --------------------------- | -------- | -------- |
 | 1 (element)                 | 1        | 2        |
