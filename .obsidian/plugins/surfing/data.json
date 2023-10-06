@@ -76,6 +76,28 @@
         "fileSize": "",
         "icon": {}
       }
+    },
+    {
+      "id": "b690b2468137b5d6",
+      "parent": 0,
+      "droppable": true,
+      "text": "twitter - Google Search",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "7cea12fdcba65559",
+      "parent": 0,
+      "droppable": true,
+      "text": "New Tab",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
     }
   ]
 }

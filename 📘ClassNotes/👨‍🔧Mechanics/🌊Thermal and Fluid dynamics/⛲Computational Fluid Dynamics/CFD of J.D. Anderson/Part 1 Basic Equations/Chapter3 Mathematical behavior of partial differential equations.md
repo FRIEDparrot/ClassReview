@@ -1,21 +1,20 @@
 ## (1) Quasi-Linear partial differential equations 
-The governing equations of the flow is either written in the integral forms or partial differential equations. we firstly examine some mathematical properties of the partial differential form of the partial differential equations themselves. 
+The governing equations of the flow is either written in the integral forms or partial differential equations. we firstly examine some mathematical properties of the partial differential form of the partial differential equations themselves. (reference to [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/第二章 流体力学的基本方程组#(3) 矩阵形式的N-S方程表达式|the matrix form of N-S equation]]) 
 
 We will introduce three types of partial differential equations below : 
-
 for quasi-linear equations : 
 $$\begin{cases}
 a_1 \frac{\partial u}{\partial x} + b_1 \frac{\partial u}{\partial y} + c_1 \frac{\partial v}{\partial x} + d_1\frac{\partial v}{\partial y} = f_1 \\ 
 a_2 \frac{\partial u}{\partial x} + b_2\frac{\partial u}{\partial y} + c_2\frac{\partial v}{\partial x} + d_2 \frac{\partial v}{\partial y} = f_2
 \end{cases}\tag{3.1}$$
-We consider any point in the $xOy$ plane. at any given points, there is a unique value of $u$ and $v$, then we can make a strange statement by *considering any given point in this plane*. For the point $P$ on the plane, we can <mark style="background: transparent; color: yellow">seek the lines through this point</mark> along with **derivates** of $u$ and $v$ are ***indeterminate*** and across which may be ***discontinuous***. these lines are called <mark style="background: #ADCCFFA6;">Characteristic lines</mark>. 
-To Find the ***Characteristic lines***, we can write the total differential of the continuous function : 
+We consider any point in the $xOy$ plane. at any given points, there is a unique value of $u$ and $v$, then we can make a strange statement by *considering any given point in this plane*. For the point $P$ on the plane, we can <mark style="background: transparent; color: red">seek the lines through this point</mark> along with **derivates** of $u$ and $v$ are ***indeterminate*** and across which may be ***discontinuous***. these lines are called <mark style="background: #ADCCFFA6;">Characteristic lines</mark>. 
+To Find the ***Characteristic lines***, we can write the total differential of the continuous function: 
 $$\begin{cases}
 du = \frac{\partial u}{\partial x} dx + \frac{\partial u}{\partial y}dy \\
 dv = \frac{\partial v}{\partial x} dx + \frac{\partial v}{\partial y}dy
 \end{cases}\tag{3.2}$$
-![[Excalidraw/Chapter3 Mathematical behavior of partial differential equations 2023-04-07 08.55.00|300]]
-then we can write the equation $(4.1)$ and $(4.2)$ together in matrix form : 
+![[Excalidraw/Chapter3 Mathematical behavior of partial differential equations 2023-04-07 08.55.00|400]]
+then we can write the equation $(4.1)$ and $(4.2)$ together in matrix form: 
 $$\left[\begin{matrix}
 a_1 & b_1 & c_1 & d_1 \\
 a_2 & b_2 & c_2 & d_2 \\
@@ -33,7 +32,7 @@ f_1 \\ f_2 \\ du \\ dv
 \end{matrix}\right]$$
 we can let $[A]$ denote the matrix above. 
 
-Using the <mark style="background: transparent; color: yellow">Cramer's rule</mark>, we can solve it by replacing each column with the right hand side $\left[\begin{matrix} f_1 & f_2 & du & dv\end{matrix}\right]^T$, and  for example, we can use a matrix replace its first column by the right column and solve $\frac{\partial u}{\partial x}$ as below : 
+Using the <mark style="background: transparent; color: red">Cramer's rule</mark>, we can solve it by replacing each column with the right hand side $\left[\begin{matrix} f_1 & f_2 & du & dv\end{matrix}\right]^T$, and  for example, we can use a matrix replace its first column by the right column and solve $\frac{\partial u}{\partial x}$ as below : 
 $$B = \left[\begin{matrix}
 f_1 & b_1 & c_1 & d_1 \\
 f_2 & b_2 & c_2 & d_2 \\
@@ -41,7 +40,6 @@ du & dy & 0 & 0 \\
 dv& 0 & dx & dy
 \end{matrix}\right] \qquad \frac{\partial u}{\partial x} = \frac{|B|}{|A|}$$
 However, there's *one major exception* for this problem if $|A| =0$ 
-
 that is , 
 $$\left[\begin{matrix}
 a_1 & b_1 & c_1 & d_1 \\

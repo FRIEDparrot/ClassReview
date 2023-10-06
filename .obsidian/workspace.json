@@ -4,19 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "7cb6365a67843477",
+        "id": "5b2bb956af66d662",
         "type": "tabs",
+        "dimension": 36.68139815186822,
         "children": [
           {
-            "id": "35ed398cb9e4b537",
+            "id": "ac34b7d16e584f48",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
-            "id": "cb49624758207ad5",
+            "id": "8a774c598a86bf98",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -29,6 +34,56 @@
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "c7da2be694f2502c",
+        "type": "tabs",
+        "dimension": 34.63238248292487,
+        "children": [
+          {
+            "id": "a543fcfc6f37f24a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter3 Mathematical behavior of partial differential equations.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f4804665457342ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "8fd867c5bbaf3f96",
+        "type": "tabs",
+        "dimension": 28.68621936520691,
+        "children": [
+          {
+            "id": "5d967559ad9bb7f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/第一章 偏微分方程概念与分类.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -112,7 +167,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 581.5124969482422
+    "width": 390.50052642822266,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -205,7 +261,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.6508459271103795,
+                  "scale": 0.6083134845437689,
                   "close": true
                 }
               }
@@ -270,7 +326,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 479.5,
+    "width": 387.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -293,35 +349,41 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "86820ad5b67d3064",
+  "active": "8a774c598a86bf98",
   "lastOpenFiles": [
-    "📘ClassNotes/⚡Circuit/常见电路英文词汇.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter3 Mathematical behavior of partial differential equations.md",
+    "🐸 Daily Life memo/CSDN及公众号教程存档/计算流体力学 有限差分法和有限元法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/第一章 偏微分方程概念与分类.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md",
+    "Excalidraw/计算流体力学 有限差分法和有限元法 2023-10-06 15.04.48.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/CFD_problem.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/声速的推导过程.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/第二章 流体力学的基本方程组.md",
+    "attachments/Pasted image 20231006112737.png",
+    "Excalidraw/一、流体运动简介 2023-01-14 20.15.51.excalidraw.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第三章 流体运动概述/一、流体运动简介.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/第三章 双曲型方程组及其间断解.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/复习课程与考试要点.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter2 Formulation of 2 and 3D Boundary Value Problems.md",
+    "Excalidraw/计算流体力学 有限差分法和有限元法 2023-10-05 09.48.48.md",
+    "🐸 Daily Life memo/⌚近期计划书.md",
+    "🐸 Daily Life memo/国庆假期任务.md",
     "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md",
+    "Excalidraw/第四章 半导体器件 2023-10-06 01.05.32.md",
+    "Excalidraw/第四章 半导体器件 2023-10-05 22.25.31.md",
+    "attachments/qq_pic_merged_1696515867465.jpg.~tmp",
+    "attachments/qq_pic_merged_1696515867465.jpg",
+    "Excalidraw/第四章 半导体器件 2023-10-05 21.03.02.md",
+    "📘ClassNotes/⚡Circuit/常见电路英文词汇.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/MindMap for CFD.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/补充/Euler方程组的基本微分格式推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/补充/2.1基本方程组的分类.pdf",
     "Excalidraw/第四章 半导体器件 2023-10-05 16.29.00.md",
     "Excalidraw/第四章 半导体器件 2023-10-05 17.26.40.md",
     "Excalidraw/第四章 半导体器件 2023-10-05 17.33.01.md",
     "Excalidraw/第四章 半导体器件 2023-10-05 15.20.07.md",
-    "Excalidraw/第四章 半导体器件 2023-10-05 15.26.15.md",
-    "Excalidraw/第四章 半导体器件 2023-10-05 14.38.28.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第二章 流体静力学/流体静力学基本内容.md",
-    "🐸 Daily Life memo/CSDN及公众号教程存档/Python绘制低周疲劳试验滞回环以及应力-循环次数曲线.md",
-    "🐸 Daily Life memo/CSDN及公众号教程存档/计算流体力学 有限差分法和有限元法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/CFD_problem.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 3 Compressible Flow/Chapter7 Compressible flow/1-8 Derivation for Basic equations.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第四章 理想流体运动基础/一、理想流体流动基础.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter2 Derivation of the Governing Equations.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第三章 流体运动概述/一、流体运动简介.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第一章 绪论/1. 流体力学相关定义及假设.md",
-    "Excalidraw/计算流体力学 有限差分法和有限元法 2023-10-05 09.48.48.md",
-    "Excalidraw/粘性流体的运行模型建立 2023-01-16 16.09.18.excalidraw.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第五章 粘性流体运动基础/五、粘性流体的运行模型建立.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter3 Mathematical behavior of partial differential equations.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第三章：应变/1. 变形与应变的概念.md",
-    "Excalidraw/一、流体运动简介 2023-01-14 22.24.39.excalidraw.md",
     "attachments/Pasted Image 20231004172111_656.jpg",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板问题的里兹法和伽辽金法思路.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/连续简支矩形薄板的挠度计算.pdf",
@@ -330,17 +392,11 @@
     "📘ClassNotes/⚡Circuit/电路分析基础/章节例题/第二章作业题.pdf",
     "attachments/Pasted Image 20231002171030_478.png",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 3 Compressible Flow",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 2 Equations for Incompressible Flow",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 3 Compressible Flow/Chapter7 Compressible flow",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/矩形薄板的初参数法求解过程.pdf",
     "attachments/Pasted Image 20230929084900_773.png",
     "attachments/Screenshot_20230929_004837_com.microsoft.skydrive.png",
     "attachments/Screenshot_20230929_003844_com.microsoft.skydrive.png",
     "attachments/Pasted Image 20230927155945_485.png",
     "attachments/Pasted image 20230925171423.png",
-    "attachments/Pasted image 20230925192649.png",
-    "attachments/Pasted image 20230925174543.png",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

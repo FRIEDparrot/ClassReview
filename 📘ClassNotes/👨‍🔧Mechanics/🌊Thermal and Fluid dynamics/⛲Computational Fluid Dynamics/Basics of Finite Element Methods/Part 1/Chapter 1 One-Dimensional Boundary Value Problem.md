@@ -1,13 +1,13 @@
 ## 1. Strong or Classical form of the 1-D boundary problem 
-<mark style="background: transparent; color: yellow">Main constituents of a finite element method</mark> for the solution of a boundary-value problems are
+<mark style="background: transparent; color: red">Main constituents of a finite element method</mark> for the solution of a boundary-value problems are
 1. The variational or weak statement of the problem 
-2. <mark style="background: transparent; color: yellow">approximate solution of the variational equations</mark> through the use of "Finite Element Method". 
+2. <mark style="background: transparent; color: red">approximate solution of the variational equations</mark> through the use of "Finite Element Method". 
 
 Firstly we suppose we want to solute the following differential equations as : 
 $$u_{,xx} + l = 0\tag{1.1.1}$$
 This equation is the governing equation of the ==transverse displacement== of a string in tension. And this equation also can be considered as governing equation for  ==longitudinal displacement== of an elastic rod. 
 
-<mark style="background: transparent; color: yellow">Note that the comma stands for differential here</mark> ($u_{xx} = \frac{d^2 u}{d x^2}$)， and $l$ is a given smooth, scalar-valued function defined on the unit interval. 
+<mark style="background: transparent; color: red">Note that the comma stands for differential here</mark> ($u_{xx} = \frac{d^2 u}{d x^2}$)， and $l$ is a given smooth, scalar-valued function defined on the unit interval. 
 $$l : [0,1] \rightarrow  R$$
 where $[0,1]$ is unit interval. For each $x\in [0,1], l(x)\in R$. Also, we have that $[0,1]$ is said to be the ***domain*** of $l$ and $R$ is the ***range***. 
 we also use
@@ -47,7 +47,7 @@ collapse: open
 The functions that satisfy the equation $(1.3.1)$ is called $H^1-\text{functions}$, also we denote that $u$ is a solution of $H^1$ as $u \in H^1([0,1])$ or $u \in H^1$. 
 `````
 
-Thus <mark style="background: transparent; color: yellow">the collection of trail solutions</mark>, denoted by $\delta$, ==consists of all functions which have square-integrable derivates and  take on the value== at $x =1$, can be written as :
+Thus <mark style="background: transparent; color: yellow">the collection of trail solutions</mark>, denoted by $\delta$, ==consists of all functions which have square-integrable derivates and  take on the value== at $x =1$, can be written as : 
 $$\delta = \left\{u | u \in H^1, u(1) = q \right\}$$
 
 2. weighting functions 
@@ -131,7 +131,6 @@ $$\begin{matrix}
 \text{if} \space w^h \in  \mathcal{V}^h, \text{then} \space w^h \in \mathcal{V}
 \end{matrix}$$
 The collections, $\delta, \mathcal{V},\delta^h, \mathcal{V}^h$ are often referred to as ***function spaces***
-
 #### 2) Galerkin method
 since the collection $\mathcal{V}^h$ is given, to each member $v^h\in \mathcal{V}^h$, we will construct a function $u^h \in \delta^h$ by 
 $$u^h = v^h + q^h\tag{1.5.5}$$
@@ -146,7 +145,6 @@ $$\Large (G): \quad \begin{cases}
 a(w^h, v^h) = (w^h, l) + w^h(0) h - a(w^h, q^h) 
 \end{cases}\tag{1.5.9}$$
 This equation is sometimes referred to as ***Galerkin equation***
-
 Approximation methods of the type considered are examples of so-called ***weighted residual methods***. 
 
 ## 4. Matrix Equations, Stiffness Matrix $K$

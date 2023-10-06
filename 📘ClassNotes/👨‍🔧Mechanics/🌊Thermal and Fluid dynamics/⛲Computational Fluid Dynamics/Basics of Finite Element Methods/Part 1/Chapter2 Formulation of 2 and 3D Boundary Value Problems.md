@@ -79,9 +79,7 @@ or write into the tensor form:
 $$\Large\boxed{u^{(e)} = u_i^{(e)} \Phi_i^{(e)}}$$
 
 ##### 3. Characteristic Functions of the Element 
-
 by substituting the $u_i^{(e)}$ into [[#1. the derivation of the weak form|the weak form equation]], then using the process of derivation [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of 2D characteristic functions.pdf|Derivation of 2D characteristic functions.pdf]]
-
 we have 
 $$A_{ij}^{(e)} u_j^{(e)} = f_i^{(e)}$$
 where 
@@ -136,8 +134,7 @@ u|_{\Gamma_1} = u_1 \\
 \end{cases}$$
 since the coefficient of the second part is not a constant, which <mark style="background: transparent; color: yellow">denotes the convection term</mark>, the equation is not a linear equation. 
 
-using the derivation process : 
-[[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of Nonlinear steady problem.pdf|Derivation of Nonlinear steady problem.pdf]]
+using the derivation process : [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Implements/Derivation of Nonlinear steady problem.pdf|Derivation of Nonlinear steady problem.pdf]]
 
 we can derivate the weak form of the problem as : 
 $$\int_{\Omega} \left[\alpha \frac{\partial u}{\partial x}\frac{\partial (\delta u)}{\partial x} - \frac{u^2}{2} \frac{\partial (\delta u)}{\partial x} - p \delta u \right]d\Omega = \int_{\Gamma_2}\left[\alpha \frac{\partial u}{\partial x} - \frac{u^2}{2}\right]\delta u d\Gamma$$
