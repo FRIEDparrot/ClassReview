@@ -6,7 +6,7 @@
       {
         "id": "5b2bb956af66d662",
         "type": "tabs",
-        "dimension": 36.68139815186822,
+        "dimension": 42.386500602651665,
         "children": [
           {
             "id": "ac34b7d16e584f48",
@@ -38,8 +38,18 @@
       {
         "id": "c7da2be694f2502c",
         "type": "tabs",
-        "dimension": 34.63238248292487,
+        "dimension": 57.613499397348335,
         "children": [
+          {
+            "id": "81d17761b3c46336",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/计算流体力学 有限差分法和有限元法 2023-10-06 17.44.30.md"
+              }
+            }
+          },
           {
             "id": "a543fcfc6f37f24a",
             "type": "leaf",
@@ -63,14 +73,7 @@
                 "source": false
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "8fd867c5bbaf3f96",
-        "type": "tabs",
-        "dimension": 28.68621936520691,
-        "children": [
+          },
           {
             "id": "5d967559ad9bb7f8",
             "type": "leaf",
@@ -80,6 +83,16 @@
                 "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/第一章 偏微分方程概念与分类.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "cbc003a135159b81",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Chapter3 Mathematical behavior of partial differential equations 2023-04-11 16.28.45.md"
               }
             }
           }
@@ -238,7 +251,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🐸 Daily Life memo/CSDN及公众号教程存档/计算流体力学 有限差分法和有限元法.md",
+                "file": "Excalidraw/计算流体力学 有限差分法和有限元法 2023-10-06 17.44.30.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -281,7 +294,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🐸 Daily Life memo/CSDN及公众号教程存档/计算流体力学 有限差分法和有限元法.md"
+                "file": "Excalidraw/计算流体力学 有限差分法和有限元法 2023-10-06 17.44.30.md"
               }
             }
           },
@@ -299,7 +312,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🐸 Daily Life memo/CSDN及公众号教程存档/计算流体力学 有限差分法和有限元法.md",
+                "file": "Excalidraw/计算流体力学 有限差分法和有限元法 2023-10-06 17.44.30.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -316,7 +329,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🐸 Daily Life memo/CSDN及公众号教程存档/计算流体力学 有限差分法和有限元法.md",
+                "file": "Excalidraw/计算流体力学 有限差分法和有限元法 2023-10-06 17.44.30.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -349,12 +362,15 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "8a774c598a86bf98",
+  "active": "81d17761b3c46336",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter3 Mathematical behavior of partial differential equations.md",
     "🐸 Daily Life memo/CSDN及公众号教程存档/计算流体力学 有限差分法和有限元法.md",
+    "Excalidraw/计算流体力学 有限差分法和有限元法 2023-10-06 17.44.30.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/第一章 偏微分方程概念与分类.md",
+    "Excalidraw/Chapter3 Mathematical behavior of partial differential equations 2023-04-11 16.28.45.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter3 Mathematical behavior of partial differential equations.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md",
+    "Excalidraw/计算流体力学 有限差分法和有限元法 2023-10-06 16.04.12.md",
     "Excalidraw/计算流体力学 有限差分法和有限元法 2023-10-06 15.04.48.md",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/CFD_problem.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/声速的推导过程.pdf",
@@ -381,9 +397,6 @@
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/补充/Euler方程组的基本微分格式推导.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/补充/2.1基本方程组的分类.pdf",
     "Excalidraw/第四章 半导体器件 2023-10-05 16.29.00.md",
-    "Excalidraw/第四章 半导体器件 2023-10-05 17.26.40.md",
-    "Excalidraw/第四章 半导体器件 2023-10-05 17.33.01.md",
-    "Excalidraw/第四章 半导体器件 2023-10-05 15.20.07.md",
     "attachments/Pasted Image 20231004172111_656.jpg",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板问题的里兹法和伽辽金法思路.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/连续简支矩形薄板的挠度计算.pdf",

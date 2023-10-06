@@ -49,7 +49,7 @@ dx & dy & 0 & 0 \\
 \end{matrix}\right] = (a_1 c_2 - a_2 c_1) dy^2 - (a_1 d_2 - a_2 d_1 + b_1 c_2 - b_2 c_1)dxdy + (b_1 d_2 - b_2 d_1)(dx^2) = 0 $$
 If we expand the determinant and divide each side by $(dx)^2$ then we have 
 $$(a_1 c_2 - a_2 c_1)(\frac{dy}{dx})^2 - (a_1 d_2 - a_2 d_1 + b_1 c_2 - b_2 c_1) \frac{dy}{dx} + (b_1d_2 - b_2 d_1)  = 0 $$
-we will easily solve the $\frac{dy}{dx}$ as :
+we will easily solve the $\frac{dy}{dx}$ as : 
 $$\frac{-b + \sqrt{b^2 - 4ac}}{2a}$$
 where 
 $$\begin{matrix}
@@ -97,21 +97,20 @@ then we can find the eigenvalue of the matrix $[N]$ (note that the eigen value o
 
 ## (3) The Mathematical Behavior of the equations
 ### 1. Hyperbolic Equations
-we consider a given point $P$ in the plane, and there are<mark style="background: transparent; color: yellow"> two real characteristic curves</mark> through the Point $P$, then we can label the left and right running characteristics respectively. 
-![[Excalidraw/Chapter3 Mathematical behavior of partial differential equations 2023-04-11 16.28.45|300]]
+we consider a given point $P$ in the plane, and there are<mark style="background: transparent; color: red"> two real characteristic curves</mark> through the Point $P$, then we can label the left and right running characteristics respectively. 
+![[Excalidraw/Chapter3 Mathematical behavior of partial differential equations 2023-04-11 16.28.45|500]]
 In the picture above, if we set up a small disturbance at point $P$, then this disturbance is felt at every point within the right region between the two characteristics. 
 the solution can be reached by "marching forward" in the distance $x$ 
 we illustrate another example of hyperbolic examples as below :
 ![[attachments/Screenshot_20230411_164956_com.microsoft.skydrive.png|400]]
-The wedge angle equal to the body angle at the nose relative to the freestream direction, and also the characteristic lines are equal to the shape of the shock wave (another is the same line as the wing)
+The wedge angle equal to the body angle at the nose relative to the freestream direction, and also the characteristic lines are equal to the shape of the shock wave (another is the same line as the wing) 
 ![[attachments/Screenshot_20230411_165650_com.microsoft.skydrive.png|450]]
 
 ### 2. Parabolic Equations 
-We consider a given point $P$ in the plane, and since we are dealing with the parabolic equation, <mark style="background: transparent; color: yellow">There is only one characteristic direction through the point P, this the initial conditions are given along the curves ab and cd</mark> 
+We consider a given point $P$ in the plane, and since we are dealing with the parabolic equation, <mark style="background: transparent; color: red">There is only one characteristic direction through the point P, this the initial conditions are given along the curves ab and cd</mark> 
 ![[Excalidraw/Chapter3 Mathematical behavior of partial differential equations 2023-04-11 17.10.01|300]]
-
 ### 3. Boundary-Layer Flows
-under the assumption that the boundary layer is thin and the Reynolds number is large (i.e. length $L$ is large). Then the Navier-Stokes equations reduce to an approximate set equations, that is, ***Boundary Layer Equations***, suffice it to say that <mark style="background: transparent; color: yellow">the boundary layer equations are parabolic equations </mark>
+under the assumption that the boundary layer is thin and the Reynolds number is large (i.e. length $L$ is large). Then the Navier-Stokes equations reduce to an approximate set equations, that is, ***Boundary Layer Equations***, suffice it to say that <mark style="background: transparent; color: red">the boundary layer equations are parabolic equations </mark>
 $$Re = \frac{\rho_{\infty} V_{\infty} L}{\mu_{\infty}}$$
 ![[Excalidraw/Chapter3 Mathematical behavior of partial differential equations 2023-04-11 17.25.40|300]]
 
@@ -122,7 +121,7 @@ collapse: open
 `````
 
 ### 4. Elliptic Equations 
-For the elliptic equations in two independent variables $x$ and $y$, then the $xy$ plane is sketched in the following figure. If we jab the point P and <mark style="background: transparent; color: yellow">the major mathematical characteristic of elliptic equations</mark> is that the $P$ ==influences all points in the domain==. 
+For the elliptic equations in two independent variables $x$ and $y$, then the $xy$ plane is sketched in the following figure. If we jab the point P and <mark style="background: transparent; color: red">the major mathematical characteristic of elliptic equations</mark> is that the $P$ ==influences all points in the domain==. 
 ![[Excalidraw/Chapter3 Mathematical behavior of partial differential equations 2023-04-11 17.36.53|200]]
 In that case, the boundary condition must be applied over the entire boundary $abcd$. 
 

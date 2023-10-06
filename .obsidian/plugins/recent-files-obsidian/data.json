@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "计算流体力学 有限差分法和有限元法 2023-10-06 17.44.30",
+      "path": "Excalidraw/计算流体力学 有限差分法和有限元法 2023-10-06 17.44.30.md"
+    },
+    {
       "basename": "计算流体力学 有限差分法和有限元法",
       "path": "🐸 Daily Life memo/CSDN及公众号教程存档/计算流体力学 有限差分法和有限元法.md"
     },
     {
-      "basename": "Chapter3 Mathematical behavior of partial differential equations",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter3 Mathematical behavior of partial differential equations.md"
-    },
-    {
       "basename": "第一章 偏微分方程概念与分类",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/第一章 偏微分方程概念与分类.md"
+    },
+    {
+      "basename": "Chapter3 Mathematical behavior of partial differential equations 2023-04-11 16.28.45",
+      "path": "Excalidraw/Chapter3 Mathematical behavior of partial differential equations 2023-04-11 16.28.45.md"
+    },
+    {
+      "basename": "Chapter3 Mathematical behavior of partial differential equations",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter3 Mathematical behavior of partial differential equations.md"
     },
     {
       "basename": "Chapter 1 One-Dimensional Boundary Value Problem",
@@ -191,14 +199,6 @@
     {
       "basename": "二、弹性应变能函数",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第四章：广义胡克定律/二、弹性应变能函数.md"
-    },
-    {
-      "basename": "一、广义胡克定律,工程弹性常数",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md"
-    },
-    {
-      "basename": "2.主应力和主方向，球张量，偏张量",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第二章：应力/2.主应力和主方向，球张量，偏张量.md"
     }
   ],
   "omittedPaths": [],
