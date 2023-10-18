@@ -1412,5 +1412,14 @@
       ],
       "key": "]"
     }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_CHI_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "K"
+    }
   ]
 }

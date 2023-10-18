@@ -35,7 +35,7 @@ then the time difference of the equation by :
 $$\left(\frac{\partial T}{\partial t}\right)^n_i = \frac{T_i^{n+1} - T_i^n}{\Delta  t} - \left(\frac{\partial^2 T}{\partial t^2}\right)\frac{\Delta  t}{2} + .....$$
 and also : 
 $$\frac{\partial^2 T}{\partial x^2} = \frac{T_{i+1}^n + T_{i-1}^n - 2T_{i}^n}{\Delta  x}$$
-Note that : <mark style="background: transparent; color: yellow">The i in the equation above is the location in the space (or the number of the node), and n is the time</mark>
+Note that : <mark style="background: transparent; color: red">The i in the equation above is the location in the space (or the number of the node), and n is the time</mark> 
 The form of the equation above is the difference form which ==**use the forward step of time**== and **==the central step of the space==**
 
 also note the Truncation error for the equation above is $O(\Delta t, \Delta x^2)$
@@ -67,7 +67,7 @@ $$AT_1 - BT_2 + AT_3  = K_2$$
 where: 
 $$A = \frac{\alpha \Delta t}{2(\Delta x)^2} \qquad B = 1 + \frac{\alpha \Delta  t}{(\Delta x)^2} \qquad K_i  = -T_i^n - \frac{\alpha \Delta t}{2(\Delta  x^2)}\left(T^{n}_{i-1} -2 T_{i}^{n} + T_{i+1}^{n}\right)$$
 thus, in the picture below : 
-![[Excalidraw/Chapter4 Basic aspects of discretization 2023-04-12 22.14.17|300]]
+![[Excalidraw/Chapter4 Basic aspects of discretization 2023-04-12 22.14.17|500]]
 the equation at point 2 : 
 $$AT_1- BT_2 + AT_3 = K_2$$
 we can also denote the $K_2 - AT_3$ by $K_2'$, then 
@@ -91,9 +91,7 @@ T_2 \\ T_3 \\ T_4 \\ T_5 \\ T_6
 K'_2  \\ K_3 \\ K_4 \\ K_5 \\K_6'
 \end{matrix}\right]$$
 On the matrix above, the coefficient matrix is a *tridiagonal matrix*
-
-On the basis of the above example, <mark style="background: transparent; color: yellow">an implicit approach is more involved than an explicit approach</mark>
-
+On the basis of the above example, <mark style="background: transparent; color: red">an implicit approach is more involved than an explicit approach</mark>
 #### 2. The Thermal diffusivity equation 
 The thermal diffusivity equation is presented as : 
 $$\frac{\partial T}{\partial t} = \alpha(T) \frac{\partial^2 T}{\partial x^2}$$
@@ -108,7 +106,7 @@ If $\Delta t$ is taken larger than the limit imposed, <mark style="background: t
 
 However, for the implicit methods, some implicit methods are ***unconditionally stable***.
 
-Also note that an implicit method using large values of $\Delta t$ <mark style="background: transparent; color: yellow">may not accurately define the timewise variation of the flow field</mark>. In this situation, the advantage og an implicit approach may be totally negated  
+Also note that an implicit method using large values of $\Delta t$ <mark style="background: transparent; color: red">may not accurately define the timewise variation of the flow field</mark>. In this situation, the advantage og an implicit approach may be totally negated  
 `````
 
 ## 5. Stability and Error Analysis
@@ -123,11 +121,10 @@ $$\begin{cases}
 The stability of the equation is also called ***the Convergence of Equation***
 the Convergence of difference equation is defined as : **When the step approaches to zero, the solution of the difference can approach the solution of the differential equation.**
 
-there are generally two types of Convergence i.e. Absolute Convergence and Conditional Convergence (which means <mark style="background: transparent; color: yellow">the equation only converge when some conditions are satisfied</mark>). 
+there are generally two types of Convergence i.e. Absolute Convergence and Conditional Convergence (which means <mark style="background: transparent; color:red">the equation only converge when some conditions are satisfied</mark>). 
 
-We say a solution method is <mark style="background: transparent; color: lime">unstable if the increment in the marching direction exceeded some Prescribed value.</mark>
-
-we still use the 1-D heat conduction equation as example 
+We say a solution method is <mark style="background: transparent; color: red">unstable if the increment in the marching direction exceeded some Prescribed value.</mark>
+we still use the 1-D heat conduction equation as example  
 $$\frac{\partial T}{\partial t} = \alpha\frac{\partial^2 T}{\partial t^2}$$
 <mark style="background: transparent; color: orange">The numerical solution of the equation is influenced by two types of errors, which is : </mark>
 1. ***Discretization Error*** : the difference between the exact solution and analytical solution of the partial differential equation. (<mark style="background: transparent; color: orange">The error is the truncation error for the difference equation plus the errors introduced by the numerical treatment of the boundary conditions</mark>)
@@ -143,7 +140,7 @@ A-D = \text{Discretization error} \\
 \end{cases}$$
 so numerical solution of the computer can be written as the sum of the 
 $$N = D + \epsilon$$
-then we call the part $\epsilon$ , i.e. <mark style="background: transparent; color: yellow">The round-off error, is called the error of the equation</mark>, we simply write it as the $e$ later. 
+then we call the part $\epsilon$ , i.e. <mark style="background: transparent; color: red">The round-off error, is called the error of the equation</mark>, we simply write it as the $e$ later. 
 ***Solution is stable if :*** 
 $$\left| \frac{e^{n+1}_i}{e^{n}_i}\right|\leq  1$$
 or we can expand the error $e_{i}^n$ as a continuous function $Z(x,t)$, if 

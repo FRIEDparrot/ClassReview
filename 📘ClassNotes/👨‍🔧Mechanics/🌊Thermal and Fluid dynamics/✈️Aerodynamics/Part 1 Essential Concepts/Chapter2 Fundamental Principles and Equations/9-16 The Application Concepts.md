@@ -208,7 +208,7 @@ In addition, since $\Delta \bar{\psi}$ denotes the mass flow between two streaml
 ## 2.15 Velocity Potential 
 for a irrotational flow, we have $\nabla \times V$ is 0s
 we can refer the [definition in wiki](https://en.wikipedia.org/wiki/Velocity_potential)
-then if $\nabla \times V=0$ for a flow which is satisfies [[2. 解析函数|the Cauchy-Riemann Equation]] (i.e. is an analytic function):
+then if $\nabla \times V=0$ for a flow which is satisfies [[📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第二章 解析函数|the Cauchy-Riemann Equation]] (i.e. is an analytic function):
 $$\frac{\partial u}{\partial y} = \frac{\partial v}{\partial x}$$
 then we can find a function $\phi$ with $\frac{\partial \phi}{\partial x} =u,\frac{\partial \phi}{\partial y} = v$, s.t 
 $$\boxed{\Large V = \nabla \phi} \qquad \text{or} \qquad\boxed{u = \frac{\partial \phi}{\partial x}, v= \frac{\partial \phi}{\partial y}, w= \frac{\partial \phi}{\partial z}}\tag{2.154}$$

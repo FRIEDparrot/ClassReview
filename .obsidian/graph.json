@@ -2,7 +2,7 @@
   "collapse-filter": false,
   "search": "",
   "showTags": false,
-  "showAttachments": true,
+  "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
@@ -13,18 +13,39 @@
         "a": 1,
         "rgb": 15004928
       }
+    },
+    {
+      "query": "path:📘ClassNotes path:📘ClassNotes/👨‍🔧Mechanics  ",
+      "color": {
+        "a": 1,
+        "rgb": 2429126
+      }
+    },
+    {
+      "query": "path:📘ClassNotes/📐Mathmatics  ",
+      "color": {
+        "a": 1,
+        "rgb": 11272706
+      }
+    },
+    {
+      "query": "path:📘ClassNotes  ",
+      "color": {
+        "a": 1,
+        "rgb": 11428193
+      }
     }
   ],
   "collapse-display": false,
   "showArrow": true,
   "textFadeMultiplier": 2.6,
   "nodeSizeMultiplier": 3.25575342465753,
-  "lineSizeMultiplier": 0.475890410958904,
+  "lineSizeMultiplier": 0.519639407598197,
   "collapse-forces": false,
   "centerStrength": 0,
   "repelStrength": 20,
   "linkStrength": 0,
   "linkDistance": 30,
-  "scale": 0.0078125,
-  "close": false
+  "scale": 0.008860236025932717,
+  "close": true
 }

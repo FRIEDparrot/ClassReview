@@ -22,7 +22,7 @@ u(1) = q  \\
 \end{matrix}$$
 In this condition, this type of boundary conditions lead to the so-called ***Two Point Boundary Value Problems*** 
 
-Hence the <mark style="background: transparent; color: yellow">strong form</mark> of the boundary value can be written as : 
+Hence the <mark style="background: transparent; color: red">strong form</mark> of the boundary value can be written as : 
 $$(S)\quad \begin{cases}
 \text{Given $l$ : $\bar{\Omega} \rightarrow R$ and constants $q$ and $h$, and then find $u : \bar{\Omega}\rightarrow  R$, such that :  }\\
 u_{, xx}(x) + l(x) = 0 \qquad \text{on } \Omega \\
@@ -31,7 +31,7 @@ u(1) = q \\
 \end{cases}$$
 When we write the $u_{,xx}+ l =0$ on $\Omega$, we mean $u_{,xx}(x) + l(x) = 0$ ==for all== $x\in \Omega$(whole zone are satisfy this differential equation), then we can easily obtain the exact solution of the $u$ as : 
 $$u = q + (1- x)h + \int_{x}^{1} \left\{\int_{0}^{y}l(z) dz\right\}dy\tag{1.2.3}$$
-where the $y$ and $z$ are used to <mark style="background: transparent; color: yellow">denote dummy variables</mark>.
+where the $y$ and $z$ are used to <mark style="background: transparent; color: red">denote dummy variables</mark>.
 
 However , We are interested in developing schemes for obtaining approximate solutions to $(S)$ which can be applicable to much more complex situations in which exact solutions are not possible.
 
@@ -47,17 +47,16 @@ collapse: open
 The functions that satisfy the equation $(1.3.1)$ is called $H^1-\text{functions}$, also we denote that $u$ is a solution of $H^1$ as $u \in H^1([0,1])$ or $u \in H^1$. 
 `````
 
-Thus <mark style="background: transparent; color: yellow">the collection of trail solutions</mark>, denoted by $\delta$, ==consists of all functions which have square-integrable derivates and  take on the value== at $x =1$, can be written as : 
+Thus <mark style="background: transparent; color: red">the collection of trail solutions</mark>, denoted by $\delta$, ==consists of all functions which have square-integrable derivates and  take on the value== at $x =1$, can be written as : 
 $$\delta = \left\{u | u \in H^1, u(1) = q \right\}$$
-
 2. weighting functions 
 The ***Weighting functions*** is also called ***Variations*** 
-This collection is similar to the trail solutions except <mark style="background: transparent; color: yellow">we require the homogenous counterpart (using the same order) of the q-boundary condition</mark>. which denotes that the boundary condition satisfy $w(1) =0$, we require the **weighting functions**. to satisfy $w(1) = 0$. This collection is denoted by $\mathcal{V}$ as : 
+This collection is similar to the trail solutions except <mark style="background: transparent; color: red">we require the homogenous counterpart (using the same order) of the q-boundary condition</mark>. which denotes that the boundary condition satisfy $w(1) =0$, we require the **weighting functions**. to satisfy $w(1) = 0$. This collection is denoted by $\mathcal{V}$ as : 
 $$\mathcal{V} = \left\{ w|w\in H^1, w(1) = 0 \right\}$$
 also we simplify the question by assuming that $l: \Omega \rightarrow R$ as being smooth. 
 Given $l,q$ and $h$, as before. Find $u\in \delta$, such that for all $w \in\mathcal{V}$, then we have the suitable weak form of the boundary-value problem. 
 
-we derive the weak form by integral the $w_{,x} u_{,x}$ , <mark style="background: transparent; color: yellow">use partial integral and substitute the boundary condition</mark> $w(1) = 0$ into it. 
+we derive the weak form by integral the $w_{,x} u_{,x}$ , <mark style="background: transparent; color: red">use partial integral and substitute the boundary condition</mark> $w(1) = 0$ into it. 
 $$\int_{0}^{1} w_{,x} u_{,x} dx = \int_{0}^{1}u_{,x} dw =\left. u_{x} w\right|_{0}^1 -  \int_{0}^{1} u_{,xx} w(x) dx = \int_{0}^{1} wl dx + w(0) h$$
 $$(W)\quad \boxed{\begin{cases}
 \text{Given $l$,q,and $h$, Find $u \in \delta\space $ s.t. for all $w\in \mathcal{V}$  } \\
@@ -66,7 +65,7 @@ $$(W)\quad \boxed{\begin{cases}
 Formulations of this type are often called ***Virtual Work***. or ***Virtual Displacement***
 and in the function $w$ is ***Virtual Displacements***
 
-<mark style="background: transparent; color: yellow">Hence the Variational equation is also called The equation of virtual work</mark>, It's also the ***weak*** or ***generalized solution***. 
+<mark style="background: transparent; color: red">Hence the Variational equation is also called The equation of virtual work</mark>, It's also the ***weak*** or ***generalized solution***. 
 
 Now we assume $u$ to be a weak solution, Thus $u \in \delta$; consequently $u(1) =  q$ and 
 $$\int_{0}^{1} w_{,x} u_{,x} dx = \int_{0}^{1} wl dx + w(0)h$$
@@ -80,16 +79,12 @@ collapse: close
 
 In the problem above, the boudnary condition is not mentioned explicitly, this type boundary conditions are referred as ***Natural Boundary Conditions***. The trail solutions are explicitly required to satisfy $u(1) = q$, This type of boundary conditions are called ***essential boundary conditions***. 
 
-$\space$
-
 The prove of the propsition goes under the name of ***fundamental lemma*** in the literature of the calculus of variations.  
-
-$\space$
 
 the methodology enables us to deduce the differential equations and boundary conditions implied by the weak problems. 
 `````
 
-for obtaining an <mark style="background: transparent; color: yellow">approximate solution to the original boundary-value problem</mark>, we have alternative starting points(i.e. The strong statement and the weak statement of the problem). FEM is based on the weak statement of the solution. 
+for obtaining an <mark style="background: transparent; color: red">approximate solution to the original boundary-value problem</mark>, we have alternative starting points(i.e. The strong statement and the weak statement of the problem). FEM is based on the weak statement of the solution. 
 
 Then we Let
 $$\boxed{\begin{matrix}
