@@ -8,44 +8,23 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:\"Day Planners\"",
+      "query": "path:Excalidraw  ",
       "color": {
         "a": 1,
-        "rgb": 15004928
-      }
-    },
-    {
-      "query": "path:📘ClassNotes path:📘ClassNotes/👨‍🔧Mechanics  ",
-      "color": {
-        "a": 1,
-        "rgb": 2429126
-      }
-    },
-    {
-      "query": "path:📘ClassNotes/📐Mathmatics  ",
-      "color": {
-        "a": 1,
-        "rgb": 11272706
-      }
-    },
-    {
-      "query": "path:📘ClassNotes  ",
-      "color": {
-        "a": 1,
-        "rgb": 11428193
+        "rgb": 1974049
       }
     }
   ],
   "collapse-display": false,
-  "showArrow": true,
-  "textFadeMultiplier": 2.6,
-  "nodeSizeMultiplier": 3.25575342465753,
-  "lineSizeMultiplier": 0.519639407598197,
-  "collapse-forces": false,
-  "centerStrength": 0,
-  "repelStrength": 20,
-  "linkStrength": 0,
-  "linkDistance": 30,
-  "scale": 0.008860236025932717,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.0831742783592762,
   "close": true
 }

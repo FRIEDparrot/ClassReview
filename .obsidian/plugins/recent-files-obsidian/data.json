@@ -1,8 +1,132 @@
 {
   "recentFiles": [
     {
+      "basename": "第七章 参数估计",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md"
+    },
+    {
+      "basename": "第一章 随机事件及其概率",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md"
+    },
+    {
+      "basename": "INSERT_PROD_SYMBOL",
+      "path": "🗒️Templates/INSERT_PROD_SYMBOL.md"
+    },
+    {
+      "basename": "第六章 样本及抽样分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md"
+    },
+    {
+      "basename": "概率相关性质的证明",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/概率相关性质的证明.md"
+    },
+    {
+      "basename": "第一章 随机事件及其概率 2023-09-20 17.27.04",
+      "path": "Excalidraw/第一章 随机事件及其概率 2023-09-20 17.27.04.md"
+    },
+    {
+      "basename": "第二章 矩形薄板的弯曲",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第二章 矩形薄板的弯曲.md"
+    },
+    {
+      "basename": "第六章 薄壳理论的基本方程",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第六章 薄壳理论的基本方程.md"
+    },
+    {
+      "basename": "第四章 壳体理论的几何建立",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第四章 壳体理论的几何建立.md"
+    },
+    {
+      "basename": "第六章 薄壳理论的基本方程 2023-10-19 19.26.44",
+      "path": "Excalidraw/第六章 薄壳理论的基本方程 2023-10-19 19.26.44.md"
+    },
+    {
+      "basename": "第三章 薄板的大挠度问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第三章 薄板的大挠度问题.md"
+    },
+    {
+      "basename": "第三章 薄板的大挠度问题 2023-10-19 16.40.17",
+      "path": "Excalidraw/第三章 薄板的大挠度问题 2023-10-19 16.40.17.md"
+    },
+    {
+      "basename": "薄板大挠度问题基本微分方程推导",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板大挠度问题基本微分方程推导.pdf"
+    },
+    {
+      "basename": "第一章 绪论 2023-09-07 19.38.39",
+      "path": "Excalidraw/第一章 绪论 2023-09-07 19.38.39.md"
+    },
+    {
+      "basename": "第一章 绪论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第一章 绪论.md"
+    },
+    {
+      "basename": "第四章 应力理论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第四章 应力理论.md"
+    },
+    {
+      "basename": "第五章 断裂失效与断裂控制设计",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第五章 断裂失效与断裂控制设计.md"
+    },
+    {
+      "basename": "第五章 断裂失效与断裂控制设计 2023-10-19 11.14.36",
+      "path": "Excalidraw/第五章 断裂失效与断裂控制设计 2023-10-19 11.14.36.md"
+    },
+    {
+      "basename": "第五章 断裂失效与断裂控制设计 2023-10-19 11.12.42",
+      "path": "Excalidraw/第五章 断裂失效与断裂控制设计 2023-10-19 11.12.42.md"
+    },
+    {
+      "basename": "第五章 断裂失效与断裂控制设计 2023-10-19 10.39.35",
+      "path": "Excalidraw/第五章 断裂失效与断裂控制设计 2023-10-19 10.39.35.md"
+    },
+    {
+      "basename": "第三章 应变理论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第三章 应变理论.md"
+    },
+    {
+      "basename": "第五章 雷诺输运定理",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第五章 雷诺输运定理.md"
+    },
+    {
+      "basename": "连续介质热力学",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/连续介质热力学.md"
+    },
+    {
+      "basename": "第三章 疲劳应用统计学基础",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第三章 疲劳应用统计学基础.md"
+    },
+    {
+      "basename": "第四章 低周疲劳",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md"
+    },
+    {
+      "basename": "第六章 弯曲应力 2023-03-11 21.38.46",
+      "path": "Excalidraw/第六章 弯曲应力 2023-03-11 21.38.46.md"
+    },
+    {
+      "basename": "平面薄板问题的方程建立",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md"
+    },
+    {
+      "basename": "平面薄板挠度方程推导",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/补充/平面薄板挠度方程推导.md"
+    },
+    {
+      "basename": "手头任务",
+      "path": "🐸 Daily Life memo/手头任务.md"
+    },
+    {
+      "basename": "常用快键",
+      "path": "🐸 Daily Life memo/常用快键.md"
+    },
+    {
       "basename": "第五章 零极点与留数",
       "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第五章 零极点与留数.md"
+    },
+    {
+      "basename": "第五章例题",
+      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第五章例题.md"
     },
     {
       "basename": "8. The transforms of Applied Mathematics",
@@ -25,14 +149,6 @@
       "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/有理函数无穷限积分式转化的推导.md"
     },
     {
-      "basename": "第五章例题",
-      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第五章例题.md"
-    },
-    {
-      "basename": "第六章 样本及抽样分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md"
-    },
-    {
       "basename": "第六章 样本及抽样分布 2023-10-18 09.56.07",
       "path": "Excalidraw/第六章 样本及抽样分布 2023-10-18 09.56.07.md"
     },
@@ -43,10 +159,6 @@
     {
       "basename": "常用的概率分布及数学期望和方差",
       "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/常用的概率分布及数学期望和方差.md"
-    },
-    {
-      "basename": "第一章 随机事件及其概率",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md"
     },
     {
       "basename": "第三章 多维随机变量及其分布",
@@ -69,10 +181,6 @@
       "path": "Excalidraw/第六章 样本及抽样分布 2023-10-18 08.48.26.md"
     },
     {
-      "basename": "第四章 壳体理论的几何建立",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第四章 壳体理论的几何建立.md"
-    },
-    {
       "basename": "第四章 壳体理论的几何建立 2023-10-17 19.18.25",
       "path": "Excalidraw/第四章 壳体理论的几何建立 2023-10-17 19.18.25.md"
     },
@@ -91,114 +199,6 @@
     {
       "basename": "X2, t, F分布表",
       "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/X2, t, F分布表.md"
-    },
-    {
-      "basename": "泊松分布表",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/泊松分布表.md"
-    },
-    {
-      "basename": "标准正态分布表",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/标准正态分布表.md"
-    },
-    {
-      "basename": "INSERT_CHI_SYMBOL",
-      "path": "🗒️Templates/INSERT_CHI_SYMBOL.md"
-    },
-    {
-      "basename": "Mathematical Symbols",
-      "path": "📘ClassNotes/Markdown & Latex Tutorial/Latex Tutorial/Mathematical Symbols.md"
-    },
-    {
-      "basename": "第四章 低周疲劳",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md"
-    },
-    {
-      "basename": "第四章作业",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章作业.md"
-    },
-    {
-      "basename": "第四章 低周疲劳 2023-10-17 11.21.34",
-      "path": "Excalidraw/第四章 低周疲劳 2023-10-17 11.21.34.md"
-    },
-    {
-      "basename": "第四章 低周疲劳 2023-10-17 10.51.08",
-      "path": "Excalidraw/第四章 低周疲劳 2023-10-17 10.51.08.md"
-    },
-    {
-      "basename": "第六章 样本及抽样分布 2023-10-17 09.48.14",
-      "path": "Excalidraw/第六章 样本及抽样分布 2023-10-17 09.48.14.md"
-    },
-    {
-      "basename": "5. 留数 2023-01-01 15.12.35.excalidraw",
-      "path": "Excalidraw/5. 留数 2023-01-01 15.12.35.excalidraw.md"
-    },
-    {
-      "basename": "5. 留数 2023-01-02 20.31.54.excalidraw",
-      "path": "Excalidraw/5. 留数 2023-01-02 20.31.54.excalidraw.md"
-    },
-    {
-      "basename": "5. 留数 2023-01-01 11.27.23.excalidraw",
-      "path": "Excalidraw/5. 留数 2023-01-01 11.27.23.excalidraw.md"
-    },
-    {
-      "basename": "第三章 复变函数的积分",
-      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第三章 复变函数的积分.md"
-    },
-    {
-      "basename": "手头任务",
-      "path": "🐸 Daily Life memo/手头任务.md"
-    },
-    {
-      "basename": "第五章 例5-1",
-      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第五章 例5-1.md"
-    },
-    {
-      "basename": "第八章 傅里叶变换",
-      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第八章 傅里叶变换.md"
-    },
-    {
-      "basename": "零极点关系定理的证明",
-      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/零极点关系定理的证明.md"
-    },
-    {
-      "basename": "5. 留数 2023-01-01 09.39.07.excalidraw",
-      "path": "Excalidraw/5. 留数 2023-01-01 09.39.07.excalidraw.md"
-    },
-    {
-      "basename": "第四章 复变函数和级数",
-      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第四章 复变函数和级数.md"
-    },
-    {
-      "basename": "第八章 傅里叶变换 2023-10-16 09.03.36",
-      "path": "Excalidraw/第八章 傅里叶变换 2023-10-16 09.03.36.md"
-    },
-    {
-      "basename": "常用拉普拉斯变换表",
-      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/常用拉普拉斯变换表.md"
-    },
-    {
-      "basename": "基本积分表",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/基本积分表.md"
-    },
-    {
-      "basename": "第三章 正弦交流电路",
-      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第三章 正弦交流电路.md"
-    },
-    {
-      "basename": "第四章 正弦稳态电路的分析",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第四章 正弦稳态电路的分析.md"
-    },
-    {
-      "basename": "第三章 正弦交流电路 2023-10-15 13.28.38",
-      "path": "Excalidraw/第三章 正弦交流电路 2023-10-15 13.28.38.md"
-    },
-    {
-      "basename": "第三章 正弦交流电路 2023-10-15 13.09.06",
-      "path": "Excalidraw/第三章 正弦交流电路 2023-10-15 13.09.06.md"
-    },
-    {
-      "basename": "第三章 正弦交流电路 2023-10-15 12.12.47",
-      "path": "Excalidraw/第三章 正弦交流电路 2023-10-15 12.12.47.md"
     }
   ],
   "omittedPaths": [],

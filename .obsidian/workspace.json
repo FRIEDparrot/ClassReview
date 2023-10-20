@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "950a56780f942b10",
+        "id": "fa135818ad650cf2",
         "type": "tabs",
         "children": [
           {
-            "id": "92cd26505a6037f1",
+            "id": "0bbeab6f6fede044",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第五章 零极点与留数.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
                 "mode": "source",
                 "source": false
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第五章 零极点与留数.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -174,10 +174,18 @@
                   "showAttachments": false,
                   "hideUnresolved": false,
                   "collapse-color-groups": true,
-                  "colorGroups": [],
+                  "colorGroups": [
+                    {
+                      "query": "path:Excalidraw  ",
+                      "color": {
+                        "a": 1,
+                        "rgb": 2566187
+                      }
+                    }
+                  ],
                   "collapse-display": false,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
+                  "showArrow": true,
+                  "textFadeMultiplier": 0.2,
                   "nodeSizeMultiplier": 1,
                   "lineSizeMultiplier": 1,
                   "collapse-forces": true,
@@ -185,14 +193,14 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.696967894472431,
+                  "scale": 1.168770195572283,
                   "close": true
                 }
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 2
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -204,7 +212,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第五章 零极点与留数.md"
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md"
               }
             }
           },
@@ -222,7 +230,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第五章 零极点与留数.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -239,7 +247,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第五章 零极点与留数.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -271,54 +279,54 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "92cd26505a6037f1",
+  "active": "0bbeab6f6fede044",
   "lastOpenFiles": [
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/8. The transforms of Applied Mathematics.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/补充 Fourier展开的三角形式.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第五章 零极点与留数.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/有理对数乘积式的转化推导.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第五章例题2.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/有理函数无穷限积分式转化的推导.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第五章例题.md",
-    "Excalidraw/5. 留数 2023-01-01 15.44.50.excalidraw.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md",
+    "🗒️Templates/INSERT_PROD_SYMBOL.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/概率相关性质的证明.md",
+    "attachments/Pasted image 20231020102011.png",
+    "Excalidraw/第一章 随机事件及其概率 2023-09-20 17.27.04.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第二章 矩形薄板的弯曲.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第六章 薄壳理论的基本方程.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第四章 壳体理论的几何建立.md",
+    "Excalidraw/第六章 薄壳理论的基本方程 2023-10-19 19.26.44.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第三章 薄板的大挠度问题.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/小挠度薄板问题的里兹法和伽辽金法.pdf",
+    "Excalidraw/第三章 薄板的大挠度问题 2023-10-19 16.40.17.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板大挠度问题基本微分方程推导.pdf",
+    "Excalidraw/第一章 绪论 2023-09-07 19.38.39.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第一章 绪论.md",
+    "💻softwares/🎵Media & Figure/Origin",
+    "💻softwares/🎵Media & Figure/Pr",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第四章 应力理论.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第五章 断裂失效与断裂控制设计.md",
+    "Excalidraw/第五章 断裂失效与断裂控制设计 2023-10-19 11.14.36.md",
+    "Excalidraw/第五章 断裂失效与断裂控制设计 2023-10-19 11.12.42.md",
+    "Excalidraw/第五章 断裂失效与断裂控制设计 2023-10-19 10.39.35.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第三章 应变理论.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第五章 雷诺输运定理.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/连续介质热力学.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第三章 疲劳应用统计学基础.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/例题",
+    "Excalidraw/第六章 弯曲应力 2023-03-11 21.38.46.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md",
+    "attachments/Pasted image 20231018203123.png",
     "📘ClassNotes/⚡Circuit/电工电子技术/例题以及习题/第三章习题.pdf",
     "📘ClassNotes/⚡Circuit/电工电子技术/例题以及习题/第三章例题.pdf",
     "📘ClassNotes/⚡Circuit/电工电子技术/例题以及习题",
     "📘ClassNotes/⚡Circuit/电工电子技术/New folder",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
-    "Excalidraw/第六章 样本及抽样分布 2023-10-18 09.56.07.md",
-    "Excalidraw/第六章 样本及抽样分布 2023-10-18 08.57.36.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/常用的概率分布及数学期望和方差.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md",
-    "Excalidraw/第六章 样本及抽样分布 2023-10-18 08.48.26.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第四章 壳体理论的几何建立.md",
-    "Excalidraw/第四章 壳体理论的几何建立 2023-10-17 19.18.25.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第三章 物质结构基础.md",
     "📘ClassNotes/⚗️materials and chemicals/元素周期表.png",
-    "Excalidraw/第三章 物质结构基础 2023-10-17 16.13.38.md",
     "attachments/Screenshot_20231017_145726_com.microsoft.skydrive.png",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/X2, t, F分布表.md",
     "attachments/Pasted image 20231017145245.png.~tmp",
     "attachments/Pasted image 20231017145245.png",
     "attachments/Pasted image 20231017145233.png",
     "attachments/Pasted image 20231017145148.png",
-    "attachments/Pasted image 20231017145108.png.~tmp",
     "attachments/Pasted image 20231017145108.png",
-    "attachments/Pasted image 20231017144850.png.~tmp",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/t分布表.md",
     "attachments/Pasted image 20231017144850.png",
     "attachments/Pasted image 20231017144801.png",
-    "attachments/Pasted image 20231017144706.png",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/泊松分布表.md",
-    "attachments/Pasted image 20231017144640.png",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/标准正态分布表.md",
-    "attachments/Pasted image 20231017144428.png.~tmp",
-    "attachments/Pasted image 20231017144327.png.~tmp",
-    "attachments/Pasted image 20231017144039.png.~tmp",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

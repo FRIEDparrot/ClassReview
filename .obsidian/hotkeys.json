@@ -1421,5 +1421,14 @@
       ],
       "key": "K"
     }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_PROD_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "H"
+    }
   ]
 }
