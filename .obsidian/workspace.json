@@ -4,22 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "fa135818ad650cf2",
+        "id": "61b3bc61a892ee27",
         "type": "tabs",
         "children": [
           {
-            "id": "0bbeab6f6fede044",
+            "id": "49d4395cc9cdc2f8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第八章 旋转机械的振动测试.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ee1473098b24be64",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第一章 振动测试技术概论.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a818349d9021a298",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 395.5124969482422,
+    "width": 341.5124969482422,
     "collapsed": true
   },
   "right": {
@@ -163,7 +188,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -194,14 +219,14 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.168770195572283,
+                  "scale": 0.7039922129971116,
                   "close": true
                 }
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -213,7 +238,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md"
               }
             }
           },
@@ -231,7 +256,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -248,7 +273,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -258,7 +283,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 539.5,
+    "width": 643.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -281,40 +306,42 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "0bbeab6f6fede044",
+  "active": "a818349d9021a298",
   "lastOpenFiles": [
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md",
-    "🗒️Templates/INSERT_PROD_SYMBOL.md",
+    "Excalidraw/第二章 振动测试原理 2023-10-21 15.29.52.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md",
+    "Excalidraw/第二章 振动测试原理 2023-09-15 19.34.29.md",
+    "Excalidraw/第二章 振动测试原理 2023-09-15 19.04.35.md",
+    "Excalidraw/第二章 振动测试原理 2023-09-13 19.26.37.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第一章 振动测试技术概论.md",
+    "attachments/Screenshot_20231021_105843_com.microsoft.skydrive.png",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/概率相关性质的证明.md",
-    "attachments/Pasted image 20231020102011.png",
-    "Excalidraw/第一章 随机事件及其概率 2023-09-20 17.27.04.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第二章 矩形薄板的弯曲.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第六章 薄壳理论的基本方程.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第四章 壳体理论的几何建立.md",
-    "Excalidraw/第六章 薄壳理论的基本方程 2023-10-19 19.26.44.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第八章 傅里叶变换.md",
+    "Excalidraw/第一章 振动测试技术概论 2023-10-21 10.00.02.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第九章 拉普拉斯变换.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/傅里叶级数展开方法.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第三章 正弦交流电路.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第八章 旋转机械的振动测试.md",
+    "Excalidraw/第二章 刚体的空间运动学 2023-03-31 16.39.10.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第三章 刚体的空间运动动力学.md",
+    "Excalidraw/第八章 旋转机械的振动测试 2023-10-20 19.13.34.md",
+    "🐸 Daily Life memo/⌚近期计划书.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第三章 薄板的大挠度问题.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/小挠度薄板问题的里兹法和伽辽金法.pdf",
-    "Excalidraw/第三章 薄板的大挠度问题 2023-10-19 16.40.17.md",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板大挠度问题基本微分方程推导.pdf",
-    "Excalidraw/第一章 绪论 2023-09-07 19.38.39.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第一章 绪论.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/大挠度薄板的里兹法与中面变形能推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第二章 矩形薄板的弯曲.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md",
+    "attachments/Pasted image 20231020102011.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/小挠度薄板问题的里兹法和伽辽金法.pdf",
     "💻softwares/🎵Media & Figure/Origin",
     "💻softwares/🎵Media & Figure/Pr",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第四章 应力理论.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第五章 断裂失效与断裂控制设计.md",
-    "Excalidraw/第五章 断裂失效与断裂控制设计 2023-10-19 11.14.36.md",
-    "Excalidraw/第五章 断裂失效与断裂控制设计 2023-10-19 11.12.42.md",
-    "Excalidraw/第五章 断裂失效与断裂控制设计 2023-10-19 10.39.35.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第三章 应变理论.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第五章 雷诺输运定理.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/连续介质热力学.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第三章 疲劳应用统计学基础.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/例题",
-    "Excalidraw/第六章 弯曲应力 2023-03-11 21.38.46.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第九章：薄板问题/平面薄板问题的方程建立.md",
     "attachments/Pasted image 20231018203123.png",
     "📘ClassNotes/⚡Circuit/电工电子技术/例题以及习题/第三章习题.pdf",
     "📘ClassNotes/⚡Circuit/电工电子技术/例题以及习题/第三章例题.pdf",
@@ -322,13 +349,11 @@
     "📘ClassNotes/⚡Circuit/电工电子技术/New folder",
     "📘ClassNotes/⚗️materials and chemicals/元素周期表.png",
     "attachments/Screenshot_20231017_145726_com.microsoft.skydrive.png",
-    "attachments/Pasted image 20231017145245.png.~tmp",
     "attachments/Pasted image 20231017145245.png",
     "attachments/Pasted image 20231017145233.png",
     "attachments/Pasted image 20231017145148.png",
     "attachments/Pasted image 20231017145108.png",
     "attachments/Pasted image 20231017144850.png",
-    "attachments/Pasted image 20231017144801.png",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }
