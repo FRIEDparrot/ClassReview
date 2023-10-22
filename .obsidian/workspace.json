@@ -4,47 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "61b3bc61a892ee27",
+        "id": "ea3d6294f26ea96f",
         "type": "tabs",
         "children": [
           {
-            "id": "49d4395cc9cdc2f8",
+            "id": "034d439f73abcaba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第八章 旋转机械的振动测试.md",
+                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ee1473098b24be64",
+            "id": "4ef21af3fc0acaa4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第一章 振动测试技术概论.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a818349d9021a298",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md",
+                "file": "🐸 Daily Life memo/手头任务.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -56,7 +43,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 61.77884615384615,
+        "dimension": 59.61538461538461,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -96,7 +83,7 @@
       {
         "id": "066eddf15a13dd56",
         "type": "tabs",
-        "dimension": 38.22115384615385,
+        "dimension": 40.38461538461539,
         "children": [
           {
             "id": "db0ad0041a71350b",
@@ -118,8 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5124969482422,
-    "collapsed": true
+    "width": 395.5124969482422
   },
   "right": {
     "id": "f7de553c162de521",
@@ -188,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md",
+                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -238,7 +224,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md"
+                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md"
               }
             }
           },
@@ -256,7 +242,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md",
+                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -273,7 +259,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md",
+                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -283,8 +269,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 643.5,
-    "collapsed": true
+    "width": 591.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -306,37 +291,38 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "a818349d9021a298",
+  "active": "034d439f73abcaba",
   "lastOpenFiles": [
-    "Excalidraw/第二章 振动测试原理 2023-10-21 15.29.52.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md",
-    "Excalidraw/第二章 振动测试原理 2023-09-15 19.34.29.md",
-    "Excalidraw/第二章 振动测试原理 2023-09-15 19.04.35.md",
-    "Excalidraw/第二章 振动测试原理 2023-09-13 19.26.37.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第一章 振动测试技术概论.md",
-    "attachments/Screenshot_20231021_105843_com.microsoft.skydrive.png",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第八章 傅里叶变换.md",
-    "Excalidraw/第一章 振动测试技术概论 2023-10-21 10.00.02.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第九章 拉普拉斯变换.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/傅里叶级数展开方法.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第三章 正弦交流电路.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第八章 旋转机械的振动测试.md",
-    "Excalidraw/第二章 刚体的空间运动学 2023-03-31 16.39.10.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第三章 刚体的空间运动动力学.md",
-    "Excalidraw/第八章 旋转机械的振动测试 2023-10-20 19.13.34.md",
+    "🐸 Daily Life memo/手头任务.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md",
     "🐸 Daily Life memo/⌚近期计划书.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第三章 薄板的大挠度问题.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共型映射.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第五章 零极点与留数.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/幅角原理及对数留数例题.pdf",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第二章 解析函数.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/对数留数积分证明.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第五章例题2.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第五章例题.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第十一章 变压器和电动机.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-21 23.34.52.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-21 21.38.22.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-21 21.48.30.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-21 21.20.49.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-21 21.11.46.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-21 20.42.00.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-21 17.40.15.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-21 20.22.53.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-21 17.55.03.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-21 17.01.07.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-21 16.57.45.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-21 16.07.29.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md",
+    "Excalidraw/第二章 振动测试原理 2023-10-21 15.39.12.md",
+    "Excalidraw/第二章 振动测试原理 2023-10-21 15.29.52.md",
+    "Excalidraw/第二章 振动测试原理 2023-09-15 19.34.29.md",
+    "attachments/Screenshot_20231021_105843_com.microsoft.skydrive.png",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板大挠度问题基本微分方程推导.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/大挠度薄板的里兹法与中面变形能推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第二章 矩形薄板的弯曲.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md",
     "attachments/Pasted image 20231020102011.png",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/小挠度薄板问题的里兹法和伽辽金法.pdf",
     "💻softwares/🎵Media & Figure/Origin",
@@ -346,7 +332,6 @@
     "📘ClassNotes/⚡Circuit/电工电子技术/例题以及习题/第三章习题.pdf",
     "📘ClassNotes/⚡Circuit/电工电子技术/例题以及习题/第三章例题.pdf",
     "📘ClassNotes/⚡Circuit/电工电子技术/例题以及习题",
-    "📘ClassNotes/⚡Circuit/电工电子技术/New folder",
     "📘ClassNotes/⚗️materials and chemicals/元素周期表.png",
     "attachments/Screenshot_20231017_145726_com.microsoft.skydrive.png",
     "attachments/Pasted image 20231017145245.png",
