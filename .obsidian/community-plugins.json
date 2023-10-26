@@ -32,11 +32,12 @@
   "highlightr-plugin",
   "dbfolder",
   "table-extended",
-  "obsidian-markmind",
   "theme-picker",
   "obsidian-projects",
   "obsidian-day-planner",
   "surfing",
   "obsidian-quickshare",
-  "quick-latex"
+  "quick-latex",
+  "obsidian-markmind",
+  "obsidian-hider"
 ]

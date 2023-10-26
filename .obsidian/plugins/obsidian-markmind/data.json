@@ -8,12 +8,11 @@
   "protocol": "jump-to-pdf",
   "registerPdfEvent": true,
   "viewerTheme": 2,
-  "mindmapmode": "rich",
+  "mindmapmode": "basic",
   "parseMindMap": true,
   "annotateTop": 0,
   "annotateBottom": 0,
   "useCustomShortcut": false,
   "highlightFormat": "\nPage:{{page}}\n<span style=\"color:rgb({{color}})\">■</span>:{{highlightText}}\nComment:{{comment}}\n[📌]({{link}})\n^{{id}}\n",
-  "setup": 1683211626633,
-  "uid": "00p01001200r00q00p00p01000t00r00p00q00r"
+  "uid": "00p01001301200p00t00o01100t00q01100r011"
 }

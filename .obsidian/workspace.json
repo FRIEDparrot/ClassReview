@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ea3d6294f26ea96f",
+        "id": "56693f61addadc10",
         "type": "tabs",
         "children": [
           {
-            "id": "034d439f73abcaba",
+            "id": "c3c6b2effe4b0702",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4ef21af3fc0acaa4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🐸 Daily Life memo/手头任务.md",
+                "file": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共型映射.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,18 +82,29 @@
             }
           },
           {
-            "id": "a91b46b2acac26ea",
+            "id": "bf320363ad466f1f",
             "type": "leaf",
             "state": {
               "type": "timeline",
               "state": {}
+            }
+          },
+          {
+            "id": "1accea1cbfd9d2cd",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-view",
+              "state": {
+                "url": "https://chat.openai.com/"
+              }
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 395.5124969482422
+    "width": 406.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -114,6 +113,7 @@
       {
         "id": "736ec7c11262503f",
         "type": "tabs",
+        "dimension": 57.95228628230616,
         "children": [
           {
             "id": "55e2f6198cbb96c3",
@@ -174,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md",
+                "file": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共型映射.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -210,13 +210,38 @@
                 }
               }
             }
+          },
+          {
+            "id": "41828a72f523292a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Dynamic Terminology.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b8575cf00c634298",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       },
       {
         "id": "bdaa9cad5f6d59b7",
         "type": "tabs",
+        "dimension": 42.04771371769384,
         "children": [
           {
             "id": "7778856753ec014b",
@@ -224,7 +249,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md"
+                "file": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共型映射.md"
               }
             }
           },
@@ -242,7 +267,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md",
+                "file": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共型映射.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -259,7 +284,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md",
+                "file": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共型映射.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -269,14 +294,13 @@
       }
     ],
     "direction": "horizontal",
-    "width": 591.5
+    "width": 435.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "dbfolder:Create a new database table": false,
-      "obsidian-projects:Open projects": false,
+      "surfing:surfing-bookmark-manager": false,
       "markdown-importer:Open format converter": false,
-      "obsidian-day-planner:Week plan": false,
       "graph:Open graph view": false,
       "switcher:Open quick switcher": false,
       "daily-notes:Open today's daily note": false,
@@ -284,61 +308,64 @@
       "audio-recorder:Start/stop recording": false,
       "canvas:Create new canvas": false,
       "workspaces:Manage workspace layouts": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false,
       "random-note:Open random note": false,
-      "zk-prefixer:Create new unique note": false
+      "zk-prefixer:Create new unique note": false,
+      "obsidian-day-planner:Timeline": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "dbfolder:Create a new database table": false,
+      "obsidian-projects:Open projects": false
     }
   },
-  "active": "034d439f73abcaba",
+  "active": "c3c6b2effe4b0702",
   "lastOpenFiles": [
-    "🐸 Daily Life memo/手头任务.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md",
-    "🐸 Daily Life memo/⌚近期计划书.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第六章例题1.md",
     "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共型映射.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第五章 零极点与留数.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/幅角原理及对数留数例题.pdf",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第二章 解析函数.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/对数留数积分证明.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第五章例题2.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第五章例题.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第十一章 变压器和电动机.md",
-    "Excalidraw/第十一章 变压器和电动机 2023-10-21 23.34.52.md",
-    "Excalidraw/第十一章 变压器和电动机 2023-10-21 21.38.22.md",
-    "Excalidraw/第十一章 变压器和电动机 2023-10-21 21.48.30.md",
-    "Excalidraw/第十一章 变压器和电动机 2023-10-21 21.20.49.md",
-    "Excalidraw/第十一章 变压器和电动机 2023-10-21 21.11.46.md",
-    "Excalidraw/第十一章 变压器和电动机 2023-10-21 20.42.00.md",
-    "Excalidraw/第十一章 变压器和电动机 2023-10-21 17.40.15.md",
-    "Excalidraw/第十一章 变压器和电动机 2023-10-21 20.22.53.md",
-    "Excalidraw/第十一章 变压器和电动机 2023-10-21 17.55.03.md",
-    "Excalidraw/第十一章 变压器和电动机 2023-10-21 17.01.07.md",
-    "Excalidraw/第十一章 变压器和电动机 2023-10-21 16.57.45.md",
-    "Excalidraw/第十一章 变压器和电动机 2023-10-21 16.07.29.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/思维导图与复习要点.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md",
-    "Excalidraw/第二章 振动测试原理 2023-10-21 15.39.12.md",
-    "Excalidraw/第二章 振动测试原理 2023-10-21 15.29.52.md",
-    "Excalidraw/第二章 振动测试原理 2023-09-15 19.34.29.md",
-    "attachments/Screenshot_20231021_105843_com.microsoft.skydrive.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第六章 频域分析以及数字信号处理技术.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第五章 振动测试设备和激励技术.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第三章 机电式传感器工作原理.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Dynamic Terminology.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第一章 振动测试技术概论.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第六章例题1,2.md",
+    "Excalidraw/6. 共型映射 2023-01-05 11.45.36.excalidraw.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/分式线性变换唯一性推导.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/全概率公式和贝叶斯公式的证明.pdf",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第十一章 变压器和电动机.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-25 00.31.30.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-24 23.24.05.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第三章 正弦交流电路.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-24 23.51.30.md",
+    "🐸 Daily Life memo/备忘录.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-24 23.01.22.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第一章 电路基本概念与定律.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第三章 薄板的大挠度问题.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/Untitled mindmap.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第四章 壳体理论的几何建立.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第二章 矩形薄板的弯曲.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-24 18.48.54.md",
+    "attachments/Screenshot_20231024_153246_com.microsoft.skydrive.png",
+    "attachments/Screenshot_20231024_153103_com.microsoft.skydrive(1).png",
+    "attachments/Pasted image 20231024151842.png",
+    "attachments/Pasted image 20231024151827.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Untitled",
+    "attachments/Screenshot_20231024_095255_com.microsoft.skydrive.png",
+    "attachments/Screenshot_20231024_095238_com.microsoft.skydrive.png",
+    "attachments/Screenshot_20231024_094155_com.microsoft.skydrive.png",
+    "attachments/Pasted Image 20231024091709_598.png",
+    "attachments/Pasted Image 20231024090924_828.png",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/分式线性映射的性质推导.pdf",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/幅角原理及对数留数例题.pdf",
+    "attachments/Screenshot_20231023_135513_com.microsoft.skydrive.png",
+    "📘ClassNotes/⚡Circuit/电工电子技术/补充部分/交流电下的RC微分关系推导.pdf",
+    "📘ClassNotes/⚡Circuit/电工电子技术/补充部分",
+    "📘ClassNotes/⚡Circuit/电工电子技术/New folder",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板大挠度问题基本微分方程推导.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/大挠度薄板的里兹法与中面变形能推导.pdf",
-    "attachments/Pasted image 20231020102011.png",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/小挠度薄板问题的里兹法和伽辽金法.pdf",
-    "💻softwares/🎵Media & Figure/Origin",
-    "💻softwares/🎵Media & Figure/Pr",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/例题",
-    "attachments/Pasted image 20231018203123.png",
-    "📘ClassNotes/⚡Circuit/电工电子技术/例题以及习题/第三章习题.pdf",
-    "📘ClassNotes/⚡Circuit/电工电子技术/例题以及习题/第三章例题.pdf",
-    "📘ClassNotes/⚡Circuit/电工电子技术/例题以及习题",
-    "📘ClassNotes/⚗️materials and chemicals/元素周期表.png",
-    "attachments/Screenshot_20231017_145726_com.microsoft.skydrive.png",
-    "attachments/Pasted image 20231017145245.png",
-    "attachments/Pasted image 20231017145233.png",
-    "attachments/Pasted image 20231017145148.png",
-    "attachments/Pasted image 20231017145108.png",
-    "attachments/Pasted image 20231017144850.png",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

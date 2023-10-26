@@ -1,16 +1,16 @@
 {
   "settings": {
-    "migrated": true,
+    "migrated": 3,
     "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
     "fontSize": 16,
     "emojiStyle": "native",
     "iconColor": "#4d4c4c",
     "recentlyUsedIcons": [
+      "💡",
       "FasDatabase",
       "SiMysql",
       "SiMarkdown",
-      "FabGithub",
-      "FabApple"
+      "FabGithub"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -20,7 +20,9 @@
       "bottom": 0,
       "left": 0
     },
-    "iconInTabsEnabled": false
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconsBackgroundCheckEnabled": false
   },
   "📘ClassNotes/Markdown & Latex Tutorial": "SiMarkdown",
   "DataBase": "FasDatabase",

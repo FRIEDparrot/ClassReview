@@ -195,7 +195,7 @@ var require_main = __commonJS({
         return ["", null];
       }
     }
-    function getDateUID2(date, granularity = "day") {
+    function getDateUID(date, granularity = "day") {
       const ts = date.clone().startOf(granularity).format();
       return `${granularity}-${ts}`;
     }
@@ -209,7 +209,7 @@ var require_main = __commonJS({
       }
       return false;
     }
-    function getDateFromFile4(file, granularity) {
+    function getDateFromFile2(file, granularity) {
       return getDateFromFilename(file.basename, granularity);
     }
     function getDateFromPath(path, granularity) {
@@ -276,11 +276,11 @@ var require_main = __commonJS({
         new obsidian.Notice("Unable to create new file.");
       }
     }
-    function getDailyNote7(date, dailyNotes) {
+    function getDailyNote4(date, dailyNotes) {
       var _a;
-      return (_a = dailyNotes[getDateUID2(date, "day")]) != null ? _a : null;
+      return (_a = dailyNotes[getDateUID(date, "day")]) != null ? _a : null;
     }
-    function getAllDailyNotes7() {
+    function getAllDailyNotes4() {
       const { vault } = window.app;
       const { folder } = getDailyNoteSettings();
       const dailyNotesFolder = vault.getAbstractFileByPath(obsidian.normalizePath(folder));
@@ -290,9 +290,9 @@ var require_main = __commonJS({
       const dailyNotes = {};
       obsidian.Vault.recurseChildren(dailyNotesFolder, (note) => {
         if (note instanceof obsidian.TFile) {
-          const date = getDateFromFile4(note, "day");
+          const date = getDateFromFile2(note, "day");
           if (date) {
-            const dateString = getDateUID2(date, "day");
+            const dateString = getDateUID(date, "day");
             dailyNotes[dateString] = note;
           }
         }
@@ -356,7 +356,7 @@ var require_main = __commonJS({
     }
     function getWeeklyNote(date, weeklyNotes) {
       var _a;
-      return (_a = weeklyNotes[getDateUID2(date, "week")]) != null ? _a : null;
+      return (_a = weeklyNotes[getDateUID(date, "week")]) != null ? _a : null;
     }
     function getAllWeeklyNotes() {
       const weeklyNotes = {};
@@ -371,9 +371,9 @@ var require_main = __commonJS({
       }
       obsidian.Vault.recurseChildren(weeklyNotesFolder, (note) => {
         if (note instanceof obsidian.TFile) {
-          const date = getDateFromFile4(note, "week");
+          const date = getDateFromFile2(note, "week");
           if (date) {
-            const dateString = getDateUID2(date, "week");
+            const dateString = getDateUID(date, "week");
             weeklyNotes[dateString] = note;
           }
         }
@@ -413,7 +413,7 @@ var require_main = __commonJS({
     }
     function getMonthlyNote(date, monthlyNotes) {
       var _a;
-      return (_a = monthlyNotes[getDateUID2(date, "month")]) != null ? _a : null;
+      return (_a = monthlyNotes[getDateUID(date, "month")]) != null ? _a : null;
     }
     function getAllMonthlyNotes() {
       const monthlyNotes = {};
@@ -428,9 +428,9 @@ var require_main = __commonJS({
       }
       obsidian.Vault.recurseChildren(monthlyNotesFolder, (note) => {
         if (note instanceof obsidian.TFile) {
-          const date = getDateFromFile4(note, "month");
+          const date = getDateFromFile2(note, "month");
           if (date) {
-            const dateString = getDateUID2(date, "month");
+            const dateString = getDateUID(date, "month");
             monthlyNotes[dateString] = note;
           }
         }
@@ -470,7 +470,7 @@ var require_main = __commonJS({
     }
     function getQuarterlyNote(date, quarterly) {
       var _a;
-      return (_a = quarterly[getDateUID2(date, "quarter")]) != null ? _a : null;
+      return (_a = quarterly[getDateUID(date, "quarter")]) != null ? _a : null;
     }
     function getAllQuarterlyNotes() {
       const quarterly = {};
@@ -485,9 +485,9 @@ var require_main = __commonJS({
       }
       obsidian.Vault.recurseChildren(quarterlyFolder, (note) => {
         if (note instanceof obsidian.TFile) {
-          const date = getDateFromFile4(note, "quarter");
+          const date = getDateFromFile2(note, "quarter");
           if (date) {
-            const dateString = getDateUID2(date, "quarter");
+            const dateString = getDateUID(date, "quarter");
             quarterly[dateString] = note;
           }
         }
@@ -527,7 +527,7 @@ var require_main = __commonJS({
     }
     function getYearlyNote(date, yearlyNotes) {
       var _a;
-      return (_a = yearlyNotes[getDateUID2(date, "year")]) != null ? _a : null;
+      return (_a = yearlyNotes[getDateUID(date, "year")]) != null ? _a : null;
     }
     function getAllYearlyNotes() {
       const yearlyNotes = {};
@@ -542,9 +542,9 @@ var require_main = __commonJS({
       }
       obsidian.Vault.recurseChildren(yearlyNotesFolder, (note) => {
         if (note instanceof obsidian.TFile) {
-          const date = getDateFromFile4(note, "year");
+          const date = getDateFromFile2(note, "year");
           if (date) {
-            const dateString = getDateUID2(date, "year");
+            const dateString = getDateUID(date, "year");
             yearlyNotes[dateString] = note;
           }
         }
@@ -622,16 +622,16 @@ var require_main = __commonJS({
     exports.createQuarterlyNote = createQuarterlyNote;
     exports.createWeeklyNote = createWeeklyNote;
     exports.createYearlyNote = createYearlyNote;
-    exports.getAllDailyNotes = getAllDailyNotes7;
+    exports.getAllDailyNotes = getAllDailyNotes4;
     exports.getAllMonthlyNotes = getAllMonthlyNotes;
     exports.getAllQuarterlyNotes = getAllQuarterlyNotes;
     exports.getAllWeeklyNotes = getAllWeeklyNotes;
     exports.getAllYearlyNotes = getAllYearlyNotes;
-    exports.getDailyNote = getDailyNote7;
+    exports.getDailyNote = getDailyNote4;
     exports.getDailyNoteSettings = getDailyNoteSettings;
-    exports.getDateFromFile = getDateFromFile4;
+    exports.getDateFromFile = getDateFromFile2;
     exports.getDateFromPath = getDateFromPath;
-    exports.getDateUID = getDateUID2;
+    exports.getDateUID = getDateUID;
     exports.getMonthlyNote = getMonthlyNote;
     exports.getMonthlyNoteSettings = getMonthlyNoteSettings;
     exports.getPeriodicNoteSettings = getPeriodicNoteSettings;
@@ -642,6 +642,7627 @@ var require_main = __commonJS({
     exports.getWeeklyNoteSettings = getWeeklyNoteSettings;
     exports.getYearlyNote = getYearlyNote;
     exports.getYearlyNoteSettings = getYearlyNoteSettings;
+  }
+});
+
+// node_modules/obsidian-dataview/lib/index.js
+var require_lib = __commonJS({
+  "node_modules/obsidian-dataview/lib/index.js"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    require("obsidian");
+    var LuxonError = class extends Error {
+    };
+    var InvalidDateTimeError = class extends LuxonError {
+      constructor(reason) {
+        super(`Invalid DateTime: ${reason.toMessage()}`);
+      }
+    };
+    var InvalidIntervalError = class extends LuxonError {
+      constructor(reason) {
+        super(`Invalid Interval: ${reason.toMessage()}`);
+      }
+    };
+    var InvalidDurationError = class extends LuxonError {
+      constructor(reason) {
+        super(`Invalid Duration: ${reason.toMessage()}`);
+      }
+    };
+    var ConflictingSpecificationError = class extends LuxonError {
+    };
+    var InvalidUnitError = class extends LuxonError {
+      constructor(unit) {
+        super(`Invalid unit ${unit}`);
+      }
+    };
+    var InvalidArgumentError = class extends LuxonError {
+    };
+    var ZoneIsAbstractError = class extends LuxonError {
+      constructor() {
+        super("Zone is an abstract class");
+      }
+    };
+    var n = "numeric";
+    var s = "short";
+    var l = "long";
+    var DATE_SHORT = {
+      year: n,
+      month: n,
+      day: n
+    };
+    var DATE_MED = {
+      year: n,
+      month: s,
+      day: n
+    };
+    var DATE_MED_WITH_WEEKDAY = {
+      year: n,
+      month: s,
+      day: n,
+      weekday: s
+    };
+    var DATE_FULL = {
+      year: n,
+      month: l,
+      day: n
+    };
+    var DATE_HUGE = {
+      year: n,
+      month: l,
+      day: n,
+      weekday: l
+    };
+    var TIME_SIMPLE = {
+      hour: n,
+      minute: n
+    };
+    var TIME_WITH_SECONDS = {
+      hour: n,
+      minute: n,
+      second: n
+    };
+    var TIME_WITH_SHORT_OFFSET = {
+      hour: n,
+      minute: n,
+      second: n,
+      timeZoneName: s
+    };
+    var TIME_WITH_LONG_OFFSET = {
+      hour: n,
+      minute: n,
+      second: n,
+      timeZoneName: l
+    };
+    var TIME_24_SIMPLE = {
+      hour: n,
+      minute: n,
+      hourCycle: "h23"
+    };
+    var TIME_24_WITH_SECONDS = {
+      hour: n,
+      minute: n,
+      second: n,
+      hourCycle: "h23"
+    };
+    var TIME_24_WITH_SHORT_OFFSET = {
+      hour: n,
+      minute: n,
+      second: n,
+      hourCycle: "h23",
+      timeZoneName: s
+    };
+    var TIME_24_WITH_LONG_OFFSET = {
+      hour: n,
+      minute: n,
+      second: n,
+      hourCycle: "h23",
+      timeZoneName: l
+    };
+    var DATETIME_SHORT = {
+      year: n,
+      month: n,
+      day: n,
+      hour: n,
+      minute: n
+    };
+    var DATETIME_SHORT_WITH_SECONDS = {
+      year: n,
+      month: n,
+      day: n,
+      hour: n,
+      minute: n,
+      second: n
+    };
+    var DATETIME_MED = {
+      year: n,
+      month: s,
+      day: n,
+      hour: n,
+      minute: n
+    };
+    var DATETIME_MED_WITH_SECONDS = {
+      year: n,
+      month: s,
+      day: n,
+      hour: n,
+      minute: n,
+      second: n
+    };
+    var DATETIME_MED_WITH_WEEKDAY = {
+      year: n,
+      month: s,
+      day: n,
+      weekday: s,
+      hour: n,
+      minute: n
+    };
+    var DATETIME_FULL = {
+      year: n,
+      month: l,
+      day: n,
+      hour: n,
+      minute: n,
+      timeZoneName: s
+    };
+    var DATETIME_FULL_WITH_SECONDS = {
+      year: n,
+      month: l,
+      day: n,
+      hour: n,
+      minute: n,
+      second: n,
+      timeZoneName: s
+    };
+    var DATETIME_HUGE = {
+      year: n,
+      month: l,
+      day: n,
+      weekday: l,
+      hour: n,
+      minute: n,
+      timeZoneName: l
+    };
+    var DATETIME_HUGE_WITH_SECONDS = {
+      year: n,
+      month: l,
+      day: n,
+      weekday: l,
+      hour: n,
+      minute: n,
+      second: n,
+      timeZoneName: l
+    };
+    var Zone = class {
+      /**
+       * The type of zone
+       * @abstract
+       * @type {string}
+       */
+      get type() {
+        throw new ZoneIsAbstractError();
+      }
+      /**
+       * The name of this zone.
+       * @abstract
+       * @type {string}
+       */
+      get name() {
+        throw new ZoneIsAbstractError();
+      }
+      get ianaName() {
+        return this.name;
+      }
+      /**
+       * Returns whether the offset is known to be fixed for the whole year.
+       * @abstract
+       * @type {boolean}
+       */
+      get isUniversal() {
+        throw new ZoneIsAbstractError();
+      }
+      /**
+       * Returns the offset's common name (such as EST) at the specified timestamp
+       * @abstract
+       * @param {number} ts - Epoch milliseconds for which to get the name
+       * @param {Object} opts - Options to affect the format
+       * @param {string} opts.format - What style of offset to return. Accepts 'long' or 'short'.
+       * @param {string} opts.locale - What locale to return the offset name in.
+       * @return {string}
+       */
+      offsetName(ts, opts) {
+        throw new ZoneIsAbstractError();
+      }
+      /**
+       * Returns the offset's value as a string
+       * @abstract
+       * @param {number} ts - Epoch milliseconds for which to get the offset
+       * @param {string} format - What style of offset to return.
+       *                          Accepts 'narrow', 'short', or 'techie'. Returning '+6', '+06:00', or '+0600' respectively
+       * @return {string}
+       */
+      formatOffset(ts, format) {
+        throw new ZoneIsAbstractError();
+      }
+      /**
+       * Return the offset in minutes for this zone at the specified timestamp.
+       * @abstract
+       * @param {number} ts - Epoch milliseconds for which to compute the offset
+       * @return {number}
+       */
+      offset(ts) {
+        throw new ZoneIsAbstractError();
+      }
+      /**
+       * Return whether this Zone is equal to another zone
+       * @abstract
+       * @param {Zone} otherZone - the zone to compare
+       * @return {boolean}
+       */
+      equals(otherZone) {
+        throw new ZoneIsAbstractError();
+      }
+      /**
+       * Return whether this Zone is valid.
+       * @abstract
+       * @type {boolean}
+       */
+      get isValid() {
+        throw new ZoneIsAbstractError();
+      }
+    };
+    var singleton$1 = null;
+    var SystemZone = class _SystemZone extends Zone {
+      /**
+       * Get a singleton instance of the local zone
+       * @return {SystemZone}
+       */
+      static get instance() {
+        if (singleton$1 === null) {
+          singleton$1 = new _SystemZone();
+        }
+        return singleton$1;
+      }
+      /** @override **/
+      get type() {
+        return "system";
+      }
+      /** @override **/
+      get name() {
+        return new Intl.DateTimeFormat().resolvedOptions().timeZone;
+      }
+      /** @override **/
+      get isUniversal() {
+        return false;
+      }
+      /** @override **/
+      offsetName(ts, { format, locale }) {
+        return parseZoneInfo(ts, format, locale);
+      }
+      /** @override **/
+      formatOffset(ts, format) {
+        return formatOffset(this.offset(ts), format);
+      }
+      /** @override **/
+      offset(ts) {
+        return -new Date(ts).getTimezoneOffset();
+      }
+      /** @override **/
+      equals(otherZone) {
+        return otherZone.type === "system";
+      }
+      /** @override **/
+      get isValid() {
+        return true;
+      }
+    };
+    var dtfCache = {};
+    function makeDTF(zone) {
+      if (!dtfCache[zone]) {
+        dtfCache[zone] = new Intl.DateTimeFormat("en-US", {
+          hour12: false,
+          timeZone: zone,
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          era: "short"
+        });
+      }
+      return dtfCache[zone];
+    }
+    var typeToPos = {
+      year: 0,
+      month: 1,
+      day: 2,
+      era: 3,
+      hour: 4,
+      minute: 5,
+      second: 6
+    };
+    function hackyOffset(dtf, date) {
+      const formatted = dtf.format(date).replace(/\u200E/g, ""), parsed = /(\d+)\/(\d+)\/(\d+) (AD|BC),? (\d+):(\d+):(\d+)/.exec(formatted), [, fMonth, fDay, fYear, fadOrBc, fHour, fMinute, fSecond] = parsed;
+      return [fYear, fMonth, fDay, fadOrBc, fHour, fMinute, fSecond];
+    }
+    function partsOffset(dtf, date) {
+      const formatted = dtf.formatToParts(date);
+      const filled = [];
+      for (let i = 0; i < formatted.length; i++) {
+        const { type, value } = formatted[i];
+        const pos = typeToPos[type];
+        if (type === "era") {
+          filled[pos] = value;
+        } else if (!isUndefined(pos)) {
+          filled[pos] = parseInt(value, 10);
+        }
+      }
+      return filled;
+    }
+    var ianaZoneCache = {};
+    var IANAZone = class _IANAZone extends Zone {
+      /**
+       * @param {string} name - Zone name
+       * @return {IANAZone}
+       */
+      static create(name) {
+        if (!ianaZoneCache[name]) {
+          ianaZoneCache[name] = new _IANAZone(name);
+        }
+        return ianaZoneCache[name];
+      }
+      /**
+       * Reset local caches. Should only be necessary in testing scenarios.
+       * @return {void}
+       */
+      static resetCache() {
+        ianaZoneCache = {};
+        dtfCache = {};
+      }
+      /**
+       * Returns whether the provided string is a valid specifier. This only checks the string's format, not that the specifier identifies a known zone; see isValidZone for that.
+       * @param {string} s - The string to check validity on
+       * @example IANAZone.isValidSpecifier("America/New_York") //=> true
+       * @example IANAZone.isValidSpecifier("Sport~~blorp") //=> false
+       * @deprecated This method returns false for some valid IANA names. Use isValidZone instead.
+       * @return {boolean}
+       */
+      static isValidSpecifier(s2) {
+        return this.isValidZone(s2);
+      }
+      /**
+       * Returns whether the provided string identifies a real zone
+       * @param {string} zone - The string to check
+       * @example IANAZone.isValidZone("America/New_York") //=> true
+       * @example IANAZone.isValidZone("Fantasia/Castle") //=> false
+       * @example IANAZone.isValidZone("Sport~~blorp") //=> false
+       * @return {boolean}
+       */
+      static isValidZone(zone) {
+        if (!zone) {
+          return false;
+        }
+        try {
+          new Intl.DateTimeFormat("en-US", { timeZone: zone }).format();
+          return true;
+        } catch (e) {
+          return false;
+        }
+      }
+      constructor(name) {
+        super();
+        this.zoneName = name;
+        this.valid = _IANAZone.isValidZone(name);
+      }
+      /** @override **/
+      get type() {
+        return "iana";
+      }
+      /** @override **/
+      get name() {
+        return this.zoneName;
+      }
+      /** @override **/
+      get isUniversal() {
+        return false;
+      }
+      /** @override **/
+      offsetName(ts, { format, locale }) {
+        return parseZoneInfo(ts, format, locale, this.name);
+      }
+      /** @override **/
+      formatOffset(ts, format) {
+        return formatOffset(this.offset(ts), format);
+      }
+      /** @override **/
+      offset(ts) {
+        const date = new Date(ts);
+        if (isNaN(date))
+          return NaN;
+        const dtf = makeDTF(this.name);
+        let [year, month, day, adOrBc, hour, minute, second] = dtf.formatToParts ? partsOffset(dtf, date) : hackyOffset(dtf, date);
+        if (adOrBc === "BC") {
+          year = -Math.abs(year) + 1;
+        }
+        const adjustedHour = hour === 24 ? 0 : hour;
+        const asUTC = objToLocalTS({
+          year,
+          month,
+          day,
+          hour: adjustedHour,
+          minute,
+          second,
+          millisecond: 0
+        });
+        let asTS = +date;
+        const over = asTS % 1e3;
+        asTS -= over >= 0 ? over : 1e3 + over;
+        return (asUTC - asTS) / (60 * 1e3);
+      }
+      /** @override **/
+      equals(otherZone) {
+        return otherZone.type === "iana" && otherZone.name === this.name;
+      }
+      /** @override **/
+      get isValid() {
+        return this.valid;
+      }
+    };
+    var intlLFCache = {};
+    function getCachedLF(locString, opts = {}) {
+      const key = JSON.stringify([locString, opts]);
+      let dtf = intlLFCache[key];
+      if (!dtf) {
+        dtf = new Intl.ListFormat(locString, opts);
+        intlLFCache[key] = dtf;
+      }
+      return dtf;
+    }
+    var intlDTCache = {};
+    function getCachedDTF(locString, opts = {}) {
+      const key = JSON.stringify([locString, opts]);
+      let dtf = intlDTCache[key];
+      if (!dtf) {
+        dtf = new Intl.DateTimeFormat(locString, opts);
+        intlDTCache[key] = dtf;
+      }
+      return dtf;
+    }
+    var intlNumCache = {};
+    function getCachedINF(locString, opts = {}) {
+      const key = JSON.stringify([locString, opts]);
+      let inf = intlNumCache[key];
+      if (!inf) {
+        inf = new Intl.NumberFormat(locString, opts);
+        intlNumCache[key] = inf;
+      }
+      return inf;
+    }
+    var intlRelCache = {};
+    function getCachedRTF(locString, opts = {}) {
+      const { base, ...cacheKeyOpts } = opts;
+      const key = JSON.stringify([locString, cacheKeyOpts]);
+      let inf = intlRelCache[key];
+      if (!inf) {
+        inf = new Intl.RelativeTimeFormat(locString, opts);
+        intlRelCache[key] = inf;
+      }
+      return inf;
+    }
+    var sysLocaleCache = null;
+    function systemLocale() {
+      if (sysLocaleCache) {
+        return sysLocaleCache;
+      } else {
+        sysLocaleCache = new Intl.DateTimeFormat().resolvedOptions().locale;
+        return sysLocaleCache;
+      }
+    }
+    function parseLocaleString(localeStr) {
+      const xIndex = localeStr.indexOf("-x-");
+      if (xIndex !== -1) {
+        localeStr = localeStr.substring(0, xIndex);
+      }
+      const uIndex = localeStr.indexOf("-u-");
+      if (uIndex === -1) {
+        return [localeStr];
+      } else {
+        let options;
+        let selectedStr;
+        try {
+          options = getCachedDTF(localeStr).resolvedOptions();
+          selectedStr = localeStr;
+        } catch (e) {
+          const smaller = localeStr.substring(0, uIndex);
+          options = getCachedDTF(smaller).resolvedOptions();
+          selectedStr = smaller;
+        }
+        const { numberingSystem, calendar } = options;
+        return [selectedStr, numberingSystem, calendar];
+      }
+    }
+    function intlConfigString(localeStr, numberingSystem, outputCalendar) {
+      if (outputCalendar || numberingSystem) {
+        if (!localeStr.includes("-u-")) {
+          localeStr += "-u";
+        }
+        if (outputCalendar) {
+          localeStr += `-ca-${outputCalendar}`;
+        }
+        if (numberingSystem) {
+          localeStr += `-nu-${numberingSystem}`;
+        }
+        return localeStr;
+      } else {
+        return localeStr;
+      }
+    }
+    function mapMonths(f) {
+      const ms = [];
+      for (let i = 1; i <= 12; i++) {
+        const dt = DateTime.utc(2016, i, 1);
+        ms.push(f(dt));
+      }
+      return ms;
+    }
+    function mapWeekdays(f) {
+      const ms = [];
+      for (let i = 1; i <= 7; i++) {
+        const dt = DateTime.utc(2016, 11, 13 + i);
+        ms.push(f(dt));
+      }
+      return ms;
+    }
+    function listStuff(loc, length, defaultOK, englishFn, intlFn) {
+      const mode = loc.listingMode(defaultOK);
+      if (mode === "error") {
+        return null;
+      } else if (mode === "en") {
+        return englishFn(length);
+      } else {
+        return intlFn(length);
+      }
+    }
+    function supportsFastNumbers(loc) {
+      if (loc.numberingSystem && loc.numberingSystem !== "latn") {
+        return false;
+      } else {
+        return loc.numberingSystem === "latn" || !loc.locale || loc.locale.startsWith("en") || new Intl.DateTimeFormat(loc.intl).resolvedOptions().numberingSystem === "latn";
+      }
+    }
+    var PolyNumberFormatter = class {
+      constructor(intl, forceSimple, opts) {
+        this.padTo = opts.padTo || 0;
+        this.floor = opts.floor || false;
+        const { padTo, floor, ...otherOpts } = opts;
+        if (!forceSimple || Object.keys(otherOpts).length > 0) {
+          const intlOpts = { useGrouping: false, ...opts };
+          if (opts.padTo > 0)
+            intlOpts.minimumIntegerDigits = opts.padTo;
+          this.inf = getCachedINF(intl, intlOpts);
+        }
+      }
+      format(i) {
+        if (this.inf) {
+          const fixed = this.floor ? Math.floor(i) : i;
+          return this.inf.format(fixed);
+        } else {
+          const fixed = this.floor ? Math.floor(i) : roundTo(i, 3);
+          return padStart(fixed, this.padTo);
+        }
+      }
+    };
+    var PolyDateFormatter = class {
+      constructor(dt, intl, opts) {
+        this.opts = opts;
+        let z = void 0;
+        if (dt.zone.isUniversal) {
+          const gmtOffset = -1 * (dt.offset / 60);
+          const offsetZ = gmtOffset >= 0 ? `Etc/GMT+${gmtOffset}` : `Etc/GMT${gmtOffset}`;
+          if (dt.offset !== 0 && IANAZone.create(offsetZ).valid) {
+            z = offsetZ;
+            this.dt = dt;
+          } else {
+            z = "UTC";
+            if (opts.timeZoneName) {
+              this.dt = dt;
+            } else {
+              this.dt = dt.offset === 0 ? dt : DateTime.fromMillis(dt.ts + dt.offset * 60 * 1e3);
+            }
+          }
+        } else if (dt.zone.type === "system") {
+          this.dt = dt;
+        } else {
+          this.dt = dt;
+          z = dt.zone.name;
+        }
+        const intlOpts = { ...this.opts };
+        intlOpts.timeZone = intlOpts.timeZone || z;
+        this.dtf = getCachedDTF(intl, intlOpts);
+      }
+      format() {
+        return this.dtf.format(this.dt.toJSDate());
+      }
+      formatToParts() {
+        return this.dtf.formatToParts(this.dt.toJSDate());
+      }
+      resolvedOptions() {
+        return this.dtf.resolvedOptions();
+      }
+    };
+    var PolyRelFormatter = class {
+      constructor(intl, isEnglish, opts) {
+        this.opts = { style: "long", ...opts };
+        if (!isEnglish && hasRelative()) {
+          this.rtf = getCachedRTF(intl, opts);
+        }
+      }
+      format(count, unit) {
+        if (this.rtf) {
+          return this.rtf.format(count, unit);
+        } else {
+          return formatRelativeTime(unit, count, this.opts.numeric, this.opts.style !== "long");
+        }
+      }
+      formatToParts(count, unit) {
+        if (this.rtf) {
+          return this.rtf.formatToParts(count, unit);
+        } else {
+          return [];
+        }
+      }
+    };
+    var Locale = class _Locale {
+      static fromOpts(opts) {
+        return _Locale.create(opts.locale, opts.numberingSystem, opts.outputCalendar, opts.defaultToEN);
+      }
+      static create(locale, numberingSystem, outputCalendar, defaultToEN = false) {
+        const specifiedLocale = locale || Settings2.defaultLocale;
+        const localeR = specifiedLocale || (defaultToEN ? "en-US" : systemLocale());
+        const numberingSystemR = numberingSystem || Settings2.defaultNumberingSystem;
+        const outputCalendarR = outputCalendar || Settings2.defaultOutputCalendar;
+        return new _Locale(localeR, numberingSystemR, outputCalendarR, specifiedLocale);
+      }
+      static resetCache() {
+        sysLocaleCache = null;
+        intlDTCache = {};
+        intlNumCache = {};
+        intlRelCache = {};
+      }
+      static fromObject({ locale, numberingSystem, outputCalendar } = {}) {
+        return _Locale.create(locale, numberingSystem, outputCalendar);
+      }
+      constructor(locale, numbering, outputCalendar, specifiedLocale) {
+        const [parsedLocale, parsedNumberingSystem, parsedOutputCalendar] = parseLocaleString(locale);
+        this.locale = parsedLocale;
+        this.numberingSystem = numbering || parsedNumberingSystem || null;
+        this.outputCalendar = outputCalendar || parsedOutputCalendar || null;
+        this.intl = intlConfigString(this.locale, this.numberingSystem, this.outputCalendar);
+        this.weekdaysCache = { format: {}, standalone: {} };
+        this.monthsCache = { format: {}, standalone: {} };
+        this.meridiemCache = null;
+        this.eraCache = {};
+        this.specifiedLocale = specifiedLocale;
+        this.fastNumbersCached = null;
+      }
+      get fastNumbers() {
+        if (this.fastNumbersCached == null) {
+          this.fastNumbersCached = supportsFastNumbers(this);
+        }
+        return this.fastNumbersCached;
+      }
+      listingMode() {
+        const isActuallyEn = this.isEnglish();
+        const hasNoWeirdness = (this.numberingSystem === null || this.numberingSystem === "latn") && (this.outputCalendar === null || this.outputCalendar === "gregory");
+        return isActuallyEn && hasNoWeirdness ? "en" : "intl";
+      }
+      clone(alts) {
+        if (!alts || Object.getOwnPropertyNames(alts).length === 0) {
+          return this;
+        } else {
+          return _Locale.create(
+            alts.locale || this.specifiedLocale,
+            alts.numberingSystem || this.numberingSystem,
+            alts.outputCalendar || this.outputCalendar,
+            alts.defaultToEN || false
+          );
+        }
+      }
+      redefaultToEN(alts = {}) {
+        return this.clone({ ...alts, defaultToEN: true });
+      }
+      redefaultToSystem(alts = {}) {
+        return this.clone({ ...alts, defaultToEN: false });
+      }
+      months(length, format = false, defaultOK = true) {
+        return listStuff(this, length, defaultOK, months, () => {
+          const intl = format ? { month: length, day: "numeric" } : { month: length }, formatStr = format ? "format" : "standalone";
+          if (!this.monthsCache[formatStr][length]) {
+            this.monthsCache[formatStr][length] = mapMonths((dt) => this.extract(dt, intl, "month"));
+          }
+          return this.monthsCache[formatStr][length];
+        });
+      }
+      weekdays(length, format = false, defaultOK = true) {
+        return listStuff(this, length, defaultOK, weekdays, () => {
+          const intl = format ? { weekday: length, year: "numeric", month: "long", day: "numeric" } : { weekday: length }, formatStr = format ? "format" : "standalone";
+          if (!this.weekdaysCache[formatStr][length]) {
+            this.weekdaysCache[formatStr][length] = mapWeekdays(
+              (dt) => this.extract(dt, intl, "weekday")
+            );
+          }
+          return this.weekdaysCache[formatStr][length];
+        });
+      }
+      meridiems(defaultOK = true) {
+        return listStuff(
+          this,
+          void 0,
+          defaultOK,
+          () => meridiems,
+          () => {
+            if (!this.meridiemCache) {
+              const intl = { hour: "numeric", hourCycle: "h12" };
+              this.meridiemCache = [DateTime.utc(2016, 11, 13, 9), DateTime.utc(2016, 11, 13, 19)].map(
+                (dt) => this.extract(dt, intl, "dayperiod")
+              );
+            }
+            return this.meridiemCache;
+          }
+        );
+      }
+      eras(length, defaultOK = true) {
+        return listStuff(this, length, defaultOK, eras, () => {
+          const intl = { era: length };
+          if (!this.eraCache[length]) {
+            this.eraCache[length] = [DateTime.utc(-40, 1, 1), DateTime.utc(2017, 1, 1)].map(
+              (dt) => this.extract(dt, intl, "era")
+            );
+          }
+          return this.eraCache[length];
+        });
+      }
+      extract(dt, intlOpts, field) {
+        const df = this.dtFormatter(dt, intlOpts), results = df.formatToParts(), matching = results.find((m) => m.type.toLowerCase() === field);
+        return matching ? matching.value : null;
+      }
+      numberFormatter(opts = {}) {
+        return new PolyNumberFormatter(this.intl, opts.forceSimple || this.fastNumbers, opts);
+      }
+      dtFormatter(dt, intlOpts = {}) {
+        return new PolyDateFormatter(dt, this.intl, intlOpts);
+      }
+      relFormatter(opts = {}) {
+        return new PolyRelFormatter(this.intl, this.isEnglish(), opts);
+      }
+      listFormatter(opts = {}) {
+        return getCachedLF(this.intl, opts);
+      }
+      isEnglish() {
+        return this.locale === "en" || this.locale.toLowerCase() === "en-us" || new Intl.DateTimeFormat(this.intl).resolvedOptions().locale.startsWith("en-us");
+      }
+      equals(other) {
+        return this.locale === other.locale && this.numberingSystem === other.numberingSystem && this.outputCalendar === other.outputCalendar;
+      }
+    };
+    var singleton = null;
+    var FixedOffsetZone = class _FixedOffsetZone extends Zone {
+      /**
+       * Get a singleton instance of UTC
+       * @return {FixedOffsetZone}
+       */
+      static get utcInstance() {
+        if (singleton === null) {
+          singleton = new _FixedOffsetZone(0);
+        }
+        return singleton;
+      }
+      /**
+       * Get an instance with a specified offset
+       * @param {number} offset - The offset in minutes
+       * @return {FixedOffsetZone}
+       */
+      static instance(offset2) {
+        return offset2 === 0 ? _FixedOffsetZone.utcInstance : new _FixedOffsetZone(offset2);
+      }
+      /**
+       * Get an instance of FixedOffsetZone from a UTC offset string, like "UTC+6"
+       * @param {string} s - The offset string to parse
+       * @example FixedOffsetZone.parseSpecifier("UTC+6")
+       * @example FixedOffsetZone.parseSpecifier("UTC+06")
+       * @example FixedOffsetZone.parseSpecifier("UTC-6:00")
+       * @return {FixedOffsetZone}
+       */
+      static parseSpecifier(s2) {
+        if (s2) {
+          const r = s2.match(/^utc(?:([+-]\d{1,2})(?::(\d{2}))?)?$/i);
+          if (r) {
+            return new _FixedOffsetZone(signedOffset(r[1], r[2]));
+          }
+        }
+        return null;
+      }
+      constructor(offset2) {
+        super();
+        this.fixed = offset2;
+      }
+      /** @override **/
+      get type() {
+        return "fixed";
+      }
+      /** @override **/
+      get name() {
+        return this.fixed === 0 ? "UTC" : `UTC${formatOffset(this.fixed, "narrow")}`;
+      }
+      get ianaName() {
+        if (this.fixed === 0) {
+          return "Etc/UTC";
+        } else {
+          return `Etc/GMT${formatOffset(-this.fixed, "narrow")}`;
+        }
+      }
+      /** @override **/
+      offsetName() {
+        return this.name;
+      }
+      /** @override **/
+      formatOffset(ts, format) {
+        return formatOffset(this.fixed, format);
+      }
+      /** @override **/
+      get isUniversal() {
+        return true;
+      }
+      /** @override **/
+      offset() {
+        return this.fixed;
+      }
+      /** @override **/
+      equals(otherZone) {
+        return otherZone.type === "fixed" && otherZone.fixed === this.fixed;
+      }
+      /** @override **/
+      get isValid() {
+        return true;
+      }
+    };
+    var InvalidZone = class extends Zone {
+      constructor(zoneName) {
+        super();
+        this.zoneName = zoneName;
+      }
+      /** @override **/
+      get type() {
+        return "invalid";
+      }
+      /** @override **/
+      get name() {
+        return this.zoneName;
+      }
+      /** @override **/
+      get isUniversal() {
+        return false;
+      }
+      /** @override **/
+      offsetName() {
+        return null;
+      }
+      /** @override **/
+      formatOffset() {
+        return "";
+      }
+      /** @override **/
+      offset() {
+        return NaN;
+      }
+      /** @override **/
+      equals() {
+        return false;
+      }
+      /** @override **/
+      get isValid() {
+        return false;
+      }
+    };
+    function normalizeZone(input, defaultZone2) {
+      if (isUndefined(input) || input === null) {
+        return defaultZone2;
+      } else if (input instanceof Zone) {
+        return input;
+      } else if (isString(input)) {
+        const lowered = input.toLowerCase();
+        if (lowered === "default")
+          return defaultZone2;
+        else if (lowered === "local" || lowered === "system")
+          return SystemZone.instance;
+        else if (lowered === "utc" || lowered === "gmt")
+          return FixedOffsetZone.utcInstance;
+        else
+          return FixedOffsetZone.parseSpecifier(lowered) || IANAZone.create(input);
+      } else if (isNumber(input)) {
+        return FixedOffsetZone.instance(input);
+      } else if (typeof input === "object" && input.offset && typeof input.offset === "number") {
+        return input;
+      } else {
+        return new InvalidZone(input);
+      }
+    }
+    var now = () => Date.now();
+    var defaultZone = "system";
+    var defaultLocale = null;
+    var defaultNumberingSystem = null;
+    var defaultOutputCalendar = null;
+    var twoDigitCutoffYear = 60;
+    var throwOnInvalid;
+    var Settings2 = class {
+      /**
+       * Get the callback for returning the current timestamp.
+       * @type {function}
+       */
+      static get now() {
+        return now;
+      }
+      /**
+       * Set the callback for returning the current timestamp.
+       * The function should return a number, which will be interpreted as an Epoch millisecond count
+       * @type {function}
+       * @example Settings.now = () => Date.now() + 3000 // pretend it is 3 seconds in the future
+       * @example Settings.now = () => 0 // always pretend it's Jan 1, 1970 at midnight in UTC time
+       */
+      static set now(n2) {
+        now = n2;
+      }
+      /**
+       * Set the default time zone to create DateTimes in. Does not affect existing instances.
+       * Use the value "system" to reset this value to the system's time zone.
+       * @type {string}
+       */
+      static set defaultZone(zone) {
+        defaultZone = zone;
+      }
+      /**
+       * Get the default time zone object currently used to create DateTimes. Does not affect existing instances.
+       * The default value is the system's time zone (the one set on the machine that runs this code).
+       * @type {Zone}
+       */
+      static get defaultZone() {
+        return normalizeZone(defaultZone, SystemZone.instance);
+      }
+      /**
+       * Get the default locale to create DateTimes with. Does not affect existing instances.
+       * @type {string}
+       */
+      static get defaultLocale() {
+        return defaultLocale;
+      }
+      /**
+       * Set the default locale to create DateTimes with. Does not affect existing instances.
+       * @type {string}
+       */
+      static set defaultLocale(locale) {
+        defaultLocale = locale;
+      }
+      /**
+       * Get the default numbering system to create DateTimes with. Does not affect existing instances.
+       * @type {string}
+       */
+      static get defaultNumberingSystem() {
+        return defaultNumberingSystem;
+      }
+      /**
+       * Set the default numbering system to create DateTimes with. Does not affect existing instances.
+       * @type {string}
+       */
+      static set defaultNumberingSystem(numberingSystem) {
+        defaultNumberingSystem = numberingSystem;
+      }
+      /**
+       * Get the default output calendar to create DateTimes with. Does not affect existing instances.
+       * @type {string}
+       */
+      static get defaultOutputCalendar() {
+        return defaultOutputCalendar;
+      }
+      /**
+       * Set the default output calendar to create DateTimes with. Does not affect existing instances.
+       * @type {string}
+       */
+      static set defaultOutputCalendar(outputCalendar) {
+        defaultOutputCalendar = outputCalendar;
+      }
+      /**
+       * Get the cutoff year after which a string encoding a year as two digits is interpreted to occur in the current century.
+       * @type {number}
+       */
+      static get twoDigitCutoffYear() {
+        return twoDigitCutoffYear;
+      }
+      /**
+       * Set the cutoff year after which a string encoding a year as two digits is interpreted to occur in the current century.
+       * @type {number}
+       * @example Settings.twoDigitCutoffYear = 0 // cut-off year is 0, so all 'yy' are interpretted as current century
+       * @example Settings.twoDigitCutoffYear = 50 // '49' -> 1949; '50' -> 2050
+       * @example Settings.twoDigitCutoffYear = 1950 // interpretted as 50
+       * @example Settings.twoDigitCutoffYear = 2050 // ALSO interpretted as 50
+       */
+      static set twoDigitCutoffYear(cutoffYear) {
+        twoDigitCutoffYear = cutoffYear % 100;
+      }
+      /**
+       * Get whether Luxon will throw when it encounters invalid DateTimes, Durations, or Intervals
+       * @type {boolean}
+       */
+      static get throwOnInvalid() {
+        return throwOnInvalid;
+      }
+      /**
+       * Set whether Luxon will throw when it encounters invalid DateTimes, Durations, or Intervals
+       * @type {boolean}
+       */
+      static set throwOnInvalid(t) {
+        throwOnInvalid = t;
+      }
+      /**
+       * Reset Luxon's global caches. Should only be necessary in testing scenarios.
+       * @return {void}
+       */
+      static resetCaches() {
+        Locale.resetCache();
+        IANAZone.resetCache();
+      }
+    };
+    function isUndefined(o) {
+      return typeof o === "undefined";
+    }
+    function isNumber(o) {
+      return typeof o === "number";
+    }
+    function isInteger(o) {
+      return typeof o === "number" && o % 1 === 0;
+    }
+    function isString(o) {
+      return typeof o === "string";
+    }
+    function isDate(o) {
+      return Object.prototype.toString.call(o) === "[object Date]";
+    }
+    function hasRelative() {
+      try {
+        return typeof Intl !== "undefined" && !!Intl.RelativeTimeFormat;
+      } catch (e) {
+        return false;
+      }
+    }
+    function maybeArray(thing) {
+      return Array.isArray(thing) ? thing : [thing];
+    }
+    function bestBy(arr, by, compare) {
+      if (arr.length === 0) {
+        return void 0;
+      }
+      return arr.reduce((best, next) => {
+        const pair = [by(next), next];
+        if (!best) {
+          return pair;
+        } else if (compare(best[0], pair[0]) === best[0]) {
+          return best;
+        } else {
+          return pair;
+        }
+      }, null)[1];
+    }
+    function pick(obj, keys) {
+      return keys.reduce((a, k) => {
+        a[k] = obj[k];
+        return a;
+      }, {});
+    }
+    function hasOwnProperty(obj, prop) {
+      return Object.prototype.hasOwnProperty.call(obj, prop);
+    }
+    function integerBetween(thing, bottom, top) {
+      return isInteger(thing) && thing >= bottom && thing <= top;
+    }
+    function floorMod(x, n2) {
+      return x - n2 * Math.floor(x / n2);
+    }
+    function padStart(input, n2 = 2) {
+      const isNeg = input < 0;
+      let padded;
+      if (isNeg) {
+        padded = "-" + ("" + -input).padStart(n2, "0");
+      } else {
+        padded = ("" + input).padStart(n2, "0");
+      }
+      return padded;
+    }
+    function parseInteger(string) {
+      if (isUndefined(string) || string === null || string === "") {
+        return void 0;
+      } else {
+        return parseInt(string, 10);
+      }
+    }
+    function parseFloating(string) {
+      if (isUndefined(string) || string === null || string === "") {
+        return void 0;
+      } else {
+        return parseFloat(string);
+      }
+    }
+    function parseMillis(fraction) {
+      if (isUndefined(fraction) || fraction === null || fraction === "") {
+        return void 0;
+      } else {
+        const f = parseFloat("0." + fraction) * 1e3;
+        return Math.floor(f);
+      }
+    }
+    function roundTo(number, digits, towardZero = false) {
+      const factor = 10 ** digits, rounder = towardZero ? Math.trunc : Math.round;
+      return rounder(number * factor) / factor;
+    }
+    function isLeapYear(year) {
+      return year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
+    }
+    function daysInYear(year) {
+      return isLeapYear(year) ? 366 : 365;
+    }
+    function daysInMonth(year, month) {
+      const modMonth = floorMod(month - 1, 12) + 1, modYear = year + (month - modMonth) / 12;
+      if (modMonth === 2) {
+        return isLeapYear(modYear) ? 29 : 28;
+      } else {
+        return [31, null, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][modMonth - 1];
+      }
+    }
+    function objToLocalTS(obj) {
+      let d = Date.UTC(
+        obj.year,
+        obj.month - 1,
+        obj.day,
+        obj.hour,
+        obj.minute,
+        obj.second,
+        obj.millisecond
+      );
+      if (obj.year < 100 && obj.year >= 0) {
+        d = new Date(d);
+        d.setUTCFullYear(d.getUTCFullYear() - 1900);
+      }
+      return +d;
+    }
+    function weeksInWeekYear(weekYear) {
+      const p1 = (weekYear + Math.floor(weekYear / 4) - Math.floor(weekYear / 100) + Math.floor(weekYear / 400)) % 7, last3 = weekYear - 1, p2 = (last3 + Math.floor(last3 / 4) - Math.floor(last3 / 100) + Math.floor(last3 / 400)) % 7;
+      return p1 === 4 || p2 === 3 ? 53 : 52;
+    }
+    function untruncateYear(year) {
+      if (year > 99) {
+        return year;
+      } else
+        return year > Settings2.twoDigitCutoffYear ? 1900 + year : 2e3 + year;
+    }
+    function parseZoneInfo(ts, offsetFormat, locale, timeZone = null) {
+      const date = new Date(ts), intlOpts = {
+        hourCycle: "h23",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit"
+      };
+      if (timeZone) {
+        intlOpts.timeZone = timeZone;
+      }
+      const modified = { timeZoneName: offsetFormat, ...intlOpts };
+      const parsed = new Intl.DateTimeFormat(locale, modified).formatToParts(date).find((m) => m.type.toLowerCase() === "timezonename");
+      return parsed ? parsed.value : null;
+    }
+    function signedOffset(offHourStr, offMinuteStr) {
+      let offHour = parseInt(offHourStr, 10);
+      if (Number.isNaN(offHour)) {
+        offHour = 0;
+      }
+      const offMin = parseInt(offMinuteStr, 10) || 0, offMinSigned = offHour < 0 || Object.is(offHour, -0) ? -offMin : offMin;
+      return offHour * 60 + offMinSigned;
+    }
+    function asNumber(value) {
+      const numericValue = Number(value);
+      if (typeof value === "boolean" || value === "" || Number.isNaN(numericValue))
+        throw new InvalidArgumentError(`Invalid unit value ${value}`);
+      return numericValue;
+    }
+    function normalizeObject(obj, normalizer) {
+      const normalized = {};
+      for (const u in obj) {
+        if (hasOwnProperty(obj, u)) {
+          const v = obj[u];
+          if (v === void 0 || v === null)
+            continue;
+          normalized[normalizer(u)] = asNumber(v);
+        }
+      }
+      return normalized;
+    }
+    function formatOffset(offset2, format) {
+      const hours2 = Math.trunc(Math.abs(offset2 / 60)), minutes2 = Math.trunc(Math.abs(offset2 % 60)), sign = offset2 >= 0 ? "+" : "-";
+      switch (format) {
+        case "short":
+          return `${sign}${padStart(hours2, 2)}:${padStart(minutes2, 2)}`;
+        case "narrow":
+          return `${sign}${hours2}${minutes2 > 0 ? `:${minutes2}` : ""}`;
+        case "techie":
+          return `${sign}${padStart(hours2, 2)}${padStart(minutes2, 2)}`;
+        default:
+          throw new RangeError(`Value format ${format} is out of range for property format`);
+      }
+    }
+    function timeObject(obj) {
+      return pick(obj, ["hour", "minute", "second", "millisecond"]);
+    }
+    var monthsLong = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ];
+    var monthsShort = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ];
+    var monthsNarrow = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
+    function months(length) {
+      switch (length) {
+        case "narrow":
+          return [...monthsNarrow];
+        case "short":
+          return [...monthsShort];
+        case "long":
+          return [...monthsLong];
+        case "numeric":
+          return ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
+        case "2-digit":
+          return ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
+        default:
+          return null;
+      }
+    }
+    var weekdaysLong = [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ];
+    var weekdaysShort = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+    var weekdaysNarrow = ["M", "T", "W", "T", "F", "S", "S"];
+    function weekdays(length) {
+      switch (length) {
+        case "narrow":
+          return [...weekdaysNarrow];
+        case "short":
+          return [...weekdaysShort];
+        case "long":
+          return [...weekdaysLong];
+        case "numeric":
+          return ["1", "2", "3", "4", "5", "6", "7"];
+        default:
+          return null;
+      }
+    }
+    var meridiems = ["AM", "PM"];
+    var erasLong = ["Before Christ", "Anno Domini"];
+    var erasShort = ["BC", "AD"];
+    var erasNarrow = ["B", "A"];
+    function eras(length) {
+      switch (length) {
+        case "narrow":
+          return [...erasNarrow];
+        case "short":
+          return [...erasShort];
+        case "long":
+          return [...erasLong];
+        default:
+          return null;
+      }
+    }
+    function meridiemForDateTime(dt) {
+      return meridiems[dt.hour < 12 ? 0 : 1];
+    }
+    function weekdayForDateTime(dt, length) {
+      return weekdays(length)[dt.weekday - 1];
+    }
+    function monthForDateTime(dt, length) {
+      return months(length)[dt.month - 1];
+    }
+    function eraForDateTime(dt, length) {
+      return eras(length)[dt.year < 0 ? 0 : 1];
+    }
+    function formatRelativeTime(unit, count, numeric = "always", narrow = false) {
+      const units = {
+        years: ["year", "yr."],
+        quarters: ["quarter", "qtr."],
+        months: ["month", "mo."],
+        weeks: ["week", "wk."],
+        days: ["day", "day", "days"],
+        hours: ["hour", "hr."],
+        minutes: ["minute", "min."],
+        seconds: ["second", "sec."]
+      };
+      const lastable = ["hours", "minutes", "seconds"].indexOf(unit) === -1;
+      if (numeric === "auto" && lastable) {
+        const isDay = unit === "days";
+        switch (count) {
+          case 1:
+            return isDay ? "tomorrow" : `next ${units[unit][0]}`;
+          case -1:
+            return isDay ? "yesterday" : `last ${units[unit][0]}`;
+          case 0:
+            return isDay ? "today" : `this ${units[unit][0]}`;
+        }
+      }
+      const isInPast = Object.is(count, -0) || count < 0, fmtValue = Math.abs(count), singular = fmtValue === 1, lilUnits = units[unit], fmtUnit = narrow ? singular ? lilUnits[1] : lilUnits[2] || lilUnits[1] : singular ? units[unit][0] : unit;
+      return isInPast ? `${fmtValue} ${fmtUnit} ago` : `in ${fmtValue} ${fmtUnit}`;
+    }
+    function stringifyTokens(splits, tokenToString) {
+      let s2 = "";
+      for (const token of splits) {
+        if (token.literal) {
+          s2 += token.val;
+        } else {
+          s2 += tokenToString(token.val);
+        }
+      }
+      return s2;
+    }
+    var macroTokenToFormatOpts = {
+      D: DATE_SHORT,
+      DD: DATE_MED,
+      DDD: DATE_FULL,
+      DDDD: DATE_HUGE,
+      t: TIME_SIMPLE,
+      tt: TIME_WITH_SECONDS,
+      ttt: TIME_WITH_SHORT_OFFSET,
+      tttt: TIME_WITH_LONG_OFFSET,
+      T: TIME_24_SIMPLE,
+      TT: TIME_24_WITH_SECONDS,
+      TTT: TIME_24_WITH_SHORT_OFFSET,
+      TTTT: TIME_24_WITH_LONG_OFFSET,
+      f: DATETIME_SHORT,
+      ff: DATETIME_MED,
+      fff: DATETIME_FULL,
+      ffff: DATETIME_HUGE,
+      F: DATETIME_SHORT_WITH_SECONDS,
+      FF: DATETIME_MED_WITH_SECONDS,
+      FFF: DATETIME_FULL_WITH_SECONDS,
+      FFFF: DATETIME_HUGE_WITH_SECONDS
+    };
+    var Formatter = class _Formatter {
+      static create(locale, opts = {}) {
+        return new _Formatter(locale, opts);
+      }
+      static parseFormat(fmt) {
+        let current = null, currentFull = "", bracketed = false;
+        const splits = [];
+        for (let i = 0; i < fmt.length; i++) {
+          const c = fmt.charAt(i);
+          if (c === "'") {
+            if (currentFull.length > 0) {
+              splits.push({ literal: bracketed, val: currentFull });
+            }
+            current = null;
+            currentFull = "";
+            bracketed = !bracketed;
+          } else if (bracketed) {
+            currentFull += c;
+          } else if (c === current) {
+            currentFull += c;
+          } else {
+            if (currentFull.length > 0) {
+              splits.push({ literal: false, val: currentFull });
+            }
+            currentFull = c;
+            current = c;
+          }
+        }
+        if (currentFull.length > 0) {
+          splits.push({ literal: bracketed, val: currentFull });
+        }
+        return splits;
+      }
+      static macroTokenToFormatOpts(token) {
+        return macroTokenToFormatOpts[token];
+      }
+      constructor(locale, formatOpts) {
+        this.opts = formatOpts;
+        this.loc = locale;
+        this.systemLoc = null;
+      }
+      formatWithSystemDefault(dt, opts) {
+        if (this.systemLoc === null) {
+          this.systemLoc = this.loc.redefaultToSystem();
+        }
+        const df = this.systemLoc.dtFormatter(dt, { ...this.opts, ...opts });
+        return df.format();
+      }
+      formatDateTime(dt, opts = {}) {
+        const df = this.loc.dtFormatter(dt, { ...this.opts, ...opts });
+        return df.format();
+      }
+      formatDateTimeParts(dt, opts = {}) {
+        const df = this.loc.dtFormatter(dt, { ...this.opts, ...opts });
+        return df.formatToParts();
+      }
+      formatInterval(interval, opts = {}) {
+        const df = this.loc.dtFormatter(interval.start, { ...this.opts, ...opts });
+        return df.dtf.formatRange(interval.start.toJSDate(), interval.end.toJSDate());
+      }
+      resolvedOptions(dt, opts = {}) {
+        const df = this.loc.dtFormatter(dt, { ...this.opts, ...opts });
+        return df.resolvedOptions();
+      }
+      num(n2, p = 0) {
+        if (this.opts.forceSimple) {
+          return padStart(n2, p);
+        }
+        const opts = { ...this.opts };
+        if (p > 0) {
+          opts.padTo = p;
+        }
+        return this.loc.numberFormatter(opts).format(n2);
+      }
+      formatDateTimeFromString(dt, fmt) {
+        const knownEnglish = this.loc.listingMode() === "en", useDateTimeFormatter = this.loc.outputCalendar && this.loc.outputCalendar !== "gregory", string = (opts, extract) => this.loc.extract(dt, opts, extract), formatOffset2 = (opts) => {
+          if (dt.isOffsetFixed && dt.offset === 0 && opts.allowZ) {
+            return "Z";
+          }
+          return dt.isValid ? dt.zone.formatOffset(dt.ts, opts.format) : "";
+        }, meridiem = () => knownEnglish ? meridiemForDateTime(dt) : string({ hour: "numeric", hourCycle: "h12" }, "dayperiod"), month = (length, standalone) => knownEnglish ? monthForDateTime(dt, length) : string(standalone ? { month: length } : { month: length, day: "numeric" }, "month"), weekday = (length, standalone) => knownEnglish ? weekdayForDateTime(dt, length) : string(
+          standalone ? { weekday: length } : { weekday: length, month: "long", day: "numeric" },
+          "weekday"
+        ), maybeMacro = (token) => {
+          const formatOpts = _Formatter.macroTokenToFormatOpts(token);
+          if (formatOpts) {
+            return this.formatWithSystemDefault(dt, formatOpts);
+          } else {
+            return token;
+          }
+        }, era = (length) => knownEnglish ? eraForDateTime(dt, length) : string({ era: length }, "era"), tokenToString = (token) => {
+          switch (token) {
+            case "S":
+              return this.num(dt.millisecond);
+            case "u":
+            case "SSS":
+              return this.num(dt.millisecond, 3);
+            case "s":
+              return this.num(dt.second);
+            case "ss":
+              return this.num(dt.second, 2);
+            case "uu":
+              return this.num(Math.floor(dt.millisecond / 10), 2);
+            case "uuu":
+              return this.num(Math.floor(dt.millisecond / 100));
+            case "m":
+              return this.num(dt.minute);
+            case "mm":
+              return this.num(dt.minute, 2);
+            case "h":
+              return this.num(dt.hour % 12 === 0 ? 12 : dt.hour % 12);
+            case "hh":
+              return this.num(dt.hour % 12 === 0 ? 12 : dt.hour % 12, 2);
+            case "H":
+              return this.num(dt.hour);
+            case "HH":
+              return this.num(dt.hour, 2);
+            case "Z":
+              return formatOffset2({ format: "narrow", allowZ: this.opts.allowZ });
+            case "ZZ":
+              return formatOffset2({ format: "short", allowZ: this.opts.allowZ });
+            case "ZZZ":
+              return formatOffset2({ format: "techie", allowZ: this.opts.allowZ });
+            case "ZZZZ":
+              return dt.zone.offsetName(dt.ts, { format: "short", locale: this.loc.locale });
+            case "ZZZZZ":
+              return dt.zone.offsetName(dt.ts, { format: "long", locale: this.loc.locale });
+            case "z":
+              return dt.zoneName;
+            case "a":
+              return meridiem();
+            case "d":
+              return useDateTimeFormatter ? string({ day: "numeric" }, "day") : this.num(dt.day);
+            case "dd":
+              return useDateTimeFormatter ? string({ day: "2-digit" }, "day") : this.num(dt.day, 2);
+            case "c":
+              return this.num(dt.weekday);
+            case "ccc":
+              return weekday("short", true);
+            case "cccc":
+              return weekday("long", true);
+            case "ccccc":
+              return weekday("narrow", true);
+            case "E":
+              return this.num(dt.weekday);
+            case "EEE":
+              return weekday("short", false);
+            case "EEEE":
+              return weekday("long", false);
+            case "EEEEE":
+              return weekday("narrow", false);
+            case "L":
+              return useDateTimeFormatter ? string({ month: "numeric", day: "numeric" }, "month") : this.num(dt.month);
+            case "LL":
+              return useDateTimeFormatter ? string({ month: "2-digit", day: "numeric" }, "month") : this.num(dt.month, 2);
+            case "LLL":
+              return month("short", true);
+            case "LLLL":
+              return month("long", true);
+            case "LLLLL":
+              return month("narrow", true);
+            case "M":
+              return useDateTimeFormatter ? string({ month: "numeric" }, "month") : this.num(dt.month);
+            case "MM":
+              return useDateTimeFormatter ? string({ month: "2-digit" }, "month") : this.num(dt.month, 2);
+            case "MMM":
+              return month("short", false);
+            case "MMMM":
+              return month("long", false);
+            case "MMMMM":
+              return month("narrow", false);
+            case "y":
+              return useDateTimeFormatter ? string({ year: "numeric" }, "year") : this.num(dt.year);
+            case "yy":
+              return useDateTimeFormatter ? string({ year: "2-digit" }, "year") : this.num(dt.year.toString().slice(-2), 2);
+            case "yyyy":
+              return useDateTimeFormatter ? string({ year: "numeric" }, "year") : this.num(dt.year, 4);
+            case "yyyyyy":
+              return useDateTimeFormatter ? string({ year: "numeric" }, "year") : this.num(dt.year, 6);
+            case "G":
+              return era("short");
+            case "GG":
+              return era("long");
+            case "GGGGG":
+              return era("narrow");
+            case "kk":
+              return this.num(dt.weekYear.toString().slice(-2), 2);
+            case "kkkk":
+              return this.num(dt.weekYear, 4);
+            case "W":
+              return this.num(dt.weekNumber);
+            case "WW":
+              return this.num(dt.weekNumber, 2);
+            case "o":
+              return this.num(dt.ordinal);
+            case "ooo":
+              return this.num(dt.ordinal, 3);
+            case "q":
+              return this.num(dt.quarter);
+            case "qq":
+              return this.num(dt.quarter, 2);
+            case "X":
+              return this.num(Math.floor(dt.ts / 1e3));
+            case "x":
+              return this.num(dt.ts);
+            default:
+              return maybeMacro(token);
+          }
+        };
+        return stringifyTokens(_Formatter.parseFormat(fmt), tokenToString);
+      }
+      formatDurationFromString(dur, fmt) {
+        const tokenToField = (token) => {
+          switch (token[0]) {
+            case "S":
+              return "millisecond";
+            case "s":
+              return "second";
+            case "m":
+              return "minute";
+            case "h":
+              return "hour";
+            case "d":
+              return "day";
+            case "w":
+              return "week";
+            case "M":
+              return "month";
+            case "y":
+              return "year";
+            default:
+              return null;
+          }
+        }, tokenToString = (lildur) => (token) => {
+          const mapped = tokenToField(token);
+          if (mapped) {
+            return this.num(lildur.get(mapped), token.length);
+          } else {
+            return token;
+          }
+        }, tokens = _Formatter.parseFormat(fmt), realTokens = tokens.reduce(
+          (found, { literal, val }) => literal ? found : found.concat(val),
+          []
+        ), collapsed = dur.shiftTo(...realTokens.map(tokenToField).filter((t) => t));
+        return stringifyTokens(tokens, tokenToString(collapsed));
+      }
+    };
+    var Invalid = class {
+      constructor(reason, explanation) {
+        this.reason = reason;
+        this.explanation = explanation;
+      }
+      toMessage() {
+        if (this.explanation) {
+          return `${this.reason}: ${this.explanation}`;
+        } else {
+          return this.reason;
+        }
+      }
+    };
+    var ianaRegex = /[A-Za-z_+-]{1,256}(?::?\/[A-Za-z0-9_+-]{1,256}(?:\/[A-Za-z0-9_+-]{1,256})?)?/;
+    function combineRegexes(...regexes) {
+      const full = regexes.reduce((f, r) => f + r.source, "");
+      return RegExp(`^${full}$`);
+    }
+    function combineExtractors(...extractors) {
+      return (m) => extractors.reduce(
+        ([mergedVals, mergedZone, cursor], ex) => {
+          const [val, zone, next] = ex(m, cursor);
+          return [{ ...mergedVals, ...val }, zone || mergedZone, next];
+        },
+        [{}, null, 1]
+      ).slice(0, 2);
+    }
+    function parse(s2, ...patterns) {
+      if (s2 == null) {
+        return [null, null];
+      }
+      for (const [regex, extractor] of patterns) {
+        const m = regex.exec(s2);
+        if (m) {
+          return extractor(m);
+        }
+      }
+      return [null, null];
+    }
+    function simpleParse(...keys) {
+      return (match2, cursor) => {
+        const ret = {};
+        let i;
+        for (i = 0; i < keys.length; i++) {
+          ret[keys[i]] = parseInteger(match2[cursor + i]);
+        }
+        return [ret, null, cursor + i];
+      };
+    }
+    var offsetRegex = /(?:(Z)|([+-]\d\d)(?::?(\d\d))?)/;
+    var isoExtendedZone = `(?:${offsetRegex.source}?(?:\\[(${ianaRegex.source})\\])?)?`;
+    var isoTimeBaseRegex = /(\d\d)(?::?(\d\d)(?::?(\d\d)(?:[.,](\d{1,30}))?)?)?/;
+    var isoTimeRegex = RegExp(`${isoTimeBaseRegex.source}${isoExtendedZone}`);
+    var isoTimeExtensionRegex = RegExp(`(?:T${isoTimeRegex.source})?`);
+    var isoYmdRegex = /([+-]\d{6}|\d{4})(?:-?(\d\d)(?:-?(\d\d))?)?/;
+    var isoWeekRegex = /(\d{4})-?W(\d\d)(?:-?(\d))?/;
+    var isoOrdinalRegex = /(\d{4})-?(\d{3})/;
+    var extractISOWeekData = simpleParse("weekYear", "weekNumber", "weekDay");
+    var extractISOOrdinalData = simpleParse("year", "ordinal");
+    var sqlYmdRegex = /(\d{4})-(\d\d)-(\d\d)/;
+    var sqlTimeRegex = RegExp(
+      `${isoTimeBaseRegex.source} ?(?:${offsetRegex.source}|(${ianaRegex.source}))?`
+    );
+    var sqlTimeExtensionRegex = RegExp(`(?: ${sqlTimeRegex.source})?`);
+    function int(match2, pos, fallback) {
+      const m = match2[pos];
+      return isUndefined(m) ? fallback : parseInteger(m);
+    }
+    function extractISOYmd(match2, cursor) {
+      const item = {
+        year: int(match2, cursor),
+        month: int(match2, cursor + 1, 1),
+        day: int(match2, cursor + 2, 1)
+      };
+      return [item, null, cursor + 3];
+    }
+    function extractISOTime(match2, cursor) {
+      const item = {
+        hours: int(match2, cursor, 0),
+        minutes: int(match2, cursor + 1, 0),
+        seconds: int(match2, cursor + 2, 0),
+        milliseconds: parseMillis(match2[cursor + 3])
+      };
+      return [item, null, cursor + 4];
+    }
+    function extractISOOffset(match2, cursor) {
+      const local = !match2[cursor] && !match2[cursor + 1], fullOffset = signedOffset(match2[cursor + 1], match2[cursor + 2]), zone = local ? null : FixedOffsetZone.instance(fullOffset);
+      return [{}, zone, cursor + 3];
+    }
+    function extractIANAZone(match2, cursor) {
+      const zone = match2[cursor] ? IANAZone.create(match2[cursor]) : null;
+      return [{}, zone, cursor + 1];
+    }
+    var isoTimeOnly = RegExp(`^T?${isoTimeBaseRegex.source}$`);
+    var isoDuration = /^-?P(?:(?:(-?\d{1,20}(?:\.\d{1,20})?)Y)?(?:(-?\d{1,20}(?:\.\d{1,20})?)M)?(?:(-?\d{1,20}(?:\.\d{1,20})?)W)?(?:(-?\d{1,20}(?:\.\d{1,20})?)D)?(?:T(?:(-?\d{1,20}(?:\.\d{1,20})?)H)?(?:(-?\d{1,20}(?:\.\d{1,20})?)M)?(?:(-?\d{1,20})(?:[.,](-?\d{1,20}))?S)?)?)$/;
+    function extractISODuration(match2) {
+      const [s2, yearStr, monthStr, weekStr, dayStr, hourStr, minuteStr, secondStr, millisecondsStr] = match2;
+      const hasNegativePrefix = s2[0] === "-";
+      const negativeSeconds = secondStr && secondStr[0] === "-";
+      const maybeNegate = (num, force = false) => num !== void 0 && (force || num && hasNegativePrefix) ? -num : num;
+      return [
+        {
+          years: maybeNegate(parseFloating(yearStr)),
+          months: maybeNegate(parseFloating(monthStr)),
+          weeks: maybeNegate(parseFloating(weekStr)),
+          days: maybeNegate(parseFloating(dayStr)),
+          hours: maybeNegate(parseFloating(hourStr)),
+          minutes: maybeNegate(parseFloating(minuteStr)),
+          seconds: maybeNegate(parseFloating(secondStr), secondStr === "-0"),
+          milliseconds: maybeNegate(parseMillis(millisecondsStr), negativeSeconds)
+        }
+      ];
+    }
+    var obsOffsets = {
+      GMT: 0,
+      EDT: -4 * 60,
+      EST: -5 * 60,
+      CDT: -5 * 60,
+      CST: -6 * 60,
+      MDT: -6 * 60,
+      MST: -7 * 60,
+      PDT: -7 * 60,
+      PST: -8 * 60
+    };
+    function fromStrings(weekdayStr, yearStr, monthStr, dayStr, hourStr, minuteStr, secondStr) {
+      const result = {
+        year: yearStr.length === 2 ? untruncateYear(parseInteger(yearStr)) : parseInteger(yearStr),
+        month: monthsShort.indexOf(monthStr) + 1,
+        day: parseInteger(dayStr),
+        hour: parseInteger(hourStr),
+        minute: parseInteger(minuteStr)
+      };
+      if (secondStr)
+        result.second = parseInteger(secondStr);
+      if (weekdayStr) {
+        result.weekday = weekdayStr.length > 3 ? weekdaysLong.indexOf(weekdayStr) + 1 : weekdaysShort.indexOf(weekdayStr) + 1;
+      }
+      return result;
+    }
+    var rfc2822 = /^(?:(Mon|Tue|Wed|Thu|Fri|Sat|Sun),\s)?(\d{1,2})\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s(\d{2,4})\s(\d\d):(\d\d)(?::(\d\d))?\s(?:(UT|GMT|[ECMP][SD]T)|([Zz])|(?:([+-]\d\d)(\d\d)))$/;
+    function extractRFC2822(match2) {
+      const [
+        ,
+        weekdayStr,
+        dayStr,
+        monthStr,
+        yearStr,
+        hourStr,
+        minuteStr,
+        secondStr,
+        obsOffset,
+        milOffset,
+        offHourStr,
+        offMinuteStr
+      ] = match2, result = fromStrings(weekdayStr, yearStr, monthStr, dayStr, hourStr, minuteStr, secondStr);
+      let offset2;
+      if (obsOffset) {
+        offset2 = obsOffsets[obsOffset];
+      } else if (milOffset) {
+        offset2 = 0;
+      } else {
+        offset2 = signedOffset(offHourStr, offMinuteStr);
+      }
+      return [result, new FixedOffsetZone(offset2)];
+    }
+    function preprocessRFC2822(s2) {
+      return s2.replace(/\([^()]*\)|[\n\t]/g, " ").replace(/(\s\s+)/g, " ").trim();
+    }
+    var rfc1123 = /^(Mon|Tue|Wed|Thu|Fri|Sat|Sun), (\d\d) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d{4}) (\d\d):(\d\d):(\d\d) GMT$/;
+    var rfc850 = /^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (\d\d)-(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)-(\d\d) (\d\d):(\d\d):(\d\d) GMT$/;
+    var ascii = /^(Mon|Tue|Wed|Thu|Fri|Sat|Sun) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) ( \d|\d\d) (\d\d):(\d\d):(\d\d) (\d{4})$/;
+    function extractRFC1123Or850(match2) {
+      const [, weekdayStr, dayStr, monthStr, yearStr, hourStr, minuteStr, secondStr] = match2, result = fromStrings(weekdayStr, yearStr, monthStr, dayStr, hourStr, minuteStr, secondStr);
+      return [result, FixedOffsetZone.utcInstance];
+    }
+    function extractASCII(match2) {
+      const [, weekdayStr, monthStr, dayStr, hourStr, minuteStr, secondStr, yearStr] = match2, result = fromStrings(weekdayStr, yearStr, monthStr, dayStr, hourStr, minuteStr, secondStr);
+      return [result, FixedOffsetZone.utcInstance];
+    }
+    var isoYmdWithTimeExtensionRegex = combineRegexes(isoYmdRegex, isoTimeExtensionRegex);
+    var isoWeekWithTimeExtensionRegex = combineRegexes(isoWeekRegex, isoTimeExtensionRegex);
+    var isoOrdinalWithTimeExtensionRegex = combineRegexes(isoOrdinalRegex, isoTimeExtensionRegex);
+    var isoTimeCombinedRegex = combineRegexes(isoTimeRegex);
+    var extractISOYmdTimeAndOffset = combineExtractors(
+      extractISOYmd,
+      extractISOTime,
+      extractISOOffset,
+      extractIANAZone
+    );
+    var extractISOWeekTimeAndOffset = combineExtractors(
+      extractISOWeekData,
+      extractISOTime,
+      extractISOOffset,
+      extractIANAZone
+    );
+    var extractISOOrdinalDateAndTime = combineExtractors(
+      extractISOOrdinalData,
+      extractISOTime,
+      extractISOOffset,
+      extractIANAZone
+    );
+    var extractISOTimeAndOffset = combineExtractors(
+      extractISOTime,
+      extractISOOffset,
+      extractIANAZone
+    );
+    function parseISODate(s2) {
+      return parse(
+        s2,
+        [isoYmdWithTimeExtensionRegex, extractISOYmdTimeAndOffset],
+        [isoWeekWithTimeExtensionRegex, extractISOWeekTimeAndOffset],
+        [isoOrdinalWithTimeExtensionRegex, extractISOOrdinalDateAndTime],
+        [isoTimeCombinedRegex, extractISOTimeAndOffset]
+      );
+    }
+    function parseRFC2822Date(s2) {
+      return parse(preprocessRFC2822(s2), [rfc2822, extractRFC2822]);
+    }
+    function parseHTTPDate(s2) {
+      return parse(
+        s2,
+        [rfc1123, extractRFC1123Or850],
+        [rfc850, extractRFC1123Or850],
+        [ascii, extractASCII]
+      );
+    }
+    function parseISODuration(s2) {
+      return parse(s2, [isoDuration, extractISODuration]);
+    }
+    var extractISOTimeOnly = combineExtractors(extractISOTime);
+    function parseISOTimeOnly(s2) {
+      return parse(s2, [isoTimeOnly, extractISOTimeOnly]);
+    }
+    var sqlYmdWithTimeExtensionRegex = combineRegexes(sqlYmdRegex, sqlTimeExtensionRegex);
+    var sqlTimeCombinedRegex = combineRegexes(sqlTimeRegex);
+    var extractISOTimeOffsetAndIANAZone = combineExtractors(
+      extractISOTime,
+      extractISOOffset,
+      extractIANAZone
+    );
+    function parseSQL(s2) {
+      return parse(
+        s2,
+        [sqlYmdWithTimeExtensionRegex, extractISOYmdTimeAndOffset],
+        [sqlTimeCombinedRegex, extractISOTimeOffsetAndIANAZone]
+      );
+    }
+    var INVALID$2 = "Invalid Duration";
+    var lowOrderMatrix = {
+      weeks: {
+        days: 7,
+        hours: 7 * 24,
+        minutes: 7 * 24 * 60,
+        seconds: 7 * 24 * 60 * 60,
+        milliseconds: 7 * 24 * 60 * 60 * 1e3
+      },
+      days: {
+        hours: 24,
+        minutes: 24 * 60,
+        seconds: 24 * 60 * 60,
+        milliseconds: 24 * 60 * 60 * 1e3
+      },
+      hours: { minutes: 60, seconds: 60 * 60, milliseconds: 60 * 60 * 1e3 },
+      minutes: { seconds: 60, milliseconds: 60 * 1e3 },
+      seconds: { milliseconds: 1e3 }
+    };
+    var casualMatrix = {
+      years: {
+        quarters: 4,
+        months: 12,
+        weeks: 52,
+        days: 365,
+        hours: 365 * 24,
+        minutes: 365 * 24 * 60,
+        seconds: 365 * 24 * 60 * 60,
+        milliseconds: 365 * 24 * 60 * 60 * 1e3
+      },
+      quarters: {
+        months: 3,
+        weeks: 13,
+        days: 91,
+        hours: 91 * 24,
+        minutes: 91 * 24 * 60,
+        seconds: 91 * 24 * 60 * 60,
+        milliseconds: 91 * 24 * 60 * 60 * 1e3
+      },
+      months: {
+        weeks: 4,
+        days: 30,
+        hours: 30 * 24,
+        minutes: 30 * 24 * 60,
+        seconds: 30 * 24 * 60 * 60,
+        milliseconds: 30 * 24 * 60 * 60 * 1e3
+      },
+      ...lowOrderMatrix
+    };
+    var daysInYearAccurate = 146097 / 400;
+    var daysInMonthAccurate = 146097 / 4800;
+    var accurateMatrix = {
+      years: {
+        quarters: 4,
+        months: 12,
+        weeks: daysInYearAccurate / 7,
+        days: daysInYearAccurate,
+        hours: daysInYearAccurate * 24,
+        minutes: daysInYearAccurate * 24 * 60,
+        seconds: daysInYearAccurate * 24 * 60 * 60,
+        milliseconds: daysInYearAccurate * 24 * 60 * 60 * 1e3
+      },
+      quarters: {
+        months: 3,
+        weeks: daysInYearAccurate / 28,
+        days: daysInYearAccurate / 4,
+        hours: daysInYearAccurate * 24 / 4,
+        minutes: daysInYearAccurate * 24 * 60 / 4,
+        seconds: daysInYearAccurate * 24 * 60 * 60 / 4,
+        milliseconds: daysInYearAccurate * 24 * 60 * 60 * 1e3 / 4
+      },
+      months: {
+        weeks: daysInMonthAccurate / 7,
+        days: daysInMonthAccurate,
+        hours: daysInMonthAccurate * 24,
+        minutes: daysInMonthAccurate * 24 * 60,
+        seconds: daysInMonthAccurate * 24 * 60 * 60,
+        milliseconds: daysInMonthAccurate * 24 * 60 * 60 * 1e3
+      },
+      ...lowOrderMatrix
+    };
+    var orderedUnits$1 = [
+      "years",
+      "quarters",
+      "months",
+      "weeks",
+      "days",
+      "hours",
+      "minutes",
+      "seconds",
+      "milliseconds"
+    ];
+    var reverseUnits = orderedUnits$1.slice(0).reverse();
+    function clone$1(dur, alts, clear = false) {
+      const conf = {
+        values: clear ? alts.values : { ...dur.values, ...alts.values || {} },
+        loc: dur.loc.clone(alts.loc),
+        conversionAccuracy: alts.conversionAccuracy || dur.conversionAccuracy,
+        matrix: alts.matrix || dur.matrix
+      };
+      return new Duration(conf);
+    }
+    function antiTrunc(n2) {
+      return n2 < 0 ? Math.floor(n2) : Math.ceil(n2);
+    }
+    function convert(matrix, fromMap, fromUnit, toMap, toUnit) {
+      const conv = matrix[toUnit][fromUnit], raw = fromMap[fromUnit] / conv, sameSign = Math.sign(raw) === Math.sign(toMap[toUnit]), added = !sameSign && toMap[toUnit] !== 0 && Math.abs(raw) <= 1 ? antiTrunc(raw) : Math.trunc(raw);
+      toMap[toUnit] += added;
+      fromMap[fromUnit] -= added * conv;
+    }
+    function normalizeValues(matrix, vals) {
+      reverseUnits.reduce((previous, current) => {
+        if (!isUndefined(vals[current])) {
+          if (previous) {
+            convert(matrix, vals, previous, vals, current);
+          }
+          return current;
+        } else {
+          return previous;
+        }
+      }, null);
+    }
+    function removeZeroes(vals) {
+      const newVals = {};
+      for (const [key, value] of Object.entries(vals)) {
+        if (value !== 0) {
+          newVals[key] = value;
+        }
+      }
+      return newVals;
+    }
+    var Duration = class _Duration {
+      /**
+       * @private
+       */
+      constructor(config) {
+        const accurate = config.conversionAccuracy === "longterm" || false;
+        let matrix = accurate ? accurateMatrix : casualMatrix;
+        if (config.matrix) {
+          matrix = config.matrix;
+        }
+        this.values = config.values;
+        this.loc = config.loc || Locale.create();
+        this.conversionAccuracy = accurate ? "longterm" : "casual";
+        this.invalid = config.invalid || null;
+        this.matrix = matrix;
+        this.isLuxonDuration = true;
+      }
+      /**
+       * Create Duration from a number of milliseconds.
+       * @param {number} count of milliseconds
+       * @param {Object} opts - options for parsing
+       * @param {string} [opts.locale='en-US'] - the locale to use
+       * @param {string} opts.numberingSystem - the numbering system to use
+       * @param {string} [opts.conversionAccuracy='casual'] - the conversion system to use
+       * @return {Duration}
+       */
+      static fromMillis(count, opts) {
+        return _Duration.fromObject({ milliseconds: count }, opts);
+      }
+      /**
+       * Create a Duration from a JavaScript object with keys like 'years' and 'hours'.
+       * If this object is empty then a zero milliseconds duration is returned.
+       * @param {Object} obj - the object to create the DateTime from
+       * @param {number} obj.years
+       * @param {number} obj.quarters
+       * @param {number} obj.months
+       * @param {number} obj.weeks
+       * @param {number} obj.days
+       * @param {number} obj.hours
+       * @param {number} obj.minutes
+       * @param {number} obj.seconds
+       * @param {number} obj.milliseconds
+       * @param {Object} [opts=[]] - options for creating this Duration
+       * @param {string} [opts.locale='en-US'] - the locale to use
+       * @param {string} opts.numberingSystem - the numbering system to use
+       * @param {string} [opts.conversionAccuracy='casual'] - the preset conversion system to use
+       * @param {string} [opts.matrix=Object] - the custom conversion system to use
+       * @return {Duration}
+       */
+      static fromObject(obj, opts = {}) {
+        if (obj == null || typeof obj !== "object") {
+          throw new InvalidArgumentError(
+            `Duration.fromObject: argument expected to be an object, got ${obj === null ? "null" : typeof obj}`
+          );
+        }
+        return new _Duration({
+          values: normalizeObject(obj, _Duration.normalizeUnit),
+          loc: Locale.fromObject(opts),
+          conversionAccuracy: opts.conversionAccuracy,
+          matrix: opts.matrix
+        });
+      }
+      /**
+       * Create a Duration from DurationLike.
+       *
+       * @param {Object | number | Duration} durationLike
+       * One of:
+       * - object with keys like 'years' and 'hours'.
+       * - number representing milliseconds
+       * - Duration instance
+       * @return {Duration}
+       */
+      static fromDurationLike(durationLike) {
+        if (isNumber(durationLike)) {
+          return _Duration.fromMillis(durationLike);
+        } else if (_Duration.isDuration(durationLike)) {
+          return durationLike;
+        } else if (typeof durationLike === "object") {
+          return _Duration.fromObject(durationLike);
+        } else {
+          throw new InvalidArgumentError(
+            `Unknown duration argument ${durationLike} of type ${typeof durationLike}`
+          );
+        }
+      }
+      /**
+       * Create a Duration from an ISO 8601 duration string.
+       * @param {string} text - text to parse
+       * @param {Object} opts - options for parsing
+       * @param {string} [opts.locale='en-US'] - the locale to use
+       * @param {string} opts.numberingSystem - the numbering system to use
+       * @param {string} [opts.conversionAccuracy='casual'] - the preset conversion system to use
+       * @param {string} [opts.matrix=Object] - the preset conversion system to use
+       * @see https://en.wikipedia.org/wiki/ISO_8601#Durations
+       * @example Duration.fromISO('P3Y6M1W4DT12H30M5S').toObject() //=> { years: 3, months: 6, weeks: 1, days: 4, hours: 12, minutes: 30, seconds: 5 }
+       * @example Duration.fromISO('PT23H').toObject() //=> { hours: 23 }
+       * @example Duration.fromISO('P5Y3M').toObject() //=> { years: 5, months: 3 }
+       * @return {Duration}
+       */
+      static fromISO(text2, opts) {
+        const [parsed] = parseISODuration(text2);
+        if (parsed) {
+          return _Duration.fromObject(parsed, opts);
+        } else {
+          return _Duration.invalid("unparsable", `the input "${text2}" can't be parsed as ISO 8601`);
+        }
+      }
+      /**
+       * Create a Duration from an ISO 8601 time string.
+       * @param {string} text - text to parse
+       * @param {Object} opts - options for parsing
+       * @param {string} [opts.locale='en-US'] - the locale to use
+       * @param {string} opts.numberingSystem - the numbering system to use
+       * @param {string} [opts.conversionAccuracy='casual'] - the preset conversion system to use
+       * @param {string} [opts.matrix=Object] - the conversion system to use
+       * @see https://en.wikipedia.org/wiki/ISO_8601#Times
+       * @example Duration.fromISOTime('11:22:33.444').toObject() //=> { hours: 11, minutes: 22, seconds: 33, milliseconds: 444 }
+       * @example Duration.fromISOTime('11:00').toObject() //=> { hours: 11, minutes: 0, seconds: 0 }
+       * @example Duration.fromISOTime('T11:00').toObject() //=> { hours: 11, minutes: 0, seconds: 0 }
+       * @example Duration.fromISOTime('1100').toObject() //=> { hours: 11, minutes: 0, seconds: 0 }
+       * @example Duration.fromISOTime('T1100').toObject() //=> { hours: 11, minutes: 0, seconds: 0 }
+       * @return {Duration}
+       */
+      static fromISOTime(text2, opts) {
+        const [parsed] = parseISOTimeOnly(text2);
+        if (parsed) {
+          return _Duration.fromObject(parsed, opts);
+        } else {
+          return _Duration.invalid("unparsable", `the input "${text2}" can't be parsed as ISO 8601`);
+        }
+      }
+      /**
+       * Create an invalid Duration.
+       * @param {string} reason - simple string of why this datetime is invalid. Should not contain parameters or anything else data-dependent
+       * @param {string} [explanation=null] - longer explanation, may include parameters and other useful debugging information
+       * @return {Duration}
+       */
+      static invalid(reason, explanation = null) {
+        if (!reason) {
+          throw new InvalidArgumentError("need to specify a reason the Duration is invalid");
+        }
+        const invalid = reason instanceof Invalid ? reason : new Invalid(reason, explanation);
+        if (Settings2.throwOnInvalid) {
+          throw new InvalidDurationError(invalid);
+        } else {
+          return new _Duration({ invalid });
+        }
+      }
+      /**
+       * @private
+       */
+      static normalizeUnit(unit) {
+        const normalized = {
+          year: "years",
+          years: "years",
+          quarter: "quarters",
+          quarters: "quarters",
+          month: "months",
+          months: "months",
+          week: "weeks",
+          weeks: "weeks",
+          day: "days",
+          days: "days",
+          hour: "hours",
+          hours: "hours",
+          minute: "minutes",
+          minutes: "minutes",
+          second: "seconds",
+          seconds: "seconds",
+          millisecond: "milliseconds",
+          milliseconds: "milliseconds"
+        }[unit ? unit.toLowerCase() : unit];
+        if (!normalized)
+          throw new InvalidUnitError(unit);
+        return normalized;
+      }
+      /**
+       * Check if an object is a Duration. Works across context boundaries
+       * @param {object} o
+       * @return {boolean}
+       */
+      static isDuration(o) {
+        return o && o.isLuxonDuration || false;
+      }
+      /**
+       * Get  the locale of a Duration, such 'en-GB'
+       * @type {string}
+       */
+      get locale() {
+        return this.isValid ? this.loc.locale : null;
+      }
+      /**
+       * Get the numbering system of a Duration, such 'beng'. The numbering system is used when formatting the Duration
+       *
+       * @type {string}
+       */
+      get numberingSystem() {
+        return this.isValid ? this.loc.numberingSystem : null;
+      }
+      /**
+       * Returns a string representation of this Duration formatted according to the specified format string. You may use these tokens:
+       * * `S` for milliseconds
+       * * `s` for seconds
+       * * `m` for minutes
+       * * `h` for hours
+       * * `d` for days
+       * * `w` for weeks
+       * * `M` for months
+       * * `y` for years
+       * Notes:
+       * * Add padding by repeating the token, e.g. "yy" pads the years to two digits, "hhhh" pads the hours out to four digits
+       * * Tokens can be escaped by wrapping with single quotes.
+       * * The duration will be converted to the set of units in the format string using {@link Duration#shiftTo} and the Durations's conversion accuracy setting.
+       * @param {string} fmt - the format string
+       * @param {Object} opts - options
+       * @param {boolean} [opts.floor=true] - floor numerical values
+       * @example Duration.fromObject({ years: 1, days: 6, seconds: 2 }).toFormat("y d s") //=> "1 6 2"
+       * @example Duration.fromObject({ years: 1, days: 6, seconds: 2 }).toFormat("yy dd sss") //=> "01 06 002"
+       * @example Duration.fromObject({ years: 1, days: 6, seconds: 2 }).toFormat("M S") //=> "12 518402000"
+       * @return {string}
+       */
+      toFormat(fmt, opts = {}) {
+        const fmtOpts = {
+          ...opts,
+          floor: opts.round !== false && opts.floor !== false
+        };
+        return this.isValid ? Formatter.create(this.loc, fmtOpts).formatDurationFromString(this, fmt) : INVALID$2;
+      }
+      /**
+       * Returns a string representation of a Duration with all units included.
+       * To modify its behavior use the `listStyle` and any Intl.NumberFormat option, though `unitDisplay` is especially relevant.
+       * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat
+       * @param opts - On option object to override the formatting. Accepts the same keys as the options parameter of the native `Int.NumberFormat` constructor, as well as `listStyle`.
+       * @example
+       * ```js
+       * var dur = Duration.fromObject({ days: 1, hours: 5, minutes: 6 })
+       * dur.toHuman() //=> '1 day, 5 hours, 6 minutes'
+       * dur.toHuman({ listStyle: "long" }) //=> '1 day, 5 hours, and 6 minutes'
+       * dur.toHuman({ unitDisplay: "short" }) //=> '1 day, 5 hr, 6 min'
+       * ```
+       */
+      toHuman(opts = {}) {
+        const l2 = orderedUnits$1.map((unit) => {
+          const val = this.values[unit];
+          if (isUndefined(val)) {
+            return null;
+          }
+          return this.loc.numberFormatter({ style: "unit", unitDisplay: "long", ...opts, unit: unit.slice(0, -1) }).format(val);
+        }).filter((n2) => n2);
+        return this.loc.listFormatter({ type: "conjunction", style: opts.listStyle || "narrow", ...opts }).format(l2);
+      }
+      /**
+       * Returns a JavaScript object with this Duration's values.
+       * @example Duration.fromObject({ years: 1, days: 6, seconds: 2 }).toObject() //=> { years: 1, days: 6, seconds: 2 }
+       * @return {Object}
+       */
+      toObject() {
+        if (!this.isValid)
+          return {};
+        return { ...this.values };
+      }
+      /**
+       * Returns an ISO 8601-compliant string representation of this Duration.
+       * @see https://en.wikipedia.org/wiki/ISO_8601#Durations
+       * @example Duration.fromObject({ years: 3, seconds: 45 }).toISO() //=> 'P3YT45S'
+       * @example Duration.fromObject({ months: 4, seconds: 45 }).toISO() //=> 'P4MT45S'
+       * @example Duration.fromObject({ months: 5 }).toISO() //=> 'P5M'
+       * @example Duration.fromObject({ minutes: 5 }).toISO() //=> 'PT5M'
+       * @example Duration.fromObject({ milliseconds: 6 }).toISO() //=> 'PT0.006S'
+       * @return {string}
+       */
+      toISO() {
+        if (!this.isValid)
+          return null;
+        let s2 = "P";
+        if (this.years !== 0)
+          s2 += this.years + "Y";
+        if (this.months !== 0 || this.quarters !== 0)
+          s2 += this.months + this.quarters * 3 + "M";
+        if (this.weeks !== 0)
+          s2 += this.weeks + "W";
+        if (this.days !== 0)
+          s2 += this.days + "D";
+        if (this.hours !== 0 || this.minutes !== 0 || this.seconds !== 0 || this.milliseconds !== 0)
+          s2 += "T";
+        if (this.hours !== 0)
+          s2 += this.hours + "H";
+        if (this.minutes !== 0)
+          s2 += this.minutes + "M";
+        if (this.seconds !== 0 || this.milliseconds !== 0)
+          s2 += roundTo(this.seconds + this.milliseconds / 1e3, 3) + "S";
+        if (s2 === "P")
+          s2 += "T0S";
+        return s2;
+      }
+      /**
+       * Returns an ISO 8601-compliant string representation of this Duration, formatted as a time of day.
+       * Note that this will return null if the duration is invalid, negative, or equal to or greater than 24 hours.
+       * @see https://en.wikipedia.org/wiki/ISO_8601#Times
+       * @param {Object} opts - options
+       * @param {boolean} [opts.suppressMilliseconds=false] - exclude milliseconds from the format if they're 0
+       * @param {boolean} [opts.suppressSeconds=false] - exclude seconds from the format if they're 0
+       * @param {boolean} [opts.includePrefix=false] - include the `T` prefix
+       * @param {string} [opts.format='extended'] - choose between the basic and extended format
+       * @example Duration.fromObject({ hours: 11 }).toISOTime() //=> '11:00:00.000'
+       * @example Duration.fromObject({ hours: 11 }).toISOTime({ suppressMilliseconds: true }) //=> '11:00:00'
+       * @example Duration.fromObject({ hours: 11 }).toISOTime({ suppressSeconds: true }) //=> '11:00'
+       * @example Duration.fromObject({ hours: 11 }).toISOTime({ includePrefix: true }) //=> 'T11:00:00.000'
+       * @example Duration.fromObject({ hours: 11 }).toISOTime({ format: 'basic' }) //=> '110000.000'
+       * @return {string}
+       */
+      toISOTime(opts = {}) {
+        if (!this.isValid)
+          return null;
+        const millis = this.toMillis();
+        if (millis < 0 || millis >= 864e5)
+          return null;
+        opts = {
+          suppressMilliseconds: false,
+          suppressSeconds: false,
+          includePrefix: false,
+          format: "extended",
+          ...opts
+        };
+        const value = this.shiftTo("hours", "minutes", "seconds", "milliseconds");
+        let fmt = opts.format === "basic" ? "hhmm" : "hh:mm";
+        if (!opts.suppressSeconds || value.seconds !== 0 || value.milliseconds !== 0) {
+          fmt += opts.format === "basic" ? "ss" : ":ss";
+          if (!opts.suppressMilliseconds || value.milliseconds !== 0) {
+            fmt += ".SSS";
+          }
+        }
+        let str = value.toFormat(fmt);
+        if (opts.includePrefix) {
+          str = "T" + str;
+        }
+        return str;
+      }
+      /**
+       * Returns an ISO 8601 representation of this Duration appropriate for use in JSON.
+       * @return {string}
+       */
+      toJSON() {
+        return this.toISO();
+      }
+      /**
+       * Returns an ISO 8601 representation of this Duration appropriate for use in debugging.
+       * @return {string}
+       */
+      toString() {
+        return this.toISO();
+      }
+      /**
+       * Returns an milliseconds value of this Duration.
+       * @return {number}
+       */
+      toMillis() {
+        return this.as("milliseconds");
+      }
+      /**
+       * Returns an milliseconds value of this Duration. Alias of {@link toMillis}
+       * @return {number}
+       */
+      valueOf() {
+        return this.toMillis();
+      }
+      /**
+       * Make this Duration longer by the specified amount. Return a newly-constructed Duration.
+       * @param {Duration|Object|number} duration - The amount to add. Either a Luxon Duration, a number of milliseconds, the object argument to Duration.fromObject()
+       * @return {Duration}
+       */
+      plus(duration) {
+        if (!this.isValid)
+          return this;
+        const dur = _Duration.fromDurationLike(duration), result = {};
+        for (const k of orderedUnits$1) {
+          if (hasOwnProperty(dur.values, k) || hasOwnProperty(this.values, k)) {
+            result[k] = dur.get(k) + this.get(k);
+          }
+        }
+        return clone$1(this, { values: result }, true);
+      }
+      /**
+       * Make this Duration shorter by the specified amount. Return a newly-constructed Duration.
+       * @param {Duration|Object|number} duration - The amount to subtract. Either a Luxon Duration, a number of milliseconds, the object argument to Duration.fromObject()
+       * @return {Duration}
+       */
+      minus(duration) {
+        if (!this.isValid)
+          return this;
+        const dur = _Duration.fromDurationLike(duration);
+        return this.plus(dur.negate());
+      }
+      /**
+       * Scale this Duration by the specified amount. Return a newly-constructed Duration.
+       * @param {function} fn - The function to apply to each unit. Arity is 1 or 2: the value of the unit and, optionally, the unit name. Must return a number.
+       * @example Duration.fromObject({ hours: 1, minutes: 30 }).mapUnits(x => x * 2) //=> { hours: 2, minutes: 60 }
+       * @example Duration.fromObject({ hours: 1, minutes: 30 }).mapUnits((x, u) => u === "hours" ? x * 2 : x) //=> { hours: 2, minutes: 30 }
+       * @return {Duration}
+       */
+      mapUnits(fn) {
+        if (!this.isValid)
+          return this;
+        const result = {};
+        for (const k of Object.keys(this.values)) {
+          result[k] = asNumber(fn(this.values[k], k));
+        }
+        return clone$1(this, { values: result }, true);
+      }
+      /**
+       * Get the value of unit.
+       * @param {string} unit - a unit such as 'minute' or 'day'
+       * @example Duration.fromObject({years: 2, days: 3}).get('years') //=> 2
+       * @example Duration.fromObject({years: 2, days: 3}).get('months') //=> 0
+       * @example Duration.fromObject({years: 2, days: 3}).get('days') //=> 3
+       * @return {number}
+       */
+      get(unit) {
+        return this[_Duration.normalizeUnit(unit)];
+      }
+      /**
+       * "Set" the values of specified units. Return a newly-constructed Duration.
+       * @param {Object} values - a mapping of units to numbers
+       * @example dur.set({ years: 2017 })
+       * @example dur.set({ hours: 8, minutes: 30 })
+       * @return {Duration}
+       */
+      set(values) {
+        if (!this.isValid)
+          return this;
+        const mixed = { ...this.values, ...normalizeObject(values, _Duration.normalizeUnit) };
+        return clone$1(this, { values: mixed });
+      }
+      /**
+       * "Set" the locale and/or numberingSystem.  Returns a newly-constructed Duration.
+       * @example dur.reconfigure({ locale: 'en-GB' })
+       * @return {Duration}
+       */
+      reconfigure({ locale, numberingSystem, conversionAccuracy, matrix } = {}) {
+        const loc = this.loc.clone({ locale, numberingSystem });
+        const opts = { loc, matrix, conversionAccuracy };
+        return clone$1(this, opts);
+      }
+      /**
+       * Return the length of the duration in the specified unit.
+       * @param {string} unit - a unit such as 'minutes' or 'days'
+       * @example Duration.fromObject({years: 1}).as('days') //=> 365
+       * @example Duration.fromObject({years: 1}).as('months') //=> 12
+       * @example Duration.fromObject({hours: 60}).as('days') //=> 2.5
+       * @return {number}
+       */
+      as(unit) {
+        return this.isValid ? this.shiftTo(unit).get(unit) : NaN;
+      }
+      /**
+       * Reduce this Duration to its canonical representation in its current units.
+       * @example Duration.fromObject({ years: 2, days: 5000 }).normalize().toObject() //=> { years: 15, days: 255 }
+       * @example Duration.fromObject({ hours: 12, minutes: -45 }).normalize().toObject() //=> { hours: 11, minutes: 15 }
+       * @return {Duration}
+       */
+      normalize() {
+        if (!this.isValid)
+          return this;
+        const vals = this.toObject();
+        normalizeValues(this.matrix, vals);
+        return clone$1(this, { values: vals }, true);
+      }
+      /**
+       * Rescale units to its largest representation
+       * @example Duration.fromObject({ milliseconds: 90000 }).rescale().toObject() //=> { minutes: 1, seconds: 30 }
+       * @return {Duration}
+       */
+      rescale() {
+        if (!this.isValid)
+          return this;
+        const vals = removeZeroes(this.normalize().shiftToAll().toObject());
+        return clone$1(this, { values: vals }, true);
+      }
+      /**
+       * Convert this Duration into its representation in a different set of units.
+       * @example Duration.fromObject({ hours: 1, seconds: 30 }).shiftTo('minutes', 'milliseconds').toObject() //=> { minutes: 60, milliseconds: 30000 }
+       * @return {Duration}
+       */
+      shiftTo(...units) {
+        if (!this.isValid)
+          return this;
+        if (units.length === 0) {
+          return this;
+        }
+        units = units.map((u) => _Duration.normalizeUnit(u));
+        const built = {}, accumulated = {}, vals = this.toObject();
+        let lastUnit;
+        for (const k of orderedUnits$1) {
+          if (units.indexOf(k) >= 0) {
+            lastUnit = k;
+            let own = 0;
+            for (const ak in accumulated) {
+              own += this.matrix[ak][k] * accumulated[ak];
+              accumulated[ak] = 0;
+            }
+            if (isNumber(vals[k])) {
+              own += vals[k];
+            }
+            const i = Math.trunc(own);
+            built[k] = i;
+            accumulated[k] = (own * 1e3 - i * 1e3) / 1e3;
+            for (const down in vals) {
+              if (orderedUnits$1.indexOf(down) > orderedUnits$1.indexOf(k)) {
+                convert(this.matrix, vals, down, built, k);
+              }
+            }
+          } else if (isNumber(vals[k])) {
+            accumulated[k] = vals[k];
+          }
+        }
+        for (const key in accumulated) {
+          if (accumulated[key] !== 0) {
+            built[lastUnit] += key === lastUnit ? accumulated[key] : accumulated[key] / this.matrix[lastUnit][key];
+          }
+        }
+        return clone$1(this, { values: built }, true).normalize();
+      }
+      /**
+       * Shift this Duration to all available units.
+       * Same as shiftTo("years", "months", "weeks", "days", "hours", "minutes", "seconds", "milliseconds")
+       * @return {Duration}
+       */
+      shiftToAll() {
+        if (!this.isValid)
+          return this;
+        return this.shiftTo(
+          "years",
+          "months",
+          "weeks",
+          "days",
+          "hours",
+          "minutes",
+          "seconds",
+          "milliseconds"
+        );
+      }
+      /**
+       * Return the negative of this Duration.
+       * @example Duration.fromObject({ hours: 1, seconds: 30 }).negate().toObject() //=> { hours: -1, seconds: -30 }
+       * @return {Duration}
+       */
+      negate() {
+        if (!this.isValid)
+          return this;
+        const negated = {};
+        for (const k of Object.keys(this.values)) {
+          negated[k] = this.values[k] === 0 ? 0 : -this.values[k];
+        }
+        return clone$1(this, { values: negated }, true);
+      }
+      /**
+       * Get the years.
+       * @type {number}
+       */
+      get years() {
+        return this.isValid ? this.values.years || 0 : NaN;
+      }
+      /**
+       * Get the quarters.
+       * @type {number}
+       */
+      get quarters() {
+        return this.isValid ? this.values.quarters || 0 : NaN;
+      }
+      /**
+       * Get the months.
+       * @type {number}
+       */
+      get months() {
+        return this.isValid ? this.values.months || 0 : NaN;
+      }
+      /**
+       * Get the weeks
+       * @type {number}
+       */
+      get weeks() {
+        return this.isValid ? this.values.weeks || 0 : NaN;
+      }
+      /**
+       * Get the days.
+       * @type {number}
+       */
+      get days() {
+        return this.isValid ? this.values.days || 0 : NaN;
+      }
+      /**
+       * Get the hours.
+       * @type {number}
+       */
+      get hours() {
+        return this.isValid ? this.values.hours || 0 : NaN;
+      }
+      /**
+       * Get the minutes.
+       * @type {number}
+       */
+      get minutes() {
+        return this.isValid ? this.values.minutes || 0 : NaN;
+      }
+      /**
+       * Get the seconds.
+       * @return {number}
+       */
+      get seconds() {
+        return this.isValid ? this.values.seconds || 0 : NaN;
+      }
+      /**
+       * Get the milliseconds.
+       * @return {number}
+       */
+      get milliseconds() {
+        return this.isValid ? this.values.milliseconds || 0 : NaN;
+      }
+      /**
+       * Returns whether the Duration is invalid. Invalid durations are returned by diff operations
+       * on invalid DateTimes or Intervals.
+       * @return {boolean}
+       */
+      get isValid() {
+        return this.invalid === null;
+      }
+      /**
+       * Returns an error code if this Duration became invalid, or null if the Duration is valid
+       * @return {string}
+       */
+      get invalidReason() {
+        return this.invalid ? this.invalid.reason : null;
+      }
+      /**
+       * Returns an explanation of why this Duration became invalid, or null if the Duration is valid
+       * @type {string}
+       */
+      get invalidExplanation() {
+        return this.invalid ? this.invalid.explanation : null;
+      }
+      /**
+       * Equality check
+       * Two Durations are equal iff they have the same units and the same values for each unit.
+       * @param {Duration} other
+       * @return {boolean}
+       */
+      equals(other) {
+        if (!this.isValid || !other.isValid) {
+          return false;
+        }
+        if (!this.loc.equals(other.loc)) {
+          return false;
+        }
+        function eq(v1, v2) {
+          if (v1 === void 0 || v1 === 0)
+            return v2 === void 0 || v2 === 0;
+          return v1 === v2;
+        }
+        for (const u of orderedUnits$1) {
+          if (!eq(this.values[u], other.values[u])) {
+            return false;
+          }
+        }
+        return true;
+      }
+    };
+    var INVALID$1 = "Invalid Interval";
+    function validateStartEnd(start, end) {
+      if (!start || !start.isValid) {
+        return Interval.invalid("missing or invalid start");
+      } else if (!end || !end.isValid) {
+        return Interval.invalid("missing or invalid end");
+      } else if (end < start) {
+        return Interval.invalid(
+          "end before start",
+          `The end of an interval must be after its start, but you had start=${start.toISO()} and end=${end.toISO()}`
+        );
+      } else {
+        return null;
+      }
+    }
+    var Interval = class _Interval {
+      /**
+       * @private
+       */
+      constructor(config) {
+        this.s = config.start;
+        this.e = config.end;
+        this.invalid = config.invalid || null;
+        this.isLuxonInterval = true;
+      }
+      /**
+       * Create an invalid Interval.
+       * @param {string} reason - simple string of why this Interval is invalid. Should not contain parameters or anything else data-dependent
+       * @param {string} [explanation=null] - longer explanation, may include parameters and other useful debugging information
+       * @return {Interval}
+       */
+      static invalid(reason, explanation = null) {
+        if (!reason) {
+          throw new InvalidArgumentError("need to specify a reason the Interval is invalid");
+        }
+        const invalid = reason instanceof Invalid ? reason : new Invalid(reason, explanation);
+        if (Settings2.throwOnInvalid) {
+          throw new InvalidIntervalError(invalid);
+        } else {
+          return new _Interval({ invalid });
+        }
+      }
+      /**
+       * Create an Interval from a start DateTime and an end DateTime. Inclusive of the start but not the end.
+       * @param {DateTime|Date|Object} start
+       * @param {DateTime|Date|Object} end
+       * @return {Interval}
+       */
+      static fromDateTimes(start, end) {
+        const builtStart = friendlyDateTime(start), builtEnd = friendlyDateTime(end);
+        const validateError = validateStartEnd(builtStart, builtEnd);
+        if (validateError == null) {
+          return new _Interval({
+            start: builtStart,
+            end: builtEnd
+          });
+        } else {
+          return validateError;
+        }
+      }
+      /**
+       * Create an Interval from a start DateTime and a Duration to extend to.
+       * @param {DateTime|Date|Object} start
+       * @param {Duration|Object|number} duration - the length of the Interval.
+       * @return {Interval}
+       */
+      static after(start, duration) {
+        const dur = Duration.fromDurationLike(duration), dt = friendlyDateTime(start);
+        return _Interval.fromDateTimes(dt, dt.plus(dur));
+      }
+      /**
+       * Create an Interval from an end DateTime and a Duration to extend backwards to.
+       * @param {DateTime|Date|Object} end
+       * @param {Duration|Object|number} duration - the length of the Interval.
+       * @return {Interval}
+       */
+      static before(end, duration) {
+        const dur = Duration.fromDurationLike(duration), dt = friendlyDateTime(end);
+        return _Interval.fromDateTimes(dt.minus(dur), dt);
+      }
+      /**
+       * Create an Interval from an ISO 8601 string.
+       * Accepts `<start>/<end>`, `<start>/<duration>`, and `<duration>/<end>` formats.
+       * @param {string} text - the ISO string to parse
+       * @param {Object} [opts] - options to pass {@link DateTime#fromISO} and optionally {@link Duration#fromISO}
+       * @see https://en.wikipedia.org/wiki/ISO_8601#Time_intervals
+       * @return {Interval}
+       */
+      static fromISO(text2, opts) {
+        const [s2, e] = (text2 || "").split("/", 2);
+        if (s2 && e) {
+          let start, startIsValid;
+          try {
+            start = DateTime.fromISO(s2, opts);
+            startIsValid = start.isValid;
+          } catch (e2) {
+            startIsValid = false;
+          }
+          let end, endIsValid;
+          try {
+            end = DateTime.fromISO(e, opts);
+            endIsValid = end.isValid;
+          } catch (e2) {
+            endIsValid = false;
+          }
+          if (startIsValid && endIsValid) {
+            return _Interval.fromDateTimes(start, end);
+          }
+          if (startIsValid) {
+            const dur = Duration.fromISO(e, opts);
+            if (dur.isValid) {
+              return _Interval.after(start, dur);
+            }
+          } else if (endIsValid) {
+            const dur = Duration.fromISO(s2, opts);
+            if (dur.isValid) {
+              return _Interval.before(end, dur);
+            }
+          }
+        }
+        return _Interval.invalid("unparsable", `the input "${text2}" can't be parsed as ISO 8601`);
+      }
+      /**
+       * Check if an object is an Interval. Works across context boundaries
+       * @param {object} o
+       * @return {boolean}
+       */
+      static isInterval(o) {
+        return o && o.isLuxonInterval || false;
+      }
+      /**
+       * Returns the start of the Interval
+       * @type {DateTime}
+       */
+      get start() {
+        return this.isValid ? this.s : null;
+      }
+      /**
+       * Returns the end of the Interval
+       * @type {DateTime}
+       */
+      get end() {
+        return this.isValid ? this.e : null;
+      }
+      /**
+       * Returns whether this Interval's end is at least its start, meaning that the Interval isn't 'backwards'.
+       * @type {boolean}
+       */
+      get isValid() {
+        return this.invalidReason === null;
+      }
+      /**
+       * Returns an error code if this Interval is invalid, or null if the Interval is valid
+       * @type {string}
+       */
+      get invalidReason() {
+        return this.invalid ? this.invalid.reason : null;
+      }
+      /**
+       * Returns an explanation of why this Interval became invalid, or null if the Interval is valid
+       * @type {string}
+       */
+      get invalidExplanation() {
+        return this.invalid ? this.invalid.explanation : null;
+      }
+      /**
+       * Returns the length of the Interval in the specified unit.
+       * @param {string} unit - the unit (such as 'hours' or 'days') to return the length in.
+       * @return {number}
+       */
+      length(unit = "milliseconds") {
+        return this.isValid ? this.toDuration(...[unit]).get(unit) : NaN;
+      }
+      /**
+       * Returns the count of minutes, hours, days, months, or years included in the Interval, even in part.
+       * Unlike {@link Interval#length} this counts sections of the calendar, not periods of time, e.g. specifying 'day'
+       * asks 'what dates are included in this interval?', not 'how many days long is this interval?'
+       * @param {string} [unit='milliseconds'] - the unit of time to count.
+       * @return {number}
+       */
+      count(unit = "milliseconds") {
+        if (!this.isValid)
+          return NaN;
+        const start = this.start.startOf(unit), end = this.end.startOf(unit);
+        return Math.floor(end.diff(start, unit).get(unit)) + 1;
+      }
+      /**
+       * Returns whether this Interval's start and end are both in the same unit of time
+       * @param {string} unit - the unit of time to check sameness on
+       * @return {boolean}
+       */
+      hasSame(unit) {
+        return this.isValid ? this.isEmpty() || this.e.minus(1).hasSame(this.s, unit) : false;
+      }
+      /**
+       * Return whether this Interval has the same start and end DateTimes.
+       * @return {boolean}
+       */
+      isEmpty() {
+        return this.s.valueOf() === this.e.valueOf();
+      }
+      /**
+       * Return whether this Interval's start is after the specified DateTime.
+       * @param {DateTime} dateTime
+       * @return {boolean}
+       */
+      isAfter(dateTime) {
+        if (!this.isValid)
+          return false;
+        return this.s > dateTime;
+      }
+      /**
+       * Return whether this Interval's end is before the specified DateTime.
+       * @param {DateTime} dateTime
+       * @return {boolean}
+       */
+      isBefore(dateTime) {
+        if (!this.isValid)
+          return false;
+        return this.e <= dateTime;
+      }
+      /**
+       * Return whether this Interval contains the specified DateTime.
+       * @param {DateTime} dateTime
+       * @return {boolean}
+       */
+      contains(dateTime) {
+        if (!this.isValid)
+          return false;
+        return this.s <= dateTime && this.e > dateTime;
+      }
+      /**
+       * "Sets" the start and/or end dates. Returns a newly-constructed Interval.
+       * @param {Object} values - the values to set
+       * @param {DateTime} values.start - the starting DateTime
+       * @param {DateTime} values.end - the ending DateTime
+       * @return {Interval}
+       */
+      set({ start, end } = {}) {
+        if (!this.isValid)
+          return this;
+        return _Interval.fromDateTimes(start || this.s, end || this.e);
+      }
+      /**
+       * Split this Interval at each of the specified DateTimes
+       * @param {...DateTime} dateTimes - the unit of time to count.
+       * @return {Array}
+       */
+      splitAt(...dateTimes) {
+        if (!this.isValid)
+          return [];
+        const sorted = dateTimes.map(friendlyDateTime).filter((d) => this.contains(d)).sort(), results = [];
+        let { s: s2 } = this, i = 0;
+        while (s2 < this.e) {
+          const added = sorted[i] || this.e, next = +added > +this.e ? this.e : added;
+          results.push(_Interval.fromDateTimes(s2, next));
+          s2 = next;
+          i += 1;
+        }
+        return results;
+      }
+      /**
+       * Split this Interval into smaller Intervals, each of the specified length.
+       * Left over time is grouped into a smaller interval
+       * @param {Duration|Object|number} duration - The length of each resulting interval.
+       * @return {Array}
+       */
+      splitBy(duration) {
+        const dur = Duration.fromDurationLike(duration);
+        if (!this.isValid || !dur.isValid || dur.as("milliseconds") === 0) {
+          return [];
+        }
+        let { s: s2 } = this, idx = 1, next;
+        const results = [];
+        while (s2 < this.e) {
+          const added = this.start.plus(dur.mapUnits((x) => x * idx));
+          next = +added > +this.e ? this.e : added;
+          results.push(_Interval.fromDateTimes(s2, next));
+          s2 = next;
+          idx += 1;
+        }
+        return results;
+      }
+      /**
+       * Split this Interval into the specified number of smaller intervals.
+       * @param {number} numberOfParts - The number of Intervals to divide the Interval into.
+       * @return {Array}
+       */
+      divideEqually(numberOfParts) {
+        if (!this.isValid)
+          return [];
+        return this.splitBy(this.length() / numberOfParts).slice(0, numberOfParts);
+      }
+      /**
+       * Return whether this Interval overlaps with the specified Interval
+       * @param {Interval} other
+       * @return {boolean}
+       */
+      overlaps(other) {
+        return this.e > other.s && this.s < other.e;
+      }
+      /**
+       * Return whether this Interval's end is adjacent to the specified Interval's start.
+       * @param {Interval} other
+       * @return {boolean}
+       */
+      abutsStart(other) {
+        if (!this.isValid)
+          return false;
+        return +this.e === +other.s;
+      }
+      /**
+       * Return whether this Interval's start is adjacent to the specified Interval's end.
+       * @param {Interval} other
+       * @return {boolean}
+       */
+      abutsEnd(other) {
+        if (!this.isValid)
+          return false;
+        return +other.e === +this.s;
+      }
+      /**
+       * Return whether this Interval engulfs the start and end of the specified Interval.
+       * @param {Interval} other
+       * @return {boolean}
+       */
+      engulfs(other) {
+        if (!this.isValid)
+          return false;
+        return this.s <= other.s && this.e >= other.e;
+      }
+      /**
+       * Return whether this Interval has the same start and end as the specified Interval.
+       * @param {Interval} other
+       * @return {boolean}
+       */
+      equals(other) {
+        if (!this.isValid || !other.isValid) {
+          return false;
+        }
+        return this.s.equals(other.s) && this.e.equals(other.e);
+      }
+      /**
+       * Return an Interval representing the intersection of this Interval and the specified Interval.
+       * Specifically, the resulting Interval has the maximum start time and the minimum end time of the two Intervals.
+       * Returns null if the intersection is empty, meaning, the intervals don't intersect.
+       * @param {Interval} other
+       * @return {Interval}
+       */
+      intersection(other) {
+        if (!this.isValid)
+          return this;
+        const s2 = this.s > other.s ? this.s : other.s, e = this.e < other.e ? this.e : other.e;
+        if (s2 >= e) {
+          return null;
+        } else {
+          return _Interval.fromDateTimes(s2, e);
+        }
+      }
+      /**
+       * Return an Interval representing the union of this Interval and the specified Interval.
+       * Specifically, the resulting Interval has the minimum start time and the maximum end time of the two Intervals.
+       * @param {Interval} other
+       * @return {Interval}
+       */
+      union(other) {
+        if (!this.isValid)
+          return this;
+        const s2 = this.s < other.s ? this.s : other.s, e = this.e > other.e ? this.e : other.e;
+        return _Interval.fromDateTimes(s2, e);
+      }
+      /**
+       * Merge an array of Intervals into a equivalent minimal set of Intervals.
+       * Combines overlapping and adjacent Intervals.
+       * @param {Array} intervals
+       * @return {Array}
+       */
+      static merge(intervals) {
+        const [found, final] = intervals.sort((a, b) => a.s - b.s).reduce(
+          ([sofar, current], item) => {
+            if (!current) {
+              return [sofar, item];
+            } else if (current.overlaps(item) || current.abutsStart(item)) {
+              return [sofar, current.union(item)];
+            } else {
+              return [sofar.concat([current]), item];
+            }
+          },
+          [[], null]
+        );
+        if (final) {
+          found.push(final);
+        }
+        return found;
+      }
+      /**
+       * Return an array of Intervals representing the spans of time that only appear in one of the specified Intervals.
+       * @param {Array} intervals
+       * @return {Array}
+       */
+      static xor(intervals) {
+        let start = null, currentCount = 0;
+        const results = [], ends = intervals.map((i) => [
+          { time: i.s, type: "s" },
+          { time: i.e, type: "e" }
+        ]), flattened = Array.prototype.concat(...ends), arr = flattened.sort((a, b) => a.time - b.time);
+        for (const i of arr) {
+          currentCount += i.type === "s" ? 1 : -1;
+          if (currentCount === 1) {
+            start = i.time;
+          } else {
+            if (start && +start !== +i.time) {
+              results.push(_Interval.fromDateTimes(start, i.time));
+            }
+            start = null;
+          }
+        }
+        return _Interval.merge(results);
+      }
+      /**
+       * Return an Interval representing the span of time in this Interval that doesn't overlap with any of the specified Intervals.
+       * @param {...Interval} intervals
+       * @return {Array}
+       */
+      difference(...intervals) {
+        return _Interval.xor([this].concat(intervals)).map((i) => this.intersection(i)).filter((i) => i && !i.isEmpty());
+      }
+      /**
+       * Returns a string representation of this Interval appropriate for debugging.
+       * @return {string}
+       */
+      toString() {
+        if (!this.isValid)
+          return INVALID$1;
+        return `[${this.s.toISO()} \u2013 ${this.e.toISO()})`;
+      }
+      /**
+       * Returns a localized string representing this Interval. Accepts the same options as the
+       * Intl.DateTimeFormat constructor and any presets defined by Luxon, such as
+       * {@link DateTime.DATE_FULL} or {@link DateTime.TIME_SIMPLE}. The exact behavior of this method
+       * is browser-specific, but in general it will return an appropriate representation of the
+       * Interval in the assigned locale. Defaults to the system's locale if no locale has been
+       * specified.
+       * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat
+       * @param {Object} [formatOpts=DateTime.DATE_SHORT] - Either a DateTime preset or
+       * Intl.DateTimeFormat constructor options.
+       * @param {Object} opts - Options to override the configuration of the start DateTime.
+       * @example Interval.fromISO('2022-11-07T09:00Z/2022-11-08T09:00Z').toLocaleString(); //=> 11/7/2022 – 11/8/2022
+       * @example Interval.fromISO('2022-11-07T09:00Z/2022-11-08T09:00Z').toLocaleString(DateTime.DATE_FULL); //=> November 7 – 8, 2022
+       * @example Interval.fromISO('2022-11-07T09:00Z/2022-11-08T09:00Z').toLocaleString(DateTime.DATE_FULL, { locale: 'fr-FR' }); //=> 7–8 novembre 2022
+       * @example Interval.fromISO('2022-11-07T17:00Z/2022-11-07T19:00Z').toLocaleString(DateTime.TIME_SIMPLE); //=> 6:00 – 8:00 PM
+       * @example Interval.fromISO('2022-11-07T17:00Z/2022-11-07T19:00Z').toLocaleString({ weekday: 'short', month: 'short', day: '2-digit', hour: '2-digit', minute: '2-digit' }); //=> Mon, Nov 07, 6:00 – 8:00 p
+       * @return {string}
+       */
+      toLocaleString(formatOpts = DATE_SHORT, opts = {}) {
+        return this.isValid ? Formatter.create(this.s.loc.clone(opts), formatOpts).formatInterval(this) : INVALID$1;
+      }
+      /**
+       * Returns an ISO 8601-compliant string representation of this Interval.
+       * @see https://en.wikipedia.org/wiki/ISO_8601#Time_intervals
+       * @param {Object} opts - The same options as {@link DateTime#toISO}
+       * @return {string}
+       */
+      toISO(opts) {
+        if (!this.isValid)
+          return INVALID$1;
+        return `${this.s.toISO(opts)}/${this.e.toISO(opts)}`;
+      }
+      /**
+       * Returns an ISO 8601-compliant string representation of date of this Interval.
+       * The time components are ignored.
+       * @see https://en.wikipedia.org/wiki/ISO_8601#Time_intervals
+       * @return {string}
+       */
+      toISODate() {
+        if (!this.isValid)
+          return INVALID$1;
+        return `${this.s.toISODate()}/${this.e.toISODate()}`;
+      }
+      /**
+       * Returns an ISO 8601-compliant string representation of time of this Interval.
+       * The date components are ignored.
+       * @see https://en.wikipedia.org/wiki/ISO_8601#Time_intervals
+       * @param {Object} opts - The same options as {@link DateTime#toISO}
+       * @return {string}
+       */
+      toISOTime(opts) {
+        if (!this.isValid)
+          return INVALID$1;
+        return `${this.s.toISOTime(opts)}/${this.e.toISOTime(opts)}`;
+      }
+      /**
+       * Returns a string representation of this Interval formatted according to the specified format
+       * string. **You may not want this.** See {@link Interval#toLocaleString} for a more flexible
+       * formatting tool.
+       * @param {string} dateFormat - The format string. This string formats the start and end time.
+       * See {@link DateTime#toFormat} for details.
+       * @param {Object} opts - Options.
+       * @param {string} [opts.separator =  ' – '] - A separator to place between the start and end
+       * representations.
+       * @return {string}
+       */
+      toFormat(dateFormat, { separator = " \u2013 " } = {}) {
+        if (!this.isValid)
+          return INVALID$1;
+        return `${this.s.toFormat(dateFormat)}${separator}${this.e.toFormat(dateFormat)}`;
+      }
+      /**
+       * Return a Duration representing the time spanned by this interval.
+       * @param {string|string[]} [unit=['milliseconds']] - the unit or units (such as 'hours' or 'days') to include in the duration.
+       * @param {Object} opts - options that affect the creation of the Duration
+       * @param {string} [opts.conversionAccuracy='casual'] - the conversion system to use
+       * @example Interval.fromDateTimes(dt1, dt2).toDuration().toObject() //=> { milliseconds: 88489257 }
+       * @example Interval.fromDateTimes(dt1, dt2).toDuration('days').toObject() //=> { days: 1.0241812152777778 }
+       * @example Interval.fromDateTimes(dt1, dt2).toDuration(['hours', 'minutes']).toObject() //=> { hours: 24, minutes: 34.82095 }
+       * @example Interval.fromDateTimes(dt1, dt2).toDuration(['hours', 'minutes', 'seconds']).toObject() //=> { hours: 24, minutes: 34, seconds: 49.257 }
+       * @example Interval.fromDateTimes(dt1, dt2).toDuration('seconds').toObject() //=> { seconds: 88489.257 }
+       * @return {Duration}
+       */
+      toDuration(unit, opts) {
+        if (!this.isValid) {
+          return Duration.invalid(this.invalidReason);
+        }
+        return this.e.diff(this.s, unit, opts);
+      }
+      /**
+       * Run mapFn on the interval start and end, returning a new Interval from the resulting DateTimes
+       * @param {function} mapFn
+       * @return {Interval}
+       * @example Interval.fromDateTimes(dt1, dt2).mapEndpoints(endpoint => endpoint.toUTC())
+       * @example Interval.fromDateTimes(dt1, dt2).mapEndpoints(endpoint => endpoint.plus({ hours: 2 }))
+       */
+      mapEndpoints(mapFn) {
+        return _Interval.fromDateTimes(mapFn(this.s), mapFn(this.e));
+      }
+    };
+    var Info2 = class {
+      /**
+       * Return whether the specified zone contains a DST.
+       * @param {string|Zone} [zone='local'] - Zone to check. Defaults to the environment's local zone.
+       * @return {boolean}
+       */
+      static hasDST(zone = Settings2.defaultZone) {
+        const proto = DateTime.now().setZone(zone).set({ month: 12 });
+        return !zone.isUniversal && proto.offset !== proto.set({ month: 6 }).offset;
+      }
+      /**
+       * Return whether the specified zone is a valid IANA specifier.
+       * @param {string} zone - Zone to check
+       * @return {boolean}
+       */
+      static isValidIANAZone(zone) {
+        return IANAZone.isValidZone(zone);
+      }
+      /**
+       * Converts the input into a {@link Zone} instance.
+       *
+       * * If `input` is already a Zone instance, it is returned unchanged.
+       * * If `input` is a string containing a valid time zone name, a Zone instance
+       *   with that name is returned.
+       * * If `input` is a string that doesn't refer to a known time zone, a Zone
+       *   instance with {@link Zone#isValid} == false is returned.
+       * * If `input is a number, a Zone instance with the specified fixed offset
+       *   in minutes is returned.
+       * * If `input` is `null` or `undefined`, the default zone is returned.
+       * @param {string|Zone|number} [input] - the value to be converted
+       * @return {Zone}
+       */
+      static normalizeZone(input) {
+        return normalizeZone(input, Settings2.defaultZone);
+      }
+      /**
+       * Return an array of standalone month names.
+       * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat
+       * @param {string} [length='long'] - the length of the month representation, such as "numeric", "2-digit", "narrow", "short", "long"
+       * @param {Object} opts - options
+       * @param {string} [opts.locale] - the locale code
+       * @param {string} [opts.numberingSystem=null] - the numbering system
+       * @param {string} [opts.locObj=null] - an existing locale object to use
+       * @param {string} [opts.outputCalendar='gregory'] - the calendar
+       * @example Info.months()[0] //=> 'January'
+       * @example Info.months('short')[0] //=> 'Jan'
+       * @example Info.months('numeric')[0] //=> '1'
+       * @example Info.months('short', { locale: 'fr-CA' } )[0] //=> 'janv.'
+       * @example Info.months('numeric', { locale: 'ar' })[0] //=> '١'
+       * @example Info.months('long', { outputCalendar: 'islamic' })[0] //=> 'Rabiʻ I'
+       * @return {Array}
+       */
+      static months(length = "long", { locale = null, numberingSystem = null, locObj = null, outputCalendar = "gregory" } = {}) {
+        return (locObj || Locale.create(locale, numberingSystem, outputCalendar)).months(length);
+      }
+      /**
+       * Return an array of format month names.
+       * Format months differ from standalone months in that they're meant to appear next to the day of the month. In some languages, that
+       * changes the string.
+       * See {@link Info#months}
+       * @param {string} [length='long'] - the length of the month representation, such as "numeric", "2-digit", "narrow", "short", "long"
+       * @param {Object} opts - options
+       * @param {string} [opts.locale] - the locale code
+       * @param {string} [opts.numberingSystem=null] - the numbering system
+       * @param {string} [opts.locObj=null] - an existing locale object to use
+       * @param {string} [opts.outputCalendar='gregory'] - the calendar
+       * @return {Array}
+       */
+      static monthsFormat(length = "long", { locale = null, numberingSystem = null, locObj = null, outputCalendar = "gregory" } = {}) {
+        return (locObj || Locale.create(locale, numberingSystem, outputCalendar)).months(length, true);
+      }
+      /**
+       * Return an array of standalone week names.
+       * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat
+       * @param {string} [length='long'] - the length of the weekday representation, such as "narrow", "short", "long".
+       * @param {Object} opts - options
+       * @param {string} [opts.locale] - the locale code
+       * @param {string} [opts.numberingSystem=null] - the numbering system
+       * @param {string} [opts.locObj=null] - an existing locale object to use
+       * @example Info.weekdays()[0] //=> 'Monday'
+       * @example Info.weekdays('short')[0] //=> 'Mon'
+       * @example Info.weekdays('short', { locale: 'fr-CA' })[0] //=> 'lun.'
+       * @example Info.weekdays('short', { locale: 'ar' })[0] //=> 'الاثنين'
+       * @return {Array}
+       */
+      static weekdays(length = "long", { locale = null, numberingSystem = null, locObj = null } = {}) {
+        return (locObj || Locale.create(locale, numberingSystem, null)).weekdays(length);
+      }
+      /**
+       * Return an array of format week names.
+       * Format weekdays differ from standalone weekdays in that they're meant to appear next to more date information. In some languages, that
+       * changes the string.
+       * See {@link Info#weekdays}
+       * @param {string} [length='long'] - the length of the month representation, such as "narrow", "short", "long".
+       * @param {Object} opts - options
+       * @param {string} [opts.locale=null] - the locale code
+       * @param {string} [opts.numberingSystem=null] - the numbering system
+       * @param {string} [opts.locObj=null] - an existing locale object to use
+       * @return {Array}
+       */
+      static weekdaysFormat(length = "long", { locale = null, numberingSystem = null, locObj = null } = {}) {
+        return (locObj || Locale.create(locale, numberingSystem, null)).weekdays(length, true);
+      }
+      /**
+       * Return an array of meridiems.
+       * @param {Object} opts - options
+       * @param {string} [opts.locale] - the locale code
+       * @example Info.meridiems() //=> [ 'AM', 'PM' ]
+       * @example Info.meridiems({ locale: 'my' }) //=> [ 'နံနက်', 'ညနေ' ]
+       * @return {Array}
+       */
+      static meridiems({ locale = null } = {}) {
+        return Locale.create(locale).meridiems();
+      }
+      /**
+       * Return an array of eras, such as ['BC', 'AD']. The locale can be specified, but the calendar system is always Gregorian.
+       * @param {string} [length='short'] - the length of the era representation, such as "short" or "long".
+       * @param {Object} opts - options
+       * @param {string} [opts.locale] - the locale code
+       * @example Info.eras() //=> [ 'BC', 'AD' ]
+       * @example Info.eras('long') //=> [ 'Before Christ', 'Anno Domini' ]
+       * @example Info.eras('long', { locale: 'fr' }) //=> [ 'avant Jésus-Christ', 'après Jésus-Christ' ]
+       * @return {Array}
+       */
+      static eras(length = "short", { locale = null } = {}) {
+        return Locale.create(locale, null, "gregory").eras(length);
+      }
+      /**
+       * Return the set of available features in this environment.
+       * Some features of Luxon are not available in all environments. For example, on older browsers, relative time formatting support is not available. Use this function to figure out if that's the case.
+       * Keys:
+       * * `relative`: whether this environment supports relative time formatting
+       * @example Info.features() //=> { relative: false }
+       * @return {Object}
+       */
+      static features() {
+        return { relative: hasRelative() };
+      }
+    };
+    function dayDiff(earlier, later) {
+      const utcDayStart = (dt) => dt.toUTC(0, { keepLocalTime: true }).startOf("day").valueOf(), ms = utcDayStart(later) - utcDayStart(earlier);
+      return Math.floor(Duration.fromMillis(ms).as("days"));
+    }
+    function highOrderDiffs(cursor, later, units) {
+      const differs = [
+        ["years", (a, b) => b.year - a.year],
+        ["quarters", (a, b) => b.quarter - a.quarter + (b.year - a.year) * 4],
+        ["months", (a, b) => b.month - a.month + (b.year - a.year) * 12],
+        [
+          "weeks",
+          (a, b) => {
+            const days = dayDiff(a, b);
+            return (days - days % 7) / 7;
+          }
+        ],
+        ["days", dayDiff]
+      ];
+      const results = {};
+      const earlier = cursor;
+      let lowestOrder, highWater;
+      for (const [unit, differ] of differs) {
+        if (units.indexOf(unit) >= 0) {
+          lowestOrder = unit;
+          results[unit] = differ(cursor, later);
+          highWater = earlier.plus(results);
+          if (highWater > later) {
+            results[unit]--;
+            cursor = earlier.plus(results);
+          } else {
+            cursor = highWater;
+          }
+        }
+      }
+      return [cursor, results, highWater, lowestOrder];
+    }
+    function diff(earlier, later, units, opts) {
+      let [cursor, results, highWater, lowestOrder] = highOrderDiffs(earlier, later, units);
+      const remainingMillis = later - cursor;
+      const lowerOrderUnits = units.filter(
+        (u) => ["hours", "minutes", "seconds", "milliseconds"].indexOf(u) >= 0
+      );
+      if (lowerOrderUnits.length === 0) {
+        if (highWater < later) {
+          highWater = cursor.plus({ [lowestOrder]: 1 });
+        }
+        if (highWater !== cursor) {
+          results[lowestOrder] = (results[lowestOrder] || 0) + remainingMillis / (highWater - cursor);
+        }
+      }
+      const duration = Duration.fromObject(results, opts);
+      if (lowerOrderUnits.length > 0) {
+        return Duration.fromMillis(remainingMillis, opts).shiftTo(...lowerOrderUnits).plus(duration);
+      } else {
+        return duration;
+      }
+    }
+    var numberingSystems = {
+      arab: "[\u0660-\u0669]",
+      arabext: "[\u06F0-\u06F9]",
+      bali: "[\u1B50-\u1B59]",
+      beng: "[\u09E6-\u09EF]",
+      deva: "[\u0966-\u096F]",
+      fullwide: "[\uFF10-\uFF19]",
+      gujr: "[\u0AE6-\u0AEF]",
+      hanidec: "[\u3007|\u4E00|\u4E8C|\u4E09|\u56DB|\u4E94|\u516D|\u4E03|\u516B|\u4E5D]",
+      khmr: "[\u17E0-\u17E9]",
+      knda: "[\u0CE6-\u0CEF]",
+      laoo: "[\u0ED0-\u0ED9]",
+      limb: "[\u1946-\u194F]",
+      mlym: "[\u0D66-\u0D6F]",
+      mong: "[\u1810-\u1819]",
+      mymr: "[\u1040-\u1049]",
+      orya: "[\u0B66-\u0B6F]",
+      tamldec: "[\u0BE6-\u0BEF]",
+      telu: "[\u0C66-\u0C6F]",
+      thai: "[\u0E50-\u0E59]",
+      tibt: "[\u0F20-\u0F29]",
+      latn: "\\d"
+    };
+    var numberingSystemsUTF16 = {
+      arab: [1632, 1641],
+      arabext: [1776, 1785],
+      bali: [6992, 7001],
+      beng: [2534, 2543],
+      deva: [2406, 2415],
+      fullwide: [65296, 65303],
+      gujr: [2790, 2799],
+      khmr: [6112, 6121],
+      knda: [3302, 3311],
+      laoo: [3792, 3801],
+      limb: [6470, 6479],
+      mlym: [3430, 3439],
+      mong: [6160, 6169],
+      mymr: [4160, 4169],
+      orya: [2918, 2927],
+      tamldec: [3046, 3055],
+      telu: [3174, 3183],
+      thai: [3664, 3673],
+      tibt: [3872, 3881]
+    };
+    var hanidecChars = numberingSystems.hanidec.replace(/[\[|\]]/g, "").split("");
+    function parseDigits(str) {
+      let value = parseInt(str, 10);
+      if (isNaN(value)) {
+        value = "";
+        for (let i = 0; i < str.length; i++) {
+          const code = str.charCodeAt(i);
+          if (str[i].search(numberingSystems.hanidec) !== -1) {
+            value += hanidecChars.indexOf(str[i]);
+          } else {
+            for (const key in numberingSystemsUTF16) {
+              const [min, max] = numberingSystemsUTF16[key];
+              if (code >= min && code <= max) {
+                value += code - min;
+              }
+            }
+          }
+        }
+        return parseInt(value, 10);
+      } else {
+        return value;
+      }
+    }
+    function digitRegex({ numberingSystem }, append2 = "") {
+      return new RegExp(`${numberingSystems[numberingSystem || "latn"]}${append2}`);
+    }
+    var MISSING_FTP = "missing Intl.DateTimeFormat.formatToParts support";
+    function intUnit(regex, post = (i) => i) {
+      return { regex, deser: ([s2]) => post(parseDigits(s2)) };
+    }
+    var NBSP = String.fromCharCode(160);
+    var spaceOrNBSP = `[ ${NBSP}]`;
+    var spaceOrNBSPRegExp = new RegExp(spaceOrNBSP, "g");
+    function fixListRegex(s2) {
+      return s2.replace(/\./g, "\\.?").replace(spaceOrNBSPRegExp, spaceOrNBSP);
+    }
+    function stripInsensitivities(s2) {
+      return s2.replace(/\./g, "").replace(spaceOrNBSPRegExp, " ").toLowerCase();
+    }
+    function oneOf(strings, startIndex) {
+      if (strings === null) {
+        return null;
+      } else {
+        return {
+          regex: RegExp(strings.map(fixListRegex).join("|")),
+          deser: ([s2]) => strings.findIndex((i) => stripInsensitivities(s2) === stripInsensitivities(i)) + startIndex
+        };
+      }
+    }
+    function offset(regex, groups) {
+      return { regex, deser: ([, h, m]) => signedOffset(h, m), groups };
+    }
+    function simple(regex) {
+      return { regex, deser: ([s2]) => s2 };
+    }
+    function escapeToken(value) {
+      return value.replace(/[\-\[\]{}()*+?.,\\\^$|#\s]/g, "\\$&");
+    }
+    function unitForToken(token, loc) {
+      const one = digitRegex(loc), two = digitRegex(loc, "{2}"), three = digitRegex(loc, "{3}"), four = digitRegex(loc, "{4}"), six = digitRegex(loc, "{6}"), oneOrTwo = digitRegex(loc, "{1,2}"), oneToThree = digitRegex(loc, "{1,3}"), oneToSix = digitRegex(loc, "{1,6}"), oneToNine = digitRegex(loc, "{1,9}"), twoToFour = digitRegex(loc, "{2,4}"), fourToSix = digitRegex(loc, "{4,6}"), literal = (t) => ({ regex: RegExp(escapeToken(t.val)), deser: ([s2]) => s2, literal: true }), unitate = (t) => {
+        if (token.literal) {
+          return literal(t);
+        }
+        switch (t.val) {
+          case "G":
+            return oneOf(loc.eras("short", false), 0);
+          case "GG":
+            return oneOf(loc.eras("long", false), 0);
+          case "y":
+            return intUnit(oneToSix);
+          case "yy":
+            return intUnit(twoToFour, untruncateYear);
+          case "yyyy":
+            return intUnit(four);
+          case "yyyyy":
+            return intUnit(fourToSix);
+          case "yyyyyy":
+            return intUnit(six);
+          case "M":
+            return intUnit(oneOrTwo);
+          case "MM":
+            return intUnit(two);
+          case "MMM":
+            return oneOf(loc.months("short", true, false), 1);
+          case "MMMM":
+            return oneOf(loc.months("long", true, false), 1);
+          case "L":
+            return intUnit(oneOrTwo);
+          case "LL":
+            return intUnit(two);
+          case "LLL":
+            return oneOf(loc.months("short", false, false), 1);
+          case "LLLL":
+            return oneOf(loc.months("long", false, false), 1);
+          case "d":
+            return intUnit(oneOrTwo);
+          case "dd":
+            return intUnit(two);
+          case "o":
+            return intUnit(oneToThree);
+          case "ooo":
+            return intUnit(three);
+          case "HH":
+            return intUnit(two);
+          case "H":
+            return intUnit(oneOrTwo);
+          case "hh":
+            return intUnit(two);
+          case "h":
+            return intUnit(oneOrTwo);
+          case "mm":
+            return intUnit(two);
+          case "m":
+            return intUnit(oneOrTwo);
+          case "q":
+            return intUnit(oneOrTwo);
+          case "qq":
+            return intUnit(two);
+          case "s":
+            return intUnit(oneOrTwo);
+          case "ss":
+            return intUnit(two);
+          case "S":
+            return intUnit(oneToThree);
+          case "SSS":
+            return intUnit(three);
+          case "u":
+            return simple(oneToNine);
+          case "uu":
+            return simple(oneOrTwo);
+          case "uuu":
+            return intUnit(one);
+          case "a":
+            return oneOf(loc.meridiems(), 0);
+          case "kkkk":
+            return intUnit(four);
+          case "kk":
+            return intUnit(twoToFour, untruncateYear);
+          case "W":
+            return intUnit(oneOrTwo);
+          case "WW":
+            return intUnit(two);
+          case "E":
+          case "c":
+            return intUnit(one);
+          case "EEE":
+            return oneOf(loc.weekdays("short", false, false), 1);
+          case "EEEE":
+            return oneOf(loc.weekdays("long", false, false), 1);
+          case "ccc":
+            return oneOf(loc.weekdays("short", true, false), 1);
+          case "cccc":
+            return oneOf(loc.weekdays("long", true, false), 1);
+          case "Z":
+          case "ZZ":
+            return offset(new RegExp(`([+-]${oneOrTwo.source})(?::(${two.source}))?`), 2);
+          case "ZZZ":
+            return offset(new RegExp(`([+-]${oneOrTwo.source})(${two.source})?`), 2);
+          case "z":
+            return simple(/[a-z_+-/]{1,256}?/i);
+          default:
+            return literal(t);
+        }
+      };
+      const unit = unitate(token) || {
+        invalidReason: MISSING_FTP
+      };
+      unit.token = token;
+      return unit;
+    }
+    var partTypeStyleToTokenVal = {
+      year: {
+        "2-digit": "yy",
+        numeric: "yyyyy"
+      },
+      month: {
+        numeric: "M",
+        "2-digit": "MM",
+        short: "MMM",
+        long: "MMMM"
+      },
+      day: {
+        numeric: "d",
+        "2-digit": "dd"
+      },
+      weekday: {
+        short: "EEE",
+        long: "EEEE"
+      },
+      dayperiod: "a",
+      dayPeriod: "a",
+      hour: {
+        numeric: "h",
+        "2-digit": "hh"
+      },
+      minute: {
+        numeric: "m",
+        "2-digit": "mm"
+      },
+      second: {
+        numeric: "s",
+        "2-digit": "ss"
+      },
+      timeZoneName: {
+        long: "ZZZZZ",
+        short: "ZZZ"
+      }
+    };
+    function tokenForPart(part, formatOpts) {
+      const { type, value } = part;
+      if (type === "literal") {
+        return {
+          literal: true,
+          val: value
+        };
+      }
+      const style = formatOpts[type];
+      let val = partTypeStyleToTokenVal[type];
+      if (typeof val === "object") {
+        val = val[style];
+      }
+      if (val) {
+        return {
+          literal: false,
+          val
+        };
+      }
+      return void 0;
+    }
+    function buildRegex(units) {
+      const re = units.map((u) => u.regex).reduce((f, r) => `${f}(${r.source})`, "");
+      return [`^${re}$`, units];
+    }
+    function match(input, regex, handlers) {
+      const matches = input.match(regex);
+      if (matches) {
+        const all = {};
+        let matchIndex = 1;
+        for (const i in handlers) {
+          if (hasOwnProperty(handlers, i)) {
+            const h = handlers[i], groups = h.groups ? h.groups + 1 : 1;
+            if (!h.literal && h.token) {
+              all[h.token.val[0]] = h.deser(matches.slice(matchIndex, matchIndex + groups));
+            }
+            matchIndex += groups;
+          }
+        }
+        return [matches, all];
+      } else {
+        return [matches, {}];
+      }
+    }
+    function dateTimeFromMatches(matches) {
+      const toField = (token) => {
+        switch (token) {
+          case "S":
+            return "millisecond";
+          case "s":
+            return "second";
+          case "m":
+            return "minute";
+          case "h":
+          case "H":
+            return "hour";
+          case "d":
+            return "day";
+          case "o":
+            return "ordinal";
+          case "L":
+          case "M":
+            return "month";
+          case "y":
+            return "year";
+          case "E":
+          case "c":
+            return "weekday";
+          case "W":
+            return "weekNumber";
+          case "k":
+            return "weekYear";
+          case "q":
+            return "quarter";
+          default:
+            return null;
+        }
+      };
+      let zone = null;
+      let specificOffset;
+      if (!isUndefined(matches.z)) {
+        zone = IANAZone.create(matches.z);
+      }
+      if (!isUndefined(matches.Z)) {
+        if (!zone) {
+          zone = new FixedOffsetZone(matches.Z);
+        }
+        specificOffset = matches.Z;
+      }
+      if (!isUndefined(matches.q)) {
+        matches.M = (matches.q - 1) * 3 + 1;
+      }
+      if (!isUndefined(matches.h)) {
+        if (matches.h < 12 && matches.a === 1) {
+          matches.h += 12;
+        } else if (matches.h === 12 && matches.a === 0) {
+          matches.h = 0;
+        }
+      }
+      if (matches.G === 0 && matches.y) {
+        matches.y = -matches.y;
+      }
+      if (!isUndefined(matches.u)) {
+        matches.S = parseMillis(matches.u);
+      }
+      const vals = Object.keys(matches).reduce((r, k) => {
+        const f = toField(k);
+        if (f) {
+          r[f] = matches[k];
+        }
+        return r;
+      }, {});
+      return [vals, zone, specificOffset];
+    }
+    var dummyDateTimeCache = null;
+    function getDummyDateTime() {
+      if (!dummyDateTimeCache) {
+        dummyDateTimeCache = DateTime.fromMillis(1555555555555);
+      }
+      return dummyDateTimeCache;
+    }
+    function maybeExpandMacroToken(token, locale) {
+      if (token.literal) {
+        return token;
+      }
+      const formatOpts = Formatter.macroTokenToFormatOpts(token.val);
+      const tokens = formatOptsToTokens(formatOpts, locale);
+      if (tokens == null || tokens.includes(void 0)) {
+        return token;
+      }
+      return tokens;
+    }
+    function expandMacroTokens(tokens, locale) {
+      return Array.prototype.concat(...tokens.map((t) => maybeExpandMacroToken(t, locale)));
+    }
+    function explainFromTokens(locale, input, format) {
+      const tokens = expandMacroTokens(Formatter.parseFormat(format), locale), units = tokens.map((t) => unitForToken(t, locale)), disqualifyingUnit = units.find((t) => t.invalidReason);
+      if (disqualifyingUnit) {
+        return { input, tokens, invalidReason: disqualifyingUnit.invalidReason };
+      } else {
+        const [regexString, handlers] = buildRegex(units), regex = RegExp(regexString, "i"), [rawMatches, matches] = match(input, regex, handlers), [result, zone, specificOffset] = matches ? dateTimeFromMatches(matches) : [null, null, void 0];
+        if (hasOwnProperty(matches, "a") && hasOwnProperty(matches, "H")) {
+          throw new ConflictingSpecificationError(
+            "Can't include meridiem when specifying 24-hour format"
+          );
+        }
+        return { input, tokens, regex, rawMatches, matches, result, zone, specificOffset };
+      }
+    }
+    function parseFromTokens(locale, input, format) {
+      const { result, zone, specificOffset, invalidReason } = explainFromTokens(locale, input, format);
+      return [result, zone, specificOffset, invalidReason];
+    }
+    function formatOptsToTokens(formatOpts, locale) {
+      if (!formatOpts) {
+        return null;
+      }
+      const formatter = Formatter.create(locale, formatOpts);
+      const parts = formatter.formatDateTimeParts(getDummyDateTime());
+      return parts.map((p) => tokenForPart(p, formatOpts));
+    }
+    var nonLeapLadder = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+    var leapLadder = [0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335];
+    function unitOutOfRange(unit, value) {
+      return new Invalid(
+        "unit out of range",
+        `you specified ${value} (of type ${typeof value}) as a ${unit}, which is invalid`
+      );
+    }
+    function dayOfWeek(year, month, day) {
+      const d = new Date(Date.UTC(year, month - 1, day));
+      if (year < 100 && year >= 0) {
+        d.setUTCFullYear(d.getUTCFullYear() - 1900);
+      }
+      const js = d.getUTCDay();
+      return js === 0 ? 7 : js;
+    }
+    function computeOrdinal(year, month, day) {
+      return day + (isLeapYear(year) ? leapLadder : nonLeapLadder)[month - 1];
+    }
+    function uncomputeOrdinal(year, ordinal) {
+      const table = isLeapYear(year) ? leapLadder : nonLeapLadder, month0 = table.findIndex((i) => i < ordinal), day = ordinal - table[month0];
+      return { month: month0 + 1, day };
+    }
+    function gregorianToWeek(gregObj) {
+      const { year, month, day } = gregObj, ordinal = computeOrdinal(year, month, day), weekday = dayOfWeek(year, month, day);
+      let weekNumber = Math.floor((ordinal - weekday + 10) / 7), weekYear;
+      if (weekNumber < 1) {
+        weekYear = year - 1;
+        weekNumber = weeksInWeekYear(weekYear);
+      } else if (weekNumber > weeksInWeekYear(year)) {
+        weekYear = year + 1;
+        weekNumber = 1;
+      } else {
+        weekYear = year;
+      }
+      return { weekYear, weekNumber, weekday, ...timeObject(gregObj) };
+    }
+    function weekToGregorian(weekData) {
+      const { weekYear, weekNumber, weekday } = weekData, weekdayOfJan4 = dayOfWeek(weekYear, 1, 4), yearInDays = daysInYear(weekYear);
+      let ordinal = weekNumber * 7 + weekday - weekdayOfJan4 - 3, year;
+      if (ordinal < 1) {
+        year = weekYear - 1;
+        ordinal += daysInYear(year);
+      } else if (ordinal > yearInDays) {
+        year = weekYear + 1;
+        ordinal -= daysInYear(weekYear);
+      } else {
+        year = weekYear;
+      }
+      const { month, day } = uncomputeOrdinal(year, ordinal);
+      return { year, month, day, ...timeObject(weekData) };
+    }
+    function gregorianToOrdinal(gregData) {
+      const { year, month, day } = gregData;
+      const ordinal = computeOrdinal(year, month, day);
+      return { year, ordinal, ...timeObject(gregData) };
+    }
+    function ordinalToGregorian(ordinalData) {
+      const { year, ordinal } = ordinalData;
+      const { month, day } = uncomputeOrdinal(year, ordinal);
+      return { year, month, day, ...timeObject(ordinalData) };
+    }
+    function hasInvalidWeekData(obj) {
+      const validYear = isInteger(obj.weekYear), validWeek = integerBetween(obj.weekNumber, 1, weeksInWeekYear(obj.weekYear)), validWeekday = integerBetween(obj.weekday, 1, 7);
+      if (!validYear) {
+        return unitOutOfRange("weekYear", obj.weekYear);
+      } else if (!validWeek) {
+        return unitOutOfRange("week", obj.week);
+      } else if (!validWeekday) {
+        return unitOutOfRange("weekday", obj.weekday);
+      } else
+        return false;
+    }
+    function hasInvalidOrdinalData(obj) {
+      const validYear = isInteger(obj.year), validOrdinal = integerBetween(obj.ordinal, 1, daysInYear(obj.year));
+      if (!validYear) {
+        return unitOutOfRange("year", obj.year);
+      } else if (!validOrdinal) {
+        return unitOutOfRange("ordinal", obj.ordinal);
+      } else
+        return false;
+    }
+    function hasInvalidGregorianData(obj) {
+      const validYear = isInteger(obj.year), validMonth = integerBetween(obj.month, 1, 12), validDay = integerBetween(obj.day, 1, daysInMonth(obj.year, obj.month));
+      if (!validYear) {
+        return unitOutOfRange("year", obj.year);
+      } else if (!validMonth) {
+        return unitOutOfRange("month", obj.month);
+      } else if (!validDay) {
+        return unitOutOfRange("day", obj.day);
+      } else
+        return false;
+    }
+    function hasInvalidTimeData(obj) {
+      const { hour, minute, second, millisecond } = obj;
+      const validHour = integerBetween(hour, 0, 23) || hour === 24 && minute === 0 && second === 0 && millisecond === 0, validMinute = integerBetween(minute, 0, 59), validSecond = integerBetween(second, 0, 59), validMillisecond = integerBetween(millisecond, 0, 999);
+      if (!validHour) {
+        return unitOutOfRange("hour", hour);
+      } else if (!validMinute) {
+        return unitOutOfRange("minute", minute);
+      } else if (!validSecond) {
+        return unitOutOfRange("second", second);
+      } else if (!validMillisecond) {
+        return unitOutOfRange("millisecond", millisecond);
+      } else
+        return false;
+    }
+    var INVALID = "Invalid DateTime";
+    var MAX_DATE = 864e13;
+    function unsupportedZone(zone) {
+      return new Invalid("unsupported zone", `the zone "${zone.name}" is not supported`);
+    }
+    function possiblyCachedWeekData(dt) {
+      if (dt.weekData === null) {
+        dt.weekData = gregorianToWeek(dt.c);
+      }
+      return dt.weekData;
+    }
+    function clone(inst, alts) {
+      const current = {
+        ts: inst.ts,
+        zone: inst.zone,
+        c: inst.c,
+        o: inst.o,
+        loc: inst.loc,
+        invalid: inst.invalid
+      };
+      return new DateTime({ ...current, ...alts, old: current });
+    }
+    function fixOffset(localTS, o, tz) {
+      let utcGuess = localTS - o * 60 * 1e3;
+      const o2 = tz.offset(utcGuess);
+      if (o === o2) {
+        return [utcGuess, o];
+      }
+      utcGuess -= (o2 - o) * 60 * 1e3;
+      const o3 = tz.offset(utcGuess);
+      if (o2 === o3) {
+        return [utcGuess, o2];
+      }
+      return [localTS - Math.min(o2, o3) * 60 * 1e3, Math.max(o2, o3)];
+    }
+    function tsToObj(ts, offset2) {
+      ts += offset2 * 60 * 1e3;
+      const d = new Date(ts);
+      return {
+        year: d.getUTCFullYear(),
+        month: d.getUTCMonth() + 1,
+        day: d.getUTCDate(),
+        hour: d.getUTCHours(),
+        minute: d.getUTCMinutes(),
+        second: d.getUTCSeconds(),
+        millisecond: d.getUTCMilliseconds()
+      };
+    }
+    function objToTS(obj, offset2, zone) {
+      return fixOffset(objToLocalTS(obj), offset2, zone);
+    }
+    function adjustTime(inst, dur) {
+      const oPre = inst.o, year = inst.c.year + Math.trunc(dur.years), month = inst.c.month + Math.trunc(dur.months) + Math.trunc(dur.quarters) * 3, c = {
+        ...inst.c,
+        year,
+        month,
+        day: Math.min(inst.c.day, daysInMonth(year, month)) + Math.trunc(dur.days) + Math.trunc(dur.weeks) * 7
+      }, millisToAdd = Duration.fromObject({
+        years: dur.years - Math.trunc(dur.years),
+        quarters: dur.quarters - Math.trunc(dur.quarters),
+        months: dur.months - Math.trunc(dur.months),
+        weeks: dur.weeks - Math.trunc(dur.weeks),
+        days: dur.days - Math.trunc(dur.days),
+        hours: dur.hours,
+        minutes: dur.minutes,
+        seconds: dur.seconds,
+        milliseconds: dur.milliseconds
+      }).as("milliseconds"), localTS = objToLocalTS(c);
+      let [ts, o] = fixOffset(localTS, oPre, inst.zone);
+      if (millisToAdd !== 0) {
+        ts += millisToAdd;
+        o = inst.zone.offset(ts);
+      }
+      return { ts, o };
+    }
+    function parseDataToDateTime(parsed, parsedZone, opts, format, text2, specificOffset) {
+      const { setZone, zone } = opts;
+      if (parsed && Object.keys(parsed).length !== 0) {
+        const interpretationZone = parsedZone || zone, inst = DateTime.fromObject(parsed, {
+          ...opts,
+          zone: interpretationZone,
+          specificOffset
+        });
+        return setZone ? inst : inst.setZone(zone);
+      } else {
+        return DateTime.invalid(
+          new Invalid("unparsable", `the input "${text2}" can't be parsed as ${format}`)
+        );
+      }
+    }
+    function toTechFormat(dt, format, allowZ = true) {
+      return dt.isValid ? Formatter.create(Locale.create("en-US"), {
+        allowZ,
+        forceSimple: true
+      }).formatDateTimeFromString(dt, format) : null;
+    }
+    function toISODate(o, extended) {
+      const longFormat = o.c.year > 9999 || o.c.year < 0;
+      let c = "";
+      if (longFormat && o.c.year >= 0)
+        c += "+";
+      c += padStart(o.c.year, longFormat ? 6 : 4);
+      if (extended) {
+        c += "-";
+        c += padStart(o.c.month);
+        c += "-";
+        c += padStart(o.c.day);
+      } else {
+        c += padStart(o.c.month);
+        c += padStart(o.c.day);
+      }
+      return c;
+    }
+    function toISOTime(o, extended, suppressSeconds, suppressMilliseconds, includeOffset, extendedZone) {
+      let c = padStart(o.c.hour);
+      if (extended) {
+        c += ":";
+        c += padStart(o.c.minute);
+        if (o.c.second !== 0 || !suppressSeconds) {
+          c += ":";
+        }
+      } else {
+        c += padStart(o.c.minute);
+      }
+      if (o.c.second !== 0 || !suppressSeconds) {
+        c += padStart(o.c.second);
+        if (o.c.millisecond !== 0 || !suppressMilliseconds) {
+          c += ".";
+          c += padStart(o.c.millisecond, 3);
+        }
+      }
+      if (includeOffset) {
+        if (o.isOffsetFixed && o.offset === 0 && !extendedZone) {
+          c += "Z";
+        } else if (o.o < 0) {
+          c += "-";
+          c += padStart(Math.trunc(-o.o / 60));
+          c += ":";
+          c += padStart(Math.trunc(-o.o % 60));
+        } else {
+          c += "+";
+          c += padStart(Math.trunc(o.o / 60));
+          c += ":";
+          c += padStart(Math.trunc(o.o % 60));
+        }
+      }
+      if (extendedZone) {
+        c += "[" + o.zone.ianaName + "]";
+      }
+      return c;
+    }
+    var defaultUnitValues = {
+      month: 1,
+      day: 1,
+      hour: 0,
+      minute: 0,
+      second: 0,
+      millisecond: 0
+    };
+    var defaultWeekUnitValues = {
+      weekNumber: 1,
+      weekday: 1,
+      hour: 0,
+      minute: 0,
+      second: 0,
+      millisecond: 0
+    };
+    var defaultOrdinalUnitValues = {
+      ordinal: 1,
+      hour: 0,
+      minute: 0,
+      second: 0,
+      millisecond: 0
+    };
+    var orderedUnits = ["year", "month", "day", "hour", "minute", "second", "millisecond"];
+    var orderedWeekUnits = [
+      "weekYear",
+      "weekNumber",
+      "weekday",
+      "hour",
+      "minute",
+      "second",
+      "millisecond"
+    ];
+    var orderedOrdinalUnits = ["year", "ordinal", "hour", "minute", "second", "millisecond"];
+    function normalizeUnit(unit) {
+      const normalized = {
+        year: "year",
+        years: "year",
+        month: "month",
+        months: "month",
+        day: "day",
+        days: "day",
+        hour: "hour",
+        hours: "hour",
+        minute: "minute",
+        minutes: "minute",
+        quarter: "quarter",
+        quarters: "quarter",
+        second: "second",
+        seconds: "second",
+        millisecond: "millisecond",
+        milliseconds: "millisecond",
+        weekday: "weekday",
+        weekdays: "weekday",
+        weeknumber: "weekNumber",
+        weeksnumber: "weekNumber",
+        weeknumbers: "weekNumber",
+        weekyear: "weekYear",
+        weekyears: "weekYear",
+        ordinal: "ordinal"
+      }[unit.toLowerCase()];
+      if (!normalized)
+        throw new InvalidUnitError(unit);
+      return normalized;
+    }
+    function quickDT(obj, opts) {
+      const zone = normalizeZone(opts.zone, Settings2.defaultZone), loc = Locale.fromObject(opts), tsNow = Settings2.now();
+      let ts, o;
+      if (!isUndefined(obj.year)) {
+        for (const u of orderedUnits) {
+          if (isUndefined(obj[u])) {
+            obj[u] = defaultUnitValues[u];
+          }
+        }
+        const invalid = hasInvalidGregorianData(obj) || hasInvalidTimeData(obj);
+        if (invalid) {
+          return DateTime.invalid(invalid);
+        }
+        const offsetProvis = zone.offset(tsNow);
+        [ts, o] = objToTS(obj, offsetProvis, zone);
+      } else {
+        ts = tsNow;
+      }
+      return new DateTime({ ts, zone, loc, o });
+    }
+    function diffRelative(start, end, opts) {
+      const round = isUndefined(opts.round) ? true : opts.round, format = (c, unit) => {
+        c = roundTo(c, round || opts.calendary ? 0 : 2, true);
+        const formatter = end.loc.clone(opts).relFormatter(opts);
+        return formatter.format(c, unit);
+      }, differ = (unit) => {
+        if (opts.calendary) {
+          if (!end.hasSame(start, unit)) {
+            return end.startOf(unit).diff(start.startOf(unit), unit).get(unit);
+          } else
+            return 0;
+        } else {
+          return end.diff(start, unit).get(unit);
+        }
+      };
+      if (opts.unit) {
+        return format(differ(opts.unit), opts.unit);
+      }
+      for (const unit of opts.units) {
+        const count = differ(unit);
+        if (Math.abs(count) >= 1) {
+          return format(count, unit);
+        }
+      }
+      return format(start > end ? -0 : 0, opts.units[opts.units.length - 1]);
+    }
+    function lastOpts(argList) {
+      let opts = {}, args;
+      if (argList.length > 0 && typeof argList[argList.length - 1] === "object") {
+        opts = argList[argList.length - 1];
+        args = Array.from(argList).slice(0, argList.length - 1);
+      } else {
+        args = Array.from(argList);
+      }
+      return [opts, args];
+    }
+    var DateTime = class _DateTime {
+      /**
+       * @access private
+       */
+      constructor(config) {
+        const zone = config.zone || Settings2.defaultZone;
+        let invalid = config.invalid || (Number.isNaN(config.ts) ? new Invalid("invalid input") : null) || (!zone.isValid ? unsupportedZone(zone) : null);
+        this.ts = isUndefined(config.ts) ? Settings2.now() : config.ts;
+        let c = null, o = null;
+        if (!invalid) {
+          const unchanged = config.old && config.old.ts === this.ts && config.old.zone.equals(zone);
+          if (unchanged) {
+            [c, o] = [config.old.c, config.old.o];
+          } else {
+            const ot = zone.offset(this.ts);
+            c = tsToObj(this.ts, ot);
+            invalid = Number.isNaN(c.year) ? new Invalid("invalid input") : null;
+            c = invalid ? null : c;
+            o = invalid ? null : ot;
+          }
+        }
+        this._zone = zone;
+        this.loc = config.loc || Locale.create();
+        this.invalid = invalid;
+        this.weekData = null;
+        this.c = c;
+        this.o = o;
+        this.isLuxonDateTime = true;
+      }
+      // CONSTRUCT
+      /**
+       * Create a DateTime for the current instant, in the system's time zone.
+       *
+       * Use Settings to override these default values if needed.
+       * @example DateTime.now().toISO() //~> now in the ISO format
+       * @return {DateTime}
+       */
+      static now() {
+        return new _DateTime({});
+      }
+      /**
+       * Create a local DateTime
+       * @param {number} [year] - The calendar year. If omitted (as in, call `local()` with no arguments), the current time will be used
+       * @param {number} [month=1] - The month, 1-indexed
+       * @param {number} [day=1] - The day of the month, 1-indexed
+       * @param {number} [hour=0] - The hour of the day, in 24-hour time
+       * @param {number} [minute=0] - The minute of the hour, meaning a number between 0 and 59
+       * @param {number} [second=0] - The second of the minute, meaning a number between 0 and 59
+       * @param {number} [millisecond=0] - The millisecond of the second, meaning a number between 0 and 999
+       * @example DateTime.local()                                  //~> now
+       * @example DateTime.local({ zone: "America/New_York" })      //~> now, in US east coast time
+       * @example DateTime.local(2017)                              //~> 2017-01-01T00:00:00
+       * @example DateTime.local(2017, 3)                           //~> 2017-03-01T00:00:00
+       * @example DateTime.local(2017, 3, 12, { locale: "fr" })     //~> 2017-03-12T00:00:00, with a French locale
+       * @example DateTime.local(2017, 3, 12, 5)                    //~> 2017-03-12T05:00:00
+       * @example DateTime.local(2017, 3, 12, 5, { zone: "utc" })   //~> 2017-03-12T05:00:00, in UTC
+       * @example DateTime.local(2017, 3, 12, 5, 45)                //~> 2017-03-12T05:45:00
+       * @example DateTime.local(2017, 3, 12, 5, 45, 10)            //~> 2017-03-12T05:45:10
+       * @example DateTime.local(2017, 3, 12, 5, 45, 10, 765)       //~> 2017-03-12T05:45:10.765
+       * @return {DateTime}
+       */
+      static local() {
+        const [opts, args] = lastOpts(arguments), [year, month, day, hour, minute, second, millisecond] = args;
+        return quickDT({ year, month, day, hour, minute, second, millisecond }, opts);
+      }
+      /**
+       * Create a DateTime in UTC
+       * @param {number} [year] - The calendar year. If omitted (as in, call `utc()` with no arguments), the current time will be used
+       * @param {number} [month=1] - The month, 1-indexed
+       * @param {number} [day=1] - The day of the month
+       * @param {number} [hour=0] - The hour of the day, in 24-hour time
+       * @param {number} [minute=0] - The minute of the hour, meaning a number between 0 and 59
+       * @param {number} [second=0] - The second of the minute, meaning a number between 0 and 59
+       * @param {number} [millisecond=0] - The millisecond of the second, meaning a number between 0 and 999
+       * @param {Object} options - configuration options for the DateTime
+       * @param {string} [options.locale] - a locale to set on the resulting DateTime instance
+       * @param {string} [options.outputCalendar] - the output calendar to set on the resulting DateTime instance
+       * @param {string} [options.numberingSystem] - the numbering system to set on the resulting DateTime instance
+       * @example DateTime.utc()                                              //~> now
+       * @example DateTime.utc(2017)                                          //~> 2017-01-01T00:00:00Z
+       * @example DateTime.utc(2017, 3)                                       //~> 2017-03-01T00:00:00Z
+       * @example DateTime.utc(2017, 3, 12)                                   //~> 2017-03-12T00:00:00Z
+       * @example DateTime.utc(2017, 3, 12, 5)                                //~> 2017-03-12T05:00:00Z
+       * @example DateTime.utc(2017, 3, 12, 5, 45)                            //~> 2017-03-12T05:45:00Z
+       * @example DateTime.utc(2017, 3, 12, 5, 45, { locale: "fr" })          //~> 2017-03-12T05:45:00Z with a French locale
+       * @example DateTime.utc(2017, 3, 12, 5, 45, 10)                        //~> 2017-03-12T05:45:10Z
+       * @example DateTime.utc(2017, 3, 12, 5, 45, 10, 765, { locale: "fr" }) //~> 2017-03-12T05:45:10.765Z with a French locale
+       * @return {DateTime}
+       */
+      static utc() {
+        const [opts, args] = lastOpts(arguments), [year, month, day, hour, minute, second, millisecond] = args;
+        opts.zone = FixedOffsetZone.utcInstance;
+        return quickDT({ year, month, day, hour, minute, second, millisecond }, opts);
+      }
+      /**
+       * Create a DateTime from a JavaScript Date object. Uses the default zone.
+       * @param {Date} date - a JavaScript Date object
+       * @param {Object} options - configuration options for the DateTime
+       * @param {string|Zone} [options.zone='local'] - the zone to place the DateTime into
+       * @return {DateTime}
+       */
+      static fromJSDate(date, options = {}) {
+        const ts = isDate(date) ? date.valueOf() : NaN;
+        if (Number.isNaN(ts)) {
+          return _DateTime.invalid("invalid input");
+        }
+        const zoneToUse = normalizeZone(options.zone, Settings2.defaultZone);
+        if (!zoneToUse.isValid) {
+          return _DateTime.invalid(unsupportedZone(zoneToUse));
+        }
+        return new _DateTime({
+          ts,
+          zone: zoneToUse,
+          loc: Locale.fromObject(options)
+        });
+      }
+      /**
+       * Create a DateTime from a number of milliseconds since the epoch (meaning since 1 January 1970 00:00:00 UTC). Uses the default zone.
+       * @param {number} milliseconds - a number of milliseconds since 1970 UTC
+       * @param {Object} options - configuration options for the DateTime
+       * @param {string|Zone} [options.zone='local'] - the zone to place the DateTime into
+       * @param {string} [options.locale] - a locale to set on the resulting DateTime instance
+       * @param {string} options.outputCalendar - the output calendar to set on the resulting DateTime instance
+       * @param {string} options.numberingSystem - the numbering system to set on the resulting DateTime instance
+       * @return {DateTime}
+       */
+      static fromMillis(milliseconds, options = {}) {
+        if (!isNumber(milliseconds)) {
+          throw new InvalidArgumentError(
+            `fromMillis requires a numerical input, but received a ${typeof milliseconds} with value ${milliseconds}`
+          );
+        } else if (milliseconds < -MAX_DATE || milliseconds > MAX_DATE) {
+          return _DateTime.invalid("Timestamp out of range");
+        } else {
+          return new _DateTime({
+            ts: milliseconds,
+            zone: normalizeZone(options.zone, Settings2.defaultZone),
+            loc: Locale.fromObject(options)
+          });
+        }
+      }
+      /**
+       * Create a DateTime from a number of seconds since the epoch (meaning since 1 January 1970 00:00:00 UTC). Uses the default zone.
+       * @param {number} seconds - a number of seconds since 1970 UTC
+       * @param {Object} options - configuration options for the DateTime
+       * @param {string|Zone} [options.zone='local'] - the zone to place the DateTime into
+       * @param {string} [options.locale] - a locale to set on the resulting DateTime instance
+       * @param {string} options.outputCalendar - the output calendar to set on the resulting DateTime instance
+       * @param {string} options.numberingSystem - the numbering system to set on the resulting DateTime instance
+       * @return {DateTime}
+       */
+      static fromSeconds(seconds, options = {}) {
+        if (!isNumber(seconds)) {
+          throw new InvalidArgumentError("fromSeconds requires a numerical input");
+        } else {
+          return new _DateTime({
+            ts: seconds * 1e3,
+            zone: normalizeZone(options.zone, Settings2.defaultZone),
+            loc: Locale.fromObject(options)
+          });
+        }
+      }
+      /**
+       * Create a DateTime from a JavaScript object with keys like 'year' and 'hour' with reasonable defaults.
+       * @param {Object} obj - the object to create the DateTime from
+       * @param {number} obj.year - a year, such as 1987
+       * @param {number} obj.month - a month, 1-12
+       * @param {number} obj.day - a day of the month, 1-31, depending on the month
+       * @param {number} obj.ordinal - day of the year, 1-365 or 366
+       * @param {number} obj.weekYear - an ISO week year
+       * @param {number} obj.weekNumber - an ISO week number, between 1 and 52 or 53, depending on the year
+       * @param {number} obj.weekday - an ISO weekday, 1-7, where 1 is Monday and 7 is Sunday
+       * @param {number} obj.hour - hour of the day, 0-23
+       * @param {number} obj.minute - minute of the hour, 0-59
+       * @param {number} obj.second - second of the minute, 0-59
+       * @param {number} obj.millisecond - millisecond of the second, 0-999
+       * @param {Object} opts - options for creating this DateTime
+       * @param {string|Zone} [opts.zone='local'] - interpret the numbers in the context of a particular zone. Can take any value taken as the first argument to setZone()
+       * @param {string} [opts.locale='system's locale'] - a locale to set on the resulting DateTime instance
+       * @param {string} opts.outputCalendar - the output calendar to set on the resulting DateTime instance
+       * @param {string} opts.numberingSystem - the numbering system to set on the resulting DateTime instance
+       * @example DateTime.fromObject({ year: 1982, month: 5, day: 25}).toISODate() //=> '1982-05-25'
+       * @example DateTime.fromObject({ year: 1982 }).toISODate() //=> '1982-01-01'
+       * @example DateTime.fromObject({ hour: 10, minute: 26, second: 6 }) //~> today at 10:26:06
+       * @example DateTime.fromObject({ hour: 10, minute: 26, second: 6 }, { zone: 'utc' }),
+       * @example DateTime.fromObject({ hour: 10, minute: 26, second: 6 }, { zone: 'local' })
+       * @example DateTime.fromObject({ hour: 10, minute: 26, second: 6 }, { zone: 'America/New_York' })
+       * @example DateTime.fromObject({ weekYear: 2016, weekNumber: 2, weekday: 3 }).toISODate() //=> '2016-01-13'
+       * @return {DateTime}
+       */
+      static fromObject(obj, opts = {}) {
+        obj = obj || {};
+        const zoneToUse = normalizeZone(opts.zone, Settings2.defaultZone);
+        if (!zoneToUse.isValid) {
+          return _DateTime.invalid(unsupportedZone(zoneToUse));
+        }
+        const tsNow = Settings2.now(), offsetProvis = !isUndefined(opts.specificOffset) ? opts.specificOffset : zoneToUse.offset(tsNow), normalized = normalizeObject(obj, normalizeUnit), containsOrdinal = !isUndefined(normalized.ordinal), containsGregorYear = !isUndefined(normalized.year), containsGregorMD = !isUndefined(normalized.month) || !isUndefined(normalized.day), containsGregor = containsGregorYear || containsGregorMD, definiteWeekDef = normalized.weekYear || normalized.weekNumber, loc = Locale.fromObject(opts);
+        if ((containsGregor || containsOrdinal) && definiteWeekDef) {
+          throw new ConflictingSpecificationError(
+            "Can't mix weekYear/weekNumber units with year/month/day or ordinals"
+          );
+        }
+        if (containsGregorMD && containsOrdinal) {
+          throw new ConflictingSpecificationError("Can't mix ordinal dates with month/day");
+        }
+        const useWeekData = definiteWeekDef || normalized.weekday && !containsGregor;
+        let units, defaultValues, objNow = tsToObj(tsNow, offsetProvis);
+        if (useWeekData) {
+          units = orderedWeekUnits;
+          defaultValues = defaultWeekUnitValues;
+          objNow = gregorianToWeek(objNow);
+        } else if (containsOrdinal) {
+          units = orderedOrdinalUnits;
+          defaultValues = defaultOrdinalUnitValues;
+          objNow = gregorianToOrdinal(objNow);
+        } else {
+          units = orderedUnits;
+          defaultValues = defaultUnitValues;
+        }
+        let foundFirst = false;
+        for (const u of units) {
+          const v = normalized[u];
+          if (!isUndefined(v)) {
+            foundFirst = true;
+          } else if (foundFirst) {
+            normalized[u] = defaultValues[u];
+          } else {
+            normalized[u] = objNow[u];
+          }
+        }
+        const higherOrderInvalid = useWeekData ? hasInvalidWeekData(normalized) : containsOrdinal ? hasInvalidOrdinalData(normalized) : hasInvalidGregorianData(normalized), invalid = higherOrderInvalid || hasInvalidTimeData(normalized);
+        if (invalid) {
+          return _DateTime.invalid(invalid);
+        }
+        const gregorian = useWeekData ? weekToGregorian(normalized) : containsOrdinal ? ordinalToGregorian(normalized) : normalized, [tsFinal, offsetFinal] = objToTS(gregorian, offsetProvis, zoneToUse), inst = new _DateTime({
+          ts: tsFinal,
+          zone: zoneToUse,
+          o: offsetFinal,
+          loc
+        });
+        if (normalized.weekday && containsGregor && obj.weekday !== inst.weekday) {
+          return _DateTime.invalid(
+            "mismatched weekday",
+            `you can't specify both a weekday of ${normalized.weekday} and a date of ${inst.toISO()}`
+          );
+        }
+        return inst;
+      }
+      /**
+       * Create a DateTime from an ISO 8601 string
+       * @param {string} text - the ISO string
+       * @param {Object} opts - options to affect the creation
+       * @param {string|Zone} [opts.zone='local'] - use this zone if no offset is specified in the input string itself. Will also convert the time to this zone
+       * @param {boolean} [opts.setZone=false] - override the zone with a fixed-offset zone specified in the string itself, if it specifies one
+       * @param {string} [opts.locale='system's locale'] - a locale to set on the resulting DateTime instance
+       * @param {string} [opts.outputCalendar] - the output calendar to set on the resulting DateTime instance
+       * @param {string} [opts.numberingSystem] - the numbering system to set on the resulting DateTime instance
+       * @example DateTime.fromISO('2016-05-25T09:08:34.123')
+       * @example DateTime.fromISO('2016-05-25T09:08:34.123+06:00')
+       * @example DateTime.fromISO('2016-05-25T09:08:34.123+06:00', {setZone: true})
+       * @example DateTime.fromISO('2016-05-25T09:08:34.123', {zone: 'utc'})
+       * @example DateTime.fromISO('2016-W05-4')
+       * @return {DateTime}
+       */
+      static fromISO(text2, opts = {}) {
+        const [vals, parsedZone] = parseISODate(text2);
+        return parseDataToDateTime(vals, parsedZone, opts, "ISO 8601", text2);
+      }
+      /**
+       * Create a DateTime from an RFC 2822 string
+       * @param {string} text - the RFC 2822 string
+       * @param {Object} opts - options to affect the creation
+       * @param {string|Zone} [opts.zone='local'] - convert the time to this zone. Since the offset is always specified in the string itself, this has no effect on the interpretation of string, merely the zone the resulting DateTime is expressed in.
+       * @param {boolean} [opts.setZone=false] - override the zone with a fixed-offset zone specified in the string itself, if it specifies one
+       * @param {string} [opts.locale='system's locale'] - a locale to set on the resulting DateTime instance
+       * @param {string} opts.outputCalendar - the output calendar to set on the resulting DateTime instance
+       * @param {string} opts.numberingSystem - the numbering system to set on the resulting DateTime instance
+       * @example DateTime.fromRFC2822('25 Nov 2016 13:23:12 GMT')
+       * @example DateTime.fromRFC2822('Fri, 25 Nov 2016 13:23:12 +0600')
+       * @example DateTime.fromRFC2822('25 Nov 2016 13:23 Z')
+       * @return {DateTime}
+       */
+      static fromRFC2822(text2, opts = {}) {
+        const [vals, parsedZone] = parseRFC2822Date(text2);
+        return parseDataToDateTime(vals, parsedZone, opts, "RFC 2822", text2);
+      }
+      /**
+       * Create a DateTime from an HTTP header date
+       * @see https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.3.1
+       * @param {string} text - the HTTP header date
+       * @param {Object} opts - options to affect the creation
+       * @param {string|Zone} [opts.zone='local'] - convert the time to this zone. Since HTTP dates are always in UTC, this has no effect on the interpretation of string, merely the zone the resulting DateTime is expressed in.
+       * @param {boolean} [opts.setZone=false] - override the zone with the fixed-offset zone specified in the string. For HTTP dates, this is always UTC, so this option is equivalent to setting the `zone` option to 'utc', but this option is included for consistency with similar methods.
+       * @param {string} [opts.locale='system's locale'] - a locale to set on the resulting DateTime instance
+       * @param {string} opts.outputCalendar - the output calendar to set on the resulting DateTime instance
+       * @param {string} opts.numberingSystem - the numbering system to set on the resulting DateTime instance
+       * @example DateTime.fromHTTP('Sun, 06 Nov 1994 08:49:37 GMT')
+       * @example DateTime.fromHTTP('Sunday, 06-Nov-94 08:49:37 GMT')
+       * @example DateTime.fromHTTP('Sun Nov  6 08:49:37 1994')
+       * @return {DateTime}
+       */
+      static fromHTTP(text2, opts = {}) {
+        const [vals, parsedZone] = parseHTTPDate(text2);
+        return parseDataToDateTime(vals, parsedZone, opts, "HTTP", opts);
+      }
+      /**
+       * Create a DateTime from an input string and format string.
+       * Defaults to en-US if no locale has been specified, regardless of the system's locale. For a table of tokens and their interpretations, see [here](https://moment.github.io/luxon/#/parsing?id=table-of-tokens).
+       * @param {string} text - the string to parse
+       * @param {string} fmt - the format the string is expected to be in (see the link below for the formats)
+       * @param {Object} opts - options to affect the creation
+       * @param {string|Zone} [opts.zone='local'] - use this zone if no offset is specified in the input string itself. Will also convert the DateTime to this zone
+       * @param {boolean} [opts.setZone=false] - override the zone with a zone specified in the string itself, if it specifies one
+       * @param {string} [opts.locale='en-US'] - a locale string to use when parsing. Will also set the DateTime to this locale
+       * @param {string} opts.numberingSystem - the numbering system to use when parsing. Will also set the resulting DateTime to this numbering system
+       * @param {string} opts.outputCalendar - the output calendar to set on the resulting DateTime instance
+       * @return {DateTime}
+       */
+      static fromFormat(text2, fmt, opts = {}) {
+        if (isUndefined(text2) || isUndefined(fmt)) {
+          throw new InvalidArgumentError("fromFormat requires an input string and a format");
+        }
+        const { locale = null, numberingSystem = null } = opts, localeToUse = Locale.fromOpts({
+          locale,
+          numberingSystem,
+          defaultToEN: true
+        }), [vals, parsedZone, specificOffset, invalid] = parseFromTokens(localeToUse, text2, fmt);
+        if (invalid) {
+          return _DateTime.invalid(invalid);
+        } else {
+          return parseDataToDateTime(vals, parsedZone, opts, `format ${fmt}`, text2, specificOffset);
+        }
+      }
+      /**
+       * @deprecated use fromFormat instead
+       */
+      static fromString(text2, fmt, opts = {}) {
+        return _DateTime.fromFormat(text2, fmt, opts);
+      }
+      /**
+       * Create a DateTime from a SQL date, time, or datetime
+       * Defaults to en-US if no locale has been specified, regardless of the system's locale
+       * @param {string} text - the string to parse
+       * @param {Object} opts - options to affect the creation
+       * @param {string|Zone} [opts.zone='local'] - use this zone if no offset is specified in the input string itself. Will also convert the DateTime to this zone
+       * @param {boolean} [opts.setZone=false] - override the zone with a zone specified in the string itself, if it specifies one
+       * @param {string} [opts.locale='en-US'] - a locale string to use when parsing. Will also set the DateTime to this locale
+       * @param {string} opts.numberingSystem - the numbering system to use when parsing. Will also set the resulting DateTime to this numbering system
+       * @param {string} opts.outputCalendar - the output calendar to set on the resulting DateTime instance
+       * @example DateTime.fromSQL('2017-05-15')
+       * @example DateTime.fromSQL('2017-05-15 09:12:34')
+       * @example DateTime.fromSQL('2017-05-15 09:12:34.342')
+       * @example DateTime.fromSQL('2017-05-15 09:12:34.342+06:00')
+       * @example DateTime.fromSQL('2017-05-15 09:12:34.342 America/Los_Angeles')
+       * @example DateTime.fromSQL('2017-05-15 09:12:34.342 America/Los_Angeles', { setZone: true })
+       * @example DateTime.fromSQL('2017-05-15 09:12:34.342', { zone: 'America/Los_Angeles' })
+       * @example DateTime.fromSQL('09:12:34.342')
+       * @return {DateTime}
+       */
+      static fromSQL(text2, opts = {}) {
+        const [vals, parsedZone] = parseSQL(text2);
+        return parseDataToDateTime(vals, parsedZone, opts, "SQL", text2);
+      }
+      /**
+       * Create an invalid DateTime.
+       * @param {DateTime} reason - simple string of why this DateTime is invalid. Should not contain parameters or anything else data-dependent
+       * @param {string} [explanation=null] - longer explanation, may include parameters and other useful debugging information
+       * @return {DateTime}
+       */
+      static invalid(reason, explanation = null) {
+        if (!reason) {
+          throw new InvalidArgumentError("need to specify a reason the DateTime is invalid");
+        }
+        const invalid = reason instanceof Invalid ? reason : new Invalid(reason, explanation);
+        if (Settings2.throwOnInvalid) {
+          throw new InvalidDateTimeError(invalid);
+        } else {
+          return new _DateTime({ invalid });
+        }
+      }
+      /**
+       * Check if an object is an instance of DateTime. Works across context boundaries
+       * @param {object} o
+       * @return {boolean}
+       */
+      static isDateTime(o) {
+        return o && o.isLuxonDateTime || false;
+      }
+      /**
+       * Produce the format string for a set of options
+       * @param formatOpts
+       * @param localeOpts
+       * @returns {string}
+       */
+      static parseFormatForOpts(formatOpts, localeOpts = {}) {
+        const tokenList = formatOptsToTokens(formatOpts, Locale.fromObject(localeOpts));
+        return !tokenList ? null : tokenList.map((t) => t ? t.val : null).join("");
+      }
+      /**
+       * Produce the the fully expanded format token for the locale
+       * Does NOT quote characters, so quoted tokens will not round trip correctly
+       * @param fmt
+       * @param localeOpts
+       * @returns {string}
+       */
+      static expandFormat(fmt, localeOpts = {}) {
+        const expanded = expandMacroTokens(Formatter.parseFormat(fmt), Locale.fromObject(localeOpts));
+        return expanded.map((t) => t.val).join("");
+      }
+      // INFO
+      /**
+       * Get the value of unit.
+       * @param {string} unit - a unit such as 'minute' or 'day'
+       * @example DateTime.local(2017, 7, 4).get('month'); //=> 7
+       * @example DateTime.local(2017, 7, 4).get('day'); //=> 4
+       * @return {number}
+       */
+      get(unit) {
+        return this[unit];
+      }
+      /**
+       * Returns whether the DateTime is valid. Invalid DateTimes occur when:
+       * * The DateTime was created from invalid calendar information, such as the 13th month or February 30
+       * * The DateTime was created by an operation on another invalid date
+       * @type {boolean}
+       */
+      get isValid() {
+        return this.invalid === null;
+      }
+      /**
+       * Returns an error code if this DateTime is invalid, or null if the DateTime is valid
+       * @type {string}
+       */
+      get invalidReason() {
+        return this.invalid ? this.invalid.reason : null;
+      }
+      /**
+       * Returns an explanation of why this DateTime became invalid, or null if the DateTime is valid
+       * @type {string}
+       */
+      get invalidExplanation() {
+        return this.invalid ? this.invalid.explanation : null;
+      }
+      /**
+       * Get the locale of a DateTime, such 'en-GB'. The locale is used when formatting the DateTime
+       *
+       * @type {string}
+       */
+      get locale() {
+        return this.isValid ? this.loc.locale : null;
+      }
+      /**
+       * Get the numbering system of a DateTime, such 'beng'. The numbering system is used when formatting the DateTime
+       *
+       * @type {string}
+       */
+      get numberingSystem() {
+        return this.isValid ? this.loc.numberingSystem : null;
+      }
+      /**
+       * Get the output calendar of a DateTime, such 'islamic'. The output calendar is used when formatting the DateTime
+       *
+       * @type {string}
+       */
+      get outputCalendar() {
+        return this.isValid ? this.loc.outputCalendar : null;
+      }
+      /**
+       * Get the time zone associated with this DateTime.
+       * @type {Zone}
+       */
+      get zone() {
+        return this._zone;
+      }
+      /**
+       * Get the name of the time zone.
+       * @type {string}
+       */
+      get zoneName() {
+        return this.isValid ? this.zone.name : null;
+      }
+      /**
+       * Get the year
+       * @example DateTime.local(2017, 5, 25).year //=> 2017
+       * @type {number}
+       */
+      get year() {
+        return this.isValid ? this.c.year : NaN;
+      }
+      /**
+       * Get the quarter
+       * @example DateTime.local(2017, 5, 25).quarter //=> 2
+       * @type {number}
+       */
+      get quarter() {
+        return this.isValid ? Math.ceil(this.c.month / 3) : NaN;
+      }
+      /**
+       * Get the month (1-12).
+       * @example DateTime.local(2017, 5, 25).month //=> 5
+       * @type {number}
+       */
+      get month() {
+        return this.isValid ? this.c.month : NaN;
+      }
+      /**
+       * Get the day of the month (1-30ish).
+       * @example DateTime.local(2017, 5, 25).day //=> 25
+       * @type {number}
+       */
+      get day() {
+        return this.isValid ? this.c.day : NaN;
+      }
+      /**
+       * Get the hour of the day (0-23).
+       * @example DateTime.local(2017, 5, 25, 9).hour //=> 9
+       * @type {number}
+       */
+      get hour() {
+        return this.isValid ? this.c.hour : NaN;
+      }
+      /**
+       * Get the minute of the hour (0-59).
+       * @example DateTime.local(2017, 5, 25, 9, 30).minute //=> 30
+       * @type {number}
+       */
+      get minute() {
+        return this.isValid ? this.c.minute : NaN;
+      }
+      /**
+       * Get the second of the minute (0-59).
+       * @example DateTime.local(2017, 5, 25, 9, 30, 52).second //=> 52
+       * @type {number}
+       */
+      get second() {
+        return this.isValid ? this.c.second : NaN;
+      }
+      /**
+       * Get the millisecond of the second (0-999).
+       * @example DateTime.local(2017, 5, 25, 9, 30, 52, 654).millisecond //=> 654
+       * @type {number}
+       */
+      get millisecond() {
+        return this.isValid ? this.c.millisecond : NaN;
+      }
+      /**
+       * Get the week year
+       * @see https://en.wikipedia.org/wiki/ISO_week_date
+       * @example DateTime.local(2014, 12, 31).weekYear //=> 2015
+       * @type {number}
+       */
+      get weekYear() {
+        return this.isValid ? possiblyCachedWeekData(this).weekYear : NaN;
+      }
+      /**
+       * Get the week number of the week year (1-52ish).
+       * @see https://en.wikipedia.org/wiki/ISO_week_date
+       * @example DateTime.local(2017, 5, 25).weekNumber //=> 21
+       * @type {number}
+       */
+      get weekNumber() {
+        return this.isValid ? possiblyCachedWeekData(this).weekNumber : NaN;
+      }
+      /**
+       * Get the day of the week.
+       * 1 is Monday and 7 is Sunday
+       * @see https://en.wikipedia.org/wiki/ISO_week_date
+       * @example DateTime.local(2014, 11, 31).weekday //=> 4
+       * @type {number}
+       */
+      get weekday() {
+        return this.isValid ? possiblyCachedWeekData(this).weekday : NaN;
+      }
+      /**
+       * Get the ordinal (meaning the day of the year)
+       * @example DateTime.local(2017, 5, 25).ordinal //=> 145
+       * @type {number|DateTime}
+       */
+      get ordinal() {
+        return this.isValid ? gregorianToOrdinal(this.c).ordinal : NaN;
+      }
+      /**
+       * Get the human readable short month name, such as 'Oct'.
+       * Defaults to the system's locale if no locale has been specified
+       * @example DateTime.local(2017, 10, 30).monthShort //=> Oct
+       * @type {string}
+       */
+      get monthShort() {
+        return this.isValid ? Info2.months("short", { locObj: this.loc })[this.month - 1] : null;
+      }
+      /**
+       * Get the human readable long month name, such as 'October'.
+       * Defaults to the system's locale if no locale has been specified
+       * @example DateTime.local(2017, 10, 30).monthLong //=> October
+       * @type {string}
+       */
+      get monthLong() {
+        return this.isValid ? Info2.months("long", { locObj: this.loc })[this.month - 1] : null;
+      }
+      /**
+       * Get the human readable short weekday, such as 'Mon'.
+       * Defaults to the system's locale if no locale has been specified
+       * @example DateTime.local(2017, 10, 30).weekdayShort //=> Mon
+       * @type {string}
+       */
+      get weekdayShort() {
+        return this.isValid ? Info2.weekdays("short", { locObj: this.loc })[this.weekday - 1] : null;
+      }
+      /**
+       * Get the human readable long weekday, such as 'Monday'.
+       * Defaults to the system's locale if no locale has been specified
+       * @example DateTime.local(2017, 10, 30).weekdayLong //=> Monday
+       * @type {string}
+       */
+      get weekdayLong() {
+        return this.isValid ? Info2.weekdays("long", { locObj: this.loc })[this.weekday - 1] : null;
+      }
+      /**
+       * Get the UTC offset of this DateTime in minutes
+       * @example DateTime.now().offset //=> -240
+       * @example DateTime.utc().offset //=> 0
+       * @type {number}
+       */
+      get offset() {
+        return this.isValid ? +this.o : NaN;
+      }
+      /**
+       * Get the short human name for the zone's current offset, for example "EST" or "EDT".
+       * Defaults to the system's locale if no locale has been specified
+       * @type {string}
+       */
+      get offsetNameShort() {
+        if (this.isValid) {
+          return this.zone.offsetName(this.ts, {
+            format: "short",
+            locale: this.locale
+          });
+        } else {
+          return null;
+        }
+      }
+      /**
+       * Get the long human name for the zone's current offset, for example "Eastern Standard Time" or "Eastern Daylight Time".
+       * Defaults to the system's locale if no locale has been specified
+       * @type {string}
+       */
+      get offsetNameLong() {
+        if (this.isValid) {
+          return this.zone.offsetName(this.ts, {
+            format: "long",
+            locale: this.locale
+          });
+        } else {
+          return null;
+        }
+      }
+      /**
+       * Get whether this zone's offset ever changes, as in a DST.
+       * @type {boolean}
+       */
+      get isOffsetFixed() {
+        return this.isValid ? this.zone.isUniversal : null;
+      }
+      /**
+       * Get whether the DateTime is in a DST.
+       * @type {boolean}
+       */
+      get isInDST() {
+        if (this.isOffsetFixed) {
+          return false;
+        } else {
+          return this.offset > this.set({ month: 1, day: 1 }).offset || this.offset > this.set({ month: 5 }).offset;
+        }
+      }
+      /**
+       * Returns true if this DateTime is in a leap year, false otherwise
+       * @example DateTime.local(2016).isInLeapYear //=> true
+       * @example DateTime.local(2013).isInLeapYear //=> false
+       * @type {boolean}
+       */
+      get isInLeapYear() {
+        return isLeapYear(this.year);
+      }
+      /**
+       * Returns the number of days in this DateTime's month
+       * @example DateTime.local(2016, 2).daysInMonth //=> 29
+       * @example DateTime.local(2016, 3).daysInMonth //=> 31
+       * @type {number}
+       */
+      get daysInMonth() {
+        return daysInMonth(this.year, this.month);
+      }
+      /**
+       * Returns the number of days in this DateTime's year
+       * @example DateTime.local(2016).daysInYear //=> 366
+       * @example DateTime.local(2013).daysInYear //=> 365
+       * @type {number}
+       */
+      get daysInYear() {
+        return this.isValid ? daysInYear(this.year) : NaN;
+      }
+      /**
+       * Returns the number of weeks in this DateTime's year
+       * @see https://en.wikipedia.org/wiki/ISO_week_date
+       * @example DateTime.local(2004).weeksInWeekYear //=> 53
+       * @example DateTime.local(2013).weeksInWeekYear //=> 52
+       * @type {number}
+       */
+      get weeksInWeekYear() {
+        return this.isValid ? weeksInWeekYear(this.weekYear) : NaN;
+      }
+      /**
+       * Returns the resolved Intl options for this DateTime.
+       * This is useful in understanding the behavior of formatting methods
+       * @param {Object} opts - the same options as toLocaleString
+       * @return {Object}
+       */
+      resolvedLocaleOptions(opts = {}) {
+        const { locale, numberingSystem, calendar } = Formatter.create(
+          this.loc.clone(opts),
+          opts
+        ).resolvedOptions(this);
+        return { locale, numberingSystem, outputCalendar: calendar };
+      }
+      // TRANSFORM
+      /**
+       * "Set" the DateTime's zone to UTC. Returns a newly-constructed DateTime.
+       *
+       * Equivalent to {@link DateTime#setZone}('utc')
+       * @param {number} [offset=0] - optionally, an offset from UTC in minutes
+       * @param {Object} [opts={}] - options to pass to `setZone()`
+       * @return {DateTime}
+       */
+      toUTC(offset2 = 0, opts = {}) {
+        return this.setZone(FixedOffsetZone.instance(offset2), opts);
+      }
+      /**
+       * "Set" the DateTime's zone to the host's local zone. Returns a newly-constructed DateTime.
+       *
+       * Equivalent to `setZone('local')`
+       * @return {DateTime}
+       */
+      toLocal() {
+        return this.setZone(Settings2.defaultZone);
+      }
+      /**
+       * "Set" the DateTime's zone to specified zone. Returns a newly-constructed DateTime.
+       *
+       * By default, the setter keeps the underlying time the same (as in, the same timestamp), but the new instance will report different local times and consider DSTs when making computations, as with {@link DateTime#plus}. You may wish to use {@link DateTime#toLocal} and {@link DateTime#toUTC} which provide simple convenience wrappers for commonly used zones.
+       * @param {string|Zone} [zone='local'] - a zone identifier. As a string, that can be any IANA zone supported by the host environment, or a fixed-offset name of the form 'UTC+3', or the strings 'local' or 'utc'. You may also supply an instance of a {@link DateTime#Zone} class.
+       * @param {Object} opts - options
+       * @param {boolean} [opts.keepLocalTime=false] - If true, adjust the underlying time so that the local time stays the same, but in the target zone. You should rarely need this.
+       * @return {DateTime}
+       */
+      setZone(zone, { keepLocalTime = false, keepCalendarTime = false } = {}) {
+        zone = normalizeZone(zone, Settings2.defaultZone);
+        if (zone.equals(this.zone)) {
+          return this;
+        } else if (!zone.isValid) {
+          return _DateTime.invalid(unsupportedZone(zone));
+        } else {
+          let newTS = this.ts;
+          if (keepLocalTime || keepCalendarTime) {
+            const offsetGuess = zone.offset(this.ts);
+            const asObj = this.toObject();
+            [newTS] = objToTS(asObj, offsetGuess, zone);
+          }
+          return clone(this, { ts: newTS, zone });
+        }
+      }
+      /**
+       * "Set" the locale, numberingSystem, or outputCalendar. Returns a newly-constructed DateTime.
+       * @param {Object} properties - the properties to set
+       * @example DateTime.local(2017, 5, 25).reconfigure({ locale: 'en-GB' })
+       * @return {DateTime}
+       */
+      reconfigure({ locale, numberingSystem, outputCalendar } = {}) {
+        const loc = this.loc.clone({ locale, numberingSystem, outputCalendar });
+        return clone(this, { loc });
+      }
+      /**
+       * "Set" the locale. Returns a newly-constructed DateTime.
+       * Just a convenient alias for reconfigure({ locale })
+       * @example DateTime.local(2017, 5, 25).setLocale('en-GB')
+       * @return {DateTime}
+       */
+      setLocale(locale) {
+        return this.reconfigure({ locale });
+      }
+      /**
+       * "Set" the values of specified units. Returns a newly-constructed DateTime.
+       * You can only set units with this method; for "setting" metadata, see {@link DateTime#reconfigure} and {@link DateTime#setZone}.
+       * @param {Object} values - a mapping of units to numbers
+       * @example dt.set({ year: 2017 })
+       * @example dt.set({ hour: 8, minute: 30 })
+       * @example dt.set({ weekday: 5 })
+       * @example dt.set({ year: 2005, ordinal: 234 })
+       * @return {DateTime}
+       */
+      set(values) {
+        if (!this.isValid)
+          return this;
+        const normalized = normalizeObject(values, normalizeUnit), settingWeekStuff = !isUndefined(normalized.weekYear) || !isUndefined(normalized.weekNumber) || !isUndefined(normalized.weekday), containsOrdinal = !isUndefined(normalized.ordinal), containsGregorYear = !isUndefined(normalized.year), containsGregorMD = !isUndefined(normalized.month) || !isUndefined(normalized.day), containsGregor = containsGregorYear || containsGregorMD, definiteWeekDef = normalized.weekYear || normalized.weekNumber;
+        if ((containsGregor || containsOrdinal) && definiteWeekDef) {
+          throw new ConflictingSpecificationError(
+            "Can't mix weekYear/weekNumber units with year/month/day or ordinals"
+          );
+        }
+        if (containsGregorMD && containsOrdinal) {
+          throw new ConflictingSpecificationError("Can't mix ordinal dates with month/day");
+        }
+        let mixed;
+        if (settingWeekStuff) {
+          mixed = weekToGregorian({ ...gregorianToWeek(this.c), ...normalized });
+        } else if (!isUndefined(normalized.ordinal)) {
+          mixed = ordinalToGregorian({ ...gregorianToOrdinal(this.c), ...normalized });
+        } else {
+          mixed = { ...this.toObject(), ...normalized };
+          if (isUndefined(normalized.day)) {
+            mixed.day = Math.min(daysInMonth(mixed.year, mixed.month), mixed.day);
+          }
+        }
+        const [ts, o] = objToTS(mixed, this.o, this.zone);
+        return clone(this, { ts, o });
+      }
+      /**
+       * Add a period of time to this DateTime and return the resulting DateTime
+       *
+       * Adding hours, minutes, seconds, or milliseconds increases the timestamp by the right number of milliseconds. Adding days, months, or years shifts the calendar, accounting for DSTs and leap years along the way. Thus, `dt.plus({ hours: 24 })` may result in a different time than `dt.plus({ days: 1 })` if there's a DST shift in between.
+       * @param {Duration|Object|number} duration - The amount to add. Either a Luxon Duration, a number of milliseconds, the object argument to Duration.fromObject()
+       * @example DateTime.now().plus(123) //~> in 123 milliseconds
+       * @example DateTime.now().plus({ minutes: 15 }) //~> in 15 minutes
+       * @example DateTime.now().plus({ days: 1 }) //~> this time tomorrow
+       * @example DateTime.now().plus({ days: -1 }) //~> this time yesterday
+       * @example DateTime.now().plus({ hours: 3, minutes: 13 }) //~> in 3 hr, 13 min
+       * @example DateTime.now().plus(Duration.fromObject({ hours: 3, minutes: 13 })) //~> in 3 hr, 13 min
+       * @return {DateTime}
+       */
+      plus(duration) {
+        if (!this.isValid)
+          return this;
+        const dur = Duration.fromDurationLike(duration);
+        return clone(this, adjustTime(this, dur));
+      }
+      /**
+       * Subtract a period of time to this DateTime and return the resulting DateTime
+       * See {@link DateTime#plus}
+       * @param {Duration|Object|number} duration - The amount to subtract. Either a Luxon Duration, a number of milliseconds, the object argument to Duration.fromObject()
+       @return {DateTime}
+       */
+      minus(duration) {
+        if (!this.isValid)
+          return this;
+        const dur = Duration.fromDurationLike(duration).negate();
+        return clone(this, adjustTime(this, dur));
+      }
+      /**
+       * "Set" this DateTime to the beginning of a unit of time.
+       * @param {string} unit - The unit to go to the beginning of. Can be 'year', 'quarter', 'month', 'week', 'day', 'hour', 'minute', 'second', or 'millisecond'.
+       * @example DateTime.local(2014, 3, 3).startOf('month').toISODate(); //=> '2014-03-01'
+       * @example DateTime.local(2014, 3, 3).startOf('year').toISODate(); //=> '2014-01-01'
+       * @example DateTime.local(2014, 3, 3).startOf('week').toISODate(); //=> '2014-03-03', weeks always start on Mondays
+       * @example DateTime.local(2014, 3, 3, 5, 30).startOf('day').toISOTime(); //=> '00:00.000-05:00'
+       * @example DateTime.local(2014, 3, 3, 5, 30).startOf('hour').toISOTime(); //=> '05:00:00.000-05:00'
+       * @return {DateTime}
+       */
+      startOf(unit) {
+        if (!this.isValid)
+          return this;
+        const o = {}, normalizedUnit = Duration.normalizeUnit(unit);
+        switch (normalizedUnit) {
+          case "years":
+            o.month = 1;
+          case "quarters":
+          case "months":
+            o.day = 1;
+          case "weeks":
+          case "days":
+            o.hour = 0;
+          case "hours":
+            o.minute = 0;
+          case "minutes":
+            o.second = 0;
+          case "seconds":
+            o.millisecond = 0;
+            break;
+        }
+        if (normalizedUnit === "weeks") {
+          o.weekday = 1;
+        }
+        if (normalizedUnit === "quarters") {
+          const q = Math.ceil(this.month / 3);
+          o.month = (q - 1) * 3 + 1;
+        }
+        return this.set(o);
+      }
+      /**
+       * "Set" this DateTime to the end (meaning the last millisecond) of a unit of time
+       * @param {string} unit - The unit to go to the end of. Can be 'year', 'quarter', 'month', 'week', 'day', 'hour', 'minute', 'second', or 'millisecond'.
+       * @example DateTime.local(2014, 3, 3).endOf('month').toISO(); //=> '2014-03-31T23:59:59.999-05:00'
+       * @example DateTime.local(2014, 3, 3).endOf('year').toISO(); //=> '2014-12-31T23:59:59.999-05:00'
+       * @example DateTime.local(2014, 3, 3).endOf('week').toISO(); // => '2014-03-09T23:59:59.999-05:00', weeks start on Mondays
+       * @example DateTime.local(2014, 3, 3, 5, 30).endOf('day').toISO(); //=> '2014-03-03T23:59:59.999-05:00'
+       * @example DateTime.local(2014, 3, 3, 5, 30).endOf('hour').toISO(); //=> '2014-03-03T05:59:59.999-05:00'
+       * @return {DateTime}
+       */
+      endOf(unit) {
+        return this.isValid ? this.plus({ [unit]: 1 }).startOf(unit).minus(1) : this;
+      }
+      // OUTPUT
+      /**
+       * Returns a string representation of this DateTime formatted according to the specified format string.
+       * **You may not want this.** See {@link DateTime#toLocaleString} for a more flexible formatting tool. For a table of tokens and their interpretations, see [here](https://moment.github.io/luxon/#/formatting?id=table-of-tokens).
+       * Defaults to en-US if no locale has been specified, regardless of the system's locale.
+       * @param {string} fmt - the format string
+       * @param {Object} opts - opts to override the configuration options on this DateTime
+       * @example DateTime.now().toFormat('yyyy LLL dd') //=> '2017 Apr 22'
+       * @example DateTime.now().setLocale('fr').toFormat('yyyy LLL dd') //=> '2017 avr. 22'
+       * @example DateTime.now().toFormat('yyyy LLL dd', { locale: "fr" }) //=> '2017 avr. 22'
+       * @example DateTime.now().toFormat("HH 'hours and' mm 'minutes'") //=> '20 hours and 55 minutes'
+       * @return {string}
+       */
+      toFormat(fmt, opts = {}) {
+        return this.isValid ? Formatter.create(this.loc.redefaultToEN(opts)).formatDateTimeFromString(this, fmt) : INVALID;
+      }
+      /**
+       * Returns a localized string representing this date. Accepts the same options as the Intl.DateTimeFormat constructor and any presets defined by Luxon, such as `DateTime.DATE_FULL` or `DateTime.TIME_SIMPLE`.
+       * The exact behavior of this method is browser-specific, but in general it will return an appropriate representation
+       * of the DateTime in the assigned locale.
+       * Defaults to the system's locale if no locale has been specified
+       * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat
+       * @param formatOpts {Object} - Intl.DateTimeFormat constructor options and configuration options
+       * @param {Object} opts - opts to override the configuration options on this DateTime
+       * @example DateTime.now().toLocaleString(); //=> 4/20/2017
+       * @example DateTime.now().setLocale('en-gb').toLocaleString(); //=> '20/04/2017'
+       * @example DateTime.now().toLocaleString(DateTime.DATE_FULL); //=> 'April 20, 2017'
+       * @example DateTime.now().toLocaleString(DateTime.DATE_FULL, { locale: 'fr' }); //=> '28 août 2022'
+       * @example DateTime.now().toLocaleString(DateTime.TIME_SIMPLE); //=> '11:32 AM'
+       * @example DateTime.now().toLocaleString(DateTime.DATETIME_SHORT); //=> '4/20/2017, 11:32 AM'
+       * @example DateTime.now().toLocaleString({ weekday: 'long', month: 'long', day: '2-digit' }); //=> 'Thursday, April 20'
+       * @example DateTime.now().toLocaleString({ weekday: 'short', month: 'short', day: '2-digit', hour: '2-digit', minute: '2-digit' }); //=> 'Thu, Apr 20, 11:27 AM'
+       * @example DateTime.now().toLocaleString({ hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }); //=> '11:32'
+       * @return {string}
+       */
+      toLocaleString(formatOpts = DATE_SHORT, opts = {}) {
+        return this.isValid ? Formatter.create(this.loc.clone(opts), formatOpts).formatDateTime(this) : INVALID;
+      }
+      /**
+       * Returns an array of format "parts", meaning individual tokens along with metadata. This is allows callers to post-process individual sections of the formatted output.
+       * Defaults to the system's locale if no locale has been specified
+       * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat/formatToParts
+       * @param opts {Object} - Intl.DateTimeFormat constructor options, same as `toLocaleString`.
+       * @example DateTime.now().toLocaleParts(); //=> [
+       *                                   //=>   { type: 'day', value: '25' },
+       *                                   //=>   { type: 'literal', value: '/' },
+       *                                   //=>   { type: 'month', value: '05' },
+       *                                   //=>   { type: 'literal', value: '/' },
+       *                                   //=>   { type: 'year', value: '1982' }
+       *                                   //=> ]
+       */
+      toLocaleParts(opts = {}) {
+        return this.isValid ? Formatter.create(this.loc.clone(opts), opts).formatDateTimeParts(this) : [];
+      }
+      /**
+       * Returns an ISO 8601-compliant string representation of this DateTime
+       * @param {Object} opts - options
+       * @param {boolean} [opts.suppressMilliseconds=false] - exclude milliseconds from the format if they're 0
+       * @param {boolean} [opts.suppressSeconds=false] - exclude seconds from the format if they're 0
+       * @param {boolean} [opts.includeOffset=true] - include the offset, such as 'Z' or '-04:00'
+       * @param {boolean} [opts.extendedZone=false] - add the time zone format extension
+       * @param {string} [opts.format='extended'] - choose between the basic and extended format
+       * @example DateTime.utc(1983, 5, 25).toISO() //=> '1982-05-25T00:00:00.000Z'
+       * @example DateTime.now().toISO() //=> '2017-04-22T20:47:05.335-04:00'
+       * @example DateTime.now().toISO({ includeOffset: false }) //=> '2017-04-22T20:47:05.335'
+       * @example DateTime.now().toISO({ format: 'basic' }) //=> '20170422T204705.335-0400'
+       * @return {string}
+       */
+      toISO({
+        format = "extended",
+        suppressSeconds = false,
+        suppressMilliseconds = false,
+        includeOffset = true,
+        extendedZone = false
+      } = {}) {
+        if (!this.isValid) {
+          return null;
+        }
+        const ext = format === "extended";
+        let c = toISODate(this, ext);
+        c += "T";
+        c += toISOTime(this, ext, suppressSeconds, suppressMilliseconds, includeOffset, extendedZone);
+        return c;
+      }
+      /**
+       * Returns an ISO 8601-compliant string representation of this DateTime's date component
+       * @param {Object} opts - options
+       * @param {string} [opts.format='extended'] - choose between the basic and extended format
+       * @example DateTime.utc(1982, 5, 25).toISODate() //=> '1982-05-25'
+       * @example DateTime.utc(1982, 5, 25).toISODate({ format: 'basic' }) //=> '19820525'
+       * @return {string}
+       */
+      toISODate({ format = "extended" } = {}) {
+        if (!this.isValid) {
+          return null;
+        }
+        return toISODate(this, format === "extended");
+      }
+      /**
+       * Returns an ISO 8601-compliant string representation of this DateTime's week date
+       * @example DateTime.utc(1982, 5, 25).toISOWeekDate() //=> '1982-W21-2'
+       * @return {string}
+       */
+      toISOWeekDate() {
+        return toTechFormat(this, "kkkk-'W'WW-c");
+      }
+      /**
+       * Returns an ISO 8601-compliant string representation of this DateTime's time component
+       * @param {Object} opts - options
+       * @param {boolean} [opts.suppressMilliseconds=false] - exclude milliseconds from the format if they're 0
+       * @param {boolean} [opts.suppressSeconds=false] - exclude seconds from the format if they're 0
+       * @param {boolean} [opts.includeOffset=true] - include the offset, such as 'Z' or '-04:00'
+       * @param {boolean} [opts.extendedZone=true] - add the time zone format extension
+       * @param {boolean} [opts.includePrefix=false] - include the `T` prefix
+       * @param {string} [opts.format='extended'] - choose between the basic and extended format
+       * @example DateTime.utc().set({ hour: 7, minute: 34 }).toISOTime() //=> '07:34:19.361Z'
+       * @example DateTime.utc().set({ hour: 7, minute: 34, seconds: 0, milliseconds: 0 }).toISOTime({ suppressSeconds: true }) //=> '07:34Z'
+       * @example DateTime.utc().set({ hour: 7, minute: 34 }).toISOTime({ format: 'basic' }) //=> '073419.361Z'
+       * @example DateTime.utc().set({ hour: 7, minute: 34 }).toISOTime({ includePrefix: true }) //=> 'T07:34:19.361Z'
+       * @return {string}
+       */
+      toISOTime({
+        suppressMilliseconds = false,
+        suppressSeconds = false,
+        includeOffset = true,
+        includePrefix = false,
+        extendedZone = false,
+        format = "extended"
+      } = {}) {
+        if (!this.isValid) {
+          return null;
+        }
+        let c = includePrefix ? "T" : "";
+        return c + toISOTime(
+          this,
+          format === "extended",
+          suppressSeconds,
+          suppressMilliseconds,
+          includeOffset,
+          extendedZone
+        );
+      }
+      /**
+       * Returns an RFC 2822-compatible string representation of this DateTime
+       * @example DateTime.utc(2014, 7, 13).toRFC2822() //=> 'Sun, 13 Jul 2014 00:00:00 +0000'
+       * @example DateTime.local(2014, 7, 13).toRFC2822() //=> 'Sun, 13 Jul 2014 00:00:00 -0400'
+       * @return {string}
+       */
+      toRFC2822() {
+        return toTechFormat(this, "EEE, dd LLL yyyy HH:mm:ss ZZZ", false);
+      }
+      /**
+       * Returns a string representation of this DateTime appropriate for use in HTTP headers. The output is always expressed in GMT.
+       * Specifically, the string conforms to RFC 1123.
+       * @see https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.3.1
+       * @example DateTime.utc(2014, 7, 13).toHTTP() //=> 'Sun, 13 Jul 2014 00:00:00 GMT'
+       * @example DateTime.utc(2014, 7, 13, 19).toHTTP() //=> 'Sun, 13 Jul 2014 19:00:00 GMT'
+       * @return {string}
+       */
+      toHTTP() {
+        return toTechFormat(this.toUTC(), "EEE, dd LLL yyyy HH:mm:ss 'GMT'");
+      }
+      /**
+       * Returns a string representation of this DateTime appropriate for use in SQL Date
+       * @example DateTime.utc(2014, 7, 13).toSQLDate() //=> '2014-07-13'
+       * @return {string}
+       */
+      toSQLDate() {
+        if (!this.isValid) {
+          return null;
+        }
+        return toISODate(this, true);
+      }
+      /**
+       * Returns a string representation of this DateTime appropriate for use in SQL Time
+       * @param {Object} opts - options
+       * @param {boolean} [opts.includeZone=false] - include the zone, such as 'America/New_York'. Overrides includeOffset.
+       * @param {boolean} [opts.includeOffset=true] - include the offset, such as 'Z' or '-04:00'
+       * @param {boolean} [opts.includeOffsetSpace=true] - include the space between the time and the offset, such as '05:15:16.345 -04:00'
+       * @example DateTime.utc().toSQL() //=> '05:15:16.345'
+       * @example DateTime.now().toSQL() //=> '05:15:16.345 -04:00'
+       * @example DateTime.now().toSQL({ includeOffset: false }) //=> '05:15:16.345'
+       * @example DateTime.now().toSQL({ includeZone: false }) //=> '05:15:16.345 America/New_York'
+       * @return {string}
+       */
+      toSQLTime({ includeOffset = true, includeZone = false, includeOffsetSpace = true } = {}) {
+        let fmt = "HH:mm:ss.SSS";
+        if (includeZone || includeOffset) {
+          if (includeOffsetSpace) {
+            fmt += " ";
+          }
+          if (includeZone) {
+            fmt += "z";
+          } else if (includeOffset) {
+            fmt += "ZZ";
+          }
+        }
+        return toTechFormat(this, fmt, true);
+      }
+      /**
+       * Returns a string representation of this DateTime appropriate for use in SQL DateTime
+       * @param {Object} opts - options
+       * @param {boolean} [opts.includeZone=false] - include the zone, such as 'America/New_York'. Overrides includeOffset.
+       * @param {boolean} [opts.includeOffset=true] - include the offset, such as 'Z' or '-04:00'
+       * @param {boolean} [opts.includeOffsetSpace=true] - include the space between the time and the offset, such as '05:15:16.345 -04:00'
+       * @example DateTime.utc(2014, 7, 13).toSQL() //=> '2014-07-13 00:00:00.000 Z'
+       * @example DateTime.local(2014, 7, 13).toSQL() //=> '2014-07-13 00:00:00.000 -04:00'
+       * @example DateTime.local(2014, 7, 13).toSQL({ includeOffset: false }) //=> '2014-07-13 00:00:00.000'
+       * @example DateTime.local(2014, 7, 13).toSQL({ includeZone: true }) //=> '2014-07-13 00:00:00.000 America/New_York'
+       * @return {string}
+       */
+      toSQL(opts = {}) {
+        if (!this.isValid) {
+          return null;
+        }
+        return `${this.toSQLDate()} ${this.toSQLTime(opts)}`;
+      }
+      /**
+       * Returns a string representation of this DateTime appropriate for debugging
+       * @return {string}
+       */
+      toString() {
+        return this.isValid ? this.toISO() : INVALID;
+      }
+      /**
+       * Returns the epoch milliseconds of this DateTime. Alias of {@link DateTime#toMillis}
+       * @return {number}
+       */
+      valueOf() {
+        return this.toMillis();
+      }
+      /**
+       * Returns the epoch milliseconds of this DateTime.
+       * @return {number}
+       */
+      toMillis() {
+        return this.isValid ? this.ts : NaN;
+      }
+      /**
+       * Returns the epoch seconds of this DateTime.
+       * @return {number}
+       */
+      toSeconds() {
+        return this.isValid ? this.ts / 1e3 : NaN;
+      }
+      /**
+       * Returns the epoch seconds (as a whole number) of this DateTime.
+       * @return {number}
+       */
+      toUnixInteger() {
+        return this.isValid ? Math.floor(this.ts / 1e3) : NaN;
+      }
+      /**
+       * Returns an ISO 8601 representation of this DateTime appropriate for use in JSON.
+       * @return {string}
+       */
+      toJSON() {
+        return this.toISO();
+      }
+      /**
+       * Returns a BSON serializable equivalent to this DateTime.
+       * @return {Date}
+       */
+      toBSON() {
+        return this.toJSDate();
+      }
+      /**
+       * Returns a JavaScript object with this DateTime's year, month, day, and so on.
+       * @param opts - options for generating the object
+       * @param {boolean} [opts.includeConfig=false] - include configuration attributes in the output
+       * @example DateTime.now().toObject() //=> { year: 2017, month: 4, day: 22, hour: 20, minute: 49, second: 42, millisecond: 268 }
+       * @return {Object}
+       */
+      toObject(opts = {}) {
+        if (!this.isValid)
+          return {};
+        const base = { ...this.c };
+        if (opts.includeConfig) {
+          base.outputCalendar = this.outputCalendar;
+          base.numberingSystem = this.loc.numberingSystem;
+          base.locale = this.loc.locale;
+        }
+        return base;
+      }
+      /**
+       * Returns a JavaScript Date equivalent to this DateTime.
+       * @return {Date}
+       */
+      toJSDate() {
+        return new Date(this.isValid ? this.ts : NaN);
+      }
+      // COMPARE
+      /**
+       * Return the difference between two DateTimes as a Duration.
+       * @param {DateTime} otherDateTime - the DateTime to compare this one to
+       * @param {string|string[]} [unit=['milliseconds']] - the unit or array of units (such as 'hours' or 'days') to include in the duration.
+       * @param {Object} opts - options that affect the creation of the Duration
+       * @param {string} [opts.conversionAccuracy='casual'] - the conversion system to use
+       * @example
+       * var i1 = DateTime.fromISO('1982-05-25T09:45'),
+       *     i2 = DateTime.fromISO('1983-10-14T10:30');
+       * i2.diff(i1).toObject() //=> { milliseconds: 43807500000 }
+       * i2.diff(i1, 'hours').toObject() //=> { hours: 12168.75 }
+       * i2.diff(i1, ['months', 'days']).toObject() //=> { months: 16, days: 19.03125 }
+       * i2.diff(i1, ['months', 'days', 'hours']).toObject() //=> { months: 16, days: 19, hours: 0.75 }
+       * @return {Duration}
+       */
+      diff(otherDateTime, unit = "milliseconds", opts = {}) {
+        if (!this.isValid || !otherDateTime.isValid) {
+          return Duration.invalid("created by diffing an invalid DateTime");
+        }
+        const durOpts = { locale: this.locale, numberingSystem: this.numberingSystem, ...opts };
+        const units = maybeArray(unit).map(Duration.normalizeUnit), otherIsLater = otherDateTime.valueOf() > this.valueOf(), earlier = otherIsLater ? this : otherDateTime, later = otherIsLater ? otherDateTime : this, diffed = diff(earlier, later, units, durOpts);
+        return otherIsLater ? diffed.negate() : diffed;
+      }
+      /**
+       * Return the difference between this DateTime and right now.
+       * See {@link DateTime#diff}
+       * @param {string|string[]} [unit=['milliseconds']] - the unit or units units (such as 'hours' or 'days') to include in the duration
+       * @param {Object} opts - options that affect the creation of the Duration
+       * @param {string} [opts.conversionAccuracy='casual'] - the conversion system to use
+       * @return {Duration}
+       */
+      diffNow(unit = "milliseconds", opts = {}) {
+        return this.diff(_DateTime.now(), unit, opts);
+      }
+      /**
+       * Return an Interval spanning between this DateTime and another DateTime
+       * @param {DateTime} otherDateTime - the other end point of the Interval
+       * @return {Interval}
+       */
+      until(otherDateTime) {
+        return this.isValid ? Interval.fromDateTimes(this, otherDateTime) : this;
+      }
+      /**
+       * Return whether this DateTime is in the same unit of time as another DateTime.
+       * Higher-order units must also be identical for this function to return `true`.
+       * Note that time zones are **ignored** in this comparison, which compares the **local** calendar time. Use {@link DateTime#setZone} to convert one of the dates if needed.
+       * @param {DateTime} otherDateTime - the other DateTime
+       * @param {string} unit - the unit of time to check sameness on
+       * @example DateTime.now().hasSame(otherDT, 'day'); //~> true if otherDT is in the same current calendar day
+       * @return {boolean}
+       */
+      hasSame(otherDateTime, unit) {
+        if (!this.isValid)
+          return false;
+        const inputMs = otherDateTime.valueOf();
+        const adjustedToZone = this.setZone(otherDateTime.zone, { keepLocalTime: true });
+        return adjustedToZone.startOf(unit) <= inputMs && inputMs <= adjustedToZone.endOf(unit);
+      }
+      /**
+       * Equality check
+       * Two DateTimes are equal if and only if they represent the same millisecond, have the same zone and location, and are both valid.
+       * To compare just the millisecond values, use `+dt1 === +dt2`.
+       * @param {DateTime} other - the other DateTime
+       * @return {boolean}
+       */
+      equals(other) {
+        return this.isValid && other.isValid && this.valueOf() === other.valueOf() && this.zone.equals(other.zone) && this.loc.equals(other.loc);
+      }
+      /**
+       * Returns a string representation of a this time relative to now, such as "in two days". Can only internationalize if your
+       * platform supports Intl.RelativeTimeFormat. Rounds down by default.
+       * @param {Object} options - options that affect the output
+       * @param {DateTime} [options.base=DateTime.now()] - the DateTime to use as the basis to which this time is compared. Defaults to now.
+       * @param {string} [options.style="long"] - the style of units, must be "long", "short", or "narrow"
+       * @param {string|string[]} options.unit - use a specific unit or array of units; if omitted, or an array, the method will pick the best unit. Use an array or one of "years", "quarters", "months", "weeks", "days", "hours", "minutes", or "seconds"
+       * @param {boolean} [options.round=true] - whether to round the numbers in the output.
+       * @param {number} [options.padding=0] - padding in milliseconds. This allows you to round up the result if it fits inside the threshold. Don't use in combination with {round: false} because the decimal output will include the padding.
+       * @param {string} options.locale - override the locale of this DateTime
+       * @param {string} options.numberingSystem - override the numberingSystem of this DateTime. The Intl system may choose not to honor this
+       * @example DateTime.now().plus({ days: 1 }).toRelative() //=> "in 1 day"
+       * @example DateTime.now().setLocale("es").toRelative({ days: 1 }) //=> "dentro de 1 día"
+       * @example DateTime.now().plus({ days: 1 }).toRelative({ locale: "fr" }) //=> "dans 23 heures"
+       * @example DateTime.now().minus({ days: 2 }).toRelative() //=> "2 days ago"
+       * @example DateTime.now().minus({ days: 2 }).toRelative({ unit: "hours" }) //=> "48 hours ago"
+       * @example DateTime.now().minus({ hours: 36 }).toRelative({ round: false }) //=> "1.5 days ago"
+       */
+      toRelative(options = {}) {
+        if (!this.isValid)
+          return null;
+        const base = options.base || _DateTime.fromObject({}, { zone: this.zone }), padding = options.padding ? this < base ? -options.padding : options.padding : 0;
+        let units = ["years", "months", "days", "hours", "minutes", "seconds"];
+        let unit = options.unit;
+        if (Array.isArray(options.unit)) {
+          units = options.unit;
+          unit = void 0;
+        }
+        return diffRelative(base, this.plus(padding), {
+          ...options,
+          numeric: "always",
+          units,
+          unit
+        });
+      }
+      /**
+       * Returns a string representation of this date relative to today, such as "yesterday" or "next month".
+       * Only internationalizes on platforms that supports Intl.RelativeTimeFormat.
+       * @param {Object} options - options that affect the output
+       * @param {DateTime} [options.base=DateTime.now()] - the DateTime to use as the basis to which this time is compared. Defaults to now.
+       * @param {string} options.locale - override the locale of this DateTime
+       * @param {string} options.unit - use a specific unit; if omitted, the method will pick the unit. Use one of "years", "quarters", "months", "weeks", or "days"
+       * @param {string} options.numberingSystem - override the numberingSystem of this DateTime. The Intl system may choose not to honor this
+       * @example DateTime.now().plus({ days: 1 }).toRelativeCalendar() //=> "tomorrow"
+       * @example DateTime.now().setLocale("es").plus({ days: 1 }).toRelative() //=> ""mañana"
+       * @example DateTime.now().plus({ days: 1 }).toRelativeCalendar({ locale: "fr" }) //=> "demain"
+       * @example DateTime.now().minus({ days: 2 }).toRelativeCalendar() //=> "2 days ago"
+       */
+      toRelativeCalendar(options = {}) {
+        if (!this.isValid)
+          return null;
+        return diffRelative(options.base || _DateTime.fromObject({}, { zone: this.zone }), this, {
+          ...options,
+          numeric: "auto",
+          units: ["years", "months", "days"],
+          calendary: true
+        });
+      }
+      /**
+       * Return the min of several date times
+       * @param {...DateTime} dateTimes - the DateTimes from which to choose the minimum
+       * @return {DateTime} the min DateTime, or undefined if called with no argument
+       */
+      static min(...dateTimes) {
+        if (!dateTimes.every(_DateTime.isDateTime)) {
+          throw new InvalidArgumentError("min requires all arguments be DateTimes");
+        }
+        return bestBy(dateTimes, (i) => i.valueOf(), Math.min);
+      }
+      /**
+       * Return the max of several date times
+       * @param {...DateTime} dateTimes - the DateTimes from which to choose the maximum
+       * @return {DateTime} the max DateTime, or undefined if called with no argument
+       */
+      static max(...dateTimes) {
+        if (!dateTimes.every(_DateTime.isDateTime)) {
+          throw new InvalidArgumentError("max requires all arguments be DateTimes");
+        }
+        return bestBy(dateTimes, (i) => i.valueOf(), Math.max);
+      }
+      // MISC
+      /**
+       * Explain how a string would be parsed by fromFormat()
+       * @param {string} text - the string to parse
+       * @param {string} fmt - the format the string is expected to be in (see description)
+       * @param {Object} options - options taken by fromFormat()
+       * @return {Object}
+       */
+      static fromFormatExplain(text2, fmt, options = {}) {
+        const { locale = null, numberingSystem = null } = options, localeToUse = Locale.fromOpts({
+          locale,
+          numberingSystem,
+          defaultToEN: true
+        });
+        return explainFromTokens(localeToUse, text2, fmt);
+      }
+      /**
+       * @deprecated use fromFormatExplain instead
+       */
+      static fromStringExplain(text2, fmt, options = {}) {
+        return _DateTime.fromFormatExplain(text2, fmt, options);
+      }
+      // FORMAT PRESETS
+      /**
+       * {@link DateTime#toLocaleString} format like 10/14/1983
+       * @type {Object}
+       */
+      static get DATE_SHORT() {
+        return DATE_SHORT;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like 'Oct 14, 1983'
+       * @type {Object}
+       */
+      static get DATE_MED() {
+        return DATE_MED;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like 'Fri, Oct 14, 1983'
+       * @type {Object}
+       */
+      static get DATE_MED_WITH_WEEKDAY() {
+        return DATE_MED_WITH_WEEKDAY;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like 'October 14, 1983'
+       * @type {Object}
+       */
+      static get DATE_FULL() {
+        return DATE_FULL;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like 'Tuesday, October 14, 1983'
+       * @type {Object}
+       */
+      static get DATE_HUGE() {
+        return DATE_HUGE;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like '09:30 AM'. Only 12-hour if the locale is.
+       * @type {Object}
+       */
+      static get TIME_SIMPLE() {
+        return TIME_SIMPLE;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like '09:30:23 AM'. Only 12-hour if the locale is.
+       * @type {Object}
+       */
+      static get TIME_WITH_SECONDS() {
+        return TIME_WITH_SECONDS;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like '09:30:23 AM EDT'. Only 12-hour if the locale is.
+       * @type {Object}
+       */
+      static get TIME_WITH_SHORT_OFFSET() {
+        return TIME_WITH_SHORT_OFFSET;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like '09:30:23 AM Eastern Daylight Time'. Only 12-hour if the locale is.
+       * @type {Object}
+       */
+      static get TIME_WITH_LONG_OFFSET() {
+        return TIME_WITH_LONG_OFFSET;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like '09:30', always 24-hour.
+       * @type {Object}
+       */
+      static get TIME_24_SIMPLE() {
+        return TIME_24_SIMPLE;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like '09:30:23', always 24-hour.
+       * @type {Object}
+       */
+      static get TIME_24_WITH_SECONDS() {
+        return TIME_24_WITH_SECONDS;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like '09:30:23 EDT', always 24-hour.
+       * @type {Object}
+       */
+      static get TIME_24_WITH_SHORT_OFFSET() {
+        return TIME_24_WITH_SHORT_OFFSET;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like '09:30:23 Eastern Daylight Time', always 24-hour.
+       * @type {Object}
+       */
+      static get TIME_24_WITH_LONG_OFFSET() {
+        return TIME_24_WITH_LONG_OFFSET;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like '10/14/1983, 9:30 AM'. Only 12-hour if the locale is.
+       * @type {Object}
+       */
+      static get DATETIME_SHORT() {
+        return DATETIME_SHORT;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like '10/14/1983, 9:30:33 AM'. Only 12-hour if the locale is.
+       * @type {Object}
+       */
+      static get DATETIME_SHORT_WITH_SECONDS() {
+        return DATETIME_SHORT_WITH_SECONDS;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like 'Oct 14, 1983, 9:30 AM'. Only 12-hour if the locale is.
+       * @type {Object}
+       */
+      static get DATETIME_MED() {
+        return DATETIME_MED;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like 'Oct 14, 1983, 9:30:33 AM'. Only 12-hour if the locale is.
+       * @type {Object}
+       */
+      static get DATETIME_MED_WITH_SECONDS() {
+        return DATETIME_MED_WITH_SECONDS;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like 'Fri, 14 Oct 1983, 9:30 AM'. Only 12-hour if the locale is.
+       * @type {Object}
+       */
+      static get DATETIME_MED_WITH_WEEKDAY() {
+        return DATETIME_MED_WITH_WEEKDAY;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like 'October 14, 1983, 9:30 AM EDT'. Only 12-hour if the locale is.
+       * @type {Object}
+       */
+      static get DATETIME_FULL() {
+        return DATETIME_FULL;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like 'October 14, 1983, 9:30:33 AM EDT'. Only 12-hour if the locale is.
+       * @type {Object}
+       */
+      static get DATETIME_FULL_WITH_SECONDS() {
+        return DATETIME_FULL_WITH_SECONDS;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like 'Friday, October 14, 1983, 9:30 AM Eastern Daylight Time'. Only 12-hour if the locale is.
+       * @type {Object}
+       */
+      static get DATETIME_HUGE() {
+        return DATETIME_HUGE;
+      }
+      /**
+       * {@link DateTime#toLocaleString} format like 'Friday, October 14, 1983, 9:30:33 AM Eastern Daylight Time'. Only 12-hour if the locale is.
+       * @type {Object}
+       */
+      static get DATETIME_HUGE_WITH_SECONDS() {
+        return DATETIME_HUGE_WITH_SECONDS;
+      }
+    };
+    function friendlyDateTime(dateTimeish) {
+      if (DateTime.isDateTime(dateTimeish)) {
+        return dateTimeish;
+      } else if (dateTimeish && dateTimeish.valueOf && isNumber(dateTimeish.valueOf())) {
+        return DateTime.fromJSDate(dateTimeish);
+      } else if (dateTimeish && typeof dateTimeish === "object") {
+        return DateTime.fromObject(dateTimeish);
+      } else {
+        throw new InvalidArgumentError(
+          `Unknown datetime argument: ${dateTimeish}, of type ${typeof dateTimeish}`
+        );
+      }
+    }
+    var DEFAULT_QUERY_SETTINGS = {
+      renderNullAs: "\\-",
+      taskCompletionTracking: false,
+      taskCompletionUseEmojiShorthand: false,
+      taskCompletionText: "completion",
+      taskCompletionDateFormat: "yyyy-MM-dd",
+      recursiveSubTaskCompletion: false,
+      warnOnEmptyResult: true,
+      refreshEnabled: true,
+      refreshInterval: 2500,
+      defaultDateFormat: "MMMM dd, yyyy",
+      defaultDateTimeFormat: "h:mm a - MMMM dd, yyyy",
+      maxRecursiveRenderDepth: 4,
+      tableIdColumnName: "File",
+      tableGroupColumnName: "Group",
+      showResultCount: true
+    };
+    var DEFAULT_EXPORT_SETTINGS = {
+      allowHtml: true
+    };
+    ({
+      ...DEFAULT_QUERY_SETTINGS,
+      ...DEFAULT_EXPORT_SETTINGS,
+      ...{
+        inlineQueryPrefix: "=",
+        inlineJsQueryPrefix: "$=",
+        inlineQueriesInCodeblocks: true,
+        enableInlineDataview: true,
+        enableDataviewJs: false,
+        enableInlineDataviewJs: false,
+        prettyRenderInlineFields: true,
+        dataviewJsKeyword: "dataviewjs"
+      }
+    });
+    var Success = class _Success {
+      constructor(value) {
+        this.value = value;
+        this.successful = true;
+      }
+      map(f) {
+        return new _Success(f(this.value));
+      }
+      flatMap(f) {
+        return f(this.value);
+      }
+      mapErr(f) {
+        return this;
+      }
+      bimap(succ, _fail) {
+        return this.map(succ);
+      }
+      orElse(_value) {
+        return this.value;
+      }
+      cast() {
+        return this;
+      }
+      orElseThrow(_message) {
+        return this.value;
+      }
+    };
+    var Failure = class _Failure {
+      constructor(error) {
+        this.error = error;
+        this.successful = false;
+      }
+      map(_f) {
+        return this;
+      }
+      flatMap(_f) {
+        return this;
+      }
+      mapErr(f) {
+        return new _Failure(f(this.error));
+      }
+      bimap(_succ, fail) {
+        return this.mapErr(fail);
+      }
+      orElse(value) {
+        return value;
+      }
+      cast() {
+        return this;
+      }
+      orElseThrow(message) {
+        if (message)
+          throw new Error(message(this.error));
+        else
+          throw new Error("" + this.error);
+      }
+    };
+    var Result;
+    (function(Result2) {
+      function success(value) {
+        return new Success(value);
+      }
+      Result2.success = success;
+      function failure(error) {
+        return new Failure(error);
+      }
+      Result2.failure = failure;
+      function flatMap2(first, second, f) {
+        if (first.successful) {
+          if (second.successful)
+            return f(first.value, second.value);
+          else
+            return failure(second.error);
+        } else {
+          return failure(first.error);
+        }
+      }
+      Result2.flatMap2 = flatMap2;
+      function map2(first, second, f) {
+        return flatMap2(first, second, (a, b) => success(f(a, b)));
+      }
+      Result2.map2 = map2;
+    })(Result || (Result = {}));
+    var commonjsGlobal = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
+    var parsimmon_umd_min = { exports: {} };
+    (function(module3, exports2) {
+      !function(n2, t) {
+        module3.exports = t();
+      }("undefined" != typeof self ? self : commonjsGlobal, function() {
+        return function(n2) {
+          var t = {};
+          function r(e) {
+            if (t[e])
+              return t[e].exports;
+            var u = t[e] = { i: e, l: false, exports: {} };
+            return n2[e].call(u.exports, u, u.exports, r), u.l = true, u.exports;
+          }
+          return r.m = n2, r.c = t, r.d = function(n3, t2, e) {
+            r.o(n3, t2) || Object.defineProperty(n3, t2, { configurable: false, enumerable: true, get: e });
+          }, r.r = function(n3) {
+            Object.defineProperty(n3, "__esModule", { value: true });
+          }, r.n = function(n3) {
+            var t2 = n3 && n3.__esModule ? function() {
+              return n3.default;
+            } : function() {
+              return n3;
+            };
+            return r.d(t2, "a", t2), t2;
+          }, r.o = function(n3, t2) {
+            return Object.prototype.hasOwnProperty.call(n3, t2);
+          }, r.p = "", r(r.s = 0);
+        }([function(n2, t, r) {
+          function e(n3) {
+            if (!(this instanceof e))
+              return new e(n3);
+            this._ = n3;
+          }
+          var u = e.prototype;
+          function o(n3, t2) {
+            for (var r2 = 0; r2 < n3; r2++)
+              t2(r2);
+          }
+          function i(n3, t2, r2) {
+            return function(n4, t3) {
+              o(t3.length, function(r3) {
+                n4(t3[r3], r3, t3);
+              });
+            }(function(r3, e2, u2) {
+              t2 = n3(t2, r3, e2, u2);
+            }, r2), t2;
+          }
+          function a(n3, t2) {
+            return i(function(t3, r2, e2, u2) {
+              return t3.concat([n3(r2, e2, u2)]);
+            }, [], t2);
+          }
+          function f(n3, t2) {
+            var r2 = { v: 0, buf: t2 };
+            return o(n3, function() {
+              var n4;
+              r2 = { v: r2.v << 1 | (n4 = r2.buf, n4[0] >> 7), buf: function(n5) {
+                var t3 = i(function(n6, t4, r3, e2) {
+                  return n6.concat(r3 === e2.length - 1 ? Buffer.from([t4, 0]).readUInt16BE(0) : e2.readUInt16BE(r3));
+                }, [], n5);
+                return Buffer.from(a(function(n6) {
+                  return (n6 << 1 & 65535) >> 8;
+                }, t3));
+              }(r2.buf) };
+            }), r2;
+          }
+          function c() {
+            return "undefined" != typeof Buffer;
+          }
+          function s2() {
+            if (!c())
+              throw new Error("Buffer global does not exist; please use webpack if you need to parse Buffers in the browser.");
+          }
+          function l2(n3) {
+            s2();
+            var t2 = i(function(n4, t3) {
+              return n4 + t3;
+            }, 0, n3);
+            if (t2 % 8 != 0)
+              throw new Error("The bits [" + n3.join(", ") + "] add up to " + t2 + " which is not an even number of bytes; the total should be divisible by 8");
+            var r2, u2 = t2 / 8, o2 = (r2 = function(n4) {
+              return n4 > 48;
+            }, i(function(n4, t3) {
+              return n4 || (r2(t3) ? t3 : n4);
+            }, null, n3));
+            if (o2)
+              throw new Error(o2 + " bit range requested exceeds 48 bit (6 byte) Number max.");
+            return new e(function(t3, r3) {
+              var e2 = u2 + r3;
+              return e2 > t3.length ? x(r3, u2.toString() + " bytes") : b(e2, i(function(n4, t4) {
+                var r4 = f(t4, n4.buf);
+                return { coll: n4.coll.concat(r4.v), buf: r4.buf };
+              }, { coll: [], buf: t3.slice(r3, e2) }, n3).coll);
+            });
+          }
+          function h(n3, t2) {
+            return new e(function(r2, e2) {
+              return s2(), e2 + t2 > r2.length ? x(e2, t2 + " bytes for " + n3) : b(e2 + t2, r2.slice(e2, e2 + t2));
+            });
+          }
+          function p(n3, t2) {
+            if ("number" != typeof (r2 = t2) || Math.floor(r2) !== r2 || t2 < 0 || t2 > 6)
+              throw new Error(n3 + " requires integer length in range [0, 6].");
+            var r2;
+          }
+          function d(n3) {
+            return p("uintBE", n3), h("uintBE(" + n3 + ")", n3).map(function(t2) {
+              return t2.readUIntBE(0, n3);
+            });
+          }
+          function v(n3) {
+            return p("uintLE", n3), h("uintLE(" + n3 + ")", n3).map(function(t2) {
+              return t2.readUIntLE(0, n3);
+            });
+          }
+          function g(n3) {
+            return p("intBE", n3), h("intBE(" + n3 + ")", n3).map(function(t2) {
+              return t2.readIntBE(0, n3);
+            });
+          }
+          function m(n3) {
+            return p("intLE", n3), h("intLE(" + n3 + ")", n3).map(function(t2) {
+              return t2.readIntLE(0, n3);
+            });
+          }
+          function y(n3) {
+            return n3 instanceof e;
+          }
+          function E(n3) {
+            return "[object Array]" === {}.toString.call(n3);
+          }
+          function w(n3) {
+            return c() && Buffer.isBuffer(n3);
+          }
+          function b(n3, t2) {
+            return { status: true, index: n3, value: t2, furthest: -1, expected: [] };
+          }
+          function x(n3, t2) {
+            return E(t2) || (t2 = [t2]), { status: false, index: -1, value: null, furthest: n3, expected: t2 };
+          }
+          function B(n3, t2) {
+            if (!t2)
+              return n3;
+            if (n3.furthest > t2.furthest)
+              return n3;
+            var r2 = n3.furthest === t2.furthest ? function(n4, t3) {
+              if (function() {
+                if (void 0 !== e._supportsSet)
+                  return e._supportsSet;
+                var n5 = "undefined" != typeof Set;
+                return e._supportsSet = n5, n5;
+              }() && Array.from) {
+                for (var r3 = new Set(n4), u2 = 0; u2 < t3.length; u2++)
+                  r3.add(t3[u2]);
+                var o2 = Array.from(r3);
+                return o2.sort(), o2;
+              }
+              for (var i2 = {}, a2 = 0; a2 < n4.length; a2++)
+                i2[n4[a2]] = true;
+              for (var f2 = 0; f2 < t3.length; f2++)
+                i2[t3[f2]] = true;
+              var c2 = [];
+              for (var s3 in i2)
+                ({}).hasOwnProperty.call(i2, s3) && c2.push(s3);
+              return c2.sort(), c2;
+            }(n3.expected, t2.expected) : t2.expected;
+            return { status: n3.status, index: n3.index, value: n3.value, furthest: t2.furthest, expected: r2 };
+          }
+          var j = {};
+          function S(n3, t2) {
+            if (w(n3))
+              return { offset: t2, line: -1, column: -1 };
+            n3 in j || (j[n3] = {});
+            for (var r2 = j[n3], e2 = 0, u2 = 0, o2 = 0, i2 = t2; i2 >= 0; ) {
+              if (i2 in r2) {
+                e2 = r2[i2].line, 0 === o2 && (o2 = r2[i2].lineStart);
+                break;
+              }
+              ("\n" === n3.charAt(i2) || "\r" === n3.charAt(i2) && "\n" !== n3.charAt(i2 + 1)) && (u2++, 0 === o2 && (o2 = i2 + 1)), i2--;
+            }
+            var a2 = e2 + u2, f2 = t2 - o2;
+            return r2[t2] = { line: a2, lineStart: o2 }, { offset: t2, line: a2 + 1, column: f2 + 1 };
+          }
+          function _(n3) {
+            if (!y(n3))
+              throw new Error("not a parser: " + n3);
+          }
+          function L(n3, t2) {
+            return "string" == typeof n3 ? n3.charAt(t2) : n3[t2];
+          }
+          function O(n3) {
+            if ("number" != typeof n3)
+              throw new Error("not a number: " + n3);
+          }
+          function k(n3) {
+            if ("function" != typeof n3)
+              throw new Error("not a function: " + n3);
+          }
+          function P(n3) {
+            if ("string" != typeof n3)
+              throw new Error("not a string: " + n3);
+          }
+          var q = 2, A = 3, I = 8, F = 5 * I, M = 4 * I, z = "  ";
+          function R(n3, t2) {
+            return new Array(t2 + 1).join(n3);
+          }
+          function U(n3, t2, r2) {
+            var e2 = t2 - n3.length;
+            return e2 <= 0 ? n3 : R(r2, e2) + n3;
+          }
+          function W(n3, t2, r2, e2) {
+            return { from: n3 - t2 > 0 ? n3 - t2 : 0, to: n3 + r2 > e2 ? e2 : n3 + r2 };
+          }
+          function D(n3, t2) {
+            var r2, e2, u2, o2, f2, c2 = t2.index, s3 = c2.offset, l3 = 1;
+            if (s3 === n3.length)
+              return "Got the end of the input";
+            if (w(n3)) {
+              var h2 = s3 - s3 % I, p2 = s3 - h2, d2 = W(h2, F, M + I, n3.length), v2 = a(function(n4) {
+                return a(function(n5) {
+                  return U(n5.toString(16), 2, "0");
+                }, n4);
+              }, function(n4, t3) {
+                var r3 = n4.length, e3 = [], u3 = 0;
+                if (r3 <= t3)
+                  return [n4.slice()];
+                for (var o3 = 0; o3 < r3; o3++)
+                  e3[u3] || e3.push([]), e3[u3].push(n4[o3]), (o3 + 1) % t3 == 0 && u3++;
+                return e3;
+              }(n3.slice(d2.from, d2.to).toJSON().data, I));
+              o2 = function(n4) {
+                return 0 === n4.from && 1 === n4.to ? { from: n4.from, to: n4.to } : { from: n4.from / I, to: Math.floor(n4.to / I) };
+              }(d2), e2 = h2 / I, r2 = 3 * p2, p2 >= 4 && (r2 += 1), l3 = 2, u2 = a(function(n4) {
+                return n4.length <= 4 ? n4.join(" ") : n4.slice(0, 4).join(" ") + "  " + n4.slice(4).join(" ");
+              }, v2), (f2 = (8 * (o2.to > 0 ? o2.to - 1 : o2.to)).toString(16).length) < 2 && (f2 = 2);
+            } else {
+              var g2 = n3.split(/\r\n|[\n\r\u2028\u2029]/);
+              r2 = c2.column - 1, e2 = c2.line - 1, o2 = W(e2, q, A, g2.length), u2 = g2.slice(o2.from, o2.to), f2 = o2.to.toString().length;
+            }
+            var m2 = e2 - o2.from;
+            return w(n3) && (f2 = (8 * (o2.to > 0 ? o2.to - 1 : o2.to)).toString(16).length) < 2 && (f2 = 2), i(function(t3, e3, u3) {
+              var i2, a2 = u3 === m2, c3 = a2 ? "> " : z;
+              return i2 = w(n3) ? U((8 * (o2.from + u3)).toString(16), f2, "0") : U((o2.from + u3 + 1).toString(), f2, " "), [].concat(t3, [c3 + i2 + " | " + e3], a2 ? [z + R(" ", f2) + " | " + U("", r2, " ") + R("^", l3)] : []);
+            }, [], u2).join("\n");
+          }
+          function N(n3, t2) {
+            return ["\n", "-- PARSING FAILED " + R("-", 50), "\n\n", D(n3, t2), "\n\n", (r2 = t2.expected, 1 === r2.length ? "Expected:\n\n" + r2[0] : "Expected one of the following: \n\n" + r2.join(", ")), "\n"].join("");
+            var r2;
+          }
+          function G(n3) {
+            return void 0 !== n3.flags ? n3.flags : [n3.global ? "g" : "", n3.ignoreCase ? "i" : "", n3.multiline ? "m" : "", n3.unicode ? "u" : "", n3.sticky ? "y" : ""].join("");
+          }
+          function C() {
+            for (var n3 = [].slice.call(arguments), t2 = n3.length, r2 = 0; r2 < t2; r2 += 1)
+              _(n3[r2]);
+            return e(function(r3, e2) {
+              for (var u2, o2 = new Array(t2), i2 = 0; i2 < t2; i2 += 1) {
+                if (!(u2 = B(n3[i2]._(r3, e2), u2)).status)
+                  return u2;
+                o2[i2] = u2.value, e2 = u2.index;
+              }
+              return B(b(e2, o2), u2);
+            });
+          }
+          function J() {
+            var n3 = [].slice.call(arguments);
+            if (0 === n3.length)
+              throw new Error("seqMap needs at least one argument");
+            var t2 = n3.pop();
+            return k(t2), C.apply(null, n3).map(function(n4) {
+              return t2.apply(null, n4);
+            });
+          }
+          function T() {
+            var n3 = [].slice.call(arguments), t2 = n3.length;
+            if (0 === t2)
+              return Y("zero alternates");
+            for (var r2 = 0; r2 < t2; r2 += 1)
+              _(n3[r2]);
+            return e(function(t3, r3) {
+              for (var e2, u2 = 0; u2 < n3.length; u2 += 1)
+                if ((e2 = B(n3[u2]._(t3, r3), e2)).status)
+                  return e2;
+              return e2;
+            });
+          }
+          function V(n3, t2) {
+            return H(n3, t2).or(X([]));
+          }
+          function H(n3, t2) {
+            return _(n3), _(t2), J(n3, t2.then(n3).many(), function(n4, t3) {
+              return [n4].concat(t3);
+            });
+          }
+          function K(n3) {
+            P(n3);
+            var t2 = "'" + n3 + "'";
+            return e(function(r2, e2) {
+              var u2 = e2 + n3.length, o2 = r2.slice(e2, u2);
+              return o2 === n3 ? b(u2, o2) : x(e2, t2);
+            });
+          }
+          function Q(n3, t2) {
+            !function(n4) {
+              if (!(n4 instanceof RegExp))
+                throw new Error("not a regexp: " + n4);
+              for (var t3 = G(n4), r3 = 0; r3 < t3.length; r3++) {
+                var e2 = t3.charAt(r3);
+                if ("i" !== e2 && "m" !== e2 && "u" !== e2 && "s" !== e2)
+                  throw new Error('unsupported regexp flag "' + e2 + '": ' + n4);
+              }
+            }(n3), arguments.length >= 2 ? O(t2) : t2 = 0;
+            var r2 = function(n4) {
+              return RegExp("^(?:" + n4.source + ")", G(n4));
+            }(n3), u2 = "" + n3;
+            return e(function(n4, e2) {
+              var o2 = r2.exec(n4.slice(e2));
+              if (o2) {
+                if (0 <= t2 && t2 <= o2.length) {
+                  var i2 = o2[0], a2 = o2[t2];
+                  return b(e2 + i2.length, a2);
+                }
+                return x(e2, "valid match group (0 to " + o2.length + ") in " + u2);
+              }
+              return x(e2, u2);
+            });
+          }
+          function X(n3) {
+            return e(function(t2, r2) {
+              return b(r2, n3);
+            });
+          }
+          function Y(n3) {
+            return e(function(t2, r2) {
+              return x(r2, n3);
+            });
+          }
+          function Z(n3) {
+            if (y(n3))
+              return e(function(t2, r2) {
+                var e2 = n3._(t2, r2);
+                return e2.index = r2, e2.value = "", e2;
+              });
+            if ("string" == typeof n3)
+              return Z(K(n3));
+            if (n3 instanceof RegExp)
+              return Z(Q(n3));
+            throw new Error("not a string, regexp, or parser: " + n3);
+          }
+          function $(n3) {
+            return _(n3), e(function(t2, r2) {
+              var e2 = n3._(t2, r2), u2 = t2.slice(r2, e2.index);
+              return e2.status ? x(r2, 'not "' + u2 + '"') : b(r2, null);
+            });
+          }
+          function nn(n3) {
+            return k(n3), e(function(t2, r2) {
+              var e2 = L(t2, r2);
+              return r2 < t2.length && n3(e2) ? b(r2 + 1, e2) : x(r2, "a character/byte matching " + n3);
+            });
+          }
+          function tn(n3, t2) {
+            arguments.length < 2 && (t2 = n3, n3 = void 0);
+            var r2 = e(function(n4, e2) {
+              return r2._ = t2()._, r2._(n4, e2);
+            });
+            return n3 ? r2.desc(n3) : r2;
+          }
+          function rn() {
+            return Y("fantasy-land/empty");
+          }
+          u.parse = function(n3) {
+            if ("string" != typeof n3 && !w(n3))
+              throw new Error(".parse must be called with a string or Buffer as its argument");
+            var t2, r2 = this.skip(an)._(n3, 0);
+            return t2 = r2.status ? { status: true, value: r2.value } : { status: false, index: S(n3, r2.furthest), expected: r2.expected }, delete j[n3], t2;
+          }, u.tryParse = function(n3) {
+            var t2 = this.parse(n3);
+            if (t2.status)
+              return t2.value;
+            var r2 = N(n3, t2), e2 = new Error(r2);
+            throw e2.type = "ParsimmonError", e2.result = t2, e2;
+          }, u.assert = function(n3, t2) {
+            return this.chain(function(r2) {
+              return n3(r2) ? X(r2) : Y(t2);
+            });
+          }, u.or = function(n3) {
+            return T(this, n3);
+          }, u.trim = function(n3) {
+            return this.wrap(n3, n3);
+          }, u.wrap = function(n3, t2) {
+            return J(n3, this, t2, function(n4, t3) {
+              return t3;
+            });
+          }, u.thru = function(n3) {
+            return n3(this);
+          }, u.then = function(n3) {
+            return _(n3), C(this, n3).map(function(n4) {
+              return n4[1];
+            });
+          }, u.many = function() {
+            var n3 = this;
+            return e(function(t2, r2) {
+              for (var e2 = [], u2 = void 0; ; ) {
+                if (!(u2 = B(n3._(t2, r2), u2)).status)
+                  return B(b(r2, e2), u2);
+                if (r2 === u2.index)
+                  throw new Error("infinite loop detected in .many() parser --- calling .many() on a parser which can accept zero characters is usually the cause");
+                r2 = u2.index, e2.push(u2.value);
+              }
+            });
+          }, u.tieWith = function(n3) {
+            return P(n3), this.map(function(t2) {
+              if (function(n4) {
+                if (!E(n4))
+                  throw new Error("not an array: " + n4);
+              }(t2), t2.length) {
+                P(t2[0]);
+                for (var r2 = t2[0], e2 = 1; e2 < t2.length; e2++)
+                  P(t2[e2]), r2 += n3 + t2[e2];
+                return r2;
+              }
+              return "";
+            });
+          }, u.tie = function() {
+            return this.tieWith("");
+          }, u.times = function(n3, t2) {
+            var r2 = this;
+            return arguments.length < 2 && (t2 = n3), O(n3), O(t2), e(function(e2, u2) {
+              for (var o2 = [], i2 = void 0, a2 = void 0, f2 = 0; f2 < n3; f2 += 1) {
+                if (a2 = B(i2 = r2._(e2, u2), a2), !i2.status)
+                  return a2;
+                u2 = i2.index, o2.push(i2.value);
+              }
+              for (; f2 < t2 && (a2 = B(i2 = r2._(e2, u2), a2), i2.status); f2 += 1)
+                u2 = i2.index, o2.push(i2.value);
+              return B(b(u2, o2), a2);
+            });
+          }, u.result = function(n3) {
+            return this.map(function() {
+              return n3;
+            });
+          }, u.atMost = function(n3) {
+            return this.times(0, n3);
+          }, u.atLeast = function(n3) {
+            return J(this.times(n3), this.many(), function(n4, t2) {
+              return n4.concat(t2);
+            });
+          }, u.map = function(n3) {
+            k(n3);
+            var t2 = this;
+            return e(function(r2, e2) {
+              var u2 = t2._(r2, e2);
+              return u2.status ? B(b(u2.index, n3(u2.value)), u2) : u2;
+            });
+          }, u.contramap = function(n3) {
+            k(n3);
+            var t2 = this;
+            return e(function(r2, e2) {
+              var u2 = t2.parse(n3(r2.slice(e2)));
+              return u2.status ? b(e2 + r2.length, u2.value) : u2;
+            });
+          }, u.promap = function(n3, t2) {
+            return k(n3), k(t2), this.contramap(n3).map(t2);
+          }, u.skip = function(n3) {
+            return C(this, n3).map(function(n4) {
+              return n4[0];
+            });
+          }, u.mark = function() {
+            return J(en, this, en, function(n3, t2, r2) {
+              return { start: n3, value: t2, end: r2 };
+            });
+          }, u.node = function(n3) {
+            return J(en, this, en, function(t2, r2, e2) {
+              return { name: n3, value: r2, start: t2, end: e2 };
+            });
+          }, u.sepBy = function(n3) {
+            return V(this, n3);
+          }, u.sepBy1 = function(n3) {
+            return H(this, n3);
+          }, u.lookahead = function(n3) {
+            return this.skip(Z(n3));
+          }, u.notFollowedBy = function(n3) {
+            return this.skip($(n3));
+          }, u.desc = function(n3) {
+            E(n3) || (n3 = [n3]);
+            var t2 = this;
+            return e(function(r2, e2) {
+              var u2 = t2._(r2, e2);
+              return u2.status || (u2.expected = n3), u2;
+            });
+          }, u.fallback = function(n3) {
+            return this.or(X(n3));
+          }, u.ap = function(n3) {
+            return J(n3, this, function(n4, t2) {
+              return n4(t2);
+            });
+          }, u.chain = function(n3) {
+            var t2 = this;
+            return e(function(r2, e2) {
+              var u2 = t2._(r2, e2);
+              return u2.status ? B(n3(u2.value)._(r2, u2.index), u2) : u2;
+            });
+          }, u.concat = u.or, u.empty = rn, u.of = X, u["fantasy-land/ap"] = u.ap, u["fantasy-land/chain"] = u.chain, u["fantasy-land/concat"] = u.concat, u["fantasy-land/empty"] = u.empty, u["fantasy-land/of"] = u.of, u["fantasy-land/map"] = u.map;
+          var en = e(function(n3, t2) {
+            return b(t2, S(n3, t2));
+          }), un = e(function(n3, t2) {
+            return t2 >= n3.length ? x(t2, "any character/byte") : b(t2 + 1, L(n3, t2));
+          }), on = e(function(n3, t2) {
+            return b(n3.length, n3.slice(t2));
+          }), an = e(function(n3, t2) {
+            return t2 < n3.length ? x(t2, "EOF") : b(t2, null);
+          }), fn = Q(/[0-9]/).desc("a digit"), cn = Q(/[0-9]*/).desc("optional digits"), sn = Q(/[a-z]/i).desc("a letter"), ln = Q(/[a-z]*/i).desc("optional letters"), hn = Q(/\s*/).desc("optional whitespace"), pn = Q(/\s+/).desc("whitespace"), dn = K("\r"), vn = K("\n"), gn = K("\r\n"), mn = T(gn, vn, dn).desc("newline"), yn = T(mn, an);
+          e.all = on, e.alt = T, e.any = un, e.cr = dn, e.createLanguage = function(n3) {
+            var t2 = {};
+            for (var r2 in n3)
+              ({}).hasOwnProperty.call(n3, r2) && function(r3) {
+                t2[r3] = tn(function() {
+                  return n3[r3](t2);
+                });
+              }(r2);
+            return t2;
+          }, e.crlf = gn, e.custom = function(n3) {
+            return e(n3(b, x));
+          }, e.digit = fn, e.digits = cn, e.empty = rn, e.end = yn, e.eof = an, e.fail = Y, e.formatError = N, e.index = en, e.isParser = y, e.lazy = tn, e.letter = sn, e.letters = ln, e.lf = vn, e.lookahead = Z, e.makeFailure = x, e.makeSuccess = b, e.newline = mn, e.noneOf = function(n3) {
+            return nn(function(t2) {
+              return n3.indexOf(t2) < 0;
+            }).desc("none of '" + n3 + "'");
+          }, e.notFollowedBy = $, e.of = X, e.oneOf = function(n3) {
+            for (var t2 = n3.split(""), r2 = 0; r2 < t2.length; r2++)
+              t2[r2] = "'" + t2[r2] + "'";
+            return nn(function(t3) {
+              return n3.indexOf(t3) >= 0;
+            }).desc(t2);
+          }, e.optWhitespace = hn, e.Parser = e, e.range = function(n3, t2) {
+            return nn(function(r2) {
+              return n3 <= r2 && r2 <= t2;
+            }).desc(n3 + "-" + t2);
+          }, e.regex = Q, e.regexp = Q, e.sepBy = V, e.sepBy1 = H, e.seq = C, e.seqMap = J, e.seqObj = function() {
+            for (var n3, t2 = {}, r2 = 0, u2 = (n3 = arguments, Array.prototype.slice.call(n3)), o2 = u2.length, i2 = 0; i2 < o2; i2 += 1) {
+              var a2 = u2[i2];
+              if (!y(a2)) {
+                if (E(a2) && 2 === a2.length && "string" == typeof a2[0] && y(a2[1])) {
+                  var f2 = a2[0];
+                  if (Object.prototype.hasOwnProperty.call(t2, f2))
+                    throw new Error("seqObj: duplicate key " + f2);
+                  t2[f2] = true, r2++;
+                  continue;
+                }
+                throw new Error("seqObj arguments must be parsers or [string, parser] array pairs.");
+              }
+            }
+            if (0 === r2)
+              throw new Error("seqObj expects at least one named parser, found zero");
+            return e(function(n4, t3) {
+              for (var r3, e2 = {}, i3 = 0; i3 < o2; i3 += 1) {
+                var a3, f3;
+                if (E(u2[i3]) ? (a3 = u2[i3][0], f3 = u2[i3][1]) : (a3 = null, f3 = u2[i3]), !(r3 = B(f3._(n4, t3), r3)).status)
+                  return r3;
+                a3 && (e2[a3] = r3.value), t3 = r3.index;
+              }
+              return B(b(t3, e2), r3);
+            });
+          }, e.string = K, e.succeed = X, e.takeWhile = function(n3) {
+            return k(n3), e(function(t2, r2) {
+              for (var e2 = r2; e2 < t2.length && n3(L(t2, e2)); )
+                e2++;
+              return b(e2, t2.slice(r2, e2));
+            });
+          }, e.test = nn, e.whitespace = pn, e["fantasy-land/empty"] = rn, e["fantasy-land/of"] = X, e.Binary = { bitSeq: l2, bitSeqObj: function(n3) {
+            s2();
+            var t2 = {}, r2 = 0, e2 = a(function(n4) {
+              if (E(n4)) {
+                var e3 = n4;
+                if (2 !== e3.length)
+                  throw new Error("[" + e3.join(", ") + "] should be length 2, got length " + e3.length);
+                if (P(e3[0]), O(e3[1]), Object.prototype.hasOwnProperty.call(t2, e3[0]))
+                  throw new Error("duplicate key in bitSeqObj: " + e3[0]);
+                return t2[e3[0]] = true, r2++, e3;
+              }
+              return O(n4), [null, n4];
+            }, n3);
+            if (r2 < 1)
+              throw new Error("bitSeqObj expects at least one named pair, got [" + n3.join(", ") + "]");
+            var u2 = a(function(n4) {
+              return n4[0];
+            }, e2);
+            return l2(a(function(n4) {
+              return n4[1];
+            }, e2)).map(function(n4) {
+              return i(function(n5, t3) {
+                return null !== t3[0] && (n5[t3[0]] = t3[1]), n5;
+              }, {}, a(function(t3, r3) {
+                return [t3, n4[r3]];
+              }, u2));
+            });
+          }, byte: function(n3) {
+            if (s2(), O(n3), n3 > 255)
+              throw new Error("Value specified to byte constructor (" + n3 + "=0x" + n3.toString(16) + ") is larger in value than a single byte.");
+            var t2 = (n3 > 15 ? "0x" : "0x0") + n3.toString(16);
+            return e(function(r2, e2) {
+              var u2 = L(r2, e2);
+              return u2 === n3 ? b(e2 + 1, u2) : x(e2, t2);
+            });
+          }, buffer: function(n3) {
+            return h("buffer", n3).map(function(n4) {
+              return Buffer.from(n4);
+            });
+          }, encodedString: function(n3, t2) {
+            return h("string", t2).map(function(t3) {
+              return t3.toString(n3);
+            });
+          }, uintBE: d, uint8BE: d(1), uint16BE: d(2), uint32BE: d(4), uintLE: v, uint8LE: v(1), uint16LE: v(2), uint32LE: v(4), intBE: g, int8BE: g(1), int16BE: g(2), int32BE: g(4), intLE: m, int8LE: m(1), int16LE: m(2), int32LE: m(4), floatBE: h("floatBE", 4).map(function(n3) {
+            return n3.readFloatBE(0);
+          }), floatLE: h("floatLE", 4).map(function(n3) {
+            return n3.readFloatLE(0);
+          }), doubleBE: h("doubleBE", 8).map(function(n3) {
+            return n3.readDoubleBE(0);
+          }), doubleLE: h("doubleLE", 8).map(function(n3) {
+            return n3.readDoubleLE(0);
+          }) }, n2.exports = e;
+        }]);
+      });
+    })(parsimmon_umd_min);
+    var emojiRegex = () => {
+      return /(?:[#*0-9]\uFE0F?\u20E3|[\xA9\xAE\u203C\u2049\u2122\u2139\u2194-\u2199\u21A9\u21AA\u231A\u231B\u2328\u23CF\u23ED-\u23EF\u23F1\u23F2\u23F8-\u23FA\u24C2\u25AA\u25AB\u25B6\u25C0\u25FB\u25FC\u25FE\u2600-\u2604\u260E\u2611\u2614\u2615\u2618\u2620\u2622\u2623\u2626\u262A\u262E\u262F\u2638-\u263A\u2640\u2642\u2648-\u2653\u265F\u2660\u2663\u2665\u2666\u2668\u267B\u267E\u267F\u2692\u2694-\u2697\u2699\u269B\u269C\u26A0\u26A7\u26AA\u26B0\u26B1\u26BD\u26BE\u26C4\u26C8\u26CF\u26D1\u26D3\u26E9\u26F0-\u26F5\u26F7\u26F8\u26FA\u2702\u2708\u2709\u270F\u2712\u2714\u2716\u271D\u2721\u2733\u2734\u2744\u2747\u2757\u2763\u27A1\u2934\u2935\u2B05-\u2B07\u2B1B\u2B1C\u2B55\u3030\u303D\u3297\u3299]\uFE0F?|[\u261D\u270C\u270D](?:\uFE0F|\uD83C[\uDFFB-\uDFFF])?|[\u270A\u270B](?:\uD83C[\uDFFB-\uDFFF])?|[\u23E9-\u23EC\u23F0\u23F3\u25FD\u2693\u26A1\u26AB\u26C5\u26CE\u26D4\u26EA\u26FD\u2705\u2728\u274C\u274E\u2753-\u2755\u2795-\u2797\u27B0\u27BF\u2B50]|\u26F9(?:\uFE0F|\uD83C[\uDFFB-\uDFFF])?(?:\u200D[\u2640\u2642]\uFE0F?)?|\u2764\uFE0F?(?:\u200D(?:\uD83D\uDD25|\uD83E\uDE79))?|\uD83C(?:[\uDC04\uDD70\uDD71\uDD7E\uDD7F\uDE02\uDE37\uDF21\uDF24-\uDF2C\uDF36\uDF7D\uDF96\uDF97\uDF99-\uDF9B\uDF9E\uDF9F\uDFCD\uDFCE\uDFD4-\uDFDF\uDFF5\uDFF7]\uFE0F?|[\uDF85\uDFC2\uDFC7](?:\uD83C[\uDFFB-\uDFFF])?|[\uDFC3\uDFC4\uDFCA](?:\uD83C[\uDFFB-\uDFFF])?(?:\u200D[\u2640\u2642]\uFE0F?)?|[\uDFCB\uDFCC](?:\uFE0F|\uD83C[\uDFFB-\uDFFF])?(?:\u200D[\u2640\u2642]\uFE0F?)?|[\uDCCF\uDD8E\uDD91-\uDD9A\uDE01\uDE1A\uDE2F\uDE32-\uDE36\uDE38-\uDE3A\uDE50\uDE51\uDF00-\uDF20\uDF2D-\uDF35\uDF37-\uDF7C\uDF7E-\uDF84\uDF86-\uDF93\uDFA0-\uDFC1\uDFC5\uDFC6\uDFC8\uDFC9\uDFCF-\uDFD3\uDFE0-\uDFF0\uDFF8-\uDFFF]|\uDDE6\uD83C[\uDDE8-\uDDEC\uDDEE\uDDF1\uDDF2\uDDF4\uDDF6-\uDDFA\uDDFC\uDDFD\uDDFF]|\uDDE7\uD83C[\uDDE6\uDDE7\uDDE9-\uDDEF\uDDF1-\uDDF4\uDDF6-\uDDF9\uDDFB\uDDFC\uDDFE\uDDFF]|\uDDE8\uD83C[\uDDE6\uDDE8\uDDE9\uDDEB-\uDDEE\uDDF0-\uDDF5\uDDF7\uDDFA-\uDDFF]|\uDDE9\uD83C[\uDDEA\uDDEC\uDDEF\uDDF0\uDDF2\uDDF4\uDDFF]|\uDDEA\uD83C[\uDDE6\uDDE8\uDDEA\uDDEC\uDDED\uDDF7-\uDDFA]|\uDDEB\uD83C[\uDDEE-\uDDF0\uDDF2\uDDF4\uDDF7]|\uDDEC\uD83C[\uDDE6\uDDE7\uDDE9-\uDDEE\uDDF1-\uDDF3\uDDF5-\uDDFA\uDDFC\uDDFE]|\uDDED\uD83C[\uDDF0\uDDF2\uDDF3\uDDF7\uDDF9\uDDFA]|\uDDEE\uD83C[\uDDE8-\uDDEA\uDDF1-\uDDF4\uDDF6-\uDDF9]|\uDDEF\uD83C[\uDDEA\uDDF2\uDDF4\uDDF5]|\uDDF0\uD83C[\uDDEA\uDDEC-\uDDEE\uDDF2\uDDF3\uDDF5\uDDF7\uDDFC\uDDFE\uDDFF]|\uDDF1\uD83C[\uDDE6-\uDDE8\uDDEE\uDDF0\uDDF7-\uDDFB\uDDFE]|\uDDF2\uD83C[\uDDE6\uDDE8-\uDDED\uDDF0-\uDDFF]|\uDDF3\uD83C[\uDDE6\uDDE8\uDDEA-\uDDEC\uDDEE\uDDF1\uDDF4\uDDF5\uDDF7\uDDFA\uDDFF]|\uDDF4\uD83C\uDDF2|\uDDF5\uD83C[\uDDE6\uDDEA-\uDDED\uDDF0-\uDDF3\uDDF7-\uDDF9\uDDFC\uDDFE]|\uDDF6\uD83C\uDDE6|\uDDF7\uD83C[\uDDEA\uDDF4\uDDF8\uDDFA\uDDFC]|\uDDF8\uD83C[\uDDE6-\uDDEA\uDDEC-\uDDF4\uDDF7-\uDDF9\uDDFB\uDDFD-\uDDFF]|\uDDF9\uD83C[\uDDE6\uDDE8\uDDE9\uDDEB-\uDDED\uDDEF-\uDDF4\uDDF7\uDDF9\uDDFB\uDDFC\uDDFF]|\uDDFA\uD83C[\uDDE6\uDDEC\uDDF2\uDDF3\uDDF8\uDDFE\uDDFF]|\uDDFB\uD83C[\uDDE6\uDDE8\uDDEA\uDDEC\uDDEE\uDDF3\uDDFA]|\uDDFC\uD83C[\uDDEB\uDDF8]|\uDDFD\uD83C\uDDF0|\uDDFE\uD83C[\uDDEA\uDDF9]|\uDDFF\uD83C[\uDDE6\uDDF2\uDDFC]|\uDFF3\uFE0F?(?:\u200D(?:\u26A7\uFE0F?|\uD83C\uDF08))?|\uDFF4(?:\u200D\u2620\uFE0F?|\uDB40\uDC67\uDB40\uDC62\uDB40(?:\uDC65\uDB40\uDC6E\uDB40\uDC67|\uDC73\uDB40\uDC63\uDB40\uDC74|\uDC77\uDB40\uDC6C\uDB40\uDC73)\uDB40\uDC7F)?)|\uD83D(?:[\uDC3F\uDCFD\uDD49\uDD4A\uDD6F\uDD70\uDD73\uDD76-\uDD79\uDD87\uDD8A-\uDD8D\uDDA5\uDDA8\uDDB1\uDDB2\uDDBC\uDDC2-\uDDC4\uDDD1-\uDDD3\uDDDC-\uDDDE\uDDE1\uDDE3\uDDE8\uDDEF\uDDF3\uDDFA\uDECB\uDECD-\uDECF\uDEE0-\uDEE5\uDEE9\uDEF0\uDEF3]\uFE0F?|[\uDC42\uDC43\uDC46-\uDC50\uDC66\uDC67\uDC6B-\uDC6D\uDC72\uDC74-\uDC76\uDC78\uDC7C\uDC83\uDC85\uDC8F\uDC91\uDCAA\uDD7A\uDD95\uDD96\uDE4C\uDE4F\uDEC0\uDECC](?:\uD83C[\uDFFB-\uDFFF])?|[\uDC6E\uDC70\uDC71\uDC73\uDC77\uDC81\uDC82\uDC86\uDC87\uDE45-\uDE47\uDE4B\uDE4D\uDE4E\uDEA3\uDEB4-\uDEB6](?:\uD83C[\uDFFB-\uDFFF])?(?:\u200D[\u2640\u2642]\uFE0F?)?|[\uDD74\uDD90](?:\uFE0F|\uD83C[\uDFFB-\uDFFF])?|[\uDC00-\uDC07\uDC09-\uDC14\uDC16-\uDC3A\uDC3C-\uDC3E\uDC40\uDC44\uDC45\uDC51-\uDC65\uDC6A\uDC79-\uDC7B\uDC7D-\uDC80\uDC84\uDC88-\uDC8E\uDC90\uDC92-\uDCA9\uDCAB-\uDCFC\uDCFF-\uDD3D\uDD4B-\uDD4E\uDD50-\uDD67\uDDA4\uDDFB-\uDE2D\uDE2F-\uDE34\uDE37-\uDE44\uDE48-\uDE4A\uDE80-\uDEA2\uDEA4-\uDEB3\uDEB7-\uDEBF\uDEC1-\uDEC5\uDED0-\uDED2\uDED5-\uDED7\uDEDD-\uDEDF\uDEEB\uDEEC\uDEF4-\uDEFC\uDFE0-\uDFEB\uDFF0]|\uDC08(?:\u200D\u2B1B)?|\uDC15(?:\u200D\uD83E\uDDBA)?|\uDC3B(?:\u200D\u2744\uFE0F?)?|\uDC41\uFE0F?(?:\u200D\uD83D\uDDE8\uFE0F?)?|\uDC68(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:\uDC8B\u200D\uD83D)?\uDC68|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D(?:[\uDC68\uDC69]\u200D\uD83D(?:\uDC66(?:\u200D\uD83D\uDC66)?|\uDC67(?:\u200D\uD83D[\uDC66\uDC67])?)|[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uDC66(?:\u200D\uD83D\uDC66)?|\uDC67(?:\u200D\uD83D[\uDC66\uDC67])?)|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C(?:\uDFFB(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:\uDC8B\u200D\uD83D)?\uDC68\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF-\uDDB3\uDDBC\uDDBD]|\uDD1D\u200D\uD83D\uDC68\uD83C[\uDFFC-\uDFFF])))?|\uDFFC(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:\uDC8B\u200D\uD83D)?\uDC68\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF-\uDDB3\uDDBC\uDDBD]|\uDD1D\u200D\uD83D\uDC68\uD83C[\uDFFB\uDFFD-\uDFFF])))?|\uDFFD(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:\uDC8B\u200D\uD83D)?\uDC68\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF-\uDDB3\uDDBC\uDDBD]|\uDD1D\u200D\uD83D\uDC68\uD83C[\uDFFB\uDFFC\uDFFE\uDFFF])))?|\uDFFE(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:\uDC8B\u200D\uD83D)?\uDC68\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF-\uDDB3\uDDBC\uDDBD]|\uDD1D\u200D\uD83D\uDC68\uD83C[\uDFFB-\uDFFD\uDFFF])))?|\uDFFF(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:\uDC8B\u200D\uD83D)?\uDC68\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF-\uDDB3\uDDBC\uDDBD]|\uDD1D\u200D\uD83D\uDC68\uD83C[\uDFFB-\uDFFE])))?))?|\uDC69(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:\uDC8B\u200D\uD83D)?[\uDC68\uDC69]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D(?:[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uDC66(?:\u200D\uD83D\uDC66)?|\uDC67(?:\u200D\uD83D[\uDC66\uDC67])?|\uDC69\u200D\uD83D(?:\uDC66(?:\u200D\uD83D\uDC66)?|\uDC67(?:\u200D\uD83D[\uDC66\uDC67])?))|\uD83E[\uDDAF-\uDDB3\uDDBC\uDDBD])|\uD83C(?:\uDFFB(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:[\uDC68\uDC69]|\uDC8B\u200D\uD83D[\uDC68\uDC69])\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF-\uDDB3\uDDBC\uDDBD]|\uDD1D\u200D\uD83D[\uDC68\uDC69]\uD83C[\uDFFC-\uDFFF])))?|\uDFFC(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:[\uDC68\uDC69]|\uDC8B\u200D\uD83D[\uDC68\uDC69])\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF-\uDDB3\uDDBC\uDDBD]|\uDD1D\u200D\uD83D[\uDC68\uDC69]\uD83C[\uDFFB\uDFFD-\uDFFF])))?|\uDFFD(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:[\uDC68\uDC69]|\uDC8B\u200D\uD83D[\uDC68\uDC69])\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF-\uDDB3\uDDBC\uDDBD]|\uDD1D\u200D\uD83D[\uDC68\uDC69]\uD83C[\uDFFB\uDFFC\uDFFE\uDFFF])))?|\uDFFE(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:[\uDC68\uDC69]|\uDC8B\u200D\uD83D[\uDC68\uDC69])\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF-\uDDB3\uDDBC\uDDBD]|\uDD1D\u200D\uD83D[\uDC68\uDC69]\uD83C[\uDFFB-\uDFFD\uDFFF])))?|\uDFFF(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D\uD83D(?:[\uDC68\uDC69]|\uDC8B\u200D\uD83D[\uDC68\uDC69])\uD83C[\uDFFB-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF-\uDDB3\uDDBC\uDDBD]|\uDD1D\u200D\uD83D[\uDC68\uDC69]\uD83C[\uDFFB-\uDFFE])))?))?|\uDC6F(?:\u200D[\u2640\u2642]\uFE0F?)?|\uDD75(?:\uFE0F|\uD83C[\uDFFB-\uDFFF])?(?:\u200D[\u2640\u2642]\uFE0F?)?|\uDE2E(?:\u200D\uD83D\uDCA8)?|\uDE35(?:\u200D\uD83D\uDCAB)?|\uDE36(?:\u200D\uD83C\uDF2B\uFE0F?)?)|\uD83E(?:[\uDD0C\uDD0F\uDD18-\uDD1F\uDD30-\uDD34\uDD36\uDD77\uDDB5\uDDB6\uDDBB\uDDD2\uDDD3\uDDD5\uDEC3-\uDEC5\uDEF0\uDEF2-\uDEF6](?:\uD83C[\uDFFB-\uDFFF])?|[\uDD26\uDD35\uDD37-\uDD39\uDD3D\uDD3E\uDDB8\uDDB9\uDDCD-\uDDCF\uDDD4\uDDD6-\uDDDD](?:\uD83C[\uDFFB-\uDFFF])?(?:\u200D[\u2640\u2642]\uFE0F?)?|[\uDDDE\uDDDF](?:\u200D[\u2640\u2642]\uFE0F?)?|[\uDD0D\uDD0E\uDD10-\uDD17\uDD20-\uDD25\uDD27-\uDD2F\uDD3A\uDD3F-\uDD45\uDD47-\uDD76\uDD78-\uDDB4\uDDB7\uDDBA\uDDBC-\uDDCC\uDDD0\uDDE0-\uDDFF\uDE70-\uDE74\uDE78-\uDE7C\uDE80-\uDE86\uDE90-\uDEAC\uDEB0-\uDEBA\uDEC0-\uDEC2\uDED0-\uDED9\uDEE0-\uDEE7]|\uDD3C(?:\u200D[\u2640\u2642]\uFE0F?|\uD83C[\uDFFB-\uDFFF])?|\uDDD1(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\uD83C[\uDF3E\uDF73\uDF7C\uDF84\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF-\uDDB3\uDDBC\uDDBD]|\uDD1D\u200D\uD83E\uDDD1))|\uD83C(?:\uDFFB(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D(?:\uD83D\uDC8B\u200D)?\uD83E\uDDD1\uD83C[\uDFFC-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF84\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF-\uDDB3\uDDBC\uDDBD]|\uDD1D\u200D\uD83E\uDDD1\uD83C[\uDFFB-\uDFFF])))?|\uDFFC(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D(?:\uD83D\uDC8B\u200D)?\uD83E\uDDD1\uD83C[\uDFFB\uDFFD-\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF84\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF-\uDDB3\uDDBC\uDDBD]|\uDD1D\u200D\uD83E\uDDD1\uD83C[\uDFFB-\uDFFF])))?|\uDFFD(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D(?:\uD83D\uDC8B\u200D)?\uD83E\uDDD1\uD83C[\uDFFB\uDFFC\uDFFE\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF84\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF-\uDDB3\uDDBC\uDDBD]|\uDD1D\u200D\uD83E\uDDD1\uD83C[\uDFFB-\uDFFF])))?|\uDFFE(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D(?:\uD83D\uDC8B\u200D)?\uD83E\uDDD1\uD83C[\uDFFB-\uDFFD\uDFFF]|\uD83C[\uDF3E\uDF73\uDF7C\uDF84\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF-\uDDB3\uDDBC\uDDBD]|\uDD1D\u200D\uD83E\uDDD1\uD83C[\uDFFB-\uDFFF])))?|\uDFFF(?:\u200D(?:[\u2695\u2696\u2708]\uFE0F?|\u2764\uFE0F?\u200D(?:\uD83D\uDC8B\u200D)?\uD83E\uDDD1\uD83C[\uDFFB-\uDFFE]|\uD83C[\uDF3E\uDF73\uDF7C\uDF84\uDF93\uDFA4\uDFA8\uDFEB\uDFED]|\uD83D[\uDCBB\uDCBC\uDD27\uDD2C\uDE80\uDE92]|\uD83E(?:[\uDDAF-\uDDB3\uDDBC\uDDBD]|\uDD1D\u200D\uD83E\uDDD1\uD83C[\uDFFB-\uDFFF])))?))?|\uDEF1(?:\uD83C(?:\uDFFB(?:\u200D\uD83E\uDEF2\uD83C[\uDFFC-\uDFFF])?|\uDFFC(?:\u200D\uD83E\uDEF2\uD83C[\uDFFB\uDFFD-\uDFFF])?|\uDFFD(?:\u200D\uD83E\uDEF2\uD83C[\uDFFB\uDFFC\uDFFE\uDFFF])?|\uDFFE(?:\u200D\uD83E\uDEF2\uD83C[\uDFFB-\uDFFD\uDFFF])?|\uDFFF(?:\u200D\uD83E\uDEF2\uD83C[\uDFFB-\uDFFE])?))?))/g;
+    };
+    function normalizeDuration(dur) {
+      if (dur === void 0 || dur === null)
+        return dur;
+      return dur.shiftToAll().normalize();
+    }
+    function getFileTitle(path) {
+      if (path.includes("/"))
+        path = path.substring(path.lastIndexOf("/") + 1);
+      if (path.endsWith(".md"))
+        path = path.substring(0, path.length - 3);
+      return path;
+    }
+    parsimmon_umd_min.exports.alt(parsimmon_umd_min.exports.regex(new RegExp(emojiRegex(), "")), parsimmon_umd_min.exports.regex(/[0-9\p{Letter}_-]+/u).map((str) => str.toLocaleLowerCase()), parsimmon_umd_min.exports.whitespace.map((_) => "-"), parsimmon_umd_min.exports.any.map((_) => "")).many().map((result) => result.join(""));
+    var HEADER_CANONICALIZER = parsimmon_umd_min.exports.alt(parsimmon_umd_min.exports.regex(new RegExp(emojiRegex(), "")), parsimmon_umd_min.exports.regex(/[0-9\p{Letter}_-]+/u), parsimmon_umd_min.exports.whitespace.map((_) => " "), parsimmon_umd_min.exports.any.map((_) => " ")).many().map((result) => {
+      return result.join("").split(/\s+/).join(" ").trim();
+    });
+    function normalizeHeaderForLink(header) {
+      return HEADER_CANONICALIZER.tryParse(header);
+    }
+    function renderMinimalDuration(dur) {
+      dur = normalizeDuration(dur);
+      dur = Duration.fromObject(Object.fromEntries(Object.entries(dur.toObject()).filter(([, quantity]) => quantity > 0)));
+      return dur.toHuman();
+    }
+    var Values;
+    (function(Values2) {
+      function toString(field, setting = DEFAULT_QUERY_SETTINGS, recursive = false) {
+        let wrapped = wrapValue(field);
+        if (!wrapped)
+          return setting.renderNullAs;
+        switch (wrapped.type) {
+          case "null":
+            return setting.renderNullAs;
+          case "string":
+            return wrapped.value;
+          case "number":
+          case "boolean":
+            return "" + wrapped.value;
+          case "html":
+            return wrapped.value.outerHTML;
+          case "widget":
+            return wrapped.value.markdown();
+          case "link":
+            return wrapped.value.markdown();
+          case "function":
+            return "<function>";
+          case "array":
+            let result = "";
+            if (recursive)
+              result += "[";
+            result += wrapped.value.map((f) => toString(f, setting, true)).join(", ");
+            if (recursive)
+              result += "]";
+            return result;
+          case "object":
+            return "{ " + Object.entries(wrapped.value).map((e) => e[0] + ": " + toString(e[1], setting, true)).join(", ") + " }";
+          case "date":
+            if (wrapped.value.second == 0 && wrapped.value.hour == 0 && wrapped.value.minute == 0) {
+              return wrapped.value.toFormat(setting.defaultDateFormat);
+            }
+            return wrapped.value.toFormat(setting.defaultDateTimeFormat);
+          case "duration":
+            return renderMinimalDuration(wrapped.value);
+        }
+      }
+      Values2.toString = toString;
+      function wrapValue(val) {
+        if (isNull(val))
+          return { type: "null", value: val };
+        else if (isNumber2(val))
+          return { type: "number", value: val };
+        else if (isString2(val))
+          return { type: "string", value: val };
+        else if (isBoolean(val))
+          return { type: "boolean", value: val };
+        else if (isDuration(val))
+          return { type: "duration", value: val };
+        else if (isDate2(val))
+          return { type: "date", value: val };
+        else if (isWidget(val))
+          return { type: "widget", value: val };
+        else if (isArray(val))
+          return { type: "array", value: val };
+        else if (isLink(val))
+          return { type: "link", value: val };
+        else if (isFunction(val))
+          return { type: "function", value: val };
+        else if (isHtml(val))
+          return { type: "html", value: val };
+        else if (isObject(val))
+          return { type: "object", value: val };
+        else
+          return void 0;
+      }
+      Values2.wrapValue = wrapValue;
+      function mapLeaves(val, func) {
+        if (isObject(val)) {
+          let result = {};
+          for (let [key, value] of Object.entries(val))
+            result[key] = mapLeaves(value, func);
+          return result;
+        } else if (isArray(val)) {
+          let result = [];
+          for (let value of val)
+            result.push(mapLeaves(value, func));
+          return result;
+        } else {
+          return func(val);
+        }
+      }
+      Values2.mapLeaves = mapLeaves;
+      function compareValue(val1, val2, linkNormalizer) {
+        var _a, _b;
+        if (val1 === void 0)
+          val1 = null;
+        if (val2 === void 0)
+          val2 = null;
+        if (val1 === null && val2 === null)
+          return 0;
+        else if (val1 === null)
+          return -1;
+        else if (val2 === null)
+          return 1;
+        let wrap1 = wrapValue(val1);
+        let wrap2 = wrapValue(val2);
+        if (wrap1 === void 0 && wrap2 === void 0)
+          return 0;
+        else if (wrap1 === void 0)
+          return -1;
+        else if (wrap2 === void 0)
+          return 1;
+        if (wrap1.type != wrap2.type)
+          return wrap1.type.localeCompare(wrap2.type);
+        if (wrap1.value === wrap2.value)
+          return 0;
+        switch (wrap1.type) {
+          case "string":
+            return wrap1.value.localeCompare(wrap2.value);
+          case "number":
+            if (wrap1.value < wrap2.value)
+              return -1;
+            else if (wrap1.value == wrap2.value)
+              return 0;
+            return 1;
+          case "null":
+            return 0;
+          case "boolean":
+            if (wrap1.value == wrap2.value)
+              return 0;
+            else
+              return wrap1.value ? 1 : -1;
+          case "link":
+            let link1 = wrap1.value;
+            let link2 = wrap2.value;
+            let normalize = linkNormalizer !== null && linkNormalizer !== void 0 ? linkNormalizer : (x) => x;
+            let pathCompare = normalize(link1.path).localeCompare(normalize(link2.path));
+            if (pathCompare != 0)
+              return pathCompare;
+            let typeCompare = link1.type.localeCompare(link2.type);
+            if (typeCompare != 0)
+              return typeCompare;
+            if (link1.subpath && !link2.subpath)
+              return 1;
+            if (!link1.subpath && link2.subpath)
+              return -1;
+            if (!link1.subpath && !link2.subpath)
+              return 0;
+            return ((_a = link1.subpath) !== null && _a !== void 0 ? _a : "").localeCompare((_b = link2.subpath) !== null && _b !== void 0 ? _b : "");
+          case "date":
+            return wrap1.value < wrap2.value ? -1 : wrap1.value.equals(wrap2.value) ? 0 : 1;
+          case "duration":
+            return wrap1.value < wrap2.value ? -1 : wrap1.value.equals(wrap2.value) ? 0 : 1;
+          case "array":
+            let f1 = wrap1.value;
+            let f2 = wrap2.value;
+            for (let index = 0; index < Math.min(f1.length, f2.length); index++) {
+              let comp = compareValue(f1[index], f2[index]);
+              if (comp != 0)
+                return comp;
+            }
+            return f1.length - f2.length;
+          case "object":
+            let o1 = wrap1.value;
+            let o2 = wrap2.value;
+            let k1 = Array.from(Object.keys(o1));
+            let k2 = Array.from(Object.keys(o2));
+            k1.sort();
+            k2.sort();
+            let keyCompare = compareValue(k1, k2);
+            if (keyCompare != 0)
+              return keyCompare;
+            for (let key of k1) {
+              let comp = compareValue(o1[key], o2[key]);
+              if (comp != 0)
+                return comp;
+            }
+            return 0;
+          case "widget":
+          case "html":
+          case "function":
+            return 0;
+        }
+      }
+      Values2.compareValue = compareValue;
+      function typeOf(val) {
+        var _a;
+        return (_a = wrapValue(val)) === null || _a === void 0 ? void 0 : _a.type;
+      }
+      Values2.typeOf = typeOf;
+      function isTruthy(field) {
+        let wrapped = wrapValue(field);
+        if (!wrapped)
+          return false;
+        switch (wrapped.type) {
+          case "number":
+            return wrapped.value != 0;
+          case "string":
+            return wrapped.value.length > 0;
+          case "boolean":
+            return wrapped.value;
+          case "link":
+            return !!wrapped.value.path;
+          case "date":
+            return wrapped.value.toMillis() != 0;
+          case "duration":
+            return wrapped.value.as("seconds") != 0;
+          case "object":
+            return Object.keys(wrapped.value).length > 0;
+          case "array":
+            return wrapped.value.length > 0;
+          case "null":
+            return false;
+          case "html":
+          case "widget":
+          case "function":
+            return true;
+        }
+      }
+      Values2.isTruthy = isTruthy;
+      function deepCopy(field) {
+        if (field === null || field === void 0)
+          return field;
+        if (Values2.isArray(field)) {
+          return [].concat(field.map((v) => deepCopy(v)));
+        } else if (Values2.isObject(field)) {
+          let result = {};
+          for (let [key, value] of Object.entries(field))
+            result[key] = deepCopy(value);
+          return result;
+        } else {
+          return field;
+        }
+      }
+      Values2.deepCopy = deepCopy;
+      function isString2(val) {
+        return typeof val == "string";
+      }
+      Values2.isString = isString2;
+      function isNumber2(val) {
+        return typeof val == "number";
+      }
+      Values2.isNumber = isNumber2;
+      function isDate2(val) {
+        return val instanceof DateTime;
+      }
+      Values2.isDate = isDate2;
+      function isDuration(val) {
+        return val instanceof Duration;
+      }
+      Values2.isDuration = isDuration;
+      function isNull(val) {
+        return val === null || val === void 0;
+      }
+      Values2.isNull = isNull;
+      function isArray(val) {
+        return Array.isArray(val);
+      }
+      Values2.isArray = isArray;
+      function isBoolean(val) {
+        return typeof val === "boolean";
+      }
+      Values2.isBoolean = isBoolean;
+      function isLink(val) {
+        return val instanceof Link;
+      }
+      Values2.isLink = isLink;
+      function isWidget(val) {
+        return val instanceof Widget;
+      }
+      Values2.isWidget = isWidget;
+      function isHtml(val) {
+        if (typeof HTMLElement !== "undefined") {
+          return val instanceof HTMLElement;
+        } else {
+          return false;
+        }
+      }
+      Values2.isHtml = isHtml;
+      function isObject(val) {
+        return typeof val == "object" && !isHtml(val) && !isWidget(val) && !isArray(val) && !isDuration(val) && !isDate2(val) && !isLink(val) && val !== void 0 && !isNull(val);
+      }
+      Values2.isObject = isObject;
+      function isFunction(val) {
+        return typeof val == "function";
+      }
+      Values2.isFunction = isFunction;
+    })(Values || (Values = {}));
+    var Groupings;
+    (function(Groupings2) {
+      function isElementGroup(entry) {
+        return Values.isObject(entry) && Object.keys(entry).length == 2 && "key" in entry && "rows" in entry;
+      }
+      Groupings2.isElementGroup = isElementGroup;
+      function isGrouping(entry) {
+        for (let element2 of entry)
+          if (!isElementGroup(element2))
+            return false;
+        return true;
+      }
+      Groupings2.isGrouping = isGrouping;
+      function count(elements) {
+        if (isGrouping(elements)) {
+          let result = 0;
+          for (let subgroup of elements)
+            result += count(subgroup.rows);
+          return result;
+        } else {
+          return elements.length;
+        }
+      }
+      Groupings2.count = count;
+    })(Groupings || (Groupings = {}));
+    var Link = class _Link {
+      constructor(fields) {
+        Object.assign(this, fields);
+      }
+      /** Create a link to a specific file. */
+      static file(path, embed = false, display) {
+        return new _Link({
+          path,
+          embed,
+          display,
+          subpath: void 0,
+          type: "file"
+        });
+      }
+      static infer(linkpath, embed = false, display) {
+        if (linkpath.includes("#^")) {
+          let split = linkpath.split("#^");
+          return _Link.block(split[0], split[1], embed, display);
+        } else if (linkpath.includes("#")) {
+          let split = linkpath.split("#");
+          return _Link.header(split[0], split[1], embed, display);
+        } else
+          return _Link.file(linkpath, embed, display);
+      }
+      /** Create a link to a specific file and header in that file. */
+      static header(path, header, embed, display) {
+        return new _Link({
+          path,
+          embed,
+          display,
+          subpath: normalizeHeaderForLink(header),
+          type: "header"
+        });
+      }
+      /** Create a link to a specific file and block in that file. */
+      static block(path, blockId, embed, display) {
+        return new _Link({
+          path,
+          embed,
+          display,
+          subpath: blockId,
+          type: "block"
+        });
+      }
+      static fromObject(object) {
+        return new _Link(object);
+      }
+      /** Checks for link equality (i.e., that the links are pointing to the same exact location). */
+      equals(other) {
+        if (other == void 0 || other == null)
+          return false;
+        return this.path == other.path && this.type == other.type && this.subpath == other.subpath;
+      }
+      /** Convert this link to it's markdown representation. */
+      toString() {
+        return this.markdown();
+      }
+      /** Convert this link to a raw object which is serialization-friendly. */
+      toObject() {
+        return { path: this.path, type: this.type, subpath: this.subpath, display: this.display, embed: this.embed };
+      }
+      /** Update this link with a new path. */
+      //@ts-ignore; error appeared after updating Obsidian to 0.15.4; it also updated other packages but didn't say which
+      withPath(path) {
+        return new _Link(Object.assign({}, this, { path }));
+      }
+      /** Return a new link which points to the same location but with a new display value. */
+      withDisplay(display) {
+        return new _Link(Object.assign({}, this, { display }));
+      }
+      /** Convert a file link into a link to a specific header. */
+      withHeader(header) {
+        return _Link.header(this.path, header, this.embed, this.display);
+      }
+      /** Convert any link into a link to its file. */
+      toFile() {
+        return _Link.file(this.path, this.embed, this.display);
+      }
+      /** Convert this link into an embedded link. */
+      toEmbed() {
+        if (this.embed) {
+          return this;
+        } else {
+          let link = new _Link(this);
+          link.embed = true;
+          return link;
+        }
+      }
+      /** Convert this link into a non-embedded link. */
+      fromEmbed() {
+        if (!this.embed) {
+          return this;
+        } else {
+          let link = new _Link(this);
+          link.embed = false;
+          return link;
+        }
+      }
+      /** Convert this link to markdown so it can be rendered. */
+      markdown() {
+        let result = (this.embed ? "!" : "") + "[[" + this.obsidianLink();
+        if (this.display) {
+          result += "|" + this.display;
+        } else {
+          result += "|" + getFileTitle(this.path);
+          if (this.type == "header" || this.type == "block")
+            result += " > " + this.subpath;
+        }
+        result += "]]";
+        return result;
+      }
+      /** Convert the inner part of the link to something that Obsidian can open / understand. */
+      obsidianLink() {
+        var _a, _b;
+        const escaped = this.path.replace("|", "\\|");
+        if (this.type == "header")
+          return escaped + "#" + ((_a = this.subpath) === null || _a === void 0 ? void 0 : _a.replace("|", "\\|"));
+        if (this.type == "block")
+          return escaped + "#^" + ((_b = this.subpath) === null || _b === void 0 ? void 0 : _b.replace("|", "\\|"));
+        else
+          return escaped;
+      }
+      /** The stripped name of the file this link points to. */
+      fileName() {
+        return getFileTitle(this.path).replace(".md", "");
+      }
+    };
+    var Widget = class {
+      constructor($widget) {
+        this.$widget = $widget;
+      }
+    };
+    var ListPairWidget = class extends Widget {
+      constructor(key, value) {
+        super("dataview:list-pair");
+        this.key = key;
+        this.value = value;
+      }
+      markdown() {
+        return `${Values.toString(this.key)}: ${Values.toString(this.value)}`;
+      }
+    };
+    var ExternalLinkWidget = class extends Widget {
+      constructor(url, display) {
+        super("dataview:external-link");
+        this.url = url;
+        this.display = display;
+      }
+      markdown() {
+        var _a;
+        return `[${(_a = this.display) !== null && _a !== void 0 ? _a : this.url}](${this.url})`;
+      }
+    };
+    var Widgets;
+    (function(Widgets2) {
+      function listPair(key, value) {
+        return new ListPairWidget(key, value);
+      }
+      Widgets2.listPair = listPair;
+      function externalLink(url, display) {
+        return new ExternalLinkWidget(url, display);
+      }
+      Widgets2.externalLink = externalLink;
+      function isListPair(widget) {
+        return widget.$widget === "dataview:list-pair";
+      }
+      Widgets2.isListPair = isListPair;
+      function isExternalLink(widget) {
+        return widget.$widget === "dataview:external-link";
+      }
+      Widgets2.isExternalLink = isExternalLink;
+      function isBuiltin(widget) {
+        return isListPair(widget) || isExternalLink(widget);
+      }
+      Widgets2.isBuiltin = isBuiltin;
+    })(Widgets || (Widgets = {}));
+    var Fields;
+    (function(Fields2) {
+      function variable(name) {
+        return { type: "variable", name };
+      }
+      Fields2.variable = variable;
+      function literal(value) {
+        return { type: "literal", value };
+      }
+      Fields2.literal = literal;
+      function binaryOp(left, op, right) {
+        return { type: "binaryop", left, op, right };
+      }
+      Fields2.binaryOp = binaryOp;
+      function index(obj, index2) {
+        return { type: "index", object: obj, index: index2 };
+      }
+      Fields2.index = index;
+      function indexVariable(name) {
+        let parts = name.split(".");
+        let result = Fields2.variable(parts[0]);
+        for (let index2 = 1; index2 < parts.length; index2++) {
+          result = Fields2.index(result, Fields2.literal(parts[index2]));
+        }
+        return result;
+      }
+      Fields2.indexVariable = indexVariable;
+      function lambda(args, value) {
+        return { type: "lambda", arguments: args, value };
+      }
+      Fields2.lambda = lambda;
+      function func(func2, args) {
+        return { type: "function", func: func2, arguments: args };
+      }
+      Fields2.func = func;
+      function list(values) {
+        return { type: "list", values };
+      }
+      Fields2.list = list;
+      function object(values) {
+        return { type: "object", values };
+      }
+      Fields2.object = object;
+      function negate(child) {
+        return { type: "negated", child };
+      }
+      Fields2.negate = negate;
+      function isCompareOp(op) {
+        return op == "<=" || op == "<" || op == ">" || op == ">=" || op == "!=" || op == "=";
+      }
+      Fields2.isCompareOp = isCompareOp;
+      Fields2.NULL = Fields2.literal(null);
+    })(Fields || (Fields = {}));
+    var Sources;
+    (function(Sources2) {
+      function tag(tag2) {
+        return { type: "tag", tag: tag2 };
+      }
+      Sources2.tag = tag;
+      function csv(path) {
+        return { type: "csv", path };
+      }
+      Sources2.csv = csv;
+      function folder(prefix) {
+        return { type: "folder", folder: prefix };
+      }
+      Sources2.folder = folder;
+      function link(file, incoming) {
+        return { type: "link", file, direction: incoming ? "incoming" : "outgoing" };
+      }
+      Sources2.link = link;
+      function binaryOp(left, op, right) {
+        return { type: "binaryop", left, op, right };
+      }
+      Sources2.binaryOp = binaryOp;
+      function and(left, right) {
+        return { type: "binaryop", left, op: "&", right };
+      }
+      Sources2.and = and;
+      function or(left, right) {
+        return { type: "binaryop", left, op: "|", right };
+      }
+      Sources2.or = or;
+      function negate(child) {
+        return { type: "negate", child };
+      }
+      Sources2.negate = negate;
+      function empty3() {
+        return { type: "empty" };
+      }
+      Sources2.empty = empty3;
+    })(Sources || (Sources = {}));
+    var EMOJI_REGEX = new RegExp(emojiRegex(), "");
+    var DURATION_TYPES = {
+      year: Duration.fromObject({ years: 1 }),
+      years: Duration.fromObject({ years: 1 }),
+      yr: Duration.fromObject({ years: 1 }),
+      yrs: Duration.fromObject({ years: 1 }),
+      month: Duration.fromObject({ months: 1 }),
+      months: Duration.fromObject({ months: 1 }),
+      mo: Duration.fromObject({ months: 1 }),
+      mos: Duration.fromObject({ months: 1 }),
+      week: Duration.fromObject({ weeks: 1 }),
+      weeks: Duration.fromObject({ weeks: 1 }),
+      wk: Duration.fromObject({ weeks: 1 }),
+      wks: Duration.fromObject({ weeks: 1 }),
+      w: Duration.fromObject({ weeks: 1 }),
+      day: Duration.fromObject({ days: 1 }),
+      days: Duration.fromObject({ days: 1 }),
+      d: Duration.fromObject({ days: 1 }),
+      hour: Duration.fromObject({ hours: 1 }),
+      hours: Duration.fromObject({ hours: 1 }),
+      hr: Duration.fromObject({ hours: 1 }),
+      hrs: Duration.fromObject({ hours: 1 }),
+      h: Duration.fromObject({ hours: 1 }),
+      minute: Duration.fromObject({ minutes: 1 }),
+      minutes: Duration.fromObject({ minutes: 1 }),
+      min: Duration.fromObject({ minutes: 1 }),
+      mins: Duration.fromObject({ minutes: 1 }),
+      m: Duration.fromObject({ minutes: 1 }),
+      second: Duration.fromObject({ seconds: 1 }),
+      seconds: Duration.fromObject({ seconds: 1 }),
+      sec: Duration.fromObject({ seconds: 1 }),
+      secs: Duration.fromObject({ seconds: 1 }),
+      s: Duration.fromObject({ seconds: 1 })
+    };
+    var DATE_SHORTHANDS = {
+      now: () => DateTime.local(),
+      today: () => DateTime.local().startOf("day"),
+      yesterday: () => DateTime.local().startOf("day").minus(Duration.fromObject({ days: 1 })),
+      tomorrow: () => DateTime.local().startOf("day").plus(Duration.fromObject({ days: 1 })),
+      sow: () => DateTime.local().startOf("week"),
+      "start-of-week": () => DateTime.local().startOf("week"),
+      eow: () => DateTime.local().endOf("week"),
+      "end-of-week": () => DateTime.local().endOf("week"),
+      soy: () => DateTime.local().startOf("year"),
+      "start-of-year": () => DateTime.local().startOf("year"),
+      eoy: () => DateTime.local().endOf("year"),
+      "end-of-year": () => DateTime.local().endOf("year"),
+      som: () => DateTime.local().startOf("month"),
+      "start-of-month": () => DateTime.local().startOf("month"),
+      eom: () => DateTime.local().endOf("month"),
+      "end-of-month": () => DateTime.local().endOf("month")
+    };
+    var KEYWORDS = ["FROM", "WHERE", "LIMIT", "GROUP", "FLATTEN"];
+    function splitOnUnescapedPipe(link) {
+      let pipe = -1;
+      while ((pipe = link.indexOf("|", pipe + 1)) >= 0) {
+        if (pipe > 0 && link[pipe - 1] == "\\")
+          continue;
+        return [link.substring(0, pipe).replace(/\\\|/g, "|"), link.substring(pipe + 1)];
+      }
+      return [link.replace(/\\\|/g, "|"), void 0];
+    }
+    function parseInnerLink(rawlink) {
+      let [link, display] = splitOnUnescapedPipe(rawlink);
+      return Link.infer(link, false, display);
+    }
+    function createBinaryParser(child, sep, combine) {
+      return parsimmon_umd_min.exports.seqMap(child, parsimmon_umd_min.exports.seq(parsimmon_umd_min.exports.optWhitespace, sep, parsimmon_umd_min.exports.optWhitespace, child).many(), (first, rest) => {
+        if (rest.length == 0)
+          return first;
+        let node = combine(first, rest[0][1], rest[0][3]);
+        for (let index = 1; index < rest.length; index++) {
+          node = combine(node, rest[index][1], rest[index][3]);
+        }
+        return node;
+      });
+    }
+    function chainOpt(base, ...funcs) {
+      return parsimmon_umd_min.exports.custom((success, failure) => {
+        return (input, i) => {
+          let result = base._(input, i);
+          if (!result.status)
+            return result;
+          for (let func of funcs) {
+            let next = func(result.value)._(input, result.index);
+            if (!next.status)
+              return result;
+            result = next;
+          }
+          return result;
+        };
+      });
+    }
+    var EXPRESSION = parsimmon_umd_min.exports.createLanguage({
+      // A floating point number; the decimal point is optional.
+      number: (q) => parsimmon_umd_min.exports.regexp(/-?[0-9]+(\.[0-9]+)?/).map((str) => Number.parseFloat(str)).desc("number"),
+      // A quote-surrounded string which supports escape characters ('\').
+      string: (q) => parsimmon_umd_min.exports.string('"').then(parsimmon_umd_min.exports.alt(q.escapeCharacter, parsimmon_umd_min.exports.noneOf('"\\')).atLeast(0).map((chars) => chars.join(""))).skip(parsimmon_umd_min.exports.string('"')).desc("string"),
+      escapeCharacter: (_) => parsimmon_umd_min.exports.string("\\").then(parsimmon_umd_min.exports.any).map((escaped) => {
+        if (escaped === '"')
+          return '"';
+        if (escaped === "\\")
+          return "\\";
+        else
+          return "\\" + escaped;
+      }),
+      // A boolean true/false value.
+      bool: (_) => parsimmon_umd_min.exports.regexp(/true|false|True|False/).map((str) => str.toLowerCase() == "true").desc("boolean ('true' or 'false')"),
+      // A tag of the form '#stuff/hello-there'.
+      tag: (_) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("#"), parsimmon_umd_min.exports.alt(parsimmon_umd_min.exports.regexp(/[^\u2000-\u206F\u2E00-\u2E7F'!"#$%&()*+,.:;<=>?@^`{|}~\[\]\\\s]/).desc("text")).many(), (start, rest) => start + rest.join("")).desc("tag ('#hello/stuff')"),
+      // A variable identifier, which is alphanumeric and must start with a letter or... emoji.
+      identifier: (_) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.alt(parsimmon_umd_min.exports.regexp(/\p{Letter}/u), parsimmon_umd_min.exports.regexp(EMOJI_REGEX).desc("text")), parsimmon_umd_min.exports.alt(parsimmon_umd_min.exports.regexp(/[0-9\p{Letter}_-]/u), parsimmon_umd_min.exports.regexp(EMOJI_REGEX).desc("text")).many(), (first, rest) => first + rest.join("")).desc("variable identifier"),
+      // An Obsidian link of the form [[<link>]].
+      link: (_) => parsimmon_umd_min.exports.regexp(/\[\[([^\[\]]*?)\]\]/u, 1).map((linkInner) => parseInnerLink(linkInner)).desc("file link"),
+      // An embeddable link which can start with '!'. This overlaps with the normal negation operator, so it is only
+      // provided for metadata parsing.
+      embedLink: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("!").atMost(1), q.link, (p, l2) => {
+        if (p.length > 0)
+          l2.embed = true;
+        return l2;
+      }).desc("file link"),
+      // Binary plus or minus operator.
+      binaryPlusMinus: (_) => parsimmon_umd_min.exports.regexp(/\+|-/).map((str) => str).desc("'+' or '-'"),
+      // Binary times or divide operator.
+      binaryMulDiv: (_) => parsimmon_umd_min.exports.regexp(/\*|\/|%/).map((str) => str).desc("'*' or '/' or '%'"),
+      // Binary comparison operator.
+      binaryCompareOp: (_) => parsimmon_umd_min.exports.regexp(/>=|<=|!=|>|<|=/).map((str) => str).desc("'>=' or '<=' or '!=' or '=' or '>' or '<'"),
+      // Binary boolean combination operator.
+      binaryBooleanOp: (_) => parsimmon_umd_min.exports.regexp(/and|or|&|\|/i).map((str) => {
+        if (str.toLowerCase() == "and")
+          return "&";
+        else if (str.toLowerCase() == "or")
+          return "|";
+        else
+          return str;
+      }).desc("'and' or 'or'"),
+      // A date which can be YYYY-MM[-DDTHH:mm:ss].
+      rootDate: (_) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.regexp(/\d{4}/), parsimmon_umd_min.exports.string("-"), parsimmon_umd_min.exports.regexp(/\d{2}/), (year, _2, month) => {
+        return DateTime.fromObject({ year: Number.parseInt(year), month: Number.parseInt(month) });
+      }).desc("date in format YYYY-MM[-DDTHH-MM-SS.MS]"),
+      dateShorthand: (_) => parsimmon_umd_min.exports.alt(...Object.keys(DATE_SHORTHANDS).sort((a, b) => b.length - a.length).map(parsimmon_umd_min.exports.string)),
+      date: (q) => chainOpt(q.rootDate, (ym) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("-"), parsimmon_umd_min.exports.regexp(/\d{2}/), (_, day) => ym.set({ day: Number.parseInt(day) })), (ymd) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("T"), parsimmon_umd_min.exports.regexp(/\d{2}/), (_, hour) => ymd.set({ hour: Number.parseInt(hour) })), (ymdh) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string(":"), parsimmon_umd_min.exports.regexp(/\d{2}/), (_, minute) => ymdh.set({ minute: Number.parseInt(minute) })), (ymdhm) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string(":"), parsimmon_umd_min.exports.regexp(/\d{2}/), (_, second) => ymdhm.set({ second: Number.parseInt(second) })), (ymdhms) => parsimmon_umd_min.exports.alt(
+        parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("."), parsimmon_umd_min.exports.regexp(/\d{3}/), (_, millisecond) => ymdhms.set({ millisecond: Number.parseInt(millisecond) })),
+        parsimmon_umd_min.exports.succeed(ymdhms)
+        // pass
+      ), (dt) => parsimmon_umd_min.exports.alt(parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("+").or(parsimmon_umd_min.exports.string("-")), parsimmon_umd_min.exports.regexp(/\d{1,2}(:\d{2})?/), (pm, hr) => dt.setZone("UTC" + pm + hr, { keepLocalTime: true })), parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("Z"), () => dt.setZone("utc", { keepLocalTime: true })), parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("["), parsimmon_umd_min.exports.regexp(/[0-9A-Za-z+-\/]+/u), parsimmon_umd_min.exports.string("]"), (_a, zone, _b) => dt.setZone(zone, { keepLocalTime: true })))).assert((dt) => dt.isValid, "valid date").desc("date in format YYYY-MM[-DDTHH-MM-SS.MS]"),
+      // A date, plus various shorthand times of day it could be.
+      datePlus: (q) => parsimmon_umd_min.exports.alt(q.dateShorthand.map((d) => DATE_SHORTHANDS[d]()), q.date).desc("date in format YYYY-MM[-DDTHH-MM-SS.MS] or in shorthand"),
+      // A duration of time.
+      durationType: (_) => parsimmon_umd_min.exports.alt(...Object.keys(DURATION_TYPES).sort((a, b) => b.length - a.length).map(parsimmon_umd_min.exports.string)),
+      duration: (q) => parsimmon_umd_min.exports.seqMap(q.number, parsimmon_umd_min.exports.optWhitespace, q.durationType, (count, _, t) => DURATION_TYPES[t].mapUnits((x) => x * count)).sepBy1(parsimmon_umd_min.exports.string(",").trim(parsimmon_umd_min.exports.optWhitespace).or(parsimmon_umd_min.exports.optWhitespace)).map((durations) => durations.reduce((p, c) => p.plus(c))).desc("duration like 4hr2min"),
+      // A raw null value.
+      rawNull: (_) => parsimmon_umd_min.exports.string("null"),
+      // Source parsing.
+      tagSource: (q) => q.tag.map((tag) => Sources.tag(tag)),
+      csvSource: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("csv(").skip(parsimmon_umd_min.exports.optWhitespace), q.string, parsimmon_umd_min.exports.string(")"), (_1, path, _2) => Sources.csv(path)),
+      linkIncomingSource: (q) => q.link.map((link) => Sources.link(link.path, true)),
+      linkOutgoingSource: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("outgoing(").skip(parsimmon_umd_min.exports.optWhitespace), q.link, parsimmon_umd_min.exports.string(")"), (_1, link, _2) => Sources.link(link.path, false)),
+      folderSource: (q) => q.string.map((str) => Sources.folder(str)),
+      parensSource: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("("), parsimmon_umd_min.exports.optWhitespace, q.source, parsimmon_umd_min.exports.optWhitespace, parsimmon_umd_min.exports.string(")"), (_1, _2, field, _3, _4) => field),
+      negateSource: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.alt(parsimmon_umd_min.exports.string("-"), parsimmon_umd_min.exports.string("!")), q.atomSource, (_, source) => Sources.negate(source)),
+      atomSource: (q) => parsimmon_umd_min.exports.alt(q.parensSource, q.negateSource, q.linkOutgoingSource, q.linkIncomingSource, q.folderSource, q.tagSource, q.csvSource),
+      binaryOpSource: (q) => createBinaryParser(q.atomSource, q.binaryBooleanOp.map((s2) => s2), Sources.binaryOp),
+      source: (q) => q.binaryOpSource,
+      // Field parsing.
+      variableField: (q) => q.identifier.chain((r) => {
+        if (KEYWORDS.includes(r.toUpperCase())) {
+          return parsimmon_umd_min.exports.fail("Variable fields cannot be a keyword (" + KEYWORDS.join(" or ") + ")");
+        } else {
+          return parsimmon_umd_min.exports.succeed(Fields.variable(r));
+        }
+      }).desc("variable"),
+      numberField: (q) => q.number.map((val) => Fields.literal(val)).desc("number"),
+      stringField: (q) => q.string.map((val) => Fields.literal(val)).desc("string"),
+      boolField: (q) => q.bool.map((val) => Fields.literal(val)).desc("boolean"),
+      dateField: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("date("), parsimmon_umd_min.exports.optWhitespace, q.datePlus, parsimmon_umd_min.exports.optWhitespace, parsimmon_umd_min.exports.string(")"), (prefix, _1, date, _2, postfix) => Fields.literal(date)).desc("date"),
+      durationField: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("dur("), parsimmon_umd_min.exports.optWhitespace, q.duration, parsimmon_umd_min.exports.optWhitespace, parsimmon_umd_min.exports.string(")"), (prefix, _1, dur, _2, postfix) => Fields.literal(dur)).desc("duration"),
+      nullField: (q) => q.rawNull.map((_) => Fields.NULL),
+      linkField: (q) => q.link.map((f) => Fields.literal(f)),
+      listField: (q) => q.field.sepBy(parsimmon_umd_min.exports.string(",").trim(parsimmon_umd_min.exports.optWhitespace)).wrap(parsimmon_umd_min.exports.string("[").skip(parsimmon_umd_min.exports.optWhitespace), parsimmon_umd_min.exports.optWhitespace.then(parsimmon_umd_min.exports.string("]"))).map((l2) => Fields.list(l2)).desc("list ('[1, 2, 3]')"),
+      objectField: (q) => parsimmon_umd_min.exports.seqMap(q.identifier.or(q.string), parsimmon_umd_min.exports.string(":").trim(parsimmon_umd_min.exports.optWhitespace), q.field, (name, _sep, value) => {
+        return { name, value };
+      }).sepBy(parsimmon_umd_min.exports.string(",").trim(parsimmon_umd_min.exports.optWhitespace)).wrap(parsimmon_umd_min.exports.string("{").skip(parsimmon_umd_min.exports.optWhitespace), parsimmon_umd_min.exports.optWhitespace.then(parsimmon_umd_min.exports.string("}"))).map((vals) => {
+        let res = {};
+        for (let entry of vals)
+          res[entry.name] = entry.value;
+        return Fields.object(res);
+      }).desc("object ('{ a: 1, b: 2 }')"),
+      atomInlineField: (q) => parsimmon_umd_min.exports.alt(q.date, q.duration.map((d) => normalizeDuration(d)), q.string, q.tag, q.embedLink, q.bool, q.number, q.rawNull),
+      inlineFieldList: (q) => q.atomInlineField.sepBy(parsimmon_umd_min.exports.string(",").trim(parsimmon_umd_min.exports.optWhitespace).lookahead(q.atomInlineField)),
+      inlineField: (q) => parsimmon_umd_min.exports.alt(parsimmon_umd_min.exports.seqMap(q.atomInlineField, parsimmon_umd_min.exports.string(",").trim(parsimmon_umd_min.exports.optWhitespace), q.inlineFieldList, (f, _s, l2) => [f].concat(l2)), q.atomInlineField),
+      atomField: (q) => parsimmon_umd_min.exports.alt(
+        // Place embed links above negated fields as they are the special parser case '![[thing]]' and are generally unambigious.
+        q.embedLink.map((l2) => Fields.literal(l2)),
+        q.negatedField,
+        q.linkField,
+        q.listField,
+        q.objectField,
+        q.lambdaField,
+        q.parensField,
+        q.boolField,
+        q.numberField,
+        q.stringField,
+        q.dateField,
+        q.durationField,
+        q.nullField,
+        q.variableField
+      ),
+      indexField: (q) => parsimmon_umd_min.exports.seqMap(q.atomField, parsimmon_umd_min.exports.alt(q.dotPostfix, q.indexPostfix, q.functionPostfix).many(), (obj, postfixes) => {
+        let result = obj;
+        for (let post of postfixes) {
+          switch (post.type) {
+            case "dot":
+              result = Fields.index(result, Fields.literal(post.field));
+              break;
+            case "index":
+              result = Fields.index(result, post.field);
+              break;
+            case "function":
+              result = Fields.func(result, post.fields);
+              break;
+          }
+        }
+        return result;
+      }),
+      negatedField: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("!"), q.indexField, (_, field) => Fields.negate(field)).desc("negated field"),
+      parensField: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("("), parsimmon_umd_min.exports.optWhitespace, q.field, parsimmon_umd_min.exports.optWhitespace, parsimmon_umd_min.exports.string(")"), (_1, _2, field, _3, _4) => field),
+      lambdaField: (q) => parsimmon_umd_min.exports.seqMap(q.identifier.sepBy(parsimmon_umd_min.exports.string(",").trim(parsimmon_umd_min.exports.optWhitespace)).wrap(parsimmon_umd_min.exports.string("(").trim(parsimmon_umd_min.exports.optWhitespace), parsimmon_umd_min.exports.string(")").trim(parsimmon_umd_min.exports.optWhitespace)), parsimmon_umd_min.exports.string("=>").trim(parsimmon_umd_min.exports.optWhitespace), q.field, (ident, _ignore, value) => {
+        return { type: "lambda", arguments: ident, value };
+      }),
+      dotPostfix: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("."), q.identifier, (_, field) => {
+        return { type: "dot", field };
+      }),
+      indexPostfix: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("["), parsimmon_umd_min.exports.optWhitespace, q.field, parsimmon_umd_min.exports.optWhitespace, parsimmon_umd_min.exports.string("]"), (_, _2, field, _3, _4) => {
+        return { type: "index", field };
+      }),
+      functionPostfix: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.string("("), parsimmon_umd_min.exports.optWhitespace, q.field.sepBy(parsimmon_umd_min.exports.string(",").trim(parsimmon_umd_min.exports.optWhitespace)), parsimmon_umd_min.exports.optWhitespace, parsimmon_umd_min.exports.string(")"), (_, _1, fields, _2, _3) => {
+        return { type: "function", fields };
+      }),
+      // The precedence hierarchy of operators - multiply/divide, add/subtract, compare, and then boolean operations.
+      binaryMulDivField: (q) => createBinaryParser(q.indexField, q.binaryMulDiv, Fields.binaryOp),
+      binaryPlusMinusField: (q) => createBinaryParser(q.binaryMulDivField, q.binaryPlusMinus, Fields.binaryOp),
+      binaryCompareField: (q) => createBinaryParser(q.binaryPlusMinusField, q.binaryCompareOp, Fields.binaryOp),
+      binaryBooleanField: (q) => createBinaryParser(q.binaryCompareField, q.binaryBooleanOp, Fields.binaryOp),
+      binaryOpField: (q) => q.binaryBooleanField,
+      field: (q) => q.binaryOpField
+    });
+    function parseField(text2) {
+      try {
+        return Result.success(EXPRESSION.field.tryParse(text2));
+      } catch (error) {
+        return Result.failure("" + error);
+      }
+    }
+    var QueryFields;
+    (function(QueryFields2) {
+      function named(name, field) {
+        return { name, field };
+      }
+      QueryFields2.named = named;
+      function sortBy(field, dir) {
+        return { field, direction: dir };
+      }
+      QueryFields2.sortBy = sortBy;
+    })(QueryFields || (QueryFields = {}));
+    function captureRaw(base) {
+      return parsimmon_umd_min.exports.custom((success, failure) => {
+        return (input, i) => {
+          let result = base._(input, i);
+          if (!result.status)
+            return result;
+          return Object.assign({}, result, { value: [result.value, input.substring(i, result.index)] });
+        };
+      });
+    }
+    function stripNewlines(text2) {
+      return text2.split(/[\r\n]+/).map((t) => t.trim()).join("");
+    }
+    var QUERY_LANGUAGE = parsimmon_umd_min.exports.createLanguage({
+      // Simple atom parsing, like words, identifiers, numbers.
+      queryType: (q) => parsimmon_umd_min.exports.alt(parsimmon_umd_min.exports.regexp(/TABLE|LIST|TASK|CALENDAR/i)).map((str) => str.toLowerCase()).desc("query type ('TABLE', 'LIST', 'TASK', or 'CALENDAR')"),
+      explicitNamedField: (q) => parsimmon_umd_min.exports.seqMap(EXPRESSION.field.skip(parsimmon_umd_min.exports.whitespace), parsimmon_umd_min.exports.regexp(/AS/i).skip(parsimmon_umd_min.exports.whitespace), EXPRESSION.identifier.or(EXPRESSION.string), (field, _as, ident) => QueryFields.named(ident, field)),
+      namedField: (q) => parsimmon_umd_min.exports.alt(q.explicitNamedField, captureRaw(EXPRESSION.field).map(([value, text2]) => QueryFields.named(stripNewlines(text2), value))),
+      sortField: (q) => parsimmon_umd_min.exports.seqMap(EXPRESSION.field.skip(parsimmon_umd_min.exports.optWhitespace), parsimmon_umd_min.exports.regexp(/ASCENDING|DESCENDING|ASC|DESC/i).atMost(1), (field, dir) => {
+        let direction = dir.length == 0 ? "ascending" : dir[0].toLowerCase();
+        if (direction == "desc")
+          direction = "descending";
+        if (direction == "asc")
+          direction = "ascending";
+        return {
+          field,
+          direction
+        };
+      }),
+      headerClause: (q) => q.queryType.skip(parsimmon_umd_min.exports.whitespace).chain((qtype) => {
+        switch (qtype) {
+          case "table":
+            return parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.regexp(/WITHOUT\s+ID/i).skip(parsimmon_umd_min.exports.optWhitespace).atMost(1), parsimmon_umd_min.exports.sepBy(q.namedField, parsimmon_umd_min.exports.string(",").trim(parsimmon_umd_min.exports.optWhitespace)), (withoutId, fields) => {
+              return { type: "table", fields, showId: withoutId.length == 0 };
+            });
+          case "list":
+            return parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.regexp(/WITHOUT\s+ID/i).skip(parsimmon_umd_min.exports.optWhitespace).atMost(1), EXPRESSION.field.atMost(1), (withoutId, format) => {
+              return {
+                type: "list",
+                format: format.length == 1 ? format[0] : void 0,
+                showId: withoutId.length == 0
+              };
+            });
+          case "task":
+            return parsimmon_umd_min.exports.succeed({ type: "task" });
+          case "calendar":
+            return parsimmon_umd_min.exports.seqMap(q.namedField, (field) => {
+              return {
+                type: "calendar",
+                showId: true,
+                field
+              };
+            });
+          default:
+            return parsimmon_umd_min.exports.fail(`Unrecognized query type '${qtype}'`);
+        }
+      }).desc("TABLE or LIST or TASK or CALENDAR"),
+      fromClause: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.regexp(/FROM/i), parsimmon_umd_min.exports.whitespace, EXPRESSION.source, (_1, _2, source) => source),
+      whereClause: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.regexp(/WHERE/i), parsimmon_umd_min.exports.whitespace, EXPRESSION.field, (where, _, field) => {
+        return { type: "where", clause: field };
+      }).desc("WHERE <expression>"),
+      sortByClause: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.regexp(/SORT/i), parsimmon_umd_min.exports.whitespace, q.sortField.sepBy1(parsimmon_umd_min.exports.string(",").trim(parsimmon_umd_min.exports.optWhitespace)), (sort, _1, fields) => {
+        return { type: "sort", fields };
+      }).desc("SORT field [ASC/DESC]"),
+      limitClause: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.regexp(/LIMIT/i), parsimmon_umd_min.exports.whitespace, EXPRESSION.field, (limit, _1, field) => {
+        return { type: "limit", amount: field };
+      }).desc("LIMIT <value>"),
+      flattenClause: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.regexp(/FLATTEN/i).skip(parsimmon_umd_min.exports.whitespace), q.namedField, (_, field) => {
+        return { type: "flatten", field };
+      }).desc("FLATTEN <value> [AS <name>]"),
+      groupByClause: (q) => parsimmon_umd_min.exports.seqMap(parsimmon_umd_min.exports.regexp(/GROUP BY/i).skip(parsimmon_umd_min.exports.whitespace), q.namedField, (_, field) => {
+        return { type: "group", field };
+      }).desc("GROUP BY <value> [AS <name>]"),
+      // Full query parsing.
+      clause: (q) => parsimmon_umd_min.exports.alt(q.fromClause, q.whereClause, q.sortByClause, q.limitClause, q.groupByClause, q.flattenClause),
+      query: (q) => parsimmon_umd_min.exports.seqMap(q.headerClause.trim(parsimmon_umd_min.exports.optWhitespace), q.fromClause.trim(parsimmon_umd_min.exports.optWhitespace).atMost(1), q.clause.trim(parsimmon_umd_min.exports.optWhitespace).many(), (header, from, clauses) => {
+        return {
+          header,
+          source: from.length == 0 ? Sources.folder("") : from[0],
+          operations: clauses,
+          settings: DEFAULT_QUERY_SETTINGS
+        };
+      })
+    });
+    var getAPI2 = (app) => {
+      var _a;
+      if (app)
+        return (_a = app.plugins.plugins.dataview) === null || _a === void 0 ? void 0 : _a.api;
+      else
+        return window.DataviewAPI;
+    };
+    var isPluginEnabled = (app) => app.plugins.enabledPlugins.has("dataview");
+    exports.DATE_SHORTHANDS = DATE_SHORTHANDS;
+    exports.DURATION_TYPES = DURATION_TYPES;
+    exports.EXPRESSION = EXPRESSION;
+    exports.KEYWORDS = KEYWORDS;
+    exports.QUERY_LANGUAGE = QUERY_LANGUAGE;
+    exports.getAPI = getAPI2;
+    exports.isPluginEnabled = isPluginEnabled;
+    exports.parseField = parseField;
+  }
+});
+
+// node_modules/typed-assert/build/index.js
+var require_build = __commonJS({
+  "node_modules/typed-assert/build/index.js"(exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    exports.check = exports.isPromise = exports.isInstanceOf = exports.isOneOfType = exports.isOneOf = exports.isOptionOfType = exports.isArrayOfType = exports.isRecordOfType = exports.isArray = exports.isRecordWithKeys = exports.isRecord = exports.isDate = exports.isString = exports.isNumber = exports.isBoolean = exports.isExactly = exports.isNotVoid = exports.isNotUndefined = exports.isNotNull = exports.isNever = exports.isUnknown = exports.safeJsonParse = exports.setBaseAssert = exports.assert = exports.defaultAssert = void 0;
+    var expectedToBe = (type) => `expected to be ${type}`;
+    var defaultAssert = (condition, message) => {
+      if (!condition) {
+        throw new TypeError(message);
+      }
+    };
+    exports.defaultAssert = defaultAssert;
+    var baseAssert = exports.defaultAssert;
+    var assert = (condition, message) => baseAssert(condition, message);
+    exports.assert = assert;
+    function setBaseAssert(assert2) {
+      if (assert2) {
+        baseAssert = assert2;
+      }
+    }
+    exports.setBaseAssert = setBaseAssert;
+    var safeJsonParse = (json) => JSON.parse(json);
+    exports.safeJsonParse = safeJsonParse;
+    function isUnknown(_input) {
+      return true;
+    }
+    exports.isUnknown = isUnknown;
+    function isNever(_input, message = expectedToBe("unreachable")) {
+      throw new TypeError(message);
+    }
+    exports.isNever = isNever;
+    function isNotNull(input, message = expectedToBe("not null")) {
+      (0, exports.assert)(input !== null, message);
+    }
+    exports.isNotNull = isNotNull;
+    function isNotUndefined(input, message = expectedToBe("not undefined")) {
+      (0, exports.assert)(input !== void 0, message);
+    }
+    exports.isNotUndefined = isNotUndefined;
+    function isNotVoid(input, message = expectedToBe("neither null nor undefined")) {
+      (0, exports.assert)(input !== null && input !== void 0, message);
+    }
+    exports.isNotVoid = isNotVoid;
+    function isExactly(input, value, message = expectedToBe(`exactly ${value}`)) {
+      (0, exports.assert)(input === value, message);
+    }
+    exports.isExactly = isExactly;
+    function isBoolean(input, message = expectedToBe("a boolean")) {
+      (0, exports.assert)(typeof input === "boolean", message);
+    }
+    exports.isBoolean = isBoolean;
+    function isNumber(input, message = expectedToBe("a number")) {
+      (0, exports.assert)(typeof input === "number", message);
+    }
+    exports.isNumber = isNumber;
+    function isString(input, message = expectedToBe("a string")) {
+      (0, exports.assert)(typeof input === "string", message);
+    }
+    exports.isString = isString;
+    function isDate(input, message = expectedToBe("a Date")) {
+      (0, exports.assert)(input instanceof Date, message);
+    }
+    exports.isDate = isDate;
+    function isRecord(input, message = expectedToBe("a record")) {
+      (0, exports.assert)(typeof input === "object", message);
+      isNotNull(input, message);
+      for (const key of Object.keys(input)) {
+        isString(key, message);
+      }
+    }
+    exports.isRecord = isRecord;
+    function isRecordWithKeys(input, keys, message = expectedToBe(`a record with keys ${keys.join(", ")}`)) {
+      isRecord(input, message);
+      for (const key of keys) {
+        isNotUndefined(input[key]);
+      }
+    }
+    exports.isRecordWithKeys = isRecordWithKeys;
+    function isArray(input, message = expectedToBe("an array")) {
+      (0, exports.assert)(Array.isArray(input), message);
+    }
+    exports.isArray = isArray;
+    function isRecordOfType(input, assertT, message = expectedToBe("a record of given type"), itemMessage = expectedToBe("of given type")) {
+      isRecord(input, message);
+      for (const item of Object.values(input)) {
+        assertT(item, itemMessage);
+      }
+    }
+    exports.isRecordOfType = isRecordOfType;
+    function isArrayOfType(input, assertT, message = expectedToBe("an array of given type"), itemMessage = expectedToBe("of given type")) {
+      isArray(input, message);
+      for (const item of input) {
+        assertT(item, itemMessage);
+      }
+    }
+    exports.isArrayOfType = isArrayOfType;
+    function isOptionOfType(input, assertT, message = expectedToBe("option of given type")) {
+      if (input === void 0) {
+        return;
+      }
+      assertT(input, message);
+    }
+    exports.isOptionOfType = isOptionOfType;
+    function isOneOf(input, values, message = expectedToBe(`one of ${values.join(", ")}`)) {
+      (0, exports.assert)(values.includes(input), message);
+    }
+    exports.isOneOf = isOneOf;
+    function isOneOfType(input, assertT, message = expectedToBe(`one of type`), itemMessage) {
+      for (const assert2 of assertT) {
+        try {
+          assert2(input, itemMessage);
+          return;
+        } catch (_) {
+        }
+      }
+      throw new TypeError(message);
+    }
+    exports.isOneOfType = isOneOfType;
+    function isInstanceOf2(input, constructor, message = expectedToBe("an instance of given constructor")) {
+      (0, exports.assert)(input instanceof constructor, message);
+    }
+    exports.isInstanceOf = isInstanceOf2;
+    function isPromise(input, message = expectedToBe("a promise")) {
+      isInstanceOf2(input, Promise, message);
+    }
+    exports.isPromise = isPromise;
+    function check(assertT) {
+      return (input) => {
+        try {
+          assertT(input);
+          return true;
+        } catch (_) {
+          return false;
+        }
+      };
+    }
+    exports.check = check;
   }
 });
 
@@ -4739,7 +12360,7 @@ var require_baseConvert = __commonJS({
           return baseArity(rearg(baseAry(func3, n), indexes), n);
         });
       }
-      function overArg(func2, transform) {
+      function overArg(func2, transform2) {
         return function() {
           var length = arguments.length;
           if (!length) {
@@ -4750,7 +12371,7 @@ var require_baseConvert = __commonJS({
             args[length] = arguments[length];
           }
           var index = config.rearg ? 0 : length - 1;
-          args[index] = transform(args[index]);
+          args[index] = transform2(args[index]);
           return func2.apply(void 0, args);
         };
       }
@@ -4839,144 +12460,5483 @@ var require_fp = __commonJS({
   }
 });
 
-// node_modules/typed-assert/build/index.js
-var require_build = __commonJS({
-  "node_modules/typed-assert/build/index.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.check = exports.isPromise = exports.isInstanceOf = exports.isOneOfType = exports.isOneOf = exports.isOptionOfType = exports.isArrayOfType = exports.isRecordOfType = exports.isArray = exports.isRecordWithKeys = exports.isRecord = exports.isDate = exports.isString = exports.isNumber = exports.isBoolean = exports.isExactly = exports.isNotVoid = exports.isNotUndefined = exports.isNotNull = exports.isNever = exports.isUnknown = exports.safeJsonParse = exports.setBaseAssert = exports.assert = exports.defaultAssert = void 0;
-    var expectedToBe = (type) => `expected to be ${type}`;
-    var defaultAssert = (condition, message) => {
-      if (!condition) {
-        throw new TypeError(message);
-      }
-    };
-    exports.defaultAssert = defaultAssert;
-    var baseAssert = exports.defaultAssert;
-    var assert = (condition, message) => baseAssert(condition, message);
-    exports.assert = assert;
-    function setBaseAssert(assert2) {
-      if (assert2) {
-        baseAssert = assert2;
-      }
-    }
-    exports.setBaseAssert = setBaseAssert;
-    var safeJsonParse = (json) => JSON.parse(json);
-    exports.safeJsonParse = safeJsonParse;
-    function isUnknown(_input) {
-      return true;
-    }
-    exports.isUnknown = isUnknown;
-    function isNever(_input, message = expectedToBe("unreachable")) {
-      throw new TypeError(message);
-    }
-    exports.isNever = isNever;
-    function isNotNull(input, message = expectedToBe("not null")) {
-      (0, exports.assert)(input !== null, message);
-    }
-    exports.isNotNull = isNotNull;
-    function isNotUndefined(input, message = expectedToBe("not undefined")) {
-      (0, exports.assert)(input !== void 0, message);
-    }
-    exports.isNotUndefined = isNotUndefined;
-    function isNotVoid2(input, message = expectedToBe("neither null nor undefined")) {
-      (0, exports.assert)(input !== null && input !== void 0, message);
-    }
-    exports.isNotVoid = isNotVoid2;
-    function isExactly(input, value, message = expectedToBe(`exactly ${value}`)) {
-      (0, exports.assert)(input === value, message);
-    }
-    exports.isExactly = isExactly;
-    function isBoolean(input, message = expectedToBe("a boolean")) {
-      (0, exports.assert)(typeof input === "boolean", message);
-    }
-    exports.isBoolean = isBoolean;
-    function isNumber(input, message = expectedToBe("a number")) {
-      (0, exports.assert)(typeof input === "number", message);
-    }
-    exports.isNumber = isNumber;
-    function isString(input, message = expectedToBe("a string")) {
-      (0, exports.assert)(typeof input === "string", message);
-    }
-    exports.isString = isString;
-    function isDate(input, message = expectedToBe("a Date")) {
-      (0, exports.assert)(input instanceof Date, message);
-    }
-    exports.isDate = isDate;
-    function isRecord(input, message = expectedToBe("a record")) {
-      (0, exports.assert)(typeof input === "object", message);
-      isNotNull(input, message);
-      for (const key of Object.keys(input)) {
-        isString(key, message);
-      }
-    }
-    exports.isRecord = isRecord;
-    function isRecordWithKeys(input, keys, message = expectedToBe(`a record with keys ${keys.join(", ")}`)) {
-      isRecord(input, message);
-      for (const key of keys) {
-        isNotUndefined(input[key]);
-      }
-    }
-    exports.isRecordWithKeys = isRecordWithKeys;
-    function isArray(input, message = expectedToBe("an array")) {
-      (0, exports.assert)(Array.isArray(input), message);
-    }
-    exports.isArray = isArray;
-    function isRecordOfType(input, assertT, message = expectedToBe("a record of given type"), itemMessage = expectedToBe("of given type")) {
-      isRecord(input, message);
-      for (const item of Object.values(input)) {
-        assertT(item, itemMessage);
-      }
-    }
-    exports.isRecordOfType = isRecordOfType;
-    function isArrayOfType(input, assertT, message = expectedToBe("an array of given type"), itemMessage = expectedToBe("of given type")) {
-      isArray(input, message);
-      for (const item of input) {
-        assertT(item, itemMessage);
-      }
-    }
-    exports.isArrayOfType = isArrayOfType;
-    function isOptionOfType(input, assertT, message = expectedToBe("option of given type")) {
-      if (input === void 0) {
-        return;
-      }
-      assertT(input, message);
-    }
-    exports.isOptionOfType = isOptionOfType;
-    function isOneOf(input, values, message = expectedToBe(`one of ${values.join(", ")}`)) {
-      (0, exports.assert)(values.includes(input), message);
-    }
-    exports.isOneOf = isOneOf;
-    function isOneOfType(input, assertT, message = expectedToBe(`one of type`), itemMessage) {
-      for (const assert2 of assertT) {
+// node_modules/lodash/lodash.js
+var require_lodash = __commonJS({
+  "node_modules/lodash/lodash.js"(exports, module2) {
+    (function() {
+      var undefined2;
+      var VERSION = "4.17.21";
+      var LARGE_ARRAY_SIZE = 200;
+      var CORE_ERROR_TEXT = "Unsupported core-js use. Try https://npms.io/search?q=ponyfill.", FUNC_ERROR_TEXT = "Expected a function", INVALID_TEMPL_VAR_ERROR_TEXT = "Invalid `variable` option passed into `_.template`";
+      var HASH_UNDEFINED = "__lodash_hash_undefined__";
+      var MAX_MEMOIZE_SIZE = 500;
+      var PLACEHOLDER = "__lodash_placeholder__";
+      var CLONE_DEEP_FLAG = 1, CLONE_FLAT_FLAG = 2, CLONE_SYMBOLS_FLAG = 4;
+      var COMPARE_PARTIAL_FLAG = 1, COMPARE_UNORDERED_FLAG = 2;
+      var WRAP_BIND_FLAG = 1, WRAP_BIND_KEY_FLAG = 2, WRAP_CURRY_BOUND_FLAG = 4, WRAP_CURRY_FLAG = 8, WRAP_CURRY_RIGHT_FLAG = 16, WRAP_PARTIAL_FLAG = 32, WRAP_PARTIAL_RIGHT_FLAG = 64, WRAP_ARY_FLAG = 128, WRAP_REARG_FLAG = 256, WRAP_FLIP_FLAG = 512;
+      var DEFAULT_TRUNC_LENGTH = 30, DEFAULT_TRUNC_OMISSION = "...";
+      var HOT_COUNT = 800, HOT_SPAN = 16;
+      var LAZY_FILTER_FLAG = 1, LAZY_MAP_FLAG = 2, LAZY_WHILE_FLAG = 3;
+      var INFINITY = 1 / 0, MAX_SAFE_INTEGER = 9007199254740991, MAX_INTEGER = 17976931348623157e292, NAN = 0 / 0;
+      var MAX_ARRAY_LENGTH = 4294967295, MAX_ARRAY_INDEX = MAX_ARRAY_LENGTH - 1, HALF_MAX_ARRAY_LENGTH = MAX_ARRAY_LENGTH >>> 1;
+      var wrapFlags = [
+        ["ary", WRAP_ARY_FLAG],
+        ["bind", WRAP_BIND_FLAG],
+        ["bindKey", WRAP_BIND_KEY_FLAG],
+        ["curry", WRAP_CURRY_FLAG],
+        ["curryRight", WRAP_CURRY_RIGHT_FLAG],
+        ["flip", WRAP_FLIP_FLAG],
+        ["partial", WRAP_PARTIAL_FLAG],
+        ["partialRight", WRAP_PARTIAL_RIGHT_FLAG],
+        ["rearg", WRAP_REARG_FLAG]
+      ];
+      var argsTag = "[object Arguments]", arrayTag = "[object Array]", asyncTag = "[object AsyncFunction]", boolTag = "[object Boolean]", dateTag = "[object Date]", domExcTag = "[object DOMException]", errorTag = "[object Error]", funcTag = "[object Function]", genTag = "[object GeneratorFunction]", mapTag = "[object Map]", numberTag = "[object Number]", nullTag = "[object Null]", objectTag = "[object Object]", promiseTag = "[object Promise]", proxyTag = "[object Proxy]", regexpTag = "[object RegExp]", setTag = "[object Set]", stringTag = "[object String]", symbolTag = "[object Symbol]", undefinedTag = "[object Undefined]", weakMapTag = "[object WeakMap]", weakSetTag = "[object WeakSet]";
+      var arrayBufferTag = "[object ArrayBuffer]", dataViewTag = "[object DataView]", float32Tag = "[object Float32Array]", float64Tag = "[object Float64Array]", int8Tag = "[object Int8Array]", int16Tag = "[object Int16Array]", int32Tag = "[object Int32Array]", uint8Tag = "[object Uint8Array]", uint8ClampedTag = "[object Uint8ClampedArray]", uint16Tag = "[object Uint16Array]", uint32Tag = "[object Uint32Array]";
+      var reEmptyStringLeading = /\b__p \+= '';/g, reEmptyStringMiddle = /\b(__p \+=) '' \+/g, reEmptyStringTrailing = /(__e\(.*?\)|\b__t\)) \+\n'';/g;
+      var reEscapedHtml = /&(?:amp|lt|gt|quot|#39);/g, reUnescapedHtml = /[&<>"']/g, reHasEscapedHtml = RegExp(reEscapedHtml.source), reHasUnescapedHtml = RegExp(reUnescapedHtml.source);
+      var reEscape = /<%-([\s\S]+?)%>/g, reEvaluate = /<%([\s\S]+?)%>/g, reInterpolate = /<%=([\s\S]+?)%>/g;
+      var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/, reIsPlainProp = /^\w*$/, rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
+      var reRegExpChar = /[\\^$.*+?()[\]{}|]/g, reHasRegExpChar = RegExp(reRegExpChar.source);
+      var reTrimStart = /^\s+/;
+      var reWhitespace = /\s/;
+      var reWrapComment = /\{(?:\n\/\* \[wrapped with .+\] \*\/)?\n?/, reWrapDetails = /\{\n\/\* \[wrapped with (.+)\] \*/, reSplitDetails = /,? & /;
+      var reAsciiWord = /[^\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]+/g;
+      var reForbiddenIdentifierChars = /[()=,{}\[\]\/\s]/;
+      var reEscapeChar = /\\(\\)?/g;
+      var reEsTemplate = /\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g;
+      var reFlags = /\w*$/;
+      var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
+      var reIsBinary = /^0b[01]+$/i;
+      var reIsHostCtor = /^\[object .+?Constructor\]$/;
+      var reIsOctal = /^0o[0-7]+$/i;
+      var reIsUint = /^(?:0|[1-9]\d*)$/;
+      var reLatin = /[\xc0-\xd6\xd8-\xf6\xf8-\xff\u0100-\u017f]/g;
+      var reNoMatch = /($^)/;
+      var reUnescapedString = /['\n\r\u2028\u2029\\]/g;
+      var rsAstralRange = "\\ud800-\\udfff", rsComboMarksRange = "\\u0300-\\u036f", reComboHalfMarksRange = "\\ufe20-\\ufe2f", rsComboSymbolsRange = "\\u20d0-\\u20ff", rsComboRange = rsComboMarksRange + reComboHalfMarksRange + rsComboSymbolsRange, rsDingbatRange = "\\u2700-\\u27bf", rsLowerRange = "a-z\\xdf-\\xf6\\xf8-\\xff", rsMathOpRange = "\\xac\\xb1\\xd7\\xf7", rsNonCharRange = "\\x00-\\x2f\\x3a-\\x40\\x5b-\\x60\\x7b-\\xbf", rsPunctuationRange = "\\u2000-\\u206f", rsSpaceRange = " \\t\\x0b\\f\\xa0\\ufeff\\n\\r\\u2028\\u2029\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u202f\\u205f\\u3000", rsUpperRange = "A-Z\\xc0-\\xd6\\xd8-\\xde", rsVarRange = "\\ufe0e\\ufe0f", rsBreakRange = rsMathOpRange + rsNonCharRange + rsPunctuationRange + rsSpaceRange;
+      var rsApos = "['\u2019]", rsAstral = "[" + rsAstralRange + "]", rsBreak = "[" + rsBreakRange + "]", rsCombo = "[" + rsComboRange + "]", rsDigits = "\\d+", rsDingbat = "[" + rsDingbatRange + "]", rsLower = "[" + rsLowerRange + "]", rsMisc = "[^" + rsAstralRange + rsBreakRange + rsDigits + rsDingbatRange + rsLowerRange + rsUpperRange + "]", rsFitz = "\\ud83c[\\udffb-\\udfff]", rsModifier = "(?:" + rsCombo + "|" + rsFitz + ")", rsNonAstral = "[^" + rsAstralRange + "]", rsRegional = "(?:\\ud83c[\\udde6-\\uddff]){2}", rsSurrPair = "[\\ud800-\\udbff][\\udc00-\\udfff]", rsUpper = "[" + rsUpperRange + "]", rsZWJ = "\\u200d";
+      var rsMiscLower = "(?:" + rsLower + "|" + rsMisc + ")", rsMiscUpper = "(?:" + rsUpper + "|" + rsMisc + ")", rsOptContrLower = "(?:" + rsApos + "(?:d|ll|m|re|s|t|ve))?", rsOptContrUpper = "(?:" + rsApos + "(?:D|LL|M|RE|S|T|VE))?", reOptMod = rsModifier + "?", rsOptVar = "[" + rsVarRange + "]?", rsOptJoin = "(?:" + rsZWJ + "(?:" + [rsNonAstral, rsRegional, rsSurrPair].join("|") + ")" + rsOptVar + reOptMod + ")*", rsOrdLower = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])", rsOrdUpper = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])", rsSeq = rsOptVar + reOptMod + rsOptJoin, rsEmoji = "(?:" + [rsDingbat, rsRegional, rsSurrPair].join("|") + ")" + rsSeq, rsSymbol = "(?:" + [rsNonAstral + rsCombo + "?", rsCombo, rsRegional, rsSurrPair, rsAstral].join("|") + ")";
+      var reApos = RegExp(rsApos, "g");
+      var reComboMark = RegExp(rsCombo, "g");
+      var reUnicode = RegExp(rsFitz + "(?=" + rsFitz + ")|" + rsSymbol + rsSeq, "g");
+      var reUnicodeWord = RegExp([
+        rsUpper + "?" + rsLower + "+" + rsOptContrLower + "(?=" + [rsBreak, rsUpper, "$"].join("|") + ")",
+        rsMiscUpper + "+" + rsOptContrUpper + "(?=" + [rsBreak, rsUpper + rsMiscLower, "$"].join("|") + ")",
+        rsUpper + "?" + rsMiscLower + "+" + rsOptContrLower,
+        rsUpper + "+" + rsOptContrUpper,
+        rsOrdUpper,
+        rsOrdLower,
+        rsDigits,
+        rsEmoji
+      ].join("|"), "g");
+      var reHasUnicode = RegExp("[" + rsZWJ + rsAstralRange + rsComboRange + rsVarRange + "]");
+      var reHasUnicodeWord = /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/;
+      var contextProps = [
+        "Array",
+        "Buffer",
+        "DataView",
+        "Date",
+        "Error",
+        "Float32Array",
+        "Float64Array",
+        "Function",
+        "Int8Array",
+        "Int16Array",
+        "Int32Array",
+        "Map",
+        "Math",
+        "Object",
+        "Promise",
+        "RegExp",
+        "Set",
+        "String",
+        "Symbol",
+        "TypeError",
+        "Uint8Array",
+        "Uint8ClampedArray",
+        "Uint16Array",
+        "Uint32Array",
+        "WeakMap",
+        "_",
+        "clearTimeout",
+        "isFinite",
+        "parseInt",
+        "setTimeout"
+      ];
+      var templateCounter = -1;
+      var typedArrayTags = {};
+      typedArrayTags[float32Tag] = typedArrayTags[float64Tag] = typedArrayTags[int8Tag] = typedArrayTags[int16Tag] = typedArrayTags[int32Tag] = typedArrayTags[uint8Tag] = typedArrayTags[uint8ClampedTag] = typedArrayTags[uint16Tag] = typedArrayTags[uint32Tag] = true;
+      typedArrayTags[argsTag] = typedArrayTags[arrayTag] = typedArrayTags[arrayBufferTag] = typedArrayTags[boolTag] = typedArrayTags[dataViewTag] = typedArrayTags[dateTag] = typedArrayTags[errorTag] = typedArrayTags[funcTag] = typedArrayTags[mapTag] = typedArrayTags[numberTag] = typedArrayTags[objectTag] = typedArrayTags[regexpTag] = typedArrayTags[setTag] = typedArrayTags[stringTag] = typedArrayTags[weakMapTag] = false;
+      var cloneableTags = {};
+      cloneableTags[argsTag] = cloneableTags[arrayTag] = cloneableTags[arrayBufferTag] = cloneableTags[dataViewTag] = cloneableTags[boolTag] = cloneableTags[dateTag] = cloneableTags[float32Tag] = cloneableTags[float64Tag] = cloneableTags[int8Tag] = cloneableTags[int16Tag] = cloneableTags[int32Tag] = cloneableTags[mapTag] = cloneableTags[numberTag] = cloneableTags[objectTag] = cloneableTags[regexpTag] = cloneableTags[setTag] = cloneableTags[stringTag] = cloneableTags[symbolTag] = cloneableTags[uint8Tag] = cloneableTags[uint8ClampedTag] = cloneableTags[uint16Tag] = cloneableTags[uint32Tag] = true;
+      cloneableTags[errorTag] = cloneableTags[funcTag] = cloneableTags[weakMapTag] = false;
+      var deburredLetters = {
+        // Latin-1 Supplement block.
+        "\xC0": "A",
+        "\xC1": "A",
+        "\xC2": "A",
+        "\xC3": "A",
+        "\xC4": "A",
+        "\xC5": "A",
+        "\xE0": "a",
+        "\xE1": "a",
+        "\xE2": "a",
+        "\xE3": "a",
+        "\xE4": "a",
+        "\xE5": "a",
+        "\xC7": "C",
+        "\xE7": "c",
+        "\xD0": "D",
+        "\xF0": "d",
+        "\xC8": "E",
+        "\xC9": "E",
+        "\xCA": "E",
+        "\xCB": "E",
+        "\xE8": "e",
+        "\xE9": "e",
+        "\xEA": "e",
+        "\xEB": "e",
+        "\xCC": "I",
+        "\xCD": "I",
+        "\xCE": "I",
+        "\xCF": "I",
+        "\xEC": "i",
+        "\xED": "i",
+        "\xEE": "i",
+        "\xEF": "i",
+        "\xD1": "N",
+        "\xF1": "n",
+        "\xD2": "O",
+        "\xD3": "O",
+        "\xD4": "O",
+        "\xD5": "O",
+        "\xD6": "O",
+        "\xD8": "O",
+        "\xF2": "o",
+        "\xF3": "o",
+        "\xF4": "o",
+        "\xF5": "o",
+        "\xF6": "o",
+        "\xF8": "o",
+        "\xD9": "U",
+        "\xDA": "U",
+        "\xDB": "U",
+        "\xDC": "U",
+        "\xF9": "u",
+        "\xFA": "u",
+        "\xFB": "u",
+        "\xFC": "u",
+        "\xDD": "Y",
+        "\xFD": "y",
+        "\xFF": "y",
+        "\xC6": "Ae",
+        "\xE6": "ae",
+        "\xDE": "Th",
+        "\xFE": "th",
+        "\xDF": "ss",
+        // Latin Extended-A block.
+        "\u0100": "A",
+        "\u0102": "A",
+        "\u0104": "A",
+        "\u0101": "a",
+        "\u0103": "a",
+        "\u0105": "a",
+        "\u0106": "C",
+        "\u0108": "C",
+        "\u010A": "C",
+        "\u010C": "C",
+        "\u0107": "c",
+        "\u0109": "c",
+        "\u010B": "c",
+        "\u010D": "c",
+        "\u010E": "D",
+        "\u0110": "D",
+        "\u010F": "d",
+        "\u0111": "d",
+        "\u0112": "E",
+        "\u0114": "E",
+        "\u0116": "E",
+        "\u0118": "E",
+        "\u011A": "E",
+        "\u0113": "e",
+        "\u0115": "e",
+        "\u0117": "e",
+        "\u0119": "e",
+        "\u011B": "e",
+        "\u011C": "G",
+        "\u011E": "G",
+        "\u0120": "G",
+        "\u0122": "G",
+        "\u011D": "g",
+        "\u011F": "g",
+        "\u0121": "g",
+        "\u0123": "g",
+        "\u0124": "H",
+        "\u0126": "H",
+        "\u0125": "h",
+        "\u0127": "h",
+        "\u0128": "I",
+        "\u012A": "I",
+        "\u012C": "I",
+        "\u012E": "I",
+        "\u0130": "I",
+        "\u0129": "i",
+        "\u012B": "i",
+        "\u012D": "i",
+        "\u012F": "i",
+        "\u0131": "i",
+        "\u0134": "J",
+        "\u0135": "j",
+        "\u0136": "K",
+        "\u0137": "k",
+        "\u0138": "k",
+        "\u0139": "L",
+        "\u013B": "L",
+        "\u013D": "L",
+        "\u013F": "L",
+        "\u0141": "L",
+        "\u013A": "l",
+        "\u013C": "l",
+        "\u013E": "l",
+        "\u0140": "l",
+        "\u0142": "l",
+        "\u0143": "N",
+        "\u0145": "N",
+        "\u0147": "N",
+        "\u014A": "N",
+        "\u0144": "n",
+        "\u0146": "n",
+        "\u0148": "n",
+        "\u014B": "n",
+        "\u014C": "O",
+        "\u014E": "O",
+        "\u0150": "O",
+        "\u014D": "o",
+        "\u014F": "o",
+        "\u0151": "o",
+        "\u0154": "R",
+        "\u0156": "R",
+        "\u0158": "R",
+        "\u0155": "r",
+        "\u0157": "r",
+        "\u0159": "r",
+        "\u015A": "S",
+        "\u015C": "S",
+        "\u015E": "S",
+        "\u0160": "S",
+        "\u015B": "s",
+        "\u015D": "s",
+        "\u015F": "s",
+        "\u0161": "s",
+        "\u0162": "T",
+        "\u0164": "T",
+        "\u0166": "T",
+        "\u0163": "t",
+        "\u0165": "t",
+        "\u0167": "t",
+        "\u0168": "U",
+        "\u016A": "U",
+        "\u016C": "U",
+        "\u016E": "U",
+        "\u0170": "U",
+        "\u0172": "U",
+        "\u0169": "u",
+        "\u016B": "u",
+        "\u016D": "u",
+        "\u016F": "u",
+        "\u0171": "u",
+        "\u0173": "u",
+        "\u0174": "W",
+        "\u0175": "w",
+        "\u0176": "Y",
+        "\u0177": "y",
+        "\u0178": "Y",
+        "\u0179": "Z",
+        "\u017B": "Z",
+        "\u017D": "Z",
+        "\u017A": "z",
+        "\u017C": "z",
+        "\u017E": "z",
+        "\u0132": "IJ",
+        "\u0133": "ij",
+        "\u0152": "Oe",
+        "\u0153": "oe",
+        "\u0149": "'n",
+        "\u017F": "s"
+      };
+      var htmlEscapes = {
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      };
+      var htmlUnescapes = {
+        "&amp;": "&",
+        "&lt;": "<",
+        "&gt;": ">",
+        "&quot;": '"',
+        "&#39;": "'"
+      };
+      var stringEscapes = {
+        "\\": "\\",
+        "'": "'",
+        "\n": "n",
+        "\r": "r",
+        "\u2028": "u2028",
+        "\u2029": "u2029"
+      };
+      var freeParseFloat = parseFloat, freeParseInt = parseInt;
+      var freeGlobal = typeof global == "object" && global && global.Object === Object && global;
+      var freeSelf = typeof self == "object" && self && self.Object === Object && self;
+      var root = freeGlobal || freeSelf || Function("return this")();
+      var freeExports = typeof exports == "object" && exports && !exports.nodeType && exports;
+      var freeModule = freeExports && typeof module2 == "object" && module2 && !module2.nodeType && module2;
+      var moduleExports = freeModule && freeModule.exports === freeExports;
+      var freeProcess = moduleExports && freeGlobal.process;
+      var nodeUtil = function() {
         try {
-          assert2(input, itemMessage);
-          return;
-        } catch (_) {
+          var types = freeModule && freeModule.require && freeModule.require("util").types;
+          if (types) {
+            return types;
+          }
+          return freeProcess && freeProcess.binding && freeProcess.binding("util");
+        } catch (e) {
         }
+      }();
+      var nodeIsArrayBuffer = nodeUtil && nodeUtil.isArrayBuffer, nodeIsDate = nodeUtil && nodeUtil.isDate, nodeIsMap = nodeUtil && nodeUtil.isMap, nodeIsRegExp = nodeUtil && nodeUtil.isRegExp, nodeIsSet = nodeUtil && nodeUtil.isSet, nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
+      function apply(func, thisArg, args) {
+        switch (args.length) {
+          case 0:
+            return func.call(thisArg);
+          case 1:
+            return func.call(thisArg, args[0]);
+          case 2:
+            return func.call(thisArg, args[0], args[1]);
+          case 3:
+            return func.call(thisArg, args[0], args[1], args[2]);
+        }
+        return func.apply(thisArg, args);
       }
-      throw new TypeError(message);
-    }
-    exports.isOneOfType = isOneOfType;
-    function isInstanceOf2(input, constructor, message = expectedToBe("an instance of given constructor")) {
-      (0, exports.assert)(input instanceof constructor, message);
-    }
-    exports.isInstanceOf = isInstanceOf2;
-    function isPromise(input, message = expectedToBe("a promise")) {
-      isInstanceOf2(input, Promise, message);
-    }
-    exports.isPromise = isPromise;
-    function check(assertT) {
-      return (input) => {
-        try {
-          assertT(input);
+      function arrayAggregator(array, setter, iteratee, accumulator) {
+        var index = -1, length = array == null ? 0 : array.length;
+        while (++index < length) {
+          var value = array[index];
+          setter(accumulator, value, iteratee(value), array);
+        }
+        return accumulator;
+      }
+      function arrayEach(array, iteratee) {
+        var index = -1, length = array == null ? 0 : array.length;
+        while (++index < length) {
+          if (iteratee(array[index], index, array) === false) {
+            break;
+          }
+        }
+        return array;
+      }
+      function arrayEachRight(array, iteratee) {
+        var length = array == null ? 0 : array.length;
+        while (length--) {
+          if (iteratee(array[length], length, array) === false) {
+            break;
+          }
+        }
+        return array;
+      }
+      function arrayEvery(array, predicate) {
+        var index = -1, length = array == null ? 0 : array.length;
+        while (++index < length) {
+          if (!predicate(array[index], index, array)) {
+            return false;
+          }
+        }
+        return true;
+      }
+      function arrayFilter(array, predicate) {
+        var index = -1, length = array == null ? 0 : array.length, resIndex = 0, result = [];
+        while (++index < length) {
+          var value = array[index];
+          if (predicate(value, index, array)) {
+            result[resIndex++] = value;
+          }
+        }
+        return result;
+      }
+      function arrayIncludes(array, value) {
+        var length = array == null ? 0 : array.length;
+        return !!length && baseIndexOf(array, value, 0) > -1;
+      }
+      function arrayIncludesWith(array, value, comparator) {
+        var index = -1, length = array == null ? 0 : array.length;
+        while (++index < length) {
+          if (comparator(value, array[index])) {
+            return true;
+          }
+        }
+        return false;
+      }
+      function arrayMap(array, iteratee) {
+        var index = -1, length = array == null ? 0 : array.length, result = Array(length);
+        while (++index < length) {
+          result[index] = iteratee(array[index], index, array);
+        }
+        return result;
+      }
+      function arrayPush(array, values) {
+        var index = -1, length = values.length, offset = array.length;
+        while (++index < length) {
+          array[offset + index] = values[index];
+        }
+        return array;
+      }
+      function arrayReduce(array, iteratee, accumulator, initAccum) {
+        var index = -1, length = array == null ? 0 : array.length;
+        if (initAccum && length) {
+          accumulator = array[++index];
+        }
+        while (++index < length) {
+          accumulator = iteratee(accumulator, array[index], index, array);
+        }
+        return accumulator;
+      }
+      function arrayReduceRight(array, iteratee, accumulator, initAccum) {
+        var length = array == null ? 0 : array.length;
+        if (initAccum && length) {
+          accumulator = array[--length];
+        }
+        while (length--) {
+          accumulator = iteratee(accumulator, array[length], length, array);
+        }
+        return accumulator;
+      }
+      function arraySome(array, predicate) {
+        var index = -1, length = array == null ? 0 : array.length;
+        while (++index < length) {
+          if (predicate(array[index], index, array)) {
+            return true;
+          }
+        }
+        return false;
+      }
+      var asciiSize = baseProperty("length");
+      function asciiToArray(string) {
+        return string.split("");
+      }
+      function asciiWords(string) {
+        return string.match(reAsciiWord) || [];
+      }
+      function baseFindKey(collection, predicate, eachFunc) {
+        var result;
+        eachFunc(collection, function(value, key, collection2) {
+          if (predicate(value, key, collection2)) {
+            result = key;
+            return false;
+          }
+        });
+        return result;
+      }
+      function baseFindIndex(array, predicate, fromIndex, fromRight) {
+        var length = array.length, index = fromIndex + (fromRight ? 1 : -1);
+        while (fromRight ? index-- : ++index < length) {
+          if (predicate(array[index], index, array)) {
+            return index;
+          }
+        }
+        return -1;
+      }
+      function baseIndexOf(array, value, fromIndex) {
+        return value === value ? strictIndexOf(array, value, fromIndex) : baseFindIndex(array, baseIsNaN, fromIndex);
+      }
+      function baseIndexOfWith(array, value, fromIndex, comparator) {
+        var index = fromIndex - 1, length = array.length;
+        while (++index < length) {
+          if (comparator(array[index], value)) {
+            return index;
+          }
+        }
+        return -1;
+      }
+      function baseIsNaN(value) {
+        return value !== value;
+      }
+      function baseMean(array, iteratee) {
+        var length = array == null ? 0 : array.length;
+        return length ? baseSum(array, iteratee) / length : NAN;
+      }
+      function baseProperty(key) {
+        return function(object) {
+          return object == null ? undefined2 : object[key];
+        };
+      }
+      function basePropertyOf(object) {
+        return function(key) {
+          return object == null ? undefined2 : object[key];
+        };
+      }
+      function baseReduce(collection, iteratee, accumulator, initAccum, eachFunc) {
+        eachFunc(collection, function(value, index, collection2) {
+          accumulator = initAccum ? (initAccum = false, value) : iteratee(accumulator, value, index, collection2);
+        });
+        return accumulator;
+      }
+      function baseSortBy(array, comparer) {
+        var length = array.length;
+        array.sort(comparer);
+        while (length--) {
+          array[length] = array[length].value;
+        }
+        return array;
+      }
+      function baseSum(array, iteratee) {
+        var result, index = -1, length = array.length;
+        while (++index < length) {
+          var current = iteratee(array[index]);
+          if (current !== undefined2) {
+            result = result === undefined2 ? current : result + current;
+          }
+        }
+        return result;
+      }
+      function baseTimes(n, iteratee) {
+        var index = -1, result = Array(n);
+        while (++index < n) {
+          result[index] = iteratee(index);
+        }
+        return result;
+      }
+      function baseToPairs(object, props) {
+        return arrayMap(props, function(key) {
+          return [key, object[key]];
+        });
+      }
+      function baseTrim(string) {
+        return string ? string.slice(0, trimmedEndIndex(string) + 1).replace(reTrimStart, "") : string;
+      }
+      function baseUnary(func) {
+        return function(value) {
+          return func(value);
+        };
+      }
+      function baseValues(object, props) {
+        return arrayMap(props, function(key) {
+          return object[key];
+        });
+      }
+      function cacheHas(cache, key) {
+        return cache.has(key);
+      }
+      function charsStartIndex(strSymbols, chrSymbols) {
+        var index = -1, length = strSymbols.length;
+        while (++index < length && baseIndexOf(chrSymbols, strSymbols[index], 0) > -1) {
+        }
+        return index;
+      }
+      function charsEndIndex(strSymbols, chrSymbols) {
+        var index = strSymbols.length;
+        while (index-- && baseIndexOf(chrSymbols, strSymbols[index], 0) > -1) {
+        }
+        return index;
+      }
+      function countHolders(array, placeholder) {
+        var length = array.length, result = 0;
+        while (length--) {
+          if (array[length] === placeholder) {
+            ++result;
+          }
+        }
+        return result;
+      }
+      var deburrLetter = basePropertyOf(deburredLetters);
+      var escapeHtmlChar = basePropertyOf(htmlEscapes);
+      function escapeStringChar(chr) {
+        return "\\" + stringEscapes[chr];
+      }
+      function getValue(object, key) {
+        return object == null ? undefined2 : object[key];
+      }
+      function hasUnicode(string) {
+        return reHasUnicode.test(string);
+      }
+      function hasUnicodeWord(string) {
+        return reHasUnicodeWord.test(string);
+      }
+      function iteratorToArray(iterator) {
+        var data, result = [];
+        while (!(data = iterator.next()).done) {
+          result.push(data.value);
+        }
+        return result;
+      }
+      function mapToArray(map) {
+        var index = -1, result = Array(map.size);
+        map.forEach(function(value, key) {
+          result[++index] = [key, value];
+        });
+        return result;
+      }
+      function overArg(func, transform2) {
+        return function(arg) {
+          return func(transform2(arg));
+        };
+      }
+      function replaceHolders(array, placeholder) {
+        var index = -1, length = array.length, resIndex = 0, result = [];
+        while (++index < length) {
+          var value = array[index];
+          if (value === placeholder || value === PLACEHOLDER) {
+            array[index] = PLACEHOLDER;
+            result[resIndex++] = index;
+          }
+        }
+        return result;
+      }
+      function setToArray(set) {
+        var index = -1, result = Array(set.size);
+        set.forEach(function(value) {
+          result[++index] = value;
+        });
+        return result;
+      }
+      function setToPairs(set) {
+        var index = -1, result = Array(set.size);
+        set.forEach(function(value) {
+          result[++index] = [value, value];
+        });
+        return result;
+      }
+      function strictIndexOf(array, value, fromIndex) {
+        var index = fromIndex - 1, length = array.length;
+        while (++index < length) {
+          if (array[index] === value) {
+            return index;
+          }
+        }
+        return -1;
+      }
+      function strictLastIndexOf(array, value, fromIndex) {
+        var index = fromIndex + 1;
+        while (index--) {
+          if (array[index] === value) {
+            return index;
+          }
+        }
+        return index;
+      }
+      function stringSize(string) {
+        return hasUnicode(string) ? unicodeSize(string) : asciiSize(string);
+      }
+      function stringToArray(string) {
+        return hasUnicode(string) ? unicodeToArray(string) : asciiToArray(string);
+      }
+      function trimmedEndIndex(string) {
+        var index = string.length;
+        while (index-- && reWhitespace.test(string.charAt(index))) {
+        }
+        return index;
+      }
+      var unescapeHtmlChar = basePropertyOf(htmlUnescapes);
+      function unicodeSize(string) {
+        var result = reUnicode.lastIndex = 0;
+        while (reUnicode.test(string)) {
+          ++result;
+        }
+        return result;
+      }
+      function unicodeToArray(string) {
+        return string.match(reUnicode) || [];
+      }
+      function unicodeWords(string) {
+        return string.match(reUnicodeWord) || [];
+      }
+      var runInContext = function runInContext2(context) {
+        context = context == null ? root : _.defaults(root.Object(), context, _.pick(root, contextProps));
+        var Array2 = context.Array, Date2 = context.Date, Error2 = context.Error, Function2 = context.Function, Math2 = context.Math, Object2 = context.Object, RegExp2 = context.RegExp, String2 = context.String, TypeError2 = context.TypeError;
+        var arrayProto = Array2.prototype, funcProto = Function2.prototype, objectProto = Object2.prototype;
+        var coreJsData = context["__core-js_shared__"];
+        var funcToString = funcProto.toString;
+        var hasOwnProperty = objectProto.hasOwnProperty;
+        var idCounter = 0;
+        var maskSrcKey = function() {
+          var uid = /[^.]+$/.exec(coreJsData && coreJsData.keys && coreJsData.keys.IE_PROTO || "");
+          return uid ? "Symbol(src)_1." + uid : "";
+        }();
+        var nativeObjectToString = objectProto.toString;
+        var objectCtorString = funcToString.call(Object2);
+        var oldDash = root._;
+        var reIsNative = RegExp2(
+          "^" + funcToString.call(hasOwnProperty).replace(reRegExpChar, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$"
+        );
+        var Buffer2 = moduleExports ? context.Buffer : undefined2, Symbol2 = context.Symbol, Uint8Array2 = context.Uint8Array, allocUnsafe = Buffer2 ? Buffer2.allocUnsafe : undefined2, getPrototype = overArg(Object2.getPrototypeOf, Object2), objectCreate = Object2.create, propertyIsEnumerable = objectProto.propertyIsEnumerable, splice = arrayProto.splice, spreadableSymbol = Symbol2 ? Symbol2.isConcatSpreadable : undefined2, symIterator = Symbol2 ? Symbol2.iterator : undefined2, symToStringTag = Symbol2 ? Symbol2.toStringTag : undefined2;
+        var defineProperty = function() {
+          try {
+            var func = getNative(Object2, "defineProperty");
+            func({}, "", {});
+            return func;
+          } catch (e) {
+          }
+        }();
+        var ctxClearTimeout = context.clearTimeout !== root.clearTimeout && context.clearTimeout, ctxNow = Date2 && Date2.now !== root.Date.now && Date2.now, ctxSetTimeout = context.setTimeout !== root.setTimeout && context.setTimeout;
+        var nativeCeil = Math2.ceil, nativeFloor = Math2.floor, nativeGetSymbols = Object2.getOwnPropertySymbols, nativeIsBuffer = Buffer2 ? Buffer2.isBuffer : undefined2, nativeIsFinite = context.isFinite, nativeJoin = arrayProto.join, nativeKeys = overArg(Object2.keys, Object2), nativeMax = Math2.max, nativeMin = Math2.min, nativeNow = Date2.now, nativeParseInt = context.parseInt, nativeRandom = Math2.random, nativeReverse = arrayProto.reverse;
+        var DataView = getNative(context, "DataView"), Map2 = getNative(context, "Map"), Promise2 = getNative(context, "Promise"), Set2 = getNative(context, "Set"), WeakMap2 = getNative(context, "WeakMap"), nativeCreate = getNative(Object2, "create");
+        var metaMap = WeakMap2 && new WeakMap2();
+        var realNames = {};
+        var dataViewCtorString = toSource(DataView), mapCtorString = toSource(Map2), promiseCtorString = toSource(Promise2), setCtorString = toSource(Set2), weakMapCtorString = toSource(WeakMap2);
+        var symbolProto = Symbol2 ? Symbol2.prototype : undefined2, symbolValueOf = symbolProto ? symbolProto.valueOf : undefined2, symbolToString = symbolProto ? symbolProto.toString : undefined2;
+        function lodash(value) {
+          if (isObjectLike(value) && !isArray(value) && !(value instanceof LazyWrapper)) {
+            if (value instanceof LodashWrapper) {
+              return value;
+            }
+            if (hasOwnProperty.call(value, "__wrapped__")) {
+              return wrapperClone(value);
+            }
+          }
+          return new LodashWrapper(value);
+        }
+        var baseCreate = function() {
+          function object() {
+          }
+          return function(proto) {
+            if (!isObject(proto)) {
+              return {};
+            }
+            if (objectCreate) {
+              return objectCreate(proto);
+            }
+            object.prototype = proto;
+            var result2 = new object();
+            object.prototype = undefined2;
+            return result2;
+          };
+        }();
+        function baseLodash() {
+        }
+        function LodashWrapper(value, chainAll) {
+          this.__wrapped__ = value;
+          this.__actions__ = [];
+          this.__chain__ = !!chainAll;
+          this.__index__ = 0;
+          this.__values__ = undefined2;
+        }
+        lodash.templateSettings = {
+          /**
+           * Used to detect `data` property values to be HTML-escaped.
+           *
+           * @memberOf _.templateSettings
+           * @type {RegExp}
+           */
+          "escape": reEscape,
+          /**
+           * Used to detect code to be evaluated.
+           *
+           * @memberOf _.templateSettings
+           * @type {RegExp}
+           */
+          "evaluate": reEvaluate,
+          /**
+           * Used to detect `data` property values to inject.
+           *
+           * @memberOf _.templateSettings
+           * @type {RegExp}
+           */
+          "interpolate": reInterpolate,
+          /**
+           * Used to reference the data object in the template text.
+           *
+           * @memberOf _.templateSettings
+           * @type {string}
+           */
+          "variable": "",
+          /**
+           * Used to import variables into the compiled template.
+           *
+           * @memberOf _.templateSettings
+           * @type {Object}
+           */
+          "imports": {
+            /**
+             * A reference to the `lodash` function.
+             *
+             * @memberOf _.templateSettings.imports
+             * @type {Function}
+             */
+            "_": lodash
+          }
+        };
+        lodash.prototype = baseLodash.prototype;
+        lodash.prototype.constructor = lodash;
+        LodashWrapper.prototype = baseCreate(baseLodash.prototype);
+        LodashWrapper.prototype.constructor = LodashWrapper;
+        function LazyWrapper(value) {
+          this.__wrapped__ = value;
+          this.__actions__ = [];
+          this.__dir__ = 1;
+          this.__filtered__ = false;
+          this.__iteratees__ = [];
+          this.__takeCount__ = MAX_ARRAY_LENGTH;
+          this.__views__ = [];
+        }
+        function lazyClone() {
+          var result2 = new LazyWrapper(this.__wrapped__);
+          result2.__actions__ = copyArray(this.__actions__);
+          result2.__dir__ = this.__dir__;
+          result2.__filtered__ = this.__filtered__;
+          result2.__iteratees__ = copyArray(this.__iteratees__);
+          result2.__takeCount__ = this.__takeCount__;
+          result2.__views__ = copyArray(this.__views__);
+          return result2;
+        }
+        function lazyReverse() {
+          if (this.__filtered__) {
+            var result2 = new LazyWrapper(this);
+            result2.__dir__ = -1;
+            result2.__filtered__ = true;
+          } else {
+            result2 = this.clone();
+            result2.__dir__ *= -1;
+          }
+          return result2;
+        }
+        function lazyValue() {
+          var array = this.__wrapped__.value(), dir = this.__dir__, isArr = isArray(array), isRight = dir < 0, arrLength = isArr ? array.length : 0, view = getView(0, arrLength, this.__views__), start = view.start, end = view.end, length = end - start, index = isRight ? end : start - 1, iteratees = this.__iteratees__, iterLength = iteratees.length, resIndex = 0, takeCount = nativeMin(length, this.__takeCount__);
+          if (!isArr || !isRight && arrLength == length && takeCount == length) {
+            return baseWrapperValue(array, this.__actions__);
+          }
+          var result2 = [];
+          outer:
+            while (length-- && resIndex < takeCount) {
+              index += dir;
+              var iterIndex = -1, value = array[index];
+              while (++iterIndex < iterLength) {
+                var data = iteratees[iterIndex], iteratee2 = data.iteratee, type = data.type, computed = iteratee2(value);
+                if (type == LAZY_MAP_FLAG) {
+                  value = computed;
+                } else if (!computed) {
+                  if (type == LAZY_FILTER_FLAG) {
+                    continue outer;
+                  } else {
+                    break outer;
+                  }
+                }
+              }
+              result2[resIndex++] = value;
+            }
+          return result2;
+        }
+        LazyWrapper.prototype = baseCreate(baseLodash.prototype);
+        LazyWrapper.prototype.constructor = LazyWrapper;
+        function Hash(entries) {
+          var index = -1, length = entries == null ? 0 : entries.length;
+          this.clear();
+          while (++index < length) {
+            var entry = entries[index];
+            this.set(entry[0], entry[1]);
+          }
+        }
+        function hashClear() {
+          this.__data__ = nativeCreate ? nativeCreate(null) : {};
+          this.size = 0;
+        }
+        function hashDelete(key) {
+          var result2 = this.has(key) && delete this.__data__[key];
+          this.size -= result2 ? 1 : 0;
+          return result2;
+        }
+        function hashGet(key) {
+          var data = this.__data__;
+          if (nativeCreate) {
+            var result2 = data[key];
+            return result2 === HASH_UNDEFINED ? undefined2 : result2;
+          }
+          return hasOwnProperty.call(data, key) ? data[key] : undefined2;
+        }
+        function hashHas(key) {
+          var data = this.__data__;
+          return nativeCreate ? data[key] !== undefined2 : hasOwnProperty.call(data, key);
+        }
+        function hashSet(key, value) {
+          var data = this.__data__;
+          this.size += this.has(key) ? 0 : 1;
+          data[key] = nativeCreate && value === undefined2 ? HASH_UNDEFINED : value;
+          return this;
+        }
+        Hash.prototype.clear = hashClear;
+        Hash.prototype["delete"] = hashDelete;
+        Hash.prototype.get = hashGet;
+        Hash.prototype.has = hashHas;
+        Hash.prototype.set = hashSet;
+        function ListCache(entries) {
+          var index = -1, length = entries == null ? 0 : entries.length;
+          this.clear();
+          while (++index < length) {
+            var entry = entries[index];
+            this.set(entry[0], entry[1]);
+          }
+        }
+        function listCacheClear() {
+          this.__data__ = [];
+          this.size = 0;
+        }
+        function listCacheDelete(key) {
+          var data = this.__data__, index = assocIndexOf(data, key);
+          if (index < 0) {
+            return false;
+          }
+          var lastIndex = data.length - 1;
+          if (index == lastIndex) {
+            data.pop();
+          } else {
+            splice.call(data, index, 1);
+          }
+          --this.size;
           return true;
-        } catch (_) {
+        }
+        function listCacheGet(key) {
+          var data = this.__data__, index = assocIndexOf(data, key);
+          return index < 0 ? undefined2 : data[index][1];
+        }
+        function listCacheHas(key) {
+          return assocIndexOf(this.__data__, key) > -1;
+        }
+        function listCacheSet(key, value) {
+          var data = this.__data__, index = assocIndexOf(data, key);
+          if (index < 0) {
+            ++this.size;
+            data.push([key, value]);
+          } else {
+            data[index][1] = value;
+          }
+          return this;
+        }
+        ListCache.prototype.clear = listCacheClear;
+        ListCache.prototype["delete"] = listCacheDelete;
+        ListCache.prototype.get = listCacheGet;
+        ListCache.prototype.has = listCacheHas;
+        ListCache.prototype.set = listCacheSet;
+        function MapCache(entries) {
+          var index = -1, length = entries == null ? 0 : entries.length;
+          this.clear();
+          while (++index < length) {
+            var entry = entries[index];
+            this.set(entry[0], entry[1]);
+          }
+        }
+        function mapCacheClear() {
+          this.size = 0;
+          this.__data__ = {
+            "hash": new Hash(),
+            "map": new (Map2 || ListCache)(),
+            "string": new Hash()
+          };
+        }
+        function mapCacheDelete(key) {
+          var result2 = getMapData(this, key)["delete"](key);
+          this.size -= result2 ? 1 : 0;
+          return result2;
+        }
+        function mapCacheGet(key) {
+          return getMapData(this, key).get(key);
+        }
+        function mapCacheHas(key) {
+          return getMapData(this, key).has(key);
+        }
+        function mapCacheSet(key, value) {
+          var data = getMapData(this, key), size2 = data.size;
+          data.set(key, value);
+          this.size += data.size == size2 ? 0 : 1;
+          return this;
+        }
+        MapCache.prototype.clear = mapCacheClear;
+        MapCache.prototype["delete"] = mapCacheDelete;
+        MapCache.prototype.get = mapCacheGet;
+        MapCache.prototype.has = mapCacheHas;
+        MapCache.prototype.set = mapCacheSet;
+        function SetCache(values2) {
+          var index = -1, length = values2 == null ? 0 : values2.length;
+          this.__data__ = new MapCache();
+          while (++index < length) {
+            this.add(values2[index]);
+          }
+        }
+        function setCacheAdd(value) {
+          this.__data__.set(value, HASH_UNDEFINED);
+          return this;
+        }
+        function setCacheHas(value) {
+          return this.__data__.has(value);
+        }
+        SetCache.prototype.add = SetCache.prototype.push = setCacheAdd;
+        SetCache.prototype.has = setCacheHas;
+        function Stack(entries) {
+          var data = this.__data__ = new ListCache(entries);
+          this.size = data.size;
+        }
+        function stackClear() {
+          this.__data__ = new ListCache();
+          this.size = 0;
+        }
+        function stackDelete(key) {
+          var data = this.__data__, result2 = data["delete"](key);
+          this.size = data.size;
+          return result2;
+        }
+        function stackGet(key) {
+          return this.__data__.get(key);
+        }
+        function stackHas(key) {
+          return this.__data__.has(key);
+        }
+        function stackSet(key, value) {
+          var data = this.__data__;
+          if (data instanceof ListCache) {
+            var pairs = data.__data__;
+            if (!Map2 || pairs.length < LARGE_ARRAY_SIZE - 1) {
+              pairs.push([key, value]);
+              this.size = ++data.size;
+              return this;
+            }
+            data = this.__data__ = new MapCache(pairs);
+          }
+          data.set(key, value);
+          this.size = data.size;
+          return this;
+        }
+        Stack.prototype.clear = stackClear;
+        Stack.prototype["delete"] = stackDelete;
+        Stack.prototype.get = stackGet;
+        Stack.prototype.has = stackHas;
+        Stack.prototype.set = stackSet;
+        function arrayLikeKeys(value, inherited) {
+          var isArr = isArray(value), isArg = !isArr && isArguments(value), isBuff = !isArr && !isArg && isBuffer(value), isType = !isArr && !isArg && !isBuff && isTypedArray(value), skipIndexes = isArr || isArg || isBuff || isType, result2 = skipIndexes ? baseTimes(value.length, String2) : [], length = result2.length;
+          for (var key in value) {
+            if ((inherited || hasOwnProperty.call(value, key)) && !(skipIndexes && // Safari 9 has enumerable `arguments.length` in strict mode.
+            (key == "length" || // Node.js 0.10 has enumerable non-index properties on buffers.
+            isBuff && (key == "offset" || key == "parent") || // PhantomJS 2 has enumerable non-index properties on typed arrays.
+            isType && (key == "buffer" || key == "byteLength" || key == "byteOffset") || // Skip index properties.
+            isIndex(key, length)))) {
+              result2.push(key);
+            }
+          }
+          return result2;
+        }
+        function arraySample(array) {
+          var length = array.length;
+          return length ? array[baseRandom(0, length - 1)] : undefined2;
+        }
+        function arraySampleSize(array, n) {
+          return shuffleSelf(copyArray(array), baseClamp(n, 0, array.length));
+        }
+        function arrayShuffle(array) {
+          return shuffleSelf(copyArray(array));
+        }
+        function assignMergeValue(object, key, value) {
+          if (value !== undefined2 && !eq(object[key], value) || value === undefined2 && !(key in object)) {
+            baseAssignValue(object, key, value);
+          }
+        }
+        function assignValue(object, key, value) {
+          var objValue = object[key];
+          if (!(hasOwnProperty.call(object, key) && eq(objValue, value)) || value === undefined2 && !(key in object)) {
+            baseAssignValue(object, key, value);
+          }
+        }
+        function assocIndexOf(array, key) {
+          var length = array.length;
+          while (length--) {
+            if (eq(array[length][0], key)) {
+              return length;
+            }
+          }
+          return -1;
+        }
+        function baseAggregator(collection, setter, iteratee2, accumulator) {
+          baseEach(collection, function(value, key, collection2) {
+            setter(accumulator, value, iteratee2(value), collection2);
+          });
+          return accumulator;
+        }
+        function baseAssign(object, source) {
+          return object && copyObject(source, keys(source), object);
+        }
+        function baseAssignIn(object, source) {
+          return object && copyObject(source, keysIn(source), object);
+        }
+        function baseAssignValue(object, key, value) {
+          if (key == "__proto__" && defineProperty) {
+            defineProperty(object, key, {
+              "configurable": true,
+              "enumerable": true,
+              "value": value,
+              "writable": true
+            });
+          } else {
+            object[key] = value;
+          }
+        }
+        function baseAt(object, paths) {
+          var index = -1, length = paths.length, result2 = Array2(length), skip = object == null;
+          while (++index < length) {
+            result2[index] = skip ? undefined2 : get(object, paths[index]);
+          }
+          return result2;
+        }
+        function baseClamp(number, lower, upper) {
+          if (number === number) {
+            if (upper !== undefined2) {
+              number = number <= upper ? number : upper;
+            }
+            if (lower !== undefined2) {
+              number = number >= lower ? number : lower;
+            }
+          }
+          return number;
+        }
+        function baseClone(value, bitmask, customizer, key, object, stack) {
+          var result2, isDeep = bitmask & CLONE_DEEP_FLAG, isFlat = bitmask & CLONE_FLAT_FLAG, isFull = bitmask & CLONE_SYMBOLS_FLAG;
+          if (customizer) {
+            result2 = object ? customizer(value, key, object, stack) : customizer(value);
+          }
+          if (result2 !== undefined2) {
+            return result2;
+          }
+          if (!isObject(value)) {
+            return value;
+          }
+          var isArr = isArray(value);
+          if (isArr) {
+            result2 = initCloneArray(value);
+            if (!isDeep) {
+              return copyArray(value, result2);
+            }
+          } else {
+            var tag = getTag(value), isFunc = tag == funcTag || tag == genTag;
+            if (isBuffer(value)) {
+              return cloneBuffer(value, isDeep);
+            }
+            if (tag == objectTag || tag == argsTag || isFunc && !object) {
+              result2 = isFlat || isFunc ? {} : initCloneObject(value);
+              if (!isDeep) {
+                return isFlat ? copySymbolsIn(value, baseAssignIn(result2, value)) : copySymbols(value, baseAssign(result2, value));
+              }
+            } else {
+              if (!cloneableTags[tag]) {
+                return object ? value : {};
+              }
+              result2 = initCloneByTag(value, tag, isDeep);
+            }
+          }
+          stack || (stack = new Stack());
+          var stacked = stack.get(value);
+          if (stacked) {
+            return stacked;
+          }
+          stack.set(value, result2);
+          if (isSet(value)) {
+            value.forEach(function(subValue) {
+              result2.add(baseClone(subValue, bitmask, customizer, subValue, value, stack));
+            });
+          } else if (isMap(value)) {
+            value.forEach(function(subValue, key2) {
+              result2.set(key2, baseClone(subValue, bitmask, customizer, key2, value, stack));
+            });
+          }
+          var keysFunc = isFull ? isFlat ? getAllKeysIn : getAllKeys : isFlat ? keysIn : keys;
+          var props = isArr ? undefined2 : keysFunc(value);
+          arrayEach(props || value, function(subValue, key2) {
+            if (props) {
+              key2 = subValue;
+              subValue = value[key2];
+            }
+            assignValue(result2, key2, baseClone(subValue, bitmask, customizer, key2, value, stack));
+          });
+          return result2;
+        }
+        function baseConforms(source) {
+          var props = keys(source);
+          return function(object) {
+            return baseConformsTo(object, source, props);
+          };
+        }
+        function baseConformsTo(object, source, props) {
+          var length = props.length;
+          if (object == null) {
+            return !length;
+          }
+          object = Object2(object);
+          while (length--) {
+            var key = props[length], predicate = source[key], value = object[key];
+            if (value === undefined2 && !(key in object) || !predicate(value)) {
+              return false;
+            }
+          }
+          return true;
+        }
+        function baseDelay(func, wait, args) {
+          if (typeof func != "function") {
+            throw new TypeError2(FUNC_ERROR_TEXT);
+          }
+          return setTimeout(function() {
+            func.apply(undefined2, args);
+          }, wait);
+        }
+        function baseDifference(array, values2, iteratee2, comparator) {
+          var index = -1, includes2 = arrayIncludes, isCommon = true, length = array.length, result2 = [], valuesLength = values2.length;
+          if (!length) {
+            return result2;
+          }
+          if (iteratee2) {
+            values2 = arrayMap(values2, baseUnary(iteratee2));
+          }
+          if (comparator) {
+            includes2 = arrayIncludesWith;
+            isCommon = false;
+          } else if (values2.length >= LARGE_ARRAY_SIZE) {
+            includes2 = cacheHas;
+            isCommon = false;
+            values2 = new SetCache(values2);
+          }
+          outer:
+            while (++index < length) {
+              var value = array[index], computed = iteratee2 == null ? value : iteratee2(value);
+              value = comparator || value !== 0 ? value : 0;
+              if (isCommon && computed === computed) {
+                var valuesIndex = valuesLength;
+                while (valuesIndex--) {
+                  if (values2[valuesIndex] === computed) {
+                    continue outer;
+                  }
+                }
+                result2.push(value);
+              } else if (!includes2(values2, computed, comparator)) {
+                result2.push(value);
+              }
+            }
+          return result2;
+        }
+        var baseEach = createBaseEach(baseForOwn);
+        var baseEachRight = createBaseEach(baseForOwnRight, true);
+        function baseEvery(collection, predicate) {
+          var result2 = true;
+          baseEach(collection, function(value, index, collection2) {
+            result2 = !!predicate(value, index, collection2);
+            return result2;
+          });
+          return result2;
+        }
+        function baseExtremum(array, iteratee2, comparator) {
+          var index = -1, length = array.length;
+          while (++index < length) {
+            var value = array[index], current = iteratee2(value);
+            if (current != null && (computed === undefined2 ? current === current && !isSymbol(current) : comparator(current, computed))) {
+              var computed = current, result2 = value;
+            }
+          }
+          return result2;
+        }
+        function baseFill(array, value, start, end) {
+          var length = array.length;
+          start = toInteger(start);
+          if (start < 0) {
+            start = -start > length ? 0 : length + start;
+          }
+          end = end === undefined2 || end > length ? length : toInteger(end);
+          if (end < 0) {
+            end += length;
+          }
+          end = start > end ? 0 : toLength(end);
+          while (start < end) {
+            array[start++] = value;
+          }
+          return array;
+        }
+        function baseFilter(collection, predicate) {
+          var result2 = [];
+          baseEach(collection, function(value, index, collection2) {
+            if (predicate(value, index, collection2)) {
+              result2.push(value);
+            }
+          });
+          return result2;
+        }
+        function baseFlatten(array, depth, predicate, isStrict, result2) {
+          var index = -1, length = array.length;
+          predicate || (predicate = isFlattenable);
+          result2 || (result2 = []);
+          while (++index < length) {
+            var value = array[index];
+            if (depth > 0 && predicate(value)) {
+              if (depth > 1) {
+                baseFlatten(value, depth - 1, predicate, isStrict, result2);
+              } else {
+                arrayPush(result2, value);
+              }
+            } else if (!isStrict) {
+              result2[result2.length] = value;
+            }
+          }
+          return result2;
+        }
+        var baseFor = createBaseFor();
+        var baseForRight = createBaseFor(true);
+        function baseForOwn(object, iteratee2) {
+          return object && baseFor(object, iteratee2, keys);
+        }
+        function baseForOwnRight(object, iteratee2) {
+          return object && baseForRight(object, iteratee2, keys);
+        }
+        function baseFunctions(object, props) {
+          return arrayFilter(props, function(key) {
+            return isFunction(object[key]);
+          });
+        }
+        function baseGet(object, path) {
+          path = castPath(path, object);
+          var index = 0, length = path.length;
+          while (object != null && index < length) {
+            object = object[toKey(path[index++])];
+          }
+          return index && index == length ? object : undefined2;
+        }
+        function baseGetAllKeys(object, keysFunc, symbolsFunc) {
+          var result2 = keysFunc(object);
+          return isArray(object) ? result2 : arrayPush(result2, symbolsFunc(object));
+        }
+        function baseGetTag(value) {
+          if (value == null) {
+            return value === undefined2 ? undefinedTag : nullTag;
+          }
+          return symToStringTag && symToStringTag in Object2(value) ? getRawTag(value) : objectToString(value);
+        }
+        function baseGt(value, other) {
+          return value > other;
+        }
+        function baseHas(object, key) {
+          return object != null && hasOwnProperty.call(object, key);
+        }
+        function baseHasIn(object, key) {
+          return object != null && key in Object2(object);
+        }
+        function baseInRange(number, start, end) {
+          return number >= nativeMin(start, end) && number < nativeMax(start, end);
+        }
+        function baseIntersection(arrays, iteratee2, comparator) {
+          var includes2 = comparator ? arrayIncludesWith : arrayIncludes, length = arrays[0].length, othLength = arrays.length, othIndex = othLength, caches = Array2(othLength), maxLength = Infinity, result2 = [];
+          while (othIndex--) {
+            var array = arrays[othIndex];
+            if (othIndex && iteratee2) {
+              array = arrayMap(array, baseUnary(iteratee2));
+            }
+            maxLength = nativeMin(array.length, maxLength);
+            caches[othIndex] = !comparator && (iteratee2 || length >= 120 && array.length >= 120) ? new SetCache(othIndex && array) : undefined2;
+          }
+          array = arrays[0];
+          var index = -1, seen = caches[0];
+          outer:
+            while (++index < length && result2.length < maxLength) {
+              var value = array[index], computed = iteratee2 ? iteratee2(value) : value;
+              value = comparator || value !== 0 ? value : 0;
+              if (!(seen ? cacheHas(seen, computed) : includes2(result2, computed, comparator))) {
+                othIndex = othLength;
+                while (--othIndex) {
+                  var cache = caches[othIndex];
+                  if (!(cache ? cacheHas(cache, computed) : includes2(arrays[othIndex], computed, comparator))) {
+                    continue outer;
+                  }
+                }
+                if (seen) {
+                  seen.push(computed);
+                }
+                result2.push(value);
+              }
+            }
+          return result2;
+        }
+        function baseInverter(object, setter, iteratee2, accumulator) {
+          baseForOwn(object, function(value, key, object2) {
+            setter(accumulator, iteratee2(value), key, object2);
+          });
+          return accumulator;
+        }
+        function baseInvoke(object, path, args) {
+          path = castPath(path, object);
+          object = parent(object, path);
+          var func = object == null ? object : object[toKey(last3(path))];
+          return func == null ? undefined2 : apply(func, object, args);
+        }
+        function baseIsArguments(value) {
+          return isObjectLike(value) && baseGetTag(value) == argsTag;
+        }
+        function baseIsArrayBuffer(value) {
+          return isObjectLike(value) && baseGetTag(value) == arrayBufferTag;
+        }
+        function baseIsDate(value) {
+          return isObjectLike(value) && baseGetTag(value) == dateTag;
+        }
+        function baseIsEqual(value, other, bitmask, customizer, stack) {
+          if (value === other) {
+            return true;
+          }
+          if (value == null || other == null || !isObjectLike(value) && !isObjectLike(other)) {
+            return value !== value && other !== other;
+          }
+          return baseIsEqualDeep(value, other, bitmask, customizer, baseIsEqual, stack);
+        }
+        function baseIsEqualDeep(object, other, bitmask, customizer, equalFunc, stack) {
+          var objIsArr = isArray(object), othIsArr = isArray(other), objTag = objIsArr ? arrayTag : getTag(object), othTag = othIsArr ? arrayTag : getTag(other);
+          objTag = objTag == argsTag ? objectTag : objTag;
+          othTag = othTag == argsTag ? objectTag : othTag;
+          var objIsObj = objTag == objectTag, othIsObj = othTag == objectTag, isSameTag = objTag == othTag;
+          if (isSameTag && isBuffer(object)) {
+            if (!isBuffer(other)) {
+              return false;
+            }
+            objIsArr = true;
+            objIsObj = false;
+          }
+          if (isSameTag && !objIsObj) {
+            stack || (stack = new Stack());
+            return objIsArr || isTypedArray(object) ? equalArrays(object, other, bitmask, customizer, equalFunc, stack) : equalByTag(object, other, objTag, bitmask, customizer, equalFunc, stack);
+          }
+          if (!(bitmask & COMPARE_PARTIAL_FLAG)) {
+            var objIsWrapped = objIsObj && hasOwnProperty.call(object, "__wrapped__"), othIsWrapped = othIsObj && hasOwnProperty.call(other, "__wrapped__");
+            if (objIsWrapped || othIsWrapped) {
+              var objUnwrapped = objIsWrapped ? object.value() : object, othUnwrapped = othIsWrapped ? other.value() : other;
+              stack || (stack = new Stack());
+              return equalFunc(objUnwrapped, othUnwrapped, bitmask, customizer, stack);
+            }
+          }
+          if (!isSameTag) {
+            return false;
+          }
+          stack || (stack = new Stack());
+          return equalObjects(object, other, bitmask, customizer, equalFunc, stack);
+        }
+        function baseIsMap(value) {
+          return isObjectLike(value) && getTag(value) == mapTag;
+        }
+        function baseIsMatch(object, source, matchData, customizer) {
+          var index = matchData.length, length = index, noCustomizer = !customizer;
+          if (object == null) {
+            return !length;
+          }
+          object = Object2(object);
+          while (index--) {
+            var data = matchData[index];
+            if (noCustomizer && data[2] ? data[1] !== object[data[0]] : !(data[0] in object)) {
+              return false;
+            }
+          }
+          while (++index < length) {
+            data = matchData[index];
+            var key = data[0], objValue = object[key], srcValue = data[1];
+            if (noCustomizer && data[2]) {
+              if (objValue === undefined2 && !(key in object)) {
+                return false;
+              }
+            } else {
+              var stack = new Stack();
+              if (customizer) {
+                var result2 = customizer(objValue, srcValue, key, object, source, stack);
+              }
+              if (!(result2 === undefined2 ? baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG, customizer, stack) : result2)) {
+                return false;
+              }
+            }
+          }
+          return true;
+        }
+        function baseIsNative(value) {
+          if (!isObject(value) || isMasked(value)) {
+            return false;
+          }
+          var pattern = isFunction(value) ? reIsNative : reIsHostCtor;
+          return pattern.test(toSource(value));
+        }
+        function baseIsRegExp(value) {
+          return isObjectLike(value) && baseGetTag(value) == regexpTag;
+        }
+        function baseIsSet(value) {
+          return isObjectLike(value) && getTag(value) == setTag;
+        }
+        function baseIsTypedArray(value) {
+          return isObjectLike(value) && isLength(value.length) && !!typedArrayTags[baseGetTag(value)];
+        }
+        function baseIteratee(value) {
+          if (typeof value == "function") {
+            return value;
+          }
+          if (value == null) {
+            return identity;
+          }
+          if (typeof value == "object") {
+            return isArray(value) ? baseMatchesProperty(value[0], value[1]) : baseMatches(value);
+          }
+          return property(value);
+        }
+        function baseKeys(object) {
+          if (!isPrototype(object)) {
+            return nativeKeys(object);
+          }
+          var result2 = [];
+          for (var key in Object2(object)) {
+            if (hasOwnProperty.call(object, key) && key != "constructor") {
+              result2.push(key);
+            }
+          }
+          return result2;
+        }
+        function baseKeysIn(object) {
+          if (!isObject(object)) {
+            return nativeKeysIn(object);
+          }
+          var isProto = isPrototype(object), result2 = [];
+          for (var key in object) {
+            if (!(key == "constructor" && (isProto || !hasOwnProperty.call(object, key)))) {
+              result2.push(key);
+            }
+          }
+          return result2;
+        }
+        function baseLt(value, other) {
+          return value < other;
+        }
+        function baseMap(collection, iteratee2) {
+          var index = -1, result2 = isArrayLike(collection) ? Array2(collection.length) : [];
+          baseEach(collection, function(value, key, collection2) {
+            result2[++index] = iteratee2(value, key, collection2);
+          });
+          return result2;
+        }
+        function baseMatches(source) {
+          var matchData = getMatchData(source);
+          if (matchData.length == 1 && matchData[0][2]) {
+            return matchesStrictComparable(matchData[0][0], matchData[0][1]);
+          }
+          return function(object) {
+            return object === source || baseIsMatch(object, source, matchData);
+          };
+        }
+        function baseMatchesProperty(path, srcValue) {
+          if (isKey(path) && isStrictComparable(srcValue)) {
+            return matchesStrictComparable(toKey(path), srcValue);
+          }
+          return function(object) {
+            var objValue = get(object, path);
+            return objValue === undefined2 && objValue === srcValue ? hasIn(object, path) : baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG);
+          };
+        }
+        function baseMerge(object, source, srcIndex, customizer, stack) {
+          if (object === source) {
+            return;
+          }
+          baseFor(source, function(srcValue, key) {
+            stack || (stack = new Stack());
+            if (isObject(srcValue)) {
+              baseMergeDeep(object, source, key, srcIndex, baseMerge, customizer, stack);
+            } else {
+              var newValue = customizer ? customizer(safeGet(object, key), srcValue, key + "", object, source, stack) : undefined2;
+              if (newValue === undefined2) {
+                newValue = srcValue;
+              }
+              assignMergeValue(object, key, newValue);
+            }
+          }, keysIn);
+        }
+        function baseMergeDeep(object, source, key, srcIndex, mergeFunc, customizer, stack) {
+          var objValue = safeGet(object, key), srcValue = safeGet(source, key), stacked = stack.get(srcValue);
+          if (stacked) {
+            assignMergeValue(object, key, stacked);
+            return;
+          }
+          var newValue = customizer ? customizer(objValue, srcValue, key + "", object, source, stack) : undefined2;
+          var isCommon = newValue === undefined2;
+          if (isCommon) {
+            var isArr = isArray(srcValue), isBuff = !isArr && isBuffer(srcValue), isTyped = !isArr && !isBuff && isTypedArray(srcValue);
+            newValue = srcValue;
+            if (isArr || isBuff || isTyped) {
+              if (isArray(objValue)) {
+                newValue = objValue;
+              } else if (isArrayLikeObject(objValue)) {
+                newValue = copyArray(objValue);
+              } else if (isBuff) {
+                isCommon = false;
+                newValue = cloneBuffer(srcValue, true);
+              } else if (isTyped) {
+                isCommon = false;
+                newValue = cloneTypedArray(srcValue, true);
+              } else {
+                newValue = [];
+              }
+            } else if (isPlainObject(srcValue) || isArguments(srcValue)) {
+              newValue = objValue;
+              if (isArguments(objValue)) {
+                newValue = toPlainObject(objValue);
+              } else if (!isObject(objValue) || isFunction(objValue)) {
+                newValue = initCloneObject(srcValue);
+              }
+            } else {
+              isCommon = false;
+            }
+          }
+          if (isCommon) {
+            stack.set(srcValue, newValue);
+            mergeFunc(newValue, srcValue, srcIndex, customizer, stack);
+            stack["delete"](srcValue);
+          }
+          assignMergeValue(object, key, newValue);
+        }
+        function baseNth(array, n) {
+          var length = array.length;
+          if (!length) {
+            return;
+          }
+          n += n < 0 ? length : 0;
+          return isIndex(n, length) ? array[n] : undefined2;
+        }
+        function baseOrderBy(collection, iteratees, orders) {
+          if (iteratees.length) {
+            iteratees = arrayMap(iteratees, function(iteratee2) {
+              if (isArray(iteratee2)) {
+                return function(value) {
+                  return baseGet(value, iteratee2.length === 1 ? iteratee2[0] : iteratee2);
+                };
+              }
+              return iteratee2;
+            });
+          } else {
+            iteratees = [identity];
+          }
+          var index = -1;
+          iteratees = arrayMap(iteratees, baseUnary(getIteratee()));
+          var result2 = baseMap(collection, function(value, key, collection2) {
+            var criteria = arrayMap(iteratees, function(iteratee2) {
+              return iteratee2(value);
+            });
+            return { "criteria": criteria, "index": ++index, "value": value };
+          });
+          return baseSortBy(result2, function(object, other) {
+            return compareMultiple(object, other, orders);
+          });
+        }
+        function basePick(object, paths) {
+          return basePickBy(object, paths, function(value, path) {
+            return hasIn(object, path);
+          });
+        }
+        function basePickBy(object, paths, predicate) {
+          var index = -1, length = paths.length, result2 = {};
+          while (++index < length) {
+            var path = paths[index], value = baseGet(object, path);
+            if (predicate(value, path)) {
+              baseSet(result2, castPath(path, object), value);
+            }
+          }
+          return result2;
+        }
+        function basePropertyDeep(path) {
+          return function(object) {
+            return baseGet(object, path);
+          };
+        }
+        function basePullAll(array, values2, iteratee2, comparator) {
+          var indexOf2 = comparator ? baseIndexOfWith : baseIndexOf, index = -1, length = values2.length, seen = array;
+          if (array === values2) {
+            values2 = copyArray(values2);
+          }
+          if (iteratee2) {
+            seen = arrayMap(array, baseUnary(iteratee2));
+          }
+          while (++index < length) {
+            var fromIndex = 0, value = values2[index], computed = iteratee2 ? iteratee2(value) : value;
+            while ((fromIndex = indexOf2(seen, computed, fromIndex, comparator)) > -1) {
+              if (seen !== array) {
+                splice.call(seen, fromIndex, 1);
+              }
+              splice.call(array, fromIndex, 1);
+            }
+          }
+          return array;
+        }
+        function basePullAt(array, indexes) {
+          var length = array ? indexes.length : 0, lastIndex = length - 1;
+          while (length--) {
+            var index = indexes[length];
+            if (length == lastIndex || index !== previous) {
+              var previous = index;
+              if (isIndex(index)) {
+                splice.call(array, index, 1);
+              } else {
+                baseUnset(array, index);
+              }
+            }
+          }
+          return array;
+        }
+        function baseRandom(lower, upper) {
+          return lower + nativeFloor(nativeRandom() * (upper - lower + 1));
+        }
+        function baseRange(start, end, step, fromRight) {
+          var index = -1, length = nativeMax(nativeCeil((end - start) / (step || 1)), 0), result2 = Array2(length);
+          while (length--) {
+            result2[fromRight ? length : ++index] = start;
+            start += step;
+          }
+          return result2;
+        }
+        function baseRepeat(string, n) {
+          var result2 = "";
+          if (!string || n < 1 || n > MAX_SAFE_INTEGER) {
+            return result2;
+          }
+          do {
+            if (n % 2) {
+              result2 += string;
+            }
+            n = nativeFloor(n / 2);
+            if (n) {
+              string += string;
+            }
+          } while (n);
+          return result2;
+        }
+        function baseRest(func, start) {
+          return setToString(overRest(func, start, identity), func + "");
+        }
+        function baseSample(collection) {
+          return arraySample(values(collection));
+        }
+        function baseSampleSize(collection, n) {
+          var array = values(collection);
+          return shuffleSelf(array, baseClamp(n, 0, array.length));
+        }
+        function baseSet(object, path, value, customizer) {
+          if (!isObject(object)) {
+            return object;
+          }
+          path = castPath(path, object);
+          var index = -1, length = path.length, lastIndex = length - 1, nested = object;
+          while (nested != null && ++index < length) {
+            var key = toKey(path[index]), newValue = value;
+            if (key === "__proto__" || key === "constructor" || key === "prototype") {
+              return object;
+            }
+            if (index != lastIndex) {
+              var objValue = nested[key];
+              newValue = customizer ? customizer(objValue, key, nested) : undefined2;
+              if (newValue === undefined2) {
+                newValue = isObject(objValue) ? objValue : isIndex(path[index + 1]) ? [] : {};
+              }
+            }
+            assignValue(nested, key, newValue);
+            nested = nested[key];
+          }
+          return object;
+        }
+        var baseSetData = !metaMap ? identity : function(func, data) {
+          metaMap.set(func, data);
+          return func;
+        };
+        var baseSetToString = !defineProperty ? identity : function(func, string) {
+          return defineProperty(func, "toString", {
+            "configurable": true,
+            "enumerable": false,
+            "value": constant(string),
+            "writable": true
+          });
+        };
+        function baseShuffle(collection) {
+          return shuffleSelf(values(collection));
+        }
+        function baseSlice(array, start, end) {
+          var index = -1, length = array.length;
+          if (start < 0) {
+            start = -start > length ? 0 : length + start;
+          }
+          end = end > length ? length : end;
+          if (end < 0) {
+            end += length;
+          }
+          length = start > end ? 0 : end - start >>> 0;
+          start >>>= 0;
+          var result2 = Array2(length);
+          while (++index < length) {
+            result2[index] = array[index + start];
+          }
+          return result2;
+        }
+        function baseSome(collection, predicate) {
+          var result2;
+          baseEach(collection, function(value, index, collection2) {
+            result2 = predicate(value, index, collection2);
+            return !result2;
+          });
+          return !!result2;
+        }
+        function baseSortedIndex(array, value, retHighest) {
+          var low = 0, high = array == null ? low : array.length;
+          if (typeof value == "number" && value === value && high <= HALF_MAX_ARRAY_LENGTH) {
+            while (low < high) {
+              var mid = low + high >>> 1, computed = array[mid];
+              if (computed !== null && !isSymbol(computed) && (retHighest ? computed <= value : computed < value)) {
+                low = mid + 1;
+              } else {
+                high = mid;
+              }
+            }
+            return high;
+          }
+          return baseSortedIndexBy(array, value, identity, retHighest);
+        }
+        function baseSortedIndexBy(array, value, iteratee2, retHighest) {
+          var low = 0, high = array == null ? 0 : array.length;
+          if (high === 0) {
+            return 0;
+          }
+          value = iteratee2(value);
+          var valIsNaN = value !== value, valIsNull = value === null, valIsSymbol = isSymbol(value), valIsUndefined = value === undefined2;
+          while (low < high) {
+            var mid = nativeFloor((low + high) / 2), computed = iteratee2(array[mid]), othIsDefined = computed !== undefined2, othIsNull = computed === null, othIsReflexive = computed === computed, othIsSymbol = isSymbol(computed);
+            if (valIsNaN) {
+              var setLow = retHighest || othIsReflexive;
+            } else if (valIsUndefined) {
+              setLow = othIsReflexive && (retHighest || othIsDefined);
+            } else if (valIsNull) {
+              setLow = othIsReflexive && othIsDefined && (retHighest || !othIsNull);
+            } else if (valIsSymbol) {
+              setLow = othIsReflexive && othIsDefined && !othIsNull && (retHighest || !othIsSymbol);
+            } else if (othIsNull || othIsSymbol) {
+              setLow = false;
+            } else {
+              setLow = retHighest ? computed <= value : computed < value;
+            }
+            if (setLow) {
+              low = mid + 1;
+            } else {
+              high = mid;
+            }
+          }
+          return nativeMin(high, MAX_ARRAY_INDEX);
+        }
+        function baseSortedUniq(array, iteratee2) {
+          var index = -1, length = array.length, resIndex = 0, result2 = [];
+          while (++index < length) {
+            var value = array[index], computed = iteratee2 ? iteratee2(value) : value;
+            if (!index || !eq(computed, seen)) {
+              var seen = computed;
+              result2[resIndex++] = value === 0 ? 0 : value;
+            }
+          }
+          return result2;
+        }
+        function baseToNumber(value) {
+          if (typeof value == "number") {
+            return value;
+          }
+          if (isSymbol(value)) {
+            return NAN;
+          }
+          return +value;
+        }
+        function baseToString(value) {
+          if (typeof value == "string") {
+            return value;
+          }
+          if (isArray(value)) {
+            return arrayMap(value, baseToString) + "";
+          }
+          if (isSymbol(value)) {
+            return symbolToString ? symbolToString.call(value) : "";
+          }
+          var result2 = value + "";
+          return result2 == "0" && 1 / value == -INFINITY ? "-0" : result2;
+        }
+        function baseUniq(array, iteratee2, comparator) {
+          var index = -1, includes2 = arrayIncludes, length = array.length, isCommon = true, result2 = [], seen = result2;
+          if (comparator) {
+            isCommon = false;
+            includes2 = arrayIncludesWith;
+          } else if (length >= LARGE_ARRAY_SIZE) {
+            var set2 = iteratee2 ? null : createSet(array);
+            if (set2) {
+              return setToArray(set2);
+            }
+            isCommon = false;
+            includes2 = cacheHas;
+            seen = new SetCache();
+          } else {
+            seen = iteratee2 ? [] : result2;
+          }
+          outer:
+            while (++index < length) {
+              var value = array[index], computed = iteratee2 ? iteratee2(value) : value;
+              value = comparator || value !== 0 ? value : 0;
+              if (isCommon && computed === computed) {
+                var seenIndex = seen.length;
+                while (seenIndex--) {
+                  if (seen[seenIndex] === computed) {
+                    continue outer;
+                  }
+                }
+                if (iteratee2) {
+                  seen.push(computed);
+                }
+                result2.push(value);
+              } else if (!includes2(seen, computed, comparator)) {
+                if (seen !== result2) {
+                  seen.push(computed);
+                }
+                result2.push(value);
+              }
+            }
+          return result2;
+        }
+        function baseUnset(object, path) {
+          path = castPath(path, object);
+          object = parent(object, path);
+          return object == null || delete object[toKey(last3(path))];
+        }
+        function baseUpdate(object, path, updater, customizer) {
+          return baseSet(object, path, updater(baseGet(object, path)), customizer);
+        }
+        function baseWhile(array, predicate, isDrop, fromRight) {
+          var length = array.length, index = fromRight ? length : -1;
+          while ((fromRight ? index-- : ++index < length) && predicate(array[index], index, array)) {
+          }
+          return isDrop ? baseSlice(array, fromRight ? 0 : index, fromRight ? index + 1 : length) : baseSlice(array, fromRight ? index + 1 : 0, fromRight ? length : index);
+        }
+        function baseWrapperValue(value, actions) {
+          var result2 = value;
+          if (result2 instanceof LazyWrapper) {
+            result2 = result2.value();
+          }
+          return arrayReduce(actions, function(result3, action) {
+            return action.func.apply(action.thisArg, arrayPush([result3], action.args));
+          }, result2);
+        }
+        function baseXor(arrays, iteratee2, comparator) {
+          var length = arrays.length;
+          if (length < 2) {
+            return length ? baseUniq(arrays[0]) : [];
+          }
+          var index = -1, result2 = Array2(length);
+          while (++index < length) {
+            var array = arrays[index], othIndex = -1;
+            while (++othIndex < length) {
+              if (othIndex != index) {
+                result2[index] = baseDifference(result2[index] || array, arrays[othIndex], iteratee2, comparator);
+              }
+            }
+          }
+          return baseUniq(baseFlatten(result2, 1), iteratee2, comparator);
+        }
+        function baseZipObject(props, values2, assignFunc) {
+          var index = -1, length = props.length, valsLength = values2.length, result2 = {};
+          while (++index < length) {
+            var value = index < valsLength ? values2[index] : undefined2;
+            assignFunc(result2, props[index], value);
+          }
+          return result2;
+        }
+        function castArrayLikeObject(value) {
+          return isArrayLikeObject(value) ? value : [];
+        }
+        function castFunction(value) {
+          return typeof value == "function" ? value : identity;
+        }
+        function castPath(value, object) {
+          if (isArray(value)) {
+            return value;
+          }
+          return isKey(value, object) ? [value] : stringToPath(toString(value));
+        }
+        var castRest = baseRest;
+        function castSlice(array, start, end) {
+          var length = array.length;
+          end = end === undefined2 ? length : end;
+          return !start && end >= length ? array : baseSlice(array, start, end);
+        }
+        var clearTimeout2 = ctxClearTimeout || function(id) {
+          return root.clearTimeout(id);
+        };
+        function cloneBuffer(buffer, isDeep) {
+          if (isDeep) {
+            return buffer.slice();
+          }
+          var length = buffer.length, result2 = allocUnsafe ? allocUnsafe(length) : new buffer.constructor(length);
+          buffer.copy(result2);
+          return result2;
+        }
+        function cloneArrayBuffer(arrayBuffer) {
+          var result2 = new arrayBuffer.constructor(arrayBuffer.byteLength);
+          new Uint8Array2(result2).set(new Uint8Array2(arrayBuffer));
+          return result2;
+        }
+        function cloneDataView(dataView, isDeep) {
+          var buffer = isDeep ? cloneArrayBuffer(dataView.buffer) : dataView.buffer;
+          return new dataView.constructor(buffer, dataView.byteOffset, dataView.byteLength);
+        }
+        function cloneRegExp(regexp) {
+          var result2 = new regexp.constructor(regexp.source, reFlags.exec(regexp));
+          result2.lastIndex = regexp.lastIndex;
+          return result2;
+        }
+        function cloneSymbol(symbol) {
+          return symbolValueOf ? Object2(symbolValueOf.call(symbol)) : {};
+        }
+        function cloneTypedArray(typedArray, isDeep) {
+          var buffer = isDeep ? cloneArrayBuffer(typedArray.buffer) : typedArray.buffer;
+          return new typedArray.constructor(buffer, typedArray.byteOffset, typedArray.length);
+        }
+        function compareAscending(value, other) {
+          if (value !== other) {
+            var valIsDefined = value !== undefined2, valIsNull = value === null, valIsReflexive = value === value, valIsSymbol = isSymbol(value);
+            var othIsDefined = other !== undefined2, othIsNull = other === null, othIsReflexive = other === other, othIsSymbol = isSymbol(other);
+            if (!othIsNull && !othIsSymbol && !valIsSymbol && value > other || valIsSymbol && othIsDefined && othIsReflexive && !othIsNull && !othIsSymbol || valIsNull && othIsDefined && othIsReflexive || !valIsDefined && othIsReflexive || !valIsReflexive) {
+              return 1;
+            }
+            if (!valIsNull && !valIsSymbol && !othIsSymbol && value < other || othIsSymbol && valIsDefined && valIsReflexive && !valIsNull && !valIsSymbol || othIsNull && valIsDefined && valIsReflexive || !othIsDefined && valIsReflexive || !othIsReflexive) {
+              return -1;
+            }
+          }
+          return 0;
+        }
+        function compareMultiple(object, other, orders) {
+          var index = -1, objCriteria = object.criteria, othCriteria = other.criteria, length = objCriteria.length, ordersLength = orders.length;
+          while (++index < length) {
+            var result2 = compareAscending(objCriteria[index], othCriteria[index]);
+            if (result2) {
+              if (index >= ordersLength) {
+                return result2;
+              }
+              var order = orders[index];
+              return result2 * (order == "desc" ? -1 : 1);
+            }
+          }
+          return object.index - other.index;
+        }
+        function composeArgs(args, partials, holders, isCurried) {
+          var argsIndex = -1, argsLength = args.length, holdersLength = holders.length, leftIndex = -1, leftLength = partials.length, rangeLength = nativeMax(argsLength - holdersLength, 0), result2 = Array2(leftLength + rangeLength), isUncurried = !isCurried;
+          while (++leftIndex < leftLength) {
+            result2[leftIndex] = partials[leftIndex];
+          }
+          while (++argsIndex < holdersLength) {
+            if (isUncurried || argsIndex < argsLength) {
+              result2[holders[argsIndex]] = args[argsIndex];
+            }
+          }
+          while (rangeLength--) {
+            result2[leftIndex++] = args[argsIndex++];
+          }
+          return result2;
+        }
+        function composeArgsRight(args, partials, holders, isCurried) {
+          var argsIndex = -1, argsLength = args.length, holdersIndex = -1, holdersLength = holders.length, rightIndex = -1, rightLength = partials.length, rangeLength = nativeMax(argsLength - holdersLength, 0), result2 = Array2(rangeLength + rightLength), isUncurried = !isCurried;
+          while (++argsIndex < rangeLength) {
+            result2[argsIndex] = args[argsIndex];
+          }
+          var offset = argsIndex;
+          while (++rightIndex < rightLength) {
+            result2[offset + rightIndex] = partials[rightIndex];
+          }
+          while (++holdersIndex < holdersLength) {
+            if (isUncurried || argsIndex < argsLength) {
+              result2[offset + holders[holdersIndex]] = args[argsIndex++];
+            }
+          }
+          return result2;
+        }
+        function copyArray(source, array) {
+          var index = -1, length = source.length;
+          array || (array = Array2(length));
+          while (++index < length) {
+            array[index] = source[index];
+          }
+          return array;
+        }
+        function copyObject(source, props, object, customizer) {
+          var isNew = !object;
+          object || (object = {});
+          var index = -1, length = props.length;
+          while (++index < length) {
+            var key = props[index];
+            var newValue = customizer ? customizer(object[key], source[key], key, object, source) : undefined2;
+            if (newValue === undefined2) {
+              newValue = source[key];
+            }
+            if (isNew) {
+              baseAssignValue(object, key, newValue);
+            } else {
+              assignValue(object, key, newValue);
+            }
+          }
+          return object;
+        }
+        function copySymbols(source, object) {
+          return copyObject(source, getSymbols(source), object);
+        }
+        function copySymbolsIn(source, object) {
+          return copyObject(source, getSymbolsIn(source), object);
+        }
+        function createAggregator(setter, initializer) {
+          return function(collection, iteratee2) {
+            var func = isArray(collection) ? arrayAggregator : baseAggregator, accumulator = initializer ? initializer() : {};
+            return func(collection, setter, getIteratee(iteratee2, 2), accumulator);
+          };
+        }
+        function createAssigner(assigner) {
+          return baseRest(function(object, sources) {
+            var index = -1, length = sources.length, customizer = length > 1 ? sources[length - 1] : undefined2, guard = length > 2 ? sources[2] : undefined2;
+            customizer = assigner.length > 3 && typeof customizer == "function" ? (length--, customizer) : undefined2;
+            if (guard && isIterateeCall(sources[0], sources[1], guard)) {
+              customizer = length < 3 ? undefined2 : customizer;
+              length = 1;
+            }
+            object = Object2(object);
+            while (++index < length) {
+              var source = sources[index];
+              if (source) {
+                assigner(object, source, index, customizer);
+              }
+            }
+            return object;
+          });
+        }
+        function createBaseEach(eachFunc, fromRight) {
+          return function(collection, iteratee2) {
+            if (collection == null) {
+              return collection;
+            }
+            if (!isArrayLike(collection)) {
+              return eachFunc(collection, iteratee2);
+            }
+            var length = collection.length, index = fromRight ? length : -1, iterable = Object2(collection);
+            while (fromRight ? index-- : ++index < length) {
+              if (iteratee2(iterable[index], index, iterable) === false) {
+                break;
+              }
+            }
+            return collection;
+          };
+        }
+        function createBaseFor(fromRight) {
+          return function(object, iteratee2, keysFunc) {
+            var index = -1, iterable = Object2(object), props = keysFunc(object), length = props.length;
+            while (length--) {
+              var key = props[fromRight ? length : ++index];
+              if (iteratee2(iterable[key], key, iterable) === false) {
+                break;
+              }
+            }
+            return object;
+          };
+        }
+        function createBind(func, bitmask, thisArg) {
+          var isBind = bitmask & WRAP_BIND_FLAG, Ctor = createCtor(func);
+          function wrapper() {
+            var fn = this && this !== root && this instanceof wrapper ? Ctor : func;
+            return fn.apply(isBind ? thisArg : this, arguments);
+          }
+          return wrapper;
+        }
+        function createCaseFirst(methodName) {
+          return function(string) {
+            string = toString(string);
+            var strSymbols = hasUnicode(string) ? stringToArray(string) : undefined2;
+            var chr = strSymbols ? strSymbols[0] : string.charAt(0);
+            var trailing = strSymbols ? castSlice(strSymbols, 1).join("") : string.slice(1);
+            return chr[methodName]() + trailing;
+          };
+        }
+        function createCompounder(callback) {
+          return function(string) {
+            return arrayReduce(words(deburr(string).replace(reApos, "")), callback, "");
+          };
+        }
+        function createCtor(Ctor) {
+          return function() {
+            var args = arguments;
+            switch (args.length) {
+              case 0:
+                return new Ctor();
+              case 1:
+                return new Ctor(args[0]);
+              case 2:
+                return new Ctor(args[0], args[1]);
+              case 3:
+                return new Ctor(args[0], args[1], args[2]);
+              case 4:
+                return new Ctor(args[0], args[1], args[2], args[3]);
+              case 5:
+                return new Ctor(args[0], args[1], args[2], args[3], args[4]);
+              case 6:
+                return new Ctor(args[0], args[1], args[2], args[3], args[4], args[5]);
+              case 7:
+                return new Ctor(args[0], args[1], args[2], args[3], args[4], args[5], args[6]);
+            }
+            var thisBinding = baseCreate(Ctor.prototype), result2 = Ctor.apply(thisBinding, args);
+            return isObject(result2) ? result2 : thisBinding;
+          };
+        }
+        function createCurry(func, bitmask, arity) {
+          var Ctor = createCtor(func);
+          function wrapper() {
+            var length = arguments.length, args = Array2(length), index = length, placeholder = getHolder(wrapper);
+            while (index--) {
+              args[index] = arguments[index];
+            }
+            var holders = length < 3 && args[0] !== placeholder && args[length - 1] !== placeholder ? [] : replaceHolders(args, placeholder);
+            length -= holders.length;
+            if (length < arity) {
+              return createRecurry(
+                func,
+                bitmask,
+                createHybrid,
+                wrapper.placeholder,
+                undefined2,
+                args,
+                holders,
+                undefined2,
+                undefined2,
+                arity - length
+              );
+            }
+            var fn = this && this !== root && this instanceof wrapper ? Ctor : func;
+            return apply(fn, this, args);
+          }
+          return wrapper;
+        }
+        function createFind(findIndexFunc) {
+          return function(collection, predicate, fromIndex) {
+            var iterable = Object2(collection);
+            if (!isArrayLike(collection)) {
+              var iteratee2 = getIteratee(predicate, 3);
+              collection = keys(collection);
+              predicate = function(key) {
+                return iteratee2(iterable[key], key, iterable);
+              };
+            }
+            var index = findIndexFunc(collection, predicate, fromIndex);
+            return index > -1 ? iterable[iteratee2 ? collection[index] : index] : undefined2;
+          };
+        }
+        function createFlow(fromRight) {
+          return flatRest(function(funcs) {
+            var length = funcs.length, index = length, prereq = LodashWrapper.prototype.thru;
+            if (fromRight) {
+              funcs.reverse();
+            }
+            while (index--) {
+              var func = funcs[index];
+              if (typeof func != "function") {
+                throw new TypeError2(FUNC_ERROR_TEXT);
+              }
+              if (prereq && !wrapper && getFuncName(func) == "wrapper") {
+                var wrapper = new LodashWrapper([], true);
+              }
+            }
+            index = wrapper ? index : length;
+            while (++index < length) {
+              func = funcs[index];
+              var funcName = getFuncName(func), data = funcName == "wrapper" ? getData(func) : undefined2;
+              if (data && isLaziable(data[0]) && data[1] == (WRAP_ARY_FLAG | WRAP_CURRY_FLAG | WRAP_PARTIAL_FLAG | WRAP_REARG_FLAG) && !data[4].length && data[9] == 1) {
+                wrapper = wrapper[getFuncName(data[0])].apply(wrapper, data[3]);
+              } else {
+                wrapper = func.length == 1 && isLaziable(func) ? wrapper[funcName]() : wrapper.thru(func);
+              }
+            }
+            return function() {
+              var args = arguments, value = args[0];
+              if (wrapper && args.length == 1 && isArray(value)) {
+                return wrapper.plant(value).value();
+              }
+              var index2 = 0, result2 = length ? funcs[index2].apply(this, args) : value;
+              while (++index2 < length) {
+                result2 = funcs[index2].call(this, result2);
+              }
+              return result2;
+            };
+          });
+        }
+        function createHybrid(func, bitmask, thisArg, partials, holders, partialsRight, holdersRight, argPos, ary2, arity) {
+          var isAry = bitmask & WRAP_ARY_FLAG, isBind = bitmask & WRAP_BIND_FLAG, isBindKey = bitmask & WRAP_BIND_KEY_FLAG, isCurried = bitmask & (WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG), isFlip = bitmask & WRAP_FLIP_FLAG, Ctor = isBindKey ? undefined2 : createCtor(func);
+          function wrapper() {
+            var length = arguments.length, args = Array2(length), index = length;
+            while (index--) {
+              args[index] = arguments[index];
+            }
+            if (isCurried) {
+              var placeholder = getHolder(wrapper), holdersCount = countHolders(args, placeholder);
+            }
+            if (partials) {
+              args = composeArgs(args, partials, holders, isCurried);
+            }
+            if (partialsRight) {
+              args = composeArgsRight(args, partialsRight, holdersRight, isCurried);
+            }
+            length -= holdersCount;
+            if (isCurried && length < arity) {
+              var newHolders = replaceHolders(args, placeholder);
+              return createRecurry(
+                func,
+                bitmask,
+                createHybrid,
+                wrapper.placeholder,
+                thisArg,
+                args,
+                newHolders,
+                argPos,
+                ary2,
+                arity - length
+              );
+            }
+            var thisBinding = isBind ? thisArg : this, fn = isBindKey ? thisBinding[func] : func;
+            length = args.length;
+            if (argPos) {
+              args = reorder(args, argPos);
+            } else if (isFlip && length > 1) {
+              args.reverse();
+            }
+            if (isAry && ary2 < length) {
+              args.length = ary2;
+            }
+            if (this && this !== root && this instanceof wrapper) {
+              fn = Ctor || createCtor(fn);
+            }
+            return fn.apply(thisBinding, args);
+          }
+          return wrapper;
+        }
+        function createInverter(setter, toIteratee) {
+          return function(object, iteratee2) {
+            return baseInverter(object, setter, toIteratee(iteratee2), {});
+          };
+        }
+        function createMathOperation(operator, defaultValue) {
+          return function(value, other) {
+            var result2;
+            if (value === undefined2 && other === undefined2) {
+              return defaultValue;
+            }
+            if (value !== undefined2) {
+              result2 = value;
+            }
+            if (other !== undefined2) {
+              if (result2 === undefined2) {
+                return other;
+              }
+              if (typeof value == "string" || typeof other == "string") {
+                value = baseToString(value);
+                other = baseToString(other);
+              } else {
+                value = baseToNumber(value);
+                other = baseToNumber(other);
+              }
+              result2 = operator(value, other);
+            }
+            return result2;
+          };
+        }
+        function createOver(arrayFunc) {
+          return flatRest(function(iteratees) {
+            iteratees = arrayMap(iteratees, baseUnary(getIteratee()));
+            return baseRest(function(args) {
+              var thisArg = this;
+              return arrayFunc(iteratees, function(iteratee2) {
+                return apply(iteratee2, thisArg, args);
+              });
+            });
+          });
+        }
+        function createPadding(length, chars) {
+          chars = chars === undefined2 ? " " : baseToString(chars);
+          var charsLength = chars.length;
+          if (charsLength < 2) {
+            return charsLength ? baseRepeat(chars, length) : chars;
+          }
+          var result2 = baseRepeat(chars, nativeCeil(length / stringSize(chars)));
+          return hasUnicode(chars) ? castSlice(stringToArray(result2), 0, length).join("") : result2.slice(0, length);
+        }
+        function createPartial(func, bitmask, thisArg, partials) {
+          var isBind = bitmask & WRAP_BIND_FLAG, Ctor = createCtor(func);
+          function wrapper() {
+            var argsIndex = -1, argsLength = arguments.length, leftIndex = -1, leftLength = partials.length, args = Array2(leftLength + argsLength), fn = this && this !== root && this instanceof wrapper ? Ctor : func;
+            while (++leftIndex < leftLength) {
+              args[leftIndex] = partials[leftIndex];
+            }
+            while (argsLength--) {
+              args[leftIndex++] = arguments[++argsIndex];
+            }
+            return apply(fn, isBind ? thisArg : this, args);
+          }
+          return wrapper;
+        }
+        function createRange(fromRight) {
+          return function(start, end, step) {
+            if (step && typeof step != "number" && isIterateeCall(start, end, step)) {
+              end = step = undefined2;
+            }
+            start = toFinite(start);
+            if (end === undefined2) {
+              end = start;
+              start = 0;
+            } else {
+              end = toFinite(end);
+            }
+            step = step === undefined2 ? start < end ? 1 : -1 : toFinite(step);
+            return baseRange(start, end, step, fromRight);
+          };
+        }
+        function createRelationalOperation(operator) {
+          return function(value, other) {
+            if (!(typeof value == "string" && typeof other == "string")) {
+              value = toNumber(value);
+              other = toNumber(other);
+            }
+            return operator(value, other);
+          };
+        }
+        function createRecurry(func, bitmask, wrapFunc, placeholder, thisArg, partials, holders, argPos, ary2, arity) {
+          var isCurry = bitmask & WRAP_CURRY_FLAG, newHolders = isCurry ? holders : undefined2, newHoldersRight = isCurry ? undefined2 : holders, newPartials = isCurry ? partials : undefined2, newPartialsRight = isCurry ? undefined2 : partials;
+          bitmask |= isCurry ? WRAP_PARTIAL_FLAG : WRAP_PARTIAL_RIGHT_FLAG;
+          bitmask &= ~(isCurry ? WRAP_PARTIAL_RIGHT_FLAG : WRAP_PARTIAL_FLAG);
+          if (!(bitmask & WRAP_CURRY_BOUND_FLAG)) {
+            bitmask &= ~(WRAP_BIND_FLAG | WRAP_BIND_KEY_FLAG);
+          }
+          var newData = [
+            func,
+            bitmask,
+            thisArg,
+            newPartials,
+            newHolders,
+            newPartialsRight,
+            newHoldersRight,
+            argPos,
+            ary2,
+            arity
+          ];
+          var result2 = wrapFunc.apply(undefined2, newData);
+          if (isLaziable(func)) {
+            setData(result2, newData);
+          }
+          result2.placeholder = placeholder;
+          return setWrapToString(result2, func, bitmask);
+        }
+        function createRound(methodName) {
+          var func = Math2[methodName];
+          return function(number, precision) {
+            number = toNumber(number);
+            precision = precision == null ? 0 : nativeMin(toInteger(precision), 292);
+            if (precision && nativeIsFinite(number)) {
+              var pair = (toString(number) + "e").split("e"), value = func(pair[0] + "e" + (+pair[1] + precision));
+              pair = (toString(value) + "e").split("e");
+              return +(pair[0] + "e" + (+pair[1] - precision));
+            }
+            return func(number);
+          };
+        }
+        var createSet = !(Set2 && 1 / setToArray(new Set2([, -0]))[1] == INFINITY) ? noop2 : function(values2) {
+          return new Set2(values2);
+        };
+        function createToPairs(keysFunc) {
+          return function(object) {
+            var tag = getTag(object);
+            if (tag == mapTag) {
+              return mapToArray(object);
+            }
+            if (tag == setTag) {
+              return setToPairs(object);
+            }
+            return baseToPairs(object, keysFunc(object));
+          };
+        }
+        function createWrap(func, bitmask, thisArg, partials, holders, argPos, ary2, arity) {
+          var isBindKey = bitmask & WRAP_BIND_KEY_FLAG;
+          if (!isBindKey && typeof func != "function") {
+            throw new TypeError2(FUNC_ERROR_TEXT);
+          }
+          var length = partials ? partials.length : 0;
+          if (!length) {
+            bitmask &= ~(WRAP_PARTIAL_FLAG | WRAP_PARTIAL_RIGHT_FLAG);
+            partials = holders = undefined2;
+          }
+          ary2 = ary2 === undefined2 ? ary2 : nativeMax(toInteger(ary2), 0);
+          arity = arity === undefined2 ? arity : toInteger(arity);
+          length -= holders ? holders.length : 0;
+          if (bitmask & WRAP_PARTIAL_RIGHT_FLAG) {
+            var partialsRight = partials, holdersRight = holders;
+            partials = holders = undefined2;
+          }
+          var data = isBindKey ? undefined2 : getData(func);
+          var newData = [
+            func,
+            bitmask,
+            thisArg,
+            partials,
+            holders,
+            partialsRight,
+            holdersRight,
+            argPos,
+            ary2,
+            arity
+          ];
+          if (data) {
+            mergeData(newData, data);
+          }
+          func = newData[0];
+          bitmask = newData[1];
+          thisArg = newData[2];
+          partials = newData[3];
+          holders = newData[4];
+          arity = newData[9] = newData[9] === undefined2 ? isBindKey ? 0 : func.length : nativeMax(newData[9] - length, 0);
+          if (!arity && bitmask & (WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG)) {
+            bitmask &= ~(WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG);
+          }
+          if (!bitmask || bitmask == WRAP_BIND_FLAG) {
+            var result2 = createBind(func, bitmask, thisArg);
+          } else if (bitmask == WRAP_CURRY_FLAG || bitmask == WRAP_CURRY_RIGHT_FLAG) {
+            result2 = createCurry(func, bitmask, arity);
+          } else if ((bitmask == WRAP_PARTIAL_FLAG || bitmask == (WRAP_BIND_FLAG | WRAP_PARTIAL_FLAG)) && !holders.length) {
+            result2 = createPartial(func, bitmask, thisArg, partials);
+          } else {
+            result2 = createHybrid.apply(undefined2, newData);
+          }
+          var setter = data ? baseSetData : setData;
+          return setWrapToString(setter(result2, newData), func, bitmask);
+        }
+        function customDefaultsAssignIn(objValue, srcValue, key, object) {
+          if (objValue === undefined2 || eq(objValue, objectProto[key]) && !hasOwnProperty.call(object, key)) {
+            return srcValue;
+          }
+          return objValue;
+        }
+        function customDefaultsMerge(objValue, srcValue, key, object, source, stack) {
+          if (isObject(objValue) && isObject(srcValue)) {
+            stack.set(srcValue, objValue);
+            baseMerge(objValue, srcValue, undefined2, customDefaultsMerge, stack);
+            stack["delete"](srcValue);
+          }
+          return objValue;
+        }
+        function customOmitClone(value) {
+          return isPlainObject(value) ? undefined2 : value;
+        }
+        function equalArrays(array, other, bitmask, customizer, equalFunc, stack) {
+          var isPartial = bitmask & COMPARE_PARTIAL_FLAG, arrLength = array.length, othLength = other.length;
+          if (arrLength != othLength && !(isPartial && othLength > arrLength)) {
+            return false;
+          }
+          var arrStacked = stack.get(array);
+          var othStacked = stack.get(other);
+          if (arrStacked && othStacked) {
+            return arrStacked == other && othStacked == array;
+          }
+          var index = -1, result2 = true, seen = bitmask & COMPARE_UNORDERED_FLAG ? new SetCache() : undefined2;
+          stack.set(array, other);
+          stack.set(other, array);
+          while (++index < arrLength) {
+            var arrValue = array[index], othValue = other[index];
+            if (customizer) {
+              var compared = isPartial ? customizer(othValue, arrValue, index, other, array, stack) : customizer(arrValue, othValue, index, array, other, stack);
+            }
+            if (compared !== undefined2) {
+              if (compared) {
+                continue;
+              }
+              result2 = false;
+              break;
+            }
+            if (seen) {
+              if (!arraySome(other, function(othValue2, othIndex) {
+                if (!cacheHas(seen, othIndex) && (arrValue === othValue2 || equalFunc(arrValue, othValue2, bitmask, customizer, stack))) {
+                  return seen.push(othIndex);
+                }
+              })) {
+                result2 = false;
+                break;
+              }
+            } else if (!(arrValue === othValue || equalFunc(arrValue, othValue, bitmask, customizer, stack))) {
+              result2 = false;
+              break;
+            }
+          }
+          stack["delete"](array);
+          stack["delete"](other);
+          return result2;
+        }
+        function equalByTag(object, other, tag, bitmask, customizer, equalFunc, stack) {
+          switch (tag) {
+            case dataViewTag:
+              if (object.byteLength != other.byteLength || object.byteOffset != other.byteOffset) {
+                return false;
+              }
+              object = object.buffer;
+              other = other.buffer;
+            case arrayBufferTag:
+              if (object.byteLength != other.byteLength || !equalFunc(new Uint8Array2(object), new Uint8Array2(other))) {
+                return false;
+              }
+              return true;
+            case boolTag:
+            case dateTag:
+            case numberTag:
+              return eq(+object, +other);
+            case errorTag:
+              return object.name == other.name && object.message == other.message;
+            case regexpTag:
+            case stringTag:
+              return object == other + "";
+            case mapTag:
+              var convert = mapToArray;
+            case setTag:
+              var isPartial = bitmask & COMPARE_PARTIAL_FLAG;
+              convert || (convert = setToArray);
+              if (object.size != other.size && !isPartial) {
+                return false;
+              }
+              var stacked = stack.get(object);
+              if (stacked) {
+                return stacked == other;
+              }
+              bitmask |= COMPARE_UNORDERED_FLAG;
+              stack.set(object, other);
+              var result2 = equalArrays(convert(object), convert(other), bitmask, customizer, equalFunc, stack);
+              stack["delete"](object);
+              return result2;
+            case symbolTag:
+              if (symbolValueOf) {
+                return symbolValueOf.call(object) == symbolValueOf.call(other);
+              }
+          }
           return false;
         }
+        function equalObjects(object, other, bitmask, customizer, equalFunc, stack) {
+          var isPartial = bitmask & COMPARE_PARTIAL_FLAG, objProps = getAllKeys(object), objLength = objProps.length, othProps = getAllKeys(other), othLength = othProps.length;
+          if (objLength != othLength && !isPartial) {
+            return false;
+          }
+          var index = objLength;
+          while (index--) {
+            var key = objProps[index];
+            if (!(isPartial ? key in other : hasOwnProperty.call(other, key))) {
+              return false;
+            }
+          }
+          var objStacked = stack.get(object);
+          var othStacked = stack.get(other);
+          if (objStacked && othStacked) {
+            return objStacked == other && othStacked == object;
+          }
+          var result2 = true;
+          stack.set(object, other);
+          stack.set(other, object);
+          var skipCtor = isPartial;
+          while (++index < objLength) {
+            key = objProps[index];
+            var objValue = object[key], othValue = other[key];
+            if (customizer) {
+              var compared = isPartial ? customizer(othValue, objValue, key, other, object, stack) : customizer(objValue, othValue, key, object, other, stack);
+            }
+            if (!(compared === undefined2 ? objValue === othValue || equalFunc(objValue, othValue, bitmask, customizer, stack) : compared)) {
+              result2 = false;
+              break;
+            }
+            skipCtor || (skipCtor = key == "constructor");
+          }
+          if (result2 && !skipCtor) {
+            var objCtor = object.constructor, othCtor = other.constructor;
+            if (objCtor != othCtor && ("constructor" in object && "constructor" in other) && !(typeof objCtor == "function" && objCtor instanceof objCtor && typeof othCtor == "function" && othCtor instanceof othCtor)) {
+              result2 = false;
+            }
+          }
+          stack["delete"](object);
+          stack["delete"](other);
+          return result2;
+        }
+        function flatRest(func) {
+          return setToString(overRest(func, undefined2, flatten), func + "");
+        }
+        function getAllKeys(object) {
+          return baseGetAllKeys(object, keys, getSymbols);
+        }
+        function getAllKeysIn(object) {
+          return baseGetAllKeys(object, keysIn, getSymbolsIn);
+        }
+        var getData = !metaMap ? noop2 : function(func) {
+          return metaMap.get(func);
+        };
+        function getFuncName(func) {
+          var result2 = func.name + "", array = realNames[result2], length = hasOwnProperty.call(realNames, result2) ? array.length : 0;
+          while (length--) {
+            var data = array[length], otherFunc = data.func;
+            if (otherFunc == null || otherFunc == func) {
+              return data.name;
+            }
+          }
+          return result2;
+        }
+        function getHolder(func) {
+          var object = hasOwnProperty.call(lodash, "placeholder") ? lodash : func;
+          return object.placeholder;
+        }
+        function getIteratee() {
+          var result2 = lodash.iteratee || iteratee;
+          result2 = result2 === iteratee ? baseIteratee : result2;
+          return arguments.length ? result2(arguments[0], arguments[1]) : result2;
+        }
+        function getMapData(map2, key) {
+          var data = map2.__data__;
+          return isKeyable(key) ? data[typeof key == "string" ? "string" : "hash"] : data.map;
+        }
+        function getMatchData(object) {
+          var result2 = keys(object), length = result2.length;
+          while (length--) {
+            var key = result2[length], value = object[key];
+            result2[length] = [key, value, isStrictComparable(value)];
+          }
+          return result2;
+        }
+        function getNative(object, key) {
+          var value = getValue(object, key);
+          return baseIsNative(value) ? value : undefined2;
+        }
+        function getRawTag(value) {
+          var isOwn = hasOwnProperty.call(value, symToStringTag), tag = value[symToStringTag];
+          try {
+            value[symToStringTag] = undefined2;
+            var unmasked = true;
+          } catch (e) {
+          }
+          var result2 = nativeObjectToString.call(value);
+          if (unmasked) {
+            if (isOwn) {
+              value[symToStringTag] = tag;
+            } else {
+              delete value[symToStringTag];
+            }
+          }
+          return result2;
+        }
+        var getSymbols = !nativeGetSymbols ? stubArray : function(object) {
+          if (object == null) {
+            return [];
+          }
+          object = Object2(object);
+          return arrayFilter(nativeGetSymbols(object), function(symbol) {
+            return propertyIsEnumerable.call(object, symbol);
+          });
+        };
+        var getSymbolsIn = !nativeGetSymbols ? stubArray : function(object) {
+          var result2 = [];
+          while (object) {
+            arrayPush(result2, getSymbols(object));
+            object = getPrototype(object);
+          }
+          return result2;
+        };
+        var getTag = baseGetTag;
+        if (DataView && getTag(new DataView(new ArrayBuffer(1))) != dataViewTag || Map2 && getTag(new Map2()) != mapTag || Promise2 && getTag(Promise2.resolve()) != promiseTag || Set2 && getTag(new Set2()) != setTag || WeakMap2 && getTag(new WeakMap2()) != weakMapTag) {
+          getTag = function(value) {
+            var result2 = baseGetTag(value), Ctor = result2 == objectTag ? value.constructor : undefined2, ctorString = Ctor ? toSource(Ctor) : "";
+            if (ctorString) {
+              switch (ctorString) {
+                case dataViewCtorString:
+                  return dataViewTag;
+                case mapCtorString:
+                  return mapTag;
+                case promiseCtorString:
+                  return promiseTag;
+                case setCtorString:
+                  return setTag;
+                case weakMapCtorString:
+                  return weakMapTag;
+              }
+            }
+            return result2;
+          };
+        }
+        function getView(start, end, transforms) {
+          var index = -1, length = transforms.length;
+          while (++index < length) {
+            var data = transforms[index], size2 = data.size;
+            switch (data.type) {
+              case "drop":
+                start += size2;
+                break;
+              case "dropRight":
+                end -= size2;
+                break;
+              case "take":
+                end = nativeMin(end, start + size2);
+                break;
+              case "takeRight":
+                start = nativeMax(start, end - size2);
+                break;
+            }
+          }
+          return { "start": start, "end": end };
+        }
+        function getWrapDetails(source) {
+          var match = source.match(reWrapDetails);
+          return match ? match[1].split(reSplitDetails) : [];
+        }
+        function hasPath(object, path, hasFunc) {
+          path = castPath(path, object);
+          var index = -1, length = path.length, result2 = false;
+          while (++index < length) {
+            var key = toKey(path[index]);
+            if (!(result2 = object != null && hasFunc(object, key))) {
+              break;
+            }
+            object = object[key];
+          }
+          if (result2 || ++index != length) {
+            return result2;
+          }
+          length = object == null ? 0 : object.length;
+          return !!length && isLength(length) && isIndex(key, length) && (isArray(object) || isArguments(object));
+        }
+        function initCloneArray(array) {
+          var length = array.length, result2 = new array.constructor(length);
+          if (length && typeof array[0] == "string" && hasOwnProperty.call(array, "index")) {
+            result2.index = array.index;
+            result2.input = array.input;
+          }
+          return result2;
+        }
+        function initCloneObject(object) {
+          return typeof object.constructor == "function" && !isPrototype(object) ? baseCreate(getPrototype(object)) : {};
+        }
+        function initCloneByTag(object, tag, isDeep) {
+          var Ctor = object.constructor;
+          switch (tag) {
+            case arrayBufferTag:
+              return cloneArrayBuffer(object);
+            case boolTag:
+            case dateTag:
+              return new Ctor(+object);
+            case dataViewTag:
+              return cloneDataView(object, isDeep);
+            case float32Tag:
+            case float64Tag:
+            case int8Tag:
+            case int16Tag:
+            case int32Tag:
+            case uint8Tag:
+            case uint8ClampedTag:
+            case uint16Tag:
+            case uint32Tag:
+              return cloneTypedArray(object, isDeep);
+            case mapTag:
+              return new Ctor();
+            case numberTag:
+            case stringTag:
+              return new Ctor(object);
+            case regexpTag:
+              return cloneRegExp(object);
+            case setTag:
+              return new Ctor();
+            case symbolTag:
+              return cloneSymbol(object);
+          }
+        }
+        function insertWrapDetails(source, details) {
+          var length = details.length;
+          if (!length) {
+            return source;
+          }
+          var lastIndex = length - 1;
+          details[lastIndex] = (length > 1 ? "& " : "") + details[lastIndex];
+          details = details.join(length > 2 ? ", " : " ");
+          return source.replace(reWrapComment, "{\n/* [wrapped with " + details + "] */\n");
+        }
+        function isFlattenable(value) {
+          return isArray(value) || isArguments(value) || !!(spreadableSymbol && value && value[spreadableSymbol]);
+        }
+        function isIndex(value, length) {
+          var type = typeof value;
+          length = length == null ? MAX_SAFE_INTEGER : length;
+          return !!length && (type == "number" || type != "symbol" && reIsUint.test(value)) && (value > -1 && value % 1 == 0 && value < length);
+        }
+        function isIterateeCall(value, index, object) {
+          if (!isObject(object)) {
+            return false;
+          }
+          var type = typeof index;
+          if (type == "number" ? isArrayLike(object) && isIndex(index, object.length) : type == "string" && index in object) {
+            return eq(object[index], value);
+          }
+          return false;
+        }
+        function isKey(value, object) {
+          if (isArray(value)) {
+            return false;
+          }
+          var type = typeof value;
+          if (type == "number" || type == "symbol" || type == "boolean" || value == null || isSymbol(value)) {
+            return true;
+          }
+          return reIsPlainProp.test(value) || !reIsDeepProp.test(value) || object != null && value in Object2(object);
+        }
+        function isKeyable(value) {
+          var type = typeof value;
+          return type == "string" || type == "number" || type == "symbol" || type == "boolean" ? value !== "__proto__" : value === null;
+        }
+        function isLaziable(func) {
+          var funcName = getFuncName(func), other = lodash[funcName];
+          if (typeof other != "function" || !(funcName in LazyWrapper.prototype)) {
+            return false;
+          }
+          if (func === other) {
+            return true;
+          }
+          var data = getData(other);
+          return !!data && func === data[0];
+        }
+        function isMasked(func) {
+          return !!maskSrcKey && maskSrcKey in func;
+        }
+        var isMaskable = coreJsData ? isFunction : stubFalse;
+        function isPrototype(value) {
+          var Ctor = value && value.constructor, proto = typeof Ctor == "function" && Ctor.prototype || objectProto;
+          return value === proto;
+        }
+        function isStrictComparable(value) {
+          return value === value && !isObject(value);
+        }
+        function matchesStrictComparable(key, srcValue) {
+          return function(object) {
+            if (object == null) {
+              return false;
+            }
+            return object[key] === srcValue && (srcValue !== undefined2 || key in Object2(object));
+          };
+        }
+        function memoizeCapped(func) {
+          var result2 = memoize(func, function(key) {
+            if (cache.size === MAX_MEMOIZE_SIZE) {
+              cache.clear();
+            }
+            return key;
+          });
+          var cache = result2.cache;
+          return result2;
+        }
+        function mergeData(data, source) {
+          var bitmask = data[1], srcBitmask = source[1], newBitmask = bitmask | srcBitmask, isCommon = newBitmask < (WRAP_BIND_FLAG | WRAP_BIND_KEY_FLAG | WRAP_ARY_FLAG);
+          var isCombo = srcBitmask == WRAP_ARY_FLAG && bitmask == WRAP_CURRY_FLAG || srcBitmask == WRAP_ARY_FLAG && bitmask == WRAP_REARG_FLAG && data[7].length <= source[8] || srcBitmask == (WRAP_ARY_FLAG | WRAP_REARG_FLAG) && source[7].length <= source[8] && bitmask == WRAP_CURRY_FLAG;
+          if (!(isCommon || isCombo)) {
+            return data;
+          }
+          if (srcBitmask & WRAP_BIND_FLAG) {
+            data[2] = source[2];
+            newBitmask |= bitmask & WRAP_BIND_FLAG ? 0 : WRAP_CURRY_BOUND_FLAG;
+          }
+          var value = source[3];
+          if (value) {
+            var partials = data[3];
+            data[3] = partials ? composeArgs(partials, value, source[4]) : value;
+            data[4] = partials ? replaceHolders(data[3], PLACEHOLDER) : source[4];
+          }
+          value = source[5];
+          if (value) {
+            partials = data[5];
+            data[5] = partials ? composeArgsRight(partials, value, source[6]) : value;
+            data[6] = partials ? replaceHolders(data[5], PLACEHOLDER) : source[6];
+          }
+          value = source[7];
+          if (value) {
+            data[7] = value;
+          }
+          if (srcBitmask & WRAP_ARY_FLAG) {
+            data[8] = data[8] == null ? source[8] : nativeMin(data[8], source[8]);
+          }
+          if (data[9] == null) {
+            data[9] = source[9];
+          }
+          data[0] = source[0];
+          data[1] = newBitmask;
+          return data;
+        }
+        function nativeKeysIn(object) {
+          var result2 = [];
+          if (object != null) {
+            for (var key in Object2(object)) {
+              result2.push(key);
+            }
+          }
+          return result2;
+        }
+        function objectToString(value) {
+          return nativeObjectToString.call(value);
+        }
+        function overRest(func, start, transform3) {
+          start = nativeMax(start === undefined2 ? func.length - 1 : start, 0);
+          return function() {
+            var args = arguments, index = -1, length = nativeMax(args.length - start, 0), array = Array2(length);
+            while (++index < length) {
+              array[index] = args[start + index];
+            }
+            index = -1;
+            var otherArgs = Array2(start + 1);
+            while (++index < start) {
+              otherArgs[index] = args[index];
+            }
+            otherArgs[start] = transform3(array);
+            return apply(func, this, otherArgs);
+          };
+        }
+        function parent(object, path) {
+          return path.length < 2 ? object : baseGet(object, baseSlice(path, 0, -1));
+        }
+        function reorder(array, indexes) {
+          var arrLength = array.length, length = nativeMin(indexes.length, arrLength), oldArray = copyArray(array);
+          while (length--) {
+            var index = indexes[length];
+            array[length] = isIndex(index, arrLength) ? oldArray[index] : undefined2;
+          }
+          return array;
+        }
+        function safeGet(object, key) {
+          if (key === "constructor" && typeof object[key] === "function") {
+            return;
+          }
+          if (key == "__proto__") {
+            return;
+          }
+          return object[key];
+        }
+        var setData = shortOut(baseSetData);
+        var setTimeout = ctxSetTimeout || function(func, wait) {
+          return root.setTimeout(func, wait);
+        };
+        var setToString = shortOut(baseSetToString);
+        function setWrapToString(wrapper, reference, bitmask) {
+          var source = reference + "";
+          return setToString(wrapper, insertWrapDetails(source, updateWrapDetails(getWrapDetails(source), bitmask)));
+        }
+        function shortOut(func) {
+          var count = 0, lastCalled = 0;
+          return function() {
+            var stamp = nativeNow(), remaining = HOT_SPAN - (stamp - lastCalled);
+            lastCalled = stamp;
+            if (remaining > 0) {
+              if (++count >= HOT_COUNT) {
+                return arguments[0];
+              }
+            } else {
+              count = 0;
+            }
+            return func.apply(undefined2, arguments);
+          };
+        }
+        function shuffleSelf(array, size2) {
+          var index = -1, length = array.length, lastIndex = length - 1;
+          size2 = size2 === undefined2 ? length : size2;
+          while (++index < size2) {
+            var rand = baseRandom(index, lastIndex), value = array[rand];
+            array[rand] = array[index];
+            array[index] = value;
+          }
+          array.length = size2;
+          return array;
+        }
+        var stringToPath = memoizeCapped(function(string) {
+          var result2 = [];
+          if (string.charCodeAt(0) === 46) {
+            result2.push("");
+          }
+          string.replace(rePropName, function(match, number, quote, subString) {
+            result2.push(quote ? subString.replace(reEscapeChar, "$1") : number || match);
+          });
+          return result2;
+        });
+        function toKey(value) {
+          if (typeof value == "string" || isSymbol(value)) {
+            return value;
+          }
+          var result2 = value + "";
+          return result2 == "0" && 1 / value == -INFINITY ? "-0" : result2;
+        }
+        function toSource(func) {
+          if (func != null) {
+            try {
+              return funcToString.call(func);
+            } catch (e) {
+            }
+            try {
+              return func + "";
+            } catch (e) {
+            }
+          }
+          return "";
+        }
+        function updateWrapDetails(details, bitmask) {
+          arrayEach(wrapFlags, function(pair) {
+            var value = "_." + pair[0];
+            if (bitmask & pair[1] && !arrayIncludes(details, value)) {
+              details.push(value);
+            }
+          });
+          return details.sort();
+        }
+        function wrapperClone(wrapper) {
+          if (wrapper instanceof LazyWrapper) {
+            return wrapper.clone();
+          }
+          var result2 = new LodashWrapper(wrapper.__wrapped__, wrapper.__chain__);
+          result2.__actions__ = copyArray(wrapper.__actions__);
+          result2.__index__ = wrapper.__index__;
+          result2.__values__ = wrapper.__values__;
+          return result2;
+        }
+        function chunk(array, size2, guard) {
+          if (guard ? isIterateeCall(array, size2, guard) : size2 === undefined2) {
+            size2 = 1;
+          } else {
+            size2 = nativeMax(toInteger(size2), 0);
+          }
+          var length = array == null ? 0 : array.length;
+          if (!length || size2 < 1) {
+            return [];
+          }
+          var index = 0, resIndex = 0, result2 = Array2(nativeCeil(length / size2));
+          while (index < length) {
+            result2[resIndex++] = baseSlice(array, index, index += size2);
+          }
+          return result2;
+        }
+        function compact(array) {
+          var index = -1, length = array == null ? 0 : array.length, resIndex = 0, result2 = [];
+          while (++index < length) {
+            var value = array[index];
+            if (value) {
+              result2[resIndex++] = value;
+            }
+          }
+          return result2;
+        }
+        function concat() {
+          var length = arguments.length;
+          if (!length) {
+            return [];
+          }
+          var args = Array2(length - 1), array = arguments[0], index = length;
+          while (index--) {
+            args[index - 1] = arguments[index];
+          }
+          return arrayPush(isArray(array) ? copyArray(array) : [array], baseFlatten(args, 1));
+        }
+        var difference2 = baseRest(function(array, values2) {
+          return isArrayLikeObject(array) ? baseDifference(array, baseFlatten(values2, 1, isArrayLikeObject, true)) : [];
+        });
+        var differenceBy = baseRest(function(array, values2) {
+          var iteratee2 = last3(values2);
+          if (isArrayLikeObject(iteratee2)) {
+            iteratee2 = undefined2;
+          }
+          return isArrayLikeObject(array) ? baseDifference(array, baseFlatten(values2, 1, isArrayLikeObject, true), getIteratee(iteratee2, 2)) : [];
+        });
+        var differenceWith = baseRest(function(array, values2) {
+          var comparator = last3(values2);
+          if (isArrayLikeObject(comparator)) {
+            comparator = undefined2;
+          }
+          return isArrayLikeObject(array) ? baseDifference(array, baseFlatten(values2, 1, isArrayLikeObject, true), undefined2, comparator) : [];
+        });
+        function drop(array, n, guard) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
+            return [];
+          }
+          n = guard || n === undefined2 ? 1 : toInteger(n);
+          return baseSlice(array, n < 0 ? 0 : n, length);
+        }
+        function dropRight(array, n, guard) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
+            return [];
+          }
+          n = guard || n === undefined2 ? 1 : toInteger(n);
+          n = length - n;
+          return baseSlice(array, 0, n < 0 ? 0 : n);
+        }
+        function dropRightWhile(array, predicate) {
+          return array && array.length ? baseWhile(array, getIteratee(predicate, 3), true, true) : [];
+        }
+        function dropWhile(array, predicate) {
+          return array && array.length ? baseWhile(array, getIteratee(predicate, 3), true) : [];
+        }
+        function fill(array, value, start, end) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
+            return [];
+          }
+          if (start && typeof start != "number" && isIterateeCall(array, value, start)) {
+            start = 0;
+            end = length;
+          }
+          return baseFill(array, value, start, end);
+        }
+        function findIndex(array, predicate, fromIndex) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
+            return -1;
+          }
+          var index = fromIndex == null ? 0 : toInteger(fromIndex);
+          if (index < 0) {
+            index = nativeMax(length + index, 0);
+          }
+          return baseFindIndex(array, getIteratee(predicate, 3), index);
+        }
+        function findLastIndex(array, predicate, fromIndex) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
+            return -1;
+          }
+          var index = length - 1;
+          if (fromIndex !== undefined2) {
+            index = toInteger(fromIndex);
+            index = fromIndex < 0 ? nativeMax(length + index, 0) : nativeMin(index, length - 1);
+          }
+          return baseFindIndex(array, getIteratee(predicate, 3), index, true);
+        }
+        function flatten(array) {
+          var length = array == null ? 0 : array.length;
+          return length ? baseFlatten(array, 1) : [];
+        }
+        function flattenDeep(array) {
+          var length = array == null ? 0 : array.length;
+          return length ? baseFlatten(array, INFINITY) : [];
+        }
+        function flattenDepth(array, depth) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
+            return [];
+          }
+          depth = depth === undefined2 ? 1 : toInteger(depth);
+          return baseFlatten(array, depth);
+        }
+        function fromPairs(pairs) {
+          var index = -1, length = pairs == null ? 0 : pairs.length, result2 = {};
+          while (++index < length) {
+            var pair = pairs[index];
+            result2[pair[0]] = pair[1];
+          }
+          return result2;
+        }
+        function head(array) {
+          return array && array.length ? array[0] : undefined2;
+        }
+        function indexOf(array, value, fromIndex) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
+            return -1;
+          }
+          var index = fromIndex == null ? 0 : toInteger(fromIndex);
+          if (index < 0) {
+            index = nativeMax(length + index, 0);
+          }
+          return baseIndexOf(array, value, index);
+        }
+        function initial(array) {
+          var length = array == null ? 0 : array.length;
+          return length ? baseSlice(array, 0, -1) : [];
+        }
+        var intersection = baseRest(function(arrays) {
+          var mapped = arrayMap(arrays, castArrayLikeObject);
+          return mapped.length && mapped[0] === arrays[0] ? baseIntersection(mapped) : [];
+        });
+        var intersectionBy = baseRest(function(arrays) {
+          var iteratee2 = last3(arrays), mapped = arrayMap(arrays, castArrayLikeObject);
+          if (iteratee2 === last3(mapped)) {
+            iteratee2 = undefined2;
+          } else {
+            mapped.pop();
+          }
+          return mapped.length && mapped[0] === arrays[0] ? baseIntersection(mapped, getIteratee(iteratee2, 2)) : [];
+        });
+        var intersectionWith = baseRest(function(arrays) {
+          var comparator = last3(arrays), mapped = arrayMap(arrays, castArrayLikeObject);
+          comparator = typeof comparator == "function" ? comparator : undefined2;
+          if (comparator) {
+            mapped.pop();
+          }
+          return mapped.length && mapped[0] === arrays[0] ? baseIntersection(mapped, undefined2, comparator) : [];
+        });
+        function join(array, separator) {
+          return array == null ? "" : nativeJoin.call(array, separator);
+        }
+        function last3(array) {
+          var length = array == null ? 0 : array.length;
+          return length ? array[length - 1] : undefined2;
+        }
+        function lastIndexOf(array, value, fromIndex) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
+            return -1;
+          }
+          var index = length;
+          if (fromIndex !== undefined2) {
+            index = toInteger(fromIndex);
+            index = index < 0 ? nativeMax(length + index, 0) : nativeMin(index, length - 1);
+          }
+          return value === value ? strictLastIndexOf(array, value, index) : baseFindIndex(array, baseIsNaN, index, true);
+        }
+        function nth(array, n) {
+          return array && array.length ? baseNth(array, toInteger(n)) : undefined2;
+        }
+        var pull = baseRest(pullAll);
+        function pullAll(array, values2) {
+          return array && array.length && values2 && values2.length ? basePullAll(array, values2) : array;
+        }
+        function pullAllBy(array, values2, iteratee2) {
+          return array && array.length && values2 && values2.length ? basePullAll(array, values2, getIteratee(iteratee2, 2)) : array;
+        }
+        function pullAllWith(array, values2, comparator) {
+          return array && array.length && values2 && values2.length ? basePullAll(array, values2, undefined2, comparator) : array;
+        }
+        var pullAt = flatRest(function(array, indexes) {
+          var length = array == null ? 0 : array.length, result2 = baseAt(array, indexes);
+          basePullAt(array, arrayMap(indexes, function(index) {
+            return isIndex(index, length) ? +index : index;
+          }).sort(compareAscending));
+          return result2;
+        });
+        function remove(array, predicate) {
+          var result2 = [];
+          if (!(array && array.length)) {
+            return result2;
+          }
+          var index = -1, indexes = [], length = array.length;
+          predicate = getIteratee(predicate, 3);
+          while (++index < length) {
+            var value = array[index];
+            if (predicate(value, index, array)) {
+              result2.push(value);
+              indexes.push(index);
+            }
+          }
+          basePullAt(array, indexes);
+          return result2;
+        }
+        function reverse(array) {
+          return array == null ? array : nativeReverse.call(array);
+        }
+        function slice(array, start, end) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
+            return [];
+          }
+          if (end && typeof end != "number" && isIterateeCall(array, start, end)) {
+            start = 0;
+            end = length;
+          } else {
+            start = start == null ? 0 : toInteger(start);
+            end = end === undefined2 ? length : toInteger(end);
+          }
+          return baseSlice(array, start, end);
+        }
+        function sortedIndex(array, value) {
+          return baseSortedIndex(array, value);
+        }
+        function sortedIndexBy(array, value, iteratee2) {
+          return baseSortedIndexBy(array, value, getIteratee(iteratee2, 2));
+        }
+        function sortedIndexOf(array, value) {
+          var length = array == null ? 0 : array.length;
+          if (length) {
+            var index = baseSortedIndex(array, value);
+            if (index < length && eq(array[index], value)) {
+              return index;
+            }
+          }
+          return -1;
+        }
+        function sortedLastIndex(array, value) {
+          return baseSortedIndex(array, value, true);
+        }
+        function sortedLastIndexBy(array, value, iteratee2) {
+          return baseSortedIndexBy(array, value, getIteratee(iteratee2, 2), true);
+        }
+        function sortedLastIndexOf(array, value) {
+          var length = array == null ? 0 : array.length;
+          if (length) {
+            var index = baseSortedIndex(array, value, true) - 1;
+            if (eq(array[index], value)) {
+              return index;
+            }
+          }
+          return -1;
+        }
+        function sortedUniq(array) {
+          return array && array.length ? baseSortedUniq(array) : [];
+        }
+        function sortedUniqBy(array, iteratee2) {
+          return array && array.length ? baseSortedUniq(array, getIteratee(iteratee2, 2)) : [];
+        }
+        function tail(array) {
+          var length = array == null ? 0 : array.length;
+          return length ? baseSlice(array, 1, length) : [];
+        }
+        function take(array, n, guard) {
+          if (!(array && array.length)) {
+            return [];
+          }
+          n = guard || n === undefined2 ? 1 : toInteger(n);
+          return baseSlice(array, 0, n < 0 ? 0 : n);
+        }
+        function takeRight(array, n, guard) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
+            return [];
+          }
+          n = guard || n === undefined2 ? 1 : toInteger(n);
+          n = length - n;
+          return baseSlice(array, n < 0 ? 0 : n, length);
+        }
+        function takeRightWhile(array, predicate) {
+          return array && array.length ? baseWhile(array, getIteratee(predicate, 3), false, true) : [];
+        }
+        function takeWhile(array, predicate) {
+          return array && array.length ? baseWhile(array, getIteratee(predicate, 3)) : [];
+        }
+        var union = baseRest(function(arrays) {
+          return baseUniq(baseFlatten(arrays, 1, isArrayLikeObject, true));
+        });
+        var unionBy = baseRest(function(arrays) {
+          var iteratee2 = last3(arrays);
+          if (isArrayLikeObject(iteratee2)) {
+            iteratee2 = undefined2;
+          }
+          return baseUniq(baseFlatten(arrays, 1, isArrayLikeObject, true), getIteratee(iteratee2, 2));
+        });
+        var unionWith = baseRest(function(arrays) {
+          var comparator = last3(arrays);
+          comparator = typeof comparator == "function" ? comparator : undefined2;
+          return baseUniq(baseFlatten(arrays, 1, isArrayLikeObject, true), undefined2, comparator);
+        });
+        function uniq(array) {
+          return array && array.length ? baseUniq(array) : [];
+        }
+        function uniqBy(array, iteratee2) {
+          return array && array.length ? baseUniq(array, getIteratee(iteratee2, 2)) : [];
+        }
+        function uniqWith(array, comparator) {
+          comparator = typeof comparator == "function" ? comparator : undefined2;
+          return array && array.length ? baseUniq(array, undefined2, comparator) : [];
+        }
+        function unzip(array) {
+          if (!(array && array.length)) {
+            return [];
+          }
+          var length = 0;
+          array = arrayFilter(array, function(group) {
+            if (isArrayLikeObject(group)) {
+              length = nativeMax(group.length, length);
+              return true;
+            }
+          });
+          return baseTimes(length, function(index) {
+            return arrayMap(array, baseProperty(index));
+          });
+        }
+        function unzipWith(array, iteratee2) {
+          if (!(array && array.length)) {
+            return [];
+          }
+          var result2 = unzip(array);
+          if (iteratee2 == null) {
+            return result2;
+          }
+          return arrayMap(result2, function(group) {
+            return apply(iteratee2, undefined2, group);
+          });
+        }
+        var without = baseRest(function(array, values2) {
+          return isArrayLikeObject(array) ? baseDifference(array, values2) : [];
+        });
+        var xor = baseRest(function(arrays) {
+          return baseXor(arrayFilter(arrays, isArrayLikeObject));
+        });
+        var xorBy = baseRest(function(arrays) {
+          var iteratee2 = last3(arrays);
+          if (isArrayLikeObject(iteratee2)) {
+            iteratee2 = undefined2;
+          }
+          return baseXor(arrayFilter(arrays, isArrayLikeObject), getIteratee(iteratee2, 2));
+        });
+        var xorWith = baseRest(function(arrays) {
+          var comparator = last3(arrays);
+          comparator = typeof comparator == "function" ? comparator : undefined2;
+          return baseXor(arrayFilter(arrays, isArrayLikeObject), undefined2, comparator);
+        });
+        var zip = baseRest(unzip);
+        function zipObject(props, values2) {
+          return baseZipObject(props || [], values2 || [], assignValue);
+        }
+        function zipObjectDeep(props, values2) {
+          return baseZipObject(props || [], values2 || [], baseSet);
+        }
+        var zipWith = baseRest(function(arrays) {
+          var length = arrays.length, iteratee2 = length > 1 ? arrays[length - 1] : undefined2;
+          iteratee2 = typeof iteratee2 == "function" ? (arrays.pop(), iteratee2) : undefined2;
+          return unzipWith(arrays, iteratee2);
+        });
+        function chain(value) {
+          var result2 = lodash(value);
+          result2.__chain__ = true;
+          return result2;
+        }
+        function tap(value, interceptor) {
+          interceptor(value);
+          return value;
+        }
+        function thru(value, interceptor) {
+          return interceptor(value);
+        }
+        var wrapperAt = flatRest(function(paths) {
+          var length = paths.length, start = length ? paths[0] : 0, value = this.__wrapped__, interceptor = function(object) {
+            return baseAt(object, paths);
+          };
+          if (length > 1 || this.__actions__.length || !(value instanceof LazyWrapper) || !isIndex(start)) {
+            return this.thru(interceptor);
+          }
+          value = value.slice(start, +start + (length ? 1 : 0));
+          value.__actions__.push({
+            "func": thru,
+            "args": [interceptor],
+            "thisArg": undefined2
+          });
+          return new LodashWrapper(value, this.__chain__).thru(function(array) {
+            if (length && !array.length) {
+              array.push(undefined2);
+            }
+            return array;
+          });
+        });
+        function wrapperChain() {
+          return chain(this);
+        }
+        function wrapperCommit() {
+          return new LodashWrapper(this.value(), this.__chain__);
+        }
+        function wrapperNext() {
+          if (this.__values__ === undefined2) {
+            this.__values__ = toArray(this.value());
+          }
+          var done = this.__index__ >= this.__values__.length, value = done ? undefined2 : this.__values__[this.__index__++];
+          return { "done": done, "value": value };
+        }
+        function wrapperToIterator() {
+          return this;
+        }
+        function wrapperPlant(value) {
+          var result2, parent2 = this;
+          while (parent2 instanceof baseLodash) {
+            var clone2 = wrapperClone(parent2);
+            clone2.__index__ = 0;
+            clone2.__values__ = undefined2;
+            if (result2) {
+              previous.__wrapped__ = clone2;
+            } else {
+              result2 = clone2;
+            }
+            var previous = clone2;
+            parent2 = parent2.__wrapped__;
+          }
+          previous.__wrapped__ = value;
+          return result2;
+        }
+        function wrapperReverse() {
+          var value = this.__wrapped__;
+          if (value instanceof LazyWrapper) {
+            var wrapped = value;
+            if (this.__actions__.length) {
+              wrapped = new LazyWrapper(this);
+            }
+            wrapped = wrapped.reverse();
+            wrapped.__actions__.push({
+              "func": thru,
+              "args": [reverse],
+              "thisArg": undefined2
+            });
+            return new LodashWrapper(wrapped, this.__chain__);
+          }
+          return this.thru(reverse);
+        }
+        function wrapperValue() {
+          return baseWrapperValue(this.__wrapped__, this.__actions__);
+        }
+        var countBy = createAggregator(function(result2, value, key) {
+          if (hasOwnProperty.call(result2, key)) {
+            ++result2[key];
+          } else {
+            baseAssignValue(result2, key, 1);
+          }
+        });
+        function every(collection, predicate, guard) {
+          var func = isArray(collection) ? arrayEvery : baseEvery;
+          if (guard && isIterateeCall(collection, predicate, guard)) {
+            predicate = undefined2;
+          }
+          return func(collection, getIteratee(predicate, 3));
+        }
+        function filter(collection, predicate) {
+          var func = isArray(collection) ? arrayFilter : baseFilter;
+          return func(collection, getIteratee(predicate, 3));
+        }
+        var find = createFind(findIndex);
+        var findLast = createFind(findLastIndex);
+        function flatMap(collection, iteratee2) {
+          return baseFlatten(map(collection, iteratee2), 1);
+        }
+        function flatMapDeep(collection, iteratee2) {
+          return baseFlatten(map(collection, iteratee2), INFINITY);
+        }
+        function flatMapDepth(collection, iteratee2, depth) {
+          depth = depth === undefined2 ? 1 : toInteger(depth);
+          return baseFlatten(map(collection, iteratee2), depth);
+        }
+        function forEach(collection, iteratee2) {
+          var func = isArray(collection) ? arrayEach : baseEach;
+          return func(collection, getIteratee(iteratee2, 3));
+        }
+        function forEachRight(collection, iteratee2) {
+          var func = isArray(collection) ? arrayEachRight : baseEachRight;
+          return func(collection, getIteratee(iteratee2, 3));
+        }
+        var groupBy2 = createAggregator(function(result2, value, key) {
+          if (hasOwnProperty.call(result2, key)) {
+            result2[key].push(value);
+          } else {
+            baseAssignValue(result2, key, [value]);
+          }
+        });
+        function includes(collection, value, fromIndex, guard) {
+          collection = isArrayLike(collection) ? collection : values(collection);
+          fromIndex = fromIndex && !guard ? toInteger(fromIndex) : 0;
+          var length = collection.length;
+          if (fromIndex < 0) {
+            fromIndex = nativeMax(length + fromIndex, 0);
+          }
+          return isString(collection) ? fromIndex <= length && collection.indexOf(value, fromIndex) > -1 : !!length && baseIndexOf(collection, value, fromIndex) > -1;
+        }
+        var invokeMap = baseRest(function(collection, path, args) {
+          var index = -1, isFunc = typeof path == "function", result2 = isArrayLike(collection) ? Array2(collection.length) : [];
+          baseEach(collection, function(value) {
+            result2[++index] = isFunc ? apply(path, value, args) : baseInvoke(value, path, args);
+          });
+          return result2;
+        });
+        var keyBy = createAggregator(function(result2, value, key) {
+          baseAssignValue(result2, key, value);
+        });
+        function map(collection, iteratee2) {
+          var func = isArray(collection) ? arrayMap : baseMap;
+          return func(collection, getIteratee(iteratee2, 3));
+        }
+        function orderBy(collection, iteratees, orders, guard) {
+          if (collection == null) {
+            return [];
+          }
+          if (!isArray(iteratees)) {
+            iteratees = iteratees == null ? [] : [iteratees];
+          }
+          orders = guard ? undefined2 : orders;
+          if (!isArray(orders)) {
+            orders = orders == null ? [] : [orders];
+          }
+          return baseOrderBy(collection, iteratees, orders);
+        }
+        var partition3 = createAggregator(function(result2, value, key) {
+          result2[key ? 0 : 1].push(value);
+        }, function() {
+          return [[], []];
+        });
+        function reduce(collection, iteratee2, accumulator) {
+          var func = isArray(collection) ? arrayReduce : baseReduce, initAccum = arguments.length < 3;
+          return func(collection, getIteratee(iteratee2, 4), accumulator, initAccum, baseEach);
+        }
+        function reduceRight(collection, iteratee2, accumulator) {
+          var func = isArray(collection) ? arrayReduceRight : baseReduce, initAccum = arguments.length < 3;
+          return func(collection, getIteratee(iteratee2, 4), accumulator, initAccum, baseEachRight);
+        }
+        function reject(collection, predicate) {
+          var func = isArray(collection) ? arrayFilter : baseFilter;
+          return func(collection, negate(getIteratee(predicate, 3)));
+        }
+        function sample(collection) {
+          var func = isArray(collection) ? arraySample : baseSample;
+          return func(collection);
+        }
+        function sampleSize(collection, n, guard) {
+          if (guard ? isIterateeCall(collection, n, guard) : n === undefined2) {
+            n = 1;
+          } else {
+            n = toInteger(n);
+          }
+          var func = isArray(collection) ? arraySampleSize : baseSampleSize;
+          return func(collection, n);
+        }
+        function shuffle(collection) {
+          var func = isArray(collection) ? arrayShuffle : baseShuffle;
+          return func(collection);
+        }
+        function size(collection) {
+          if (collection == null) {
+            return 0;
+          }
+          if (isArrayLike(collection)) {
+            return isString(collection) ? stringSize(collection) : collection.length;
+          }
+          var tag = getTag(collection);
+          if (tag == mapTag || tag == setTag) {
+            return collection.size;
+          }
+          return baseKeys(collection).length;
+        }
+        function some(collection, predicate, guard) {
+          var func = isArray(collection) ? arraySome : baseSome;
+          if (guard && isIterateeCall(collection, predicate, guard)) {
+            predicate = undefined2;
+          }
+          return func(collection, getIteratee(predicate, 3));
+        }
+        var sortBy = baseRest(function(collection, iteratees) {
+          if (collection == null) {
+            return [];
+          }
+          var length = iteratees.length;
+          if (length > 1 && isIterateeCall(collection, iteratees[0], iteratees[1])) {
+            iteratees = [];
+          } else if (length > 2 && isIterateeCall(iteratees[0], iteratees[1], iteratees[2])) {
+            iteratees = [iteratees[0]];
+          }
+          return baseOrderBy(collection, baseFlatten(iteratees, 1), []);
+        });
+        var now = ctxNow || function() {
+          return root.Date.now();
+        };
+        function after(n, func) {
+          if (typeof func != "function") {
+            throw new TypeError2(FUNC_ERROR_TEXT);
+          }
+          n = toInteger(n);
+          return function() {
+            if (--n < 1) {
+              return func.apply(this, arguments);
+            }
+          };
+        }
+        function ary(func, n, guard) {
+          n = guard ? undefined2 : n;
+          n = func && n == null ? func.length : n;
+          return createWrap(func, WRAP_ARY_FLAG, undefined2, undefined2, undefined2, undefined2, n);
+        }
+        function before(n, func) {
+          var result2;
+          if (typeof func != "function") {
+            throw new TypeError2(FUNC_ERROR_TEXT);
+          }
+          n = toInteger(n);
+          return function() {
+            if (--n > 0) {
+              result2 = func.apply(this, arguments);
+            }
+            if (n <= 1) {
+              func = undefined2;
+            }
+            return result2;
+          };
+        }
+        var bind = baseRest(function(func, thisArg, partials) {
+          var bitmask = WRAP_BIND_FLAG;
+          if (partials.length) {
+            var holders = replaceHolders(partials, getHolder(bind));
+            bitmask |= WRAP_PARTIAL_FLAG;
+          }
+          return createWrap(func, bitmask, thisArg, partials, holders);
+        });
+        var bindKey = baseRest(function(object, key, partials) {
+          var bitmask = WRAP_BIND_FLAG | WRAP_BIND_KEY_FLAG;
+          if (partials.length) {
+            var holders = replaceHolders(partials, getHolder(bindKey));
+            bitmask |= WRAP_PARTIAL_FLAG;
+          }
+          return createWrap(key, bitmask, object, partials, holders);
+        });
+        function curry(func, arity, guard) {
+          arity = guard ? undefined2 : arity;
+          var result2 = createWrap(func, WRAP_CURRY_FLAG, undefined2, undefined2, undefined2, undefined2, undefined2, arity);
+          result2.placeholder = curry.placeholder;
+          return result2;
+        }
+        function curryRight(func, arity, guard) {
+          arity = guard ? undefined2 : arity;
+          var result2 = createWrap(func, WRAP_CURRY_RIGHT_FLAG, undefined2, undefined2, undefined2, undefined2, undefined2, arity);
+          result2.placeholder = curryRight.placeholder;
+          return result2;
+        }
+        function debounce2(func, wait, options) {
+          var lastArgs, lastThis, maxWait, result2, timerId, lastCallTime, lastInvokeTime = 0, leading = false, maxing = false, trailing = true;
+          if (typeof func != "function") {
+            throw new TypeError2(FUNC_ERROR_TEXT);
+          }
+          wait = toNumber(wait) || 0;
+          if (isObject(options)) {
+            leading = !!options.leading;
+            maxing = "maxWait" in options;
+            maxWait = maxing ? nativeMax(toNumber(options.maxWait) || 0, wait) : maxWait;
+            trailing = "trailing" in options ? !!options.trailing : trailing;
+          }
+          function invokeFunc(time2) {
+            var args = lastArgs, thisArg = lastThis;
+            lastArgs = lastThis = undefined2;
+            lastInvokeTime = time2;
+            result2 = func.apply(thisArg, args);
+            return result2;
+          }
+          function leadingEdge(time2) {
+            lastInvokeTime = time2;
+            timerId = setTimeout(timerExpired, wait);
+            return leading ? invokeFunc(time2) : result2;
+          }
+          function remainingWait(time2) {
+            var timeSinceLastCall = time2 - lastCallTime, timeSinceLastInvoke = time2 - lastInvokeTime, timeWaiting = wait - timeSinceLastCall;
+            return maxing ? nativeMin(timeWaiting, maxWait - timeSinceLastInvoke) : timeWaiting;
+          }
+          function shouldInvoke(time2) {
+            var timeSinceLastCall = time2 - lastCallTime, timeSinceLastInvoke = time2 - lastInvokeTime;
+            return lastCallTime === undefined2 || timeSinceLastCall >= wait || timeSinceLastCall < 0 || maxing && timeSinceLastInvoke >= maxWait;
+          }
+          function timerExpired() {
+            var time2 = now();
+            if (shouldInvoke(time2)) {
+              return trailingEdge(time2);
+            }
+            timerId = setTimeout(timerExpired, remainingWait(time2));
+          }
+          function trailingEdge(time2) {
+            timerId = undefined2;
+            if (trailing && lastArgs) {
+              return invokeFunc(time2);
+            }
+            lastArgs = lastThis = undefined2;
+            return result2;
+          }
+          function cancel() {
+            if (timerId !== undefined2) {
+              clearTimeout2(timerId);
+            }
+            lastInvokeTime = 0;
+            lastArgs = lastCallTime = lastThis = timerId = undefined2;
+          }
+          function flush2() {
+            return timerId === undefined2 ? result2 : trailingEdge(now());
+          }
+          function debounced() {
+            var time2 = now(), isInvoking = shouldInvoke(time2);
+            lastArgs = arguments;
+            lastThis = this;
+            lastCallTime = time2;
+            if (isInvoking) {
+              if (timerId === undefined2) {
+                return leadingEdge(lastCallTime);
+              }
+              if (maxing) {
+                clearTimeout2(timerId);
+                timerId = setTimeout(timerExpired, wait);
+                return invokeFunc(lastCallTime);
+              }
+            }
+            if (timerId === undefined2) {
+              timerId = setTimeout(timerExpired, wait);
+            }
+            return result2;
+          }
+          debounced.cancel = cancel;
+          debounced.flush = flush2;
+          return debounced;
+        }
+        var defer = baseRest(function(func, args) {
+          return baseDelay(func, 1, args);
+        });
+        var delay = baseRest(function(func, wait, args) {
+          return baseDelay(func, toNumber(wait) || 0, args);
+        });
+        function flip(func) {
+          return createWrap(func, WRAP_FLIP_FLAG);
+        }
+        function memoize(func, resolver) {
+          if (typeof func != "function" || resolver != null && typeof resolver != "function") {
+            throw new TypeError2(FUNC_ERROR_TEXT);
+          }
+          var memoized = function() {
+            var args = arguments, key = resolver ? resolver.apply(this, args) : args[0], cache = memoized.cache;
+            if (cache.has(key)) {
+              return cache.get(key);
+            }
+            var result2 = func.apply(this, args);
+            memoized.cache = cache.set(key, result2) || cache;
+            return result2;
+          };
+          memoized.cache = new (memoize.Cache || MapCache)();
+          return memoized;
+        }
+        memoize.Cache = MapCache;
+        function negate(predicate) {
+          if (typeof predicate != "function") {
+            throw new TypeError2(FUNC_ERROR_TEXT);
+          }
+          return function() {
+            var args = arguments;
+            switch (args.length) {
+              case 0:
+                return !predicate.call(this);
+              case 1:
+                return !predicate.call(this, args[0]);
+              case 2:
+                return !predicate.call(this, args[0], args[1]);
+              case 3:
+                return !predicate.call(this, args[0], args[1], args[2]);
+            }
+            return !predicate.apply(this, args);
+          };
+        }
+        function once(func) {
+          return before(2, func);
+        }
+        var overArgs = castRest(function(func, transforms) {
+          transforms = transforms.length == 1 && isArray(transforms[0]) ? arrayMap(transforms[0], baseUnary(getIteratee())) : arrayMap(baseFlatten(transforms, 1), baseUnary(getIteratee()));
+          var funcsLength = transforms.length;
+          return baseRest(function(args) {
+            var index = -1, length = nativeMin(args.length, funcsLength);
+            while (++index < length) {
+              args[index] = transforms[index].call(this, args[index]);
+            }
+            return apply(func, this, args);
+          });
+        });
+        var partial = baseRest(function(func, partials) {
+          var holders = replaceHolders(partials, getHolder(partial));
+          return createWrap(func, WRAP_PARTIAL_FLAG, undefined2, partials, holders);
+        });
+        var partialRight = baseRest(function(func, partials) {
+          var holders = replaceHolders(partials, getHolder(partialRight));
+          return createWrap(func, WRAP_PARTIAL_RIGHT_FLAG, undefined2, partials, holders);
+        });
+        var rearg = flatRest(function(func, indexes) {
+          return createWrap(func, WRAP_REARG_FLAG, undefined2, undefined2, undefined2, indexes);
+        });
+        function rest(func, start) {
+          if (typeof func != "function") {
+            throw new TypeError2(FUNC_ERROR_TEXT);
+          }
+          start = start === undefined2 ? start : toInteger(start);
+          return baseRest(func, start);
+        }
+        function spread(func, start) {
+          if (typeof func != "function") {
+            throw new TypeError2(FUNC_ERROR_TEXT);
+          }
+          start = start == null ? 0 : nativeMax(toInteger(start), 0);
+          return baseRest(function(args) {
+            var array = args[start], otherArgs = castSlice(args, 0, start);
+            if (array) {
+              arrayPush(otherArgs, array);
+            }
+            return apply(func, this, otherArgs);
+          });
+        }
+        function throttle(func, wait, options) {
+          var leading = true, trailing = true;
+          if (typeof func != "function") {
+            throw new TypeError2(FUNC_ERROR_TEXT);
+          }
+          if (isObject(options)) {
+            leading = "leading" in options ? !!options.leading : leading;
+            trailing = "trailing" in options ? !!options.trailing : trailing;
+          }
+          return debounce2(func, wait, {
+            "leading": leading,
+            "maxWait": wait,
+            "trailing": trailing
+          });
+        }
+        function unary(func) {
+          return ary(func, 1);
+        }
+        function wrap(value, wrapper) {
+          return partial(castFunction(wrapper), value);
+        }
+        function castArray() {
+          if (!arguments.length) {
+            return [];
+          }
+          var value = arguments[0];
+          return isArray(value) ? value : [value];
+        }
+        function clone(value) {
+          return baseClone(value, CLONE_SYMBOLS_FLAG);
+        }
+        function cloneWith(value, customizer) {
+          customizer = typeof customizer == "function" ? customizer : undefined2;
+          return baseClone(value, CLONE_SYMBOLS_FLAG, customizer);
+        }
+        function cloneDeep(value) {
+          return baseClone(value, CLONE_DEEP_FLAG | CLONE_SYMBOLS_FLAG);
+        }
+        function cloneDeepWith(value, customizer) {
+          customizer = typeof customizer == "function" ? customizer : undefined2;
+          return baseClone(value, CLONE_DEEP_FLAG | CLONE_SYMBOLS_FLAG, customizer);
+        }
+        function conformsTo(object, source) {
+          return source == null || baseConformsTo(object, source, keys(source));
+        }
+        function eq(value, other) {
+          return value === other || value !== value && other !== other;
+        }
+        var gt = createRelationalOperation(baseGt);
+        var gte = createRelationalOperation(function(value, other) {
+          return value >= other;
+        });
+        var isArguments = baseIsArguments(function() {
+          return arguments;
+        }()) ? baseIsArguments : function(value) {
+          return isObjectLike(value) && hasOwnProperty.call(value, "callee") && !propertyIsEnumerable.call(value, "callee");
+        };
+        var isArray = Array2.isArray;
+        var isArrayBuffer = nodeIsArrayBuffer ? baseUnary(nodeIsArrayBuffer) : baseIsArrayBuffer;
+        function isArrayLike(value) {
+          return value != null && isLength(value.length) && !isFunction(value);
+        }
+        function isArrayLikeObject(value) {
+          return isObjectLike(value) && isArrayLike(value);
+        }
+        function isBoolean(value) {
+          return value === true || value === false || isObjectLike(value) && baseGetTag(value) == boolTag;
+        }
+        var isBuffer = nativeIsBuffer || stubFalse;
+        var isDate = nodeIsDate ? baseUnary(nodeIsDate) : baseIsDate;
+        function isElement(value) {
+          return isObjectLike(value) && value.nodeType === 1 && !isPlainObject(value);
+        }
+        function isEmpty(value) {
+          if (value == null) {
+            return true;
+          }
+          if (isArrayLike(value) && (isArray(value) || typeof value == "string" || typeof value.splice == "function" || isBuffer(value) || isTypedArray(value) || isArguments(value))) {
+            return !value.length;
+          }
+          var tag = getTag(value);
+          if (tag == mapTag || tag == setTag) {
+            return !value.size;
+          }
+          if (isPrototype(value)) {
+            return !baseKeys(value).length;
+          }
+          for (var key in value) {
+            if (hasOwnProperty.call(value, key)) {
+              return false;
+            }
+          }
+          return true;
+        }
+        function isEqual(value, other) {
+          return baseIsEqual(value, other);
+        }
+        function isEqualWith(value, other, customizer) {
+          customizer = typeof customizer == "function" ? customizer : undefined2;
+          var result2 = customizer ? customizer(value, other) : undefined2;
+          return result2 === undefined2 ? baseIsEqual(value, other, undefined2, customizer) : !!result2;
+        }
+        function isError(value) {
+          if (!isObjectLike(value)) {
+            return false;
+          }
+          var tag = baseGetTag(value);
+          return tag == errorTag || tag == domExcTag || typeof value.message == "string" && typeof value.name == "string" && !isPlainObject(value);
+        }
+        function isFinite(value) {
+          return typeof value == "number" && nativeIsFinite(value);
+        }
+        function isFunction(value) {
+          if (!isObject(value)) {
+            return false;
+          }
+          var tag = baseGetTag(value);
+          return tag == funcTag || tag == genTag || tag == asyncTag || tag == proxyTag;
+        }
+        function isInteger(value) {
+          return typeof value == "number" && value == toInteger(value);
+        }
+        function isLength(value) {
+          return typeof value == "number" && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+        }
+        function isObject(value) {
+          var type = typeof value;
+          return value != null && (type == "object" || type == "function");
+        }
+        function isObjectLike(value) {
+          return value != null && typeof value == "object";
+        }
+        var isMap = nodeIsMap ? baseUnary(nodeIsMap) : baseIsMap;
+        function isMatch(object, source) {
+          return object === source || baseIsMatch(object, source, getMatchData(source));
+        }
+        function isMatchWith(object, source, customizer) {
+          customizer = typeof customizer == "function" ? customizer : undefined2;
+          return baseIsMatch(object, source, getMatchData(source), customizer);
+        }
+        function isNaN2(value) {
+          return isNumber(value) && value != +value;
+        }
+        function isNative(value) {
+          if (isMaskable(value)) {
+            throw new Error2(CORE_ERROR_TEXT);
+          }
+          return baseIsNative(value);
+        }
+        function isNull(value) {
+          return value === null;
+        }
+        function isNil(value) {
+          return value == null;
+        }
+        function isNumber(value) {
+          return typeof value == "number" || isObjectLike(value) && baseGetTag(value) == numberTag;
+        }
+        function isPlainObject(value) {
+          if (!isObjectLike(value) || baseGetTag(value) != objectTag) {
+            return false;
+          }
+          var proto = getPrototype(value);
+          if (proto === null) {
+            return true;
+          }
+          var Ctor = hasOwnProperty.call(proto, "constructor") && proto.constructor;
+          return typeof Ctor == "function" && Ctor instanceof Ctor && funcToString.call(Ctor) == objectCtorString;
+        }
+        var isRegExp = nodeIsRegExp ? baseUnary(nodeIsRegExp) : baseIsRegExp;
+        function isSafeInteger(value) {
+          return isInteger(value) && value >= -MAX_SAFE_INTEGER && value <= MAX_SAFE_INTEGER;
+        }
+        var isSet = nodeIsSet ? baseUnary(nodeIsSet) : baseIsSet;
+        function isString(value) {
+          return typeof value == "string" || !isArray(value) && isObjectLike(value) && baseGetTag(value) == stringTag;
+        }
+        function isSymbol(value) {
+          return typeof value == "symbol" || isObjectLike(value) && baseGetTag(value) == symbolTag;
+        }
+        var isTypedArray = nodeIsTypedArray ? baseUnary(nodeIsTypedArray) : baseIsTypedArray;
+        function isUndefined(value) {
+          return value === undefined2;
+        }
+        function isWeakMap(value) {
+          return isObjectLike(value) && getTag(value) == weakMapTag;
+        }
+        function isWeakSet(value) {
+          return isObjectLike(value) && baseGetTag(value) == weakSetTag;
+        }
+        var lt = createRelationalOperation(baseLt);
+        var lte = createRelationalOperation(function(value, other) {
+          return value <= other;
+        });
+        function toArray(value) {
+          if (!value) {
+            return [];
+          }
+          if (isArrayLike(value)) {
+            return isString(value) ? stringToArray(value) : copyArray(value);
+          }
+          if (symIterator && value[symIterator]) {
+            return iteratorToArray(value[symIterator]());
+          }
+          var tag = getTag(value), func = tag == mapTag ? mapToArray : tag == setTag ? setToArray : values;
+          return func(value);
+        }
+        function toFinite(value) {
+          if (!value) {
+            return value === 0 ? value : 0;
+          }
+          value = toNumber(value);
+          if (value === INFINITY || value === -INFINITY) {
+            var sign = value < 0 ? -1 : 1;
+            return sign * MAX_INTEGER;
+          }
+          return value === value ? value : 0;
+        }
+        function toInteger(value) {
+          var result2 = toFinite(value), remainder = result2 % 1;
+          return result2 === result2 ? remainder ? result2 - remainder : result2 : 0;
+        }
+        function toLength(value) {
+          return value ? baseClamp(toInteger(value), 0, MAX_ARRAY_LENGTH) : 0;
+        }
+        function toNumber(value) {
+          if (typeof value == "number") {
+            return value;
+          }
+          if (isSymbol(value)) {
+            return NAN;
+          }
+          if (isObject(value)) {
+            var other = typeof value.valueOf == "function" ? value.valueOf() : value;
+            value = isObject(other) ? other + "" : other;
+          }
+          if (typeof value != "string") {
+            return value === 0 ? value : +value;
+          }
+          value = baseTrim(value);
+          var isBinary = reIsBinary.test(value);
+          return isBinary || reIsOctal.test(value) ? freeParseInt(value.slice(2), isBinary ? 2 : 8) : reIsBadHex.test(value) ? NAN : +value;
+        }
+        function toPlainObject(value) {
+          return copyObject(value, keysIn(value));
+        }
+        function toSafeInteger(value) {
+          return value ? baseClamp(toInteger(value), -MAX_SAFE_INTEGER, MAX_SAFE_INTEGER) : value === 0 ? value : 0;
+        }
+        function toString(value) {
+          return value == null ? "" : baseToString(value);
+        }
+        var assign2 = createAssigner(function(object, source) {
+          if (isPrototype(source) || isArrayLike(source)) {
+            copyObject(source, keys(source), object);
+            return;
+          }
+          for (var key in source) {
+            if (hasOwnProperty.call(source, key)) {
+              assignValue(object, key, source[key]);
+            }
+          }
+        });
+        var assignIn = createAssigner(function(object, source) {
+          copyObject(source, keysIn(source), object);
+        });
+        var assignInWith = createAssigner(function(object, source, srcIndex, customizer) {
+          copyObject(source, keysIn(source), object, customizer);
+        });
+        var assignWith = createAssigner(function(object, source, srcIndex, customizer) {
+          copyObject(source, keys(source), object, customizer);
+        });
+        var at = flatRest(baseAt);
+        function create2(prototype, properties) {
+          var result2 = baseCreate(prototype);
+          return properties == null ? result2 : baseAssign(result2, properties);
+        }
+        var defaults = baseRest(function(object, sources) {
+          object = Object2(object);
+          var index = -1;
+          var length = sources.length;
+          var guard = length > 2 ? sources[2] : undefined2;
+          if (guard && isIterateeCall(sources[0], sources[1], guard)) {
+            length = 1;
+          }
+          while (++index < length) {
+            var source = sources[index];
+            var props = keysIn(source);
+            var propsIndex = -1;
+            var propsLength = props.length;
+            while (++propsIndex < propsLength) {
+              var key = props[propsIndex];
+              var value = object[key];
+              if (value === undefined2 || eq(value, objectProto[key]) && !hasOwnProperty.call(object, key)) {
+                object[key] = source[key];
+              }
+            }
+          }
+          return object;
+        });
+        var defaultsDeep = baseRest(function(args) {
+          args.push(undefined2, customDefaultsMerge);
+          return apply(mergeWith, undefined2, args);
+        });
+        function findKey(object, predicate) {
+          return baseFindKey(object, getIteratee(predicate, 3), baseForOwn);
+        }
+        function findLastKey(object, predicate) {
+          return baseFindKey(object, getIteratee(predicate, 3), baseForOwnRight);
+        }
+        function forIn(object, iteratee2) {
+          return object == null ? object : baseFor(object, getIteratee(iteratee2, 3), keysIn);
+        }
+        function forInRight(object, iteratee2) {
+          return object == null ? object : baseForRight(object, getIteratee(iteratee2, 3), keysIn);
+        }
+        function forOwn(object, iteratee2) {
+          return object && baseForOwn(object, getIteratee(iteratee2, 3));
+        }
+        function forOwnRight(object, iteratee2) {
+          return object && baseForOwnRight(object, getIteratee(iteratee2, 3));
+        }
+        function functions(object) {
+          return object == null ? [] : baseFunctions(object, keys(object));
+        }
+        function functionsIn(object) {
+          return object == null ? [] : baseFunctions(object, keysIn(object));
+        }
+        function get(object, path, defaultValue) {
+          var result2 = object == null ? undefined2 : baseGet(object, path);
+          return result2 === undefined2 ? defaultValue : result2;
+        }
+        function has(object, path) {
+          return object != null && hasPath(object, path, baseHas);
+        }
+        function hasIn(object, path) {
+          return object != null && hasPath(object, path, baseHasIn);
+        }
+        var invert = createInverter(function(result2, value, key) {
+          if (value != null && typeof value.toString != "function") {
+            value = nativeObjectToString.call(value);
+          }
+          result2[value] = key;
+        }, constant(identity));
+        var invertBy = createInverter(function(result2, value, key) {
+          if (value != null && typeof value.toString != "function") {
+            value = nativeObjectToString.call(value);
+          }
+          if (hasOwnProperty.call(result2, value)) {
+            result2[value].push(key);
+          } else {
+            result2[value] = [key];
+          }
+        }, getIteratee);
+        var invoke = baseRest(baseInvoke);
+        function keys(object) {
+          return isArrayLike(object) ? arrayLikeKeys(object) : baseKeys(object);
+        }
+        function keysIn(object) {
+          return isArrayLike(object) ? arrayLikeKeys(object, true) : baseKeysIn(object);
+        }
+        function mapKeys(object, iteratee2) {
+          var result2 = {};
+          iteratee2 = getIteratee(iteratee2, 3);
+          baseForOwn(object, function(value, key, object2) {
+            baseAssignValue(result2, iteratee2(value, key, object2), value);
+          });
+          return result2;
+        }
+        function mapValues(object, iteratee2) {
+          var result2 = {};
+          iteratee2 = getIteratee(iteratee2, 3);
+          baseForOwn(object, function(value, key, object2) {
+            baseAssignValue(result2, key, iteratee2(value, key, object2));
+          });
+          return result2;
+        }
+        var merge = createAssigner(function(object, source, srcIndex) {
+          baseMerge(object, source, srcIndex);
+        });
+        var mergeWith = createAssigner(function(object, source, srcIndex, customizer) {
+          baseMerge(object, source, srcIndex, customizer);
+        });
+        var omit = flatRest(function(object, paths) {
+          var result2 = {};
+          if (object == null) {
+            return result2;
+          }
+          var isDeep = false;
+          paths = arrayMap(paths, function(path) {
+            path = castPath(path, object);
+            isDeep || (isDeep = path.length > 1);
+            return path;
+          });
+          copyObject(object, getAllKeysIn(object), result2);
+          if (isDeep) {
+            result2 = baseClone(result2, CLONE_DEEP_FLAG | CLONE_FLAT_FLAG | CLONE_SYMBOLS_FLAG, customOmitClone);
+          }
+          var length = paths.length;
+          while (length--) {
+            baseUnset(result2, paths[length]);
+          }
+          return result2;
+        });
+        function omitBy(object, predicate) {
+          return pickBy(object, negate(getIteratee(predicate)));
+        }
+        var pick = flatRest(function(object, paths) {
+          return object == null ? {} : basePick(object, paths);
+        });
+        function pickBy(object, predicate) {
+          if (object == null) {
+            return {};
+          }
+          var props = arrayMap(getAllKeysIn(object), function(prop) {
+            return [prop];
+          });
+          predicate = getIteratee(predicate);
+          return basePickBy(object, props, function(value, path) {
+            return predicate(value, path[0]);
+          });
+        }
+        function result(object, path, defaultValue) {
+          path = castPath(path, object);
+          var index = -1, length = path.length;
+          if (!length) {
+            length = 1;
+            object = undefined2;
+          }
+          while (++index < length) {
+            var value = object == null ? undefined2 : object[toKey(path[index])];
+            if (value === undefined2) {
+              index = length;
+              value = defaultValue;
+            }
+            object = isFunction(value) ? value.call(object) : value;
+          }
+          return object;
+        }
+        function set(object, path, value) {
+          return object == null ? object : baseSet(object, path, value);
+        }
+        function setWith(object, path, value, customizer) {
+          customizer = typeof customizer == "function" ? customizer : undefined2;
+          return object == null ? object : baseSet(object, path, value, customizer);
+        }
+        var toPairs = createToPairs(keys);
+        var toPairsIn = createToPairs(keysIn);
+        function transform2(object, iteratee2, accumulator) {
+          var isArr = isArray(object), isArrLike = isArr || isBuffer(object) || isTypedArray(object);
+          iteratee2 = getIteratee(iteratee2, 4);
+          if (accumulator == null) {
+            var Ctor = object && object.constructor;
+            if (isArrLike) {
+              accumulator = isArr ? new Ctor() : [];
+            } else if (isObject(object)) {
+              accumulator = isFunction(Ctor) ? baseCreate(getPrototype(object)) : {};
+            } else {
+              accumulator = {};
+            }
+          }
+          (isArrLike ? arrayEach : baseForOwn)(object, function(value, index, object2) {
+            return iteratee2(accumulator, value, index, object2);
+          });
+          return accumulator;
+        }
+        function unset(object, path) {
+          return object == null ? true : baseUnset(object, path);
+        }
+        function update2(object, path, updater) {
+          return object == null ? object : baseUpdate(object, path, castFunction(updater));
+        }
+        function updateWith(object, path, updater, customizer) {
+          customizer = typeof customizer == "function" ? customizer : undefined2;
+          return object == null ? object : baseUpdate(object, path, castFunction(updater), customizer);
+        }
+        function values(object) {
+          return object == null ? [] : baseValues(object, keys(object));
+        }
+        function valuesIn(object) {
+          return object == null ? [] : baseValues(object, keysIn(object));
+        }
+        function clamp(number, lower, upper) {
+          if (upper === undefined2) {
+            upper = lower;
+            lower = undefined2;
+          }
+          if (upper !== undefined2) {
+            upper = toNumber(upper);
+            upper = upper === upper ? upper : 0;
+          }
+          if (lower !== undefined2) {
+            lower = toNumber(lower);
+            lower = lower === lower ? lower : 0;
+          }
+          return baseClamp(toNumber(number), lower, upper);
+        }
+        function inRange(number, start, end) {
+          start = toFinite(start);
+          if (end === undefined2) {
+            end = start;
+            start = 0;
+          } else {
+            end = toFinite(end);
+          }
+          number = toNumber(number);
+          return baseInRange(number, start, end);
+        }
+        function random(lower, upper, floating) {
+          if (floating && typeof floating != "boolean" && isIterateeCall(lower, upper, floating)) {
+            upper = floating = undefined2;
+          }
+          if (floating === undefined2) {
+            if (typeof upper == "boolean") {
+              floating = upper;
+              upper = undefined2;
+            } else if (typeof lower == "boolean") {
+              floating = lower;
+              lower = undefined2;
+            }
+          }
+          if (lower === undefined2 && upper === undefined2) {
+            lower = 0;
+            upper = 1;
+          } else {
+            lower = toFinite(lower);
+            if (upper === undefined2) {
+              upper = lower;
+              lower = 0;
+            } else {
+              upper = toFinite(upper);
+            }
+          }
+          if (lower > upper) {
+            var temp = lower;
+            lower = upper;
+            upper = temp;
+          }
+          if (floating || lower % 1 || upper % 1) {
+            var rand = nativeRandom();
+            return nativeMin(lower + rand * (upper - lower + freeParseFloat("1e-" + ((rand + "").length - 1))), upper);
+          }
+          return baseRandom(lower, upper);
+        }
+        var camelCase = createCompounder(function(result2, word, index) {
+          word = word.toLowerCase();
+          return result2 + (index ? capitalize(word) : word);
+        });
+        function capitalize(string) {
+          return upperFirst(toString(string).toLowerCase());
+        }
+        function deburr(string) {
+          string = toString(string);
+          return string && string.replace(reLatin, deburrLetter).replace(reComboMark, "");
+        }
+        function endsWith(string, target, position) {
+          string = toString(string);
+          target = baseToString(target);
+          var length = string.length;
+          position = position === undefined2 ? length : baseClamp(toInteger(position), 0, length);
+          var end = position;
+          position -= target.length;
+          return position >= 0 && string.slice(position, end) == target;
+        }
+        function escape(string) {
+          string = toString(string);
+          return string && reHasUnescapedHtml.test(string) ? string.replace(reUnescapedHtml, escapeHtmlChar) : string;
+        }
+        function escapeRegExp(string) {
+          string = toString(string);
+          return string && reHasRegExpChar.test(string) ? string.replace(reRegExpChar, "\\$&") : string;
+        }
+        var kebabCase = createCompounder(function(result2, word, index) {
+          return result2 + (index ? "-" : "") + word.toLowerCase();
+        });
+        var lowerCase = createCompounder(function(result2, word, index) {
+          return result2 + (index ? " " : "") + word.toLowerCase();
+        });
+        var lowerFirst = createCaseFirst("toLowerCase");
+        function pad(string, length, chars) {
+          string = toString(string);
+          length = toInteger(length);
+          var strLength = length ? stringSize(string) : 0;
+          if (!length || strLength >= length) {
+            return string;
+          }
+          var mid = (length - strLength) / 2;
+          return createPadding(nativeFloor(mid), chars) + string + createPadding(nativeCeil(mid), chars);
+        }
+        function padEnd(string, length, chars) {
+          string = toString(string);
+          length = toInteger(length);
+          var strLength = length ? stringSize(string) : 0;
+          return length && strLength < length ? string + createPadding(length - strLength, chars) : string;
+        }
+        function padStart(string, length, chars) {
+          string = toString(string);
+          length = toInteger(length);
+          var strLength = length ? stringSize(string) : 0;
+          return length && strLength < length ? createPadding(length - strLength, chars) + string : string;
+        }
+        function parseInt2(string, radix, guard) {
+          if (guard || radix == null) {
+            radix = 0;
+          } else if (radix) {
+            radix = +radix;
+          }
+          return nativeParseInt(toString(string).replace(reTrimStart, ""), radix || 0);
+        }
+        function repeat(string, n, guard) {
+          if (guard ? isIterateeCall(string, n, guard) : n === undefined2) {
+            n = 1;
+          } else {
+            n = toInteger(n);
+          }
+          return baseRepeat(toString(string), n);
+        }
+        function replace() {
+          var args = arguments, string = toString(args[0]);
+          return args.length < 3 ? string : string.replace(args[1], args[2]);
+        }
+        var snakeCase = createCompounder(function(result2, word, index) {
+          return result2 + (index ? "_" : "") + word.toLowerCase();
+        });
+        function split(string, separator, limit) {
+          if (limit && typeof limit != "number" && isIterateeCall(string, separator, limit)) {
+            separator = limit = undefined2;
+          }
+          limit = limit === undefined2 ? MAX_ARRAY_LENGTH : limit >>> 0;
+          if (!limit) {
+            return [];
+          }
+          string = toString(string);
+          if (string && (typeof separator == "string" || separator != null && !isRegExp(separator))) {
+            separator = baseToString(separator);
+            if (!separator && hasUnicode(string)) {
+              return castSlice(stringToArray(string), 0, limit);
+            }
+          }
+          return string.split(separator, limit);
+        }
+        var startCase = createCompounder(function(result2, word, index) {
+          return result2 + (index ? " " : "") + upperFirst(word);
+        });
+        function startsWith(string, target, position) {
+          string = toString(string);
+          position = position == null ? 0 : baseClamp(toInteger(position), 0, string.length);
+          target = baseToString(target);
+          return string.slice(position, position + target.length) == target;
+        }
+        function template(string, options, guard) {
+          var settings2 = lodash.templateSettings;
+          if (guard && isIterateeCall(string, options, guard)) {
+            options = undefined2;
+          }
+          string = toString(string);
+          options = assignInWith({}, options, settings2, customDefaultsAssignIn);
+          var imports = assignInWith({}, options.imports, settings2.imports, customDefaultsAssignIn), importsKeys = keys(imports), importsValues = baseValues(imports, importsKeys);
+          var isEscaping, isEvaluating, index = 0, interpolate = options.interpolate || reNoMatch, source = "__p += '";
+          var reDelimiters = RegExp2(
+            (options.escape || reNoMatch).source + "|" + interpolate.source + "|" + (interpolate === reInterpolate ? reEsTemplate : reNoMatch).source + "|" + (options.evaluate || reNoMatch).source + "|$",
+            "g"
+          );
+          var sourceURL = "//# sourceURL=" + (hasOwnProperty.call(options, "sourceURL") ? (options.sourceURL + "").replace(/\s/g, " ") : "lodash.templateSources[" + ++templateCounter + "]") + "\n";
+          string.replace(reDelimiters, function(match, escapeValue, interpolateValue, esTemplateValue, evaluateValue, offset) {
+            interpolateValue || (interpolateValue = esTemplateValue);
+            source += string.slice(index, offset).replace(reUnescapedString, escapeStringChar);
+            if (escapeValue) {
+              isEscaping = true;
+              source += "' +\n__e(" + escapeValue + ") +\n'";
+            }
+            if (evaluateValue) {
+              isEvaluating = true;
+              source += "';\n" + evaluateValue + ";\n__p += '";
+            }
+            if (interpolateValue) {
+              source += "' +\n((__t = (" + interpolateValue + ")) == null ? '' : __t) +\n'";
+            }
+            index = offset + match.length;
+            return match;
+          });
+          source += "';\n";
+          var variable = hasOwnProperty.call(options, "variable") && options.variable;
+          if (!variable) {
+            source = "with (obj) {\n" + source + "\n}\n";
+          } else if (reForbiddenIdentifierChars.test(variable)) {
+            throw new Error2(INVALID_TEMPL_VAR_ERROR_TEXT);
+          }
+          source = (isEvaluating ? source.replace(reEmptyStringLeading, "") : source).replace(reEmptyStringMiddle, "$1").replace(reEmptyStringTrailing, "$1;");
+          source = "function(" + (variable || "obj") + ") {\n" + (variable ? "" : "obj || (obj = {});\n") + "var __t, __p = ''" + (isEscaping ? ", __e = _.escape" : "") + (isEvaluating ? ", __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n" : ";\n") + source + "return __p\n}";
+          var result2 = attempt(function() {
+            return Function2(importsKeys, sourceURL + "return " + source).apply(undefined2, importsValues);
+          });
+          result2.source = source;
+          if (isError(result2)) {
+            throw result2;
+          }
+          return result2;
+        }
+        function toLower(value) {
+          return toString(value).toLowerCase();
+        }
+        function toUpper(value) {
+          return toString(value).toUpperCase();
+        }
+        function trim(string, chars, guard) {
+          string = toString(string);
+          if (string && (guard || chars === undefined2)) {
+            return baseTrim(string);
+          }
+          if (!string || !(chars = baseToString(chars))) {
+            return string;
+          }
+          var strSymbols = stringToArray(string), chrSymbols = stringToArray(chars), start = charsStartIndex(strSymbols, chrSymbols), end = charsEndIndex(strSymbols, chrSymbols) + 1;
+          return castSlice(strSymbols, start, end).join("");
+        }
+        function trimEnd(string, chars, guard) {
+          string = toString(string);
+          if (string && (guard || chars === undefined2)) {
+            return string.slice(0, trimmedEndIndex(string) + 1);
+          }
+          if (!string || !(chars = baseToString(chars))) {
+            return string;
+          }
+          var strSymbols = stringToArray(string), end = charsEndIndex(strSymbols, stringToArray(chars)) + 1;
+          return castSlice(strSymbols, 0, end).join("");
+        }
+        function trimStart(string, chars, guard) {
+          string = toString(string);
+          if (string && (guard || chars === undefined2)) {
+            return string.replace(reTrimStart, "");
+          }
+          if (!string || !(chars = baseToString(chars))) {
+            return string;
+          }
+          var strSymbols = stringToArray(string), start = charsStartIndex(strSymbols, stringToArray(chars));
+          return castSlice(strSymbols, start).join("");
+        }
+        function truncate(string, options) {
+          var length = DEFAULT_TRUNC_LENGTH, omission = DEFAULT_TRUNC_OMISSION;
+          if (isObject(options)) {
+            var separator = "separator" in options ? options.separator : separator;
+            length = "length" in options ? toInteger(options.length) : length;
+            omission = "omission" in options ? baseToString(options.omission) : omission;
+          }
+          string = toString(string);
+          var strLength = string.length;
+          if (hasUnicode(string)) {
+            var strSymbols = stringToArray(string);
+            strLength = strSymbols.length;
+          }
+          if (length >= strLength) {
+            return string;
+          }
+          var end = length - stringSize(omission);
+          if (end < 1) {
+            return omission;
+          }
+          var result2 = strSymbols ? castSlice(strSymbols, 0, end).join("") : string.slice(0, end);
+          if (separator === undefined2) {
+            return result2 + omission;
+          }
+          if (strSymbols) {
+            end += result2.length - end;
+          }
+          if (isRegExp(separator)) {
+            if (string.slice(end).search(separator)) {
+              var match, substring = result2;
+              if (!separator.global) {
+                separator = RegExp2(separator.source, toString(reFlags.exec(separator)) + "g");
+              }
+              separator.lastIndex = 0;
+              while (match = separator.exec(substring)) {
+                var newEnd = match.index;
+              }
+              result2 = result2.slice(0, newEnd === undefined2 ? end : newEnd);
+            }
+          } else if (string.indexOf(baseToString(separator), end) != end) {
+            var index = result2.lastIndexOf(separator);
+            if (index > -1) {
+              result2 = result2.slice(0, index);
+            }
+          }
+          return result2 + omission;
+        }
+        function unescape(string) {
+          string = toString(string);
+          return string && reHasEscapedHtml.test(string) ? string.replace(reEscapedHtml, unescapeHtmlChar) : string;
+        }
+        var upperCase = createCompounder(function(result2, word, index) {
+          return result2 + (index ? " " : "") + word.toUpperCase();
+        });
+        var upperFirst = createCaseFirst("toUpperCase");
+        function words(string, pattern, guard) {
+          string = toString(string);
+          pattern = guard ? undefined2 : pattern;
+          if (pattern === undefined2) {
+            return hasUnicodeWord(string) ? unicodeWords(string) : asciiWords(string);
+          }
+          return string.match(pattern) || [];
+        }
+        var attempt = baseRest(function(func, args) {
+          try {
+            return apply(func, undefined2, args);
+          } catch (e) {
+            return isError(e) ? e : new Error2(e);
+          }
+        });
+        var bindAll = flatRest(function(object, methodNames) {
+          arrayEach(methodNames, function(key) {
+            key = toKey(key);
+            baseAssignValue(object, key, bind(object[key], object));
+          });
+          return object;
+        });
+        function cond(pairs) {
+          var length = pairs == null ? 0 : pairs.length, toIteratee = getIteratee();
+          pairs = !length ? [] : arrayMap(pairs, function(pair) {
+            if (typeof pair[1] != "function") {
+              throw new TypeError2(FUNC_ERROR_TEXT);
+            }
+            return [toIteratee(pair[0]), pair[1]];
+          });
+          return baseRest(function(args) {
+            var index = -1;
+            while (++index < length) {
+              var pair = pairs[index];
+              if (apply(pair[0], this, args)) {
+                return apply(pair[1], this, args);
+              }
+            }
+          });
+        }
+        function conforms(source) {
+          return baseConforms(baseClone(source, CLONE_DEEP_FLAG));
+        }
+        function constant(value) {
+          return function() {
+            return value;
+          };
+        }
+        function defaultTo(value, defaultValue) {
+          return value == null || value !== value ? defaultValue : value;
+        }
+        var flow = createFlow();
+        var flowRight = createFlow(true);
+        function identity(value) {
+          return value;
+        }
+        function iteratee(func) {
+          return baseIteratee(typeof func == "function" ? func : baseClone(func, CLONE_DEEP_FLAG));
+        }
+        function matches(source) {
+          return baseMatches(baseClone(source, CLONE_DEEP_FLAG));
+        }
+        function matchesProperty(path, srcValue) {
+          return baseMatchesProperty(path, baseClone(srcValue, CLONE_DEEP_FLAG));
+        }
+        var method = baseRest(function(path, args) {
+          return function(object) {
+            return baseInvoke(object, path, args);
+          };
+        });
+        var methodOf = baseRest(function(object, args) {
+          return function(path) {
+            return baseInvoke(object, path, args);
+          };
+        });
+        function mixin(object, source, options) {
+          var props = keys(source), methodNames = baseFunctions(source, props);
+          if (options == null && !(isObject(source) && (methodNames.length || !props.length))) {
+            options = source;
+            source = object;
+            object = this;
+            methodNames = baseFunctions(source, keys(source));
+          }
+          var chain2 = !(isObject(options) && "chain" in options) || !!options.chain, isFunc = isFunction(object);
+          arrayEach(methodNames, function(methodName) {
+            var func = source[methodName];
+            object[methodName] = func;
+            if (isFunc) {
+              object.prototype[methodName] = function() {
+                var chainAll = this.__chain__;
+                if (chain2 || chainAll) {
+                  var result2 = object(this.__wrapped__), actions = result2.__actions__ = copyArray(this.__actions__);
+                  actions.push({ "func": func, "args": arguments, "thisArg": object });
+                  result2.__chain__ = chainAll;
+                  return result2;
+                }
+                return func.apply(object, arrayPush([this.value()], arguments));
+              };
+            }
+          });
+          return object;
+        }
+        function noConflict() {
+          if (root._ === this) {
+            root._ = oldDash;
+          }
+          return this;
+        }
+        function noop2() {
+        }
+        function nthArg(n) {
+          n = toInteger(n);
+          return baseRest(function(args) {
+            return baseNth(args, n);
+          });
+        }
+        var over = createOver(arrayMap);
+        var overEvery = createOver(arrayEvery);
+        var overSome = createOver(arraySome);
+        function property(path) {
+          return isKey(path) ? baseProperty(toKey(path)) : basePropertyDeep(path);
+        }
+        function propertyOf(object) {
+          return function(path) {
+            return object == null ? undefined2 : baseGet(object, path);
+          };
+        }
+        var range3 = createRange();
+        var rangeRight = createRange(true);
+        function stubArray() {
+          return [];
+        }
+        function stubFalse() {
+          return false;
+        }
+        function stubObject() {
+          return {};
+        }
+        function stubString() {
+          return "";
+        }
+        function stubTrue() {
+          return true;
+        }
+        function times(n, iteratee2) {
+          n = toInteger(n);
+          if (n < 1 || n > MAX_SAFE_INTEGER) {
+            return [];
+          }
+          var index = MAX_ARRAY_LENGTH, length = nativeMin(n, MAX_ARRAY_LENGTH);
+          iteratee2 = getIteratee(iteratee2);
+          n -= MAX_ARRAY_LENGTH;
+          var result2 = baseTimes(length, iteratee2);
+          while (++index < n) {
+            iteratee2(index);
+          }
+          return result2;
+        }
+        function toPath(value) {
+          if (isArray(value)) {
+            return arrayMap(value, toKey);
+          }
+          return isSymbol(value) ? [value] : copyArray(stringToPath(toString(value)));
+        }
+        function uniqueId(prefix) {
+          var id = ++idCounter;
+          return toString(prefix) + id;
+        }
+        var add = createMathOperation(function(augend, addend) {
+          return augend + addend;
+        }, 0);
+        var ceil = createRound("ceil");
+        var divide = createMathOperation(function(dividend, divisor) {
+          return dividend / divisor;
+        }, 1);
+        var floor = createRound("floor");
+        function max(array) {
+          return array && array.length ? baseExtremum(array, identity, baseGt) : undefined2;
+        }
+        function maxBy(array, iteratee2) {
+          return array && array.length ? baseExtremum(array, getIteratee(iteratee2, 2), baseGt) : undefined2;
+        }
+        function mean(array) {
+          return baseMean(array, identity);
+        }
+        function meanBy(array, iteratee2) {
+          return baseMean(array, getIteratee(iteratee2, 2));
+        }
+        function min(array) {
+          return array && array.length ? baseExtremum(array, identity, baseLt) : undefined2;
+        }
+        function minBy(array, iteratee2) {
+          return array && array.length ? baseExtremum(array, getIteratee(iteratee2, 2), baseLt) : undefined2;
+        }
+        var multiply = createMathOperation(function(multiplier, multiplicand) {
+          return multiplier * multiplicand;
+        }, 1);
+        var round = createRound("round");
+        var subtract = createMathOperation(function(minuend, subtrahend) {
+          return minuend - subtrahend;
+        }, 0);
+        function sum(array) {
+          return array && array.length ? baseSum(array, identity) : 0;
+        }
+        function sumBy(array, iteratee2) {
+          return array && array.length ? baseSum(array, getIteratee(iteratee2, 2)) : 0;
+        }
+        lodash.after = after;
+        lodash.ary = ary;
+        lodash.assign = assign2;
+        lodash.assignIn = assignIn;
+        lodash.assignInWith = assignInWith;
+        lodash.assignWith = assignWith;
+        lodash.at = at;
+        lodash.before = before;
+        lodash.bind = bind;
+        lodash.bindAll = bindAll;
+        lodash.bindKey = bindKey;
+        lodash.castArray = castArray;
+        lodash.chain = chain;
+        lodash.chunk = chunk;
+        lodash.compact = compact;
+        lodash.concat = concat;
+        lodash.cond = cond;
+        lodash.conforms = conforms;
+        lodash.constant = constant;
+        lodash.countBy = countBy;
+        lodash.create = create2;
+        lodash.curry = curry;
+        lodash.curryRight = curryRight;
+        lodash.debounce = debounce2;
+        lodash.defaults = defaults;
+        lodash.defaultsDeep = defaultsDeep;
+        lodash.defer = defer;
+        lodash.delay = delay;
+        lodash.difference = difference2;
+        lodash.differenceBy = differenceBy;
+        lodash.differenceWith = differenceWith;
+        lodash.drop = drop;
+        lodash.dropRight = dropRight;
+        lodash.dropRightWhile = dropRightWhile;
+        lodash.dropWhile = dropWhile;
+        lodash.fill = fill;
+        lodash.filter = filter;
+        lodash.flatMap = flatMap;
+        lodash.flatMapDeep = flatMapDeep;
+        lodash.flatMapDepth = flatMapDepth;
+        lodash.flatten = flatten;
+        lodash.flattenDeep = flattenDeep;
+        lodash.flattenDepth = flattenDepth;
+        lodash.flip = flip;
+        lodash.flow = flow;
+        lodash.flowRight = flowRight;
+        lodash.fromPairs = fromPairs;
+        lodash.functions = functions;
+        lodash.functionsIn = functionsIn;
+        lodash.groupBy = groupBy2;
+        lodash.initial = initial;
+        lodash.intersection = intersection;
+        lodash.intersectionBy = intersectionBy;
+        lodash.intersectionWith = intersectionWith;
+        lodash.invert = invert;
+        lodash.invertBy = invertBy;
+        lodash.invokeMap = invokeMap;
+        lodash.iteratee = iteratee;
+        lodash.keyBy = keyBy;
+        lodash.keys = keys;
+        lodash.keysIn = keysIn;
+        lodash.map = map;
+        lodash.mapKeys = mapKeys;
+        lodash.mapValues = mapValues;
+        lodash.matches = matches;
+        lodash.matchesProperty = matchesProperty;
+        lodash.memoize = memoize;
+        lodash.merge = merge;
+        lodash.mergeWith = mergeWith;
+        lodash.method = method;
+        lodash.methodOf = methodOf;
+        lodash.mixin = mixin;
+        lodash.negate = negate;
+        lodash.nthArg = nthArg;
+        lodash.omit = omit;
+        lodash.omitBy = omitBy;
+        lodash.once = once;
+        lodash.orderBy = orderBy;
+        lodash.over = over;
+        lodash.overArgs = overArgs;
+        lodash.overEvery = overEvery;
+        lodash.overSome = overSome;
+        lodash.partial = partial;
+        lodash.partialRight = partialRight;
+        lodash.partition = partition3;
+        lodash.pick = pick;
+        lodash.pickBy = pickBy;
+        lodash.property = property;
+        lodash.propertyOf = propertyOf;
+        lodash.pull = pull;
+        lodash.pullAll = pullAll;
+        lodash.pullAllBy = pullAllBy;
+        lodash.pullAllWith = pullAllWith;
+        lodash.pullAt = pullAt;
+        lodash.range = range3;
+        lodash.rangeRight = rangeRight;
+        lodash.rearg = rearg;
+        lodash.reject = reject;
+        lodash.remove = remove;
+        lodash.rest = rest;
+        lodash.reverse = reverse;
+        lodash.sampleSize = sampleSize;
+        lodash.set = set;
+        lodash.setWith = setWith;
+        lodash.shuffle = shuffle;
+        lodash.slice = slice;
+        lodash.sortBy = sortBy;
+        lodash.sortedUniq = sortedUniq;
+        lodash.sortedUniqBy = sortedUniqBy;
+        lodash.split = split;
+        lodash.spread = spread;
+        lodash.tail = tail;
+        lodash.take = take;
+        lodash.takeRight = takeRight;
+        lodash.takeRightWhile = takeRightWhile;
+        lodash.takeWhile = takeWhile;
+        lodash.tap = tap;
+        lodash.throttle = throttle;
+        lodash.thru = thru;
+        lodash.toArray = toArray;
+        lodash.toPairs = toPairs;
+        lodash.toPairsIn = toPairsIn;
+        lodash.toPath = toPath;
+        lodash.toPlainObject = toPlainObject;
+        lodash.transform = transform2;
+        lodash.unary = unary;
+        lodash.union = union;
+        lodash.unionBy = unionBy;
+        lodash.unionWith = unionWith;
+        lodash.uniq = uniq;
+        lodash.uniqBy = uniqBy;
+        lodash.uniqWith = uniqWith;
+        lodash.unset = unset;
+        lodash.unzip = unzip;
+        lodash.unzipWith = unzipWith;
+        lodash.update = update2;
+        lodash.updateWith = updateWith;
+        lodash.values = values;
+        lodash.valuesIn = valuesIn;
+        lodash.without = without;
+        lodash.words = words;
+        lodash.wrap = wrap;
+        lodash.xor = xor;
+        lodash.xorBy = xorBy;
+        lodash.xorWith = xorWith;
+        lodash.zip = zip;
+        lodash.zipObject = zipObject;
+        lodash.zipObjectDeep = zipObjectDeep;
+        lodash.zipWith = zipWith;
+        lodash.entries = toPairs;
+        lodash.entriesIn = toPairsIn;
+        lodash.extend = assignIn;
+        lodash.extendWith = assignInWith;
+        mixin(lodash, lodash);
+        lodash.add = add;
+        lodash.attempt = attempt;
+        lodash.camelCase = camelCase;
+        lodash.capitalize = capitalize;
+        lodash.ceil = ceil;
+        lodash.clamp = clamp;
+        lodash.clone = clone;
+        lodash.cloneDeep = cloneDeep;
+        lodash.cloneDeepWith = cloneDeepWith;
+        lodash.cloneWith = cloneWith;
+        lodash.conformsTo = conformsTo;
+        lodash.deburr = deburr;
+        lodash.defaultTo = defaultTo;
+        lodash.divide = divide;
+        lodash.endsWith = endsWith;
+        lodash.eq = eq;
+        lodash.escape = escape;
+        lodash.escapeRegExp = escapeRegExp;
+        lodash.every = every;
+        lodash.find = find;
+        lodash.findIndex = findIndex;
+        lodash.findKey = findKey;
+        lodash.findLast = findLast;
+        lodash.findLastIndex = findLastIndex;
+        lodash.findLastKey = findLastKey;
+        lodash.floor = floor;
+        lodash.forEach = forEach;
+        lodash.forEachRight = forEachRight;
+        lodash.forIn = forIn;
+        lodash.forInRight = forInRight;
+        lodash.forOwn = forOwn;
+        lodash.forOwnRight = forOwnRight;
+        lodash.get = get;
+        lodash.gt = gt;
+        lodash.gte = gte;
+        lodash.has = has;
+        lodash.hasIn = hasIn;
+        lodash.head = head;
+        lodash.identity = identity;
+        lodash.includes = includes;
+        lodash.indexOf = indexOf;
+        lodash.inRange = inRange;
+        lodash.invoke = invoke;
+        lodash.isArguments = isArguments;
+        lodash.isArray = isArray;
+        lodash.isArrayBuffer = isArrayBuffer;
+        lodash.isArrayLike = isArrayLike;
+        lodash.isArrayLikeObject = isArrayLikeObject;
+        lodash.isBoolean = isBoolean;
+        lodash.isBuffer = isBuffer;
+        lodash.isDate = isDate;
+        lodash.isElement = isElement;
+        lodash.isEmpty = isEmpty;
+        lodash.isEqual = isEqual;
+        lodash.isEqualWith = isEqualWith;
+        lodash.isError = isError;
+        lodash.isFinite = isFinite;
+        lodash.isFunction = isFunction;
+        lodash.isInteger = isInteger;
+        lodash.isLength = isLength;
+        lodash.isMap = isMap;
+        lodash.isMatch = isMatch;
+        lodash.isMatchWith = isMatchWith;
+        lodash.isNaN = isNaN2;
+        lodash.isNative = isNative;
+        lodash.isNil = isNil;
+        lodash.isNull = isNull;
+        lodash.isNumber = isNumber;
+        lodash.isObject = isObject;
+        lodash.isObjectLike = isObjectLike;
+        lodash.isPlainObject = isPlainObject;
+        lodash.isRegExp = isRegExp;
+        lodash.isSafeInteger = isSafeInteger;
+        lodash.isSet = isSet;
+        lodash.isString = isString;
+        lodash.isSymbol = isSymbol;
+        lodash.isTypedArray = isTypedArray;
+        lodash.isUndefined = isUndefined;
+        lodash.isWeakMap = isWeakMap;
+        lodash.isWeakSet = isWeakSet;
+        lodash.join = join;
+        lodash.kebabCase = kebabCase;
+        lodash.last = last3;
+        lodash.lastIndexOf = lastIndexOf;
+        lodash.lowerCase = lowerCase;
+        lodash.lowerFirst = lowerFirst;
+        lodash.lt = lt;
+        lodash.lte = lte;
+        lodash.max = max;
+        lodash.maxBy = maxBy;
+        lodash.mean = mean;
+        lodash.meanBy = meanBy;
+        lodash.min = min;
+        lodash.minBy = minBy;
+        lodash.stubArray = stubArray;
+        lodash.stubFalse = stubFalse;
+        lodash.stubObject = stubObject;
+        lodash.stubString = stubString;
+        lodash.stubTrue = stubTrue;
+        lodash.multiply = multiply;
+        lodash.nth = nth;
+        lodash.noConflict = noConflict;
+        lodash.noop = noop2;
+        lodash.now = now;
+        lodash.pad = pad;
+        lodash.padEnd = padEnd;
+        lodash.padStart = padStart;
+        lodash.parseInt = parseInt2;
+        lodash.random = random;
+        lodash.reduce = reduce;
+        lodash.reduceRight = reduceRight;
+        lodash.repeat = repeat;
+        lodash.replace = replace;
+        lodash.result = result;
+        lodash.round = round;
+        lodash.runInContext = runInContext2;
+        lodash.sample = sample;
+        lodash.size = size;
+        lodash.snakeCase = snakeCase;
+        lodash.some = some;
+        lodash.sortedIndex = sortedIndex;
+        lodash.sortedIndexBy = sortedIndexBy;
+        lodash.sortedIndexOf = sortedIndexOf;
+        lodash.sortedLastIndex = sortedLastIndex;
+        lodash.sortedLastIndexBy = sortedLastIndexBy;
+        lodash.sortedLastIndexOf = sortedLastIndexOf;
+        lodash.startCase = startCase;
+        lodash.startsWith = startsWith;
+        lodash.subtract = subtract;
+        lodash.sum = sum;
+        lodash.sumBy = sumBy;
+        lodash.template = template;
+        lodash.times = times;
+        lodash.toFinite = toFinite;
+        lodash.toInteger = toInteger;
+        lodash.toLength = toLength;
+        lodash.toLower = toLower;
+        lodash.toNumber = toNumber;
+        lodash.toSafeInteger = toSafeInteger;
+        lodash.toString = toString;
+        lodash.toUpper = toUpper;
+        lodash.trim = trim;
+        lodash.trimEnd = trimEnd;
+        lodash.trimStart = trimStart;
+        lodash.truncate = truncate;
+        lodash.unescape = unescape;
+        lodash.uniqueId = uniqueId;
+        lodash.upperCase = upperCase;
+        lodash.upperFirst = upperFirst;
+        lodash.each = forEach;
+        lodash.eachRight = forEachRight;
+        lodash.first = head;
+        mixin(lodash, function() {
+          var source = {};
+          baseForOwn(lodash, function(func, methodName) {
+            if (!hasOwnProperty.call(lodash.prototype, methodName)) {
+              source[methodName] = func;
+            }
+          });
+          return source;
+        }(), { "chain": false });
+        lodash.VERSION = VERSION;
+        arrayEach(["bind", "bindKey", "curry", "curryRight", "partial", "partialRight"], function(methodName) {
+          lodash[methodName].placeholder = lodash;
+        });
+        arrayEach(["drop", "take"], function(methodName, index) {
+          LazyWrapper.prototype[methodName] = function(n) {
+            n = n === undefined2 ? 1 : nativeMax(toInteger(n), 0);
+            var result2 = this.__filtered__ && !index ? new LazyWrapper(this) : this.clone();
+            if (result2.__filtered__) {
+              result2.__takeCount__ = nativeMin(n, result2.__takeCount__);
+            } else {
+              result2.__views__.push({
+                "size": nativeMin(n, MAX_ARRAY_LENGTH),
+                "type": methodName + (result2.__dir__ < 0 ? "Right" : "")
+              });
+            }
+            return result2;
+          };
+          LazyWrapper.prototype[methodName + "Right"] = function(n) {
+            return this.reverse()[methodName](n).reverse();
+          };
+        });
+        arrayEach(["filter", "map", "takeWhile"], function(methodName, index) {
+          var type = index + 1, isFilter = type == LAZY_FILTER_FLAG || type == LAZY_WHILE_FLAG;
+          LazyWrapper.prototype[methodName] = function(iteratee2) {
+            var result2 = this.clone();
+            result2.__iteratees__.push({
+              "iteratee": getIteratee(iteratee2, 3),
+              "type": type
+            });
+            result2.__filtered__ = result2.__filtered__ || isFilter;
+            return result2;
+          };
+        });
+        arrayEach(["head", "last"], function(methodName, index) {
+          var takeName = "take" + (index ? "Right" : "");
+          LazyWrapper.prototype[methodName] = function() {
+            return this[takeName](1).value()[0];
+          };
+        });
+        arrayEach(["initial", "tail"], function(methodName, index) {
+          var dropName = "drop" + (index ? "" : "Right");
+          LazyWrapper.prototype[methodName] = function() {
+            return this.__filtered__ ? new LazyWrapper(this) : this[dropName](1);
+          };
+        });
+        LazyWrapper.prototype.compact = function() {
+          return this.filter(identity);
+        };
+        LazyWrapper.prototype.find = function(predicate) {
+          return this.filter(predicate).head();
+        };
+        LazyWrapper.prototype.findLast = function(predicate) {
+          return this.reverse().find(predicate);
+        };
+        LazyWrapper.prototype.invokeMap = baseRest(function(path, args) {
+          if (typeof path == "function") {
+            return new LazyWrapper(this);
+          }
+          return this.map(function(value) {
+            return baseInvoke(value, path, args);
+          });
+        });
+        LazyWrapper.prototype.reject = function(predicate) {
+          return this.filter(negate(getIteratee(predicate)));
+        };
+        LazyWrapper.prototype.slice = function(start, end) {
+          start = toInteger(start);
+          var result2 = this;
+          if (result2.__filtered__ && (start > 0 || end < 0)) {
+            return new LazyWrapper(result2);
+          }
+          if (start < 0) {
+            result2 = result2.takeRight(-start);
+          } else if (start) {
+            result2 = result2.drop(start);
+          }
+          if (end !== undefined2) {
+            end = toInteger(end);
+            result2 = end < 0 ? result2.dropRight(-end) : result2.take(end - start);
+          }
+          return result2;
+        };
+        LazyWrapper.prototype.takeRightWhile = function(predicate) {
+          return this.reverse().takeWhile(predicate).reverse();
+        };
+        LazyWrapper.prototype.toArray = function() {
+          return this.take(MAX_ARRAY_LENGTH);
+        };
+        baseForOwn(LazyWrapper.prototype, function(func, methodName) {
+          var checkIteratee = /^(?:filter|find|map|reject)|While$/.test(methodName), isTaker = /^(?:head|last)$/.test(methodName), lodashFunc = lodash[isTaker ? "take" + (methodName == "last" ? "Right" : "") : methodName], retUnwrapped = isTaker || /^find/.test(methodName);
+          if (!lodashFunc) {
+            return;
+          }
+          lodash.prototype[methodName] = function() {
+            var value = this.__wrapped__, args = isTaker ? [1] : arguments, isLazy = value instanceof LazyWrapper, iteratee2 = args[0], useLazy = isLazy || isArray(value);
+            var interceptor = function(value2) {
+              var result3 = lodashFunc.apply(lodash, arrayPush([value2], args));
+              return isTaker && chainAll ? result3[0] : result3;
+            };
+            if (useLazy && checkIteratee && typeof iteratee2 == "function" && iteratee2.length != 1) {
+              isLazy = useLazy = false;
+            }
+            var chainAll = this.__chain__, isHybrid = !!this.__actions__.length, isUnwrapped = retUnwrapped && !chainAll, onlyLazy = isLazy && !isHybrid;
+            if (!retUnwrapped && useLazy) {
+              value = onlyLazy ? value : new LazyWrapper(this);
+              var result2 = func.apply(value, args);
+              result2.__actions__.push({ "func": thru, "args": [interceptor], "thisArg": undefined2 });
+              return new LodashWrapper(result2, chainAll);
+            }
+            if (isUnwrapped && onlyLazy) {
+              return func.apply(this, args);
+            }
+            result2 = this.thru(interceptor);
+            return isUnwrapped ? isTaker ? result2.value()[0] : result2.value() : result2;
+          };
+        });
+        arrayEach(["pop", "push", "shift", "sort", "splice", "unshift"], function(methodName) {
+          var func = arrayProto[methodName], chainName = /^(?:push|sort|unshift)$/.test(methodName) ? "tap" : "thru", retUnwrapped = /^(?:pop|shift)$/.test(methodName);
+          lodash.prototype[methodName] = function() {
+            var args = arguments;
+            if (retUnwrapped && !this.__chain__) {
+              var value = this.value();
+              return func.apply(isArray(value) ? value : [], args);
+            }
+            return this[chainName](function(value2) {
+              return func.apply(isArray(value2) ? value2 : [], args);
+            });
+          };
+        });
+        baseForOwn(LazyWrapper.prototype, function(func, methodName) {
+          var lodashFunc = lodash[methodName];
+          if (lodashFunc) {
+            var key = lodashFunc.name + "";
+            if (!hasOwnProperty.call(realNames, key)) {
+              realNames[key] = [];
+            }
+            realNames[key].push({ "name": methodName, "func": lodashFunc });
+          }
+        });
+        realNames[createHybrid(undefined2, WRAP_BIND_KEY_FLAG).name] = [{
+          "name": "wrapper",
+          "func": undefined2
+        }];
+        LazyWrapper.prototype.clone = lazyClone;
+        LazyWrapper.prototype.reverse = lazyReverse;
+        LazyWrapper.prototype.value = lazyValue;
+        lodash.prototype.at = wrapperAt;
+        lodash.prototype.chain = wrapperChain;
+        lodash.prototype.commit = wrapperCommit;
+        lodash.prototype.next = wrapperNext;
+        lodash.prototype.plant = wrapperPlant;
+        lodash.prototype.reverse = wrapperReverse;
+        lodash.prototype.toJSON = lodash.prototype.valueOf = lodash.prototype.value = wrapperValue;
+        lodash.prototype.first = lodash.prototype.head;
+        if (symIterator) {
+          lodash.prototype[symIterator] = wrapperToIterator;
+        }
+        return lodash;
       };
-    }
-    exports.check = check;
+      var _ = runInContext();
+      if (typeof define == "function" && typeof define.amd == "object" && define.amd) {
+        root._ = _;
+        define(function() {
+          return _;
+        });
+      } else if (freeModule) {
+        (freeModule.exports = _)._ = _;
+        freeExports._ = _;
+      } else {
+        root._ = _;
+      }
+    }).call(exports);
   }
 });
 
@@ -6227,7 +19187,7 @@ var require_chroma = __commonJS({
         }
       });
       var unpack$p = utils.unpack;
-      var last = utils.last;
+      var last3 = utils.last;
       var round$3 = Math.round;
       var rgb2hex$2 = function() {
         var args = [], len = arguments.length;
@@ -6238,7 +19198,7 @@ var require_chroma = __commonJS({
         var g = ref[1];
         var b = ref[2];
         var a = ref[3];
-        var mode = last(args) || "auto";
+        var mode = last3(args) || "auto";
         if (a === void 0) {
           a = 1;
         }
@@ -8112,13 +21072,13 @@ var require_chroma = __commonJS({
         return f;
       };
       function __range__(left, right, inclusive) {
-        var range2 = [];
+        var range3 = [];
         var ascending = left < right;
         var end = !inclusive ? right : ascending ? right + 1 : right - 1;
         for (var i2 = left; ascending ? i2 < end : i2 > end; ascending ? i2++ : i2--) {
-          range2.push(i2);
+          range3.push(i2);
         }
-        return range2;
+        return range3;
       }
       var Color$5 = Color_1;
       var scale$1 = scale$2;
@@ -8723,8 +21683,9 @@ __export(main_exports, {
   default: () => DayPlanner
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian15 = require("obsidian");
-var import_obsidian_daily_notes_interface7 = __toESM(require_main());
+var import_obsidian7 = require("obsidian");
+var import_obsidian_daily_notes_interface5 = __toESM(require_main());
+var import_obsidian_dataview = __toESM(require_lib());
 
 // node_modules/svelte/internal/index.mjs
 function noop() {
@@ -8733,9 +21694,6 @@ function assign(tar, src) {
   for (const k in src)
     tar[k] = src[k];
   return tar;
-}
-function is_promise(value) {
-  return !!value && (typeof value === "object" || typeof value === "function") && typeof value.then === "function";
 }
 function run(fn) {
   return fn();
@@ -8833,6 +21791,9 @@ function set_store_value(store, ret, value) {
   store.set(value);
   return ret;
 }
+function action_destroyer(action_result) {
+  return action_result && is_function(action_result.destroy) ? action_result.destroy : noop;
+}
 var globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : global;
 var ResizeObserverSingleton = class _ResizeObserverSingleton {
   constructor(options) {
@@ -8906,16 +21867,16 @@ function init_hydrate(target) {
   }
   const lis = [];
   const toMove = [];
-  let last = children2.length - 1;
+  let last3 = children2.length - 1;
   for (let cur = m[longest] + 1; cur != 0; cur = p[cur - 1]) {
     lis.push(children2[cur - 1]);
-    for (; last >= cur; last--) {
-      toMove.push(children2[last]);
+    for (; last3 >= cur; last3--) {
+      toMove.push(children2[last3]);
     }
-    last--;
+    last3--;
   }
-  for (; last >= 0; last--) {
-    toMove.push(children2[last]);
+  for (; last3 >= 0; last3--) {
+    toMove.push(children2[last3]);
   }
   lis.reverse();
   toMove.sort((a, b) => a.claim_order - b.claim_order);
@@ -9100,6 +22061,9 @@ function set_data(text2, data) {
     return;
   text2.data = data;
 }
+function set_input_value(input, value) {
+  input.value = value == null ? "" : value;
+}
 function set_style(node, key, value, important) {
   if (value == null) {
     node.style.removeProperty(key);
@@ -9119,10 +22083,6 @@ function select_option(select, value, mounting) {
     select.selectedIndex = -1;
   }
 }
-function select_value(select) {
-  const selected_option = select.querySelector(":checked");
-  return selected_option && selected_option.__value;
-}
 function toggle_class(element2, name, toggle) {
   element2.classList[toggle ? "add" : "remove"](name);
 }
@@ -9137,10 +22097,6 @@ function get_current_component() {
 }
 function onDestroy(fn) {
   get_current_component().$$.on_destroy.push(fn);
-}
-function setContext(key, context) {
-  get_current_component().$$.context.set(key, context);
-  return context;
 }
 function getContext(key) {
   return get_current_component().$$.context.get(key);
@@ -9263,84 +22219,6 @@ function transition_out(block, local, detach2, callback) {
   } else if (callback) {
     callback();
   }
-}
-function handle_promise(promise, info) {
-  const token = info.token = {};
-  function update2(type, index, key, value) {
-    if (info.token !== token)
-      return;
-    info.resolved = value;
-    let child_ctx = info.ctx;
-    if (key !== void 0) {
-      child_ctx = child_ctx.slice();
-      child_ctx[key] = value;
-    }
-    const block = type && (info.current = type)(child_ctx);
-    let needs_flush = false;
-    if (info.block) {
-      if (info.blocks) {
-        info.blocks.forEach((block2, i) => {
-          if (i !== index && block2) {
-            group_outros();
-            transition_out(block2, 1, 1, () => {
-              if (info.blocks[i] === block2) {
-                info.blocks[i] = null;
-              }
-            });
-            check_outros();
-          }
-        });
-      } else {
-        info.block.d(1);
-      }
-      block.c();
-      transition_in(block, 1);
-      block.m(info.mount(), info.anchor);
-      needs_flush = true;
-    }
-    info.block = block;
-    if (info.blocks)
-      info.blocks[index] = block;
-    if (needs_flush) {
-      flush();
-    }
-  }
-  if (is_promise(promise)) {
-    const current_component2 = get_current_component();
-    promise.then((value) => {
-      set_current_component(current_component2);
-      update2(info.then, 1, info.value, value);
-      set_current_component(null);
-    }, (error) => {
-      set_current_component(current_component2);
-      update2(info.catch, 2, info.error, error);
-      set_current_component(null);
-      if (!info.hasCatch) {
-        throw error;
-      }
-    });
-    if (info.current !== info.pending) {
-      update2(info.pending, 0);
-      return true;
-    }
-  } else {
-    if (info.current !== info.then) {
-      update2(info.then, 1, info.value, promise);
-      return true;
-    }
-    info.resolved = promise;
-  }
-}
-function update_await_block_branch(info, ctx, dirty) {
-  const child_ctx = ctx.slice();
-  const { resolved } = info;
-  if (info.current === info.then) {
-    child_ctx[info.value] = resolved;
-  }
-  if (info.current === info.catch) {
-    child_ctx[info.error] = resolved;
-  }
-  info.block.p(child_ctx, dirty);
 }
 function outro_and_destroy_block(block, lookup) {
   transition_out(block, 1, 1, () => {
@@ -9519,7 +22397,7 @@ function make_dirty(component, i) {
   }
   component.$$.dirty[i / 31 | 0] |= 1 << i % 31;
 }
-function init(component, options, instance17, create_fragment21, not_equal, props, append_styles2, dirty = [-1]) {
+function init(component, options, instance29, create_fragment29, not_equal, props, append_styles2, dirty = [-1]) {
   const parent_component = current_component;
   set_current_component(component);
   const $$ = component.$$ = {
@@ -9545,7 +22423,7 @@ function init(component, options, instance17, create_fragment21, not_equal, prop
   };
   append_styles2 && append_styles2($$.root);
   let ready = false;
-  $$.ctx = instance17 ? instance17(component, options.props || {}, (i, ret, ...rest) => {
+  $$.ctx = instance29 ? instance29(component, options.props || {}, (i, ret, ...rest) => {
     const value = rest.length ? rest[0] : ret;
     if ($$.ctx && not_equal($$.ctx[i], $$.ctx[i] = value)) {
       if (!$$.skip_bound && $$.bound[i])
@@ -9558,7 +22436,7 @@ function init(component, options, instance17, create_fragment21, not_equal, prop
   $$.update();
   ready = true;
   run_all($$.before_update);
-  $$.fragment = create_fragment21 ? create_fragment21($$.ctx) : false;
+  $$.fragment = create_fragment29 ? create_fragment29($$.ctx) : false;
   if (options.target) {
     if (options.hydrate) {
       start_hydrating();
@@ -9736,12 +22614,12 @@ function derived(stores, fn, initial_value) {
 }
 
 // src/constants.ts
-var TASKS_FOR_DAY = "tasks";
-var VIEW_TYPE_TIMELINE = "timeline";
-var VIEW_TYPE_WEEKLY = "weekly";
-var DEFAULT_DURATION_MINUTES = 30;
-var SNAP_STEP_MINUTES = 10;
-var ICONS = [
+var viewTypeTimeline = "timeline";
+var viewTypeWeekly = "weekly";
+var obsidianContext = "obsidian";
+var defaultDurationMinutes = 30;
+var snapStepMinutes = 10;
+var icons = [
   "any-key",
   "audio-file",
   "blocks",
@@ -9805,6 +22683,88 @@ var ICONS = [
   "vertical-three-dots"
 ];
 
+// src/settings.ts
+var import_obsidian_daily_notes_interface = __toESM(require_main());
+var defaultSettings = {
+  circularProgress: false,
+  nowAndNextInStatusBar: false,
+  showTaskNotification: false,
+  zoomLevel: 2,
+  timelineIcon: "calendar-with-checkmark",
+  endLabel: "All done",
+  startHour: 6,
+  timelineDateFormat: import_obsidian_daily_notes_interface.DEFAULT_DAILY_NOTE_FORMAT,
+  centerNeedle: false,
+  showHelp: true,
+  plannerHeading: "Day planner",
+  plannerHeadingLevel: 1,
+  timelineColored: false,
+  timelineStartColor: "#006466",
+  timelineEndColor: "#4d194d",
+  timestampFormat: "HH:mm",
+  dataviewSource: "",
+  showDataviewMigrationWarning: true,
+  extendDurationUntilNext: false,
+  defaultDurationMinutes: 30
+};
+var defaultSettingsForTests = {
+  ...defaultSettings,
+  startHour: 0,
+  zoomLevel: 1
+};
+
+// src/global-store/settings.ts
+var settings = writable(defaultSettings);
+
+// src/global-store/visible-day-in-timeline.ts
+var visibleDayInTimeline = writable(window.moment());
+
+// src/service/obsidian-facade.ts
+var import_obsidian = require("obsidian");
+var import_obsidian_daily_notes_interface2 = __toESM(require_main());
+var import_typed_assert = __toESM(require_build());
+var ObsidianFacade = class {
+  constructor(app) {
+    this.app = app;
+  }
+  async openFileInEditor(file) {
+    var _a;
+    const leaf = this.app.workspace.getLeaf(false);
+    await leaf.openFile(file);
+    return (_a = this.app.workspace.activeEditor) == null ? void 0 : _a.editor;
+  }
+  async openFileForDay(moment2) {
+    const dailyNote = (0, import_obsidian_daily_notes_interface2.getDailyNote)(moment2, (0, import_obsidian_daily_notes_interface2.getAllDailyNotes)()) || await (0, import_obsidian_daily_notes_interface2.createDailyNote)(moment2);
+    return this.openFileInEditor(dailyNote);
+  }
+  getFileByPath(path) {
+    const file = this.app.vault.getAbstractFileByPath(path);
+    (0, import_typed_assert.isInstanceOf)(file, import_obsidian.TFile, `Unable to open file: ${path}`);
+    return file;
+  }
+  getMetadataForPath(path) {
+    const file = this.getFileByPath(path);
+    return this.app.metadataCache.getFileCache(file);
+  }
+  async revealLineInFile(path, line) {
+    var _a;
+    const file = this.getFileByPath(path);
+    const editor = await this.openFileInEditor(file);
+    (_a = this.app.workspace.getActiveViewOfType(import_obsidian.MarkdownView)) == null ? void 0 : _a.setEphemeralState({ line });
+    editor.setCursor({ line, ch: 0 });
+  }
+  async editFile(path, editFn) {
+    const file = this.app.vault.getAbstractFileByPath(path);
+    (0, import_typed_assert.isInstanceOf)(file, import_obsidian.TFile, `${path} is not a markdown file`);
+    const contents = await this.app.vault.read(file);
+    const newContents = editFn(contents);
+    await this.app.vault.modify(file, newContents);
+  }
+};
+
+// src/service/plan-editor.ts
+var import_fp2 = __toESM(require_fp());
+
 // node_modules/ts-dedent/esm/index.js
 function dedent(templ) {
   var values = [];
@@ -9845,14 +22805,6 @@ function dedent(templ) {
   return string;
 }
 
-// obsidian-metadata-utils/src/position.ts
-var getTextAtPosition = (textInput, pos) => textInput.substring(pos.start.offset, pos.end.offset);
-
-// obsidian-metadata-utils/src/list.ts
-function isTopLevelListItem(listItem) {
-  return listItem.parent < 0;
-}
-
 // src/regexp.ts
 var ulToken = `[-*+]`;
 var olToken = `\\d+\\.`;
@@ -9865,59 +22817,18 @@ var minutes = `\\d{2}`;
 var hourMinuteSeparator = `[:. ]`;
 var time = `(${hours})(?:${hourMinuteSeparator}?(${minutes}))?\\s*([apAP][mM])?`;
 var timeRegExp = new RegExp(time);
+var timeFromStartRegExp = new RegExp(`^${time}`);
 var timestampRegExp = new RegExp(
   `^(?<listTokens>${listToken}${checkboxOrNothing})(?<times>(?<start>${time})(?:${durationSeparator}(?<end>${time}))?)(?<text>.+)$`,
   "im"
 );
 
-// src/util/moment.ts
-var import_fp = __toESM(require_fp());
-var moment = window.moment;
-function getMinutesSinceMidnight(moment2) {
-  return moment2.diff(moment2.clone().startOf("day"), "minutes");
-}
-function getMinutesSinceMidnightOfDayTo(day, moment2) {
-  return getDiffInMinutes(moment2, day.clone().startOf("day"));
-}
-function getDiffInMinutes(a, b) {
-  return Math.abs(a.diff(b, "minutes"));
-}
-function getDaysOfCurrentWeek() {
-  return getDaysOfWeek(window.moment());
-}
-function getDaysOfWeek(moment2) {
-  const firstDay = moment2.clone().startOf("isoWeek");
-  return (0, import_fp.range)(1, 7).reduce(
-    (result, dayIndex) => {
-      const nextDay = firstDay.clone().add(dayIndex, "day");
-      return [...result, nextDay];
-    },
-    [firstDay]
-  );
-}
-function minutesToMomentOfDay(minutesSinceMidnight, moment2) {
-  return moment2.clone().startOf("day").add(minutesSinceMidnight, "minutes");
-}
-function minutesToMoment(minutesSinceMidnight) {
-  return moment().startOf("day").add(minutesSinceMidnight, "minutes");
-}
-function addMinutes(moment2, minutes2) {
-  return moment2.clone().add(minutes2, "minutes");
-}
-function getRelationToNow(now, start, end) {
-  if (end.isBefore(now)) {
-    return "past";
-  }
-  if (start.isAfter(now)) {
-    return "future";
-  }
-  return "present";
-}
-function isToday(moment2) {
-  return moment2.isSame(window.moment(), "day");
+// src/util/id.ts
+function getId() {
+  return String(Math.random());
 }
 
-// src/timestamp/timestamp.ts
+// src/parser/timestamp/timestamp.ts
 function parseTimestamp(asText, day) {
   if (!asText) {
     return null;
@@ -9941,65 +22852,8 @@ function parseTimestamp(asText, day) {
   });
   return day.clone().startOf("day").add(timeOfDay);
 }
-function replaceTimestamp(planItem, { startMinutes, durationMinutes }) {
-  return `${planItem.listTokens}${createTimestamp(
-    startMinutes,
-    durationMinutes
-  )} ${planItem.firstLineText}`;
-}
-function createTimestamp(startMinutes, durationMinutes) {
-  const start = minutesToMoment(startMinutes);
-  const end = addMinutes(start, durationMinutes);
-  return `${formatTimestamp(start)} - ${formatTimestamp(end)}`;
-}
-function formatTimestamp(moment2) {
-  return moment2.format("HH:mm");
-}
-
-// src/parser/calculate-default-duration.ts
-function calculateDefaultDuration(item, next) {
-  if (item.endTime) {
-    return getDiffInMinutes(item.startTime, item.endTime);
-  }
-  if (next) {
-    const minutesUntilNext = getDiffInMinutes(next.startTime, item.startTime);
-    if (minutesUntilNext < DEFAULT_DURATION_MINUTES) {
-      return minutesUntilNext;
-    }
-  }
-  return DEFAULT_DURATION_MINUTES;
-}
 
 // src/parser/parser.ts
-function parsePlanItems(content, metadata, planHeadingContent, path, day) {
-  const listItemsUnderPlan = getListItemsUnderHeading(
-    metadata,
-    planHeadingContent
-  );
-  if (!listItemsUnderPlan) {
-    return [];
-  }
-  const listItemsWithContent = getListItemContent(content, listItemsUnderPlan);
-  return listItemsWithContent.map(
-    (li) => createPlanItem({
-      line: li.listItemLineContent,
-      completeContent: li.listItemCompleteContent,
-      location: { path, line: li.line },
-      day
-    })
-  ).filter((item) => item !== null).map((item, index, items) => {
-    const next = items[index + 1];
-    const durationMinutes = calculateDefaultDuration(item, next);
-    const endTime = item.endTime || item.startTime.clone().add(durationMinutes, "minutes");
-    return {
-      ...item,
-      endTime,
-      startMinutes: getMinutesSinceMidnightOfDayTo(day, item.startTime),
-      endMinutes: getMinutesSinceMidnightOfDayTo(day, endTime),
-      durationMinutes
-    };
-  }).sort((a, b) => a.startMinutes - b.startMinutes);
-}
 function getListItemsUnderHeading(metadata, heading) {
   var _a;
   const { headings } = metadata;
@@ -10043,9 +22897,9 @@ function createPlanItem({
     rawStartTime: start,
     rawEndTime: end,
     text: getDisplayedText(match, completeContent),
-    firstLineText: text2,
+    firstLineText: text2.trim(),
     location,
-    id: String(Math.random())
+    id: getId()
   };
 }
 function getDisplayedText({ groups: { text: text2, listTokens, completion } }, completeContent) {
@@ -10067,329 +22921,226 @@ ${linesAfterFirst}`;
   return `${text2}
 ${formattedLinesAfterFirst}`;
 }
-function groupTopListItemsWithDescendants(listItems) {
-  return listItems.reduce((result, current) => {
-    if (isTopLevelListItem(current)) {
-      result.push({ root: current, descendants: [] });
-    } else {
-      const previousTopListItem = result[result.length - 1];
-      previousTopListItem.descendants.push(current);
-    }
-    return result;
-  }, []);
+
+// src/util/moment.ts
+var import_fp = __toESM(require_fp());
+var moment = window.moment;
+function getMinutesSinceMidnight(moment2) {
+  return moment2.diff(moment2.clone().startOf("day"), "minutes");
 }
-function getListItemContent(content, listItems) {
-  return groupTopListItemsWithDescendants(listItems).map(
-    ({ root, descendants }) => {
-      var _a, _b;
-      const lastDescendantPosition = (_b = (_a = descendants == null ? void 0 : descendants[descendants.length - 1]) == null ? void 0 : _a.position) == null ? void 0 : _b.end;
-      const betweenRootAndLastDescendant = {
-        start: root.position.start,
-        end: lastDescendantPosition || root.position.end
-      };
-      return {
-        line: root.position.start.line,
-        listItemLineContent: getTextAtPosition(content, root.position),
-        listItemCompleteContent: getTextAtPosition(
-          content,
-          betweenRootAndLastDescendant
-        )
-      };
-    }
-  );
+function getDiffInMinutes(a, b) {
+  return Math.abs(a.diff(b, "minutes"));
 }
-
-// src/store/app-store.ts
-var appStore = writable();
-
-// src/store/settings.ts
-var settings = writable({
-  zoomLevel: 2,
-  startHour: 0,
-  centerNeedle: true,
-  timelineDateFormat: "LLLL",
-  plannerHeading: "Day planner",
-  plannerHeadingLevel: 1,
-  timelineColored: false,
-  timelineStartColor: "#006466",
-  timelineEndColor: "#4d194d"
-});
-
-// src/util/editor.ts
-function selectText(editor, text2) {
-  const startOffset = editor.getValue().lastIndexOf(text2);
-  const endOffset = startOffset + text2.length;
-  editor.setSelection(
-    editor.offsetToPos(startOffset),
-    editor.offsetToPos(endOffset)
-  );
+function getDaysOfCurrentWeek() {
+  return getDaysOfWeek(window.moment());
 }
-
-// src/util/obsidian.ts
-var import_obsidian = require("obsidian");
-var import_obsidian_daily_notes_interface = __toESM(require_main());
-var import_typed_assert = __toESM(require_build());
-
-// src/parser/overlap.ts
-var import_fraction = __toESM(require_fraction());
-var import_fp2 = __toESM(require_fp());
-var EMPTY = "empty";
-var TAKEN = "taken";
-function computeOverlap(items) {
-  return items.reduce((overlapLookup, item) => {
-    const overlapGroup = getItemsOverlappingItemAndEachOther(item, items);
-    return computeOverlapForGroup(overlapGroup, overlapLookup);
-  }, /* @__PURE__ */ new Map());
-}
-function getItemsOverlappingItemAndEachOther(item, items) {
-  return items.reduce(
-    (result, current) => {
-      if (current === item) {
-        return result;
-      }
-      const currentOverlapsWithPreviousItems = result.every(
-        (intersectingItem) => overlaps(intersectingItem, current)
-      );
-      if (currentOverlapsWithPreviousItems) {
-        result.push(current);
-      }
-      return result;
+function getDaysOfWeek(moment2) {
+  const firstDay = moment2.clone().startOf("isoWeek");
+  return (0, import_fp.range)(1, 7).reduce(
+    (result, dayIndex) => {
+      const nextDay = firstDay.clone().add(dayIndex, "day");
+      return [...result, nextDay];
     },
-    [item]
-  ).sort((a, b) => a.startMinutes - b.startMinutes);
-}
-function computeOverlapForGroup(overlapGroup, previousLookup) {
-  const newLookup = new Map([...previousLookup]);
-  const [itemsPlacedPreviously, itemsToBePlaced] = (0, import_fp2.partition)(
-    ({ id }) => newLookup.has(id),
-    overlapGroup
+    [firstDay]
   );
-  if (itemsToBePlaced.length === 0) {
-    return newLookup;
+}
+function minutesToMomentOfDay(minutesSinceMidnight, moment2) {
+  return moment2.clone().startOf("day").add(minutesSinceMidnight, "minutes");
+}
+function minutesToMoment(minutesSinceMidnight) {
+  return moment().startOf("day").add(minutesSinceMidnight, "minutes");
+}
+function addMinutes(moment2, minutes2) {
+  return moment2.clone().add(minutes2, "minutes");
+}
+function getRelationToNow(now, start, end) {
+  if (end.isBefore(now)) {
+    return "past";
   }
-  const fractionOfPlacedItems = itemsPlacedPreviously.reduce((sum, current) => {
-    const { span, columns } = newLookup.get(current.id);
-    return new import_fraction.default(span, columns).add(sum);
-  }, new import_fraction.default(0));
-  const fractionForNewItems = new import_fraction.default(1).sub(fractionOfPlacedItems);
-  const fractionForEachNewItem = fractionForNewItems.div(
-    itemsToBePlaced.length
-  );
-  const columnsForNewGroup = fractionForEachNewItem.d;
-  const newItemInherentSpan = fractionForEachNewItem.n;
-  const slots = Array(columnsForNewGroup).fill(EMPTY);
-  itemsPlacedPreviously.forEach((item) => {
-    const { start, span, columns: previousColumns } = newLookup.get(item.id);
-    const scale = columnsForNewGroup / previousColumns;
-    const scaledStart = scale * start;
-    const scaledSpan = scale * span;
-    const scaledEnd = scaledStart + scaledSpan;
-    slots.fill(TAKEN, scaledStart, scaledEnd);
-  });
-  itemsToBePlaced.forEach((itemInGroup) => {
-    const firstFreeSlotIndex = slots.findIndex((slot) => slot === EMPTY);
-    const nextTakenSlotIndex = slots.findIndex(
-      (slot, i) => i > firstFreeSlotIndex && slot === TAKEN
-    );
-    const fromFreeToNextTakenSlot = nextTakenSlotIndex - firstFreeSlotIndex;
-    const onlyEmptySlotsLeft = nextTakenSlotIndex === -1;
-    const span = onlyEmptySlotsLeft ? newItemInherentSpan : Math.min(newItemInherentSpan, fromFreeToNextTakenSlot);
-    const fillEnd = firstFreeSlotIndex + span;
-    slots.fill(TAKEN, firstFreeSlotIndex, fillEnd);
-    newLookup.set(itemInGroup.id, {
-      start: firstFreeSlotIndex,
-      span,
-      columns: columnsForNewGroup
-    });
-  });
-  return newLookup;
+  if (start.isAfter(now)) {
+    return "future";
+  }
+  return "present";
 }
-function overlaps(a, b) {
-  const [early, late] = a.startMinutes < b.startMinutes ? [a, b] : [b, a];
-  return early.endMinutes > late.startMinutes;
+function isToday(moment2) {
+  return moment2.isSame(window.moment(), "day");
 }
 
-// src/util/horizontal-placing.ts
-function getHorizontalPlacing(overlap) {
-  const widthPercent = overlap ? overlap.span / overlap.columns * 100 : 100;
-  const xOffsetPercent = overlap ? 100 / overlap.columns * overlap.start : 0;
-  return {
-    widthPercent,
-    xOffsetPercent
-  };
+// src/util/task-utils.ts
+function isEqualTask(a, b) {
+  return a.id === b.id && a.startMinutes === b.startMinutes && a.durationMinutes === b.durationMinutes;
 }
-
-// src/util/obsidian.ts
-async function openFileInEditor(file) {
+function getEndMinutes(task) {
+  return task.startMinutes + task.durationMinutes;
+}
+function getEndTime(task) {
+  return task.startTime.clone().add(task.durationMinutes, "minutes");
+}
+function getRenderKey(task) {
   var _a;
-  const app = get_store_value(appStore);
-  const leaf = app.workspace.getLeaf(false);
-  await leaf.openFile(file);
-  return (_a = app.workspace.activeEditor) == null ? void 0 : _a.editor;
+  return `${task.startMinutes} ${getEndMinutes(task)} ${task.text} ${(_a = task.isGhost) != null ? _a : ""}`;
 }
-async function openFileForDay(moment2) {
-  const dailyNote = (0, import_obsidian_daily_notes_interface.getDailyNote)(moment2, (0, import_obsidian_daily_notes_interface.getAllDailyNotes)()) || await (0, import_obsidian_daily_notes_interface.createDailyNote)(moment2);
-  return openFileInEditor(dailyNote);
-}
-function getFileByPath(path) {
-  const app = get_store_value(appStore);
-  const file = app.vault.getAbstractFileByPath(path);
-  if (!(file instanceof import_obsidian.TFile)) {
-    throw new Error(`Unable to open file: ${path}`);
-  }
-  return file;
-}
-function addPlacing(planItems) {
-  const overlapLookup = computeOverlap(planItems);
-  return planItems.map((planItem) => {
-    const overlap = overlapLookup.get(planItem.id);
-    return {
-      ...planItem,
-      placing: getHorizontalPlacing(overlap)
+
+// src/service/plan-editor.ts
+var PlanEditor = class {
+  constructor(settings2, obsidianFacade) {
+    this.settings = settings2;
+    this.obsidianFacade = obsidianFacade;
+    this.syncTasksWithFile = async (baseline, updated) => {
+      const pristine = updated.filter(
+        (task) => baseline.find((baselineTask) => isEqualTask(task, baselineTask))
+      );
+      const dirty = (0, import_fp2.difference)(updated, pristine);
+      const [edited, created] = (0, import_fp2.partition)(
+        (task) => task.location.line !== void 0,
+        dirty
+      );
+      if (created.length > 1) {
+        throw new Error("Creating more than 1 task is not supported");
+      }
+      if (edited.length > 0 && created.length > 0) {
+        throw new Error(
+          "Creating and editing at the same time is not supported and might cause inconsistent behaviors due to race conditions"
+        );
+      }
+      if (created.length > 0) {
+        const task = created[0];
+        await this.obsidianFacade.editFile(task.location.path, (contents) => {
+          return this.writeTaskToFileContents(task, contents);
+        });
+      }
+      const pathToEditedTasksLookup = (0, import_fp2.groupBy)(
+        (task) => task.location.path,
+        edited
+      );
+      const editPromises = Object.keys(pathToEditedTasksLookup).map(
+        async (path) => await this.obsidianFacade.editFile(
+          path,
+          (contents) => pathToEditedTasksLookup[path].reduce(
+            (result, current) => this.updateTaskInFileContents(result, current),
+            contents
+          )
+        )
+      );
+      await Promise.all(editPromises);
     };
-  });
-}
-function toPlacedWritables(planItems) {
-  const planItemsWithPlacing = addPlacing(planItems);
-  return writable(planItemsWithPlacing);
-}
-async function getPlanItemsFromFile(file) {
-  if (!file) {
-    return [];
   }
-  const app = get_store_value(appStore);
-  const { plannerHeading } = get_store_value(settings);
-  const fileContents = await app.vault.cachedRead(file);
-  const metadata = app.metadataCache.getFileCache(file);
-  const fileDay = (0, import_obsidian_daily_notes_interface.getDateFromFile)(file, "day");
-  (0, import_typed_assert.isNotVoid)(
-    fileDay,
-    `Tried to parse plan in file that is not a daily note: ${file.path}`
-  );
-  return parsePlanItems(
-    fileContents,
-    metadata,
-    plannerHeading,
-    file.path,
-    fileDay
-  );
-}
-
-// src/plan.ts
-function createPlannerHeading() {
-  const { plannerHeading, plannerHeadingLevel } = get_store_value(settings);
-  const headingTokens = "#".repeat(plannerHeadingLevel);
-  return `${headingTokens} ${plannerHeading}`;
-}
-async function appendToPlan(path, planItem) {
-  const app = get_store_value(appStore);
-  const { plannerHeading } = get_store_value(settings);
-  const file = getFileByPath(path);
-  const metadata = app.metadataCache.getFileCache(file) || {};
-  const editor = await openFileInEditor(file);
-  let line = editor.lastLine();
-  let result = replaceTimestamp(planItem, { ...planItem });
-  const headingLine = getHeadingByText(metadata, plannerHeading);
-  if (headingLine) {
-    line = headingLine.position.start.line;
-  } else {
-    result = `${createPlannerHeading()}
-
-${result}`;
+  writeTaskToFileContents(task, contents) {
+    const metadata = this.obsidianFacade.getMetadataForPath(task.location.path) || {};
+    const [planEndLine, splitContents] = this.getPlanEndLine(
+      contents.split("\n"),
+      metadata
+    );
+    const result = [...splitContents];
+    result.splice(planEndLine + 1, 0, this.taskLineToString(task, { ...task }));
+    return result.join("\n");
   }
-  const listItems = getListItemsUnderHeading(metadata, plannerHeading);
-  if ((listItems == null ? void 0 : listItems.length) > 0) {
-    const lastListItem = listItems[listItems.length - 1];
-    line = lastListItem.position.start.line;
-  } else if (headingLine) {
-    result = `
-${result}`;
+  createPlannerHeading() {
+    const { plannerHeading, plannerHeadingLevel } = this.settings();
+    const headingTokens = "#".repeat(plannerHeadingLevel);
+    return `${headingTokens} ${plannerHeading}`;
   }
-  const ch = editor.getLine(line).length;
-  editor.replaceRange(`
-${result}`, { line, ch });
-  selectText(editor, planItem.firstLineText);
-}
-
-// src/settings.ts
-var DayPlannerSettings = class {
-  constructor() {
-    this.circularProgress = false;
-    this.nowAndNextInStatusBar = false;
-    this.showTaskNotification = false;
-    this.zoomLevel = 2;
-    this.timelineIcon = "calendar-with-checkmark";
-    this.endLabel = "All done";
-    this.startHour = 6;
-    this.timelineDateFormat = "LLLL";
-    this.centerNeedle = false;
-    this.plannerHeading = "Day planner";
-    this.plannerHeadingLevel = 1;
-    this.timelineColored = false;
-    this.timelineStartColor = "#006466";
-    this.timelineEndColor = "#4d194d";
+  updateTaskInFileContents(contents, task) {
+    return contents.split("\n").map((line, index) => {
+      var _a;
+      if (index === ((_a = task.location) == null ? void 0 : _a.line)) {
+        const taskAsString = this.taskLineToString(task, {
+          startMinutes: task.startMinutes,
+          durationMinutes: task.durationMinutes
+        });
+        return line.substring(0, task.location.position.start.col) + taskAsString;
+      }
+      return line;
+    }).join("\n");
+  }
+  getPlanEndLine(contents, metadata) {
+    const planHeading = getHeadingByText(
+      metadata,
+      this.settings().plannerHeading
+    );
+    const planListItems = getListItemsUnderHeading(
+      metadata,
+      this.settings().plannerHeading
+    );
+    if ((planListItems == null ? void 0 : planListItems.length) > 0) {
+      const lastListItem = planListItems[planListItems.length - 1];
+      return [lastListItem.position.start.line, contents];
+    }
+    if (planHeading) {
+      return [planHeading.position.start.line, contents];
+    }
+    const withNewPlan = [...contents, "", this.createPlannerHeading(), ""];
+    return [withNewPlan.length, withNewPlan];
+  }
+  taskLineToString(planItem, { startMinutes, durationMinutes }) {
+    return `${planItem.listTokens}${this.createTimestamp(
+      startMinutes,
+      durationMinutes
+    )} ${planItem.firstLineText}`;
+  }
+  createTimestamp(startMinutes, durationMinutes) {
+    const start = minutesToMoment(startMinutes);
+    const end = addMinutes(start, durationMinutes);
+    return `${this.formatTimestamp(start)} - ${this.formatTimestamp(end)}`;
+  }
+  formatTimestamp(moment2) {
+    return moment2.format(this.settings().timestampFormat);
   }
 };
 
-// src/store/visible-date-range.ts
-var visibleDateRange = writable();
-
-// src/store/visible-day-in-timeline.ts
-var visibleDayInTimeline = writable(window.moment());
-
 // src/ui/settings-tab.ts
-var import_obsidian3 = require("obsidian");
-var DayPlannerSettingsTab = class extends import_obsidian3.PluginSettingTab {
-  constructor(app, plugin) {
-    super(app, plugin);
+var import_obsidian2 = require("obsidian");
+var DayPlannerSettingsTab = class extends import_obsidian2.PluginSettingTab {
+  constructor(plugin, settingsStore) {
+    super(plugin.app, plugin);
     this.plugin = plugin;
+    this.settingsStore = settingsStore;
+  }
+  update(patch) {
+    this.settingsStore.update((previous) => ({ ...previous, ...patch }));
   }
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    new import_obsidian3.Setting(containerEl).setName("Status Bar - Circular Progress").setDesc("Display a circular progress bar in the status bar").addToggle(
-      (toggle) => toggle.setValue(this.plugin.settings.circularProgress).onChange((value) => {
-        this.plugin.settings.circularProgress = value;
-        this.plugin.saveData(this.plugin.settings);
+    new import_obsidian2.Setting(containerEl).setName("Status Bar - Circular Progress").setDesc("Display a circular progress bar in the status bar").addToggle(
+      (toggle) => toggle.setValue(this.plugin.settings().circularProgress).onChange((value) => {
+        this.update({ circularProgress: value });
       })
     );
-    new import_obsidian3.Setting(containerEl).setName("Status Bar - Now and Next").setDesc("Display now and next tasks in the status bar").addToggle(
-      (toggle) => toggle.setValue(this.plugin.settings.nowAndNextInStatusBar).onChange((value) => {
-        this.plugin.settings.nowAndNextInStatusBar = value;
-        this.plugin.saveData(this.plugin.settings);
+    new import_obsidian2.Setting(containerEl).setName("Status Bar - Now and Next").setDesc("Display now and next tasks in the status bar").addToggle(
+      (toggle) => toggle.setValue(this.plugin.settings().nowAndNextInStatusBar).onChange((value) => {
+        this.update({
+          nowAndNextInStatusBar: value
+        });
       })
     );
-    new import_obsidian3.Setting(containerEl).setName("Task Notification").setDesc("Display a notification when a new task is started").addToggle(
-      (toggle) => toggle.setValue(this.plugin.settings.showTaskNotification).onChange((value) => {
-        this.plugin.settings.showTaskNotification = value;
-        this.plugin.saveData(this.plugin.settings);
+    new import_obsidian2.Setting(containerEl).setName("Task Notification").setDesc("Display a notification when a new task is started").addToggle(
+      (toggle) => toggle.setValue(this.plugin.settings().showTaskNotification).onChange((value) => {
+        this.update({ showTaskNotification: value });
       })
     );
-    new import_obsidian3.Setting(containerEl).setName("Timeline Zoom Level").setDesc(
+    new import_obsidian2.Setting(containerEl).setName("Timeline Zoom Level").setDesc(
       "The zoom level to display the timeline. The higher the number, the more vertical space each task will take up."
     ).addSlider(
       (slider) => {
         var _a;
-        return slider.setLimits(1, 5, 1).setValue((_a = Number(this.plugin.settings.zoomLevel)) != null ? _a : 4).setDynamicTooltip().onChange(async (value) => {
-          settings.update((settings2) => ({ ...settings2, zoomLevel: value }));
-          this.plugin.settings.zoomLevel = value;
-          await this.plugin.saveData(this.plugin.settings);
+        return slider.setLimits(1, 5, 1).setValue((_a = Number(this.plugin.settings().zoomLevel)) != null ? _a : 4).setDynamicTooltip().onChange((value) => {
+          this.update({ zoomLevel: value });
         });
       }
     );
-    new import_obsidian3.Setting(containerEl).setName("Timeline Icon").setDesc(
+    new import_obsidian2.Setting(containerEl).setName("Timeline Icon").setDesc(
       "The icon of the timeline pane. Reopen timeline pane or restart obsidian to see the change."
     ).addDropdown((dropdown) => {
       var _a;
-      ICONS.forEach((icon) => dropdown.addOption(icon, icon));
+      icons.forEach((icon) => dropdown.addOption(icon, icon));
       return dropdown.setValue(
-        (_a = this.plugin.settings.timelineIcon) != null ? _a : "calendar-with-checkmark"
+        (_a = this.plugin.settings().timelineIcon) != null ? _a : "calendar-with-checkmark"
       ).onChange((value) => {
-        this.plugin.settings.timelineIcon = value;
-        this.plugin.saveData(this.plugin.settings);
+        this.update({ timelineIcon: value });
       });
     });
-    new import_obsidian3.Setting(containerEl).setName("Start Hour").setDesc("The planner is going to start at this hour each day").addDropdown(
+    new import_obsidian2.Setting(containerEl).setName("Start Hour").setDesc("The planner is going to start at this hour each day").addDropdown(
       (component) => component.addOptions({
         "0": "0",
         "1": "1",
@@ -10404,28 +23155,20 @@ var DayPlannerSettingsTab = class extends import_obsidian3.PluginSettingTab {
         "10": "10",
         "11": "11",
         "12": "12"
-      }).setValue(String(this.plugin.settings.startHour)).onChange(async (value) => {
+      }).setValue(String(this.plugin.settings().startHour)).onChange((value) => {
         const asNumber = Number(value);
-        settings.update((previous) => ({
-          ...previous,
-          startHour: asNumber
-        }));
-        this.plugin.settings.startHour = asNumber;
-        await this.plugin.saveData(this.plugin.settings);
+        this.update({ startHour: asNumber });
       })
     );
-    new import_obsidian3.Setting(containerEl).setName("Date Format in Timeline Header").then((component) => {
+    new import_obsidian2.Setting(containerEl).setName("Default timestamp format").then((component) => {
       component.setDesc(
         createFragment((fragment) => {
-          fragment.appendText("Your current syntax looks like this: ");
+          fragment.appendText(
+            "When you create or edit tasks with drag-and-drop, the plugin use this format. Your current syntax looks like this: "
+          );
           component.addMomentFormat(
-            (momentFormat) => momentFormat.setValue(this.plugin.settings.timelineDateFormat).setSampleEl(fragment.createSpan()).onChange(async (value) => {
-              settings.update((previous) => ({
-                ...previous,
-                timelineDateFormat: value
-              }));
-              this.plugin.settings.timelineDateFormat = value;
-              await this.plugin.saveData(this.plugin.settings);
+            (momentFormat) => momentFormat.setValue(this.plugin.settings().timestampFormat).setSampleEl(fragment.createSpan()).onChange((value) => {
+              this.update({ timestampFormat: value.trim() });
             })
           );
           fragment.append(
@@ -10444,117 +23187,103 @@ var DayPlannerSettingsTab = class extends import_obsidian3.PluginSettingTab {
         })
       );
     });
-    new import_obsidian3.Setting(containerEl).setName("Center the Pointer in the Timeline View").setDesc(
+    new import_obsidian2.Setting(containerEl).setName("Date Format in Timeline Header").then((component) => {
+      component.setDesc(
+        createFragment((fragment) => {
+          fragment.appendText("Your current syntax looks like this: ");
+          component.addMomentFormat(
+            (momentFormat) => momentFormat.setValue(this.plugin.settings().timelineDateFormat).setSampleEl(fragment.createSpan()).onChange((value) => {
+              this.update({ timelineDateFormat: value });
+            })
+          );
+          fragment.append(
+            createEl("br"),
+            createEl(
+              "a",
+              {
+                text: "format reference",
+                href: "https://momentjs.com/docs/#/displaying/format/"
+              },
+              (a) => {
+                a.setAttr("target", "_blank");
+              }
+            )
+          );
+        })
+      );
+    });
+    new import_obsidian2.Setting(containerEl).setName("Center the Pointer in the Timeline View").setDesc(
       "Should the pointer continuously get scrolled to the center of the view"
     ).addToggle((component) => {
-      component.setValue(this.plugin.settings.centerNeedle).onChange(async (value) => {
-        settings.update((previous) => ({
-          ...previous,
-          centerNeedle: value
-        }));
-        this.plugin.settings.centerNeedle = value;
-        await this.plugin.saveData(this.plugin.settings);
+      component.setValue(this.plugin.settings().centerNeedle).onChange((value) => {
+        this.update({ centerNeedle: value });
       });
     });
-    new import_obsidian3.Setting(containerEl).setName("Planner Heading").setDesc(
+    new import_obsidian2.Setting(containerEl).setName("Planner Heading").setDesc(
       `When you create a planner, this text is going to be in the heading.
 When you open a file, the plugin will search for this heading to detect a day plan`
     ).addText(
-      (component) => component.setValue(this.plugin.settings.plannerHeading).onChange(async (value) => {
-        settings.update((previous) => ({
-          ...previous,
-          plannerHeading: value
-        }));
-        this.plugin.settings.plannerHeading = value;
-        await this.plugin.saveData(this.plugin.settings);
+      (component) => component.setValue(this.plugin.settings().plannerHeading).onChange((value) => {
+        this.update({ plannerHeading: value });
       })
     );
-    new import_obsidian3.Setting(containerEl).setName("Planner heading level").setDesc(
+    new import_obsidian2.Setting(containerEl).setName("Planner heading level").setDesc(
       "When you create a planner in a file, this level of heading is going to be used"
     ).addSlider(
-      (component) => component.setLimits(1, 6, 1).setDynamicTooltip().setValue(this.plugin.settings.plannerHeadingLevel).onChange(async (value) => {
-        settings.update((previous) => ({
-          ...previous,
-          plannerHeadingLevel: value
-        }));
-        this.plugin.settings.plannerHeadingLevel = value;
-        await this.plugin.saveData(this.plugin.settings);
+      (component) => component.setLimits(1, 6, 1).setDynamicTooltip().setValue(this.plugin.settings().plannerHeadingLevel).onChange((value) => {
+        this.update({ plannerHeadingLevel: value });
       })
     );
-    new import_obsidian3.Setting(containerEl).setName("Colorful Timeline").setDesc(
+    containerEl.createEl("h2", { text: "Duration" });
+    new import_obsidian2.Setting(containerEl).setName("Stretch task until next one in timeline if it has no end time").setDesc(
+      'By "no end time" we mean "- [ ] 10:00 Wake up" instead of "- [ ] 10:00 - 11:00 Wake up"'
+    ).addToggle((component) => {
+      component.setValue(this.plugin.settings().extendDurationUntilNext).onChange((value) => {
+        this.update({ extendDurationUntilNext: value });
+      });
+    });
+    new import_obsidian2.Setting(containerEl).setName("Default task duration").setDesc(
+      "Used when you create a task with drag-and-drop & when you don't specify an end time"
+    ).addSlider(
+      (slider) => slider.setLimits(20, 120, 10).setValue(Number(this.plugin.settings().defaultDurationMinutes)).setDynamicTooltip().onChange((value) => {
+        this.update({ defaultDurationMinutes: value });
+      })
+    );
+    containerEl.createEl("h2", { text: "Colors" });
+    new import_obsidian2.Setting(containerEl).setName("Colorful Timeline").setDesc(
       "If the planner timeline should be monochrome or color tasks based on time of day"
     ).addToggle((component) => {
-      component.setValue(this.plugin.settings.timelineColored).onChange(async (value) => {
-        settings.update((previous) => ({
-          ...previous,
-          timelineColored: value
-        }));
-        this.plugin.settings.timelineColored = value;
-        await this.plugin.saveData(this.plugin.settings);
+      component.setValue(this.plugin.settings().timelineColored).onChange((value) => {
+        this.update({ timelineColored: value });
       });
     });
-    new import_obsidian3.Setting(containerEl).setName("Colorful Timeline - Start Color").addColorPicker((component) => {
-      component.setValue(this.plugin.settings.timelineStartColor).onChange(async (value) => {
-        settings.update((previous) => ({
-          ...previous,
-          timelineStartColor: value
-        }));
-        this.plugin.settings.timelineStartColor = value;
-        await this.plugin.saveData(this.plugin.settings);
+    new import_obsidian2.Setting(containerEl).setName("Colorful Timeline - Start Color").addColorPicker((component) => {
+      component.setValue(this.plugin.settings().timelineStartColor).onChange((value) => {
+        this.update({ timelineStartColor: value });
       });
     });
-    new import_obsidian3.Setting(containerEl).setName("Colorful Timeline - End Color").addColorPicker((component) => {
-      component.setValue(this.plugin.settings.timelineEndColor).onChange(async (value) => {
-        settings.update((previous) => ({
-          ...previous,
-          timelineEndColor: value
-        }));
-        this.plugin.settings.timelineEndColor = value;
-        await this.plugin.saveData(this.plugin.settings);
+    new import_obsidian2.Setting(containerEl).setName("Colorful Timeline - End Color").addColorPicker((component) => {
+      component.setValue(this.plugin.settings().timelineEndColor).onChange((value) => {
+        this.update({ timelineEndColor: value });
       });
     });
-  }
-  modeDescriptionContent() {
-    const descEl = document.createDocumentFragment();
-    descEl.appendText("Choose between 3 modes to use the Day Planner plugin:");
-    descEl.appendChild(document.createElement("br"));
-    descEl.appendChild(document.createElement("strong")).appendText("File mode");
-    descEl.appendChild(document.createElement("br"));
-    descEl.appendText(
-      "Plugin automatically generates day planner notes for each day within a Day Planners folder."
-    );
-    descEl.appendChild(document.createElement("br"));
-    descEl.appendChild(document.createElement("strong")).appendText("Command mode");
-    descEl.appendChild(document.createElement("br"));
-    descEl.appendText(
-      "Command used to insert a Day Planner for today within the current note."
-    );
-    descEl.appendChild(document.createElement("br"));
-    descEl.appendChild(document.createElement("strong")).appendText("Daily mode");
-    descEl.appendChild(document.createElement("br"));
-    descEl.appendText(
-      "Plugin automatically links to the current daily note. Daily notes plugin must be enabled."
-    );
-    descEl.appendChild(document.createElement("br"));
-    this.addDocsLink(descEl);
-    return descEl;
-  }
-  addDocsLink(descEl) {
-    const a = document.createElement("a");
-    a.href = "https://github.com/lynchjames/obsidian-day-planner/blob/main/README.md";
-    a.text = "plugin README";
-    a.target = "_blank";
-    descEl.appendChild(a);
-    descEl.appendChild(document.createElement("br"));
   }
 };
 
+// src/util/ellipsis.ts
+function ellipsis(input, limit) {
+  if (input.length <= limit) {
+    return input;
+  }
+  return input.substring(0, limit) + "...";
+}
+
 // src/ui/status-bar.ts
 var StatusBar = class {
-  constructor(settings2, containerEl, workspace) {
+  constructor(settings2, containerEl, onClick) {
     this.settings = settings2;
     this.containerEl = containerEl;
-    this.workspace = workspace;
+    this.onClick = onClick;
     this.containerEl.addClass("day-planner");
     this.setupCard();
     this.statusBarText = this.containerEl.createEl("span", {
@@ -10583,6 +23312,7 @@ var StatusBar = class {
   }
   setupStatusBarEvents() {
     this.containerEl.onClickEvent(async () => {
+      await this.onClick();
     });
     this.containerEl.on("mouseenter", ".day-planner", () => {
       this.card.show();
@@ -10599,11 +23329,11 @@ var StatusBar = class {
   updateProgress(planItems) {
     const now = window.moment();
     const currentItemIndex = planItems.findIndex(
-      (item) => item.startTime.isBefore(now) && item.endTime.isAfter(now)
+      (item) => item.startTime.isBefore(now) && getEndTime(item).isAfter(now)
     );
     if (currentItemIndex < 0) {
       this.hideProgress();
-      this.statusBarText.innerText = this.settings.endLabel;
+      this.statusBarText.innerText = this.settings().endLabel;
       return;
     }
     const currentItem = planItems[currentItemIndex];
@@ -10619,7 +23349,7 @@ var StatusBar = class {
         percentageComplete
       );
     }
-    if (this.settings.circularProgress) {
+    if (this.settings().circularProgress) {
       this.statusBarProgress.hide();
       this.progressCircle(percentageComplete);
     } else {
@@ -10653,37 +23383,25 @@ var StatusBar = class {
     );
   }
   updateStatusBarText(currentItem, nextItem) {
-    if (this.settings.nowAndNextInStatusBar) {
-      this.statusBarText.textContent = `Now: ${currentItem.rawStartTime} ${this.ellipsis(currentItem.text, 15)}`;
-      if (nextItem) {
-        this.nextText.textContent = `Next: ${nextItem.rawStartTime} ${this.ellipsis(nextItem.text, 15)}`;
-        this.nextText.show();
-      }
-      this.nextText.hide();
-    } else {
-      this.nextText.hide();
-      const minutesLeft = getDiffInMinutes(
-        currentItem.endTime,
-        window.moment()
-      );
-      this.statusBarText.textContent = `Minutes left: ${minutesLeft}`;
-    }
+    const minutesLeft = getDiffInMinutes(
+      getEndTime(currentItem),
+      window.moment()
+    );
+    const timeLeft = window.moment.utc(window.moment.duration(minutesLeft, "minutes").asMilliseconds()).format("HH:mm");
+    this.statusBarText.textContent = `-${timeLeft}`;
+    this.nextText.hide();
+    const trimmedNow = ellipsis(currentItem.firstLineText, 15);
+    const trimmedNext = nextItem ? ellipsis(nextItem.firstLineText, 15) : "";
+    this.statusBarText.textContent = `Now: ${trimmedNow} (-${timeLeft})` + (trimmedNext.length > 0 ? " Next: " + trimmedNext : "");
   }
   taskNotification(current, currentTaskTimeAndText, nextTask, nextTaskText) {
-    if (this.settings.showTaskNotification && this.currentTime !== void 0 && this.currentTime !== current.startTime.toString()) {
+    if (this.settings().showTaskNotification && this.currentTime !== void 0 && this.currentTime !== current.startTime.toString()) {
       new Notification(`Task started, ${currentTaskTimeAndText}`, {
         body: `${nextTask}: ${nextTaskText}`,
         requireInteraction: true
       });
     }
     this.currentTime = current.startTime.toString();
-  }
-  // todo: this doesn't belong to the class
-  ellipsis(input, limit) {
-    if (input.length <= limit) {
-      return input;
-    }
-    return input.substring(0, limit) + "...";
   }
   setupHorizontalProgressBar() {
     this.statusBarProgress = this.containerEl.createEl("div", {
@@ -10712,46 +23430,24 @@ var StatusBar = class {
 };
 
 // src/ui/timeline-view.ts
-var import_obsidian12 = require("obsidian");
+var import_obsidian5 = require("obsidian");
 
-// src/ui/components/timeline.svelte
-var import_obsidian_daily_notes_interface5 = __toESM(require_main());
-
-// src/store/timeline-store.ts
-var hourSize = derived(
-  settings,
-  ($settings) => $settings.zoomLevel * 60
-);
-var visibleHours = derived(
-  settings,
-  ($settings) => [...Array(24).keys()].slice($settings.startHour)
-);
-var hiddenHoursSize = derived(
-  [settings, hourSize],
-  ([$settings, $hourSize]) => $settings.startHour * $hourSize
-);
-var timeToTimelineOffset = derived(
-  [settings, hiddenHoursSize],
-  ([$settings, $hiddenHoursSize]) => (minutes2) => minutes2 * $settings.zoomLevel - $hiddenHoursSize
-);
-function roundToSnapStep(coords) {
-  const { zoomLevel } = get_store_value(settings);
-  return coords - coords % (SNAP_STEP_MINUTES * zoomLevel);
+// src/global-store/derived-settings.ts
+function getHourSize(settings2) {
+  return settings2.zoomLevel * 60;
 }
-function getTimeFromYOffset(yCoords) {
-  const { zoomLevel } = get_store_value(settings);
-  return (yCoords + get_store_value(hiddenHoursSize)) / zoomLevel;
+function getHiddenHoursSize(settings2) {
+  return settings2.startHour * getHourSize(settings2);
 }
-function sizeToDuration(size) {
-  const { zoomLevel } = get_store_value(settings);
-  return size / zoomLevel;
+function getVisibleHours(settings2) {
+  return [...Array(24).keys()].slice(settings2.startHour);
 }
-var durationToSize = derived(settings, ($settings) => {
-  return (duration) => {
-    const { zoomLevel } = $settings;
-    return duration * zoomLevel;
-  };
-});
+function timeToTimelineOffset(minutes2, settings2) {
+  return minutes2 * settings2.zoomLevel - getHiddenHoursSize(settings2);
+}
+function snap(coords, zoomLevel) {
+  return coords - coords % (snapStepMinutes * zoomLevel);
+}
 
 // src/ui/components/column.svelte
 function add_css(target) {
@@ -10765,11 +23461,15 @@ function get_each_context(ctx, list, i) {
 function create_each_block(ctx) {
   let div1;
   let div0;
-  let style_height = `${/*$hourSize*/
-  ctx[1] / 2}px`;
+  let style_height = `${getHourSize(
+    /*$settings*/
+    ctx[1]
+  ) / 2}px`;
   let t;
-  let style_height_1 = `${/*$hourSize*/
-  ctx[1]}px`;
+  let style_height_1 = `${getHourSize(
+    /*$settings*/
+    ctx[1]
+  )}px`;
   return {
     c() {
       div1 = element("div");
@@ -10786,14 +23486,18 @@ function create_each_block(ctx) {
       append(div1, t);
     },
     p(ctx2, dirty) {
-      if (dirty & /*$hourSize*/
-      2 && style_height !== (style_height = `${/*$hourSize*/
-      ctx2[1] / 2}px`)) {
+      if (dirty & /*$settings*/
+      2 && style_height !== (style_height = `${getHourSize(
+        /*$settings*/
+        ctx2[1]
+      ) / 2}px`)) {
         set_style(div0, "height", style_height);
       }
-      if (dirty & /*$hourSize*/
-      2 && style_height_1 !== (style_height_1 = `${/*$hourSize*/
-      ctx2[1]}px`)) {
+      if (dirty & /*$settings*/
+      2 && style_height_1 !== (style_height_1 = `${getHourSize(
+        /*$settings*/
+        ctx2[1]
+      )}px`)) {
         set_style(div1, "height", style_height_1);
       }
     },
@@ -10874,7 +23578,7 @@ function create_fragment(ctx) {
           );
         }
       }
-      if (dirty & /*$hourSize, visibleHours*/
+      if (dirty & /*getHourSize, $settings, visibleHours*/
       3) {
         each_value = /*visibleHours*/
         ctx2[0];
@@ -10915,17 +23619,17 @@ function create_fragment(ctx) {
   };
 }
 function instance($$self, $$props, $$invalidate) {
-  let $hourSize;
-  component_subscribe($$self, hourSize, ($$value) => $$invalidate(1, $hourSize = $$value));
+  let $settings;
+  component_subscribe($$self, settings, ($$value) => $$invalidate(1, $settings = $$value));
   let { $$slots: slots = {}, $$scope } = $$props;
-  let { visibleHours: visibleHours2 } = $$props;
+  let { visibleHours } = $$props;
   $$self.$$set = ($$props2) => {
     if ("visibleHours" in $$props2)
-      $$invalidate(0, visibleHours2 = $$props2.visibleHours);
+      $$invalidate(0, visibleHours = $$props2.visibleHours);
     if ("$$scope" in $$props2)
       $$invalidate(2, $$scope = $$props2.$$scope);
   };
-  return [visibleHours2, $hourSize, $$scope, slots];
+  return [visibleHours, $settings, $$scope, slots];
 }
 var Column = class extends SvelteComponent {
   constructor(options) {
@@ -10934,6 +23638,226 @@ var Column = class extends SvelteComponent {
   }
 };
 var column_default = Column;
+
+// src/global-store/current-time.ts
+var currentTime = readable(window.moment(), (set) => {
+  const interval = setInterval(() => {
+    set(window.moment());
+  }, 1e3);
+  return () => {
+    clearInterval(interval);
+  };
+});
+
+// src/ui/components/needle.svelte
+function add_css2(target) {
+  append_styles(target, "svelte-1rbwtw9", ".needle.svelte-1rbwtw9{height:2px;background-color:var(--color-accent)}");
+}
+function create_fragment2(ctx) {
+  let div;
+  let style_transform = `translateY(${/*coords*/
+  ctx[1]}px)`;
+  return {
+    c() {
+      div = element("div");
+      attr(div, "class", "needle absolute-stretch-x svelte-1rbwtw9");
+      set_style(div, "transform", style_transform);
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      ctx[5](div);
+    },
+    p(ctx2, [dirty]) {
+      if (dirty & /*coords*/
+      2 && style_transform !== (style_transform = `translateY(${/*coords*/
+      ctx2[1]}px)`)) {
+        set_style(div, "transform", style_transform);
+      }
+    },
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      ctx[5](null);
+    }
+  };
+}
+function instance2($$self, $$props, $$invalidate) {
+  let $settings;
+  let $currentTime;
+  let $visibleDayInTimeline;
+  component_subscribe($$self, settings, ($$value) => $$invalidate(3, $settings = $$value));
+  component_subscribe($$self, currentTime, ($$value) => $$invalidate(4, $currentTime = $$value));
+  component_subscribe($$self, visibleDayInTimeline, ($$value) => $$invalidate(6, $visibleDayInTimeline = $$value));
+  let { autoScrollBlocked = false } = $$props;
+  let el;
+  let coords = timeToTimelineOffset(getMinutesSinceMidnight($currentTime), $settings);
+  function scrollIntoView() {
+    if ($settings.centerNeedle && !autoScrollBlocked && isToday($visibleDayInTimeline)) {
+      el === null || el === void 0 ? void 0 : el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }
+  function div_binding($$value) {
+    binding_callbacks[$$value ? "unshift" : "push"](() => {
+      el = $$value;
+      $$invalidate(0, el);
+    });
+  }
+  $$self.$$set = ($$props2) => {
+    if ("autoScrollBlocked" in $$props2)
+      $$invalidate(2, autoScrollBlocked = $$props2.autoScrollBlocked);
+  };
+  $$self.$$.update = () => {
+    if ($$self.$$.dirty & /*$currentTime, $settings*/
+    24) {
+      $: {
+        $$invalidate(1, coords = timeToTimelineOffset(getMinutesSinceMidnight($currentTime), $settings));
+        scrollIntoView();
+      }
+    }
+  };
+  return [el, coords, autoScrollBlocked, $settings, $currentTime, div_binding];
+}
+var Needle = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance2, create_fragment2, safe_not_equal, { autoScrollBlocked: 2 }, add_css2);
+  }
+};
+var needle_default = Needle;
+
+// src/ui/components/ruler.svelte
+function add_css3(target) {
+  append_styles(target, "svelte-y3mmrv", ".hours-container.svelte-y3mmrv{position:sticky;z-index:5;left:0;display:flex;flex:0 0 30px;flex-direction:column;background-color:var(--background-primary);border-right:1px solid var(--background-modifier-border)}.hour.svelte-y3mmrv{display:flex;flex:1 0 0;border-bottom:1px solid var(--background-modifier-border)}.hour-number-container.svelte-y3mmrv{display:flex;flex:0 0 30px;align-self:flex-start;justify-content:center;font-size:var(--nav-item-size);color:var(--text-muted)}");
+}
+function get_each_context2(ctx, list, i) {
+  const child_ctx = ctx.slice();
+  child_ctx[2] = list[i];
+  return child_ctx;
+}
+function create_each_block2(ctx) {
+  let div1;
+  let div0;
+  let t0_value = (
+    /*hour*/
+    ctx[2] + ""
+  );
+  let t0;
+  let t1;
+  let style_height = `${getHourSize(
+    /*$settings*/
+    ctx[1]
+  )}px`;
+  return {
+    c() {
+      div1 = element("div");
+      div0 = element("div");
+      t0 = text(t0_value);
+      t1 = space();
+      attr(div0, "class", "hour-number-container svelte-y3mmrv");
+      attr(div1, "class", "hour svelte-y3mmrv");
+      set_style(div1, "height", style_height);
+    },
+    m(target, anchor) {
+      insert(target, div1, anchor);
+      append(div1, div0);
+      append(div0, t0);
+      append(div1, t1);
+    },
+    p(ctx2, dirty) {
+      if (dirty & /*visibleHours*/
+      1 && t0_value !== (t0_value = /*hour*/
+      ctx2[2] + ""))
+        set_data(t0, t0_value);
+      if (dirty & /*$settings*/
+      2 && style_height !== (style_height = `${getHourSize(
+        /*$settings*/
+        ctx2[1]
+      )}px`)) {
+        set_style(div1, "height", style_height);
+      }
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div1);
+    }
+  };
+}
+function create_fragment3(ctx) {
+  let div;
+  let each_value = (
+    /*visibleHours*/
+    ctx[0]
+  );
+  let each_blocks = [];
+  for (let i = 0; i < each_value.length; i += 1) {
+    each_blocks[i] = create_each_block2(get_each_context2(ctx, each_value, i));
+  }
+  return {
+    c() {
+      div = element("div");
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].c();
+      }
+      attr(div, "class", "hours-container svelte-y3mmrv");
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        if (each_blocks[i]) {
+          each_blocks[i].m(div, null);
+        }
+      }
+    },
+    p(ctx2, [dirty]) {
+      if (dirty & /*getHourSize, $settings, visibleHours*/
+      3) {
+        each_value = /*visibleHours*/
+        ctx2[0];
+        let i;
+        for (i = 0; i < each_value.length; i += 1) {
+          const child_ctx = get_each_context2(ctx2, each_value, i);
+          if (each_blocks[i]) {
+            each_blocks[i].p(child_ctx, dirty);
+          } else {
+            each_blocks[i] = create_each_block2(child_ctx);
+            each_blocks[i].c();
+            each_blocks[i].m(div, null);
+          }
+        }
+        for (; i < each_blocks.length; i += 1) {
+          each_blocks[i].d(1);
+        }
+        each_blocks.length = each_value.length;
+      }
+    },
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      destroy_each(each_blocks, detaching);
+    }
+  };
+}
+function instance3($$self, $$props, $$invalidate) {
+  let $settings;
+  component_subscribe($$self, settings, ($$value) => $$invalidate(1, $settings = $$value));
+  let { visibleHours } = $$props;
+  $$self.$$set = ($$props2) => {
+    if ("visibleHours" in $$props2)
+      $$invalidate(0, visibleHours = $$props2.visibleHours);
+  };
+  return [visibleHours, $settings];
+}
+var Ruler = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance3, create_fragment3, safe_not_equal, { visibleHours: 0 }, add_css3);
+  }
+};
+var ruler_default = Ruler;
 
 // node_modules/tslib/tslib.es6.mjs
 function __awaiter(thisArg, _arguments, P, generator) {
@@ -10964,23 +23888,4233 @@ function __awaiter(thisArg, _arguments, P, generator) {
   });
 }
 
-// src/ui/components/controls.svelte
-var import_obsidian_daily_notes_interface3 = __toESM(require_main());
+// node_modules/lucide-svelte/dist/esm/defaultAttributes.js
+var defaultAttributes = {
+  xmlns: "http://www.w3.org/2000/svg",
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  stroke: "currentColor",
+  "stroke-width": 2,
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round"
+};
+
+// node_modules/lucide-svelte/dist/esm/Icon.svelte.js
+function get_each_context3(ctx, list, i) {
+  const child_ctx = ctx.slice();
+  child_ctx[10] = list[i][0];
+  child_ctx[11] = list[i][1];
+  return child_ctx;
+}
+function create_dynamic_element(ctx) {
+  let svelte_element;
+  let svelte_element_levels = [
+    /*attrs*/
+    ctx[11]
+  ];
+  let svelte_element_data = {};
+  for (let i = 0; i < svelte_element_levels.length; i += 1) {
+    svelte_element_data = assign(svelte_element_data, svelte_element_levels[i]);
+  }
+  return {
+    c() {
+      svelte_element = svg_element(
+        /*tag*/
+        ctx[10]
+      );
+      this.h();
+    },
+    l(nodes) {
+      svelte_element = claim_svg_element(
+        nodes,
+        /*tag*/
+        ctx[10],
+        {}
+      );
+      children(svelte_element).forEach(detach);
+      this.h();
+    },
+    h() {
+      set_svg_attributes(svelte_element, svelte_element_data);
+    },
+    m(target, anchor) {
+      insert_hydration(target, svelte_element, anchor);
+    },
+    p(ctx2, dirty) {
+      svelte_element_data = get_spread_update(svelte_element_levels, [dirty & /*iconNode*/
+      32 && /*attrs*/
+      ctx2[11]]);
+      set_svg_attributes(svelte_element, svelte_element_data);
+    },
+    d(detaching) {
+      if (detaching)
+        detach(svelte_element);
+    }
+  };
+}
+function create_each_block3(ctx) {
+  let previous_tag = (
+    /*tag*/
+    ctx[10]
+  );
+  let svelte_element_anchor;
+  let svelte_element = (
+    /*tag*/
+    ctx[10] && create_dynamic_element(ctx)
+  );
+  return {
+    c() {
+      if (svelte_element)
+        svelte_element.c();
+      svelte_element_anchor = empty();
+    },
+    l(nodes) {
+      if (svelte_element)
+        svelte_element.l(nodes);
+      svelte_element_anchor = empty();
+    },
+    m(target, anchor) {
+      if (svelte_element)
+        svelte_element.m(target, anchor);
+      insert_hydration(target, svelte_element_anchor, anchor);
+    },
+    p(ctx2, dirty) {
+      if (
+        /*tag*/
+        ctx2[10]
+      ) {
+        if (!previous_tag) {
+          svelte_element = create_dynamic_element(ctx2);
+          svelte_element.c();
+          svelte_element.m(svelte_element_anchor.parentNode, svelte_element_anchor);
+        } else if (safe_not_equal(
+          previous_tag,
+          /*tag*/
+          ctx2[10]
+        )) {
+          svelte_element.d(1);
+          svelte_element = create_dynamic_element(ctx2);
+          svelte_element.c();
+          svelte_element.m(svelte_element_anchor.parentNode, svelte_element_anchor);
+        } else {
+          svelte_element.p(ctx2, dirty);
+        }
+      } else if (previous_tag) {
+        svelte_element.d(1);
+        svelte_element = null;
+      }
+      previous_tag = /*tag*/
+      ctx2[10];
+    },
+    d(detaching) {
+      if (detaching)
+        detach(svelte_element_anchor);
+      if (svelte_element)
+        svelte_element.d(detaching);
+    }
+  };
+}
+function create_fragment4(ctx) {
+  var _a;
+  let svg;
+  let each_1_anchor;
+  let svg_stroke_width_value;
+  let svg_class_value;
+  let current;
+  let each_value = (
+    /*iconNode*/
+    ctx[5]
+  );
+  let each_blocks = [];
+  for (let i = 0; i < each_value.length; i += 1) {
+    each_blocks[i] = create_each_block3(get_each_context3(ctx, each_value, i));
+  }
+  const default_slot_template = (
+    /*#slots*/
+    ctx[9].default
+  );
+  const default_slot = create_slot(
+    default_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[8],
+    null
+  );
+  let svg_levels = [
+    defaultAttributes,
+    /*$$restProps*/
+    ctx[6],
+    { width: (
+      /*size*/
+      ctx[2]
+    ) },
+    { height: (
+      /*size*/
+      ctx[2]
+    ) },
+    { stroke: (
+      /*color*/
+      ctx[1]
+    ) },
+    {
+      "stroke-width": svg_stroke_width_value = /*absoluteStrokeWidth*/
+      ctx[4] ? Number(
+        /*strokeWidth*/
+        ctx[3]
+      ) * 24 / Number(
+        /*size*/
+        ctx[2]
+      ) : (
+        /*strokeWidth*/
+        ctx[3]
+      )
+    },
+    {
+      class: svg_class_value = `lucide-icon lucide lucide-${/*name*/
+      ctx[0]} ${/*$$props*/
+      (_a = ctx[7].class) != null ? _a : ""}`
+    }
+  ];
+  let svg_data = {};
+  for (let i = 0; i < svg_levels.length; i += 1) {
+    svg_data = assign(svg_data, svg_levels[i]);
+  }
+  return {
+    c() {
+      svg = svg_element("svg");
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].c();
+      }
+      each_1_anchor = empty();
+      if (default_slot)
+        default_slot.c();
+      this.h();
+    },
+    l(nodes) {
+      svg = claim_svg_element(nodes, "svg", {
+        width: true,
+        height: true,
+        stroke: true,
+        "stroke-width": true,
+        class: true
+      });
+      var svg_nodes = children(svg);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].l(svg_nodes);
+      }
+      each_1_anchor = empty();
+      if (default_slot)
+        default_slot.l(svg_nodes);
+      svg_nodes.forEach(detach);
+      this.h();
+    },
+    h() {
+      set_svg_attributes(svg, svg_data);
+    },
+    m(target, anchor) {
+      insert_hydration(target, svg, anchor);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].m(svg, null);
+      }
+      append_hydration(svg, each_1_anchor);
+      if (default_slot) {
+        default_slot.m(svg, null);
+      }
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      var _a2;
+      if (dirty & /*iconNode*/
+      32) {
+        each_value = /*iconNode*/
+        ctx2[5];
+        let i;
+        for (i = 0; i < each_value.length; i += 1) {
+          const child_ctx = get_each_context3(ctx2, each_value, i);
+          if (each_blocks[i]) {
+            each_blocks[i].p(child_ctx, dirty);
+          } else {
+            each_blocks[i] = create_each_block3(child_ctx);
+            each_blocks[i].c();
+            each_blocks[i].m(svg, each_1_anchor);
+          }
+        }
+        for (; i < each_blocks.length; i += 1) {
+          each_blocks[i].d(1);
+        }
+        each_blocks.length = each_value.length;
+      }
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & /*$$scope*/
+        256)) {
+          update_slot_base(
+            default_slot,
+            default_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[8],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[8]
+            ) : get_slot_changes(
+              default_slot_template,
+              /*$$scope*/
+              ctx2[8],
+              dirty,
+              null
+            ),
+            null
+          );
+        }
+      }
+      set_svg_attributes(svg, svg_data = get_spread_update(svg_levels, [
+        defaultAttributes,
+        dirty & /*$$restProps*/
+        64 && /*$$restProps*/
+        ctx2[6],
+        (!current || dirty & /*size*/
+        4) && { width: (
+          /*size*/
+          ctx2[2]
+        ) },
+        (!current || dirty & /*size*/
+        4) && { height: (
+          /*size*/
+          ctx2[2]
+        ) },
+        (!current || dirty & /*color*/
+        2) && { stroke: (
+          /*color*/
+          ctx2[1]
+        ) },
+        (!current || dirty & /*absoluteStrokeWidth, strokeWidth, size*/
+        28 && svg_stroke_width_value !== (svg_stroke_width_value = /*absoluteStrokeWidth*/
+        ctx2[4] ? Number(
+          /*strokeWidth*/
+          ctx2[3]
+        ) * 24 / Number(
+          /*size*/
+          ctx2[2]
+        ) : (
+          /*strokeWidth*/
+          ctx2[3]
+        ))) && { "stroke-width": svg_stroke_width_value },
+        (!current || dirty & /*name, $$props*/
+        129 && svg_class_value !== (svg_class_value = `lucide-icon lucide lucide-${/*name*/
+        ctx2[0]} ${/*$$props*/
+        (_a2 = ctx2[7].class) != null ? _a2 : ""}`)) && { class: svg_class_value }
+      ]));
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(svg);
+      destroy_each(each_blocks, detaching);
+      if (default_slot)
+        default_slot.d(detaching);
+    }
+  };
+}
+function instance4($$self, $$props, $$invalidate) {
+  const omit_props_names = ["name", "color", "size", "strokeWidth", "absoluteStrokeWidth", "iconNode"];
+  let $$restProps = compute_rest_props($$props, omit_props_names);
+  let { $$slots: slots = {}, $$scope } = $$props;
+  let { name } = $$props;
+  let { color = "currentColor" } = $$props;
+  let { size = 24 } = $$props;
+  let { strokeWidth = 2 } = $$props;
+  let { absoluteStrokeWidth = false } = $$props;
+  let { iconNode } = $$props;
+  $$self.$$set = ($$new_props) => {
+    $$invalidate(7, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
+    $$invalidate(6, $$restProps = compute_rest_props($$props, omit_props_names));
+    if ("name" in $$new_props)
+      $$invalidate(0, name = $$new_props.name);
+    if ("color" in $$new_props)
+      $$invalidate(1, color = $$new_props.color);
+    if ("size" in $$new_props)
+      $$invalidate(2, size = $$new_props.size);
+    if ("strokeWidth" in $$new_props)
+      $$invalidate(3, strokeWidth = $$new_props.strokeWidth);
+    if ("absoluteStrokeWidth" in $$new_props)
+      $$invalidate(4, absoluteStrokeWidth = $$new_props.absoluteStrokeWidth);
+    if ("iconNode" in $$new_props)
+      $$invalidate(5, iconNode = $$new_props.iconNode);
+    if ("$$scope" in $$new_props)
+      $$invalidate(8, $$scope = $$new_props.$$scope);
+  };
+  $$props = exclude_internal_props($$props);
+  return [
+    name,
+    color,
+    size,
+    strokeWidth,
+    absoluteStrokeWidth,
+    iconNode,
+    $$restProps,
+    $$props,
+    $$scope,
+    slots
+  ];
+}
+var Icon = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance4, create_fragment4, safe_not_equal, {
+      name: 0,
+      color: 1,
+      size: 2,
+      strokeWidth: 3,
+      absoluteStrokeWidth: 4,
+      iconNode: 5
+    });
+  }
+};
+var Icon$1 = Icon;
+
+// node_modules/lucide-svelte/dist/esm/icons/alert-triangle.svelte.js
+function create_default_slot(ctx) {
+  let current;
+  const default_slot_template = (
+    /*#slots*/
+    ctx[2].default
+  );
+  const default_slot = create_slot(
+    default_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[3],
+    null
+  );
+  return {
+    c() {
+      if (default_slot)
+        default_slot.c();
+    },
+    l(nodes) {
+      if (default_slot)
+        default_slot.l(nodes);
+    },
+    m(target, anchor) {
+      if (default_slot) {
+        default_slot.m(target, anchor);
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & /*$$scope*/
+        8)) {
+          update_slot_base(
+            default_slot,
+            default_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[3],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[3]
+            ) : get_slot_changes(
+              default_slot_template,
+              /*$$scope*/
+              ctx2[3],
+              dirty,
+              null
+            ),
+            null
+          );
+        }
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (default_slot)
+        default_slot.d(detaching);
+    }
+  };
+}
+function create_fragment5(ctx) {
+  let icon;
+  let current;
+  const icon_spread_levels = [
+    { name: "alert-triangle" },
+    /*$$props*/
+    ctx[1],
+    { iconNode: (
+      /*iconNode*/
+      ctx[0]
+    ) }
+  ];
+  let icon_props = {
+    $$slots: { default: [create_default_slot] },
+    $$scope: { ctx }
+  };
+  for (let i = 0; i < icon_spread_levels.length; i += 1) {
+    icon_props = assign(icon_props, icon_spread_levels[i]);
+  }
+  icon = new Icon$1({ props: icon_props });
+  return {
+    c() {
+      create_component(icon.$$.fragment);
+    },
+    l(nodes) {
+      claim_component(icon.$$.fragment, nodes);
+    },
+    m(target, anchor) {
+      mount_component(icon, target, anchor);
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      const icon_changes = dirty & /*$$props, iconNode*/
+      3 ? get_spread_update(icon_spread_levels, [
+        icon_spread_levels[0],
+        dirty & /*$$props*/
+        2 && get_spread_object(
+          /*$$props*/
+          ctx2[1]
+        ),
+        dirty & /*iconNode*/
+        1 && { iconNode: (
+          /*iconNode*/
+          ctx2[0]
+        ) }
+      ]) : {};
+      if (dirty & /*$$scope*/
+      8) {
+        icon_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      icon.$set(icon_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(icon, detaching);
+    }
+  };
+}
+function instance5($$self, $$props, $$invalidate) {
+  let { $$slots: slots = {}, $$scope } = $$props;
+  const iconNode = [
+    [
+      "path",
+      {
+        "d": "m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"
+      }
+    ],
+    ["path", { "d": "M12 9v4" }],
+    ["path", { "d": "M12 17h.01" }]
+  ];
+  $$self.$$set = ($$new_props) => {
+    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
+    if ("$$scope" in $$new_props)
+      $$invalidate(3, $$scope = $$new_props.$$scope);
+  };
+  $$props = exclude_internal_props($$props);
+  return [iconNode, $$props, slots, $$scope];
+}
+var Alert_triangle = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance5, create_fragment5, safe_not_equal, {});
+  }
+};
+var Alert_triangle$1 = Alert_triangle;
+
+// node_modules/lucide-svelte/dist/esm/icons/arrow-left-to-line.svelte.js
+function create_default_slot2(ctx) {
+  let current;
+  const default_slot_template = (
+    /*#slots*/
+    ctx[2].default
+  );
+  const default_slot = create_slot(
+    default_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[3],
+    null
+  );
+  return {
+    c() {
+      if (default_slot)
+        default_slot.c();
+    },
+    l(nodes) {
+      if (default_slot)
+        default_slot.l(nodes);
+    },
+    m(target, anchor) {
+      if (default_slot) {
+        default_slot.m(target, anchor);
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & /*$$scope*/
+        8)) {
+          update_slot_base(
+            default_slot,
+            default_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[3],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[3]
+            ) : get_slot_changes(
+              default_slot_template,
+              /*$$scope*/
+              ctx2[3],
+              dirty,
+              null
+            ),
+            null
+          );
+        }
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (default_slot)
+        default_slot.d(detaching);
+    }
+  };
+}
+function create_fragment6(ctx) {
+  let icon;
+  let current;
+  const icon_spread_levels = [
+    { name: "arrow-left-to-line" },
+    /*$$props*/
+    ctx[1],
+    { iconNode: (
+      /*iconNode*/
+      ctx[0]
+    ) }
+  ];
+  let icon_props = {
+    $$slots: { default: [create_default_slot2] },
+    $$scope: { ctx }
+  };
+  for (let i = 0; i < icon_spread_levels.length; i += 1) {
+    icon_props = assign(icon_props, icon_spread_levels[i]);
+  }
+  icon = new Icon$1({ props: icon_props });
+  return {
+    c() {
+      create_component(icon.$$.fragment);
+    },
+    l(nodes) {
+      claim_component(icon.$$.fragment, nodes);
+    },
+    m(target, anchor) {
+      mount_component(icon, target, anchor);
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      const icon_changes = dirty & /*$$props, iconNode*/
+      3 ? get_spread_update(icon_spread_levels, [
+        icon_spread_levels[0],
+        dirty & /*$$props*/
+        2 && get_spread_object(
+          /*$$props*/
+          ctx2[1]
+        ),
+        dirty & /*iconNode*/
+        1 && { iconNode: (
+          /*iconNode*/
+          ctx2[0]
+        ) }
+      ]) : {};
+      if (dirty & /*$$scope*/
+      8) {
+        icon_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      icon.$set(icon_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(icon, detaching);
+    }
+  };
+}
+function instance6($$self, $$props, $$invalidate) {
+  let { $$slots: slots = {}, $$scope } = $$props;
+  const iconNode = [
+    ["path", { "d": "M3 19V5" }],
+    ["path", { "d": "m13 6-6 6 6 6" }],
+    ["path", { "d": "M7 12h14" }]
+  ];
+  $$self.$$set = ($$new_props) => {
+    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
+    if ("$$scope" in $$new_props)
+      $$invalidate(3, $$scope = $$new_props.$$scope);
+  };
+  $$props = exclude_internal_props($$props);
+  return [iconNode, $$props, slots, $$scope];
+}
+var Arrow_left_to_line = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance6, create_fragment6, safe_not_equal, {});
+  }
+};
+var Arrow_left_to_line$1 = Arrow_left_to_line;
+
+// node_modules/lucide-svelte/dist/esm/icons/arrow-left.svelte.js
+function create_default_slot3(ctx) {
+  let current;
+  const default_slot_template = (
+    /*#slots*/
+    ctx[2].default
+  );
+  const default_slot = create_slot(
+    default_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[3],
+    null
+  );
+  return {
+    c() {
+      if (default_slot)
+        default_slot.c();
+    },
+    l(nodes) {
+      if (default_slot)
+        default_slot.l(nodes);
+    },
+    m(target, anchor) {
+      if (default_slot) {
+        default_slot.m(target, anchor);
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & /*$$scope*/
+        8)) {
+          update_slot_base(
+            default_slot,
+            default_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[3],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[3]
+            ) : get_slot_changes(
+              default_slot_template,
+              /*$$scope*/
+              ctx2[3],
+              dirty,
+              null
+            ),
+            null
+          );
+        }
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (default_slot)
+        default_slot.d(detaching);
+    }
+  };
+}
+function create_fragment7(ctx) {
+  let icon;
+  let current;
+  const icon_spread_levels = [
+    { name: "arrow-left" },
+    /*$$props*/
+    ctx[1],
+    { iconNode: (
+      /*iconNode*/
+      ctx[0]
+    ) }
+  ];
+  let icon_props = {
+    $$slots: { default: [create_default_slot3] },
+    $$scope: { ctx }
+  };
+  for (let i = 0; i < icon_spread_levels.length; i += 1) {
+    icon_props = assign(icon_props, icon_spread_levels[i]);
+  }
+  icon = new Icon$1({ props: icon_props });
+  return {
+    c() {
+      create_component(icon.$$.fragment);
+    },
+    l(nodes) {
+      claim_component(icon.$$.fragment, nodes);
+    },
+    m(target, anchor) {
+      mount_component(icon, target, anchor);
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      const icon_changes = dirty & /*$$props, iconNode*/
+      3 ? get_spread_update(icon_spread_levels, [
+        icon_spread_levels[0],
+        dirty & /*$$props*/
+        2 && get_spread_object(
+          /*$$props*/
+          ctx2[1]
+        ),
+        dirty & /*iconNode*/
+        1 && { iconNode: (
+          /*iconNode*/
+          ctx2[0]
+        ) }
+      ]) : {};
+      if (dirty & /*$$scope*/
+      8) {
+        icon_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      icon.$set(icon_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(icon, detaching);
+    }
+  };
+}
+function instance7($$self, $$props, $$invalidate) {
+  let { $$slots: slots = {}, $$scope } = $$props;
+  const iconNode = [["path", { "d": "m12 19-7-7 7-7" }], ["path", { "d": "M19 12H5" }]];
+  $$self.$$set = ($$new_props) => {
+    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
+    if ("$$scope" in $$new_props)
+      $$invalidate(3, $$scope = $$new_props.$$scope);
+  };
+  $$props = exclude_internal_props($$props);
+  return [iconNode, $$props, slots, $$scope];
+}
+var Arrow_left = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance7, create_fragment7, safe_not_equal, {});
+  }
+};
+var Arrow_left$1 = Arrow_left;
+
+// node_modules/lucide-svelte/dist/esm/icons/arrow-right-to-line.svelte.js
+function create_default_slot4(ctx) {
+  let current;
+  const default_slot_template = (
+    /*#slots*/
+    ctx[2].default
+  );
+  const default_slot = create_slot(
+    default_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[3],
+    null
+  );
+  return {
+    c() {
+      if (default_slot)
+        default_slot.c();
+    },
+    l(nodes) {
+      if (default_slot)
+        default_slot.l(nodes);
+    },
+    m(target, anchor) {
+      if (default_slot) {
+        default_slot.m(target, anchor);
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & /*$$scope*/
+        8)) {
+          update_slot_base(
+            default_slot,
+            default_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[3],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[3]
+            ) : get_slot_changes(
+              default_slot_template,
+              /*$$scope*/
+              ctx2[3],
+              dirty,
+              null
+            ),
+            null
+          );
+        }
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (default_slot)
+        default_slot.d(detaching);
+    }
+  };
+}
+function create_fragment8(ctx) {
+  let icon;
+  let current;
+  const icon_spread_levels = [
+    { name: "arrow-right-to-line" },
+    /*$$props*/
+    ctx[1],
+    { iconNode: (
+      /*iconNode*/
+      ctx[0]
+    ) }
+  ];
+  let icon_props = {
+    $$slots: { default: [create_default_slot4] },
+    $$scope: { ctx }
+  };
+  for (let i = 0; i < icon_spread_levels.length; i += 1) {
+    icon_props = assign(icon_props, icon_spread_levels[i]);
+  }
+  icon = new Icon$1({ props: icon_props });
+  return {
+    c() {
+      create_component(icon.$$.fragment);
+    },
+    l(nodes) {
+      claim_component(icon.$$.fragment, nodes);
+    },
+    m(target, anchor) {
+      mount_component(icon, target, anchor);
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      const icon_changes = dirty & /*$$props, iconNode*/
+      3 ? get_spread_update(icon_spread_levels, [
+        icon_spread_levels[0],
+        dirty & /*$$props*/
+        2 && get_spread_object(
+          /*$$props*/
+          ctx2[1]
+        ),
+        dirty & /*iconNode*/
+        1 && { iconNode: (
+          /*iconNode*/
+          ctx2[0]
+        ) }
+      ]) : {};
+      if (dirty & /*$$scope*/
+      8) {
+        icon_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      icon.$set(icon_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(icon, detaching);
+    }
+  };
+}
+function instance8($$self, $$props, $$invalidate) {
+  let { $$slots: slots = {}, $$scope } = $$props;
+  const iconNode = [
+    ["path", { "d": "M17 12H3" }],
+    ["path", { "d": "m11 18 6-6-6-6" }],
+    ["path", { "d": "M21 5v14" }]
+  ];
+  $$self.$$set = ($$new_props) => {
+    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
+    if ("$$scope" in $$new_props)
+      $$invalidate(3, $$scope = $$new_props.$$scope);
+  };
+  $$props = exclude_internal_props($$props);
+  return [iconNode, $$props, slots, $$scope];
+}
+var Arrow_right_to_line = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance8, create_fragment8, safe_not_equal, {});
+  }
+};
+var Arrow_right_to_line$1 = Arrow_right_to_line;
+
+// node_modules/lucide-svelte/dist/esm/icons/arrow-right.svelte.js
+function create_default_slot5(ctx) {
+  let current;
+  const default_slot_template = (
+    /*#slots*/
+    ctx[2].default
+  );
+  const default_slot = create_slot(
+    default_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[3],
+    null
+  );
+  return {
+    c() {
+      if (default_slot)
+        default_slot.c();
+    },
+    l(nodes) {
+      if (default_slot)
+        default_slot.l(nodes);
+    },
+    m(target, anchor) {
+      if (default_slot) {
+        default_slot.m(target, anchor);
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & /*$$scope*/
+        8)) {
+          update_slot_base(
+            default_slot,
+            default_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[3],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[3]
+            ) : get_slot_changes(
+              default_slot_template,
+              /*$$scope*/
+              ctx2[3],
+              dirty,
+              null
+            ),
+            null
+          );
+        }
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (default_slot)
+        default_slot.d(detaching);
+    }
+  };
+}
+function create_fragment9(ctx) {
+  let icon;
+  let current;
+  const icon_spread_levels = [
+    { name: "arrow-right" },
+    /*$$props*/
+    ctx[1],
+    { iconNode: (
+      /*iconNode*/
+      ctx[0]
+    ) }
+  ];
+  let icon_props = {
+    $$slots: { default: [create_default_slot5] },
+    $$scope: { ctx }
+  };
+  for (let i = 0; i < icon_spread_levels.length; i += 1) {
+    icon_props = assign(icon_props, icon_spread_levels[i]);
+  }
+  icon = new Icon$1({ props: icon_props });
+  return {
+    c() {
+      create_component(icon.$$.fragment);
+    },
+    l(nodes) {
+      claim_component(icon.$$.fragment, nodes);
+    },
+    m(target, anchor) {
+      mount_component(icon, target, anchor);
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      const icon_changes = dirty & /*$$props, iconNode*/
+      3 ? get_spread_update(icon_spread_levels, [
+        icon_spread_levels[0],
+        dirty & /*$$props*/
+        2 && get_spread_object(
+          /*$$props*/
+          ctx2[1]
+        ),
+        dirty & /*iconNode*/
+        1 && { iconNode: (
+          /*iconNode*/
+          ctx2[0]
+        ) }
+      ]) : {};
+      if (dirty & /*$$scope*/
+      8) {
+        icon_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      icon.$set(icon_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(icon, detaching);
+    }
+  };
+}
+function instance9($$self, $$props, $$invalidate) {
+  let { $$slots: slots = {}, $$scope } = $$props;
+  const iconNode = [["path", { "d": "M5 12h14" }], ["path", { "d": "m12 5 7 7-7 7" }]];
+  $$self.$$set = ($$new_props) => {
+    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
+    if ("$$scope" in $$new_props)
+      $$invalidate(3, $$scope = $$new_props.$$scope);
+  };
+  $$props = exclude_internal_props($$props);
+  return [iconNode, $$props, slots, $$scope];
+}
+var Arrow_right = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance9, create_fragment9, safe_not_equal, {});
+  }
+};
+var Arrow_right$1 = Arrow_right;
+
+// node_modules/lucide-svelte/dist/esm/icons/circle-dot.svelte.js
+function create_default_slot6(ctx) {
+  let current;
+  const default_slot_template = (
+    /*#slots*/
+    ctx[2].default
+  );
+  const default_slot = create_slot(
+    default_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[3],
+    null
+  );
+  return {
+    c() {
+      if (default_slot)
+        default_slot.c();
+    },
+    l(nodes) {
+      if (default_slot)
+        default_slot.l(nodes);
+    },
+    m(target, anchor) {
+      if (default_slot) {
+        default_slot.m(target, anchor);
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & /*$$scope*/
+        8)) {
+          update_slot_base(
+            default_slot,
+            default_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[3],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[3]
+            ) : get_slot_changes(
+              default_slot_template,
+              /*$$scope*/
+              ctx2[3],
+              dirty,
+              null
+            ),
+            null
+          );
+        }
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (default_slot)
+        default_slot.d(detaching);
+    }
+  };
+}
+function create_fragment10(ctx) {
+  let icon;
+  let current;
+  const icon_spread_levels = [
+    { name: "circle-dot" },
+    /*$$props*/
+    ctx[1],
+    { iconNode: (
+      /*iconNode*/
+      ctx[0]
+    ) }
+  ];
+  let icon_props = {
+    $$slots: { default: [create_default_slot6] },
+    $$scope: { ctx }
+  };
+  for (let i = 0; i < icon_spread_levels.length; i += 1) {
+    icon_props = assign(icon_props, icon_spread_levels[i]);
+  }
+  icon = new Icon$1({ props: icon_props });
+  return {
+    c() {
+      create_component(icon.$$.fragment);
+    },
+    l(nodes) {
+      claim_component(icon.$$.fragment, nodes);
+    },
+    m(target, anchor) {
+      mount_component(icon, target, anchor);
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      const icon_changes = dirty & /*$$props, iconNode*/
+      3 ? get_spread_update(icon_spread_levels, [
+        icon_spread_levels[0],
+        dirty & /*$$props*/
+        2 && get_spread_object(
+          /*$$props*/
+          ctx2[1]
+        ),
+        dirty & /*iconNode*/
+        1 && { iconNode: (
+          /*iconNode*/
+          ctx2[0]
+        ) }
+      ]) : {};
+      if (dirty & /*$$scope*/
+      8) {
+        icon_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      icon.$set(icon_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(icon, detaching);
+    }
+  };
+}
+function instance10($$self, $$props, $$invalidate) {
+  let { $$slots: slots = {}, $$scope } = $$props;
+  const iconNode = [
+    ["circle", { "cx": "12", "cy": "12", "r": "10" }],
+    ["circle", { "cx": "12", "cy": "12", "r": "1" }]
+  ];
+  $$self.$$set = ($$new_props) => {
+    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
+    if ("$$scope" in $$new_props)
+      $$invalidate(3, $$scope = $$new_props.$$scope);
+  };
+  $$props = exclude_internal_props($$props);
+  return [iconNode, $$props, slots, $$scope];
+}
+var Circle_dot = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance10, create_fragment10, safe_not_equal, {});
+  }
+};
+var Circle_dot$1 = Circle_dot;
+
+// node_modules/lucide-svelte/dist/esm/icons/file-input.svelte.js
+function create_default_slot7(ctx) {
+  let current;
+  const default_slot_template = (
+    /*#slots*/
+    ctx[2].default
+  );
+  const default_slot = create_slot(
+    default_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[3],
+    null
+  );
+  return {
+    c() {
+      if (default_slot)
+        default_slot.c();
+    },
+    l(nodes) {
+      if (default_slot)
+        default_slot.l(nodes);
+    },
+    m(target, anchor) {
+      if (default_slot) {
+        default_slot.m(target, anchor);
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & /*$$scope*/
+        8)) {
+          update_slot_base(
+            default_slot,
+            default_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[3],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[3]
+            ) : get_slot_changes(
+              default_slot_template,
+              /*$$scope*/
+              ctx2[3],
+              dirty,
+              null
+            ),
+            null
+          );
+        }
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (default_slot)
+        default_slot.d(detaching);
+    }
+  };
+}
+function create_fragment11(ctx) {
+  let icon;
+  let current;
+  const icon_spread_levels = [
+    { name: "file-input" },
+    /*$$props*/
+    ctx[1],
+    { iconNode: (
+      /*iconNode*/
+      ctx[0]
+    ) }
+  ];
+  let icon_props = {
+    $$slots: { default: [create_default_slot7] },
+    $$scope: { ctx }
+  };
+  for (let i = 0; i < icon_spread_levels.length; i += 1) {
+    icon_props = assign(icon_props, icon_spread_levels[i]);
+  }
+  icon = new Icon$1({ props: icon_props });
+  return {
+    c() {
+      create_component(icon.$$.fragment);
+    },
+    l(nodes) {
+      claim_component(icon.$$.fragment, nodes);
+    },
+    m(target, anchor) {
+      mount_component(icon, target, anchor);
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      const icon_changes = dirty & /*$$props, iconNode*/
+      3 ? get_spread_update(icon_spread_levels, [
+        icon_spread_levels[0],
+        dirty & /*$$props*/
+        2 && get_spread_object(
+          /*$$props*/
+          ctx2[1]
+        ),
+        dirty & /*iconNode*/
+        1 && { iconNode: (
+          /*iconNode*/
+          ctx2[0]
+        ) }
+      ]) : {};
+      if (dirty & /*$$scope*/
+      8) {
+        icon_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      icon.$set(icon_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(icon, detaching);
+    }
+  };
+}
+function instance11($$self, $$props, $$invalidate) {
+  let { $$slots: slots = {}, $$scope } = $$props;
+  const iconNode = [
+    [
+      "path",
+      {
+        "d": "M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"
+      }
+    ],
+    ["polyline", { "points": "14 2 14 8 20 8" }],
+    ["path", { "d": "M2 15h10" }],
+    ["path", { "d": "m9 18 3-3-3-3" }]
+  ];
+  $$self.$$set = ($$new_props) => {
+    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
+    if ("$$scope" in $$new_props)
+      $$invalidate(3, $$scope = $$new_props.$$scope);
+  };
+  $$props = exclude_internal_props($$props);
+  return [iconNode, $$props, slots, $$scope];
+}
+var File_input = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance11, create_fragment11, safe_not_equal, {});
+  }
+};
+var File_input$1 = File_input;
+
+// node_modules/lucide-svelte/dist/esm/icons/filter-x.svelte.js
+function create_default_slot8(ctx) {
+  let current;
+  const default_slot_template = (
+    /*#slots*/
+    ctx[2].default
+  );
+  const default_slot = create_slot(
+    default_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[3],
+    null
+  );
+  return {
+    c() {
+      if (default_slot)
+        default_slot.c();
+    },
+    l(nodes) {
+      if (default_slot)
+        default_slot.l(nodes);
+    },
+    m(target, anchor) {
+      if (default_slot) {
+        default_slot.m(target, anchor);
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & /*$$scope*/
+        8)) {
+          update_slot_base(
+            default_slot,
+            default_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[3],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[3]
+            ) : get_slot_changes(
+              default_slot_template,
+              /*$$scope*/
+              ctx2[3],
+              dirty,
+              null
+            ),
+            null
+          );
+        }
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (default_slot)
+        default_slot.d(detaching);
+    }
+  };
+}
+function create_fragment12(ctx) {
+  let icon;
+  let current;
+  const icon_spread_levels = [
+    { name: "filter-x" },
+    /*$$props*/
+    ctx[1],
+    { iconNode: (
+      /*iconNode*/
+      ctx[0]
+    ) }
+  ];
+  let icon_props = {
+    $$slots: { default: [create_default_slot8] },
+    $$scope: { ctx }
+  };
+  for (let i = 0; i < icon_spread_levels.length; i += 1) {
+    icon_props = assign(icon_props, icon_spread_levels[i]);
+  }
+  icon = new Icon$1({ props: icon_props });
+  return {
+    c() {
+      create_component(icon.$$.fragment);
+    },
+    l(nodes) {
+      claim_component(icon.$$.fragment, nodes);
+    },
+    m(target, anchor) {
+      mount_component(icon, target, anchor);
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      const icon_changes = dirty & /*$$props, iconNode*/
+      3 ? get_spread_update(icon_spread_levels, [
+        icon_spread_levels[0],
+        dirty & /*$$props*/
+        2 && get_spread_object(
+          /*$$props*/
+          ctx2[1]
+        ),
+        dirty & /*iconNode*/
+        1 && { iconNode: (
+          /*iconNode*/
+          ctx2[0]
+        ) }
+      ]) : {};
+      if (dirty & /*$$scope*/
+      8) {
+        icon_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      icon.$set(icon_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(icon, detaching);
+    }
+  };
+}
+function instance12($$self, $$props, $$invalidate) {
+  let { $$slots: slots = {}, $$scope } = $$props;
+  const iconNode = [
+    [
+      "path",
+      {
+        "d": "M13.013 3H2l8 9.46V19l4 2v-8.54l.9-1.055"
+      }
+    ],
+    ["path", { "d": "m22 3-5 5" }],
+    ["path", { "d": "m17 3 5 5" }]
+  ];
+  $$self.$$set = ($$new_props) => {
+    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
+    if ("$$scope" in $$new_props)
+      $$invalidate(3, $$scope = $$new_props.$$scope);
+  };
+  $$props = exclude_internal_props($$props);
+  return [iconNode, $$props, slots, $$scope];
+}
+var Filter_x = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance12, create_fragment12, safe_not_equal, {});
+  }
+};
+var Filter_x$1 = Filter_x;
+
+// node_modules/lucide-svelte/dist/esm/icons/filter.svelte.js
+function create_default_slot9(ctx) {
+  let current;
+  const default_slot_template = (
+    /*#slots*/
+    ctx[2].default
+  );
+  const default_slot = create_slot(
+    default_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[3],
+    null
+  );
+  return {
+    c() {
+      if (default_slot)
+        default_slot.c();
+    },
+    l(nodes) {
+      if (default_slot)
+        default_slot.l(nodes);
+    },
+    m(target, anchor) {
+      if (default_slot) {
+        default_slot.m(target, anchor);
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & /*$$scope*/
+        8)) {
+          update_slot_base(
+            default_slot,
+            default_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[3],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[3]
+            ) : get_slot_changes(
+              default_slot_template,
+              /*$$scope*/
+              ctx2[3],
+              dirty,
+              null
+            ),
+            null
+          );
+        }
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (default_slot)
+        default_slot.d(detaching);
+    }
+  };
+}
+function create_fragment13(ctx) {
+  let icon;
+  let current;
+  const icon_spread_levels = [
+    { name: "filter" },
+    /*$$props*/
+    ctx[1],
+    { iconNode: (
+      /*iconNode*/
+      ctx[0]
+    ) }
+  ];
+  let icon_props = {
+    $$slots: { default: [create_default_slot9] },
+    $$scope: { ctx }
+  };
+  for (let i = 0; i < icon_spread_levels.length; i += 1) {
+    icon_props = assign(icon_props, icon_spread_levels[i]);
+  }
+  icon = new Icon$1({ props: icon_props });
+  return {
+    c() {
+      create_component(icon.$$.fragment);
+    },
+    l(nodes) {
+      claim_component(icon.$$.fragment, nodes);
+    },
+    m(target, anchor) {
+      mount_component(icon, target, anchor);
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      const icon_changes = dirty & /*$$props, iconNode*/
+      3 ? get_spread_update(icon_spread_levels, [
+        icon_spread_levels[0],
+        dirty & /*$$props*/
+        2 && get_spread_object(
+          /*$$props*/
+          ctx2[1]
+        ),
+        dirty & /*iconNode*/
+        1 && { iconNode: (
+          /*iconNode*/
+          ctx2[0]
+        ) }
+      ]) : {};
+      if (dirty & /*$$scope*/
+      8) {
+        icon_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      icon.$set(icon_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(icon, detaching);
+    }
+  };
+}
+function instance13($$self, $$props, $$invalidate) {
+  let { $$slots: slots = {}, $$scope } = $$props;
+  const iconNode = [
+    [
+      "polygon",
+      {
+        "points": "22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"
+      }
+    ]
+  ];
+  $$self.$$set = ($$new_props) => {
+    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
+    if ("$$scope" in $$new_props)
+      $$invalidate(3, $$scope = $$new_props.$$scope);
+  };
+  $$props = exclude_internal_props($$props);
+  return [iconNode, $$props, slots, $$scope];
+}
+var Filter = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance13, create_fragment13, safe_not_equal, {});
+  }
+};
+var Filter$1 = Filter;
+
+// node_modules/lucide-svelte/dist/esm/icons/grip-vertical.svelte.js
+function create_default_slot10(ctx) {
+  let current;
+  const default_slot_template = (
+    /*#slots*/
+    ctx[2].default
+  );
+  const default_slot = create_slot(
+    default_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[3],
+    null
+  );
+  return {
+    c() {
+      if (default_slot)
+        default_slot.c();
+    },
+    l(nodes) {
+      if (default_slot)
+        default_slot.l(nodes);
+    },
+    m(target, anchor) {
+      if (default_slot) {
+        default_slot.m(target, anchor);
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & /*$$scope*/
+        8)) {
+          update_slot_base(
+            default_slot,
+            default_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[3],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[3]
+            ) : get_slot_changes(
+              default_slot_template,
+              /*$$scope*/
+              ctx2[3],
+              dirty,
+              null
+            ),
+            null
+          );
+        }
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (default_slot)
+        default_slot.d(detaching);
+    }
+  };
+}
+function create_fragment14(ctx) {
+  let icon;
+  let current;
+  const icon_spread_levels = [
+    { name: "grip-vertical" },
+    /*$$props*/
+    ctx[1],
+    { iconNode: (
+      /*iconNode*/
+      ctx[0]
+    ) }
+  ];
+  let icon_props = {
+    $$slots: { default: [create_default_slot10] },
+    $$scope: { ctx }
+  };
+  for (let i = 0; i < icon_spread_levels.length; i += 1) {
+    icon_props = assign(icon_props, icon_spread_levels[i]);
+  }
+  icon = new Icon$1({ props: icon_props });
+  return {
+    c() {
+      create_component(icon.$$.fragment);
+    },
+    l(nodes) {
+      claim_component(icon.$$.fragment, nodes);
+    },
+    m(target, anchor) {
+      mount_component(icon, target, anchor);
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      const icon_changes = dirty & /*$$props, iconNode*/
+      3 ? get_spread_update(icon_spread_levels, [
+        icon_spread_levels[0],
+        dirty & /*$$props*/
+        2 && get_spread_object(
+          /*$$props*/
+          ctx2[1]
+        ),
+        dirty & /*iconNode*/
+        1 && { iconNode: (
+          /*iconNode*/
+          ctx2[0]
+        ) }
+      ]) : {};
+      if (dirty & /*$$scope*/
+      8) {
+        icon_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      icon.$set(icon_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(icon, detaching);
+    }
+  };
+}
+function instance14($$self, $$props, $$invalidate) {
+  let { $$slots: slots = {}, $$scope } = $$props;
+  const iconNode = [
+    ["circle", { "cx": "9", "cy": "12", "r": "1" }],
+    ["circle", { "cx": "9", "cy": "5", "r": "1" }],
+    ["circle", { "cx": "9", "cy": "19", "r": "1" }],
+    ["circle", { "cx": "15", "cy": "12", "r": "1" }],
+    ["circle", { "cx": "15", "cy": "5", "r": "1" }],
+    ["circle", { "cx": "15", "cy": "19", "r": "1" }]
+  ];
+  $$self.$$set = ($$new_props) => {
+    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
+    if ("$$scope" in $$new_props)
+      $$invalidate(3, $$scope = $$new_props.$$scope);
+  };
+  $$props = exclude_internal_props($$props);
+  return [iconNode, $$props, slots, $$scope];
+}
+var Grip_vertical = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance14, create_fragment14, safe_not_equal, {});
+  }
+};
+var Grip_vertical$1 = Grip_vertical;
+
+// node_modules/lucide-svelte/dist/esm/icons/help-circle.svelte.js
+function create_default_slot11(ctx) {
+  let current;
+  const default_slot_template = (
+    /*#slots*/
+    ctx[2].default
+  );
+  const default_slot = create_slot(
+    default_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[3],
+    null
+  );
+  return {
+    c() {
+      if (default_slot)
+        default_slot.c();
+    },
+    l(nodes) {
+      if (default_slot)
+        default_slot.l(nodes);
+    },
+    m(target, anchor) {
+      if (default_slot) {
+        default_slot.m(target, anchor);
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & /*$$scope*/
+        8)) {
+          update_slot_base(
+            default_slot,
+            default_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[3],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[3]
+            ) : get_slot_changes(
+              default_slot_template,
+              /*$$scope*/
+              ctx2[3],
+              dirty,
+              null
+            ),
+            null
+          );
+        }
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (default_slot)
+        default_slot.d(detaching);
+    }
+  };
+}
+function create_fragment15(ctx) {
+  let icon;
+  let current;
+  const icon_spread_levels = [
+    { name: "help-circle" },
+    /*$$props*/
+    ctx[1],
+    { iconNode: (
+      /*iconNode*/
+      ctx[0]
+    ) }
+  ];
+  let icon_props = {
+    $$slots: { default: [create_default_slot11] },
+    $$scope: { ctx }
+  };
+  for (let i = 0; i < icon_spread_levels.length; i += 1) {
+    icon_props = assign(icon_props, icon_spread_levels[i]);
+  }
+  icon = new Icon$1({ props: icon_props });
+  return {
+    c() {
+      create_component(icon.$$.fragment);
+    },
+    l(nodes) {
+      claim_component(icon.$$.fragment, nodes);
+    },
+    m(target, anchor) {
+      mount_component(icon, target, anchor);
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      const icon_changes = dirty & /*$$props, iconNode*/
+      3 ? get_spread_update(icon_spread_levels, [
+        icon_spread_levels[0],
+        dirty & /*$$props*/
+        2 && get_spread_object(
+          /*$$props*/
+          ctx2[1]
+        ),
+        dirty & /*iconNode*/
+        1 && { iconNode: (
+          /*iconNode*/
+          ctx2[0]
+        ) }
+      ]) : {};
+      if (dirty & /*$$scope*/
+      8) {
+        icon_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      icon.$set(icon_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(icon, detaching);
+    }
+  };
+}
+function instance15($$self, $$props, $$invalidate) {
+  let { $$slots: slots = {}, $$scope } = $$props;
+  const iconNode = [
+    ["circle", { "cx": "12", "cy": "12", "r": "10" }],
+    [
+      "path",
+      {
+        "d": "M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
+      }
+    ],
+    ["path", { "d": "M12 17h.01" }]
+  ];
+  $$self.$$set = ($$new_props) => {
+    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
+    if ("$$scope" in $$new_props)
+      $$invalidate(3, $$scope = $$new_props.$$scope);
+  };
+  $$props = exclude_internal_props($$props);
+  return [iconNode, $$props, slots, $$scope];
+}
+var Help_circle = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance15, create_fragment15, safe_not_equal, {});
+  }
+};
+var Help_circle$1 = Help_circle;
+
+// node_modules/lucide-svelte/dist/esm/icons/info.svelte.js
+function create_default_slot12(ctx) {
+  let current;
+  const default_slot_template = (
+    /*#slots*/
+    ctx[2].default
+  );
+  const default_slot = create_slot(
+    default_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[3],
+    null
+  );
+  return {
+    c() {
+      if (default_slot)
+        default_slot.c();
+    },
+    l(nodes) {
+      if (default_slot)
+        default_slot.l(nodes);
+    },
+    m(target, anchor) {
+      if (default_slot) {
+        default_slot.m(target, anchor);
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & /*$$scope*/
+        8)) {
+          update_slot_base(
+            default_slot,
+            default_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[3],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[3]
+            ) : get_slot_changes(
+              default_slot_template,
+              /*$$scope*/
+              ctx2[3],
+              dirty,
+              null
+            ),
+            null
+          );
+        }
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (default_slot)
+        default_slot.d(detaching);
+    }
+  };
+}
+function create_fragment16(ctx) {
+  let icon;
+  let current;
+  const icon_spread_levels = [
+    { name: "info" },
+    /*$$props*/
+    ctx[1],
+    { iconNode: (
+      /*iconNode*/
+      ctx[0]
+    ) }
+  ];
+  let icon_props = {
+    $$slots: { default: [create_default_slot12] },
+    $$scope: { ctx }
+  };
+  for (let i = 0; i < icon_spread_levels.length; i += 1) {
+    icon_props = assign(icon_props, icon_spread_levels[i]);
+  }
+  icon = new Icon$1({ props: icon_props });
+  return {
+    c() {
+      create_component(icon.$$.fragment);
+    },
+    l(nodes) {
+      claim_component(icon.$$.fragment, nodes);
+    },
+    m(target, anchor) {
+      mount_component(icon, target, anchor);
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      const icon_changes = dirty & /*$$props, iconNode*/
+      3 ? get_spread_update(icon_spread_levels, [
+        icon_spread_levels[0],
+        dirty & /*$$props*/
+        2 && get_spread_object(
+          /*$$props*/
+          ctx2[1]
+        ),
+        dirty & /*iconNode*/
+        1 && { iconNode: (
+          /*iconNode*/
+          ctx2[0]
+        ) }
+      ]) : {};
+      if (dirty & /*$$scope*/
+      8) {
+        icon_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      icon.$set(icon_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(icon, detaching);
+    }
+  };
+}
+function instance16($$self, $$props, $$invalidate) {
+  let { $$slots: slots = {}, $$scope } = $$props;
+  const iconNode = [
+    ["circle", { "cx": "12", "cy": "12", "r": "10" }],
+    ["path", { "d": "M12 16v-4" }],
+    ["path", { "d": "M12 8h.01" }]
+  ];
+  $$self.$$set = ($$new_props) => {
+    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
+    if ("$$scope" in $$new_props)
+      $$invalidate(3, $$scope = $$new_props.$$scope);
+  };
+  $$props = exclude_internal_props($$props);
+  return [iconNode, $$props, slots, $$scope];
+}
+var Info = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance16, create_fragment16, safe_not_equal, {});
+  }
+};
+var Info$1 = Info;
+
+// node_modules/lucide-svelte/dist/esm/icons/settings.svelte.js
+function create_default_slot13(ctx) {
+  let current;
+  const default_slot_template = (
+    /*#slots*/
+    ctx[2].default
+  );
+  const default_slot = create_slot(
+    default_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[3],
+    null
+  );
+  return {
+    c() {
+      if (default_slot)
+        default_slot.c();
+    },
+    l(nodes) {
+      if (default_slot)
+        default_slot.l(nodes);
+    },
+    m(target, anchor) {
+      if (default_slot) {
+        default_slot.m(target, anchor);
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & /*$$scope*/
+        8)) {
+          update_slot_base(
+            default_slot,
+            default_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[3],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[3]
+            ) : get_slot_changes(
+              default_slot_template,
+              /*$$scope*/
+              ctx2[3],
+              dirty,
+              null
+            ),
+            null
+          );
+        }
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (default_slot)
+        default_slot.d(detaching);
+    }
+  };
+}
+function create_fragment17(ctx) {
+  let icon;
+  let current;
+  const icon_spread_levels = [
+    { name: "settings" },
+    /*$$props*/
+    ctx[1],
+    { iconNode: (
+      /*iconNode*/
+      ctx[0]
+    ) }
+  ];
+  let icon_props = {
+    $$slots: { default: [create_default_slot13] },
+    $$scope: { ctx }
+  };
+  for (let i = 0; i < icon_spread_levels.length; i += 1) {
+    icon_props = assign(icon_props, icon_spread_levels[i]);
+  }
+  icon = new Icon$1({ props: icon_props });
+  return {
+    c() {
+      create_component(icon.$$.fragment);
+    },
+    l(nodes) {
+      claim_component(icon.$$.fragment, nodes);
+    },
+    m(target, anchor) {
+      mount_component(icon, target, anchor);
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      const icon_changes = dirty & /*$$props, iconNode*/
+      3 ? get_spread_update(icon_spread_levels, [
+        icon_spread_levels[0],
+        dirty & /*$$props*/
+        2 && get_spread_object(
+          /*$$props*/
+          ctx2[1]
+        ),
+        dirty & /*iconNode*/
+        1 && { iconNode: (
+          /*iconNode*/
+          ctx2[0]
+        ) }
+      ]) : {};
+      if (dirty & /*$$scope*/
+      8) {
+        icon_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      icon.$set(icon_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(icon, detaching);
+    }
+  };
+}
+function instance17($$self, $$props, $$invalidate) {
+  let { $$slots: slots = {}, $$scope } = $$props;
+  const iconNode = [
+    [
+      "path",
+      {
+        "d": "M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+      }
+    ],
+    ["circle", { "cx": "12", "cy": "12", "r": "3" }]
+  ];
+  $$self.$$set = ($$new_props) => {
+    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
+    if ("$$scope" in $$new_props)
+      $$invalidate(3, $$scope = $$new_props.$$scope);
+  };
+  $$props = exclude_internal_props($$props);
+  return [iconNode, $$props, slots, $$scope];
+}
+var Settings = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance17, create_fragment17, safe_not_equal, {});
+  }
+};
+var Settings$1 = Settings;
+
+// node_modules/lucide-svelte/dist/esm/icons/table-2.svelte.js
+function create_default_slot14(ctx) {
+  let current;
+  const default_slot_template = (
+    /*#slots*/
+    ctx[2].default
+  );
+  const default_slot = create_slot(
+    default_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[3],
+    null
+  );
+  return {
+    c() {
+      if (default_slot)
+        default_slot.c();
+    },
+    l(nodes) {
+      if (default_slot)
+        default_slot.l(nodes);
+    },
+    m(target, anchor) {
+      if (default_slot) {
+        default_slot.m(target, anchor);
+      }
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & /*$$scope*/
+        8)) {
+          update_slot_base(
+            default_slot,
+            default_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[3],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[3]
+            ) : get_slot_changes(
+              default_slot_template,
+              /*$$scope*/
+              ctx2[3],
+              dirty,
+              null
+            ),
+            null
+          );
+        }
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (default_slot)
+        default_slot.d(detaching);
+    }
+  };
+}
+function create_fragment18(ctx) {
+  let icon;
+  let current;
+  const icon_spread_levels = [
+    { name: "table-2" },
+    /*$$props*/
+    ctx[1],
+    { iconNode: (
+      /*iconNode*/
+      ctx[0]
+    ) }
+  ];
+  let icon_props = {
+    $$slots: { default: [create_default_slot14] },
+    $$scope: { ctx }
+  };
+  for (let i = 0; i < icon_spread_levels.length; i += 1) {
+    icon_props = assign(icon_props, icon_spread_levels[i]);
+  }
+  icon = new Icon$1({ props: icon_props });
+  return {
+    c() {
+      create_component(icon.$$.fragment);
+    },
+    l(nodes) {
+      claim_component(icon.$$.fragment, nodes);
+    },
+    m(target, anchor) {
+      mount_component(icon, target, anchor);
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      const icon_changes = dirty & /*$$props, iconNode*/
+      3 ? get_spread_update(icon_spread_levels, [
+        icon_spread_levels[0],
+        dirty & /*$$props*/
+        2 && get_spread_object(
+          /*$$props*/
+          ctx2[1]
+        ),
+        dirty & /*iconNode*/
+        1 && { iconNode: (
+          /*iconNode*/
+          ctx2[0]
+        ) }
+      ]) : {};
+      if (dirty & /*$$scope*/
+      8) {
+        icon_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      icon.$set(icon_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(icon.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(icon.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(icon, detaching);
+    }
+  };
+}
+function instance18($$self, $$props, $$invalidate) {
+  let { $$slots: slots = {}, $$scope } = $$props;
+  const iconNode = [
+    [
+      "path",
+      {
+        "d": "M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"
+      }
+    ]
+  ];
+  $$self.$$set = ($$new_props) => {
+    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
+    if ("$$scope" in $$new_props)
+      $$invalidate(3, $$scope = $$new_props.$$scope);
+  };
+  $$props = exclude_internal_props($$props);
+  return [iconNode, $$props, slots, $$scope];
+}
+var Table_2 = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance18, create_fragment18, safe_not_equal, {});
+  }
+};
+var Table_2$1 = Table_2;
+
+// src/util/create-watchable.ts
+function createWatchable() {
+  const { subscribe: subscribe2, set } = writable();
+  function trigger() {
+    set({});
+  }
+  return {
+    subscribe: subscribe2,
+    trigger
+  };
+}
+
+// src/global-store/edit-events.ts
+var editCancellation = createWatchable();
+
+// src/ui/actions/styled-cursor.ts
+function styledCursor(el, cursor) {
+  const initial = el.style.cursor;
+  el.style.cursor = cursor;
+  return {
+    update(newCursor) {
+      el.style.cursor = newCursor || initial;
+    },
+    destroy() {
+      el.style.cursor = initial;
+    }
+  };
+}
+
+// src/ui/hooks/use-edit/cursor.ts
+function useCursor({ editMode, editBlocked }) {
+  if (editBlocked) {
+    return {
+      bodyCursor: "unset",
+      gripCursor: "not-allowed",
+      containerCursor: "wait"
+    };
+  }
+  if (editMode === "CREATE" /* CREATE */ || editMode === "DRAG" /* DRAG */ || editMode === "DRAG_AND_SHIFT_OTHERS" /* DRAG_AND_SHIFT_OTHERS */) {
+    return {
+      bodyCursor: "grabbing",
+      gripCursor: "grabbing"
+    };
+  }
+  if (editMode === "RESIZE" /* RESIZE */ || editMode === "RESIZE_AND_SHIFT_OTHERS" /* RESIZE_AND_SHIFT_OTHERS */) {
+    return { bodyCursor: "row-resize", gripCursor: "grab" };
+  }
+  return {
+    bodyCursor: "unset",
+    gripCursor: "grab"
+  };
+}
 
 // src/util/daily-notes.ts
-var import_obsidian_daily_notes_interface2 = __toESM(require_main());
+var import_obsidian_daily_notes_interface3 = __toESM(require_main());
 async function createDailyNoteIfNeeded(moment2) {
-  return (0, import_obsidian_daily_notes_interface2.getDailyNote)(moment2, (0, import_obsidian_daily_notes_interface2.getAllDailyNotes)()) || (0, import_obsidian_daily_notes_interface2.createDailyNote)(moment2);
+  return (0, import_obsidian_daily_notes_interface3.getDailyNote)(moment2, (0, import_obsidian_daily_notes_interface3.getAllDailyNotes)()) || (0, import_obsidian_daily_notes_interface3.createDailyNote)(moment2);
 }
-function dailyNoteExists() {
-  return Boolean((0, import_obsidian_daily_notes_interface2.getDailyNote)(window.moment(), (0, import_obsidian_daily_notes_interface2.getAllDailyNotes)()));
+
+// src/ui/hooks/use-edit/transform/create.ts
+function create(baseline, editTarget, cursorTime) {
+  const startMinutes = cursorTime;
+  const updated = {
+    ...editTarget,
+    startMinutes
+  };
+  return [...baseline, updated];
+}
+async function createPlanItem2(day, startMinutes) {
+  const endMinutes = startMinutes + defaultDurationMinutes;
+  const { path } = await createDailyNoteIfNeeded(day);
+  return {
+    id: getId(),
+    startMinutes,
+    durationMinutes: defaultDurationMinutes,
+    firstLineText: "New item",
+    text: "New item",
+    startTime: minutesToMomentOfDay(startMinutes, day),
+    endTime: minutesToMomentOfDay(endMinutes, day),
+    listTokens: "- [ ] ",
+    // todo: fix this, do not check for newly created tasks using their location
+    // @ts-expect-error
+    location: {
+      path
+    },
+    placing: {
+      widthPercent: 100,
+      xOffsetPercent: 0
+    }
+  };
+}
+
+// src/util/to-spliced.ts
+function toSpliced(array, index, el) {
+  const copy = [...array];
+  copy[index] = el;
+  return copy;
+}
+
+// src/ui/hooks/use-edit/transform/drag.ts
+function drag(baseline, editTarget, cursorTime) {
+  const index = baseline.findIndex((task) => task.id === editTarget.id);
+  const startMinutes = cursorTime;
+  const updated = {
+    ...editTarget,
+    startMinutes
+  };
+  return toSpliced(baseline, index, updated);
+}
+
+// src/ui/hooks/use-edit/transform/drag-and-shift-others.ts
+var import_lodash = __toESM(require_lodash());
+function dragAndShiftOthers(baseline, editTarget, cursorTime) {
+  const index = baseline.findIndex((task) => task.id === editTarget.id);
+  const preceding = baseline.slice(0, index);
+  const following = baseline.slice(index + 1);
+  const updated = {
+    ...editTarget,
+    startMinutes: cursorTime
+  };
+  const updatedFollowing = following.reduce((result, current) => {
+    const previous = (0, import_lodash.last)(result) || updated;
+    if (getEndMinutes(previous) > current.startMinutes) {
+      return [
+        ...result,
+        {
+          ...current,
+          startMinutes: getEndMinutes(previous)
+        }
+      ];
+    }
+    return [...result, current];
+  }, []);
+  const updatedPreceding = preceding.reverse().reduce((result, current) => {
+    const nextInTimeline = (0, import_lodash.last)(result) || updated;
+    if (nextInTimeline.startMinutes < getEndMinutes(current)) {
+      return [
+        ...result,
+        {
+          ...current,
+          startMinutes: nextInTimeline.startMinutes - current.durationMinutes
+        }
+      ];
+    }
+    return [...result, current];
+  }, []).reverse();
+  return [...updatedPreceding, updated, ...updatedFollowing];
+}
+
+// src/ui/hooks/use-edit/transform/resize.ts
+function resize(baseline, editTarget, cursorTime) {
+  const index = baseline.findIndex((task) => task.id === editTarget.id);
+  const durationMinutes = cursorTime - editTarget.startMinutes;
+  const updated = {
+    ...editTarget,
+    durationMinutes
+  };
+  return toSpliced(baseline, index, updated);
+}
+
+// src/ui/hooks/use-edit/transform/resize-and-shift-others.ts
+var import_lodash2 = __toESM(require_lodash());
+function resizeAndShiftOthers(baseline, editTarget, cursorTime) {
+  const index = baseline.findIndex((task) => task.id === editTarget.id);
+  const preceding = baseline.slice(0, index);
+  const following = baseline.slice(index + 1);
+  const durationMinutes = cursorTime - editTarget.startMinutes;
+  const updated = {
+    ...editTarget,
+    durationMinutes
+  };
+  const updatedFollowing = following.reduce((result, current) => {
+    const previous = (0, import_lodash2.last)(result) || updated;
+    if (getEndMinutes(previous) > current.startMinutes) {
+      return [
+        ...result,
+        {
+          ...current,
+          startMinutes: getEndMinutes(previous)
+        }
+      ];
+    }
+    return [...result, current];
+  }, []);
+  return [...preceding, updated, ...updatedFollowing];
+}
+
+// src/ui/hooks/use-edit/transform/transform.ts
+function transform(baseline, cursorTime, { task, mode }) {
+  switch (mode) {
+    case "DRAG" /* DRAG */:
+      return drag(baseline, task, cursorTime);
+    case "DRAG_AND_SHIFT_OTHERS" /* DRAG_AND_SHIFT_OTHERS */:
+      return dragAndShiftOthers(baseline, task, cursorTime);
+    case "CREATE" /* CREATE */:
+      return create(baseline, task, cursorTime);
+    case "RESIZE" /* RESIZE */:
+      return resize(baseline, task, cursorTime);
+    case "RESIZE_AND_SHIFT_OTHERS" /* RESIZE_AND_SHIFT_OTHERS */:
+      return resizeAndShiftOthers(baseline, task, cursorTime);
+    default:
+      throw new Error(`Unknown edit mode: ${mode}`);
+  }
+}
+
+// src/ui/hooks/use-edit/use-edit.ts
+function offsetYToMinutes(offsetY, zoomLevel, startHour) {
+  const hiddenHoursSize = startHour * 60 * zoomLevel;
+  return (offsetY + hiddenHoursSize) / zoomLevel;
+}
+function useEdit({
+  parsedTasks,
+  pointerOffsetY,
+  settings: settings2,
+  fileSyncInProgress,
+  onUpdate
+}) {
+  const baselineTasks = writable(parsedTasks);
+  const editOperation = writable();
+  const displayedTasks = derived(
+    [editOperation, pointerOffsetY, baselineTasks, settings2],
+    ([$editOperation, $pointerOffsetY, $baselineTasks, $settings]) => {
+      if (!$editOperation) {
+        return $baselineTasks;
+      }
+      const cursorMinutes = offsetYToMinutes(
+        $pointerOffsetY,
+        $settings.zoomLevel,
+        $settings.startHour
+      );
+      return transform($baselineTasks, cursorMinutes, $editOperation);
+    }
+  );
+  const editStatus = derived(
+    editOperation,
+    ($editOperation) => $editOperation == null ? void 0 : $editOperation.mode
+  );
+  function startEdit(operation) {
+    if (!get_store_value(fileSyncInProgress)) {
+      editOperation.set(operation);
+    }
+  }
+  async function confirmEdit() {
+    if (get_store_value(editOperation) === void 0) {
+      return;
+    }
+    const currentTasks = get_store_value(displayedTasks);
+    baselineTasks.set(currentTasks.map((t) => ({ ...t, isGhost: true })));
+    editOperation.set(void 0);
+    await onUpdate(parsedTasks, currentTasks);
+  }
+  function cancelEdit() {
+    editOperation.set(void 0);
+  }
+  return {
+    startEdit,
+    confirmEdit,
+    cancelEdit,
+    displayedTasks,
+    editStatus
+  };
+}
+
+// src/overlap/overlap.ts
+var import_fraction = __toESM(require_fraction());
+var import_fp3 = __toESM(require_fp());
+
+// src/overlap/horizontal-placing.ts
+function getHorizontalPlacing(overlap) {
+  const widthPercent = overlap ? overlap.span / overlap.columns * 100 : 100;
+  const xOffsetPercent = overlap ? 100 / overlap.columns * overlap.start : 0;
+  return {
+    widthPercent,
+    xOffsetPercent
+  };
+}
+
+// src/overlap/overlap.ts
+var empty2 = "empty";
+var taken = "taken";
+function computeOverlap(items) {
+  return items.reduce((overlapLookup, item) => {
+    const overlapGroup = getItemsOverlappingItemAndEachOther(item, items);
+    return computeOverlapForGroup(overlapGroup, overlapLookup);
+  }, /* @__PURE__ */ new Map());
+}
+function getItemsOverlappingItemAndEachOther(item, items) {
+  return items.reduce(
+    (result, current) => {
+      if (current === item) {
+        return result;
+      }
+      const currentOverlapsWithPreviousItems = result.every(
+        (intersectingItem) => overlaps(intersectingItem, current)
+      );
+      if (currentOverlapsWithPreviousItems) {
+        result.push(current);
+      }
+      return result;
+    },
+    [item]
+  ).sort((a, b) => a.startMinutes - b.startMinutes);
+}
+function computeOverlapForGroup(overlapGroup, previousLookup) {
+  const newLookup = new Map([...previousLookup]);
+  const [itemsPlacedPreviously, itemsToBePlaced] = (0, import_fp3.partition)(
+    ({ id }) => newLookup.has(id),
+    overlapGroup
+  );
+  if (itemsToBePlaced.length === 0) {
+    return newLookup;
+  }
+  const fractionOfPlacedItems = itemsPlacedPreviously.reduce((sum, current) => {
+    const { span, columns } = newLookup.get(current.id);
+    return new import_fraction.default(span, columns).add(sum);
+  }, new import_fraction.default(0));
+  const fractionForNewItems = new import_fraction.default(1).sub(fractionOfPlacedItems);
+  const fractionForEachNewItem = fractionForNewItems.div(
+    itemsToBePlaced.length
+  );
+  const columnsForNewGroup = fractionForEachNewItem.d;
+  const newItemInherentSpan = fractionForEachNewItem.n;
+  const slots = Array(columnsForNewGroup).fill(empty2);
+  itemsPlacedPreviously.forEach((item) => {
+    const { start, span, columns: previousColumns } = newLookup.get(item.id);
+    const scale = columnsForNewGroup / previousColumns;
+    const scaledStart = scale * start;
+    const scaledSpan = scale * span;
+    const scaledEnd = scaledStart + scaledSpan;
+    slots.fill(taken, scaledStart, scaledEnd);
+  });
+  itemsToBePlaced.forEach((itemInGroup) => {
+    const firstFreeSlotIndex = slots.findIndex((slot) => slot === empty2);
+    const nextTakenSlotIndex = slots.findIndex(
+      (slot, i) => i > firstFreeSlotIndex && slot === taken
+    );
+    const fromFreeToNextTakenSlot = nextTakenSlotIndex - firstFreeSlotIndex;
+    const onlyEmptySlotsLeft = nextTakenSlotIndex === -1;
+    const span = onlyEmptySlotsLeft ? newItemInherentSpan : Math.min(newItemInherentSpan, fromFreeToNextTakenSlot);
+    const fillEnd = firstFreeSlotIndex + span;
+    slots.fill(taken, firstFreeSlotIndex, fillEnd);
+    newLookup.set(itemInGroup.id, {
+      start: firstFreeSlotIndex,
+      span,
+      columns: columnsForNewGroup
+    });
+  });
+  return newLookup;
+}
+function overlaps(a, b) {
+  const [early, late] = a.startMinutes < b.startMinutes ? [a, b] : [b, a];
+  return getEndMinutes(early) > late.startMinutes;
+}
+function addPlacing(planItems) {
+  if (planItems.length === 0) {
+    return [];
+  }
+  const overlapLookup = computeOverlap(planItems);
+  return planItems.map((planItem) => {
+    const overlap = overlapLookup.get(planItem.id);
+    return {
+      ...planItem,
+      placing: getHorizontalPlacing(overlap)
+    };
+  });
+}
+
+// src/util/get-tasks-for-day.ts
+var import_obsidian_daily_notes_interface4 = __toESM(require_main());
+
+// src/service/dataview-facade.ts
+function sTaskLineToString(node) {
+  const status = node.status ? `[${node.status}] ` : "";
+  return `${node.symbol} ${status}${node.text}
+`;
+}
+function sTaskToString(node, indentation = "") {
+  let result = `${indentation}${sTaskLineToString(node)}`;
+  for (const child of node.children) {
+    if (!child.scheduled && !timeRegExp.test(child.text)) {
+      result += sTaskToString(child, `	${indentation}`);
+    }
+  }
+  return result;
+}
+function sTaskToPlanItem(sTask, day) {
+  const { startTime, endTime, firstLineText, text: text2 } = createPlanItem({
+    line: sTaskLineToString(sTask),
+    completeContent: sTaskToString(sTask),
+    day,
+    location: {
+      path: sTask.path,
+      line: sTask.line,
+      position: sTask.position
+    }
+  });
+  const durationMinutes = endTime ? getDiffInMinutes(endTime, startTime) : void 0;
+  return {
+    startTime,
+    rawStartTime: "-",
+    rawEndTime: "-",
+    listTokens: `${sTask.symbol} [${sTask.status}] `,
+    firstLineText,
+    text: text2,
+    durationMinutes,
+    startMinutes: getMinutesSinceMidnight(startTime),
+    location: {
+      path: sTask.path,
+      line: sTask.line,
+      position: sTask.position
+    },
+    id: getId()
+  };
+}
+
+// src/util/get-tasks-for-day.ts
+function isScheduledForThisDay(task, day) {
+  var _a;
+  if (!((_a = task == null ? void 0 : task.scheduled) == null ? void 0 : _a.toMillis)) {
+    return false;
+  }
+  const scheduledMoment = window.moment(task.scheduled.toMillis());
+  return scheduledMoment.isSame(day, "day");
+}
+function isTimeSetOnTask(task) {
+  return timeFromStartRegExp.test(task.text);
+}
+function isTaskInFile(task, file) {
+  return task.path === (file == null ? void 0 : file.path);
+}
+function isScheduledForAnotherDay(task, day) {
+  return task.scheduled && !isScheduledForThisDay(task, day);
+}
+function calculateDuration(tasks, options) {
+  return tasks.map((current, i, array) => {
+    if (current.durationMinutes) {
+      return current;
+    }
+    const next = array[i + 1];
+    const shouldExtendUntilNext = next && options.extendDurationUntilNext;
+    if (shouldExtendUntilNext) {
+      const minutesUntilNext = next.startMinutes - current.startMinutes;
+      return {
+        ...current,
+        durationMinutes: minutesUntilNext
+      };
+    }
+    return {
+      ...current,
+      durationMinutes: options.defaultDurationMinutes
+    };
+  });
+}
+function getTasksForDay(day, dataviewTasks, options) {
+  if (dataviewTasks.length === 0) {
+    return [];
+  }
+  const noteForThisDay = (0, import_obsidian_daily_notes_interface4.getDailyNote)(day, (0, import_obsidian_daily_notes_interface4.getAllDailyNotes)());
+  const planItems = dataviewTasks.where(
+    (task) => isTimeSetOnTask(task) && !isScheduledForAnotherDay(task, day) && (isScheduledForThisDay(task, day) || isTaskInFile(task, noteForThisDay))
+  ).map((sTask) => sTaskToPlanItem(sTask, day)).sort((task) => task.startMinutes).array();
+  return calculateDuration(planItems, options);
+}
+
+// src/ui/hooks/use-tasks-for-day.ts
+function useTasksForDay({
+  day,
+  dataviewTasks,
+  settings: settings2
+}) {
+  if (dataviewTasks.length === 0) {
+    return [];
+  }
+  const tasksForDay = getTasksForDay(day, dataviewTasks, { ...settings2 });
+  return addPlacing(tasksForDay);
+}
+
+// src/ui/hooks/use-color.ts
+var import_chroma_js2 = __toESM(require_chroma());
+
+// src/util/color.ts
+var import_chroma_js = __toESM(require_chroma());
+var lightThemeColors = {
+  normal: "#222222",
+  muted: "#5c5c5c",
+  faint: "#666666"
+};
+var darkThemeColors = {
+  normal: "#dadada",
+  muted: "#b3b3b3",
+  faint: "#ababab"
+};
+function getTextColorWithEnoughContrast(backgroundColor) {
+  return import_chroma_js.default.contrast(backgroundColor, darkThemeColors.normal) > import_chroma_js.default.contrast(backgroundColor, lightThemeColors.normal) ? darkThemeColors : lightThemeColors;
+}
+
+// src/ui/hooks/use-color.ts
+function useColor({ settings: settings2, task }) {
+  const colorScale = derived(settings2, ($settings) => {
+    return import_chroma_js2.default.scale([$settings.timelineStartColor, $settings.timelineEndColor]).mode("lab");
+  });
+  const backgroundColor = derived(
+    [settings2, colorScale],
+    ([$settings, $colorScale]) => {
+      const scaleKey = (task.startTime.hour() - $settings.startHour) / (24 - $settings.startHour);
+      return $settings.timelineColored && task.startTime ? $colorScale(scaleKey).hex() : "var(--background-primary)";
+    }
+  );
+  const properContrastColors = derived(
+    [settings2, backgroundColor],
+    ([$settings, $backgroundColor]) => {
+      return $settings.timelineColored && task.startTime ? getTextColorWithEnoughContrast($backgroundColor) : {
+        normal: "var(--text-normal)",
+        muted: "var(--text-muted)",
+        faint: "var(--text-faint)"
+      };
+    }
+  );
+  return { properContrastColors, backgroundColor };
+}
+
+// src/ui/hooks/use-task-visuals.ts
+function useTaskVisuals(task, { settings: settings2, currentTime: currentTime2 }) {
+  const useColorValues = useColor({ settings: settings2, task });
+  const offset = derived(settings2, ($settings) => {
+    return task.startMinutes * $settings.zoomLevel - getHiddenHoursSize($settings);
+  });
+  const height = derived(settings2, ($settings) => {
+    return task.durationMinutes * $settings.zoomLevel;
+  });
+  const relationToNow = derived(currentTime2, ($currentTime) => {
+    return getRelationToNow($currentTime, task.startTime, getEndTime(task));
+  });
+  return {
+    offset,
+    height,
+    relationToNow,
+    ...useColorValues
+  };
+}
+
+// src/ui/components/rendered-markdown.svelte
+var import_obsidian3 = require("obsidian");
+function add_css4(target) {
+  append_styles(target, "svelte-1b3ad4f", '.rendered-markdown.svelte-1b3ad4f{--checkbox-size:var(--font-ui-small);flex:1 0 0;color:var(--text-normal)}.rendered-markdown.svelte-1b3ad4f p,.rendered-markdown.svelte-1b3ad4f ul{margin-block-start:0;margin-block-end:0}.rendered-markdown.svelte-1b3ad4f ul,.rendered-markdown.svelte-1b3ad4f ol{padding-inline-start:20px}.rendered-markdown.svelte-1b3ad4f input[type="checkbox"]{top:2px;margin-inline-end:4px;border-color:var(--text-muted)}.rendered-markdown.svelte-1b3ad4f li{color:var(--text-normal)}.rendered-markdown.svelte-1b3ad4f li.task-list-item[data-task="x"],.rendered-markdown.svelte-1b3ad4f li.task-list-item[data-task="X"]{color:var(--text-muted)}');
+}
+function create_fragment19(ctx) {
+  let div;
+  return {
+    c() {
+      div = element("div");
+      attr(div, "class", "rendered-markdown svelte-1b3ad4f");
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      ctx[4](div);
+    },
+    p: noop,
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      ctx[4](null);
+    }
+  };
+}
+function instance19($$self, $$props, $$invalidate) {
+  var _a;
+  let { text: text2 } = $$props;
+  let markdownLifecycleManager = new import_obsidian3.Component();
+  let el;
+  const { obsidianFacade } = getContext(obsidianContext);
+  onDestroy(() => {
+    markdownLifecycleManager.unload();
+  });
+  function div_binding($$value) {
+    binding_callbacks[$$value ? "unshift" : "push"](() => {
+      el = $$value;
+      $$invalidate(0, el);
+    });
+  }
+  $$self.$$set = ($$props2) => {
+    if ("text" in $$props2)
+      $$invalidate(1, text2 = $$props2.text);
+  };
+  $$self.$$.update = () => {
+    if ($$self.$$.dirty & /*el, markdownLifecycleManager, text, _a*/
+    15) {
+      $:
+        if (el) {
+          markdownLifecycleManager.unload();
+          $$invalidate(3, markdownLifecycleManager = new import_obsidian3.Component());
+          el.empty();
+          import_obsidian3.MarkdownRenderer.render(obsidianFacade.app, text2, el, "", markdownLifecycleManager);
+          markdownLifecycleManager.load();
+          $$invalidate(2, _a = el.querySelectorAll(`input[type="checkbox"]`)) === null || _a === void 0 ? void 0 : _a.forEach((checkbox2) => checkbox2.setAttribute("disabled", "true"));
+        }
+    }
+  };
+  return [el, text2, _a, markdownLifecycleManager, div_binding];
+}
+var Rendered_markdown = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance19, create_fragment19, safe_not_equal, { text: 1 }, add_css4);
+  }
+};
+var rendered_markdown_default = Rendered_markdown;
+
+// src/ui/components/task.svelte
+function add_css5(target) {
+  append_styles(target, "svelte-13h43he", ":not(#dummy).workspace-leaf-resize-handle.svelte-13h43he{cursor:row-resize;right:0;bottom:0;left:0;display:block;height:calc(var(--divider-width-hover) * 2);border-bottom-width:var(--divider-width)}.gap-box.svelte-13h43he{display:flex;padding:0 1px 2px;transition:0.05s linear}.task.svelte-13h43he{position:relative;overflow:hidden;display:flex;flex:1 0 0;padding:4px 6px 6px;font-size:var(--font-ui-small);text-align:left;overflow-wrap:anywhere;white-space:normal;border:1px solid var(--color-base-50);border-radius:var(--radius-s)}.past.svelte-13h43he{background-color:var(--background-secondary)}.present.svelte-13h43he{border-color:var(--color-accent)}.is-ghost.svelte-13h43he{opacity:0.6}");
+}
+function create_if_block(ctx) {
+  let hr;
+  let mounted;
+  let dispose;
+  return {
+    c() {
+      hr = element("hr");
+      attr(hr, "class", "workspace-leaf-resize-handle svelte-13h43he");
+    },
+    m(target, anchor) {
+      insert(target, hr, anchor);
+      if (!mounted) {
+        dispose = listen(hr, "mousedown", stop_propagation(function() {
+          if (is_function(
+            /*onResizeStart*/
+            ctx[1]
+          ))
+            ctx[1].apply(this, arguments);
+        }));
+        mounted = true;
+      }
+    },
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(hr);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_fragment20(ctx) {
+  let div1;
+  let div0;
+  let renderedmarkdown;
+  let div;
+  let __text_faint_last;
+  let __text_muted_last;
+  let __text_normal_last;
+  let t0;
+  let t1;
+  let div0_class_value;
+  let style_height = `${/*$height*/
+  ctx[7]}px`;
+  let style_top = `${/*$offset*/
+  ctx[8]}px`;
+  let style_width = `${/*planItem*/
+  ctx[0].placing.widthPercent || 100}%`;
+  let style_left = `${/*planItem*/
+  ctx[0].placing.xOffsetPercent || 0}%`;
+  let current;
+  let mounted;
+  let dispose;
+  renderedmarkdown = new rendered_markdown_default({
+    props: { text: (
+      /*planItem*/
+      ctx[0].text
+    ) }
+  });
+  const default_slot_template = (
+    /*#slots*/
+    ctx[13].default
+  );
+  const default_slot = create_slot(
+    default_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[12],
+    null
+  );
+  let if_block = !/*planItem*/
+  ctx[0].isGhost && create_if_block(ctx);
+  return {
+    c() {
+      div1 = element("div");
+      div0 = element("div");
+      div = element("div");
+      create_component(renderedmarkdown.$$.fragment);
+      t0 = space();
+      if (default_slot)
+        default_slot.c();
+      t1 = space();
+      if (if_block)
+        if_block.c();
+      set_style(div, "display", "contents");
+      set_style(div, "--text-faint", __text_faint_last = /*$properContrastColors*/
+      ctx[11].faint);
+      set_style(div, "--text-muted", __text_muted_last = /*$properContrastColors*/
+      ctx[11].muted);
+      set_style(div, "--text-normal", __text_normal_last = /*$properContrastColors*/
+      ctx[11].normal);
+      attr(div0, "class", div0_class_value = "task " + /*$relationToNow*/
+      ctx[10] + " svelte-13h43he");
+      toggle_class(
+        div0,
+        "is-ghost",
+        /*planItem*/
+        ctx[0].isGhost
+      );
+      set_style(
+        div0,
+        "background-color",
+        /*$backgroundColor*/
+        ctx[9]
+      );
+      attr(div1, "class", "gap-box absolute-stretch-x svelte-13h43he");
+      set_style(div1, "height", style_height);
+      set_style(div1, "top", style_top);
+      set_style(div1, "width", style_width);
+      set_style(div1, "left", style_left);
+    },
+    m(target, anchor) {
+      insert(target, div1, anchor);
+      append(div1, div0);
+      append(div0, div);
+      mount_component(renderedmarkdown, div, null);
+      append(div0, t0);
+      if (default_slot) {
+        default_slot.m(div0, null);
+      }
+      append(div0, t1);
+      if (if_block)
+        if_block.m(div0, null);
+      current = true;
+      if (!mounted) {
+        dispose = [
+          listen(div0, "mousedown", mousedown_handler),
+          listen(
+            div0,
+            "mouseup",
+            /*mouseup_handler*/
+            ctx[14]
+          )
+        ];
+        mounted = true;
+      }
+    },
+    p(ctx2, [dirty]) {
+      if (dirty & /*$properContrastColors*/
+      2048 && __text_faint_last !== (__text_faint_last = /*$properContrastColors*/
+      ctx2[11].faint)) {
+        set_style(div, "--text-faint", __text_faint_last);
+      }
+      if (dirty & /*$properContrastColors*/
+      2048 && __text_muted_last !== (__text_muted_last = /*$properContrastColors*/
+      ctx2[11].muted)) {
+        set_style(div, "--text-muted", __text_muted_last);
+      }
+      if (dirty & /*$properContrastColors*/
+      2048 && __text_normal_last !== (__text_normal_last = /*$properContrastColors*/
+      ctx2[11].normal)) {
+        set_style(div, "--text-normal", __text_normal_last);
+      }
+      const renderedmarkdown_changes = {};
+      if (dirty & /*planItem*/
+      1)
+        renderedmarkdown_changes.text = /*planItem*/
+        ctx2[0].text;
+      renderedmarkdown.$set(renderedmarkdown_changes);
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & /*$$scope*/
+        4096)) {
+          update_slot_base(
+            default_slot,
+            default_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[12],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[12]
+            ) : get_slot_changes(
+              default_slot_template,
+              /*$$scope*/
+              ctx2[12],
+              dirty,
+              null
+            ),
+            null
+          );
+        }
+      }
+      if (!/*planItem*/
+      ctx2[0].isGhost) {
+        if (if_block) {
+          if_block.p(ctx2, dirty);
+        } else {
+          if_block = create_if_block(ctx2);
+          if_block.c();
+          if_block.m(div0, null);
+        }
+      } else if (if_block) {
+        if_block.d(1);
+        if_block = null;
+      }
+      if (!current || dirty & /*$relationToNow*/
+      1024 && div0_class_value !== (div0_class_value = "task " + /*$relationToNow*/
+      ctx2[10] + " svelte-13h43he")) {
+        attr(div0, "class", div0_class_value);
+      }
+      if (!current || dirty & /*$relationToNow, planItem*/
+      1025) {
+        toggle_class(
+          div0,
+          "is-ghost",
+          /*planItem*/
+          ctx2[0].isGhost
+        );
+      }
+      if (dirty & /*$backgroundColor*/
+      512) {
+        set_style(
+          div0,
+          "background-color",
+          /*$backgroundColor*/
+          ctx2[9]
+        );
+      }
+      if (dirty & /*$height*/
+      128 && style_height !== (style_height = `${/*$height*/
+      ctx2[7]}px`)) {
+        set_style(div1, "height", style_height);
+      }
+      if (dirty & /*$offset*/
+      256 && style_top !== (style_top = `${/*$offset*/
+      ctx2[8]}px`)) {
+        set_style(div1, "top", style_top);
+      }
+      if (dirty & /*planItem*/
+      1 && style_width !== (style_width = `${/*planItem*/
+      ctx2[0].placing.widthPercent || 100}%`)) {
+        set_style(div1, "width", style_width);
+      }
+      if (dirty & /*planItem*/
+      1 && style_left !== (style_left = `${/*planItem*/
+      ctx2[0].placing.xOffsetPercent || 0}%`)) {
+        set_style(div1, "left", style_left);
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(renderedmarkdown.$$.fragment, local);
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(renderedmarkdown.$$.fragment, local);
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div1);
+      destroy_component(renderedmarkdown);
+      if (default_slot)
+        default_slot.d(detaching);
+      if (if_block)
+        if_block.d();
+      mounted = false;
+      run_all(dispose);
+    }
+  };
+}
+var mousedown_handler = (event) => event.stopPropagation();
+function instance20($$self, $$props, $$invalidate) {
+  let height;
+  let offset;
+  let relationToNow;
+  let backgroundColor;
+  let properContrastColors;
+  let $height, $$unsubscribe_height = noop, $$subscribe_height = () => ($$unsubscribe_height(), $$unsubscribe_height = subscribe(height, ($$value) => $$invalidate(7, $height = $$value)), height);
+  let $offset, $$unsubscribe_offset = noop, $$subscribe_offset = () => ($$unsubscribe_offset(), $$unsubscribe_offset = subscribe(offset, ($$value) => $$invalidate(8, $offset = $$value)), offset);
+  let $backgroundColor, $$unsubscribe_backgroundColor = noop, $$subscribe_backgroundColor = () => ($$unsubscribe_backgroundColor(), $$unsubscribe_backgroundColor = subscribe(backgroundColor, ($$value) => $$invalidate(9, $backgroundColor = $$value)), backgroundColor);
+  let $relationToNow, $$unsubscribe_relationToNow = noop, $$subscribe_relationToNow = () => ($$unsubscribe_relationToNow(), $$unsubscribe_relationToNow = subscribe(relationToNow, ($$value) => $$invalidate(10, $relationToNow = $$value)), relationToNow);
+  let $properContrastColors, $$unsubscribe_properContrastColors = noop, $$subscribe_properContrastColors = () => ($$unsubscribe_properContrastColors(), $$unsubscribe_properContrastColors = subscribe(properContrastColors, ($$value) => $$invalidate(11, $properContrastColors = $$value)), properContrastColors);
+  $$self.$$.on_destroy.push(() => $$unsubscribe_height());
+  $$self.$$.on_destroy.push(() => $$unsubscribe_offset());
+  $$self.$$.on_destroy.push(() => $$unsubscribe_backgroundColor());
+  $$self.$$.on_destroy.push(() => $$unsubscribe_relationToNow());
+  $$self.$$.on_destroy.push(() => $$unsubscribe_properContrastColors());
+  let { $$slots: slots = {}, $$scope } = $$props;
+  let { planItem } = $$props;
+  let { onResizeStart } = $$props;
+  function mouseup_handler(event) {
+    bubble.call(this, $$self, event);
+  }
+  $$self.$$set = ($$props2) => {
+    if ("planItem" in $$props2)
+      $$invalidate(0, planItem = $$props2.planItem);
+    if ("onResizeStart" in $$props2)
+      $$invalidate(1, onResizeStart = $$props2.onResizeStart);
+    if ("$$scope" in $$props2)
+      $$invalidate(12, $$scope = $$props2.$$scope);
+  };
+  $$self.$$.update = () => {
+    if ($$self.$$.dirty & /*planItem*/
+    1) {
+      $:
+        $$subscribe_height($$invalidate(6, { height, offset, relationToNow, backgroundColor, properContrastColors } = useTaskVisuals(planItem, { settings, currentTime }), height, $$subscribe_offset($$invalidate(5, offset)), $$subscribe_relationToNow($$invalidate(4, relationToNow)), $$subscribe_backgroundColor($$invalidate(3, backgroundColor)), $$subscribe_properContrastColors($$invalidate(2, properContrastColors))));
+    }
+  };
+  return [
+    planItem,
+    onResizeStart,
+    properContrastColors,
+    backgroundColor,
+    relationToNow,
+    offset,
+    height,
+    $height,
+    $offset,
+    $backgroundColor,
+    $relationToNow,
+    $properContrastColors,
+    $$scope,
+    slots,
+    mouseup_handler
+  ];
+}
+var Task = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance20, create_fragment20, safe_not_equal, { planItem: 0, onResizeStart: 1 }, add_css5);
+  }
+};
+var task_default = Task;
+
+// src/ui/components/task-container.svelte
+function add_css6(target) {
+  append_styles(target, "svelte-1o14c0z", "@keyframes svelte-1o14c0z-pulse{from{opacity:0.8}to{opacity:0.2}}.banner.svelte-1o14c0z{position:sticky;z-index:10;top:0;display:flex;align-items:center;justify-content:center;padding:var(--size-4-4);animation:svelte-1o14c0z-pulse 1s infinite alternate}.task-container.svelte-1o14c0z{top:0;bottom:0;display:flex;flex-direction:column;margin-right:10px;margin-left:10px}.grip.svelte-1o14c0z{position:relative;right:-4px;grid-column:2;align-self:flex-start;color:var(--text-faint)}.grip.svelte-1o14c0z:hover{color:var(--text-muted)}");
+}
+function get_each_context4(ctx, list, i) {
+  const child_ctx = ctx.slice();
+  child_ctx[33] = list[i];
+  return child_ctx;
+}
+function create_if_block_1(ctx) {
+  let div;
+  return {
+    c() {
+      div = element("div");
+      div.textContent = "Release outside this column to cancel edit";
+      attr(div, "class", "banner svelte-1o14c0z");
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div);
+    }
+  };
+}
+function create_if_block2(ctx) {
+  let div;
+  let gripvertical;
+  let current;
+  let mounted;
+  let dispose;
+  gripvertical = new Grip_vertical$1({ props: { class: "svg-icon" } });
+  function mousedown_handler2(...args) {
+    return (
+      /*mousedown_handler*/
+      ctx[24](
+        /*planItem*/
+        ctx[33],
+        ...args
+      )
+    );
+  }
+  return {
+    c() {
+      div = element("div");
+      create_component(gripvertical.$$.fragment);
+      attr(div, "class", "grip svelte-1o14c0z");
+      set_style(
+        div,
+        "cursor",
+        /*gripCursor*/
+        ctx[4]
+      );
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      mount_component(gripvertical, div, null);
+      current = true;
+      if (!mounted) {
+        dispose = listen(div, "mousedown", stop_propagation(mousedown_handler2));
+        mounted = true;
+      }
+    },
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
+      if (dirty[0] & /*gripCursor*/
+      16) {
+        set_style(
+          div,
+          "cursor",
+          /*gripCursor*/
+          ctx[4]
+        );
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(gripvertical.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(gripvertical.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      destroy_component(gripvertical);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_default_slot15(ctx) {
+  let t;
+  let current;
+  let if_block = !/*planItem*/
+  ctx[33].isGhost && create_if_block2(ctx);
+  return {
+    c() {
+      if (if_block)
+        if_block.c();
+      t = space();
+    },
+    m(target, anchor) {
+      if (if_block)
+        if_block.m(target, anchor);
+      insert(target, t, anchor);
+      current = true;
+    },
+    p(ctx2, dirty) {
+      if (!/*planItem*/
+      ctx2[33].isGhost) {
+        if (if_block) {
+          if_block.p(ctx2, dirty);
+          if (dirty[0] & /*$displayedTasks*/
+          256) {
+            transition_in(if_block, 1);
+          }
+        } else {
+          if_block = create_if_block2(ctx2);
+          if_block.c();
+          transition_in(if_block, 1);
+          if_block.m(t.parentNode, t);
+        }
+      } else if (if_block) {
+        group_outros();
+        transition_out(if_block, 1, 1, () => {
+          if_block = null;
+        });
+        check_outros();
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(if_block);
+      current = true;
+    },
+    o(local) {
+      transition_out(if_block);
+      current = false;
+    },
+    d(detaching) {
+      if (if_block)
+        if_block.d(detaching);
+      if (detaching)
+        detach(t);
+    }
+  };
+}
+function create_each_block4(key_1, ctx) {
+  let first;
+  let task;
+  let current;
+  function func(...args) {
+    return (
+      /*func*/
+      ctx[25](
+        /*planItem*/
+        ctx[33],
+        ...args
+      )
+    );
+  }
+  function mouseup_handler() {
+    return (
+      /*mouseup_handler*/
+      ctx[26](
+        /*planItem*/
+        ctx[33]
+      )
+    );
+  }
+  task = new task_default({
+    props: {
+      onResizeStart: func,
+      planItem: (
+        /*planItem*/
+        ctx[33]
+      ),
+      $$slots: { default: [create_default_slot15] },
+      $$scope: { ctx }
+    }
+  });
+  task.$on("mouseup", mouseup_handler);
+  return {
+    key: key_1,
+    first: null,
+    c() {
+      first = empty();
+      create_component(task.$$.fragment);
+      this.first = first;
+    },
+    m(target, anchor) {
+      insert(target, first, anchor);
+      mount_component(task, target, anchor);
+      current = true;
+    },
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
+      const task_changes = {};
+      if (dirty[0] & /*$displayedTasks*/
+      256)
+        task_changes.onResizeStart = func;
+      if (dirty[0] & /*$displayedTasks*/
+      256)
+        task_changes.planItem = /*planItem*/
+        ctx[33];
+      if (dirty[0] & /*gripCursor, $displayedTasks*/
+      272 | dirty[1] & /*$$scope*/
+      32) {
+        task_changes.$$scope = { dirty, ctx };
+      }
+      task.$set(task_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(task.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(task.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(first);
+      destroy_component(task, detaching);
+    }
+  };
+}
+function create_fragment21(ctx) {
+  let styledCursor_action;
+  let t0;
+  let t1;
+  let div;
+  let t2;
+  let each_blocks = [];
+  let each_1_lookup = /* @__PURE__ */ new Map();
+  let current;
+  let mounted;
+  let dispose;
+  let if_block = (
+    /*$editStatus*/
+    ctx[0] && /*$settings*/
+    ctx[1].showHelp && create_if_block_1(ctx)
+  );
+  let each_value = (
+    /*$displayedTasks*/
+    ctx[8]
+  );
+  const get_key = (ctx2) => getRenderKey(
+    /*planItem*/
+    ctx2[33]
+  );
+  for (let i = 0; i < each_value.length; i += 1) {
+    let child_ctx = get_each_context4(ctx, each_value, i);
+    let key = get_key(child_ctx);
+    each_1_lookup.set(key, each_blocks[i] = create_each_block4(key, child_ctx));
+  }
+  return {
+    c() {
+      t0 = space();
+      t1 = space();
+      div = element("div");
+      if (if_block)
+        if_block.c();
+      t2 = space();
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].c();
+      }
+      attr(div, "class", "task-container absolute-stretch-x svelte-1o14c0z");
+      set_style(
+        div,
+        "cursor",
+        /*containerCursor*/
+        ctx[3]
+      );
+    },
+    m(target, anchor) {
+      insert(target, t0, anchor);
+      insert(target, t1, anchor);
+      insert(target, div, anchor);
+      if (if_block)
+        if_block.m(div, null);
+      append(div, t2);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        if (each_blocks[i]) {
+          each_blocks[i].m(div, null);
+        }
+      }
+      ctx[27](div);
+      current = true;
+      if (!mounted) {
+        dispose = [
+          action_destroyer(styledCursor_action = styledCursor.call(
+            null,
+            document.body,
+            /*bodyCursor*/
+            ctx[5]
+          )),
+          listen(document, "mouseup", editCancellation.trigger),
+          listen(
+            document,
+            "mousemove",
+            /*mousemove_handler*/
+            ctx[23]
+          ),
+          listen(
+            div,
+            "mousedown",
+            /*handleMouseDown*/
+            ctx[12]
+          ),
+          listen(div, "mouseup", stop_propagation(
+            /*handleMouseUp*/
+            ctx[13]
+          ))
+        ];
+        mounted = true;
+      }
+    },
+    p(ctx2, dirty) {
+      if (styledCursor_action && is_function(styledCursor_action.update) && dirty[0] & /*bodyCursor*/
+      32)
+        styledCursor_action.update.call(
+          null,
+          /*bodyCursor*/
+          ctx2[5]
+        );
+      if (
+        /*$editStatus*/
+        ctx2[0] && /*$settings*/
+        ctx2[1].showHelp
+      ) {
+        if (if_block) {
+        } else {
+          if_block = create_if_block_1(ctx2);
+          if_block.c();
+          if_block.m(div, t2);
+        }
+      } else if (if_block) {
+        if_block.d(1);
+        if_block = null;
+      }
+      if (dirty[0] & /*handleResizeStart, $displayedTasks, handleTaskMouseUp, gripCursor, handleGripMouseDown*/
+      114960) {
+        each_value = /*$displayedTasks*/
+        ctx2[8];
+        group_outros();
+        each_blocks = update_keyed_each(each_blocks, dirty, get_key, 1, ctx2, each_value, each_1_lookup, div, outro_and_destroy_block, create_each_block4, null, get_each_context4);
+        check_outros();
+      }
+      if (dirty[0] & /*containerCursor*/
+      8) {
+        set_style(
+          div,
+          "cursor",
+          /*containerCursor*/
+          ctx2[3]
+        );
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      for (let i = 0; i < each_value.length; i += 1) {
+        transition_in(each_blocks[i]);
+      }
+      current = true;
+    },
+    o(local) {
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        transition_out(each_blocks[i]);
+      }
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(t0);
+      if (detaching)
+        detach(t1);
+      if (detaching)
+        detach(div);
+      if (if_block)
+        if_block.d();
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].d();
+      }
+      ctx[27](null);
+      mounted = false;
+      run_all(dispose);
+    }
+  };
+}
+function instance21($$self, $$props, $$invalidate) {
+  let parsedTasks;
+  let startEdit;
+  let displayedTasks;
+  let cancelEdit;
+  let editStatus;
+  let confirmEdit;
+  let bodyCursor;
+  let gripCursor;
+  let containerCursor;
+  let $editStatus, $$unsubscribe_editStatus = noop, $$subscribe_editStatus = () => ($$unsubscribe_editStatus(), $$unsubscribe_editStatus = subscribe(editStatus, ($$value) => $$invalidate(0, $editStatus = $$value)), editStatus);
+  let $settings;
+  let $pointerOffsetY;
+  let $editCancellation;
+  let $fileSyncInProgress;
+  let $dataviewTasks;
+  let $displayedTasks, $$unsubscribe_displayedTasks = noop, $$subscribe_displayedTasks = () => ($$unsubscribe_displayedTasks(), $$unsubscribe_displayedTasks = subscribe(displayedTasks, ($$value) => $$invalidate(8, $displayedTasks = $$value)), displayedTasks);
+  component_subscribe($$self, settings, ($$value) => $$invalidate(1, $settings = $$value));
+  component_subscribe($$self, editCancellation, ($$value) => $$invalidate(20, $editCancellation = $$value));
+  $$self.$$.on_destroy.push(() => $$unsubscribe_editStatus());
+  $$self.$$.on_destroy.push(() => $$unsubscribe_displayedTasks());
+  let { day } = $$props;
+  let el;
+  const { obsidianFacade, onUpdate, dataviewTasks, fileSyncInProgress } = getContext(obsidianContext);
+  component_subscribe($$self, dataviewTasks, (value) => $$invalidate(22, $dataviewTasks = value));
+  component_subscribe($$self, fileSyncInProgress, (value) => $$invalidate(21, $fileSyncInProgress = value));
+  const pointerOffsetY = writable(0);
+  component_subscribe($$self, pointerOffsetY, (value) => $$invalidate(30, $pointerOffsetY = value));
+  function handleMouseDown() {
+    return __awaiter(this, void 0, void 0, function* () {
+      const newTask = yield createPlanItem2(day, offsetYToMinutes($pointerOffsetY, $settings.zoomLevel, $settings.startHour));
+      startEdit({
+        task: Object.assign(Object.assign({}, newTask), { isGhost: true }),
+        mode: "CREATE" /* CREATE */
+      });
+    });
+  }
+  function handleMouseUp() {
+    return __awaiter(this, void 0, void 0, function* () {
+      yield confirmEdit();
+    });
+  }
+  function handleResizeStart(event, task) {
+    const mode = event.ctrlKey ? "RESIZE_AND_SHIFT_OTHERS" /* RESIZE_AND_SHIFT_OTHERS */ : "RESIZE" /* RESIZE */;
+    startEdit({ task, mode });
+  }
+  function handleTaskMouseUp(task) {
+    return __awaiter(this, void 0, void 0, function* () {
+      if ($editStatus) {
+        return;
+      }
+      const { path, line } = task.location;
+      yield obsidianFacade.revealLineInFile(path, line);
+    });
+  }
+  function handleGripMouseDown(event, planItem) {
+    return __awaiter(this, void 0, void 0, function* () {
+      let mode = "DRAG" /* DRAG */;
+      let task = planItem;
+      if (event.ctrlKey) {
+        mode = "DRAG_AND_SHIFT_OTHERS" /* DRAG_AND_SHIFT_OTHERS */;
+      } else if (event.shiftKey) {
+        mode = "CREATE" /* CREATE */;
+        task = Object.assign(Object.assign({}, planItem), {
+          id: getId(),
+          isGhost: true,
+          location: Object.assign(Object.assign({}, planItem.location), { line: void 0 })
+        });
+      }
+      startEdit({ task, mode });
+    });
+  }
+  const mousemove_handler = (event) => {
+    const viewportToElOffsetY = el.getBoundingClientRect().top;
+    const borderTopToPointerOffsetY = event.clientY - viewportToElOffsetY;
+    pointerOffsetY.set(snap(borderTopToPointerOffsetY, $settings.zoomLevel));
+  };
+  const mousedown_handler2 = (planItem, event) => handleGripMouseDown(event, planItem);
+  const func = (planItem, event) => handleResizeStart(event, planItem);
+  const mouseup_handler = (planItem) => handleTaskMouseUp(planItem);
+  function div_binding($$value) {
+    binding_callbacks[$$value ? "unshift" : "push"](() => {
+      el = $$value;
+      $$invalidate(2, el);
+    });
+  }
+  $$self.$$set = ($$props2) => {
+    if ("day" in $$props2)
+      $$invalidate(17, day = $$props2.day);
+  };
+  $$self.$$.update = () => {
+    if ($$self.$$.dirty[0] & /*day, $dataviewTasks, $settings*/
+    4325378) {
+      $:
+        $$invalidate(19, parsedTasks = useTasksForDay({
+          day,
+          dataviewTasks: $dataviewTasks,
+          settings: $settings
+        }));
+    }
+    if ($$self.$$.dirty[0] & /*parsedTasks*/
+    524288) {
+      $:
+        $$subscribe_displayedTasks($$invalidate(
+          7,
+          { startEdit, displayedTasks, cancelEdit, editStatus, confirmEdit } = useEdit({
+            parsedTasks,
+            settings,
+            pointerOffsetY,
+            fileSyncInProgress,
+            onUpdate
+          }),
+          displayedTasks,
+          ($$invalidate(18, cancelEdit), $$invalidate(19, parsedTasks), $$invalidate(17, day), $$invalidate(22, $dataviewTasks), $$invalidate(1, $settings)),
+          $$subscribe_editStatus($$invalidate(6, editStatus))
+        ));
+    }
+    if ($$self.$$.dirty[0] & /*$fileSyncInProgress, $editStatus*/
+    2097153) {
+      $:
+        $$invalidate(
+          5,
+          { bodyCursor, gripCursor, containerCursor } = useCursor({
+            editBlocked: $fileSyncInProgress,
+            editMode: $editStatus
+          }),
+          bodyCursor,
+          ($$invalidate(4, gripCursor), $$invalidate(21, $fileSyncInProgress), $$invalidate(0, $editStatus)),
+          ($$invalidate(3, containerCursor), $$invalidate(21, $fileSyncInProgress), $$invalidate(0, $editStatus))
+        );
+    }
+    if ($$self.$$.dirty[0] & /*$editCancellation, cancelEdit*/
+    1310720) {
+      $: {
+        $editCancellation;
+        cancelEdit();
+      }
+    }
+  };
+  return [
+    $editStatus,
+    $settings,
+    el,
+    containerCursor,
+    gripCursor,
+    bodyCursor,
+    editStatus,
+    displayedTasks,
+    $displayedTasks,
+    dataviewTasks,
+    fileSyncInProgress,
+    pointerOffsetY,
+    handleMouseDown,
+    handleMouseUp,
+    handleResizeStart,
+    handleTaskMouseUp,
+    handleGripMouseDown,
+    day,
+    cancelEdit,
+    parsedTasks,
+    $editCancellation,
+    $fileSyncInProgress,
+    $dataviewTasks,
+    mousemove_handler,
+    mousedown_handler2,
+    func,
+    mouseup_handler,
+    div_binding
+  ];
+}
+var Task_container = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance21, create_fragment21, safe_not_equal, { day: 17 }, add_css6, [-1, -1]);
+  }
+};
+var task_container_default = Task_container;
+
+// src/ui/components/timeline-controls.svelte
+var import_fp4 = __toESM(require_fp());
+
+// src/ui/hooks/use-dataview-source.ts
+var import_obsidian4 = require("obsidian");
+function useDataviewSource({ refreshTasks }) {
+  const sourceIsEmpty = derived(
+    settings,
+    ($settings) => $settings.dataviewSource.length === 0
+  );
+  const dataviewSourceInput = writable(get_store_value(settings).dataviewSource);
+  const errorMessage = writable("");
+  function validate(source) {
+    try {
+      refreshTasks(source);
+      return "";
+    } catch (error) {
+      return String(error);
+    }
+  }
+  function tryUpdateSettings(source) {
+    const validationError = validate(source);
+    errorMessage.set(validationError);
+    if (validationError.length === 0) {
+      settings.update((previous) => ({ ...previous, dataviewSource: source }));
+    }
+  }
+  const debouncedUpdate = (0, import_obsidian4.debounce)(tryUpdateSettings, 1e3, true);
+  const unsubscribe = dataviewSourceInput.subscribe((value) => {
+    debouncedUpdate(value);
+  });
+  onDestroy(() => {
+    unsubscribe();
+  });
+  return {
+    sourceIsEmpty,
+    errorMessage,
+    dataviewSourceInput
+  };
 }
 
 // src/ui/components/control-button.svelte
-function add_css2(target) {
+function add_css7(target) {
   append_styles(target, "svelte-3xb39a", ".clickable-icon.svelte-3xb39a{grid-column-start:var(--grid-column-start, auto);flex-basis:var(--input-height);align-self:center;justify-self:var(--justify-self, auto);color:var(--color, var(--icon-color));white-space:nowrap}");
 }
-function create_fragment2(ctx) {
+function create_fragment22(ctx) {
   let div;
   let div_class_value;
   let current;
@@ -11116,7 +28250,7 @@ function create_fragment2(ctx) {
     }
   };
 }
-function instance2($$self, $$props, $$invalidate) {
+function instance22($$self, $$props, $$invalidate) {
   let { $$slots: slots = {}, $$scope } = $$props;
   let { label } = $$props;
   let { isActive = false } = $$props;
@@ -11145,8 +28279,8 @@ var Control_button = class extends SvelteComponent {
     init(
       this,
       options,
-      instance2,
-      create_fragment2,
+      instance22,
+      create_fragment22,
       safe_not_equal,
       {
         label: 0,
@@ -11154,339 +28288,429 @@ var Control_button = class extends SvelteComponent {
         disabled: 2,
         classes: 3
       },
-      add_css2
+      add_css7
     );
   }
 };
 var control_button_default = Control_button;
 
-// src/ui/components/icons/arrow-left.svelte
-function create_fragment3(ctx) {
-  let svg;
-  let path0;
-  let path1;
-  return {
-    c() {
-      svg = svg_element("svg");
-      path0 = svg_element("path");
-      path1 = svg_element("path");
-      attr(path0, "d", "m12 19-7-7 7-7");
-      attr(path1, "d", "M19 12H5");
-      attr(svg, "class", "svg-icon lucide lucide-arrow-left");
-      attr(svg, "fill", "none");
-      attr(svg, "height", "24");
-      attr(svg, "stroke", "currentColor");
-      attr(svg, "stroke-linecap", "round");
-      attr(svg, "stroke-linejoin", "round");
-      attr(svg, "stroke-width", "2");
-      attr(svg, "viewBox", "0 0 24 24");
-      attr(svg, "width", "24");
-      attr(svg, "xmlns", "http://www.w3.org/2000/svg");
-    },
-    m(target, anchor) {
-      insert(target, svg, anchor);
-      append(svg, path0);
-      append(svg, path1);
-    },
-    p: noop,
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (detaching)
-        detach(svg);
-    }
-  };
-}
-var Arrow_left = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, null, create_fragment3, safe_not_equal, {});
-  }
-};
-var arrow_left_default = Arrow_left;
-
-// src/ui/components/icons/arrow-right.svelte
-function create_fragment4(ctx) {
-  let svg;
-  let path0;
-  let path1;
-  return {
-    c() {
-      svg = svg_element("svg");
-      path0 = svg_element("path");
-      path1 = svg_element("path");
-      attr(path0, "d", "M5 12h14");
-      attr(path1, "d", "m12 5 7 7-7 7");
-      attr(svg, "class", "svg-icon lucide lucide-arrow-right");
-      attr(svg, "fill", "none");
-      attr(svg, "height", "24");
-      attr(svg, "stroke", "currentColor");
-      attr(svg, "stroke-linecap", "round");
-      attr(svg, "stroke-linejoin", "round");
-      attr(svg, "stroke-width", "2");
-      attr(svg, "viewBox", "0 0 24 24");
-      attr(svg, "width", "24");
-      attr(svg, "xmlns", "http://www.w3.org/2000/svg");
-    },
-    m(target, anchor) {
-      insert(target, svg, anchor);
-      append(svg, path0);
-      append(svg, path1);
-    },
-    p: noop,
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (detaching)
-        detach(svg);
-    }
-  };
-}
-var Arrow_right = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, null, create_fragment4, safe_not_equal, {});
-  }
-};
-var arrow_right_default = Arrow_right;
-
-// src/ui/components/icons/go-to-file.svelte
-function create_fragment5(ctx) {
-  let svg;
-  let path0;
-  let polyline;
-  let path1;
-  let path2;
-  return {
-    c() {
-      svg = svg_element("svg");
-      path0 = svg_element("path");
-      polyline = svg_element("polyline");
-      path1 = svg_element("path");
-      path2 = svg_element("path");
-      attr(path0, "d", "M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4");
-      attr(polyline, "points", "14 2 14 8 20 8");
-      attr(path1, "d", "M2 15h10");
-      attr(path2, "d", "m9 18 3-3-3-3");
-      attr(svg, "class", "svg-icon lucide lucide-file-input");
-      attr(svg, "fill", "none");
-      attr(svg, "height", "24");
-      attr(svg, "stroke", "currentColor");
-      attr(svg, "stroke-linecap", "round");
-      attr(svg, "stroke-linejoin", "round");
-      attr(svg, "stroke-width", "2");
-      attr(svg, "viewBox", "0 0 24 24");
-      attr(svg, "width", "24");
-      attr(svg, "xmlns", "http://www.w3.org/2000/svg");
-    },
-    m(target, anchor) {
-      insert(target, svg, anchor);
-      append(svg, path0);
-      append(svg, polyline);
-      append(svg, path1);
-      append(svg, path2);
-    },
-    p: noop,
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (detaching)
-        detach(svg);
-    }
-  };
-}
-var Go_to_file = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, null, create_fragment5, safe_not_equal, {});
-  }
-};
-var go_to_file_default = Go_to_file;
-
-// src/ui/components/icons/settings.svelte
-function create_fragment6(ctx) {
-  let svg;
-  let line0;
-  let line1;
-  let line2;
-  let line3;
-  let line4;
-  let line5;
-  let line6;
-  let line7;
-  let line8;
-  return {
-    c() {
-      svg = svg_element("svg");
-      line0 = svg_element("line");
-      line1 = svg_element("line");
-      line2 = svg_element("line");
-      line3 = svg_element("line");
-      line4 = svg_element("line");
-      line5 = svg_element("line");
-      line6 = svg_element("line");
-      line7 = svg_element("line");
-      line8 = svg_element("line");
-      attr(line0, "x1", "21");
-      attr(line0, "x2", "14");
-      attr(line0, "y1", "4");
-      attr(line0, "y2", "4");
-      attr(line1, "x1", "10");
-      attr(line1, "x2", "3");
-      attr(line1, "y1", "4");
-      attr(line1, "y2", "4");
-      attr(line2, "x1", "21");
-      attr(line2, "x2", "12");
-      attr(line2, "y1", "12");
-      attr(line2, "y2", "12");
-      attr(line3, "x1", "8");
-      attr(line3, "x2", "3");
-      attr(line3, "y1", "12");
-      attr(line3, "y2", "12");
-      attr(line4, "x1", "21");
-      attr(line4, "x2", "16");
-      attr(line4, "y1", "20");
-      attr(line4, "y2", "20");
-      attr(line5, "x1", "12");
-      attr(line5, "x2", "3");
-      attr(line5, "y1", "20");
-      attr(line5, "y2", "20");
-      attr(line6, "x1", "14");
-      attr(line6, "x2", "14");
-      attr(line6, "y1", "2");
-      attr(line6, "y2", "6");
-      attr(line7, "x1", "8");
-      attr(line7, "x2", "8");
-      attr(line7, "y1", "10");
-      attr(line7, "y2", "14");
-      attr(line8, "x1", "16");
-      attr(line8, "x2", "16");
-      attr(line8, "y1", "18");
-      attr(line8, "y2", "22");
-      attr(svg, "class", "svg-icon lucide-sliders-horizontal");
-      attr(svg, "fill", "none");
-      attr(svg, "height", "24");
-      attr(svg, "stroke", "currentColor");
-      attr(svg, "stroke-linecap", "round");
-      attr(svg, "stroke-linejoin", "round");
-      attr(svg, "stroke-width", "2");
-      attr(svg, "viewBox", "0 0 24 24");
-      attr(svg, "width", "24");
-      attr(svg, "xmlns", "http://www.w3.org/2000/svg");
-    },
-    m(target, anchor) {
-      insert(target, svg, anchor);
-      append(svg, line0);
-      append(svg, line1);
-      append(svg, line2);
-      append(svg, line3);
-      append(svg, line4);
-      append(svg, line5);
-      append(svg, line6);
-      append(svg, line7);
-      append(svg, line8);
-    },
-    p: noop,
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (detaching)
-        detach(svg);
-    }
-  };
-}
-var Settings = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, null, create_fragment6, safe_not_equal, {});
-  }
-};
-var settings_default = Settings;
-
-// src/ui/components/controls.svelte
-function add_css3(target) {
-  append_styles(target, "svelte-kuebme", ".date.svelte-kuebme{display:flex;align-items:center;justify-content:center;font-size:var(--font-ui-small);font-weight:var(--font-medium);color:var(--text-normal)}.settings.svelte-kuebme{margin:var(--size-4-1) var(--size-4-4)}.setting-item.svelte-kuebme{padding:var(--size-2-3) 0;border:none}.setting-item-name.svelte-kuebme{font-size:var(--font-ui-small)}.controls.svelte-kuebme{display:flex;flex-direction:column;border-bottom:1px solid var(--background-modifier-border)}.header.svelte-kuebme{display:grid;grid-template-columns:repeat(5, 1fr);gap:10px;justify-content:center;margin:var(--size-4-2)}");
-}
-function get_each_context2(ctx, list, i) {
+// src/ui/components/obsidian/dropdown.svelte
+function get_each_context5(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[11] = list[i];
+  child_ctx[1] = list[i];
   return child_ctx;
 }
-function create_default_slot_4(ctx) {
-  let gotofileicon;
-  let current;
-  gotofileicon = new go_to_file_default({});
+function create_each_block5(ctx) {
+  let option;
+  let t_value = (
+    /*value*/
+    ctx[1] + ""
+  );
+  let t;
+  let option_value_value;
   return {
     c() {
-      create_component(gotofileicon.$$.fragment);
+      option = element("option");
+      t = text(t_value);
+      option.__value = option_value_value = /*value*/
+      ctx[1];
+      option.value = option.__value;
     },
     m(target, anchor) {
-      mount_component(gotofileicon, target, anchor);
+      insert(target, option, anchor);
+      append(option, t);
+    },
+    p(ctx2, dirty) {
+      if (dirty & /*values*/
+      1 && t_value !== (t_value = /*value*/
+      ctx2[1] + ""))
+        set_data(t, t_value);
+      if (dirty & /*values*/
+      1 && option_value_value !== (option_value_value = /*value*/
+      ctx2[1])) {
+        option.__value = option_value_value;
+        option.value = option.__value;
+      }
+    },
+    d(detaching) {
+      if (detaching)
+        detach(option);
+    }
+  };
+}
+function create_fragment23(ctx) {
+  let select;
+  let mounted;
+  let dispose;
+  let each_value = (
+    /*values*/
+    ctx[0]
+  );
+  let each_blocks = [];
+  for (let i = 0; i < each_value.length; i += 1) {
+    each_blocks[i] = create_each_block5(get_each_context5(ctx, each_value, i));
+  }
+  return {
+    c() {
+      select = element("select");
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].c();
+      }
+      attr(select, "class", "dropdown");
+    },
+    m(target, anchor) {
+      insert(target, select, anchor);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        if (each_blocks[i]) {
+          each_blocks[i].m(select, null);
+        }
+      }
+      select_option(
+        select,
+        /*value*/
+        ctx[1]
+      );
+      if (!mounted) {
+        dispose = listen(
+          select,
+          "input",
+          /*input_handler*/
+          ctx[2]
+        );
+        mounted = true;
+      }
+    },
+    p(ctx2, [dirty]) {
+      if (dirty & /*values*/
+      1) {
+        each_value = /*values*/
+        ctx2[0];
+        let i;
+        for (i = 0; i < each_value.length; i += 1) {
+          const child_ctx = get_each_context5(ctx2, each_value, i);
+          if (each_blocks[i]) {
+            each_blocks[i].p(child_ctx, dirty);
+          } else {
+            each_blocks[i] = create_each_block5(child_ctx);
+            each_blocks[i].c();
+            each_blocks[i].m(select, null);
+          }
+        }
+        for (; i < each_blocks.length; i += 1) {
+          each_blocks[i].d(1);
+        }
+        each_blocks.length = each_value.length;
+      }
+      if (dirty & /*value, values*/
+      3) {
+        select_option(
+          select,
+          /*value*/
+          ctx2[1]
+        );
+      }
+    },
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (detaching)
+        detach(select);
+      destroy_each(each_blocks, detaching);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function instance23($$self, $$props, $$invalidate) {
+  let { value } = $$props;
+  let { values } = $$props;
+  function input_handler(event) {
+    bubble.call(this, $$self, event);
+  }
+  $$self.$$set = ($$props2) => {
+    if ("value" in $$props2)
+      $$invalidate(1, value = $$props2.value);
+    if ("values" in $$props2)
+      $$invalidate(0, values = $$props2.values);
+  };
+  return [values, value, input_handler];
+}
+var Dropdown = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance23, create_fragment23, safe_not_equal, { value: 1, values: 0 });
+  }
+};
+var dropdown_default = Dropdown;
+
+// src/ui/components/obsidian/setting-item.svelte
+function add_css8(target) {
+  append_styles(target, "svelte-ysxaf1", ".setting-item.svelte-ysxaf1{padding:var(--size-2-3) 0}.setting-item-name.svelte-ysxaf1{font-size:var(--font-ui-small)}");
+}
+var get_control_slot_changes = (dirty) => ({});
+var get_control_slot_context = (ctx) => ({});
+var get_name_slot_changes = (dirty) => ({});
+var get_name_slot_context = (ctx) => ({});
+function create_fragment24(ctx) {
+  let div3;
+  let div1;
+  let div0;
+  let t;
+  let div2;
+  let current;
+  const name_slot_template = (
+    /*#slots*/
+    ctx[1].name
+  );
+  const name_slot = create_slot(
+    name_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[0],
+    get_name_slot_context
+  );
+  const control_slot_template = (
+    /*#slots*/
+    ctx[1].control
+  );
+  const control_slot = create_slot(
+    control_slot_template,
+    ctx,
+    /*$$scope*/
+    ctx[0],
+    get_control_slot_context
+  );
+  return {
+    c() {
+      div3 = element("div");
+      div1 = element("div");
+      div0 = element("div");
+      if (name_slot)
+        name_slot.c();
+      t = space();
+      div2 = element("div");
+      if (control_slot)
+        control_slot.c();
+      attr(div0, "class", "setting-item-name svelte-ysxaf1");
+      attr(div1, "class", "setting-item-info");
+      attr(div2, "class", "setting-item-control");
+      attr(div3, "class", "setting-item svelte-ysxaf1");
+    },
+    m(target, anchor) {
+      insert(target, div3, anchor);
+      append(div3, div1);
+      append(div1, div0);
+      if (name_slot) {
+        name_slot.m(div0, null);
+      }
+      append(div3, t);
+      append(div3, div2);
+      if (control_slot) {
+        control_slot.m(div2, null);
+      }
       current = true;
+    },
+    p(ctx2, [dirty]) {
+      if (name_slot) {
+        if (name_slot.p && (!current || dirty & /*$$scope*/
+        1)) {
+          update_slot_base(
+            name_slot,
+            name_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[0],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[0]
+            ) : get_slot_changes(
+              name_slot_template,
+              /*$$scope*/
+              ctx2[0],
+              dirty,
+              get_name_slot_changes
+            ),
+            get_name_slot_context
+          );
+        }
+      }
+      if (control_slot) {
+        if (control_slot.p && (!current || dirty & /*$$scope*/
+        1)) {
+          update_slot_base(
+            control_slot,
+            control_slot_template,
+            ctx2,
+            /*$$scope*/
+            ctx2[0],
+            !current ? get_all_dirty_from_scope(
+              /*$$scope*/
+              ctx2[0]
+            ) : get_slot_changes(
+              control_slot_template,
+              /*$$scope*/
+              ctx2[0],
+              dirty,
+              get_control_slot_changes
+            ),
+            get_control_slot_context
+          );
+        }
+      }
     },
     i(local) {
       if (current)
         return;
-      transition_in(gotofileicon.$$.fragment, local);
+      transition_in(name_slot, local);
+      transition_in(control_slot, local);
       current = true;
     },
     o(local) {
-      transition_out(gotofileicon.$$.fragment, local);
+      transition_out(name_slot, local);
+      transition_out(control_slot, local);
       current = false;
     },
     d(detaching) {
-      destroy_component(gotofileicon, detaching);
+      if (detaching)
+        detach(div3);
+      if (name_slot)
+        name_slot.d(detaching);
+      if (control_slot)
+        control_slot.d(detaching);
     }
   };
 }
-function create_default_slot_3(ctx) {
-  let arrowlefticon;
+function instance24($$self, $$props, $$invalidate) {
+  let { $$slots: slots = {}, $$scope } = $$props;
+  $$self.$$set = ($$props2) => {
+    if ("$$scope" in $$props2)
+      $$invalidate(0, $$scope = $$props2.$$scope);
+  };
+  return [$$scope, slots];
+}
+var Setting_item = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance24, create_fragment24, safe_not_equal, {}, add_css8);
+  }
+};
+var setting_item_default = Setting_item;
+
+// src/ui/components/timeline-controls.svelte
+function add_css9(target) {
+  append_styles(target, "svelte-honx3r", ".active-filter{color:var(--text-success)}.migration-dialogue.svelte-honx3r.svelte-honx3r{display:flex;flex-direction:column;gap:var(--size-4-2);align-items:center;margin:var(--size-4-2)}.container.svelte-honx3r.svelte-honx3r{display:flex;flex-direction:column;gap:var(--size-4-2);margin:var(--size-4-2);font-size:var(--font-ui-small);color:var(--text-muted)}.mod-error{color:var(--text-error)}.container.svelte-honx3r input.svelte-honx3r{font-family:var(--font-monospace)}.info-container.svelte-honx3r.svelte-honx3r{display:flex;gap:var(--size-4-1);margin:var(--size-4-2)}.info-container.svelte-honx3r .svg-icon{flex-shrink:0}.error-message.svelte-honx3r.svelte-honx3r{overflow-x:auto;padding:var(--size-4-1);border:1px solid var(--text-error);border-radius:var(--radius-s)}.help-item.svelte-honx3r.svelte-honx3r{margin:var(--size-2-3) var(--size-4-4);font-size:var(--font-ui-small);color:var(--text-muted)}.date.svelte-honx3r.svelte-honx3r{display:flex;align-items:center;justify-content:center;font-size:var(--font-ui-small);font-weight:var(--font-medium);color:var(--text-normal)}.settings.svelte-honx3r.svelte-honx3r{margin:var(--size-4-1) var(--size-4-4)}.controls.svelte-honx3r.svelte-honx3r{flex:0 0 auto;overflow:hidden;display:flex;flex-direction:column;border-bottom:1px solid var(--background-modifier-border)}.header.svelte-honx3r.svelte-honx3r{display:grid;grid-template-columns:repeat(3, var(--size-4-8)) repeat(3, 1fr) repeat(\n        3,\n        var(--size-4-8)\n      );margin:var(--size-4-2)}");
+}
+function create_default_slot_9(ctx) {
+  let fileinput;
   let current;
-  arrowlefticon = new arrow_left_default({});
+  fileinput = new File_input$1({ props: { class: "svg-icon" } });
   return {
     c() {
-      create_component(arrowlefticon.$$.fragment);
+      create_component(fileinput.$$.fragment);
     },
     m(target, anchor) {
-      mount_component(arrowlefticon, target, anchor);
+      mount_component(fileinput, target, anchor);
       current = true;
     },
+    p: noop,
     i(local) {
       if (current)
         return;
-      transition_in(arrowlefticon.$$.fragment, local);
+      transition_in(fileinput.$$.fragment, local);
       current = true;
     },
     o(local) {
-      transition_out(arrowlefticon.$$.fragment, local);
+      transition_out(fileinput.$$.fragment, local);
       current = false;
     },
     d(detaching) {
-      destroy_component(arrowlefticon, detaching);
+      destroy_component(fileinput, detaching);
     }
   };
 }
-function create_default_slot_2(ctx) {
+function create_default_slot_8(ctx) {
+  let table2;
+  let current;
+  table2 = new Table_2$1({ props: { class: "svg-icon" } });
+  return {
+    c() {
+      create_component(table2.$$.fragment);
+    },
+    m(target, anchor) {
+      mount_component(table2, target, anchor);
+      current = true;
+    },
+    p: noop,
+    i(local) {
+      if (current)
+        return;
+      transition_in(table2.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(table2.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(table2, detaching);
+    }
+  };
+}
+function create_default_slot_7(ctx) {
+  let arrowleft;
+  let current;
+  arrowleft = new Arrow_left$1({ props: { class: "svg-icon" } });
+  return {
+    c() {
+      create_component(arrowleft.$$.fragment);
+    },
+    m(target, anchor) {
+      mount_component(arrowleft, target, anchor);
+      current = true;
+    },
+    p: noop,
+    i(local) {
+      if (current)
+        return;
+      transition_in(arrowleft.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(arrowleft.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(arrowleft, detaching);
+    }
+  };
+}
+function create_default_slot_6(ctx) {
   let span;
   let t_value = (
     /*day*/
-    ctx[0].format(import_obsidian_daily_notes_interface3.DEFAULT_DAILY_NOTE_FORMAT) + ""
+    ctx[0].format(
+      /*$settings*/
+      ctx[4].timelineDateFormat
+    ) + ""
   );
   let t;
   return {
     c() {
       span = element("span");
       t = text(t_value);
-      attr(span, "class", "date svelte-kuebme");
+      attr(span, "class", "date svelte-honx3r");
     },
     m(target, anchor) {
       insert(target, span, anchor);
       append(span, t);
     },
     p(ctx2, dirty) {
-      if (dirty & /*day*/
-      1 && t_value !== (t_value = /*day*/
-      ctx2[0].format(import_obsidian_daily_notes_interface3.DEFAULT_DAILY_NOTE_FORMAT) + ""))
+      if (dirty[0] & /*day, $settings*/
+      17 && t_value !== (t_value = /*day*/
+      ctx2[0].format(
+        /*$settings*/
+        ctx2[4].timelineDateFormat
+      ) + ""))
         set_data(t, t_value);
     },
     d(detaching) {
@@ -11495,407 +28719,1356 @@ function create_default_slot_2(ctx) {
     }
   };
 }
-function create_default_slot_1(ctx) {
-  let arrowrighticon;
+function create_default_slot_5(ctx) {
+  let arrowright;
   let current;
-  arrowrighticon = new arrow_right_default({});
+  arrowright = new Arrow_right$1({ props: { class: "svg-icon" } });
   return {
     c() {
-      create_component(arrowrighticon.$$.fragment);
+      create_component(arrowright.$$.fragment);
     },
     m(target, anchor) {
-      mount_component(arrowrighticon, target, anchor);
+      mount_component(arrowright, target, anchor);
+      current = true;
+    },
+    p: noop,
+    i(local) {
+      if (current)
+        return;
+      transition_in(arrowright.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(arrowright.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(arrowright, detaching);
+    }
+  };
+}
+function create_else_block(ctx) {
+  let filter;
+  let current;
+  filter = new Filter$1({
+    props: { class: "svg-icon active-filter" }
+  });
+  return {
+    c() {
+      create_component(filter.$$.fragment);
+    },
+    m(target, anchor) {
+      mount_component(filter, target, anchor);
       current = true;
     },
     i(local) {
       if (current)
         return;
-      transition_in(arrowrighticon.$$.fragment, local);
+      transition_in(filter.$$.fragment, local);
       current = true;
     },
     o(local) {
-      transition_out(arrowrighticon.$$.fragment, local);
+      transition_out(filter.$$.fragment, local);
       current = false;
     },
     d(detaching) {
-      destroy_component(arrowrighticon, detaching);
+      destroy_component(filter, detaching);
     }
   };
 }
-function create_default_slot(ctx) {
-  let settingsicon;
+function create_if_block_7(ctx) {
+  let filterx;
   let current;
-  settingsicon = new settings_default({});
+  filterx = new Filter_x$1({ props: { class: "svg-icon" } });
   return {
     c() {
-      create_component(settingsicon.$$.fragment);
+      create_component(filterx.$$.fragment);
     },
     m(target, anchor) {
-      mount_component(settingsicon, target, anchor);
+      mount_component(filterx, target, anchor);
       current = true;
     },
     i(local) {
       if (current)
         return;
-      transition_in(settingsicon.$$.fragment, local);
+      transition_in(filterx.$$.fragment, local);
       current = true;
     },
     o(local) {
-      transition_out(settingsicon.$$.fragment, local);
+      transition_out(filterx.$$.fragment, local);
       current = false;
     },
     d(detaching) {
-      destroy_component(settingsicon, detaching);
+      destroy_component(filterx, detaching);
     }
   };
 }
-function create_if_block(ctx) {
-  let div9;
-  let div3;
-  let div1;
-  let t1;
-  let div2;
-  let select;
-  let t2;
-  let div8;
-  let div5;
+function create_default_slot_4(ctx) {
+  let current_block_type_index;
+  let if_block;
+  let if_block_anchor;
+  let current;
+  const if_block_creators = [create_if_block_7, create_else_block];
+  const if_blocks = [];
+  function select_block_type(ctx2, dirty) {
+    if (
+      /*$sourceIsEmpty*/
+      ctx2[5]
+    )
+      return 0;
+    return 1;
+  }
+  current_block_type_index = select_block_type(ctx, [-1, -1]);
+  if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+  return {
+    c() {
+      if_block.c();
+      if_block_anchor = empty();
+    },
+    m(target, anchor) {
+      if_blocks[current_block_type_index].m(target, anchor);
+      insert(target, if_block_anchor, anchor);
+      current = true;
+    },
+    p(ctx2, dirty) {
+      let previous_block_index = current_block_type_index;
+      current_block_type_index = select_block_type(ctx2, dirty);
+      if (current_block_type_index !== previous_block_index) {
+        group_outros();
+        transition_out(if_blocks[previous_block_index], 1, 1, () => {
+          if_blocks[previous_block_index] = null;
+        });
+        check_outros();
+        if_block = if_blocks[current_block_type_index];
+        if (!if_block) {
+          if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx2);
+          if_block.c();
+        } else {
+        }
+        transition_in(if_block, 1);
+        if_block.m(if_block_anchor.parentNode, if_block_anchor);
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(if_block);
+      current = true;
+    },
+    o(local) {
+      transition_out(if_block);
+      current = false;
+    },
+    d(detaching) {
+      if_blocks[current_block_type_index].d(detaching);
+      if (detaching)
+        detach(if_block_anchor);
+    }
+  };
+}
+function create_default_slot_3(ctx) {
+  let helpcircle;
+  let current;
+  helpcircle = new Help_circle$1({ props: { class: "svg-icon" } });
+  return {
+    c() {
+      create_component(helpcircle.$$.fragment);
+    },
+    m(target, anchor) {
+      mount_component(helpcircle, target, anchor);
+      current = true;
+    },
+    p: noop,
+    i(local) {
+      if (current)
+        return;
+      transition_in(helpcircle.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(helpcircle.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(helpcircle, detaching);
+    }
+  };
+}
+function create_default_slot_2(ctx) {
+  let settings_1;
+  let current;
+  settings_1 = new Settings$1({ props: { class: "svg-icon" } });
+  return {
+    c() {
+      create_component(settings_1.$$.fragment);
+    },
+    m(target, anchor) {
+      mount_component(settings_1, target, anchor);
+      current = true;
+    },
+    p: noop,
+    i(local) {
+      if (current)
+        return;
+      transition_in(settings_1.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(settings_1.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(settings_1, detaching);
+    }
+  };
+}
+function create_if_block_6(ctx) {
+  let div;
+  let alerttriangle;
+  let t0;
+  let span;
   let t4;
-  let div7;
-  let div6;
+  let button;
+  let current;
   let mounted;
   let dispose;
-  let each_value = ["1", "2", "3", "4"];
-  let each_blocks = [];
-  for (let i = 0; i < 4; i += 1) {
-    each_blocks[i] = create_each_block2(get_each_context2(ctx, each_value, i));
-  }
+  alerttriangle = new Alert_triangle$1({ props: { class: "svg-icon" } });
   return {
     c() {
-      div9 = element("div");
-      div3 = element("div");
-      div1 = element("div");
-      div1.innerHTML = `<div class="setting-item-name svelte-kuebme">Zoom</div>`;
-      t1 = space();
-      div2 = element("div");
-      select = element("select");
-      for (let i = 0; i < 4; i += 1) {
-        each_blocks[i].c();
-      }
-      t2 = space();
-      div8 = element("div");
-      div5 = element("div");
-      div5.innerHTML = `<div class="setting-item-name svelte-kuebme">Auto-scroll to now</div>`;
+      div = element("div");
+      create_component(alerttriangle.$$.fragment);
+      t0 = space();
+      span = element("span");
+      span.innerHTML = `List items without checkboxes are no longer shown.
+        <a href="https://github.com/ivan-lednev/obsidian-day-planner#readme">Check out the Dataview section in the docs</a>.`;
       t4 = space();
-      div7 = element("div");
-      div6 = element("div");
-      div6.innerHTML = `<input tabindex="0" type="checkbox"/>`;
-      attr(div1, "class", "setting-item-info");
-      attr(select, "class", "dropdown");
-      if (
-        /*$settings*/
-        ctx[2].zoomLevel === void 0
-      )
-        add_render_callback(() => (
-          /*select_change_handler*/
-          ctx[8].call(select)
-        ));
-      attr(div2, "class", "setting-item-control");
-      attr(div3, "class", "setting-item svelte-kuebme");
-      attr(div5, "class", "setting-item-info");
-      attr(div6, "class", "checkbox-container mod-small");
-      toggle_class(
-        div6,
-        "is-enabled",
-        /*$settings*/
-        ctx[2].centerNeedle
-      );
-      attr(div7, "class", "setting-item-control");
-      attr(div8, "class", "setting-item mod-toggle svelte-kuebme");
-      attr(div9, "class", "settings svelte-kuebme");
+      button = element("button");
+      button.textContent = "Got it";
+      attr(div, "class", "migration-dialogue svelte-honx3r");
     },
     m(target, anchor) {
-      insert(target, div9, anchor);
-      append(div9, div3);
-      append(div3, div1);
-      append(div3, t1);
-      append(div3, div2);
-      append(div2, select);
-      for (let i = 0; i < 4; i += 1) {
-        if (each_blocks[i]) {
-          each_blocks[i].m(select, null);
-        }
-      }
-      select_option(
-        select,
-        /*$settings*/
-        ctx[2].zoomLevel,
-        true
-      );
-      append(div9, t2);
-      append(div9, div8);
-      append(div8, div5);
-      append(div8, t4);
-      append(div8, div7);
-      append(div7, div6);
+      insert(target, div, anchor);
+      mount_component(alerttriangle, div, null);
+      append(div, t0);
+      append(div, span);
+      append(div, t4);
+      append(div, button);
+      current = true;
       if (!mounted) {
-        dispose = [
-          listen(
-            select,
-            "change",
-            /*select_change_handler*/
-            ctx[8]
-          ),
-          listen(
-            div6,
-            "click",
-            /*click_handler_1*/
-            ctx[9]
-          )
-        ];
+        dispose = listen(
+          button,
+          "click",
+          /*click_handler_1*/
+          ctx[26]
+        );
+        mounted = true;
+      }
+    },
+    p: noop,
+    i(local) {
+      if (current)
+        return;
+      transition_in(alerttriangle.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(alerttriangle.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      destroy_component(alerttriangle);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_if_block_5(ctx) {
+  let div;
+  let alerttriangle;
+  let t;
+  let current;
+  alerttriangle = new Alert_triangle$1({ props: { class: "svg-icon mod-error" } });
+  return {
+    c() {
+      div = element("div");
+      create_component(alerttriangle.$$.fragment);
+      t = text("\n      Dataview is not loaded, tasks won't be shown");
+      attr(div, "class", "info-container svelte-honx3r");
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      mount_component(alerttriangle, div, null);
+      append(div, t);
+      current = true;
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(alerttriangle.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(alerttriangle.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      destroy_component(alerttriangle);
+    }
+  };
+}
+function create_if_block_2(ctx) {
+  let div1;
+  let input;
+  let input_placeholder_value;
+  let t0;
+  let t1;
+  let t2;
+  let div0;
+  let info;
+  let t3;
+  let a;
+  let current;
+  let mounted;
+  let dispose;
+  let if_block0 = (
+    /*$sourceIsEmpty*/
+    ctx[5] && create_if_block_4(ctx)
+  );
+  let if_block1 = (
+    /*$dataviewErrorMessage*/
+    ctx[8].length > 0 && create_if_block_3(ctx)
+  );
+  info = new Info$1({ props: { class: "svg-icon" } });
+  return {
+    c() {
+      div1 = element("div");
+      input = element("input");
+      t0 = space();
+      if (if_block0)
+        if_block0.c();
+      t1 = space();
+      if (if_block1)
+        if_block1.c();
+      t2 = space();
+      div0 = element("div");
+      create_component(info.$$.fragment);
+      t3 = space();
+      a = element("a");
+      a.textContent = "Dataview source reference";
+      attr(input, "placeholder", input_placeholder_value = `-#archived and -"notes/personal"`);
+      attr(input, "spellcheck", "false");
+      attr(input, "type", "text");
+      attr(input, "class", "svelte-honx3r");
+      attr(a, "href", "https://blacksmithgu.github.io/obsidian-dataview/reference/sources/");
+      attr(div0, "class", "info-container svelte-honx3r");
+      attr(div1, "class", "container svelte-honx3r");
+    },
+    m(target, anchor) {
+      insert(target, div1, anchor);
+      append(div1, input);
+      set_input_value(
+        input,
+        /*$dataviewSourceInput*/
+        ctx[7]
+      );
+      append(div1, t0);
+      if (if_block0)
+        if_block0.m(div1, null);
+      append(div1, t1);
+      if (if_block1)
+        if_block1.m(div1, null);
+      append(div1, t2);
+      append(div1, div0);
+      mount_component(info, div0, null);
+      append(div0, t3);
+      append(div0, a);
+      current = true;
+      if (!mounted) {
+        dispose = listen(
+          input,
+          "input",
+          /*input_input_handler*/
+          ctx[27]
+        );
         mounted = true;
       }
     },
     p(ctx2, dirty) {
-      if (dirty & /*$settings*/
-      4) {
-        select_option(
-          select,
-          /*$settings*/
-          ctx2[2].zoomLevel
+      if (dirty[0] & /*$dataviewSourceInput*/
+      128 && input.value !== /*$dataviewSourceInput*/
+      ctx2[7]) {
+        set_input_value(
+          input,
+          /*$dataviewSourceInput*/
+          ctx2[7]
         );
       }
-      if (dirty & /*$settings*/
-      4) {
-        toggle_class(
-          div6,
-          "is-enabled",
-          /*$settings*/
-          ctx2[2].centerNeedle
-        );
+      if (
+        /*$sourceIsEmpty*/
+        ctx2[5]
+      ) {
+        if (if_block0) {
+          if (dirty[0] & /*$sourceIsEmpty*/
+          32) {
+            transition_in(if_block0, 1);
+          }
+        } else {
+          if_block0 = create_if_block_4(ctx2);
+          if_block0.c();
+          transition_in(if_block0, 1);
+          if_block0.m(div1, t1);
+        }
+      } else if (if_block0) {
+        group_outros();
+        transition_out(if_block0, 1, 1, () => {
+          if_block0 = null;
+        });
+        check_outros();
       }
+      if (
+        /*$dataviewErrorMessage*/
+        ctx2[8].length > 0
+      ) {
+        if (if_block1) {
+          if_block1.p(ctx2, dirty);
+        } else {
+          if_block1 = create_if_block_3(ctx2);
+          if_block1.c();
+          if_block1.m(div1, t2);
+        }
+      } else if (if_block1) {
+        if_block1.d(1);
+        if_block1 = null;
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(if_block0);
+      transition_in(info.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(if_block0);
+      transition_out(info.$$.fragment, local);
+      current = false;
     },
     d(detaching) {
       if (detaching)
-        detach(div9);
-      destroy_each(each_blocks, detaching);
+        detach(div1);
+      if (if_block0)
+        if_block0.d();
+      if (if_block1)
+        if_block1.d();
+      destroy_component(info);
       mounted = false;
-      run_all(dispose);
+      dispose();
     }
   };
 }
-function create_each_block2(ctx) {
-  let option;
+function create_if_block_4(ctx) {
+  let div;
+  let alerttriangle;
   let t;
-  let option_value_value;
+  let current;
+  alerttriangle = new Alert_triangle$1({ props: { class: "svg-icon" } });
   return {
     c() {
-      option = element("option");
-      t = text(
-        /*level*/
-        ctx[11]
-      );
-      option.__value = option_value_value = /*level*/
-      ctx[11];
-      option.value = option.__value;
+      div = element("div");
+      create_component(alerttriangle.$$.fragment);
+      t = text("\n          Tasks are pulled from everywhere");
+      attr(div, "class", "info-container svelte-honx3r");
     },
     m(target, anchor) {
-      insert(target, option, anchor);
-      append(option, t);
+      insert(target, div, anchor);
+      mount_component(alerttriangle, div, null);
+      append(div, t);
+      current = true;
     },
-    p: noop,
+    i(local) {
+      if (current)
+        return;
+      transition_in(alerttriangle.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(alerttriangle.$$.fragment, local);
+      current = false;
+    },
     d(detaching) {
       if (detaching)
-        detach(option);
+        detach(div);
+      destroy_component(alerttriangle);
     }
   };
 }
-function create_fragment7(ctx) {
+function create_if_block_3(ctx) {
+  let div;
+  let pre;
+  let t;
+  return {
+    c() {
+      div = element("div");
+      pre = element("pre");
+      t = text(
+        /*$dataviewErrorMessage*/
+        ctx[8]
+      );
+      attr(pre, "class", "error-message svelte-honx3r");
+      attr(div, "class", "info-container svelte-honx3r");
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      append(div, pre);
+      append(pre, t);
+    },
+    p(ctx2, dirty) {
+      if (dirty[0] & /*$dataviewErrorMessage*/
+      256)
+        set_data(
+          t,
+          /*$dataviewErrorMessage*/
+          ctx2[8]
+        );
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div);
+    }
+  };
+}
+function create_if_block_12(ctx) {
+  let p0;
+  let t1;
+  let p1;
+  let t5;
+  let p2;
+  return {
+    c() {
+      p0 = element("p");
+      p0.innerHTML = `<strong>Advanced editing:</strong>`;
+      t1 = space();
+      p1 = element("p");
+      p1.innerHTML = `Hold <strong>Shift</strong> and drag to copy`;
+      t5 = space();
+      p2 = element("p");
+      p2.innerHTML = `Hold <strong>Control</strong> and drag/resize to push neighboring tasks`;
+      attr(p0, "class", "help-item svelte-honx3r");
+      attr(p1, "class", "help-item svelte-honx3r");
+      attr(p2, "class", "help-item svelte-honx3r");
+    },
+    m(target, anchor) {
+      insert(target, p0, anchor);
+      insert(target, t1, anchor);
+      insert(target, p1, anchor);
+      insert(target, t5, anchor);
+      insert(target, p2, anchor);
+    },
+    d(detaching) {
+      if (detaching)
+        detach(p0);
+      if (detaching)
+        detach(t1);
+      if (detaching)
+        detach(p1);
+      if (detaching)
+        detach(t5);
+      if (detaching)
+        detach(p2);
+    }
+  };
+}
+function create_if_block3(ctx) {
+  let div;
+  let settingitem0;
+  let t0;
+  let settingitem1;
+  let t1;
+  let settingitem2;
+  let t2;
+  let settingitem3;
+  let current;
+  settingitem0 = new setting_item_default({
+    props: {
+      $$slots: {
+        control: [create_control_slot_3],
+        name: [create_name_slot_3]
+      },
+      $$scope: { ctx }
+    }
+  });
+  settingitem1 = new setting_item_default({
+    props: {
+      $$slots: {
+        control: [create_control_slot_2],
+        name: [create_name_slot_2]
+      },
+      $$scope: { ctx }
+    }
+  });
+  settingitem2 = new setting_item_default({
+    props: {
+      $$slots: {
+        control: [create_control_slot_1],
+        name: [create_name_slot_1]
+      },
+      $$scope: { ctx }
+    }
+  });
+  settingitem3 = new setting_item_default({
+    props: {
+      $$slots: {
+        control: [create_control_slot],
+        name: [create_name_slot]
+      },
+      $$scope: { ctx }
+    }
+  });
+  return {
+    c() {
+      div = element("div");
+      create_component(settingitem0.$$.fragment);
+      t0 = space();
+      create_component(settingitem1.$$.fragment);
+      t1 = space();
+      create_component(settingitem2.$$.fragment);
+      t2 = space();
+      create_component(settingitem3.$$.fragment);
+      attr(div, "class", "settings svelte-honx3r");
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      mount_component(settingitem0, div, null);
+      append(div, t0);
+      mount_component(settingitem1, div, null);
+      append(div, t1);
+      mount_component(settingitem2, div, null);
+      append(div, t2);
+      mount_component(settingitem3, div, null);
+      current = true;
+    },
+    p(ctx2, dirty) {
+      const settingitem0_changes = {};
+      if (dirty[0] & /*$settings*/
+      16 | dirty[1] & /*$$scope*/
+      2) {
+        settingitem0_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      settingitem0.$set(settingitem0_changes);
+      const settingitem1_changes = {};
+      if (dirty[0] & /*$settings*/
+      16 | dirty[1] & /*$$scope*/
+      2) {
+        settingitem1_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      settingitem1.$set(settingitem1_changes);
+      const settingitem2_changes = {};
+      if (dirty[0] & /*$settings*/
+      16 | dirty[1] & /*$$scope*/
+      2) {
+        settingitem2_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      settingitem2.$set(settingitem2_changes);
+      const settingitem3_changes = {};
+      if (dirty[0] & /*$settings*/
+      16 | dirty[1] & /*$$scope*/
+      2) {
+        settingitem3_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      settingitem3.$set(settingitem3_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(settingitem0.$$.fragment, local);
+      transition_in(settingitem1.$$.fragment, local);
+      transition_in(settingitem2.$$.fragment, local);
+      transition_in(settingitem3.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(settingitem0.$$.fragment, local);
+      transition_out(settingitem1.$$.fragment, local);
+      transition_out(settingitem2.$$.fragment, local);
+      transition_out(settingitem3.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      destroy_component(settingitem0);
+      destroy_component(settingitem1);
+      destroy_component(settingitem2);
+      destroy_component(settingitem3);
+    }
+  };
+}
+function create_name_slot_3(ctx) {
+  let t;
+  return {
+    c() {
+      t = text("Start hour");
+    },
+    m(target, anchor) {
+      insert(target, t, anchor);
+    },
+    d(detaching) {
+      if (detaching)
+        detach(t);
+    }
+  };
+}
+function create_control_slot_3(ctx) {
+  let dropdown;
+  let current;
+  dropdown = new dropdown_default({
+    props: {
+      slot: "control",
+      value: String(
+        /*$settings*/
+        ctx[4].startHour
+      ),
+      values: (
+        /*startHourOptions*/
+        ctx[15]
+      )
+    }
+  });
+  dropdown.$on(
+    "input",
+    /*handleStartHourInput*/
+    ctx[23]
+  );
+  return {
+    c() {
+      create_component(dropdown.$$.fragment);
+    },
+    m(target, anchor) {
+      mount_component(dropdown, target, anchor);
+      current = true;
+    },
+    p(ctx2, dirty) {
+      const dropdown_changes = {};
+      if (dirty[0] & /*$settings*/
+      16)
+        dropdown_changes.value = String(
+          /*$settings*/
+          ctx2[4].startHour
+        );
+      dropdown.$set(dropdown_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(dropdown.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(dropdown.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(dropdown, detaching);
+    }
+  };
+}
+function create_name_slot_2(ctx) {
+  let t;
+  return {
+    c() {
+      t = text("Zoom");
+    },
+    m(target, anchor) {
+      insert(target, t, anchor);
+    },
+    d(detaching) {
+      if (detaching)
+        detach(t);
+    }
+  };
+}
+function create_control_slot_2(ctx) {
+  let dropdown;
+  let current;
+  dropdown = new dropdown_default({
+    props: {
+      slot: "control",
+      value: String(
+        /*$settings*/
+        ctx[4].zoomLevel
+      ),
+      values: (
+        /*zoomLevelOptions*/
+        ctx[16]
+      )
+    }
+  });
+  dropdown.$on(
+    "input",
+    /*handleZoomLevelInput*/
+    ctx[24]
+  );
+  return {
+    c() {
+      create_component(dropdown.$$.fragment);
+    },
+    m(target, anchor) {
+      mount_component(dropdown, target, anchor);
+      current = true;
+    },
+    p(ctx2, dirty) {
+      const dropdown_changes = {};
+      if (dirty[0] & /*$settings*/
+      16)
+        dropdown_changes.value = String(
+          /*$settings*/
+          ctx2[4].zoomLevel
+        );
+      dropdown.$set(dropdown_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(dropdown.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(dropdown.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(dropdown, detaching);
+    }
+  };
+}
+function create_name_slot_1(ctx) {
+  let t;
+  return {
+    c() {
+      t = text("Auto-scroll to now");
+    },
+    m(target, anchor) {
+      insert(target, t, anchor);
+    },
+    d(detaching) {
+      if (detaching)
+        detach(t);
+    }
+  };
+}
+function create_control_slot_1(ctx) {
+  let div;
+  let mounted;
+  let dispose;
+  return {
+    c() {
+      div = element("div");
+      div.innerHTML = `<input tabindex="0" type="checkbox"/>`;
+      attr(div, "slot", "control");
+      attr(div, "class", "checkbox-container mod-small");
+      toggle_class(
+        div,
+        "is-enabled",
+        /*$settings*/
+        ctx[4].centerNeedle
+      );
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      if (!mounted) {
+        dispose = listen(
+          div,
+          "click",
+          /*click_handler_2*/
+          ctx[28]
+        );
+        mounted = true;
+      }
+    },
+    p(ctx2, dirty) {
+      if (dirty[0] & /*$settings*/
+      16) {
+        toggle_class(
+          div,
+          "is-enabled",
+          /*$settings*/
+          ctx2[4].centerNeedle
+        );
+      }
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_name_slot(ctx) {
+  let t;
+  return {
+    c() {
+      t = text("Show help while dragging");
+    },
+    m(target, anchor) {
+      insert(target, t, anchor);
+    },
+    d(detaching) {
+      if (detaching)
+        detach(t);
+    }
+  };
+}
+function create_control_slot(ctx) {
+  let div;
+  let mounted;
+  let dispose;
+  return {
+    c() {
+      div = element("div");
+      div.innerHTML = `<input tabindex="0" type="checkbox"/>`;
+      attr(div, "slot", "control");
+      attr(div, "class", "checkbox-container mod-small");
+      toggle_class(
+        div,
+        "is-enabled",
+        /*$settings*/
+        ctx[4].showHelp
+      );
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      if (!mounted) {
+        dispose = listen(
+          div,
+          "click",
+          /*click_handler_3*/
+          ctx[29]
+        );
+        mounted = true;
+      }
+    },
+    p(ctx2, dirty) {
+      if (dirty[0] & /*$settings*/
+      16) {
+        toggle_class(
+          div,
+          "is-enabled",
+          /*$settings*/
+          ctx2[4].showHelp
+        );
+      }
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_fragment25(ctx) {
   let div1;
   let div0;
   let controlbutton0;
-  let div;
   let t0;
   let controlbutton1;
-  let div_1;
   let t1;
   let controlbutton2;
+  let div;
   let t2;
   let controlbutton3;
-  let div_2;
   let t3;
   let controlbutton4;
-  let div_3;
+  let div_1;
   let t4;
+  let controlbutton5;
+  let t5;
+  let controlbutton6;
+  let t6;
+  let controlbutton7;
+  let t7;
+  let t8;
+  let t9;
+  let t10;
+  let t11;
   let current;
   controlbutton0 = new control_button_default({
     props: {
       label: "Open today's daily note",
-      $$slots: { default: [create_default_slot_4] },
+      $$slots: { default: [create_default_slot_9] },
       $$scope: { ctx }
     }
   });
   controlbutton0.$on(
     "click",
     /*goToToday*/
-    ctx[6]
+    ctx[22]
   );
   controlbutton1 = new control_button_default({
     props: {
-      label: "Go to previous daily plan",
-      $$slots: { default: [create_default_slot_3] },
+      label: "Open week planner",
+      $$slots: { default: [create_default_slot_8] },
       $$scope: { ctx }
     }
   });
   controlbutton1.$on(
     "click",
-    /*goBack*/
-    ctx[4]
+    /*initWeeklyView*/
+    ctx[10]
   );
   controlbutton2 = new control_button_default({
     props: {
-      label: "Go to file",
-      $$slots: { default: [create_default_slot_2] },
+      label: "Go to previous daily plan",
+      $$slots: { default: [create_default_slot_7] },
       $$scope: { ctx }
     }
   });
   controlbutton2.$on(
     "click",
-    /*click_handler*/
-    ctx[7]
+    /*goBack*/
+    ctx[20]
   );
   controlbutton3 = new control_button_default({
     props: {
-      label: "Go to next daily plan",
-      $$slots: { default: [create_default_slot_1] },
+      label: "Go to file",
+      $$slots: { default: [create_default_slot_6] },
       $$scope: { ctx }
     }
   });
   controlbutton3.$on(
     "click",
-    /*goForward*/
-    ctx[5]
+    /*click_handler*/
+    ctx[25]
   );
   controlbutton4 = new control_button_default({
+    props: {
+      label: "Go to next daily plan",
+      $$slots: { default: [create_default_slot_5] },
+      $$scope: { ctx }
+    }
+  });
+  controlbutton4.$on(
+    "click",
+    /*goForward*/
+    ctx[21]
+  );
+  controlbutton5 = new control_button_default({
+    props: {
+      isActive: (
+        /*filterVisible*/
+        ctx[3]
+      ),
+      label: "Dataview source",
+      $$slots: { default: [create_default_slot_4] },
+      $$scope: { ctx }
+    }
+  });
+  controlbutton5.$on(
+    "click",
+    /*toggleFilter*/
+    ctx[19]
+  );
+  controlbutton6 = new control_button_default({
+    props: {
+      isActive: (
+        /*helpVisible*/
+        ctx[2]
+      ),
+      label: "Help",
+      $$slots: { default: [create_default_slot_3] },
+      $$scope: { ctx }
+    }
+  });
+  controlbutton6.$on(
+    "click",
+    /*toggleHelp*/
+    ctx[18]
+  );
+  controlbutton7 = new control_button_default({
     props: {
       isActive: (
         /*settingsVisible*/
         ctx[1]
       ),
       label: "Settings",
-      $$slots: { default: [create_default_slot] },
+      $$slots: { default: [create_default_slot_2] },
       $$scope: { ctx }
     }
   });
-  controlbutton4.$on(
+  controlbutton7.$on(
     "click",
     /*toggleSettings*/
-    ctx[3]
+    ctx[17]
   );
-  let if_block = (
+  let if_block0 = (
+    /*$settings*/
+    ctx[4].showDataviewMigrationWarning && create_if_block_6(ctx)
+  );
+  let if_block1 = !/*$dataviewLoaded*/
+  ctx[6] && create_if_block_5(ctx);
+  let if_block2 = (
+    /*filterVisible*/
+    ctx[3] && create_if_block_2(ctx)
+  );
+  let if_block3 = (
+    /*helpVisible*/
+    ctx[2] && create_if_block_12(ctx)
+  );
+  let if_block4 = (
     /*settingsVisible*/
-    ctx[1] && create_if_block(ctx)
+    ctx[1] && create_if_block3(ctx)
   );
   return {
     c() {
       div1 = element("div");
       div0 = element("div");
-      div = element("div");
       create_component(controlbutton0.$$.fragment);
       t0 = space();
-      div_1 = element("div");
       create_component(controlbutton1.$$.fragment);
       t1 = space();
+      div = element("div");
       create_component(controlbutton2.$$.fragment);
       t2 = space();
-      div_2 = element("div");
       create_component(controlbutton3.$$.fragment);
       t3 = space();
-      div_3 = element("div");
+      div_1 = element("div");
       create_component(controlbutton4.$$.fragment);
       t4 = space();
-      if (if_block)
-        if_block.c();
+      create_component(controlbutton5.$$.fragment);
+      t5 = space();
+      create_component(controlbutton6.$$.fragment);
+      t6 = space();
+      create_component(controlbutton7.$$.fragment);
+      t7 = space();
+      if (if_block0)
+        if_block0.c();
+      t8 = space();
+      if (if_block1)
+        if_block1.c();
+      t9 = space();
+      if (if_block2)
+        if_block2.c();
+      t10 = space();
+      if (if_block3)
+        if_block3.c();
+      t11 = space();
+      if (if_block4)
+        if_block4.c();
       set_style(div, "display", "contents");
-      set_style(div, "--justify-self", "flex-start");
+      set_style(div, "--grid-column-start", "4");
+      set_style(div, "--justify-self", "flex-end");
       set_style(div_1, "display", "contents");
-      set_style(div_1, "--justify-self", "flex-end");
-      set_style(div_2, "display", "contents");
-      set_style(div_2, "--justify-self", "flex-start");
-      set_style(div_3, "display", "contents");
-      set_style(div_3, "--justify-self", "flex-end");
-      attr(div0, "class", "header svelte-kuebme");
-      attr(div1, "class", "controls svelte-kuebme");
+      set_style(div_1, "--justify-self", "flex-start");
+      attr(div0, "class", "header svelte-honx3r");
+      attr(div1, "class", "controls svelte-honx3r");
     },
     m(target, anchor) {
       insert(target, div1, anchor);
       append(div1, div0);
-      append(div0, div);
-      mount_component(controlbutton0, div, null);
+      mount_component(controlbutton0, div0, null);
       append(div0, t0);
-      append(div0, div_1);
-      mount_component(controlbutton1, div_1, null);
+      mount_component(controlbutton1, div0, null);
       append(div0, t1);
-      mount_component(controlbutton2, div0, null);
+      append(div0, div);
+      mount_component(controlbutton2, div, null);
       append(div0, t2);
-      append(div0, div_2);
-      mount_component(controlbutton3, div_2, null);
+      mount_component(controlbutton3, div0, null);
       append(div0, t3);
-      append(div0, div_3);
-      mount_component(controlbutton4, div_3, null);
-      append(div1, t4);
-      if (if_block)
-        if_block.m(div1, null);
+      append(div0, div_1);
+      mount_component(controlbutton4, div_1, null);
+      append(div0, t4);
+      mount_component(controlbutton5, div0, null);
+      append(div0, t5);
+      mount_component(controlbutton6, div0, null);
+      append(div0, t6);
+      mount_component(controlbutton7, div0, null);
+      append(div1, t7);
+      if (if_block0)
+        if_block0.m(div1, null);
+      append(div1, t8);
+      if (if_block1)
+        if_block1.m(div1, null);
+      append(div1, t9);
+      if (if_block2)
+        if_block2.m(div1, null);
+      append(div1, t10);
+      if (if_block3)
+        if_block3.m(div1, null);
+      append(div1, t11);
+      if (if_block4)
+        if_block4.m(div1, null);
       current = true;
     },
-    p(ctx2, [dirty]) {
+    p(ctx2, dirty) {
       const controlbutton0_changes = {};
-      if (dirty & /*$$scope*/
-      16384) {
+      if (dirty[1] & /*$$scope*/
+      2) {
         controlbutton0_changes.$$scope = { dirty, ctx: ctx2 };
       }
       controlbutton0.$set(controlbutton0_changes);
       const controlbutton1_changes = {};
-      if (dirty & /*$$scope*/
-      16384) {
+      if (dirty[1] & /*$$scope*/
+      2) {
         controlbutton1_changes.$$scope = { dirty, ctx: ctx2 };
       }
       controlbutton1.$set(controlbutton1_changes);
       const controlbutton2_changes = {};
-      if (dirty & /*$$scope, day*/
-      16385) {
+      if (dirty[1] & /*$$scope*/
+      2) {
         controlbutton2_changes.$$scope = { dirty, ctx: ctx2 };
       }
       controlbutton2.$set(controlbutton2_changes);
       const controlbutton3_changes = {};
-      if (dirty & /*$$scope*/
-      16384) {
+      if (dirty[0] & /*day, $settings*/
+      17 | dirty[1] & /*$$scope*/
+      2) {
         controlbutton3_changes.$$scope = { dirty, ctx: ctx2 };
       }
       controlbutton3.$set(controlbutton3_changes);
       const controlbutton4_changes = {};
-      if (dirty & /*settingsVisible*/
-      2)
-        controlbutton4_changes.isActive = /*settingsVisible*/
-        ctx2[1];
-      if (dirty & /*$$scope*/
-      16384) {
+      if (dirty[1] & /*$$scope*/
+      2) {
         controlbutton4_changes.$$scope = { dirty, ctx: ctx2 };
       }
       controlbutton4.$set(controlbutton4_changes);
+      const controlbutton5_changes = {};
+      if (dirty[0] & /*filterVisible*/
+      8)
+        controlbutton5_changes.isActive = /*filterVisible*/
+        ctx2[3];
+      if (dirty[0] & /*$sourceIsEmpty*/
+      32 | dirty[1] & /*$$scope*/
+      2) {
+        controlbutton5_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      controlbutton5.$set(controlbutton5_changes);
+      const controlbutton6_changes = {};
+      if (dirty[0] & /*helpVisible*/
+      4)
+        controlbutton6_changes.isActive = /*helpVisible*/
+        ctx2[2];
+      if (dirty[1] & /*$$scope*/
+      2) {
+        controlbutton6_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      controlbutton6.$set(controlbutton6_changes);
+      const controlbutton7_changes = {};
+      if (dirty[0] & /*settingsVisible*/
+      2)
+        controlbutton7_changes.isActive = /*settingsVisible*/
+        ctx2[1];
+      if (dirty[1] & /*$$scope*/
+      2) {
+        controlbutton7_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      controlbutton7.$set(controlbutton7_changes);
+      if (
+        /*$settings*/
+        ctx2[4].showDataviewMigrationWarning
+      ) {
+        if (if_block0) {
+          if_block0.p(ctx2, dirty);
+          if (dirty[0] & /*$settings*/
+          16) {
+            transition_in(if_block0, 1);
+          }
+        } else {
+          if_block0 = create_if_block_6(ctx2);
+          if_block0.c();
+          transition_in(if_block0, 1);
+          if_block0.m(div1, t8);
+        }
+      } else if (if_block0) {
+        group_outros();
+        transition_out(if_block0, 1, 1, () => {
+          if_block0 = null;
+        });
+        check_outros();
+      }
+      if (!/*$dataviewLoaded*/
+      ctx2[6]) {
+        if (if_block1) {
+          if (dirty[0] & /*$dataviewLoaded*/
+          64) {
+            transition_in(if_block1, 1);
+          }
+        } else {
+          if_block1 = create_if_block_5(ctx2);
+          if_block1.c();
+          transition_in(if_block1, 1);
+          if_block1.m(div1, t9);
+        }
+      } else if (if_block1) {
+        group_outros();
+        transition_out(if_block1, 1, 1, () => {
+          if_block1 = null;
+        });
+        check_outros();
+      }
+      if (
+        /*filterVisible*/
+        ctx2[3]
+      ) {
+        if (if_block2) {
+          if_block2.p(ctx2, dirty);
+          if (dirty[0] & /*filterVisible*/
+          8) {
+            transition_in(if_block2, 1);
+          }
+        } else {
+          if_block2 = create_if_block_2(ctx2);
+          if_block2.c();
+          transition_in(if_block2, 1);
+          if_block2.m(div1, t10);
+        }
+      } else if (if_block2) {
+        group_outros();
+        transition_out(if_block2, 1, 1, () => {
+          if_block2 = null;
+        });
+        check_outros();
+      }
+      if (
+        /*helpVisible*/
+        ctx2[2]
+      ) {
+        if (if_block3) {
+        } else {
+          if_block3 = create_if_block_12(ctx2);
+          if_block3.c();
+          if_block3.m(div1, t11);
+        }
+      } else if (if_block3) {
+        if_block3.d(1);
+        if_block3 = null;
+      }
       if (
         /*settingsVisible*/
         ctx2[1]
       ) {
-        if (if_block) {
-          if_block.p(ctx2, dirty);
+        if (if_block4) {
+          if_block4.p(ctx2, dirty);
+          if (dirty[0] & /*settingsVisible*/
+          2) {
+            transition_in(if_block4, 1);
+          }
         } else {
-          if_block = create_if_block(ctx2);
-          if_block.c();
-          if_block.m(div1, null);
+          if_block4 = create_if_block3(ctx2);
+          if_block4.c();
+          transition_in(if_block4, 1);
+          if_block4.m(div1, null);
         }
-      } else if (if_block) {
-        if_block.d(1);
-        if_block = null;
+      } else if (if_block4) {
+        group_outros();
+        transition_out(if_block4, 1, 1, () => {
+          if_block4 = null;
+        });
+        check_outros();
       }
     },
     i(local) {
@@ -11906,6 +30079,13 @@ function create_fragment7(ctx) {
       transition_in(controlbutton2.$$.fragment, local);
       transition_in(controlbutton3.$$.fragment, local);
       transition_in(controlbutton4.$$.fragment, local);
+      transition_in(controlbutton5.$$.fragment, local);
+      transition_in(controlbutton6.$$.fragment, local);
+      transition_in(controlbutton7.$$.fragment, local);
+      transition_in(if_block0);
+      transition_in(if_block1);
+      transition_in(if_block2);
+      transition_in(if_block4);
       current = true;
     },
     o(local) {
@@ -11914,6 +30094,13 @@ function create_fragment7(ctx) {
       transition_out(controlbutton2.$$.fragment, local);
       transition_out(controlbutton3.$$.fragment, local);
       transition_out(controlbutton4.$$.fragment, local);
+      transition_out(controlbutton5.$$.fragment, local);
+      transition_out(controlbutton6.$$.fragment, local);
+      transition_out(controlbutton7.$$.fragment, local);
+      transition_out(if_block0);
+      transition_out(if_block1);
+      transition_out(if_block2);
+      transition_out(if_block4);
       current = false;
     },
     d(detaching) {
@@ -11924,26 +30111,57 @@ function create_fragment7(ctx) {
       destroy_component(controlbutton2);
       destroy_component(controlbutton3);
       destroy_component(controlbutton4);
-      if (if_block)
-        if_block.d();
+      destroy_component(controlbutton5);
+      destroy_component(controlbutton6);
+      destroy_component(controlbutton7);
+      if (if_block0)
+        if_block0.d();
+      if (if_block1)
+        if_block1.d();
+      if (if_block2)
+        if_block2.d();
+      if (if_block3)
+        if_block3.d();
+      if (if_block4)
+        if_block4.d();
     }
   };
 }
-function instance3($$self, $$props, $$invalidate) {
-  let $visibleDayInTimeline;
+function instance25($$self, $$props, $$invalidate) {
   let $settings;
-  component_subscribe($$self, visibleDayInTimeline, ($$value) => $$invalidate(10, $visibleDayInTimeline = $$value));
-  component_subscribe($$self, settings, ($$value) => $$invalidate(2, $settings = $$value));
+  let $visibleDayInTimeline;
+  let $sourceIsEmpty;
+  let $dataviewLoaded;
+  let $dataviewSourceInput;
+  let $dataviewErrorMessage;
+  component_subscribe($$self, settings, ($$value) => $$invalidate(4, $settings = $$value));
+  component_subscribe($$self, visibleDayInTimeline, ($$value) => $$invalidate(30, $visibleDayInTimeline = $$value));
   let { day } = $$props;
+  const { obsidianFacade, initWeeklyView, refreshTasks, dataviewLoaded } = getContext(obsidianContext);
+  component_subscribe($$self, dataviewLoaded, (value) => $$invalidate(6, $dataviewLoaded = value));
+  const { sourceIsEmpty, errorMessage: dataviewErrorMessage, dataviewSourceInput } = useDataviewSource({ refreshTasks });
+  component_subscribe($$self, sourceIsEmpty, (value) => $$invalidate(5, $sourceIsEmpty = value));
+  component_subscribe($$self, dataviewErrorMessage, (value) => $$invalidate(8, $dataviewErrorMessage = value));
+  component_subscribe($$self, dataviewSourceInput, (value) => $$invalidate(7, $dataviewSourceInput = value));
+  const startHourOptions = (0, import_fp4.range)(0, 13).map(String);
+  const zoomLevelOptions = (0, import_fp4.range)(1, 5).map(String);
   let settingsVisible = false;
+  let helpVisible = false;
+  let filterVisible = false;
   function toggleSettings() {
     $$invalidate(1, settingsVisible = !settingsVisible);
+  }
+  function toggleHelp() {
+    $$invalidate(2, helpVisible = !helpVisible);
+  }
+  function toggleFilter() {
+    $$invalidate(3, filterVisible = !filterVisible);
   }
   function goBack() {
     return __awaiter(this, void 0, void 0, function* () {
       const previousDay = $visibleDayInTimeline.clone().subtract(1, "day");
       const previousNote = yield createDailyNoteIfNeeded(previousDay);
-      yield openFileInEditor(previousNote);
+      yield obsidianFacade.openFileInEditor(previousNote);
       set_store_value(visibleDayInTimeline, $visibleDayInTimeline = previousDay, $visibleDayInTimeline);
     });
   }
@@ -11951,26 +30169,38 @@ function instance3($$self, $$props, $$invalidate) {
     return __awaiter(this, void 0, void 0, function* () {
       const nextDay = $visibleDayInTimeline.clone().add(1, "day");
       const nextNote = yield createDailyNoteIfNeeded(nextDay);
-      yield openFileInEditor(nextNote);
+      yield obsidianFacade.openFileInEditor(nextNote);
       set_store_value(visibleDayInTimeline, $visibleDayInTimeline = nextDay, $visibleDayInTimeline);
     });
   }
   function goToToday() {
     return __awaiter(this, void 0, void 0, function* () {
       const noteForToday = yield createDailyNoteIfNeeded(window.moment());
-      yield openFileInEditor(noteForToday);
+      yield obsidianFacade.openFileInEditor(noteForToday);
     });
+  }
+  function handleStartHourInput(event) {
+    set_store_value(settings, $settings.startHour = Number(event.currentTarget.value), $settings);
+  }
+  function handleZoomLevelInput(event) {
+    set_store_value(settings, $settings.zoomLevel = Number(event.currentTarget.value), $settings);
   }
   const click_handler = async () => {
     const note = await createDailyNoteIfNeeded(day);
-    await openFileInEditor(note);
+    await obsidianFacade.openFileInEditor(note);
   };
-  function select_change_handler() {
-    $settings.zoomLevel = select_value(this);
-    settings.set($settings);
-  }
   const click_handler_1 = () => {
+    set_store_value(settings, $settings.showDataviewMigrationWarning = false, $settings);
+  };
+  function input_input_handler() {
+    $dataviewSourceInput = this.value;
+    dataviewSourceInput.set($dataviewSourceInput);
+  }
+  const click_handler_2 = () => {
     set_store_value(settings, $settings.centerNeedle = !$settings.centerNeedle, $settings);
+  };
+  const click_handler_3 = () => {
+    set_store_value(settings, $settings.showHelp = !$settings.showHelp, $settings);
   };
   $$self.$$set = ($$props2) => {
     if ("day" in $$props2)
@@ -11979,2364 +30209,49 @@ function instance3($$self, $$props, $$invalidate) {
   return [
     day,
     settingsVisible,
+    helpVisible,
+    filterVisible,
     $settings,
+    $sourceIsEmpty,
+    $dataviewLoaded,
+    $dataviewSourceInput,
+    $dataviewErrorMessage,
+    obsidianFacade,
+    initWeeklyView,
+    dataviewLoaded,
+    sourceIsEmpty,
+    dataviewErrorMessage,
+    dataviewSourceInput,
+    startHourOptions,
+    zoomLevelOptions,
     toggleSettings,
+    toggleHelp,
+    toggleFilter,
     goBack,
     goForward,
     goToToday,
+    handleStartHourInput,
+    handleZoomLevelInput,
     click_handler,
-    select_change_handler,
-    click_handler_1
+    click_handler_1,
+    input_input_handler,
+    click_handler_2,
+    click_handler_3
   ];
 }
-var Controls = class extends SvelteComponent {
+var Timeline_controls = class extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance3, create_fragment7, safe_not_equal, { day: 0 }, add_css3);
+    init(this, options, instance25, create_fragment25, safe_not_equal, { day: 0 }, add_css9, [-1, -1]);
   }
 };
-var controls_default = Controls;
-
-// src/store/current-time.ts
-var currentTime = readable(window.moment(), (set) => {
-  const interval = setInterval(() => {
-    set(window.moment());
-  }, 1e3);
-  return () => {
-    clearInterval(interval);
-  };
-});
-
-// src/ui/components/needle.svelte
-function add_css4(target) {
-  append_styles(target, "svelte-1rbwtw9", ".needle.svelte-1rbwtw9{height:2px;background-color:var(--color-accent)}");
-}
-function create_fragment8(ctx) {
-  let div;
-  let style_transform = `translateY(${/*coords*/
-  ctx[1]}px)`;
-  return {
-    c() {
-      div = element("div");
-      attr(div, "class", "needle absolute-stretch-x svelte-1rbwtw9");
-      set_style(div, "transform", style_transform);
-    },
-    m(target, anchor) {
-      insert(target, div, anchor);
-      ctx[5](div);
-    },
-    p(ctx2, [dirty]) {
-      if (dirty & /*coords*/
-      2 && style_transform !== (style_transform = `translateY(${/*coords*/
-      ctx2[1]}px)`)) {
-        set_style(div, "transform", style_transform);
-      }
-    },
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (detaching)
-        detach(div);
-      ctx[5](null);
-    }
-  };
-}
-function instance4($$self, $$props, $$invalidate) {
-  let $currentTime;
-  let $timeToTimelineOffset;
-  let $visibleDayInTimeline;
-  let $settings;
-  component_subscribe($$self, currentTime, ($$value) => $$invalidate(3, $currentTime = $$value));
-  component_subscribe($$self, timeToTimelineOffset, ($$value) => $$invalidate(4, $timeToTimelineOffset = $$value));
-  component_subscribe($$self, visibleDayInTimeline, ($$value) => $$invalidate(6, $visibleDayInTimeline = $$value));
-  component_subscribe($$self, settings, ($$value) => $$invalidate(7, $settings = $$value));
-  let { autoScrollBlocked = false } = $$props;
-  let el;
-  let coords = $timeToTimelineOffset(getMinutesSinceMidnight($currentTime));
-  function scrollIntoView() {
-    if ($settings.centerNeedle && !autoScrollBlocked && isToday($visibleDayInTimeline)) {
-      el === null || el === void 0 ? void 0 : el.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
-  }
-  function div_binding($$value) {
-    binding_callbacks[$$value ? "unshift" : "push"](() => {
-      el = $$value;
-      $$invalidate(0, el);
-    });
-  }
-  $$self.$$set = ($$props2) => {
-    if ("autoScrollBlocked" in $$props2)
-      $$invalidate(2, autoScrollBlocked = $$props2.autoScrollBlocked);
-  };
-  $$self.$$.update = () => {
-    if ($$self.$$.dirty & /*$timeToTimelineOffset, $currentTime*/
-    24) {
-      $: {
-        $$invalidate(1, coords = $timeToTimelineOffset(getMinutesSinceMidnight($currentTime)));
-        scrollIntoView();
-      }
-    }
-  };
-  return [
-    el,
-    coords,
-    autoScrollBlocked,
-    $currentTime,
-    $timeToTimelineOffset,
-    div_binding
-  ];
-}
-var Needle = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance4, create_fragment8, safe_not_equal, { autoScrollBlocked: 2 }, add_css4);
-  }
-};
-var needle_default = Needle;
-
-// src/ui/components/ruler.svelte
-function add_css5(target) {
-  append_styles(target, "svelte-y3mmrv", ".hours-container.svelte-y3mmrv{position:sticky;z-index:5;left:0;display:flex;flex:0 0 30px;flex-direction:column;background-color:var(--background-primary);border-right:1px solid var(--background-modifier-border)}.hour.svelte-y3mmrv{display:flex;flex:1 0 0;border-bottom:1px solid var(--background-modifier-border)}.hour-number-container.svelte-y3mmrv{display:flex;flex:0 0 30px;align-self:flex-start;justify-content:center;font-size:var(--nav-item-size);color:var(--text-muted)}");
-}
-function get_each_context3(ctx, list, i) {
-  const child_ctx = ctx.slice();
-  child_ctx[2] = list[i];
-  return child_ctx;
-}
-function create_each_block3(ctx) {
-  let div1;
-  let div0;
-  let t0_value = (
-    /*hour*/
-    ctx[2] + ""
-  );
-  let t0;
-  let t1;
-  let style_height = `${/*$hourSize*/
-  ctx[1]}px`;
-  return {
-    c() {
-      div1 = element("div");
-      div0 = element("div");
-      t0 = text(t0_value);
-      t1 = space();
-      attr(div0, "class", "hour-number-container svelte-y3mmrv");
-      attr(div1, "class", "hour svelte-y3mmrv");
-      set_style(div1, "height", style_height);
-    },
-    m(target, anchor) {
-      insert(target, div1, anchor);
-      append(div1, div0);
-      append(div0, t0);
-      append(div1, t1);
-    },
-    p(ctx2, dirty) {
-      if (dirty & /*visibleHours*/
-      1 && t0_value !== (t0_value = /*hour*/
-      ctx2[2] + ""))
-        set_data(t0, t0_value);
-      if (dirty & /*$hourSize*/
-      2 && style_height !== (style_height = `${/*$hourSize*/
-      ctx2[1]}px`)) {
-        set_style(div1, "height", style_height);
-      }
-    },
-    d(detaching) {
-      if (detaching)
-        detach(div1);
-    }
-  };
-}
-function create_fragment9(ctx) {
-  let div;
-  let each_value = (
-    /*visibleHours*/
-    ctx[0]
-  );
-  let each_blocks = [];
-  for (let i = 0; i < each_value.length; i += 1) {
-    each_blocks[i] = create_each_block3(get_each_context3(ctx, each_value, i));
-  }
-  return {
-    c() {
-      div = element("div");
-      for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].c();
-      }
-      attr(div, "class", "hours-container svelte-y3mmrv");
-    },
-    m(target, anchor) {
-      insert(target, div, anchor);
-      for (let i = 0; i < each_blocks.length; i += 1) {
-        if (each_blocks[i]) {
-          each_blocks[i].m(div, null);
-        }
-      }
-    },
-    p(ctx2, [dirty]) {
-      if (dirty & /*$hourSize, visibleHours*/
-      3) {
-        each_value = /*visibleHours*/
-        ctx2[0];
-        let i;
-        for (i = 0; i < each_value.length; i += 1) {
-          const child_ctx = get_each_context3(ctx2, each_value, i);
-          if (each_blocks[i]) {
-            each_blocks[i].p(child_ctx, dirty);
-          } else {
-            each_blocks[i] = create_each_block3(child_ctx);
-            each_blocks[i].c();
-            each_blocks[i].m(div, null);
-          }
-        }
-        for (; i < each_blocks.length; i += 1) {
-          each_blocks[i].d(1);
-        }
-        each_blocks.length = each_value.length;
-      }
-    },
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (detaching)
-        detach(div);
-      destroy_each(each_blocks, detaching);
-    }
-  };
-}
-function instance5($$self, $$props, $$invalidate) {
-  let $hourSize;
-  component_subscribe($$self, hourSize, ($$value) => $$invalidate(1, $hourSize = $$value));
-  let { visibleHours: visibleHours2 } = $$props;
-  $$self.$$set = ($$props2) => {
-    if ("visibleHours" in $$props2)
-      $$invalidate(0, visibleHours2 = $$props2.visibleHours);
-  };
-  return [visibleHours2, $hourSize];
-}
-var Ruler = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance5, create_fragment9, safe_not_equal, { visibleHours: 0 }, add_css5);
-  }
-};
-var ruler_default = Ruler;
-
-// src/store/util/create-watchable.ts
-function createWatchable() {
-  const { subscribe: subscribe2, set } = writable();
-  function trigger() {
-    set({});
-  }
-  return {
-    subscribe: subscribe2,
-    trigger
-  };
-}
-
-// src/store/edit-events.ts
-var editConfirmation = createWatchable();
-var editCancellation = createWatchable();
-
-// src/ui/hooks/use-create.ts
-var import_obsidian_daily_notes_interface4 = __toESM(require_main());
-function useCreate() {
-  const creating = writable(false);
-  function startCreation() {
-    creating.set(true);
-  }
-  async function confirmCreation(tasks, day, pointerYOffset) {
-    creating.set(false);
-    const newPlanItem = await createPlanItemFromTimeline(day, pointerYOffset);
-    const filePath = (0, import_obsidian_daily_notes_interface4.getDailyNote)(day, (0, import_obsidian_daily_notes_interface4.getAllDailyNotes)()).path;
-    await appendToPlan(filePath, newPlanItem);
-    tasks.update((previous) => addPlacing([...previous, newPlanItem]));
-  }
-  return {
-    creating,
-    startCreation,
-    confirmCreation
-  };
-}
-async function createPlanItemFromTimeline(day, pointerYOffset) {
-  const startMinutes = getTimeFromYOffset(roundToSnapStep(pointerYOffset));
-  const endMinutes = startMinutes + DEFAULT_DURATION_MINUTES;
-  const { path } = await createDailyNoteIfNeeded(day);
-  return {
-    id: String(Math.random()),
-    startMinutes,
-    durationMinutes: DEFAULT_DURATION_MINUTES,
-    endMinutes,
-    firstLineText: "New item",
-    startTime: minutesToMomentOfDay(startMinutes, day),
-    endTime: minutesToMomentOfDay(endMinutes, day),
-    // todo: no hardcode
-    listTokens: "- ",
-    location: {
-      path
-    }
-  };
-}
-
-// src/ui/components/task.svelte
-var import_chroma_js2 = __toESM(require_chroma());
-
-// node_modules/lucide-svelte/dist/esm/defaultAttributes.js
-var defaultAttributes = {
-  xmlns: "http://www.w3.org/2000/svg",
-  width: 24,
-  height: 24,
-  viewBox: "0 0 24 24",
-  fill: "none",
-  stroke: "currentColor",
-  "stroke-width": 2,
-  "stroke-linecap": "round",
-  "stroke-linejoin": "round"
-};
-
-// node_modules/lucide-svelte/dist/esm/Icon.svelte.js
-function get_each_context4(ctx, list, i) {
-  const child_ctx = ctx.slice();
-  child_ctx[10] = list[i][0];
-  child_ctx[11] = list[i][1];
-  return child_ctx;
-}
-function create_dynamic_element(ctx) {
-  let svelte_element;
-  let svelte_element_levels = [
-    /*attrs*/
-    ctx[11]
-  ];
-  let svelte_element_data = {};
-  for (let i = 0; i < svelte_element_levels.length; i += 1) {
-    svelte_element_data = assign(svelte_element_data, svelte_element_levels[i]);
-  }
-  return {
-    c() {
-      svelte_element = svg_element(
-        /*tag*/
-        ctx[10]
-      );
-      this.h();
-    },
-    l(nodes) {
-      svelte_element = claim_svg_element(
-        nodes,
-        /*tag*/
-        ctx[10],
-        {}
-      );
-      children(svelte_element).forEach(detach);
-      this.h();
-    },
-    h() {
-      set_svg_attributes(svelte_element, svelte_element_data);
-    },
-    m(target, anchor) {
-      insert_hydration(target, svelte_element, anchor);
-    },
-    p(ctx2, dirty) {
-      svelte_element_data = get_spread_update(svelte_element_levels, [dirty & /*iconNode*/
-      32 && /*attrs*/
-      ctx2[11]]);
-      set_svg_attributes(svelte_element, svelte_element_data);
-    },
-    d(detaching) {
-      if (detaching)
-        detach(svelte_element);
-    }
-  };
-}
-function create_each_block4(ctx) {
-  let previous_tag = (
-    /*tag*/
-    ctx[10]
-  );
-  let svelte_element_anchor;
-  let svelte_element = (
-    /*tag*/
-    ctx[10] && create_dynamic_element(ctx)
-  );
-  return {
-    c() {
-      if (svelte_element)
-        svelte_element.c();
-      svelte_element_anchor = empty();
-    },
-    l(nodes) {
-      if (svelte_element)
-        svelte_element.l(nodes);
-      svelte_element_anchor = empty();
-    },
-    m(target, anchor) {
-      if (svelte_element)
-        svelte_element.m(target, anchor);
-      insert_hydration(target, svelte_element_anchor, anchor);
-    },
-    p(ctx2, dirty) {
-      if (
-        /*tag*/
-        ctx2[10]
-      ) {
-        if (!previous_tag) {
-          svelte_element = create_dynamic_element(ctx2);
-          svelte_element.c();
-          svelte_element.m(svelte_element_anchor.parentNode, svelte_element_anchor);
-        } else if (safe_not_equal(
-          previous_tag,
-          /*tag*/
-          ctx2[10]
-        )) {
-          svelte_element.d(1);
-          svelte_element = create_dynamic_element(ctx2);
-          svelte_element.c();
-          svelte_element.m(svelte_element_anchor.parentNode, svelte_element_anchor);
-        } else {
-          svelte_element.p(ctx2, dirty);
-        }
-      } else if (previous_tag) {
-        svelte_element.d(1);
-        svelte_element = null;
-      }
-      previous_tag = /*tag*/
-      ctx2[10];
-    },
-    d(detaching) {
-      if (detaching)
-        detach(svelte_element_anchor);
-      if (svelte_element)
-        svelte_element.d(detaching);
-    }
-  };
-}
-function create_fragment10(ctx) {
-  var _a;
-  let svg;
-  let each_1_anchor;
-  let svg_stroke_width_value;
-  let svg_class_value;
-  let current;
-  let each_value = (
-    /*iconNode*/
-    ctx[5]
-  );
-  let each_blocks = [];
-  for (let i = 0; i < each_value.length; i += 1) {
-    each_blocks[i] = create_each_block4(get_each_context4(ctx, each_value, i));
-  }
-  const default_slot_template = (
-    /*#slots*/
-    ctx[9].default
-  );
-  const default_slot = create_slot(
-    default_slot_template,
-    ctx,
-    /*$$scope*/
-    ctx[8],
-    null
-  );
-  let svg_levels = [
-    defaultAttributes,
-    /*$$restProps*/
-    ctx[6],
-    { width: (
-      /*size*/
-      ctx[2]
-    ) },
-    { height: (
-      /*size*/
-      ctx[2]
-    ) },
-    { stroke: (
-      /*color*/
-      ctx[1]
-    ) },
-    {
-      "stroke-width": svg_stroke_width_value = /*absoluteStrokeWidth*/
-      ctx[4] ? Number(
-        /*strokeWidth*/
-        ctx[3]
-      ) * 24 / Number(
-        /*size*/
-        ctx[2]
-      ) : (
-        /*strokeWidth*/
-        ctx[3]
-      )
-    },
-    {
-      class: svg_class_value = `lucide-icon lucide lucide-${/*name*/
-      ctx[0]} ${/*$$props*/
-      (_a = ctx[7].class) != null ? _a : ""}`
-    }
-  ];
-  let svg_data = {};
-  for (let i = 0; i < svg_levels.length; i += 1) {
-    svg_data = assign(svg_data, svg_levels[i]);
-  }
-  return {
-    c() {
-      svg = svg_element("svg");
-      for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].c();
-      }
-      each_1_anchor = empty();
-      if (default_slot)
-        default_slot.c();
-      this.h();
-    },
-    l(nodes) {
-      svg = claim_svg_element(nodes, "svg", {
-        width: true,
-        height: true,
-        stroke: true,
-        "stroke-width": true,
-        class: true
-      });
-      var svg_nodes = children(svg);
-      for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].l(svg_nodes);
-      }
-      each_1_anchor = empty();
-      if (default_slot)
-        default_slot.l(svg_nodes);
-      svg_nodes.forEach(detach);
-      this.h();
-    },
-    h() {
-      set_svg_attributes(svg, svg_data);
-    },
-    m(target, anchor) {
-      insert_hydration(target, svg, anchor);
-      for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].m(svg, null);
-      }
-      append_hydration(svg, each_1_anchor);
-      if (default_slot) {
-        default_slot.m(svg, null);
-      }
-      current = true;
-    },
-    p(ctx2, [dirty]) {
-      var _a2;
-      if (dirty & /*iconNode*/
-      32) {
-        each_value = /*iconNode*/
-        ctx2[5];
-        let i;
-        for (i = 0; i < each_value.length; i += 1) {
-          const child_ctx = get_each_context4(ctx2, each_value, i);
-          if (each_blocks[i]) {
-            each_blocks[i].p(child_ctx, dirty);
-          } else {
-            each_blocks[i] = create_each_block4(child_ctx);
-            each_blocks[i].c();
-            each_blocks[i].m(svg, each_1_anchor);
-          }
-        }
-        for (; i < each_blocks.length; i += 1) {
-          each_blocks[i].d(1);
-        }
-        each_blocks.length = each_value.length;
-      }
-      if (default_slot) {
-        if (default_slot.p && (!current || dirty & /*$$scope*/
-        256)) {
-          update_slot_base(
-            default_slot,
-            default_slot_template,
-            ctx2,
-            /*$$scope*/
-            ctx2[8],
-            !current ? get_all_dirty_from_scope(
-              /*$$scope*/
-              ctx2[8]
-            ) : get_slot_changes(
-              default_slot_template,
-              /*$$scope*/
-              ctx2[8],
-              dirty,
-              null
-            ),
-            null
-          );
-        }
-      }
-      set_svg_attributes(svg, svg_data = get_spread_update(svg_levels, [
-        defaultAttributes,
-        dirty & /*$$restProps*/
-        64 && /*$$restProps*/
-        ctx2[6],
-        (!current || dirty & /*size*/
-        4) && { width: (
-          /*size*/
-          ctx2[2]
-        ) },
-        (!current || dirty & /*size*/
-        4) && { height: (
-          /*size*/
-          ctx2[2]
-        ) },
-        (!current || dirty & /*color*/
-        2) && { stroke: (
-          /*color*/
-          ctx2[1]
-        ) },
-        (!current || dirty & /*absoluteStrokeWidth, strokeWidth, size*/
-        28 && svg_stroke_width_value !== (svg_stroke_width_value = /*absoluteStrokeWidth*/
-        ctx2[4] ? Number(
-          /*strokeWidth*/
-          ctx2[3]
-        ) * 24 / Number(
-          /*size*/
-          ctx2[2]
-        ) : (
-          /*strokeWidth*/
-          ctx2[3]
-        ))) && { "stroke-width": svg_stroke_width_value },
-        (!current || dirty & /*name, $$props*/
-        129 && svg_class_value !== (svg_class_value = `lucide-icon lucide lucide-${/*name*/
-        ctx2[0]} ${/*$$props*/
-        (_a2 = ctx2[7].class) != null ? _a2 : ""}`)) && { class: svg_class_value }
-      ]));
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(default_slot, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(default_slot, local);
-      current = false;
-    },
-    d(detaching) {
-      if (detaching)
-        detach(svg);
-      destroy_each(each_blocks, detaching);
-      if (default_slot)
-        default_slot.d(detaching);
-    }
-  };
-}
-function instance6($$self, $$props, $$invalidate) {
-  const omit_props_names = ["name", "color", "size", "strokeWidth", "absoluteStrokeWidth", "iconNode"];
-  let $$restProps = compute_rest_props($$props, omit_props_names);
-  let { $$slots: slots = {}, $$scope } = $$props;
-  let { name } = $$props;
-  let { color = "currentColor" } = $$props;
-  let { size = 24 } = $$props;
-  let { strokeWidth = 2 } = $$props;
-  let { absoluteStrokeWidth = false } = $$props;
-  let { iconNode } = $$props;
-  $$self.$$set = ($$new_props) => {
-    $$invalidate(7, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
-    $$invalidate(6, $$restProps = compute_rest_props($$props, omit_props_names));
-    if ("name" in $$new_props)
-      $$invalidate(0, name = $$new_props.name);
-    if ("color" in $$new_props)
-      $$invalidate(1, color = $$new_props.color);
-    if ("size" in $$new_props)
-      $$invalidate(2, size = $$new_props.size);
-    if ("strokeWidth" in $$new_props)
-      $$invalidate(3, strokeWidth = $$new_props.strokeWidth);
-    if ("absoluteStrokeWidth" in $$new_props)
-      $$invalidate(4, absoluteStrokeWidth = $$new_props.absoluteStrokeWidth);
-    if ("iconNode" in $$new_props)
-      $$invalidate(5, iconNode = $$new_props.iconNode);
-    if ("$$scope" in $$new_props)
-      $$invalidate(8, $$scope = $$new_props.$$scope);
-  };
-  $$props = exclude_internal_props($$props);
-  return [
-    name,
-    color,
-    size,
-    strokeWidth,
-    absoluteStrokeWidth,
-    iconNode,
-    $$restProps,
-    $$props,
-    $$scope,
-    slots
-  ];
-}
-var Icon = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance6, create_fragment10, safe_not_equal, {
-      name: 0,
-      color: 1,
-      size: 2,
-      strokeWidth: 3,
-      absoluteStrokeWidth: 4,
-      iconNode: 5
-    });
-  }
-};
-var Icon$1 = Icon;
-
-// node_modules/lucide-svelte/dist/esm/icons/arrow-left-to-line.svelte.js
-function create_default_slot2(ctx) {
-  let current;
-  const default_slot_template = (
-    /*#slots*/
-    ctx[2].default
-  );
-  const default_slot = create_slot(
-    default_slot_template,
-    ctx,
-    /*$$scope*/
-    ctx[3],
-    null
-  );
-  return {
-    c() {
-      if (default_slot)
-        default_slot.c();
-    },
-    l(nodes) {
-      if (default_slot)
-        default_slot.l(nodes);
-    },
-    m(target, anchor) {
-      if (default_slot) {
-        default_slot.m(target, anchor);
-      }
-      current = true;
-    },
-    p(ctx2, dirty) {
-      if (default_slot) {
-        if (default_slot.p && (!current || dirty & /*$$scope*/
-        8)) {
-          update_slot_base(
-            default_slot,
-            default_slot_template,
-            ctx2,
-            /*$$scope*/
-            ctx2[3],
-            !current ? get_all_dirty_from_scope(
-              /*$$scope*/
-              ctx2[3]
-            ) : get_slot_changes(
-              default_slot_template,
-              /*$$scope*/
-              ctx2[3],
-              dirty,
-              null
-            ),
-            null
-          );
-        }
-      }
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(default_slot, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(default_slot, local);
-      current = false;
-    },
-    d(detaching) {
-      if (default_slot)
-        default_slot.d(detaching);
-    }
-  };
-}
-function create_fragment11(ctx) {
-  let icon;
-  let current;
-  const icon_spread_levels = [
-    { name: "arrow-left-to-line" },
-    /*$$props*/
-    ctx[1],
-    { iconNode: (
-      /*iconNode*/
-      ctx[0]
-    ) }
-  ];
-  let icon_props = {
-    $$slots: { default: [create_default_slot2] },
-    $$scope: { ctx }
-  };
-  for (let i = 0; i < icon_spread_levels.length; i += 1) {
-    icon_props = assign(icon_props, icon_spread_levels[i]);
-  }
-  icon = new Icon$1({ props: icon_props });
-  return {
-    c() {
-      create_component(icon.$$.fragment);
-    },
-    l(nodes) {
-      claim_component(icon.$$.fragment, nodes);
-    },
-    m(target, anchor) {
-      mount_component(icon, target, anchor);
-      current = true;
-    },
-    p(ctx2, [dirty]) {
-      const icon_changes = dirty & /*$$props, iconNode*/
-      3 ? get_spread_update(icon_spread_levels, [
-        icon_spread_levels[0],
-        dirty & /*$$props*/
-        2 && get_spread_object(
-          /*$$props*/
-          ctx2[1]
-        ),
-        dirty & /*iconNode*/
-        1 && { iconNode: (
-          /*iconNode*/
-          ctx2[0]
-        ) }
-      ]) : {};
-      if (dirty & /*$$scope*/
-      8) {
-        icon_changes.$$scope = { dirty, ctx: ctx2 };
-      }
-      icon.$set(icon_changes);
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(icon.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(icon.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(icon, detaching);
-    }
-  };
-}
-function instance7($$self, $$props, $$invalidate) {
-  let { $$slots: slots = {}, $$scope } = $$props;
-  const iconNode = [
-    ["path", { "d": "M3 19V5" }],
-    ["path", { "d": "m13 6-6 6 6 6" }],
-    ["path", { "d": "M7 12h14" }]
-  ];
-  $$self.$$set = ($$new_props) => {
-    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
-    if ("$$scope" in $$new_props)
-      $$invalidate(3, $$scope = $$new_props.$$scope);
-  };
-  $$props = exclude_internal_props($$props);
-  return [iconNode, $$props, slots, $$scope];
-}
-var Arrow_left_to_line = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance7, create_fragment11, safe_not_equal, {});
-  }
-};
-var Arrow_left_to_line$1 = Arrow_left_to_line;
-
-// node_modules/lucide-svelte/dist/esm/icons/arrow-right-to-line.svelte.js
-function create_default_slot3(ctx) {
-  let current;
-  const default_slot_template = (
-    /*#slots*/
-    ctx[2].default
-  );
-  const default_slot = create_slot(
-    default_slot_template,
-    ctx,
-    /*$$scope*/
-    ctx[3],
-    null
-  );
-  return {
-    c() {
-      if (default_slot)
-        default_slot.c();
-    },
-    l(nodes) {
-      if (default_slot)
-        default_slot.l(nodes);
-    },
-    m(target, anchor) {
-      if (default_slot) {
-        default_slot.m(target, anchor);
-      }
-      current = true;
-    },
-    p(ctx2, dirty) {
-      if (default_slot) {
-        if (default_slot.p && (!current || dirty & /*$$scope*/
-        8)) {
-          update_slot_base(
-            default_slot,
-            default_slot_template,
-            ctx2,
-            /*$$scope*/
-            ctx2[3],
-            !current ? get_all_dirty_from_scope(
-              /*$$scope*/
-              ctx2[3]
-            ) : get_slot_changes(
-              default_slot_template,
-              /*$$scope*/
-              ctx2[3],
-              dirty,
-              null
-            ),
-            null
-          );
-        }
-      }
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(default_slot, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(default_slot, local);
-      current = false;
-    },
-    d(detaching) {
-      if (default_slot)
-        default_slot.d(detaching);
-    }
-  };
-}
-function create_fragment12(ctx) {
-  let icon;
-  let current;
-  const icon_spread_levels = [
-    { name: "arrow-right-to-line" },
-    /*$$props*/
-    ctx[1],
-    { iconNode: (
-      /*iconNode*/
-      ctx[0]
-    ) }
-  ];
-  let icon_props = {
-    $$slots: { default: [create_default_slot3] },
-    $$scope: { ctx }
-  };
-  for (let i = 0; i < icon_spread_levels.length; i += 1) {
-    icon_props = assign(icon_props, icon_spread_levels[i]);
-  }
-  icon = new Icon$1({ props: icon_props });
-  return {
-    c() {
-      create_component(icon.$$.fragment);
-    },
-    l(nodes) {
-      claim_component(icon.$$.fragment, nodes);
-    },
-    m(target, anchor) {
-      mount_component(icon, target, anchor);
-      current = true;
-    },
-    p(ctx2, [dirty]) {
-      const icon_changes = dirty & /*$$props, iconNode*/
-      3 ? get_spread_update(icon_spread_levels, [
-        icon_spread_levels[0],
-        dirty & /*$$props*/
-        2 && get_spread_object(
-          /*$$props*/
-          ctx2[1]
-        ),
-        dirty & /*iconNode*/
-        1 && { iconNode: (
-          /*iconNode*/
-          ctx2[0]
-        ) }
-      ]) : {};
-      if (dirty & /*$$scope*/
-      8) {
-        icon_changes.$$scope = { dirty, ctx: ctx2 };
-      }
-      icon.$set(icon_changes);
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(icon.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(icon.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(icon, detaching);
-    }
-  };
-}
-function instance8($$self, $$props, $$invalidate) {
-  let { $$slots: slots = {}, $$scope } = $$props;
-  const iconNode = [
-    ["path", { "d": "M17 12H3" }],
-    ["path", { "d": "m11 18 6-6-6-6" }],
-    ["path", { "d": "M21 5v14" }]
-  ];
-  $$self.$$set = ($$new_props) => {
-    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
-    if ("$$scope" in $$new_props)
-      $$invalidate(3, $$scope = $$new_props.$$scope);
-  };
-  $$props = exclude_internal_props($$props);
-  return [iconNode, $$props, slots, $$scope];
-}
-var Arrow_right_to_line = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance8, create_fragment12, safe_not_equal, {});
-  }
-};
-var Arrow_right_to_line$1 = Arrow_right_to_line;
-
-// node_modules/lucide-svelte/dist/esm/icons/circle-dot.svelte.js
-function create_default_slot4(ctx) {
-  let current;
-  const default_slot_template = (
-    /*#slots*/
-    ctx[2].default
-  );
-  const default_slot = create_slot(
-    default_slot_template,
-    ctx,
-    /*$$scope*/
-    ctx[3],
-    null
-  );
-  return {
-    c() {
-      if (default_slot)
-        default_slot.c();
-    },
-    l(nodes) {
-      if (default_slot)
-        default_slot.l(nodes);
-    },
-    m(target, anchor) {
-      if (default_slot) {
-        default_slot.m(target, anchor);
-      }
-      current = true;
-    },
-    p(ctx2, dirty) {
-      if (default_slot) {
-        if (default_slot.p && (!current || dirty & /*$$scope*/
-        8)) {
-          update_slot_base(
-            default_slot,
-            default_slot_template,
-            ctx2,
-            /*$$scope*/
-            ctx2[3],
-            !current ? get_all_dirty_from_scope(
-              /*$$scope*/
-              ctx2[3]
-            ) : get_slot_changes(
-              default_slot_template,
-              /*$$scope*/
-              ctx2[3],
-              dirty,
-              null
-            ),
-            null
-          );
-        }
-      }
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(default_slot, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(default_slot, local);
-      current = false;
-    },
-    d(detaching) {
-      if (default_slot)
-        default_slot.d(detaching);
-    }
-  };
-}
-function create_fragment13(ctx) {
-  let icon;
-  let current;
-  const icon_spread_levels = [
-    { name: "circle-dot" },
-    /*$$props*/
-    ctx[1],
-    { iconNode: (
-      /*iconNode*/
-      ctx[0]
-    ) }
-  ];
-  let icon_props = {
-    $$slots: { default: [create_default_slot4] },
-    $$scope: { ctx }
-  };
-  for (let i = 0; i < icon_spread_levels.length; i += 1) {
-    icon_props = assign(icon_props, icon_spread_levels[i]);
-  }
-  icon = new Icon$1({ props: icon_props });
-  return {
-    c() {
-      create_component(icon.$$.fragment);
-    },
-    l(nodes) {
-      claim_component(icon.$$.fragment, nodes);
-    },
-    m(target, anchor) {
-      mount_component(icon, target, anchor);
-      current = true;
-    },
-    p(ctx2, [dirty]) {
-      const icon_changes = dirty & /*$$props, iconNode*/
-      3 ? get_spread_update(icon_spread_levels, [
-        icon_spread_levels[0],
-        dirty & /*$$props*/
-        2 && get_spread_object(
-          /*$$props*/
-          ctx2[1]
-        ),
-        dirty & /*iconNode*/
-        1 && { iconNode: (
-          /*iconNode*/
-          ctx2[0]
-        ) }
-      ]) : {};
-      if (dirty & /*$$scope*/
-      8) {
-        icon_changes.$$scope = { dirty, ctx: ctx2 };
-      }
-      icon.$set(icon_changes);
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(icon.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(icon.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(icon, detaching);
-    }
-  };
-}
-function instance9($$self, $$props, $$invalidate) {
-  let { $$slots: slots = {}, $$scope } = $$props;
-  const iconNode = [
-    ["circle", { "cx": "12", "cy": "12", "r": "10" }],
-    ["circle", { "cx": "12", "cy": "12", "r": "1" }]
-  ];
-  $$self.$$set = ($$new_props) => {
-    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
-    if ("$$scope" in $$new_props)
-      $$invalidate(3, $$scope = $$new_props.$$scope);
-  };
-  $$props = exclude_internal_props($$props);
-  return [iconNode, $$props, slots, $$scope];
-}
-var Circle_dot = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance9, create_fragment13, safe_not_equal, {});
-  }
-};
-var Circle_dot$1 = Circle_dot;
-
-// node_modules/lucide-svelte/dist/esm/icons/grip-vertical.svelte.js
-function create_default_slot5(ctx) {
-  let current;
-  const default_slot_template = (
-    /*#slots*/
-    ctx[2].default
-  );
-  const default_slot = create_slot(
-    default_slot_template,
-    ctx,
-    /*$$scope*/
-    ctx[3],
-    null
-  );
-  return {
-    c() {
-      if (default_slot)
-        default_slot.c();
-    },
-    l(nodes) {
-      if (default_slot)
-        default_slot.l(nodes);
-    },
-    m(target, anchor) {
-      if (default_slot) {
-        default_slot.m(target, anchor);
-      }
-      current = true;
-    },
-    p(ctx2, dirty) {
-      if (default_slot) {
-        if (default_slot.p && (!current || dirty & /*$$scope*/
-        8)) {
-          update_slot_base(
-            default_slot,
-            default_slot_template,
-            ctx2,
-            /*$$scope*/
-            ctx2[3],
-            !current ? get_all_dirty_from_scope(
-              /*$$scope*/
-              ctx2[3]
-            ) : get_slot_changes(
-              default_slot_template,
-              /*$$scope*/
-              ctx2[3],
-              dirty,
-              null
-            ),
-            null
-          );
-        }
-      }
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(default_slot, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(default_slot, local);
-      current = false;
-    },
-    d(detaching) {
-      if (default_slot)
-        default_slot.d(detaching);
-    }
-  };
-}
-function create_fragment14(ctx) {
-  let icon;
-  let current;
-  const icon_spread_levels = [
-    { name: "grip-vertical" },
-    /*$$props*/
-    ctx[1],
-    { iconNode: (
-      /*iconNode*/
-      ctx[0]
-    ) }
-  ];
-  let icon_props = {
-    $$slots: { default: [create_default_slot5] },
-    $$scope: { ctx }
-  };
-  for (let i = 0; i < icon_spread_levels.length; i += 1) {
-    icon_props = assign(icon_props, icon_spread_levels[i]);
-  }
-  icon = new Icon$1({ props: icon_props });
-  return {
-    c() {
-      create_component(icon.$$.fragment);
-    },
-    l(nodes) {
-      claim_component(icon.$$.fragment, nodes);
-    },
-    m(target, anchor) {
-      mount_component(icon, target, anchor);
-      current = true;
-    },
-    p(ctx2, [dirty]) {
-      const icon_changes = dirty & /*$$props, iconNode*/
-      3 ? get_spread_update(icon_spread_levels, [
-        icon_spread_levels[0],
-        dirty & /*$$props*/
-        2 && get_spread_object(
-          /*$$props*/
-          ctx2[1]
-        ),
-        dirty & /*iconNode*/
-        1 && { iconNode: (
-          /*iconNode*/
-          ctx2[0]
-        ) }
-      ]) : {};
-      if (dirty & /*$$scope*/
-      8) {
-        icon_changes.$$scope = { dirty, ctx: ctx2 };
-      }
-      icon.$set(icon_changes);
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(icon.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(icon.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(icon, detaching);
-    }
-  };
-}
-function instance10($$self, $$props, $$invalidate) {
-  let { $$slots: slots = {}, $$scope } = $$props;
-  const iconNode = [
-    ["circle", { "cx": "9", "cy": "12", "r": "1" }],
-    ["circle", { "cx": "9", "cy": "5", "r": "1" }],
-    ["circle", { "cx": "9", "cy": "19", "r": "1" }],
-    ["circle", { "cx": "15", "cy": "12", "r": "1" }],
-    ["circle", { "cx": "15", "cy": "5", "r": "1" }],
-    ["circle", { "cx": "15", "cy": "19", "r": "1" }]
-  ];
-  $$self.$$set = ($$new_props) => {
-    $$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
-    if ("$$scope" in $$new_props)
-      $$invalidate(3, $$scope = $$new_props.$$scope);
-  };
-  $$props = exclude_internal_props($$props);
-  return [iconNode, $$props, slots, $$scope];
-}
-var Grip_vertical = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance10, create_fragment14, safe_not_equal, {});
-  }
-};
-var Grip_vertical$1 = Grip_vertical;
-
-// src/ui/components/task.svelte
-var import_obsidian9 = require("obsidian");
-
-// src/util/color.ts
-var import_chroma_js = __toESM(require_chroma());
-var LightThemeColors = {
-  normal: "#222222",
-  muted: "#5c5c5c",
-  faint: "#666666"
-};
-var DarkThemeColors = {
-  normal: "#dadada",
-  muted: "#b3b3b3",
-  faint: "#ababab"
-};
-function getTextColorWithEnoughContrast(backgroundColor) {
-  return import_chroma_js.default.contrast(backgroundColor, DarkThemeColors.normal) > import_chroma_js.default.contrast(backgroundColor, LightThemeColors.normal) ? DarkThemeColors : LightThemeColors;
-}
-
-// src/store/update-timestamp.ts
-var import_fp3 = __toESM(require_fp());
-var import_obsidian6 = require("obsidian");
-var import_typed_assert2 = __toESM(require_build());
-async function updateTimestamps(tasks, id, timestamp) {
-  tasks.update(
-    (0, import_fp3.flow)(
-      (0, import_fp3.map)((task) => {
-        if (task.id !== id) {
-          return task;
-        }
-        updateDurationInDailyNote(task, timestamp);
-        const updatedTime = {
-          ...timestamp,
-          endMinutes: timestamp.startMinutes + timestamp.durationMinutes
-        };
-        return {
-          ...task,
-          ...updatedTime
-        };
-      }),
-      addPlacing
-    )
-  );
-}
-async function updateDurationInDailyNote(task, startAndDuration) {
-  const { vault } = get_store_value(appStore);
-  const file = vault.getAbstractFileByPath(task.location.path);
-  (0, import_typed_assert2.isInstanceOf)(file, import_obsidian6.TFile, `${task.location.path} is not a markdown file`);
-  const contents = await vault.read(file);
-  const updated = contents.split("\n").map((line, i) => {
-    if (i === task.location.line) {
-      return replaceTimestamp(task, startAndDuration);
-    }
-    return line;
-  }).join("\n");
-  await vault.modify(file, updated);
-}
-
-// src/ui/hooks/use-drag.ts
-function useDrag() {
-  const dragging = writable(false);
-  const pointerYOffsetToTaskStart = writable();
-  const cursor = derived(
-    dragging,
-    ($dragging) => $dragging ? "grabbing" : "grab"
-  );
-  const { getTasks } = getContext(TASKS_FOR_DAY);
-  function startMove(event) {
-    dragging.set(true);
-    pointerYOffsetToTaskStart.set(event.offsetY);
-  }
-  async function confirmMove(offset, id, durationMinutes) {
-    if (!get_store_value(dragging)) {
-      return;
-    }
-    dragging.set(false);
-    const newStartMinutes = getTimeFromYOffset(Math.floor(offset));
-    await updateTimestamps(getTasks(), id, {
-      startMinutes: newStartMinutes,
-      durationMinutes
-    });
-  }
-  function cancelMove() {
-    dragging.set(false);
-  }
-  return {
-    pointerYOffsetToTaskStart,
-    cursor,
-    dragging,
-    startMove,
-    confirmMove,
-    cancelMove
-  };
-}
-
-// src/ui/hooks/use-resize.ts
-function useResize() {
-  const resizing = writable(false);
-  const { getTasks } = getContext(TASKS_FOR_DAY);
-  function startResize() {
-    resizing.set(true);
-  }
-  async function confirmResize(id, taskHeight, startMinutes) {
-    if (!get_store_value(resizing)) {
-      return;
-    }
-    resizing.set(false);
-    const newDurationMinutes = sizeToDuration(taskHeight);
-    await updateTimestamps(getTasks(), id, {
-      startMinutes,
-      durationMinutes: newDurationMinutes
-    });
-  }
-  function cancelResize() {
-    resizing.set(false);
-  }
-  return {
-    resizing,
-    startResize,
-    confirmResize,
-    cancelResize
-  };
-}
-
-// src/ui/hooks/watch.ts
-function watch(store, fn) {
-  const unsub = store.subscribe(() => fn());
-  onDestroy(() => {
-    unsub();
-  });
-}
-
-// src/ui/components/rendered-markdown.svelte
-var import_obsidian8 = require("obsidian");
-function add_css6(target) {
-  append_styles(target, "svelte-1hzxvkc", '.rendered-markdown.svelte-1hzxvkc{--checkbox-size:var(--font-ui-small);flex:1 0 0}.rendered-markdown.svelte-1hzxvkc p,.rendered-markdown.svelte-1hzxvkc ul{margin-block-start:0;margin-block-end:0}.rendered-markdown.svelte-1hzxvkc ul,.rendered-markdown.svelte-1hzxvkc ol{padding-inline-start:20px}.rendered-markdown.svelte-1hzxvkc input[type="checkbox"]{top:2px;margin-inline-end:4px;border-color:var(--text-muted)}.rendered-markdown.svelte-1hzxvkc li{color:var(--text-normal)}.rendered-markdown.svelte-1hzxvkc li.task-list-item[data-task="x"],.rendered-markdown.svelte-1hzxvkc li.task-list-item[data-task="X"]{color:var(--text-muted)}');
-}
-function create_fragment15(ctx) {
-  let div;
-  return {
-    c() {
-      div = element("div");
-      set_style(
-        div,
-        "--text-normal",
-        /*properContrastColors*/
-        ctx[0].normal
-      );
-      set_style(
-        div,
-        "--text-muted",
-        /*properContrastColors*/
-        ctx[0].muted
-      );
-      set_style(
-        div,
-        "--text-faint",
-        /*properContrastColors*/
-        ctx[0].faint
-      );
-      attr(div, "class", "rendered-markdown svelte-1hzxvkc");
-    },
-    m(target, anchor) {
-      insert(target, div, anchor);
-      ctx[6](div);
-    },
-    p(ctx2, [dirty]) {
-      if (dirty & /*properContrastColors*/
-      1) {
-        set_style(
-          div,
-          "--text-normal",
-          /*properContrastColors*/
-          ctx2[0].normal
-        );
-      }
-      if (dirty & /*properContrastColors*/
-      1) {
-        set_style(
-          div,
-          "--text-muted",
-          /*properContrastColors*/
-          ctx2[0].muted
-        );
-      }
-      if (dirty & /*properContrastColors*/
-      1) {
-        set_style(
-          div,
-          "--text-faint",
-          /*properContrastColors*/
-          ctx2[0].faint
-        );
-      }
-    },
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (detaching)
-        detach(div);
-      ctx[6](null);
-    }
-  };
-}
-function instance11($$self, $$props, $$invalidate) {
-  let $appStore;
-  component_subscribe($$self, appStore, ($$value) => $$invalidate(5, $appStore = $$value));
-  var _a;
-  let { text: text2 } = $$props;
-  let { properContrastColors } = $$props;
-  let markdownLifecycleManager = new import_obsidian8.Component();
-  let el;
-  onDestroy(() => {
-    markdownLifecycleManager.unload();
-  });
-  function div_binding($$value) {
-    binding_callbacks[$$value ? "unshift" : "push"](() => {
-      el = $$value;
-      $$invalidate(1, el);
-    });
-  }
-  $$self.$$set = ($$props2) => {
-    if ("text" in $$props2)
-      $$invalidate(2, text2 = $$props2.text);
-    if ("properContrastColors" in $$props2)
-      $$invalidate(0, properContrastColors = $$props2.properContrastColors);
-  };
-  $$self.$$.update = () => {
-    if ($$self.$$.dirty & /*el, markdownLifecycleManager, $appStore, text, _a*/
-    62) {
-      $:
-        if (el) {
-          markdownLifecycleManager.unload();
-          $$invalidate(4, markdownLifecycleManager = new import_obsidian8.Component());
-          el.empty();
-          import_obsidian8.MarkdownRenderer.render($appStore, text2, el, "", markdownLifecycleManager);
-          markdownLifecycleManager.load();
-          $$invalidate(3, _a = el.querySelectorAll(`input[type="checkbox"]`)) === null || _a === void 0 ? void 0 : _a.forEach((checkbox2) => checkbox2.setAttribute("disabled", "true"));
-        }
-    }
-  };
-  return [
-    properContrastColors,
-    el,
-    text2,
-    _a,
-    markdownLifecycleManager,
-    $appStore,
-    div_binding
-  ];
-}
-var Rendered_markdown = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance11, create_fragment15, safe_not_equal, { text: 2, properContrastColors: 0 }, add_css6);
-  }
-};
-var rendered_markdown_default = Rendered_markdown;
-
-// src/ui/components/task.svelte
-function add_css7(target) {
-  append_styles(target, "svelte-ixeomk", ".grip.svelte-ixeomk{position:relative;right:-4px;grid-column:2;align-self:flex-start;color:var(--text-faint)}.grip.svelte-ixeomk:hover{color:var(--text-muted)}.gap-box.svelte-ixeomk{display:flex;padding:0 1px 2px;transition:0.05s linear}.task.svelte-ixeomk{position:relative;overflow:hidden;display:flex;flex:1 0 0;padding:4px 6px 6px;font-size:var(--font-ui-small);color:var(--text-normal);text-align:left;overflow-wrap:anywhere;white-space:normal;border:1px solid var(--color-base-50);border-radius:var(--radius-s)}.task.svelte-ixeomk:hover{border-color:var(--color-base-70)}.past.svelte-ixeomk{background-color:var(--background-secondary)}.present.svelte-ixeomk{border-color:var(--color-accent)}.is-ghost.svelte-ixeomk{opacity:0.6}.resize-handle.svelte-ixeomk{cursor:s-resize;bottom:-8px;height:16px}");
-}
-function create_fragment16(ctx) {
-  let div3;
-  let div2;
-  let renderedmarkdown;
-  let t0;
-  let div0;
-  let gripvertical;
-  let t1;
-  let div1;
-  let div2_class_value;
-  let style_height = `${/*height*/
-  ctx[5]}px`;
-  let style_transform = `translateY(${/*offset*/
-  ctx[6]}px)`;
-  let style_width = `${/*planItem*/
-  ctx[0].placing.widthPercent || 100}%`;
-  let style_left = `${/*planItem*/
-  ctx[0].placing.xOffsetPercent || 0}%`;
-  let current;
-  let mounted;
-  let dispose;
-  renderedmarkdown = new rendered_markdown_default({
-    props: {
-      properContrastColors: (
-        /*properContrastColors*/
-        ctx[4]
-      ),
-      text: (
-        /*planItem*/
-        ctx[0].text
-      )
-    }
-  });
-  gripvertical = new Grip_vertical$1({ props: { class: "svg-icon" } });
-  return {
-    c() {
-      div3 = element("div");
-      div2 = element("div");
-      create_component(renderedmarkdown.$$.fragment);
-      t0 = space();
-      div0 = element("div");
-      create_component(gripvertical.$$.fragment);
-      t1 = space();
-      div1 = element("div");
-      attr(div0, "class", "grip svelte-ixeomk");
-      set_style(
-        div0,
-        "cursor",
-        /*$cursor*/
-        ctx[9]
-      );
-      attr(div1, "class", "resize-handle absolute-stretch-x svelte-ixeomk");
-      attr(div2, "class", div2_class_value = "task " + /*relationToNow*/
-      ctx[7] + " svelte-ixeomk");
-      toggle_class(
-        div2,
-        "is-ghost",
-        /*isGhost*/
-        ctx[1]
-      );
-      toggle_class(
-        div2,
-        "past",
-        /*relationToNow*/
-        ctx[7] === "past"
-      );
-      toggle_class(
-        div2,
-        "present",
-        /*relationToNow*/
-        ctx[7] === "present"
-      );
-      set_style(
-        div2,
-        "background-color",
-        /*backgroundColor*/
-        ctx[2]
-      );
-      set_style(
-        div3,
-        "--text-normal",
-        /*properContrastColors*/
-        ctx[4].normal
-      );
-      set_style(
-        div3,
-        "--text-muted",
-        /*properContrastColors*/
-        ctx[4].muted
-      );
-      set_style(
-        div3,
-        "--text-faint",
-        /*properContrastColors*/
-        ctx[4].faint
-      );
-      attr(div3, "class", "gap-box absolute-stretch-x svelte-ixeomk");
-      set_style(div3, "height", style_height);
-      set_style(div3, "transform", style_transform);
-      set_style(div3, "width", style_width);
-      set_style(div3, "left", style_left);
-    },
-    m(target, anchor) {
-      insert(target, div3, anchor);
-      append(div3, div2);
-      mount_component(renderedmarkdown, div2, null);
-      append(div2, t0);
-      append(div2, div0);
-      mount_component(gripvertical, div0, null);
-      append(div2, t1);
-      append(div2, div1);
-      current = true;
-      if (!mounted) {
-        dispose = [
-          listen(div0, "mousedown", stop_propagation(
-            /*mousedown_handler*/
-            ctx[26]
-          )),
-          listen(div1, "mousedown", stop_propagation(
-            /*startResize*/
-            ctx[15]
-          )),
-          listen(div2, "mousedown", mousedown_handler_1),
-          listen(
-            div2,
-            "mouseup",
-            /*mouseup_handler*/
-            ctx[27]
-          )
-        ];
-        mounted = true;
-      }
-    },
-    p(ctx2, dirty) {
-      const renderedmarkdown_changes = {};
-      if (dirty[0] & /*properContrastColors*/
-      16)
-        renderedmarkdown_changes.properContrastColors = /*properContrastColors*/
-        ctx2[4];
-      if (dirty[0] & /*planItem*/
-      1)
-        renderedmarkdown_changes.text = /*planItem*/
-        ctx2[0].text;
-      renderedmarkdown.$set(renderedmarkdown_changes);
-      if (dirty[0] & /*$cursor*/
-      512) {
-        set_style(
-          div0,
-          "cursor",
-          /*$cursor*/
-          ctx2[9]
-        );
-      }
-      if (!current || dirty[0] & /*relationToNow*/
-      128 && div2_class_value !== (div2_class_value = "task " + /*relationToNow*/
-      ctx2[7] + " svelte-ixeomk")) {
-        attr(div2, "class", div2_class_value);
-      }
-      if (!current || dirty[0] & /*relationToNow, isGhost*/
-      130) {
-        toggle_class(
-          div2,
-          "is-ghost",
-          /*isGhost*/
-          ctx2[1]
-        );
-      }
-      if (!current || dirty[0] & /*relationToNow, relationToNow*/
-      128) {
-        toggle_class(
-          div2,
-          "past",
-          /*relationToNow*/
-          ctx2[7] === "past"
-        );
-      }
-      if (!current || dirty[0] & /*relationToNow, relationToNow*/
-      128) {
-        toggle_class(
-          div2,
-          "present",
-          /*relationToNow*/
-          ctx2[7] === "present"
-        );
-      }
-      if (dirty[0] & /*backgroundColor*/
-      4) {
-        set_style(
-          div2,
-          "background-color",
-          /*backgroundColor*/
-          ctx2[2]
-        );
-      }
-      if (!current || dirty[0] & /*properContrastColors*/
-      16) {
-        set_style(
-          div3,
-          "--text-normal",
-          /*properContrastColors*/
-          ctx2[4].normal
-        );
-      }
-      if (!current || dirty[0] & /*properContrastColors*/
-      16) {
-        set_style(
-          div3,
-          "--text-muted",
-          /*properContrastColors*/
-          ctx2[4].muted
-        );
-      }
-      if (!current || dirty[0] & /*properContrastColors*/
-      16) {
-        set_style(
-          div3,
-          "--text-faint",
-          /*properContrastColors*/
-          ctx2[4].faint
-        );
-      }
-      const style_changed = dirty[0] & /*properContrastColors*/
-      16;
-      if (style_changed || dirty[0] & /*height, properContrastColors*/
-      48 && style_height !== (style_height = `${/*height*/
-      ctx2[5]}px`)) {
-        set_style(div3, "height", style_height);
-      }
-      if (style_changed || dirty[0] & /*offset, properContrastColors*/
-      80 && style_transform !== (style_transform = `translateY(${/*offset*/
-      ctx2[6]}px)`)) {
-        set_style(div3, "transform", style_transform);
-      }
-      if (style_changed || dirty[0] & /*planItem, properContrastColors*/
-      17 && style_width !== (style_width = `${/*planItem*/
-      ctx2[0].placing.widthPercent || 100}%`)) {
-        set_style(div3, "width", style_width);
-      }
-      if (style_changed || dirty[0] & /*planItem, properContrastColors*/
-      17 && style_left !== (style_left = `${/*planItem*/
-      ctx2[0].placing.xOffsetPercent || 0}%`)) {
-        set_style(div3, "left", style_left);
-      }
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(renderedmarkdown.$$.fragment, local);
-      transition_in(gripvertical.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(renderedmarkdown.$$.fragment, local);
-      transition_out(gripvertical.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      if (detaching)
-        detach(div3);
-      destroy_component(renderedmarkdown);
-      destroy_component(gripvertical);
-      mounted = false;
-      run_all(dispose);
-    }
-  };
-}
-var mousedown_handler_1 = (event) => event.stopPropagation();
-function instance12($$self, $$props, $$invalidate) {
-  let colorScale;
-  let backgroundColor;
-  let initialOffset;
-  let offset;
-  let offsetToPointer;
-  let height;
-  let relationToNow;
-  let $currentTime;
-  let $durationToSize;
-  let $resizing;
-  let $pointerYOffsetToTaskStart;
-  let $dragging;
-  let $timeToTimelineOffset;
-  let $settings;
-  let $appStore;
-  let $cursor;
-  component_subscribe($$self, currentTime, ($$value) => $$invalidate(20, $currentTime = $$value));
-  component_subscribe($$self, durationToSize, ($$value) => $$invalidate(21, $durationToSize = $$value));
-  component_subscribe($$self, timeToTimelineOffset, ($$value) => $$invalidate(24, $timeToTimelineOffset = $$value));
-  component_subscribe($$self, settings, ($$value) => $$invalidate(25, $settings = $$value));
-  component_subscribe($$self, appStore, ($$value) => $$invalidate(8, $appStore = $$value));
-  let { planItem } = $$props;
-  let { pointerYOffset } = $$props;
-  let { isGhost = false } = $$props;
-  const { dragging, cursor, pointerYOffsetToTaskStart, startMove, confirmMove, cancelMove } = useDrag();
-  component_subscribe($$self, dragging, (value) => $$invalidate(3, $dragging = value));
-  component_subscribe($$self, cursor, (value) => $$invalidate(9, $cursor = value));
-  component_subscribe($$self, pointerYOffsetToTaskStart, (value) => $$invalidate(23, $pointerYOffsetToTaskStart = value));
-  const { resizing, cancelResize, startResize, confirmResize } = useResize();
-  component_subscribe($$self, resizing, (value) => $$invalidate(22, $resizing = value));
-  let properContrastColors;
-  watch(editConfirmation, () => {
-    confirmMove(offset, planItem.id, planItem.durationMinutes);
-    confirmResize(planItem.id, height, planItem.startMinutes);
-  });
-  watch(editCancellation, () => {
-    cancelMove();
-    cancelResize();
-  });
-  const mousedown_handler = (e) => {
-    startMove(e);
-  };
-  const mouseup_handler = async () => {
-    var _a;
-    if (isGhost || $dragging) {
-      return;
-    }
-    const file = getFileByPath(planItem.location.path);
-    const editor = await openFileInEditor(file);
-    (_a = $appStore.workspace.getActiveViewOfType(import_obsidian9.MarkdownView)) == null ? void 0 : _a.setEphemeralState({ line: planItem.location.line });
-    editor.setCursor({ line: planItem.location.line, ch: 0 });
-  };
-  $$self.$$set = ($$props2) => {
-    if ("planItem" in $$props2)
-      $$invalidate(0, planItem = $$props2.planItem);
-    if ("pointerYOffset" in $$props2)
-      $$invalidate(16, pointerYOffset = $$props2.pointerYOffset);
-    if ("isGhost" in $$props2)
-      $$invalidate(1, isGhost = $$props2.isGhost);
-  };
-  $$self.$$.update = () => {
-    if ($$self.$$.dirty[0] & /*$settings*/
-    33554432) {
-      $:
-        $$invalidate(19, colorScale = import_chroma_js2.default.scale([$settings.timelineStartColor, $settings.timelineEndColor]).mode("lab"));
-    }
-    if ($$self.$$.dirty[0] & /*$settings, planItem, colorScale*/
-    34078721) {
-      $:
-        $$invalidate(2, backgroundColor = $settings.timelineColored && planItem.startTime ? colorScale((planItem.startTime.hour() - $settings.startHour) / (24 - $settings.startHour)).hex() : "var(--background-primary)");
-    }
-    if ($$self.$$.dirty[0] & /*$settings, planItem, backgroundColor*/
-    33554437) {
-      $:
-        $$invalidate(4, properContrastColors = $settings.timelineColored && planItem.startTime ? getTextColorWithEnoughContrast(backgroundColor) : {
-          normal: "var(--text-normal)",
-          muted: "var(--text-muted)",
-          faint: "var(--text-faint)"
-        });
-    }
-    if ($$self.$$.dirty[0] & /*isGhost, pointerYOffset, $timeToTimelineOffset, planItem*/
-    16842755) {
-      $:
-        $$invalidate(18, initialOffset = isGhost ? roundToSnapStep(pointerYOffset) : $timeToTimelineOffset(planItem.startMinutes));
-    }
-    if ($$self.$$.dirty[0] & /*$dragging, pointerYOffset, $pointerYOffsetToTaskStart, initialOffset*/
-    8716296) {
-      $:
-        $$invalidate(6, offset = $dragging ? roundToSnapStep(pointerYOffset - $pointerYOffsetToTaskStart) : initialOffset);
-    }
-    if ($$self.$$.dirty[0] & /*pointerYOffset, initialOffset*/
-    327680) {
-      $:
-        $$invalidate(17, offsetToPointer = pointerYOffset - initialOffset);
-    }
-    if ($$self.$$.dirty[0] & /*$resizing, offsetToPointer, $durationToSize, planItem*/
-    6422529) {
-      $:
-        $$invalidate(5, height = $resizing ? roundToSnapStep(offsetToPointer) : $durationToSize(planItem.durationMinutes));
-    }
-    if ($$self.$$.dirty[0] & /*isGhost, $currentTime, planItem*/
-    1048579) {
-      $:
-        $$invalidate(7, relationToNow = isGhost ? "future" : getRelationToNow($currentTime, planItem.startTime, planItem.endTime));
-    }
-  };
-  return [
-    planItem,
-    isGhost,
-    backgroundColor,
-    $dragging,
-    properContrastColors,
-    height,
-    offset,
-    relationToNow,
-    $appStore,
-    $cursor,
-    dragging,
-    cursor,
-    pointerYOffsetToTaskStart,
-    startMove,
-    resizing,
-    startResize,
-    pointerYOffset,
-    offsetToPointer,
-    initialOffset,
-    colorScale,
-    $currentTime,
-    $durationToSize,
-    $resizing,
-    $pointerYOffsetToTaskStart,
-    $timeToTimelineOffset,
-    $settings,
-    mousedown_handler,
-    mouseup_handler
-  ];
-}
-var Task = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(
-      this,
-      options,
-      instance12,
-      create_fragment16,
-      safe_not_equal,
-      {
-        planItem: 0,
-        pointerYOffset: 16,
-        isGhost: 1
-      },
-      add_css7,
-      [-1, -1]
-    );
-  }
-};
-var task_default = Task;
-
-// src/ui/components/task-container.svelte
-function add_css8(target) {
-  append_styles(target, "svelte-ck0plp", ".task-container.svelte-ck0plp{top:0;bottom:0;display:flex;flex-direction:column;margin-right:10px;margin-left:10px}");
-}
-function get_each_context5(ctx, list, i) {
-  const child_ctx = ctx.slice();
-  child_ctx[14] = list[i];
-  return child_ctx;
-}
-function create_each_block5(key_1, ctx) {
-  let first;
-  let task;
-  let current;
-  task = new task_default({
-    props: {
-      planItem: (
-        /*planItem*/
-        ctx[14]
-      ),
-      pointerYOffset: (
-        /*pointerYOffset*/
-        ctx[1]
-      )
-    }
-  });
-  return {
-    key: key_1,
-    first: null,
-    c() {
-      first = empty();
-      create_component(task.$$.fragment);
-      this.first = first;
-    },
-    m(target, anchor) {
-      insert(target, first, anchor);
-      mount_component(task, target, anchor);
-      current = true;
-    },
-    p(new_ctx, dirty) {
-      ctx = new_ctx;
-      const task_changes = {};
-      if (dirty & /*$tasks*/
-      16)
-        task_changes.planItem = /*planItem*/
-        ctx[14];
-      if (dirty & /*pointerYOffset*/
-      2)
-        task_changes.pointerYOffset = /*pointerYOffset*/
-        ctx[1];
-      task.$set(task_changes);
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(task.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(task.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      if (detaching)
-        detach(first);
-      destroy_component(task, detaching);
-    }
-  };
-}
-function create_if_block2(ctx) {
-  let task;
-  let current;
-  task = new task_default({
-    props: {
-      isGhost: true,
-      planItem: (
-        /*getDefaultPlacedPlanItem*/
-        ctx[9]()
-      ),
-      pointerYOffset: (
-        /*pointerYOffset*/
-        ctx[1]
-      )
-    }
-  });
-  return {
-    c() {
-      create_component(task.$$.fragment);
-    },
-    m(target, anchor) {
-      mount_component(task, target, anchor);
-      current = true;
-    },
-    p(ctx2, dirty) {
-      const task_changes = {};
-      if (dirty & /*pointerYOffset*/
-      2)
-        task_changes.pointerYOffset = /*pointerYOffset*/
-        ctx2[1];
-      task.$set(task_changes);
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(task.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(task.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(task, detaching);
-    }
-  };
-}
-function create_fragment17(ctx) {
-  let t0;
-  let div;
-  let each_blocks = [];
-  let each_1_lookup = /* @__PURE__ */ new Map();
-  let t1;
-  let current;
-  let mounted;
-  let dispose;
-  let each_value = (
-    /*$tasks*/
-    ctx[4]
-  );
-  const get_key = (ctx2) => getPlanItemKey(
-    /*planItem*/
-    ctx2[14]
-  );
-  for (let i = 0; i < each_value.length; i += 1) {
-    let child_ctx = get_each_context5(ctx, each_value, i);
-    let key = get_key(child_ctx);
-    each_1_lookup.set(key, each_blocks[i] = create_each_block5(key, child_ctx));
-  }
-  let if_block = (
-    /*$creating*/
-    ctx[3] && create_if_block2(ctx)
-  );
-  return {
-    c() {
-      t0 = space();
-      div = element("div");
-      for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].c();
-      }
-      t1 = space();
-      if (if_block)
-        if_block.c();
-      attr(div, "class", "task-container absolute-stretch-x svelte-ck0plp");
-    },
-    m(target, anchor) {
-      insert(target, t0, anchor);
-      insert(target, div, anchor);
-      for (let i = 0; i < each_blocks.length; i += 1) {
-        if (each_blocks[i]) {
-          each_blocks[i].m(div, null);
-        }
-      }
-      append(div, t1);
-      if (if_block)
-        if_block.m(div, null);
-      ctx[11](div);
-      current = true;
-      if (!mounted) {
-        dispose = [
-          listen(document, "mouseup", editCancellation.trigger),
-          listen(
-            div,
-            "mousemove",
-            /*handleMousemove*/
-            ctx[7]
-          ),
-          listen(
-            div,
-            "mousedown",
-            /*startCreation*/
-            ctx[6]
-          ),
-          listen(div, "mouseup", stop_propagation(
-            /*handleMouseUp*/
-            ctx[8]
-          ))
-        ];
-        mounted = true;
-      }
-    },
-    p(ctx2, [dirty]) {
-      if (dirty & /*$tasks, pointerYOffset*/
-      18) {
-        each_value = /*$tasks*/
-        ctx2[4];
-        group_outros();
-        each_blocks = update_keyed_each(each_blocks, dirty, get_key, 1, ctx2, each_value, each_1_lookup, div, outro_and_destroy_block, create_each_block5, t1, get_each_context5);
-        check_outros();
-      }
-      if (
-        /*$creating*/
-        ctx2[3]
-      ) {
-        if (if_block) {
-          if_block.p(ctx2, dirty);
-          if (dirty & /*$creating*/
-          8) {
-            transition_in(if_block, 1);
-          }
-        } else {
-          if_block = create_if_block2(ctx2);
-          if_block.c();
-          transition_in(if_block, 1);
-          if_block.m(div, null);
-        }
-      } else if (if_block) {
-        group_outros();
-        transition_out(if_block, 1, 1, () => {
-          if_block = null;
-        });
-        check_outros();
-      }
-    },
-    i(local) {
-      if (current)
-        return;
-      for (let i = 0; i < each_value.length; i += 1) {
-        transition_in(each_blocks[i]);
-      }
-      transition_in(if_block);
-      current = true;
-    },
-    o(local) {
-      for (let i = 0; i < each_blocks.length; i += 1) {
-        transition_out(each_blocks[i]);
-      }
-      transition_out(if_block);
-      current = false;
-    },
-    d(detaching) {
-      if (detaching)
-        detach(t0);
-      if (detaching)
-        detach(div);
-      for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].d();
-      }
-      if (if_block)
-        if_block.d();
-      ctx[11](null);
-      mounted = false;
-      run_all(dispose);
-    }
-  };
-}
-var defaultDurationForNewTask = 30;
-function getPlanItemKey(planItem) {
-  return `${planItem.startTime} ${planItem.text}`;
-}
-function instance13($$self, $$props, $$invalidate) {
-  let $creating;
-  let $tasks, $$unsubscribe_tasks = noop, $$subscribe_tasks = () => ($$unsubscribe_tasks(), $$unsubscribe_tasks = subscribe(tasks, ($$value) => $$invalidate(4, $tasks = $$value)), tasks);
-  $$self.$$.on_destroy.push(() => $$unsubscribe_tasks());
-  let { tasks } = $$props;
-  $$subscribe_tasks();
-  let { day } = $$props;
-  const { creating, startCreation, confirmCreation } = useCreate();
-  component_subscribe($$self, creating, (value) => $$invalidate(3, $creating = value));
-  function getTasks() {
-    return tasks;
-  }
-  setContext(TASKS_FOR_DAY, { getTasks });
-  let pointerYOffset = 0;
-  let el;
-  function handleMousemove(event) {
-    $$invalidate(1, pointerYOffset = event.clientY - el.getBoundingClientRect().top);
-  }
-  function handleMouseUp() {
-    if ($creating) {
-      confirmCreation(tasks, day, pointerYOffset);
-    }
-    editConfirmation.trigger();
-  }
-  function getDefaultPlacedPlanItem() {
-    return {
-      durationMinutes: defaultDurationForNewTask,
-      text: "New item",
-      id: "",
-      placing: Object.assign({}, getHorizontalPlacing())
-    };
-  }
-  function div_binding($$value) {
-    binding_callbacks[$$value ? "unshift" : "push"](() => {
-      el = $$value;
-      $$invalidate(2, el);
-    });
-  }
-  $$self.$$set = ($$props2) => {
-    if ("tasks" in $$props2)
-      $$subscribe_tasks($$invalidate(0, tasks = $$props2.tasks));
-    if ("day" in $$props2)
-      $$invalidate(10, day = $$props2.day);
-  };
-  return [
-    tasks,
-    pointerYOffset,
-    el,
-    $creating,
-    $tasks,
-    creating,
-    startCreation,
-    handleMousemove,
-    handleMouseUp,
-    getDefaultPlacedPlanItem,
-    day,
-    div_binding
-  ];
-}
-var Task_container = class extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance13, create_fragment17, safe_not_equal, { tasks: 0, day: 10 }, add_css8);
-  }
-};
-var task_container_default = Task_container;
+var timeline_controls_default = Timeline_controls;
 
 // src/ui/components/timeline.svelte
-function add_css9(target) {
-  append_styles(target, "svelte-1fzzjqj", ".vertical-scroller.svelte-1fzzjqj{overflow:auto;height:100%}.scale-with-days.svelte-1fzzjqj{display:flex}");
+function add_css10(target) {
+  append_styles(target, "svelte-79f2qo", ".vertical-scroller.svelte-79f2qo{overflow:auto;flex:1 0 0}.scale-with-days.svelte-79f2qo{display:flex}");
 }
-function create_if_block3(ctx) {
+function create_if_block4(ctx) {
   let needle;
   let current;
   needle = new needle_default({
@@ -14378,163 +30293,51 @@ function create_if_block3(ctx) {
     }
   };
 }
-function create_catch_block(ctx) {
-  let pre;
-  let t0;
-  let t1_value = (
-    /*error*/
-    ctx[6] + ""
-  );
-  let t1;
-  return {
-    c() {
-      pre = element("pre");
-      t0 = text("Could not render tasks: ");
-      t1 = text(t1_value);
-    },
-    m(target, anchor) {
-      insert(target, pre, anchor);
-      append(pre, t0);
-      append(pre, t1);
-    },
-    p(ctx2, dirty) {
-      if (dirty & /*$visibleDayInTimeline*/
-      2 && t1_value !== (t1_value = /*error*/
-      ctx2[6] + ""))
-        set_data(t1, t1_value);
-    },
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (detaching)
-        detach(pre);
-    }
-  };
-}
-function create_then_block(ctx) {
-  let taskcontainer;
-  let current;
-  taskcontainer = new task_container_default({
-    props: {
-      day: (
-        /*$visibleDayInTimeline*/
-        ctx[1]
-      ),
-      tasks: toPlacedWritables(
-        /*tasks*/
-        ctx[5]
-      )
-    }
-  });
-  return {
-    c() {
-      create_component(taskcontainer.$$.fragment);
-    },
-    m(target, anchor) {
-      mount_component(taskcontainer, target, anchor);
-      current = true;
-    },
-    p(ctx2, dirty) {
-      const taskcontainer_changes = {};
-      if (dirty & /*$visibleDayInTimeline*/
-      2)
-        taskcontainer_changes.day = /*$visibleDayInTimeline*/
-        ctx2[1];
-      if (dirty & /*$visibleDayInTimeline*/
-      2)
-        taskcontainer_changes.tasks = toPlacedWritables(
-          /*tasks*/
-          ctx2[5]
-        );
-      taskcontainer.$set(taskcontainer_changes);
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(taskcontainer.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(taskcontainer.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(taskcontainer, detaching);
-    }
-  };
-}
-function create_pending_block(ctx) {
-  return {
-    c: noop,
-    m: noop,
-    p: noop,
-    i: noop,
-    o: noop,
-    d: noop
-  };
-}
-function create_default_slot6(ctx) {
+function create_default_slot16(ctx) {
   let show_if = isToday(
     /*$visibleDayInTimeline*/
     ctx[1]
   );
   let t;
-  let await_block_anchor;
-  let promise;
+  let taskcontainer;
   let current;
-  let if_block = show_if && create_if_block3(ctx);
-  let info = {
-    ctx,
-    current: null,
-    token: null,
-    hasCatch: true,
-    pending: create_pending_block,
-    then: create_then_block,
-    catch: create_catch_block,
-    value: 5,
-    error: 6,
-    blocks: [, , ,]
-  };
-  handle_promise(promise = getPlanItemsFromFile((0, import_obsidian_daily_notes_interface5.getDailyNote)(
-    /*$visibleDayInTimeline*/
-    ctx[1],
-    (0, import_obsidian_daily_notes_interface5.getAllDailyNotes)()
-  )), info);
+  let if_block = show_if && create_if_block4(ctx);
+  taskcontainer = new task_container_default({
+    props: { day: (
+      /*$visibleDayInTimeline*/
+      ctx[1]
+    ) }
+  });
   return {
     c() {
       if (if_block)
         if_block.c();
       t = space();
-      await_block_anchor = empty();
-      info.block.c();
+      create_component(taskcontainer.$$.fragment);
     },
     m(target, anchor) {
       if (if_block)
         if_block.m(target, anchor);
       insert(target, t, anchor);
-      insert(target, await_block_anchor, anchor);
-      info.block.m(target, info.anchor = anchor);
-      info.mount = () => await_block_anchor.parentNode;
-      info.anchor = await_block_anchor;
+      mount_component(taskcontainer, target, anchor);
       current = true;
     },
-    p(new_ctx, dirty) {
-      ctx = new_ctx;
+    p(ctx2, dirty) {
       if (dirty & /*$visibleDayInTimeline*/
       2)
         show_if = isToday(
           /*$visibleDayInTimeline*/
-          ctx[1]
+          ctx2[1]
         );
       if (show_if) {
         if (if_block) {
-          if_block.p(ctx, dirty);
+          if_block.p(ctx2, dirty);
           if (dirty & /*$visibleDayInTimeline*/
           2) {
             transition_in(if_block, 1);
           }
         } else {
-          if_block = create_if_block3(ctx);
+          if_block = create_if_block4(ctx2);
           if_block.c();
           transition_in(if_block, 1);
           if_block.m(t.parentNode, t);
@@ -14546,30 +30349,23 @@ function create_default_slot6(ctx) {
         });
         check_outros();
       }
-      info.ctx = ctx;
+      const taskcontainer_changes = {};
       if (dirty & /*$visibleDayInTimeline*/
-      2 && promise !== (promise = getPlanItemsFromFile((0, import_obsidian_daily_notes_interface5.getDailyNote)(
-        /*$visibleDayInTimeline*/
-        ctx[1],
-        (0, import_obsidian_daily_notes_interface5.getAllDailyNotes)()
-      ))) && handle_promise(promise, info)) {
-      } else {
-        update_await_block_branch(info, ctx, dirty);
-      }
+      2)
+        taskcontainer_changes.day = /*$visibleDayInTimeline*/
+        ctx2[1];
+      taskcontainer.$set(taskcontainer_changes);
     },
     i(local) {
       if (current)
         return;
       transition_in(if_block);
-      transition_in(info.block);
+      transition_in(taskcontainer.$$.fragment, local);
       current = true;
     },
     o(local) {
       transition_out(if_block);
-      for (let i = 0; i < 3; i += 1) {
-        const block = info.blocks[i];
-        transition_out(block);
-      }
+      transition_out(taskcontainer.$$.fragment, local);
       current = false;
     },
     d(detaching) {
@@ -14577,16 +30373,12 @@ function create_default_slot6(ctx) {
         if_block.d(detaching);
       if (detaching)
         detach(t);
-      if (detaching)
-        detach(await_block_anchor);
-      info.block.d(detaching);
-      info.token = null;
-      info = null;
+      destroy_component(taskcontainer, detaching);
     }
   };
 }
-function create_fragment18(ctx) {
-  let controls;
+function create_fragment26(ctx) {
+  let timelinecontrols;
   let t0;
   let div1;
   let div0;
@@ -14596,42 +30388,44 @@ function create_fragment18(ctx) {
   let current;
   let mounted;
   let dispose;
-  controls = new controls_default({
+  timelinecontrols = new timeline_controls_default({
     props: { day: (
       /*$visibleDayInTimeline*/
       ctx[1]
     ) }
   });
   ruler = new ruler_default({
-    props: { visibleHours: (
-      /*$visibleHours*/
-      ctx[2]
-    ) }
+    props: {
+      visibleHours: getVisibleHours(
+        /*$settings*/
+        ctx[2]
+      )
+    }
   });
   column = new column_default({
     props: {
-      visibleHours: (
-        /*$visibleHours*/
+      visibleHours: getVisibleHours(
+        /*$settings*/
         ctx[2]
       ),
-      $$slots: { default: [create_default_slot6] },
+      $$slots: { default: [create_default_slot16] },
       $$scope: { ctx }
     }
   });
   return {
     c() {
-      create_component(controls.$$.fragment);
+      create_component(timelinecontrols.$$.fragment);
       t0 = space();
       div1 = element("div");
       div0 = element("div");
       create_component(ruler.$$.fragment);
       t1 = space();
       create_component(column.$$.fragment);
-      attr(div0, "class", "scale-with-days svelte-1fzzjqj");
-      attr(div1, "class", "vertical-scroller svelte-1fzzjqj");
+      attr(div0, "class", "scale-with-days svelte-79f2qo");
+      attr(div1, "class", "vertical-scroller svelte-79f2qo");
     },
     m(target, anchor) {
-      mount_component(controls, target, anchor);
+      mount_component(timelinecontrols, target, anchor);
       insert(target, t0, anchor);
       insert(target, div1, anchor);
       append(div1, div0);
@@ -14658,25 +30452,29 @@ function create_fragment18(ctx) {
       }
     },
     p(ctx2, [dirty]) {
-      const controls_changes = {};
+      const timelinecontrols_changes = {};
       if (dirty & /*$visibleDayInTimeline*/
       2)
-        controls_changes.day = /*$visibleDayInTimeline*/
+        timelinecontrols_changes.day = /*$visibleDayInTimeline*/
         ctx2[1];
-      controls.$set(controls_changes);
+      timelinecontrols.$set(timelinecontrols_changes);
       const ruler_changes = {};
-      if (dirty & /*$visibleHours*/
+      if (dirty & /*$settings*/
       4)
-        ruler_changes.visibleHours = /*$visibleHours*/
-        ctx2[2];
+        ruler_changes.visibleHours = getVisibleHours(
+          /*$settings*/
+          ctx2[2]
+        );
       ruler.$set(ruler_changes);
       const column_changes = {};
-      if (dirty & /*$visibleHours*/
+      if (dirty & /*$settings*/
       4)
-        column_changes.visibleHours = /*$visibleHours*/
-        ctx2[2];
+        column_changes.visibleHours = getVisibleHours(
+          /*$settings*/
+          ctx2[2]
+        );
       if (dirty & /*$$scope, $visibleDayInTimeline, userHoversOverScroller*/
-      131) {
+      35) {
         column_changes.$$scope = { dirty, ctx: ctx2 };
       }
       column.$set(column_changes);
@@ -14684,19 +30482,19 @@ function create_fragment18(ctx) {
     i(local) {
       if (current)
         return;
-      transition_in(controls.$$.fragment, local);
+      transition_in(timelinecontrols.$$.fragment, local);
       transition_in(ruler.$$.fragment, local);
       transition_in(column.$$.fragment, local);
       current = true;
     },
     o(local) {
-      transition_out(controls.$$.fragment, local);
+      transition_out(timelinecontrols.$$.fragment, local);
       transition_out(ruler.$$.fragment, local);
       transition_out(column.$$.fragment, local);
       current = false;
     },
     d(detaching) {
-      destroy_component(controls, detaching);
+      destroy_component(timelinecontrols, detaching);
       if (detaching)
         detach(t0);
       if (detaching)
@@ -14708,11 +30506,11 @@ function create_fragment18(ctx) {
     }
   };
 }
-function instance14($$self, $$props, $$invalidate) {
+function instance26($$self, $$props, $$invalidate) {
   let $visibleDayInTimeline;
-  let $visibleHours;
+  let $settings;
   component_subscribe($$self, visibleDayInTimeline, ($$value) => $$invalidate(1, $visibleDayInTimeline = $$value));
-  component_subscribe($$self, visibleHours, ($$value) => $$invalidate(2, $visibleHours = $$value));
+  component_subscribe($$self, settings, ($$value) => $$invalidate(2, $settings = $$value));
   let userHoversOverScroller = false;
   function handleMouseEnter() {
     $$invalidate(0, userHoversOverScroller = true);
@@ -14723,7 +30521,7 @@ function instance14($$self, $$props, $$invalidate) {
   return [
     userHoversOverScroller,
     $visibleDayInTimeline,
-    $visibleHours,
+    $settings,
     handleMouseEnter,
     handleMouseLeave
   ];
@@ -14731,31 +30529,32 @@ function instance14($$self, $$props, $$invalidate) {
 var Timeline = class extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance14, create_fragment18, safe_not_equal, {}, add_css9);
+    init(this, options, instance26, create_fragment26, safe_not_equal, {}, add_css10);
   }
 };
 var timeline_default = Timeline;
 
 // src/ui/timeline-view.ts
-var TimelineView = class extends import_obsidian12.ItemView {
-  constructor(leaf, settings2, plugin) {
+var TimelineView = class extends import_obsidian5.ItemView {
+  constructor(leaf, settings2, componentContext) {
     super(leaf);
-    this.plugin = plugin;
     this.settings = settings2;
+    this.componentContext = componentContext;
   }
   getViewType() {
-    return VIEW_TYPE_TIMELINE;
+    return viewTypeTimeline;
   }
   getDisplayText() {
     return "Day Planner Timeline";
   }
   getIcon() {
-    return this.settings.timelineIcon;
+    return this.settings().timelineIcon;
   }
   async onOpen() {
     const contentEl = this.containerEl.children[1];
     this.timeline = new timeline_default({
-      target: contentEl
+      target: contentEl,
+      context: this.componentContext
     });
   }
   async onClose() {
@@ -14765,10 +30564,13 @@ var TimelineView = class extends import_obsidian12.ItemView {
 };
 
 // src/ui/weekly-view.ts
-var import_obsidian14 = require("obsidian");
+var import_obsidian6 = require("obsidian");
+
+// src/global-store/visible-date-range.ts
+var visibleDateRange = writable(getDaysOfCurrentWeek());
 
 // src/ui/components/week/header-actions.svelte
-function add_css10(target) {
+function add_css11(target) {
   append_styles(target, "svelte-vfradk", ".range.svelte-vfradk{flex:1 0 0;margin-right:10px;white-space:nowrap}");
 }
 function create_default_slot_22(ctx) {
@@ -14799,7 +30601,7 @@ function create_default_slot_22(ctx) {
     }
   };
 }
-function create_default_slot_12(ctx) {
+function create_default_slot_1(ctx) {
   let circledoticon;
   let current;
   circledoticon = new Circle_dot$1({ props: { class: "svg-icon" } });
@@ -14827,7 +30629,7 @@ function create_default_slot_12(ctx) {
     }
   };
 }
-function create_default_slot7(ctx) {
+function create_default_slot17(ctx) {
   let arrowrighttoline;
   let current;
   arrowrighttoline = new Arrow_right_to_line$1({ props: { class: "svg-icon" } });
@@ -14855,7 +30657,7 @@ function create_default_slot7(ctx) {
     }
   };
 }
-function create_fragment19(ctx) {
+function create_fragment27(ctx) {
   let div1;
   let div0;
   let t0;
@@ -14883,7 +30685,7 @@ function create_fragment19(ctx) {
   controlbutton1 = new control_button_default({
     props: {
       label: "Show current week",
-      $$slots: { default: [create_default_slot_12] },
+      $$slots: { default: [create_default_slot_1] },
       $$scope: { ctx }
     }
   });
@@ -14895,7 +30697,7 @@ function create_fragment19(ctx) {
   controlbutton2 = new control_button_default({
     props: {
       label: "Show next week",
-      $$slots: { default: [create_default_slot7] },
+      $$slots: { default: [create_default_slot17] },
       $$scope: { ctx }
     }
   });
@@ -14997,7 +30799,7 @@ function create_fragment19(ctx) {
     }
   };
 }
-function instance15($$self, $$props, $$invalidate) {
+function instance27($$self, $$props, $$invalidate) {
   let firstDayOfShownWeek;
   let startOfRange;
   let endOfRange;
@@ -15046,30 +30848,32 @@ function instance15($$self, $$props, $$invalidate) {
 var Header_actions = class extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance15, create_fragment19, safe_not_equal, {}, add_css10);
+    init(this, options, instance27, create_fragment27, safe_not_equal, {}, add_css11);
   }
 };
 var header_actions_default = Header_actions;
 
 // src/ui/components/week/week.svelte
-var import_obsidian_daily_notes_interface6 = __toESM(require_main());
-function add_css11(target) {
-  append_styles(target, "svelte-8r78hm", ".corner.svelte-8r78hm{position:sticky;z-index:100;top:0;left:0;flex:0 0 var(--time-ruler-width);background-color:var(--background-primary);border:1px solid var(--background-modifier-border);border-top:none;border-left:none}.days.svelte-8r78hm{display:flex}.day-column.svelte-8r78hm{display:flex;flex:1 0 150px;flex-direction:column;background-color:var(--background-secondary);border-right:1px solid var(--background-modifier-border)}.week-header.svelte-8r78hm{position:sticky;z-index:10;top:0;display:flex}.day-header.svelte-8r78hm{flex:1 0 150px;padding:5px;background-color:var(--background-primary);border-right:1px solid var(--background-modifier-border);border-bottom:1px solid var(--background-modifier-border)}.today.svelte-8r78hm{color:white;background-color:var(--color-accent)}.scale-with-days.svelte-8r78hm{display:flex}");
+function add_css12(target) {
+  append_styles(target, "svelte-9mapff", ".corner.svelte-9mapff{position:sticky;z-index:100;top:0;left:0;flex:0 0 var(--time-ruler-width);background-color:var(--background-primary);border:1px solid var(--background-modifier-border);border-top:none;border-left:none}.days.svelte-9mapff{display:flex}.day-column.svelte-9mapff{display:flex;flex:1 0 150px;flex-direction:column;background-color:var(--background-secondary);border-right:1px solid var(--background-modifier-border)}.week-header.svelte-9mapff{position:sticky;z-index:10;top:0;display:flex}.day-header.svelte-9mapff{overflow-x:hidden;flex:1 0 150px;background-color:var(--background-primary);border-right:1px solid var(--background-modifier-border);border-bottom:1px solid var(--background-modifier-border)}.today.svelte-9mapff{color:white;background-color:var(--color-accent)}.scale-with-days.svelte-9mapff{display:flex}");
 }
 function get_each_context6(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[3] = list[i];
+  child_ctx[4] = list[i];
   return child_ctx;
 }
 function get_each_context_1(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[3] = list[i];
+  child_ctx[4] = list[i];
   return child_ctx;
 }
-function create_default_slot_13(ctx) {
+function create_default_slot_12(ctx) {
   let t_value = (
     /*day*/
-    ctx[3].format("MMM D, ddd") + ""
+    ctx[4].format(
+      /*$settings*/
+      ctx[1].timelineDateFormat
+    ) + ""
   );
   let t;
   return {
@@ -15080,9 +30884,12 @@ function create_default_slot_13(ctx) {
       insert(target, t, anchor);
     },
     p(ctx2, dirty) {
-      if (dirty & /*$visibleDateRange*/
-      1 && t_value !== (t_value = /*day*/
-      ctx2[3].format("MMM D, ddd") + ""))
+      if (dirty & /*$visibleDateRange, $settings*/
+      3 && t_value !== (t_value = /*day*/
+      ctx2[4].format(
+        /*$settings*/
+        ctx2[1].timelineDateFormat
+      ) + ""))
         set_data(t, t_value);
     },
     d(detaching) {
@@ -15101,16 +30908,16 @@ function create_each_block_1(ctx) {
   function click_handler() {
     return (
       /*click_handler*/
-      ctx[2](
+      ctx[3](
         /*day*/
-        ctx[3]
+        ctx[4]
       )
     );
   }
   controlbutton = new control_button_default({
     props: {
       label: "Open note for day",
-      $$slots: { default: [create_default_slot_13] },
+      $$slots: { default: [create_default_slot_12] },
       $$scope: { ctx }
     }
   });
@@ -15124,12 +30931,12 @@ function create_each_block_1(ctx) {
       set_style(div_1, "display", "contents");
       set_style(div_1, "--color", __color_last = isToday(
         /*day*/
-        ctx[3]
+        ctx[4]
       ) ? "white" : "var(--icon-color)");
-      attr(div, "class", "day-header svelte-8r78hm");
+      attr(div, "class", "day-header svelte-9mapff");
       toggle_class(div, "today", isToday(
         /*day*/
-        ctx[3]
+        ctx[4]
       ));
     },
     m(target, anchor) {
@@ -15144,13 +30951,13 @@ function create_each_block_1(ctx) {
       if (dirty & /*$visibleDateRange*/
       1 && __color_last !== (__color_last = isToday(
         /*day*/
-        ctx[3]
+        ctx[4]
       ) ? "white" : "var(--icon-color)")) {
         set_style(div_1, "--color", __color_last);
       }
       const controlbutton_changes = {};
-      if (dirty & /*$$scope, $visibleDateRange*/
-      1025) {
+      if (dirty & /*$$scope, $visibleDateRange, $settings*/
+      515) {
         controlbutton_changes.$$scope = { dirty, ctx };
       }
       controlbutton.$set(controlbutton_changes);
@@ -15158,7 +30965,7 @@ function create_each_block_1(ctx) {
       1) {
         toggle_class(div, "today", isToday(
           /*day*/
-          ctx[3]
+          ctx[4]
         ));
       }
     },
@@ -15179,7 +30986,7 @@ function create_each_block_1(ctx) {
     }
   };
 }
-function create_if_block4(ctx) {
+function create_if_block5(ctx) {
   let needle;
   let current;
   needle = new needle_default({ props: { autoScrollBlocked: true } });
@@ -15206,153 +31013,39 @@ function create_if_block4(ctx) {
     }
   };
 }
-function create_catch_block2(ctx) {
-  let pre;
-  let t0;
-  let t1_value = (
-    /*error*/
-    ctx[7] + ""
-  );
-  let t1;
-  return {
-    c() {
-      pre = element("pre");
-      t0 = text("Could not render tasks: ");
-      t1 = text(t1_value);
-    },
-    m(target, anchor) {
-      insert(target, pre, anchor);
-      append(pre, t0);
-      append(pre, t1);
-    },
-    p(ctx2, dirty) {
-      if (dirty & /*$visibleDateRange*/
-      1 && t1_value !== (t1_value = /*error*/
-      ctx2[7] + ""))
-        set_data(t1, t1_value);
-    },
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (detaching)
-        detach(pre);
-    }
-  };
-}
-function create_then_block2(ctx) {
-  let taskcontainer;
-  let current;
-  taskcontainer = new task_container_default({
-    props: {
-      day: (
-        /*day*/
-        ctx[3]
-      ),
-      tasks: toPlacedWritables(
-        /*tasks*/
-        ctx[6]
-      )
-    }
-  });
-  return {
-    c() {
-      create_component(taskcontainer.$$.fragment);
-    },
-    m(target, anchor) {
-      mount_component(taskcontainer, target, anchor);
-      current = true;
-    },
-    p(ctx2, dirty) {
-      const taskcontainer_changes = {};
-      if (dirty & /*$visibleDateRange*/
-      1)
-        taskcontainer_changes.day = /*day*/
-        ctx2[3];
-      if (dirty & /*$visibleDateRange*/
-      1)
-        taskcontainer_changes.tasks = toPlacedWritables(
-          /*tasks*/
-          ctx2[6]
-        );
-      taskcontainer.$set(taskcontainer_changes);
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(taskcontainer.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(taskcontainer.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(taskcontainer, detaching);
-    }
-  };
-}
-function create_pending_block2(ctx) {
-  return {
-    c: noop,
-    m: noop,
-    p: noop,
-    i: noop,
-    o: noop,
-    d: noop
-  };
-}
-function create_default_slot8(ctx) {
+function create_default_slot18(ctx) {
   let show_if = isToday(
     /*day*/
-    ctx[3]
+    ctx[4]
   );
   let t;
-  let await_block_anchor;
-  let promise;
+  let taskcontainer;
   let current;
-  let if_block = show_if && create_if_block4(ctx);
-  let info = {
-    ctx,
-    current: null,
-    token: null,
-    hasCatch: true,
-    pending: create_pending_block2,
-    then: create_then_block2,
-    catch: create_catch_block2,
-    value: 6,
-    error: 7,
-    blocks: [, , ,]
-  };
-  handle_promise(promise = getPlanItemsFromFile((0, import_obsidian_daily_notes_interface6.getDailyNote)(
+  let if_block = show_if && create_if_block5(ctx);
+  taskcontainer = new task_container_default({ props: { day: (
     /*day*/
-    ctx[3],
-    (0, import_obsidian_daily_notes_interface6.getAllDailyNotes)()
-  )), info);
+    ctx[4]
+  ) } });
   return {
     c() {
       if (if_block)
         if_block.c();
       t = space();
-      await_block_anchor = empty();
-      info.block.c();
+      create_component(taskcontainer.$$.fragment);
     },
     m(target, anchor) {
       if (if_block)
         if_block.m(target, anchor);
       insert(target, t, anchor);
-      insert(target, await_block_anchor, anchor);
-      info.block.m(target, info.anchor = anchor);
-      info.mount = () => await_block_anchor.parentNode;
-      info.anchor = await_block_anchor;
+      mount_component(taskcontainer, target, anchor);
       current = true;
     },
-    p(new_ctx, dirty) {
-      ctx = new_ctx;
+    p(ctx2, dirty) {
       if (dirty & /*$visibleDateRange*/
       1)
         show_if = isToday(
           /*day*/
-          ctx[3]
+          ctx2[4]
         );
       if (show_if) {
         if (if_block) {
@@ -15361,7 +31054,7 @@ function create_default_slot8(ctx) {
             transition_in(if_block, 1);
           }
         } else {
-          if_block = create_if_block4(ctx);
+          if_block = create_if_block5(ctx2);
           if_block.c();
           transition_in(if_block, 1);
           if_block.m(t.parentNode, t);
@@ -15373,30 +31066,23 @@ function create_default_slot8(ctx) {
         });
         check_outros();
       }
-      info.ctx = ctx;
+      const taskcontainer_changes = {};
       if (dirty & /*$visibleDateRange*/
-      1 && promise !== (promise = getPlanItemsFromFile((0, import_obsidian_daily_notes_interface6.getDailyNote)(
-        /*day*/
-        ctx[3],
-        (0, import_obsidian_daily_notes_interface6.getAllDailyNotes)()
-      ))) && handle_promise(promise, info)) {
-      } else {
-        update_await_block_branch(info, ctx, dirty);
-      }
+      1)
+        taskcontainer_changes.day = /*day*/
+        ctx2[4];
+      taskcontainer.$set(taskcontainer_changes);
     },
     i(local) {
       if (current)
         return;
       transition_in(if_block);
-      transition_in(info.block);
+      transition_in(taskcontainer.$$.fragment, local);
       current = true;
     },
     o(local) {
       transition_out(if_block);
-      for (let i = 0; i < 3; i += 1) {
-        const block = info.blocks[i];
-        transition_out(block);
-      }
+      transition_out(taskcontainer.$$.fragment, local);
       current = false;
     },
     d(detaching) {
@@ -15404,11 +31090,7 @@ function create_default_slot8(ctx) {
         if_block.d(detaching);
       if (detaching)
         detach(t);
-      if (detaching)
-        detach(await_block_anchor);
-      info.block.d(detaching);
-      info.token = null;
-      info = null;
+      destroy_component(taskcontainer, detaching);
     }
   };
 }
@@ -15420,11 +31102,11 @@ function create_each_block6(ctx) {
   let current;
   column = new column_default({
     props: {
-      visibleHours: (
-        /*$visibleHours*/
+      visibleHours: getVisibleHours(
+        /*$settings*/
         ctx[1]
       ),
-      $$slots: { default: [create_default_slot8] },
+      $$slots: { default: [create_default_slot18] },
       $$scope: { ctx }
     }
   });
@@ -15434,8 +31116,8 @@ function create_each_block6(ctx) {
       div0 = element("div");
       create_component(column.$$.fragment);
       t = space();
-      attr(div0, "class", "scale-with-days svelte-8r78hm");
-      attr(div1, "class", "day-column svelte-8r78hm");
+      attr(div0, "class", "scale-with-days svelte-9mapff");
+      attr(div1, "class", "day-column svelte-9mapff");
     },
     m(target, anchor) {
       insert(target, div1, anchor);
@@ -15446,12 +31128,14 @@ function create_each_block6(ctx) {
     },
     p(ctx2, dirty) {
       const column_changes = {};
-      if (dirty & /*$visibleHours*/
+      if (dirty & /*$settings*/
       2)
-        column_changes.visibleHours = /*$visibleHours*/
-        ctx2[1];
+        column_changes.visibleHours = getVisibleHours(
+          /*$settings*/
+          ctx2[1]
+        );
       if (dirty & /*$$scope, $visibleDateRange*/
-      1025) {
+      513) {
         column_changes.$$scope = { dirty, ctx: ctx2 };
       }
       column.$set(column_changes);
@@ -15473,7 +31157,7 @@ function create_each_block6(ctx) {
     }
   };
 }
-function create_fragment20(ctx) {
+function create_fragment28(ctx) {
   let div1;
   let div0;
   let t0;
@@ -15494,10 +31178,12 @@ function create_fragment20(ctx) {
     each_blocks_1[i] = null;
   });
   ruler = new ruler_default({
-    props: { visibleHours: (
-      /*$visibleHours*/
-      ctx[1]
-    ) }
+    props: {
+      visibleHours: getVisibleHours(
+        /*$settings*/
+        ctx[1]
+      )
+    }
   });
   let each_value = (
     /*$visibleDateRange*/
@@ -15525,9 +31211,9 @@ function create_fragment20(ctx) {
       for (let i = 0; i < each_blocks.length; i += 1) {
         each_blocks[i].c();
       }
-      attr(div0, "class", "corner svelte-8r78hm");
-      attr(div1, "class", "week-header svelte-8r78hm");
-      attr(div2, "class", "days svelte-8r78hm");
+      attr(div0, "class", "corner svelte-9mapff");
+      attr(div1, "class", "week-header svelte-9mapff");
+      attr(div2, "class", "days svelte-9mapff");
     },
     m(target, anchor) {
       insert(target, div1, anchor);
@@ -15550,8 +31236,8 @@ function create_fragment20(ctx) {
       current = true;
     },
     p(ctx2, [dirty]) {
-      if (dirty & /*isToday, $visibleDateRange, openFileForDay*/
-      1) {
+      if (dirty & /*isToday, $visibleDateRange, obsidianFacade, $settings*/
+      7) {
         each_value_1 = /*$visibleDateRange*/
         ctx2[0];
         let i;
@@ -15574,12 +31260,14 @@ function create_fragment20(ctx) {
         check_outros();
       }
       const ruler_changes = {};
-      if (dirty & /*$visibleHours*/
+      if (dirty & /*$settings*/
       2)
-        ruler_changes.visibleHours = /*$visibleHours*/
-        ctx2[1];
+        ruler_changes.visibleHours = getVisibleHours(
+          /*$settings*/
+          ctx2[1]
+        );
       ruler.$set(ruler_changes);
-      if (dirty & /*$visibleHours, getPlanItemsFromFile, getDailyNote, $visibleDateRange, getAllDailyNotes, toPlacedWritables, isToday*/
+      if (dirty & /*getVisibleHours, $settings, $visibleDateRange, isToday*/
       3) {
         each_value = /*$visibleDateRange*/
         ctx2[0];
@@ -15640,36 +31328,38 @@ function create_fragment20(ctx) {
     }
   };
 }
-function instance16($$self, $$props, $$invalidate) {
+function instance28($$self, $$props, $$invalidate) {
   let $visibleDateRange;
-  let $visibleHours;
+  let $settings;
   component_subscribe($$self, visibleDateRange, ($$value) => $$invalidate(0, $visibleDateRange = $$value));
-  component_subscribe($$self, visibleHours, ($$value) => $$invalidate(1, $visibleHours = $$value));
-  const click_handler = async (day) => await openFileForDay(day);
-  return [$visibleDateRange, $visibleHours, click_handler];
+  component_subscribe($$self, settings, ($$value) => $$invalidate(1, $settings = $$value));
+  const { obsidianFacade } = getContext(obsidianContext);
+  const click_handler = async (day) => await obsidianFacade.openFileForDay(day);
+  return [$visibleDateRange, $settings, obsidianFacade, click_handler];
 }
 var Week = class extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance16, create_fragment20, safe_not_equal, {}, add_css11);
+    init(this, options, instance28, create_fragment28, safe_not_equal, {}, add_css12);
   }
 };
 var week_default = Week;
 
 // src/ui/weekly-view.ts
-var WeeklyView = class extends import_obsidian14.ItemView {
-  constructor(leaf, plugin) {
+var WeeklyView = class extends import_obsidian6.ItemView {
+  constructor(leaf, settings2, componentContext) {
     super(leaf);
-    this.settings = plugin.settings;
+    this.settings = settings2;
+    this.componentContext = componentContext;
   }
   getViewType() {
-    return VIEW_TYPE_WEEKLY;
+    return viewTypeWeekly;
   }
   getDisplayText() {
     return "Week Planner";
   }
   getIcon() {
-    return this.settings.timelineIcon;
+    return this.settings().timelineIcon;
   }
   async onOpen() {
     const headerEl = this.containerEl.children[0];
@@ -15681,7 +31371,8 @@ var WeeklyView = class extends import_obsidian14.ItemView {
       target: customActionsEl
     });
     this.weekComponent = new week_default({
-      target: contentEl
+      target: contentEl,
+      context: this.componentContext
     });
   }
   async onClose() {
@@ -15691,74 +31382,148 @@ var WeeklyView = class extends import_obsidian14.ItemView {
   }
 };
 
+// src/util/debounce-with-delay.ts
+function debounceWithDelay(cb, timeout) {
+  let lastTimeout;
+  let lastArgs;
+  function set() {
+    lastTimeout = window.setTimeout(() => {
+      cb(...lastArgs);
+      lastTimeout = null;
+    }, timeout);
+  }
+  function debouncedFn(...args) {
+    lastArgs = args;
+    if (!lastTimeout) {
+      set();
+    }
+  }
+  function delay() {
+    if (lastTimeout) {
+      clearTimeout(lastTimeout);
+      set();
+    }
+  }
+  return [debouncedFn, delay];
+}
+
 // src/main.ts
-var DayPlanner = class extends import_obsidian15.Plugin {
+var DayPlanner = class extends import_obsidian7.Plugin {
   constructor() {
     super(...arguments);
+    this.dataviewLoaded = writable(false);
+    this.fileSyncInProgress = writable(false);
+    this.refreshTasks = (source) => {
+      const dataview = (0, import_obsidian_dataview.getAPI)(this.app);
+      if (!dataview) {
+        return [];
+      }
+      this.dataviewLoaded.set(true);
+      performance.mark("query-start");
+      const result = dataview.pages(source).file.tasks;
+      performance.mark("query-end");
+      const measure = performance.measure(
+        "query-time",
+        "query-start",
+        "query-end"
+      );
+      console.debug(
+        `obsidian-day-planner:
+  source: "${source}"
+  took: ${measure.duration} ms`
+      );
+      return result;
+    };
     this.handleActiveLeafChanged = ({ view }) => {
-      if (!(view instanceof import_obsidian15.FileView) || !view.file) {
+      if (!(view instanceof import_obsidian7.FileView) || !view.file) {
         return;
       }
-      const newDay = (0, import_obsidian_daily_notes_interface7.getDateFromFile)(view.file, "day");
-      if (!newDay) {
+      const dayUserSwitchedTo = (0, import_obsidian_daily_notes_interface5.getDateFromFile)(view.file, "day");
+      if (dayUserSwitchedTo == null ? void 0 : dayUserSwitchedTo.isSame(get_store_value(visibleDayInTimeline), "day")) {
+        return;
+      }
+      if (!dayUserSwitchedTo) {
         if (isToday(get_store_value(visibleDayInTimeline))) {
           visibleDayInTimeline.set(window.moment());
         }
         return;
       }
-      visibleDayInTimeline.set(newDay);
+      visibleDayInTimeline.set(dayUserSwitchedTo);
     };
-    this.handleLayoutReady = async () => {
-      visibleDateRange.set(getDaysOfCurrentWeek());
+    this.updateStatusBar = async (dataviewTasks) => {
+      const today = window.moment();
+      await this.statusBar.update(
+        getTasksForDay(today, dataviewTasks, { ...this.settings() })
+      );
     };
-    this.updateStatusBar = async () => {
-      if (dailyNoteExists()) {
-        const note = (0, import_obsidian_daily_notes_interface7.getDailyNote)(window.moment(), (0, import_obsidian_daily_notes_interface7.getAllDailyNotes)());
-        const planItems = await getPlanItemsFromFile(note);
-        await this.statusBar.update(planItems);
-      } else {
-        this.statusBar.setEmpty();
-      }
+    this.initWeeklyLeaf = async () => {
+      await this.detachLeavesOfType(viewTypeWeekly);
+      await this.app.workspace.getLeaf(false).setViewState({
+        type: viewTypeWeekly,
+        active: true
+      });
+    };
+    this.initTimelineLeaf = async () => {
+      await this.detachLeavesOfType(viewTypeTimeline);
+      await this.app.workspace.getRightLeaf(false).setViewState({
+        type: viewTypeTimeline,
+        active: true
+      });
+      this.app.workspace.rightSplit.expand();
+    };
+    this.syncTasksWithFile = async (base, updated) => {
+      this.fileSyncInProgress.set(true);
+      await this.planEditor.syncTasksWithFile(base, updated);
     };
   }
   async onload() {
-    this.settings = Object.assign(
-      new DayPlannerSettings(),
-      await this.loadData()
-    );
+    await this.initSettingsStore();
+    this.initDataviewTasks();
+    this.obsidianFacade = new ObsidianFacade(this.app);
+    this.planEditor = new PlanEditor(this.settings, this.obsidianFacade);
+    this.registerCommands();
+    this.registerViews();
+    this.addRibbonIcon("calendar-range", "Timeline", this.initTimelineLeaf);
+    this.addSettingTab(new DayPlannerSettingsTab(this, this.settingsStore));
     this.statusBar = new StatusBar(
       this.settings,
       this.addStatusBarItem(),
-      this.app.workspace
+      this.initTimelineLeaf
     );
-    this.registerCommands();
-    this.registerView(
-      VIEW_TYPE_TIMELINE,
-      (leaf) => new TimelineView(leaf, this.settings, this)
-    );
-    this.registerView(
-      VIEW_TYPE_WEEKLY,
-      (leaf) => new WeeklyView(leaf, this)
-    );
-    this.addRibbonIcon(
-      "calendar-range",
-      "Week plan",
-      async () => await this.initWeeklyLeaf()
-    );
-    this.addSettingTab(new DayPlannerSettingsTab(this.app, this));
-    this.initAppAndSettingsStores();
-    this.app.workspace.onLayoutReady(this.handleLayoutReady);
+    this.register(this.dataviewTasks.subscribe(this.updateStatusBar));
     this.app.workspace.on("active-leaf-change", this.handleActiveLeafChanged);
-    this.app.metadataCache.on("changed", async (file) => {
-      visibleDateRange.update((prev) => [...prev]);
-      visibleDayInTimeline.update((prev) => prev.clone());
+  }
+  getAllTasks() {
+    const source = this.settings().dataviewSource;
+    return this.refreshTasks(source);
+  }
+  initDataviewTasks() {
+    this.dataviewTasks = readable(this.getAllTasks(), (set) => {
+      const [updateTasks, delayUpdateTasks] = debounceWithDelay(() => {
+        try {
+          set(this.getAllTasks());
+        } finally {
+          this.fileSyncInProgress.set(false);
+        }
+      }, 1e3);
+      this.app.metadataCache.on(
+        // @ts-expect-error
+        "dataview:metadata-change",
+        updateTasks
+      );
+      document.addEventListener("keydown", delayUpdateTasks);
+      const source = derived(this.settingsStore, ($settings) => {
+        return $settings.dataviewSource;
+      });
+      const unsubscribeFromSettings = source.subscribe(() => {
+        updateTasks();
+      });
+      return () => {
+        this.app.metadataCache.off("dataview:metadata-change", updateTasks);
+        document.removeEventListener("keydown", delayUpdateTasks);
+        unsubscribeFromSettings();
+      };
     });
-    this.registerInterval(
-      window.setInterval(
-        () => this.updateStatusBarOnFailed(this.updateStatusBar),
-        5e3
-      )
-    );
   }
   registerCommands() {
     this.addCommand({
@@ -15769,7 +31534,7 @@ var DayPlanner = class extends import_obsidian15.Plugin {
     this.addCommand({
       id: "show-weekly-view",
       name: "Show the Week Planner",
-      callback: async () => await this.initWeeklyLeaf()
+      callback: this.initWeeklyLeaf
     });
     this.addCommand({
       id: "show-day-planner-today-note",
@@ -15779,72 +31544,67 @@ var DayPlanner = class extends import_obsidian15.Plugin {
     this.addCommand({
       id: "insert-planner-heading-at-cursor",
       name: "Insert Planner Heading at Cursor",
-      editorCallback: (editor) => editor.replaceSelection(createPlannerHeading())
+      editorCallback: (editor) => editor.replaceSelection(this.planEditor.createPlannerHeading())
     });
   }
-  initAppAndSettingsStores() {
-    appStore.set(this.app);
-    const {
-      zoomLevel,
-      centerNeedle,
-      startHour,
-      timelineDateFormat,
-      plannerHeading,
-      plannerHeadingLevel,
-      timelineColored,
-      timelineStartColor,
-      timelineEndColor
-    } = this.settings;
-    settings.set({
-      zoomLevel,
-      centerNeedle,
-      startHour,
-      timelineDateFormat,
-      plannerHeading,
-      plannerHeadingLevel,
-      timelineColored,
-      timelineStartColor,
-      timelineEndColor
-    });
-    settings.subscribe(async (newValue) => {
-      this.settings = { ...this.settings, ...newValue };
-      await this.saveData(this.settings);
-    });
+  async initSettingsStore() {
+    settings.set({ ...defaultSettings, ...await this.loadData() });
+    this.register(
+      settings.subscribe(async (newValue) => {
+        await this.saveData(newValue);
+      })
+    );
+    this.settingsStore = settings;
+    this.settings = () => get_store_value(settings);
   }
-  onunload() {
-    this.detachLeavesOfType(VIEW_TYPE_TIMELINE);
-    this.detachLeavesOfType(VIEW_TYPE_WEEKLY);
+  async onunload() {
+    await this.detachLeavesOfType(viewTypeTimeline);
+    await this.detachLeavesOfType(viewTypeWeekly);
   }
-  async updateStatusBarOnFailed(fn) {
-    try {
-      await fn();
-    } catch (error) {
-      this.statusBar.setText(`\u26A0\uFE0F Planner update failed (see console)`);
-      console.error(error);
-    }
+  async detachLeavesOfType(type) {
+    return Promise.all(
+      this.app.workspace.getLeavesOfType(type).map((leaf) => leaf.detach())
+    );
   }
-  async initWeeklyLeaf() {
-    this.detachLeavesOfType(VIEW_TYPE_WEEKLY);
-    await this.app.workspace.getLeaf(false).setViewState({
-      type: VIEW_TYPE_WEEKLY,
-      active: true
-    });
-  }
-  async initTimelineLeaf() {
-    this.detachLeavesOfType(VIEW_TYPE_TIMELINE);
-    await this.app.workspace.getRightLeaf(false).setViewState({
-      type: VIEW_TYPE_TIMELINE,
-      active: true
-    });
-    this.app.workspace.rightSplit.expand();
-  }
-  detachLeavesOfType(type) {
-    this.app.workspace.getLeavesOfType(type).forEach((leaf) => leaf.detach());
+  registerViews() {
+    const componentContext = /* @__PURE__ */ new Map([
+      [
+        obsidianContext,
+        {
+          obsidianFacade: this.obsidianFacade,
+          metadataCache: this.app.metadataCache,
+          onUpdate: this.syncTasksWithFile,
+          initWeeklyView: this.initWeeklyLeaf,
+          dataviewTasks: this.dataviewTasks,
+          refreshTasks: this.refreshTasks,
+          dataviewLoaded: this.dataviewLoaded,
+          fileSyncInProgress: this.fileSyncInProgress
+        }
+      ]
+    ]);
+    this.registerView(
+      viewTypeTimeline,
+      (leaf) => new TimelineView(leaf, this.settings, componentContext)
+    );
+    this.registerView(
+      viewTypeWeekly,
+      (leaf) => new WeeklyView(leaf, this.settings, componentContext)
+    );
   }
 };
 /*! Bundled license information:
 
 lodash/lodash.min.js:
+  (**
+   * @license
+   * Lodash <https://lodash.com/>
+   * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
+   * Released under MIT license <https://lodash.com/license>
+   * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+   * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+   *)
+
+lodash/lodash.js:
   (**
    * @license
    * Lodash <https://lodash.com/>
