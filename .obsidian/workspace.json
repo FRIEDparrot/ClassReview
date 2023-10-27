@@ -4,16 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "56693f61addadc10",
+        "id": "6721d3e08be2bb8d",
         "type": "tabs",
         "children": [
           {
-            "id": "c3c6b2effe4b0702",
+            "id": "d45d7f9bd6f36800",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共型映射.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第六章 频域分析及数字信号处理技术.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "d35d4746b022a876",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9b30baabddb60a0e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第二章 解析函数.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 406.5,
+    "width": 479.5,
     "collapsed": true
   },
   "right": {
@@ -174,7 +192,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共型映射.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第六章 频域分析及数字信号处理技术.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -205,7 +223,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7039922129971116,
+                  "scale": 0.648477434255403,
                   "close": true
                 }
               }
@@ -236,7 +254,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -249,7 +267,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共型映射.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第六章 频域分析及数字信号处理技术.md"
               }
             }
           },
@@ -267,7 +285,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共型映射.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第六章 频域分析及数字信号处理技术.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -284,7 +302,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共型映射.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第六章 频域分析及数字信号处理技术.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -294,7 +312,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 435.5,
+    "width": 480.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -318,35 +336,42 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "c3c6b2effe4b0702",
+  "active": "d45d7f9bd6f36800",
   "lastOpenFiles": [
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第六章例题1.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共型映射.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/思维导图与复习要点.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第六章 频域分析以及数字信号处理技术.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第五章 振动测试设备和激励技术.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第三章 机电式传感器工作原理.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第二章 解析函数.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第六章 频域分析及数字信号处理技术.md",
+    "attachments/Screenshot_20231027_103204_cn.wps.moffice_eng.png",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Dynamic Terminology.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第一章 振动测试技术概论.md",
+    "Excalidraw/第六章 频域分析及数字信号处理技术 2023-10-27 09.44.41.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/思维导图与复习要点.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第八章 傅里叶变换.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/傅里叶级数展开方法.md",
+    "Excalidraw/第六章 频域分析及数字信号处理技术 2023-10-26 23.59.46.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/傅里叶积分定理推导.pdf",
+    "Excalidraw/第六章 频域分析及数字信号处理技术 2023-10-26 22.10.38.md",
+    "Excalidraw/第六章 频域分析及数字信号处理技术 2023-10-26 20.57.11.md",
+    "Excalidraw/第六章 频域分析及数字信号处理技术 2023-10-26 20.25.02.md",
+    "Excalidraw/第六章 频域分析及数字信号处理技术 2023-10-26 20.12.12.md",
+    "Excalidraw/第六章 频域分析及数字信号处理技术 2023-10-26 20.08.08.md",
+    "Excalidraw/第六章 频域分析及数字信号处理技术 2023-10-26 18.29.14.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第三章 机电式传感器工作原理.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第四章 振动测试设备与电子仪器.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第五章 振动测试设备和激励技术.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md",
+    "attachments/Screenshot_20231026_170920_com.microsoft.skydrive.png",
+    "attachments/Screenshot_20231026_170831_com.microsoft.skydrive.png",
+    "attachments/Screenshot_20231026_170743_com.microsoft.skydrive.png",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共型映射.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/茹科夫斯基映射推导.pdf",
+    "Excalidraw/第六章 共型映射 2023-10-26 15.10.36.md",
+    "Excalidraw/第六章 共型映射 2023-10-26 13.21.59.md",
+    "Excalidraw/第六章 共型映射 2023-10-26 13.35.13.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第六章例题.pdf",
     "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第六章例题1,2.md",
-    "Excalidraw/6. 共型映射 2023-01-05 11.45.36.excalidraw.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/分式线性变换唯一性推导.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/全概率公式和贝叶斯公式的证明.pdf",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第十一章 变压器和电动机.md",
-    "Excalidraw/第十一章 变压器和电动机 2023-10-25 00.31.30.md",
-    "Excalidraw/第十一章 变压器和电动机 2023-10-24 23.24.05.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第三章 正弦交流电路.md",
-    "Excalidraw/第十一章 变压器和电动机 2023-10-24 23.51.30.md",
     "🐸 Daily Life memo/备忘录.md",
-    "Excalidraw/第十一章 变压器和电动机 2023-10-24 23.01.22.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第一章 电路基本概念与定律.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第三章 薄板的大挠度问题.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/Untitled mindmap.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第四章 壳体理论的几何建立.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第二章 矩形薄板的弯曲.md",
-    "Excalidraw/第十一章 变压器和电动机 2023-10-24 18.48.54.md",
+    "Excalidraw/第十一章 变压器和电动机 2023-10-25 00.31.30.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第六章例题1.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/全概率公式和贝叶斯公式的证明.pdf",
     "attachments/Screenshot_20231024_153246_com.microsoft.skydrive.png",
     "attachments/Screenshot_20231024_153103_com.microsoft.skydrive(1).png",
     "attachments/Pasted image 20231024151842.png",
@@ -354,18 +379,11 @@
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Untitled",
     "attachments/Screenshot_20231024_095255_com.microsoft.skydrive.png",
     "attachments/Screenshot_20231024_095238_com.microsoft.skydrive.png",
-    "attachments/Screenshot_20231024_094155_com.microsoft.skydrive.png",
-    "attachments/Pasted Image 20231024091709_598.png",
-    "attachments/Pasted Image 20231024090924_828.png",
     "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/分式线性映射的性质推导.pdf",
     "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/幅角原理及对数留数例题.pdf",
-    "attachments/Screenshot_20231023_135513_com.microsoft.skydrive.png",
     "📘ClassNotes/⚡Circuit/电工电子技术/补充部分/交流电下的RC微分关系推导.pdf",
     "📘ClassNotes/⚡Circuit/电工电子技术/补充部分",
     "📘ClassNotes/⚡Circuit/电工电子技术/New folder",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板大挠度问题基本微分方程推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/大挠度薄板的里兹法与中面变形能推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/小挠度薄板问题的里兹法和伽辽金法.pdf",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

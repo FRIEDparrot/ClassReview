@@ -1,44 +1,112 @@
 {
   "recentFiles": [
     {
-      "basename": "第六章 共型映射",
-      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共型映射.md"
+      "basename": "第六章 频域分析及数字信号处理技术",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第六章 频域分析及数字信号处理技术.md"
     },
     {
-      "basename": "第六章例题1",
-      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第六章例题1.md"
-    },
-    {
-      "basename": "思维导图与复习要点",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/思维导图与复习要点.md"
-    },
-    {
-      "basename": "第二章 振动测试原理",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md"
-    },
-    {
-      "basename": "第六章 频域分析以及数字信号处理技术",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第六章 频域分析以及数字信号处理技术.md"
-    },
-    {
-      "basename": "第五章 振动测试设备和激励技术",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第五章 振动测试设备和激励技术.md"
-    },
-    {
-      "basename": "第三章 机电式传感器工作原理",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第三章 机电式传感器工作原理.md"
+      "basename": "第二章 解析函数",
+      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第二章 解析函数.md"
     },
     {
       "basename": "Dynamic Terminology",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Dynamic Terminology.md"
     },
     {
-      "basename": "第一章 振动测试技术概论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第一章 振动测试技术概论.md"
+      "basename": "第六章 频域分析及数字信号处理技术 2023-10-27 09.44.41",
+      "path": "Excalidraw/第六章 频域分析及数字信号处理技术 2023-10-27 09.44.41.md"
     },
     {
-      "basename": "第六章例题1,2",
-      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第六章例题1,2.md"
+      "basename": "思维导图与复习要点",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/思维导图与复习要点.md"
+    },
+    {
+      "basename": "第八章 傅里叶变换",
+      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第八章 傅里叶变换.md"
+    },
+    {
+      "basename": "傅里叶级数展开方法",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/傅里叶级数展开方法.md"
+    },
+    {
+      "basename": "第六章 频域分析及数字信号处理技术 2023-10-26 23.59.46",
+      "path": "Excalidraw/第六章 频域分析及数字信号处理技术 2023-10-26 23.59.46.md"
+    },
+    {
+      "basename": "傅里叶积分定理推导",
+      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/傅里叶积分定理推导.pdf"
+    },
+    {
+      "basename": "第六章 频域分析及数字信号处理技术 2023-10-26 22.10.38",
+      "path": "Excalidraw/第六章 频域分析及数字信号处理技术 2023-10-26 22.10.38.md"
+    },
+    {
+      "basename": "第六章 频域分析及数字信号处理技术 2023-10-26 20.57.11",
+      "path": "Excalidraw/第六章 频域分析及数字信号处理技术 2023-10-26 20.57.11.md"
+    },
+    {
+      "basename": "第六章 频域分析及数字信号处理技术 2023-10-26 20.25.02",
+      "path": "Excalidraw/第六章 频域分析及数字信号处理技术 2023-10-26 20.25.02.md"
+    },
+    {
+      "basename": "第六章 频域分析及数字信号处理技术 2023-10-26 20.08.08",
+      "path": "Excalidraw/第六章 频域分析及数字信号处理技术 2023-10-26 20.08.08.md"
+    },
+    {
+      "basename": "第六章 频域分析及数字信号处理技术 2023-10-26 18.29.14",
+      "path": "Excalidraw/第六章 频域分析及数字信号处理技术 2023-10-26 18.29.14.md"
+    },
+    {
+      "basename": "第三章 机电式传感器工作原理",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第三章 机电式传感器工作原理.md"
+    },
+    {
+      "basename": "第四章 振动测试设备与电子仪器",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第四章 振动测试设备与电子仪器.md"
+    },
+    {
+      "basename": "第五章 振动测试设备和激励技术",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第五章 振动测试设备和激励技术.md"
+    },
+    {
+      "basename": "第二章 振动测试原理",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第二章 振动测试原理.md"
+    },
+    {
+      "basename": "第六章 共型映射",
+      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共型映射.md"
+    },
+    {
+      "basename": "第六章 共型映射 2023-10-26 15.10.36",
+      "path": "Excalidraw/第六章 共型映射 2023-10-26 15.10.36.md"
+    },
+    {
+      "basename": "第六章 共型映射 2023-10-26 13.21.59",
+      "path": "Excalidraw/第六章 共型映射 2023-10-26 13.21.59.md"
+    },
+    {
+      "basename": "第六章 共型映射 2023-10-26 13.35.13",
+      "path": "Excalidraw/第六章 共型映射 2023-10-26 13.35.13.md"
+    },
+    {
+      "basename": "第六章例题",
+      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第六章例题.pdf"
+    },
+    {
+      "basename": "备忘录",
+      "path": "🐸 Daily Life memo/备忘录.md"
+    },
+    {
+      "basename": "第十一章 变压器和电动机 2023-10-25 00.31.30",
+      "path": "Excalidraw/第十一章 变压器和电动机 2023-10-25 00.31.30.md"
+    },
+    {
+      "basename": "第六章例题1",
+      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第六章例题1.md"
+    },
+    {
+      "basename": "第一章 振动测试技术概论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第一章 振动测试技术概论.md"
     },
     {
       "basename": "分式线性变换唯一性推导",
@@ -53,10 +121,6 @@
       "path": "📘ClassNotes/⚡Circuit/电工电子技术/第十一章 变压器和电动机.md"
     },
     {
-      "basename": "第十一章 变压器和电动机 2023-10-25 00.31.30",
-      "path": "Excalidraw/第十一章 变压器和电动机 2023-10-25 00.31.30.md"
-    },
-    {
       "basename": "第十一章 变压器和电动机 2023-10-24 23.24.05",
       "path": "Excalidraw/第十一章 变压器和电动机 2023-10-24 23.24.05.md"
     },
@@ -67,10 +131,6 @@
     {
       "basename": "第十一章 变压器和电动机 2023-10-24 23.51.30",
       "path": "Excalidraw/第十一章 变压器和电动机 2023-10-24 23.51.30.md"
-    },
-    {
-      "basename": "备忘录",
-      "path": "🐸 Daily Life memo/备忘录.md"
     },
     {
       "basename": "第十一章 变压器和电动机 2023-10-24 23.01.22",
@@ -139,66 +199,6 @@
     {
       "basename": "第三章 物质结构基础 2023-10-24 16.44.33",
       "path": "Excalidraw/第三章 物质结构基础 2023-10-24 16.44.33.md"
-    },
-    {
-      "basename": "手头任务",
-      "path": "🐸 Daily Life memo/手头任务.md"
-    },
-    {
-      "basename": "第五章 振动测试设备和激励技术 2023-10-24 15.01.03",
-      "path": "Excalidraw/第五章 振动测试设备和激励技术 2023-10-24 15.01.03.md"
-    },
-    {
-      "basename": "第五章 振动测试设备和激励技术 2023-10-24 14.26.13",
-      "path": "Excalidraw/第五章 振动测试设备和激励技术 2023-10-24 14.26.13.md"
-    },
-    {
-      "basename": "第五章 振动测试设备和激励技术 2023-10-24 14.20.19",
-      "path": "Excalidraw/第五章 振动测试设备和激励技术 2023-10-24 14.20.19.md"
-    },
-    {
-      "basename": "第二章 高周疲劳",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第二章 高周疲劳.md"
-    },
-    {
-      "basename": "第四章 低周疲劳",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md"
-    },
-    {
-      "basename": "第二章 高周疲劳 2023-10-24 11.51.51",
-      "path": "Excalidraw/第二章 高周疲劳 2023-10-24 11.51.51.md"
-    },
-    {
-      "basename": "第二章 高周疲劳 2023-10-24 11.39.16",
-      "path": "Excalidraw/第二章 高周疲劳 2023-10-24 11.39.16.md"
-    },
-    {
-      "basename": "第一章 绪论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md"
-    },
-    {
-      "basename": "第五章 断裂失效与断裂控制设计",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第五章 断裂失效与断裂控制设计.md"
-    },
-    {
-      "basename": "第四章 振动测试设备与电子仪器",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第四章 振动测试设备与电子仪器.md"
-    },
-    {
-      "basename": "第四章 振动测试设备与电子仪器 2023-10-24 09.09.06",
-      "path": "Excalidraw/第四章 振动测试设备与电子仪器 2023-10-24 09.09.06.md"
-    },
-    {
-      "basename": "第十一章 含有运算放大器的电路分析",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第十一章 含有运算放大器的电路分析.md"
-    },
-    {
-      "basename": "第十章 模拟-数字信号转换器",
-      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第十章 模拟-数字信号转换器.md"
-    },
-    {
-      "basename": "第四章 振动测试设备与电子仪器 2023-10-23 22.47.51",
-      "path": "Excalidraw/第四章 振动测试设备与电子仪器 2023-10-23 22.47.51.md"
     }
   ],
   "omittedPaths": [],

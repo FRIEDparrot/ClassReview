@@ -2,11 +2,19 @@
   "collapse-filter": false,
   "search": "",
   "showTags": false,
-  "showAttachments": true,
+  "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "path:Excalidraw ",
+      "color": {
+        "a": 1,
+        "rgb": 1974049
+      }
+    }
+  ],
   "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -17,6 +25,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.08317427835927649,
-  "close": false
+  "scale": 0.15874853619276846,
+  "close": true
 }
