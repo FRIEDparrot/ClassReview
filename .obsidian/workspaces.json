@@ -1229,7 +1229,330 @@
         }
       },
       "active": "8a774c598a86bf98"
+    },
+    "pdf view": {
+      "main": {
+        "id": "0aa644f420044d1a",
+        "type": "split",
+        "children": [
+          {
+            "id": "2de20f41512ff684",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "3bf1adb54a7eb004",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "📘ClassNotes/⚡Circuit/电工电子技术/第十一章 变压器和电动机.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "e4dc796ad7ac7004",
+        "type": "split",
+        "children": [
+          {
+            "id": "4999cc07d71e978b",
+            "type": "tabs",
+            "dimension": 55.68910256410257,
+            "children": [
+              {
+                "id": "86820ad5b67d3064",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "0de62b11a79d7c95",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": true,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "d03cf7082b66d53e",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {}
+                }
+              },
+              {
+                "id": "7778856753ec014b",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "📘ClassNotes/⚡Circuit/电工电子技术/第十一章 变压器和电动机.md"
+                  }
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "066eddf15a13dd56",
+            "type": "tabs",
+            "dimension": 44.31089743589743,
+            "children": [
+              {
+                "id": "db0ad0041a71350b",
+                "type": "leaf",
+                "state": {
+                  "type": "recent-files",
+                  "state": {}
+                }
+              },
+              {
+                "id": "bf320363ad466f1f",
+                "type": "leaf",
+                "state": {
+                  "type": "timeline",
+                  "state": {}
+                }
+              },
+              {
+                "id": "1accea1cbfd9d2cd",
+                "type": "leaf",
+                "state": {
+                  "type": "surfing-view",
+                  "state": {
+                    "url": "https://chat.openai.com/"
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 443.5124969482422
+      },
+      "right": {
+        "id": "f7de553c162de521",
+        "type": "split",
+        "children": [
+          {
+            "id": "736ec7c11262503f",
+            "type": "tabs",
+            "dimension": 50.80128205128205,
+            "children": [
+              {
+                "id": "55e2f6198cbb96c3",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "ccf3c49a7ac51afd",
+                "type": "leaf",
+                "state": {
+                  "type": "dictionary-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "befa702227dffd48",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "ad34171f50495ce2",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency"
+                  }
+                }
+              },
+              {
+                "id": "6577c7d78741ced1",
+                "type": "leaf",
+                "state": {
+                  "type": "QUICKSHARE_SIDE_VIEW",
+                  "state": {}
+                }
+              },
+              {
+                "id": "f05de46e81e6540c",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "📘ClassNotes/⚡Circuit/电工电子技术/第十一章 变压器和电动机.md",
+                    "options": {
+                      "collapse-filter": false,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": false,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [
+                        {
+                          "query": "path:Excalidraw  ",
+                          "color": {
+                            "a": 1,
+                            "rgb": 2566187
+                          }
+                        }
+                      ],
+                      "collapse-display": false,
+                      "showArrow": true,
+                      "textFadeMultiplier": 0.2,
+                      "nodeSizeMultiplier": 1,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 0.7807190772111826,
+                      "close": true
+                    }
+                  }
+                }
+              },
+              {
+                "id": "41828a72f523292a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Dynamic Terminology.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "b8575cf00c634298",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 6
+          },
+          {
+            "id": "bdaa9cad5f6d59b7",
+            "type": "tabs",
+            "dimension": 49.19871794871795,
+            "children": [
+              {
+                "id": "7a38e51156c9ec67",
+                "type": "leaf",
+                "state": {
+                  "type": "surfing-tab-tree",
+                  "state": {}
+                }
+              },
+              {
+                "id": "90c56e3ca15685e0",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "📘ClassNotes/⚡Circuit/电工电子技术/第十一章 变压器和电动机.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "45988039c8b25193",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "📘ClassNotes/⚡Circuit/电工电子技术/第十一章 变压器和电动机.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "613ab51e61bf117e",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 3
+          }
+        ],
+        "direction": "horizontal",
+        "width": 480.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "surfing:surfing-bookmark-manager": false,
+          "markdown-importer:Open format converter": false,
+          "graph:Open graph view": false,
+          "switcher:Open quick switcher": false,
+          "daily-notes:Open today's daily note": false,
+          "command-palette:Open command palette": false,
+          "audio-recorder:Start/stop recording": false,
+          "canvas:Create new canvas": false,
+          "workspaces:Manage workspace layouts": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "random-note:Open random note": false,
+          "zk-prefixer:Create new unique note": false,
+          "obsidian-day-planner:Timeline": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-excalidraw-plugin:Create new drawing": false,
+          "dbfolder:Create a new database table": false,
+          "obsidian-projects:Open projects": false
+        }
+      },
+      "active": "3bf1adb54a7eb004"
     }
   },
-  "active": "beautify"
+  "active": "pdf view"
 }

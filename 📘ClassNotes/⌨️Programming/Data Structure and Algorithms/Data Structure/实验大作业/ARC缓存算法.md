@@ -1,4 +1,4 @@
-[[📘ClassNotes/⌨️Programming/Data Structure/实验大作业/自适应缓存替换ARC算法.pdf|自适应缓存替换ARC算法.pdf]]
+[[📘ClassNotes/⌨️Programming/Data Structure and Algorithms/Data Structure/实验大作业/自适应缓存替换ARC算法.pdf|自适应缓存替换ARC算法.pdf]]
 
 `````ad-info
 title: ARC算法的代码实现

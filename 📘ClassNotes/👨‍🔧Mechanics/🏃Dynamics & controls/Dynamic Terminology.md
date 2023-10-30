@@ -7,4 +7,3 @@
 梯形波 Trapzodial wave 
 频率调制FM Frequency modulation 
 汉宁窗 Hanning Window
-
