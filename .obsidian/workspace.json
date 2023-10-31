@@ -4,35 +4,50 @@
     "type": "split",
     "children": [
       {
-        "id": "e60ce073a0b50a87",
+        "id": "c9094920b9e72d05",
         "type": "tabs",
         "children": [
           {
-            "id": "2beed67b0f79228d",
+            "id": "40aa397dda22543c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电路分析基础/第四章 正弦稳态电路的分析.md",
+                "file": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第四章 化学反应热效应.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "269f96a11f293063",
+            "id": "95ea3f68b64695a8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md",
+                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第十二章 电器自动控制技术.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "e5895807a8161f1a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c2c70c4cdb48887b",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/第十二章 电器自动控制技术 2023-10-31 16.31.39.md"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -116,7 +131,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 432.5124969482422
+    "width": 335.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -178,7 +194,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md",
+                "file": "Excalidraw/第十二章 电器自动控制技术 2023-10-31 16.31.39.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -251,8 +267,7 @@
               }
             }
           }
-        ],
-        "currentTab": 7
+        ]
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -273,7 +288,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md",
+                "file": "Excalidraw/第十二章 电器自动控制技术 2023-10-31 16.31.39.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -290,7 +305,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md",
+                "file": "Excalidraw/第十二章 电器自动控制技术 2023-10-31 16.31.39.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -310,7 +325,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md"
+                "file": "Excalidraw/第十二章 电器自动控制技术 2023-10-31 16.31.39.md"
               }
             }
           }
@@ -319,7 +334,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 537.5
+    "width": 537.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -342,41 +358,42 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "269f96a11f293063",
+  "active": "c2c70c4cdb48887b",
   "lastOpenFiles": [
-    "📘ClassNotes/⚡Circuit/电路分析基础/第三章 电路基本定理.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第四章 化学反应热效应.md",
+    "Excalidraw/第十二章 电器自动控制技术 2023-10-31 16.31.39.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第十二章 电器自动控制技术.md",
+    "Excalidraw/第十二章 电器自动控制技术 2023-10-31 15.08.13.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第四章 热力学第二定律与熵.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第十章 热力学微分关系式与气体性质.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第三章 物质结构基础.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md",
     "🐸 Daily Life memo/⌚近期计划书.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第五章 三相电路.md",
-    "Excalidraw/第五章 三相电路 2023-09-19 15.05.19.md",
-    "Excalidraw/第五章 三相电路 2023-10-30 13.41.26.md",
-    "Excalidraw/第五章 三相电路 2023-10-30 13.37.20.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第四章 正弦稳态电路的分析.md",
+    "Excalidraw/第四章 正弦稳态电路的分析 2023-10-30 19.31.35.md",
+    "Excalidraw/第四章 正弦稳态电路的分析 2023-10-31 00.28.06.md",
+    "Excalidraw/第四章 正弦稳态电路的分析 2023-09-10 17.03.36.md",
+    "Excalidraw/第四章 正弦稳态电路的分析 2023-09-11 10.06.09.md",
+    "Excalidraw/第四章 正弦稳态电路的分析 2023-10-30 20.38.33.md",
+    "Excalidraw/第四章 正弦稳态电路的分析 2023-09-11 10.29.27.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/例题以及习题/第三章例题(+最大功率传输定理).pdf",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第十一章 变压器和电动机.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第三章 正弦交流电路.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第一章 电路基本概念与分析方法.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第二章 电路分析基本方法.md",
+    "Excalidraw/第二章 电路分析基本方法 2023-10-10 14.39.39.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第一章 电路基本概念与定律.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第三章 电路基本定理.md",
+    "Excalidraw/第四章 正弦稳态电路的分析 2023-10-30 19.46.10.md",
     "attachments/Pasted Image 20231030133754_403.jpg",
     "attachments/Pasted Image 20231030133732_470.jpg",
     "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/三相电路的电压和电流关系推导.pdf",
-    "Excalidraw/第五章 三相电路 2023-09-19 14.37.18.md",
     "attachments/IMG_20231030_112210.jpg",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第三章 正弦交流电路.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第四章 正弦稳态电路的分析.md",
-    "Excalidraw/第四章 正弦稳态电路的分析 2023-10-30 09.21.51.md",
-    "Excalidraw/第四章 正弦稳态电路的分析 2023-09-10 16.21.24.md",
-    "Excalidraw/第四章 正弦稳态电路的分析 2023-09-10 16.03.58.md",
-    "🐸 Daily Life memo/手头任务.md",
-    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
-    "Excalidraw/第三章 电路基本定理 2023-09-08 19.13.33.md",
     "📘ClassNotes/⌨️Programming/library usage notes",
     "📘ClassNotes/⌨️Programming/Data Structure and Algorithms",
-    "📘ClassNotes/⌨️Programming/C++ 库函数整理/Make 安装教程.md",
-    "📘ClassNotes/⌨️Programming/C++ 库函数整理/GUI 库.md",
-    "📘ClassNotes/⌨️Programming/C++ 库函数整理/GSL库.md",
-    "📘ClassNotes/⌨️Programming/library usage notes/C++ 数学库函数整理/CGAL/CGAL库的安装教程.md",
-    "📘ClassNotes/⌨️Programming/library usage notes/C++ 数学库函数整理/CGAL/CGAL划分网格.md",
-    "Excalidraw/第三章 电路基本定理 2023-10-29 17.05.06.md",
     "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/最大功率传输定理推导.pdf",
-    "Excalidraw/第三章 电路基本定理 2023-10-29 15.47.24.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第三章 物质结构基础.md",
-    "Excalidraw/第三章 物质结构基础 2023-10-29 12.04.26.md",
     "attachments/Pasted image 20231028153835.png",
     "1698403597548-Screenshot_20231024_094155_com.microsoft.skydrive.png",
     "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/Laplace 方程边值问题的推导与例题.pdf",
@@ -389,7 +406,6 @@
     "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/茹科夫斯基映射推导.pdf",
     "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第六章例题.pdf",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/全概率公式和贝叶斯公式的证明.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Untitled",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }
