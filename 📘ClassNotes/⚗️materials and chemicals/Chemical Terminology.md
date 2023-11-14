@@ -4,4 +4,4 @@
 杂化轨道理论 Hybrid Orbital theory
 价层电子对互斥理论 Valence Shell Electron Pair Repulsion
 分子轨道理论 Molecule Orbital theory, MO
-
+晶体 crystal 

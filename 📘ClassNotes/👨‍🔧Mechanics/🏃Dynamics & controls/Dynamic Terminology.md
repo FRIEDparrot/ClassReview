@@ -7,3 +7,4 @@
 梯形波 Trapzodial wave 
 频率调制FM Frequency modulation 
 汉宁窗 Hanning Window
+应力响度因子 stress intensity factor 

@@ -385,6 +385,14 @@
   background-color: #4CC9D8;
   transform: rotate(0.5turn);
 }
+@keyframes pulse {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
 .day-planner {
   position: relative;
 }

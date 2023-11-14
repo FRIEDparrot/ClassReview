@@ -396,13 +396,6 @@
         "Shift"
       ],
       "key": "F"
-    },
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "F"
     }
   ],
   "templater-obsidian:🗒️Templates/INSERT_POINT_WITH_ZERO.md": [
@@ -421,15 +414,6 @@
         "Shift"
       ],
       "key": "9"
-    }
-  ],
-  "templater-obsidian:🗒️Templates/INSERT_PSI_LOWERCASE.md": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "P"
     }
   ],
   "templater-obsidian:🗒️Templates/INSERT_RHO_LOWERCASE.md": [
@@ -1422,15 +1406,6 @@
       "key": "K"
     }
   ],
-  "templater-obsidian:🗒️Templates/INSERT_PROD_SYMBOL.md": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "H"
-    }
-  ],
   "editor:fold-all": [
     {
       "modifiers": [
@@ -1515,6 +1490,24 @@
         "Shift"
       ],
       "key": "Tab"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_PSI_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "F"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_PROD_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "P"
     }
   ]
 }

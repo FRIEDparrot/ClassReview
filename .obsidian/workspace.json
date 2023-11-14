@@ -4,46 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "c9094920b9e72d05",
+        "id": "4e011a3ec9176da3",
         "type": "tabs",
         "children": [
           {
-            "id": "40aa397dda22543c",
+            "id": "db774e2f4a3e3dfa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第四章 化学反应热效应.md",
+                "file": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "95ea3f68b64695a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第十二章 电器自动控制技术.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "e5895807a8161f1a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c2c70c4cdb48887b",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/第十二章 电器自动控制技术 2023-10-31 16.31.39.md"
               }
             }
           }
@@ -59,7 +31,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 46.31410256410257,
+        "dimension": 53.68589743589743,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -99,21 +71,13 @@
       {
         "id": "066eddf15a13dd56",
         "type": "tabs",
-        "dimension": 53.68589743589743,
+        "dimension": 46.31410256410257,
         "children": [
           {
             "id": "db0ad0041a71350b",
             "type": "leaf",
             "state": {
               "type": "recent-files",
-              "state": {}
-            }
-          },
-          {
-            "id": "bf320363ad466f1f",
-            "type": "leaf",
-            "state": {
-              "type": "timeline",
               "state": {}
             }
           },
@@ -126,12 +90,23 @@
                 "url": "https://chat.openai.com/"
               }
             }
+          },
+          {
+            "id": "7778856753ec014b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 335.5124969482422,
+    "width": 471.5124969482422,
     "collapsed": true
   },
   "right": {
@@ -141,19 +116,8 @@
       {
         "id": "736ec7c11262503f",
         "type": "tabs",
-        "dimension": 50.80128205128205,
+        "dimension": 47.516025641025635,
         "children": [
-          {
-            "id": "55e2f6198cbb96c3",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
           {
             "id": "ccf3c49a7ac51afd",
             "type": "leaf",
@@ -194,7 +158,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Excalidraw/第十二章 电器自动控制技术 2023-10-31 16.31.39.md",
+                "file": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -225,7 +189,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7807190772111826,
+                  "scale": 0.5738575358534607,
                   "close": true
                 }
               }
@@ -266,13 +230,26 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fb148714831b00a5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 7
       },
       {
         "id": "bdaa9cad5f6d59b7",
         "type": "tabs",
-        "dimension": 49.19871794871795,
+        "dimension": 52.483974358974365,
         "children": [
           {
             "id": "7a38e51156c9ec67",
@@ -288,7 +265,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/第十二章 电器自动控制技术 2023-10-31 16.31.39.md",
+                "file": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -305,7 +282,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/第十二章 电器自动控制技术 2023-10-31 16.31.39.md",
+                "file": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -320,21 +297,22 @@
             }
           },
           {
-            "id": "7778856753ec014b",
+            "id": "55e2f6198cbb96c3",
             "type": "leaf",
             "state": {
-              "type": "outline",
+              "type": "tag",
               "state": {
-                "file": "Excalidraw/第十二章 电器自动控制技术 2023-10-31 16.31.39.md"
+                "sortOrder": "frequency",
+                "useHierarchy": true
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 537.5,
+    "width": 533.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -351,61 +329,61 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "random-note:Open random note": false,
       "zk-prefixer:Create new unique note": false,
-      "obsidian-day-planner:Timeline": false,
       "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "dbfolder:Create a new database table": false,
+      "obsidian-day-planner:Timeline": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "c2c70c4cdb48887b",
+  "active": "db774e2f4a3e3dfa",
   "lastOpenFiles": [
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第四章 化学反应热效应.md",
-    "Excalidraw/第十二章 电器自动控制技术 2023-10-31 16.31.39.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第十二章 电器自动控制技术.md",
-    "Excalidraw/第十二章 电器自动控制技术 2023-10-31 15.08.13.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第四章 热力学第二定律与熵.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第十章 热力学微分关系式与气体性质.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第三章 物质结构基础.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md",
-    "🐸 Daily Life memo/⌚近期计划书.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第四章 正弦稳态电路的分析.md",
-    "Excalidraw/第四章 正弦稳态电路的分析 2023-10-30 19.31.35.md",
-    "Excalidraw/第四章 正弦稳态电路的分析 2023-10-31 00.28.06.md",
-    "Excalidraw/第四章 正弦稳态电路的分析 2023-09-10 17.03.36.md",
-    "Excalidraw/第四章 正弦稳态电路的分析 2023-09-11 10.06.09.md",
-    "Excalidraw/第四章 正弦稳态电路的分析 2023-10-30 20.38.33.md",
-    "Excalidraw/第四章 正弦稳态电路的分析 2023-09-11 10.29.27.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/例题以及习题/第三章例题(+最大功率传输定理).pdf",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第十一章 变压器和电动机.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第三章 正弦交流电路.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第一章 电路基本概念与分析方法.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第二章 电路分析基本方法.md",
-    "Excalidraw/第二章 电路分析基本方法 2023-10-10 14.39.39.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第一章 电路基本概念与定律.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第三章 电路基本定理.md",
-    "Excalidraw/第四章 正弦稳态电路的分析 2023-10-30 19.46.10.md",
+    "Excalidraw/第五章 化学反应基本原理 2023-11-14 16.25.33.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md",
+    "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第八章 假设检验.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md",
+    "Excalidraw/第五章 基本放大电路 2023-11-14 15.20.45.md",
+    "Excalidraw/第五章 基本放大电路 2023-11-14 14.38.21.md",
+    "Excalidraw/第五章 基本放大电路 2023-10-08 08.44.35.md",
+    "Excalidraw/第五章 基本放大电路 2023-10-08 12.22.03.md",
+    "Excalidraw/第五章 基本放大电路 2023-10-08 10.31.34.md",
+    "Excalidraw/第五章 基本放大电路 2023-10-08 11.16.03.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md",
+    "Excalidraw/第五章 基本放大电路 2023-10-08 12.46.27.md",
+    "Excalidraw/第五章 基本放大电路 2023-11-14 09.22.30.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第七章 直流稳压电源.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md",
+    "Excalidraw/第七章 直流稳压电源 2023-11-13 09.35.18.md",
+    "Excalidraw/第七章 直流稳压电源 2023-11-13 09.22.35.md",
+    "Excalidraw/第七章 直流稳压电源 2023-11-13 09.10.42.md",
+    "Excalidraw/第七章 直流稳压电源 2023-11-12 14.34.18.md",
+    "Excalidraw/第七章 直流稳压电源 2023-11-12 17.17.41.md",
+    "Excalidraw/第七章 直流稳压电源 2023-11-12 17.10.42.md",
+    "Excalidraw/第七章 直流稳压电源 2023-11-12 16.46.36.md",
+    "Excalidraw/第七章 直流稳压电源 2023-11-12 14.48.27.md",
+    "Excalidraw/第七章 直流稳压电源 2023-11-12 16.27.54.md",
+    "attachments/Pasted Image 20231112114813_825.jpg",
+    "attachments/Pasted Image 20231112114807_754.jpg",
+    "attachments/Pasted Image 20231112114802_660.jpg",
+    "attachments/Pasted Image 20231112114755_573.jpg",
+    "attachments/Pasted Image 20231112114748_838.jpg",
+    "📘ClassNotes/⚡Circuit/电工电子技术/重要公式",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/壳体内力-内矩的本构公式推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/Frenet标架与切向量公式建立推导.pdf",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/补充/熵概念推导与产生.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/薄板的应力公式与平衡方程推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/壳体理论的有关推导过程.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/平行曲面的相关推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/曲面二次微分型与高斯科达奇条件.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/公式与思维导图",
+    "attachments/Pasted Image 20231101140927_807.jpg",
+    "attachments/Pasted Image 20231101140918_612.jpg",
     "attachments/Pasted Image 20231030133754_403.jpg",
     "attachments/Pasted Image 20231030133732_470.jpg",
-    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/三相电路的电压和电流关系推导.pdf",
     "attachments/IMG_20231030_112210.jpg",
-    "📘ClassNotes/⌨️Programming/library usage notes",
-    "📘ClassNotes/⌨️Programming/Data Structure and Algorithms",
-    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/最大功率传输定理推导.pdf",
-    "attachments/Pasted image 20231028153835.png",
-    "1698403597548-Screenshot_20231024_094155_com.microsoft.skydrive.png",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/Laplace 方程边值问题的推导与例题.pdf",
-    "1698403624747-1698403597548-Screenshot_20231024_094155_com.microsoft.skydrive.png",
-    "attachments/Screenshot_20231027_103204_cn.wps.moffice_eng.png",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/傅里叶积分定理推导.pdf",
-    "attachments/Screenshot_20231026_170920_com.microsoft.skydrive.png",
-    "attachments/Screenshot_20231026_170831_com.microsoft.skydrive.png",
-    "attachments/Screenshot_20231026_170743_com.microsoft.skydrive.png",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/茹科夫斯基映射推导.pdf",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/📝例题/第六章例题.pdf",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/全概率公式和贝叶斯公式的证明.pdf",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

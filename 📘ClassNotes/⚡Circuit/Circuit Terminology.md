@@ -11,3 +11,4 @@ AD转换器 analog/digital converter
 特勒根定理 Tellegen's Theorem 
 互易定理 Reciprocity Theorem 
 对偶原理 Dual Principle 
+电子设计自动化 (EDA) Electronic Design Automation 
