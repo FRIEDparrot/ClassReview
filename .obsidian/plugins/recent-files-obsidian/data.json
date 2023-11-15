@@ -1,6 +1,82 @@
 {
   "recentFiles": [
     {
+      "basename": "第二章 随机变量及其分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md"
+    },
+    {
+      "basename": "常见等价无穷小与极限",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/常见等价无穷小与极限.md"
+    },
+    {
+      "basename": "第一章 随机事件及其概率",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md"
+    },
+    {
+      "basename": "第一章 绪论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🎯Reliability Engineering/第一章 绪论.md"
+    },
+    {
+      "basename": "第四章 随机变量的数字特征",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md"
+    },
+    {
+      "basename": "泊松分布表",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/泊松分布表.md"
+    },
+    {
+      "basename": "第六章 耦合电感和理想变压器",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md"
+    },
+    {
+      "basename": "第六章 耦合电感和理想变压器 2023-11-15 19.55.48",
+      "path": "Excalidraw/第六章 耦合电感和理想变压器 2023-11-15 19.55.48.md"
+    },
+    {
+      "basename": "第七章 谐振电路",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第七章 谐振电路.md"
+    },
+    {
+      "basename": "第一章 电路基本概念与定律",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第一章 电路基本概念与定律.md"
+    },
+    {
+      "basename": "第六章 耦合电感和理想变压器 2023-11-15 16.21.21",
+      "path": "Excalidraw/第六章 耦合电感和理想变压器 2023-11-15 16.21.21.md"
+    },
+    {
+      "basename": "第六章 耦合电感和理想变压器 2023-11-15 09.57.26",
+      "path": "Excalidraw/第六章 耦合电感和理想变压器 2023-11-15 09.57.26.md"
+    },
+    {
+      "basename": "第六章 耦合电感和理想变压器 2023-09-29 16.04.44",
+      "path": "Excalidraw/第六章 耦合电感和理想变压器 2023-09-29 16.04.44.md"
+    },
+    {
+      "basename": "第六章 耦合电感和理想变压器 2023-11-15 09.17.15",
+      "path": "Excalidraw/第六章 耦合电感和理想变压器 2023-11-15 09.17.15.md"
+    },
+    {
+      "basename": "第六章 耦合电感和理想变压器 2023-11-15 08.20.35",
+      "path": "Excalidraw/第六章 耦合电感和理想变压器 2023-11-15 08.20.35.md"
+    },
+    {
+      "basename": "第七章 直流稳压电源",
+      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第七章 直流稳压电源.md"
+    },
+    {
+      "basename": "第五章 基本放大电路",
+      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md"
+    },
+    {
+      "basename": "第五章 基本放大电路 2023-11-14 19.15.37",
+      "path": "Excalidraw/第五章 基本放大电路 2023-11-14 19.15.37.md"
+    },
+    {
+      "basename": "第五章 基本放大电路 2023-10-08 12.22.03",
+      "path": "Excalidraw/第五章 基本放大电路 2023-10-08 12.22.03.md"
+    },
+    {
       "basename": "第五章 化学反应基本原理",
       "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md"
     },
@@ -13,16 +89,8 @@
       "path": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md"
     },
     {
-      "basename": "第二章 随机变量及其分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md"
-    },
-    {
       "basename": "第八章 假设检验",
       "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第八章 假设检验.md"
-    },
-    {
-      "basename": "第五章 基本放大电路",
-      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md"
     },
     {
       "basename": "第五章 基本放大电路 2023-11-14 15.20.45",
@@ -37,24 +105,12 @@
       "path": "Excalidraw/第五章 基本放大电路 2023-10-08 08.44.35.md"
     },
     {
-      "basename": "第五章 基本放大电路 2023-10-08 12.22.03",
-      "path": "Excalidraw/第五章 基本放大电路 2023-10-08 12.22.03.md"
-    },
-    {
       "basename": "第五章 基本放大电路 2023-10-08 11.16.03",
       "path": "Excalidraw/第五章 基本放大电路 2023-10-08 11.16.03.md"
     },
     {
-      "basename": "第一章 随机事件及其概率",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md"
-    },
-    {
       "basename": "第五章 基本放大电路 2023-11-14 09.22.30",
       "path": "Excalidraw/第五章 基本放大电路 2023-11-14 09.22.30.md"
-    },
-    {
-      "basename": "第七章 直流稳压电源",
-      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第七章 直流稳压电源.md"
     },
     {
       "basename": "第四章 半导体器件",
@@ -113,10 +169,6 @@
       "path": "Excalidraw/第七章 直流稳压电源 2023-11-12 14.01.56.md"
     },
     {
-      "basename": "第七章 耦合电感和理想变压器",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第七章 耦合电感和理想变压器.md"
-    },
-    {
       "basename": "第二章 电路的瞬态分析 2023-11-12 11.28.44",
       "path": "Excalidraw/第二章 电路的瞬态分析 2023-11-12 11.28.44.md"
     },
@@ -147,58 +199,6 @@
     {
       "basename": "第二章 解析函数",
       "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第二章 解析函数.md"
-    },
-    {
-      "basename": "计时器",
-      "path": "🧊Minecraft/redstone/计时器.md"
-    },
-    {
-      "basename": "⌚近期计划书",
-      "path": "🐸 Daily Life memo/⌚近期计划书.md"
-    },
-    {
-      "basename": "手头任务",
-      "path": "🐸 Daily Life memo/手头任务.md"
-    },
-    {
-      "basename": "1. 变形与应变的概念",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第三章：应变/1. 变形与应变的概念.md"
-    },
-    {
-      "basename": "第四章 壳体理论的几何建立 2023-11-10 11.02.35",
-      "path": "Excalidraw/第四章 壳体理论的几何建立 2023-11-10 11.02.35.md"
-    },
-    {
-      "basename": "第三章 薄板的大挠度问题",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第三章 薄板的大挠度问题.md"
-    },
-    {
-      "basename": "第五章 曲面微分几何",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第五章 曲面微分几何.md"
-    },
-    {
-      "basename": "第六章 薄壳理论的基本方程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第六章 薄壳理论的基本方程.md"
-    },
-    {
-      "basename": "Frenet标架与切向量公式建立推导",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/Frenet标架与切向量公式建立推导.pdf"
-    },
-    {
-      "basename": "板壳理论思维导图",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/公式与思维导图/板壳理论思维导图.md"
-    },
-    {
-      "basename": "第二章 矩形薄板的弯曲",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第二章 矩形薄板的弯曲.md"
-    },
-    {
-      "basename": "第四章 化学反应热效应",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第四章 化学反应热效应.md"
-    },
-    {
-      "basename": "第三章 物质结构基础",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第三章 物质结构基础.md"
     }
   ],
   "omittedPaths": [],
