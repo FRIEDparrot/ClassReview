@@ -16,7 +16,6 @@ git config --global http.proxy https://YOUR_PROXY_USERNAME:YOUR_PROXY_PASSWORD@Y
 ```
 
 You can use almost any text editor, but we have the best success with the following:
-
 -   [Atom](https://atom.io/)
 -   [Visual Studio Code](https://code.visualstudio.com/)
 -   Notepad

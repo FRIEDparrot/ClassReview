@@ -8,3 +8,5 @@
 频率调制FM Frequency modulation 
 汉宁窗 Hanning Window
 应力响度因子 stress intensity factor 
+
+蒙特卡洛模拟 Monte Carlo Simulation-MCS 
