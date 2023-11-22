@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "第五章 基本放大电路",
+      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md"
+    },
+    {
+      "basename": "第六章 耦合电感和理想变压器",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md"
+    },
+    {
+      "basename": "第七章 谐振电路",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第七章 谐振电路.md"
+    },
+    {
+      "basename": "第七章 谐振电路 2023-11-21 22.16.37",
+      "path": "Excalidraw/第七章 谐振电路 2023-11-21 22.16.37.md"
+    },
+    {
+      "basename": "第七章 谐振电路 2023-11-21 10.42.33",
+      "path": "Excalidraw/第七章 谐振电路 2023-11-21 10.42.33.md"
+    },
+    {
+      "basename": "Basic tutorial for MATLAB app designer",
+      "path": "💻softwares/➕Mathmatics/MATLAB/AppDesigner/Basic tutorial for MATLAB app designer.md"
+    },
+    {
+      "basename": "Altium Designer 项目创建",
+      "path": "💻softwares/⚡Circuit/Altium Designer/Altium Designer 项目创建.md"
+    },
+    {
+      "basename": "常用快捷键",
+      "path": "💻softwares/🗽2D & 3D design/Origin/常用快捷键.md"
+    },
+    {
+      "basename": "Origin基础用法",
+      "path": "💻softwares/🗽2D & 3D design/Origin/Origin基础用法.md"
+    },
+    {
+      "basename": "第三章 多维随机变量及其分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
+    },
+    {
       "basename": "第五章 线弹性断裂力学",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第五章 线弹性断裂力学.md"
     },
@@ -21,24 +61,12 @@
       "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/物质的标准摩尔生成焓和生成熵.md"
     },
     {
-      "basename": "第三章 多维随机变量及其分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
-    },
-    {
       "basename": "第三章 多维随机变量及其分布 2023-09-22 17.39.58",
       "path": "Excalidraw/第三章 多维随机变量及其分布 2023-09-22 17.39.58.md"
     },
     {
       "basename": "第二章 随机变量及其分布",
       "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md"
-    },
-    {
-      "basename": "第七章 谐振电路",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第七章 谐振电路.md"
-    },
-    {
-      "basename": "第七章 谐振电路 2023-11-21 10.42.33",
-      "path": "Excalidraw/第七章 谐振电路 2023-11-21 10.42.33.md"
     },
     {
       "basename": "第七章 谐振电路 2023-11-21 09.17.30",
@@ -65,20 +93,12 @@
       "path": "💻softwares/Git/GitHub entry.md"
     },
     {
-      "basename": "Origin基础用法",
-      "path": "💻softwares/🗽2D & 3D design/Origin/Origin基础用法.md"
-    },
-    {
       "basename": "第二章 高周疲劳 2023-11-19 23.53.40",
       "path": "Excalidraw/第二章 高周疲劳 2023-11-19 23.53.40.md"
     },
     {
       "basename": "第二章 高周疲劳 2023-11-19 10.41.09",
       "path": "Excalidraw/第二章 高周疲劳 2023-11-19 10.41.09.md"
-    },
-    {
-      "basename": "第六章 耦合电感和理想变压器",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md"
     },
     {
       "basename": "理想变压器的变比关系推导",
@@ -179,26 +199,6 @@
     {
       "basename": "第六章 薄壳理论的基本方程",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第六章 薄壳理论的基本方程.md"
-    },
-    {
-      "basename": "第十一章 压杆稳定",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第十一章 压杆稳定.md"
-    },
-    {
-      "basename": "第七章 弯曲变形",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第七章 弯曲变形.md"
-    },
-    {
-      "basename": "第六章 弯曲应力",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第六章 弯曲应力.md"
-    },
-    {
-      "basename": "第五章 弯曲内力",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第五章 弯曲内力.md"
-    },
-    {
-      "basename": "第五章 线弹性断裂力学 2023-11-16 17.10.21",
-      "path": "Excalidraw/第五章 线弹性断裂力学 2023-11-16 17.10.21.md"
     }
   ],
   "omittedPaths": [],

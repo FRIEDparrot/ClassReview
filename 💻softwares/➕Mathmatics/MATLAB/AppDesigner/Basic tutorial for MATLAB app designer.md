@@ -15,7 +15,6 @@ note that `tab` is really useful in MATLAB
 firstly we define a `DialogApp` as another windows to be called in the current App
 
 note that we should define two apps (mlapp) 
-
 ```erlang
 properties (Access = private)
 	DialogApp                   % Dialog box app
@@ -49,13 +48,11 @@ methods (Access = public)
 end 
 ```
 
-
 in the main APP, we can use the following code to call the dialog app like : 
 ```erlang
 function OptionsButtonPushed(app, event)
 	% Disable Plot Options button while dialog is open
 	app.OptionsButton.Enable = 'off';
-	
 	% Open the options dialog and pass inputs
 	app.DialogApp = DialogAppExample(app, app.CurrentSize, app.CurrentColormap);
 end
@@ -64,8 +61,7 @@ in the code above we just transfer the parameters in the functions
 
 then we define the properties `callingAPP` in the DialogApp as: 
 <mark style="background: transparent; color: yellow">Note that startup is a callback </mark>
-```erlang
-
+```erlang 
 methods (Access = private)
 	% Code that executes after component creation
 	function StartupFcn(app, mainapp, sz, c)

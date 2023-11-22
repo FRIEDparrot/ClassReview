@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8efadb75e7d9c70f",
+        "id": "0ac321cbd68dd296",
         "type": "tabs",
         "children": [
           {
-            "id": "e2b274a738801df6",
+            "id": "4151f1262f0d4a7f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第五章 线弹性断裂力学.md",
+                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 345.51422119140625
+    "width": 345.51422119140625,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -154,7 +155,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第五章 线弹性断裂力学.md",
+                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -253,7 +254,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第五章 线弹性断裂力学.md"
+                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md"
               }
             }
           },
@@ -271,7 +272,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第五章 线弹性断裂力学.md",
+                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -288,7 +289,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第五章 线弹性断裂力学.md",
+                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -309,7 +310,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 484.5,
+    "width": 579.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -326,26 +327,37 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "random-note:Open random note": false,
       "zk-prefixer:Create new unique note": false,
-      "templater-obsidian:Templater": false,
       "dbfolder:Create a new database table": false,
       "obsidian-day-planner:Timeline": false,
+      "templater-obsidian:Templater": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "e2b274a738801df6",
+  "active": "4151f1262f0d4a7f",
   "lastOpenFiles": [
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第七章 谐振电路.md",
+    "Excalidraw/第七章 谐振电路 2023-11-21 22.16.37.md",
+    "Excalidraw/第七章 谐振电路 2023-11-21 10.42.33.md",
+    "🐸 Daily Life memo/买书部分.md",
+    "💻softwares/➕Mathmatics/MATLAB/AppDesigner/Basic tutorial for MATLAB app designer.md",
+    "💻softwares/⚡Circuit/Altium Designer/Altium Designer 项目创建.md",
+    "💻softwares/⚡Circuit/Altium Designer",
+    "💻softwares/🗽2D & 3D design/Origin/常用快捷键.md",
+    "💻softwares/🗽2D & 3D design/Origin/Origin基础用法.md",
+    "attachments/Pasted image 20231121203612.png",
+    "attachments/Pasted image 20231121203349.png",
+    "💻softwares/🗽2D & 3D design/Origin/Markdown报告和分析.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第五章 线弹性断裂力学.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md",
     "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第六章 溶液与溶液中的离子平衡.md",
     "Excalidraw/第五章 化学反应基本原理 2023-11-21 16.31.10.md",
     "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/物质的标准摩尔生成焓和生成熵.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/二维正态分布的边缘密度函数.pdf",
     "Excalidraw/第三章 多维随机变量及其分布 2023-09-22 17.39.58.md",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第七章 谐振电路.md",
-    "Excalidraw/第七章 谐振电路 2023-11-21 10.42.33.md",
     "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/相对通频带与半功率点推导.pdf",
     "Excalidraw/第七章 谐振电路 2023-11-21 09.17.30.md",
     "Excalidraw/第七章 谐振电路 2023-11-20 13.39.44.md",
@@ -353,34 +365,23 @@
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/补充内容/疲劳与断裂思维导图.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第二章 高周疲劳.md",
     "💻softwares/Git/GitHub entry.md",
-    "💻softwares/🗽2D & 3D design/Origin/Origin基础用法.md",
     "attachments/Pasted image 20231120001443.png",
     "attachments/Pasted image 20231120001142.png",
     "attachments/Pasted image 20231120000935.png",
     "💻softwares/🗽2D & 3D design/Origin",
     "Excalidraw/第二章 高周疲劳 2023-11-19 23.53.40.md",
     "Excalidraw/第二章 高周疲劳 2023-11-19 10.41.09.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md",
     "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/理想变压器的变比关系推导.pdf",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第四章 化学反应热效应.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/标准正态分布表.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md",
-    "Excalidraw/第二章 随机变量及其分布 2023-11-18 07.41.40.md",
     "🐸 Daily Life memo/论文资料",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/Frenet标架与切向量公式建立推导.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/曲面二次微分型与高斯科达奇条件.pdf",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/补充内容/裂纹的应力函数推导.pdf",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/正态分布积分公式的证明.pdf",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/泊松定理的证明.pdf",
     "attachments/Pasted Image 20231112114813_825.jpg",
     "attachments/Pasted Image 20231112114807_754.jpg",
     "attachments/Pasted Image 20231112114802_660.jpg",
     "attachments/Pasted Image 20231112114755_573.jpg",
     "attachments/Pasted Image 20231112114748_838.jpg",
-    "attachments/Pasted Image 20231101140927_807.jpg",
-    "attachments/Pasted Image 20231101140918_612.jpg",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }
