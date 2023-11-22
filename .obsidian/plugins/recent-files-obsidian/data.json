@@ -1,8 +1,36 @@
 {
   "recentFiles": [
     {
+      "basename": "第一章 绪论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md"
+    },
+    {
+      "basename": "疲劳与断裂思维导图",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/补充内容/疲劳与断裂思维导图.md"
+    },
+    {
+      "basename": "第二章 高周疲劳 2023-09-21 06.59.43",
+      "path": "Excalidraw/第二章 高周疲劳 2023-09-21 06.59.43.md"
+    },
+    {
+      "basename": "第三章 多维随机变量及其分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
+    },
+    {
       "basename": "第五章 基本放大电路",
       "path": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md"
+    },
+    {
+      "basename": "第四章 半导体器件 2023-10-06 01.05.32",
+      "path": "Excalidraw/第四章 半导体器件 2023-10-06 01.05.32.md"
+    },
+    {
+      "basename": "第四章 半导体器件",
+      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md"
+    },
+    {
+      "basename": "Circuit Terminology",
+      "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
     },
     {
       "basename": "第六章 耦合电感和理想变压器",
@@ -35,10 +63,6 @@
     {
       "basename": "Origin基础用法",
       "path": "💻softwares/🗽2D & 3D design/Origin/Origin基础用法.md"
-    },
-    {
-      "basename": "第三章 多维随机变量及其分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
     },
     {
       "basename": "第五章 线弹性断裂力学",
@@ -79,10 +103,6 @@
     {
       "basename": "第四章 低周疲劳",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md"
-    },
-    {
-      "basename": "疲劳与断裂思维导图",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/补充内容/疲劳与断裂思维导图.md"
     },
     {
       "basename": "第二章 高周疲劳",
@@ -179,26 +199,6 @@
     {
       "basename": "壳体理论 2023-10-12 19.22.42",
       "path": "Excalidraw/壳体理论 2023-10-12 19.22.42.md"
-    },
-    {
-      "basename": "壳体理论 2023-10-10 20.35.38",
-      "path": "Excalidraw/壳体理论 2023-10-10 20.35.38.md"
-    },
-    {
-      "basename": "第八章 向量代数和空间解析几何",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第八章 向量代数和空间解析几何.md"
-    },
-    {
-      "basename": "曲面二次微分型与高斯科达奇条件",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/曲面二次微分型与高斯科达奇条件.pdf"
-    },
-    {
-      "basename": "第五章 曲面微分几何",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第五章 曲面微分几何.md"
-    },
-    {
-      "basename": "第六章 薄壳理论的基本方程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第六章 薄壳理论的基本方程.md"
     }
   ],
   "omittedPaths": [],

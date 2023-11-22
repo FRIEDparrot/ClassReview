@@ -4,16 +4,32 @@
     "type": "split",
     "children": [
       {
-        "id": "0ac321cbd68dd296",
+        "id": "aa5c40f1ed50f117",
         "type": "tabs",
         "children": [
           {
-            "id": "4151f1262f0d4a7f",
+            "id": "deb8a19674443a6a",
+            "type": "leaf",
+            "state": {
+              "type": "mindmapview",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/补充内容/疲劳与断裂思维导图.md"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "74613c3a3e00ffef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58afa7b54d8c08ff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +119,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 345.51422119140625,
+    "width": 411.51422119140625,
     "collapsed": true
   },
   "right": {
@@ -155,7 +171,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -241,7 +257,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -254,7 +270,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md"
               }
             }
           },
@@ -272,7 +288,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -289,7 +305,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -310,7 +326,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 579.5,
+    "width": 480.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -334,8 +350,16 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "4151f1262f0d4a7f",
+  "active": "58afa7b54d8c08ff",
   "lastOpenFiles": [
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/补充内容/疲劳与断裂思维导图.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md",
+    "Excalidraw/第二章 高周疲劳 2023-09-21 06.59.43.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md",
+    "Excalidraw/第四章 半导体器件 2023-10-06 01.05.32.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md",
+    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
     "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md",
     "📘ClassNotes/⚡Circuit/电路分析基础/第七章 谐振电路.md",
     "Excalidraw/第七章 谐振电路 2023-11-21 22.16.37.md",
@@ -349,7 +373,6 @@
     "attachments/Pasted image 20231121203612.png",
     "attachments/Pasted image 20231121203349.png",
     "💻softwares/🗽2D & 3D design/Origin/Markdown报告和分析.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
     "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第五章 线弹性断裂力学.md",
     "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md",
     "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第六章 溶液与溶液中的离子平衡.md",
@@ -360,17 +383,10 @@
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md",
     "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/相对通频带与半功率点推导.pdf",
     "Excalidraw/第七章 谐振电路 2023-11-21 09.17.30.md",
-    "Excalidraw/第七章 谐振电路 2023-11-20 13.39.44.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/补充内容/疲劳与断裂思维导图.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第二章 高周疲劳.md",
-    "💻softwares/Git/GitHub entry.md",
     "attachments/Pasted image 20231120001443.png",
     "attachments/Pasted image 20231120001142.png",
     "attachments/Pasted image 20231120000935.png",
     "💻softwares/🗽2D & 3D design/Origin",
-    "Excalidraw/第二章 高周疲劳 2023-11-19 23.53.40.md",
-    "Excalidraw/第二章 高周疲劳 2023-11-19 10.41.09.md",
     "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/理想变压器的变比关系推导.pdf",
     "🐸 Daily Life memo/论文资料",
     "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/Frenet标架与切向量公式建立推导.pdf",
