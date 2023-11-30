@@ -8,6 +8,18 @@
         "type": "tabs",
         "children": [
           {
+            "id": "0ed08395fa1f2bd1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/Gamma 函数与 Gamma 分布.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "a0c1efc05a59fb9e",
             "type": "leaf",
             "state": {
@@ -155,7 +167,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/Gamma 函数与 Gamma 分布.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -254,7 +266,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/Gamma 函数与 Gamma 分布.md"
               }
             }
           },
@@ -272,7 +284,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/Gamma 函数与 Gamma 分布.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -289,7 +301,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/Gamma 函数与 Gamma 分布.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -334,10 +346,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a0c1efc05a59fb9e",
+  "active": "0ed08395fa1f2bd1",
   "lastOpenFiles": [
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/Gamma 函数与 Gamma 分布.md",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/Gamma 函数与 Gamma 分布.md",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/常用的概率分布及数学期望和方差.md",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/泊松分布表.md",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/X2, t, F分布表.md",
