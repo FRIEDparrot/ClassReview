@@ -12,3 +12,9 @@ AD转换器 analog/digital converter
 互易定理 Reciprocity Theorem 
 对偶原理 Dual Principle 
 电子设计自动化 (EDA) Electronic Design Automation 
+单片机(MCU) Micro Controller Unit 
+电压表 voltmeter 
+电流表 ammeter 
+示波器 oscilloscope 
+输出端无电容互补对称功放电路(OCL) output-capacitor-less complementary symmetry power amplifier
+输出端无变压器功放电路(OTL) output-transformer-less 

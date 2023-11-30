@@ -70,7 +70,7 @@ $$w^T x + b = 0$$
 
 ![[Pasted image 20221121233127.png|400]]
 ![[Pasted image 20221121233616.png|400]]
-[[KNN,KMeans,SVM 2022-11-22 00.41.02.excalidraw]
+[[KNN,KMeans,SVM 2022-11-22 00.41.02.excalidraw]]
 
 <a href="https://blog.csdn.net/v_JULY_v/article/details/7624837">
 支持向量机通俗导论

@@ -1,204 +1,204 @@
 {
   "recentFiles": [
     {
-      "basename": "第一章 绪论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md"
-    },
-    {
-      "basename": "疲劳与断裂思维导图",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/补充内容/疲劳与断裂思维导图.md"
-    },
-    {
-      "basename": "第二章 高周疲劳 2023-09-21 06.59.43",
-      "path": "Excalidraw/第二章 高周疲劳 2023-09-21 06.59.43.md"
-    },
-    {
       "basename": "第三章 多维随机变量及其分布",
       "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
     },
     {
-      "basename": "第五章 基本放大电路",
-      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md"
+      "basename": "Gamma 函数与 Gamma 分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/Gamma 函数与 Gamma 分布.md"
     },
     {
-      "basename": "第四章 半导体器件 2023-10-06 01.05.32",
-      "path": "Excalidraw/第四章 半导体器件 2023-10-06 01.05.32.md"
+      "basename": "常用的概率分布及数学期望和方差",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/常用的概率分布及数学期望和方差.md"
     },
     {
-      "basename": "第四章 半导体器件",
-      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md"
+      "basename": "泊松分布表",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/泊松分布表.md"
+    },
+    {
+      "basename": "X2, t, F分布表",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/X2, t, F分布表.md"
+    },
+    {
+      "basename": "卷积公式的证明",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/卷积公式的证明.pdf"
+    },
+    {
+      "basename": "单片机简介",
+      "path": "💻softwares/⚡Circuit/51单片机教程/单片机简介.md"
+    },
+    {
+      "basename": "程序的下载和烧录",
+      "path": "💻softwares/⚡Circuit/51单片机教程/程序的下载和烧录.md"
     },
     {
       "basename": "Circuit Terminology",
       "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
     },
     {
-      "basename": "第六章 耦合电感和理想变压器",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md"
-    },
-    {
-      "basename": "第七章 谐振电路",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第七章 谐振电路.md"
-    },
-    {
-      "basename": "第七章 谐振电路 2023-11-21 22.16.37",
-      "path": "Excalidraw/第七章 谐振电路 2023-11-21 22.16.37.md"
-    },
-    {
-      "basename": "第七章 谐振电路 2023-11-21 10.42.33",
-      "path": "Excalidraw/第七章 谐振电路 2023-11-21 10.42.33.md"
-    },
-    {
-      "basename": "Basic tutorial for MATLAB app designer",
-      "path": "💻softwares/➕Mathmatics/MATLAB/AppDesigner/Basic tutorial for MATLAB app designer.md"
-    },
-    {
-      "basename": "Altium Designer 项目创建",
-      "path": "💻softwares/⚡Circuit/Altium Designer/Altium Designer 项目创建.md"
-    },
-    {
-      "basename": "常用快捷键",
-      "path": "💻softwares/🗽2D & 3D design/Origin/常用快捷键.md"
-    },
-    {
-      "basename": "Origin基础用法",
-      "path": "💻softwares/🗽2D & 3D design/Origin/Origin基础用法.md"
-    },
-    {
-      "basename": "第五章 线弹性断裂力学",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第五章 线弹性断裂力学.md"
-    },
-    {
-      "basename": "第五章 化学反应基本原理",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md"
-    },
-    {
-      "basename": "第六章 溶液与溶液中的离子平衡",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第六章 溶液与溶液中的离子平衡.md"
-    },
-    {
-      "basename": "第五章 化学反应基本原理 2023-11-21 16.31.10",
-      "path": "Excalidraw/第五章 化学反应基本原理 2023-11-21 16.31.10.md"
-    },
-    {
-      "basename": "物质的标准摩尔生成焓和生成熵",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/物质的标准摩尔生成焓和生成熵.md"
-    },
-    {
-      "basename": "第三章 多维随机变量及其分布 2023-09-22 17.39.58",
-      "path": "Excalidraw/第三章 多维随机变量及其分布 2023-09-22 17.39.58.md"
-    },
-    {
-      "basename": "第二章 随机变量及其分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md"
-    },
-    {
-      "basename": "第七章 谐振电路 2023-11-21 09.17.30",
-      "path": "Excalidraw/第七章 谐振电路 2023-11-21 09.17.30.md"
-    },
-    {
-      "basename": "第七章 谐振电路 2023-11-20 13.39.44",
-      "path": "Excalidraw/第七章 谐振电路 2023-11-20 13.39.44.md"
-    },
-    {
-      "basename": "第四章 低周疲劳",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md"
-    },
-    {
-      "basename": "第二章 高周疲劳",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第二章 高周疲劳.md"
-    },
-    {
-      "basename": "GitHub entry",
-      "path": "💻softwares/Git/GitHub entry.md"
-    },
-    {
-      "basename": "第二章 高周疲劳 2023-11-19 23.53.40",
-      "path": "Excalidraw/第二章 高周疲劳 2023-11-19 23.53.40.md"
-    },
-    {
-      "basename": "第二章 高周疲劳 2023-11-19 10.41.09",
-      "path": "Excalidraw/第二章 高周疲劳 2023-11-19 10.41.09.md"
-    },
-    {
-      "basename": "理想变压器的变比关系推导",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/理想变压器的变比关系推导.pdf"
-    },
-    {
-      "basename": "第四章 化学反应热效应",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第四章 化学反应热效应.md"
-    },
-    {
-      "basename": "第二章 热力学第一定律",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md"
-    },
-    {
-      "basename": "第二章 物质化学组成与聚集状态",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md"
-    },
-    {
-      "basename": "标准正态分布表",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/标准正态分布表.md"
-    },
-    {
-      "basename": "第一章 随机事件及其概率",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md"
-    },
-    {
-      "basename": "第二章 随机变量及其分布 2023-11-18 07.41.40",
-      "path": "Excalidraw/第二章 随机变量及其分布 2023-11-18 07.41.40.md"
-    },
-    {
-      "basename": "第一章 绪论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🎯Reliability Engineering/第一章 绪论.md"
-    },
-    {
-      "basename": "第一章 绪论 2023-11-17 12.06.34",
-      "path": "Excalidraw/第一章 绪论 2023-11-17 12.06.34.md"
-    },
-    {
-      "basename": "核心期刊",
-      "path": "🐸 Daily Life memo/论文资料/核心期刊.md"
-    },
-    {
-      "basename": "第四章 不定积分",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第四章 不定积分.md"
-    },
-    {
-      "basename": "第一章 绪论 2023-11-17 02.41.34",
-      "path": "Excalidraw/第一章 绪论 2023-11-17 02.41.34.md"
-    },
-    {
-      "basename": "第一章 绪论 2023-11-17 01.48.29",
-      "path": "Excalidraw/第一章 绪论 2023-11-17 01.48.29.md"
-    },
-    {
-      "basename": "第一章 绪论 2023-11-17 01.24.24",
-      "path": "Excalidraw/第一章 绪论 2023-11-17 01.24.24.md"
-    },
-    {
-      "basename": "KNN,KMeans,SVM",
-      "path": "📘ClassNotes/⌨️Programming/Deep Learning/Class Contents/基本课程/KNN,KMeans,SVM.md"
-    },
-    {
       "basename": "Dynamic Terminology",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Dynamic Terminology.md"
     },
     {
-      "basename": "第四章 壳体理论的几何建立",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/第四章 壳体理论的几何建立.md"
+      "basename": "常用基本元件与搜索关键词",
+      "path": "💻softwares/⚡Circuit/Proteus/常用基本元件与搜索关键词.md"
     },
     {
-      "basename": "壳体理论建立, 本构公式与平衡方程(附完整推导过程)",
-      "path": "🐸 Daily Life memo/CSDN及公众号教程存档/壳体理论建立, 本构公式与平衡方程(附完整推导过程).md"
+      "basename": "第六章 集成运算放大器以及应用 2023-11-29 18.17.32",
+      "path": "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 18.17.32.md"
     },
     {
-      "basename": "Frenet标架与切向量公式建立推导",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/Frenet标架与切向量公式建立推导.pdf"
+      "basename": "第六章 集成运算放大器以及应用",
+      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第六章 集成运算放大器以及应用.md"
     },
     {
-      "basename": "壳体理论 2023-10-12 19.22.42",
-      "path": "Excalidraw/壳体理论 2023-10-12 19.22.42.md"
+      "basename": "第六章 集成运算放大器以及应用 2023-11-29 22.17.47",
+      "path": "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 22.17.47.md"
+    },
+    {
+      "basename": "第六章 集成运算放大器以及应用 2023-11-29 20.18.57",
+      "path": "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 20.18.57.md"
+    },
+    {
+      "basename": "第六章 集成运算放大器以及应用 2023-11-28 20.42.30",
+      "path": "Excalidraw/第六章 集成运算放大器以及应用 2023-11-28 20.42.30.md"
+    },
+    {
+      "basename": "第六章 集成运算放大器以及应用 2023-11-29 13.23.03",
+      "path": "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 13.23.03.md"
+    },
+    {
+      "basename": "第六章 集成运算放大器以及应用 2023-11-29 09.29.18",
+      "path": "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 09.29.18.md"
+    },
+    {
+      "basename": "第六章 集成运算放大器以及应用 2023-11-29 09.21.21",
+      "path": "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 09.21.21.md"
+    },
+    {
+      "basename": "第十一章 含有运算放大器的电路分析",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第十一章 含有运算放大器的电路分析.md"
+    },
+    {
+      "basename": "第十一章 含有运算放大器的电路分析 2023-09-20 22.36.22",
+      "path": "Excalidraw/第十一章 含有运算放大器的电路分析 2023-09-20 22.36.22.md"
+    },
+    {
+      "basename": "第十一章 含有运算放大器的电路分析 2023-09-20 23.59.12",
+      "path": "Excalidraw/第十一章 含有运算放大器的电路分析 2023-09-20 23.59.12.md"
+    },
+    {
+      "basename": "第五章 基本放大电路",
+      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md"
+    },
+    {
+      "basename": "第六章 溶液中的离子平衡 2023-11-28 17.29.42",
+      "path": "Excalidraw/第六章 溶液中的离子平衡 2023-11-28 17.29.42.md"
+    },
+    {
+      "basename": "第六章 溶液中的离子平衡",
+      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第六章 溶液中的离子平衡.md"
+    },
+    {
+      "basename": "第六章 溶液中的离子平衡 2023-11-28 16.41.16",
+      "path": "Excalidraw/第六章 溶液中的离子平衡 2023-11-28 16.41.16.md"
+    },
+    {
+      "basename": "第八章 假设检验",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第八章 假设检验.md"
+    },
+    {
+      "basename": "Mathmatic Terminology",
+      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
+    },
+    {
+      "basename": "Chemical Terminology",
+      "path": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md"
+    },
+    {
+      "basename": "1.proteus界面简介和基本操作",
+      "path": "💻softwares/⚡Circuit/Proteus/1.proteus界面简介和基本操作.md"
+    },
+    {
+      "basename": "常用基本元件与搜索关键词 2023-11-28 15.14.23",
+      "path": "Excalidraw/常用基本元件与搜索关键词 2023-11-28 15.14.23.md"
+    },
+    {
+      "basename": "简单信号的仿真示波教程",
+      "path": "💻softwares/⚡Circuit/Proteus/仿真教程/简单信号的仿真示波教程.md"
+    },
+    {
+      "basename": "proteus界面简介和基本操作 2023-11-28 13.50.41",
+      "path": "Excalidraw/proteus界面简介和基本操作 2023-11-28 13.50.41.md"
+    },
+    {
+      "basename": "第五章 基本放大电路 2023-11-28 11.33.58",
+      "path": "Excalidraw/第五章 基本放大电路 2023-11-28 11.33.58.md"
+    },
+    {
+      "basename": "第五章 基本放大电路 2023-11-28 11.13.34",
+      "path": "Excalidraw/第五章 基本放大电路 2023-11-28 11.13.34.md"
+    },
+    {
+      "basename": "第五章 基本放大电路 2023-11-28 09.26.20",
+      "path": "Excalidraw/第五章 基本放大电路 2023-11-28 09.26.20.md"
+    },
+    {
+      "basename": "第五章 基本放大电路 2023-11-28 09.04.17",
+      "path": "Excalidraw/第五章 基本放大电路 2023-11-28 09.04.17.md"
+    },
+    {
+      "basename": "第五章 基本放大电路 2023-11-27 21.51.53",
+      "path": "Excalidraw/第五章 基本放大电路 2023-11-27 21.51.53.md"
+    },
+    {
+      "basename": "第五章 基本放大电路 2023-11-27 23.08.29",
+      "path": "Excalidraw/第五章 基本放大电路 2023-11-27 23.08.29.md"
+    },
+    {
+      "basename": "第五章 基本放大电路 2023-11-27 09.46.48",
+      "path": "Excalidraw/第五章 基本放大电路 2023-11-27 09.46.48.md"
+    },
+    {
+      "basename": "第四章 半导体器件",
+      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md"
+    },
+    {
+      "basename": "第四章 半导体器件 2023-10-05 16.29.00",
+      "path": "Excalidraw/第四章 半导体器件 2023-10-05 16.29.00.md"
+    },
+    {
+      "basename": "单片机简介 2023-11-27 18.43.46",
+      "path": "Excalidraw/单片机简介 2023-11-27 18.43.46.md"
+    },
+    {
+      "basename": "第五章 基本放大电路 2023-11-27 09.31.09",
+      "path": "Excalidraw/第五章 基本放大电路 2023-11-27 09.31.09.md"
+    },
+    {
+      "basename": "第五章 基本放大电路 2023-11-26 22.07.40",
+      "path": "Excalidraw/第五章 基本放大电路 2023-11-26 22.07.40.md"
+    },
+    {
+      "basename": "振动信号处理",
+      "path": "📘ClassNotes/⌨️Programming/Deep Learning/Class Contents/基本课程/振动信号处理.md"
+    },
+    {
+      "basename": "多层感知机,神经网络",
+      "path": "📘ClassNotes/⌨️Programming/Deep Learning/Implements/多层感知机,神经网络.md"
+    },
+    {
+      "basename": "The often-used optimizer and the principle",
+      "path": "📘ClassNotes/⌨️Programming/Deep Learning/Optimizer Introduction/The often-used optimizer and the principle.md"
+    },
+    {
+      "basename": "线性回归",
+      "path": "📘ClassNotes/⌨️Programming/Deep Learning/Class Contents/基本课程/线性回归.md"
+    },
+    {
+      "basename": "KNN,KMeans,SVM",
+      "path": "📘ClassNotes/⌨️Programming/Deep Learning/Class Contents/基本课程/KNN,KMeans,SVM.md"
     }
   ],
   "omittedPaths": [],

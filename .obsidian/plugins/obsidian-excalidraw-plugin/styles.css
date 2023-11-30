@@ -477,6 +477,13 @@ hr.excalidraw-setting-hr {
   display: none;
 }
 
+.excalidraw__embeddable-container .canvas-node:not(.is-editing).transparent {
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-horizontal {
+    display: none;
+  }
+}
+
 .canvas-node:not(.is-editing):has(.excalidraw-canvas-immersive) {
   ::-webkit-scrollbar,
   ::-webkit-scrollbar-horizontal {
@@ -488,4 +495,12 @@ hr.excalidraw-setting-hr {
 .canvas-node:not(.is-editing) .canvas-node-container:has(.excalidraw-canvas-immersive) {
   border:       unset;
   box-shadow:   unset;
+}
+
+.excalidraw .canvas-node .ex-md-font-hand-drawn {
+  --font-text: "Virgil";
+}
+
+.excalidraw .canvas-node .ex-md-font-code {
+  --font-text: "Cascadia";
 }

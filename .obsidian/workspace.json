@@ -4,32 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "aa5c40f1ed50f117",
+        "id": "3f9d263669914451",
         "type": "tabs",
         "children": [
           {
-            "id": "deb8a19674443a6a",
-            "type": "leaf",
-            "state": {
-              "type": "mindmapview",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/补充内容/疲劳与断裂思维导图.md"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "74613c3a3e00ffef",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "58afa7b54d8c08ff",
+            "id": "a0c1efc05a59fb9e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,6 +82,14 @@
             }
           },
           {
+            "id": "613ab51e61bf117e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
             "id": "1accea1cbfd9d2cd",
             "type": "leaf",
             "state": {
@@ -106,20 +98,12 @@
                 "url": "https://chat.openai.com/"
               }
             }
-          },
-          {
-            "id": "613ab51e61bf117e",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 411.51422119140625,
+    "width": 322.51422119140625,
     "collapsed": true
   },
   "right": {
@@ -171,7 +155,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -270,7 +254,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md"
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
               }
             }
           },
@@ -288,7 +272,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -305,7 +289,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -326,7 +310,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 480.5,
+    "width": 382.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -346,58 +330,58 @@
       "dbfolder:Create a new database table": false,
       "obsidian-day-planner:Timeline": false,
       "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-projects:Open projects": false
+      "obsidian-projects:Open projects": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "58afa7b54d8c08ff",
+  "active": "a0c1efc05a59fb9e",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/补充内容/疲劳与断裂思维导图.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第一章 绪论.md",
-    "Excalidraw/第二章 高周疲劳 2023-09-21 06.59.43.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/Gamma 函数与 Gamma 分布.md",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md",
-    "Excalidraw/第四章 半导体器件 2023-10-06 01.05.32.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/常用的概率分布及数学期望和方差.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/泊松分布表.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/X2, t, F分布表.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/卷积公式的证明.pdf",
+    "💻softwares/⚡Circuit/51单片机教程/单片机简介.md",
+    "💻softwares/⚡Circuit/51单片机教程/程序的下载和烧录.md",
+    "attachments/Pasted image 20231130023023.png",
     "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第六章 耦合电感和理想变压器.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第七章 谐振电路.md",
-    "Excalidraw/第七章 谐振电路 2023-11-21 22.16.37.md",
-    "Excalidraw/第七章 谐振电路 2023-11-21 10.42.33.md",
-    "🐸 Daily Life memo/买书部分.md",
-    "💻softwares/➕Mathmatics/MATLAB/AppDesigner/Basic tutorial for MATLAB app designer.md",
-    "💻softwares/⚡Circuit/Altium Designer/Altium Designer 项目创建.md",
-    "💻softwares/⚡Circuit/Altium Designer",
-    "💻softwares/🗽2D & 3D design/Origin/常用快捷键.md",
-    "💻softwares/🗽2D & 3D design/Origin/Origin基础用法.md",
-    "attachments/Pasted image 20231121203612.png",
-    "attachments/Pasted image 20231121203349.png",
-    "💻softwares/🗽2D & 3D design/Origin/Markdown报告和分析.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第五章 线弹性断裂力学.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第六章 溶液与溶液中的离子平衡.md",
-    "Excalidraw/第五章 化学反应基本原理 2023-11-21 16.31.10.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/物质的标准摩尔生成焓和生成熵.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/二维正态分布的边缘密度函数.pdf",
-    "Excalidraw/第三章 多维随机变量及其分布 2023-09-22 17.39.58.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/相对通频带与半功率点推导.pdf",
-    "Excalidraw/第七章 谐振电路 2023-11-21 09.17.30.md",
-    "attachments/Pasted image 20231120001443.png",
-    "attachments/Pasted image 20231120001142.png",
-    "attachments/Pasted image 20231120000935.png",
-    "💻softwares/🗽2D & 3D design/Origin",
-    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/理想变压器的变比关系推导.pdf",
-    "🐸 Daily Life memo/论文资料",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/Frenet标架与切向量公式建立推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/📜Theory of Plates and Shells/补充内容/曲面二次微分型与高斯科达奇条件.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/补充内容/裂纹的应力函数推导.pdf",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/正态分布积分公式的证明.pdf",
-    "attachments/Pasted Image 20231112114813_825.jpg",
-    "attachments/Pasted Image 20231112114807_754.jpg",
-    "attachments/Pasted Image 20231112114802_660.jpg",
-    "attachments/Pasted Image 20231112114755_573.jpg",
-    "attachments/Pasted Image 20231112114748_838.jpg",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Dynamic Terminology.md",
+    "attachments/Pasted image 20231130020009.png",
+    "attachments/Pasted image 20231130014018.png",
+    "💻softwares/⚡Circuit/Proteus/常用基本元件与搜索关键词.md",
+    "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 18.17.32.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第六章 集成运算放大器以及应用.md",
+    "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 22.17.47.md",
+    "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 20.18.57.md",
+    "Excalidraw/第六章 集成运算放大器以及应用 2023-11-28 20.42.30.md",
+    "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 13.23.03.md",
+    "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 09.29.18.md",
+    "attachments/Pasted image 20231129101107.png",
+    "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 09.21.21.md",
+    "attachments/Pasted Image 20231129092123_485.png",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第十一章 含有运算放大器的电路分析.md",
+    "Excalidraw/第十一章 含有运算放大器的电路分析 2023-09-20 22.36.22.md",
+    "Excalidraw/第十一章 含有运算放大器的电路分析 2023-09-20 23.59.12.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md",
+    "attachments/Pasted Image 20231128204232_581.png",
+    "attachments/Pasted image 20231128202437.png",
+    "Excalidraw/第六章 溶液中的离子平衡 2023-11-28 17.29.42.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第六章 溶液中的离子平衡.md",
+    "Excalidraw/第六章 溶液中的离子平衡 2023-11-28 16.41.16.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第八章 假设检验.md",
+    "attachments/Pasted image 20231128151316.png",
+    "attachments/Pasted image 20231128151204.png",
+    "💻softwares/⚡Circuit/Proteus/仿真教程",
+    "attachments/Pasted Image 20231128135044_869.png",
+    "💻softwares/⚡Circuit/Proteus",
+    "💻softwares/⚡Circuit/单片机教程笔记/Untitled",
+    "💻softwares/⚡Circuit/51单片机教程",
+    "📘ClassNotes/⚡Circuit/模拟电子技术基础",
+    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/耦合谐振电路的等效变换.pdf",
+    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/工程实际并联谐振电路的参数推导.pdf",
+    "📘ClassNotes/⚡Circuit/PCB设计基础",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/章节例题/第三章例题.pdf",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }
