@@ -18,3 +18,11 @@ AD转换器 analog/digital converter
 示波器 oscilloscope 
 输出端无电容互补对称功放电路(OCL) output-capacitor-less complementary symmetry power amplifier
 输出端无变压器功放电路(OTL) output-transformer-less 
+PID 控制器 proportional integral differentiator 
+双向稳压二极管 bidirectional zener diode 
+肖特基势垒二极管 schottky diode 
+晶闸管 Thyristor 
+寄存器 register 
+阴极 cathode
+负阻抗变换器(NIC) Negative Impedance Converter 
+

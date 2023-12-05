@@ -25,7 +25,6 @@ $$\Large \Gamma(\alpha , \theta)\qquad  f(x) = \begin{cases}
 并且**满足$\Gamma$分布的可加性**: 当$X\sim \Gamma(\alpha, \theta), Y \sim \Gamma(\beta, \theta)$, 则$Z = X + Y \sim \Gamma(\alpha + \beta, \theta)$
 证明参考第二章例题2
 
-
 beta 函数: 
 $$B(\alpha, \beta) = \int_{0}^{1} t^{\alpha-1} (1 -t)^{\beta-1} dt$$
 有关系:

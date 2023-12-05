@@ -23,7 +23,7 @@
   "useCustomIcons": false,
   "useWebview": false,
   "useIconList": true,
-  "darkMode": true,
+  "darkMode": false,
   "bookmarkManager": {
     "openBookMark": true,
     "saveBookMark": true,
@@ -126,6 +126,17 @@
       "parent": 0,
       "droppable": true,
       "text": "New Tab",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    },
+    {
+      "id": "a44caf5856f795c7",
+      "parent": 0,
+      "droppable": true,
+      "text": "化学能_百度百科",
       "data": {
         "fileType": "site",
         "fileSize": "",

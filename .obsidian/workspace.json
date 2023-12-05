@@ -4,28 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "3f9d263669914451",
+        "id": "f39cf2f2ec17a1c7",
         "type": "tabs",
         "children": [
           {
-            "id": "0ed08395fa1f2bd1",
+            "id": "8c27335090af2160",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/Gamma 函数与 Gamma 分布.md",
+                "file": "💻softwares/⚡Circuit/51单片机教程/LCD1602的使用与.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a0c1efc05a59fb9e",
+            "id": "c0564d3303b971aa",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/矩阵键盘的代码 2023-12-05 21.35.46.md"
+              }
+            }
+          },
+          {
+            "id": "73b9f88a0a19cb6e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
+                "file": "💻softwares/⚡Circuit/51单片机教程/单片机简介.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,7 +53,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 63.070175438596486,
+        "dimension": 54.90384615384616,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -83,7 +93,7 @@
       {
         "id": "066eddf15a13dd56",
         "type": "tabs",
-        "dimension": 36.92982456140351,
+        "dimension": 45.09615384615385,
         "children": [
           {
             "id": "db0ad0041a71350b",
@@ -115,7 +125,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 322.51422119140625,
+    "width": 254.5,
     "collapsed": true
   },
   "right": {
@@ -167,7 +177,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/Gamma 函数与 Gamma 分布.md",
+                "file": "💻softwares/⚡Circuit/51单片机教程/LCD1602的使用与.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -253,7 +263,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -266,7 +276,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/Gamma 函数与 Gamma 分布.md"
+                "file": "💻softwares/⚡Circuit/51单片机教程/LCD1602的使用与.md"
               }
             }
           },
@@ -284,7 +294,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/Gamma 函数与 Gamma 分布.md",
+                "file": "💻softwares/⚡Circuit/51单片机教程/LCD1602的使用与.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -301,7 +311,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/Gamma 函数与 Gamma 分布.md",
+                "file": "💻softwares/⚡Circuit/51单片机教程/LCD1602的使用与.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -322,7 +332,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 382.5,
+    "width": 467.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -340,60 +350,60 @@
       "random-note:Open random note": false,
       "zk-prefixer:Create new unique note": false,
       "dbfolder:Create a new database table": false,
-      "obsidian-day-planner:Timeline": false,
       "templater-obsidian:Templater": false,
       "obsidian-projects:Open projects": false,
+      "obsidian-day-planner:Timeline": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0ed08395fa1f2bd1",
+  "active": "8c27335090af2160",
   "lastOpenFiles": [
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/Gamma 函数与 Gamma 分布.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/常用的概率分布及数学期望和方差.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/泊松分布表.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/X2, t, F分布表.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/卷积公式的证明.pdf",
+    "💻softwares/⚡Circuit/51单片机教程/LCD驱动编写教程.md",
+    "💻softwares/⚡Circuit/51单片机教程/矩阵键盘的代码.md",
+    "Excalidraw/矩阵键盘的代码 2023-12-05 21.35.46.md",
+    "attachments/Pasted image 20231205213416.png",
+    "💻softwares/⚡Circuit/51单片机教程/按键的基本原理.md",
+    "💻softwares/⚡Circuit/51单片机教程/LCD1602的使用与.md",
     "💻softwares/⚡Circuit/51单片机教程/单片机简介.md",
-    "💻softwares/⚡Circuit/51单片机教程/程序的下载和烧录.md",
-    "attachments/Pasted image 20231130023023.png",
-    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Dynamic Terminology.md",
-    "attachments/Pasted image 20231130020009.png",
-    "attachments/Pasted image 20231130014018.png",
-    "💻softwares/⚡Circuit/Proteus/常用基本元件与搜索关键词.md",
-    "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 18.17.32.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第六章 集成运算放大器以及应用.md",
-    "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 22.17.47.md",
-    "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 20.18.57.md",
-    "Excalidraw/第六章 集成运算放大器以及应用 2023-11-28 20.42.30.md",
-    "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 13.23.03.md",
-    "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 09.29.18.md",
-    "attachments/Pasted image 20231129101107.png",
-    "Excalidraw/第六章 集成运算放大器以及应用 2023-11-29 09.21.21.md",
-    "attachments/Pasted Image 20231129092123_485.png",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第十一章 含有运算放大器的电路分析.md",
-    "Excalidraw/第十一章 含有运算放大器的电路分析 2023-09-20 22.36.22.md",
-    "Excalidraw/第十一章 含有运算放大器的电路分析 2023-09-20 23.59.12.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md",
-    "attachments/Pasted Image 20231128204232_581.png",
-    "attachments/Pasted image 20231128202437.png",
-    "Excalidraw/第六章 溶液中的离子平衡 2023-11-28 17.29.42.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
+    "attachments/Pasted image 20231205205452.png.~tmp",
+    "attachments/Pasted image 20231205205452.png",
+    "attachments/Pasted image 20231205203614.png",
+    "attachments/Pasted image 20231205203147.png",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第七章 应用电化学.md",
+    "Excalidraw/第七章 应用电化学 2023-12-05 17.16.53.md",
     "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第六章 溶液中的离子平衡.md",
-    "Excalidraw/第六章 溶液中的离子平衡 2023-11-28 16.41.16.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第八章 假设检验.md",
-    "attachments/Pasted image 20231128151316.png",
-    "attachments/Pasted image 20231128151204.png",
-    "💻softwares/⚡Circuit/Proteus/仿真教程",
-    "attachments/Pasted Image 20231128135044_869.png",
-    "💻softwares/⚡Circuit/Proteus",
-    "💻softwares/⚡Circuit/单片机教程笔记/Untitled",
-    "💻softwares/⚡Circuit/51单片机教程",
-    "📘ClassNotes/⚡Circuit/模拟电子技术基础",
+    "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/物质的溶度积常数.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Dynamic Terminology.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第九章 二端口网络.md",
+    "Excalidraw/第九章 二端口网络 2023-12-05 10.40.48.md",
+    "Excalidraw/第九章 二端口网络 2023-12-05 09.12.39.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/二端口等效电路关系.pdf",
+    "Excalidraw/第九章 二端口网络 2023-12-05 09.27.28.md",
+    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
+    "Excalidraw/第九章 二端口网络 2023-12-05 00.34.22.md",
+    "Excalidraw/第九章 二端口网络 2023-12-05 00.16.32.md",
+    "attachments/Pasted image 20231205005430.png",
+    "Excalidraw/第九章 二端口网络 2023-12-04 23.56.11.md",
+    "Excalidraw/第九章 二端口网络 2023-12-04 22.57.28.md",
+    "Excalidraw/第九章 二端口网络 2023-12-04 22.25.16.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第十章 运算放大器基础.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/二端口特性参数推导.pdf",
+    "📘ClassNotes/⚡Circuit/电路分析基础/重要概念/二端口网络参数转换关系表.md",
     "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/耦合谐振电路的等效变换.pdf",
-    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/工程实际并联谐振电路的参数推导.pdf",
-    "📘ClassNotes/⚡Circuit/PCB设计基础",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/章节例题/第三章例题.pdf",
+    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/电路的Y-△型变换推导.pdf",
+    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/相对通频带与半功率点推导.pdf",
+    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/理想变压器的变比关系推导.pdf",
+    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/并联去耦等效电感推导.pdf",
+    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/最大功率传输定理推导.pdf",
+    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/二端口网络的参数关系和互易对称条件推导.pdf",
+    "attachments/Pasted image 20231203210543.png",
+    "attachments/Pasted image 20231203210255.png",
+    "attachments/Pasted image 20231203200136.png",
+    "attachments/Pasted image 20231203194433.png",
+    "attachments/Pasted image 20231203193848.png",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }
