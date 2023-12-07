@@ -25,4 +25,5 @@ PID 控制器 proportional integral differentiator
 寄存器 register 
 阴极 cathode
 负阻抗变换器(NIC) Negative Impedance Converter 
-
+二-十进制(BCD) binary cored demical 
+总线 bus 
