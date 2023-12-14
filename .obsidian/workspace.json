@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "346a45f5f6bca2ec",
+        "id": "10e2b0049aa30e87",
         "type": "tabs",
         "children": [
           {
-            "id": "a67ff62ccbcffa61",
+            "id": "f5b9e5eb066132d8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,8 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 222.51137161254883,
-    "collapsed": true
+    "width": 298.5113716125488
   },
   "right": {
     "id": "f7de553c162de521",
@@ -155,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -254,7 +253,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md"
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md"
               }
             }
           },
@@ -272,7 +271,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -289,7 +288,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -310,8 +309,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 392.5,
-    "collapsed": true
+    "width": 392.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -334,54 +332,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a67ff62ccbcffa61",
+  "active": "f5b9e5eb066132d8",
   "lastOpenFiles": [
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/常见分布与变量函数的数学期望.pdf",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
-    "🐸 Daily Life memo/⌚近期计划书.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/数学期望的性质证明(+方差公式).pdf",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/数学期望的性质证明.annos",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/数学期望的性质证明-annotate.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/数学期望的性质证明.pdf",
-    "💻softwares/⚡Circuit/51单片机教程/51单片机最小系统/最小系统简介.md",
-    "attachments/Pasted image 20231207014829.png",
-    "attachments/Pasted image 20231207014111.png",
-    "attachments/Pasted image 20231207013031.png",
-    "attachments/Pasted image 20231207012509.png",
-    "attachments/Pasted image 20231207011853.png",
-    "attachments/Pasted image 20231207011314.png",
-    "💻softwares/⚡Circuit/51单片机教程/基础部分/单片机中的十六进制与扩展类型.md",
-    "💻softwares/⚡Circuit/51单片机教程/51单片机最小系统",
-    "attachments/Pasted image 20231206215405.png",
-    "💻softwares/⚡Circuit/51单片机教程/基础部分/数电基础和TTL电平知识.md",
-    "💻softwares/⚡Circuit/51单片机教程/按键和LED灯的控制",
-    "💻softwares/⚡Circuit/51单片机教程/基础部分",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第八章 数字电路基础.md",
-    "🧊Minecraft/红石数电/数电基本元件与逻辑电路.md",
-    "Excalidraw/第八章 数字电路基础 2023-12-06 20.15.26.md",
+    "🐸 Daily Life memo/备忘录.md",
+    "🐸 Daily Life memo/手头任务.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/实验笔记/醋酸电离常数的测定.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/实验笔记",
+    "💻softwares/⚡Circuit/51单片机教程/IO扩展, LED点阵和电机/步进电机驱动与介绍.md",
+    "attachments/Pasted image 20231213200111.png",
+    "attachments/Pasted image 20231213195825.png",
+    "Excalidraw/步进电机驱动与介绍 2023-12-13 19.52.18.md",
+    "attachments/Pasted Image 20231213195419_177.png",
+    "attachments/Pasted Image 20231213195357_947.png",
+    "attachments/Pasted image 20231213194112.png",
+    "attachments/Pasted image 20231213193340.png",
+    "attachments/Pasted image 20231213192547.png",
+    "attachments/Pasted image 20231213174425.png",
+    "attachments/Pasted image 20231213173028.png",
+    "attachments/Pasted image 20231213172352.png",
+    "💻softwares/⚡Circuit/51单片机教程/IO扩展, LED点阵和电机/直流电机驱动模块讲解.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第九章 触发器与时序逻辑电路.md",
+    "💻softwares/⚡Circuit/Proteus/常用基本元件与搜索关键词.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md",
+    "Excalidraw/第二章 电路的瞬态分析 2023-12-13 12.04.18.md",
+    "Excalidraw/第二章 电路的瞬态分析 2023-12-13 11.28.02.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第十二章 一阶瞬态电路分析.md",
+    "💻softwares/⚡Circuit/51单片机教程/IO扩展, LED点阵和电机/LED基本知识.md",
+    "💻softwares/⚡Circuit/51单片机教程/IO扩展, LED点阵和电机/74HC595芯片与IO扩展简介.md",
+    "Excalidraw/第四章 半导体器件 2023-10-04 16.25.07.md",
+    "📘ClassNotes/⚡Circuit/模拟电子技术基础/第一章 绪论.md",
+    "📘ClassNotes/⚡Circuit/模拟电子技术基础/第二章 常用半导体器件基础知识.md",
     "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md",
-    "Excalidraw/第八章 数字电路基础 2023-12-06 18.40.30.md",
     "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "Excalidraw/第八章 数字电路基础 2023-12-06 13.53.25.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md",
-    "Excalidraw/第八章 数字电路基础 2023-12-06 18.03.23.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第六章 集成运算放大器以及应用.md",
-    "Excalidraw/第八章 数字电路基础 2023-12-06 13.39.36.md",
-    "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
-    "💻softwares/⚡Circuit/Proteus/1.proteus界面简介和基本操作.md",
-    "attachments/Pasted image 20231206161752.png",
-    "attachments/0B7661FBDD225D929AD34DF385DC671E.jpg",
-    "attachments/Pasted Image 20231206133938_514.png",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第十一章 滤波器基础.md",
-    "Excalidraw/第十一章 滤波器基础 2023-12-06 09.41.49.md",
-    "Excalidraw/第十一章 滤波器基础 2023-12-06 09.00.09.md",
-    "Excalidraw/第六章 频域分析及数字信号处理技术 2023-10-26 20.08.08.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🧪Vibration testing Techniques/第六章 频域分析及数字信号处理技术.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第十章 运算放大器基础.md",
-    "attachments/Pasted image 20231205205452.png.~tmp",
-    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/二端口等效电路关系.pdf",
-    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/二端口特性参数推导.pdf",
-    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/耦合谐振电路的等效变换.pdf",
+    "Excalidraw/第二章 常用半导体器件基础知识 2023-12-12 19.58.23.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第七章 应用电化学.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第五章 线弹性断裂力学.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/标准电极电势表.pdf",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/标准电极电势表.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/Unconfirmed 650163.crdownload",
+    "Excalidraw/第七章 应用电化学 2023-12-12 16.34.35.md",
+    "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/大数定律证明.pdf",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/N维正态随机变量的概率密度推导.pdf",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/二维正态分布的协方差和相关系数.pdf",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/public/public.h",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/public/public.c",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/public",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

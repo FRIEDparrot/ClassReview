@@ -22,8 +22,12 @@ PID 控制器 proportional integral differentiator
 双向稳压二极管 bidirectional zener diode 
 肖特基势垒二极管 schottky diode 
 晶闸管 Thyristor 
-寄存器 register 
 阴极 cathode
 负阻抗变换器(NIC) Negative Impedance Converter 
 二-十进制(BCD) binary cored demical 
 总线 bus 
+移位寄存器 shift register 
+
+掺杂 doping
+电子 electron 
+空穴 positive hole 

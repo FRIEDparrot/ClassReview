@@ -15,3 +15,5 @@ object Manager中显示了所有的图层， 方便
 帮助和部分教程可以从learning center中找到 
 ![[attachments/Pasted image 20231121203349.png]]
 
+
+绘制图像时需要选中表格之后点击绘制即可。
