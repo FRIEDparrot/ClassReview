@@ -10,3 +10,4 @@
 应力响度因子 stress intensity factor 
 
 蒙特卡洛模拟 Monte Carlo Simulation-MCS 
+耐久性准则 crashworthness criteria 

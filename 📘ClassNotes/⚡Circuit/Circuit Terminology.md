@@ -4,6 +4,7 @@
 电阻 resistance 电感 industance 电容 capacitor 
 AD转换器 analog/digital converter 
 编程序控制器(PLC) programmable logic controller 
+动态数码管 dynamic 
 熔断器 fuse 
 交流接触器 AC contactor 
 叠加定理 Superposition Theorem 
@@ -31,3 +32,4 @@ PID 控制器 proportional integral differentiator
 掺杂 doping
 电子 electron 
 空穴 positive hole 
+晶振 crystal oscallator 

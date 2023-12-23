@@ -26,8 +26,8 @@
     "iconInFrontmatterEnabled": false,
     "iconsInNotesEnabled": true
   },
-  "📘ClassNotes/Markdown & Latex Tutorial": "SiMarkdown",
   "DataBase": "FasDatabase",
   "💻softwares/Git": "FabGithub",
-  "💻softwares/Git/oftenly-used commands.md": "FabApple"
+  "💻softwares/Git/oftenly-used commands.md": "FabApple",
+  "💻softwares/Markdown & Latex Tutorial": "SiMarkdown"
 }

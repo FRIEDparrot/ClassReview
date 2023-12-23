@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "10e2b0049aa30e87",
+        "id": "1a6af3aae6c014de",
         "type": "tabs",
         "children": [
           {
-            "id": "f5b9e5eb066132d8",
+            "id": "011374928d9728be",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
+                "file": "💻softwares/⚡Circuit/51单片机教程/定时器, 中断和串口通信/定时器中断概念与实验.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "20e633614f34a1e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "💻softwares/⚡Circuit/51单片机教程/定时器, 中断和串口通信/串口通信实验.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -103,7 +116,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5113716125488
+    "width": 238.5,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -154,7 +168,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
+                "file": "💻softwares/⚡Circuit/51单片机教程/定时器, 中断和串口通信/串口通信实验.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -253,7 +267,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md"
+                "file": "💻softwares/⚡Circuit/51单片机教程/定时器, 中断和串口通信/串口通信实验.md"
               }
             }
           },
@@ -271,7 +285,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
+                "file": "💻softwares/⚡Circuit/51单片机教程/定时器, 中断和串口通信/串口通信实验.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -288,7 +302,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
+                "file": "💻softwares/⚡Circuit/51单片机教程/定时器, 中断和串口通信/串口通信实验.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -309,7 +323,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 392.5
+    "width": 392.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -332,54 +347,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f5b9e5eb066132d8",
+  "active": "20e633614f34a1e8",
   "lastOpenFiles": [
-    "🐸 Daily Life memo/备忘录.md",
-    "🐸 Daily Life memo/手头任务.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/实验笔记/醋酸电离常数的测定.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/实验笔记",
-    "💻softwares/⚡Circuit/51单片机教程/IO扩展, LED点阵和电机/步进电机驱动与介绍.md",
-    "attachments/Pasted image 20231213200111.png",
-    "attachments/Pasted image 20231213195825.png",
-    "Excalidraw/步进电机驱动与介绍 2023-12-13 19.52.18.md",
-    "attachments/Pasted Image 20231213195419_177.png",
-    "attachments/Pasted Image 20231213195357_947.png",
-    "attachments/Pasted image 20231213194112.png",
-    "attachments/Pasted image 20231213193340.png",
-    "attachments/Pasted image 20231213192547.png",
-    "attachments/Pasted image 20231213174425.png",
-    "attachments/Pasted image 20231213173028.png",
-    "attachments/Pasted image 20231213172352.png",
-    "💻softwares/⚡Circuit/51单片机教程/IO扩展, LED点阵和电机/直流电机驱动模块讲解.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第九章 触发器与时序逻辑电路.md",
-    "💻softwares/⚡Circuit/Proteus/常用基本元件与搜索关键词.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md",
-    "Excalidraw/第二章 电路的瞬态分析 2023-12-13 12.04.18.md",
-    "Excalidraw/第二章 电路的瞬态分析 2023-12-13 11.28.02.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第十二章 一阶瞬态电路分析.md",
-    "💻softwares/⚡Circuit/51单片机教程/IO扩展, LED点阵和电机/LED基本知识.md",
-    "💻softwares/⚡Circuit/51单片机教程/IO扩展, LED点阵和电机/74HC595芯片与IO扩展简介.md",
-    "Excalidraw/第四章 半导体器件 2023-10-04 16.25.07.md",
-    "📘ClassNotes/⚡Circuit/模拟电子技术基础/第一章 绪论.md",
-    "📘ClassNotes/⚡Circuit/模拟电子技术基础/第二章 常用半导体器件基础知识.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md",
+    "💻softwares/⚡Circuit/51单片机教程/练手大作业/多功能表的使用方法.md",
+    "💻softwares/⚡Circuit/51单片机教程/定时器, 中断和串口通信/串口通信实验.md",
+    "💻softwares/⚡Circuit/51单片机教程/定时器, 中断和串口通信/定时器中断概念与实验.md",
+    "💻softwares/⚡Circuit/51单片机教程/定时器, 中断和串口通信/中断系统概念与其实现.md",
+    "💻softwares/⚡Circuit/51单片机教程/练手大作业",
+    "🗑️trash/Drawing 2023-12-20 09.29.23.md",
+    "attachments/Pasted Image 20231222084838_105.png",
+    "attachments/Pasted Image 20231222084341_438.png",
+    "💻softwares/⚡Circuit/51单片机教程/按键, LED灯,蜂鸣器, 数码管/七段数码管使用与编写.md",
+    "💻softwares/⚡Circuit/51单片机教程/LCD驱动编写教程.md",
+    "💻softwares/⚡Circuit/51单片机教程/按键, LED灯,蜂鸣器, 数码管/51单片机的GPIO引脚介绍.md",
+    "💻softwares/⚡Circuit/51单片机教程/按键, LED灯,蜂鸣器, 数码管/按键的基本原理.md",
     "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "Excalidraw/第二章 常用半导体器件基础知识 2023-12-12 19.58.23.md",
+    "attachments/Pasted image 20231221105631.png",
+    "attachments/Pasted image 20231221102434.png",
+    "attachments/Pasted image 20231221102432.png",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/实验笔记/EDTA滴定法测定水中的Ca, Mg离子含量.md",
+    "attachments/040D04AF.png",
+    "attachments/03F4C25B.png",
+    "🐸 Daily Life memo/手头任务.md",
+    "attachments/IMG_20231220_175724_edit_1022905402974124.jpg",
+    "attachments/Pasted image 20231220170537.png",
+    "attachments/Pasted image 20231220170528.png",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第九章 触发器与时序逻辑电路.md",
+    "💻softwares/⚡Circuit/51单片机教程/基础部分/单片机中的十六进制与扩展类型.md",
+    "💻softwares/⚡Circuit/51单片机教程/基础部分/VSCode与Keil5的结合使用.md",
+    "💻softwares/⚡Circuit/51单片机教程/基础部分/LCD1602的使用方法(与头文件基本方法).md",
+    "💻softwares/⚡Circuit/51单片机教程/IO扩展, LED点阵和电机/LED基本知识.md",
+    "💻softwares/⚡Circuit/51单片机教程/IO扩展, LED点阵和电机/步进电机驱动与介绍.md",
+    "Excalidraw/中断系统概念与其实现 2023-12-19 19.01.43.md",
+    "💻softwares/⚡Circuit/51单片机教程/定时器, 中断和串口通信",
     "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第七章 应用电化学.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第五章 线弹性断裂力学.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第四章 低周疲劳.md",
+    "Excalidraw/第七章 应用电化学 2023-12-19 17.15.53.md",
+    "Excalidraw/第七章 应用电化学 2023-12-19 16.57.17.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第四章 化学反应热效应.md",
     "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/标准电极电势表.pdf",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/标准电极电势表.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/Unconfirmed 650163.crdownload",
-    "Excalidraw/第七章 应用电化学 2023-12-12 16.34.35.md",
     "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/大数定律证明.pdf",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/N维正态随机变量的概率密度推导.pdf",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/二维正态分布的协方差和相关系数.pdf",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/public/public.h",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/public/public.c",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/public",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Dynamic Terminology.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/样本均值与方差性质证明.pdf",
+    "💻softwares/🛩️FEM/Patran",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/经验分布函数及其性质说明.pdf",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/t分布证明.pdf",
+    "💻softwares/🗽2D & 3D design/Origin/统计图像",
+    "💻softwares/🗽2D & 3D design/Origin/入门教程",
+    "💻softwares/Markdown & Latex Tutorial/zotero Tutorial",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }
