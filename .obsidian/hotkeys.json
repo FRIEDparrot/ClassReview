@@ -1,12 +1,4 @@
 {
-  "editor:toggle-code": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "Enter"
-    }
-  ],
   "workspace:copy-url": [],
   "workspace:copy-path": [],
   "editor:insert-callout": [
@@ -714,15 +706,6 @@
         "Alt"
       ],
       "key": ","
-    }
-  ],
-  "obsidian-latex-environments:change-latex-env": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "R"
     }
   ],
   "templater-obsidian:🗒️Templates/INSERT_MAX_SIGN.md": [
@@ -1475,14 +1458,7 @@
   "workspace:goto-tab-3": [],
   "workspace:goto-tab-2": [],
   "workspace:goto-tab-1": [],
-  "workspace:next-tab": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "Tab"
-    }
-  ],
+  "workspace:next-tab": [],
   "workspace:previous-tab": [
     {
       "modifiers": [
@@ -1508,6 +1484,32 @@
         "Shift"
       ],
       "key": "P"
+    }
+  ],
+  "editor:toggle-code": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "Enter"
+    }
+  ],
+  "editor:table-col-after": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "Enter"
+    }
+  ],
+  "editor:insert-table": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "R"
     }
   ]
 }

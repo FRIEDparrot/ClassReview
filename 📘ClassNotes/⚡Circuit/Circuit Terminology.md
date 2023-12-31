@@ -33,3 +33,20 @@ PID 控制器 proportional integral differentiator
 电子 electron 
 空穴 positive hole 
 晶振 crystal oscallator 
+
+
+集成电路 integrated circuit 
+串口通信 serial communication  
+倍频 frequency doubling 
+通用异步收发器 Universal asynchronous  Reciver Transmitter (UART) 
+
+随机读写存储器 Random Access memory (RAM)
+Dual In-line Package 双列直插式封装 (DIP)
+Plastic Leaded Chip Carrier 带有引线的塑料芯片封装 (PLCC) 
+Quad Flat Package 塑料方型扁平式封装 
+Plastic Grid Array Package 插针网格阵列封装 (PGA) 
+Ceramic 陶瓷
+hexadecimal 十六进制的 
+peripheral 外围设备 
+烧录程序 program flash 
+程序状态字标志寄存器 Program status Word (PSW) 

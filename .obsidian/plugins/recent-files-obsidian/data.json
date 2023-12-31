@@ -1,204 +1,204 @@
 {
   "recentFiles": [
     {
-      "basename": "串口通信实验",
-      "path": "💻softwares/⚡Circuit/51单片机教程/定时器, 中断和串口通信/串口通信实验.md"
+      "basename": "I2C-EEPROM实验-原理与简介",
+      "path": "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断和串口通信/I2C-EEPROM实验-原理与简介.md"
     },
     {
-      "basename": "多功能表的使用方法",
-      "path": "💻softwares/⚡Circuit/51单片机教程/练手大作业/多功能表的使用方法.md"
+      "basename": "Graphic_Practice",
+      "path": "💻softwares/Markdown & Latex Tutorial/obsidian usage/Graphic_Practice.md"
     },
     {
-      "basename": "定时器中断概念与实验",
-      "path": "💻softwares/⚡Circuit/51单片机教程/定时器, 中断和串口通信/定时器中断概念与实验.md"
-    },
-    {
-      "basename": "中断系统概念与其实现",
-      "path": "💻softwares/⚡Circuit/51单片机教程/定时器, 中断和串口通信/中断系统概念与其实现.md"
-    },
-    {
-      "basename": "Drawing 2023-12-20 09.29.23",
-      "path": "🗑️trash/Drawing 2023-12-20 09.29.23.md"
-    },
-    {
-      "basename": "七段数码管使用与编写",
-      "path": "💻softwares/⚡Circuit/51单片机教程/按键, LED灯,蜂鸣器, 数码管/七段数码管使用与编写.md"
-    },
-    {
-      "basename": "LCD驱动编写教程",
-      "path": "💻softwares/⚡Circuit/51单片机教程/LCD驱动编写教程.md"
-    },
-    {
-      "basename": "51单片机的GPIO引脚介绍",
-      "path": "💻softwares/⚡Circuit/51单片机教程/按键, LED灯,蜂鸣器, 数码管/51单片机的GPIO引脚介绍.md"
-    },
-    {
-      "basename": "按键的基本原理",
-      "path": "💻softwares/⚡Circuit/51单片机教程/按键, LED灯,蜂鸣器, 数码管/按键的基本原理.md"
-    },
-    {
-      "basename": "Circuit Terminology",
-      "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
-    },
-    {
-      "basename": "EDTA滴定法测定水中的Ca, Mg离子含量",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/实验笔记/EDTA滴定法测定水中的Ca, Mg离子含量.md"
-    },
-    {
-      "basename": "手头任务",
-      "path": "🐸 Daily Life memo/手头任务.md"
-    },
-    {
-      "basename": "第九章 触发器与时序逻辑电路",
-      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第九章 触发器与时序逻辑电路.md"
-    },
-    {
-      "basename": "单片机中的十六进制与扩展类型",
-      "path": "💻softwares/⚡Circuit/51单片机教程/基础部分/单片机中的十六进制与扩展类型.md"
-    },
-    {
-      "basename": "VSCode与Keil5的结合使用",
-      "path": "💻softwares/⚡Circuit/51单片机教程/基础部分/VSCode与Keil5的结合使用.md"
-    },
-    {
-      "basename": "LCD1602的使用方法(与头文件基本方法)",
-      "path": "💻softwares/⚡Circuit/51单片机教程/基础部分/LCD1602的使用方法(与头文件基本方法).md"
-    },
-    {
-      "basename": "LED基本知识",
-      "path": "💻softwares/⚡Circuit/51单片机教程/IO扩展, LED点阵和电机/LED基本知识.md"
-    },
-    {
-      "basename": "步进电机驱动与介绍",
-      "path": "💻softwares/⚡Circuit/51单片机教程/IO扩展, LED点阵和电机/步进电机驱动与介绍.md"
-    },
-    {
-      "basename": "中断系统概念与其实现 2023-12-19 19.01.43",
-      "path": "Excalidraw/中断系统概念与其实现 2023-12-19 19.01.43.md"
-    },
-    {
-      "basename": "第七章 应用电化学",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第七章 应用电化学.md"
-    },
-    {
-      "basename": "第七章 应用电化学 2023-12-19 17.15.53",
-      "path": "Excalidraw/第七章 应用电化学 2023-12-19 17.15.53.md"
-    },
-    {
-      "basename": "第七章 应用电化学 2023-12-19 16.57.17",
-      "path": "Excalidraw/第七章 应用电化学 2023-12-19 16.57.17.md"
-    },
-    {
-      "basename": "第五章 化学反应基本原理",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md"
-    },
-    {
-      "basename": "第四章 化学反应热效应",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第四章 化学反应热效应.md"
-    },
-    {
-      "basename": "标准电极电势表",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/标准电极电势表.pdf"
-    },
-    {
-      "basename": "元素周期表",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/元素周期表.png"
-    },
-    {
-      "basename": "Chemical Terminology",
-      "path": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md"
-    },
-    {
-      "basename": "Dynamic Terminology",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Dynamic Terminology.md"
-    },
-    {
-      "basename": "第六章 样本及抽样分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md"
-    },
-    {
-      "basename": "1.proteus界面简介和基本操作",
-      "path": "💻softwares/⚡Circuit/Proteus/1.proteus界面简介和基本操作.md"
-    },
-    {
-      "basename": "第八章 数字电路基础",
-      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第八章 数字电路基础.md"
-    },
-    {
-      "basename": "第九章 触发器与时序逻辑电路 2023-12-19 02.03.22",
-      "path": "Excalidraw/第九章 触发器与时序逻辑电路 2023-12-19 02.03.22.md"
-    },
-    {
-      "basename": "第九章 触发器与时序逻辑电路 2023-12-19 01.48.43",
-      "path": "Excalidraw/第九章 触发器与时序逻辑电路 2023-12-19 01.48.43.md"
-    },
-    {
-      "basename": "第九章 触发器与时序逻辑电路 2023-12-19 01.03.44",
-      "path": "Excalidraw/第九章 触发器与时序逻辑电路 2023-12-19 01.03.44.md"
-    },
-    {
-      "basename": "常用基本元件与搜索关键词",
-      "path": "💻softwares/⚡Circuit/Proteus/常用基本元件与搜索关键词.md"
-    },
-    {
-      "basename": "第四章 半导体器件",
-      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md"
-    },
-    {
-      "basename": "许可证和格式转换",
-      "path": "💻softwares/🛩️FEM/Patran/许可证和格式转换.md"
-    },
-    {
-      "basename": "第十二章 一阶瞬态电路分析",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第十二章 一阶瞬态电路分析.md"
+      "basename": "I2C-EEPROM实验-原理与简介 2023-12-31 15.06.49",
+      "path": "Excalidraw/I2C-EEPROM实验-原理与简介 2023-12-31 15.06.49.md"
     },
     {
       "basename": "备忘录",
       "path": "🐸 Daily Life memo/备忘录.md"
     },
     {
-      "basename": "Zotero论文笔记方法",
-      "path": "💻softwares/Markdown & Latex Tutorial/zotero Tutorial/Zotero论文笔记方法.md"
+      "basename": "单片机基础知识简介",
+      "path": "💻softwares/⚡Circuit/51单片机教程/1. 基础部分/单片机基础知识简介.md"
     },
     {
-      "basename": "Mathmatic Terminology",
-      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
+      "basename": "串口通信讲解",
+      "path": "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断和串口通信/串口通信讲解.md"
     },
     {
-      "basename": "第六章 样本及抽样分布 2023-10-18 09.56.07",
-      "path": "Excalidraw/第六章 样本及抽样分布 2023-10-18 09.56.07.md"
+      "basename": "Drawing 2023-12-20 09.29.23",
+      "path": "🗑️trash/Drawing 2023-12-20 09.29.23.md"
     },
     {
-      "basename": "第一章 集合,数列,函数,极限和连续",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md"
+      "basename": "Circuit Terminology",
+      "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
     },
     {
-      "basename": "第二章 导数与微分",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第二章 导数与微分.md"
+      "basename": "按键与LED基本知识简介",
+      "path": "💻softwares/⚡Circuit/51单片机教程/2. 按键, LED灯,蜂鸣器, 数码管/按键与LED基本知识简介.md"
     },
     {
-      "basename": "第六章 样本及抽样分布 2023-10-18 08.48.26",
-      "path": "Excalidraw/第六章 样本及抽样分布 2023-10-18 08.48.26.md"
+      "basename": "数电基础和TTL电平知识",
+      "path": "💻softwares/⚡Circuit/51单片机教程/1. 基础部分/数电基础和TTL电平知识.md"
     },
     {
-      "basename": "t分布证明",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/t分布证明.pdf"
+      "basename": "工程创建与烧录程序",
+      "path": "💻softwares/⚡Circuit/51单片机教程/1. 基础部分/工程创建与烧录程序.md"
     },
     {
-      "basename": "第三章 多维随机变量及其分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
+      "basename": "七段数码管使用与编写",
+      "path": "💻softwares/⚡Circuit/51单片机教程/2. 按键, LED灯,蜂鸣器, 数码管/七段数码管使用与编写.md"
     },
     {
-      "basename": "第二章 随机变量及其分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md"
+      "basename": "51单片机最小系统简介",
+      "path": "💻softwares/⚡Circuit/51单片机教程/1. 基础部分/51单片机最小系统简介.md"
     },
     {
-      "basename": "第六章 样本及抽样分布 2023-12-16 00.29.01",
-      "path": "Excalidraw/第六章 样本及抽样分布 2023-12-16 00.29.01.md"
+      "basename": "中断系统概念与其实现",
+      "path": "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断和串口通信/中断系统概念与其实现.md"
     },
     {
-      "basename": "第四章 随机变量的数字特征",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md"
+      "basename": "定时器中断概念与实验",
+      "path": "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断和串口通信/定时器中断概念与实验.md"
+    },
+    {
+      "basename": "第四章 扭转",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第四章 扭转.md"
+    },
+    {
+      "basename": "第七章 谐振电路",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第七章 谐振电路.md"
+    },
+    {
+      "basename": "第七章 谐振电路 2023-11-21 09.17.30",
+      "path": "Excalidraw/第七章 谐振电路 2023-11-21 09.17.30.md"
+    },
+    {
+      "basename": "第七章 谐振电路 2023-11-21 22.16.37",
+      "path": "Excalidraw/第七章 谐振电路 2023-11-21 22.16.37.md"
+    },
+    {
+      "basename": "第七章 谐振电路 2023-11-21 10.42.33",
+      "path": "Excalidraw/第七章 谐振电路 2023-11-21 10.42.33.md"
+    },
+    {
+      "basename": "二端口网络的参数关系和互易对称条件推导",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/二端口网络的参数关系和互易对称条件推导.pdf"
+    },
+    {
+      "basename": "⌚近期计划书",
+      "path": "🐸 Daily Life memo/⌚近期计划书.md"
+    },
+    {
+      "basename": "二端口特性参数推导",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/二端口特性参数推导.pdf"
+    },
+    {
+      "basename": "三相电路的电压和电流关系推导",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/三相电路的电压和电流关系推导.pdf"
+    },
+    {
+      "basename": "冲激函数性质证明",
+      "path": "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/冲激函数性质证明.pdf"
+    },
+    {
+      "basename": "手头任务",
+      "path": "🐸 Daily Life memo/手头任务.md"
+    },
+    {
+      "basename": "第十章 模拟-数字信号转换器",
+      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第十章 模拟-数字信号转换器.md"
+    },
+    {
+      "basename": "第十章 模拟-数字信号转换器 2023-12-27 13.16.13",
+      "path": "Excalidraw/第十章 模拟-数字信号转换器 2023-12-27 13.16.13.md"
+    },
+    {
+      "basename": "第十章 模拟-数字信号转换器 2023-12-27 12.17.06",
+      "path": "Excalidraw/第十章 模拟-数字信号转换器 2023-12-27 12.17.06.md"
+    },
+    {
+      "basename": "第十章 模拟-数字信号转换器 2023-12-27 11.21.21",
+      "path": "Excalidraw/第十章 模拟-数字信号转换器 2023-12-27 11.21.21.md"
+    },
+    {
+      "basename": "第十章 模拟-数字信号转换器 2023-12-27 09.59.52",
+      "path": "Excalidraw/第十章 模拟-数字信号转换器 2023-12-27 09.59.52.md"
+    },
+    {
+      "basename": "第十章 模拟-数字信号转换器 2023-12-27 10.17.53",
+      "path": "Excalidraw/第十章 模拟-数字信号转换器 2023-12-27 10.17.53.md"
+    },
+    {
+      "basename": "第十章 模拟-数字信号转换器 2023-12-27 09.48.36",
+      "path": "Excalidraw/第十章 模拟-数字信号转换器 2023-12-27 09.48.36.md"
+    },
+    {
+      "basename": "第六章 溶液中的离子平衡",
+      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第六章 溶液中的离子平衡.md"
+    },
+    {
+      "basename": "第五章 化学反应基本原理",
+      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md"
+    },
+    {
+      "basename": "Untitled mindmap",
+      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/Untitled mindmap.md"
+    },
+    {
+      "basename": "第四章 化学反应热效应",
+      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第四章 化学反应热效应.md"
+    },
+    {
+      "basename": "第三章 物质结构基础",
+      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第三章 物质结构基础.md"
+    },
+    {
+      "basename": "第七章 应用电化学",
+      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第七章 应用电化学.md"
+    },
+    {
+      "basename": "第八章 电化学腐蚀与防护",
+      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第八章 电化学腐蚀与防护.md"
+    },
+    {
+      "basename": "第八章 电化学腐蚀与防护 2023-12-26 16.13.00",
+      "path": "Excalidraw/第八章 电化学腐蚀与防护 2023-12-26 16.13.00.md"
+    },
+    {
+      "basename": "第六章 集成运算放大器以及应用",
+      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第六章 集成运算放大器以及应用.md"
+    },
+    {
+      "basename": "常用基本元件与搜索关键词",
+      "path": "💻softwares/⚡Circuit/Proteus/常用基本元件与搜索关键词.md"
+    },
+    {
+      "basename": "第九章 触发器与时序逻辑电路",
+      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第九章 触发器与时序逻辑电路.md"
+    },
+    {
+      "basename": "第九章 触发器与时序逻辑电路 2023-12-26 13.09.29",
+      "path": "Excalidraw/第九章 触发器与时序逻辑电路 2023-12-26 13.09.29.md"
+    },
+    {
+      "basename": "第九章 触发器与时序逻辑电路 2023-12-26 11.12.23",
+      "path": "Excalidraw/第九章 触发器与时序逻辑电路 2023-12-26 11.12.23.md"
+    },
+    {
+      "basename": "直流电机驱动模块讲解",
+      "path": "💻softwares/⚡Circuit/51单片机教程/3. IO扩展, LED点阵和电机/直流电机驱动模块讲解.md"
+    },
+    {
+      "basename": "串口通信讲解 2023-12-23 23.28.33",
+      "path": "Excalidraw/串口通信讲解 2023-12-23 23.28.33.md"
+    },
+    {
+      "basename": "LCD1602的使用方法(与头文件基本方法)",
+      "path": "💻softwares/⚡Circuit/51单片机教程/1. 基础部分/LCD1602的使用方法(与头文件基本方法).md"
+    },
+    {
+      "basename": "步进电机驱动与介绍",
+      "path": "💻softwares/⚡Circuit/51单片机教程/3. IO扩展, LED点阵和电机/步进电机驱动与介绍.md"
     }
   ],
   "omittedPaths": [],

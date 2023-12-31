@@ -6,6 +6,7 @@
       "url": "https://duckduckgo.com/?q="
     }
   ],
+  "hoverPopover": true,
   "ignoreList": [
     "notion",
     "craft"
@@ -43,116 +44,5 @@
     ],
     "defaultFilterType": "tree"
   },
-  "treeData": [
-    {
-      "id": "1accea1cbfd9d2cd",
-      "parent": 0,
-      "droppable": true,
-      "text": "ChatGPT",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    },
-    {
-      "id": "24c5904858a3afa8",
-      "parent": 0,
-      "droppable": true,
-      "text": "首页 - 知乎",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    },
-    {
-      "id": "a7794cc099099ed0",
-      "parent": 0,
-      "droppable": true,
-      "text": "(12 条消息) 首页 - 知乎",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    },
-    {
-      "id": "b1b72a1b1568f2aa",
-      "parent": 0,
-      "droppable": true,
-      "text": "(12 条消息) 现在 - 搜索结果 - 知乎",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    },
-    {
-      "id": "c68581d5b5e0d9bc",
-      "parent": 0,
-      "droppable": true,
-      "text": "流体力学偏微分方程 - 搜索结果 - 知乎",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    },
-    {
-      "id": "cfcc5186539bfb1a",
-      "parent": 0,
-      "droppable": true,
-      "text": "New Tab",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    },
-    {
-      "id": "133253a5b95c28ef",
-      "parent": 0,
-      "droppable": true,
-      "text": "New Tab",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    },
-    {
-      "id": "b1fa92871eaae0f4",
-      "parent": 0,
-      "droppable": true,
-      "text": "New Tab",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    },
-    {
-      "id": "a44caf5856f795c7",
-      "parent": 0,
-      "droppable": true,
-      "text": "化学能_百度百科",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    },
-    {
-      "id": "2f87d7a7fb4df48a",
-      "parent": 0,
-      "droppable": true,
-      "text": "New Tab",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    }
-  ]
+  "treeData": []
 }
