@@ -1,6 +1,7 @@
 #words  
 直流电(DC) direct current 交流电(AC) alternating current 
 二极管 diode    三极管 transistor  场效应管 field effect transistor(FET) 
+电极 electrode 
 电阻 resistance 电感 industance 电容 capacitor 
 AD转换器 analog/digital converter 
 编程序控制器(PLC) programmable logic controller 
@@ -33,7 +34,7 @@ PID 控制器 proportional integral differentiator
 电子 electron 
 空穴 positive hole 
 晶振 crystal oscallator 
-
+采样/保持电路 sample/hold circuits (S/H 电路)
 
 集成电路 integrated circuit 
 串口通信 serial communication  
@@ -50,3 +51,5 @@ hexadecimal 十六进制的
 peripheral 外围设备 
 烧录程序 program flash 
 程序状态字标志寄存器 Program status Word (PSW) 
+Small Outline Package 小外形封装(SOP) 
+

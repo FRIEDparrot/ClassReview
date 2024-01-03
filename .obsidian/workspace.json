@@ -4,28 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "9e818ca4fe992b86",
+        "id": "785c44cffdcd1959",
         "type": "tabs",
         "children": [
           {
-            "id": "b09ae86fb69e4fc5",
+            "id": "8316b561cfe37fdb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断和串口通信/I2C-EEPROM实验-原理与简介.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "fb7f4980402b526b",
+        "type": "tabs",
+        "children": [
           {
-            "id": "efe52a9def8d3d7b",
+            "id": "953ec8c183cc3a2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻softwares/Markdown & Latex Tutorial/obsidian usage/Graphic_Practice.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "663261153639d561",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aeb40304404bc7fb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
                 "mode": "source",
                 "source": false
               }
@@ -113,7 +137,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 420.51422119140625,
+    "width": 377.51422119140625,
     "collapsed": true
   },
   "right": {
@@ -167,7 +191,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断和串口通信/I2C-EEPROM实验-原理与简介.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -266,7 +290,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断和串口通信/I2C-EEPROM实验-原理与简介.md"
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md"
               }
             }
           },
@@ -276,7 +300,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断和串口通信/I2C-EEPROM实验-原理与简介.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -293,7 +317,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断和串口通信/I2C-EEPROM实验-原理与简介.md",
+                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -314,11 +338,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 285.5,
+    "width": 506.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "surfing:surfing-bookmark-manager": false,
       "markdown-importer:Open format converter": false,
       "graph:Open graph view": false,
       "switcher:Open quick switcher": false,
@@ -337,54 +362,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b09ae86fb69e4fc5",
+  "active": "aeb40304404bc7fb",
   "lastOpenFiles": [
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
+    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/I2C-E2PROM通信与掉电数据保存.md",
+    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/DS18B20温度传感器.md",
+    "attachments/Pasted image 20240103161146.png",
+    "attachments/Pasted image 20240103124438.png",
+    "attachments/Pasted image 20240103100234.png",
+    "📘ClassNotes/🗣️English/Word Notes/Word List5.md",
+    "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
+    "Excalidraw/DS18B20温度传感器 2024-01-02 20.56.12.md",
+    "attachments/Pasted Image 20240102205615_055.png",
+    "Excalidraw/DS18B20温度传感器 2024-01-02 20.37.24.md",
+    "attachments/Pasted image 20240102203135.png",
+    "attachments/Pasted image 20240102201933.png",
+    "Excalidraw/DS18B20温度传感器 2024-01-02 19.39.46.md",
+    "attachments/Pasted image 20240102193450.png",
+    "attachments/Pasted image 20240102193221.png",
+    "attachments/Pasted image 20240102185354.png",
+    "attachments/Pasted image 20240102185020.png",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第九章 触发器与时序逻辑电路.md",
+    "💻softwares/⚡Circuit/51单片机教程/5. 红外遥控,DS132时钟, AD转换",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第十章 模拟-数字信号转换器.md",
+    "Excalidraw/第十章 模拟-数字信号转换器 2024-01-02 16.37.42.md",
+    "Excalidraw/第十章 模拟-数字信号转换器 2024-01-02 16.28.05.md",
+    "Excalidraw/第十章 模拟-数字信号转换器 2024-01-02 16.22.58.md",
+    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
+    "Excalidraw/第十章 模拟-数字信号转换器 2024-01-02 15.08.37.md",
+    "Excalidraw/第十章 模拟-数字信号转换器 2024-01-02 14.36.58.md",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/UART/EEPROM_OP.h",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/UART/EEPROM_OP.c",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/UART",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/EEPROM/EEPROM_OP.h",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/EEPROM/EEPROM_OP.c",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/EEPROM",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/I2C_AT24C02/I2C_operation.h",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/I2C_AT24C02/I2C_operation.c",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/I2C_AT24C02",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第七章 应用电化学.md",
+    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/串口通信讲解.md",
+    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/定时器中断概念与实验.md",
+    "💻softwares/⚡Circuit/51单片机教程/1. 基础部分/单片机基础知识简介.md",
+    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/外部中断系统概念与其实现.md",
     "💻softwares/Markdown & Latex Tutorial/obsidian usage/Graphic_Practice.md",
-    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断和串口通信/I2C-EEPROM实验-原理与简介.md",
-    "attachments/Pasted image 20231231165459.png",
-    "attachments/Pasted image 20231231165013.png",
-    "attachments/Pasted image 20231231163330.png",
     "Excalidraw/I2C-EEPROM实验-原理与简介 2023-12-31 16.30.26.md",
     "Excalidraw/I2C-EEPROM实验-原理与简介 2023-12-31 15.06.49.md",
     "🐸 Daily Life memo/备忘录.md",
-    "💻softwares/⚡Circuit/51单片机教程/1. 基础部分/单片机基础知识简介.md",
-    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断和串口通信/串口通信讲解.md",
-    "🗑️trash/Drawing 2023-12-20 09.29.23.md",
-    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "attachments/Pasted image 20231231124701.png",
-    "attachments/Pasted image 20231231124350.png",
-    "attachments/Pasted image 20231231124148.png",
-    "attachments/Pasted image 20231231123316.png",
-    "attachments/Pasted image 20231231123139.png",
-    "attachments/Pasted image 20231231122928.png",
-    "attachments/Pasted image 20231231121458.png",
-    "💻softwares/⚡Circuit/51单片机教程/2. 按键, LED灯,蜂鸣器, 数码管/按键与LED基本知识简介.md",
-    "💻softwares/⚡Circuit/51单片机教程/1. 基础部分/数电基础和TTL电平知识.md",
-    "💻softwares/⚡Circuit/51单片机教程/1. 基础部分/工程创建与烧录程序.md",
-    "💻softwares/⚡Circuit/51单片机教程/2. 按键, LED灯,蜂鸣器, 数码管/七段数码管使用与编写.md",
-    "💻softwares/⚡Circuit/51单片机教程/1. 基础部分/51单片机最小系统简介.md",
-    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断和串口通信/中断系统概念与其实现.md",
-    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断和串口通信/定时器中断概念与实验.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第四章 扭转.md",
-    "🗑️trash/Untitled.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第七章 谐振电路.md",
-    "Excalidraw/第七章 谐振电路 2023-11-21 09.17.30.md",
-    "Excalidraw/第七章 谐振电路 2023-11-21 22.16.37.md",
-    "Excalidraw/第七章 谐振电路 2023-11-21 10.42.33.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/二端口网络的参数关系和互易对称条件推导.pdf",
-    "🐸 Daily Life memo/⌚近期计划书.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/二端口特性参数推导.pdf",
-    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/三相电路的电压和电流关系推导.pdf",
-    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/冲激函数性质证明.pdf",
-    "Untitled.md",
-    "~$titled.docx",
-    "Untitled.docx",
-    "🐸 Daily Life memo/手头任务.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第十章 模拟-数字信号转换器.md",
-    "💻softwares/⚡Circuit/51单片机教程/练手大作业",
-    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断和串口通信",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/标准电极电势表.pdf",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/样本均值与方差性质证明.pdf",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

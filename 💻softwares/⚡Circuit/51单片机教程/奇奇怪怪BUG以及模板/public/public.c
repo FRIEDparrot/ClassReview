@@ -6,14 +6,9 @@ void Delay10us(u16 xus){ // @11.0592MHz
     while (xus--); 
 }
 
-void Delay(u16 xms) // @11.0592MHz 
+void Delay(u16 xms) // copied from module 
 {
-	while (xms > 0){
-		unsigned char data i, j;
-		_nop_();
-		for (i = 2; i>0;i--){
-			for (j = 199; j> 0; j--);
-		}
-		xms--;
-	}
+	u16 i,j;
+	for(i= xms;i>0;i--)
+		for(j=110;j>0;j--);
 }
