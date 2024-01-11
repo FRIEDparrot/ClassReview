@@ -1,7 +1,5 @@
-\vec{}# I2C 总线简介
 ##  一、概述
 最多用的总线形式有$I^2C$和SPI接口形式。
-
 使用51单片机的IO口模拟$I^2 C$时序并实现与EEPROM串口进行通信。 
 AT24C02的EEPROM芯片
 
@@ -466,7 +464,6 @@ u8 I2C_ReadByte(u8 ack){ // if ack is
 1. 在I2C的通信函数中, 是可以使用串口函数进行Debug的, 不会产生错误。 
 2. 在 ACK 时, SDL和SCL第一次变化可以不Delay 也可以Delay() ;
 
-
 带有串口调试器的代码如下: 
 ```c
 #include <REGX52.H> 
@@ -534,7 +531,6 @@ void I2C_ACK(void){
     Delay10us();
     SCL = 0;
     Delay10us();
-
     // SDA = 1; // return default (no use )
     // Delay10us();  
 }
@@ -727,3 +723,9 @@ void main(){
 
 成功的调试与串口输出如图所示 (K2复位到一个灯, K3左移, K4记忆, 长按K4读取):  
 ![[attachments/Pasted image 20240102103639.png]]
+
+
+
+
+
+

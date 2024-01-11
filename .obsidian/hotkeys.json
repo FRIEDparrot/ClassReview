@@ -1511,5 +1511,14 @@
       ],
       "key": "R"
     }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_UNDERLINE_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "-"
+    }
   ]
 }

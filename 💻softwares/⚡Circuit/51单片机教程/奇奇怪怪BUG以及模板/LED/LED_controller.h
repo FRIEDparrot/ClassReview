@@ -7,5 +7,5 @@ void LED_ShowDateTime(u8 hour, u8 min, u8 sec, u8 day, u8 state);
 void LED_ShowExactTime(u8 hour, u8 min, u8 sec, u8 xms);
 void LED_ShowChar(u8 loc, u8 ch);
 void LED_SelfCheck();
-
+void LED_ShowNum(u8 loc, u8 num, u8 dot); 
 #endif 

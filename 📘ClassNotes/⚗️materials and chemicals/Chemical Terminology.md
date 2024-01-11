@@ -9,3 +9,4 @@
 电解质 electrolyte 
 溶度积 solubility product 
 配位数 coordination number
+溶液 solution 

@@ -20,6 +20,7 @@
     }
   ],
   "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
     "🗒️Templates/MATH_EQUATION_INSERT.md",
     "🗒️Templates/BOXED_MATH_EQUATION.md",
@@ -146,7 +147,8 @@
     "🗒️Templates/INSERT_ANGLE_SIGN.md",
     "🗒️Templates/INSERT_SIMEQUAL_SYMBOL.md",
     "🗒️Templates/INSERT_CHI_SYMBOL.md",
-    "🗒️Templates/INSERT_PROD_SYMBOL.md"
+    "🗒️Templates/INSERT_PROD_SYMBOL.md",
+    "🗒️Templates/INSERT_UNDERLINE_SYMBOL.md"
   ],
   "startup_templates": [
     ""

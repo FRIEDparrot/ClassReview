@@ -4,52 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "785c44cffdcd1959",
+        "id": "06de98368869dc28",
         "type": "tabs",
         "children": [
           {
-            "id": "8316b561cfe37fdb",
+            "id": "42da57959744cf6f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "fb7f4980402b526b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "953ec8c183cc3a2a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "663261153639d561",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "aeb40304404bc7fb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
+                "file": "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
                 "mode": "source",
                 "source": false
               }
@@ -137,8 +101,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 377.51422119140625,
-    "collapsed": true
+    "width": 440.5124969482422
   },
   "right": {
     "id": "f7de553c162de521",
@@ -191,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
+                "file": "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -290,7 +253,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md"
+                "file": "📘ClassNotes/🗣️English/Word Notes/Word List1.md"
               }
             }
           },
@@ -300,7 +263,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
+                "file": "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -317,7 +280,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
+                "file": "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -338,8 +301,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 506.5,
-    "collapsed": true
+    "width": 497.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -362,54 +324,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "aeb40304404bc7fb",
+  "active": "42da57959744cf6f",
   "lastOpenFiles": [
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/元素周期表.png",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第三章 物质结构基础.md",
+    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
+    "💻softwares/⚡Circuit/Altium Designer/1. Altium Designer 项目创建.md",
+    "💻softwares/⚡Circuit/51单片机教程/5. 红外遥控,DS132时钟, AD转换/ADC模数转换与信号处理.md",
+    "attachments/Pasted image 20240110222236.png",
+    "💻softwares/⚡Circuit/51单片机教程/5. 红外遥控,DS132时钟, AD转换/DAC信号转换与呼吸灯实验.md",
+    "attachments/Pasted image 20240110214954.png",
+    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/定时器中断概念与实验.md",
+    "attachments/Pasted image 20240110201836.png",
+    "Excalidraw/DAC信号转换与呼吸灯实验 2024-01-10 16.08.21.md",
+    "🐸 Daily Life memo/Python 常用直接运算.md",
+    "💻softwares/⚡Circuit/Proteus/常用基本元件与搜索关键词.md",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/PCF8591_XPT2046/PCF8591_func.h",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/PCF8591_XPT2046/PCF8591_func.c",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/PCF8591_XPT2046/I2C_P34.h",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/PCF8591_XPT2046/I2C_P34.c",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/PCF8591_XPT2046",
+    "💻softwares/⚡Circuit/Proteus/1.proteus界面简介和基本操作.md",
+    "attachments/Pasted image 20240110152418.png",
+    "attachments/Pasted image 20240110151911.png",
+    "Excalidraw/DAC数字-模拟信号转换 2024-01-10 11.37.01.md",
+    "attachments/Pasted image 20240110134101.png",
+    "attachments/Pasted image 20240110121451.png",
+    "attachments/Pasted image 20240110120155.png",
+    "attachments/Pasted image 20240110115731.png",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第十章 模拟-数字信号转换器.md",
+    "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
+    "📘ClassNotes/🗣️English/Word Notes/Word List5.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/重要定理/重要分布表整理.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第八章 假设检验.md",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
+    "💻softwares/⚡Circuit/51单片机教程/5. 红外遥控,DS132时钟, AD转换/DS1302高精度时钟与SPI通信.md",
     "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/I2C-E2PROM通信与掉电数据保存.md",
-    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/DS18B20温度传感器.md",
-    "attachments/Pasted image 20240103161146.png",
-    "attachments/Pasted image 20240103124438.png",
-    "attachments/Pasted image 20240103100234.png",
-    "📘ClassNotes/🗣️English/Word Notes/Word List5.md",
-    "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
-    "Excalidraw/DS18B20温度传感器 2024-01-02 20.56.12.md",
-    "attachments/Pasted Image 20240102205615_055.png",
-    "Excalidraw/DS18B20温度传感器 2024-01-02 20.37.24.md",
-    "attachments/Pasted image 20240102203135.png",
-    "attachments/Pasted image 20240102201933.png",
-    "Excalidraw/DS18B20温度传感器 2024-01-02 19.39.46.md",
-    "attachments/Pasted image 20240102193450.png",
-    "attachments/Pasted image 20240102193221.png",
-    "attachments/Pasted image 20240102185354.png",
-    "attachments/Pasted image 20240102185020.png",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第九章 触发器与时序逻辑电路.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第六章 集成运算放大器以及应用.md",
+    "💻softwares/⚡Circuit/Proteus/扩展库记录.md",
+    "💻softwares/⚡Circuit/51单片机教程/5. 红外遥控,DS132时钟, AD转换/Untitled",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/正态分布的均值方差估计.pdf",
+    "💻softwares/⚡Circuit/Proteus/单片机仿真方法",
     "💻softwares/⚡Circuit/51单片机教程/5. 红外遥控,DS132时钟, AD转换",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第十章 模拟-数字信号转换器.md",
-    "Excalidraw/第十章 模拟-数字信号转换器 2024-01-02 16.37.42.md",
-    "Excalidraw/第十章 模拟-数字信号转换器 2024-01-02 16.28.05.md",
-    "Excalidraw/第十章 模拟-数字信号转换器 2024-01-02 16.22.58.md",
-    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "Excalidraw/第十章 模拟-数字信号转换器 2024-01-02 15.08.37.md",
-    "Excalidraw/第十章 模拟-数字信号转换器 2024-01-02 14.36.58.md",
     "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/UART/EEPROM_OP.h",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/UART/EEPROM_OP.c",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/UART",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/EEPROM/EEPROM_OP.h",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/EEPROM/EEPROM_OP.c",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/EEPROM",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/I2C_AT24C02/I2C_operation.h",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/I2C_AT24C02/I2C_operation.c",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/I2C_AT24C02",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第七章 应用电化学.md",
-    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/串口通信讲解.md",
-    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/定时器中断概念与实验.md",
-    "💻softwares/⚡Circuit/51单片机教程/1. 基础部分/单片机基础知识简介.md",
-    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/外部中断系统概念与其实现.md",
-    "💻softwares/Markdown & Latex Tutorial/obsidian usage/Graphic_Practice.md",
-    "Excalidraw/I2C-EEPROM实验-原理与简介 2023-12-31 16.30.26.md",
-    "Excalidraw/I2C-EEPROM实验-原理与简介 2023-12-31 15.06.49.md",
-    "🐸 Daily Life memo/备忘录.md",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

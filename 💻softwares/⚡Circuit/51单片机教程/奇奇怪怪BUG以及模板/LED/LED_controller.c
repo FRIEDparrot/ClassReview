@@ -39,6 +39,12 @@ void LED_ShowNumber(u8 Arr[8]){
     }
 }
 
+void LED_ShowNum(u8 loc, u8 num, u8 dot){
+    u8 res = gsm_code[num];
+    if (dot) res|=0x80;
+    LED_SET(7-loc); LED_COL_PORT = res; Delay(1); LED_CLEAR(); Delay(1);
+}
+
 // use state to chose which to ignite for a period 
 void LED_ShowDateTime(u8 hour, u8 min, u8 sec, u8 day, u8 Setstate){
     if (Setstate!=1) {

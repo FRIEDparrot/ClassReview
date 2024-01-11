@@ -53,3 +53,5 @@ peripheral 外围设备
 程序状态字标志寄存器 Program status Word (PSW) 
 Small Outline Package 小外形封装(SOP) 
 
+红外线 infrared ray
+热敏电阻 thermistor 
