@@ -101,7 +101,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 440.5124969482422
+    "width": 285.5124969482422
   },
   "right": {
     "id": "f7de553c162de521",
@@ -301,7 +301,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 497.5
+    "width": 508.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -326,6 +326,8 @@
   },
   "active": "42da57959744cf6f",
   "lastOpenFiles": [
+    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/定时器中断概念与实验.md",
+    "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
     "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/元素周期表.png",
     "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第三章 物质结构基础.md",
     "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
@@ -334,7 +336,6 @@
     "attachments/Pasted image 20240110222236.png",
     "💻softwares/⚡Circuit/51单片机教程/5. 红外遥控,DS132时钟, AD转换/DAC信号转换与呼吸灯实验.md",
     "attachments/Pasted image 20240110214954.png",
-    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/定时器中断概念与实验.md",
     "attachments/Pasted image 20240110201836.png",
     "Excalidraw/DAC信号转换与呼吸灯实验 2024-01-10 16.08.21.md",
     "🐸 Daily Life memo/Python 常用直接运算.md",
@@ -353,7 +354,6 @@
     "attachments/Pasted image 20240110120155.png",
     "attachments/Pasted image 20240110115731.png",
     "📘ClassNotes/⚡Circuit/电工电子技术/第十章 模拟-数字信号转换器.md",
-    "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
     "📘ClassNotes/🗣️English/Word Notes/Word List5.md",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/重要定理/重要分布表整理.md",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第八章 假设检验.md",
