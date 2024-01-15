@@ -1,4 +1,5 @@
-#words  
+#words 
+# 基础
 直流电(DC) direct current 交流电(AC) alternating current 
 二极管 diode    三极管 transistor  场效应管 field effect transistor(FET) 
 电极 electrode 
@@ -30,9 +31,7 @@ PID 控制器 proportional integral differentiator
 总线 bus 
 移位寄存器 shift register 
 
-掺杂 doping
-电子 electron 
-空穴 positive hole 
+# MCU
 晶振 crystal oscallator 
 采样/保持电路 sample/hold circuits (S/H 电路)
 
@@ -55,3 +54,14 @@ Small Outline Package 小外形封装(SOP)
 
 红外线 infrared ray
 热敏电阻 thermistor 
+液晶显示器 Liquid Crystal Display (LCD) 
+继电器 relay 
+多路复用器 MUX 
+
+
+# 模电
+掺杂 doping
+电子 electron 
+空穴 positive hole 
+势垒电容 depletion capacitance 
+扩散电筒 diffusion capacitance 

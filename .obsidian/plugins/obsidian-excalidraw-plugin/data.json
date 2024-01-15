@@ -20,7 +20,7 @@
   "previewMatchObsidianTheme": true,
   "width": "400",
   "dynamicStyling": "colorful",
-  "isLeftHanded": false,
+  "isLeftHanded": true,
   "iframeMatchExcalidrawTheme": true,
   "matchTheme": false,
   "matchThemeAlways": true,

@@ -4,11 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "06de98368869dc28",
+        "id": "4980c37438c1b582",
         "type": "tabs",
         "children": [
           {
-            "id": "42da57959744cf6f",
+            "id": "d947908176c7ab39",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示/LCD12864 液晶显示与通信.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "25db9fa29c323e38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示/LCD12864 液晶显示与通信.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "18c0fa417dbd17ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -101,7 +126,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 285.5124969482422
+    "width": 299.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -301,7 +327,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 508.5
+    "width": 453.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -324,53 +351,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "42da57959744cf6f",
+  "active": "18c0fa417dbd17ba",
   "lastOpenFiles": [
-    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/定时器中断概念与实验.md",
-    "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/元素周期表.png",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第三章 物质结构基础.md",
+    "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示/LCD12864 液晶显示与通信.md",
+    "💻softwares/⚡Circuit/51单片机教程/7.TFLCD,触摸屏, 继电器, IO扩展和RS485",
+    "📘ClassNotes/⚡Circuit/模拟电子技术基础/第二章 常用半导体器件基础知识.md",
+    "Excalidraw/第一章 常用半导体器件基础知识 2023-12-01 17.30.34.md",
+    "Excalidraw/第二章 常用半导体器件基础知识 2024-01-14 16.18.17.md",
+    "Excalidraw/第二章 常用半导体器件基础知识 2024-01-14 15.48.06.md",
+    "Excalidraw/第二章 常用半导体器件基础知识 2024-01-14 14.41.07.md",
     "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "💻softwares/⚡Circuit/Altium Designer/1. Altium Designer 项目创建.md",
-    "💻softwares/⚡Circuit/51单片机教程/5. 红外遥控,DS132时钟, AD转换/ADC模数转换与信号处理.md",
-    "attachments/Pasted image 20240110222236.png",
-    "💻softwares/⚡Circuit/51单片机教程/5. 红外遥控,DS132时钟, AD转换/DAC信号转换与呼吸灯实验.md",
-    "attachments/Pasted image 20240110214954.png",
-    "attachments/Pasted image 20240110201836.png",
-    "Excalidraw/DAC信号转换与呼吸灯实验 2024-01-10 16.08.21.md",
-    "🐸 Daily Life memo/Python 常用直接运算.md",
-    "💻softwares/⚡Circuit/Proteus/常用基本元件与搜索关键词.md",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/PCF8591_XPT2046/PCF8591_func.h",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/PCF8591_XPT2046/PCF8591_func.c",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/PCF8591_XPT2046/I2C_P34.h",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/PCF8591_XPT2046/I2C_P34.c",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/PCF8591_XPT2046",
-    "💻softwares/⚡Circuit/Proteus/1.proteus界面简介和基本操作.md",
-    "attachments/Pasted image 20240110152418.png",
-    "attachments/Pasted image 20240110151911.png",
-    "Excalidraw/DAC数字-模拟信号转换 2024-01-10 11.37.01.md",
-    "attachments/Pasted image 20240110134101.png",
-    "attachments/Pasted image 20240110121451.png",
-    "attachments/Pasted image 20240110120155.png",
-    "attachments/Pasted image 20240110115731.png",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第十章 模拟-数字信号转换器.md",
+    "Excalidraw/第二章 常用半导体器件基础知识 2024-01-14 13.00.20.md",
+    "Excalidraw/第四章 半导体器件 2023-10-04 16.25.07.md",
+    "Excalidraw/第二章 常用半导体器件基础知识 2024-01-14 11.27.04.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md",
     "📘ClassNotes/🗣️English/Word Notes/Word List5.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/重要定理/重要分布表整理.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第八章 假设检验.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
-    "💻softwares/⚡Circuit/51单片机教程/5. 红外遥控,DS132时钟, AD转换/DS1302高精度时钟与SPI通信.md",
-    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/I2C-E2PROM通信与掉电数据保存.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第六章 集成运算放大器以及应用.md",
-    "💻softwares/⚡Circuit/Proteus/扩展库记录.md",
-    "💻softwares/⚡Circuit/51单片机教程/5. 红外遥控,DS132时钟, AD转换/Untitled",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/正态分布的均值方差估计.pdf",
-    "💻softwares/⚡Circuit/Proteus/单片机仿真方法",
-    "💻softwares/⚡Circuit/51单片机教程/5. 红外遥控,DS132时钟, AD转换",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/UART/EEPROM_OP.h",
+    "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
+    "attachments/Pasted image 20240114002756.png",
+    "attachments/Pasted image 20240114002421.png",
+    "attachments/Pasted image 20240114001148.png",
+    "attachments/Pasted image 20240114001128.png",
+    "attachments/Pasted image 20240114000254.png",
+    "attachments/Pasted image 20240113234327.png",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/LCD1602/LCD1602_func.h",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/LCD1602/LCD1602_func.c",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/LCD1602",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第三章 物质结构基础.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第四章 化学反应热效应.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md",
+    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/元素周期表.png",
+    "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示/LCD 1602液晶显示.md",
+    "💻softwares/Git/oftenly-used commands.md",
+    "attachments/GitHub入门与实践.pdf",
+    "💻softwares/Git/GitHub entry.md",
+    "📘ClassNotes/⌨️Programming/Data Structure and Algorithms/Data Structure/C++基础知识/复习 指针和链表的使用.md",
+    "💻softwares/⚡Circuit/51单片机教程/5. 红外遥控,DS132时钟, AD转换/红外遥控原理与实验简介.md",
+    "Excalidraw/LCD 1602液晶显示 2024-01-12 00.51.59.md",
+    "attachments/Pasted image 20240112005107.png",
+    "attachments/Pasted image 20240112003505.png",
+    "attachments/Pasted image 20240112002526.png",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/IRED/IRED_controller.h",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/IRED/IRED_controller.c",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/IRED",
+    "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示",
+    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/电路的Y-△型变换推导.pdf",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

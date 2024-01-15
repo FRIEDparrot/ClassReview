@@ -1,3 +1,16 @@
+# 最简步骤
+- 在git上创建一个仓库最简的步骤, 首先在github上创建一个仓库并且获取https地址
+```shell 
+git init
+git remote add origin https://github.com/FRIEDparrot/RemoteControl_Password_Lock.git 
+git add *
+git commit -m "test"
+git branch  # 显示分支信息
+git push origin master 
+```
+
+
+C:/Program%20Files/Git/mingw64/share/doc/git-doc
 
 CLI -> command line interface
 1.  创建公钥对应的SSH key
@@ -334,9 +347,8 @@ Pull Request 的编号通用即可。
 
 ### 5.7　Pull request 的创建
 
-这个是进行自己修改源码并申请提交
+这个是进行自己修改源码并申请提交基本步骤: 
 
-基本步骤
 ```Bash
 # 1. fork别人的repository 到自己的repository
 # 2. clone自己的repository 到自己的电脑
