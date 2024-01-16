@@ -4,40 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "4980c37438c1b582",
+        "id": "7647b123865fc65a",
         "type": "tabs",
         "children": [
           {
-            "id": "d947908176c7ab39",
+            "id": "9288c8f4a94ba49a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示/LCD12864 液晶显示与通信.md",
+                "file": "💻softwares/⚡Circuit/51单片机教程/7.TFLCD,触摸屏, 继电器, IO扩展和RS485/TFTLCD彩屏显示的使用方法.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "25db9fa29c323e38",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示/LCD12864 液晶显示与通信.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "18c0fa417dbd17ba",
+            "id": "5d4abf2422c8a785",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5049fa5155ece773",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/🗣️English/Word Notes/Word List2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ec8df7006d3ba297",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/🗣️English/Word Notes/Word List5.md",
                 "mode": "source",
                 "source": false
               }
@@ -126,7 +138,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 299.5124969482422,
+    "width": 443.5124969482422,
     "collapsed": true
   },
   "right": {
@@ -180,7 +192,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
+                "file": "📘ClassNotes/🗣️English/Word Notes/Word List2.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -279,7 +291,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List1.md"
+                "file": "📘ClassNotes/🗣️English/Word Notes/Word List2.md"
               }
             }
           },
@@ -289,7 +301,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
+                "file": "📘ClassNotes/🗣️English/Word Notes/Word List2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -306,7 +318,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
+                "file": "📘ClassNotes/🗣️English/Word Notes/Word List2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -351,8 +363,25 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "18c0fa417dbd17ba",
+  "active": "5049fa5155ece773",
   "lastOpenFiles": [
+    "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
+    "📘ClassNotes/🗣️English/Word Notes/Word List5.md",
+    "💻softwares/⚡Circuit/51单片机教程/7.TFLCD,触摸屏, 继电器, IO扩展和RS485/TFTLCD彩屏显示的使用方法.md",
+    "attachments/Pasted image 20240115232838.png",
+    "attachments/Pasted image 20240115202511.png",
+    "attachments/Pasted image 20240115193828.png",
+    "attachments/Pasted image 20240115193415.png",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第十二章 一阶瞬态电路分析.md",
+    "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 17.35.56.md",
+    "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 17.08.45.md",
+    "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 16.24.45.md",
+    "🐸 Daily Life memo/⌚近期计划书.md",
+    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/卷积法的推导.pdf",
+    "📘ClassNotes/⚡Circuit/电路分析基础/第十一章 滤波器基础.md",
+    "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 14.21.34.md",
+    "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 12.03.45.md",
+    "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 11.51.55.md",
     "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示/LCD12864 液晶显示与通信.md",
     "💻softwares/⚡Circuit/51单片机教程/7.TFLCD,触摸屏, 继电器, IO扩展和RS485",
     "📘ClassNotes/⚡Circuit/模拟电子技术基础/第二章 常用半导体器件基础知识.md",
@@ -366,8 +395,6 @@
     "Excalidraw/第二章 常用半导体器件基础知识 2024-01-14 11.27.04.md",
     "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md",
     "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md",
-    "📘ClassNotes/🗣️English/Word Notes/Word List5.md",
-    "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
     "attachments/Pasted image 20240114002756.png",
     "attachments/Pasted image 20240114002421.png",
     "attachments/Pasted image 20240114001148.png",
@@ -378,26 +405,11 @@
     "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/LCD1602/LCD1602_func.c",
     "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/LCD1602",
     "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第三章 物质结构基础.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第四章 化学反应热效应.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/元素周期表.png",
-    "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示/LCD 1602液晶显示.md",
-    "💻softwares/Git/oftenly-used commands.md",
     "attachments/GitHub入门与实践.pdf",
-    "💻softwares/Git/GitHub entry.md",
-    "📘ClassNotes/⌨️Programming/Data Structure and Algorithms/Data Structure/C++基础知识/复习 指针和链表的使用.md",
-    "💻softwares/⚡Circuit/51单片机教程/5. 红外遥控,DS132时钟, AD转换/红外遥控原理与实验简介.md",
-    "Excalidraw/LCD 1602液晶显示 2024-01-12 00.51.59.md",
-    "attachments/Pasted image 20240112005107.png",
-    "attachments/Pasted image 20240112003505.png",
-    "attachments/Pasted image 20240112002526.png",
     "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/IRED/IRED_controller.h",
     "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/IRED/IRED_controller.c",
     "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/IRED",
     "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示",
-    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/电路的Y-△型变换推导.pdf",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }
