@@ -1520,5 +1520,13 @@
       ],
       "key": "-"
     }
+  ],
+  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-new-tab": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "F12"
+    }
   ]
 }

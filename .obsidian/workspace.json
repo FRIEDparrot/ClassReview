@@ -4,52 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "7647b123865fc65a",
+        "id": "a57bb3faab6eb50b",
         "type": "tabs",
         "children": [
           {
-            "id": "9288c8f4a94ba49a",
+            "id": "355a490d1e8c1065",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻softwares/⚡Circuit/51单片机教程/7.TFLCD,触摸屏, 继电器, IO扩展和RS485/TFTLCD彩屏显示的使用方法.md",
+                "file": "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5d4abf2422c8a785",
+            "id": "c1da6d9481759ead",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
+                "file": "💻softwares/⚡Circuit/Altium Designer/基本流程/1. Altium Designer 项目创建.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5049fa5155ece773",
+            "id": "f2afd9bdfdd9a52f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List2.md",
+                "file": "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ec8df7006d3ba297",
+            "id": "3804f07e3ea5b83e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List5.md",
+                "file": "💻softwares/⚡Circuit/Altium Designer/Altium Designer常用快捷键.md",
                 "mode": "source",
                 "source": false
               }
@@ -138,7 +138,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 443.5124969482422,
+    "width": 333.5124969482422,
     "collapsed": true
   },
   "right": {
@@ -192,7 +192,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List2.md",
+                "file": "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -235,7 +235,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Dynamic Terminology.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md",
                 "mode": "source",
                 "source": false
               }
@@ -276,9 +276,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "68a837d6d93b38fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/⌨️Programming/Programming Terminology.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 9
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -291,7 +303,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List2.md"
+                "file": "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md"
               }
             }
           },
@@ -301,7 +313,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List2.md",
+                "file": "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -318,7 +330,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List2.md",
+                "file": "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -339,7 +351,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 453.5,
+    "width": 486.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -363,53 +375,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5049fa5155ece773",
+  "active": "f2afd9bdfdd9a52f",
   "lastOpenFiles": [
-    "📘ClassNotes/🗣️English/Word Notes/Word List1.md",
-    "📘ClassNotes/🗣️English/Word Notes/Word List5.md",
-    "💻softwares/⚡Circuit/51单片机教程/7.TFLCD,触摸屏, 继电器, IO扩展和RS485/TFTLCD彩屏显示的使用方法.md",
-    "attachments/Pasted image 20240115232838.png",
-    "attachments/Pasted image 20240115202511.png",
-    "attachments/Pasted image 20240115193828.png",
-    "attachments/Pasted image 20240115193415.png",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第十二章 一阶瞬态电路分析.md",
-    "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 17.35.56.md",
-    "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 17.08.45.md",
-    "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 16.24.45.md",
-    "🐸 Daily Life memo/⌚近期计划书.md",
-    "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/卷积法的推导.pdf",
-    "📘ClassNotes/⚡Circuit/电路分析基础/第十一章 滤波器基础.md",
-    "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 14.21.34.md",
-    "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 12.03.45.md",
-    "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 11.51.55.md",
-    "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示/LCD12864 液晶显示与通信.md",
-    "💻softwares/⚡Circuit/51单片机教程/7.TFLCD,触摸屏, 继电器, IO扩展和RS485",
-    "📘ClassNotes/⚡Circuit/模拟电子技术基础/第二章 常用半导体器件基础知识.md",
-    "Excalidraw/第一章 常用半导体器件基础知识 2023-12-01 17.30.34.md",
-    "Excalidraw/第二章 常用半导体器件基础知识 2024-01-14 16.18.17.md",
-    "Excalidraw/第二章 常用半导体器件基础知识 2024-01-14 15.48.06.md",
-    "Excalidraw/第二章 常用半导体器件基础知识 2024-01-14 14.41.07.md",
+    "💻softwares/⚡Circuit/Altium Designer/Altium Designer常用快捷键.md",
+    "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md",
+    "attachments/Pasted image 20240123113235.png",
+    "attachments/Pasted image 20240123113021.png",
+    "attachments/Pasted image 20240123112014.png",
+    "attachments/Pasted image 20240123104802.png",
+    "attachments/Pasted image 20240123104136.png",
+    "attachments/Pasted image 20240123102625.png",
+    "💻softwares/⚡Circuit/Altium Designer/基本流程/1. Altium Designer 项目创建.md",
+    "attachments/Pasted image 20240123101646.png",
+    "📘ClassNotes/🗣️English/Word Notes/Word List4.md",
+    "📘ClassNotes/🗣️English/Word Notes/Word List3.md",
+    "attachments/Pasted image 20240122234838.png",
+    "attachments/Pasted image 20240122234425.png",
+    "attachments/Pasted image 20240122233416.png",
+    "💻softwares/⚡Circuit/STM32教程",
+    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/定时器中断概念与实验.md",
+    "💻softwares/⚡Circuit/51单片机教程/8. 蓝牙, Wifi 与以太网模块/HC-SRO4超声测距模块.md",
+    "💻softwares/⚡Circuit/51单片机教程/8. 蓝牙, Wifi 与以太网模块/SG90舵机使用方法.md",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/HC_RSO4/HC_RSO4_OP.h",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/HC_RSO4/HC_RSO4_OP.c",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/HC_RSO4",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/Timer_function/timer_controller.c",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/Timer_function/timer_controller.h",
+    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/Timer_function",
+    "💻softwares/⚡Circuit/51单片机教程/8. 蓝牙, Wifi 与以太网模块/PZ-ESP8266 WIFI模块芯片.md",
+    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/串口通信讲解.md",
+    "💻softwares/⚡Circuit/51单片机教程/8. 蓝牙, Wifi 与以太网模块",
+    "💻softwares/⚡Circuit/51单片机教程/7.TFLCD, 继电器和RS485/RS485通信简介.md",
+    "💻softwares/⚡Circuit/51单片机教程/3. IO扩展, LED点阵和电机/74HC165与并转串口.md",
+    "💻softwares/⚡Circuit/51单片机教程/3. IO扩展, LED点阵和电机/74HC595芯片与IO扩展简介.md",
+    "💻softwares/⚡Circuit/51单片机教程/7.TFLCD, 继电器和RS485/继电器简介与使用.md",
+    "📘ClassNotes/⌨️Programming/Algorithms/第二章 递归算法.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md",
+    "📘ClassNotes/⌨️Programming/Algorithms/第一章 绪论.md",
+    "📘ClassNotes/⌨️Programming/Algorithms/动态规划算法.md",
+    "📘ClassNotes/⌨️Programming/Programming Terminology.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md",
     "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "Excalidraw/第二章 常用半导体器件基础知识 2024-01-14 13.00.20.md",
-    "Excalidraw/第四章 半导体器件 2023-10-04 16.25.07.md",
-    "Excalidraw/第二章 常用半导体器件基础知识 2024-01-14 11.27.04.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md",
-    "attachments/Pasted image 20240114002756.png",
-    "attachments/Pasted image 20240114002421.png",
-    "attachments/Pasted image 20240114001148.png",
-    "attachments/Pasted image 20240114001128.png",
-    "attachments/Pasted image 20240114000254.png",
-    "attachments/Pasted image 20240113234327.png",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/LCD1602/LCD1602_func.h",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/LCD1602/LCD1602_func.c",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/LCD1602",
-    "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md",
-    "attachments/GitHub入门与实践.pdf",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/IRED/IRED_controller.h",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/IRED/IRED_controller.c",
-    "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/IRED",
-    "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示",
+    "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
+    "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/重要概念与思维导图.md",
+    "📘ClassNotes/⌨️Programming/Algorithms",
+    "💻softwares/⚡Circuit/Altium Designer/基本流程",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/附加笔记/平面四节点单元.md",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

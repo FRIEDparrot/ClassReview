@@ -65,3 +65,7 @@ Small Outline Package 小外形封装(SOP)
 空穴 positive hole 
 势垒电容 depletion capacitance 
 扩散电筒 diffusion capacitance 
+
+
+# PCB 
+polygon pour 铺铜

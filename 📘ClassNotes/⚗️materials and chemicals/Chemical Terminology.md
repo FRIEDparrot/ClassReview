@@ -10,3 +10,4 @@
 溶度积 solubility product 
 配位数 coordination number
 溶液 solution 
+凝固 freezing / solidify 

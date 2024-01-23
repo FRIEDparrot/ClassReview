@@ -1,8 +1,164 @@
 {
   "recentFiles": [
     {
-      "basename": "Word List2",
-      "path": "📘ClassNotes/🗣️English/Word Notes/Word List2.md"
+      "basename": "2. 原理图创建与PCB库的建立方法",
+      "path": "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md"
+    },
+    {
+      "basename": "Altium Designer常用快捷键",
+      "path": "💻softwares/⚡Circuit/Altium Designer/Altium Designer常用快捷键.md"
+    },
+    {
+      "basename": "1. Altium Designer 项目创建",
+      "path": "💻softwares/⚡Circuit/Altium Designer/基本流程/1. Altium Designer 项目创建.md"
+    },
+    {
+      "basename": "Word List4",
+      "path": "📘ClassNotes/🗣️English/Word Notes/Word List4.md"
+    },
+    {
+      "basename": "Word List3",
+      "path": "📘ClassNotes/🗣️English/Word Notes/Word List3.md"
+    },
+    {
+      "basename": "定时器中断概念与实验",
+      "path": "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/定时器中断概念与实验.md"
+    },
+    {
+      "basename": "HC-SRO4超声测距模块",
+      "path": "💻softwares/⚡Circuit/51单片机教程/8. 蓝牙, Wifi 与以太网模块/HC-SRO4超声测距模块.md"
+    },
+    {
+      "basename": "SG90舵机使用方法",
+      "path": "💻softwares/⚡Circuit/51单片机教程/8. 蓝牙, Wifi 与以太网模块/SG90舵机使用方法.md"
+    },
+    {
+      "basename": "PZ-ESP8266 WIFI模块芯片",
+      "path": "💻softwares/⚡Circuit/51单片机教程/8. 蓝牙, Wifi 与以太网模块/PZ-ESP8266 WIFI模块芯片.md"
+    },
+    {
+      "basename": "串口通信讲解",
+      "path": "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/串口通信讲解.md"
+    },
+    {
+      "basename": "RS485通信简介",
+      "path": "💻softwares/⚡Circuit/51单片机教程/7.TFLCD, 继电器和RS485/RS485通信简介.md"
+    },
+    {
+      "basename": "74HC165与并转串口",
+      "path": "💻softwares/⚡Circuit/51单片机教程/3. IO扩展, LED点阵和电机/74HC165与并转串口.md"
+    },
+    {
+      "basename": "74HC595芯片与IO扩展简介",
+      "path": "💻softwares/⚡Circuit/51单片机教程/3. IO扩展, LED点阵和电机/74HC595芯片与IO扩展简介.md"
+    },
+    {
+      "basename": "继电器简介与使用",
+      "path": "💻softwares/⚡Circuit/51单片机教程/7.TFLCD, 继电器和RS485/继电器简介与使用.md"
+    },
+    {
+      "basename": "第二章 递归算法",
+      "path": "📘ClassNotes/⌨️Programming/Algorithms/第二章 递归算法.md"
+    },
+    {
+      "basename": "第三章 栈和队列的链式存储",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md"
+    },
+    {
+      "basename": "第一章 绪论",
+      "path": "📘ClassNotes/⌨️Programming/Algorithms/第一章 绪论.md"
+    },
+    {
+      "basename": "动态规划算法",
+      "path": "📘ClassNotes/⌨️Programming/Algorithms/动态规划算法.md"
+    },
+    {
+      "basename": "Programming Terminology",
+      "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
+    },
+    {
+      "basename": "Mechanic Terminology",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md"
+    },
+    {
+      "basename": "Circuit Terminology",
+      "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
+    },
+    {
+      "basename": "Chemical Terminology",
+      "path": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md"
+    },
+    {
+      "basename": "Mathmatic Terminology",
+      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
+    },
+    {
+      "basename": "重要概念与思维导图",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/重要概念与思维导图.md"
+    },
+    {
+      "basename": "平面四节点单元",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/附加笔记/平面四节点单元.md"
+    },
+    {
+      "basename": "第七章 参数单元",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第七章 参数单元.md"
+    },
+    {
+      "basename": "第六章 薄壳",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第六章 薄壳.md"
+    },
+    {
+      "basename": "Chapter 1 One-Dimensional Boundary Value Problem",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Basics of Finite Element Methods/Part 1/Chapter 1 One-Dimensional Boundary Value Problem.md"
+    },
+    {
+      "basename": "Chapter4 Basic aspects of discretization",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Chapter4 Basic aspects of discretization.md"
+    },
+    {
+      "basename": "Chapter5 Grids with appropriate transformations",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 2 Basics of the Numerics/Chapter5 Grids with appropriate transformations.md"
+    },
+    {
+      "basename": "Chapter3 Mathematical behavior of partial differential equations",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter3 Mathematical behavior of partial differential equations.md"
+    },
+    {
+      "basename": "Chapter2 Derivation of the Governing Equations",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter2 Derivation of the Governing Equations.md"
+    },
+    {
+      "basename": "Chapter1 Philosophy of Computational Fluid Dynamics",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter1 Philosophy of Computational Fluid Dynamics.md"
+    },
+    {
+      "basename": "TFTLCD彩屏显示的使用方法",
+      "path": "💻softwares/⚡Circuit/51单片机教程/7.TFLCD, 继电器和RS485/TFTLCD彩屏显示的使用方法.md"
+    },
+    {
+      "basename": "ILI9341 LCD 320x240彩屏仿真",
+      "path": "💻softwares/⚡Circuit/51单片机教程/7.TFLCD, 继电器和RS485/ILI9341 LCD 320x240彩屏仿真.md"
+    },
+    {
+      "basename": "Drawing 2024-01-21 09.46.10",
+      "path": "Excalidraw/Drawing 2024-01-21 09.46.10.md"
+    },
+    {
+      "basename": "ILI9341 LCD 320x240彩屏仿真 2024-01-20 15.42.19",
+      "path": "Excalidraw/ILI9341 LCD 320x240彩屏仿真 2024-01-20 15.42.19.md"
+    },
+    {
+      "basename": "LCD 1602液晶显示",
+      "path": "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示/LCD 1602液晶显示.md"
+    },
+    {
+      "basename": "Pasted image 20240120152717",
+      "path": "attachments/Pasted image 20240120152717.png"
+    },
+    {
+      "basename": "LCD12864 液晶显示与通信",
+      "path": "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示/LCD12864 液晶显示与通信.md"
     },
     {
       "basename": "Word List1",
@@ -13,192 +169,36 @@
       "path": "📘ClassNotes/🗣️English/Word Notes/Word List5.md"
     },
     {
-      "basename": "TFTLCD彩屏显示的使用方法",
-      "path": "💻softwares/⚡Circuit/51单片机教程/7.TFLCD,触摸屏, 继电器, IO扩展和RS485/TFTLCD彩屏显示的使用方法.md"
-    },
-    {
-      "basename": "第十二章 一阶瞬态电路分析",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第十二章 一阶瞬态电路分析.md"
-    },
-    {
-      "basename": "第十二章 一阶瞬态电路分析 2024-01-15 17.35.56",
-      "path": "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 17.35.56.md"
-    },
-    {
-      "basename": "第十二章 一阶瞬态电路分析 2024-01-15 17.08.45",
-      "path": "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 17.08.45.md"
-    },
-    {
-      "basename": "第十二章 一阶瞬态电路分析 2024-01-15 16.24.45",
-      "path": "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 16.24.45.md"
-    },
-    {
-      "basename": "⌚近期计划书",
-      "path": "🐸 Daily Life memo/⌚近期计划书.md"
-    },
-    {
-      "basename": "卷积法的推导",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/卷积法的推导.pdf"
-    },
-    {
-      "basename": "第十一章 滤波器基础",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第十一章 滤波器基础.md"
-    },
-    {
-      "basename": "第十二章 一阶瞬态电路分析 2024-01-15 14.21.34",
-      "path": "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 14.21.34.md"
-    },
-    {
-      "basename": "第十二章 一阶瞬态电路分析 2024-01-15 12.03.45",
-      "path": "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 12.03.45.md"
-    },
-    {
-      "basename": "第十二章 一阶瞬态电路分析 2024-01-15 11.51.55",
-      "path": "Excalidraw/第十二章 一阶瞬态电路分析 2024-01-15 11.51.55.md"
-    },
-    {
-      "basename": "LCD12864 液晶显示与通信",
-      "path": "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示/LCD12864 液晶显示与通信.md"
-    },
-    {
-      "basename": "第二章 常用半导体器件基础知识",
-      "path": "📘ClassNotes/⚡Circuit/模拟电子技术基础/第二章 常用半导体器件基础知识.md"
-    },
-    {
-      "basename": "第一章 常用半导体器件基础知识 2023-12-01 17.30.34",
-      "path": "Excalidraw/第一章 常用半导体器件基础知识 2023-12-01 17.30.34.md"
-    },
-    {
-      "basename": "第二章 常用半导体器件基础知识 2024-01-14 16.18.17",
-      "path": "Excalidraw/第二章 常用半导体器件基础知识 2024-01-14 16.18.17.md"
-    },
-    {
-      "basename": "第二章 常用半导体器件基础知识 2024-01-14 15.48.06",
-      "path": "Excalidraw/第二章 常用半导体器件基础知识 2024-01-14 15.48.06.md"
-    },
-    {
-      "basename": "第二章 常用半导体器件基础知识 2024-01-14 14.41.07",
-      "path": "Excalidraw/第二章 常用半导体器件基础知识 2024-01-14 14.41.07.md"
-    },
-    {
-      "basename": "Circuit Terminology",
-      "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
-    },
-    {
-      "basename": "第二章 常用半导体器件基础知识 2024-01-14 13.00.20",
-      "path": "Excalidraw/第二章 常用半导体器件基础知识 2024-01-14 13.00.20.md"
-    },
-    {
-      "basename": "第四章 半导体器件 2023-10-04 16.25.07",
-      "path": "Excalidraw/第四章 半导体器件 2023-10-04 16.25.07.md"
-    },
-    {
-      "basename": "第二章 常用半导体器件基础知识 2024-01-14 11.27.04",
-      "path": "Excalidraw/第二章 常用半导体器件基础知识 2024-01-14 11.27.04.md"
-    },
-    {
-      "basename": "第五章 基本放大电路",
-      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md"
-    },
-    {
-      "basename": "第四章 半导体器件",
-      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md"
-    },
-    {
-      "basename": "第二章 物质化学组成与聚集状态",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第二章 物质化学组成与聚集状态.md"
-    },
-    {
-      "basename": "第三章 物质结构基础",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第三章 物质结构基础.md"
-    },
-    {
-      "basename": "第四章 化学反应热效应",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第四章 化学反应热效应.md"
-    },
-    {
-      "basename": "第五章 化学反应基本原理",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/第五章 化学反应基本原理.md"
-    },
-    {
-      "basename": "第二章 热力学第一定律",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md"
-    },
-    {
-      "basename": "元素周期表",
-      "path": "📘ClassNotes/⚗️materials and chemicals/⚗️Basics of the engineering chemistry/参考表格/元素周期表.png"
-    },
-    {
-      "basename": "LCD 1602液晶显示",
-      "path": "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示/LCD 1602液晶显示.md"
-    },
-    {
-      "basename": "oftenly-used commands",
-      "path": "💻softwares/Git/oftenly-used commands.md"
-    },
-    {
-      "basename": "GitHub入门与实践",
-      "path": "attachments/GitHub入门与实践.pdf"
-    },
-    {
-      "basename": "GitHub entry",
-      "path": "💻softwares/Git/GitHub entry.md"
-    },
-    {
-      "basename": "复习 指针和链表的使用",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure and Algorithms/Data Structure/C++基础知识/复习 指针和链表的使用.md"
-    },
-    {
-      "basename": "红外遥控原理与实验简介",
-      "path": "💻softwares/⚡Circuit/51单片机教程/5. 红外遥控,DS132时钟, AD转换/红外遥控原理与实验简介.md"
-    },
-    {
-      "basename": "LCD 1602液晶显示 2024-01-12 00.51.59",
-      "path": "Excalidraw/LCD 1602液晶显示 2024-01-12 00.51.59.md"
+      "basename": "Word List2",
+      "path": "📘ClassNotes/🗣️English/Word Notes/Word List2.md"
     },
     {
       "basename": "1.proteus界面简介和基本操作",
       "path": "💻softwares/⚡Circuit/Proteus/1.proteus界面简介和基本操作.md"
     },
     {
-      "basename": "1. 基本用法",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure and Algorithms/Data Structure/C++基础知识/1. 基本用法.md"
+      "basename": "修改电压源大小以及电平高低方法",
+      "path": "💻softwares/⚡Circuit/Proteus/修改电压源大小以及电平高低方法.md"
     },
     {
-      "basename": "3. 向量的定义和用法",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure and Algorithms/Data Structure/C++基础知识/3. 向量的定义和用法.md"
+      "basename": "Proteus中的串口调试方法",
+      "path": "💻softwares/⚡Circuit/Proteus/单片机仿真方法/Proteus中的串口调试方法.md"
     },
     {
-      "basename": "C++自定义哈希函数",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure and Algorithms/Data Structure/C++基础知识/C++自定义哈希函数.md"
+      "basename": "第五章 基本放大电路",
+      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md"
     },
     {
-      "basename": "常用基本元件与搜索关键词",
-      "path": "💻softwares/⚡Circuit/Proteus/常用基本元件与搜索关键词.md"
+      "basename": "第二章 常用半导体器件基础知识",
+      "path": "📘ClassNotes/⚡Circuit/模拟电子技术基础/第二章 常用半导体器件基础知识.md"
     },
     {
-      "basename": "第一章 电路基本概念与定律",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/第一章 电路基本概念与定律.md"
+      "basename": "第四章 半导体器件",
+      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md"
     },
     {
-      "basename": "电路的Y-△型变换推导",
-      "path": "📘ClassNotes/⚡Circuit/电路分析基础/补充部分/电路的Y-△型变换推导.pdf"
-    },
-    {
-      "basename": "定时器中断概念与实验",
-      "path": "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/定时器中断概念与实验.md"
-    },
-    {
-      "basename": "1. Altium Designer 项目创建",
-      "path": "💻softwares/⚡Circuit/Altium Designer/1. Altium Designer 项目创建.md"
-    },
-    {
-      "basename": "ADC模数转换与信号处理",
-      "path": "💻softwares/⚡Circuit/51单片机教程/5. 红外遥控,DS132时钟, AD转换/ADC模数转换与信号处理.md"
-    },
-    {
-      "basename": "DAC信号转换与呼吸灯实验",
-      "path": "💻softwares/⚡Circuit/51单片机教程/5. 红外遥控,DS132时钟, AD转换/DAC信号转换与呼吸灯实验.md"
+      "basename": "第四章 半导体器件 2023-10-05 15.20.07",
+      "path": "Excalidraw/第四章 半导体器件 2023-10-05 15.20.07.md"
     }
   ],
   "omittedPaths": [],

@@ -38,7 +38,6 @@ $$x = x(\xi)$$
 and then 
 $$dx = x_\xi d\xi\qquad  d\xi = \frac{dx}{x_\xi}$$
 where $x_\xi$ is the 1st order derivate of the coordinate $x$ about $\xi$. 
-
 also we can set 
 $$\xi = \xi(x)\qquad  d\xi = \xi_x dx$$
 hence we reach the relationship of the 1st derivate of $\xi$ and $x$, i.e. 

@@ -1,0 +1,6 @@
+Greedy (贪心法)：最短路经
+Divide & Conquer (分治法)：如二分法检索、Hanoi塔
+Backtracking (回溯法)：迷宫、皇后问题
+Dynamic programming (动态规划法)：优化问题
+Local searching (局部搜索法)：最优化问题
+Branch & limitation (分支限界法)：检索
