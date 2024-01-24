@@ -1,3 +1,4 @@
+### 疲劳与断裂
 循环计数法 cycle counting method 
 损伤等效 fatigue damage equivalence 
 离散傅里叶变换 DFT discrete Fourier transformation 
@@ -9,5 +10,7 @@
 汉宁窗 Hanning Window
 应力响度因子 stress intensity factor 
 
+### 可靠性工程
 蒙特卡洛模拟 Monte Carlo Simulation-MCS 
 耐久性准则 crashworthness criteria 
+一次二阶矩方法 first order and second moment method  

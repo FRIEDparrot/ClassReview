@@ -1458,7 +1458,14 @@
   "workspace:goto-tab-3": [],
   "workspace:goto-tab-2": [],
   "workspace:goto-tab-1": [],
-  "workspace:next-tab": [],
+  "workspace:next-tab": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Tab"
+    }
+  ],
   "workspace:previous-tab": [
     {
       "modifiers": [

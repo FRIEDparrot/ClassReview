@@ -1,20 +1,100 @@
 {
   "recentFiles": [
     {
-      "basename": "2. 原理图创建与PCB库的建立方法",
-      "path": "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md"
+      "basename": "第二章 可靠性灵敏度分析的矩方法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🎯Reliability Engineering/航空发动机可靠性分析方法/第二章 可靠性灵敏度分析的矩方法.md"
     },
     {
-      "basename": "Altium Designer常用快捷键",
-      "path": "💻softwares/⚡Circuit/Altium Designer/Altium Designer常用快捷键.md"
+      "basename": "第四章 随机变量的数字特征",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md"
+    },
+    {
+      "basename": "第二章 随机变量及其分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md"
+    },
+    {
+      "basename": "第二章 可靠性灵敏度分析的矩方法 2024-01-24 11.18.50",
+      "path": "Excalidraw/第二章 可靠性灵敏度分析的矩方法 2024-01-24 11.18.50.md"
+    },
+    {
+      "basename": "第三章 多维随机变量及其分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
+    },
+    {
+      "basename": "Mechanic Terminology",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md"
+    },
+    {
+      "basename": "Circuit Terminology",
+      "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
+    },
+    {
+      "basename": "Chemical Terminology",
+      "path": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md"
+    },
+    {
+      "basename": "Mathmatic Terminology",
+      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
+    },
+    {
+      "basename": "Programming Terminology",
+      "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
+    },
+    {
+      "basename": "第一章 可靠性分析基本概念与方法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🎯Reliability Engineering/航空发动机可靠性分析方法/第一章 可靠性分析基本概念与方法.md"
+    },
+    {
+      "basename": "⌚近期计划书",
+      "path": "🐸 Daily Life memo/⌚近期计划书.md"
+    },
+    {
+      "basename": "Word List4",
+      "path": "📘ClassNotes/🗣️English/Word Notes/Word List4.md"
+    },
+    {
+      "basename": "第一章 可靠性分析基本方法 2024-01-23 21.06.33",
+      "path": "Excalidraw/第一章 可靠性分析基本方法 2024-01-23 21.06.33.md"
+    },
+    {
+      "basename": "第一章 绪论",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🎯Reliability Engineering/可靠性与寿命相关课程/第一章 绪论.md"
+    },
+    {
+      "basename": "第二章 递归与分治算法",
+      "path": "📘ClassNotes/⌨️Programming/Algorithms/第二章 递归与分治算法.md"
+    },
+    {
+      "basename": "第一章 绪论",
+      "path": "📘ClassNotes/⌨️Programming/Algorithms/第一章 绪论.md"
+    },
+    {
+      "basename": "第七章 图",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md"
+    },
+    {
+      "basename": "复习 七大排序算法",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/复习 七大排序算法.md"
+    },
+    {
+      "basename": "手头任务",
+      "path": "🐸 Daily Life memo/手头任务.md"
+    },
+    {
+      "basename": "第三章 栈和队列的链式存储",
+      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md"
+    },
+    {
+      "basename": "2. 原理图创建与PCB库的建立方法",
+      "path": "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md"
     },
     {
       "basename": "1. Altium Designer 项目创建",
       "path": "💻softwares/⚡Circuit/Altium Designer/基本流程/1. Altium Designer 项目创建.md"
     },
     {
-      "basename": "Word List4",
-      "path": "📘ClassNotes/🗣️English/Word Notes/Word List4.md"
+      "basename": "Altium Designer常用快捷键",
+      "path": "💻softwares/⚡Circuit/Altium Designer/Altium Designer常用快捷键.md"
     },
     {
       "basename": "Word List3",
@@ -57,40 +137,8 @@
       "path": "💻softwares/⚡Circuit/51单片机教程/7.TFLCD, 继电器和RS485/继电器简介与使用.md"
     },
     {
-      "basename": "第二章 递归算法",
-      "path": "📘ClassNotes/⌨️Programming/Algorithms/第二章 递归算法.md"
-    },
-    {
-      "basename": "第三章 栈和队列的链式存储",
-      "path": "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md"
-    },
-    {
-      "basename": "第一章 绪论",
-      "path": "📘ClassNotes/⌨️Programming/Algorithms/第一章 绪论.md"
-    },
-    {
       "basename": "动态规划算法",
       "path": "📘ClassNotes/⌨️Programming/Algorithms/动态规划算法.md"
-    },
-    {
-      "basename": "Programming Terminology",
-      "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
-    },
-    {
-      "basename": "Mechanic Terminology",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md"
-    },
-    {
-      "basename": "Circuit Terminology",
-      "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
-    },
-    {
-      "basename": "Chemical Terminology",
-      "path": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md"
-    },
-    {
-      "basename": "Mathmatic Terminology",
-      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
     },
     {
       "basename": "重要概念与思维导图",
@@ -151,54 +199,6 @@
     {
       "basename": "LCD 1602液晶显示",
       "path": "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示/LCD 1602液晶显示.md"
-    },
-    {
-      "basename": "Pasted image 20240120152717",
-      "path": "attachments/Pasted image 20240120152717.png"
-    },
-    {
-      "basename": "LCD12864 液晶显示与通信",
-      "path": "💻softwares/⚡Circuit/51单片机教程/6. LCD液晶显示器与彩屏显示/LCD12864 液晶显示与通信.md"
-    },
-    {
-      "basename": "Word List1",
-      "path": "📘ClassNotes/🗣️English/Word Notes/Word List1.md"
-    },
-    {
-      "basename": "Word List5",
-      "path": "📘ClassNotes/🗣️English/Word Notes/Word List5.md"
-    },
-    {
-      "basename": "Word List2",
-      "path": "📘ClassNotes/🗣️English/Word Notes/Word List2.md"
-    },
-    {
-      "basename": "1.proteus界面简介和基本操作",
-      "path": "💻softwares/⚡Circuit/Proteus/1.proteus界面简介和基本操作.md"
-    },
-    {
-      "basename": "修改电压源大小以及电平高低方法",
-      "path": "💻softwares/⚡Circuit/Proteus/修改电压源大小以及电平高低方法.md"
-    },
-    {
-      "basename": "Proteus中的串口调试方法",
-      "path": "💻softwares/⚡Circuit/Proteus/单片机仿真方法/Proteus中的串口调试方法.md"
-    },
-    {
-      "basename": "第五章 基本放大电路",
-      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第五章 基本放大电路.md"
-    },
-    {
-      "basename": "第二章 常用半导体器件基础知识",
-      "path": "📘ClassNotes/⚡Circuit/模拟电子技术基础/第二章 常用半导体器件基础知识.md"
-    },
-    {
-      "basename": "第四章 半导体器件",
-      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第四章 半导体器件.md"
-    },
-    {
-      "basename": "第四章 半导体器件 2023-10-05 15.20.07",
-      "path": "Excalidraw/第四章 半导体器件 2023-10-05 15.20.07.md"
     }
   ],
   "omittedPaths": [],

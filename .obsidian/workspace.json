@@ -4,52 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "a57bb3faab6eb50b",
+        "id": "e23e30cd59a9e9f7",
         "type": "tabs",
         "children": [
           {
-            "id": "355a490d1e8c1065",
+            "id": "8bc4b43bfdfb7ad4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md",
+                "file": "📘ClassNotes/⌨️Programming/Algorithms/第二章 递归与分治算法.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c1da6d9481759ead",
+            "id": "ba7ba59fbfaaa9bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻softwares/⚡Circuit/Altium Designer/基本流程/1. Altium Designer 项目创建.md",
+                "file": "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/复习 七大排序算法.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f2afd9bdfdd9a52f",
+            "id": "a80844ac07d21fc7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3804f07e3ea5b83e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "💻softwares/⚡Circuit/Altium Designer/Altium Designer常用快捷键.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🎯Reliability Engineering/航空发动机可靠性分析方法/第二章 可靠性灵敏度分析的矩方法.md",
                 "mode": "source",
                 "source": false
               }
@@ -138,8 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 333.5124969482422,
-    "collapsed": true
+    "width": 490.5124969482422
   },
   "right": {
     "id": "f7de553c162de521",
@@ -192,7 +179,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🎯Reliability Engineering/航空发动机可靠性分析方法/第二章 可靠性灵敏度分析的矩方法.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -290,7 +277,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 5
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -303,7 +290,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🎯Reliability Engineering/航空发动机可靠性分析方法/第二章 可靠性灵敏度分析的矩方法.md"
               }
             }
           },
@@ -313,7 +300,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🎯Reliability Engineering/航空发动机可靠性分析方法/第二章 可靠性灵敏度分析的矩方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -330,7 +317,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🎯Reliability Engineering/航空发动机可靠性分析方法/第二章 可靠性灵敏度分析的矩方法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -351,8 +338,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 486.5,
-    "collapsed": true
+    "width": 434.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -375,53 +361,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f2afd9bdfdd9a52f",
+  "active": "a80844ac07d21fc7",
   "lastOpenFiles": [
-    "💻softwares/⚡Circuit/Altium Designer/Altium Designer常用快捷键.md",
-    "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md",
-    "attachments/Pasted image 20240123113235.png",
-    "attachments/Pasted image 20240123113021.png",
-    "attachments/Pasted image 20240123112014.png",
-    "attachments/Pasted image 20240123104802.png",
-    "attachments/Pasted image 20240123104136.png",
-    "attachments/Pasted image 20240123102625.png",
-    "💻softwares/⚡Circuit/Altium Designer/基本流程/1. Altium Designer 项目创建.md",
-    "attachments/Pasted image 20240123101646.png",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🎯Reliability Engineering/航空发动机可靠性分析方法/第二章 可靠性灵敏度分析的矩方法.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md",
+    "Excalidraw/第二章 可靠性灵敏度分析的矩方法 2024-01-24 11.18.50.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md",
+    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
+    "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
+    "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
+    "📘ClassNotes/⌨️Programming/Programming Terminology.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🎯Reliability Engineering/航空发动机可靠性分析方法/第一章 可靠性分析基本概念与方法.md",
+    "🐸 Daily Life memo/⌚近期计划书.md",
     "📘ClassNotes/🗣️English/Word Notes/Word List4.md",
+    "Excalidraw/第一章 可靠性分析基本方法 2024-01-23 21.06.33.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🎯Reliability Engineering/可靠性与寿命相关课程/第一章 绪论.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🎯Reliability Engineering/可靠性与寿命相关课程",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🎯Reliability Engineering/航空发动机可靠性分析方法",
+    "📘ClassNotes/⌨️Programming/Algorithms/第二章 递归与分治算法.md",
+    "📘ClassNotes/⌨️Programming/Algorithms/第一章 绪论.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第七章 图.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/C++基础知识/复习 七大排序算法.md",
+    "📘ClassNotes/⌨️Programming/Algorithms/排序算法",
+    "attachments/Pasted image 20240123155028.png",
+    "🐸 Daily Life memo/手头任务.md",
+    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md",
+    "💻softwares/⚡Circuit/Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md",
+    "💻softwares/⚡Circuit/Altium Designer/基本流程/1. Altium Designer 项目创建.md",
+    "attachments/Pasted image 20240123123039.png",
+    "attachments/Pasted image 20240123122445.png",
+    "attachments/Pasted image 20240123121439.png",
+    "attachments/Pasted image 20240123121301.png",
+    "💻softwares/⚡Circuit/Altium Designer/Altium Designer常用快捷键.md",
+    "attachments/Pasted image 20240123120604.png",
+    "attachments/Pasted image 20240123115932.png",
+    "attachments/Pasted image 20240123115856.png",
+    "attachments/Pasted image 20240123114319.png",
+    "attachments/Pasted image 20240123114018.png",
     "📘ClassNotes/🗣️English/Word Notes/Word List3.md",
-    "attachments/Pasted image 20240122234838.png",
-    "attachments/Pasted image 20240122234425.png",
-    "attachments/Pasted image 20240122233416.png",
     "💻softwares/⚡Circuit/STM32教程",
     "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/定时器中断概念与实验.md",
-    "💻softwares/⚡Circuit/51单片机教程/8. 蓝牙, Wifi 与以太网模块/HC-SRO4超声测距模块.md",
-    "💻softwares/⚡Circuit/51单片机教程/8. 蓝牙, Wifi 与以太网模块/SG90舵机使用方法.md",
     "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/HC_RSO4/HC_RSO4_OP.h",
     "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/HC_RSO4/HC_RSO4_OP.c",
     "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/HC_RSO4",
     "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/Timer_function/timer_controller.c",
     "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/Timer_function/timer_controller.h",
     "💻softwares/⚡Circuit/51单片机教程/奇奇怪怪BUG以及模板/Timer_function",
-    "💻softwares/⚡Circuit/51单片机教程/8. 蓝牙, Wifi 与以太网模块/PZ-ESP8266 WIFI模块芯片.md",
-    "💻softwares/⚡Circuit/51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/串口通信讲解.md",
-    "💻softwares/⚡Circuit/51单片机教程/8. 蓝牙, Wifi 与以太网模块",
-    "💻softwares/⚡Circuit/51单片机教程/7.TFLCD, 继电器和RS485/RS485通信简介.md",
-    "💻softwares/⚡Circuit/51单片机教程/3. IO扩展, LED点阵和电机/74HC165与并转串口.md",
-    "💻softwares/⚡Circuit/51单片机教程/3. IO扩展, LED点阵和电机/74HC595芯片与IO扩展简介.md",
-    "💻softwares/⚡Circuit/51单片机教程/7.TFLCD, 继电器和RS485/继电器简介与使用.md",
-    "📘ClassNotes/⌨️Programming/Algorithms/第二章 递归算法.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/第三章 栈和队列的链式存储.md",
-    "📘ClassNotes/⌨️Programming/Algorithms/第一章 绪论.md",
-    "📘ClassNotes/⌨️Programming/Algorithms/动态规划算法.md",
-    "📘ClassNotes/⌨️Programming/Programming Terminology.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md",
-    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
-    "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
-    "📘ClassNotes/⌨️Programming/Data Structure/课程笔记/重要概念与思维导图.md",
-    "📘ClassNotes/⌨️Programming/Algorithms",
-    "💻softwares/⚡Circuit/Altium Designer/基本流程",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/附加笔记/平面四节点单元.md",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }
