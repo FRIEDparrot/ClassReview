@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f3d7d3212eaa5628",
+        "id": "ed5ef1e37fd1442f",
         "type": "tabs",
         "children": [
           {
-            "id": "4677d896c6ec3552",
+            "id": "dc601e7b5337dfe6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List7.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f86fe71d4960e01c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List6.md",
+                "file": "📘ClassNotes/⌨️Programming/🛰️Algorithms/第三章 动态规划算法.md",
                 "mode": "source",
                 "source": false
               }
@@ -167,7 +155,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List7.md",
+                "file": "📘ClassNotes/⌨️Programming/🛰️Algorithms/第三章 动态规划算法.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -278,7 +266,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List7.md"
+                "file": "📘ClassNotes/⌨️Programming/🛰️Algorithms/第三章 动态规划算法.md"
               }
             }
           },
@@ -288,7 +276,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List7.md",
+                "file": "📘ClassNotes/⌨️Programming/🛰️Algorithms/第三章 动态规划算法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -305,7 +293,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/🗣️English/Word Notes/Word List7.md",
+                "file": "📘ClassNotes/⌨️Programming/🛰️Algorithms/第三章 动态规划算法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -326,8 +314,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 355.5,
-    "collapsed": true
+    "width": 355.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -350,7 +337,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4677d896c6ec3552",
+  "active": "dc601e7b5337dfe6",
   "lastOpenFiles": [
     "📘ClassNotes/🗣️English/Word Notes/Word List6.md",
     "📘ClassNotes/🗣️English/Word Notes/Word List7.md",
