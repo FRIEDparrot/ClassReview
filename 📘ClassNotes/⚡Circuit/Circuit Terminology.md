@@ -57,7 +57,24 @@ Small Outline Package 小外形封装(SOP)
 液晶显示器 Liquid Crystal Display (LCD) 
 继电器 relay 
 多路复用器 MUX 
-
+optoisolator 光隔离器, 光电耦合器 
+peripheral 外设， 外围设备 
+DMA: Direct Memory Access 直接内存访问(直接存储器读取) 
+resonator 共振器 
+Miscellaneous 混杂的 
+Phase-Lock Loop 锁相环(PLL)
+IPD : In pull down 下拉输入
+Out OD out Open Drain 开漏输出 
+Out PP out push pull 推挽输出
+OLED: Organic Light Emitting Diode 有机发光二极管
+Nested vectored interrupt controller 嵌套向量中断控制器 
+EXTI extern interrupt 外部中断
+USB : Universal Serial Bus 通用串行总线 
+ETH : Ethernet 以太网  
+对射式红外传感器: Infrared Sensor 
+抢占优先级:  Pre-emption Priority 
+响应优先级:  SubPriority 
+Deprecate 不赞成， 强烈反对
 
 # 模电
 掺杂 doping
@@ -65,7 +82,12 @@ Small Outline Package 小外形封装(SOP)
 空穴 positive hole 
 势垒电容 depletion capacitance 
 扩散电筒 diffusion capacitance 
-
-
+金属氧化物半导体场效应管 Metal Oxide Semiconductor Field Effect Transistor
+开启电压 threshold voltage
 # PCB 
 polygon pour 铺铜
+<b><mark style="background: transparent; color: blue">Harness</mark></b> 线束
+footprint 封装, 覆盖区 
+common anodic (CA)共阳极 
+common cathode (CC)共阴极 
+Amplifier Modulator 幅值调制器

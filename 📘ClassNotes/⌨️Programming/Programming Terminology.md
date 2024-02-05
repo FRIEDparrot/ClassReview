@@ -4,3 +4,4 @@ Backtracking (回溯法)：迷宫、皇后问题
 Dynamic programming (动态规划法)：优化问题
 Local searching (局部搜索法)：最优化问题
 Branch & limitation (分支限界法)：检索
+Longest Common Sequence 最长公共子序列 

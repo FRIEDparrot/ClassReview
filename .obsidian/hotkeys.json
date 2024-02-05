@@ -816,16 +816,6 @@
     }
   ],
   "file-explorer:new-file": [],
-  "obsidian-excalidraw-plugin:insert-LaTeX-symbol": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod",
-        "Shift"
-      ],
-      "key": "Enter"
-    }
-  ],
   "editor:open-link-in-new-window": [],
   "templater-obsidian:🗒️Templates/INSERT_LEFTARROW.md": [
     {
@@ -1534,6 +1524,26 @@
         "Shift"
       ],
       "key": "F12"
+    }
+  ],
+  "language-translator:language-translator-editor-command": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "Enter"
+    }
+  ],
+  "obsidian-excalidraw-plugin:insert-LaTeX-symbol": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "Enter"
     }
   ]
 }
