@@ -18,6 +18,26 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7c2e0c2834ee727f",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/第三章 动态规划算法 2024-02-09 13.19.23.md"
+              }
+            }
+          },
+          {
+            "id": "9d319e75348a9e7e",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/第三章 动态规划算法 2024-02-07 13.19.34.md"
+              }
+            }
           }
         ]
       }
@@ -349,8 +369,11 @@
   },
   "active": "4b4cc751321f9946",
   "lastOpenFiles": [
-    "Excalidraw/第三章 动态规划算法 2024-02-06 10.36.22.md",
+    "Excalidraw/第三章 动态规划算法 2024-02-07 13.19.34.md",
+    "Untitled.md",
     "📘ClassNotes/⌨️Programming/🛰️Algorithms/第三章 动态规划算法.md",
+    "Excalidraw/第三章 动态规划算法 2024-02-09 13.19.23.md",
+    "Excalidraw/第三章 动态规划算法 2024-02-06 10.36.22.md",
     "Excalidraw/第三章 动态规划算法 2024-02-06 09.06.56.md",
     "Excalidraw/第三章 动态规划算法 2024-02-05 19.30.29.md",
     "attachments/Pasted image 20240210222625.png",
@@ -374,13 +397,10 @@
     "Excalidraw/第三章 动态规划算法 2024-02-09 15.55.54.md",
     "📘ClassNotes/⌨️Programming/🛰️Algorithms/其他C++基础知识补充/C++格式控制.md",
     "Excalidraw/第三章 动态规划算法 2024-02-09 16.51.27.md",
-    "Excalidraw/第三章 动态规划算法 2024-02-09 13.19.23.md",
     "📘ClassNotes/⌨️Programming/🛰️Algorithms/其他C++基础知识补充",
     "📘ClassNotes/⌨️Programming/🌳Data Structure/实验大作业/平衡二叉树的失衡情况.pdf",
     "attachments/Pasted image 20240209103938.png",
-    "Excalidraw/第三章 动态规划算法 2024-02-08 16.07.44.md",
     "attachments/Pasted Image 20240208160849_923.png",
-    "📘ClassNotes/⌨️Programming/Programming Terminology.md",
     "📘ClassNotes/⌨️Programming/🍵Java",
     "attachments/Pasted image 20240208151146.png",
     "attachments/Pasted image 20240208150745.png",
