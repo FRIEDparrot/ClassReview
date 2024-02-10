@@ -1545,5 +1545,13 @@
       ],
       "key": "Enter"
     }
+  ],
+  "mermaid-tools:open-toolbar": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "F8"
+    }
   ]
 }

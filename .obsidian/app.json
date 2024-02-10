@@ -17,5 +17,6 @@
   "showFrontmatter": true,
   "showInlineTitle": true,
   "showLineNumber": false,
-  "rightToLeft": false
+  "rightToLeft": false,
+  "focusNewTab": true
 }

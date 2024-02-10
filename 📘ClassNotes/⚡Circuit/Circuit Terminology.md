@@ -51,7 +51,7 @@ peripheral 外围设备
 烧录程序 program flash 
 程序状态字标志寄存器 Program status Word (PSW) 
 Small Outline Package 小外形封装(SOP) 
-
+舵机 servo motor 
 红外线 infrared ray
 热敏电阻 thermistor 
 液晶显示器 Liquid Crystal Display (LCD) 
@@ -75,6 +75,11 @@ ETH : Ethernet 以太网
 抢占优先级:  Pre-emption Priority 
 响应优先级:  SubPriority 
 Deprecate 不赞成， 强烈反对
+
+输入捕获 IC, Input Capture 
+输出比较 Output Compare, OC 
+捕获/比较(用于输入捕获和输出比较的单元) Capture/Compare, CC 
+
 
 # 模电
 掺杂 doping
