@@ -88,7 +88,6 @@ A/D转换包括直接比较型和间接比较型。
 ## (1) XPT2046芯片引脚简介
 课本上给出的是ADC0804芯片的电路。 而XPT2046是51单片机的芯片。 
 XPT2046 是一款 4 线制电阻式触摸屏控制器，<mark style="background: transparent; color: red">内含 12 位分辨率 125KHz 转换速率逐步逼近型 A/D 转换器</mark>。常常使用于触摸屏中，用于触摸屏数据获取。 
-
 有如下两种封装方式 (小体积QFN16以及 TSSOP): 
 ![[attachments/Pasted image 20240108151556.png]]
 

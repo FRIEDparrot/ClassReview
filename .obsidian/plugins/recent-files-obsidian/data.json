@@ -1,8 +1,88 @@
 {
   "recentFiles": [
     {
+      "basename": "4. 层次原理图的设计",
+      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/4. 层次原理图的设计.md"
+    },
+    {
+      "basename": "2. 原理图创建与PCB库的建立方法",
+      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md"
+    },
+    {
+      "basename": "1. Altium Designer 项目创建",
+      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/1. Altium Designer 项目创建.md"
+    },
+    {
+      "basename": "Altium Designer常用快捷键",
+      "path": "💻softwares/⚡Circuit/🔌Altium Designer/Altium Designer常用快捷键.md"
+    },
+    {
+      "basename": "四、ADC模数转换简介",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/四、ADC模数转换简介.md"
+    },
+    {
+      "basename": "三、STM32定时器编码器接口",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/三、STM32定时器编码器接口.md"
+    },
+    {
+      "basename": "四、ADC模数转换简介 2024-02-12 17.09.14",
+      "path": "Excalidraw/四、ADC模数转换简介 2024-02-12 17.09.14.md"
+    },
+    {
+      "basename": "二、STM32定时器中断的使用(1)",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/二、STM32定时器中断的使用(1).md"
+    },
+    {
+      "basename": "ADC模数转换与信号处理",
+      "path": "💻softwares/⚡Circuit/💻51单片机教程/5. 红外遥控,DS1302时钟, AD转换/ADC模数转换与信号处理.md"
+    },
+    {
+      "basename": "Pasted image 20240212164226",
+      "path": "attachments/Pasted image 20240212164226.png"
+    },
+    {
+      "basename": "1. 基础以及STM32简介",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/1. 基础以及STM32简介.md"
+    },
+    {
+      "basename": "第十章 模拟-数字信号转换器",
+      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第十章 模拟-数字信号转换器.md"
+    },
+    {
+      "basename": "四、ADC模数转换简介 2024-02-12 16.05.57",
+      "path": "Excalidraw/四、ADC模数转换简介 2024-02-12 16.05.57.md"
+    },
+    {
+      "basename": "一、EXTI外部中断与红外计次",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md"
+    },
+    {
+      "basename": "Circuit Terminology",
+      "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
+    },
+    {
+      "basename": "Chemical Terminology",
+      "path": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md"
+    },
+    {
+      "basename": "Mathmatic Terminology",
+      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
+    },
+    {
+      "basename": "Programming Terminology",
+      "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
+    },
+    {
+      "basename": "第三章 动态规划算法 2024-02-09 19.27.46",
+      "path": "Excalidraw/第三章 动态规划算法 2024-02-09 19.27.46.md"
+    },
+    {
       "basename": "第三章 动态规划算法",
       "path": "📘ClassNotes/⌨️Programming/🛰️Algorithms/第三章 动态规划算法.md"
+    },
+    {
+      "basename": "第三章 动态规划算法 2024-02-09 15.55.54",
+      "path": "Excalidraw/第三章 动态规划算法 2024-02-09 15.55.54.md"
     },
     {
       "basename": "第三章 动态规划算法 2024-02-07 13.19.34",
@@ -77,22 +157,6 @@
       "path": "Excalidraw/二、STM32定时器中断的使用 2024-02-09 23.43.01.md"
     },
     {
-      "basename": "二、STM32定时器中断的使用(1)",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断与定时器/二、STM32定时器中断的使用(1).md"
-    },
-    {
-      "basename": "一、EXTI外部中断与红外计次",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断与定时器/一、EXTI外部中断与红外计次.md"
-    },
-    {
-      "basename": "第三章 动态规划算法 2024-02-09 19.27.46",
-      "path": "Excalidraw/第三章 动态规划算法 2024-02-09 19.27.46.md"
-    },
-    {
-      "basename": "第三章 动态规划算法 2024-02-09 15.55.54",
-      "path": "Excalidraw/第三章 动态规划算法 2024-02-09 15.55.54.md"
-    },
-    {
       "basename": "C++格式控制",
       "path": "📘ClassNotes/⌨️Programming/🛰️Algorithms/其他C++基础知识补充/C++格式控制.md"
     },
@@ -107,18 +171,6 @@
     {
       "basename": "第三章 动态规划算法 2024-02-08 16.07.44",
       "path": "Excalidraw/第三章 动态规划算法 2024-02-08 16.07.44.md"
-    },
-    {
-      "basename": "Programming Terminology",
-      "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
-    },
-    {
-      "basename": "Mathmatic Terminology",
-      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
-    },
-    {
-      "basename": "Chemical Terminology",
-      "path": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md"
     },
     {
       "basename": "Android Studio 基本配置方法",
@@ -147,54 +199,6 @@
     {
       "basename": "read-csapp",
       "path": "📘ClassNotes/⌨️Programming/🍵Java/Java-Reference-master/book-view/read-csapp.md"
-    },
-    {
-      "basename": "assembly02-register",
-      "path": "📘ClassNotes/⌨️Programming/🍵Java/Java-Reference-master/assembly/assembly02-register.md"
-    },
-    {
-      "basename": "assembly01-basic",
-      "path": "📘ClassNotes/⌨️Programming/🍵Java/Java-Reference-master/assembly/assembly01-basic.md"
-    },
-    {
-      "basename": "americdan-life",
-      "path": "📘ClassNotes/⌨️Programming/🍵Java/Java-Reference-master/aboutlife/americdan-life.md"
-    },
-    {
-      "basename": "aboutbilibili",
-      "path": "📘ClassNotes/⌨️Programming/🍵Java/Java-Reference-master/aboutlife/aboutbilibili.md"
-    },
-    {
-      "basename": "二、STM32定时器中断的使用 2024-02-08 00.00.36",
-      "path": "Excalidraw/二、STM32定时器中断的使用 2024-02-08 00.00.36.md"
-    },
-    {
-      "basename": "SG90舵机与直流电机的使用方法",
-      "path": "💻softwares/⚡Circuit/💻51单片机教程/8. 蓝牙, Wifi 与以太网模块/SG90舵机与直流电机的使用方法.md"
-    },
-    {
-      "basename": "第二章 递归与分治算法",
-      "path": "📘ClassNotes/⌨️Programming/🛰️Algorithms/第二章 递归与分治算法.md"
-    },
-    {
-      "basename": "第三章 动态规划算法 2024-02-07 15.13.55",
-      "path": "Excalidraw/第三章 动态规划算法 2024-02-07 15.13.55.md"
-    },
-    {
-      "basename": "第二章 递归与分治算法 2024-01-27 21.24.13",
-      "path": "Excalidraw/第二章 递归与分治算法 2024-01-27 21.24.13.md"
-    },
-    {
-      "basename": "第二章 递归与分治算法 2024-01-27 17.57.39",
-      "path": "Excalidraw/第二章 递归与分治算法 2024-01-27 17.57.39.md"
-    },
-    {
-      "basename": "第二章 递归与分治算法 2024-01-27 15.13.40",
-      "path": "Excalidraw/第二章 递归与分治算法 2024-01-27 15.13.40.md"
-    },
-    {
-      "basename": "Word List7",
-      "path": "📘ClassNotes/🗣️English/Word Notes/Word List7.md"
     }
   ],
   "omittedPaths": [],
