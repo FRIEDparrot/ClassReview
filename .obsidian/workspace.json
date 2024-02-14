@@ -4,40 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "4fb31d65b6d861b6",
+        "id": "20aa1d7d5d17308b",
         "type": "tabs",
         "children": [
           {
-            "id": "87f3cec0c88d6805",
+            "id": "6c4aba226f5318ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/4. 层次原理图的设计.md",
+                "file": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/USART串口通信讲解.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "141f3d343e70cbaf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "💻softwares/⚡Circuit/💻51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/串口通信讲解.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
-      },
-      {
-        "id": "f690f52cd066619b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d8a8bfac6bb9ea8a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -119,7 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 333.5124969482422,
+    "width": 386.5124969482422,
     "collapsed": true
   },
   "right": {
@@ -173,7 +168,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/4. 层次原理图的设计.md",
+                "file": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/USART串口通信讲解.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -292,7 +287,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/4. 层次原理图的设计.md"
+                "file": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/USART串口通信讲解.md"
               }
             }
           },
@@ -302,7 +297,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/4. 层次原理图的设计.md",
+                "file": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/USART串口通信讲解.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -319,7 +314,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/4. 层次原理图的设计.md",
+                "file": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/USART串口通信讲解.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -340,7 +335,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5,
+    "width": 477.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -365,44 +360,45 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "87f3cec0c88d6805",
+  "active": "6c4aba226f5318ee",
   "lastOpenFiles": [
-    "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md",
-    "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/1. Altium Designer 项目创建.md",
-    "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/4. 层次原理图的设计.md",
-    "💻softwares/⚡Circuit/🔌Altium Designer/Altium Designer常用快捷键.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/四、ADC模数转换简介.md",
-    "attachments/Pasted image 20240212193642.png",
-    "attachments/Pasted image 20240212192441.png",
-    "attachments/Pasted image 20240212192310.png",
-    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/三、STM32定时器编码器接口.md",
-    "attachments/Pasted image 20240212185223.png",
-    "attachments/Pasted image 20240212184317.png",
+    "💻softwares/⚡Circuit/💻51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/串口通信讲解.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/USART串口通信讲解.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/四、ADC与DMA存储器转运.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议",
+    "💻softwares/🖥️Programming & System/Android Studio/2. 安卓项目基本结构简介.md",
+    "attachments/Pasted image 20240213225731.png",
+    "attachments/Pasted image 20240213224026.png",
+    "attachments/Pasted image 20240213222915.png",
+    "attachments/Pasted image 20240213212340.png",
+    "attachments/Pasted image 20240213211837.png",
+    "attachments/Pasted image 20240213211522.png",
+    "attachments/Pasted image 20240213200737.png",
+    "attachments/Pasted image 20240213194803.png",
+    "attachments/Pasted image 20240213194800.png",
+    "attachments/Pasted image 20240213181738.png",
+    "💻softwares/🖥️Programming & System/Android Studio/1. Android Studio 基本配置方法.md",
+    "Excalidraw/四、ADC与DMA存储器转运 2024-02-13 16.24.06.md",
+    "Excalidraw/四、ADC与DMA存储器转运 2024-02-13 16.12.03.md",
+    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
+    "Excalidraw/四、ADC与DMA存储器转运 2024-02-13 14.18.49.md",
     "Excalidraw/四、ADC模数转换简介 2024-02-12 17.09.14.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md",
     "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/二、STM32定时器中断的使用(1).md",
+    "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/4. 层次原理图的设计.md",
+    "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md",
+    "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/3. 获取库和资源获取.md",
+    "💻softwares/⚡Circuit/🔌Altium Designer/Altium Designer常用快捷键.md",
+    "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/1. Altium Designer 项目创建.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/三、STM32定时器编码器接口.md",
     "💻softwares/⚡Circuit/💻51单片机教程/5. 红外遥控,DS1302时钟, AD转换/ADC模数转换与信号处理.md",
-    "attachments/Pasted image 20240212164226.png",
-    "attachments/Pasted image 20240212164955.png",
     "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/1. 基础以及STM32简介.md",
     "📘ClassNotes/⚡Circuit/电工电子技术/第十章 模拟-数字信号转换器.md",
     "Excalidraw/四、ADC模数转换简介 2024-02-12 16.05.57.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md",
-    "attachments/Pasted image 20240211165144.png",
-    "attachments/Pasted image 20240211163917.png",
-    "attachments/Pasted image 20240211162307.png",
-    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
     "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
     "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
     "📘ClassNotes/⌨️Programming/Programming Terminology.md",
     "Excalidraw/第三章 动态规划算法 2024-02-09 19.27.46.md",
-    "📘ClassNotes/⌨️Programming/🛰️Algorithms/第三章 动态规划算法.md",
-    "Excalidraw/第三章 动态规划算法 2024-02-09 15.55.54.md",
-    "Excalidraw/第三章 动态规划算法 2024-02-07 13.19.34.md",
-    "Excalidraw/第三章 动态规划算法 2024-02-09 13.19.23.md",
-    "Untitled.md",
-    "Excalidraw/第三章 动态规划算法 2024-02-06 10.36.22.md",
-    "Excalidraw/第三章 动态规划算法 2024-02-06 09.06.56.md",
-    "Excalidraw/第三章 动态规划算法 2024-02-05 19.30.29.md",
     "📘ClassNotes/⌨️Programming/🛰️Algorithms/其他C++基础知识补充",
     "📘ClassNotes/⌨️Programming/🌳Data Structure/实验大作业/平衡二叉树的失衡情况.pdf",
     "📘ClassNotes/⌨️Programming/🍵Java",
@@ -412,7 +408,6 @@
     "💻softwares/🖥️Programming & System/Android Studio/Java-Reference-master/qcode",
     "📘ClassNotes/⌨️Programming/🍵Java/Java-Reference-master/programmer",
     "📘ClassNotes/⌨️Programming/🍵Java/Java-Reference-master/picture",
-    "📘ClassNotes/⌨️Programming/🍵Java/Java-Reference-master/operating-system",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

@@ -1,6 +1,54 @@
 {
   "recentFiles": [
     {
+      "basename": "USART串口通信讲解",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/USART串口通信讲解.md"
+    },
+    {
+      "basename": "串口通信讲解",
+      "path": "💻softwares/⚡Circuit/💻51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/串口通信讲解.md"
+    },
+    {
+      "basename": "四、ADC与DMA存储器转运",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/四、ADC与DMA存储器转运.md"
+    },
+    {
+      "basename": "2. 安卓项目基本结构简介",
+      "path": "💻softwares/🖥️Programming & System/Android Studio/2. 安卓项目基本结构简介.md"
+    },
+    {
+      "basename": "1. Android Studio 基本配置方法",
+      "path": "💻softwares/🖥️Programming & System/Android Studio/1. Android Studio 基本配置方法.md"
+    },
+    {
+      "basename": "四、ADC与DMA存储器转运 2024-02-13 16.24.06",
+      "path": "Excalidraw/四、ADC与DMA存储器转运 2024-02-13 16.24.06.md"
+    },
+    {
+      "basename": "四、ADC与DMA存储器转运 2024-02-13 16.12.03",
+      "path": "Excalidraw/四、ADC与DMA存储器转运 2024-02-13 16.12.03.md"
+    },
+    {
+      "basename": "Circuit Terminology",
+      "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
+    },
+    {
+      "basename": "四、ADC与DMA存储器转运 2024-02-13 14.18.49",
+      "path": "Excalidraw/四、ADC与DMA存储器转运 2024-02-13 14.18.49.md"
+    },
+    {
+      "basename": "四、ADC模数转换简介 2024-02-12 17.09.14",
+      "path": "Excalidraw/四、ADC模数转换简介 2024-02-12 17.09.14.md"
+    },
+    {
+      "basename": "一、EXTI外部中断与红外计次",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md"
+    },
+    {
+      "basename": "二、STM32定时器中断的使用(1)",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/二、STM32定时器中断的使用(1).md"
+    },
+    {
       "basename": "4. 层次原理图的设计",
       "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/4. 层次原理图的设计.md"
     },
@@ -9,28 +57,20 @@
       "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md"
     },
     {
-      "basename": "1. Altium Designer 项目创建",
-      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/1. Altium Designer 项目创建.md"
+      "basename": "3. 获取库和资源获取",
+      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/3. 获取库和资源获取.md"
     },
     {
       "basename": "Altium Designer常用快捷键",
       "path": "💻softwares/⚡Circuit/🔌Altium Designer/Altium Designer常用快捷键.md"
     },
     {
-      "basename": "四、ADC模数转换简介",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/四、ADC模数转换简介.md"
+      "basename": "1. Altium Designer 项目创建",
+      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/1. Altium Designer 项目创建.md"
     },
     {
       "basename": "三、STM32定时器编码器接口",
       "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/三、STM32定时器编码器接口.md"
-    },
-    {
-      "basename": "四、ADC模数转换简介 2024-02-12 17.09.14",
-      "path": "Excalidraw/四、ADC模数转换简介 2024-02-12 17.09.14.md"
-    },
-    {
-      "basename": "二、STM32定时器中断的使用(1)",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/二、STM32定时器中断的使用(1).md"
     },
     {
       "basename": "ADC模数转换与信号处理",
@@ -51,14 +91,6 @@
     {
       "basename": "四、ADC模数转换简介 2024-02-12 16.05.57",
       "path": "Excalidraw/四、ADC模数转换简介 2024-02-12 16.05.57.md"
-    },
-    {
-      "basename": "一、EXTI外部中断与红外计次",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md"
-    },
-    {
-      "basename": "Circuit Terminology",
-      "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
     },
     {
       "basename": "Chemical Terminology",
@@ -167,38 +199,6 @@
     {
       "basename": "平衡二叉树的失衡情况",
       "path": "📘ClassNotes/⌨️Programming/🌳Data Structure/实验大作业/平衡二叉树的失衡情况.pdf"
-    },
-    {
-      "basename": "第三章 动态规划算法 2024-02-08 16.07.44",
-      "path": "Excalidraw/第三章 动态规划算法 2024-02-08 16.07.44.md"
-    },
-    {
-      "basename": "Android Studio 基本配置方法",
-      "path": "💻softwares/🖥️Programming & System/Android Studio/Android Studio 基本配置方法.md"
-    },
-    {
-      "basename": "备忘录",
-      "path": "🐸 Daily Life memo/备忘录.md"
-    },
-    {
-      "basename": "java-clone",
-      "path": "📘ClassNotes/⌨️Programming/🍵Java/Java-Reference-master/java-basic/java-clone.md"
-    },
-    {
-      "basename": "java-@suppresswarnings",
-      "path": "📘ClassNotes/⌨️Programming/🍵Java/Java-Reference-master/java-basic/java-@suppresswarnings.md"
-    },
-    {
-      "basename": "computer-compilation",
-      "path": "📘ClassNotes/⌨️Programming/🍵Java/Java-Reference-master/computer-basic/computer-compilation.md"
-    },
-    {
-      "basename": "computer-binary",
-      "path": "📘ClassNotes/⌨️Programming/🍵Java/Java-Reference-master/computer-basic/computer-binary.md"
-    },
-    {
-      "basename": "read-csapp",
-      "path": "📘ClassNotes/⌨️Programming/🍵Java/Java-Reference-master/book-view/read-csapp.md"
     }
   ],
   "omittedPaths": [],

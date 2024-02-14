@@ -80,7 +80,9 @@ Deprecate 不赞成， 强烈反对
 输出比较 Output Compare, OC 
 捕获/比较(用于输入捕获和输出比较的单元) Capture/Compare, CC 
 Encoder Interface 编码器接口 
-
+dedicated 献身的, 专一的
+aliased 别名，化名
+Arbiter 仲裁器
 # 模电
 掺杂 doping
 电子 electron 
