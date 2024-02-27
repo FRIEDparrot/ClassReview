@@ -54,6 +54,7 @@ void OLED_I2C_Stop(void)
   */
 void OLED_I2C_SendByte(uint8_t Byte)
 {
+	OLED_W_SCL(0);  // 首先在传输数据过程中先要拉低总线
 	uint8_t i;
 	for (i = 0; i < 8; i++)
 	{

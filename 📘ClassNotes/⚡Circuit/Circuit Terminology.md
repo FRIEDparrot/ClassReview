@@ -83,6 +83,19 @@ Encoder Interface 编码器接口
 dedicated 献身的, 专一的
 aliased 别名，化名
 Arbiter 仲裁器
+USART (Universal Synchronous/Asynchronous Receive/Transmitter) 通用同步异步收发器
+gyroscope 陀螺仪 (Gyro)
+accelerometer 加速度计(Acc)
+specification 说明书
+pitch (俯仰角) roll (滚转角) yaw (偏航角)
+Calibration 校准
+Package error checking 帧错误校验
+Instructions 指令(说明书)
+high Impedance 高阻状态
+inadvertent 无意的, 
+volatile 不稳定的 , 易变的
+Controller Area Network (CAN) 
+
 # 模电
 掺杂 doping
 电子 electron 

@@ -7,6 +7,8 @@
 ```cpp
 USE_STDPERIPH_DRIVER
 ```
+注意也可以使用下面这个方法添加:(可以一并把后面的STM32D10X_MD也加上)
+![[attachments/Pasted image 20240223120106.png]]
 如图， 添加C/C++ 的Misc Controls `--cpp11` (这个要加上不然OLED导入会报错) 
 ![[attachments/Pasted image 20240203005523.png|500]]
 

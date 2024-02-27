@@ -1,96 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "USART串口通信讲解",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/USART串口通信讲解.md"
-    },
-    {
-      "basename": "串口通信讲解",
-      "path": "💻softwares/⚡Circuit/💻51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/串口通信讲解.md"
-    },
-    {
-      "basename": "四、ADC与DMA存储器转运",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/四、ADC与DMA存储器转运.md"
-    },
-    {
-      "basename": "2. 安卓项目基本结构简介",
-      "path": "💻softwares/🖥️Programming & System/Android Studio/2. 安卓项目基本结构简介.md"
-    },
-    {
-      "basename": "1. Android Studio 基本配置方法",
-      "path": "💻softwares/🖥️Programming & System/Android Studio/1. Android Studio 基本配置方法.md"
-    },
-    {
-      "basename": "四、ADC与DMA存储器转运 2024-02-13 16.24.06",
-      "path": "Excalidraw/四、ADC与DMA存储器转运 2024-02-13 16.24.06.md"
-    },
-    {
-      "basename": "四、ADC与DMA存储器转运 2024-02-13 16.12.03",
-      "path": "Excalidraw/四、ADC与DMA存储器转运 2024-02-13 16.12.03.md"
+      "basename": "5. CAN 通信讲解",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/5. CAN 通信讲解.md"
     },
     {
       "basename": "Circuit Terminology",
       "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
-    },
-    {
-      "basename": "四、ADC与DMA存储器转运 2024-02-13 14.18.49",
-      "path": "Excalidraw/四、ADC与DMA存储器转运 2024-02-13 14.18.49.md"
-    },
-    {
-      "basename": "四、ADC模数转换简介 2024-02-12 17.09.14",
-      "path": "Excalidraw/四、ADC模数转换简介 2024-02-12 17.09.14.md"
-    },
-    {
-      "basename": "一、EXTI外部中断与红外计次",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md"
-    },
-    {
-      "basename": "二、STM32定时器中断的使用(1)",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/二、STM32定时器中断的使用(1).md"
-    },
-    {
-      "basename": "4. 层次原理图的设计",
-      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/4. 层次原理图的设计.md"
-    },
-    {
-      "basename": "2. 原理图创建与PCB库的建立方法",
-      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md"
-    },
-    {
-      "basename": "3. 获取库和资源获取",
-      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/3. 获取库和资源获取.md"
-    },
-    {
-      "basename": "Altium Designer常用快捷键",
-      "path": "💻softwares/⚡Circuit/🔌Altium Designer/Altium Designer常用快捷键.md"
-    },
-    {
-      "basename": "1. Altium Designer 项目创建",
-      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/1. Altium Designer 项目创建.md"
-    },
-    {
-      "basename": "三、STM32定时器编码器接口",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/三、STM32定时器编码器接口.md"
-    },
-    {
-      "basename": "ADC模数转换与信号处理",
-      "path": "💻softwares/⚡Circuit/💻51单片机教程/5. 红外遥控,DS1302时钟, AD转换/ADC模数转换与信号处理.md"
-    },
-    {
-      "basename": "Pasted image 20240212164226",
-      "path": "attachments/Pasted image 20240212164226.png"
-    },
-    {
-      "basename": "1. 基础以及STM32简介",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/1. 基础以及STM32简介.md"
-    },
-    {
-      "basename": "第十章 模拟-数字信号转换器",
-      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第十章 模拟-数字信号转换器.md"
-    },
-    {
-      "basename": "四、ADC模数转换简介 2024-02-12 16.05.57",
-      "path": "Excalidraw/四、ADC模数转换简介 2024-02-12 16.05.57.md"
     },
     {
       "basename": "Chemical Terminology",
@@ -101,104 +17,188 @@
       "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
     },
     {
+      "basename": "第二章 可靠性灵敏度分析的矩方法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第二章 可靠性灵敏度分析的矩方法.md"
+    },
+    {
+      "basename": "第四章 随机变量的数字特征",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md"
+    },
+    {
+      "basename": "第六章 样本及抽样分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md"
+    },
+    {
       "basename": "Programming Terminology",
       "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
     },
     {
-      "basename": "第三章 动态规划算法 2024-02-09 19.27.46",
-      "path": "Excalidraw/第三章 动态规划算法 2024-02-09 19.27.46.md"
+      "basename": "Matlab常用概率函数示例",
+      "path": "💻softwares/➕Mathmatics/MATLAB/Basic Usage/Matlab常用概率函数示例.md"
     },
     {
-      "basename": "第三章 动态规划算法",
-      "path": "📘ClassNotes/⌨️Programming/🛰️Algorithms/第三章 动态规划算法.md"
+      "basename": "Python 常用直接运算",
+      "path": "🐸 Daily Life memo/Python 常用直接运算.md"
     },
     {
-      "basename": "第三章 动态规划算法 2024-02-09 15.55.54",
-      "path": "Excalidraw/第三章 动态规划算法 2024-02-09 15.55.54.md"
+      "basename": "Chapter1 Mathematic Modeling, Numerical Methods and Problem Solving",
+      "path": "💻softwares/➕Mathmatics/MATLAB/Applied Numerical Methods/Chapter1 Mathematic Modeling, Numerical Methods and Problem Solving.md"
     },
     {
-      "basename": "第三章 动态规划算法 2024-02-07 13.19.34",
-      "path": "Excalidraw/第三章 动态规划算法 2024-02-07 13.19.34.md"
+      "basename": "一些额外知识",
+      "path": "🐸 Daily Life memo/一些额外知识.md"
     },
     {
-      "basename": "第三章 动态规划算法 2024-02-09 13.19.23",
-      "path": "Excalidraw/第三章 动态规划算法 2024-02-09 13.19.23.md"
+      "basename": "第二章 可靠性灵敏度分析的矩方法 2024-02-26 12.21.24",
+      "path": "Excalidraw/第二章 可靠性灵敏度分析的矩方法 2024-02-26 12.21.24.md"
     },
     {
-      "basename": "第三章 动态规划算法 2024-02-06 10.36.22",
-      "path": "Excalidraw/第三章 动态规划算法 2024-02-06 10.36.22.md"
+      "basename": "第二章 随机变量及其分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md"
     },
     {
-      "basename": "第三章 动态规划算法 2024-02-06 09.06.56",
-      "path": "Excalidraw/第三章 动态规划算法 2024-02-06 09.06.56.md"
+      "basename": "第三章 多维随机变量及其分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
     },
     {
-      "basename": "第三章 动态规划算法 2024-02-05 19.30.29",
-      "path": "Excalidraw/第三章 动态规划算法 2024-02-05 19.30.29.md"
+      "basename": "1. USART串口通信讲解",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/1. USART串口通信讲解.md"
     },
     {
-      "basename": "第三章 动态规划算法 2024-02-05 16.24.37",
-      "path": "Excalidraw/第三章 动态规划算法 2024-02-05 16.24.37.md"
+      "basename": "4. SPI 通信协议与W25Q64 Flash芯片",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/4. SPI 通信协议与W25Q64 Flash芯片.md"
     },
     {
-      "basename": "第三章 动态规划算法 2024-02-01 14.09.40",
-      "path": "Excalidraw/第三章 动态规划算法 2024-02-01 14.09.40.md"
+      "basename": "4. OLED 调试工具与常用调试方式",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/4. OLED 调试工具与常用调试方式.md"
     },
     {
-      "basename": "第三章 动态规划算法 2024-02-01 12.02.04",
-      "path": "Excalidraw/第三章 动态规划算法 2024-02-01 12.02.04.md"
-    },
-    {
-      "basename": "第三章 动态规划算法 2024-02-01 10.06.00",
-      "path": "Excalidraw/第三章 动态规划算法 2024-02-01 10.06.00.md"
-    },
-    {
-      "basename": "第三章 动态规划算法 2024-01-30 15.53.13",
-      "path": "Excalidraw/第三章 动态规划算法 2024-01-30 15.53.13.md"
+      "basename": "一、EXTI外部中断与红外计次",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md"
     },
     {
       "basename": "Drawing 2023-12-20 09.29.23",
       "path": "🗑️trash/Drawing 2023-12-20 09.29.23.md"
     },
     {
-      "basename": "第四章 贪心算法",
-      "path": "📘ClassNotes/⌨️Programming/🛰️Algorithms/第四章 贪心算法.md"
+      "basename": "2. I2C通信协议",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/2. I2C通信协议.md"
     },
     {
-      "basename": "第七章 图",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure/课程笔记/第七章 图.md"
+      "basename": "oftenly-used commands",
+      "path": "💻softwares/Git/oftenly-used commands.md"
     },
     {
-      "basename": "第六章 树和二叉树",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure/课程笔记/第六章 树和二叉树.md"
+      "basename": "三、STM32定时器编码器接口",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/三、STM32定时器编码器接口.md"
     },
     {
-      "basename": "第九章 内部排序",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure/课程笔记/第九章 内部排序.md"
+      "basename": "四元数入门,详解与使用",
+      "path": "🐸 Daily Life memo/CSDN及公众号教程存档/四元数入门,详解与使用.md"
     },
     {
-      "basename": "第八章 查找算法",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure/课程笔记/第八章 查找算法.md"
+      "basename": "四元数入门,详解与使用 2024-02-23 09.49.03",
+      "path": "Excalidraw/四元数入门,详解与使用 2024-02-23 09.49.03.md"
     },
     {
-      "basename": "第四章 贪心算法 2024-02-10 09.53.09",
-      "path": "Excalidraw/第四章 贪心算法 2024-02-10 09.53.09.md"
+      "basename": "第二章 刚体的空间运动学",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md"
     },
     {
-      "basename": "二、STM32定时器中断的使用 2024-02-09 23.43.01",
-      "path": "Excalidraw/二、STM32定时器中断的使用 2024-02-09 23.43.01.md"
+      "basename": "第三章 刚体的空间运动动力学",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第三章 刚体的空间运动动力学.md"
     },
     {
-      "basename": "C++格式控制",
-      "path": "📘ClassNotes/⌨️Programming/🛰️Algorithms/其他C++基础知识补充/C++格式控制.md"
+      "basename": "四元数入门,详解与使用 2024-02-23 10.01.16",
+      "path": "Excalidraw/四元数入门,详解与使用 2024-02-23 10.01.16.md"
     },
     {
-      "basename": "第三章 动态规划算法 2024-02-09 16.51.27",
-      "path": "Excalidraw/第三章 动态规划算法 2024-02-09 16.51.27.md"
+      "basename": "第一章 复数的基本运算,复变函数",
+      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第一章 复数的基本运算,复变函数.md"
     },
     {
-      "basename": "平衡二叉树的失衡情况",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure/实验大作业/平衡二叉树的失衡情况.pdf"
+      "basename": "Python 调用函数拟合疲劳曲线参数",
+      "path": "🐸 Daily Life memo/CSDN及公众号教程存档/Python 调用函数拟合疲劳曲线参数.md"
+    },
+    {
+      "basename": "常系数线性单波方程的精确解推导",
+      "path": "🐸 Daily Life memo/CSDN及公众号教程存档/常系数线性单波方程的精确解推导.md"
+    },
+    {
+      "basename": "欧拉定理证明",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/补充/欧拉定理证明.pdf"
+    },
+    {
+      "basename": "第一章 分析动力学基础",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第一章 分析动力学基础.md"
+    },
+    {
+      "basename": "4. SPI 通信协议与W25Q64 Flash芯片 2024-02-20 09.29.46",
+      "path": "Excalidraw/4. SPI 通信协议与W25Q64 Flash芯片 2024-02-20 09.29.46.md"
+    },
+    {
+      "basename": "4. SPI 通信协议与W25Q64 Flash芯片 2024-02-19 21.35.02",
+      "path": "Excalidraw/4. SPI 通信协议与W25Q64 Flash芯片 2024-02-19 21.35.02.md"
+    },
+    {
+      "basename": "4. SPI 通信协议与W25Q64 Flash芯片 2024-02-19 21.01.02",
+      "path": "Excalidraw/4. SPI 通信协议与W25Q64 Flash芯片 2024-02-19 21.01.02.md"
+    },
+    {
+      "basename": "4. SPI 通信协议与W25Q64 Flash芯片 2024-02-19 17.14.03",
+      "path": "Excalidraw/4. SPI 通信协议与W25Q64 Flash芯片 2024-02-19 17.14.03.md"
+    },
+    {
+      "basename": "DS1302高精度时钟与SPI通信",
+      "path": "💻softwares/⚡Circuit/💻51单片机教程/5. 红外遥控,DS1302时钟, AD转换/DS1302高精度时钟与SPI通信.md"
+    },
+    {
+      "basename": "PCB的基本结构",
+      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/PCB的基本结构.md"
+    },
+    {
+      "basename": "2. 原理图创建与PCB库的建立方法",
+      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md"
+    },
+    {
+      "basename": "5. 打印报表和说明",
+      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/5. 打印报表和说明.md"
+    },
+    {
+      "basename": "4. 层次原理图的设计",
+      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/4. 层次原理图的设计.md"
+    },
+    {
+      "basename": "2. I2C通信协议 2024-02-17 20.12.51",
+      "path": "Excalidraw/2. I2C通信协议 2024-02-17 20.12.51.md"
+    },
+    {
+      "basename": "2. I2C通信协议 2024-02-17 15.18.08",
+      "path": "Excalidraw/2. I2C通信协议 2024-02-17 15.18.08.md"
+    },
+    {
+      "basename": "ILI9341 LCD 320x240彩屏仿真",
+      "path": "💻softwares/⚡Circuit/💻51单片机教程/7.TFLCD, 继电器和RS485/ILI9341 LCD 320x240彩屏仿真.md"
+    },
+    {
+      "basename": "I2C-E2PROM通信与掉电数据保存",
+      "path": "💻softwares/⚡Circuit/💻51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/I2C-E2PROM通信与掉电数据保存.md"
+    },
+    {
+      "basename": "1. 基础以及STM32简介",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/1. 基础以及STM32简介.md"
+    },
+    {
+      "basename": "3. FlyFlash和ST_Link Utility使用",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/3. FlyFlash和ST_Link Utility使用.md"
+    },
+    {
+      "basename": "2. LED和蜂鸣器操作实验",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/2. LED和蜂鸣器操作实验.md"
+    },
+    {
+      "basename": "ASCII码表",
+      "path": "🐸 Daily Life memo/ASCII码表.png"
     }
   ],
   "omittedPaths": [],

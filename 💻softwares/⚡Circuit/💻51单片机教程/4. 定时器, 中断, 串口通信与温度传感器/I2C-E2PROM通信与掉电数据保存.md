@@ -48,7 +48,7 @@ I2C接口有三种传输模式, 包括 :
 当要变换数据进行发送时，SCL变为低电平， 才能进行数据的传输。 
 ![[attachments/Pasted image 20231231163330.png|500]]
 
-#### 1. 起始信号和中职信号
+#### 1. 起始信号和终止信号
 1. 首先, <mark style="background: transparent; color: red">维持时钟线SCL为高电平时, 数据线 SDA 由高电平变为低电平, 则为起始信号</mark> 
 2. <mark style="background: transparent; color: red">维持SCL为高电平时, SDA由低电平变为高电平, 则为终止信号</mark>。  
 ![[attachments/Pasted image 20231231165013.png|500]]
