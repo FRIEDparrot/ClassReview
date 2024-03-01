@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "c2c83775e91c2d0e",
+        "id": "e8d64f01c6078478",
         "type": "tabs",
         "children": [
           {
-            "id": "3bdfebc0e49e78e7",
+            "id": "aa725fa72ec8e39f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第二章 可靠性灵敏度分析的矩方法.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "309efa6592945f70",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "💻softwares/➕Mathmatics/MATLAB/Basic Usage/Matlab常用概率函数示例.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "23fb714ed3fc33f0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/5. CAN 通信讲解.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/基于Kriging代理模型的可靠性与局部灵敏度分析.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -126,7 +101,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 500.5124969482422
+    "width": 531.5124969482422
   },
   "right": {
     "id": "f7de553c162de521",
@@ -179,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/5. CAN 通信讲解.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/基于Kriging代理模型的可靠性与局部灵敏度分析.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -298,7 +273,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/5. CAN 通信讲解.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/基于Kriging代理模型的可靠性与局部灵敏度分析.md"
               }
             }
           },
@@ -308,7 +283,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/5. CAN 通信讲解.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/基于Kriging代理模型的可靠性与局部灵敏度分析.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -325,7 +300,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/5. CAN 通信讲解.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/基于Kriging代理模型的可靠性与局部灵敏度分析.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -346,7 +321,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 485.5
+    "width": 349.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -370,35 +345,46 @@
       "random-note:Open random note": false
     }
   },
-  "active": "23fb714ed3fc33f0",
+  "active": "aa725fa72ec8e39f",
   "lastOpenFiles": [
+    "🐸 Daily Life memo/备忘录.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/基于Kriging代理模型的可靠性与局部灵敏度分析.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/四、系统时钟, 看门狗与备份寄存器/1. Unix 时间戳与BKP寄存器的使用.md",
+    "attachments/Pasted image 20240301020357.png",
+    "attachments/Pasted image 20240301015902.png",
+    "attachments/Pasted image 20240301015413.png",
+    "Excalidraw/1. Unix 时间戳与BKP寄存器的使用 2024-03-01 01.40.06.md",
+    "attachments/Pasted image 20240301013912.png",
+    "Excalidraw/1. Unix 时间戳与BKP寄存器的使用 2024-03-01 01.17.41.md",
     "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
-    "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/5. CAN 通信讲解.md",
     "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第二章 可靠性灵敏度分析的矩方法.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/5. CAN 通信讲解.md",
+    "attachments/Pasted image 20240229234034.png",
+    "attachments/Pasted image 20240229233850.png",
+    "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/2. I2C通信协议.md",
+    "attachments/Pasted image 20240229232546.png",
+    "attachments/Pasted image 20240229225709.png",
+    "attachments/Pasted image 20240229225105.png",
+    "attachments/Pasted image 20240229213206.png",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
-    "📘ClassNotes/⌨️Programming/Programming Terminology.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第三章 蒙特卡洛模拟方法.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第八章 数字电路基础.md",
+    "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
+    "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/1. 基础以及STM32简介.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md",
     "💻softwares/➕Mathmatics/MATLAB/Basic Usage/Matlab常用概率函数示例.md",
-    "attachments/Pasted image 20240226155419.png",
+    "💻softwares/⚡Circuit/🎮STM32教程/四、系统时钟, 看门狗与备份寄存器",
+    "📘ClassNotes/⌨️Programming/Programming Terminology.md",
     "🐸 Daily Life memo/Python 常用直接运算.md",
     "💻softwares/➕Mathmatics/MATLAB/Applied Numerical Methods/Chapter1 Mathematic Modeling, Numerical Methods and Problem Solving.md",
     "💻softwares/➕Mathmatics/MATLAB/Basic Usage",
     "🐸 Daily Life memo/一些额外知识.md",
     "Excalidraw/第二章 可靠性灵敏度分析的矩方法 2024-02-26 12.21.24.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/1. USART串口通信讲解.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/4. SPI 通信协议与W25Q64 Flash芯片.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/4. OLED 调试工具与常用调试方式.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md",
-    "🗑️trash/Drawing 2023-12-20 09.29.23.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/2. I2C通信协议.md",
-    "💻softwares/Git/oftenly-used commands.md",
-    "attachments/Pasted image 20240224214214.png",
-    "attachments/Pasted image 20240224194427.png",
-    "attachments/Pasted image 20240224193233.png",
     "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/OLED/OLED_Font.h",
     "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/OLED/OLED.h",
     "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/OLED/OLED.c",
@@ -407,17 +393,6 @@
     "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/MPU6050/MPU6050.cpp",
     "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/MPU6050",
     "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/I2C/I2C_func_general.h",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/I2C/I2C_func_general.cpp",
-    "attachments/Pasted image 20240224103011.png",
-    "attachments/Pasted image 20240224102250.png",
-    "attachments/Pasted image 20240224092810.png",
-    "attachments/Pasted image 20240223213645.png",
-    "attachments/Pasted image 20240223212546.png",
-    "attachments/Pasted image 20240223200632.png",
-    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/三、STM32定时器编码器接口.md",
-    "🐸 Daily Life memo/CSDN及公众号教程存档/四元数入门,详解与使用.md",
-    "Excalidraw/四元数入门,详解与使用 2024-02-23 09.49.03.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第二章 刚体的空间运动学.md",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

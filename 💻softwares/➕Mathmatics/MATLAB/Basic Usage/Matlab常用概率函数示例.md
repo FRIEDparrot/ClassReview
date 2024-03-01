@@ -22,3 +22,14 @@ plot(x,y2);
 size(Mat, 2);      %获取行数(不写默认列)
 ```
 
+
+```erlang 
+skewness  % 返回偏度
+kurtosis     % 返回峰度
+```
+
+例如， 生成一个正态分布并求解峰度和偏度(峰度约为3, 偏度约为0)
+```erlang
+x = randn(100000,1);
+s = skewness(x); 
+```

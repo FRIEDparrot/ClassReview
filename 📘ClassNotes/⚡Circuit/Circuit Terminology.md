@@ -95,6 +95,11 @@ high Impedance 高阻状态
 inadvertent 无意的, 
 volatile 不稳定的 , 易变的
 Controller Area Network (CAN) 
+Greenwich Mean Time (GMT)格林尼治时间
+Universal Time Coordinate (UTC) 协调世界时;
+reSynchronization Jump Width (SJW) 重新同步补偿宽度
+tamper 篡改, 侵入
+
 
 # 模电
 掺杂 doping

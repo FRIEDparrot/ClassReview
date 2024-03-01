@@ -1,40 +1,92 @@
 {
   "recentFiles": [
     {
-      "basename": "5. CAN 通信讲解",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/5. CAN 通信讲解.md"
+      "basename": "基于Kriging代理模型的可靠性与局部灵敏度分析",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/基于Kriging代理模型的可靠性与局部灵敏度分析.md"
+    },
+    {
+      "basename": "备忘录",
+      "path": "🐸 Daily Life memo/备忘录.md"
+    },
+    {
+      "basename": "1. Unix 时间戳与BKP寄存器的使用",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/四、系统时钟, 看门狗与备份寄存器/1. Unix 时间戳与BKP寄存器的使用.md"
+    },
+    {
+      "basename": "1. Unix 时间戳与BKP寄存器的使用 2024-03-01 01.40.06",
+      "path": "Excalidraw/1. Unix 时间戳与BKP寄存器的使用 2024-03-01 01.40.06.md"
+    },
+    {
+      "basename": "1. Unix 时间戳与BKP寄存器的使用 2024-03-01 01.17.41",
+      "path": "Excalidraw/1. Unix 时间戳与BKP寄存器的使用 2024-03-01 01.17.41.md"
     },
     {
       "basename": "Circuit Terminology",
       "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
     },
     {
-      "basename": "Chemical Terminology",
-      "path": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md"
-    },
-    {
-      "basename": "Mathmatic Terminology",
-      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
-    },
-    {
       "basename": "第二章 可靠性灵敏度分析的矩方法",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第二章 可靠性灵敏度分析的矩方法.md"
     },
     {
-      "basename": "第四章 随机变量的数字特征",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md"
+      "basename": "5. CAN 通信讲解",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/5. CAN 通信讲解.md"
+    },
+    {
+      "basename": "2. I2C通信协议",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/2. I2C通信协议.md"
     },
     {
       "basename": "第六章 样本及抽样分布",
       "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md"
     },
     {
-      "basename": "Programming Terminology",
-      "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
+      "basename": "第七章 参数估计",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md"
+    },
+    {
+      "basename": "第三章 蒙特卡洛模拟方法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第三章 蒙特卡洛模拟方法.md"
+    },
+    {
+      "basename": "第三章 多维随机变量及其分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
+    },
+    {
+      "basename": "第五章 大数定律以及中心极限定理",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md"
+    },
+    {
+      "basename": "第四章 随机变量的数字特征",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md"
+    },
+    {
+      "basename": "第八章 数字电路基础",
+      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第八章 数字电路基础.md"
+    },
+    {
+      "basename": "Mathmatic Terminology",
+      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
+    },
+    {
+      "basename": "Chemical Terminology",
+      "path": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md"
+    },
+    {
+      "basename": "1. 基础以及STM32简介",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/1. 基础以及STM32简介.md"
+    },
+    {
+      "basename": "一、EXTI外部中断与红外计次",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md"
     },
     {
       "basename": "Matlab常用概率函数示例",
       "path": "💻softwares/➕Mathmatics/MATLAB/Basic Usage/Matlab常用概率函数示例.md"
+    },
+    {
+      "basename": "Programming Terminology",
+      "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
     },
     {
       "basename": "Python 常用直接运算",
@@ -57,10 +109,6 @@
       "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md"
     },
     {
-      "basename": "第三章 多维随机变量及其分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
-    },
-    {
       "basename": "1. USART串口通信讲解",
       "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/1. USART串口通信讲解.md"
     },
@@ -73,16 +121,8 @@
       "path": "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/4. OLED 调试工具与常用调试方式.md"
     },
     {
-      "basename": "一、EXTI外部中断与红外计次",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md"
-    },
-    {
       "basename": "Drawing 2023-12-20 09.29.23",
       "path": "🗑️trash/Drawing 2023-12-20 09.29.23.md"
-    },
-    {
-      "basename": "2. I2C通信协议",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/2. I2C通信协议.md"
     },
     {
       "basename": "oftenly-used commands",
@@ -159,46 +199,6 @@
     {
       "basename": "2. 原理图创建与PCB库的建立方法",
       "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/2. 原理图创建与PCB库的建立方法.md"
-    },
-    {
-      "basename": "5. 打印报表和说明",
-      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/5. 打印报表和说明.md"
-    },
-    {
-      "basename": "4. 层次原理图的设计",
-      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/4. 层次原理图的设计.md"
-    },
-    {
-      "basename": "2. I2C通信协议 2024-02-17 20.12.51",
-      "path": "Excalidraw/2. I2C通信协议 2024-02-17 20.12.51.md"
-    },
-    {
-      "basename": "2. I2C通信协议 2024-02-17 15.18.08",
-      "path": "Excalidraw/2. I2C通信协议 2024-02-17 15.18.08.md"
-    },
-    {
-      "basename": "ILI9341 LCD 320x240彩屏仿真",
-      "path": "💻softwares/⚡Circuit/💻51单片机教程/7.TFLCD, 继电器和RS485/ILI9341 LCD 320x240彩屏仿真.md"
-    },
-    {
-      "basename": "I2C-E2PROM通信与掉电数据保存",
-      "path": "💻softwares/⚡Circuit/💻51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/I2C-E2PROM通信与掉电数据保存.md"
-    },
-    {
-      "basename": "1. 基础以及STM32简介",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/1. 基础以及STM32简介.md"
-    },
-    {
-      "basename": "3. FlyFlash和ST_Link Utility使用",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/3. FlyFlash和ST_Link Utility使用.md"
-    },
-    {
-      "basename": "2. LED和蜂鸣器操作实验",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/2. LED和蜂鸣器操作实验.md"
-    },
-    {
-      "basename": "ASCII码表",
-      "path": "🐸 Daily Life memo/ASCII码表.png"
     }
   ],
   "omittedPaths": [],
