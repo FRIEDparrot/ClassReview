@@ -25,6 +25,8 @@
   "useWebview": false,
   "useIconList": true,
   "darkMode": true,
+  "randomBackground": false,
+  "lastOpenedFiles": false,
   "bookmarkManager": {
     "openBookMark": true,
     "saveBookMark": true,
@@ -44,5 +46,6 @@
     ],
     "defaultFilterType": "tree"
   },
-  "treeData": []
+  "treeData": [],
+  "enableHtmlPreview": true
 }

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e8d64f01c6078478",
+        "id": "87151a6c21cf9c30",
         "type": "tabs",
         "children": [
           {
-            "id": "aa725fa72ec8e39f",
+            "id": "408fdf8fd738bb21",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/基于Kriging代理模型的可靠性与局部灵敏度分析.md",
+                "file": "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/1. NXOpen.Net 工程创建.md",
                 "mode": "source",
                 "source": false
               }
@@ -67,7 +67,7 @@
             }
           },
           {
-            "id": "92f4749ffd074374",
+            "id": "377f74bc4ca30883",
             "type": "leaf",
             "state": {
               "type": "surfing-tab-tree",
@@ -101,7 +101,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 531.5124969482422
+    "width": 233.5124969482422
   },
   "right": {
     "id": "f7de553c162de521",
@@ -110,7 +110,7 @@
       {
         "id": "736ec7c11262503f",
         "type": "tabs",
-        "dimension": 61.858974358974365,
+        "dimension": 54.93291239147593,
         "children": [
           {
             "id": "ccf3c49a7ac51afd",
@@ -154,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/基于Kriging代理模型的可靠性与局部灵敏度分析.md",
+                "file": "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/1. NXOpen.Net 工程创建.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -258,14 +258,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e01998d0893d207e",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       },
       {
         "id": "bdaa9cad5f6d59b7",
         "type": "tabs",
-        "dimension": 38.141025641025635,
+        "dimension": 45.06708760852407,
         "children": [
           {
             "id": "7778856753ec014b",
@@ -273,7 +281,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/基于Kriging代理模型的可靠性与局部灵敏度分析.md"
+                "file": "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/1. NXOpen.Net 工程创建.md"
               }
             }
           },
@@ -283,7 +291,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/基于Kriging代理模型的可靠性与局部灵敏度分析.md",
+                "file": "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/1. NXOpen.Net 工程创建.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -300,7 +308,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/基于Kriging代理模型的可靠性与局部灵敏度分析.md",
+                "file": "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/1. NXOpen.Net 工程创建.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -321,7 +329,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5
+    "width": 463.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -335,64 +344,64 @@
       "canvas:Create new canvas": false,
       "workspaces:Manage workspace layouts": false,
       "zk-prefixer:Create new unique note": false,
-      "dbfolder:Create a new database table": false,
       "obsidian-projects:Open projects": false,
-      "obsidian-day-planner:Timeline": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
-      "random-note:Open random note": false
+      "random-note:Open random note": false,
+      "obsidian-day-planner:Timeline": false,
+      "templater-obsidian:Templater": false,
+      "dbfolder:Create a new database table": false,
+      "media-extended:Open media": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "aa725fa72ec8e39f",
+  "active": "408fdf8fd738bb21",
   "lastOpenFiles": [
+    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/Csharp基础语法.md",
+    "💻softwares/Markdown & Latex Tutorial/notepad++/常见设置.md",
+    "attachments/Pasted image 20240320115942.png",
+    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/1. NXOpen.Net 工程创建.md",
+    "💻softwares/Markdown & Latex Tutorial/notepad++",
     "🐸 Daily Life memo/备忘录.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/基于Kriging代理模型的可靠性与局部灵敏度分析.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/四、系统时钟, 看门狗与备份寄存器/1. Unix 时间戳与BKP寄存器的使用.md",
-    "attachments/Pasted image 20240301020357.png",
-    "attachments/Pasted image 20240301015902.png",
-    "attachments/Pasted image 20240301015413.png",
-    "Excalidraw/1. Unix 时间戳与BKP寄存器的使用 2024-03-01 01.40.06.md",
-    "attachments/Pasted image 20240301013912.png",
-    "Excalidraw/1. Unix 时间戳与BKP寄存器的使用 2024-03-01 01.17.41.md",
-    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第二章 可靠性灵敏度分析的矩方法.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/5. CAN 通信讲解.md",
-    "attachments/Pasted image 20240229234034.png",
-    "attachments/Pasted image 20240229233850.png",
-    "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/2. I2C通信协议.md",
-    "attachments/Pasted image 20240229232546.png",
-    "attachments/Pasted image 20240229225709.png",
-    "attachments/Pasted image 20240229225105.png",
-    "attachments/Pasted image 20240229213206.png",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第三章 蒙特卡洛模拟方法.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第八章 数字电路基础.md",
-    "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
-    "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/1. 基础以及STM32简介.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md",
-    "💻softwares/➕Mathmatics/MATLAB/Basic Usage/Matlab常用概率函数示例.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/四、系统时钟, 看门狗与备份寄存器",
-    "📘ClassNotes/⌨️Programming/Programming Terminology.md",
-    "🐸 Daily Life memo/Python 常用直接运算.md",
-    "💻softwares/➕Mathmatics/MATLAB/Applied Numerical Methods/Chapter1 Mathematic Modeling, Numerical Methods and Problem Solving.md",
-    "💻softwares/➕Mathmatics/MATLAB/Basic Usage",
-    "🐸 Daily Life memo/一些额外知识.md",
-    "Excalidraw/第二章 可靠性灵敏度分析的矩方法 2024-02-26 12.21.24.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/OLED/OLED_Font.h",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/OLED/OLED.h",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/OLED/OLED.c",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/OLED",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/MPU6050/MPU6050.h",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/MPU6050/MPU6050.cpp",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/MPU6050",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/I2C/I2C_func_general.h",
+    "attachments/Pasted image 20240320092330.png",
+    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/NXOpen Python/入门与常用函数.md",
+    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/NXOpen Python/NX Python二次开发环境配置教程.md",
+    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/常用模板函数.md",
+    "💻softwares/🗽2D & 3D design/🤖SolidWorks/启动SolidWorks.md",
+    "attachments/Pasted image 20240318220040.png",
+    "💻softwares/🛩️FEM/Abaqus/安装教程.md",
+    "attachments/Pasted image 20240318193947.png",
+    "attachments/Pasted image 20240318192314.png",
+    "attachments/Pasted image 20240318181206.png",
+    "attachments/Pasted image 20240318180311.png",
+    "attachments/Pasted image 20240318175443.png",
+    "attachments/Pasted image 20240318173847.png",
+    "attachments/Pasted image 20240318173313.png",
+    "Excalidraw/入门与常用函数 2024-03-18 09.49.26.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第五章 子集模拟方法.md",
+    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET",
+    "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/5. 打印报表和说明.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第四章 重要抽样法原理与应用.md",
+    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/NXOpen Python/Debug_NXOpen_Python_with_NX12_and_Eclipse_PyDev.pdf",
+    "💻softwares/🗽2D & 3D design/UG二次开发/Knowledge Fusion/入门与基本界面认识.md",
+    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/Latex间距设置总结.md",
+    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/目录格式控制.md",
+    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/Latex基本用法.md",
+    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制",
+    "📘ClassNotes/🗣️English/punctuation marks in English.md",
+    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/公式相关/Mathematical Symbols.md",
+    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/公式相关/Matrix_With_Dash.md",
+    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/公式相关",
+    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/Latex文献引用方法.md",
+    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/公式相关/Latex数学公式编写.md",
+    "💻softwares/🗽2D & 3D design/UG二次开发/Knowledge Fusion",
+    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/NXOpen Python/ugii_env.dat",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/重要抽样函数封装.md",
+    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/NXOpen Python",
+    "💻softwares/🗽2D & 3D design/UG二次开发",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数",
+    "🗒️Templates/INSERT_PROD_SYMBOL.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第二章 蒙特卡洛模拟方法.md",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

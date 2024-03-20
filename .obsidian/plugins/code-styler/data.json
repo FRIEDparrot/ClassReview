@@ -28,6 +28,11 @@
             "display": "none",
             "displayColour": true
           },
+          "externalReference": {
+            "displayRepository": true,
+            "displayVersion": true,
+            "displayTimestamp": true
+          },
           "fontSize": 14,
           "foldPlaceholder": ""
         },
@@ -73,6 +78,11 @@
               "backgroundColour": "--code-background",
               "textColour": "--code-comment"
             },
+            "externalReference": {
+              "displayRepositoryColour": "#00FFFF",
+              "displayVersionColour": "#FF00FF",
+              "displayTimestampColour": "#808080"
+            },
             "lineColour": "--color-base-30"
           },
           "highlights": {
@@ -110,6 +120,11 @@
             "languageTag": {
               "backgroundColour": "--code-background",
               "textColour": "--code-comment"
+            },
+            "externalReference": {
+              "displayRepositoryColour": "#00FFFF",
+              "displayVersionColour": "#FF00FF",
+              "displayTimestampColour": "#808080"
             },
             "lineColour": "--color-base-30"
           },
@@ -160,6 +175,11 @@
             "display": "none",
             "displayColour": true
           },
+          "externalReference": {
+            "displayRepository": true,
+            "displayVersion": true,
+            "displayTimestamp": true
+          },
           "fontSize": 14,
           "foldPlaceholder": ""
         },
@@ -205,6 +225,11 @@
               "backgroundColour": "#B8B5AA",
               "textColour": "#C25F30"
             },
+            "externalReference": {
+              "displayRepositoryColour": "#941100",
+              "displayVersionColour": "#ff9300",
+              "displayTimestampColour": "#808080"
+            },
             "lineColour": "#EDD489"
           },
           "highlights": {
@@ -243,6 +268,11 @@
               "backgroundColour": "#008080",
               "textColour": "#000000"
             },
+            "externalReference": {
+              "displayRepositoryColour": "#00FFFF",
+              "displayVersionColour": "#9437ff",
+              "displayTimestampColour": "#808080"
+            },
             "lineColour": "#46cced"
           },
           "highlights": {
@@ -271,7 +301,7 @@
       "codeblock": {
         "lineNumbers": true,
         "unwrapLines": true,
-        "wrapLinesActive": true,
+        "wrapLinesActive": false,
         "curvature": 4
       },
       "gutter": {
@@ -291,14 +321,19 @@
           "textItalic": false
         },
         "languageIcon": {
-          "display": "none",
+          "display": "always",
           "displayColour": true
         },
-        "fontSize": 15,
-        "foldPlaceholder": "Code"
+        "externalReference": {
+          "displayRepository": true,
+          "displayVersion": true,
+          "displayTimestamp": true
+        },
+        "fontSize": 14,
+        "foldPlaceholder": ""
       },
       "highlights": {
-        "activeCodeblockLine": true,
+        "activeCodeblockLine": false,
         "activeEditorLine": false
       },
       "inline": {
@@ -316,7 +351,7 @@
         "gradientHighlightsColourStop": "70%",
         "languageBorderColour": false,
         "languageBorderWidth": 5,
-        "iconSize": 20
+        "iconSize": 28
       }
     },
     "colours": {
@@ -331,13 +366,18 @@
           "activeTextColour": "--text-muted"
         },
         "header": {
-          "backgroundColour": "#6D87AB",
+          "backgroundColour": "--code-background",
           "title": {
             "textColour": "--code-comment"
           },
           "languageTag": {
             "backgroundColour": "--code-background",
             "textColour": "--code-comment"
+          },
+          "externalReference": {
+            "displayRepositoryColour": "#00FFFF",
+            "displayVersionColour": "#FF00FF",
+            "displayTimestampColour": "#808080"
           },
           "lineColour": "--color-base-30"
         },
@@ -369,13 +409,18 @@
           "activeTextColour": "--text-muted"
         },
         "header": {
-          "backgroundColour": "#062857",
+          "backgroundColour": "--code-background",
           "title": {
             "textColour": "--code-comment"
           },
           "languageTag": {
             "backgroundColour": "--code-background",
             "textColour": "--code-comment"
+          },
+          "externalReference": {
+            "displayRepositoryColour": "#00FFFF",
+            "displayVersionColour": "#FF00FF",
+            "displayTimestampColour": "#808080"
           },
           "lineColour": "--color-base-30"
         },
@@ -404,8 +449,9 @@
   "exampleCodeblockContent": "print(\"This line is very long and should be used as an example for how the plugin deals with wrapping and unwrapping very long lines given the choice of codeblock parameters and settings.\")\nprint(\"This line is highlighted.\")",
   "exampleInlineCode": "{python icon title:foo} print(\"This is inline code\")",
   "decoratePrint": true,
-  "excludedLanguages": "ad-*",
-  "processedCodeblocksWhitelist": "run-*",
+  "excludedLanguages": "ad-*, reference",
+  "externalReferenceUpdateOnLoad": false,
+  "processedCodeblocksWhitelist": "run-*, include",
   "redirectLanguages": {},
-  "version": "1.1.4"
+  "version": "1.1.7"
 }

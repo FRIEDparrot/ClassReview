@@ -458,7 +458,8 @@
   background-color: transparent;
 }
 [data-type=timeline] .view-content,
-[data-type=weekly] .view-content {
+[data-type=weekly] .view-content,
+[data-type=timeTracker] .view-content {
   --time-ruler-width: 30px;
   display: flex;
   flex-direction: column;
@@ -468,4 +469,8 @@
   position: absolute;
   right: 0;
   left: 0;
+}
+.day-planner-release-notes-modal .modal-content {
+  height: 100%;
+  overflow: auto;
 }

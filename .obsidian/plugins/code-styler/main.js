@@ -1964,7 +1964,7 @@ __export(main_exports, {
   default: () => CodeStylerPlugin
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian7 = require("obsidian");
+var import_obsidian9 = require("obsidian");
 
 // src/Settings.ts
 var THEME_DEFAULT_SETTINGS = {
@@ -1993,6 +1993,11 @@ var THEME_DEFAULT_SETTINGS = {
     languageIcon: {
       display: "none",
       displayColour: true
+    },
+    externalReference: {
+      displayRepository: true,
+      displayVersion: true,
+      displayTimestamp: true
     },
     fontSize: 14,
     foldPlaceholder: ""
@@ -2037,6 +2042,11 @@ var THEME_FALLBACK_COLOURS = {
     languageTag: {
       backgroundColour: "--code-background",
       textColour: "--code-comment"
+    },
+    externalReference: {
+      displayRepositoryColour: "#00FFFF",
+      displayVersionColour: "#FF00FF",
+      displayTimestampColour: "#808080"
     },
     lineColour: "--color-base-30"
   },
@@ -2104,6 +2114,11 @@ var SOLARIZED_THEME = {
           backgroundColour: "#B8B5AA",
           textColour: "#C25F30"
         },
+        externalReference: {
+          displayRepositoryColour: "#941100",
+          displayVersionColour: "#ff9300",
+          displayTimestampColour: "#808080"
+        },
         lineColour: "#EDD489"
       },
       highlights: {
@@ -2142,6 +2157,11 @@ var SOLARIZED_THEME = {
           backgroundColour: "#008080",
           textColour: "#000000"
         },
+        externalReference: {
+          displayRepositoryColour: "#00FFFF",
+          displayVersionColour: "#9437ff",
+          displayTimestampColour: "#808080"
+        },
         lineColour: "#46cced"
       },
       highlights: {
@@ -2170,8 +2190,8 @@ var INBUILT_THEMES = {
 var EXAMPLE_CODEBLOCK_PARAMETERS = "python title:foo";
 var EXAMPLE_CODEBLOCK_CONTENT = 'print("This line is very long and should be used as an example for how the plugin deals with wrapping and unwrapping very long lines given the choice of codeblock parameters and settings.")\nprint("This line is highlighted.")';
 var EXAMPLE_INLINE_CODE = '{python icon title:foo} print("This is inline code")';
-var EXCLUDED_LANGUAGES = "ad-*";
-var WHITELIST_CODEBLOCKS = "run-*";
+var EXCLUDED_LANGUAGES = "ad-*, reference";
+var WHITELIST_CODEBLOCKS = "run-*, include";
 var DEFAULT_SETTINGS = {
   themes: structuredClone(INBUILT_THEMES),
   selectedTheme: "Default",
@@ -2183,9 +2203,10 @@ var DEFAULT_SETTINGS = {
   exampleInlineCode: EXAMPLE_INLINE_CODE,
   decoratePrint: true,
   excludedLanguages: EXCLUDED_LANGUAGES,
+  externalReferenceUpdateOnLoad: false,
   processedCodeblocksWhitelist: WHITELIST_CODEBLOCKS,
   redirectLanguages: {},
-  version: "1.1.4"
+  version: "1.1.7"
 };
 function convertSettings(settings) {
   if (typeof (settings == null ? void 0 : settings.version) === "undefined")
@@ -2243,13 +2264,42 @@ var settingsUpdaters = {
   "1.1.1": settingsPreserve,
   "1.1.2": settingsPreserve,
   "1.1.3": settingsPreserve,
-  "1.1.4": settingsPreserve
+  "1.1.4": (settings) => settingsVersionUpdate(settings, (theme) => {
+    theme.settings.header.externalReference = structuredClone(THEME_DEFAULT_SETTINGS.header.externalReference);
+    theme.colours.light.header.externalReference = structuredClone(THEME_FALLBACK_COLOURS.header.externalReference);
+    theme.colours.dark.header.externalReference = structuredClone(THEME_FALLBACK_COLOURS.header.externalReference);
+    return theme;
+  }, (settings2) => {
+    settings2.externalReferenceUpdateOnLoad = false;
+    return settings2;
+  }),
+  "1.1.5": settingsPreserve,
+  "1.1.6": settingsPreserve
 };
 var FOLD_PLACEHOLDER = "Folded Code";
 var PARAMETERS = ["title", "fold", "ln", "wrap", "unwrap", "ignore"];
 var TRANSITION_LENGTH = 240;
-var SPECIAL_LANGUAGES = ["^preview$", "^include$", "^output$", "^run-.+$"];
+var SPECIAL_LANGUAGES = ["^reference$", "^foofoo", "^preview$", "^include$", "^output$", "^run-.+$"];
 var SETTINGS_SOURCEPATH_PREFIX = "@Code-Styler-Settings:";
+var LOCAL_PREFIX = "@/";
+var REFERENCE_CODEBLOCK = "reference";
+var EXTERNAL_REFERENCE_PATH = "/plugins/code-styler/reference-files/";
+var EXTERNAL_REFERENCE_CACHE = EXTERNAL_REFERENCE_PATH + "cache.json";
+var EXTERNAL_REFERENCE_INFO_SUFFIX = "-info.json";
+var GIT_ICONS = {
+  "branch": "&#xe0a0;",
+  "tree": "&#xeafc;"
+  // commit
+};
+var SITE_ICONS = {
+  "github": "&#xf09b;",
+  "gitlab": "&#xe65c;",
+  "bitbucket": "&#xe703;",
+  "sourceforge": "&#xf0238;",
+  "generic": "&#xf059f;"
+};
+var STAMP_ICON = "&#xf00f0;";
+var UPDATE_ICON = "&#xe348;";
 var PRISM_LANGUAGES = {
   // Prism Languages: https://prismjs.com/plugins/show-language/
   // "none": "Plain text", // NOTE: Obsidian uses this for codeblocks without language names
@@ -4479,8 +4529,8 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
   // Create Settings Pages
   displayMainSettings(containerEl) {
     this.emptySettings(containerEl);
-    this.generateSettingsSwitcher(containerEl);
     this.generateThemeSettings(containerEl);
+    this.generateSettingsSwitcher(containerEl);
     this.generateCoreSettings(containerEl);
     this.generateAdvancedHeading(containerEl);
     this.advancedSettingsContainer = containerEl.createDiv();
@@ -4489,8 +4539,8 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
   }
   displayCodeblockSettings(containerEl) {
     this.emptySettings(containerEl);
-    this.generateSettingsSwitcher(containerEl);
     this.generateThemeSettings(containerEl);
+    this.generateSettingsSwitcher(containerEl);
     containerEl.createEl("hr");
     this.exampleCodeblockContainer = containerEl.createDiv();
     this.generateExampleCodeblock();
@@ -4500,8 +4550,8 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
   }
   displayInlineCodeSettings(containerEl) {
     this.emptySettings(containerEl);
-    this.generateSettingsSwitcher(containerEl);
     this.generateThemeSettings(containerEl);
+    this.generateSettingsSwitcher(containerEl);
     containerEl.createEl("hr");
     this.exampleInlineCodeContainer = containerEl.createDiv();
     this.generateExampleInlineCode();
@@ -4513,12 +4563,6 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
     containerEl.empty();
     containerEl.createEl("h1", { text: "Settings for the Code Styler Plugin." });
   }
-  generateSettingsSwitcher(containerEl) {
-    new import_obsidian.Setting(containerEl).setName("Choose Settings Page").setDesc("Change dropdown to modify different groups of settings").addDropdown((dropdown) => dropdown.addOptions(SETTINGS_PAGES).setValue(this.page).onChange((value) => {
-      this.page = value;
-      this.generateSettings(containerEl);
-    }));
-  }
   generateSettings(containerEl) {
     if (this.page === "main")
       this.displayMainSettings(containerEl);
@@ -4526,6 +4570,12 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
       this.displayCodeblockSettings(containerEl);
     else if (this.page === "inline")
       this.displayInlineCodeSettings(containerEl);
+  }
+  generateSettingsSwitcher(containerEl) {
+    new import_obsidian.Setting(containerEl).setName("Choose Settings Page").setDesc("Change dropdown to modify different groups of settings").addDropdown((dropdown) => dropdown.addOptions(SETTINGS_PAGES).setValue(this.page).onChange((value) => {
+      this.page = value;
+      this.generateSettings(containerEl);
+    }));
   }
   generateCodeblockStylingSwitcher(containerEl) {
     new import_obsidian.Setting(containerEl).setName("Choose Codeblock Settings").setDesc("Change dropdown to modify styles and settings of different codeblock sections").addDropdown((dropdown) => dropdown.addOptions(CODEBLOCK_PAGES).setValue(this.codeblockPage).onChange((value) => {
@@ -4862,11 +4912,13 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
     containerEl.createEl("h5", { text: "Header Language Icon Appearance" });
     new import_obsidian.Setting(containerEl).setName("Display Header Language Icons").setDesc('Determine when to show language icons where available. "Title Only" will only show language tags when the title parameter is set.').addDropdown((dropdown) => dropdown.addOptions(DISPLAY_OPTIONS).setValue(this.plugin.settings.currentTheme.settings.header.languageIcon.display).onChange((value) => {
       this.plugin.settings.currentTheme.settings.header.languageIcon.display = value;
-      this.generateHeaderIconSettings();
+      this.generateHeaderLanguageIconSettings();
       this.saveSettings(true);
     }));
     this.headerIconsContainer = containerEl.createDiv();
-    this.generateHeaderIconSettings();
+    this.generateHeaderLanguageIconSettings();
+    this.headerExternalReferenceContainer = containerEl.createDiv();
+    this.generateHeaderExternalReferenceSettings();
   }
   generateHeaderTagSettings() {
     this.headerTagsContainer.empty();
@@ -4906,7 +4958,7 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
       );
     });
   }
-  generateHeaderIconSettings() {
+  generateHeaderLanguageIconSettings() {
     this.headerIconsContainer.empty();
     if (this.plugin.settings.currentTheme.settings.header.languageIcon.display === "none")
       return;
@@ -4927,6 +4979,58 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
         resettableSlider.setValue(this.plugin.settings.currentTheme.settings.advanced.iconSize);
         this.saveSettings();
       }));
+    });
+  }
+  generateHeaderExternalReferenceSettings() {
+    this.headerExternalReferenceContainer.empty();
+    this.headerExternalReferenceContainer.createEl("h5", { text: "External Reference Indicators Appearance" });
+    new import_obsidian.Setting(this.headerExternalReferenceContainer).setName("Display Repository").setDesc("Display repository in codeblock header for external references.").addToggle((toggle) => toggle.setTooltip("Display Repository").setValue(this.plugin.settings.currentTheme.settings.header.externalReference.displayRepository).onChange((value) => {
+      this.plugin.settings.currentTheme.settings.header.externalReference.displayRepository = value;
+      this.saveSettings();
+    })).then((setting) => {
+      this.createPickr(
+        this.plugin,
+        this.headerExternalReferenceContainer,
+        setting,
+        "codeblock_header_display_repository",
+        (relevantThemeColours) => relevantThemeColours[getCurrentMode()].header.externalReference.displayRepositoryColour,
+        (relevantThemeColours, saveColour) => {
+          relevantThemeColours[getCurrentMode()].header.externalReference.displayRepositoryColour = saveColour;
+        },
+        () => !this.plugin.settings.currentTheme.settings.header.externalReference.displayRepository
+      );
+    });
+    new import_obsidian.Setting(this.headerExternalReferenceContainer).setName("Display Repository Name").setDesc("Display repository version in codeblock header for external references.").addToggle((toggle) => toggle.setTooltip("Display Repository Version").setValue(this.plugin.settings.currentTheme.settings.header.externalReference.displayVersion).onChange((value) => {
+      this.plugin.settings.currentTheme.settings.header.externalReference.displayVersion = value;
+      this.saveSettings();
+    })).then((setting) => {
+      this.createPickr(
+        this.plugin,
+        this.headerExternalReferenceContainer,
+        setting,
+        "codeblock_header_display_version",
+        (relevantThemeColours) => relevantThemeColours[getCurrentMode()].header.externalReference.displayVersionColour,
+        (relevantThemeColours, saveColour) => {
+          relevantThemeColours[getCurrentMode()].header.externalReference.displayVersionColour = saveColour;
+        },
+        () => !this.plugin.settings.currentTheme.settings.header.externalReference.displayVersion
+      );
+    });
+    new import_obsidian.Setting(this.headerExternalReferenceContainer).setName("Display Reference Timestamp").setDesc("Display the timestamp at which the reference was last updated.").addToggle((toggle) => toggle.setTooltip("Display Timestamp").setValue(this.plugin.settings.currentTheme.settings.header.externalReference.displayTimestamp).onChange((value) => {
+      this.plugin.settings.currentTheme.settings.header.externalReference.displayTimestamp = value;
+      this.saveSettings();
+    })).then((setting) => {
+      this.createPickr(
+        this.plugin,
+        this.headerExternalReferenceContainer,
+        setting,
+        "codeblock_header_display_timestamp",
+        (relevantThemeColours) => relevantThemeColours[getCurrentMode()].header.externalReference.displayTimestampColour,
+        (relevantThemeColours, saveColour) => {
+          relevantThemeColours[getCurrentMode()].header.externalReference.displayTimestampColour = saveColour;
+        },
+        () => !this.plugin.settings.currentTheme.settings.header.externalReference.displayTimestamp
+      );
     });
   }
   generateCodeblockHighlightSettings(containerEl) {
@@ -5250,6 +5354,10 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
         () => !this.plugin.settings.currentTheme.settings.highlights.activeEditorLine
       );
     });
+    new import_obsidian.Setting(this.advancedSettingsContainer).setName("External References Automatic Update on Load").setDesc("If enabled, external references will be updated automatically on load when possible.").addToggle((toggle) => toggle.setTooltip("Toggle auto-update external references").setValue(this.plugin.settings.externalReferenceUpdateOnLoad).onChange((value) => {
+      this.plugin.settings.externalReferenceUpdateOnLoad = value;
+      this.saveSettings();
+    }));
     this.disableableComponents["editorActiveLineHighlight"].push(this.pickrs["editor_active_line_highlight"].resetButton);
     new import_obsidian.Setting(this.advancedSettingsContainer).setName("Reset inbuilt themes").setDesc("This will return all inbuilt themes to the plugin defaults").addButton((button) => button.setButtonText("Reset").onClick(() => {
       Object.entries(INBUILT_THEMES).forEach(([themeName, theme]) => this.plugin.settings.themes[themeName] = structuredClone(theme));
@@ -5350,11 +5458,11 @@ var SettingsTab = class extends import_obsidian.PluginSettingTab {
     this.pickrs[id] = pickr;
   }
   // Update Settings
-  saveSettings(rerender = false) {
+  saveSettings(rerender2 = false) {
     (async () => {
       await this.plugin.saveSettings();
     })();
-    if (rerender)
+    if (rerender2)
       this.rerender();
   }
   rerender() {
@@ -5568,6 +5676,9 @@ function getThemeColours(themeModeColours) {
     "header-language-tag-background-colour": themeModeColours.header.languageTag.backgroundColour,
     "header-language-tag-text-colour": themeModeColours.header.languageTag.textColour,
     "header-separator-colour": themeModeColours.header.lineColour,
+    "header-external-reference-repository": themeModeColours.header.externalReference.displayRepositoryColour,
+    "header-external-reference-version": themeModeColours.header.externalReference.displayVersionColour,
+    "header-external-reference-timestamp": themeModeColours.header.externalReference.displayTimestampColour,
     "active-codeblock-line-colour": themeModeColours.highlights.activeCodeblockLineColour,
     "active-editor-line-colour": themeModeColours.highlights.activeEditorLineColour,
     "default-highlight-colour": themeModeColours.highlights.defaultColour,
@@ -5682,13 +5793,13 @@ function getCurrentTheme(app) {
 }
 
 // src/EditingView.ts
-var import_obsidian5 = require("obsidian");
+var import_obsidian8 = require("obsidian");
 var import_view = require("@codemirror/view");
 var import_state = require("@codemirror/state");
 var import_language = require("@codemirror/language");
 
 // src/Parsing/CodeblockParsing.ts
-var import_obsidian3 = require("obsidian");
+var import_obsidian7 = require("obsidian");
 
 // src/External/ExecuteCode/CodeBlockArgs.ts
 var import_obsidian2 = require("obsidian");
@@ -5725,1038 +5836,167 @@ ${err}`);
   }
 }
 
-// src/Parsing/CodeblockParsing.ts
-async function parseCodeblockSource(codeSection, plugin, sourcePath) {
-  const plugins = plugin.app.plugins.plugins;
-  const admonitions = "obsidian-admonition" in plugins;
-  const codeblocks = [];
-  function parseCodeblockSection(codeSection2) {
-    var _a2;
-    if (codeSection2.length === 0)
-      return;
-    const openingCodeblockLine = getOpeningLine(codeSection2);
-    if (!openingCodeblockLine)
-      return;
-    const openDelimiter = (_a2 = /^\s*(?:>\s*)*((?:```+|~~~+)).*$/.exec(openingCodeblockLine)) == null ? void 0 : _a2[1];
-    if (!openDelimiter)
-      return;
-    const openDelimiterIndex = codeSection2.indexOf(openingCodeblockLine);
-    const closeDelimiterIndex = codeSection2.slice(openDelimiterIndex + 1).findIndex((line) => new RegExp(`^\\s*(?:>\\s*)*${openDelimiter}(?!${openDelimiter[0]})$`).test(line));
-    if (!admonitions || !/^\s*(?:>\s*)*(?:```+|~~~+) *ad-.*$/.test(openingCodeblockLine))
-      codeblocks.push(codeSection2.slice(0, openDelimiterIndex + 2 + closeDelimiterIndex));
-    else
-      parseCodeblockSection(codeSection2.slice(openDelimiterIndex + 1, openDelimiterIndex + 1 + closeDelimiterIndex));
-    parseCodeblockSection(codeSection2.slice(openDelimiterIndex + 1 + closeDelimiterIndex + 1));
-  }
-  parseCodeblockSection(codeSection);
-  return { codeblocksParameters: await (typeof sourcePath !== "undefined" ? parseCodeblocks(codeblocks, plugin, plugins, sourcePath) : parseCodeblocks(codeblocks, plugin, plugins)), nested: codeblocks[0] ? !arraysEqual(codeSection, codeblocks[0]) : true };
-}
-async function parseCodeblocks(codeblocks, plugin, plugins, sourcePath) {
-  const codeblocksParameters = [];
-  for (const codeblockLines of codeblocks) {
-    const codeblockParameters = await (typeof sourcePath !== "undefined" ? parseCodeblock(codeblockLines, plugin, plugins, sourcePath) : parseCodeblock(codeblockLines, plugin, plugins));
-    if (codeblockParameters !== null)
-      codeblocksParameters.push(codeblockParameters);
-  }
-  return codeblocksParameters;
-}
-async function parseCodeblock(codeblockLines, plugin, plugins, sourcePath) {
-  const parameterLine = getParameterLine(codeblockLines);
-  if (!parameterLine)
-    return null;
-  const codeblockParameters = parseCodeblockParameters(parameterLine, plugin.settings.currentTheme);
-  if (isCodeblockIgnored(codeblockParameters.language, plugin.settings.processedCodeblocksWhitelist))
-    return null;
-  return await (typeof sourcePath !== "undefined" ? pluginAdjustParameters(codeblockParameters, plugin, plugins, codeblockLines, sourcePath) : pluginAdjustParameters(codeblockParameters, plugin, plugins, codeblockLines));
-}
-function parseCodeblockParameters(parameterLine, theme) {
-  const codeblockParameters = {
-    language: "",
-    title: "",
-    reference: "",
-    fold: {
-      enabled: false,
-      placeholder: ""
-    },
-    lineNumbers: {
-      alwaysEnabled: false,
-      alwaysDisabled: false,
-      offset: 0
-    },
-    lineUnwrap: {
-      alwaysEnabled: false,
-      alwaysDisabled: false,
-      activeWrap: false
-    },
-    highlights: {
-      default: {
-        lineNumbers: [],
-        plainText: [],
-        regularExpressions: []
-      },
-      alternative: {}
-    },
-    ignore: false
-  };
-  if (parameterLine.startsWith("```"))
-    parameterLine = parameterLine.replace(/^```+(?=[^`]|$)/, "");
-  else if (parameterLine.startsWith("~~~"))
-    parameterLine = parameterLine.replace(/^~~~+(?=[^~]|$)/, "");
-  else
-    return codeblockParameters;
-  const rmdMatch = /^\{(.+)\} *$/.exec(parameterLine);
-  if (rmdMatch)
-    parameterLine = rmdMatch[1];
-  const languageBreak = parameterLine.indexOf(" ");
-  codeblockParameters.language = parameterLine.slice(0, languageBreak !== -1 ? languageBreak : parameterLine.length).toLowerCase();
-  if (languageBreak === -1)
-    return codeblockParameters;
-  parameterLine = parameterLine.slice(languageBreak + 1);
-  if (rmdMatch)
-    parameterLine = "title:" + parameterLine;
-  const parameterStrings = parameterLine.match(/(?:(?:ref|reference|title):(?:\[\[.*?\]\]|\[.*?\]\(.+\))|[^\s"']+|"[^"]*"|'[^']*')+/g);
-  if (!parameterStrings)
-    return codeblockParameters;
-  parameterStrings.forEach((parameterString) => parseCodeblockParameterString(parameterString.replace(/(?:^,|,$)/g, ""), codeblockParameters, theme));
-  return codeblockParameters;
-}
-async function pluginAdjustParameters(codeblockParameters, plugin, plugins, codeblockLines, sourcePath) {
-  if (codeblockParameters.language === "preview")
-    codeblockParameters = await (typeof sourcePath !== "undefined" ? pluginAdjustPreviewCode(codeblockParameters, plugins, codeblockLines, sourcePath) : pluginAdjustPreviewCode(codeblockParameters, plugins, codeblockLines));
-  else if (codeblockParameters.language === "include")
-    codeblockParameters = pluginAdjustFileInclude(codeblockParameters, plugins, codeblockLines);
-  else if (/run-\w*/.test(codeblockParameters.language))
-    codeblockParameters = pluginAdjustExecuteCodeRun(codeblockParameters, plugin, plugins);
-  codeblockParameters = pluginAdjustExecuteCode(codeblockParameters, plugins, codeblockLines);
-  return codeblockParameters;
-}
-async function pluginAdjustPreviewCode(codeblockParameters, plugins, codeblockLines, sourcePath) {
-  var _a2, _b, _c, _d;
-  if (((_a2 = plugins == null ? void 0 : plugins["obsidian-code-preview"]) == null ? void 0 : _a2.code) && ((_b = plugins == null ? void 0 : plugins["obsidian-code-preview"]) == null ? void 0 : _b.analyzeHighLightLines)) {
-    const codePreviewParams = await plugins["obsidian-code-preview"].code(codeblockLines.slice(1, -1).join("\n"), sourcePath);
-    if (!codeblockParameters.lineNumbers.alwaysDisabled && !codeblockParameters.lineNumbers.alwaysEnabled) {
-      if (typeof codePreviewParams.start === "number")
-        codeblockParameters.lineNumbers.offset = codePreviewParams.start - 1;
-      codeblockParameters.lineNumbers.alwaysEnabled = Boolean(codePreviewParams.linenumber);
-    }
-    codeblockParameters.highlights.default.lineNumbers = [...new Set(codeblockParameters.highlights.default.lineNumbers.concat(Array.from(plugins["obsidian-code-preview"].analyzeHighLightLines(codePreviewParams.lines, codePreviewParams.highlight), (pair) => pair[0])))];
-    if (codeblockParameters.title === "")
-      codeblockParameters.title = (_d = (_c = codePreviewParams.filePath.split("\\").pop()) == null ? void 0 : _c.split("/").pop()) != null ? _d : "";
-    codeblockParameters.language = codePreviewParams.language;
-  }
-  return codeblockParameters;
-}
-function pluginAdjustFileInclude(codeblockParameters, plugins, codeblockLines) {
-  var _a2;
-  if ("file-include" in plugins) {
-    const fileIncludeLanguage = (_a2 = /include (\w+)/.exec(codeblockLines[0])) == null ? void 0 : _a2[1];
-    if (typeof fileIncludeLanguage !== "undefined")
-      codeblockParameters.language = fileIncludeLanguage;
-  }
-  return codeblockParameters;
-}
-function pluginAdjustExecuteCode(codeblockParameters, plugins, codeblockLines) {
-  var _a2, _b;
-  if ("execute-code" in plugins) {
-    const codeblockArgs = getArgs(codeblockLines[0]);
-    codeblockParameters.title = (_b = (_a2 = codeblockParameters.title) != null ? _a2 : codeblockArgs == null ? void 0 : codeblockArgs.label) != null ? _b : "";
-  }
-  return codeblockParameters;
-}
-function pluginAdjustExecuteCodeRun(codeblockParameters, plugin, plugins) {
-  if ("execute-code" in plugins) {
-    if (EXECUTE_CODE_SUPPORTED_LANGUAGES.includes(codeblockParameters.language.slice(4)) && !isCodeblockIgnored(codeblockParameters.language, plugin.settings.processedCodeblocksWhitelist))
-      codeblockParameters.language = codeblockParameters.language.slice(4);
-  }
-  return codeblockParameters;
-}
-function parseCodeblockParameterString(parameterString, codeblockParameters, theme) {
-  if (parameterString === "ignore")
-    codeblockParameters.ignore = true;
-  else if (/^title[:=]/.test(parameterString))
-    manageTitle(parameterString, codeblockParameters);
-  else if (/^ref[:=]/.test(parameterString) || /^reference[:=]/.test(parameterString))
-    manageReference(parameterString, codeblockParameters);
-  else if (/^fold[:=]?/.test(parameterString))
-    manageFolding(parameterString, codeblockParameters);
-  else if (/^ln[:=]/.test(parameterString))
-    manageLineNumbering(parameterString, codeblockParameters);
-  else if (/^unwrap[:=]?/.test(parameterString) || parameterString === "wrap")
-    manageWrapping(parameterString, codeblockParameters);
-  else
-    addHighlights(parameterString, codeblockParameters, theme);
-}
-function manageTitle(parameterString, codeblockParameters) {
-  const titleMatch = /(["']?)([^\1]+)\1/.exec(parameterString.slice("title:".length));
-  if (titleMatch)
-    codeblockParameters.title = titleMatch[2].trim();
-  parameterString = parameterString.slice("title:".length);
-  const linkInfo = manageLink(parameterString);
-  if (linkInfo) {
-    codeblockParameters.title = linkInfo.title;
-    codeblockParameters.reference = linkInfo.reference;
-  }
-}
-function manageReference(parameterString, codeblockParameters) {
-  parameterString = parameterString.slice((/^ref[:=]/.test(parameterString) ? "ref:" : "reference:").length);
-  const linkInfo = manageLink(parameterString);
-  if (linkInfo) {
-    codeblockParameters.reference = linkInfo.reference;
-    if (codeblockParameters.title === "")
-      codeblockParameters.title = linkInfo.title;
-  }
-}
-function manageLink(parameterString) {
-  const refWikiMatch = /\[\[([^\]|\r\n]+?)(?:\|([^\]|\r\n]+?))?\]\]/.exec(parameterString);
-  const refMdMatch = /\[(.*?)\]\((.+)\)/.exec(parameterString);
-  let title = "";
-  let reference = "";
-  if (refWikiMatch) {
-    title = refWikiMatch[2] ? refWikiMatch[2].trim() : refWikiMatch[1].trim();
-    reference = refWikiMatch[1].trim();
-  } else if (refMdMatch) {
-    title = refMdMatch[1].trim();
-    reference = refMdMatch[2].trim();
-  } else
-    return;
-  return { title, reference };
-}
-function manageFolding(parameterString, codeblockParameters) {
-  if (parameterString === "fold") {
-    codeblockParameters.fold = {
-      enabled: true,
-      placeholder: ""
-    };
-  } else {
-    const foldPlaceholderMatch = /(["']?)([^\1]+)\1/.exec(parameterString.slice("fold:".length));
-    if (foldPlaceholderMatch) {
-      codeblockParameters.fold = {
-        enabled: true,
-        placeholder: foldPlaceholderMatch[2].trim()
-      };
-    }
-  }
-}
-function manageLineNumbering(parameterString, codeblockParameters) {
-  parameterString = parameterString.slice("ln:".length);
-  if (/^\d+$/.test(parameterString)) {
-    codeblockParameters.lineNumbers = {
-      alwaysEnabled: true,
-      alwaysDisabled: false,
-      offset: parseInt(parameterString) - 1
-    };
-  } else if (parameterString.toLowerCase() === "true") {
-    codeblockParameters.lineNumbers = {
-      alwaysEnabled: true,
-      alwaysDisabled: false,
-      offset: 0
-    };
-  } else if (parameterString.toLowerCase() === "false") {
-    codeblockParameters.lineNumbers = {
-      alwaysEnabled: false,
-      alwaysDisabled: true,
-      offset: 0
-    };
-  }
-}
-function manageWrapping(parameterString, codeblockParameters) {
-  if (parameterString === "wrap") {
-    codeblockParameters.lineUnwrap = {
-      alwaysEnabled: false,
-      alwaysDisabled: true,
-      activeWrap: false
-    };
-  } else if (parameterString === "unwrap") {
-    codeblockParameters.lineUnwrap = {
-      alwaysEnabled: true,
-      alwaysDisabled: false,
-      activeWrap: false
-    };
-  } else {
-    parameterString = parameterString.slice("unwrap:".length);
-    if (parameterString.toLowerCase() === "inactive") {
-      codeblockParameters.lineUnwrap = {
-        alwaysEnabled: true,
-        alwaysDisabled: false,
-        activeWrap: true
-      };
-    } else if (parameterString.toLowerCase() === "true") {
-      codeblockParameters.lineUnwrap = {
-        alwaysEnabled: true,
-        alwaysDisabled: false,
-        activeWrap: false
-      };
-    } else if (parameterString.toLowerCase() === "false") {
-      codeblockParameters.lineUnwrap = {
-        alwaysEnabled: false,
-        alwaysDisabled: true,
-        activeWrap: false
-      };
-    }
-  }
-}
-function addHighlights(parameterString, codeblockParameters, theme) {
-  const highlightMatch = /^(\w+)[:=](.+)$/.exec(parameterString);
-  if (highlightMatch) {
-    if (highlightMatch[1] === "hl")
-      codeblockParameters.highlights.default = parseHighlightedLines(highlightMatch[2]);
-    else if (highlightMatch[1] in theme.colours.light.highlights.alternativeHighlights)
-      codeblockParameters.highlights.alternative[highlightMatch[1]] = parseHighlightedLines(highlightMatch[2]);
-  } else if (/^{[\d-,]+}$/.test(parameterString))
-    codeblockParameters.highlights.default = parseHighlightedLines(parameterString.slice(1, -1));
-}
-function parseHighlightedLines(highlightedLinesString) {
-  const highlightRules = highlightedLinesString.split(",");
-  const lineNumbers = /* @__PURE__ */ new Set();
-  const plainText = /* @__PURE__ */ new Set();
-  const regularExpressions = /* @__PURE__ */ new Set();
-  highlightRules.forEach((highlightRule) => {
-    if (/\d+-\d+/.test(highlightRule)) {
-      const [start, end] = highlightRule.split("-").map((num) => parseInt(num));
-      if (start && end && start <= end)
-        Array.from({ length: end - start + 1 }, (_2, num) => num + start).forEach((lineNumber) => lineNumbers.add(lineNumber));
-    } else if (/^\/(.*)\/$/.test(highlightRule)) {
-      try {
-        regularExpressions.add(new RegExp(highlightRule.replace(/^\/(.*)\/$/, "$1")));
-      } catch (e2) {
-      }
-    } else if (/".*"/.test(highlightRule)) {
-      plainText.add(highlightRule.substring(1, highlightRule.length - 1));
-    } else if (/'.*'/.test(highlightRule)) {
-      plainText.add(highlightRule.substring(1, highlightRule.length - 1));
-    } else if (/\D/.test(highlightRule)) {
-      plainText.add(highlightRule);
-    } else if (/\d+/.test(highlightRule)) {
-      lineNumbers.add(parseInt(highlightRule));
-    }
-  });
-  return {
-    lineNumbers: [...lineNumbers],
-    plainText: [...plainText],
-    regularExpressions: [...regularExpressions]
-  };
-}
-function isLanguageIgnored(language, excludedLanguagesString) {
-  return parseRegexExcludedLanguages(excludedLanguagesString).some((regexExcludedLanguage) => regexExcludedLanguage.test(language));
-}
-function isCodeblockIgnored(language, whitelistedCodeblocksString) {
-  return language in import_obsidian3.MarkdownPreviewRenderer.codeBlockPostProcessors && !parseRegexExcludedLanguages(whitelistedCodeblocksString).some((regexExcludedLanguage) => regexExcludedLanguage.test(language));
-}
-function parseRegexExcludedLanguages(excludedLanguagesString) {
-  return excludedLanguagesString.split(",").map((regexLanguage) => new RegExp(`^${regexLanguage.trim().replace(/\*/g, ".+")}$`, "i"));
-}
-function getParameterLine(codeblockLines) {
-  let openingCodeblockLine = getOpeningLine(codeblockLines);
-  if (openingCodeblockLine && (openingCodeblockLine !== codeblockLines[0] || />\s*(?:[`~])/.test(openingCodeblockLine)))
-    openingCodeblockLine = cleanParameterLine(openingCodeblockLine);
-  return openingCodeblockLine;
-}
-function getOpeningLine(codeblockLines) {
-  return codeblockLines.find((line) => Boolean(testOpeningLine(line)));
-}
-function testOpeningLine(codeblockLine) {
-  const lineMatch = /^(\s*(?:>\s*)*)(```+|~~~+)/.exec(codeblockLine);
-  if (!lineMatch)
-    return "";
-  if (codeblockLine.indexOf(lineMatch[2], lineMatch[1].length + lineMatch[2].length + 1) === -1)
-    return lineMatch[2];
-  return "";
-}
-function cleanParameterLine(parameterLine) {
-  return trimParameterLine(parameterLine).replace(/^(?:>\s*)*(```+|~~~+)/, "$1");
-}
-function trimParameterLine(parameterLine) {
-  return parameterLine.trim();
-}
-async function getFileContentLines(sourcePath, plugin) {
-  const file = plugin.app.vault.getAbstractFileByPath(sourcePath);
-  if (!file) {
-    console.error(`File not found: ${sourcePath}`);
-    return;
-  }
-  const fileContent = await plugin.app.vault.cachedRead(file).catch((error) => {
-    console.error(`Error reading file: ${error.message}`);
-    return "";
-  });
-  if (!fileContent)
-    return;
-  return fileContent.split(/\n/g);
-}
-function arraysEqual(array1, array2) {
-  return array1.length === array2.length && array1.every((el) => array2.includes(el));
-}
+// src/Referencing.ts
+var import_obsidian6 = require("obsidian");
 
-// src/Parsing/InlineCodeParsing.ts
-function parseInlineCode(codeText) {
-  const match = /^{( *(?:\w+(?: +(?:(?:[^\s"']+|"[^"]*"|'[^']*')+))*)? *)} *?([^ ].*?)$/.exec(codeText);
-  if (typeof (match == null ? void 0 : match[1]) !== "undefined" && typeof (match == null ? void 0 : match[2]) !== "undefined") {
-    if (match[1] === "")
-      return { parameters: null, text: match[2] };
-    else
-      return { parameters: parseInlineCodeParameters(match[1]), text: match[2] };
-  } else
-    return { parameters: null, text: codeText };
-}
-function parseInlineCodeParameters(parameterLine) {
-  const inlineCodeParameters = {
-    language: "",
-    title: "",
-    icon: false
-  };
-  const languageBreak = parameterLine.indexOf(" ");
-  inlineCodeParameters.language = parameterLine.slice(0, languageBreak !== -1 ? languageBreak : parameterLine.length).toLowerCase();
-  if (languageBreak === -1)
-    return inlineCodeParameters;
-  const parameterStrings = parameterLine.slice(languageBreak + 1).match(/(?:[^\s"']+|"[^"]*"|'[^']*')+/g);
-  if (!parameterStrings)
-    return inlineCodeParameters;
-  parameterStrings.forEach((parameterString) => parseInlineCodeParameterString(parameterString, inlineCodeParameters));
-  return inlineCodeParameters;
-}
-function parseInlineCodeParameterString(parameterString, inlineCodeParameters) {
-  if (parameterString.startsWith("title:")) {
-    const titleMatch = /(["']?)([^\1]+)\1/.exec(parameterString.slice("title:".length));
-    if (titleMatch)
-      inlineCodeParameters.title = titleMatch[2].trim();
-  } else if (parameterString === "icon" || parameterString.startsWith("icon:") && parameterString.toLowerCase() === "icon:true")
-    inlineCodeParameters.icon = true;
-}
-
-// src/CodeblockDecorating.ts
-var import_obsidian4 = require("obsidian");
-function createHeader(codeblockParameters, themeSettings, sourcePath, plugin) {
-  const headerContainer = createDiv();
-  const iconURL = codeblockParameters.language ? getLanguageIcon(codeblockParameters.language, plugin.languageIcons) : void 0;
-  if (!isHeaderHidden(codeblockParameters, themeSettings, iconURL)) {
-    headerContainer.classList.add("code-styler-header-container");
-    if (codeblockParameters.language !== "") {
-      if (isLanguageIconShown(codeblockParameters, themeSettings, iconURL))
-        headerContainer.appendChild(createImageWrapper(iconURL, createDiv()));
-      if (isLanguageTagShown(codeblockParameters, themeSettings))
-        headerContainer.appendChild(createDiv({ cls: "code-styler-header-language-tag", text: getLanguageTag(codeblockParameters.language) }));
-    }
-    const titleContainer = createTitleContainer(codeblockParameters, themeSettings, sourcePath, plugin);
-    headerContainer.appendChild(titleContainer);
-  } else
-    headerContainer.classList.add("code-styler-header-container-hidden");
-  return headerContainer;
-}
-function createTitleContainer(codeblockParameters, themeSettings, sourcePath, plugin) {
-  const titleContainer = createDiv({ cls: "code-styler-header-text" });
-  const title = codeblockParameters.title || (codeblockParameters.fold.enabled ? codeblockParameters.fold.placeholder || themeSettings.header.foldPlaceholder || FOLD_PLACEHOLDER : "");
-  if (codeblockParameters.reference === "")
-    titleContainer.innerText = title;
-  else {
-    import_obsidian4.MarkdownRenderer.render(plugin.app, `[[${codeblockParameters.reference}|${title}]]`, titleContainer, sourcePath, plugin);
-  }
-  return titleContainer;
-}
-function createInlineOpener(inlineCodeParameters, languageIcons, containerClasses = ["code-styler-inline-opener"]) {
-  const openerContainer = createSpan({ cls: containerClasses.join(" ") });
-  if (inlineCodeParameters.icon) {
-    const iconURL = getLanguageIcon(inlineCodeParameters.language, languageIcons);
-    if (typeof iconURL !== "undefined")
-      openerContainer.appendChild(createImageWrapper(iconURL, createSpan(), "code-styler-inline-icon"));
-  }
-  if (inlineCodeParameters.title)
-    openerContainer.appendChild(createSpan({ cls: "code-styler-inline-title", text: inlineCodeParameters.title }));
-  return openerContainer;
-}
-function createImageWrapper(iconURL, imageWrapper, imgClass = "code-styler-icon") {
-  const img = document.createElement("img");
-  img.classList.add(imgClass);
-  img.src = iconURL;
-  imageWrapper.appendChild(img);
-  return imageWrapper;
-}
-function getLanguageIcon(language, languageIcons) {
-  return languageIcons == null ? void 0 : languageIcons[getLanguageTag(language)];
-}
-function getLanguageTag(language) {
-  var _a2, _b;
-  return (_b = (_a2 = LANGUAGE_NAMES) == null ? void 0 : _a2[language]) != null ? _b : language.charAt(0).toUpperCase() + language.slice(1) || "";
-}
-function isHeaderHidden(codeblockParameters, themeSettings, iconURL) {
-  return !isHeaderRequired(codeblockParameters) && (codeblockParameters.language === "" || themeSettings.header.languageTag.display !== "always" && (themeSettings.header.languageIcon.display !== "always" || typeof iconURL == "undefined"));
-}
-function isLanguageIconShown(codeblockParameters, themeSettings, iconURL) {
-  return typeof iconURL !== "undefined" && (themeSettings.header.languageIcon.display === "always" || isHeaderRequired(codeblockParameters) && themeSettings.header.languageIcon.display === "if_header_shown");
-}
-function isLanguageTagShown(codeblockParameters, themeSettings) {
-  return themeSettings.header.languageTag.display === "always" || isHeaderRequired(codeblockParameters) && themeSettings.header.languageTag.display === "if_header_shown";
-}
-function isHeaderRequired(codeblockParameters) {
-  return codeblockParameters.fold.enabled || codeblockParameters.title !== "";
-}
-function getLineClass(codeblockParameters, lineNumber, line) {
-  let classList = [];
-  if (codeblockParameters.highlights.default.lineNumbers.includes(lineNumber + codeblockParameters.lineNumbers.offset) || codeblockParameters.highlights.default.plainText.some((text2) => line.indexOf(text2) > -1) || codeblockParameters.highlights.default.regularExpressions.some((regExp) => regExp.test(line)))
-    classList.push("code-styler-line-highlighted");
-  Object.entries(codeblockParameters.highlights.alternative).forEach(([alternativeHighlight, highlightedLines]) => {
-    if (highlightedLines.lineNumbers.includes(lineNumber + codeblockParameters.lineNumbers.offset) || highlightedLines.plainText.some((text2) => line.indexOf(text2) > -1) || highlightedLines.regularExpressions.some((regExp) => regExp.test(line)))
-      classList.push(`code-styler-line-highlighted-${alternativeHighlight.replace(/\s+/g, "-").toLowerCase()}`);
-  });
-  if (classList.length === 0)
-    classList = ["code-styler-line"];
-  return classList;
-}
-
-// src/EditingView.ts
-function createCodeblockCodeMirrorExtensions(settings, plugin) {
-  const livePreviewCompartment = new import_state.Compartment();
-  const ignoreCompartment = new import_state.Compartment();
-  const interaction = import_view.ViewPlugin.fromClass(
-    class ExamplePlugin {
-      constructor() {
-      }
-      // view: EditorView
-      update() {
-      }
-      // update: ViewUpdate
-      destroy() {
-      }
-    },
-    {
-      eventHandlers: {
-        click: function(event, view) {
-          var _a2, _b, _c;
-          if (event.target.classList.contains("code-styler-source-link") && event.metaKey === true) {
-            const sourcePath = (_c = (_b = (_a2 = view.state.field(import_obsidian5.editorInfoField)) == null ? void 0 : _a2.file) == null ? void 0 : _b.path) != null ? _c : "";
-            const destination = event.target.getAttribute("destination");
-            if (destination)
-              plugin.app.workspace.openLinkText(destination, sourcePath, true);
-          }
-        }
-      }
-    }
-  );
-  const ignoreListener = import_view.EditorView.updateListener.of((update) => {
-    const livePreviewExtensions = livePreviewCompartment.get(update.state);
-    const toIgnore = isSourceMode(update.state);
-    const fileIgnore = isFileIgnored(update.state) && !(Array.isArray(livePreviewExtensions) && livePreviewExtensions.length === 0);
-    const fileUnignore = !toIgnore && !isFileIgnored(update.state) && (Array.isArray(livePreviewExtensions) && livePreviewExtensions.length === 0);
-    if (isSourceMode(update.startState) !== toIgnore || fileIgnore || fileUnignore) {
-      update.view.dispatch({ effects: livePreviewCompartment.reconfigure(toIgnore || fileIgnore ? [] : [headerDecorations, lineDecorations, foldDecorations, hiddenDecorations]) });
-      if (!toIgnore && !fileIgnore)
-        update.view.dispatch({ effects: foldAll.of({}) });
-    }
-  });
-  const ignoreFileListener = import_view.EditorView.updateListener.of((update) => {
-    const ignoreExtensions = ignoreCompartment.get(update.state);
-    const fileIgnore = isFileIgnored(update.state) && !(Array.isArray(ignoreExtensions) && ignoreExtensions.length === 0);
-    const fileUnignore = !isFileIgnored(update.state) && (Array.isArray(ignoreExtensions) && ignoreExtensions.length === 0);
-    if (fileIgnore || fileUnignore)
-      update.view.dispatch({ effects: ignoreCompartment.reconfigure(fileIgnore ? [] : inlineDecorations) });
-  });
-  const settingsState = import_state.StateField.define({
-    create() {
-      return {
-        excludedLanguages: settings.excludedLanguages,
-        processedCodeblocksWhitelist: settings.processedCodeblocksWhitelist
-      };
-    },
-    update(value) {
-      if (value.processedCodeblocksWhitelist !== settings.processedCodeblocksWhitelist || value.excludedLanguages !== settings.excludedLanguages)
-        return {
-          excludedLanguages: settings.excludedLanguages,
-          processedCodeblocksWhitelist: settings.processedCodeblocksWhitelist
-        };
-      return value;
-    }
-  });
-  const charWidthState = import_state.StateField.define({
-    //TODO (@mayurankv) Improve implementation
-    create(state) {
-      return state.field(import_obsidian5.editorEditorField).defaultCharacterWidth * 1.105;
-    },
-    update(value, transaction) {
-      return transaction.state.field(import_obsidian5.editorEditorField).defaultCharacterWidth * 1.105;
-    }
-  });
-  const headerDecorations = import_state.StateField.define({
-    //TODO (@mayurankv) Update (does this need to be updated in this manner?)
-    create(state) {
-      return buildHeaderDecorations(state);
-    },
-    update(value, transaction) {
-      return buildHeaderDecorations(transaction.state, (position3) => isFolded(transaction.state, position3));
-    },
-    provide(field) {
-      return import_view.EditorView.decorations.from(field);
-    }
-  });
-  const lineDecorations = import_state.StateField.define({
-    //TODO (@mayurankv) Deal with source mode - make apply styling in source mode
-    create(state) {
-      return buildLineDecorations(state);
-    },
-    update(value, transaction) {
-      return buildLineDecorations(transaction.state);
-    },
-    provide(field) {
-      return import_view.EditorView.decorations.from(field);
-    }
-  });
-  const foldDecorations = import_state.StateField.define({
-    create(state) {
-      var _a2;
-      const builder = new import_state.RangeSetBuilder();
-      for (let iter = ((_a2 = state.field(headerDecorations, false)) != null ? _a2 : import_view.Decoration.none).iter(); iter.value !== null; iter.next()) {
-        if (!iter.value.spec.widget.codeblockParameters.fold.enabled)
-          continue;
-        codeblockFoldCallback(iter.from, state, (foldStart, foldEnd) => {
-          builder.add(foldStart.from, foldEnd.to, foldDecoration(iter.value.spec.widget.codeblockParameters.language));
-        });
-      }
-      return builder.finish();
-    },
-    update(value, transaction) {
-      value = value.map(transaction.changes).update({ filter: (from, to) => from !== to });
-      value = value.update({ add: transaction.effects.filter((effect) => effect.is(fold) || effect.is(unhideFold)).map((effect) => foldRegion(effect.value)) });
-      transaction.effects.filter((effect) => effect.is(unfold) || effect.is(hideFold)).forEach((effect) => value = value.update(unfoldRegion(effect.value)));
-      transaction.effects.filter((effect) => effect.is(removeFold)).forEach((effect) => value = value.update(removeFoldLanguages(effect.value)));
-      return value;
-    },
-    provide(field) {
-      return import_view.EditorView.decorations.from(field);
-    }
-  });
-  const hiddenDecorations = import_state.StateField.define({
-    create() {
-      return import_view.Decoration.none;
-    },
-    update(value, transaction) {
-      if (transaction.effects.some((effect) => effect.is(foldAll)))
-        return import_view.Decoration.none;
-      value = value.map(transaction.changes).update({ filter: (from, to) => from !== to });
-      value = value.update({ add: transaction.effects.filter((effect) => effect.is(hideFold)).map((effect) => effect.value) });
-      transaction.effects.filter((effect) => effect.is(unhideFold)).forEach((effect) => value = value.update(unhideFoldUpdate(effect.value)));
-      transaction.effects.filter((effect) => effect.is(removeFold)).forEach((effect) => value = value.update(removeFoldLanguages(effect.value)));
-      return value;
-    }
-  });
-  const inlineDecorations = import_state.StateField.define({
-    create(state) {
-      return buildInlineDecorations(state);
-    },
-    update(value, transaction) {
-      return buildInlineDecorations(transaction.state);
-    },
-    provide(field) {
-      return import_view.EditorView.decorations.from(field);
-    }
-  });
-  function settingsChangeExtender() {
-    return import_state.EditorState.transactionExtender.of((transaction) => {
-      let addEffects = [];
-      const initialSettings = transaction.startState.field(settingsState);
-      let readdFoldLanguages = [];
-      let removeFoldLanguages2 = [];
-      if (initialSettings.processedCodeblocksWhitelist !== settings.processedCodeblocksWhitelist) {
-        const codeblockProcessors = Object.keys(MarkdownPreviewRenderer.codeBlockPostProcessors);
-        const initialExcludedCodeblocks = codeblockProcessors.filter((lang) => !initialSettings.processedCodeblocksWhitelist.split(",").map((lang2) => lang2.trim()).includes(lang));
-        const currentExcludedCodeblocks = codeblockProcessors.filter((lang) => !settings.processedCodeblocksWhitelist.split(",").map((lang2) => lang2.trim()).includes(lang));
-        removeFoldLanguages2 = removeFoldLanguages2.concat(setDifference(currentExcludedCodeblocks, initialExcludedCodeblocks));
-        readdFoldLanguages = readdFoldLanguages.concat(setDifference(initialExcludedCodeblocks, currentExcludedCodeblocks));
-      }
-      if (initialSettings.excludedLanguages !== settings.excludedLanguages) {
-        const initialExcludedLanguages = initialSettings.excludedLanguages.split(",").map((lang) => lang.trim());
-        const currentExcludedLanguages = settings.excludedLanguages.split(",").map((lang) => lang.trim());
-        removeFoldLanguages2 = removeFoldLanguages2.concat(setDifference(currentExcludedLanguages, initialExcludedLanguages));
-        readdFoldLanguages = readdFoldLanguages.concat(setDifference(initialExcludedLanguages, currentExcludedLanguages));
-      }
-      if (removeFoldLanguages2.length !== 0)
-        addEffects.push(removeFold.of(removeFoldLanguages2));
-      if (readdFoldLanguages.length !== 0)
-        addEffects = addEffects.concat(convertReaddFold(transaction, readdFoldLanguages));
-      return addEffects.length !== 0 ? { effects: addEffects } : null;
-    });
-  }
-  function cursorFoldExtender() {
-    return import_state.EditorState.transactionExtender.of((transaction) => {
-      var _a2, _b, _c, _d;
-      const addEffects = [];
-      const foldDecorationsState = (_b = (_a2 = transaction.startState.field(foldDecorations, false)) == null ? void 0 : _a2.map(transaction.changes)) != null ? _b : import_view.Decoration.none;
-      const hiddenDecorationsState = (_d = (_c = transaction.startState.field(hiddenDecorations, false)) == null ? void 0 : _c.map(transaction.changes)) != null ? _d : import_view.Decoration.none;
-      transaction.newSelection.ranges.forEach((range) => {
-        foldDecorationsState.between(range.from, range.to, (foldFrom, foldTo, decorationValue) => {
-          if (rangeInteraction(foldFrom, foldTo, range))
-            addEffects.push(hideFold.of({ from: foldFrom, to: foldTo, value: decorationValue }));
-        });
-        for (let iter = hiddenDecorationsState.iter(); iter.value !== null; iter.next()) {
-          if (!rangeInteraction(iter.from, iter.to, range))
-            addEffects.push(unhideFold.of({ from: iter.from, to: iter.to, value: iter.value }));
-        }
-      });
-      return addEffects.length !== 0 ? { effects: addEffects } : null;
-    });
-  }
-  function documentFoldExtender() {
-    return import_state.EditorState.transactionExtender.of((transaction) => {
-      let addEffects = [];
-      transaction.effects.filter((effect) => effect.is(foldAll)).forEach((effect) => {
-        var _a2;
-        if (typeof ((_a2 = effect.value) == null ? void 0 : _a2.toFold) !== "undefined")
-          addEffects = addEffects.concat(documentFold(transaction.startState, effect.value.toFold));
-        else
-          addEffects = addEffects.concat(documentFold(transaction.startState));
-      });
-      return addEffects.length !== 0 ? { effects: addEffects } : null;
-    });
-  }
-  class LineNumberWidget extends import_view.WidgetType {
-    constructor(lineNumber, codeblockParameters, maxLineNum, empty3 = false) {
-      super();
-      this.lineNumber = lineNumber;
-      this.codeblockParameters = codeblockParameters;
-      this.maxLineNum = maxLineNum;
-      this.empty = empty3;
-    }
-    eq(other) {
-      return this.lineNumber === other.lineNumber && this.codeblockParameters.lineNumbers.alwaysEnabled === other.codeblockParameters.lineNumbers.alwaysEnabled && this.codeblockParameters.lineNumbers.alwaysDisabled === other.codeblockParameters.lineNumbers.alwaysDisabled && this.codeblockParameters.lineNumbers.offset === other.codeblockParameters.lineNumbers.offset && this.maxLineNum === other.maxLineNum && this.empty === other.empty;
-    }
-    toDOM() {
-      return createSpan({ attr: { style: this.maxLineNum.toString().length > (this.lineNumber + this.codeblockParameters.lineNumbers.offset).toString().length ? "width: var(--line-number-gutter-width);" : "" }, cls: "code-styler-line-number", text: this.empty ? "" : (this.lineNumber + this.codeblockParameters.lineNumbers.offset).toString() });
-    }
-  }
-  class CommentLinkWidget extends import_view.WidgetType {
-    constructor(linkText, sourcePath) {
-      super();
-      this.linkText = linkText;
-      this.sourcePath = sourcePath;
-    }
-    eq(other) {
-      return this.linkText === other.linkText && this.sourcePath === other.sourcePath;
-    }
-    toDOM() {
-      const linkParentElement = createDiv({ attr: { class: "code-styler-comment-link" } });
-      import_obsidian5.MarkdownRenderer.render(plugin.app, this.linkText, linkParentElement, this.sourcePath, plugin);
-      return linkParentElement;
-    }
-  }
-  class HeaderWidget extends import_view.WidgetType {
-    constructor(codeblockParameters, folded, themeSettings, sourcePath, plugin2) {
-      super();
-      this.codeblockParameters = structuredClone(codeblockParameters);
-      this.themeSettings = structuredClone(themeSettings);
-      this.sourcePath = sourcePath;
-      this.plugin = plugin2;
-      this.iconURL = getLanguageIcon(this.codeblockParameters.language, this.plugin.languageIcons);
-      this.folded = folded;
-      this.hidden = isHeaderHidden(this.codeblockParameters, this.themeSettings, this.iconURL);
-    }
-    eq(other) {
-      return this.codeblockParameters.language === other.codeblockParameters.language && this.codeblockParameters.title === other.codeblockParameters.title && this.codeblockParameters.reference === other.codeblockParameters.reference && this.codeblockParameters.fold.enabled === other.codeblockParameters.fold.enabled && this.codeblockParameters.fold.placeholder === other.codeblockParameters.fold.placeholder && this.themeSettings.header.foldPlaceholder === other.themeSettings.header.foldPlaceholder && this.themeSettings.header.languageIcon.display === other.themeSettings.header.languageIcon.display && this.themeSettings.header.languageTag.display === other.themeSettings.header.languageTag.display && this.folded === other.folded && this.iconURL === other.iconURL;
-    }
-    toDOM(view) {
-      const headerContainer = createHeader(this.codeblockParameters, this.themeSettings, this.sourcePath, this.plugin);
-      if (this.codeblockParameters.language !== "")
-        headerContainer.classList.add(`language-${this.codeblockParameters.language}`);
-      if (this.folded)
-        headerContainer.classList.add("code-styler-header-folded");
-      headerContainer.onclick = (event) => {
-        var _a2, _b;
-        if (!((_b = (_a2 = event.target) == null ? void 0 : _a2.classList) == null ? void 0 : _b.contains("internal-link")))
-          foldOnClick(view, headerContainer, this.folded, this.codeblockParameters.language);
-      };
-      return headerContainer;
-    }
-  }
-  class OpenerWidget extends import_view.WidgetType {
-    constructor(inlineCodeParameters, plugin2) {
-      super();
-      this.inlineCodeParameters = inlineCodeParameters;
-      this.plugin = plugin2;
-    }
-    eq(other) {
-      return this.inlineCodeParameters.language == other.inlineCodeParameters.language && this.inlineCodeParameters.title == other.inlineCodeParameters.title && this.inlineCodeParameters.icon == other.inlineCodeParameters.icon && getLanguageIcon(this.inlineCodeParameters.language, this.plugin.languageIcons) == getLanguageIcon(other.inlineCodeParameters.language, other.plugin.languageIcons);
-    }
-    toDOM() {
-      return createInlineOpener(this.inlineCodeParameters, this.plugin.languageIcons, ["code-styler-inline-opener", "cm-inline-code"]);
-    }
-  }
-  function buildHeaderDecorations(state, foldValue = (position3, defaultFold) => defaultFold) {
-    var _a2, _b, _c;
-    const builder = new import_state.RangeSetBuilder();
-    const sourcePath = (_c = (_b = (_a2 = state.field(import_obsidian5.editorInfoField)) == null ? void 0 : _a2.file) == null ? void 0 : _b.path) != null ? _c : "";
-    let codeblockParameters;
-    (0, import_language.syntaxTree)(state).iterate({
-      enter: (syntaxNode) => {
-        if (syntaxNode.type.name.includes("HyperMD-codeblock-begin")) {
-          const startLine = state.doc.lineAt(syntaxNode.from);
-          codeblockParameters = parseCodeblockParameters(trimParameterLine(startLine.text.toString()), settings.currentTheme);
-          if (!isLanguageIgnored(codeblockParameters.language, settings.excludedLanguages) && !isCodeblockIgnored(codeblockParameters.language, settings.processedCodeblocksWhitelist) && !codeblockParameters.ignore) {
-            if (!SPECIAL_LANGUAGES.some((regExp) => new RegExp(regExp).test(codeblockParameters.language)))
-              builder.add(startLine.from, startLine.from, import_view.Decoration.widget({ widget: new HeaderWidget(codeblockParameters, foldValue(startLine.from, codeblockParameters.fold.enabled), settings.currentTheme.settings, sourcePath, plugin), block: true, side: -1 }));
-          }
-        }
-      }
-    });
-    return builder.finish();
-  }
-  function buildLineDecorations(state) {
-    var _a2, _b, _c, _d, _e;
-    const builder = new import_state.RangeSetBuilder();
-    const sourcePath = (_c = (_b = (_a2 = state.field(import_obsidian5.editorInfoField)) == null ? void 0 : _a2.file) == null ? void 0 : _b.path) != null ? _c : "";
-    const sourceMode = isSourceMode(state);
-    for (let iter = ((_d = state.field(headerDecorations, false)) != null ? _d : import_view.Decoration.none).iter(); iter.value !== null; iter.next()) {
-      const foldStart = state.doc.lineAt(iter.from);
-      const startDelimiter = testOpeningLine(foldStart.text.toString());
-      const codeblockParameters = iter.value.spec.widget.codeblockParameters;
-      const showLineNumbers = settings.currentTheme.settings.codeblock.lineNumbers && !codeblockParameters.lineNumbers.alwaysDisabled || codeblockParameters.lineNumbers.alwaysEnabled;
-      let foldEnd = null;
-      let maxLineNum = 0;
-      codeblockFoldCallback(iter.from, state, (foldStart2, foldEnd2) => {
-        maxLineNum = foldEnd2.to - foldStart2.from - 1 + codeblockParameters.lineNumbers.offset;
-      });
-      const lineNumberMargin = maxLineNum.toString().length > 2 ? maxLineNum.toString().length * state.field(charWidthState) : void 0;
-      builder.add(foldStart.from, foldStart.from, import_view.Decoration.line({ attributes: { style: `--line-number-gutter-width: ${lineNumberMargin ? lineNumberMargin + "px" : "calc(var(--line-number-gutter-min-width) - 12px)"};`, class: "code-styler-line" + (["^$"].concat(SPECIAL_LANGUAGES).some((regExp) => new RegExp(regExp).test(codeblockParameters.language)) ? "" : ` language-${codeblockParameters.language}`) } }));
-      if (showLineNumbers)
-        builder.add(foldStart.from, foldStart.from, import_view.Decoration.widget({ widget: new LineNumberWidget(0, codeblockParameters, maxLineNum, true) }));
-      for (let i2 = foldStart.number + 1; i2 <= state.doc.lines; i2++) {
-        const line = (_e = state.doc) == null ? void 0 : _e.line(i2);
-        if (!line)
-          break;
-        const lineText = line.text.toString();
-        if (testOpeningLine(lineText) === startDelimiter) {
-          foldEnd = line;
-          break;
-        }
-        builder.add(line.from, line.from, import_view.Decoration.line({ attributes: { style: `--line-number-gutter-width: ${lineNumberMargin ? lineNumberMargin + "px" : "calc(var(--line-number-gutter-min-width) - 12px)"};`, class: (SPECIAL_LANGUAGES.some((regExp) => new RegExp(regExp).test(iter.value.spec.widget.codeblockParameters.language)) ? "code-styler-line" : getLineClass(codeblockParameters, i2 - foldStart.number, line.text).join(" ")) + (["^$"].concat(SPECIAL_LANGUAGES).some((regExp) => new RegExp(regExp).test(codeblockParameters.language)) ? "" : ` language-${codeblockParameters.language}`) } }));
-        if (showLineNumbers)
-          builder.add(line.from, line.from, import_view.Decoration.widget({ widget: new LineNumberWidget(i2 - foldStart.number, codeblockParameters, maxLineNum) }));
-        if (codeblockParameters.language === "markdown")
-          continue;
-        convertCommentLinks2(state, line, sourcePath, builder, sourceMode);
-      }
-      if (foldEnd !== null) {
-        builder.add(foldEnd.from, foldEnd.from, import_view.Decoration.line({ attributes: { style: `--line-number-gutter-width: ${lineNumberMargin ? lineNumberMargin + "px" : "calc(var(--line-number-gutter-min-width) - 12px)"};`, class: "code-styler-line" + (["^$"].concat(SPECIAL_LANGUAGES).some((regExp) => new RegExp(regExp).test(codeblockParameters.language)) ? "" : ` language-${codeblockParameters.language}`) } }));
-        if (showLineNumbers)
-          builder.add(foldEnd.from, foldEnd.from, import_view.Decoration.widget({ widget: new LineNumberWidget(0, codeblockParameters, maxLineNum, true) }));
-      }
-    }
-    return builder.finish();
-  }
-  function convertCommentLinks2(state, line, sourcePath, builder, sourceMode) {
-    (0, import_language.syntaxTree)(state).iterate({
-      enter: (syntaxNode) => {
-        if (syntaxNode.type.name.includes("comment_hmd-codeblock")) {
-          const commentText = state.sliceDoc(syntaxNode.from, syntaxNode.to);
-          const linkMatches = [...commentText.matchAll(/(?:\[\[[^\]|\r\n]+?(?:\|[^\]|\r\n]+?)?\]\]|\[.*?\]\(.+\))/g)];
-          linkMatches.forEach((linkMatch) => {
-            if ((linkMatch == null ? void 0 : linkMatch.index) === void 0)
-              return;
-            const from = syntaxNode.from + linkMatch.index;
-            const to = from + linkMatch[0].length;
-            if (sourceMode || state.selection.ranges.some((range) => rangeInteraction(from, to, range))) {
-              const mdBreak = linkMatch[0].indexOf("](");
-              if (mdBreak === -1) {
-                const wikilinkSeparator = linkMatch[0].indexOf("|");
-                builder.add(from + 2, to - 2, import_view.Decoration.mark({ class: "cm-hmd-internal-link code-styler-source-link", attributes: { destination: linkMatch[0].slice(2, wikilinkSeparator !== -1 ? wikilinkSeparator : -2) } }));
-              } else {
-                builder.add(from + 1, from + mdBreak, import_view.Decoration.mark({ class: "cm-link code-styler-source-link", attributes: { destination: linkMatch[0].slice(mdBreak + 2, -1) } }));
-                builder.add(from + mdBreak + 2, to - 1, import_view.Decoration.mark({ class: "cm-string cm-url" }));
-              }
-            } else
-              builder.add(from, to, import_view.Decoration.replace({ widget: new CommentLinkWidget(linkMatch[0], sourcePath) }));
-          });
-        }
-      },
-      from: line.from,
-      to: line.to
-    });
-  }
-  function buildInlineDecorations(state) {
-    if (!settings.currentTheme.settings.inline.syntaxHighlight)
-      return import_view.Decoration.none;
-    const builder = new import_state.RangeSetBuilder();
-    const sourceMode = isSourceMode(state);
-    (0, import_language.syntaxTree)(state).iterate({
-      enter: (syntaxNode) => {
-        const ranges = getInlineCodeRanges(state, syntaxNode);
-        if (ranges === null)
-          return;
-        const { parameters, text: text2, section } = ranges;
-        if (parameters.value === null)
-          addUnstyledInlineDecorations(state, builder, parameters, text2, section, sourceMode);
-        else
-          addStyledInlineDecorations(state, builder, parameters, text2, section, sourceMode);
-      }
-    });
-    return builder.finish();
-  }
-  function addStyledInlineDecorations(state, builder, parameters, text2, section, sourceMode) {
-    var _a2, _b;
-    if (sourceMode || state.selection.ranges.some((range) => rangeInteraction(section.from, section.to, range)))
-      builder.add(parameters.from, parameters.to, import_view.Decoration.mark({ class: "code-styler-inline-parameters" }));
-    else {
-      builder.add(parameters.from, parameters.to, import_view.Decoration.replace({}));
-      if (((_a2 = parameters.value) == null ? void 0 : _a2.title) || ((_b = parameters.value) == null ? void 0 : _b.icon) && getLanguageIcon(parameters.value.language, plugin.languageIcons))
-        builder.add(parameters.from, parameters.from, import_view.Decoration.replace({ widget: new OpenerWidget(parameters.value, plugin) }));
-    }
-    modeHighlight({ start: parameters.to, text: text2.value, language: parameters.value.language }, builder);
-  }
-  function convertReaddFold(transaction, readdLanguages) {
-    var _a2;
-    const addEffects = [];
-    for (let iter = ((_a2 = transaction.state.field(headerDecorations, false)) != null ? _a2 : import_view.Decoration.none).iter(); iter.value !== null; iter.next()) {
-      if (!iter.value.spec.widget.codeblockParameters.fold.enabled || !readdLanguages.includes(iter.value.spec.widget.codeblockParameters.language))
-        continue;
-      codeblockFoldCallback(iter.from, transaction.state, (foldStart, foldEnd) => {
-        addEffects.push(fold.of({ from: foldStart.from, to: foldEnd.to, value: { spec: { language: iter.value.spec.widget.codeblockParameters.language } } }));
-      });
-    }
-    return addEffects;
-  }
-  function isFolded(state, position3) {
-    var _a2;
-    let folded = false;
-    (_a2 = state.field(foldDecorations, false)) == null ? void 0 : _a2.between(position3, position3, () => {
-      folded = true;
-    });
-    return folded;
-  }
-  function documentFold(state, toFold) {
-    var _a2;
-    const addEffects = [];
-    const reset = typeof toFold === "undefined";
-    for (let iter = ((_a2 = state.field(headerDecorations, false)) != null ? _a2 : import_view.Decoration.none).iter(); iter.value !== null; iter.next()) {
-      if (iter.value.spec.widget.hidden)
-        continue;
-      const folded = iter.value.spec.widget.folded;
-      const defaultFold = iter.value.spec.widget.codeblockParameters.fold.enabled;
-      codeblockFoldCallback(iter.from, state, (foldStart, foldEnd) => {
-        if (!reset && toFold && !folded || reset && !folded && defaultFold)
-          addEffects.push(fold.of({ from: foldStart.from, to: foldEnd.to, value: { spec: { language: iter.value.spec.widget.codeblockParameters.language } } }));
-        else if (!reset && !toFold && folded || reset && folded && !defaultFold)
-          addEffects.push(unfold.of({ from: foldStart.from, to: foldEnd.to }));
-      });
-    }
-    return addEffects;
-  }
-  return [
-    interaction,
-    ignoreListener,
-    ignoreFileListener,
-    cursorFoldExtender(),
-    documentFoldExtender(),
-    settingsChangeExtender(),
-    settingsState,
-    charWidthState,
-    livePreviewCompartment.of([]),
-    ignoreCompartment.of([])
-  ];
-}
-var fold = import_state.StateEffect.define();
-var unfold = import_state.StateEffect.define();
-var hideFold = import_state.StateEffect.define();
-var unhideFold = import_state.StateEffect.define();
-var removeFold = import_state.StateEffect.define();
-var foldAll = import_state.StateEffect.define();
-function codeblockFoldCallback(startPosition, state, foldCallback) {
-  const foldStart = state.doc.lineAt(startPosition);
-  const startDelimiter = testOpeningLine(foldStart.text.toString());
-  let foldEnd = null;
-  for (let i2 = foldStart.number + 1; i2 <= state.doc.lines; i2++) {
-    const line = state.doc.line(i2);
-    const lineText = line.text.toString();
-    if (testOpeningLine(lineText) === startDelimiter) {
-      foldEnd = line;
-      break;
-    }
-  }
-  if (foldEnd !== null)
-    foldCallback(foldStart, foldEnd);
-}
-function getInlineCodeRanges(state, syntaxNode) {
-  const delimiterSize = getInlineDelimiterSize(syntaxNode);
-  if (delimiterSize === null)
-    return null;
-  const inlineCodeText = state.doc.sliceString(syntaxNode.from, syntaxNode.to);
-  const { parameters, text: text2 } = parseInlineCode(inlineCodeText);
-  const parametersLength = inlineCodeText.lastIndexOf(text2);
-  return { parameters: { from: syntaxNode.from, to: syntaxNode.from + parametersLength, value: parameters }, text: { from: syntaxNode.from + parametersLength + 1, to: syntaxNode.to, value: text2 }, section: { from: syntaxNode.from - delimiterSize, to: syntaxNode.to + delimiterSize } };
-}
-function getInlineDelimiterSize(syntaxNode) {
-  var _a2;
-  const properties = new Set((_a2 = syntaxNode.node.type.prop(import_language.tokenClassNodeProp)) == null ? void 0 : _a2.split(" "));
-  if (!(properties.has("inline-code") && !properties.has("formatting")))
-    return null;
-  const previousSibling = syntaxNode.node.prevSibling;
-  if (!previousSibling)
-    return null;
-  return previousSibling.to - previousSibling.from;
-}
-function addUnstyledInlineDecorations(state, builder, parameters, text2, section, sourceMode) {
-  if (text2.value) {
-    if (!state.selection.ranges.some((range) => range.to >= section.from && range.from <= section.to) && !sourceMode)
-      builder.add(parameters.from, parameters.to, import_view.Decoration.replace({}));
-  }
-}
-function modeHighlight({ start, text: text2, language }, builder) {
-  var _a2;
-  const mode = window.CodeMirror.getMode(window.CodeMirror.defaults, (_a2 = window.CodeMirror.findModeByName(language)) == null ? void 0 : _a2.mime);
-  const state = window.CodeMirror.startState(mode);
-  if (mode == null ? void 0 : mode.token) {
-    const stream = new window.CodeMirror.StringStream(text2);
-    while (!stream.eol()) {
-      const style2 = mode.token(stream, state);
-      if (style2)
-        builder.add(start + stream.start, start + stream.pos, import_view.Decoration.mark({ class: `cm-${style2}` }));
-      stream.start = stream.pos;
-    }
-  }
-}
-function editingDocumentFold(view, toFold) {
-  view.dispatch({ effects: foldAll.of(typeof toFold !== "undefined" ? { toFold } : {}) });
-  view.requestMeasure();
-}
-function foldOnClick(view, target, folded, language) {
-  codeblockFoldCallback(view.posAtDOM(target), view.state, (foldStart, foldEnd) => {
-    view.dispatch({ effects: foldLines(!folded, { from: foldStart.from, to: foldEnd.to, value: { spec: { language } } }) });
-    view.requestMeasure();
-  });
-}
-function foldLines(toFold, foldInfo) {
-  return toFold ? fold.of(foldInfo) : unfold.of({ from: foldInfo.from, to: foldInfo.to });
-}
-function foldRegion({ from: foldFrom, to: foldTo, value: { spec: { language } } }) {
-  return foldDecoration(language).range(foldFrom, foldTo);
-}
-function unfoldRegion({ from: foldFrom, to: foldTo }) {
-  return { filter: (from, to) => to <= foldFrom || from >= foldTo, filterFrom: foldFrom, filterTo: foldTo };
-}
-function removeFoldLanguages(languages) {
-  return { filter: (from, to, value) => {
-    var _a2;
-    return !languages.includes((_a2 = value == null ? void 0 : value.spec) == null ? void 0 : _a2.language);
-  } };
-}
-function unhideFoldUpdate(range) {
-  return { filterFrom: range.from, filterTo: range.to, filter: (from, to) => !(from === range.from && to === range.to) };
-}
-function foldDecoration(language) {
-  return import_view.Decoration.replace({ block: true, language });
-}
-function rangeInteraction(from, to, range) {
-  return from <= range.head && range.head <= to || from <= range.anchor && range.anchor <= to;
-}
-function isFileIgnored(state) {
+// src/Parsing/ReferenceParsing.ts
+var import_obsidian3 = require("obsidian");
+function parseReferenceParameters(source) {
   var _a2, _b, _c, _d, _e;
-  const filePath = (_b = (_a2 = state.field(import_obsidian5.editorInfoField)) == null ? void 0 : _a2.file) == null ? void 0 : _b.path;
-  if (typeof filePath !== "undefined")
-    return ((_e = (_d = (_c = this.app.metadataCache.getCache(filePath)) == null ? void 0 : _c.frontmatter) == null ? void 0 : _d["code-styler-ignore"]) == null ? void 0 : _e.toString()) === "true";
-  return false;
+  source = source.replace(/^([^:]+):(.+)\n/, "$1: $2\n").replace(/(?<!")\[\[(.*?)\]\](?!")/, '"[[$1]]"');
+  let passedParameters = (0, import_obsidian3.parseYaml)(source);
+  if (passedParameters === source || passedParameters === null)
+    throw Error("YAML Parse Error");
+  passedParameters = passedParameters;
+  const filePath = (_c = (_b = (_a2 = passedParameters == null ? void 0 : passedParameters.filePath) != null ? _a2 : passedParameters == null ? void 0 : passedParameters.file) != null ? _b : passedParameters == null ? void 0 : passedParameters.path) != null ? _c : passedParameters == null ? void 0 : passedParameters.link;
+  if (typeof filePath === "undefined")
+    throw Error("No file specified");
+  const referenceParameters = { filePath, language: (_e = (_d = passedParameters == null ? void 0 : passedParameters.language) != null ? _d : passedParameters == null ? void 0 : passedParameters.lang) != null ? _e : getLanguage(filePath), start: null, end: null };
+  referenceParameters.start = getLineIdentifier(passedParameters.start);
+  referenceParameters.end = getLineIdentifier(passedParameters.end);
+  return referenceParameters;
 }
-function isSourceMode(state) {
-  return !state.field(import_obsidian5.editorLivePreviewField);
+async function parseExternalReference(reference) {
+  var _a2, _b, _c, _d, _e, _f, _g, _h;
+  const HEADERS = { "Accept": "application/json", "Content-Type": "application/json" };
+  try {
+    if (((_a2 = reference.external) == null ? void 0 : _a2.website) === "github") {
+      reference.path = reference.path.split("?")[0].replace(/(?<=github.com\/.*\/.*\/)raw(?=\/)/, "blob");
+      const info = (await (0, import_obsidian3.requestUrl)({ url: reference.path, method: "GET", headers: HEADERS })).json;
+      return {
+        title: info.payload.blob.displayName,
+        // title: info.title,
+        rawUrl: info.payload.blob.rawBlobUrl,
+        datetime: timeStamp(),
+        displayUrl: reference.path,
+        author: info.payload.repo.ownerLogin,
+        repository: info.payload.repo.name,
+        path: info.payload.path,
+        fileName: info.payload.blob.displayName,
+        refInfo: {
+          ref: info.payload.refInfo.name,
+          type: info.payload.refInfo.refType,
+          hash: info.payload.refInfo.currentOid
+        }
+      };
+    } else if (((_b = reference.external) == null ? void 0 : _b.website) === "gitlab") {
+      reference.path = reference.path.split("?")[0].replace(/(?<=gitlab.com\/.*\/.*\/)raw(?=\/)/, "blob");
+      const info = (await (0, import_obsidian3.requestUrl)({ url: reference.path, method: "GET", headers: HEADERS })).json;
+      return {
+        title: info.name,
+        rawUrl: "https://gitlab.com" + info.raw_path,
+        datetime: timeStamp(),
+        displayUrl: reference.path,
+        author: (_d = (_c = reference.path.match(/(?<=^https?:\/\/gitlab.com\/).*?(?=\/)/)) == null ? void 0 : _c[0]) != null ? _d : "",
+        repository: (_f = (_e = reference.path.match(/(?<=^https?:\/\/gitlab.com\/.*?\/).*?(?=\/)/)) == null ? void 0 : _e[0]) != null ? _f : "",
+        path: info.path,
+        fileName: info.name,
+        refInfo: {
+          ref: "",
+          //TODO (@mayurankv) Parse from url
+          type: "",
+          //TODO (@mayurankv) Parse from url
+          hash: info.last_commit_sha
+        }
+      };
+    } else if (((_g = reference.external) == null ? void 0 : _g.website) === "bitbucket") {
+      return {
+        title: "",
+        rawUrl: "",
+        datetime: timeStamp()
+      };
+    } else if (((_h = reference.external) == null ? void 0 : _h.website) === "sourceforge") {
+      return {
+        title: "",
+        rawUrl: "",
+        datetime: timeStamp()
+      };
+    } else {
+      return {
+        title: "",
+        rawUrl: reference.path,
+        datetime: timeStamp()
+      };
+    }
+  } catch (error) {
+    throw Error(`Could not parse external URL: ${error}`);
+  }
 }
-function setDifference(array1, array2) {
-  return array1.filter((element3) => !array2.includes(element3));
+function getLanguage(filePath) {
+  if (filePath.startsWith("[[") && filePath.endsWith("]]"))
+    filePath = filePath.slice(2, -2);
+  return filePath.slice((filePath.lastIndexOf(".") - 1 >>> 0) + 2);
+}
+function getLineLimits(codeContent, referenceParameters) {
+  var _a2, _b, _c, _d, _e;
+  try {
+    const lines = codeContent.split("\n");
+    let startIndex;
+    let endIndex;
+    if (referenceParameters.start === null)
+      startIndex = 0;
+    else if (typeof referenceParameters.start === "number")
+      startIndex = referenceParameters.start - 1;
+    else if (((_a2 = referenceParameters.start) == null ? void 0 : _a2.startsWith("/")) && ((_b = referenceParameters.start) == null ? void 0 : _b.endsWith("/"))) {
+      const startRegex = new RegExp(referenceParameters.start.replace(/^\/(.*)\/$/, "$1"));
+      startIndex = lines.findIndex((line) => startRegex.test(line));
+    } else
+      startIndex = lines.findIndex((line) => line.indexOf(referenceParameters.start) > -1);
+    if (referenceParameters.end === null)
+      endIndex = lines.length - 1;
+    else if (typeof referenceParameters.end === "number")
+      endIndex = referenceParameters.end - 1;
+    else if (((_c = referenceParameters.end) == null ? void 0 : _c.startsWith("/")) && ((_d = referenceParameters.end) == null ? void 0 : _d.endsWith("/"))) {
+      const endRegex = new RegExp(referenceParameters.end.replace(/^\/(.*)\/$/, "$1"));
+      endIndex = lines.findIndex((line) => endRegex.test(line));
+    } else if ((_e = referenceParameters.end) == null ? void 0 : _e.startsWith("+"))
+      endIndex = startIndex + Number(referenceParameters.end.slice(1));
+    else
+      endIndex = lines.findIndex((line) => line.indexOf(referenceParameters.end) > -1);
+    if (startIndex > endIndex)
+      throw Error("Specified Start line is afterthe specified End line");
+    else if (startIndex === -1)
+      throw Error("Start line could not be found");
+    else if (endIndex === -1)
+      throw Error("End line could not be found");
+    return { codeSection: lines.slice(startIndex, endIndex + 1).join("\n"), startLine: startIndex + 1 };
+  } catch (error) {
+    throw Error(error);
+  }
+}
+function getLineIdentifier(lineIdentifier) {
+  if (typeof lineIdentifier === "undefined")
+    return null;
+  else if (typeof lineIdentifier === "number")
+    return lineIdentifier;
+  else if (/^\/(.*)\/$/.test(lineIdentifier)) {
+    try {
+      return new RegExp(lineIdentifier.replace(/^\/(.*)\/$/, "$1"));
+    } catch (e2) {
+      throw Error("Invalid Regular Expression");
+    }
+  } else if (/".*"/.test(lineIdentifier))
+    return lineIdentifier.substring(1, lineIdentifier.length - 1);
+  else if (/'.*'/.test(lineIdentifier))
+    return lineIdentifier.substring(1, lineIdentifier.length - 1);
+  else if (/\D/.test(lineIdentifier))
+    return lineIdentifier;
+  else if (/\d+/.test(lineIdentifier))
+    return parseInt(lineIdentifier);
+  return null;
+}
+function timeStamp() {
+  const date = /* @__PURE__ */ new Date();
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  const hour = String(date.getHours()).padStart(2, "0");
+  const minute = String(date.getMinutes()).padStart(2, "0");
+  return `${year}-${month}-${day} ${hour}:${minute}`;
 }
 
 // src/ReadingView.ts
-var import_obsidian6 = require("obsidian");
+var import_obsidian5 = require("obsidian");
 
 // node_modules/unist-util-is/lib/index.js
 var convert = (
@@ -7208,7 +6448,7 @@ var html = create({
     autoFocus: boolean,
     autoPlay: boolean,
     blocking: spaceSeparated,
-    capture: boolean,
+    capture: null,
     charSet: null,
     checked: boolean,
     cite: null,
@@ -17232,10 +16472,10 @@ var VFile = class {
    * @returns {undefined}
    *   Nothing.
    */
-  set basename(basename2) {
-    assertNonEmpty(basename2, "basename");
-    assertPart(basename2, "basename");
-    this.path = path.join(this.dirname || "", basename2);
+  set basename(basename3) {
+    assertNonEmpty(basename3, "basename");
+    assertPart(basename3, "basename");
+    this.path = path.join(this.dirname || "", basename3);
   }
   /**
    * Get the parent path (example: `'~'`).
@@ -18958,6 +18198,178 @@ function all2(parent) {
   return results.join("");
 }
 
+// src/Parsing/InlineCodeParsing.ts
+function parseInlineCode(codeText) {
+  const match = /^{((?:[^"'{}\\]|\\.|"(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')*)} *?([^ ].*)$/.exec(codeText);
+  if (typeof (match == null ? void 0 : match[1]) !== "undefined" && typeof (match == null ? void 0 : match[2]) !== "undefined") {
+    if (match[1] === "")
+      return { parameters: null, text: match[2] };
+    else
+      return { parameters: parseInlineCodeParameters(match[1]), text: match[2] };
+  } else
+    return { parameters: null, text: codeText };
+}
+function parseInlineCodeParameters(parameterLine) {
+  const inlineCodeParameters = {
+    language: "",
+    title: "",
+    icon: false
+  };
+  const languageBreak = parameterLine.indexOf(" ");
+  inlineCodeParameters.language = parameterLine.slice(0, languageBreak !== -1 ? languageBreak : parameterLine.length).toLowerCase();
+  if (languageBreak === -1)
+    return inlineCodeParameters;
+  const parameterStrings = parameterLine.slice(languageBreak + 1).match(/(?:[^\s"']+|"[^"]*"|'[^']*')+/g);
+  if (!parameterStrings)
+    return inlineCodeParameters;
+  parameterStrings.forEach((parameterString) => parseInlineCodeParameterString(parameterString, inlineCodeParameters));
+  return inlineCodeParameters;
+}
+function parseInlineCodeParameterString(parameterString, inlineCodeParameters) {
+  if (parameterString.startsWith("title:") || parameterString.startsWith("title=")) {
+    const titleMatch = /(["']?)([^\1]+)\1/.exec(parameterString.slice("title:".length));
+    if (titleMatch)
+      inlineCodeParameters.title = titleMatch[2].trim().replace(/\\{/g, "{");
+  } else if (parameterString === "icon" || parameterString.startsWith("icon:") && parameterString.toLowerCase() === "icon:true")
+    inlineCodeParameters.icon = true;
+}
+
+// src/CodeblockDecorating.ts
+var import_obsidian4 = require("obsidian");
+function createHeader(codeblockParameters, themeSettings, sourcePath, plugin) {
+  const headerContainer = createDiv();
+  const iconURL = codeblockParameters.language ? getLanguageIcon(codeblockParameters.language, plugin.languageIcons) : void 0;
+  if (!isHeaderHidden(codeblockParameters, themeSettings, iconURL)) {
+    headerContainer.classList.add("code-styler-header-container");
+    if (codeblockParameters.language !== "") {
+      if (isLanguageIconShown(codeblockParameters, themeSettings, iconURL))
+        headerContainer.appendChild(createImageWrapper(iconURL, createDiv()));
+      if (isLanguageTagShown(codeblockParameters, themeSettings))
+        headerContainer.appendChild(createDiv({ cls: "code-styler-header-language-tag", text: getLanguageTag(codeblockParameters.language) }));
+    }
+    headerContainer.appendChild(createTitleContainer(codeblockParameters, themeSettings, sourcePath, plugin));
+    if (codeblockParameters == null ? void 0 : codeblockParameters.externalReference)
+      headerContainer.appendChild(createExternalReferenceContainer(codeblockParameters, sourcePath, plugin));
+    if (false)
+      headerContainer.appendChild(createExecuteCodeContainer(codeblockParameters, plugin));
+  } else
+    headerContainer.classList.add("code-styler-header-container-hidden");
+  return headerContainer;
+}
+function createTitleContainer(codeblockParameters, themeSettings, sourcePath, plugin) {
+  const titleContainer = createDiv({ cls: "code-styler-header-text" });
+  const title = codeblockParameters.title || (codeblockParameters.fold.enabled ? codeblockParameters.fold.placeholder || themeSettings.header.foldPlaceholder || FOLD_PLACEHOLDER : "");
+  if (codeblockParameters.reference === "")
+    titleContainer.innerText = title;
+  else if (/^(?:https?|file):\/\//.test(codeblockParameters.reference))
+    import_obsidian4.MarkdownRenderer.render(plugin.app, `[${title}](${codeblockParameters.reference})`, titleContainer, sourcePath, plugin);
+  else
+    import_obsidian4.MarkdownRenderer.render(plugin.app, `[[${codeblockParameters.reference}|${title}]]`, titleContainer, sourcePath, plugin);
+  return titleContainer;
+}
+function createExternalReferenceContainer(codeblockParameters, sourcePath, plugin) {
+  var _a2, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x;
+  const externalReferenceContainer = createDiv({ cls: "code-styler-header-external-reference" });
+  if (plugin.settings.currentTheme.settings.header.externalReference.displayRepository) {
+    const siteIcon = createDiv({ cls: "external-reference-repo-icon" });
+    siteIcon.innerHTML = (_e = (_d = SITE_ICONS) == null ? void 0 : _d[(_c = (_b = (_a2 = codeblockParameters == null ? void 0 : codeblockParameters.externalReference) == null ? void 0 : _a2.external) == null ? void 0 : _b.info) == null ? void 0 : _c.site]) != null ? _e : SITE_ICONS["generic"];
+    externalReferenceContainer.appendChild(siteIcon);
+    externalReferenceContainer.appendChild(createDiv({ cls: "external-reference-repo", text: ((_h = (_g = (_f = codeblockParameters == null ? void 0 : codeblockParameters.externalReference) == null ? void 0 : _f.external) == null ? void 0 : _g.info) == null ? void 0 : _h.author) + "/" + ((_k = (_j = (_i = codeblockParameters == null ? void 0 : codeblockParameters.externalReference) == null ? void 0 : _i.external) == null ? void 0 : _j.info) == null ? void 0 : _k.repository) }));
+  }
+  if (plugin.settings.currentTheme.settings.header.externalReference.displayVersion) {
+    const refIcon = createDiv({ cls: "external-reference-ref-icon" });
+    refIcon.innerHTML = (_q = (_p = GIT_ICONS) == null ? void 0 : _p[(_o = (_n = (_m = (_l = codeblockParameters == null ? void 0 : codeblockParameters.externalReference) == null ? void 0 : _l.external) == null ? void 0 : _m.info) == null ? void 0 : _n.refInfo) == null ? void 0 : _o.type]) != null ? _q : GIT_ICONS["branch"];
+    externalReferenceContainer.appendChild(refIcon);
+    externalReferenceContainer.appendChild(createDiv({ cls: "external-reference-ref", text: (_u = (_t = (_s = (_r = codeblockParameters == null ? void 0 : codeblockParameters.externalReference) == null ? void 0 : _r.external) == null ? void 0 : _s.info) == null ? void 0 : _t.refInfo) == null ? void 0 : _u.ref }));
+  }
+  if (plugin.settings.currentTheme.settings.header.externalReference.displayTimestamp) {
+    const stampIcon = createDiv({ cls: "external-reference-timestamp-icon" });
+    stampIcon.innerHTML = STAMP_ICON;
+    externalReferenceContainer.appendChild(stampIcon);
+    externalReferenceContainer.appendChild(createDiv({ cls: "external-reference-timestamp", text: (_x = (_w = (_v = codeblockParameters == null ? void 0 : codeblockParameters.externalReference) == null ? void 0 : _v.external) == null ? void 0 : _w.info) == null ? void 0 : _x.datetime }));
+  }
+  const updateIcon = createEl("button", { cls: "external-reference-update-icon" });
+  updateIcon.innerHTML = UPDATE_ICON;
+  updateIcon.title = "Update Reference";
+  updateIcon.addEventListener("click", async (event) => {
+    var _a3, _b2, _c2;
+    event.stopImmediatePropagation();
+    await updateExternalReference(codeblockParameters == null ? void 0 : codeblockParameters.externalReference, plugin);
+    const codeblockElement = (_c2 = (_b2 = (_a3 = event.target.parentElement) == null ? void 0 : _a3.parentElement) == null ? void 0 : _b2.parentElement) == null ? void 0 : _c2.querySelector("code");
+    if (!codeblockElement)
+      return;
+    const view = plugin.app.workspace.getActiveViewOfType(import_obsidian4.MarkdownView);
+    if (!view)
+      return;
+    if ((view == null ? void 0 : view.getMode()) === "preview") {
+      codeblockElement.addClass("RERENDER-CODE-STYLER");
+      for (const section of view.previewMode.renderer.sections.filter((s3) => s3.el.querySelector("RERENDER-CODE-STYLER"))) {
+        section.rendered = false;
+        section.html = "";
+      }
+      view == null ? void 0 : view.previewMode.rerender(true);
+    } else {
+      const cmView = view == null ? void 0 : view.sourceMode.cmEditor.cm;
+      const pos = cmView.posAtDOM(event.target);
+      const current = cmView.state.selection.main.head;
+      cmView.dispatch({ selection: { anchor: pos, head: pos }, effects: rerender.of({ pos: current }) });
+      cmView.focus();
+      setTimeout(() => cmView.dispatch({ selection: { anchor: current, head: current } }), 10);
+    }
+  });
+  externalReferenceContainer.appendChild(updateIcon);
+  return externalReferenceContainer;
+}
+function createInlineOpener(inlineCodeParameters, languageIcons, containerClasses = ["code-styler-inline-opener"]) {
+  const openerContainer = createSpan({ cls: containerClasses.join(" ") });
+  if (inlineCodeParameters.icon) {
+    const iconURL = getLanguageIcon(inlineCodeParameters.language, languageIcons);
+    if (typeof iconURL !== "undefined")
+      openerContainer.appendChild(createImageWrapper(iconURL, createSpan(), "code-styler-inline-icon"));
+  }
+  if (inlineCodeParameters.title)
+    openerContainer.appendChild(createSpan({ cls: "code-styler-inline-title", text: inlineCodeParameters.title }));
+  return openerContainer;
+}
+function createImageWrapper(iconURL, imageWrapper, imgClass = "code-styler-icon") {
+  const img = document.createElement("img");
+  img.classList.add(imgClass);
+  img.src = iconURL;
+  imageWrapper.appendChild(img);
+  return imageWrapper;
+}
+function getLanguageIcon(language, languageIcons) {
+  return languageIcons == null ? void 0 : languageIcons[getLanguageTag(language)];
+}
+function getLanguageTag(language) {
+  var _a2, _b;
+  return (_b = (_a2 = LANGUAGE_NAMES) == null ? void 0 : _a2[language]) != null ? _b : language.charAt(0).toUpperCase() + language.slice(1) || "";
+}
+function isHeaderHidden(codeblockParameters, themeSettings, iconURL) {
+  return !isHeaderRequired(codeblockParameters) && (codeblockParameters.language === "" || themeSettings.header.languageTag.display !== "always" && (themeSettings.header.languageIcon.display !== "always" || typeof iconURL == "undefined"));
+}
+function isLanguageIconShown(codeblockParameters, themeSettings, iconURL) {
+  return typeof iconURL !== "undefined" && (themeSettings.header.languageIcon.display === "always" || isHeaderRequired(codeblockParameters) && themeSettings.header.languageIcon.display === "if_header_shown");
+}
+function isLanguageTagShown(codeblockParameters, themeSettings) {
+  return themeSettings.header.languageTag.display === "always" || isHeaderRequired(codeblockParameters) && themeSettings.header.languageTag.display === "if_header_shown";
+}
+function isHeaderRequired(codeblockParameters) {
+  return codeblockParameters.fold.enabled || codeblockParameters.title !== "";
+}
+function getLineClass(codeblockParameters, lineNumber, line) {
+  let classList = [];
+  if (codeblockParameters.highlights.default.lineNumbers.includes(lineNumber + codeblockParameters.lineNumbers.offset) || codeblockParameters.highlights.default.plainText.some((text2) => line.indexOf(text2) > -1) || codeblockParameters.highlights.default.regularExpressions.some((regExp) => regExp.test(line)))
+    classList.push("code-styler-line-highlighted");
+  Object.entries(codeblockParameters.highlights.alternative).forEach(([alternativeHighlight, highlightedLines]) => {
+    if (highlightedLines.lineNumbers.includes(lineNumber + codeblockParameters.lineNumbers.offset) || highlightedLines.plainText.some((text2) => line.indexOf(text2) > -1) || highlightedLines.regularExpressions.some((regExp) => regExp.test(line)))
+      classList.push(`code-styler-line-highlighted-${alternativeHighlight.replace(/\s+/g, "-").toLowerCase()}`);
+  });
+  if (classList.length === 0)
+    classList = ["code-styler-line"];
+  return classList;
+}
+
 // src/ReadingView.ts
 async function readingViewCodeblockDecoratingPostProcessor(element3, { sourcePath, getSectionInfo, frontmatter }, plugin, editingEmbeds = false) {
   var _a2;
@@ -19122,8 +18534,6 @@ async function getCodeblockPreElements(element3, specific, editingEmbeds) {
 async function getCodeblocksParameters(sourcePath, cache, plugin, editingEmbeds) {
   let codeblocksParameters = [];
   const fileContentLines = await getFileContentLines(sourcePath, plugin);
-  if (!fileContentLines)
-    return [];
   if (typeof (cache == null ? void 0 : cache.sections) !== "undefined") {
     for (const section of cache.sections) {
       if (!editingEmbeds || section.type === "code" || section.type === "callout") {
@@ -19240,13 +18650,13 @@ function convertCommentLinks(result, commentText, sourcePath, plugin) {
   const linkMatches = [...commentText.matchAll(/(?:\[\[[^\]|\r\n]+?(?:\|[^\]|\r\n]+?)?\]\]|\[.*?\]\(.+\))/g)].reverse();
   const newChildren = linkMatches.reduce((result2, linkMatch) => {
     var _a2, _b, _c, _d;
-    if ((linkMatch == null ? void 0 : linkMatch.index) === void 0)
+    if (typeof (linkMatch == null ? void 0 : linkMatch.index) === "undefined")
       return result2;
     const ending = commentText.slice(linkMatch.index + linkMatch[0].length);
     result2.push({ type: "text", value: ending });
     const linkText = commentText.slice(linkMatch.index, linkMatch.index + linkMatch[0].length);
     const linkContainer = createDiv();
-    import_obsidian6.MarkdownRenderer.render(plugin.app, linkText, linkContainer, sourcePath, plugin);
+    import_obsidian5.MarkdownRenderer.render(plugin.app, linkText, linkContainer, sourcePath, plugin);
     const linkChild = (_d = (_c = (_b = (_a2 = fromHtml(linkContainer.innerHTML, { fragment: true })) == null ? void 0 : _a2.children) == null ? void 0 : _b[0]) == null ? void 0 : _c.children) == null ? void 0 : _d[0];
     result2.push(linkChild);
     commentText = commentText.slice(0, linkMatch.index);
@@ -19260,7 +18670,7 @@ function insertLineWrapper(codeblockCodeElement, codeblockParameters, lineNumber
   getLineClass(codeblockParameters, lineNumber, line).forEach((lineClass) => lineWrapper.classList.add(lineClass));
   if (showLineNumbers && !codeblockParameters.lineNumbers.alwaysDisabled || codeblockParameters.lineNumbers.alwaysEnabled)
     lineWrapper.appendChild(createDiv({ cls: "code-styler-line-number", text: (lineNumber + codeblockParameters.lineNumbers.offset).toString() }));
-  lineWrapper.appendChild(createDiv({ cls: "code-styler-line-text", text: (0, import_obsidian6.sanitizeHTMLToDom)(line !== "" ? line : "<br>") }));
+  lineWrapper.appendChild(createDiv({ cls: "code-styler-line-text", text: (0, import_obsidian5.sanitizeHTMLToDom)(line !== "" ? line : "<br>") }));
 }
 function countTabs(text2) {
   let count = 0;
@@ -19271,7 +18681,7 @@ function countTabs(text2) {
 }
 async function getHighlightedHTML(parameters, text2, plugin) {
   const temporaryRenderingContainer = createDiv();
-  import_obsidian6.MarkdownRenderer.render(plugin.app, ["```", parameters.language, "\n", text2, "\n", "```"].join(""), temporaryRenderingContainer, "", plugin);
+  import_obsidian5.MarkdownRenderer.render(plugin.app, ["```", parameters.language, "\n", text2, "\n", "```"].join(""), temporaryRenderingContainer, "", plugin);
   const renderedCodeElement = temporaryRenderingContainer.querySelector("code");
   if (!renderedCodeElement)
     return "ERROR: Could not render highlighted code";
@@ -19289,8 +18699,1218 @@ var executeCodeMutationObserver = new MutationObserver((mutations) => {
   });
 });
 
+// src/Referencing.ts
+async function referenceCodeblockProcessor(source, codeblockElement, context, plugin) {
+  const codeblockSectionInfo = context.getSectionInfo(codeblockElement);
+  if (codeblockSectionInfo === null)
+    throw Error("Could not retrieve codeblock information");
+  const codeblockLines = [codeblockSectionInfo.text.split("\n")[codeblockSectionInfo.lineStart], ...source.split("\n")];
+  if (codeblockLines[codeblockLines.length - 1] !== "")
+    codeblockLines.push("");
+  const reference = await getReference(codeblockLines, context.sourcePath, plugin);
+  import_obsidian6.MarkdownRenderer.render(plugin.app, reference.code, codeblockElement, context.sourcePath, plugin);
+  renderSpecificReadingSection(Array.from(codeblockElement.querySelectorAll("pre:not(.frontmatter)")), context.sourcePath, codeblockSectionInfo, plugin);
+}
+async function getReference(codeblockLines, sourcePath, plugin) {
+  const reference = {
+    code: "",
+    language: "",
+    startLine: 1,
+    path: ""
+  };
+  try {
+    const referenceParameters = parseReferenceParameters(codeblockLines.slice(1, -1).join("\n"));
+    reference.language = referenceParameters.language;
+    reference.path = referenceParameters.filePath;
+    if (/^https?:\/\//.test(referenceParameters.filePath)) {
+      const externalReferenceId = idExternalReference(reference.path);
+      reference.external = {
+        id: externalReferenceId.id,
+        website: externalReferenceId.website,
+        storePath: plugin.app.vault.configDir + EXTERNAL_REFERENCE_PATH + externalReferenceId.id,
+        info: { title: "", url: reference.path, site: externalReferenceId.website, datetime: "", rawUrl: reference.path }
+      };
+      referenceParameters.filePath = await accessExternalReference(reference, externalReferenceId.id, sourcePath, plugin);
+      reference.external.info = { ...reference.external.info, ...JSON.parse(await plugin.app.vault.adapter.read(reference.external.storePath + EXTERNAL_REFERENCE_INFO_SUFFIX)) };
+    }
+    const vaultPath = getPath(referenceParameters.filePath, "", plugin);
+    if (referenceParameters.filePath.startsWith("[[") && referenceParameters.filePath.endsWith("]]"))
+      reference.path = vaultPath;
+    if (!await plugin.app.vault.adapter.exists(vaultPath))
+      throw Error(`Local File does not exist at ${vaultPath}`);
+    const codeContent = (await plugin.app.vault.adapter.read(vaultPath)).trim();
+    const codeSectionInfo = getLineLimits(codeContent, referenceParameters);
+    reference.startLine = codeSectionInfo.startLine;
+    reference.code = ["```", referenceParameters.language, " ", codeblockLines[0].substring(REFERENCE_CODEBLOCK.length).trim(), "\n", codeSectionInfo.codeSection, "\n", "```"].join("");
+  } catch (error) {
+    reference.code = `> [!error] ${(error instanceof Error ? error.message : String(error)).replace(/\n/g, "\n>")}`;
+  }
+  return reference;
+}
+async function updateExternalReferencedFiles(plugin, sourcePath = void 0) {
+  var _a2;
+  await cleanExternalReferencedFiles(plugin);
+  const cache = await readCache(plugin);
+  const references = typeof sourcePath !== "undefined" ? await getFileReferences(sourcePath, plugin) : Object.values(cache).map((idCache) => idCache.reference);
+  for (const reference of references) {
+    await updateExternalReference(reference, plugin);
+    cache[(_a2 = reference == null ? void 0 : reference.external) == null ? void 0 : _a2.id].reference = reference;
+  }
+  await updateCache(cache, plugin);
+  plugin.renderReadingView();
+}
+async function cleanExternalReferencedFiles(plugin) {
+  const cache = await readCache(plugin);
+  const referencesByFile = cacheToReferencesByFile(cache);
+  for (const sourcePath of Object.keys(referencesByFile)) {
+    const fileReferenceIds = (await getFileReferences(sourcePath, plugin)).map((reference) => {
+      var _a2;
+      return (_a2 = reference == null ? void 0 : reference.external) == null ? void 0 : _a2.id;
+    });
+    referencesByFile[sourcePath] = referencesByFile[sourcePath].filter((id) => fileReferenceIds.includes(id));
+  }
+  const new_cache = referencesByFileToCache(referencesByFile, cache);
+  for (const id of Object.keys(cache)) {
+    if (!Object.keys(new_cache).includes(id)) {
+      await plugin.app.vault.adapter.remove(plugin.app.vault.configDir + EXTERNAL_REFERENCE_PATH + id);
+      await plugin.app.vault.adapter.remove(plugin.app.vault.configDir + EXTERNAL_REFERENCE_PATH + id + EXTERNAL_REFERENCE_INFO_SUFFIX);
+    }
+  }
+  await updateCache(new_cache, plugin);
+}
+function cacheToReferencesByFile(cache) {
+  return Object.keys(cache).reduce((result, id) => {
+    cache[id].sourcePaths.forEach((sourcePath) => {
+      if (!result[sourcePath])
+        result[sourcePath] = [id];
+      else
+        result[sourcePath].push(id);
+    });
+    return result;
+  }, {});
+}
+function referencesByFileToCache(referencesByFile, cache) {
+  return Object.keys(referencesByFile).reduce((new_cache, sourcePath) => {
+    referencesByFile[sourcePath].forEach((id) => {
+      if (typeof (new_cache == null ? void 0 : new_cache[id]) === "undefined")
+        new_cache[id] = { sourcePaths: [sourcePath], reference: cache[id].reference };
+      else if (!new_cache[id].sourcePaths.includes(sourcePath))
+        new_cache[id].sourcePaths.push(sourcePath);
+    });
+    return new_cache;
+  }, {});
+}
+async function getFileReferences(sourcePath, plugin) {
+  var _a2, _b, _c;
+  const fileContentLines = await getFileContentLines(sourcePath, plugin);
+  if (!fileContentLines)
+    throw Error(`File could not be read: ${sourcePath}`);
+  const fileReference = [];
+  const sections = (_b = (_a2 = plugin.app.metadataCache.getCache(sourcePath)) == null ? void 0 : _a2.sections) != null ? _b : [];
+  for (const section of sections) {
+    if (section.type !== "code")
+      continue;
+    const codeblockLines = [...fileContentLines.slice(section.position.start.line, section.position.end.line), ""];
+    if (!codeblockLines[0].includes("```reference") && !codeblockLines[0].includes("~~~reference"))
+      continue;
+    const reference = await getReference(codeblockLines, sourcePath, plugin);
+    if ((_c = reference == null ? void 0 : reference.external) == null ? void 0 : _c.id)
+      fileReference.push(reference);
+  }
+  return fileReference;
+}
+async function updateExternalReference(reference, plugin) {
+  var _a2, _b, _c;
+  try {
+    const sourceInfo = await parseExternalReference(reference);
+    const content = await (0, import_obsidian6.request)((_a2 = sourceInfo.rawUrl) != null ? _a2 : reference.path);
+    await plugin.app.vault.adapter.write((_b = reference == null ? void 0 : reference.external) == null ? void 0 : _b.storePath, content);
+    await plugin.app.vault.adapter.write(((_c = reference == null ? void 0 : reference.external) == null ? void 0 : _c.storePath) + EXTERNAL_REFERENCE_INFO_SUFFIX, JSON.stringify(sourceInfo));
+  } catch (error) {
+    throw Error(`Could not download file: ${error}`);
+  }
+}
+async function accessExternalReference(reference, id, sourcePath, plugin) {
+  var _a2, _b, _c, _d;
+  try {
+    if (!await plugin.app.vault.adapter.exists((_a2 = reference == null ? void 0 : reference.external) == null ? void 0 : _a2.storePath))
+      await updateExternalReference(reference, plugin);
+    const cache = await readCache(plugin);
+    if (!((_c = (_b = cache[id]) == null ? void 0 : _b.sourcePaths) == null ? void 0 : _c.includes(sourcePath))) {
+      if (!(cache == null ? void 0 : cache[id]))
+        cache[id] = { sourcePaths: [sourcePath], reference };
+      else
+        cache[id].sourcePaths.push(sourcePath);
+      await updateCache(cache, plugin);
+    }
+    return (_d = reference == null ? void 0 : reference.external) == null ? void 0 : _d.storePath;
+  } catch (error) {
+    throw Error(error);
+  }
+}
+async function readCache(plugin) {
+  return JSON.parse(await plugin.app.vault.adapter.read(plugin.app.vault.configDir + EXTERNAL_REFERENCE_CACHE));
+}
+async function updateCache(cache, plugin) {
+  await plugin.app.vault.adapter.write(plugin.app.vault.configDir + EXTERNAL_REFERENCE_CACHE, JSON.stringify(cache));
+}
+function idExternalReference(fileLink) {
+  const linkInfo = /^https?:\/\/(.+)\.com\/(.+)$/.exec(fileLink);
+  if (!(linkInfo == null ? void 0 : linkInfo[1]) || !(linkInfo == null ? void 0 : linkInfo[2]))
+    throw Error("No such repository could be found");
+  return { id: [linkInfo[1], ...linkInfo[2].split("/")].join("-"), website: linkInfo[1] };
+}
+function getPath(filePath, sourcePath, plugin) {
+  var _a2, _b;
+  filePath = filePath.trim();
+  if (filePath.startsWith("[[") && filePath.endsWith("]]"))
+    return (_b = (_a2 = plugin.app.metadataCache.getFirstLinkpathDest(filePath.slice(2, -2), sourcePath)) == null ? void 0 : _a2.path) != null ? _b : filePath;
+  filePath = filePath.replace("\\", "/");
+  if (filePath.startsWith(LOCAL_PREFIX))
+    return filePath.substring(2);
+  else if (filePath.startsWith("./") || /^[^<:"/\\>?|*]/.test(filePath)) {
+    if (!sourcePath && sourcePath != "")
+      throw Error("Cannot resolve relative path because the source path is missing");
+    return getRelativePath(filePath, sourcePath.trim());
+  } else if (filePath.startsWith("/"))
+    throw Error(`Path should not start with "/", use "${LOCAL_PREFIX}" to reference a path relative to the vault root folder`);
+  else
+    throw Error("Cannot resolve path");
+}
+function getRelativePath(filePath, sourcePath) {
+  if (filePath.startsWith("./"))
+    filePath = filePath.substring(2);
+  const vaultDirs = sourcePath.split("/");
+  vaultDirs.pop();
+  while (filePath.startsWith("../"))
+    if (vaultDirs.pop() !== void 0)
+      filePath = filePath.substring(3);
+    else
+      throw Error('Path references outside vault, too many "../"s used');
+  return (0, import_obsidian6.normalizePath)([...vaultDirs, filePath].join("/"));
+}
+
+// src/Parsing/CodeblockParsing.ts
+var import_path = require("path");
+async function parseCodeblockSource(codeSection, plugin, sourcePath) {
+  const plugins = plugin.app.plugins.plugins;
+  const admonitions = "obsidian-admonition" in plugins;
+  const codeblocks = [];
+  function parseCodeblockSection(codeSection2) {
+    var _a2;
+    if (codeSection2.length === 0)
+      return;
+    const openingCodeblockLine = getOpeningLine(codeSection2);
+    if (!openingCodeblockLine)
+      return;
+    const openDelimiter = (_a2 = /^\s*(?:>\s*)*((?:```+|~~~+)).*$/.exec(openingCodeblockLine)) == null ? void 0 : _a2[1];
+    if (!openDelimiter)
+      return;
+    const openDelimiterIndex = codeSection2.indexOf(openingCodeblockLine);
+    const closeDelimiterIndex = codeSection2.slice(openDelimiterIndex + 1).findIndex((line) => new RegExp(`^\\s*(?:>\\s*)*${openDelimiter}(?!${openDelimiter[0]})$`).test(line));
+    if (!admonitions || !/^\s*(?:>\s*)*(?:```+|~~~+) *ad-.*$/.test(openingCodeblockLine))
+      codeblocks.push(codeSection2.slice(0, openDelimiterIndex + 2 + closeDelimiterIndex));
+    else
+      parseCodeblockSection(codeSection2.slice(openDelimiterIndex + 1, openDelimiterIndex + 1 + closeDelimiterIndex));
+    parseCodeblockSection(codeSection2.slice(openDelimiterIndex + 1 + closeDelimiterIndex + 1));
+  }
+  parseCodeblockSection(codeSection);
+  return { codeblocksParameters: await (typeof sourcePath !== "undefined" ? parseCodeblocks(codeblocks, plugin, plugins, sourcePath) : parseCodeblocks(codeblocks, plugin, plugins)), nested: codeblocks[0] ? !arraysEqual(codeSection, codeblocks[0]) : true };
+}
+async function parseCodeblocks(codeblocks, plugin, plugins, sourcePath) {
+  const codeblocksParameters = [];
+  for (const codeblockLines of codeblocks) {
+    const codeblockParameters = await (typeof sourcePath !== "undefined" ? parseCodeblock(codeblockLines, plugin, plugins, sourcePath) : parseCodeblock(codeblockLines, plugin, plugins));
+    if (codeblockParameters !== null)
+      codeblocksParameters.push(codeblockParameters);
+  }
+  return codeblocksParameters;
+}
+async function parseCodeblock(codeblockLines, plugin, plugins, sourcePath) {
+  const parameterLine = getParameterLine(codeblockLines);
+  if (!parameterLine)
+    return null;
+  const codeblockParameters = parseCodeblockParameters(parameterLine, plugin.settings.currentTheme);
+  if (isCodeblockIgnored(codeblockParameters.language, plugin.settings.processedCodeblocksWhitelist) && codeblockParameters.language !== "reference")
+    return null;
+  return await (typeof sourcePath !== "undefined" ? pluginAdjustParameters(codeblockParameters, plugin, plugins, codeblockLines, sourcePath) : pluginAdjustParameters(codeblockParameters, plugin, plugins, codeblockLines));
+}
+function parseCodeblockParameters(parameterLine, theme) {
+  const codeblockParameters = {
+    language: "",
+    title: "",
+    reference: "",
+    fold: {
+      enabled: false,
+      placeholder: ""
+    },
+    lineNumbers: {
+      alwaysEnabled: false,
+      alwaysDisabled: false,
+      offset: 0
+    },
+    lineUnwrap: {
+      alwaysEnabled: false,
+      alwaysDisabled: false,
+      activeWrap: false
+    },
+    highlights: {
+      default: {
+        lineNumbers: [],
+        plainText: [],
+        regularExpressions: []
+      },
+      alternative: {}
+    },
+    ignore: false
+  };
+  if (parameterLine.startsWith("```"))
+    parameterLine = parameterLine.replace(/^```+(?=[^`]|$)/, "");
+  else if (parameterLine.startsWith("~~~"))
+    parameterLine = parameterLine.replace(/^~~~+(?=[^~]|$)/, "");
+  else
+    return codeblockParameters;
+  const rmdMatch = /^\{(.+)\} *$/.exec(parameterLine);
+  if (rmdMatch)
+    parameterLine = rmdMatch[1];
+  const languageBreak = parameterLine.indexOf(" ");
+  codeblockParameters.language = parameterLine.slice(0, languageBreak !== -1 ? languageBreak : parameterLine.length).toLowerCase();
+  if (languageBreak === -1)
+    return codeblockParameters;
+  parameterLine = parameterLine.slice(languageBreak + 1);
+  if (rmdMatch)
+    parameterLine = "title:" + parameterLine;
+  const parameterStrings = parameterLine.match(/(?:(?:ref|reference|title):(?:\[\[.*?\]\]|\[.*?\]\(.+\))|[^\s"']+|"[^"]*"|'[^']*')+/g);
+  if (!parameterStrings)
+    return codeblockParameters;
+  parameterStrings.forEach((parameterString) => parseCodeblockParameterString(parameterString.replace(/(?:^,|,$)/g, ""), codeblockParameters, theme));
+  return codeblockParameters;
+}
+async function pluginAdjustParameters(codeblockParameters, plugin, plugins, codeblockLines, sourcePath) {
+  if (codeblockParameters.language === "reference") {
+    if (typeof sourcePath === "undefined")
+      throw Error("Reference block has undefined sourcePath");
+    codeblockParameters = await adjustReference(codeblockParameters, codeblockLines, sourcePath, plugin);
+  } else if (codeblockParameters.language === "preview")
+    codeblockParameters = await (typeof sourcePath !== "undefined" ? pluginAdjustPreviewCode(codeblockParameters, plugins, codeblockLines, sourcePath) : pluginAdjustPreviewCode(codeblockParameters, plugins, codeblockLines));
+  else if (codeblockParameters.language === "include")
+    codeblockParameters = pluginAdjustFileInclude(codeblockParameters, plugins, codeblockLines);
+  else if (/run-\w*/.test(codeblockParameters.language))
+    codeblockParameters = pluginAdjustExecuteCodeRun(codeblockParameters, plugin, plugins);
+  codeblockParameters = pluginAdjustExecuteCode(codeblockParameters, plugins, codeblockLines);
+  return codeblockParameters;
+}
+async function adjustReference(codeblockParameters, codeblockLines, sourcePath, plugin) {
+  var _a2, _b, _c, _d, _e, _f, _g, _h, _i;
+  const reference = await getReference(codeblockLines, sourcePath, plugin);
+  if (!codeblockParameters.lineNumbers.alwaysDisabled && !codeblockParameters.lineNumbers.alwaysEnabled) {
+    codeblockParameters.lineNumbers.offset = reference.startLine - 1;
+    codeblockParameters.lineNumbers.alwaysEnabled = Boolean(reference.startLine !== 1);
+  }
+  if (codeblockParameters.title === "")
+    codeblockParameters.title = (_c = (_b = (_a2 = reference.external) == null ? void 0 : _a2.info) == null ? void 0 : _b.title) != null ? _c : (0, import_path.basename)(reference.path);
+  if (codeblockParameters.reference === "")
+    codeblockParameters.reference = (_i = (_h = (_e = (_d = reference.external) == null ? void 0 : _d.info) == null ? void 0 : _e.displayUrl) != null ? _h : (_g = (_f = reference.external) == null ? void 0 : _f.info) == null ? void 0 : _g.url) != null ? _i : plugin.app.vault.adapter.getFilePath(reference.path);
+  codeblockParameters.language = reference.language;
+  if (reference.external)
+    codeblockParameters.externalReference = reference;
+  return codeblockParameters;
+}
+async function pluginAdjustPreviewCode(codeblockParameters, plugins, codeblockLines, sourcePath) {
+  var _a2, _b, _c, _d;
+  if (((_a2 = plugins == null ? void 0 : plugins["obsidian-code-preview"]) == null ? void 0 : _a2.code) && ((_b = plugins == null ? void 0 : plugins["obsidian-code-preview"]) == null ? void 0 : _b.analyzeHighLightLines)) {
+    const codePreviewParams = await plugins["obsidian-code-preview"].code(codeblockLines.slice(1, -1).join("\n"), sourcePath);
+    if (!codeblockParameters.lineNumbers.alwaysDisabled && !codeblockParameters.lineNumbers.alwaysEnabled) {
+      if (typeof codePreviewParams.start === "number")
+        codeblockParameters.lineNumbers.offset = codePreviewParams.start - 1;
+      codeblockParameters.lineNumbers.alwaysEnabled = Boolean(codePreviewParams.linenumber);
+    }
+    codeblockParameters.highlights.default.lineNumbers = [...new Set(codeblockParameters.highlights.default.lineNumbers.concat(Array.from(plugins["obsidian-code-preview"].analyzeHighLightLines(codePreviewParams.lines, codePreviewParams.highlight), (pair) => pair[0])))];
+    if (codeblockParameters.title === "")
+      codeblockParameters.title = (_d = (_c = codePreviewParams.filePath.split("\\").pop()) == null ? void 0 : _c.split("/").pop()) != null ? _d : "";
+    codeblockParameters.language = codePreviewParams.language;
+  }
+  return codeblockParameters;
+}
+function pluginAdjustFileInclude(codeblockParameters, plugins, codeblockLines) {
+  var _a2;
+  if ("file-include" in plugins) {
+    const fileIncludeLanguage = (_a2 = /include (\w+)/.exec(codeblockLines[0])) == null ? void 0 : _a2[1];
+    if (typeof fileIncludeLanguage !== "undefined")
+      codeblockParameters.language = fileIncludeLanguage;
+  }
+  return codeblockParameters;
+}
+function pluginAdjustExecuteCode(codeblockParameters, plugins, codeblockLines) {
+  var _a2, _b;
+  if ("execute-code" in plugins) {
+    const codeblockArgs = getArgs(codeblockLines[0]);
+    codeblockParameters.title = (_b = (_a2 = codeblockParameters.title) != null ? _a2 : codeblockArgs == null ? void 0 : codeblockArgs.label) != null ? _b : "";
+  }
+  return codeblockParameters;
+}
+function pluginAdjustExecuteCodeRun(codeblockParameters, plugin, plugins) {
+  if ("execute-code" in plugins) {
+    if (EXECUTE_CODE_SUPPORTED_LANGUAGES.includes(codeblockParameters.language.slice(4)) && !isCodeblockIgnored(codeblockParameters.language, plugin.settings.processedCodeblocksWhitelist))
+      codeblockParameters.language = codeblockParameters.language.slice(4);
+  }
+  return codeblockParameters;
+}
+function parseCodeblockParameterString(parameterString, codeblockParameters, theme) {
+  if (parameterString === "ignore")
+    codeblockParameters.ignore = true;
+  else if (/^title[:=]/.test(parameterString))
+    manageTitle(parameterString, codeblockParameters);
+  else if (/^ref[:=]/.test(parameterString) || /^reference[:=]/.test(parameterString))
+    manageReference(parameterString, codeblockParameters);
+  else if (/^fold[:=]?/.test(parameterString))
+    manageFolding(parameterString, codeblockParameters);
+  else if (/^ln[:=]/.test(parameterString))
+    manageLineNumbering(parameterString, codeblockParameters);
+  else if (/^unwrap[:=]?/.test(parameterString) || parameterString === "wrap")
+    manageWrapping(parameterString, codeblockParameters);
+  else
+    addHighlights(parameterString, codeblockParameters, theme);
+}
+function manageTitle(parameterString, codeblockParameters) {
+  const titleMatch = /(["']?)([^\1]+)\1/.exec(parameterString.slice("title:".length));
+  if (titleMatch)
+    codeblockParameters.title = titleMatch[2].trim();
+  parameterString = parameterString.slice("title:".length);
+  const linkInfo = manageLink(parameterString);
+  if (linkInfo) {
+    codeblockParameters.title = linkInfo.title;
+    codeblockParameters.reference = linkInfo.reference;
+  }
+}
+function manageReference(parameterString, codeblockParameters) {
+  parameterString = parameterString.slice((/^ref[:=]/.test(parameterString) ? "ref:" : "reference:").length);
+  const linkInfo = manageLink(parameterString);
+  if (linkInfo) {
+    codeblockParameters.reference = linkInfo.reference;
+    if (codeblockParameters.title === "")
+      codeblockParameters.title = linkInfo.title;
+  }
+}
+function manageLink(parameterString) {
+  const refWikiMatch = /\[\[([^\]|\r\n]+?)(?:\|([^\]|\r\n]+?))?\]\]/.exec(parameterString);
+  const refMdMatch = /\[(.*?)\]\((.+)\)/.exec(parameterString);
+  const urlMatch = /^(["']?)(https?:\/\/.*)\1$/.exec(parameterString);
+  let title = "";
+  let reference = "";
+  if (refWikiMatch) {
+    title = refWikiMatch[2] ? refWikiMatch[2].trim() : refWikiMatch[1].trim();
+    reference = refWikiMatch[1].trim();
+  } else if (refMdMatch) {
+    title = refMdMatch[1].trim();
+    reference = refMdMatch[2].trim();
+  } else if (urlMatch) {
+    title = "URL";
+    reference = urlMatch[2].trim();
+  } else
+    return;
+  return { title, reference };
+}
+function manageFolding(parameterString, codeblockParameters) {
+  if (parameterString === "fold") {
+    codeblockParameters.fold = {
+      enabled: true,
+      placeholder: ""
+    };
+  } else {
+    const foldPlaceholderMatch = /(["']?)([^\1]+)\1/.exec(parameterString.slice("fold:".length));
+    if (foldPlaceholderMatch) {
+      codeblockParameters.fold = {
+        enabled: true,
+        placeholder: foldPlaceholderMatch[2].trim()
+      };
+    }
+  }
+}
+function manageLineNumbering(parameterString, codeblockParameters) {
+  parameterString = parameterString.slice("ln:".length);
+  if (/^\d+$/.test(parameterString)) {
+    codeblockParameters.lineNumbers = {
+      alwaysEnabled: true,
+      alwaysDisabled: false,
+      offset: parseInt(parameterString) - 1
+    };
+  } else if (parameterString.toLowerCase() === "true") {
+    codeblockParameters.lineNumbers = {
+      alwaysEnabled: true,
+      alwaysDisabled: false,
+      offset: 0
+    };
+  } else if (parameterString.toLowerCase() === "false") {
+    codeblockParameters.lineNumbers = {
+      alwaysEnabled: false,
+      alwaysDisabled: true,
+      offset: 0
+    };
+  }
+}
+function manageWrapping(parameterString, codeblockParameters) {
+  if (parameterString === "wrap") {
+    codeblockParameters.lineUnwrap = {
+      alwaysEnabled: false,
+      alwaysDisabled: true,
+      activeWrap: false
+    };
+  } else if (parameterString === "unwrap") {
+    codeblockParameters.lineUnwrap = {
+      alwaysEnabled: true,
+      alwaysDisabled: false,
+      activeWrap: false
+    };
+  } else {
+    parameterString = parameterString.slice("unwrap:".length);
+    if (parameterString.toLowerCase() === "inactive") {
+      codeblockParameters.lineUnwrap = {
+        alwaysEnabled: true,
+        alwaysDisabled: false,
+        activeWrap: true
+      };
+    } else if (parameterString.toLowerCase() === "true") {
+      codeblockParameters.lineUnwrap = {
+        alwaysEnabled: true,
+        alwaysDisabled: false,
+        activeWrap: false
+      };
+    } else if (parameterString.toLowerCase() === "false") {
+      codeblockParameters.lineUnwrap = {
+        alwaysEnabled: false,
+        alwaysDisabled: true,
+        activeWrap: false
+      };
+    }
+  }
+}
+function addHighlights(parameterString, codeblockParameters, theme) {
+  const highlightMatch = /^(\w+)[:=](.+)$/.exec(parameterString);
+  if (highlightMatch) {
+    if (highlightMatch[1] === "hl")
+      codeblockParameters.highlights.default = parseHighlightedLines(highlightMatch[2]);
+    else if (highlightMatch[1] in theme.colours.light.highlights.alternativeHighlights)
+      codeblockParameters.highlights.alternative[highlightMatch[1]] = parseHighlightedLines(highlightMatch[2]);
+  } else if (/^{[\d-,]+}$/.test(parameterString))
+    codeblockParameters.highlights.default = parseHighlightedLines(parameterString.slice(1, -1));
+}
+function parseHighlightedLines(highlightedLinesString) {
+  const highlightRules = highlightedLinesString.split(",");
+  const lineNumbers = /* @__PURE__ */ new Set();
+  const plainText = /* @__PURE__ */ new Set();
+  const regularExpressions = /* @__PURE__ */ new Set();
+  highlightRules.forEach((highlightRule) => {
+    if (/\d+-\d+/.test(highlightRule)) {
+      const [start, end] = highlightRule.split("-").map((num) => parseInt(num));
+      if (start && end && start <= end)
+        Array.from({ length: end - start + 1 }, (_2, num) => num + start).forEach((lineNumber) => lineNumbers.add(lineNumber));
+    } else if (/^\/(.*)\/$/.test(highlightRule)) {
+      try {
+        regularExpressions.add(new RegExp(highlightRule.replace(/^\/(.*)\/$/, "$1")));
+      } catch (e2) {
+      }
+    } else if (/".*"/.test(highlightRule))
+      plainText.add(highlightRule.substring(1, highlightRule.length - 1));
+    else if (/'.*'/.test(highlightRule))
+      plainText.add(highlightRule.substring(1, highlightRule.length - 1));
+    else if (/\D/.test(highlightRule))
+      plainText.add(highlightRule);
+    else if (/\d+/.test(highlightRule))
+      lineNumbers.add(parseInt(highlightRule));
+  });
+  return {
+    lineNumbers: [...lineNumbers],
+    plainText: [...plainText],
+    regularExpressions: [...regularExpressions]
+  };
+}
+function isLanguageIgnored(language, excludedLanguagesString) {
+  return parseRegexExcludedLanguages(excludedLanguagesString).some((regexExcludedLanguage) => regexExcludedLanguage.test(language));
+}
+function isCodeblockIgnored(language, whitelistedCodeblocksString) {
+  return language in import_obsidian7.MarkdownPreviewRenderer.codeBlockPostProcessors && !parseRegexExcludedLanguages(whitelistedCodeblocksString).some((regexExcludedLanguage) => regexExcludedLanguage.test(language));
+}
+function parseRegexExcludedLanguages(excludedLanguagesString) {
+  return excludedLanguagesString.split(",").map((regexLanguage) => new RegExp(`^${regexLanguage.trim().replace(/\*/g, ".+")}$`, "i"));
+}
+function getParameterLine(codeblockLines) {
+  let openingCodeblockLine = getOpeningLine(codeblockLines);
+  if (openingCodeblockLine && (openingCodeblockLine !== codeblockLines[0] || />\s*(?:[`~])/.test(openingCodeblockLine)))
+    openingCodeblockLine = cleanParameterLine(openingCodeblockLine);
+  return openingCodeblockLine;
+}
+function getOpeningLine(codeblockLines) {
+  return codeblockLines.find((line) => Boolean(testOpeningLine(line)));
+}
+function testOpeningLine(codeblockLine) {
+  const lineMatch = /^(\s*(?:>\s*)*)(```+|~~~+)/.exec(codeblockLine);
+  if (!lineMatch)
+    return "";
+  if (codeblockLine.indexOf(lineMatch[2], lineMatch[1].length + lineMatch[2].length + 1) === -1)
+    return lineMatch[2];
+  return "";
+}
+function cleanParameterLine(parameterLine) {
+  return trimParameterLine(parameterLine).replace(/^(?:>\s*)*(```+|~~~+)/, "$1");
+}
+function trimParameterLine(parameterLine) {
+  return parameterLine.trim();
+}
+async function getFileContentLines(sourcePath, plugin) {
+  return (await plugin.app.vault.adapter.read(sourcePath)).split(/\n/g);
+}
+function arraysEqual(array1, array2) {
+  return array1.length === array2.length && array1.every((el) => array2.includes(el));
+}
+
+// src/SyntaxHighlighting.ts
+var MODES = [
+  "reference",
+  "yaml-frontmatter"
+];
+function addModes() {
+  MODES.forEach((mode) => addMode(mode));
+}
+function removeModes() {
+  MODES.forEach((mode) => removeMode(mode));
+}
+function addMode(modeName) {
+  window.CodeMirror.modeInfo.push({
+    name: modeName,
+    mime: "text/" + modeName,
+    mode: modeName,
+    ext: [modeName]
+  });
+}
+function removeMode(modeName) {
+  const modeIndex = window.CodeMirror.modeInfo.findIndex((mode) => mode.mode === modeName);
+  if (modeIndex !== -1)
+    window.CodeMirror.modeInfo.splice(modeIndex, 1);
+}
+function addReferenceSyntaxHighlight(CodeMirror) {
+  CodeMirror.defineMode("reference", function(config, _parserConfig) {
+    const keyPattern = /^([a-zA-Z0-9_-]+)\s*(?=:)/;
+    const valuePattern = /^(:?(\s*(?:"(?:\\.|[^"])*"|\S+))?)/;
+    return {
+      startState: () => {
+        return { inBlock: false, indent: 0 };
+      },
+      indent: (state, textAfter) => {
+        const indentUnit = config.indentUnit;
+        const indent = state.indent || 0;
+        if (textAfter && textAfter.startsWith("-"))
+          return indent + indentUnit;
+        else
+          return indent;
+      },
+      token: (stream, state) => {
+        if (stream.eatSpace())
+          return null;
+        if (stream.match(/^#.*/))
+          return "comment";
+        if (stream.match(/^https?:\/\/.*/))
+          return "variable";
+        if (stream.match(/^\w+\/\w+\/\w+\/\w+$/))
+          return "variable";
+        if (stream.match(/^\w+\/\w+\/\w+$/))
+          return "variable";
+        if (stream.match(/^\w+\/\w+$/))
+          return "variable";
+        if (stream.match(/\[\[.+\]\]/))
+          return "variable";
+        if (stream.match(keyPattern))
+          return "string";
+        if (stream.match(/:/))
+          return "meta";
+        const valueMatch = stream.match(valuePattern);
+        if (valueMatch) {
+          if (/("?)\/.*\/\1/.exec(valueMatch[2]))
+            return "operator";
+          if (valueMatch[2].startsWith('"')) {
+            stream.skipToEnd();
+            return "property";
+          } else if (/^\d+(\.\d+)?\b/.test(valueMatch[2]))
+            return "number";
+          else if (/^(true|false|null)\b/.test(valueMatch[2]))
+            return "atom";
+          else
+            return null;
+        }
+        if (stream.sol()) {
+          const indent = stream.indentation();
+          if (indent > state.indent) {
+            state.indent = indent;
+            return "indent";
+          } else if (indent < state.indent) {
+            state.indent = indent;
+            return "dedent";
+          }
+        }
+        stream.next();
+        return null;
+      }
+    };
+  });
+  CodeMirror.defineMIME("text/reference", "reference");
+}
+
+// src/EditingView.ts
+function createCodeblockCodeMirrorExtensions(settings, plugin) {
+  const livePreviewCompartment = new import_state.Compartment();
+  const ignoreCompartment = new import_state.Compartment();
+  const interaction = import_view.ViewPlugin.fromClass(
+    class CodeStylerViewPlugin {
+      constructor() {
+        addReferenceSyntaxHighlight(window.CodeMirror);
+      }
+      update(_update) {
+      }
+      destroy() {
+      }
+    },
+    {
+      eventHandlers: {
+        click: function(event, view) {
+          var _a2, _b, _c;
+          if (event.target.classList.contains("code-styler-source-link") && event.metaKey === true) {
+            const sourcePath = (_c = (_b = (_a2 = view.state.field(import_obsidian8.editorInfoField)) == null ? void 0 : _a2.file) == null ? void 0 : _b.path) != null ? _c : "";
+            const destination = event.target.getAttribute("destination");
+            if (destination)
+              plugin.app.workspace.openLinkText(destination, sourcePath, true);
+          }
+        }
+      }
+    }
+  );
+  const ignoreListener = import_view.EditorView.updateListener.of((update) => {
+    const livePreviewExtensions = livePreviewCompartment.get(update.state);
+    const toIgnore = isSourceMode(update.state);
+    const fileIgnore = isFileIgnored(update.state) && !(Array.isArray(livePreviewExtensions) && livePreviewExtensions.length === 0);
+    const fileUnignore = !toIgnore && !isFileIgnored(update.state) && (Array.isArray(livePreviewExtensions) && livePreviewExtensions.length === 0);
+    if (isSourceMode(update.startState) !== toIgnore || fileIgnore || fileUnignore) {
+      update.view.dispatch({ effects: livePreviewCompartment.reconfigure(toIgnore || fileIgnore ? [] : [headerDecorations, lineDecorations, foldDecorations, hiddenDecorations]) });
+      if (!toIgnore && !fileIgnore)
+        update.view.dispatch({ effects: foldAll.of({}) });
+    }
+  });
+  const ignoreFileListener = import_view.EditorView.updateListener.of((update) => {
+    const ignoreExtensions = ignoreCompartment.get(update.state);
+    const fileIgnore = isFileIgnored(update.state) && !(Array.isArray(ignoreExtensions) && ignoreExtensions.length === 0);
+    const fileUnignore = !isFileIgnored(update.state) && (Array.isArray(ignoreExtensions) && ignoreExtensions.length === 0);
+    if (fileIgnore || fileUnignore)
+      update.view.dispatch({ effects: ignoreCompartment.reconfigure(fileIgnore ? [] : inlineDecorations) });
+  });
+  const settingsState = import_state.StateField.define({
+    create() {
+      return {
+        excludedLanguages: settings.excludedLanguages,
+        processedCodeblocksWhitelist: settings.processedCodeblocksWhitelist
+      };
+    },
+    update(value) {
+      if (value.processedCodeblocksWhitelist !== settings.processedCodeblocksWhitelist || value.excludedLanguages !== settings.excludedLanguages)
+        return {
+          excludedLanguages: settings.excludedLanguages,
+          processedCodeblocksWhitelist: settings.processedCodeblocksWhitelist
+        };
+      return value;
+    }
+  });
+  const charWidthState = import_state.StateField.define({
+    //TODO (@mayurankv) Improve implementation
+    create(state) {
+      return state.field(import_obsidian8.editorEditorField).defaultCharacterWidth * 1.105;
+    },
+    update(value, transaction) {
+      return transaction.state.field(import_obsidian8.editorEditorField).defaultCharacterWidth * 1.105;
+    }
+  });
+  const headerDecorations = import_state.StateField.define({
+    //TODO (@mayurankv) Update (does this need to be updated in this manner?)
+    create(state) {
+      return buildHeaderDecorations(state);
+    },
+    update(value, transaction) {
+      return buildHeaderDecorations(transaction.state, (position3) => isFolded(transaction.state, position3));
+    },
+    provide(field) {
+      return import_view.EditorView.decorations.from(field);
+    }
+  });
+  const lineDecorations = import_state.StateField.define({
+    //TODO (@mayurankv) Deal with source mode - make apply styling in source mode
+    create(state) {
+      return buildLineDecorations(state);
+    },
+    update(value, transaction) {
+      return buildLineDecorations(transaction.state);
+    },
+    provide(field) {
+      return import_view.EditorView.decorations.from(field);
+    }
+  });
+  const foldDecorations = import_state.StateField.define({
+    create(state) {
+      var _a2;
+      const builder = new import_state.RangeSetBuilder();
+      for (let iter = ((_a2 = state.field(headerDecorations, false)) != null ? _a2 : import_view.Decoration.none).iter(); iter.value !== null; iter.next()) {
+        if (!iter.value.spec.widget.codeblockParameters.fold.enabled)
+          continue;
+        codeblockFoldCallback(iter.from, state, (foldStart, foldEnd) => {
+          builder.add(foldStart.from, foldEnd.to, foldDecoration(iter.value.spec.widget.codeblockParameters.language));
+        });
+      }
+      return builder.finish();
+    },
+    update(value, transaction) {
+      value = value.map(transaction.changes).update({ filter: (from, to) => from !== to });
+      value = value.update({ add: transaction.effects.filter((effect) => effect.is(fold) || effect.is(unhideFold)).map((effect) => foldRegion(effect.value)) });
+      transaction.effects.filter((effect) => effect.is(unfold) || effect.is(hideFold)).forEach((effect) => value = value.update(unfoldRegion(effect.value)));
+      transaction.effects.filter((effect) => effect.is(removeFold)).forEach((effect) => value = value.update(removeFoldLanguages(effect.value)));
+      return value;
+    },
+    provide(field) {
+      return import_view.EditorView.decorations.from(field);
+    }
+  });
+  const hiddenDecorations = import_state.StateField.define({
+    create() {
+      return import_view.Decoration.none;
+    },
+    update(value, transaction) {
+      if (transaction.effects.some((effect) => effect.is(foldAll)))
+        return import_view.Decoration.none;
+      value = value.map(transaction.changes).update({ filter: (from, to) => from !== to });
+      value = value.update({ add: transaction.effects.filter((effect) => effect.is(hideFold)).map((effect) => effect.value) });
+      transaction.effects.filter((effect) => effect.is(unhideFold)).forEach((effect) => value = value.update(unhideFoldUpdate(effect.value)));
+      transaction.effects.filter((effect) => effect.is(removeFold)).forEach((effect) => value = value.update(removeFoldLanguages(effect.value)));
+      return value;
+    }
+  });
+  const inlineDecorations = import_state.StateField.define({
+    create(state) {
+      return buildInlineDecorations(state);
+    },
+    update(value, transaction) {
+      return buildInlineDecorations(transaction.state);
+    },
+    provide(field) {
+      return import_view.EditorView.decorations.from(field);
+    }
+  });
+  function settingsChangeExtender() {
+    return import_state.EditorState.transactionExtender.of((transaction) => {
+      let addEffects = [];
+      const initialSettings = transaction.startState.field(settingsState);
+      let readdFoldLanguages = [];
+      let removeFoldLanguages2 = [];
+      if (initialSettings.processedCodeblocksWhitelist !== settings.processedCodeblocksWhitelist) {
+        const codeblockProcessors = Object.keys(MarkdownPreviewRenderer.codeBlockPostProcessors);
+        const initialExcludedCodeblocks = codeblockProcessors.filter((lang) => !initialSettings.processedCodeblocksWhitelist.split(",").map((lang2) => lang2.trim()).includes(lang));
+        const currentExcludedCodeblocks = codeblockProcessors.filter((lang) => !settings.processedCodeblocksWhitelist.split(",").map((lang2) => lang2.trim()).includes(lang));
+        removeFoldLanguages2 = removeFoldLanguages2.concat(setDifference(currentExcludedCodeblocks, initialExcludedCodeblocks));
+        readdFoldLanguages = readdFoldLanguages.concat(setDifference(initialExcludedCodeblocks, currentExcludedCodeblocks));
+      }
+      if (initialSettings.excludedLanguages !== settings.excludedLanguages) {
+        const initialExcludedLanguages = initialSettings.excludedLanguages.split(",").map((lang) => lang.trim());
+        const currentExcludedLanguages = settings.excludedLanguages.split(",").map((lang) => lang.trim());
+        removeFoldLanguages2 = removeFoldLanguages2.concat(setDifference(currentExcludedLanguages, initialExcludedLanguages));
+        readdFoldLanguages = readdFoldLanguages.concat(setDifference(initialExcludedLanguages, currentExcludedLanguages));
+      }
+      if (removeFoldLanguages2.length !== 0)
+        addEffects.push(removeFold.of(removeFoldLanguages2));
+      if (readdFoldLanguages.length !== 0)
+        addEffects = addEffects.concat(convertReaddFold(transaction, readdFoldLanguages));
+      return addEffects.length !== 0 ? { effects: addEffects } : null;
+    });
+  }
+  function cursorFoldExtender() {
+    return import_state.EditorState.transactionExtender.of((transaction) => {
+      var _a2, _b, _c, _d;
+      const addEffects = [];
+      const foldDecorationsState = (_b = (_a2 = transaction.startState.field(foldDecorations, false)) == null ? void 0 : _a2.map(transaction.changes)) != null ? _b : import_view.Decoration.none;
+      const hiddenDecorationsState = (_d = (_c = transaction.startState.field(hiddenDecorations, false)) == null ? void 0 : _c.map(transaction.changes)) != null ? _d : import_view.Decoration.none;
+      transaction.newSelection.ranges.forEach((range) => {
+        foldDecorationsState.between(range.from, range.to, (foldFrom, foldTo, decorationValue) => {
+          if (rangeInteraction(foldFrom, foldTo, range))
+            addEffects.push(hideFold.of({ from: foldFrom, to: foldTo, value: decorationValue }));
+        });
+        for (let iter = hiddenDecorationsState.iter(); iter.value !== null; iter.next()) {
+          if (!rangeInteraction(iter.from, iter.to, range))
+            addEffects.push(unhideFold.of({ from: iter.from, to: iter.to, value: iter.value }));
+        }
+      });
+      return addEffects.length !== 0 ? { effects: addEffects } : null;
+    });
+  }
+  function documentFoldExtender() {
+    return import_state.EditorState.transactionExtender.of((transaction) => {
+      let addEffects = [];
+      transaction.effects.filter((effect) => effect.is(foldAll)).forEach((effect) => {
+        var _a2;
+        if (typeof ((_a2 = effect.value) == null ? void 0 : _a2.toFold) !== "undefined")
+          addEffects = addEffects.concat(documentFold(transaction.startState, effect.value.toFold));
+        else
+          addEffects = addEffects.concat(documentFold(transaction.startState));
+      });
+      return addEffects.length !== 0 ? { effects: addEffects } : null;
+    });
+  }
+  class LineNumberWidget extends import_view.WidgetType {
+    constructor(lineNumber, codeblockParameters, maxLineNum, empty3 = false) {
+      super();
+      this.lineNumber = lineNumber;
+      this.codeblockParameters = codeblockParameters;
+      this.maxLineNum = maxLineNum;
+      this.empty = empty3;
+    }
+    eq(other) {
+      return this.lineNumber === other.lineNumber && this.codeblockParameters.lineNumbers.alwaysEnabled === other.codeblockParameters.lineNumbers.alwaysEnabled && this.codeblockParameters.lineNumbers.alwaysDisabled === other.codeblockParameters.lineNumbers.alwaysDisabled && this.codeblockParameters.lineNumbers.offset === other.codeblockParameters.lineNumbers.offset && this.maxLineNum === other.maxLineNum && this.empty === other.empty;
+    }
+    toDOM() {
+      return createSpan({ attr: { style: this.maxLineNum.toString().length > (this.lineNumber + this.codeblockParameters.lineNumbers.offset).toString().length ? "width: var(--line-number-gutter-width);" : "" }, cls: "code-styler-line-number", text: this.empty ? "" : (this.lineNumber + this.codeblockParameters.lineNumbers.offset).toString() });
+    }
+  }
+  class CommentLinkWidget extends import_view.WidgetType {
+    constructor(linkText, sourcePath) {
+      super();
+      this.linkText = linkText;
+      this.sourcePath = sourcePath;
+    }
+    eq(other) {
+      return this.linkText === other.linkText && this.sourcePath === other.sourcePath;
+    }
+    toDOM() {
+      const linkParentElement = createDiv({ attr: { class: "code-styler-comment-link" } });
+      import_obsidian8.MarkdownRenderer.render(plugin.app, this.linkText, linkParentElement, this.sourcePath, plugin);
+      return linkParentElement;
+    }
+  }
+  class HeaderWidget extends import_view.WidgetType {
+    constructor(codeblockParameters, folded, themeSettings, sourcePath, plugin2) {
+      super();
+      this.codeblockParameters = structuredClone(codeblockParameters);
+      this.themeSettings = structuredClone(themeSettings);
+      this.sourcePath = sourcePath;
+      this.plugin = plugin2;
+      this.iconURL = getLanguageIcon(this.codeblockParameters.language, this.plugin.languageIcons);
+      this.folded = folded;
+      this.hidden = isHeaderHidden(this.codeblockParameters, this.themeSettings, this.iconURL);
+    }
+    eq(other) {
+      return this.codeblockParameters.language === other.codeblockParameters.language && this.codeblockParameters.title === other.codeblockParameters.title && this.codeblockParameters.reference === other.codeblockParameters.reference && this.codeblockParameters.fold.enabled === other.codeblockParameters.fold.enabled && this.codeblockParameters.fold.placeholder === other.codeblockParameters.fold.placeholder && this.themeSettings.header.foldPlaceholder === other.themeSettings.header.foldPlaceholder && this.themeSettings.header.languageIcon.display === other.themeSettings.header.languageIcon.display && this.themeSettings.header.languageTag.display === other.themeSettings.header.languageTag.display && this.folded === other.folded && this.iconURL === other.iconURL;
+    }
+    toDOM(view) {
+      const headerContainer = createHeader(this.codeblockParameters, this.themeSettings, this.sourcePath, this.plugin);
+      if (this.codeblockParameters.language !== "")
+        headerContainer.classList.add(`language-${this.codeblockParameters.language}`);
+      if (this.folded)
+        headerContainer.classList.add("code-styler-header-folded");
+      headerContainer.onclick = (event) => {
+        var _a2, _b, _c, _d;
+        if (!((_b = (_a2 = event.target) == null ? void 0 : _a2.classList) == null ? void 0 : _b.contains("internal-link")) && !((_d = (_c = event.target) == null ? void 0 : _c.classList) == null ? void 0 : _d.contains("external-link")))
+          foldOnClick(view, headerContainer, this.folded, this.codeblockParameters.language);
+      };
+      return headerContainer;
+    }
+  }
+  class OpenerWidget extends import_view.WidgetType {
+    constructor(inlineCodeParameters, plugin2) {
+      super();
+      this.inlineCodeParameters = inlineCodeParameters;
+      this.plugin = plugin2;
+    }
+    eq(other) {
+      return this.inlineCodeParameters.language == other.inlineCodeParameters.language && this.inlineCodeParameters.title == other.inlineCodeParameters.title && this.inlineCodeParameters.icon == other.inlineCodeParameters.icon && getLanguageIcon(this.inlineCodeParameters.language, this.plugin.languageIcons) == getLanguageIcon(other.inlineCodeParameters.language, other.plugin.languageIcons);
+    }
+    toDOM() {
+      return createInlineOpener(this.inlineCodeParameters, this.plugin.languageIcons, ["code-styler-inline-opener", "cm-inline-code"]);
+    }
+  }
+  function buildHeaderDecorations(state, foldValue = (position3, defaultFold) => defaultFold) {
+    var _a2, _b, _c;
+    const builder = new import_state.RangeSetBuilder();
+    const sourcePath = (_c = (_b = (_a2 = state.field(import_obsidian8.editorInfoField)) == null ? void 0 : _a2.file) == null ? void 0 : _b.path) != null ? _c : "";
+    let codeblockParameters;
+    (0, import_language.syntaxTree)(state).iterate({
+      enter: (syntaxNode) => {
+        if (syntaxNode.type.name.includes("HyperMD-codeblock-begin")) {
+          const startLine = state.doc.lineAt(syntaxNode.from);
+          codeblockParameters = parseCodeblockParameters(trimParameterLine(startLine.text.toString()), settings.currentTheme);
+          if (!isLanguageIgnored(codeblockParameters.language, settings.excludedLanguages) && !isCodeblockIgnored(codeblockParameters.language, settings.processedCodeblocksWhitelist) && !codeblockParameters.ignore) {
+            if (!SPECIAL_LANGUAGES.some((regExp) => new RegExp(regExp).test(codeblockParameters.language)))
+              builder.add(startLine.from, startLine.from, import_view.Decoration.widget({ widget: new HeaderWidget(codeblockParameters, foldValue(startLine.from, codeblockParameters.fold.enabled), settings.currentTheme.settings, sourcePath, plugin), block: true, side: -1 }));
+          }
+        }
+      }
+    });
+    return builder.finish();
+  }
+  function buildLineDecorations(state) {
+    var _a2, _b, _c, _d, _e;
+    const builder = new import_state.RangeSetBuilder();
+    const sourcePath = (_c = (_b = (_a2 = state.field(import_obsidian8.editorInfoField)) == null ? void 0 : _a2.file) == null ? void 0 : _b.path) != null ? _c : "";
+    const sourceMode = isSourceMode(state);
+    for (let iter = ((_d = state.field(headerDecorations, false)) != null ? _d : import_view.Decoration.none).iter(); iter.value !== null; iter.next()) {
+      const foldStart = state.doc.lineAt(iter.from);
+      const startDelimiter = testOpeningLine(foldStart.text.toString());
+      const codeblockParameters = iter.value.spec.widget.codeblockParameters;
+      const showLineNumbers = settings.currentTheme.settings.codeblock.lineNumbers && !codeblockParameters.lineNumbers.alwaysDisabled || codeblockParameters.lineNumbers.alwaysEnabled;
+      let foldEnd = null;
+      let maxLineNum = 0;
+      codeblockFoldCallback(iter.from, state, (foldStart2, foldEnd2) => {
+        maxLineNum = foldEnd2.to - foldStart2.from - 1 + codeblockParameters.lineNumbers.offset;
+      });
+      const lineNumberMargin = maxLineNum.toString().length > 2 ? maxLineNum.toString().length * state.field(charWidthState) : void 0;
+      builder.add(foldStart.from, foldStart.from, import_view.Decoration.line({ attributes: { style: `--line-number-gutter-width: ${lineNumberMargin ? lineNumberMargin + "px" : "calc(var(--line-number-gutter-min-width) - 12px)"};`, class: "code-styler-line" + (["^$"].concat(SPECIAL_LANGUAGES).some((regExp) => new RegExp(regExp).test(codeblockParameters.language)) ? "" : ` language-${codeblockParameters.language}`) } }));
+      if (showLineNumbers)
+        builder.add(foldStart.from, foldStart.from, import_view.Decoration.widget({ widget: new LineNumberWidget(0, codeblockParameters, maxLineNum, true) }));
+      for (let i2 = foldStart.number + 1; i2 <= state.doc.lines; i2++) {
+        const line = (_e = state.doc) == null ? void 0 : _e.line(i2);
+        if (!line)
+          break;
+        const lineText = line.text.toString();
+        if (testOpeningLine(lineText) === startDelimiter) {
+          foldEnd = line;
+          break;
+        }
+        builder.add(line.from, line.from, import_view.Decoration.line({ attributes: { style: `--line-number-gutter-width: ${lineNumberMargin ? lineNumberMargin + "px" : "calc(var(--line-number-gutter-min-width) - 12px)"};`, class: (SPECIAL_LANGUAGES.some((regExp) => new RegExp(regExp).test(iter.value.spec.widget.codeblockParameters.language)) ? "code-styler-line" : getLineClass(codeblockParameters, i2 - foldStart.number, line.text).join(" ")) + (["^$"].concat(SPECIAL_LANGUAGES).some((regExp) => new RegExp(regExp).test(codeblockParameters.language)) ? "" : ` language-${codeblockParameters.language}`) } }));
+        if (showLineNumbers)
+          builder.add(line.from, line.from, import_view.Decoration.widget({ widget: new LineNumberWidget(i2 - foldStart.number, codeblockParameters, maxLineNum) }));
+        if (codeblockParameters.language === "markdown")
+          continue;
+        convertCommentLinks2(state, line, sourcePath, builder, sourceMode);
+      }
+      if (foldEnd !== null) {
+        builder.add(foldEnd.from, foldEnd.from, import_view.Decoration.line({ attributes: { style: `--line-number-gutter-width: ${lineNumberMargin ? lineNumberMargin + "px" : "calc(var(--line-number-gutter-min-width) - 12px)"};`, class: "code-styler-line" + (["^$"].concat(SPECIAL_LANGUAGES).some((regExp) => new RegExp(regExp).test(codeblockParameters.language)) ? "" : ` language-${codeblockParameters.language}`) } }));
+        if (showLineNumbers)
+          builder.add(foldEnd.from, foldEnd.from, import_view.Decoration.widget({ widget: new LineNumberWidget(0, codeblockParameters, maxLineNum, true) }));
+      }
+    }
+    return builder.finish();
+  }
+  function convertCommentLinks2(state, line, sourcePath, builder, sourceMode) {
+    (0, import_language.syntaxTree)(state).iterate({
+      enter: (syntaxNode) => {
+        if (syntaxNode.type.name.includes("comment_hmd-codeblock")) {
+          const commentText = state.sliceDoc(syntaxNode.from, syntaxNode.to);
+          const linkMatches = [...commentText.matchAll(/(?:\[\[[^\]|\r\n]+?(?:\|[^\]|\r\n]+?)?\]\]|\[.*?\]\(.+\))/g)];
+          linkMatches.forEach((linkMatch) => {
+            if (typeof (linkMatch == null ? void 0 : linkMatch.index) === "undefined")
+              return;
+            const from = syntaxNode.from + linkMatch.index;
+            const to = from + linkMatch[0].length;
+            if (sourceMode || state.selection.ranges.some((range) => rangeInteraction(from, to, range))) {
+              const mdBreak = linkMatch[0].indexOf("](");
+              if (mdBreak === -1) {
+                const wikilinkSeparator = linkMatch[0].indexOf("|");
+                builder.add(from + 2, to - 2, import_view.Decoration.mark({ class: "cm-hmd-internal-link code-styler-source-link", attributes: { destination: linkMatch[0].slice(2, wikilinkSeparator !== -1 ? wikilinkSeparator : -2) } }));
+              } else {
+                builder.add(from + 1, from + mdBreak, import_view.Decoration.mark({ class: "cm-link code-styler-source-link", attributes: { destination: linkMatch[0].slice(mdBreak + 2, -1) } }));
+                builder.add(from + mdBreak + 2, to - 1, import_view.Decoration.mark({ class: "cm-string cm-url" }));
+              }
+            } else
+              builder.add(from, to, import_view.Decoration.replace({ widget: new CommentLinkWidget(linkMatch[0], sourcePath) }));
+          });
+        }
+      },
+      from: line.from,
+      to: line.to
+    });
+  }
+  function buildInlineDecorations(state) {
+    if (!settings.currentTheme.settings.inline.syntaxHighlight)
+      return import_view.Decoration.none;
+    const builder = new import_state.RangeSetBuilder();
+    const sourceMode = isSourceMode(state);
+    (0, import_language.syntaxTree)(state).iterate({
+      enter: (syntaxNode) => {
+        const ranges = getInlineCodeRanges(state, syntaxNode);
+        if (ranges === null)
+          return;
+        const { parameters, text: text2, section } = ranges;
+        if (parameters.value === null)
+          addUnstyledInlineDecorations(state, builder, parameters, text2, section, sourceMode);
+        else
+          addStyledInlineDecorations(state, builder, parameters, text2, section, sourceMode);
+      }
+    });
+    return builder.finish();
+  }
+  function addStyledInlineDecorations(state, builder, parameters, text2, section, sourceMode) {
+    var _a2, _b;
+    if (sourceMode || state.selection.ranges.some((range) => rangeInteraction(section.from, section.to, range)))
+      builder.add(parameters.from, parameters.to, import_view.Decoration.mark({ class: "code-styler-inline-parameters" }));
+    else {
+      builder.add(parameters.from, parameters.to, import_view.Decoration.replace({}));
+      if (((_a2 = parameters.value) == null ? void 0 : _a2.title) || ((_b = parameters.value) == null ? void 0 : _b.icon) && getLanguageIcon(parameters.value.language, plugin.languageIcons))
+        builder.add(parameters.from, parameters.from, import_view.Decoration.replace({ widget: new OpenerWidget(parameters.value, plugin) }));
+    }
+    modeHighlight({ start: parameters.to, text: text2.value, language: parameters.value.language }, builder);
+  }
+  function convertReaddFold(transaction, readdLanguages) {
+    var _a2;
+    const addEffects = [];
+    for (let iter = ((_a2 = transaction.state.field(headerDecorations, false)) != null ? _a2 : import_view.Decoration.none).iter(); iter.value !== null; iter.next()) {
+      if (!iter.value.spec.widget.codeblockParameters.fold.enabled || !readdLanguages.includes(iter.value.spec.widget.codeblockParameters.language))
+        continue;
+      codeblockFoldCallback(iter.from, transaction.state, (foldStart, foldEnd) => {
+        addEffects.push(fold.of({ from: foldStart.from, to: foldEnd.to, value: { spec: { language: iter.value.spec.widget.codeblockParameters.language } } }));
+      });
+    }
+    return addEffects;
+  }
+  function isFolded(state, position3) {
+    var _a2;
+    let folded = false;
+    (_a2 = state.field(foldDecorations, false)) == null ? void 0 : _a2.between(position3, position3, () => {
+      folded = true;
+    });
+    return folded;
+  }
+  function documentFold(state, toFold) {
+    var _a2;
+    const addEffects = [];
+    const reset = typeof toFold === "undefined";
+    for (let iter = ((_a2 = state.field(headerDecorations, false)) != null ? _a2 : import_view.Decoration.none).iter(); iter.value !== null; iter.next()) {
+      if (iter.value.spec.widget.hidden)
+        continue;
+      const folded = iter.value.spec.widget.folded;
+      const defaultFold = iter.value.spec.widget.codeblockParameters.fold.enabled;
+      codeblockFoldCallback(iter.from, state, (foldStart, foldEnd) => {
+        if (!reset && toFold && !folded || reset && !folded && defaultFold)
+          addEffects.push(fold.of({ from: foldStart.from, to: foldEnd.to, value: { spec: { language: iter.value.spec.widget.codeblockParameters.language } } }));
+        else if (!reset && !toFold && folded || reset && folded && !defaultFold)
+          addEffects.push(unfold.of({ from: foldStart.from, to: foldEnd.to }));
+      });
+    }
+    return addEffects;
+  }
+  return [
+    interaction,
+    ignoreListener,
+    ignoreFileListener,
+    cursorFoldExtender(),
+    documentFoldExtender(),
+    settingsChangeExtender(),
+    settingsState,
+    charWidthState,
+    livePreviewCompartment.of([]),
+    ignoreCompartment.of([])
+  ];
+}
+var fold = import_state.StateEffect.define();
+var unfold = import_state.StateEffect.define();
+var hideFold = import_state.StateEffect.define();
+var unhideFold = import_state.StateEffect.define();
+var removeFold = import_state.StateEffect.define();
+var foldAll = import_state.StateEffect.define();
+var rerender = import_state.StateEffect.define();
+function codeblockFoldCallback(startPosition, state, foldCallback) {
+  const foldStart = state.doc.lineAt(startPosition);
+  const startDelimiter = testOpeningLine(foldStart.text.toString());
+  let foldEnd = null;
+  for (let i2 = foldStart.number + 1; i2 <= state.doc.lines; i2++) {
+    const line = state.doc.line(i2);
+    const lineText = line.text.toString();
+    if (testOpeningLine(lineText) === startDelimiter) {
+      foldEnd = line;
+      break;
+    }
+  }
+  if (foldEnd !== null)
+    foldCallback(foldStart, foldEnd);
+}
+function getInlineCodeRanges(state, syntaxNode) {
+  const delimiterSize = getInlineDelimiterSize(syntaxNode);
+  if (delimiterSize === null)
+    return null;
+  const inlineCodeText = state.doc.sliceString(syntaxNode.from, syntaxNode.to);
+  const { parameters, text: text2 } = parseInlineCode(inlineCodeText);
+  const parametersLength = inlineCodeText.lastIndexOf(text2);
+  return { parameters: { from: syntaxNode.from, to: syntaxNode.from + parametersLength, value: parameters }, text: { from: syntaxNode.from + parametersLength + 1, to: syntaxNode.to, value: text2 }, section: { from: syntaxNode.from - delimiterSize, to: syntaxNode.to + delimiterSize } };
+}
+function getInlineDelimiterSize(syntaxNode) {
+  var _a2;
+  const properties = new Set((_a2 = syntaxNode.node.type.prop(import_language.tokenClassNodeProp)) == null ? void 0 : _a2.split(" "));
+  if (!(properties.has("inline-code") && !properties.has("formatting")))
+    return null;
+  const previousSibling = syntaxNode.node.prevSibling;
+  if (!previousSibling)
+    return null;
+  return previousSibling.to - previousSibling.from;
+}
+function addUnstyledInlineDecorations(state, builder, parameters, text2, section, sourceMode) {
+  if (text2.value) {
+    if (!state.selection.ranges.some((range) => range.to >= section.from && range.from <= section.to) && !sourceMode)
+      builder.add(parameters.from, parameters.to, import_view.Decoration.replace({}));
+  }
+}
+function modeHighlight({ start, text: text2, language }, builder) {
+  var _a2;
+  const mode = window.CodeMirror.getMode(window.CodeMirror.defaults, (_a2 = window.CodeMirror.findModeByName(language)) == null ? void 0 : _a2.mime);
+  const state = window.CodeMirror.startState(mode);
+  if (mode == null ? void 0 : mode.token) {
+    const stream = new window.CodeMirror.StringStream(text2);
+    while (!stream.eol()) {
+      const style2 = mode.token(stream, state);
+      if (style2)
+        builder.add(start + stream.start, start + stream.pos, import_view.Decoration.mark({ class: `cm-${style2}` }));
+      stream.start = stream.pos;
+    }
+  }
+}
+function editingDocumentFold(view, toFold) {
+  view.dispatch({ effects: foldAll.of(typeof toFold !== "undefined" ? { toFold } : {}) });
+  view.requestMeasure();
+}
+function foldOnClick(view, target, folded, language) {
+  codeblockFoldCallback(view.posAtDOM(target), view.state, (foldStart, foldEnd) => {
+    view.dispatch({ effects: foldLines(!folded, { from: foldStart.from, to: foldEnd.to, value: { spec: { language } } }) });
+    view.requestMeasure();
+  });
+}
+function foldLines(toFold, foldInfo) {
+  return toFold ? fold.of(foldInfo) : unfold.of({ from: foldInfo.from, to: foldInfo.to });
+}
+function foldRegion({ from: foldFrom, to: foldTo, value: { spec: { language } } }) {
+  return foldDecoration(language).range(foldFrom, foldTo);
+}
+function unfoldRegion({ from: foldFrom, to: foldTo }) {
+  return { filter: (from, to) => to <= foldFrom || from >= foldTo, filterFrom: foldFrom, filterTo: foldTo };
+}
+function removeFoldLanguages(languages) {
+  return { filter: (from, to, value) => {
+    var _a2;
+    return !languages.includes((_a2 = value == null ? void 0 : value.spec) == null ? void 0 : _a2.language);
+  } };
+}
+function unhideFoldUpdate(range) {
+  return { filterFrom: range.from, filterTo: range.to, filter: (from, to) => !(from === range.from && to === range.to) };
+}
+function foldDecoration(language) {
+  return import_view.Decoration.replace({ block: true, language });
+}
+function rangeInteraction(from, to, range) {
+  return from <= range.head && range.head <= to || from <= range.anchor && range.anchor <= to;
+}
+function isFileIgnored(state) {
+  var _a2, _b, _c, _d, _e;
+  const filePath = (_b = (_a2 = state.field(import_obsidian8.editorInfoField)) == null ? void 0 : _a2.file) == null ? void 0 : _b.path;
+  if (typeof filePath !== "undefined")
+    return ((_e = (_d = (_c = this.app.metadataCache.getCache(filePath)) == null ? void 0 : _c.frontmatter) == null ? void 0 : _d["code-styler-ignore"]) == null ? void 0 : _e.toString()) === "true";
+  return false;
+}
+function isSourceMode(state) {
+  return !state.field(import_obsidian8.editorLivePreviewField);
+}
+function setDifference(array1, array2) {
+  return array1.filter((element3) => !array2.includes(element3));
+}
+
 // src/main.ts
-var CodeStylerPlugin = class extends import_obsidian7.Plugin {
+var CodeStylerPlugin = class extends import_obsidian9.Plugin {
   async onload() {
     await this.loadSettings();
     const settingsTab = new SettingsTab(this.app, this);
@@ -19308,6 +19928,10 @@ var CodeStylerPlugin = class extends import_obsidian7.Plugin {
       zoom: document.body.getCssPropertyValue("--zoom-factor")
     };
     this.executeCodeMutationObserver = executeCodeMutationObserver;
+    addModes();
+    this.registerMarkdownCodeBlockProcessor(REFERENCE_CODEBLOCK, async (source, el, ctx) => {
+      await referenceCodeblockProcessor(source, el, ctx, this);
+    });
     this.registerMarkdownPostProcessor(async (el, ctx) => {
       await readingViewCodeblockDecoratingPostProcessor(el, ctx, this);
     });
@@ -19339,7 +19963,7 @@ var CodeStylerPlugin = class extends import_obsidian7.Plugin {
       }
     }, this));
     this.addCommand({ id: "fold-all", name: "Fold all codeblocks", callback: () => {
-      const activeView = this.app.workspace.getActiveViewOfType(import_obsidian7.MarkdownView);
+      const activeView = this.app.workspace.getActiveViewOfType(import_obsidian9.MarkdownView);
       if (activeView) {
         if (activeView.getMode() === "preview")
           readingDocumentFold(activeView.contentEl, true);
@@ -19348,7 +19972,7 @@ var CodeStylerPlugin = class extends import_obsidian7.Plugin {
       }
     } });
     this.addCommand({ id: "unfold-all", name: "Unfold all codeblocks", callback: () => {
-      const activeView = this.app.workspace.getActiveViewOfType(import_obsidian7.MarkdownView);
+      const activeView = this.app.workspace.getActiveViewOfType(import_obsidian9.MarkdownView);
       if (activeView) {
         if (activeView.getMode() === "preview")
           readingDocumentFold(activeView.contentEl, false);
@@ -19357,7 +19981,7 @@ var CodeStylerPlugin = class extends import_obsidian7.Plugin {
       }
     } });
     this.addCommand({ id: "reset-all", name: "Reset fold state for all codeblocks", callback: () => {
-      const activeView = this.app.workspace.getActiveViewOfType(import_obsidian7.MarkdownView);
+      const activeView = this.app.workspace.getActiveViewOfType(import_obsidian9.MarkdownView);
       if (activeView) {
         if (activeView.getMode() === "preview")
           readingDocumentFold(activeView.contentEl);
@@ -19365,12 +19989,21 @@ var CodeStylerPlugin = class extends import_obsidian7.Plugin {
           editingDocumentFold(activeView.editor.cm.docView.view);
       }
     } });
-    this.app.workspace.onLayoutReady(() => {
-      this.renderReadingView();
-    });
+    this.addCommand({ id: "update-references-vault", name: "Update all external references in vault", callback: async () => {
+      await updateExternalReferencedFiles(this);
+    } });
+    this.addCommand({ id: "update-references-page", name: "Update all external references in note", callback: async () => {
+      var _a2;
+      await updateExternalReferencedFiles(this, (_a2 = this.app.workspace.getActiveFile()) == null ? void 0 : _a2.path);
+    } });
+    this.addCommand({ id: "clean-references", name: "Remove all unneeded external references", callback: async () => {
+      await cleanExternalReferencedFiles(this);
+    } });
+    this.app.workspace.onLayoutReady(async () => this.initialiseOnLayout());
     console.log("Loaded plugin: Code Styler");
   }
   onunload() {
+    removeModes();
     this.executeCodeMutationObserver.disconnect();
     removeStylesAndClasses();
     destroyReadingModeElements();
@@ -19386,9 +20019,21 @@ var CodeStylerPlugin = class extends import_obsidian7.Plugin {
     this.app.workspace.updateOptions();
     updateStyling(this.settings, this.app);
   }
+  async initialiseOnLayout() {
+    if (!await this.app.vault.adapter.exists(this.app.vault.configDir + EXTERNAL_REFERENCE_PATH)) {
+      await this.app.vault.adapter.mkdir(this.app.vault.configDir + EXTERNAL_REFERENCE_PATH);
+      await this.app.vault.adapter.write(this.app.vault.configDir + EXTERNAL_REFERENCE_CACHE, JSON.stringify({}));
+    }
+    if (this.settings.externalReferenceUpdateOnLoad)
+      await updateExternalReferencedFiles(this);
+    else {
+      await cleanExternalReferencedFiles(this);
+      this.renderReadingView();
+    }
+  }
   renderReadingView() {
     this.app.workspace.iterateRootLeaves((leaf) => {
-      if (leaf.view instanceof import_obsidian7.MarkdownView && leaf.view.getMode() === "preview")
+      if (leaf.view instanceof import_obsidian9.MarkdownView && leaf.view.getMode() === "preview")
         leaf.view.previewMode.rerender(true);
     });
   }

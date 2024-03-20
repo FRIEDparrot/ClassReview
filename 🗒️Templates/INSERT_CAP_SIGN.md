@@ -1,1 +1,1 @@
-\cap
+\bigcap

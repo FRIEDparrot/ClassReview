@@ -99,7 +99,8 @@ Greenwich Mean Time (GMT)格林尼治时间
 Universal Time Coordinate (UTC) 协调世界时;
 reSynchronization Jump Width (SJW) 重新同步补偿宽度
 tamper 篡改, 侵入
-
+scalable 可攀登的， 可扩展的
+discard 丢弃
 
 # 模电
 掺杂 doping

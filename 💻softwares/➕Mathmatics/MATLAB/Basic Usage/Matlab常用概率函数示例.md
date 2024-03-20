@@ -1,3 +1,9 @@
+
+```erlang
+mean(x); // 均值
+std(x); // 求解方差
+use max(x_i,[], 2) for second dim  // 行最大值
+```
 常用分布函数 pdf 为概率密度函数, cdf 为分布函数: 
 ```erlang
 unifpdf(x, a, b);               % 均匀分布 
@@ -33,3 +39,7 @@ kurtosis     % 返回峰度
 x = randn(100000,1);
 s = skewness(x); 
 ```
+
+标准反正态函数norminv实际上是使用如下图的映射关系:
+![[attachments/Pasted image 20240302091110.png]]
+对于均匀分布， 显然上图映射可以将其映射成为正态分布; 
