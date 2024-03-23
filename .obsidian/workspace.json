@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "87151a6c21cf9c30",
+        "id": "885be68ac3c069cb",
         "type": "tabs",
         "children": [
           {
-            "id": "408fdf8fd738bb21",
+            "id": "51e8575122d7424e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/1. NXOpen.Net 工程创建.md",
+                "file": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/BladeGen建模方法.md",
                 "mode": "source",
                 "source": false
               }
@@ -101,7 +101,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.5124969482422
+    "width": 287.5124969482422
   },
   "right": {
     "id": "f7de553c162de521",
@@ -154,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/1. NXOpen.Net 工程创建.md",
+                "file": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/BladeGen建模方法.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -281,7 +281,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/1. NXOpen.Net 工程创建.md"
+                "file": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/BladeGen建模方法.md"
               }
             }
           },
@@ -291,7 +291,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/1. NXOpen.Net 工程创建.md",
+                "file": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/BladeGen建模方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -308,7 +308,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/1. NXOpen.Net 工程创建.md",
+                "file": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/BladeGen建模方法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -329,7 +329,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 463.5,
+    "width": 529.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -355,53 +355,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "408fdf8fd738bb21",
+  "active": "51e8575122d7424e",
   "lastOpenFiles": [
-    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/Csharp基础语法.md",
-    "💻softwares/Markdown & Latex Tutorial/notepad++/常见设置.md",
-    "attachments/Pasted image 20240320115942.png",
-    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/1. NXOpen.Net 工程创建.md",
+    "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/UG联合Ansys Workbench参数化建模和Matlab参数扫描教程.md",
+    "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/Blade.md",
+    "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/Workbench几何操作.md",
+    "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/Workbench 建立梁几何单元.md",
+    "attachments/Pasted image 20240323122635.png",
+    "attachments/Pasted image 20240323122440.png",
+    "attachments/Pasted image 20240323122224.png",
+    "attachments/Pasted image 20240323121935.png",
+    "💻softwares/🛩️FEM/Ansys/Fluent/Fluent的基本使用.md",
+    "attachments/Pasted image 20240323104330.png",
+    "attachments/Pasted image 20240322223340.png",
+    "attachments/Pasted image 20240322222617.png",
+    "attachments/Pasted image 20240322221328.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md",
+    "attachments/Pasted image 20240322215931.png",
+    "attachments/Pasted image 20240322215632.png",
+    "💻softwares/🛩️FEM/Ansys/Fluent/Fluent 分析案例1.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/复习课程与考试要点.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/补充内容.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第十一章 喷管内的流动方程.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md",
+    "💻softwares/🛩️FEM/Ansys/Workbench/Mesh/网格节点融合.md",
+    "💻softwares/Markdown & Latex Tutorial/obsidian usage/缩减栏宽.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter1 Introductory Thoughts/12-15 Applied Aerodynamics & history.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 2 Equations for Incompressible Flow/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/结构有限元1 悬臂梁受到均布载荷.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/实验2 内置方形体的突然扩张.md",
+    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
+    "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/BladeGen建模方法.md",
+    "💻softwares/🛩️FEM/Ansys/Workbench/Mesh/接触网格和多区域法.md",
+    "🐸 Daily Life memo/💡Inspiration/项目.md",
+    "💻softwares/🛩️FEM/Ansys/Workbench/快捷键.md",
+    "💻softwares/🗽2D & 3D design/UG/参数化建模",
+    "💻softwares/🗽2D & 3D design/UG",
     "💻softwares/Markdown & Latex Tutorial/notepad++",
-    "🐸 Daily Life memo/备忘录.md",
-    "attachments/Pasted image 20240320092330.png",
-    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/NXOpen Python/入门与常用函数.md",
-    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/NXOpen Python/NX Python二次开发环境配置教程.md",
-    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/常用模板函数.md",
-    "💻softwares/🗽2D & 3D design/🤖SolidWorks/启动SolidWorks.md",
-    "attachments/Pasted image 20240318220040.png",
-    "💻softwares/🛩️FEM/Abaqus/安装教程.md",
-    "attachments/Pasted image 20240318193947.png",
-    "attachments/Pasted image 20240318192314.png",
-    "attachments/Pasted image 20240318181206.png",
-    "attachments/Pasted image 20240318180311.png",
-    "attachments/Pasted image 20240318175443.png",
-    "attachments/Pasted image 20240318173847.png",
-    "attachments/Pasted image 20240318173313.png",
-    "Excalidraw/入门与常用函数 2024-03-18 09.49.26.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第五章 子集模拟方法.md",
-    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET",
-    "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/5. 打印报表和说明.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第四章 重要抽样法原理与应用.md",
-    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/NXOpen Python/Debug_NXOpen_Python_with_NX12_and_Eclipse_PyDev.pdf",
-    "💻softwares/🗽2D & 3D design/UG二次开发/Knowledge Fusion/入门与基本界面认识.md",
-    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/Latex间距设置总结.md",
-    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/目录格式控制.md",
-    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/Latex基本用法.md",
+    "💻softwares/🗽2D & 3D design/UG/UG二次开发/NXOpen.NET",
+    "💻softwares/🗽2D & 3D design/UG/UG二次开发/NXOpen.NET/NXOpen Python/Debug_NXOpen_Python_with_NX12_and_Eclipse_PyDev.pdf",
     "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制",
-    "📘ClassNotes/🗣️English/punctuation marks in English.md",
-    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/公式相关/Mathematical Symbols.md",
-    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/公式相关/Matrix_With_Dash.md",
     "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/公式相关",
-    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/Latex文献引用方法.md",
-    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/公式相关/Latex数学公式编写.md",
-    "💻softwares/🗽2D & 3D design/UG二次开发/Knowledge Fusion",
-    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/NXOpen Python/ugii_env.dat",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/重要抽样函数封装.md",
-    "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/NXOpen Python",
-    "💻softwares/🗽2D & 3D design/UG二次开发",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数",
-    "🗒️Templates/INSERT_PROD_SYMBOL.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第二章 蒙特卡洛模拟方法.md",
+    "💻softwares/🗽2D & 3D design/UG/UG二次开发/Knowledge Fusion",
+    "💻softwares/🗽2D & 3D design/UG/UG二次开发/NXOpen.NET/NXOpen Python/ugii_env.dat",
+    "💻softwares/🗽2D & 3D design/UG/UG二次开发/NXOpen.NET/NXOpen Python",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

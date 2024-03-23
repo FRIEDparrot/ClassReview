@@ -35,7 +35,7 @@ lw.WriteLine('Hello, World')
 
 <b><mark style="background: transparent; color: blue">需要说明的是， Pycharm 中不能给出提示, 但是可以使用Eclipse编辑器</mark></b>
 
-参考[[💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/NXOpen Python/Debug_NXOpen_Python_with_NX12_and_Eclipse_PyDev.pdf|Debug_NXOpen_Python_with_NX12_and_Eclipse_PyDev.pdf]]配置eclipse即可, 注意一定要选用3.6为配置环境。
+参考[[💻softwares/🗽2D & 3D design/UG/UG二次开发/NXOpen.NET/NXOpen Python/Debug_NXOpen_Python_with_NX12_and_Eclipse_PyDev.pdf|Debug_NXOpen_Python_with_NX12_and_Eclipse_PyDev.pdf]]配置eclipse即可, 注意一定要选用3.6为配置环境。
 成功效果图如下: 
 ![[attachments/Pasted image 20240315224041.png]]
 

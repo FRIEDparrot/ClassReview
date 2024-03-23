@@ -1,12 +1,152 @@
 {
   "recentFiles": [
     {
+      "basename": "BladeGen建模方法",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/BladeGen建模方法.md"
+    },
+    {
+      "basename": "UG联合Ansys Workbench参数化建模和Matlab参数扫描教程",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/UG联合Ansys Workbench参数化建模和Matlab参数扫描教程.md"
+    },
+    {
+      "basename": "Workbench几何操作",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/Workbench几何操作.md"
+    },
+    {
+      "basename": "Workbench 建立梁几何单元",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/Workbench 建立梁几何单元.md"
+    },
+    {
+      "basename": "Fluent的基本使用",
+      "path": "💻softwares/🛩️FEM/Ansys/Fluent/Fluent的基本使用.md"
+    },
+    {
+      "basename": "Mechanic Terminology",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md"
+    },
+    {
+      "basename": "Fluent 分析案例1",
+      "path": "💻softwares/🛩️FEM/Ansys/Fluent/Fluent 分析案例1.md"
+    },
+    {
+      "basename": "复习课程与考试要点",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/复习课程与考试要点.md"
+    },
+    {
+      "basename": "补充内容",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/补充内容.md"
+    },
+    {
+      "basename": "第三章 理想气体的性质与过程",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程.md"
+    },
+    {
+      "basename": "第十一章 喷管内的流动方程",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第十一章 喷管内的流动方程.md"
+    },
+    {
+      "basename": "第二章 热力学第一定律",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md"
+    },
+    {
+      "basename": "网格节点融合",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Mesh/网格节点融合.md"
+    },
+    {
+      "basename": "缩减栏宽",
+      "path": "💻softwares/Markdown & Latex Tutorial/obsidian usage/缩减栏宽.md"
+    },
+    {
+      "basename": "1-8 Fundamental Principles",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md"
+    },
+    {
+      "basename": "12-15 Applied Aerodynamics & history",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter1 Introductory Thoughts/12-15 Applied Aerodynamics & history.md"
+    },
+    {
+      "basename": "1-11 Some Introductory Thoughts",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts.md"
+    },
+    {
+      "basename": "1-8 Introduction and overall  Analysis",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 2 Equations for Incompressible Flow/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md"
+    },
+    {
+      "basename": "结构有限元1 悬臂梁受到均布载荷",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/结构有限元1 悬臂梁受到均布载荷.md"
+    },
+    {
+      "basename": "大作业笔记部分",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md"
+    },
+    {
+      "basename": "实验2 内置方形体的突然扩张",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/实验2 内置方形体的突然扩张.md"
+    },
+    {
+      "basename": "Circuit Terminology",
+      "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
+    },
+    {
+      "basename": "接触网格和多区域法",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Mesh/接触网格和多区域法.md"
+    },
+    {
+      "basename": "项目",
+      "path": "🐸 Daily Life memo/💡Inspiration/项目.md"
+    },
+    {
+      "basename": "快捷键",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/快捷键.md"
+    },
+    {
       "basename": "1. NXOpen.Net 工程创建",
-      "path": "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/1. NXOpen.Net 工程创建.md"
+      "path": "💻softwares/🗽2D & 3D design/UG/UG二次开发/NXOpen.NET/1. NXOpen.Net 工程创建.md"
+    },
+    {
+      "basename": "Ansys导出结果到文件",
+      "path": "💻softwares/🛩️FEM/Ansys/APDL/Ansys导出结果到文件.md"
+    },
+    {
+      "basename": "显示壳单元厚度",
+      "path": "💻softwares/🛩️FEM/Ansys/APDL/显示壳单元厚度.md"
+    },
+    {
+      "basename": "如何将APDL与Workbench结合使用",
+      "path": "💻softwares/🛩️FEM/Ansys/APDL/如何将APDL与Workbench结合使用.md"
+    },
+    {
+      "basename": "Workbench 材料设置",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/Workbench 材料设置.md"
+    },
+    {
+      "basename": "Ansys Workbench 设置空间变化的载荷",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Load & Analysis/Ansys Workbench 设置空间变化的载荷.md"
+    },
+    {
+      "basename": "疲劳分析方法",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Load & Analysis/疲劳分析方法.md"
+    },
+    {
+      "basename": "Ansys 网格划分操作",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Mesh/Ansys 网格划分操作.md"
+    },
+    {
+      "basename": "常用分析类型缩写",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/UI Introduction/常用分析类型缩写.md"
+    },
+    {
+      "basename": "单位设置",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/UI Introduction/单位设置.md"
     },
     {
       "basename": "Csharp基础语法",
-      "path": "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/Csharp基础语法.md"
+      "path": "💻softwares/🗽2D & 3D design/UG/UG二次开发/NXOpen.NET/Csharp基础语法.md"
+    },
+    {
+      "basename": "模板函数部分",
+      "path": "💻softwares/🗽2D & 3D design/UG/UG二次开发/NXOpen.NET/模板函数部分.md"
     },
     {
       "basename": "常见设置",
@@ -18,15 +158,11 @@
     },
     {
       "basename": "入门与常用函数",
-      "path": "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/NXOpen Python/入门与常用函数.md"
+      "path": "💻softwares/🗽2D & 3D design/UG/UG二次开发/NXOpen.NET/NXOpen Python/入门与常用函数.md"
     },
     {
       "basename": "NX Python二次开发环境配置教程",
-      "path": "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/NXOpen Python/NX Python二次开发环境配置教程.md"
-    },
-    {
-      "basename": "常用模板函数",
-      "path": "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/常用模板函数.md"
+      "path": "💻softwares/🗽2D & 3D design/UG/UG二次开发/NXOpen.NET/NXOpen Python/NX Python二次开发环境配置教程.md"
     },
     {
       "basename": "启动SolidWorks",
@@ -54,151 +190,11 @@
     },
     {
       "basename": "Debug_NXOpen_Python_with_NX12_and_Eclipse_PyDev",
-      "path": "💻softwares/🗽2D & 3D design/UG二次开发/NXOpen.NET/NXOpen Python/Debug_NXOpen_Python_with_NX12_and_Eclipse_PyDev.pdf"
-    },
-    {
-      "basename": "入门与基本界面认识",
-      "path": "💻softwares/🗽2D & 3D design/UG二次开发/Knowledge Fusion/入门与基本界面认识.md"
+      "path": "💻softwares/🗽2D & 3D design/UG/UG二次开发/NXOpen.NET/NXOpen Python/Debug_NXOpen_Python_with_NX12_and_Eclipse_PyDev.pdf"
     },
     {
       "basename": "Latex间距设置总结",
       "path": "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/Latex间距设置总结.md"
-    },
-    {
-      "basename": "目录格式控制",
-      "path": "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/目录格式控制.md"
-    },
-    {
-      "basename": "Latex基本用法",
-      "path": "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/Latex基本用法.md"
-    },
-    {
-      "basename": "punctuation marks in English",
-      "path": "📘ClassNotes/🗣️English/punctuation marks in English.md"
-    },
-    {
-      "basename": "Mathematical Symbols",
-      "path": "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/公式相关/Mathematical Symbols.md"
-    },
-    {
-      "basename": "Matrix_With_Dash",
-      "path": "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/公式相关/Matrix_With_Dash.md"
-    },
-    {
-      "basename": "Latex数学公式编写",
-      "path": "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/公式相关/Latex数学公式编写.md"
-    },
-    {
-      "basename": "重要抽样函数封装",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/重要抽样函数封装.md"
-    },
-    {
-      "basename": "INSERT_PROD_SYMBOL",
-      "path": "🗒️Templates/INSERT_PROD_SYMBOL.md"
-    },
-    {
-      "basename": "第二章 蒙特卡洛模拟方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第二章 蒙特卡洛模拟方法.md"
-    },
-    {
-      "basename": "第三章 可靠性灵敏度分析的矩方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第三章 可靠性灵敏度分析的矩方法.md"
-    },
-    {
-      "basename": "第三章 多维随机变量及其分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
-    },
-    {
-      "basename": "第九章 强度理论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第九章 强度理论.md"
-    },
-    {
-      "basename": "1. 马尔科夫MCS抽样(MCMC)",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/补充知识/1. 马尔科夫MCS抽样(MCMC).md"
-    },
-    {
-      "basename": "Matlab常用概率函数示例",
-      "path": "💻softwares/➕Mathmatics/MATLAB/Basic Usage/Matlab常用概率函数示例.md"
-    },
-    {
-      "basename": "第四章 重要抽样法原理与应用 2024-03-10 10.35.49",
-      "path": "Excalidraw/第四章 重要抽样法原理与应用 2024-03-10 10.35.49.md"
-    },
-    {
-      "basename": "疲劳分析方法",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Load & Analysis/疲劳分析方法.md"
-    },
-    {
-      "basename": "Ansys导出结果到文件",
-      "path": "💻softwares/🛩️FEM/Ansys/APDL/Ansys导出结果到文件.md"
-    },
-    {
-      "basename": "如何将APDL与Workbench结合使用",
-      "path": "💻softwares/🛩️FEM/Ansys/APDL/如何将APDL与Workbench结合使用.md"
-    },
-    {
-      "basename": "显示壳单元厚度",
-      "path": "💻softwares/🛩️FEM/Ansys/APDL/显示壳单元厚度.md"
-    },
-    {
-      "basename": "白噪声与高斯白噪声的Matlab实现",
-      "path": "💻softwares/➕Mathmatics/MATLAB/digital signal process/白噪声与高斯白噪声的Matlab实现.md"
-    },
-    {
-      "basename": "第二章 随机变量及其分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md"
-    },
-    {
-      "basename": "第一章 随机事件及其概率",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md"
-    },
-    {
-      "basename": "INSERT_CAP_SIGN",
-      "path": "🗒️Templates/INSERT_CAP_SIGN.md"
-    },
-    {
-      "basename": "INSERT_CUP_SIGN",
-      "path": "🗒️Templates/INSERT_CUP_SIGN.md"
-    },
-    {
-      "basename": "第五章 子集模拟方法 2024-03-09 14.20.40",
-      "path": "Excalidraw/第五章 子集模拟方法 2024-03-09 14.20.40.md"
-    },
-    {
-      "basename": "Chapter1 Mathematic Modeling, Numerical Methods and Problem Solving",
-      "path": "💻softwares/➕Mathmatics/MATLAB/Applied Numerical Methods/Chapter1 Mathematic Modeling, Numerical Methods and Problem Solving.md"
-    },
-    {
-      "basename": "HyperWorks安装部分",
-      "path": "💻softwares/🛩️FEM/HyperWorks/HyperWorks安装部分.md"
-    },
-    {
-      "basename": "Ansys 网格划分操作",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Mesh/Ansys 网格划分操作.md"
-    },
-    {
-      "basename": "matlab中矩阵的常用操作",
-      "path": "💻softwares/➕Mathmatics/MATLAB/Basic Usage/matlab中矩阵的常用操作.md"
-    },
-    {
-      "basename": "Mechanic Terminology",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md"
-    },
-    {
-      "basename": "第四章 重要抽样法原理与应用 2024-03-07 09.32.29",
-      "path": "Excalidraw/第四章 重要抽样法原理与应用 2024-03-07 09.32.29.md"
-    },
-    {
-      "basename": "蒙特卡洛法的样本方差表示推导",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/推导部分/蒙特卡洛法的样本方差表示推导.pdf"
-    },
-    {
-      "basename": "1. USART串口通信讲解",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/1. USART串口通信讲解.md"
-    },
-    {
-      "basename": "5. CAN 通信讲解",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/5. CAN 通信讲解.md"
     }
   ],
   "omittedPaths": [],

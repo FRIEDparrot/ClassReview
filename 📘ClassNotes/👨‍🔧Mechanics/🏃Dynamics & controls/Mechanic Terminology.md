@@ -1,3 +1,4 @@
+Nomenclature 命名法
 ### 疲劳与断裂
 循环计数法 cycle counting method 
 损伤等效 fatigue damage equivalence 
@@ -34,6 +35,30 @@ Stitch   缝合，缝补
 immprint 铭刻， 压印 
 Loft 放样
 
+# 航空发动机
+stipulate  规定 明确要求
+evasive   回避，推脱的， 推诿的
+ramjet    冲压发动机, 喷气式发动机
+scramjet 超燃冲压发动机
+pertain to 适用于 
+cowls  整流罩
+abscissa 横坐标
+meridian 子午线 -> meridional 
+centrifugal pump 离心泵
+aeronautics 航空学， 飞行学
+Astronautics 宇航学
+uneven  不均匀的， 凹凸不平的
+electrolysis 电解 electrolyte 电解液
+absent 缺席， 不存在
+adiabatic 绝热的
+morphology 形态学
+abrasive 磨料， 研磨的
+lubrication 润滑 
+pit 打洞， 矿井， 深坑
+cavitation phenomenon 气穴现象
+shroud 覆盖， 遮蔽， 隐藏
+hull 船身， 船体
+hydraulic diameter 水力直径
 
 # 信号与系统
 

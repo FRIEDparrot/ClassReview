@@ -5,7 +5,7 @@ Fluent的基本的创建结构的几种模式，可以进行Results后处理， 
 我们往往可以使用第三种方式(Fluent with Meshing) 通过这个可以建立网格， 可以通过上面的滑块调整截面位置
 
 工作界面如下(其中，我们可以使用上面的report查看网格的数量，节点的数量等等)
-![[attachments/Pasted image 20230425212034.png|700]]
+![[attachments/Pasted image 20230425212034.png|1500]]
 
 最后单击左上角 Switch to solution mode可以进入求解界面
 在求解部分配置完毕之后，直接在求解界面的通用设置中即可设置网格一般参数

@@ -1,5 +1,5 @@
 {
-  "baseFontSize": 22,
+  "baseFontSize": 21,
   "accentColor": "#cb9325",
   "theme": "obsidian",
   "cssTheme": "Wikipedia",
@@ -9,5 +9,8 @@
   "showViewHeader": true,
   "translucency": false,
   "nativeMenus": false,
-  "baseFontSizeAction": true
+  "baseFontSizeAction": true,
+  "enabledCssSnippets": [
+    "img_center"
+  ]
 }

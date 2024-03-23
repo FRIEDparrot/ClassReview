@@ -11,7 +11,7 @@
   },
   "alwaysUpdateLinks": true,
   "autoPairMarkdown": false,
-  "readableLineLength": true,
+  "readableLineLength": false,
   "spellcheck": true,
   "newLinkFormat": "absolute",
   "showFrontmatter": true,

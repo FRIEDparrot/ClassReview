@@ -276,3 +276,72 @@ C#  中类允许自带一个带参的初始化构造函数， 具体**需要使�
     }
 ```
 
+
+# C#数组拼接方法
+
+在C#中，你可以使用`List<T>`来动态地添加元素，然后再将其转换为数组。这是因为数组的长度在创建时就已经确定，不能更改。但是`List<T>`的大小可以在运行时更改。以下是一个示例，它将两个数组连接到一起：
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        // 创建两个数组
+        int[] array1 = new int[] { 1, 2, 3 };
+        int[] array2 = new int[] { 4, 5, 6 };
+
+        // 创建一个列表并添加数组
+        List<int> list = new List<int>();
+        list.AddRange(array1);
+        list.AddRange(array2);
+
+        // 将列表转换为数组
+        int[] result = list.ToArray();
+
+        // 打印结果
+        foreach (int i in result)
+        {
+            Console.Write(i + " ");
+        }
+    }
+}
+```
+
+这个程序首先创建了两个数组`array1`和`array2`，然后创建了一个`List<int>`对象。使用`AddRange`方法将两个数组的元素添加到列表中，最后使用`ToArray`方法将列表转换为数组。这样，`result`数组就是`array1`和`array2`的连接。
+
+# 参数引用传递
+
+在C#中，可以通过使用`ref`或者`out`关键字来传递参数的引用，从而在函数内部修改参数的值。这种方式不需要使用指针或者数组。以下是一个示例：
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int number = 10;
+        Console.WriteLine("Before function call, number = " + number);
+
+        ChangeNumber(ref number);
+        Console.WriteLine("After function call, number = " + number);
+    }
+
+    static void ChangeNumber(ref int num)
+    {
+        num = 20;
+    }
+}
+```
+
+在这个示例中，`ChangeNumber`函数接受一个`ref int`类型的参数，这意味着它接受的是参数的引用，而不是参数的值。因此，当在`ChangeNumber`函数内部修改`num`的值时，实际上修改的是`number`的值。
+
+注意，当你使用`ref`或者`out`关键字时，你需要在函数调用和函数定义中都使用这个关键字。
+
+在C#中，`ref`和`out`关键字都用于按引用传递参数，这意味着在函数内部对参数的任何修改都会影响到调用函数中的原始变量。然而，它们在使用上有一些区别：
+1. **初始化**：使用`ref`关键字传递参数时，参数必须在传递之前进行初始化。而使用`out`关键字传递参数时，参数在传递之前不需要进行初始化。
+2. **赋值**：`out`关键字要求在方法内部对参数进行赋值，即使参数在传递之前已经赋值，`out`也会清空变量，所以在方法内部必须对其重新赋值。
+3. **语义**：`ref`和`out`的语义不同。`ref`通常用于函数需要修改调用者的值，而`out`通常用于函数需要返回额外的信息。
