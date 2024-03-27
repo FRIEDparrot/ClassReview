@@ -57,8 +57,11 @@ lubrication 润滑
 pit 打洞， 矿井， 深坑
 cavitation phenomenon 气穴现象
 shroud 覆盖， 遮蔽， 隐藏
+Hub 轮毂
 hull 船身， 船体
 hydraulic diameter 水力直径
+gasket 衬垫
+Impedance 阻抗
 
 # 信号与系统
 

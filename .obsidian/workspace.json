@@ -4,17 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "885be68ac3c069cb",
+        "id": "6b04786a5fcde9cd",
         "type": "tabs",
         "children": [
           {
-            "id": "51e8575122d7424e",
+            "id": "21ce989210dcd17b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/BladeGen建模方法.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第八章 响应面方法和支持向量机.md",
                 "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e65b44295c410c66",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/AFOSM求解函数封装.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -101,7 +113,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 287.5124969482422
+    "width": 352.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -154,7 +167,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/BladeGen建模方法.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第八章 响应面方法和支持向量机.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -268,7 +281,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 9
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -281,7 +294,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/BladeGen建模方法.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第八章 响应面方法和支持向量机.md"
               }
             }
           },
@@ -291,7 +304,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/BladeGen建模方法.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第八章 响应面方法和支持向量机.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -308,7 +321,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/BladeGen建模方法.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第八章 响应面方法和支持向量机.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -355,44 +368,46 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "51e8575122d7424e",
+  "active": "21ce989210dcd17b",
   "lastOpenFiles": [
-    "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/UG联合Ansys Workbench参数化建模和Matlab参数扫描教程.md",
-    "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/Blade.md",
-    "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/Workbench几何操作.md",
-    "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/Workbench 建立梁几何单元.md",
-    "attachments/Pasted image 20240323122635.png",
-    "attachments/Pasted image 20240323122440.png",
-    "attachments/Pasted image 20240323122224.png",
-    "attachments/Pasted image 20240323121935.png",
-    "💻softwares/🛩️FEM/Ansys/Fluent/Fluent的基本使用.md",
-    "attachments/Pasted image 20240323104330.png",
-    "attachments/Pasted image 20240322223340.png",
-    "attachments/Pasted image 20240322222617.png",
-    "attachments/Pasted image 20240322221328.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md",
-    "attachments/Pasted image 20240322215931.png",
-    "attachments/Pasted image 20240322215632.png",
-    "💻softwares/🛩️FEM/Ansys/Fluent/Fluent 分析案例1.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/复习课程与考试要点.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/补充内容.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第十一章 喷管内的流动方程.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md",
-    "💻softwares/🛩️FEM/Ansys/Workbench/Mesh/网格节点融合.md",
-    "💻softwares/Markdown & Latex Tutorial/obsidian usage/缩减栏宽.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter1 Introductory Thoughts/12-15 Applied Aerodynamics & history.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 2 Equations for Incompressible Flow/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/结构有限元1 悬臂梁受到均布载荷.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/实验2 内置方形体的突然扩张.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/AFOSM求解函数封装.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第八章 响应面方法和支持向量机.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第八章 向量代数和空间解析几何.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/基本课程/2.SVM支持向量机.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/拉格朗日乘数法求条件极值.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/基本课程/1.KNN算法和KMeans算法.md",
+    "attachments/Pasted image 20240327154556.png",
+    "attachments/Pasted image 20240327154353.png",
+    "attachments/Pasted image 20240327152635.png",
+    "attachments/Pasted image 20240327152229.png",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Implements/torch的多层神经网络.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Optimizer Introduction/The often-used optimizer and the principle.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Implements/多层感知机,神经网络.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Implements/softmax函数.md",
+    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/Latex基本用法.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Implements/FFT.md",
+    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/LaTeX教程.pdf",
+    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第一章 张量的表示.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第三章：应变/1. 变形与应变的概念.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第一章 张量分析初步.md",
+    "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
+    "📘ClassNotes/⌨️Programming/Programming Terminology.md",
+    "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
     "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/BladeGen建模方法.md",
-    "💻softwares/🛩️FEM/Ansys/Workbench/Mesh/接触网格和多区域法.md",
-    "🐸 Daily Life memo/💡Inspiration/项目.md",
-    "💻softwares/🛩️FEM/Ansys/Workbench/快捷键.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第九章 Kriging代理模型与可靠性与局部灵敏度分析.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第二章 蒙特卡洛模拟方法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第三章 可靠性灵敏度分析的矩方法.md",
+    "💻softwares/🛩️FEM/Ansys/Workbench/Load & Analysis/基本载荷类型.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/二维正态分布的协方差和相关系数.pdf",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/二维正态分布的协方差和相关系数-annotate.md",
+    "attachments/Pasted image 20240324161841.png",
+    "attachments/Pasted image 20240324161710.png",
+    "attachments/Pasted image 20240324160134.png",
+    "attachments/Pasted image 20240324154734.png",
+    "attachments/Pasted image 20240324154335.png",
+    "attachments/Pasted image 20240324152916.png",
     "💻softwares/🗽2D & 3D design/UG/参数化建模",
     "💻softwares/🗽2D & 3D design/UG",
     "💻softwares/Markdown & Latex Tutorial/notepad++",
@@ -401,8 +416,6 @@
     "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制",
     "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/公式相关",
     "💻softwares/🗽2D & 3D design/UG/UG二次开发/Knowledge Fusion",
-    "💻softwares/🗽2D & 3D design/UG/UG二次开发/NXOpen.NET/NXOpen Python/ugii_env.dat",
-    "💻softwares/🗽2D & 3D design/UG/UG二次开发/NXOpen.NET/NXOpen Python",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }
