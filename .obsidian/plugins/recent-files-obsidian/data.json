@@ -1,24 +1,116 @@
 {
   "recentFiles": [
     {
+      "basename": "5. 打印报表, 文本操作, 自动命名",
+      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/5. 打印报表, 文本操作, 自动命名.md"
+    },
+    {
+      "basename": "HyperMesh基本使用方法",
+      "path": "💻softwares/🛩️FEM/HyperWorks/HyperMesh/HyperMesh基本使用方法.md"
+    },
+    {
+      "basename": "Mechanic Terminology",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md"
+    },
+    {
+      "basename": "Circuit Terminology",
+      "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
+    },
+    {
+      "basename": "Chemical Terminology",
+      "path": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md"
+    },
+    {
+      "basename": "Mathmatic Terminology",
+      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
+    },
+    {
+      "basename": "Programming Terminology",
+      "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
+    },
+    {
       "basename": "第八章 响应面方法和支持向量机",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第八章 响应面方法和支持向量机.md"
     },
     {
-      "basename": "AFOSM求解函数封装",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/AFOSM求解函数封装.md"
-    },
-    {
-      "basename": "第八章 向量代数和空间解析几何",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第八章 向量代数和空间解析几何.md"
+      "basename": "第八章 响应面方法和支持向量机 2024-03-30 11.13.46",
+      "path": "Excalidraw/第八章 响应面方法和支持向量机 2024-03-30 11.13.46.md"
     },
     {
       "basename": "2.SVM支持向量机",
       "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/基本课程/2.SVM支持向量机.md"
     },
     {
+      "basename": "INSERT_LONGLEFTARROW",
+      "path": "🗒️Templates/INSERT_LONGLEFTARROW.md"
+    },
+    {
+      "basename": "2.SVM支持向量机 2024-03-30 10.49.21",
+      "path": "Excalidraw/2.SVM支持向量机 2024-03-30 10.49.21.md"
+    },
+    {
+      "basename": "对偶优化一致解条件推导过程",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/推导部分/对偶优化一致解条件推导过程.pdf"
+    },
+    {
+      "basename": "INSERT_LONGRIGHTARROW",
+      "path": "🗒️Templates/INSERT_LONGRIGHTARROW.md"
+    },
+    {
+      "basename": "第八章 响应面方法和支持向量机 2024-03-28 10.49.35",
+      "path": "Excalidraw/第八章 响应面方法和支持向量机 2024-03-28 10.49.35.md"
+    },
+    {
+      "basename": "HyperMesh常用快捷键",
+      "path": "💻softwares/🛩️FEM/HyperWorks/HyperMesh常用快捷键.md"
+    },
+    {
+      "basename": "HyperMesh安装部分",
+      "path": "💻softwares/🛩️FEM/HyperWorks/HyperMesh/HyperMesh安装部分.md"
+    },
+    {
       "basename": "拉格朗日乘数法求条件极值",
       "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/拉格朗日乘数法求条件极值.md"
+    },
+    {
+      "basename": "第八章 响应面方法和支持向量机 2024-03-29 15.16.13",
+      "path": "Excalidraw/第八章 响应面方法和支持向量机 2024-03-29 15.16.13.md"
+    },
+    {
+      "basename": "Ansys 接触对类型的选择",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/Ansys 接触对类型的选择.md"
+    },
+    {
+      "basename": "接触网格和多区域法",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Mesh/接触网格和多区域法.md"
+    },
+    {
+      "basename": "UG联合Ansys Workbench参数化建模和Matlab参数扫描教程",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/UG联合Ansys Workbench参数化建模和Matlab参数扫描教程.md"
+    },
+    {
+      "basename": "Workbench几何操作",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/Workbench几何操作.md"
+    },
+    {
+      "basename": "IMS重要抽样函数封装",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/IMS重要抽样函数封装.md"
+    },
+    {
+      "basename": "MCS抽样封装函数",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/MCS抽样封装函数.md"
+    },
+    {
+      "basename": "AFOSM求解函数封装",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/AFOSM求解函数封装.md"
+    },
+    {
+      "basename": "MATLAB可变参数的方法",
+      "path": "💻softwares/➕Mathmatics/MATLAB/Basic Usage/MATLAB可变参数的方法.md"
+    },
+    {
+      "basename": "第八章 向量代数和空间解析几何",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第八章 向量代数和空间解析几何.md"
     },
     {
       "basename": "1.KNN算法和KMeans算法",
@@ -53,22 +145,6 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第一章 张量分析初步.md"
     },
     {
-      "basename": "Mathmatic Terminology",
-      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
-    },
-    {
-      "basename": "Programming Terminology",
-      "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
-    },
-    {
-      "basename": "Chemical Terminology",
-      "path": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md"
-    },
-    {
-      "basename": "Circuit Terminology",
-      "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
-    },
-    {
       "basename": "第九章 Kriging代理模型与可靠性与局部灵敏度分析",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第九章 Kriging代理模型与可靠性与局部灵敏度分析.md"
     },
@@ -97,24 +173,12 @@
       "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/二维正态分布的协方差和相关系数.pdf"
     },
     {
-      "basename": "Mechanic Terminology",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md"
-    },
-    {
       "basename": "Ansys WorkBench网格划分操作",
       "path": "💻softwares/🛩️FEM/Ansys/Workbench/Mesh/Ansys WorkBench网格划分操作.md"
     },
     {
       "basename": "BladeGen建模方法",
       "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/BladeGen建模方法.md"
-    },
-    {
-      "basename": "UG联合Ansys Workbench参数化建模和Matlab参数扫描教程",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/UG联合Ansys Workbench参数化建模和Matlab参数扫描教程.md"
-    },
-    {
-      "basename": "Workbench几何操作",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/Workbench几何操作.md"
     },
     {
       "basename": "Workbench 建立梁几何单元",
@@ -135,70 +199,6 @@
     {
       "basename": "补充内容",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/补充内容.md"
-    },
-    {
-      "basename": "第三章 理想气体的性质与过程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程.md"
-    },
-    {
-      "basename": "第十一章 喷管内的流动方程",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第十一章 喷管内的流动方程.md"
-    },
-    {
-      "basename": "第二章 热力学第一定律",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律.md"
-    },
-    {
-      "basename": "网格节点融合",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Mesh/网格节点融合.md"
-    },
-    {
-      "basename": "缩减栏宽",
-      "path": "💻softwares/Markdown & Latex Tutorial/obsidian usage/缩减栏宽.md"
-    },
-    {
-      "basename": "1-8 Fundamental Principles",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md"
-    },
-    {
-      "basename": "12-15 Applied Aerodynamics & history",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter1 Introductory Thoughts/12-15 Applied Aerodynamics & history.md"
-    },
-    {
-      "basename": "1-11 Some Introductory Thoughts",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter1 Introductory Thoughts/1-11 Some Introductory Thoughts.md"
-    },
-    {
-      "basename": "1-8 Introduction and overall  Analysis",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 2 Equations for Incompressible Flow/Chapter4 Incompressible flow/1-8 Introduction and overall  Analysis.md"
-    },
-    {
-      "basename": "结构有限元1 悬臂梁受到均布载荷",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/结构有限元1 悬臂梁受到均布载荷.md"
-    },
-    {
-      "basename": "大作业笔记部分",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md"
-    },
-    {
-      "basename": "实验2 内置方形体的突然扩张",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/实验2 内置方形体的突然扩张.md"
-    },
-    {
-      "basename": "接触网格和多区域法",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Mesh/接触网格和多区域法.md"
-    },
-    {
-      "basename": "项目",
-      "path": "🐸 Daily Life memo/💡Inspiration/项目.md"
-    },
-    {
-      "basename": "快捷键",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/快捷键.md"
-    },
-    {
-      "basename": "1. NXOpen.Net 工程创建",
-      "path": "💻softwares/🗽2D & 3D design/UG/UG二次开发/NXOpen.NET/1. NXOpen.Net 工程创建.md"
     }
   ],
   "omittedPaths": [],

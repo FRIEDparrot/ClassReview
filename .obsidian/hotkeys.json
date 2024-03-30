@@ -1553,5 +1553,25 @@
       ],
       "key": "F8"
     }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_LONGLEFTARROW.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": ","
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_LONGRIGHTARROW.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "."
+    }
   ]
 }

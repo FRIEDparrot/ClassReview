@@ -71,7 +71,7 @@
 ![[attachments/Pasted image 20240321120230.png]]
 
 日志文件示例如下: 
-```matlab
+```python
 # encoding: utf-8
 # 2024 R1
 SetScriptVersion(Version="24.1.144")
@@ -112,16 +112,14 @@ Save(Overwrite=True)
 Open(FilePath="C:/Users/Parrot/Desktop/Recent/毕设工程文件/TJP_Simulation/TJP_material_optimization.wbpj")
 
 ```
-
 在matlab端， 需要修改 Ansys自带的 journal文件, 然后保存并且每一次使用ansys运行这个journal文件，就可以每一次获取到不同的分析结果了。
-
 ```matlab
 tic clc; clear; 
 %% Changing the input parameters 
 Length = 25; Height = 10; 
 % creating new journal file 
 fid = fopen('base journal.wbjn','r'); 
-f = fread(fid,'*char')'; fclose(fid); 
+f = fread(fid,'*char')'; fclose(fid);
 f = strrep(f,'Length' , num2str(Length));   %% string replace, 其中把上面代码中要改变量的换成 Length命名即可
 f = strrep(f,'Height' , num2str(Height));    %% string replace , 其中把上面代码中要改的换成 Height命名即可
 fid = fopen('finaljournal.wbjn','w'); fprintf(fid,'%s',f);
@@ -133,3 +131,49 @@ Nusselt_no = xlsread('export data.csv','export data','D8');
 toc
 ```
 
+
+
+
+一个示例程序如下: 
+
+```MATLAB
+clear, clc, tic;
+target_mini_life = 10000;   % 研究在 15000 次循环下不同变量的变化对应的最大寿命灵敏度
+
+P3 = 3;   % DS_LA_RIB_WIDTH3
+P4 = 3;   % DS_LA_RIB_WIDTH2
+P5 = 3;   % DS_LA_RIB_WIDTH1
+P6 = 3;   % DS_LO_RIB_WIDTH1
+P7 = 3;   % DS_LO_RIB_WIDTH2
+P8 = 3;   % DS_IC_RIB_WIDTH
+P9 = 2;   % DS_LO_RIB_WIDTH_END2
+P10 = 2;  % DS_LO_RIB_WIDTH_END1
+          % Life Minium 
+
+mu_ = [P3, P4, P5, P6, P7, P8, P9, P10];
+
+g = @(x) fem_res(x) - target_mini_life;    % 当有限元结果小于对应的目标寿命, g < 0, 认为失效
+
+%% %%%%%%%%%%%%%%% 修改journal文件并进行分析 %%%%%%%%%%%%%%%%%% 
+f1 = fopen("journal_life.txt", "r");
+cmd = string(fread(f1,'*char')');
+
+para_names = ["DS_LA_RIB_WIDTH3", "DS_LA_RIB_WIDTH2", "DS_LA_RIB_WIDTH1",...
+              "DS_LO_RIB_WIDTH1", "DS_LO_RIB_WIDTH2", "DS_IC_RIB_WIDTH",...
+              "DS_LO_RIB_WIDTH_END2", "DS_LO_RIB_WIDTH_END1"];
+para_array = [P3, P4, P5, P6, P7, P8, P9, P10];
+
+for i = 1:length(para_names)
+    cmd = strrep(cmd, para_names(i), string(num2str(para_array(i))));
+end
+
+f2 = fopen("C:\Users\Parrot\Desktop\Recent\Graduate_Projects\TJP_Simulation\TJP_sensitivity_analysis_files\journals\exec.wbjn","w");
+fprintf(f2, cmd);
+fclose(f2); fclose all;
+%% %%%%%%%%%%%%%%% 执行命令行调用ansys进行分析  %%%%%%%%%%%%%%%%%%%
+system('"E:\Ansys2024R1\ANSYS Inc\v241\Framework\bin\Win64\RunWB2.exe" -B -R "C:\Users\Parrot\Desktop\Recent\Graduate_Projects\TJP_Simulation\TJP_sensitivity_analysis_files\journals\exec.wbjn"');
+
+Res = importdata("Results.csv").data;
+% 可以使用importData中并使用data提取其中的数据 
+toc
+```

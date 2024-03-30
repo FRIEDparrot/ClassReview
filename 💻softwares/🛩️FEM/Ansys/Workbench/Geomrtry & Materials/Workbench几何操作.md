@@ -98,7 +98,7 @@ DesignModel 中通过如图的选项建立草图, (需要事先在Modeling树指
 
 > [!caution] 说明
 > Slice 会导致所有体冻结， 注意此时新建的几何体将不会与接触的任何零件合并， 而是作为一个独立的零件存在， 且不会共享拓扑结构。
-> 共享拓扑结构往往用于准确模拟接界面的行为，即使网格共节点， 也可能产生接触力， 方法一是生成接触对之后选用Bonded绑定将体绑定到一起。方法二是设计时就设计为一个整体。
+> 共享拓扑结构往往用于准确模拟接界面的行为，即使网格共节点， 也可能产生接触力， 方法一是生成接触对之后选用接触对类型(参考接触对类型的选择)。方法二是设计时就设计为一个整体。
 
 具体Bonded 和接触的设置方法如下, Bonded 即连接为整体， 不会产生额外接触力。
 ![[attachments/Pasted image 20240321232814.png]]
@@ -107,8 +107,13 @@ DesignModel 中通过如图的选项建立草图, (需要事先在Modeling树指
 ![[attachments/Pasted image 20240321225823.png]]
 在点创建中可以定义焊接等行为；
 ### (5) 分离(Imprint Faces)和粘附(Imprint)
-在Boolean中有Imprint  Faces 选项
+在Boolean中有Imprint  Faces 选项 
 <mark style="background: transparent; color: red">Imprint Faces, 往往用于在一个面上创建一小块局部区域,  往往在特定区域施加载荷时有用，不会改变拓扑结构</mark>
 ![[attachments/Pasted image 20240321230204.png|500]]
 另外， 如果选用Imprinted 则变成两体粘附的操作。
 ![[attachments/Pasted image 20240321230348.png]]
+### (6) Face Split 方法
+Face Split 的位置如下: 通过插入可以划分面网格， 使得总体划分更加精细
+
+Face Split 不会改变几何体的数量， 也不会额外产生接触力。方便后期的载荷施加和网格划分。
+![[attachments/Pasted image 20240329091320.png]]

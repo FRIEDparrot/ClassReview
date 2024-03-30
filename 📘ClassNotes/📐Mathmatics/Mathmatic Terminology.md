@@ -5,3 +5,7 @@ mean 均值
 variance 方差
 Skewness 偏度
 Kurtosis 峰度
+standard Deviation 标准差
+empirical 经验的 
+primal 首要的
+dual 对偶的

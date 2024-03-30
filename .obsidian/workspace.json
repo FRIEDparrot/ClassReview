@@ -4,29 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6b04786a5fcde9cd",
+        "id": "f94310fbdcb0b6ed",
         "type": "tabs",
         "children": [
           {
-            "id": "21ce989210dcd17b",
+            "id": "30fc861c94a7e5e6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第八章 响应面方法和支持向量机.md",
+                "file": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/5. 打印报表, 文本操作, 自动命名.md",
                 "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e65b44295c410c66",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/AFOSM求解函数封装.md",
-                "mode": "preview",
                 "source": false
               }
             }
@@ -113,7 +101,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 352.5124969482422,
+    "width": 470.5124969482422,
     "collapsed": true
   },
   "right": {
@@ -167,7 +155,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第八章 响应面方法和支持向量机.md",
+                "file": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/5. 打印报表, 文本操作, 自动命名.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -281,7 +269,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 6
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -294,7 +282,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第八章 响应面方法和支持向量机.md"
+                "file": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/5. 打印报表, 文本操作, 自动命名.md"
               }
             }
           },
@@ -304,7 +292,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第八章 响应面方法和支持向量机.md",
+                "file": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/5. 打印报表, 文本操作, 自动命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -321,7 +309,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第八章 响应面方法和支持向量机.md",
+                "file": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/5. 打印报表, 文本操作, 自动命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -342,8 +330,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 529.5,
-    "collapsed": true
+    "width": 529.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -368,54 +355,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "21ce989210dcd17b",
+  "active": "30fc861c94a7e5e6",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/AFOSM求解函数封装.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第八章 响应面方法和支持向量机.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第八章 向量代数和空间解析几何.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/基本课程/2.SVM支持向量机.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/拉格朗日乘数法求条件极值.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/基本课程/1.KNN算法和KMeans算法.md",
-    "attachments/Pasted image 20240327154556.png",
-    "attachments/Pasted image 20240327154353.png",
-    "attachments/Pasted image 20240327152635.png",
-    "attachments/Pasted image 20240327152229.png",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Implements/torch的多层神经网络.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Optimizer Introduction/The often-used optimizer and the principle.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Implements/多层感知机,神经网络.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Implements/softmax函数.md",
-    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/Latex基本用法.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Implements/FFT.md",
-    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/LaTeX教程.pdf",
-    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第一章 张量的表示.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第三章：应变/1. 变形与应变的概念.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第一章 张量分析初步.md",
+    "attachments/Pasted image 20240331010412.png",
+    "attachments/Pasted image 20240331010117.png",
+    "attachments/Pasted image 20240331005618.png",
+    "attachments/Pasted image 20240331004942.png",
+    "attachments/Pasted image 20240331004431.png",
+    "attachments/Pasted image 20240331003732.png",
+    "attachments/Pasted image 20240331003426.png",
+    "💻softwares/🛩️FEM/HyperWorks/HyperMesh/HyperMesh基本使用方法.md",
+    "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/5. 打印报表, 文本操作, 自动命名.md",
+    "attachments/Pasted image 20240330214259.png",
+    "attachments/Pasted image 20240330213828.png",
+    "attachments/Pasted image 20240330212647.png",
+    "attachments/Pasted image 20240330211253.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md",
+    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
+    "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
     "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
     "📘ClassNotes/⌨️Programming/Programming Terminology.md",
-    "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
-    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第九章 Kriging代理模型与可靠性与局部灵敏度分析.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第二章 蒙特卡洛模拟方法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第三章 可靠性灵敏度分析的矩方法.md",
-    "💻softwares/🛩️FEM/Ansys/Workbench/Load & Analysis/基本载荷类型.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第八章 响应面方法和支持向量机.md",
+    "Excalidraw/第八章 响应面方法和支持向量机 2024-03-30 11.13.46.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/基本课程/2.SVM支持向量机.md",
+    "🗒️Templates/INSERT_LONGLEFTARROW.md",
+    "Excalidraw/2.SVM支持向量机 2024-03-30 10.49.21.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/推导部分/对偶优化一致解条件推导过程.pdf",
+    "🗒️Templates/INSERT_LONGRIGHTARROW.md",
+    "Excalidraw/第八章 响应面方法和支持向量机 2024-03-28 10.49.35.md",
+    "💻softwares/🛩️FEM/HyperWorks/HyperMesh常用快捷键.md",
+    "💻softwares/🛩️FEM/HyperWorks/HyperMesh/HyperMesh安装部分.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/拉格朗日乘数法求条件极值.md",
+    "Excalidraw/第八章 响应面方法和支持向量机 2024-03-29 15.16.13.md",
+    "💻softwares/🛩️FEM/HyperWorks/Inspire",
+    "💻softwares/🛩️FEM/HyperWorks/HyperMesh",
+    "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/Ansys 接触对类型的选择.md",
+    "💻softwares/🛩️FEM/Ansys/Workbench/Mesh/接触网格和多区域法.md",
+    "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/UG联合Ansys Workbench参数化建模和Matlab参数扫描教程.md",
+    "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/Workbench几何操作.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/IMS重要抽样函数封装.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/MCS抽样封装函数.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/AFOSM求解函数封装.md",
+    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/LaTeX教程.pdf",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/二维正态分布的协方差和相关系数.pdf",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/二维正态分布的协方差和相关系数-annotate.md",
-    "attachments/Pasted image 20240324161841.png",
-    "attachments/Pasted image 20240324161710.png",
-    "attachments/Pasted image 20240324160134.png",
-    "attachments/Pasted image 20240324154734.png",
-    "attachments/Pasted image 20240324154335.png",
-    "attachments/Pasted image 20240324152916.png",
     "💻softwares/🗽2D & 3D design/UG/参数化建模",
     "💻softwares/🗽2D & 3D design/UG",
     "💻softwares/Markdown & Latex Tutorial/notepad++",
     "💻softwares/🗽2D & 3D design/UG/UG二次开发/NXOpen.NET",
     "💻softwares/🗽2D & 3D design/UG/UG二次开发/NXOpen.NET/NXOpen Python/Debug_NXOpen_Python_with_NX12_and_Eclipse_PyDev.pdf",
-    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制",
-    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/公式相关",
-    "💻softwares/🗽2D & 3D design/UG/UG二次开发/Knowledge Fusion",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
 }

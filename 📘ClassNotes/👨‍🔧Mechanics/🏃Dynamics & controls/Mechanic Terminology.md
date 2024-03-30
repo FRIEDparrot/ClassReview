@@ -34,6 +34,10 @@ bolt     销子, 螺栓
 Stitch   缝合，缝补
 immprint 铭刻， 压印 
 Loft 放样
+deck 甲板， 舱面， 布置， 打扮 
+resolution 决议, 正式决定
+orphan  孤立的，孤儿
+stitch    缝, 缝纫， 修补
 
 # 航空发动机
 stipulate  规定 明确要求
@@ -62,6 +66,7 @@ hull 船身， 船体
 hydraulic diameter 水力直径
 gasket 衬垫
 Impedance 阻抗
+
 
 # 信号与系统
 
