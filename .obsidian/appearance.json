@@ -1,8 +1,8 @@
 {
-  "baseFontSize": 20,
+  "baseFontSize": 21,
   "accentColor": "#cb9325",
   "theme": "obsidian",
-  "cssTheme": "Sandstorm",
+  "cssTheme": "",
   "interfaceFontFamily": "Times New Roman",
   "textFontFamily": "Times New Roman",
   "monospaceFontFamily": "Inter",

@@ -4,10 +4,8 @@ What we study the Numerical methods for ?
 3. *for better understanding of mathematics...*
 
 ### 1.1 Definition of a mathematical model
-
 a  *mathematical model can be broadly defined as a formulation or equation that express the essential features of a system or proceed in mathematical terms.*
 $$\text{Dependent variable} = f \left( \text{independent variables} \cdot \text{parameter }\cdot \text{forcing functions} \right)$$
-
 `````ad-example
 title: Euler's Method
 collapse: open

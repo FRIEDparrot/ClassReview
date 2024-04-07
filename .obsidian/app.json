@@ -12,7 +12,7 @@
   "alwaysUpdateLinks": true,
   "autoPairMarkdown": false,
   "readableLineLength": false,
-  "spellcheck": true,
+  "spellcheck": false,
   "newLinkFormat": "absolute",
   "showFrontmatter": true,
   "showInlineTitle": true,

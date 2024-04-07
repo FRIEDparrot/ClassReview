@@ -1,24 +1,108 @@
 {
   "recentFiles": [
     {
-      "basename": "5. 打印报表, 文本操作, 自动命名",
-      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/5. 打印报表, 文本操作, 自动命名.md"
+      "basename": "MCMC抽样函数",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/MCMC抽样函数.md"
     },
     {
-      "basename": "HyperMesh基本使用方法",
-      "path": "💻softwares/🛩️FEM/HyperWorks/HyperMesh/HyperMesh基本使用方法.md"
+      "basename": "1. 马尔科夫MCS抽样(MCMC)",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/补充知识/1. 马尔科夫MCS抽样(MCMC).md"
     },
     {
-      "basename": "Mechanic Terminology",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md"
+      "basename": "一、LVGL嵌入式图形库简介",
+      "path": "💻softwares/⚡Circuit/🖼️LVGL库及其使用/一、LVGL嵌入式图形库简介.md"
+    },
+    {
+      "basename": "第五章 子集模拟方法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第五章 子集模拟方法.md"
+    },
+    {
+      "basename": "第四章 重要抽样法原理与应用",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第四章 重要抽样法原理与应用.md"
+    },
+    {
+      "basename": "Latex间距设置总结",
+      "path": "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/Latex间距设置总结.md"
+    },
+    {
+      "basename": "LaTeX教程",
+      "path": "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/LaTeX教程.pdf"
+    },
+    {
+      "basename": "STM32 Flash闪存编程",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/四、系统时钟, 看门狗与备份寄存器/STM32 Flash闪存编程.md"
+    },
+    {
+      "basename": "3. FlyFlash和ST_Link Utility使用",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/3. FlyFlash和ST_Link Utility使用.md"
+    },
+    {
+      "basename": "字体与fontspec宏包",
+      "path": "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/字体与fontspec宏包.md"
+    },
+    {
+      "basename": "4. SPI 通信协议与W25Q64 Flash芯片",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/4. SPI 通信协议与W25Q64 Flash芯片.md"
     },
     {
       "basename": "Circuit Terminology",
       "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
     },
     {
+      "basename": "1. 基础以及STM32简介",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/1. 基础以及STM32简介.md"
+    },
+    {
+      "basename": "3. WDG 看门狗教程",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/四、系统时钟, 看门狗与备份寄存器/3. WDG 看门狗教程.md"
+    },
+    {
+      "basename": "一、EXTI外部中断与红外计次",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md"
+    },
+    {
+      "basename": "1. Unix 时间戳与BKP寄存器的使用",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/四、系统时钟, 看门狗与备份寄存器/1. Unix 时间戳与BKP寄存器的使用.md"
+    },
+    {
+      "basename": "2. PWR 电源控制方法",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/四、系统时钟, 看门狗与备份寄存器/2. PWR 电源控制方法.md"
+    },
+    {
+      "basename": "Inspire 基础教学",
+      "path": "💻softwares/🛩️FEM/HyperWorks/Inspire/Inspire 基础教学.md"
+    },
+    {
+      "basename": "壳单元的网格划分方法",
+      "path": "💻softwares/🛩️FEM/HyperWorks/HyperMesh/壳单元的网格划分方法.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Untitled.canvas"
+    },
+    {
+      "basename": "1. USART串口通信讲解",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/1. USART串口通信讲解.md"
+    },
+    {
       "basename": "Chemical Terminology",
       "path": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md"
+    },
+    {
+      "basename": "Mechanic Terminology",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md"
+    },
+    {
+      "basename": "UQLab使用笔记",
+      "path": "💻softwares/➕Mathmatics/MATLAB/Library/ReliabilityEngineering/UQLab使用笔记.md"
+    },
+    {
+      "basename": "第九章 Kriging代理模型与可靠性与局部灵敏度分析",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第九章 Kriging代理模型与可靠性与局部灵敏度分析.md"
+    },
+    {
+      "basename": "第三章 可靠性灵敏度分析的矩方法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第三章 可靠性灵敏度分析的矩方法.md"
     },
     {
       "basename": "Mathmatic Terminology",
@@ -29,8 +113,56 @@
       "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
     },
     {
+      "basename": "Chapter1 Mathematic Modeling, Numerical Methods and Problem Solving",
+      "path": "💻softwares/➕Mathmatics/MATLAB/Applied Numerical Methods/Chapter1 Mathematic Modeling, Numerical Methods and Problem Solving.md"
+    },
+    {
+      "basename": "字符串数组初始化",
+      "path": "💻softwares/➕Mathmatics/MATLAB/Basic Usage/字符串数组初始化.md"
+    },
+    {
+      "basename": "第二章",
+      "path": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第二章.md"
+    },
+    {
+      "basename": "第一章 张量的表示",
+      "path": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第一章 张量的表示.md"
+    },
+    {
+      "basename": "第一章 张量的表示 2024-04-03 08.56.34",
+      "path": "Excalidraw/第一章 张量的表示 2024-04-03 08.56.34.md"
+    },
+    {
+      "basename": "3. 通用IO口输出以及简单实验",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/3. 通用IO口输出以及简单实验.md"
+    },
+    {
       "basename": "第八章 响应面方法和支持向量机",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第八章 响应面方法和支持向量机.md"
+    },
+    {
+      "basename": "UG联合Ansys Workbench参数化建模和Matlab参数扫描教程",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/UG联合Ansys Workbench参数化建模和Matlab参数扫描教程.md"
+    },
+    {
+      "basename": "HyperMesh几何创建基础",
+      "path": "💻softwares/🛩️FEM/HyperWorks/HyperMesh/HyperMesh几何创建基础.md"
+    },
+    {
+      "basename": "启动SolidWorks",
+      "path": "💻softwares/🗽2D & 3D design/🤖SolidWorks/启动SolidWorks.md"
+    },
+    {
+      "basename": "HyperMesh基本使用方法",
+      "path": "💻softwares/🛩️FEM/HyperWorks/HyperMesh/HyperMesh基本使用方法.md"
+    },
+    {
+      "basename": "疲劳分析方法",
+      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Load & Analysis/疲劳分析方法.md"
+    },
+    {
+      "basename": "5. 打印报表, 文本操作, 自动命名",
+      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/5. 打印报表, 文本操作, 自动命名.md"
     },
     {
       "basename": "第八章 响应面方法和支持向量机 2024-03-30 11.13.46",
@@ -67,138 +199,6 @@
     {
       "basename": "HyperMesh安装部分",
       "path": "💻softwares/🛩️FEM/HyperWorks/HyperMesh/HyperMesh安装部分.md"
-    },
-    {
-      "basename": "拉格朗日乘数法求条件极值",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/拉格朗日乘数法求条件极值.md"
-    },
-    {
-      "basename": "第八章 响应面方法和支持向量机 2024-03-29 15.16.13",
-      "path": "Excalidraw/第八章 响应面方法和支持向量机 2024-03-29 15.16.13.md"
-    },
-    {
-      "basename": "Ansys 接触对类型的选择",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/Ansys 接触对类型的选择.md"
-    },
-    {
-      "basename": "接触网格和多区域法",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Mesh/接触网格和多区域法.md"
-    },
-    {
-      "basename": "UG联合Ansys Workbench参数化建模和Matlab参数扫描教程",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/UG联合Ansys Workbench参数化建模和Matlab参数扫描教程.md"
-    },
-    {
-      "basename": "Workbench几何操作",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/Workbench几何操作.md"
-    },
-    {
-      "basename": "IMS重要抽样函数封装",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/IMS重要抽样函数封装.md"
-    },
-    {
-      "basename": "MCS抽样封装函数",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/MCS抽样封装函数.md"
-    },
-    {
-      "basename": "AFOSM求解函数封装",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/AFOSM求解函数封装.md"
-    },
-    {
-      "basename": "MATLAB可变参数的方法",
-      "path": "💻softwares/➕Mathmatics/MATLAB/Basic Usage/MATLAB可变参数的方法.md"
-    },
-    {
-      "basename": "第八章 向量代数和空间解析几何",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第八章 向量代数和空间解析几何.md"
-    },
-    {
-      "basename": "1.KNN算法和KMeans算法",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/基本课程/1.KNN算法和KMeans算法.md"
-    },
-    {
-      "basename": "torch的多层神经网络",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Implements/torch的多层神经网络.md"
-    },
-    {
-      "basename": "多层感知机,神经网络",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Implements/多层感知机,神经网络.md"
-    },
-    {
-      "basename": "softmax函数",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Implements/softmax函数.md"
-    },
-    {
-      "basename": "Latex基本用法",
-      "path": "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/Latex基本用法.md"
-    },
-    {
-      "basename": "第一章 张量的表示",
-      "path": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第一章 张量的表示.md"
-    },
-    {
-      "basename": "1. 变形与应变的概念",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第三章：应变/1. 变形与应变的概念.md"
-    },
-    {
-      "basename": "第一章 张量分析初步",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧊Continuum Mechanics/第一章 张量分析初步.md"
-    },
-    {
-      "basename": "第九章 Kriging代理模型与可靠性与局部灵敏度分析",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第九章 Kriging代理模型与可靠性与局部灵敏度分析.md"
-    },
-    {
-      "basename": "第二章 蒙特卡洛模拟方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第二章 蒙特卡洛模拟方法.md"
-    },
-    {
-      "basename": "第三章 可靠性灵敏度分析的矩方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第三章 可靠性灵敏度分析的矩方法.md"
-    },
-    {
-      "basename": "基本载荷类型",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Load & Analysis/基本载荷类型.md"
-    },
-    {
-      "basename": "第四章 随机变量的数字特征",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md"
-    },
-    {
-      "basename": "第三章 多维随机变量及其分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
-    },
-    {
-      "basename": "二维正态分布的协方差和相关系数",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/二维正态分布的协方差和相关系数.pdf"
-    },
-    {
-      "basename": "Ansys WorkBench网格划分操作",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Mesh/Ansys WorkBench网格划分操作.md"
-    },
-    {
-      "basename": "BladeGen建模方法",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/BladeGen建模方法.md"
-    },
-    {
-      "basename": "Workbench 建立梁几何单元",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/Workbench 建立梁几何单元.md"
-    },
-    {
-      "basename": "Fluent的基本使用",
-      "path": "💻softwares/🛩️FEM/Ansys/Fluent/Fluent的基本使用.md"
-    },
-    {
-      "basename": "Fluent 分析案例1",
-      "path": "💻softwares/🛩️FEM/Ansys/Fluent/Fluent 分析案例1.md"
-    },
-    {
-      "basename": "复习课程与考试要点",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/复习课程与考试要点.md"
-    },
-    {
-      "basename": "补充内容",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/补充内容.md"
     }
   ],
   "omittedPaths": [],

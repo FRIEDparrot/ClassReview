@@ -1,3 +1,9 @@
+# 许可证注意事项
+在进行求解时,  需要保证 lmtools 中的 ANSYS License Manager CVD 和 Simens PLM License Server 都处于开启状态(SSQ 是给Abaqus 使用的)
+![[attachments/Pasted image 20240331102106.png]]
+不能开可以到task manager 或者Services 中强制开启。 
+![[attachments/Pasted image 20240331102653.png]]
+
 # UG 参数化配置
 首先， 在 Tools `->` Expression 中定义某个参数,  需要注意, 只有以 ANS_或者 DS_开头，才能被WorkBench识别; (这个需要在WorkBench 中设置)
 
@@ -51,7 +57,7 @@
 对于每一个Properity, 都可以指定对应的表达式, 例如 20 * P1 
 ![[attachments/Pasted image 20240321113620.png]]
 
-# Matlab生成AnsysWorkbench参数集并参数化分析
+# 使用Python语言的 Ansys日志文件以及运行方法
 使用 日志文件 (Journal files) 连接Matlab 和Ansys Workbench 是非常有效的Ansys 的MATLAB命令流方案。
 
 首先在 Parameter 中选中并添加一个参数, 形成如图的类似的结构
@@ -177,3 +183,14 @@ Res = importdata("Results.csv").data;
 % 可以使用importData中并使用data提取其中的数据 
 toc
 ```
+
+
+
+> [!caution] 实际编程说明
+> 如果是在实际编程中新增设计点， 建议新增之后， 先设置最新的一个设计点Retain为true, 然后将这个设计点设置为current再进行求解，否则可能出现 Geometry Attached Failed 等等问题导致求解不了 。
+> 在求解完毕之后，取消勾选最新设计点的retain选项，即可只保留所选参数的同时保证求解成功率更高
+> **在求解过程中一定要保证两个license服务都是稳定运行的**
+
+另外， 可以通过命令行中设置命令窗口的默认大小(Window Size), 这样后台运算时不容易影响到前台。 
+![[attachments/Pasted image 20240402201523.png]]
+ 

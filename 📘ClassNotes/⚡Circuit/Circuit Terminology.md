@@ -75,6 +75,8 @@ ETH : Ethernet 以太网
 抢占优先级:  Pre-emption Priority 
 响应优先级:  SubPriority 
 Deprecate 不赞成， 强烈反对
+escalation  升级,增加，扩大, 逐步上升
+
 
 输入捕获 IC, Input Capture 
 输出比较 Output Compare, OC 
@@ -101,7 +103,11 @@ reSynchronization Jump Width (SJW) 重新同步补偿宽度
 tamper 篡改, 侵入
 scalable 可攀登的， 可扩展的
 discard 丢弃
-
+versatile 多功能的, 多用途的，多种技能的
+voltage regulator 电压调节器  
+hysteresis 磁滞，滞后作用， 迟滞
+faculty 能力，才能， (高等院校的)全体教师
+volatile 易变的， 易失的
 # 模电
 掺杂 doping
 电子 electron 
@@ -117,3 +123,7 @@ footprint 封装, 覆盖区
 common anodic (CA)共阳极 
 common cathode (CC)共阴极 
 Amplifier Modulator 幅值调制器
+Short - Circuit 短路
+Creepage distance 爬电距离
+Surface Mount Device(SMD) 表面贴装器件
+Surface Mount Technology (SMT)表面贴装技术

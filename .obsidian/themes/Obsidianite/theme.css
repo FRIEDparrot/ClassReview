@@ -76,6 +76,7 @@
   --bg-accent-25: rgba(14, 210, 247, 0.25);
   --text-highlight-bg: rgba(244, 86, 157, 0.25);
   --background-modifier-border: rgba(14, 210, 247, 0.05);
+  --table-border-color: rgb(14, 210, 247, 0.15);
   --test-color: rgb(122, 162, 247);
   --editor-border-color: #101014;
 }
@@ -293,11 +294,6 @@ a.tag[href*='#想法'] {
 .is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
   background: var(--background-modifier-border);
   color: var(--text-accent);
-}
-
-.nav-file-title,
-.nav-folder-title {
-  transition: all 150ms ease-in-out;
 }
 
 .nav-file-title.is-active,

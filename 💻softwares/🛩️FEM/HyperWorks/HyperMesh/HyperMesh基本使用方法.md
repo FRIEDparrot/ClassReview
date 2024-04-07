@@ -1,5 +1,5 @@
 HyperMesh 是广泛应用的有限元前处理平台。 并可以与CAD, CAE等等有对应的接口。
-
+HyperLife: 疲劳分析工具 
 HyperMesh具有最为灵活和高效的网格生成和编辑功能。一般要求导入， 前处理，求解和后处理(后处理往往可以使用HyperView或者HyperGraph获取), 其中HyperView往往是创建动画， 而HyperView往往是创建曲线。
 
 前处理包括: 
@@ -11,7 +11,6 @@ HyperWorks 是HyperMesh的新的风格界面, （实际上也是HyperMesh）
 shift + 右键可以绕点旋转。 
 alt + 中键  circle zoom
 选中和取消选择往往是通过Ctrl 和Shift来进行的。
-
 
 ### 基本菜单文件
 对于HyperMesh, 其主要的文件包括：
@@ -70,10 +69,19 @@ Component 是最基本的对象， 实际上是一种容器，可以包含几何
 ![[attachments/Pasted image 20240330145536.png|700]]
 利用 Model  > Create 可以创建Part 或者 Part Assembly, 其中<b><mark style="background: transparent; color: blue">Part是Component的上级, Part Assembly 是Part的上级</mark></b>
 ![[attachments/Pasted image 20240330153720.png]] 
+首先， 通过2D拓扑显示和3D拓扑显示可以区分实体和壳
+一般2D的曲面会在2D拓扑显示时显示成黄色而3D显示成蓝色
+
+往往是通过 特性Peoperties来区分不同的Component的， 例如零件的材料，壳体的厚度等等
+
+从Component > Empty 可以找到目前为空的Component， 可以选择并进行删除。
 
 # 偏好设置Preference 与容差调整
 在Preference中， 可以设置方块中每一次旋转的角度。
 ![[attachments/Pasted image 20240330152237.png|800]]
+另外， 在视角控制中， 也可以在方块上右键并且选取Align to the Screen, 并可以通过左下角的相机标识保存某个特定需要的视角, 同时，可以通过ctrl + 0-9 可以切换不同的视角。
+第二个选项是特定Component控制， 而后面的一个可以全局控制显示对应的网格显示方式。
+
 
 清理容差包括几何清理容差(Geometry Clenup Tolerance)和网格清理容差(Mesh Cleanup Tolerance),
 ![[attachments/Pasted image 20240330153014.png]]
@@ -181,4 +189,43 @@ normal : 设置面的法向;
 ![[attachments/Pasted image 20240330210720.png]]
 创建如图的斜线方向拉伸:(其中第二项为 Move Tool, 允许自定义改变拉伸方向), 注意: 定义完毕拉伸方向之后， 直接按下Esc可以退出坐标界面， 此时不需要指定 Guides, 可以直接指定拉伸的距离大小即可按照下述方法进行拉伸操作。 
 ![[attachments/Pasted image 20240330212647.png|500]]
+另外, 带有三角图标的部分可以展开, 例如Move下的Transformation Tool ， 可以参数化的阵列和移动对象
+![[attachments/Pasted image 20240401113811.png]]
 
+# Extension Manager 的使用
+通过File > Extension Manager 可以获取不同的Extension设置, 用于添加不同的Toolbox等等
+往往都可以使用二次开发等等， 关联到对应的脚本。
+
+
+# 其他补充部分
+在所有的Hyper Mesh 中, 可以通过右上角的方框更改窗口布局， 并且每个窗口都可以change Type, Drag, Maximum等等。
+可以变换成TableView等等多种不同的选项。 
+
+通过SessionBrower 可以管理窗口布局， 观察每个Session下的多个窗口。
+![[attachments/Pasted image 20240401191639.png|200]]
+另外， 点击右上角的Untitled 可以添加页面， 实现一个总的分析下多个界面的管理 
+![[attachments/Pasted image 20240401191606.png]]
+多个不同的point , 可以Part , point 通过按下 P 多次进行切换显示等等。 
+
+G: 切换显示网格， 显示几何和网格几何都显示。 
+Q: 显示选中的节点号和单元号
+D: 隐藏或者显示
+
+上一个视图: B 
+Shift + A 显示整个模型
+Shift + I 仅显示选定内容或者当前对象模型
+Shift + H 隐藏并清除选定内容
+
+Select 廂中， 往往使用Save 和Retrive操作，在选择对象时， 可以进行save 和Retrive 操作
+右键 > Select > by path, plane, .... 
+alt 可以配置相应的快捷选择。 
+
+n ： 从选择单元切换到选择节点。
+例如， 可以选用所有的nodes, 然后改点s, 则可以直接跳转到分配了system 的对应节点。
+。即检查节点是否引用了某个坐标系。 
+中键 + space 可以快速跳转到Advanced Selections
+by config 
+查看模型中的三角形数量: 
+显示网格 -> 按照config选择选择三角形 CATIA6
+
+Entity Editor 

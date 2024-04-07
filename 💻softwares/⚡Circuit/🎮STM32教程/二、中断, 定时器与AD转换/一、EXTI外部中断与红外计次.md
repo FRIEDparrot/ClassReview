@@ -63,10 +63,9 @@ STM32单片机具有<mark style="background: transparent; color: red">68个可�
 | PVD | 电源电压监测(Power Voltage Detection)。供电电压不足时产生中断; 可以用于监测电池和保存重要数据 |
 | EXTI0 - EXTI4, EXTI15_10 | 外部中断资源  |
 |  |  |
-
 需要说明的是, 中断函数的地址是由编译器分配的， 不是固定值; 而在内存中定义了一个地址列表。(**中断地址列表也叫中断向量表**), 先跳转到中断向量表对应的位置， 然后再跳转到对应的函数地址。
 ### (2) NVIC简介
-NVIC结构如图, 是stm32的CPU内核外置的外设(微处理器8259)
+NVIC结构如图, 是stm32的CPU内核外置的外设(微处理器8259) 
 ![[attachments/Pasted image 20240202202023.png|600]]
 NVIC 可以对中断按照优先级进行分组。每个**优先级寄存器共有4位(0-15), 由此确定中断的优先级顺序**。
 <b><mark style="background: transparent; color: red">同时这个4位可以切分为高n位的抢占优先级和低4-n位的响应优先级</mark></b>
@@ -184,7 +183,6 @@ SCB_AIRCR 中, 配置中断分组
 ```cpp 
 void GPIO_AFIODeInit(void); // AFIO 复位函数 
 void GPIO_PinLockConfig(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);  // 锁定GPIO配置, 放止意外更改 
-
 // 下面两个函数用于配置AFIO的事件输出功能, 使用不多
 void GPIO_EventOutputConfig(uint8_t GPIO_PortSource, uint8_t GPIO_PinSource); 
 void GPIO_EventOutputCmd(FunctionalState NewState);
@@ -841,3 +839,4 @@ int main(){
 https://blog.csdn.net/weixin_45935114/article/details/132323761
 
 说明: 尽量中断和主程序里不要处理相同的事件。
+

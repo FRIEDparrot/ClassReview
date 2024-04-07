@@ -96,6 +96,11 @@ $$U(x) = \left| \frac{\mu_{gk}(x)}{\sigma_{gk}(x)}\right|$$
 其中$\mu_{gk}(x), \sigma_{gk}(x)$两项分别为 Kriging <mark style="background: transparent; color: red">代理模型的均值和标准差</mark>; 
 
 其学习原理是，<mark style="background: transparent; color: red">当估计值相同时， 估计值的标准差越大， 则学习函数函数 U 的值越小。而当标准差相同时,  估计值越接近0, 则对应的学习函数越小</mark>。由于<mark style="background: transparent; color: red">越靠近失效面， 则对应的均值接近0且标准差增大</mark>， 因此**每一次可以选择学习函数U值较小的点加入**到点集中来更新 Kriging 代理模型， 从而实现Kriging 代理模型的自适应更新过程;
+
+需要注意的是, 对于符号误判的风险大小, 实际上是U(x)的函数
+$$P_{m}(x) = \Phi(-U(x))$$
+原则上需要学习范围 U(x) < 2 范围内的一切抽样点，才能保证精度足够高。
+
 ## 四、可靠性与可靠性局部灵敏度分析的AK-MCS方法
 ### (1) 可靠性分析的AK-MCS方法 
 AK-MCS 实际上是自适应 Kriging 代理模型结合 Monte Carlo 数字模拟的失效概率求解方案;

@@ -16,6 +16,9 @@ Nomenclature 命名法
 耐久性准则 crashworthness criteria 
 一次二阶矩方法 first order and second moment method  
 预期可能性函数 Expected feasibility function
+极限状态函数 limit-state function 
+邻近 vicinity 
+多项式混沌 Polynomial chaos
 
 # 有限元
 焊接, 融合 weld 
@@ -38,7 +41,9 @@ deck 甲板， 舱面， 布置， 打扮
 resolution 决议, 正式决定
 orphan  孤立的，孤儿
 stitch    缝, 缝纫， 修补
-
+manifold 多种形式的， 许多种类的
+patch 色斑， 斑点 ,  修补， 缝补
+sliver 薄片， 小片，长条
 # 航空发动机
 stipulate  规定 明确要求
 evasive   回避，推脱的， 推诿的
@@ -66,7 +71,7 @@ hull 船身， 船体
 hydraulic diameter 水力直径
 gasket 衬垫
 Impedance 阻抗
-
+deprecated  弃用的
 
 # 信号与系统
 
