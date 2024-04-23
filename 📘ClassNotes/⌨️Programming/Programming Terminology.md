@@ -5,3 +5,8 @@ Dynamic programming (动态规划法)：优化问题
 Local searching (局部搜索法)：最优化问题
 Branch & limitation (分支限界法)：检索
 Longest Common Sequence 最长公共子序列 
+
+mutation 变异,突变
+metamorphosis 变质，形变
+permutation 置换, 排列, 组合
+swarm 大群，群体（昆虫）等

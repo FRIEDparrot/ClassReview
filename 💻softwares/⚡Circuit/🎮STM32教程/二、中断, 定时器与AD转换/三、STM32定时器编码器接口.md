@@ -178,7 +178,7 @@ extern "C"{
 }
 ```
 
-参考[[💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/二、STM32定时器中断的使用(1)#(2) 定时器的内部结构|定时器的内部结构]], 基本的方法是让TRGI作为内部时钟, 
+参考[[💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/二、STM32定时器中断的使用#(2) 定时器的内部结构|定时器的内部结构]], 基本的方法是让TRGI作为内部时钟, 
 我们参考`TIM_InternalTriggerConnection`(p408), 对于TIM2, 其触发源ITR2为TIM3, 因此可以将InputTrigger设置为ITR2来实现 TIM3 触发 TIM2
 `TIM_SelectInputTrigger(TIM2, TIM_TS_ITR2);` 
 每一次TIM3触发时,  TIM2自动回零

@@ -46,6 +46,18 @@
     ],
     "defaultFilterType": "tree"
   },
-  "treeData": [],
+  "treeData": [
+    {
+      "id": "6477083016f4e9af",
+      "parent": 0,
+      "droppable": true,
+      "text": "克里金(Kriging)模型详细推导 - 知乎",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    }
+  ],
   "enableHtmlPreview": true
 }

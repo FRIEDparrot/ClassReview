@@ -56,7 +56,6 @@
     }
   ],
   "obsidian-excalidraw-plugin:toggle-excalidraw-view": [],
-  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-on-current": [],
   "obsidian-excalidraw-plugin:insert-link-to-element": [],
   "obsidian-excalidraw-plugin:excalidraw-autocreate": [],
   "obsidian-completr:completr-bypass-tab-key": [],
@@ -968,12 +967,6 @@
       "key": "D"
     }
   ],
-  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed": [
-    {
-      "modifiers": [],
-      "key": "F12"
-    }
-  ],
   "obsidian-completr:completr-insert-selected-suggestion": [
     {
       "key": "Enter",
@@ -1518,14 +1511,6 @@
       "key": "-"
     }
   ],
-  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-new-tab": [
-    {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": "F12"
-    }
-  ],
   "language-translator:language-translator-editor-command": [
     {
       "modifiers": [
@@ -1572,6 +1557,20 @@
         "Shift"
       ],
       "key": "."
+    }
+  ],
+  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-new-tab": [
+    {
+      "modifiers": [],
+      "key": "F12"
+    }
+  ],
+  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "F12"
     }
   ]
 }

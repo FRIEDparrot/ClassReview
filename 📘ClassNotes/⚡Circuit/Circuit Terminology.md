@@ -108,6 +108,12 @@ voltage regulator 电压调节器
 hysteresis 磁滞，滞后作用， 迟滞
 faculty 能力，才能， (高等院校的)全体教师
 volatile 易变的， 易失的
+porting 移植
+parity 校验位
+线性稳压器     Low Dropout Regulator(LDO)
+mnemonic symbol 助记符
+
+
 # 模电
 掺杂 doping
 电子 electron 

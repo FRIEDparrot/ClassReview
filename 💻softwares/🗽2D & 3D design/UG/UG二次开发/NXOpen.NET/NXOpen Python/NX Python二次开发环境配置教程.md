@@ -132,3 +132,12 @@ NXOpen.Report
 ```
 
 具体的模块可以在[链接](https://docs.plm.automation.siemens.com/data_services/resources/nx/12/nx_api/custom/en_US/nxopen_python_ref/index.html)找到， 里面列出了所有的packages, 并且均可以设置为解析
+
+
+
+# 改回Pycharm配置方法
+![[attachments/Pasted image 20240418143918.png]]
+
+删除Python36.dll 
+然后展开其中的部分， 移除环境配置:
+![[attachments/Pasted image 20240418144220.png]]

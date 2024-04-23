@@ -32,6 +32,22 @@ int main(){
 ![[attachments/Pasted image 20240202180337.png|600]]
 此时即可正常运行和烧录。 
 
+对于调试不起作用的情况， 提示没有outdebug , launch.json加上如下代码
+```cpp title:调试不起作用launch.json加上代码
+{
+  "cwd": "${workspaceRoot}",
+  "type": "cortex-debug",
+  "request": "launch",
+  "name": "stlink",
+  "servertype": "openocd",
+  "executable": "build\\Target 1\\ext_and_ired_test.elf",  // 更改为对应elf可执行文件
+  "runToEntryPoint": "main",
+  "configFiles": [
+	  "interface/stlink.cfg",
+	  "target/stm32f1x.cfg"
+  ]
+}
+```
 另外， 以本机目前的配置: 只要将Flasher Configurations 改为OpenOcd, 然后调试Debug上面选项使用 stlink即可进行调试
 ![[attachments/Pasted image 20240204204709.png]]
 书签使用:
@@ -90,9 +106,9 @@ NVIC 可以对中断按照优先级进行分组。每个**优先级寄存器共�
 EXTI 通过检测对应GPIO口的电平信号值，<mark style="background: transparent; color: red">当电平变化时立即向NVIC发出中断申请</mark>, 其对应的 IO 口是可以通过程序软件进行指定的。 经过NVIC后实现对主程序的中断。
 
 可以通过软件设置上升沿，下降沿和双边沿触发， 也可以软件触发(引脚上可以不变化即可代码触发中断)。 
-同时<mark style="background: transparent; color: red">支持所有的GPIO口的中断</mark>, 但是相同的Pin 不能同时触发中断(即PA0, PB0, PC0不能有任意两个同时存在)
+同时<mark style="background: transparent; color: red">支持所有的GPIO口的中断</mark>, 但是相同的Pin 不能同时触发中断(**即PA0, PB0, PC0不能有任意两个同时存在**)
 
-如果有多个中断引脚， 必须选用不同的Pin引脚作为中断。 
+如果有多个中断引脚， 必须选用不同的Pin引脚作为中断。
 
 外部GPIO 可占用通道包括:  多达16个GPIO_Pin,  <mark style="background: transparent; color: red">外加PVD 输出, RTC闹钟, USB 唤醒与以太网唤醒</mark>等等。
 - 外加PVD输出部分用于电源从电压过低状态下, 可以从低功耗的停止模式下唤醒 STM32 。 
@@ -100,7 +116,7 @@ EXTI 通过检测对应GPIO口的电平信号值，<mark style="background: tran
 
 外部中断的触发相应方式包括<b><mark style="background: transparent; color: blue">中断响应</mark></b>和<b><mark style="background: transparent; color: blue">事件响应</mark></b>, 即除了中断触发外, 也可以通过触发事件进行(需要注意: <mark style="background: transparent; color: red">如果触发事件， 则外部中断的信号不会流向CPU,  而是流向其他外设而用于触发其他外设的操作</mark>, 例如DAC和触发DMA等等) 
 
-#### 1. GPIO结构 
+#### 1. GPIO结构
 下图为 GPIO 的基本结构图, <b><mark style="background: transparent; color: blue">每个GPIO 有16个通道, 而由于EXTI 只有16个引脚</mark></b>， 所以中间使用了AFIO中断引脚选择， 选择三个GPIO中的一个连接到EXTI中, 即<b><mark style="background: transparent; color: blue">外部中断中， 相同的 Pin 不能同时触发中断</mark></b>, 但是所有的GPIO都能够触发中断
 ![[attachments/Pasted image 20240202212012.png|700]]
 16个引脚和下面的PVD , RTC, USB, ETH 共有20路中断的输出, <b><mark style="background: transparent; color: red">其中EXTI9_5和EXTI15-10是连接在一起的</mark></b>, 即外部中断9-5和15-10触发的是同一个中断函数。<b><mark style="background: transparent; color: blue">此时需要通过软件在中断函数中判断标志位区分中断是哪一个</mark></b>; 另外还有20条流到其他外设。
@@ -505,7 +521,6 @@ int GetCounterNum(void){
 ```
 
 ### (3) 关于中断对C++的支持与extern C的用法与中断调试
-
 > [!caution] 中断函数的使用注意要点
 > 如果在使用中断时， 采用--cpp11编译环境， 则会导致程序完全跳进中断之后出不来，
 > 解决方法1是全盘采用--cpp99作为编译， 但是这样会直接导致无法使用C++语法

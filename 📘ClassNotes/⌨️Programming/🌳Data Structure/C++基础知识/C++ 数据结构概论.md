@@ -281,7 +281,6 @@ ostream &operator<< (ostream &strm, Point &p) {
 
 ### 8 . 动态存储分配
 C语言中，使用malloc动态为程序变量分配存储空间, 执行时需要使用函数sizeof来提供所需的空间量， 分配完后需要对返回指针类型做强制转换
-
 <mark style="background: transparent; color: yellow">c++带有了new和delete</mark>，增强了动态分配的功能
 它们操纵可利用的空间存储，同时取代了C中的库函数malloc和free
 ```cpp 
@@ -291,10 +290,8 @@ delete []p;      // release the storge
 ```
 
 ### 9. 继承和多态
-
 ```cpp 
 class Quadrilateral: public Plygon{   // inherite
-
 }
 ```
 多态性是

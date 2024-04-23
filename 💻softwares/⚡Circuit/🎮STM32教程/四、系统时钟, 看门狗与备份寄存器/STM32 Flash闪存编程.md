@@ -173,6 +173,8 @@ for (uint16_t i = 0; i < 512; i++){
 ![[attachments/Pasted image 20240407011526.png]]
 另外在Keil 中可以配置内存大小如下:
 ![[attachments/Pasted image 20240407012857.png]]
+vsCode 配置方法如图: 
+![[attachments/Pasted image 20240407202434.png]]
 
 ```cpp title:闪存测试代码
 #include "stm32f10x.h"
