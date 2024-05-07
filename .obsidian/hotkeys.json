@@ -1572,5 +1572,13 @@
       ],
       "key": "F12"
     }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_OTIMES_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "O"
+    }
   ]
 }

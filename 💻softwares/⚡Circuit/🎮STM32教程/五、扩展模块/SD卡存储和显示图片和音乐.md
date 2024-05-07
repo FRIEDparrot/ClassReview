@@ -301,7 +301,7 @@ SD卡的初始化流程如下:
 5. 发送CMD58，**获取OCR 寄存器**,
 
 4. 如果不是SD2.0卡(不支持CMD8, 不返回0x01), 若返回值不为0x01，则进一步判断是V1.0卡还是MMC卡：先发送循环命令CMD55+CMD41进行复位，如果复位不成功则考虑是MMC卡，如果复位成功，则为V1.0卡; 
-5. 如果是SD 1.0 卡, 则
+5. 如果是SD 1.0 卡, 
 具体流程在参考手册p229: 
 ![[attachments/Pasted image 20240421111115.png|850]]
 
@@ -741,6 +741,11 @@ typedef struct
 
 ```
 
+#### 4. 读取SD卡状态
+读取SD卡状态使用的是CMD13命令, 参考p119,p241(CMD和返回值解释)和p244的
+![[attachments/Pasted image 20240429165703.png|700]]
+
+
 # 二、基于库函数的SD卡SPI模式通信开发 
 ### (1) 基本函数
 在 StdPeriph_Lib 中， 可以找到STM32_EVAL库, 这个是非常常用的库(这个已经放在模板文件> Porting中)
@@ -837,12 +842,23 @@ http://elm-chan.org/fsw/ff/00index_e.html
 DWORD get_fattime (void);   /* Get current time */
 #endif
 ```
+
 修改：找到ffconf.h中的FF_FS_NORTC，将其改为1，如下：
 ```cpp title:ffconf.h
-#define FF_FS_NORTC 1 
+#define FF_FS_NORTC 1
 ```
+
+> [!NOTE] 说明
+> FATFS 的文件系统是带有RTC的, 相应地会在创建文件时加入文件的创建日期, 如果不使用 RTC, 则没有该功能; 通过下述下述修改NORTC的默认时间:
+
+| #define FF_FS_NORTC   |      | 1   |
+| --------------------- | ---- | --- |
+| #define FF_NORTC_MON  | 1    |     |
+| #define FF_NORTC_MDAY | 1    |     |
+| #define FF_NORTC_YEAR | 2022 |     |
+
 在disco.c文件中添加SD的宏定义， 然后修改对应的.c中的相应函数:
-```cpp 
+```cpp
 /* Definitions of physical drive number for each drive */
 #define DEV_RAM     0   /* Example: Map Ramdisk to physical drive 0 */
 #define DEV_MMC    1   /* Example: Map MMC card to physical drive 1 */
@@ -861,7 +877,6 @@ DWORD get_fattime (void);   /* Get current time */
 /* Number of volumes (logical drives) to be used. (1-10) */
 ```
 
-
 另外需要修改ffconf.h文件下面几个定义, 其中FF_FS_RPATH是 FatFs相对路径的功能, USE_FIND是文件搜索, USE_MKFS是文件创建功能
 ```cpp
 #define FF_FS_RPATH		1
@@ -876,8 +891,9 @@ DWORD get_fattime (void);   /* Get current time */
 
 #define FF_USE_MKFS		1
 /* This option switches f_mkfs() function. (0:Disable or 1:Enable) */
-```
 
+#define _FS_LOCK    1          // 是否启用文件加锁功能, 可以选择启用
+```
 
 然后, 根据上面提示的返回值，添加接口函数的定义, 例如 SD_disk_read 返回的是DRESULT对象, 则返回值也相应为DRESULT; 
 ```cpp title:SD_disk_read函数接口 fold
@@ -911,11 +927,7 @@ static FATFS *FatFs[FF_VOLUMES];    /* Pointer to the filesystem objects (logi
 static WORD Fsid;                   /* Filesystem mount ID */
 ```
 
-```cpp
-/* Get physical drive size */
-disk_ioctl()  // 用于获取物理内存, 查看物理内存是否足够
-```
-### (2) f_mount原理
+### (3) f_mount原理
 为了能够将文件系统绑定到 SD 卡(logical drive number = 3), 首先调用ff.c中的f_mount函数, 具体操作如下: 
 ```cpp
 uint8_t res = f_mount(&fs, "3:", 1);
@@ -926,7 +938,7 @@ uint8_t res = f_mount(&fs, "3:", 1);
 
 如果是还没有被mount, 则会调用一次`stat = disk_initialize(fs->pdrv);  /* Initialize the volume hosting physical drive */` 判断能否初始化完成, 如果成功初始化, 则有可能会返回 NoSystem
 
-### (3) 输入输出控制函数disk_ioControl
+### (4) 输入输出控制函数disk_ioControl
 对于 `DRESULT SD_disk_ioctl(void);` 函数, 里面必须要根据Cmd进行定义许多函数的返回结果,其中ioctrl函数对应的命令已经在diskio.h中给出了定义, 具体如下:
 ```cpp
 DRESULT disk_ioctl (BYTE pdrv, BYTE cmd, void* buff);
@@ -958,3 +970,308 @@ DRESULT disk_ioctl (BYTE pdrv, BYTE cmd, void* buff);
 注意: 上面部分的 Generic Command 是一般都需要定义的, 而定义时要看后面给出的使用条件(例如FF_USE_MKFS == 1时需要GET_BLOCK_SIZE函数)
 
 第二组部分和第三组部分都是不被FatFs使用的函数, 因此可以直接不定义。
+
+### (5) 控制系统移植
+在示例程序中, 以前版本的部分是将 Disk_drvTypeDef 作为一个Drive 对象, 然后 Extern 到其他文件中。其中所有的函数都被存到了一个类中。
+```cpp
+extern Disk_drvTypeDef  disk;
+
+/** 
+  * @brief  Disk IO Driver structure definition  
+  */ 
+typedef struct
+{
+  DSTATUS (*disk_initialize) (BYTE);                     /*!< Initialize Disk Drive                     */
+  DSTATUS (*disk_status)     (BYTE);                     /*!< Get Disk Status                           */
+  DRESULT (*disk_read)       (BYTE, BYTE*, DWORD, UINT);       /*!< Read Sector(s)                            */
+#if _USE_WRITE == 1 
+  DRESULT (*disk_write)      (BYTE, const BYTE*, DWORD, UINT); /*!< Write Sector(s) when _USE_WRITE = 0       */
+#endif /* _USE_WRITE == 1 */
+#if _USE_IOCTL == 1  
+  DRESULT (*disk_ioctl)      (BYTE, BYTE, void*);              /*!< I/O control operation when _USE_IOCTL = 1 */
+#endif /* _USE_IOCTL == 1 */
+
+}Diskio_drvTypeDef;
+```
+
+对于读取SD卡中的Sector, 首先使用 GetCardInfo 获取相应的SD卡信息, 获取SectorCount, 例如SectorCount=15601664, 则对应的可读取地址为 0-15601663
+
+对于老版本的移植, 相应的函数部分实现是放在了 sipddd > src >  user_diskio.c 文件中, 具体如下: 
+```cpp
+/* USER CODE BEGIN Header */
+/**
+ ******************************************************************************
+  * @file    user_diskio.c
+  * @brief   This file includes a diskio driver skeleton to be completed by the user.
+  ******************************************************************************
+  * @attention
+  *
+  * <h2><center>&copy; Copyright (c) 2019 STMicroelectronics.
+  * All rights reserved.</center></h2>
+  *
+  * This software component is licensed by ST under Ultimate Liberty license
+  * SLA0044, the "License"; You may not use this file except in compliance with
+  * the License. You may obtain a copy of the License at:
+  *                             www.st.com/SLA0044
+  *
+  ******************************************************************************
+  */
+ /* USER CODE END Header */
+
+#ifdef USE_OBSOLETE_USER_CODE_SECTION_0
+/* 
+ * Warning: the user section 0 is no more in use (starting from CubeMx version 4.16.0)
+ * To be suppressed in the future. 
+ * Kept to ensure backward compatibility with previous CubeMx versions when 
+ * migrating projects. 
+ * User code previously added there should be copied in the new user sections before 
+ * the section contents can be deleted.
+ */
+/* USER CODE BEGIN 0 */
+/* USER CODE END 0 */
+#endif
+
+/* USER CODE BEGIN DECL */
+
+/* Includes ------------------------------------------------------------------*/
+#include <string.h>
+#include "ff_gen_drv.h"
+#include "diskio.h"		/* Declarations of disk functions */
+#include "SDdriver.h"
+
+/* Private typedef -----------------------------------------------------------*/
+/* Private define ------------------------------------------------------------*/
+
+/* Private variables ---------------------------------------------------------*/
+/* Disk status */
+static volatile DSTATUS Stat = STA_NOINIT;
+
+/* USER CODE END DECL */
+
+/* Private function prototypes -----------------------------------------------*/
+DSTATUS USER_initialize (BYTE pdrv);
+DSTATUS USER_status (BYTE pdrv);
+DRESULT USER_read (BYTE pdrv, BYTE *buff, DWORD sector, UINT count);
+#if _USE_WRITE == 1
+  DRESULT USER_write (BYTE pdrv, const BYTE *buff, DWORD sector, UINT count);  
+#endif /* _USE_WRITE == 1 */
+#if _USE_IOCTL == 1
+  DRESULT USER_ioctl (BYTE pdrv, BYTE cmd, void *buff);
+#endif /* _USE_IOCTL == 1 */
+
+Diskio_drvTypeDef  USER_Driver =
+{
+  USER_initialize,
+  USER_status,
+  USER_read, 
+#if  _USE_WRITE
+  USER_write,
+#endif  /* _USE_WRITE == 1 */  
+#if  _USE_IOCTL == 1
+  USER_ioctl,
+#endif /* _USE_IOCTL == 1 */
+};
+
+/* Private functions ---------------------------------------------------------*/
+
+/**
+  * @brief  Initializes a Drive
+  * @param  pdrv: Physical drive number (0..)
+  * @retval DSTATUS: Operation status
+  */
+DSTATUS USER_initialize (
+	BYTE pdrv           /* Physical drive nmuber to identify the drive */
+)
+{
+  /* USER CODE BEGIN INIT */
+  uint8_t res;
+	res = SD_init();//SD_Initialize() 
+		 	if(res)//STM32 SPI的bug,在sd卡操作失败的时候如果不执行下面的语句,可能导致SPI读写异常
+			{
+				SPI_setspeed(SPI_BAUDRATEPRESCALER_256);
+				spi_readwrite(0xff);//提供额外的8个时钟
+				SPI_setspeed(SPI_BAUDRATEPRESCALER_2);
+			}
+	if(res)return  STA_NOINIT;
+	else return RES_OK; //初始化成功
+  /* USER CODE END INIT */
+}
+ 
+/**
+  * @brief  Gets Disk Status 
+  * @param  pdrv: Physical drive number (0..)
+  * @retval DSTATUS: Operation status
+  */
+DSTATUS USER_status (
+	BYTE pdrv       /* Physical drive number to identify the drive */
+)
+{
+  /* USER CODE BEGIN STATUS */
+  switch (pdrv)
+	{
+		case 0 :
+			return RES_OK;
+		case 1 :
+			return RES_OK;
+		case 2 :
+			return RES_OK;
+		default:
+			return STA_NOINIT;
+	}
+  /* USER CODE END STATUS */
+}
+
+/**
+  * @brief  Reads Sector(s) 
+  * @param  pdrv: Physical drive number (0..)
+  * @param  *buff: Data buffer to store read data
+  * @param  sector: Sector address (LBA)
+  * @param  count: Number of sectors to read (1..128)
+  * @retval DRESULT: Operation result
+  */
+DRESULT USER_read (
+	BYTE pdrv,      /* Physical drive nmuber to identify the drive */
+	BYTE *buff,     /* Data buffer to store read data */
+	DWORD sector,   /* Sector address in LBA */
+	UINT count      /* Number of sectors to read */
+)
+{
+  /* USER CODE BEGIN READ */
+  uint8_t res;
+	if( !count )
+	{    
+		return RES_PARERR;  /* count不能等于0，否则返回参数错误 */
+	}
+	switch (pdrv)
+	{
+		case 0:
+		    res=SD_ReadDisk(buff,sector,count);	 
+				if(res == 0){
+					return RES_OK;
+				}else{
+					return RES_ERROR;
+				}                                               
+		default:
+			return RES_ERROR;
+	}
+  /* USER CODE END READ */
+}
+
+/**
+  * @brief  Writes Sector(s)  
+  * @param  pdrv: Physical drive number (0..)
+  * @param  *buff: Data to be written
+  * @param  sector: Sector address (LBA)
+  * @param  count: Number of sectors to write (1..128)
+  * @retval DRESULT: Operation result
+  */
+#if _USE_WRITE == 1
+DRESULT USER_write (
+	BYTE pdrv,          /* Physical drive nmuber to identify the drive */
+	const BYTE *buff,   /* Data to be written */
+	DWORD sector,       /* Sector address in LBA */
+	UINT count          /* Number of sectors to write */
+)
+{ 
+  /* USER CODE BEGIN WRITE */
+  /* USER CODE HERE */
+  uint8_t  res;
+	if( !count )
+	{    
+		return RES_PARERR;  /* count不能等于0，否则返回参数错误 */
+	}
+	switch (pdrv)
+	{
+		case 0:
+		    res=SD_WriteDisk((uint8_t *)buff,sector,count);
+				if(res == 0){
+					return RES_OK;
+				}else{
+					return RES_ERROR;
+				}                                                
+		default:return RES_ERROR;
+	}
+  /* USER CODE END WRITE */
+}
+#endif /* _USE_WRITE == 1 */
+
+/**
+  * @brief  I/O control operation  
+  * @param  pdrv: Physical drive number (0..)
+  * @param  cmd: Control code
+  * @param  *buff: Buffer to send/receive control data
+  * @retval DRESULT: Operation result
+  */
+#if _USE_IOCTL == 1
+DRESULT USER_ioctl (
+	BYTE pdrv,      /* Physical drive nmuber (0..) */
+	BYTE cmd,       /* Control code */
+	void *buff      /* Buffer to send/receive control data */
+)
+{
+  /* USER CODE BEGIN IOCTL */
+    DRESULT res;
+	 switch(cmd)
+	    {
+		    case CTRL_SYNC:
+						SD_CS(1);
+						do{
+							HAL_Delay(20);
+						}while(spi_readwrite(0xFF)!=0xFF);
+						res=RES_OK;
+						SD_CS(0);
+		        break;	 
+		    case GET_SECTOR_SIZE:
+		        *(WORD*)buff = 512;
+		        res = RES_OK;
+		        break;	 
+		    case GET_BLOCK_SIZE:
+		        *(WORD*)buff = 8;
+		        res = RES_OK;
+		        break;	 
+		    case GET_SECTOR_COUNT:
+		        *(DWORD*)buff = SD_GetSectorCount();
+		        res = RES_OK;
+		        break;
+		    default:
+		        res = RES_PARERR;
+		        break;
+	    }
+		return res;
+  /* USER CODE END IOCTL */
+}
+#endif /* _USE_IOCTL == 1 */
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+```
+
+因此， 核心是按照示例程序修改 ioctl 函数: 
+```cpp 
+DRESULT SD_disk_ioctl(BYTE cmd,void *buff){
+	DRESULT result = RES_ERROR;
+	switch(cmd){
+		case CTRL_SYNC:
+			return RES_OK;
+			break;
+		case GET_SECTOR_SIZE:
+			*(WORD*)buff = 512;
+			return RES_OK;
+		case GET_BLOCK_SIZE:
+			*(DWORD*)buff = SDCard1_Info.SD_csd.SectorCount;
+			return RES_OK;
+		default:
+			return RES_PARERR;  // no valid parameter
+	}
+	return result;
+}
+```
+
+这个部分实际上是对buff赋值时, 
+然后显示文件系统挂载成功
+
+# 三、代码编写
+具体的FATFS使用参考[[💻softwares/⚡Circuit/📂FatFS文件系统移植/FatFs简介与基本使用|FatFs简介与基本使用]]部分
+
+### 1. 解决由于SPI的BUG导致的卡死无文件系统问题
+尝试在初始化函数中首先拉低, 发送最多0xFFFF个CLK直到返回0xFF; 然后拉高并进行初始化。
+

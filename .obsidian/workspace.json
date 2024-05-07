@@ -4,35 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "845fb746fac718f8",
+        "id": "8b5f044ec449f425",
         "type": "tabs",
         "children": [
           {
-            "id": "d18e92ce6e7f38d9",
+            "id": "0253d44b5df708d4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🌟深度学习优化算法合集/4. 灰狼优化算法(GWO).md",
+                "file": "💻softwares/⚡Circuit/🖼️LVGL库及其使用/三、基本组件创建与仿真器的使用.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e2b09899b0f2ae89",
+            "id": "c3595128a827b091",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第九章 Kriging代理模型与可靠性与局部灵敏度分析.md",
+                "file": "💻softwares/⚡Circuit/🖼️LVGL库及其使用/一、LVGL嵌入式图形库简介.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cda823e872a453f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第十章 时变可靠性分析的方法.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "83c611479dda40d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/MCMC抽样函数.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -106,7 +130,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 432.5124969482422
+    "width": 451.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -159,7 +184,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第九章 Kriging代理模型与可靠性与局部灵敏度分析.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第十章 时变可靠性分析的方法.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -273,7 +298,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 10
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -286,7 +311,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第九章 Kriging代理模型与可靠性与局部灵敏度分析.md"
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第十章 时变可靠性分析的方法.md"
               }
             }
           },
@@ -296,7 +321,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第九章 Kriging代理模型与可靠性与局部灵敏度分析.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第十章 时变可靠性分析的方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -313,7 +338,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第九章 Kriging代理模型与可靠性与局部灵敏度分析.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第十章 时变可靠性分析的方法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -334,7 +359,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 492.5
+    "width": 511.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -359,54 +385,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e2b09899b0f2ae89",
+  "active": "cda823e872a453f8",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第九章 Kriging代理模型与可靠性与局部灵敏度分析.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🌟深度学习优化算法合集/4. 灰狼优化算法(GWO).md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🌟深度学习优化算法合集/5. 蚁群算法和旅行商算法.md",
-    "💻softwares/➕Mathmatics/MATLAB/Basic Usage/结构体的创建.md",
-    "attachments/Pasted image 20240423120128.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第四章 重要抽样法原理与应用.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/SD卡存储和显示图片和音乐.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/Porting/FatFs15/Ready/ffunicode.c",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/Porting/FatFs15/Ready/ffsystem.c",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/Porting/FatFs15/Ready/ffconf.h",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/Porting/FatFs15/Ready/ff.h",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/Porting/FatFs15/Ready/ff.c",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/Porting/FatFs15/Ready/diskio.h",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/Porting/FatFs15/Ready/diskio.c",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/Porting/FatFs15/Ready",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/Porting/FatFs15/New folder",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第十一章 失效概率函数.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/封装函数/IMS重要抽样函数封装.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第二章 蒙特卡洛模拟方法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md",
-    "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
-    "📘ClassNotes/⌨️Programming/Programming Terminology.md",
-    "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
-    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🌟深度学习优化算法合集/2. 遗传优化算法(GA).md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🌟深度学习优化算法合集/3. 粒子群优化算法(PSO).md",
-    "attachments/Pasted image 20240422175744.png",
-    "📘ClassNotes/⌨️Programming/🐍Python/matplotlib 三维绘图代码示例.md",
-    "📘ClassNotes/⌨️Programming/🐍Python",
-    "attachments/Pasted image 20240422112328.png",
-    "attachments/Pasted image 20240422110734.png",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/Porting/FatFs15/documents/res/rwtest3.png",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/Porting/FatFs15/documents/res/rwtest2.png",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/Porting/FatFs15/documents/res/rwtest1.png",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/Porting/FatFs15/documents/res/modules.png",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/Porting/FatFs15/documents/res/layers3.png",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/Porting/FatFs15/documents/res/layers2.png",
-    "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/HC05蓝牙芯片的使用.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/MCMC抽样函数.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/改进一次二阶矩AFOSM_solu以及diff_function函数封装.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/StdVar归一化正态变量.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/IMS重要抽样函数封装.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第十章 时变可靠性分析的方法.md",
+    "📘ClassNotes/⌨️Programming/MATLAB/Basic Usage/matlab中矩阵的常用操作.md",
+    "💻softwares/⚡Circuit/📂FatFS文件系统移植/SD卡格式化代码.md",
+    "💻softwares/⚡Circuit/🖼️LVGL库及其使用/三、基本组件创建与仿真器的使用.md",
     "💻softwares/⚡Circuit/🖼️LVGL库及其使用/一、LVGL嵌入式图形库简介.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/SD卡存储和显示图片和音乐.md",
+    "💻softwares/⚡Circuit/📂FatFS文件系统移植/FatFs简介与基本使用.md",
     "💻softwares/⚡Circuit/🖼️LVGL库及其使用/二、ST7789驱动函数讲解.md",
-    "Excalidraw/SD卡存储和显示图片和音乐 2024-04-21 09.30.04.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第十章 时变可靠性分析的方法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/✈️航空发动机可靠性分析/第十二章 基于失效概率的全局灵敏度分析.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第二章 高周疲劳.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🦾Fatigue and Facture/第三章 疲劳应用统计学基础.md",
-    "Excalidraw/第三章 疲劳应用统计学基础 2024-04-20 20.47.04.md",
+    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第一章 张量的表示.md",
+    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第二章 张量代数和商法则.md",
+    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/推导部分/Eddition张量的相关证明.pdf",
+    "Excalidraw/第二章 张量代数和商法则 2024-05-06 10.32.34.md",
+    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/推导部分/度量张量的相关证明.pdf",
+    "🗑️trash/Drawing 2023-12-20 09.29.23.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md",
+    "attachments/Pasted image 20240505133020.png",
+    "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/4. SPI 通信协议与W25Q64 Flash芯片.md",
+    "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
+    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/推导部分/张量的商法则证明.pdf",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🌟深度学习优化算法合集/9. 径向基函数方法(RBF).md",
+    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/tensor calculation.md",
+    "💻softwares/Linux/Cmake安装.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/SU-03T语音识别控制模块.md",
+    "attachments/Pasted image 20240504124705.png",
+    "attachments/Pasted image 20240504124519.png",
+    "attachments/Pasted image 20240504123720.png",
+    "attachments/Pasted image 20240504123719.png",
+    "attachments/Pasted image 20240504123227.png",
+    "attachments/Pasted image 20240504123036.png",
+    "attachments/Pasted image 20240504113703.png",
+    "attachments/Pasted image 20240504105816.png",
+    "attachments/Pasted image 20240504104319.png",
+    "💻softwares/Linux",
+    "🐸 Daily Life memo/备忘录.md",
+    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
+    "💻softwares/Cmake",
+    "🗑️trash/Untitled.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/LIBARARY_EVAL/stm32_spi_sd.h",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/LIBARARY_EVAL/stm32_spi_sd.c",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/LIBARARY_EVAL",
+    "📘ClassNotes/⚗️materials and chemicals/3D_manufacturing/最终刀轨.dxf",
+    "📘ClassNotes/⚗️materials and chemicals/3D_manufacturing/最终刀轨.dwg",
     "Untitled.canvas",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]

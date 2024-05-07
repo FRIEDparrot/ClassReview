@@ -75,9 +75,9 @@ This list will guide you to get started with LVGL step-by-step.
 首先， 新建工程时添加 lvgl 文件夹, 并复制粘贴这四个文件: 
 ![[attachments/Pasted image 20240408005546.png]]
 
-把v_conf_template.h文件重命名为lv_conf.h
+把 lv_conf_template.h文件重命名为lv_conf.h
 在lvgl/examples/porting文件夹中把三个.h和.c文件开头的#if 0改为#if 1; 
-v_port_disp_template.c 注释掉后面的两个示例部分; 
+lv_port_disp_template.c 注释掉后面的两个示例部分;
 ![[attachments/Pasted image 20240408020419.png]]
 在lv_conf.h 的include 后面加:
 ```cpp title:屏幕大小定义代码
@@ -239,8 +239,8 @@ extern "C" {
 } /*extern "C"*/
 #endif
 ```
-#### 2. 修改lv_port_fs_templ 文件
 
+#### 2. 修改lv_port_fs_templ 文件
 ```cpp fold title:原始的lv_port_fs_templ.c代码部分
 /**
  * @file lv_port_fs_templ.c
@@ -506,7 +506,7 @@ typedef int keep_pedantic_happy;
 对于 lv_port_Indev_template.c 文件,  其中是有 touchpad_init 等为触摸屏部分提供的选项。 
 首先， 如果使用触摸屏， 则include "touch.h", 
 然后触摸屏有的话需要使用 lv_port_indev_init的方法; 中, 修改tochpad_init();
- 
+
 另外还需要注册鼠标输入和键盘输入设备, 编码器设备等等。以及按钮(button_init())中的部分。
 另外， static bool touchpad_is_pressed等等是检测触摸屏是否被按下的扫描函数。
 如果是不需要使用触摸屏， 可以直接不包含 lv_port_indev_template
@@ -516,13 +516,16 @@ typedef int keep_pedantic_happy;
 
 第一、裁剪RAM的使用， 首先在 lv_config 文件中,  更改自己的内存使用, 其中LV_MEM_SIZE 是占用运行内存， 建议使用10kb (c8t6是20kb的RAM, 然后用一点作为缓冲) 
 ```cpp title:更改lv_conf.h,设置最大运行内存的方式
-#define LV_MEM_SIZE (16 * 1024U)          /*[bytes]*/
+#define LV_MEM_SIZE (6 * 1024U)          /*[bytes]*/
 ```
 
 
+> [!NOTE] 注意
+> 一般这个值不能太小, 如果设置到4kb以及以下往往会出现显示不出的问题并且报错。
+
 第二,  修改 startup_stm32f10x_md.s中最大堆栈的数量: 
 ```cpp 
-Stack_Size      EQU     0x00000400
+Stack_Size      EQU     0x00000400 // 800就够
 ```
 
 第三、在 lv_config 文件中的480行左右， 禁用不需要的部分， 例如animating,  只需要设置为0;

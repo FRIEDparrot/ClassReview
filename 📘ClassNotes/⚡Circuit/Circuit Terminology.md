@@ -113,6 +113,13 @@ parity 校验位
 线性稳压器     Low Dropout Regulator(LDO)
 mnemonic symbol 助记符
 
+### FATFS
+global Partition Table 全局分区表
+double byte chart-set 双字节字符集(DBCS)
+
+
+
+optimum 最好的, 最佳的
 
 # 模电
 掺杂 doping

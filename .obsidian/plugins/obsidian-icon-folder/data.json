@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": "#4d4c4c",
     "recentlyUsedIcons": [
+      "SiLinux",
       "💡",
       "FasDatabase",
       "SiMysql",
-      "SiMarkdown",
-      "FabGithub"
+      "SiMarkdown"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -30,5 +30,6 @@
   "DataBase": "FasDatabase",
   "💻softwares/Git": "FabGithub",
   "💻softwares/Git/oftenly-used commands.md": "FabApple",
-  "💻softwares/Markdown & Latex Tutorial": "SiMarkdown"
+  "💻softwares/Markdown & Latex Tutorial": "SiMarkdown",
+  "💻softwares/Linux": "SiLinux"
 }

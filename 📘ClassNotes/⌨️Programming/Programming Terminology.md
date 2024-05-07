@@ -10,3 +10,9 @@ mutation 变异,突变
 metamorphosis 变质，形变
 permutation 置换, 排列, 组合
 swarm 大群，群体（昆虫）等
+prey 猎物
+
+Cross-Validation error 留一法交叉验证误差
+anisotropy 各向同性的
+
+

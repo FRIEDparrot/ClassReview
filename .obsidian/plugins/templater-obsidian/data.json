@@ -150,7 +150,8 @@
     "🗒️Templates/INSERT_PROD_SYMBOL.md",
     "🗒️Templates/INSERT_UNDERLINE_SYMBOL.md",
     "🗒️Templates/INSERT_LONGLEFTARROW.md",
-    "🗒️Templates/INSERT_LONGRIGHTARROW.md"
+    "🗒️Templates/INSERT_LONGRIGHTARROW.md",
+    "🗒️Templates/INSERT_OTIMES_SYMBOL.md"
   ],
   "startup_templates": [
     ""
