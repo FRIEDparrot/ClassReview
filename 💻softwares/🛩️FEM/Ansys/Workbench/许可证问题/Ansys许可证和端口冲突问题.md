@@ -23,3 +23,6 @@ TCP    [::]:1055              [::]:0                 LISTENING       17892
 ![[attachments/Pasted image 20240426112640.png]]
 需要在 Task > Manager > Details 中进行关闭;
 
+
+另外也可以通过如图: 
+![[attachments/Pasted image 20240509001216.png]]

@@ -25,3 +25,8 @@ Retain two decimal places
 round(x, 5);
 ```
 
+向量求模: 直接使用norm函数
+```
+norm  // 求模
+dot   // 点乘
+```
