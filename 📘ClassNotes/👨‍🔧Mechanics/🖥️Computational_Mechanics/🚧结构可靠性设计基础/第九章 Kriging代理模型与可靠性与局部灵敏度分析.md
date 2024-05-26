@@ -4,7 +4,7 @@
 
 对于自适应的 Kriging 代理模型, 可以在<mark style="background: transparent; color: red">满足给定精度的要求下准确判断样本的失效或者安全状态</mark>， 从而代替原始的功能函数计算局部可靠性与可靠性灵敏度; 
 
-对于Kirging 代理模型， 可以直接和有限元模型进行结合来实现可靠性以及可靠性局部灵敏度分析; 
+对于Kirging 代理模型， 可以直接和有限元模型进行结合来实现可靠性以及可靠性局部灵敏度分析;
 
 > [!CAUTION] 变异系数的定义
 > 变异系数实际上是均值和标准差的比值,  因此可以**通过均值 * 变异系数获取每个数据的标准差**
@@ -12,30 +12,32 @@
 ## 二、Kriging 代理模型的主要内容
 ### (1) Kriging 模型的建立与一般公式
 工程领域常用的 Kriging 代理模型包括多项式响应面模型， 人工神经网络模型和 Kriging 代理模型等等; 
-其中， 多项式响应面模型难以准确拟合高维和强非线性问题； 而人工神经网络模型需要的试验次数过多, 因此我们往往使用 kriging 模型作为<mark style="background: transparent; color: red">方差最小的模型无偏估计</mark>, 具有<mark style="background: transparent; color: red">全局近似和局部误差相结合的特点，且其有效性不依赖于随机误差的存在</mark>, 从而能够取得<mark style="background: transparent; color: red">对于强非线性和局部响应突变函数的良好拟合效果</mark>; 
+其中， 多项式响应面模型难以准确拟合高维和强非线性问题； 而人工神经网络模型需要的试验次数过多, 因此我们往往使用 kriging 模型作为<mark style="background: transparent; color: red">方差最小的模型无偏估计</mark>, 具有<mark style="background: transparent; color: red">全局近似和局部误差相结合的特点，且其有效性不依赖于随机误差的存在</mark>, 从而能够取得<mark style="background: transparent; color: red">对于强非线性和局部响应突变函数的良好拟合效果</mark>;
 
 Kriging 模型可以近似为**一个随机分布函数和一个多项式之和**, 即**使用多重线性模型拟合对应的模型值， 与神经网络中的函数类似**, 其中 $X = (x_{1}, x_{2}, \dots x_{n})^{T}$ 
 $$\boxed{g_{K} (X) = \sum^{P}_{i=1}f_{i}(X) \mu_{i} + z(X)}\tag{7.2.1}$$
 其中$f(X) = [f_1(x), f_2(x), \dots f_n(x)]$ 为随机向量$X$的基函数, 可以提供空间内的全局近似模型; 而$\mu_{i}$为**回归待定系数**, 实际上是一个中间变量; 
-
 > [!NOTE] $z(x)$ 的表达
 >  由于实际上的预测值应该是前面的一部分， **$z(x)$是一附加在该预测值上的随机过程**, 可以用于创建期望为0且方差为$\sigma^{2}$的局部偏差; 
 >  其中可以==取$z$的协方差矩阵为样本的归一化相关系数矩阵==， 即有:
 >  $$\text{Cov}[z(x_{i}, z(x_{j}))] = \sigma^{2} R(x_{i}, x_{j})$$
 >  其中 $R(x_{i}, x_{j})$ 为样本的相关系数矩阵, $\sigma^{2}$ 为方差的预测值(实际上可以使用下面的$s^2$来代替)， 而在实际预测中， 我们使用条件概率最大时对应的值为相应的预测值(对应参考文献中的$\partial L = 0$)
 
+> [!hint] 归一化相关系数矩阵引入
+> 变量标准正态化后的相关系数矩阵
+
 我们设<mark style="background: transparent; color: red">样本的协方差矩阵为</mark>$R$, 参考[[📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征#(4) 多维正态分布随机变量的概率密度以及协方差矩阵|第四章 随机变量的数字特征]]得到:
 $$\boldsymbol{R}_{i,j} = \text{cov} \left[ z(x^{(i)}, x^{(j)})\right]$$
 其中,$\sigma$是样本方差(每一个都是相同的), $\boldsymbol{R}$**表示相关矩阵**, 并且有**高斯型相关函数的表达式** (也可以选择其他多种模式)为: 
 $$R(x^{(i)}, x^{(j)}) = \exp \left( - \sum^{m}_{i=1} \theta_{k}|x_{k}^{(i)} -  x_{k}^{(j)}|^{2}\right)$$
-其中$\theta_{k}(k = 1, 2, \dots m)$为**相关的未知参数**(类似于相关系数); 
+其中$\theta_{k}(k = 1, 2, \dots m)$为**相关的未知参数**(类似于相关系数);
 我们参考[多元高斯概率分布函数的推导与理解](https://zhuanlan.zhihu.com/p/523214705)以及[克里金(Kriging)模型详细推导](https://zhuanlan.zhihu.com/p/377620800), 则得到预测的方法:
 其中, 预测点的$g_{K}$估计值为:
 $$\Large \boxed{\begin{cases}
 {g}_{K}^{pre}(x) = f(x)^{T}\hat{\mu} +r^{T} R^{-1}(\hat{g} - l \hat{\mu})  \\
 s_{K}^{2(pre)}(x) = \hat{\sigma}^{2} [1 - r^{T}C^{-1}r + \frac{(1- l^{T}C^{-1} r)^{2}}{l^{T} R^{-1}l}]
 \end{cases}}$$
-其中$f(x)^{T}$为回归模型，可以选择 0, 1, 2 次多项式。而此处的$\hat{\mu}$实际上是7.2.1中$\mu$的估计值, $l$为单位列向量， $\hat{g}$为样本响应数据构成的列向量
+其中$f(x)^{T}$为回归模型，可以选择 0, 1, 2 次多项式。而此处的$\hat{\mu}$实际上是7.2.1中$\mu$的估计值, $l$为单位列向量， $\hat{g}$为样本响应数据构成的列向量 
 
 > [!NOTE] 补充
 > 实际上对于任意一个未知的$x$, $g_{K}(x)$预测值服从一个均值为$g_{K}^{pre}(x)$，方差为$s_{K}^{2(pre)}$的高斯分布。
@@ -109,7 +111,7 @@ $$P_{m}(x) = \Phi(-U(x))$$
 AK-MCS 实际上是自适应 Kriging 代理模型结合 Monte Carlo 数字模拟的失效概率求解方案;
 1. 获取整体的 Monte Carlo 样本点$S_{MC}$ 假设其中样本点的个数为$N_{MC}$, 供更新使用;
 2. 产生训练的初始样本点，建立Kriging 代理模型， 假设选取了$N_1$ 个输变量的样本，并计算响应的代理模型函数值，  从而形成初始训练集$T_{MC}$;
-3. 根据当前的$T_{MC}$建立Kriging代理模型$g_K(x)$; 依次迭代选择新样本点，即**每次将学习函数最小的部分加入**, 然后**判断收敛性**; 需要注意: 相关模型采用 Gaussian 修正模型, 而回归模型采用常数,  模型即为普通Kriging代理模型; 
+3. 根据当前的$T_{MC}$建立Kriging代理模型$g_K(x)$; 依次迭代选择新样本点，即**每次将学习函数最小的部分加入**, 然后**判断收敛性**; 需要注意: 相关模型采用 Gaussian 修正模型, 而回归模型采用常数,  模型即为普通Kriging代理模型;
 4. 通过建立的代理模型估计失效概率, 使用 $g_K(x^{(j)}) \leq  0$ 的样本点个数与总样本点个数的比值代替
 $$\hat{P}_{f} = \frac{N_{gK} \leq  0}{N_{MC}}$$
 失效概率的变异系数的估计值为: 
@@ -119,18 +121,17 @@ $$\text{cov}(\hat{P}_{f})  = \sqrt{\frac{1 - \hat{P}_{f}}{(N_{MC} - 1) P_{f}}}$$
 > [!caution] 计算过程说明
 > 先构建样本池, 保证$U_{x} \geq 2$, 然后再使用
 
-
 ### (2) 可靠性局部灵敏度分析的AK-MCS方法 
 首先，参考[[📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第二章 蒙特卡洛模拟方法|蒙特卡洛模拟方法]], 局部灵敏度可以定义为:
 $$\frac{\partial P_{f}}{\partial \theta_{Xi}^{k}} = \int\dots\int _{F} \frac{\partial f_{X}}{\partial \theta_{X_{i}}^{(k)}} \frac{1}{f_{X}(x)} f_{X} (x) dx = \int\dots\int _{R^{n}} I_{F}(x) \frac{\partial f_{X}}{\partial \theta_{X_{i}}^{(k)}} \frac{1}{f_{X}(x)} f_{X} (x) dx$$
 我们将上式使用均值表示， 公式为:
 $$\boxed{\frac{\partial P_{f}}{\partial \theta_{X_{i}}} =E\left[ \frac{I_{F} (x)}{f_{X}(x)} \frac{\partial f_{X}(x)}{\partial \theta_{X_{i}}^{(k)}} \right]}$$
-其中, 求解可靠性灵敏度**需要利用功能函数计算的只是失效域指示函数** $I_F(x)$, **可以采用AK-MCS方法计算失效概率时创建的Kriging模型**; 同时, 也可以利用AK-MCS方法求解局部灵敏度估值的变异系数。 
+其中, 求解可靠性灵敏度**需要利用功能函数计算的只是失效域指示函数** $I_F(x)$, **可以采用AK-MCS方法计算失效概率时创建的Kriging模型**; 同时, 也可以利用AK-MCS方法求解局部灵敏度估值的变异系数。
 
 而**输入变量为独立正态分布的情况**时, 有公式:
 $$\frac{1}{f_{X}(x)}\frac{\partial f_{X}(x)}{\partial \mu_{X_{i}}} = \frac{1}{f_{X_{i}} (x_{i})} \frac{\partial f_{X_{i}}}{\partial \theta_{X_{i}}} = \frac{(x_{i} - \mu_{X_{i}})}{\sigma_{X_{i}}^{2} }$$
 $$\frac{1}{f_{X}(x)}\frac{\partial f_{X}(x)}{\partial \sigma_{X_{f}}} = \frac{1}{f_{X_{i}}} \frac{\partial f_{X_{i}}(x_{i})}{\partial \theta_{X_{i}}^{(k)}} = \frac{(x_{i} - \mu_{X_{i}})^{2}}{\sigma_{X_{i}}^{3}} - \frac{1}{\sigma_{X_{i}}}$$
-而对于基本过程, AK-MCS的局部灵敏度分析只需在迭代完成之后计算对应的$I_F$以及可靠性局部灵敏度即可;
+而对于基本过程, AK-MCS的局部灵敏度分析只需在迭代完成之后计算对应的$I_F$以及可靠性局部灵敏度即可; 
 
 MATLAB 中的 Kriging 工具箱使用参考 https://zhuanlan.zhihu.com/p/612582292
 而DACE工具箱文档参考 https://www.omicron.dk/dace/dace.pdf 
@@ -380,7 +381,6 @@ $$T = \left\{ (x_{T}^{(1)},  g(x_{T}^{(1)})), \dots  (x_{T}^{(m)},  g(x_{T}^{(m)
 
 实际上, 我们在Meta-IS-AK方法中，只是调用了一次相应的模型, 且模型只更新了一次。
 
-
 ### (3) Meta-IS-AK 方法的可靠性灵敏度计算方法
 对于Meta-IS-AK方法的可靠性局部灵敏度, 计算为:
 $$\frac{\partial P_{f}}{\partial \theta_{X_{i}}^{(k)}} = \frac{\partial \alpha_{corr}}{\partial \theta_{X_{i}}^{(k)}} P_{f\varepsilon} + \alpha_{corr} \frac{\partial P_{f\varepsilon}}{\partial \theta_{X_{i}}^{(k)}} $$
@@ -509,7 +509,7 @@ for epoch = 1:params.max_epoch1
     % 以hx为概率密度 -> 根据经验取失效域中某一点为起始点进行 Marklov 抽样 (初始点影响不大)
 	[xp_mcmc] = slicesample(initial_point,params.num_MCMC,"burnin",1000, "pdf",hx_pdf, "thin", 3);
 	% 此处是以h(x)为密度函数抽样的, 同时把 predictor 代入到了h(x)中进行抽样
-    
+		
 	% 用交叉验证方法(cross validation method)求解 \hat{a_corrLoo}判定是否收敛, 否则增加样本点进行迭代计算 
     a_LOSS = crossloss(x_train, y_train, dmodel);
     

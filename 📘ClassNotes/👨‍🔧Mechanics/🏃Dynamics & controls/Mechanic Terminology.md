@@ -19,6 +19,15 @@ Nomenclature 命名法
 极限状态函数 limit-state function 
 邻近 vicinity 
 多项式混沌 Polynomial chaos
+断断续续的 intermittent 
+后屈曲 snap-through, 跳变
+横断面 transverse 
+封闭形式 closed-form 
+棱镜的 prismatic
+抗冲击性能 crashworthness 
+启发式的 heuristic 
+松弛的   slack
+二分法 dichotomy 
 
 # 有限元
 焊接, 融合 weld 

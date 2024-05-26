@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "8b5f044ec449f425",
+        "id": "1015ee2da86ff0bd",
         "type": "tabs",
         "children": [
           {
-            "id": "860cbefa19cabbec",
+            "id": "7fcb51c8a6a0df9f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第八章 响应面方法和支持向量机.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f857364e174ece4b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第十章 时变可靠性分析的方法.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b55c99c17f377e5e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第三章 可靠性灵敏度分析的矩方法.md",
+                "file": "💻softwares/⚡Circuit/🔋嘉立创EDA/2. 嘉立创基本操作.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 446.5124969482422
+    "width": 433.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -171,7 +147,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第三章 可靠性灵敏度分析的矩方法.md",
+                "file": "💻softwares/⚡Circuit/🔋嘉立创EDA/2. 嘉立创基本操作.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -285,7 +261,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 7
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -298,7 +274,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第三章 可靠性灵敏度分析的矩方法.md"
+                "file": "💻softwares/⚡Circuit/🔋嘉立创EDA/2. 嘉立创基本操作.md"
               }
             }
           },
@@ -308,7 +284,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第三章 可靠性灵敏度分析的矩方法.md",
+                "file": "💻softwares/⚡Circuit/🔋嘉立创EDA/2. 嘉立创基本操作.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -325,7 +301,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第三章 可靠性灵敏度分析的矩方法.md",
+                "file": "💻softwares/⚡Circuit/🔋嘉立创EDA/2. 嘉立创基本操作.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -346,7 +322,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 511.5
+    "width": 575.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -371,54 +348,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "86820ad5b67d3064",
+  "active": "7fcb51c8a6a0df9f",
   "lastOpenFiles": [
-    "LICENSE",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/改进一次二阶矩AFOSM_solu以及diff_function函数封装.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第三章 可靠性灵敏度分析的矩方法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第二章 蒙特卡洛模拟方法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第十章 时变可靠性分析的方法.md",
+    "attachments/Pasted image 20240526103905.png",
+    "attachments/Pasted image 20240526103031.png",
+    "💻softwares/⚡Circuit/🔋嘉立创EDA/1. PCB基本结构与工艺简介.md",
+    "💻softwares/⚡Circuit/🔋嘉立创EDA/2. 嘉立创基本操作.md",
+    "attachments/Pasted image 20240526092558.png",
+    "Excalidraw/PCB基本结构与绘制 2024-05-26 08.53.16.md",
     "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第八章 响应面方法和支持向量机.md",
-    "💻softwares/⚡Circuit/🖼️LVGL库及其使用/三、基本组件创建与仿真器的使用.md",
-    "📘ClassNotes/⌨️Programming/MATLAB/Basic Usage/matlab中矩阵的常用操作.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/推导部分/跨越率方法有关定理推导过程.pdf",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🌟深度学习优化算法合集/1. 模拟退火算法(SA).md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/Meta-IS-AK算法构建的自适应代理模型.md",
-    "📘ClassNotes/⌨️Programming/🚀代理模型资源整理/SAFE全局灵敏度分析Matlab工具箱.md",
-    "📘ClassNotes/⌨️Programming/🚀代理模型资源整理/HDMR高维非线性表示.md",
-    "💻softwares/🛩️FEM/Ansys/Workbench/许可证问题/Ansys许可证和端口冲突问题.md",
-    "📘ClassNotes/⌨️Programming/🚀代理模型资源整理",
-    "attachments/Pasted image 20240509001216.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/MCS抽样封装函数.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/MCMC抽样函数.md",
-    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第二章 张量代数和商法则.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/StdVar归一化正态变量.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/IMS重要抽样函数封装.md",
-    "💻softwares/⚡Circuit/📂FatFS文件系统移植/SD卡格式化代码.md",
-    "💻softwares/⚡Circuit/🖼️LVGL库及其使用/一、LVGL嵌入式图形库简介.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/SD卡存储和显示图片和音乐.md",
-    "💻softwares/⚡Circuit/📂FatFS文件系统移植/FatFs简介与基本使用.md",
-    "💻softwares/⚡Circuit/🖼️LVGL库及其使用/二、ST7789驱动函数讲解.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/基本课程/2.SVM支持向量机.md",
     "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第一章 张量的表示.md",
+    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第二章 张量代数和商法则.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Advanced deeplearning/CNN神经网络讲解.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md",
+    "Excalidraw/第一章 张量的表示 2024-04-17 09.10.13.md",
+    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/目录格式控制.md",
+    "attachments/Pasted image 20240521160931.png",
+    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/参考文献目录添加.md",
+    "💻softwares/Markdown & Latex Tutorial/Latex Tutorial/格式控制/Untitled.md",
+    "💻softwares/🗽2D & 3D design/Origin/入门教程/图例Legend用法.md",
+    "attachments/Pasted image 20240520191820.png",
+    "💻softwares/🗽2D & 3D design/Origin/统计图像/列统计直方图的绘制方法.md",
+    "attachments/Pasted image 20240520154726.png",
+    "attachments/Pasted image 20240520154632.png",
+    "📘ClassNotes/⌨️Programming/MATLAB/Library/QULab/UQLib 常用求解函数.md",
+    "📘ClassNotes/⌨️Programming/MATLAB/Library/QULab/UQLab SVM支持向量机简单建模方法.md",
+    "attachments/Pasted image 20240519114036.png",
+    "attachments/Pasted image 20240519113939.png",
+    "attachments/Pasted image 20240519113554.png",
+    "💻softwares/🗽2D & 3D design/Origin/入门教程/坐标轴的Latex公式用法.md",
+    "attachments/Pasted image 20240519112322.png",
+    "💻softwares/🗽2D & 3D design/Origin/入门教程/Origin基础用法.md",
+    "💻softwares/🗽2D & 3D design/Origin/统计图像/数值计算方法.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Advanced deeplearning/SVM 支持向量机.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第十二章 基于失效概率的全局灵敏度分析.md",
+    "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/5. 打印报表, 文本操作, 自动命名.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/全概率公式和贝叶斯公式的证明.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/全局灵敏度的求解.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第四章 重要抽样法原理与应用.md",
+    "LICENSE",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/推导部分/跨越率方法有关定理推导过程.pdf",
+    "📘ClassNotes/⌨️Programming/🚀代理模型资源整理",
     "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/推导部分/Eddition张量的相关证明.pdf",
-    "Excalidraw/第二章 张量代数和商法则 2024-05-06 10.32.34.md",
     "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/推导部分/度量张量的相关证明.pdf",
-    "🗑️trash/Drawing 2023-12-20 09.29.23.md",
-    "attachments/Pasted image 20240505133020.png",
     "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/推导部分/张量的商法则证明.pdf",
-    "attachments/Pasted image 20240504124705.png",
-    "attachments/Pasted image 20240504124519.png",
-    "attachments/Pasted image 20240504123720.png",
-    "attachments/Pasted image 20240504123719.png",
-    "attachments/Pasted image 20240504123227.png",
-    "attachments/Pasted image 20240504123036.png",
-    "attachments/Pasted image 20240504113703.png",
-    "attachments/Pasted image 20240504105816.png",
     "💻softwares/Linux",
     "💻softwares/Cmake",
     "💻softwares/⚡Circuit/🎮STM32教程/模板文件/LIBARARY_EVAL/stm32_spi_sd.h",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/LIBARARY_EVAL/stm32_spi_sd.c",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/LIBARARY_EVAL",
     "Untitled.canvas",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]

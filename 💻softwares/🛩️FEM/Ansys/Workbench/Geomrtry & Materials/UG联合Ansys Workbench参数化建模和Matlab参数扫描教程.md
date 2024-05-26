@@ -1,3 +1,5 @@
+原视频链接 https://www.youtube.com/watch?v=SPteuq0-WLk 
+
 # 许可证注意事项
 在进行求解时,  需要保证 lmtools 中的 ANSYS License Manager CVD 和 Simens PLM License Server 都处于开启状态(SSQ 是给Abaqus 使用的)
 ![[attachments/Pasted image 20240331102106.png]]
