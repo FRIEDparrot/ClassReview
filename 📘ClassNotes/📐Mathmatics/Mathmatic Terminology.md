@@ -11,6 +11,7 @@ empirical 经验的
 primal 首要的
 dual 对偶的
 
+
 # Tensor Calculus
 covariant 协变基矢量
 contravariant 逆变基矢量

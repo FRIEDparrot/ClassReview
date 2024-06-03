@@ -1,8 +1,148 @@
 {
   "recentFiles": [
     {
+      "basename": "Programming Terminology",
+      "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
+    },
+    {
+      "basename": "Chapter2 Preliminaries",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Chapter2 Preliminaries.md"
+    },
+    {
+      "basename": "4. 函数指针的使用",
+      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/4. 函数指针的使用.md"
+    },
+    {
+      "basename": "SU-03T语音识别控制模块",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/SU-03T语音识别控制模块.md"
+    },
+    {
+      "basename": "stm32读取和播放SD卡中的音乐mp3和wav文件",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/stm32读取和播放SD卡中的音乐mp3和wav文件.md"
+    },
+    {
+      "basename": "Linux 常用指令解析",
+      "path": "💻softwares/Linux/Linux 常用指令解析.md"
+    },
+    {
+      "basename": "基础部分",
+      "path": "📘ClassNotes/⌨️Programming/🐍Python/基础部分.md"
+    },
+    {
+      "basename": "⌚近期计划书",
+      "path": "🐸 Daily Life memo/⌚近期计划书.md"
+    },
+    {
+      "basename": "壳体理论建立, 本构公式与平衡方程(附完整推导过程)",
+      "path": "🐸 Daily Life memo/CSDN及公众号教程存档/壳体理论建立, 本构公式与平衡方程(附完整推导过程).md"
+    },
+    {
+      "basename": "四元数入门,详解与使用",
+      "path": "🐸 Daily Life memo/CSDN及公众号教程存档/四元数入门,详解与使用.md"
+    },
+    {
+      "basename": "matplotlib 绘图代码示例",
+      "path": "📘ClassNotes/⌨️Programming/🐍Python/matplotlib 绘图代码示例.md"
+    },
+    {
+      "basename": "SU-03T语音识别控制模块 2024-06-01 16.18.31",
+      "path": "Excalidraw/SU-03T语音识别控制模块 2024-06-01 16.18.31.md"
+    },
+    {
+      "basename": "Chapter1 Introduction",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Chapter1 Introduction.md"
+    },
+    {
+      "basename": "9. 径向基函数方法(RBF)",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🌟深度学习优化算法合集/9. 径向基函数方法(RBF).md"
+    },
+    {
+      "basename": "小批量随机梯度优化算法",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/基本课程/小批量随机梯度优化算法.md"
+    },
+    {
+      "basename": "振动信号处理",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/基本课程/振动信号处理.md"
+    },
+    {
+      "basename": "6. 正余弦优化算法(SCA)",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🌟深度学习优化算法合集/6. 正余弦优化算法(SCA).md"
+    },
+    {
+      "basename": "第六章 样本及抽样分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md"
+    },
+    {
+      "basename": "样本均值与方差性质证明",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/样本均值与方差性质证明.pdf"
+    },
+    {
+      "basename": "经验分布函数及其性质说明",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/经验分布函数及其性质说明.pdf"
+    },
+    {
+      "basename": "Chapter 1 2023-02-28 22.18.36",
+      "path": "Excalidraw/Chapter 1 2023-02-28 22.18.36.md"
+    },
+    {
+      "basename": "Mathmatic Terminology",
+      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
+    },
+    {
+      "basename": "Mechanic Terminology",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md"
+    },
+    {
+      "basename": "Chemical Terminology",
+      "path": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md"
+    },
+    {
       "basename": "2. 嘉立创基本操作",
       "path": "💻softwares/⚡Circuit/🔋嘉立创EDA/2. 嘉立创基本操作.md"
+    },
+    {
+      "basename": "4. PCB绘制过程",
+      "path": "💻softwares/⚡Circuit/🔋嘉立创EDA/4. PCB绘制过程.md"
+    },
+    {
+      "basename": "3. 常见的封装绘制方法",
+      "path": "💻softwares/⚡Circuit/🔋嘉立创EDA/3. 常见的封装绘制方法.md"
+    },
+    {
+      "basename": "2. PWR 电源控制方法",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/四、系统时钟, 看门狗与备份寄存器/2. PWR 电源控制方法.md"
+    },
+    {
+      "basename": "Circuit Terminology",
+      "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
+    },
+    {
+      "basename": "1. Unix 时间戳与BKP寄存器的使用",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/四、系统时钟, 看门狗与备份寄存器/1. Unix 时间戳与BKP寄存器的使用.md"
+    },
+    {
+      "basename": "51单片机最小系统简介",
+      "path": "💻softwares/⚡Circuit/💻51单片机教程/1. 基础部分/51单片机最小系统简介.md"
+    },
+    {
+      "basename": "51单片机最小系统的搭建",
+      "path": "💻softwares/⚡Circuit/⚛️Proteus/单片机仿真方法/51单片机最小系统的搭建.md"
+    },
+    {
+      "basename": "GIF 格式处理合集",
+      "path": "💻softwares/🗽2D & 3D design/🎞️Pr/GIF 格式处理合集.md"
+    },
+    {
+      "basename": "四、认识LVGL常见的类",
+      "path": "💻softwares/⚡Circuit/🖼️LVGL库及其使用/四、认识LVGL常见的类.md"
+    },
+    {
+      "basename": "三、基本组件创建与仿真器的基本使用",
+      "path": "💻softwares/⚡Circuit/🖼️LVGL库及其使用/三、基本组件创建与仿真器的基本使用.md"
+    },
+    {
+      "basename": "备忘录",
+      "path": "🐸 Daily Life memo/备忘录.md"
     },
     {
       "basename": "1. PCB基本结构与工艺简介",
@@ -33,10 +173,6 @@
       "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Advanced deeplearning/CNN神经网络讲解.md"
     },
     {
-      "basename": "Mechanic Terminology",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md"
-    },
-    {
       "basename": "第一章 张量的表示 2024-04-17 09.10.13",
       "path": "Excalidraw/第一章 张量的表示 2024-04-17 09.10.13.md"
     },
@@ -63,142 +199,6 @@
     {
       "basename": "UQLab SVM支持向量机简单建模方法",
       "path": "📘ClassNotes/⌨️Programming/MATLAB/Library/QULab/UQLab SVM支持向量机简单建模方法.md"
-    },
-    {
-      "basename": "坐标轴的Latex公式用法",
-      "path": "💻softwares/🗽2D & 3D design/Origin/入门教程/坐标轴的Latex公式用法.md"
-    },
-    {
-      "basename": "Origin基础用法",
-      "path": "💻softwares/🗽2D & 3D design/Origin/入门教程/Origin基础用法.md"
-    },
-    {
-      "basename": "数值计算方法",
-      "path": "💻softwares/🗽2D & 3D design/Origin/统计图像/数值计算方法.md"
-    },
-    {
-      "basename": "第十二章 基于失效概率的全局灵敏度分析",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第十二章 基于失效概率的全局灵敏度分析.md"
-    },
-    {
-      "basename": "5. 打印报表, 文本操作, 自动命名",
-      "path": "💻softwares/⚡Circuit/🔌Altium Designer/基本流程/5. 打印报表, 文本操作, 自动命名.md"
-    },
-    {
-      "basename": "全概率公式和贝叶斯公式的证明",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/全概率公式和贝叶斯公式的证明.pdf"
-    },
-    {
-      "basename": "全局灵敏度的求解",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/全局灵敏度的求解.md"
-    },
-    {
-      "basename": "第四章 重要抽样法原理与应用",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第四章 重要抽样法原理与应用.md"
-    },
-    {
-      "basename": "第一章 随机事件及其概率",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md"
-    },
-    {
-      "basename": "第六章 样本及抽样分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md"
-    },
-    {
-      "basename": "第四章 随机变量的数字特征",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md"
-    },
-    {
-      "basename": "第七章 参数估计",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md"
-    },
-    {
-      "basename": "第五章 大数定律以及中心极限定理",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第五章 大数定律以及中心极限定理.md"
-    },
-    {
-      "basename": "第三章 多维随机变量及其分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
-    },
-    {
-      "basename": "第三章 可靠性灵敏度分析的矩方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第三章 可靠性灵敏度分析的矩方法.md"
-    },
-    {
-      "basename": "第九章 Kriging代理模型与可靠性与局部灵敏度分析",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第九章 Kriging代理模型与可靠性与局部灵敏度分析.md"
-    },
-    {
-      "basename": "第二章 蒙特卡洛模拟方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第二章 蒙特卡洛模拟方法.md"
-    },
-    {
-      "basename": "Ansys施加随着坐标变化的载荷",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Load & Analysis/Ansys施加随着坐标变化的载荷.md"
-    },
-    {
-      "basename": "Meta-IS-AK算法构建的自适应代理模型",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/Meta-IS-AK算法构建的自适应代理模型.md"
-    },
-    {
-      "basename": "白噪声与高斯白噪声的Matlab实现",
-      "path": "📘ClassNotes/⌨️Programming/MATLAB/Library/digital signal process/白噪声与高斯白噪声的Matlab实现.md"
-    },
-    {
-      "basename": "修改标注大小",
-      "path": "💻softwares/🗽2D & 3D design/AutoCAD/修改标注大小.md"
-    },
-    {
-      "basename": "AutoCAD中点的导入",
-      "path": "💻softwares/🗽2D & 3D design/AutoCAD/AutoCAD中点的导入.md"
-    },
-    {
-      "basename": "Circuit Terminology",
-      "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
-    },
-    {
-      "basename": "Chemical Terminology",
-      "path": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md"
-    },
-    {
-      "basename": "Mathmatic Terminology",
-      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
-    },
-    {
-      "basename": "Programming Terminology",
-      "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
-    },
-    {
-      "basename": "UG联合Ansys Workbench参数化建模和Matlab参数扫描教程",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Geomrtry & Materials/UG联合Ansys Workbench参数化建模和Matlab参数扫描教程.md"
-    },
-    {
-      "basename": "MCMC抽样函数",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/MCMC抽样函数.md"
-    },
-    {
-      "basename": "MCS抽样封装函数",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/MCS抽样封装函数.md"
-    },
-    {
-      "basename": "IMS重要抽样函数封装",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/IMS重要抽样函数封装.md"
-    },
-    {
-      "basename": "StdVar归一化正态变量",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/StdVar归一化正态变量.md"
-    },
-    {
-      "basename": "第十章 时变可靠性分析的方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第十章 时变可靠性分析的方法.md"
-    },
-    {
-      "basename": "改进一次二阶矩AFOSM_solu以及diff_function函数封装",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/封装函数/改进一次二阶矩AFOSM_solu以及diff_function函数封装.md"
-    },
-    {
-      "basename": "三、基本组件创建与仿真器的使用",
-      "path": "💻softwares/⚡Circuit/🖼️LVGL库及其使用/三、基本组件创建与仿真器的使用.md"
     }
   ],
   "omittedPaths": [],
