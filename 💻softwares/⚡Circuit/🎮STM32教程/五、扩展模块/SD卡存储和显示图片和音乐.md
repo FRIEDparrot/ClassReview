@@ -1269,8 +1269,10 @@ DRESULT SD_disk_ioctl(BYTE cmd,void *buff){
 这个部分实际上是对buff赋值时, 
 然后显示文件系统挂载成功
 
+
+
 # 三、代码编写
-具体的FATFS使用参考[[💻softwares/⚡Circuit/📂FatFS文件系统移植/FatFs简介与基本使用|FatFs简介与基本使用]]部分
+具体的FATFS使用参考[[💻softwares/⚡Circuit/🎮STM32教程/📂FatFS文件系统移植/FatFs简介与基本使用|FatFs简介与基本使用]]部分
 
 ### 1. 解决由于SPI的BUG导致的卡死无文件系统问题
 尝试在初始化函数中首先拉低, 发送最多0xFFFF个CLK直到返回0xFF; 然后拉高并进行初始化。

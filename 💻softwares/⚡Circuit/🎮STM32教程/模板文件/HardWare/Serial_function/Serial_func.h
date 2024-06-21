@@ -24,6 +24,7 @@ void Serial_SendString(ItemType* str){
 		Serial_SendByte(str[i]);
 	}
 }
+
 void Serial_SendNumber(int num);
 void Serial_Printf(const char* __format, ...);
 

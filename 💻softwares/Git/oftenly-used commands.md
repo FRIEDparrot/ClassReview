@@ -9,7 +9,6 @@ git branch  # 显示分支信息
 git push origin master 
 ```
 
-
 C:/Program%20Files/Git/mingw64/share/doc/git-doc
 
 CLI -> command line interface

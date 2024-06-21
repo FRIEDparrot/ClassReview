@@ -4,22 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "f3c8eae0e6517743",
+        "id": "fac741e99d337111",
         "type": "tabs",
         "children": [
           {
-            "id": "68ebca34046c81ac",
+            "id": "1e8d174e2f0c88af",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Chapter2 Preliminaries.md",
+                "file": "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/ESP8266 WIFI模块芯片.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1309035d1b4927ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/指针相关知识/malloc 指针内存分配和 free 释放.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "75ddb689e6acc585",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/函数相关知识/C可变参数函数的使用.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e258d4b08d5efde8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "💻softwares/Git/oftenly-used commands.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -93,7 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 469.5124969482422
+    "width": 489.5124969482422
   },
   "right": {
     "id": "f7de553c162de521",
@@ -146,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Programming Terminology.md",
+                "file": "💻softwares/Git/oftenly-used commands.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -273,7 +310,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
+                "file": "💻softwares/Git/oftenly-used commands.md"
               }
             }
           },
@@ -283,7 +320,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Programming Terminology.md",
+                "file": "💻softwares/Git/oftenly-used commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -300,7 +337,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/Programming Terminology.md",
+                "file": "💻softwares/Git/oftenly-used commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -321,7 +358,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 575.5
+    "width": 481.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -346,53 +384,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "68a837d6d93b38fd",
+  "active": "e258d4b08d5efde8",
   "lastOpenFiles": [
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Chapter2 Preliminaries.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/ESP8266 WIFI模块芯片.md",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure/课程笔记/C++ 数据结构概论.md",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/指针相关知识/malloc 指针内存分配和 free 释放.md",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/函数相关知识/C可变参数函数的使用.md",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/指针相关知识/C语言函数指针变量的使用.md",
+    "Excalidraw/ESP8266 WIFI模块芯片 2024-06-19 10.05.26.md",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/指针相关知识",
+    "attachments/Pasted image 20240618120922.png",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure/课程笔记/第二章 线性表和链表.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Chapter3 Linear Neural  Networks for regression.md",
+    "attachments/Pasted image 20240615225735.png",
+    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md",
+    "📘ClassNotes/⌨️Programming/🐍Python/Python常用基础.md",
     "📘ClassNotes/⌨️Programming/Programming Terminology.md",
-    "attachments/Pasted image 20240603224930.png",
-    "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/4. 函数指针的使用.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/SU-03T语音识别控制模块.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/stm32读取和播放SD卡中的音乐mp3和wav文件.md",
-    "attachments/Pasted image 20240603132247.png",
-    "💻softwares/Linux/Linux 常用指令解析.md",
-    "attachments/Pasted image 20240603124244.png",
-    "attachments/Pasted image 20240603111020.png",
-    "📘ClassNotes/⌨️Programming/🐍Python/基础部分.md",
-    "🐸 Daily Life memo/⌚近期计划书.md",
-    "🐸 Daily Life memo/手头任务.md",
-    "🐸 Daily Life memo/CSDN及公众号教程存档/壳体理论建立, 本构公式与平衡方程(附完整推导过程).md",
-    "🐸 Daily Life memo/CSDN及公众号教程存档/四元数入门,详解与使用.md",
-    "📘ClassNotes/⌨️Programming/🐍Python/matplotlib 绘图代码示例.md",
-    "attachments/Pasted image 20240602004638.png",
-    "attachments/Pasted image 20240602004210.png",
-    "Excalidraw/SU-03T语音识别控制模块 2024-06-01 16.18.31.md",
-    "attachments/Pasted Image 20240601163137_575.png",
-    "attachments/Pasted image 20240601115016.png",
-    "attachments/Pasted image 20240601114635.png",
-    "attachments/Pasted image 20240601114420.png",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Chapter1 Introduction.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🌟深度学习优化算法合集/9. 径向基函数方法(RBF).md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/基本课程/小批量随机梯度优化算法.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/基本课程/振动信号处理.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🌟深度学习优化算法合集/6. 正余弦优化算法(SCA).md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/样本均值与方差性质证明.pdf",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/经验分布函数及其性质说明.pdf",
-    "Excalidraw/Chapter 1 2023-02-28 22.18.36.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/基本课程/2.SVM支持向量机.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/补充部分/n维空间中的距离向量定义.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/🏃Advanced Dynamics/第五章 运动稳定性基础.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第四章 线性方程组解的结构.md",
+    "Excalidraw/Chapter3 Linear Neural  Networks for regression 2024-06-15 13.21.29.md",
+    "attachments/Pasted image 20240615102718.png",
+    "attachments/Pasted image 20240615093517.png",
     "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md",
     "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
-    "💻softwares/⚡Circuit/🔋嘉立创EDA/2. 嘉立创基本操作.md",
-    "💻softwares/⚡Circuit/🔋嘉立创EDA/4. PCB绘制过程.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/全概率公式和贝叶斯公式的证明.pdf",
-    "LICENSE",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/推导部分/跨越率方法有关定理推导过程.pdf",
-    "📘ClassNotes/⌨️Programming/🚀代理模型资源整理",
-    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/推导部分/Eddition张量的相关证明.pdf",
-    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/推导部分/度量张量的相关证明.pdf",
-    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/推导部分/张量的商法则证明.pdf",
-    "💻softwares/Linux",
+    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/1. USART串口通信讲解.md",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/函数相关知识",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/1. 基本用法(namespace, Struct, Typedef).md",
+    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/二、STM32定时器中断的使用.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/1. 基础以及STM32简介.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/四、系统时钟, 看门狗与备份寄存器/STM32 Flash闪存编程.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/3. FlyFlash和ST_Link Utility使用.md",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/字符串处理/C++常用字符串处理.md",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/字符串处理",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/New folder",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/ThirdParty/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_xl.s",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/ThirdParty/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md_vl.s",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/ThirdParty/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_md.s",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/ThirdParty/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_ld_vl.s",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/ThirdParty/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/gcc_ride7/startup_stm32f10x_ld.s",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/ThirdParty/STM32F10x_StdPeriph_Lib_V3.5.0/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/TrueSTUDIO/startup_stm32f10x_md_vl.s",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/ThirdParty/lvgl-master/tests/ref_imgs/draw/render/xrgb8888/demo_render_triangle_opa_255.png",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/ThirdParty/lvgl-master/tests/ref_imgs/draw/render/xrgb8888/demo_render_triangle_opa_128.png",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/ThirdParty/lvgl-master/tests/ref_imgs/draw/render/xrgb8888/demo_render_text_opa_255.png",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/ThirdParty/lvgl-master/tests/ref_imgs/draw/render/xrgb8888/demo_render_text_opa_128.png",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/ThirdParty/lvgl-master/tests/ref_imgs/draw/render/xrgb8888/demo_render_line_opa_255.png",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/ThirdParty/lvgl-master/tests/ref_imgs/draw/render/xrgb8888/demo_render_line_opa_128.png",
     "Untitled.canvas",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]

@@ -17,14 +17,13 @@ note that the <mark style="background: transparent; color: red">starting index i
 
 > the saving memory of the  parameter is using the identity of the parameter, which can be reached by `id(x)` command 
 
-### 2. Convert Numpy to torch 
+### 2. Convert Numpy to torch
 also, a important command is to <mark style="background: transparent; color: red">convert the array in numpy to the tensor in torch</mark> or <mark style="background: transparent; color: red">convert tensor to numpy array</mark> using the following commands: 
 ```python
 X = torch.tensor([1,2])
 A = X.numpy() # convert torch tensor to the numpy array 
 B = torch.from_numpy(A) # convert numpy array to torch tensor
 ```
-
 for reading the Dataset, we just need the os package,also, load data using pandas is available. 
 ```python
 import os 
@@ -144,6 +143,7 @@ A.cumsum()
 
 ## 5. Derivates and Differentation 
 ### (1) concepts 
+derivate is $\frac{dy}{dx}$,  and the differentation is $\frac{\Delta y}{\Delta x}$, which are different.  
 for partial derivative of the y with respect to X 
 $$\frac{\partial y}{\partial x_{i}} =  \frac{\partial f}{\partial x_{i}} =  \partial_{x_{i}} f  = D_{x_{i} } f$$
 we note that in the deeplearning, since we work with deeply nested function, <mark style="background: transparent; color: red">chain rules</mark> which is 
@@ -232,6 +232,7 @@ print(x0.grad)
 ```
 
 ## 6. Probability Static Knowledges 
+### (1) Concepts of probablity
 Note that the target of deeplearning is not only predict a value but also to quantify its uncertainty. The  unknown is called **==Target==** andthe  known is called ==**Features**==. 
 
 Also note we can reach moltinomial distribution by 
@@ -241,8 +242,26 @@ from torch.distributions.multinomial import Multinomial
 print(Multinomial(100, torch.tensor([0.5, 0.5])).sample())
 # randomly sample from two probabilitys, like tensor([47, 53])
 ```
-
 The distributions documentations are listed at https://pytorch.org/docs/stable/distributions.html# 
 ![[attachments/Pasted image 20240603224930.png|450]]
+we note that estimating the dependencies among the random variables is often the very aim of learning, and also, the target and Features are not independent. 
 
+> [!caution] note
+> independent variables could become dependent due to the sampling method.
+> 
+> also, for <mark style="background: transparent; color: red">two otherwise unrelated events have a common cause</mark>, two dependent random variables can become independent.
+
+take the HIV example,  a doctor may fails with 1% probablity  if the patient is healty but report HIV, but never fails if patient actually has it. Using D is diagnosis ,  H is HIV status. 
+
+| Conditional Probablity | H = 1 | H = 0 |
+| ---------------------- | ----- | ----- |
+| $P (D_1 = 1\|H)$       | 1     | 0.01  |
+| $P(D_1  =0\|H)$        | 0     | 0.99  |
+
+since the population is healthy $P(H=1) = 0.0015$,  hence if the test is positive,  the  probabliy that truly have HIV is 
+$$\frac{1 \times  0.0015}{0.01 \times  0.9985 +  1 \times 0.0015} = 0.1306$$
+note in the process of we learn about conditional probablity, 
+
+> [!NOTE] Torch.distributions
+> All distribution can be found in torch.distributions.
 

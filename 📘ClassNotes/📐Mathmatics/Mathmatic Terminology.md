@@ -11,6 +11,9 @@ empirical 经验的
 primal 首要的
 dual 对偶的
 
+derivate 求导
+differentation  区分, 差异化, 变异, 求导
+(需要注意:derivate 是导数$\frac{dy}{dx}$, 而differentation是差分导数$\frac{\Delta y}{\Delta x})$ 
 
 # Tensor Calculus
 covariant 协变基矢量

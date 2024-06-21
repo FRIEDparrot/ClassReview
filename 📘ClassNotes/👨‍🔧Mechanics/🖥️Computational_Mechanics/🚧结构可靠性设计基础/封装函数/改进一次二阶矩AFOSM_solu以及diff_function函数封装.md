@@ -53,7 +53,7 @@ function [x_i, beta_res, Pf, exitflag] = AFOSM_solu(mu_,sigma_, g)
 end
 ```
 
-
+注意这个 DACE 库里面有类似的。
 ```matlab title:diff_function.m
 function dg_dx = diff_function(g, x_i, delta_)
     if nargin == 2

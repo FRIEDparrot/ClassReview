@@ -92,6 +92,7 @@ void Serial_Printf(const char* __format, ...){
 	va_end(arg); // release parameter list 
 	Serial_SendString(ch);
 }
+
 #pragma endregion
 
 #pragma region Pack_Sending

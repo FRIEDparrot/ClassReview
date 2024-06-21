@@ -54,3 +54,50 @@ controversial 引起争议的
 adhere  遵守
 synthetic 合成的, 人造的
 axiom  公理
+prevalence 流行, 卓越
+application scope 适用范围
+astute  机敏的， 狡猾的， 诡计多端的
+aleatoric 任意的, 偶然的
+aleatory  侥幸的, 偶然的, 即兴的
+exclude 排除, 不包括
+stochastic  随机的
+naive 缺乏经验的, 幼稚无知的
+redundant 多余的, 冗余的
+saddle 马鞍
+minima 最小值
+subsume  归入, 纳入
+anachronistic  不合时宜的, 落伍的, 落后的
+dendrite  树突  axon 轴突  nucleus  细胞核
+node of ranvier 朗氏结 
+aggregate 总计的, 总数的, 合计的
+synaptic  突触的 
+affine 亲合的, 仿射的
+elucidate 阐明, 解释，说明
+modularity  模块化
+Cambrian Expplosion 寒武纪大爆炸
+sheer  纯粹的,完全的(用于强调事物大小,程度), 偏航(v)
+lousy  非常糟糕的, 极坏的, 恶劣的
+caveat 警告,警戒
+endow  天生赋予, 捐钱, 捐助
+elephatine 象一样的，庞大的
+nevertheless  然而，不过
+knack  技能, 本领, 习惯 
+aliments  小病, 轻病
+engulf 包围，吞没
+intuition 直觉
+identical 相同的, 一样的
+withheld  扣留
+Crucially 至关重要的是
+falsifiability 可证伪性
+hypothesis 假设
+constitude 构成 
+substantially 实质上
+decay 衰变, 腐烂
+insofar 到目前为止
+absent 缺席， 缺乏，没有
+mitigate 缓解 
+monomials 单项式
+trade off 权衡
+astute 精明的 
+rigde regression 岭回归
+lasso regression 套索回归
