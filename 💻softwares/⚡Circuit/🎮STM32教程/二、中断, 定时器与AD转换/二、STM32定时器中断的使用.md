@@ -6,7 +6,7 @@
 
 定时器的核心(**时基单元**): 含有<mark style="background: transparent; color: red">16位计数器, 预分频器(可以对计数器时钟进行分频), 自动重装寄存器(计数的目标值)</mark>等等, 72MHz计数时钟下可以实现**最大59.65s的定时**($1/72M * 65536^2$)。 如果这个时间不够长, 则STM32支持级联的模式 (选择一个定时器主模式输出更新信号到 TRGO -> 另一个定时器选择从模式 -> 从模式使用外部时钟1)
 
-除了基本的定时中断功能以外，还包含<mark style="background: transparent; color: red">内外时钟源选择、输入捕获、输出比较、编码器接口、主从触发模式</mark>等多种功能(即扩展功能)
+除了基本的定时中断功能以外，还包含<mark style="background: transparent; color: red">内外时钟源选择、输入捕获、输出比较、编码器接口、主从触发模式</mark>等多种功能(即扩展功能) 
 
 |     | 定时器的主要功能                             |
 | --- | ------------------------------------ |
@@ -15,13 +15,14 @@
 | 3   | 编码器接口                                |
 | 4   | 主从触发模式等等                             |
 ![[attachments/Pasted image 20240204145207.png]]
-STM32根据复杂度和应用场景分为了高级定时器、通用定时器、基本定时器三种类型, 具体而言有如下的功能(其中<mark style="background: transparent; color: red">STM32F103C8T6仅有TIM1-TIM4</mark>, 但高密度的有TIM8), <mark style="background: transparent; color: red">不同的定时器所连接的总线也是不同的</mark> 
+STM32根据复杂度和应用场景分为了高级定时器、通用定时器、基本定时器三种类型, 具体而言有如下的功能(其中<mark style="background: transparent; color: red">STM32F103C8T6仅有TIM1-TIM4</mark>, 但高密度的有TIM8), <mark style="background: transparent; color: red">不同的定时器所连接的总线也是不同的</mark>  
 
 | 类型    | 编号                  | 总线   | 功能                                                                                                               |
 | ----- | ------------------- | ---- | ---------------------------------------------------------------------------------------------------------------- |
 | 高级定时器 | TIM1、TIM8           | APB2 | 拥有通用定时器全部功能，并额外具有重复计数器、死区生成、互补输出、刹车输入等功能(<mark style="background: transparent; color: red">主要是为了驱动三相无刷电机</mark>) |
 | 通用定时器 | TIM2、TIM3、TIM4、TIM5 | APB1 | 拥有基本定时器全部功能，并额外具有**内外时钟源选择、输入捕获、输出比较、编码器接口、主从触发模式等功能**                                                           |
 | 基本定时器 | TIM6、TIM7           | APB1 | 拥有定时中断、主模式触发DAC的功能(和DAC联合使用)                                                                                     |
+
 ### (2) 定时器的内部结构
 基本定时器包括一个一个TIMCLK, 连到触发控制器和 DAC 上,  连接到内部时钟CK_INT上, 来源一般都是主频72MHz
 ![[Excalidraw/二、STM32定时器中断的使用 2024-02-04 14.44.21|700]]
@@ -102,12 +103,12 @@ $$T\underline{}OV  = \frac{1}{CK\underline{}CNT\underline{}OV}$$
 
 在System Init 函数中, **先(1)启动内部的8MHz时钟, 让系统按8MHz运行**, 然后**配置外部时钟2进入锁相环(PLLMUL)实现倍频,  并让8MHz倍频得到72MHz的时钟, 最后等到锁相环稳定之后，选择锁相环的72MHz时钟为系统运行时钟**。
 
-
 > [!NOTE] 上述设计方法的原理 
 > 当外部晶振出问题时, 会导致系统时钟无法按照72MHz运行而是使用8MHz运行。 
 > CSS是Clock Security, 即**时钟安全系统**。 可以监测外部时钟的运行状态。 **一旦外部时钟失效， 则自动将外部时钟切换为内部时钟**。
 
-72MHz系统时钟进入AHB总线之后，**APB1总线分频系数为2, 即最大时钟为36MHz**, 而**APB2总线分频系数为1, 最大时钟72MHz**, 
+72MHz系统时钟进入AHB总线之后，**APB1总线分频系数为2, 即最大时钟为36MHz**, 而**APB2总线分频系数为1, 最大时钟72MHz**,  
+
 需要说明, **TIM2,3,4是接在APB1总线上的， 但是经过倍频， 所以所有的定时器均为72MHz**, 注意不要修改System Init 的默认值。APB2PherphicalClockCmd 即修改对应的与门控制， 从而实现输出给外设。 
 
 而对应FSMC, SDIO的是直接接入72Mhz主频的。 
@@ -170,7 +171,6 @@ ITStatus TIM_GetITStatus(TIM_TypeDef* TIMx, uint16_t TIM_IT);
 void TIM_ClearITPendingBit(TIM_TypeDef* TIMx, uint16_t TIM_IT);
 ```
 
-
 对于BaseInitTypeDef 参数有如下重要解释: 
 ```cpp 
 TIM_TimeBaseInitTypeDef* TIM2Base_InitStruct = new TIM_TimeBaseInitTypeDef();
@@ -181,7 +181,7 @@ TIM2Base_InitStruct->TIM_Prescaler = 0x0000; //  Prescaler 是 PSC 预分频器�
 TIM2Base_InitStruct->TIM_RepetitionCounter = ; // 重复计数器的值 (TIM2没有重复计数器, 仅T1有)
 TIM_TimeBaseInit(TIM2, TIM2Base_InitStruct);  
 ```
-滤波器通过固定时钟频率$f$对信号进行采样, 如果电平相同， 则输入信号稳定。则输出采样值, 否则保持输出或者输出低电平。 其中采样频率越低, 则滤波效果好但信号延迟也越大。采样参数输入频率<mark style="background: transparent; color: red">由标准72MHz脉冲的某一个分频获取</mark>, 一般取TIM_CKD_DIV1即可
+滤波器通过固定时钟频率$f$对信号进行采样, 如果电平相同， 则输入信号稳定。则输出采样值, 否则保持输出或者输出低电平。 其中采样频率越低, 则滤波效果好但信号延迟也越大。采样参数输入频率<mark style="background: transparent; color: red">由标准72MHz脉冲的某一个分频获取</mark>, 一般取TIM_CKD_DIV1即可; 
 
 例如, 定时 1s 的操作可以使用: 
 $$定时 =  (重装定时器 + 1) \times (预分频 + 1) \times \frac{初值}{72MHz} \times  重复计数器$$

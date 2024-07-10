@@ -37,7 +37,6 @@ devices.
   - ADC/ADC1_DMA/main.c               Main program
 
 @par Hardware and Software environment 
-
   - This example runs on STM32F10x Connectivity line, High-Density, High-Density
     Value line, Medium-Density, XL-Density, Medium-Density Value line, Low-Density 
     and Low-Density Value line Devices.

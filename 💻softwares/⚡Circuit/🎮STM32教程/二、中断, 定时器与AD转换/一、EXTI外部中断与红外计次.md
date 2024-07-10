@@ -3,7 +3,7 @@
 ![[attachments/Pasted image 20240202174116.png]]
 新建一个main.cpp放到User里， 并配置包含文件和include 路径(注意将md.s也包含上)， 如图所示: 
 ![[attachments/Pasted image 20240202174705.png]]
-在C/C++ > define中添加: 
+在C/C++ > define中添加:
 ```cpp
 USE_STDPERIPH_DRIVER
 ```

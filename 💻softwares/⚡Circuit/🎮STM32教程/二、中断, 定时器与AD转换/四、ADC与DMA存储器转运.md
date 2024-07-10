@@ -142,14 +142,12 @@ ADC以及对应的转换通道如下（没有ADC3）:
 4. 启动ADC (ADC_cmd) 可以在此时进行校准 
 5. 启动TIM3, 打开触发控制 
 
-
 相关库函数如下: 
 ```cpp title:RCC时钟控制在RCC.h中
 void RCC_ITConfig(uint8_t RCC_IT, FunctionalState NewState); // 中断使能位
 void RCC_ADCCLKConfig(uint32_t RCC_PCLK2); // 用于配置ADCCLK分频器
 ```
-可以选择6分频
-
+可以选择6分频: 
 ```cpp
 void ADC_DeInit(ADC_TypeDef* ADCx);
 void ADC_Init(ADC_TypeDef* ADCx, ADC_InitTypeDef* ADC_InitStruct);
@@ -331,7 +329,6 @@ int main(){
 裁剪分辨率即可。
 ### (4) 连续转换的修改使用
 对于连续转换, 只需**先将连续转换修改为ENABLE**, 然后最开始触发一次就可以了。
-
 首先在主循环前面调用ADC_SoftwareStartConvCmd(ADC1, FunctionalState::ENABLE);
 然后也不需要Start和等待完成了， 只需return 即可
 ```cpp 
@@ -352,16 +349,15 @@ void ADC1_Init(){
     GPIO_InitStruct->GPIO_Pin = GPIO_Pin_0;
     GPIO_InitStruct->GPIO_Speed = GPIOSpeed_TypeDef::GPIO_Speed_50MHz;
     
-    ADC_RegularChannelConfig(ADC1, ADC_Channel_0, 1, ADC_SampleTime_13Cycles5); // sample time is 1.5 ADCCLK cycle
-
+    ADC_RegularChannelConfig(ADC1, ADC_Channel_0, 1, ADC_SampleTime_13Cycles5); // sample time is 1.5 ADCCLK cycle 
     ADC_InitTypeDef* ADC1_InitStruct = new ADC_InitTypeDef();
-    ADC1_InitStruct -> ADC_Mode = ADC_Mode_Independent; // two ADC work independently
-    ADC1_InitStruct -> ADC_DataAlign = ADC_DataAlign_Right;
+    ADC1_InitStruct -> ADC_Mode = ADC_Mode_Independent;   // two ADC work independently
+    ADC1_InitStruct -> ADC_DataAlign = ADC_DataAlign_Right;  // 
     ADC1_InitStruct -> ADC_ContinuousConvMode = FunctionalState::ENABLE;
-    ADC1_InitStruct -> ADC_ExternalTrigConv = ADC_ExternalTrigConv_None;  // use TRGO for convert
-    ADC1_InitStruct -> ADC_ScanConvMode = FunctionalState::DISABLE;
+    ADC1_InitStruct -> ADC_ExternalTrigConv = ADC_ExternalTrigConv_None;  // use TRGO for convert 
+    ADC1_InitStruct -> ADC_ScanConvMode = FunctionalState::DISABLE; 
     ADC1_InitStruct -> ADC_NbrOfChannel = 1; // only use 1 channel 
-    ADC_Init(ADC1, ADC1_InitStruct);
+    ADC_Init(ADC1, ADC1_InitStruct); 
 }
 
 void ADC1_Start(){
@@ -395,10 +391,8 @@ int main(){
 ```
 
 ### (5) AD多通道采集的修改使用
-例如采用PA0-PA2的通道问题, 往往可以使用DMA转换
-扫描模式手动转运困难。 
-
-使用单次转换非扫描实现多通道方案。
+例如采用PA0-PA2的通道问题, 往往可以使用DMA进行转换。 
+扫描模式手动转运困难。 使用<mark style="background: transparent; color: red">单次转换非扫描实现多通道方案</mark>。 
 
 在GetValue中调用ChannelConfig方法, 即可实现每一次调用一个通道 
 注意, 其中Continuous Mode一定要谨慎使用(此处应当使用Disable), **Continuous Mode 必须配合DMA进行, 否则会导致数据覆盖。** 
@@ -452,7 +446,6 @@ int main(){
     OLED_Init();
     ADC1_Init();
     ADC1_Start();
-    
     while(true){
         OLED_ShowNum(1,1, AD_Get_Convert_Value(ADC_Channel_0), 5);
         OLED_ShowNum(2,1, AD_Get_Convert_Value(ADC_Channel_1), 5);
@@ -460,7 +453,6 @@ int main(){
         Delay_ms(100);
     }
 }
-
 ```
 
 # 四、DMA 直接存储器读取
@@ -472,16 +464,13 @@ DMA<b><mark style="background: transparent; color: blue">往往使用于刷新�
 对于存储器和存储器, 一般指运行内存SRAM和程序存储器Flash, 用于存储变量数组和程序代码。 
 在转运过程中无需DMA参与。
 
-STM32系列的DMA具有<b><mark style="background: transparent; color: blue">12个可以独立配置的DMA通道</mark></b>, DMA1有7个通道, 而DMA2有5个通道, 多通道之间可以**快速转运而互不干扰**。而F103系列的DMA**仅有DMA1通道**。
-
+STM32系列的DMA具有<b><mark style="background: transparent; color: blue">12个可以独立配置的DMA通道</mark></b>, DMA1有7个通道, 而DMA2有5个通道, 多通道之间可以**快速转运而互不干扰**。而F103c8t6系列的DMA**仅有DMA1通道**。(高密度有DMA2通道) 
 每一个DMA通道, 都可以支持**软件触发**以及**特定的硬件触发**， 例如将SRAM中的部分转运到Flash, 则需要进行软件触发。
-
-- 如果是DMA完成**从SRAM转运到Flash, 则转运可以以最快的速度一次性全部转运完成**, 因此<b><mark style="background: transparent; color: red">存储器到存储器的触发，一般使用软件触发</mark></b>; 
+- 如果是DMA完成**从SRAM转运到Flash, 则转运可以以最快的速度一次性全部转运完成**, 因此<b><mark style="background: transparent; color: red">存储器到存储器的触发，一般使用软件触发</mark></b>;
 - 如果是完成外设到存储器的转运, 就不能一次性最快地转发, **而是需要在ADC每个通道AD转运完成之后等等，执行一次硬件触发**。 因此<b><mark style="background: transparent; color: red">外设到存储器， 一般使用硬件触发</mark></b>。
-
 每一个外设的触发源，触发的通道是不同的;  对于**使用某个外设的触发源，必须使用其连接的通道**， 而不能任意选择通道。
+DMA的内容主要对应数据手册13章。
 
-DMA的内容主要对应数据手册13章。 
 ### (2) STM32的存储器映像
 计算机系统的5大组成部分 : **\[运算器， 控制器](CPU)， 存储器**，输入和输出设备
 计算机的关键部分是CPU和存储器, 而存储器的安排地址入下(数据手册p34Memory Mapping): 
@@ -512,10 +501,10 @@ CPU的寻址寄存器范围是32位的范围。 (最大支持4GB容量的存储�
 ### (3) DMA 基本结构
 ![[Excalidraw/四、ADC与DMA存储器转运 2024-02-13 14.18.49|700]]
 寄存器是特殊存储器, 本质上也是SRAM , 除了CPU可以对内存进行读写以外, 每一位背后都有导线可以用于控制外设电路的状态; 
-寄存器可以**控制引脚电平， 导通开关和切换数据选择器**等等, 也可以**当做寄存器和计数器**等等。 
+寄存器可以**控制引脚电平， 导通开关和切换数据选择器**等等, 也可以**当做寄存器和计数器**等等。
 
 利用<b><mark style="background: transparent; color: blue">总线矩阵Bus Matrix</mark></b> 来实现寄存器的高效访问。
-主动单元中**内核有DCode和系统总线**来访问存储器, 其中Flash由DCode 专门访问; 
+主动单元中**内核有DCode和系统总线**来访问存储器, 其中Flash由DCode 专门访问;
 DMA总线对Flash和SRAM也有访问权。 但是**注意Flash是只读的, 不可写入(不能将转运目的写为Flash)**(除非使用Flash接口寄存器按页擦除再写入)
 
 另外, 以太网也有自己私有的DMA线(Ethernet MAC)。上述DMA和DMA2已经标出, 可以设置转运数据的源地址和目的地址。 
@@ -528,12 +517,11 @@ DMA包括:
 - AHB 从设备: 配置DMA 参数 
 - DMA请求: 用于硬件触发DMA数据转运。 
 
-
 > [!NOTE] 补充
 > 另外对于外设寄存器, 有的是只读的, 有的是只写的。而我们主要使用的数据寄存器都是可以正常读写的; 具体可以参考手册。 
 
-DMA内部结构图如下: 其中数据转运的站点包括外设寄存器和Flash > SRAM; 
-DMA可以按照黄色箭头方向转运; **且不能完成Flash > Flash 和SRAM > Flash的数据转运** 。 
+DMA内部结构图如下: 其中数据转运的站点包括外设寄存器和Flash > SRAM;
+DMA可以按照黄色箭头方向转运; **且不能完成Flash > Flash 和SRAM > Flash的数据转运**。
 ![[attachments/Pasted image 20240213151600.png|800]]
 #### 1.  外设寄存器和存储器 
 在实际编程中， **外设站点和存储器站点各自有3个参数**: 
@@ -548,7 +536,7 @@ DMA可以按照黄色箭头方向转运; **且不能完成Flash > Flash 和SRAM 
 
 #### 3. DMA触发控制
 DMA的触发控制是传输计数器下方的M2M以及01部分, 决定转运的时机。
-触发源包括**硬件和软件触发**。并由M2M(Memory to Memory) 进行选择。 
+触发源包括**硬件和软件触发**。并由M2M(Memory to Memory) 进行选择。  
 
 1. M2M = 1时, 选择软件触发(<b><mark style="background: transparent; color: red">应用于存储器到存储器的转运的情况</mark></b>): 注意<b><mark style="background: transparent; color: blue">软件触发的执行逻辑是: 以最快的速度连续不断触发DMA, 争取早日将传输计数器清零来早日完成传输。 </mark></b>(即连续触发，这与ADC一次触发转换一次不同) 
 > [!NOTE] 注意
@@ -580,12 +568,9 @@ TIM_DMAcmd // 启动对应TIM的DMA输出控制
 
 ### (5) 数据宽度与对齐
 当转运的两个站点(<b><mark style="background: transparent; color: red">外设寄存器和内部数据</mark></b>)**数据宽度一致时， 可以进行单个转运**， 但是PSIZE(Peripherical)和MSIZE(Memory)不同时， 需要参考p278的**可编程数据传输宽度和大小操作**。
-
 ![[Excalidraw/四、ADC与DMA存储器转运 2024-02-13 16.12.03|800]]
 如上图, 其中第一列是**源端宽度(Source)**, 当**第二列为目标转运的宽度** 
-
-显然, 当源端8位 目标为16位时, 则源端读B0, 目标写00B0, 即在目标多出来的数据部分补0
-
+显然, 当源端8位 目标为16位时, 则源端读B0, 目标写00B0, 即在目标多出来的数据部分补0 
 当目标端比源端数据宽度小，则读B1B0时仅写入B0, 即丢失高位数据。
 ### (6) DMA 的工作原理
 #### 1. DMA外设地址
@@ -598,9 +583,7 @@ TIM_DMAcmd // 启动对应TIM的DMA输出控制
 #### 2. ADC扫描 + DMA转运
 基本转运结构如下: 
 ![[Excalidraw/四、ADC与DMA存储器转运 2024-02-13 16.24.06|800]]
-其中， **7个通道依次进行AD转换,转换结果都放到ADC_DR外设地址里面**，然后
-
-
+其中， **7个通道依次进行AD转换,转换结果都放到ADC_DR外设地址里面**，然后 
 > [!NOTE] 说明
 > 我们所需要做的, 就是在**每一个单独的通道之后，进行一次DMA转运**, 且**初始地址为ADC数据寄存器地址(ADC_DR)， 不需要自增**；而结尾地址为数组地址，进行自增。
 > 
@@ -621,13 +604,9 @@ TIM_DMAcmd // 启动对应TIM的DMA输出控制
 # 五、 DMA软件编程 
 ### (1) DMA实现数组转运
 地址可以使用 uint32_t(&a) 来表示 
-
 如果是const 常量则存储在Flash 中, 往往是不需要更改的; 
-
-外设寄存器的地址都是固定的; 并且都可以从手册查到。 获取某个地址可以查手册, 也可以直接显示。 
-
-访问的方法是结构体访问寄存器, 即使用基地址+偏移获取寄存器的实际地址。 而偏移只需要使用指针进行即可。 
-
+外设寄存器的地址都是固定的; 并且都可以从手册查到。 获取某个地址可以查手册, 也可以直接显示。
+访问的方法是结构体访问寄存器, 即使用基地址+偏移获取寄存器的实际地址。 而偏移只需要使用指针进行即可。
 ```cpp
 void DMA_DeInit(DMA_Channel_TypeDef* DMAy_Channelx);
 void DMA_Init(DMA_Channel_TypeDef* DMAy_Channelx, DMA_InitTypeDef* DMA_InitStruct);
@@ -658,7 +637,7 @@ void DMA_Init(DMA_Channel_TypeDef* DMAy_Channelx, DMA_InitTypeDef* DMA_InitStruc
 ```cpp title:InitStruct取值
 DMA1_InitStruct->DMA_PeripheralBaseAddr = (uint32_t)addrA; 
 DMA1_InitStruct->DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte;// bit per data ( uint8 )
-DMA1_InitStruct->DMA_PeripheralInc = DMA_PeripheralInc_Enable;
+DMA1_InitStruct->DMA_PeripheralInc = DMA_PeripheralInc_Enable; 
 
 DMA1_InitStruct->DMA_MemoryBaseAddr = (uint32_t)addrB; // convert pointer to uint32
 DMA1_InitStruct->DMA_MemoryDataSize = DMA_MemoryDataSize_Byte; // bit per data (uint8) 
@@ -671,23 +650,18 @@ DMA1_InitStruct -> DMA_BufferSize = length;  // equal to DMA
 DMA1_InitStruct -> DMA_Priority  = DMA_Priority_High;
 ```
 其中， 前三项Perippheral部分和Memory部分分别是Peripheral和Memory的三个参数(一般要选择从外设)
-
 对于数组的地址, 可以使用 $(uint32\_t) arr$ 来获取(32位都是32位地址)  
 
 其二， DMA_DIR参数是指定数据传输方向, 包括外设作为DST部分和外设作为SRC部分; 
-DMA_Mode是指定是否重装。 (注意不能与软件触发同时使用) 
+DMA_Mode是指定是否重装。 (注意不能与软件触发同时使用)  
 另外说明， 有一个**缓冲器大小**参数; 即**以数据单元指定缓存区大小**。 缓冲器参数的传输单元大小**根据传输方向等于外设DataSize或者MemoryDataSize的大小**; 数据单元指定缓存区大小; 即
 BufferSize即<b><mark style="background: transparent; color: blue">传输计数器</mark></b>, 即<b><mark style="background: transparent; color: blue">传输数据的个数</mark></b>， 等于源端站点的数据总长度(对应每个数据单元对应源端的DataSize)  `->` 注意**取值范围是0-65535** 
-另外在当使用多个通道时， 可以分别通过Priority指定通道的优先级; 
-
-
+另外在当使用多个通道时， 可以分别通过Priority指定通道的优先级;
 > [!CAUTION] 注意
 > 在转运函数中， 不要将Peripheral 和Memory参数设置搞混淆, 否则可能出现宽度和数据自增乱的情况。 
 
 <b></b><b><mark style="background: transparent; color: red">另外, 如果希望重复转运，必须在转运完毕之后设置成DISABLE</mark></b>
-
-
-数组转运完整代码如下（DMA_Cmd即直接进行了软件触发)
+数组转运完整代码如下（DMA_Cmd即直接进行了软件触发) 
 ```cpp
 #include "stm32f10x.h"
 #include "OLED.h"
@@ -750,7 +724,6 @@ int main(){
 
 ```
 
-
 ```cpp
 // give a new value to Buffer
 void DMA_Transfer (void){
@@ -758,10 +731,9 @@ void DMA_Transfer (void){
     DMA_SetCurrDataCounter();
 }
 ```
-
 DMA_Start函数的规范写法:
 首先需要启动转运，同时必须等待转运完成。 
-参考TCIFx的数据手册, (p283) SET表示转运完成; 
+参考TCIFx的数据手册, (p283) SET表示转运完成;
 
 我们说明DMA_GetFlag的取值的部分: 主要分为4种标志位:
 - DMA_FLAG_GL: 全局标志位 : 
@@ -808,7 +780,7 @@ void DMA1_Init(uint32_t addrA, uint32_t addrB, uint16_t length){
     DMA1_InitStruct -> DMA_M2M = DMA_M2M_Enable;                     // enable software trigger  
     DMA1_InitStruct -> DMA_BufferSize = length;  // equal to DMA 
     DMA1_InitStruct -> DMA_Priority  = DMA_Priority_High;
-
+		
     DMA_Init(DMA1_Channel1, DMA1_InitStruct); // use DMA1
     // then we can use software trigger
 }
@@ -867,9 +839,8 @@ int main(){
 ## (2) DMA + ADC多通道
 由于要求是数组中的自增， 而循环获取时，仅使用软件触发即可。
 
-注意: 其中不使用软件触发， 而是使用ADC1进行硬件触发的，为了使用硬件ADC进行触发, 触发通道必须是指定的(参考[[#3. DMA触发控制]]和[[#(4) DMA请求映像]], **ADC1的触发是使用通道1来进行的, 因此只能使用通道1进行硬件触发**
-
-注意一个重要的事情 : 在ADC使能之后， <b><mark style="background: transparent; color: blue">必须开启ADC到DMA的输出</mark></b>, 即调用
+注意: 其中不使用软件触发， 而是使用ADC1进行硬件触发的，为了使用硬件ADC进行触发, 触发通道必须是指定的(参考[[#3. DMA触发控制]]和[[#(4) DMA请求映像]], **ADC1的触发是使用通道1来进行的, 因此只能使用通道1进行硬件触发** 
+注意一个重要的事情 : 在ADC使能之后， <b><mark style="background: transparent; color: blue">必须开启ADC到DMA的输出</mark></b>, 即调用 
 ```cpp title:开始输出重要条件
 ADC_DMACmd(ADC1, FunctionalState::ENABLE);
 ```

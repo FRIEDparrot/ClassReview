@@ -38,8 +38,8 @@
 DAC_InitTypeDef            DAC_InitStructure;
 DMA_InitTypeDef            DMA_InitStructure;
 TIM_TimeBaseInitTypeDef    TIM_TimeBaseStructure;
-uint32_t Idx = 0;  
-  
+
+uint32_t Idx = 0;
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 const uint16_t Sine12bit[32] = {
@@ -72,22 +72,22 @@ int main(void)
 	  
   
   /* System Clocks Configuration */
-  RCC_Configuration();   
+  RCC_Configuration();
 
   /* Once the DAC channel is enabled, the corresponding GPIO pin is automatically 
      connected to the DAC converter. In order to avoid parasitic consumption, 
      the GPIO pin should be configured in analog */
   GPIO_Configuration();
-
+  
   /* TIM2 Configuration */
   /* Time base configuration */
-  TIM_TimeBaseStructInit(&TIM_TimeBaseStructure); 
+  TIM_TimeBaseStructInit(&TIM_TimeBaseStructure);
   TIM_TimeBaseStructure.TIM_Period = 0x19;          
   TIM_TimeBaseStructure.TIM_Prescaler = 0x0;       
   TIM_TimeBaseStructure.TIM_ClockDivision = 0x0;    
   TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;  
   TIM_TimeBaseInit(TIM2, &TIM_TimeBaseStructure);
-
+	
   /* TIM2 TRGO selection */
   TIM_SelectOutputTrigger(TIM2, TIM_TRGOSource_Update);
 
@@ -96,7 +96,6 @@ int main(void)
   DAC_InitStructure.DAC_WaveGeneration = DAC_WaveGeneration_None;
   DAC_InitStructure.DAC_OutputBuffer = DAC_OutputBuffer_Disable;
   DAC_Init(DAC_Channel_1, &DAC_InitStructure);
-
   /* DAC channel2 Configuration */
   DAC_Init(DAC_Channel_2, &DAC_InitStructure);
 
@@ -105,7 +104,7 @@ int main(void)
   {
     DualSine12bit[Idx] = (Sine12bit[Idx] << 16) + (Sine12bit[Idx]);
   }
-
+  
 #if !defined STM32F10X_LD_VL && !defined STM32F10X_MD_VL
   /* DMA2 channel4 configuration */
   DMA_DeInit(DMA2_Channel4);

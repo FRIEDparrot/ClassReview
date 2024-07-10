@@ -340,3 +340,38 @@ $$0.001 / (\frac{1}{115200} *9) \approx 12.8$$
 首先,这个架构也可能会产生新的问题,由于有可能在接收应答 OK 之前, 调用执行命令, 实际上只要返回没有执行完毕然后自动等待应答直到超时就可以了。 
 
 
+### (3) 74880 波特率和Boot loader的设置 
+这个问题可能与ESP8266的波特率设置有关。让我们来看看可能的原因和解决方案：
+
+1. [**冷启动或硬件复位时的乱码**：初次上电或硬件复位时，ESP8266系统一定会输出乱码，除非你使用的固件设置了74880波特率。这是因为系统上电时会运行厂商芯片内部的Boot loader，而Boot loader会将整个SoC的波特率初始化为74880。如果你的串口软件不在这个波特率上，就会出现乱码。你可以尝试将串口波特率设置为74880，以查看这些乱码的含义](https://blog.csdn.net/qq_15181569/article/details/103567084)[1](https://blog.csdn.net/qq_15181569/article/details/103567084)。
+    
+2. **软件或看门狗复位的问题**：当你使用AT指令复位后，下次启动时仍然会执行厂商SDK的代码，该部分代码不开源，无法修改。此代码会将波特率设置为115200。如果你的波特率恰好是115200，那么在执行复位时将不会出现乱码。如果不是，那么在串口速率切换的过程中，你依然会看到乱码。
+
+总之，冷启动的乱码是在不使用74880波特率的情况下无法避免的。如果你的波特率不是74880，你可以尝试设置为74880，或者查看其他波特率是否能够正常显示数据。如果问题仍然存在，可能需要检查硬件连接或考虑其他故障原因。希望这些提示对你有所帮助!
+
+给出如下两个 wifi_init 和 wifi_debug 代码:
+```c
+uint8_t wifi_init(void){
+    if (esp8266_Init()!=ESP_RES_OK) return 1;
+    if (esp8266_cmd_wifi_set_softAPconfig("\"FriedParrot\"", "\"parrot12345\"", 1, 0, 1) != ESP_RES_OK)  return 1;
+    esp8266_cmd_tcp_set_cipmux(1);
+    esp8266_cmd_tcp_set_tcpServer(1, 8080);
+    OLED_ShowString(1,1,"Wifi Init Suc");
+    if (esp8266_cmd_tcp_cipsend("0", 17 , NULL, NULL, "Wifi Init Succeed")!=ESP_RES_OK) return 1;
+    return 0;
+}
+
+uint8_t wifi_debug(char* str){
+    uint8_t retry_time = 0;
+    while (retry_time < 3){
+        if (esp8266_cmd_tcp_cipsend("0",strlen(str), NULL, NULL, str)==ESP_RES_OK) {
+            return 0;
+        }
+        Delay_ms(800);
+        retry_time++;
+    }
+    return 1;
+}
+
+```
+

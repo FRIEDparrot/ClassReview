@@ -30,7 +30,6 @@
   * @{
   */ 
 
-
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 #define ADC1_DR_Address    ((uint32_t)0x4001244C)
@@ -60,7 +59,7 @@ int main(void)
        To reconfigure the default setting of SystemInit() function, refer to
        system_stm32f10x.c file
      */     
-       
+  
   /* System clocks configuration ---------------------------------------------*/
   RCC_Configuration();
 

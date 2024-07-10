@@ -82,6 +82,22 @@ gasket 衬垫
 Impedance 阻抗
 deprecated  弃用的
 
+# Solid Works 
+cosmetic 装饰, 美容
+lobular 有小叶片的, 小叶片状的
+Resin 树脂材料 
+Helical 螺旋形的
+spur gear 正齿轮,圆柱齿轮(spur 马刺, 山坡，尖嘴的)
+Surp 盈余, 结余
+miter gear 斜接齿轮
+bolt 螺栓
+screw 螺丝, 螺丝钉
+socket head cap screw 内六角头螺钉
+
+deep grove ball bearing 深沟球轴承
+Angular contact ball bearing 角接触球轴承
+
+
 # 信号与系统
 
 attenuation 衰减

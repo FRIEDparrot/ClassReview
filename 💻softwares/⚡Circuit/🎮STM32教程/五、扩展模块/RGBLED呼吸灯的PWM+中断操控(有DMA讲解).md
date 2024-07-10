@@ -26,7 +26,6 @@ DAM分为DMA1和DMA2, 共有12个通道
 对于TIM寄存器地址的查询， 先在数据手册中找到TIM1起始地址为0x4001 2C00, TIM1_CCR3的偏移地址为 0x3C, 则寻址地址为0x40012C3C, 对于TIM2, 地址为 0x4000 0000
 
 我们使用三个SRC_Buffer1, SRC_Buffer2, SRC_Buffer3 来保存一定时刻的 R, G, B 的占空比数据, 并分别调用三个DMA进行转运, 转运过程中， 每一次在指定的DMA更新次数后，更改占空比的大小。 并且不产生中断。而每一次在转运完毕之后。
-
 ```cpp
 官方库中例程的描述如下:
 /*
@@ -49,7 +48,7 @@ TIM1CLK = SystemCoreClock, Prescaler = 0, TIM1 counter clock = SystemCoreClock
 ```
 
 ### (1) 更新事件及其概念
-每一次计数器溢出时， 自动重装并产生更新事件,  
+每一次计数器溢出时， 自动重装并产生更新事件, 
 在 TIM_Prescaler_Config 中, 每一个TIM_Prescaler对应有两个ReloadMode, 其中 Update 表示在设置完毕后, 等待下一个 Update 事件之后设置(建议用这个), immediate 表示设置时立刻设置。一般选用 Update 即可。
 ```cpp
 @arg TIM_PSCReloadMode_Update: The Prescaler is loaded at the update event.
@@ -61,13 +60,13 @@ TIM1CLK = SystemCoreClock, Prescaler = 0, TIM1 counter clock = SystemCoreClock
 RepetitionCounter可以设置更新事件的触发方式, 等到看TIM1再研究
 
 ### (2) DMA 触发源选择
-如图, <mark style="background: transparent; color: red">TIM_DMACmd 函数是选取 DMA 触发源的函数, 也是TIM的DMA设置中最为重要的函数</mark>，当设置为Update之后, 则每一次定时器更新之后, 就会触发 DMA 转运一次。另外也可以在其他时机触发转运。<mark style="background: transparent; color: red">但是, 也可以配置其他的转运触发源</mark>, 
+如图, <mark style="background: transparent; color: red">TIM_DMACmd 函数是选取 DMA 触发源的函数, 也是TIM的DMA设置中最为重要的函数</mark>，当设置为Update之后, 则每一次定时器更新之后, 就会触发 DMA 转运一次。另外也可以在其他时机触发转运。<mark style="background: transparent; color: red">但是, 也可以配置其他的转运触发源</mark>。
 
 ```cpp title:DMA触发源选择函数
 /* ENABLE the DMA request by using TIM_DMACmd */
 TIM_DMACmd(TIM2, TIM_DMA_Update, FunctionalState::ENABLE);  // use TIM update as interrupt source for DMA reload
 ```
-另外, UpdateDMA request  enable 是指访问寄存器时, Update时, 允许访问一次。实际上是设置 TIMx -> DIER参数, 因此可以同时配置多个中断源, 即可以用 `|` 连接第二个参数
+另外, UpdateDMA request  enable 是指访问寄存器时, Update 时, 允许访问一次。实际上是设置 TIMx -> DIER参数, 因此可以同时配置多个中断源, 即可以用 `|` 连接第二个参数
 
 > [!caution] 注意
 > 为了让DMA能够转运, 必须将DMA_Priority设置为高等级High, 这样才能实现转运, 否则DMA不能正常工作;
@@ -82,7 +81,7 @@ TIM_DMACmd(TIM2, TIM_DMA_Update, FunctionalState::ENABLE);  // use TIM update a
 1. 使用 TIM4_CH1事件为标志转运 TIM4_CCR1 
 2. 使用 TIM4_CH2事件为标志转运 TIM4_CCR2 
 3. 使用 TIM4_CH3事件为标志转运 TIM4_CCR3 
-这样我们实现多通道DMA转运和RGB呼吸灯，会出现BUG, 这是由于每一次转运时机不是 Update 造成的, 如果不是Update 时才转运, 则导致修改占空比之后， 若CH增加会导致继续触发, 导致某些通道实际的装填迅速完成, 产生装填不同步BUG 
+这样我们实现多通道DMA转运和RGB呼吸灯，会出现BUG, 这是由于每一次转运时机不是 Update 造成的, 如果不是Update 时才转运, 则导致修改占空比之后， 若CH增加会导致继续触发, 导致某些通道实际的装填迅速完成, 产生装填不同步BUG  
 
 > [!hint] 说明 
 > 由于难以转运多个通道, 如果是单色的呼吸灯, 可以使用 DMA 进行数据转运, 但是多通道的RGB操控, 还是考虑使用中断来进行;
@@ -421,3 +420,11 @@ int main(){
 ```
 
 此时我们即可实现相应的功能;
+
+
+
+### (4) ClearITPendingBit 和 ClearFlag 的区别
+当你调用`DMA_ClearITPendingBit()`后，相应的中断标志应该被清除，这意味着如果你立即调用`DMA_GetITStatus()`，它应该返回`RESET`，表示没有中断发生。然而，如果在你清除中断标志后，又发生了一个新的中断，那么`DMA_GetITStatus()`可能会返回`SET`，表示有中断发生。
+
+至于`DMA_ClearFlag()`，这个函数用于清除DMA通道的所有标志，不仅仅是中断标志。在大多数情况下，你可能不需要调用这个函数，除非你需要清除除中断标志之外的其他标志。然而，这也取决于你的具体需求和DMA控制器的配置。
+

@@ -77,7 +77,6 @@ ETH : Ethernet 以太网
 Deprecate 不赞成， 强烈反对
 escalation  升级,增加，扩大, 逐步上升
 
-
 输入捕获 IC, Input Capture 
 输出比较 Output Compare, OC 
 捕获/比较(用于输入捕获和输出比较的单元) Capture/Compare, CC 
@@ -112,16 +111,22 @@ porting 移植
 parity 校验位
 线性稳压器     Low Dropout Regulator(LDO)
 mnemonic symbol 助记符
+nominal 名义上的
+monotonic  单调的
+parasitic consumption 寄生损耗
+Impedance 阻抗
 
 ### FATFS
 global Partition Table 全局分区表
 double byte chart-set 双字节字符集(DBCS)
 
+
 ### Helix
 granule 颗粒, 微粒 
-
+assembler language  汇编语言
 
 optimum 最好的, 最佳的
+Parse 解析, 解释
 
 # 模电
 掺杂 doping
