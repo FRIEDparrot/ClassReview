@@ -105,7 +105,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 357.5124969482422
+    "width": 357.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -361,6 +362,8 @@
   },
   "active": "5682e5b8ee20e835",
   "lastOpenFiles": [
+    "attachments/Pasted image 20240719094048.png",
+    "attachments/Pasted image 20240719092821.png",
     "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/5. STM32F4 的 FREERTOS 操作系统移植.md",
     "Excalidraw/5. STM32F4 的 FREERTOS 操作系统移植 2024-07-19 07.40.29.md",
     "attachments/Pasted image 20240718222423.png",
@@ -374,7 +377,6 @@
     "attachments/Pasted image 20240718121141.png",
     "attachments/Pasted image 20240718120811.png",
     "attachments/Screenshot_20240718_115400_com.microsoft.skydrive.png",
-    "attachments/Screenshot_20240718_115345_com.microsoft.skydrive 1.png",
     "Excalidraw/5. STM32F4 的 FREERTOS 操作系统移植 2024-07-17 15.15.56.md",
     "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/FreeRTOS_portable/portable/ReadMe.url",
     "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/FreeRTOS_portable/portable/readme.txt",
@@ -406,7 +408,6 @@
     "Excalidraw/4. 系统时钟的使用和初始化 2024-07-14 07.24.27.md",
     "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/3. HAL库时钟初始化.md",
     "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/2. 基于CubeMX HAL 库工程的新建方法.md",
-    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/1. 基础与开发板使用.md",
     "Untitled.canvas",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]
