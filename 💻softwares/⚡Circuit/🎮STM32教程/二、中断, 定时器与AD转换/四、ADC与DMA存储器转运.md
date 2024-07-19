@@ -541,19 +541,16 @@ DMA的触发控制是传输计数器下方的M2M以及01部分, 决定转运的�
 1. M2M = 1时, 选择软件触发(<b><mark style="background: transparent; color: red">应用于存储器到存储器的转运的情况</mark></b>): 注意<b><mark style="background: transparent; color: blue">软件触发的执行逻辑是: 以最快的速度连续不断触发DMA, 争取早日将传输计数器清零来早日完成传输。 </mark></b>(即连续触发，这与ADC一次触发转换一次不同) 
 > [!NOTE] 注意
 > 需要注意, <b><mark style="background: transparent; color: blue">软件模式和循环触发不能同时使用</mark></b>， 软件模式是需要将传输计数器清零, 如果使用重装则会导致循环。
-2. M2M = 0 时，使用硬件触发。 其触发可以使用定时器, ADC, 串口等等。 往往与外设相关。 
-
+2. M2M = 0 时，使用硬件触发。 其触发可以使用定时器, ADC, 串口等等。 往往与外设相关。
 3. DMACmd控制
 在启动时需要使用DMAcmd打开DMA来启动数据传输
 但是要<b><mark style="background: transparent; color: blue">进行下一次数据传输时</mark></b>, 必须<b><mark style="background: transparent; color: red">先使用DMAcmd关闭DMA， 然后写传输计数器， 使能DMAcmd, </mark></b>然后给触发信号来传输。 不能在DMA开启时进行。 
-
 > [!summary] DMA转运的条件
 > 1. 开关控制， DMA_Cmd 必须使能。
 > 2. 传输计数器 > 0
 > 3. 触发源, 必须有触发信号
-
 ### (4) DMA请求映像
-参考数据手册p280
+参考数据手册p280 
 ![[attachments/Pasted image 20240213154933.png|600]]
 每一个通道的数据选择器是单独的, 进行每一个通道的触发使能。
 每个事件的触发通道也在上图左边写出。**每个通道使用的硬件触发源不同; 例如使用TIM1_CH1触发只能选择通道2**; 而软件触发每个通道都支持。 

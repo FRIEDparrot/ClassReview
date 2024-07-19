@@ -273,8 +273,7 @@ EXTI_InitStruct->EXTI_Trigger = EXTITrigger_TypeDef::EXTI_Trigger_Falling;  // u
 ```
 
 5. 配置EXTI 完毕之后对NVIC进行配置: 
-NVIC由于是内核函数, 主要部分在misc.h文件中。 
-
+NVIC由于是内核函数, 主要部分在misc.h文件中。
 下面是NVIC 的设置函数: 
 ```cpp
 void NVIC_PriorityGroupConfig(uint32_t NVIC_PriorityGroup); // 对于`NVIC_PriorityGroupConfig`, 用来中断分组, 传入指定的 
@@ -325,7 +324,6 @@ void SysTick_CLKSourceConfig(uint32_t SysTick_CLKSource);
 ```
 NVIC_IRQChannelPreemptionPriority
 ```
-
 NVIC_IRQChannelPre-emptionPriority<mark style="background: transparent; color: red">用来设置抢占优先级</mark>, 而NVIC_IRQChannelSubPriority <mark style="background: transparent; color: red">用于设置响应优先级 </mark>, 需要说明的是, 设置优先级时需要参考下表确定优先级设置范围;  对于2的部分, 可以均设为0-3。
 
  |分组方式|抢占优先级|响应优先级|

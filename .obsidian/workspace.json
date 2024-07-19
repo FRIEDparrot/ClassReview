@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "cf209067a7912f60",
+        "id": "bada4ab361df5218",
         "type": "tabs",
         "children": [
           {
-            "id": "58f59c8244f3e966",
+            "id": "5682e5b8ee20e835",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻softwares/🗽2D & 3D design/🤖SolidWorks/2. SolidWorks 设计实战.md",
+                "file": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/5. STM32F4 的 FREERTOS 操作系统移植.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1c13037edf90456d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/5. STM32F4 的 FREERTOS 操作系统移植.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 437.5124969482422
+    "width": 357.5124969482422
   },
   "right": {
     "id": "f7de553c162de521",
@@ -146,7 +158,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "💻softwares/🗽2D & 3D design/🤖SolidWorks/2. SolidWorks 设计实战.md",
+                "file": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/5. STM32F4 的 FREERTOS 操作系统移植.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -260,7 +272,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -273,7 +285,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💻softwares/🗽2D & 3D design/🤖SolidWorks/2. SolidWorks 设计实战.md"
+                "file": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/5. STM32F4 的 FREERTOS 操作系统移植.md"
               }
             }
           },
@@ -283,7 +295,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💻softwares/🗽2D & 3D design/🤖SolidWorks/2. SolidWorks 设计实战.md",
+                "file": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/5. STM32F4 的 FREERTOS 操作系统移植.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -300,7 +312,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💻softwares/🗽2D & 3D design/🤖SolidWorks/2. SolidWorks 设计实战.md",
+                "file": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/5. STM32F4 的 FREERTOS 操作系统移植.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -321,7 +333,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 604.5
+    "width": 594.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -346,54 +359,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "58f59c8244f3e966",
+  "active": "5682e5b8ee20e835",
   "lastOpenFiles": [
-    "attachments/Pasted image 20240710155925.png",
-    "attachments/Pasted image 20240710114842.png",
-    "attachments/Pasted image 20240710111205.png",
-    "attachments/Pasted image 20240710092123.png",
-    "attachments/Pasted image 20240710003814.png",
-    "attachments/Pasted image 20240709221057.png",
-    "attachments/Pasted image 20240709220728.png",
-    "attachments/Pasted image 20240709160555.png",
-    "attachments/Pasted image 20240709143545.png",
-    "attachments/Pasted image 20240709115843.png",
-    "attachments/Pasted image 20240709115407.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md",
-    "💻softwares/🗽2D & 3D design/🤖SolidWorks/2. SolidWorks 设计实战.md",
-    "💻softwares/🗽2D & 3D design/23418B20",
-    "💻softwares/🗽2D & 3D design/~$分享资料汇总.xlsx",
-    "💻softwares/🗽2D & 3D design/分享资料汇总.xlsx",
-    "💻softwares/🗽2D & 3D design/分享资料汇总（建议下载后PC端打开-此表格会持续更新！）.xlsx",
-    "💻softwares/🗽2D & 3D design/🤖SolidWorks/资料链接.md",
-    "Excalidraw/2. SolidWorks 设计实战 2024-07-08 09.57.42.md",
-    "Excalidraw/2. SolidWorks 设计实战 2024-07-08 09.33.32.md",
-    "💻softwares/🗽2D & 3D design/🤖SolidWorks/SolidWorks 基本操作.md",
+    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/5. STM32F4 的 FREERTOS 操作系统移植.md",
+    "Excalidraw/5. STM32F4 的 FREERTOS 操作系统移植 2024-07-19 07.40.29.md",
+    "attachments/Pasted image 20240718222423.png",
     "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
-    "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
-    "📘ClassNotes/⌨️Programming/Programming Terminology.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/🎶 Helix MP3软件解码库/2.Helix 库移植 stm32 进行软解码音乐播放.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/四、ADC与DMA存储器转运.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/六、语音识别模块教程讲解/STM32F103RET6的DAC模块和音频输出.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/📂FatFS文件系统移植/FatFs简介与基本使用.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/stm32读取和播放SD卡中的音乐mp3和wav文件.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/SD卡存储和显示图片和音乐.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/📂FatFS文件系统移植/SD卡格式化代码.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/st7789/timer2.cpp",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/st7789/timer2.h",
-    "💻softwares/⚡Circuit/🎮STM32教程/🎶 Helix MP3软件解码库/1. Helix MP3解码库简介.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/RGBLED呼吸灯的PWM+中断操控(有DMA讲解).md",
+    "attachments/Pasted image 20240718173747.png",
+    "attachments/Pasted image 20240718173649.png",
+    "attachments/Pasted image 20240718173420.png",
+    "attachments/Pasted image 20240718164727.png",
+    "attachments/Pasted image 20240718163813.png",
+    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/4. 分块式的内存管理机制.md",
+    "attachments/Pasted image 20240718121141.png",
+    "attachments/Pasted image 20240718120811.png",
+    "attachments/Screenshot_20240718_115400_com.microsoft.skydrive.png",
+    "attachments/Screenshot_20240718_115345_com.microsoft.skydrive 1.png",
+    "Excalidraw/5. STM32F4 的 FREERTOS 操作系统移植 2024-07-17 15.15.56.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/FreeRTOS_portable/portable/ReadMe.url",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/FreeRTOS_portable/portable/readme.txt",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/FreeRTOS_portable/portable/port.c",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/FreeRTOS_portable/portable/heap_5.c",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/FreeRTOS_portable/portable/heap_4.c",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/FreeRTOS_portable/portable/heap_3.c",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/FreeRTOS_portable/portable/heap_2.c",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/FreeRTOS_portable/portable/heap_1.c",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/FreeRTOS_portable/include/timers.h",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/FreeRTOS_portable/include/task.h",
+    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/2. DMA 外设的使用及DMA加速LVGL.md",
+    "Excalidraw/5. STM32F4 的 FREERTOS 操作系统移植 2024-07-16 20.34.00.md",
+    "Excalidraw/5. STM32F4 的 FREERTOS 操作系统移植 2024-07-16 20.26.48.md",
     "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/4. SPI 通信协议与W25Q64 Flash芯片.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/1. 基础以及STM32简介.md",
-    "💻softwares/⚡Circuit/💻51单片机教程/3. IO扩展, LED点阵和电机/74HC595芯片与IO扩展简介.md",
-    "💻softwares/⚡Circuit/💻51单片机教程/5. 红外遥控,DS1302时钟, AD转换/ADC模数转换与信号处理.md",
-    "💻softwares/⚡Circuit/💻51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/定时器中断概念与实验.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/SDCard_Driver/SPI_SD/stm32_spi_sd.h",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/SDCard_Driver/SPI_SD/stm32_spi_sd.c",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/SDCard_Driver/SPI_SD",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/HardWare/SDCard_Driver/LIBARARY_EVAL/stm32_spi_sd.h",
+    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/3. FSMC方法操作TFTLCD彩屏显示.md",
+    "💻softwares/⚡Circuit/💻51单片机教程/7.TFLCD, 继电器和RS485/ILI9341 LCD 320x240彩屏仿真.md",
+    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/1. STM32F4移植操作TFTLCD屏.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/1. USART串口通信讲解.md",
+    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/基本内容/4. 系统时钟的使用和初始化+复用IO映射.md",
+    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/基本内容/2. 基于CubeMX HAL 库工程的新建方法.md",
+    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/基本内容/3. HAL库时钟初始化.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/四、ADC与DMA存储器转运.md",
+    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/基本内容/1. 基础与开发板使用.md",
+    "Excalidraw/USART串口通信讲解 2024-02-14 16.04.10.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/4. OLED 调试工具与常用调试方式.md",
+    "💻softwares/⚡Circuit/🎮STM32教程/一、基础使用部分/3. 通用IO口输出以及简单实验.md",
+    "Excalidraw/4. 系统时钟的使用和初始化 2024-07-14 07.24.27.md",
+    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/3. HAL库时钟初始化.md",
+    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/2. 基于CubeMX HAL 库工程的新建方法.md",
+    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/1. 基础与开发板使用.md",
     "Untitled.canvas",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]

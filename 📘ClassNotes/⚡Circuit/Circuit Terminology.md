@@ -128,6 +128,34 @@ assembler language  汇编语言
 optimum 最好的, 最佳的
 Parse 解析, 解释
 
+# STM32F4
+Cryptographic 密码的, 密码学的
+Patch 补丁, 色斑, 斑点 (一般指裁剪后的精简版本)
+latency 延迟
+vendor 小贩, 销售公司, 卖主
+seizure 癫痫
+migraine 偏头痛
+aliments 食物,滋养品
+fermented  发酵的 
+mucus 粘液
+FPU 浮点运算器 
+Mantissa 假数, 尾数, 数值部分
+fraction 小数部分
+multiplexer  复用器
+arbiter  仲裁人, 决定人, 裁决人
+threshold 门槛, 界限
+arithmetic 算数, 演算
+Preemption 抢占
+assembly instructions 汇编指令
+daemon 守护程序, 守护线程
+capped  覆盖, 超过, 更加, 限额收取
+mutex   互斥体, 互斥现象
+semaphore  信号量, 信号标, 旗语
+reentrant  可重新进入, 可再进入的
+expection  例外
+counterintuitive 反常的
+
+
 # 模电
 掺杂 doping
 电子 electron 
