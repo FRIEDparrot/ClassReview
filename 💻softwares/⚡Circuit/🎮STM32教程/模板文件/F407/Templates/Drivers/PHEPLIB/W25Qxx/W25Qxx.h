@@ -7,7 +7,38 @@
 
 #include "stm32f4xx.h"
 
-#define W25Qxx_TYPE         128     /* W25Q128 Driver functions */
+
+#define W25Qxx_TYPE                 128     /** W25Q128 Driver functions */
+
+#define W25Qxx_ROOTDIRECTORY        "0:"
+
+#define W25Qxx_Sector_Space         512     /** 512 bytes per sector (for FATFS) */
+#define W25Qxx_Sector_Size          2       /** 2   pages per sector (for FATFS) */
+#define W25Qxx_Sector_EraseGrSize   8       /** erase at least 4kb per time      */
+
+#define W25Qxx_Page_Space           256     /** 256 bytes per page   */
+
+#define W25Qxx_TIMEOUT          (0xffffffffU)
+
+#define W25Qxx_ASSERT(msg)      printf("error: %s at %s : %d\r\n", msg, __FILE__, __LINE__)
+
+
+#if (W25Qxx_TYPE == 128)
+    // 32768
+    #define W25Qxx_Sector_Count 32768
+    #define W25Qxx_MAX_ADDRESS 0x00ffffff
+#elif (W25Qxx_TYPE == 64)
+    #define W25Qxx_Sector_Count 16384
+    #define W25Qxx_MAX_ADDRESS 0x007fffff
+#elif (W25Qxx_TYPE == 32)
+    #define W25Qxx_Sector_Count 8192
+    #define W25Qxx_MAX_ADDRESS 0x003fffff
+#elif (W25Qxx_TYPE == 16)
+    #define W25Qxx_Sector_Count 4096
+    #define W25Qxx_MAX_ADDRESS 0x001fffff
+#else
+    #error "Plase #define the correct Flash Type!"
+#endif
 
 #define W25Qxx_SPI_CLK_ENABLE       __HAL_RCC_SPI1_CLK_ENABLE
 #define W25Qxx_SPI                  SPI1
@@ -48,7 +79,6 @@
 #define W25Qxx_CS_HIGH()            HAL_GPIO_WritePin(W25Qxx_CS_GPIO, W25Qxx_CS_PIN, GPIO_PIN_SET)
 #define W25Qxx_CS_LOW()             HAL_GPIO_WritePin(W25Qxx_CS_GPIO, W25Qxx_CS_PIN, GPIO_PIN_RESET)
 
-
 /** @defgroup W25QxxCmd  
  *  @brief W25Qxx Command List 
  *  @{
@@ -77,19 +107,30 @@
  * @}
  */
 
+/* Public functions --------------------------------------------------------- */
 
-
-/* Public functions ----------------------------------------------------------*/
-
+uint8_t W25Qxx_WaitBusy(void);
 uint8_t W25Qxx_Init(void);
+
 uint8_t W25Qxx_ReadID(uint8_t* mid, uint16_t* did);
-void W25Qxx_SectorErase(uint32_t SectorAddr);
-void W25Qxx_WriteData(const uint32_t addr, uint8_t* buff, uint16_t size);
-uint8_t W25Qxx_ReadData(uint32_t addr, uint8_t *buff, uint16_t size);
+void    W25Qxx_SectorErase(uint32_t SectorAddr);
+
+
+uint8_t W25Qxx_WriteData(const uint32_t addr, const uint8_t* buff, uint16_t size);
+uint8_t W25Qxx_ReadData(const uint32_t addr, uint8_t *buff, uint16_t size);
+
+uint8_t W25Qxx_WriteBlock(uint32_t start_addr, const uint8_t* buff);
+uint8_t W25Qxx_WriteSector(const uint8_t *buff, uint32_t saddr, uint32_t sec_cnt);
+uint8_t W25Qxx_ReadSector(uint8_t *buff, uint32_t saddr, uint32_t sec_cnt);
+
+
 uint16_t W25Qxx_GetStatus(void);
 void W25Qxx_SetStatus(uint16_t SR_bit, uint8_t violateBit);
 void W25Qxx_ResetStatus(uint16_t SR_bit, uint8_t violateBit);
 
+/**  File System relevant functions ------------------------------------------ */ 
+
+uint8_t W25Qxx_InitFS(void);
 
 void W25Qxx_Error_Handler(void);
 

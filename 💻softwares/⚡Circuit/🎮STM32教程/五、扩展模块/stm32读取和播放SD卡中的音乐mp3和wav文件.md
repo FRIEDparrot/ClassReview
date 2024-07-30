@@ -42,10 +42,6 @@ Helix 库下载的地址为: https://github.com/derkling/adplayer/tree/master/HE
 第一个 \_\_GNUC\_\_ 是编译环境, 第二个 ARM 是目标架构。 
 我们这里采用 ARM_ADS 作为架构
 
-
-
-
-
 WAV 音频的示例代码: 
 链接： https://pan.baidu.com/s/1Z1Qhxhivc6DZzF8h5L5AwQ   
 提取码：la0x  

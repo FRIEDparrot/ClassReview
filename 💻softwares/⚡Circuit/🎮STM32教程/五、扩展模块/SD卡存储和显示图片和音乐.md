@@ -83,7 +83,7 @@ uint16_t SDCard_ExchangeByte(uint16_t byte){
 
 
 ### (2) SD卡寄存器介绍
-SD卡往往有如下5个基本的寄存器，具体如下(参考p160):
+SD卡往往有如下5个基本的寄存器(共有8个)，具体如下(参考p160):
 ![[Excalidraw/SD卡存储图片和音乐 2024-04-20 09.03.51|700]]
 初始化时, 需要至少发送74个时钟, 且初始化时的 CLK 时钟不能超过400kHz (可以先设置Prescaler为256分频)
 
@@ -939,7 +939,8 @@ uint8_t res = f_mount(&fs, "3:", 1);
 如果是还没有被mount, 则会调用一次`stat = disk_initialize(fs->pdrv);  /* Initialize the volume hosting physical drive */` 判断能否初始化完成, 如果成功初始化, 则有可能会返回 NoSystem
 
 ### (4) 输入输出控制函数disk_ioControl
-对于 `DRESULT SD_disk_ioctl(void);` 函数, 里面必须要根据Cmd进行定义许多函数的返回结果,其中ioctrl函数对应的命令已经在diskio.h中给出了定义, 具体如下:
+对于 `DRESULT SD_disk_ioctl(void);` 函数, 里面必须要根据Cmd进行定义许多函数的返回结果,其中ioctrl函数对应的命令已经在diskio.h中给出了定义, 具体如下: 
+
 ```cpp
 DRESULT disk_ioctl (BYTE pdrv, BYTE cmd, void* buff);
 /* Command code for disk_ioctrl fucntion */
@@ -1268,8 +1269,6 @@ DRESULT SD_disk_ioctl(BYTE cmd,void *buff){
 
 这个部分实际上是对buff赋值时, 
 然后显示文件系统挂载成功
-
-
 
 # 三、代码编写
 具体的FATFS使用参考[[💻softwares/⚡Circuit/🎮STM32教程/📂FatFS文件系统移植/FatFs简介与基本使用|FatFs简介与基本使用]]部分

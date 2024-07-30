@@ -1,20 +1,108 @@
 {
   "recentFiles": [
     {
-      "basename": "5. STM32F4 的 FREERTOS 操作系统移植",
-      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/5. STM32F4 的 FREERTOS 操作系统移植.md"
+      "basename": "备忘录",
+      "path": "🐸 Daily Life memo/备忘录.md"
+    },
+    {
+      "basename": "2. ES8388 芯片 mp3 和 wav 的解码和播放",
+      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/多媒体部分/2. ES8388 芯片 mp3 和 wav 的解码和播放.md"
+    },
+    {
+      "basename": "2. DMA 外设的使用及DMA加速W25Q128",
+      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/2. DMA 外设的使用及DMA加速W25Q128.md"
+    },
+    {
+      "basename": "C语言函数指针变量的使用",
+      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/指针相关知识/C语言函数指针变量的使用.md"
+    },
+    {
+      "basename": "I2C-E2PROM通信与掉电数据保存",
+      "path": "💻softwares/⚡Circuit/💻51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/I2C-E2PROM通信与掉电数据保存.md"
+    },
+    {
+      "basename": "2. I2C通信协议",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/2. I2C通信协议.md"
+    },
+    {
+      "basename": "STM32F103RET6的DAC模块和音频输出",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/六、语音识别模块教程讲解/STM32F103RET6的DAC模块和音频输出.md"
+    },
+    {
+      "basename": "2. 基于CubeMX HAL 库工程的新建方法",
+      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/基本内容/2. 基于CubeMX HAL 库工程的新建方法.md"
+    },
+    {
+      "basename": "3. HAL库时钟初始化",
+      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/基本内容/3. HAL库时钟初始化.md"
+    },
+    {
+      "basename": "1. STM32F4移植操作TFTLCD屏",
+      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/1. STM32F4移植操作TFTLCD屏.md"
+    },
+    {
+      "basename": "Mechanic Terminology",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md"
+    },
+    {
+      "basename": "stm32读取和播放SD卡中的音乐mp3和wav文件",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/stm32读取和播放SD卡中的音乐mp3和wav文件.md"
+    },
+    {
+      "basename": "1. 从内存中读取和解码图片",
+      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/多媒体部分/1. 从内存中读取和解码图片.md"
+    },
+    {
+      "basename": "ILI9341 LCD 320x240彩屏仿真",
+      "path": "💻softwares/⚡Circuit/💻51单片机教程/7.TFLCD, 继电器和RS485/ILI9341 LCD 320x240彩屏仿真.md"
+    },
+    {
+      "basename": "1. 汉字显示原理与编码简介",
+      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/LVGL界面设计与原理/1. 汉字显示原理与编码简介.md"
+    },
+    {
+      "basename": "一、EXTI外部中断与红外计次",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md"
+    },
+    {
+      "basename": "SD卡存储和显示图片和音乐",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/SD卡存储和显示图片和音乐.md"
+    },
+    {
+      "basename": "一、LVGL嵌入式图形库简介",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/🖼️LVGL库及其使用/一、LVGL嵌入式图形库简介.md"
+    },
+    {
+      "basename": "7. CJSON 移植 stm32",
+      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/7. CJSON 移植 stm32.md"
+    },
+    {
+      "basename": "6. SDIO 方式与SD卡通信",
+      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/6. SDIO 方式与SD卡通信.md"
     },
     {
       "basename": "Circuit Terminology",
       "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
     },
     {
-      "basename": "4. 分块式的内存管理机制",
-      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/4. 分块式的内存管理机制.md"
+      "basename": "1. Unix 时间戳与BKP寄存器的使用",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/四、系统时钟, 看门狗与备份寄存器/1. Unix 时间戳与BKP寄存器的使用.md"
     },
     {
-      "basename": "2. DMA 外设的使用及DMA加速LVGL",
-      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/2. DMA 外设的使用及DMA加速LVGL.md"
+      "basename": "FatFs简介与基本使用",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/📂FatFS文件系统移植/FatFs简介与基本使用.md"
+    },
+    {
+      "basename": "Fatfs 的文件属性类型判定方法",
+      "path": "💻softwares/⚡Circuit/🎮STM32教程/📂FatFS文件系统移植/Fatfs 的文件属性类型判定方法.md"
+    },
+    {
+      "basename": "5. STM32F4 的 FREERTOS 操作系统移植",
+      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/5. STM32F4 的 FREERTOS 操作系统移植.md"
+    },
+    {
+      "basename": "4. 分块式的内存管理机制",
+      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/4. 分块式的内存管理机制.md"
     },
     {
       "basename": "5. STM32F4 的 FREERTOS 操作系统移植 2024-07-16 20.34.00",
@@ -37,28 +125,12 @@
       "path": "attachments/Pasted image 20240716152132.png"
     },
     {
-      "basename": "ILI9341 LCD 320x240彩屏仿真",
-      "path": "💻softwares/⚡Circuit/💻51单片机教程/7.TFLCD, 继电器和RS485/ILI9341 LCD 320x240彩屏仿真.md"
-    },
-    {
-      "basename": "1. STM32F4移植操作TFTLCD屏",
-      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/1. STM32F4移植操作TFTLCD屏.md"
-    },
-    {
       "basename": "1. USART串口通信讲解",
       "path": "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/1. USART串口通信讲解.md"
     },
     {
       "basename": "4. 系统时钟的使用和初始化+复用IO映射",
       "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/基本内容/4. 系统时钟的使用和初始化+复用IO映射.md"
-    },
-    {
-      "basename": "2. 基于CubeMX HAL 库工程的新建方法",
-      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/基本内容/2. 基于CubeMX HAL 库工程的新建方法.md"
-    },
-    {
-      "basename": "3. HAL库时钟初始化",
-      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/基本内容/3. HAL库时钟初始化.md"
     },
     {
       "basename": "四、ADC与DMA存储器转运",
@@ -71,10 +143,6 @@
     {
       "basename": "USART串口通信讲解 2024-02-14 16.04.10",
       "path": "Excalidraw/USART串口通信讲解 2024-02-14 16.04.10.md"
-    },
-    {
-      "basename": "一、EXTI外部中断与红外计次",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md"
     },
     {
       "basename": "4. OLED 调试工具与常用调试方式",
@@ -117,10 +185,6 @@
       "path": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md"
     },
     {
-      "basename": "Mechanic Terminology",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md"
-    },
-    {
       "basename": "1. 基础与开发板使用 2024-07-11 11.31.51",
       "path": "Excalidraw/1. 基础与开发板使用 2024-07-11 11.31.51.md"
     },
@@ -135,66 +199,6 @@
     {
       "basename": "2. SolidWorks 设计实战 2024-07-08 09.57.42",
       "path": "Excalidraw/2. SolidWorks 设计实战 2024-07-08 09.57.42.md"
-    },
-    {
-      "basename": "2. SolidWorks 设计实战 2024-07-08 09.33.32",
-      "path": "Excalidraw/2. SolidWorks 设计实战 2024-07-08 09.33.32.md"
-    },
-    {
-      "basename": "SolidWorks 基本操作",
-      "path": "💻softwares/🗽2D & 3D design/🤖SolidWorks/SolidWorks 基本操作.md"
-    },
-    {
-      "basename": "Mathmatic Terminology",
-      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
-    },
-    {
-      "basename": "Programming Terminology",
-      "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
-    },
-    {
-      "basename": "2.Helix 库移植 stm32 进行软解码音乐播放",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/🎶 Helix MP3软件解码库/2.Helix 库移植 stm32 进行软解码音乐播放.md"
-    },
-    {
-      "basename": "STM32F103RET6的DAC模块和音频输出",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/六、语音识别模块教程讲解/STM32F103RET6的DAC模块和音频输出.md"
-    },
-    {
-      "basename": "FatFs简介与基本使用",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/📂FatFS文件系统移植/FatFs简介与基本使用.md"
-    },
-    {
-      "basename": "stm32读取和播放SD卡中的音乐mp3和wav文件",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/stm32读取和播放SD卡中的音乐mp3和wav文件.md"
-    },
-    {
-      "basename": "SD卡存储和显示图片和音乐",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/SD卡存储和显示图片和音乐.md"
-    },
-    {
-      "basename": "SD卡格式化代码",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/📂FatFS文件系统移植/SD卡格式化代码.md"
-    },
-    {
-      "basename": "1. Helix MP3解码库简介",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/🎶 Helix MP3软件解码库/1. Helix MP3解码库简介.md"
-    },
-    {
-      "basename": "RGBLED呼吸灯的PWM+中断操控(有DMA讲解)",
-      "path": "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/RGBLED呼吸灯的PWM+中断操控(有DMA讲解).md"
-    },
-    {
-      "basename": "74HC595芯片与IO扩展简介",
-      "path": "💻softwares/⚡Circuit/💻51单片机教程/3. IO扩展, LED点阵和电机/74HC595芯片与IO扩展简介.md"
-    },
-    {
-      "basename": "ADC模数转换与信号处理",
-      "path": "💻softwares/⚡Circuit/💻51单片机教程/5. 红外遥控,DS1302时钟, AD转换/ADC模数转换与信号处理.md"
-    },
-    {
-      "basename": "定时器中断概念与实验",
-      "path": "💻softwares/⚡Circuit/💻51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/定时器中断概念与实验.md"
     }
   ],
   "omittedPaths": [],

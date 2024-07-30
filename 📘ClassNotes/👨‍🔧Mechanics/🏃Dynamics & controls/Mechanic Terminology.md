@@ -102,3 +102,5 @@ Angular contact ball bearing 角接触球轴承
 
 attenuation 衰减
 encapsulate 总结
+shelving filter 滞止滤波器
+

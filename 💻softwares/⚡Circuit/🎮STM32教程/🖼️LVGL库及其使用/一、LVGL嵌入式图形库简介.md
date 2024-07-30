@@ -560,6 +560,13 @@ Stack_Size      EQU     0x00000400 // 800就够
 ```
 
 由于240 * 240 比较大， 初始化1/10部分的RAM是不够的， 所以我们只使用左上的160 * 160 空间进行测试;
+```c title:lv_port_disp_template.h
+/*********************
+ *      DEFINES
+ *********************/
+#define TFTLCD_DISP_HOR_RES (160)  
+#define TFTLCD_DISP_VER_RES (160)  // screen width and height settings
+```
 
 ## 五、LVGL移植基本过程和遇到的问题
 
@@ -572,7 +579,6 @@ colordata |= (uint16_t)(color_p->blue);
 // 上式四句和以下的一句等价 
 uint16_t colordata = lv_color_to_u16(*color_p);
 ```
-
 
 对于STM32, 颜色深度应当设置为16位， 否则会出现花屏现象(虽然在lv_conf.h中): 
 ```cpp
