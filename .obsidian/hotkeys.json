@@ -1580,5 +1580,14 @@
       ],
       "key": "O"
     }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_EXP_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "E"
+    }
   ]
 }

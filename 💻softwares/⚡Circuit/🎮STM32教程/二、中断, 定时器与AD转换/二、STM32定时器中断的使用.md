@@ -57,7 +57,6 @@ STM32根据复杂度和应用场景分为了高级定时器、通用定时器、
 下面的是输出比较电路, 连接到CH1-CH4， <mark style="background: transparent; color: red">用于输出PWM波形和作为电机驱动</mark>。 而输入捕获电路对应CH1-CH4引脚, <mark style="background: transparent; color: red">可以用于测量输入方波的频率等等</mark>。
 Capture/Compare Register 是输入捕获和输出比较电路共用的寄存器。 但是引脚是共用的, 不能将两者同时使用。
 
-
 > [!NOTE] 高级定时器的独有结构
 > 利用Repetition Counter  , 可以实现定时器计数多次仅触发一次更新数据和更新中断。也是16位的重复计数器(可以再乘65536)
 > 对于原始的电路加上了DTG Register(死区生成电路) , 可以输出一对互补的PWM波, 往往可以在四轴飞行器的三相无刷电机上进行使用。 (三相无刷电机需要6个大功率开关管, 对应前三路DTG的互补输出) 而死区生成电路用于防止直通现象 

@@ -7,6 +7,7 @@
  *      INCLUDES
  *********************/
 
+#include "../../draw/lv_image_decoder_private.h"
 #include "../lv_assert.h"
 #include "../../core/lv_global.h"
 
@@ -15,6 +16,8 @@
 /*********************
  *      DEFINES
  *********************/
+
+#define CACHE_NAME  "IMAGE_HEADER"
 
 #define img_header_cache_p (LV_GLOBAL_DEFAULT()->img_header_cache)
 
@@ -59,6 +62,7 @@ lv_result_t lv_image_header_cache_init(uint32_t count)
         .free_cb = (lv_cache_free_cb_t) image_header_cache_free_cb
     });
 
+    lv_cache_set_name(img_header_cache_p, CACHE_NAME);
     return img_header_cache_p != NULL ? LV_RESULT_OK : LV_RESULT_INVALID;
 }
 

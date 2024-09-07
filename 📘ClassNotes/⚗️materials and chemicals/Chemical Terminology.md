@@ -11,3 +11,4 @@
 配位数 coordination number
 溶液 solution 
 凝固 freezing / solidify 
+相符合, 顺从 conform

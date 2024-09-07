@@ -4,16 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "6046a70555b4b996",
+        "id": "5913408407c1c885",
         "type": "tabs",
         "children": [
           {
-            "id": "e28279365d3a49c3",
+            "id": "f7ba71ab99a185fe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/指针相关知识/C语言函数指针变量的使用.md",
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/1.机器学习算法基本内容.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b98a07541600b1eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/⌨️Programming/🐍Python/1. Python常用命令基础.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "07793d2279a832d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/gargets/1. Pytorch & sklearn的使用基础和基本代码.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +117,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5124969482422
+    "width": 373.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "f7de553c162de521",
@@ -104,14 +129,6 @@
         "type": "tabs",
         "dimension": 54.93291239147593,
         "children": [
-          {
-            "id": "ccf3c49a7ac51afd",
-            "type": "leaf",
-            "state": {
-              "type": "dictionary-view",
-              "state": {}
-            }
-          },
           {
             "id": "befa702227dffd48",
             "type": "leaf",
@@ -146,7 +163,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/指针相关知识/C语言函数指针变量的使用.md",
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/1.机器学习算法基本内容.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -192,10 +209,10 @@
             }
           },
           {
-            "id": "e01998d0893d207e",
+            "id": "ccf3c49a7ac51afd",
             "type": "leaf",
             "state": {
-              "type": "timeline",
+              "type": "dictionary-view",
               "state": {}
             }
           },
@@ -205,7 +222,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/Mechanic Terminology.md",
                 "mode": "source",
                 "source": false
               }
@@ -258,9 +275,17 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b523d89f995d7d4f",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 10
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -273,7 +298,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/指针相关知识/C语言函数指针变量的使用.md"
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/1.机器学习算法基本内容.md"
               }
             }
           },
@@ -283,7 +308,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/指针相关知识/C语言函数指针变量的使用.md",
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/1.机器学习算法基本内容.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -300,7 +325,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/指针相关知识/C语言函数指针变量的使用.md",
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/1.机器学习算法基本内容.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -321,7 +346,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 575.5
+    "width": 504.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -346,54 +372,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e28279365d3a49c3",
+  "active": "f7ba71ab99a185fe",
   "lastOpenFiles": [
-    "🐸 Daily Life memo/备忘录.md",
-    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/多媒体部分/2. ES8388 芯片 mp3 和 wav 的解码和播放.md",
-    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/2. DMA 外设的使用及DMA加速W25Q128.md",
-    "attachments/Pasted image 20240730113816.png",
-    "attachments/Pasted image 20240730105149.png",
-    "📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/指针相关知识/C语言函数指针变量的使用.md",
-    "attachments/Pasted image 20240729152302.png",
-    "💻softwares/⚡Circuit/💻51单片机教程/4. 定时器, 中断, 串口通信与温度传感器/I2C-E2PROM通信与掉电数据保存.md",
-    "attachments/Pasted image 20240728202456.png",
-    "attachments/Pasted image 20240728202441.png",
-    "attachments/Pasted image 20240728171409.png",
-    "💻softwares/⚡Circuit/🎮STM32教程/三、串口与通信协议/2. I2C通信协议.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/六、语音识别模块教程讲解/STM32F103RET6的DAC模块和音频输出.md",
-    "attachments/Pasted image 20240727225846.png",
-    "attachments/Pasted image 20240727225225.png",
-    "attachments/9169 1.png",
-    "attachments/9169.png",
-    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/基本内容/2. 基于CubeMX HAL 库工程的新建方法.md",
-    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/基本内容/3. HAL库时钟初始化.md",
-    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/1. STM32F4移植操作TFTLCD屏.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🏃Dynamics & controls/Mechanic Terminology.md",
-    "Excalidraw/Drawing 2024-07-27 10.38.17.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/stm32读取和播放SD卡中的音乐mp3和wav文件.md",
-    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/多媒体部分/1. 从内存中读取和解码图片.md",
-    "💻softwares/⚡Circuit/💻51单片机教程/7.TFLCD, 继电器和RS485/ILI9341 LCD 320x240彩屏仿真.md",
-    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/LVGL界面设计与原理/1. 汉字显示原理与编码简介.md",
-    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/多媒体部分",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Drivers/PHEPLIB/ILI9341_hard_touch/UI/ILI9341_GUI.h",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Drivers/PHEPLIB/ILI9341_hard_touch/UI/ILI9341_GUI.c",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Drivers/PHEPLIB/ILI9341_hard_touch/UI/FONT.H",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Drivers/PHEPLIB/ILI9341_hard_touch/UI",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Drivers/PHEPLIB/ILI9341_hard_touch/TOUCH/ILI9341_touch.h",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Drivers/PHEPLIB/ILI9341_hard_touch/TOUCH/ILI9341_touch.c",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Drivers/PHEPLIB/ILI9341_hard_touch/TOUCH",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Drivers/PHEPLIB/ILI9341_hard_touch/LCD/ILI9341_lcd.h",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Drivers/PHEPLIB/ILI9341_hard_touch/LCD/ILI9341_lcd.c",
-    "💻softwares/⚡Circuit/🎮STM32教程/二、中断, 定时器与AD转换/一、EXTI外部中断与红外计次.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/五、扩展模块/SD卡存储和显示图片和音乐.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/🖼️LVGL库及其使用/一、LVGL嵌入式图形库简介.md",
-    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/7. CJSON 移植 stm32.md",
-    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/6. SDIO 方式与SD卡通信.md",
+    "📘ClassNotes/⌨️Programming/Programming Terminology.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/1.机器学习算法基本内容.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/gargets/1. Pytorch & sklearn的使用基础和基本代码.md",
+    "📘ClassNotes/⌨️Programming/🐍Python/1. Python常用命令基础.md",
+    "🗒️Templates/INSERT_EXP_SYMBOL.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/补充知识/2. MAP estimation(最大单后验可能性估计).md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/补充知识/1. ML estimation 最大似然估计.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
+    "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
+    "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
     "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/四、系统时钟, 看门狗与备份寄存器/1. Unix 时间戳与BKP寄存器的使用.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/📂FatFS文件系统移植/FatFs简介与基本使用.md",
-    "💻softwares/⚡Circuit/🎮STM32教程/📂FatFS文件系统移植/Fatfs 的文件属性类型判定方法.md",
-    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库部分教程/外设部分/5. STM32F4 的 FREERTOS 操作系统移植.md",
+    "📘ClassNotes/👨‍🔧Mechanics/Mechanic Terminology.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
+    "📘ClassNotes/⌨️Programming/🐍Python/2. Python 基本数据结构和可视化方法.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/补充知识",
+    "attachments/Pasted image 20240905231216.png",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习常用库及命令总结.md",
+    "attachments/Pasted image 20240905224122.png",
+    "attachments/Pasted image 20240905185037.png",
+    "📘ClassNotes/⌨️Programming/🐍Python/Python 中类和继承的使用.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第五章 矩阵的相似变换.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第四章 线性方程组解的结构.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第二章 矩阵及其运算.md",
+    "Excalidraw/1.机器学习算法基本内容 2024-09-05 11.09.17.md",
+    "🐸 Daily Life memo/备忘录.md",
+    "🐸 Daily Life memo/一些额外知识.md",
+    "📘ClassNotes/⌨️Programming/➗MATLAB/Basic Usage/1. Matlab常用函数和概率函数示例.md",
+    "🐸 Daily Life memo/常用直接运算.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理",
+    "attachments/Pasted image 20240904225717.png",
+    "attachments/Pasted image 20240903004235.png",
+    "attachments/Pasted image 20240902234105.png",
+    "attachments/Pasted image 20240902232447.png",
+    "attachments/Pasted image 20240902205556.png",
+    "attachments/Pasted image 20240901210609.png",
+    "attachments/Pasted image 20240901210525.png",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Algorithms",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Derivations/Derivation of Linear Regression.pdf",
+    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库/LVGL界面设计与原理/GB2312(含有4485常用字符).txt",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/libcyaml-main/test/data/basic.yaml",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/libcyaml-main/test/units/util.c",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/libcyaml-main/test/units/utf8.c",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/libcyaml-main/test/units/ttest.h",
+    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/libcyaml-main/test/units/test.c",
     "Untitled.canvas",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]

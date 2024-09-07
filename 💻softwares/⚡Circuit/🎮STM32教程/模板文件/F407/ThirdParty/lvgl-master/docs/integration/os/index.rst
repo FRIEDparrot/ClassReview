@@ -9,3 +9,5 @@
     freertos
     zephyr
     px5
+    mqx
+    qnx

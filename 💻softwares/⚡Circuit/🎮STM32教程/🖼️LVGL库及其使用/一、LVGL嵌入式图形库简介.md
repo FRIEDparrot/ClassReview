@@ -27,7 +27,7 @@ LVGL 提供了文本框， 按钮， Slide, 表格,  菜单等等。
 原理: 只需要一个简单驱动程序函数就可以将像素阵列移植到显示屏中进行显示。 
 下面的部分均可以进行LVGL移植: 
 ![[attachments/Pasted image 20240406001907.png]]
-lvgl 支持CJK 写系统， 即支持中文输入;
+lvgl 支持 CJK 写系统， 即支持中文输入;
 
 ## 三、 基于Visual Studio 的LVGL模拟器环境配置
 原始项目github地址为 https://github.com/lvgl/lv_port_pc_visual_studio
@@ -108,6 +108,7 @@ lvgl 中: 加入的文件夹有:
 INT_MIN 
 ```
 此时， 由于LED_font.h 数组过大导致内存RAM溢出， 此时, 我们可以取消include oled_font.h 并注释掉 ShowChar 和 ShowHanzi 
+
 # 四、LVGL轻量化部分
 ### (1) 文件的添加(修正部分)
 先将LVGL_conf.h 中的 if 0 更改为1
@@ -518,7 +519,6 @@ typedef int keep_pedantic_happy;
 ```cpp title:更改lv_conf.h,设置最大运行内存的方式
 #define LV_MEM_SIZE (6 * 1024U)          /*[bytes]*/
 ```
-
 
 > [!NOTE] 注意
 > 一般这个值不能太小, 如果设置到4kb以及以下往往会出现显示不出的问题并且报错。

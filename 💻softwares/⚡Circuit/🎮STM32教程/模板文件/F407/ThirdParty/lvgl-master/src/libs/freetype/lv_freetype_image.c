@@ -20,11 +20,13 @@
  *      DEFINES
  *********************/
 
+#define CACHE_NAME "FREETYPE_IMAGE"
+
 /**********************
  *      TYPEDEFS
  **********************/
 
-typedef struct _lv_freetype_image_cache_data_t {
+typedef struct lv_freetype_image_cache_data_t {
     FT_UInt glyph_index;
     uint32_t size;
 
@@ -64,6 +66,7 @@ lv_cache_t * lv_freetype_create_draw_data_image(uint32_t cache_size)
 
     lv_cache_t * draw_data_cache = lv_cache_create(&lv_cache_class_lru_rb_count, sizeof(lv_freetype_image_cache_data_t),
                                                    cache_size, ops);
+    lv_cache_set_name(draw_data_cache, CACHE_NAME);
 
     return draw_data_cache;
 }
@@ -121,16 +124,20 @@ static bool freetype_image_create_cb(lv_freetype_image_cache_data_t * data, void
 
     FT_Error error;
 
+    lv_mutex_lock(&dsc->cache_node->face_lock);
+
     FT_Face face = dsc->cache_node->face;
     FT_Set_Pixel_Sizes(face, 0, dsc->size);
-    error = FT_Load_Glyph(face, data->glyph_index,  FT_LOAD_RENDER | FT_LOAD_TARGET_NORMAL);
+    error = FT_Load_Glyph(face, data->glyph_index,  FT_LOAD_RENDER | FT_LOAD_TARGET_NORMAL | FT_LOAD_NO_AUTOHINT);
     if(error) {
         FT_ERROR_MSG("FT_Load_Glyph", error);
+        lv_mutex_unlock(&dsc->cache_node->face_lock);
         return false;
     }
     error = FT_Render_Glyph(face->glyph, FT_RENDER_MODE_NORMAL);
     if(error) {
         FT_ERROR_MSG("FT_Render_Glyph", error);
+        lv_mutex_unlock(&dsc->cache_node->face_lock);
         return false;
     }
 
@@ -138,6 +145,7 @@ static bool freetype_image_create_cb(lv_freetype_image_cache_data_t * data, void
     error = FT_Get_Glyph(face->glyph, &glyph);
     if(error) {
         FT_ERROR_MSG("FT_Get_Glyph", error);
+        lv_mutex_unlock(&dsc->cache_node->face_lock);
         return false;
     }
 
@@ -155,6 +163,8 @@ static bool freetype_image_create_cb(lv_freetype_image_cache_data_t * data, void
     }
 
     FT_Done_Glyph(glyph);
+
+    lv_mutex_unlock(&dsc->cache_node->face_lock);
 
     return true;
 }

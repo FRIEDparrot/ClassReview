@@ -6,16 +6,19 @@
 /*********************
  *      INCLUDES
  *********************/
+#include "lv_draw_buf_private.h"
 #include "../misc/lv_types.h"
-#include "lv_draw_buf.h"
 #include "../stdlib/lv_string.h"
 #include "../core/lv_global.h"
+#include "../misc/lv_math.h"
+#include "../misc/lv_area_private.h"
 
 /*********************
  *      DEFINES
  *********************/
 #define default_handlers LV_GLOBAL_DEFAULT()->draw_buf_handlers
 #define font_draw_buf_handlers LV_GLOBAL_DEFAULT()->font_draw_buf_handlers
+#define image_cache_draw_buf_handlers LV_GLOBAL_DEFAULT()->image_cache_draw_buf_handlers
 
 /**********************
  *      TYPEDEFS
@@ -32,6 +35,7 @@ static void * draw_buf_malloc(const lv_draw_buf_handlers_t * handler, size_t siz
 static void draw_buf_free(const lv_draw_buf_handlers_t * handler, void * buf);
 static uint32_t width_to_stride(uint32_t w, lv_color_format_t color_format);
 static uint32_t _calculate_draw_buf_size(uint32_t w, uint32_t h, lv_color_format_t cf, uint32_t stride);
+static void draw_buf_get_full_area(const lv_draw_buf_t * draw_buf, lv_area_t * full_area);
 
 /**********************
  *  STATIC VARIABLES
@@ -45,22 +49,24 @@ static uint32_t _calculate_draw_buf_size(uint32_t w, uint32_t h, lv_color_format
  *   GLOBAL FUNCTIONS
  **********************/
 
-void _lv_draw_buf_init_handlers(void)
+void lv_draw_buf_init_handlers(void)
 {
     lv_draw_buf_init_with_default_handlers(&default_handlers);
     lv_draw_buf_init_with_default_handlers(&font_draw_buf_handlers);
+    lv_draw_buf_init_with_default_handlers(&image_cache_draw_buf_handlers);
 }
 
 void lv_draw_buf_init_with_default_handlers(lv_draw_buf_handlers_t * handlers)
 {
-    lv_draw_buf_init_handlers(handlers, buf_malloc, buf_free, buf_align, NULL, width_to_stride);
+    lv_draw_buf_handlers_init(handlers, buf_malloc, buf_free, buf_align, NULL, NULL, width_to_stride);
 }
 
-void lv_draw_buf_init_handlers(lv_draw_buf_handlers_t * handlers,
+void lv_draw_buf_handlers_init(lv_draw_buf_handlers_t * handlers,
                                lv_draw_buf_malloc_cb buf_malloc_cb,
                                lv_draw_buf_free_cb buf_free_cb,
                                lv_draw_buf_align_cb align_pointer_cb,
-                               lv_draw_buf_invalidate_cache_cb invalidate_cache_cb,
+                               lv_draw_buf_cache_operation_cb invalidate_cache_cb,
+                               lv_draw_buf_cache_operation_cb flush_cache_cb,
                                lv_draw_buf_width_to_stride_cb width_to_stride_cb)
 {
     lv_memzero(handlers, sizeof(lv_draw_buf_handlers_t));
@@ -68,6 +74,7 @@ void lv_draw_buf_init_handlers(lv_draw_buf_handlers_t * handlers,
     handlers->buf_free_cb = buf_free_cb;
     handlers->align_pointer_cb = align_pointer_cb;
     handlers->invalidate_cache_cb = invalidate_cache_cb;
+    handlers->flush_cache_cb = flush_cache_cb;
     handlers->width_to_stride_cb = width_to_stride_cb;
 }
 
@@ -107,45 +114,75 @@ void lv_draw_buf_invalidate_cache(const lv_draw_buf_t * draw_buf, const lv_area_
 void lv_draw_buf_invalidate_cache_user(const lv_draw_buf_handlers_t * handlers, const lv_draw_buf_t * draw_buf,
                                        const lv_area_t * area)
 {
-    if(handlers->invalidate_cache_cb) {
-        LV_ASSERT_NULL(draw_buf);
-        const lv_image_header_t * header = &draw_buf->header;
-        lv_area_t full;
-        if(area == NULL) {
-            full = (lv_area_t) {
-                0, 0, header->w - 1, header->h - 1
-            };
-            area = &full;
-        }
-        handlers->invalidate_cache_cb(draw_buf, area);
+    LV_ASSERT_NULL(draw_buf);
+
+    if(!handlers->invalidate_cache_cb) {
+        return;
     }
+
+    lv_area_t full;
+    if(area == NULL) {
+        draw_buf_get_full_area(draw_buf, &full);
+        area = &full;
+    }
+
+    handlers->invalidate_cache_cb(draw_buf, area);
+}
+
+void lv_draw_buf_flush_cache(const lv_draw_buf_t * draw_buf, const lv_area_t * area)
+{
+    lv_draw_buf_flush_cache_user(&default_handlers, draw_buf, area);
+}
+
+void lv_draw_buf_flush_cache_user(const lv_draw_buf_handlers_t * handlers, const lv_draw_buf_t * draw_buf,
+                                  const lv_area_t * area)
+{
+    LV_ASSERT_NULL(draw_buf);
+
+    if(!handlers->flush_cache_cb) {
+        return;
+    }
+
+    lv_area_t full;
+    if(area == NULL) {
+        draw_buf_get_full_area(draw_buf, &full);
+        area = &full;
+    }
+
+    handlers->flush_cache_cb(draw_buf, area);
 }
 
 void lv_draw_buf_clear(lv_draw_buf_t * draw_buf, const lv_area_t * a)
 {
     LV_ASSERT_NULL(draw_buf);
-    if(a && lv_area_get_width(a) < 0) return;
-    if(a && lv_area_get_height(a) < 0) return;
 
     const lv_image_header_t * header = &draw_buf->header;
     uint32_t stride = header->stride;
 
     if(a == NULL) {
-        lv_memzero(draw_buf->data, header->h * stride);
+        uint8_t * buf = lv_draw_buf_goto_xy(draw_buf, 0, 0);
+        lv_memzero(buf, header->h * stride);
+        return;
     }
-    else {
-        uint8_t * bufc;
-        uint32_t line_length;
-        int32_t start_y, end_y;
-        uint8_t px_size = lv_color_format_get_size(header->cf);
-        bufc = lv_draw_buf_goto_xy(draw_buf, a->x1, a->y1);
-        line_length = lv_area_get_width(a) * px_size;
-        start_y = a->y1;
-        end_y = a->y2;
-        for(; start_y <= end_y; start_y++) {
-            lv_memzero(bufc, line_length);
-            bufc += stride;
-        }
+
+    lv_area_t a_draw_buf;
+    a_draw_buf.x1 = 0;
+    a_draw_buf.y1 = 0;
+    a_draw_buf.x2 = draw_buf->header.w - 1;
+    a_draw_buf.y2 = draw_buf->header.h - 1;
+
+    lv_area_t a_clipped;
+    if(!lv_area_intersect(&a_clipped, a, &a_draw_buf)) return;
+    if(lv_area_get_width(&a_clipped) <= 0) return;
+    if(lv_area_get_height(&a_clipped) <= 0) return;
+
+    uint8_t px_size = lv_color_format_get_size(header->cf);
+    uint8_t * buf = lv_draw_buf_goto_xy(draw_buf, a_clipped.x1, a_clipped.y1);
+    uint32_t line_length = lv_area_get_width(&a_clipped) * px_size;
+    int32_t y;
+    for(y = a_clipped.y1; y <= a_clipped.y2; y++) {
+        lv_memzero(buf, line_length);
+        buf += stride;
     }
 }
 
@@ -273,8 +310,13 @@ lv_draw_buf_t * lv_draw_buf_create_user(const lv_draw_buf_handlers_t * handlers,
 
 lv_draw_buf_t * lv_draw_buf_dup(const lv_draw_buf_t * draw_buf)
 {
+    return lv_draw_buf_dup_user(&default_handlers, draw_buf);
+}
+
+lv_draw_buf_t * lv_draw_buf_dup_user(const lv_draw_buf_handlers_t * handlers, const lv_draw_buf_t * draw_buf)
+{
     const lv_image_header_t * header = &draw_buf->header;
-    lv_draw_buf_t * new_buf = lv_draw_buf_create(header->w, header->h, header->cf, header->stride);
+    lv_draw_buf_t * new_buf = lv_draw_buf_create_user(handlers, header->w, header->h, header->cf, header->stride);
     if(new_buf == NULL) return NULL;
 
     new_buf->header.flags = draw_buf->header.flags;
@@ -344,7 +386,7 @@ void * lv_draw_buf_goto_xy(const lv_draw_buf_t * buf, uint32_t x, uint32_t y)
 
     if(x == 0) return data;
 
-    return data + x * lv_color_format_get_size(buf->header.cf);
+    return data + x * lv_color_format_get_bpp(buf->header.cf) / 8;
 }
 
 lv_result_t lv_draw_buf_adjust_stride(lv_draw_buf_t * src, uint32_t stride)
@@ -357,6 +399,10 @@ lv_result_t lv_draw_buf_adjust_stride(lv_draw_buf_t * src, uint32_t stride)
     const lv_image_header_t * header = &src->header;
     uint32_t w = header->w;
     uint32_t h = header->h;
+
+    if(!lv_draw_buf_has_flag(src, LV_IMAGE_FLAGS_MODIFIABLE)) {
+        return LV_RESULT_INVALID;
+    }
 
     /*Use global stride*/
     if(stride == 0) stride = lv_draw_buf_width_to_stride(w, header->cf);
@@ -494,8 +540,51 @@ void lv_draw_buf_set_palette(lv_draw_buf_t * draw_buf, uint8_t index, lv_color32
         return;
     }
 
-    uint8_t * buf = (uint8_t *)draw_buf->data;
-    lv_memcpy(&buf[index * sizeof(color)], &color, sizeof(color));
+    lv_color32_t * palette = (lv_color32_t *)draw_buf->data;
+    palette[index] = color;
+}
+
+bool lv_draw_buf_has_flag(lv_draw_buf_t * draw_buf, lv_image_flags_t flag)
+{
+    return draw_buf->header.flags & flag;
+}
+
+void lv_draw_buf_set_flag(lv_draw_buf_t * draw_buf, lv_image_flags_t flag)
+{
+    draw_buf->header.flags |= flag;
+}
+
+void lv_draw_buf_clear_flag(lv_draw_buf_t * draw_buf, lv_image_flags_t flag)
+{
+    draw_buf->header.flags &= ~flag;
+}
+
+void lv_draw_buf_from_image(lv_draw_buf_t * buf, const lv_image_dsc_t * img)
+{
+    lv_memcpy(buf, img, sizeof(lv_image_dsc_t));
+    buf->unaligned_data = buf->data;
+}
+
+void lv_draw_buf_to_image(const lv_draw_buf_t * buf, lv_image_dsc_t * img)
+{
+    lv_memcpy((void *)img, buf, sizeof(lv_image_dsc_t));
+}
+
+void lv_image_buf_set_palette(lv_image_dsc_t * dsc, uint8_t id, lv_color32_t c)
+{
+    LV_LOG_WARN("Deprecated API, use lv_draw_buf_set_palette instead.");
+    lv_draw_buf_set_palette((lv_draw_buf_t *)dsc, id, c);
+}
+
+void lv_image_buf_free(lv_image_dsc_t * dsc)
+{
+    LV_LOG_WARN("Deprecated API, use lv_draw_buf_destroy instead.");
+    if(dsc != NULL) {
+        if(dsc->data != NULL)
+            lv_free((void *)dsc->data);
+
+        lv_free((void *)dsc);
+    }
 }
 
 /**********************
@@ -522,8 +611,7 @@ static void * buf_align(void * buf, lv_color_format_t color_format)
 
     uint8_t * buf_u8 = buf;
     if(buf_u8) {
-        buf_u8 += LV_DRAW_BUF_ALIGN - 1;
-        buf_u8 = (uint8_t *)((lv_uintptr_t) buf_u8 & ~(LV_DRAW_BUF_ALIGN - 1));
+        buf_u8 = (uint8_t *)LV_ROUND_UP((lv_uintptr_t)buf_u8, LV_DRAW_BUF_ALIGN);
     }
     return buf_u8;
 }
@@ -533,7 +621,8 @@ static uint32_t width_to_stride(uint32_t w, lv_color_format_t color_format)
     uint32_t width_byte;
     width_byte = w * lv_color_format_get_bpp(color_format);
     width_byte = (width_byte + 7) >> 3; /*Round up*/
-    return (width_byte + LV_DRAW_BUF_STRIDE_ALIGN - 1) & ~(LV_DRAW_BUF_STRIDE_ALIGN - 1);
+
+    return LV_ROUND_UP(width_byte, LV_DRAW_BUF_STRIDE_ALIGN);
 }
 
 static void * draw_buf_malloc(const lv_draw_buf_handlers_t * handlers, size_t size_bytes,
@@ -568,4 +657,10 @@ static uint32_t _calculate_draw_buf_size(uint32_t w, uint32_t h, lv_color_format
     }
 
     return size;
+}
+
+static void draw_buf_get_full_area(const lv_draw_buf_t * draw_buf, lv_area_t * full_area)
+{
+    const lv_image_header_t * header = &draw_buf->header;
+    lv_area_set(full_area, 0, 0, header->w - 1, header->h - 1);
 }

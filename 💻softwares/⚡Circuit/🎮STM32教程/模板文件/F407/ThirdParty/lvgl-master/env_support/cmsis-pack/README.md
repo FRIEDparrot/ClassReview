@@ -1,7 +1,5 @@
 # How to Create CMSIS-Pack
 
-
-
 ## STEP 1 Update 'lv_conf_cmsis.h'
 
 1. Copy the **lv_conf_template.h** to '**cmsis-pack**' directory
@@ -27,7 +25,6 @@ remove the misleading guide above this code segment.
  */
 ```
 
-
 3. Add including for '**RTE_Components.h**'
 
 ```c
@@ -37,8 +34,9 @@ remove the misleading guide above this code segment.
 #include "RTE_Components.h"
 ...
 ```
-4. Remove macro definitions for
 
+4. Remove macro definitions for
+   
    - LV_USE_DEMO_WIDGETS
    
    - LV_USE_DEMO_BENCHMARK
@@ -103,62 +101,63 @@ remove the misleading guide above this code segment.
    
    - LV_USE_ILI9341
    
-     
-   
-5. Update `LV_LOG_PRINTF` to `1` and `LV_LOG_LEVEL` to `LV_LOG_LEVEL_USER`
+   - LV_USE_RENESAS_GLCDC 
 
+5. Update `LV_LOG_PRINTF` to `1` and `LV_LOG_LEVEL` to `LV_LOG_LEVEL_USER`
 
 6. Set `LV_FONT_MONTSERRAT_12`, `LV_FONT_MONTSERRAT_24` and `LV_FONT_MONTSERRAT_16` to `1` (So Widgets and Benchmark can be compiled correctly, this is for improving the out of box experience.)
 
-
 7. Update macro `LV_ATTRIBUTE_MEM_ALIGN` and `LV_ATTRIBUTE_MEM_ALIGN_SIZE`  to force a WORD alignment.
-```c
-#define LV_ATTRIBUTE_MEM_ALIGN_SIZE     1
-#define LV_DRAW_BUF_STRIDE_ALIGN		4
-#define LV_ATTRIBUTE_MEM_ALIGN          __attribute__((aligned(4)))
-```
-Make sure `LV_MEM_SIZE` is no less than `(128*1024U)`.
+   
+   ```c
+   #define LV_ATTRIBUTE_MEM_ALIGN_SIZE     1
+   #define LV_DRAW_BUF_STRIDE_ALIGN        4
+   #define LV_ATTRIBUTE_MEM_ALIGN          __attribute__((aligned(4)))
+   ```
+   
+   Make sure `LV_MEM_SIZE` is no less than `(128*1024U)`.
 
 8. Remove following macro definitions in the `3rd party libraries` section:
-
-    - \#define LV_USE_FS_STDIO 0
-    - \#define LV_USE_FS_POSIX 0
-    - \#define LV_USE_FS_WIN32 0
-    - \#define LV_USE_FS_FATFS 0
-    - #define LV_USE_FS_LITTLEFS 0
-    - #define LV_USE_FS_ARDUINO_ESP_LITTLEFS 0
-    - #define LV_USE_FS_MEMFS 0
-    - \#define LV_USE_LODEPNG 0
-    - #define LV_USE_LIBPNG 0
-    - \#define LV_USE_BMP 0
-    - \#define LV_USE_RLE 0
-    - #define LV_USE_TJPGD 0
-    - #define LV_USE_LIBJPEG_TURBO 0
-    - \#define LV_USE_GIF 0
-    - \#define LV_USE_BARCODE 0
-    - \#define LV_USE_QRCODE 0
-    - \#define LV_USE_FREETYPE 0
-    - \#define LV_USE_TINY_TTF 0
-    - \#define LV_USE_RLOTTIE 0
-    - \#define LV_USE_FFMPEG 0
+   
+   - \#define LV_USE_FS_STDIO 0
+   - \#define LV_USE_FS_POSIX 0
+   - \#define LV_USE_FS_WIN32 0
+   - \#define LV_USE_FS_FATFS 0
+   - #define LV_USE_FS_LITTLEFS 0
+   - #define LV_USE_FS_ARDUINO_ESP_LITTLEFS 0
+   - #define LV_USE_FS_ARDUINO_SD 0
+   - #define LV_USE_FS_MEMFS 0
+   - \#define LV_USE_LODEPNG 0
+   - #define LV_USE_LIBPNG 0
+   - \#define LV_USE_BMP 0
+   - \#define LV_USE_RLE 0
+   - #define LV_USE_TJPGD 0
+   - #define LV_USE_LIBJPEG_TURBO 0
+   - \#define LV_USE_GIF 0
+   - \#define LV_USE_BARCODE 0
+   - \#define LV_USE_QRCODE 0
+   - \#define LV_USE_FREETYPE 0
+   - \#define LV_USE_TINY_TTF 0
+   - \#define LV_USE_RLOTTIE 0
+   - \#define LV_USE_FFMPEG 0
 
 9. update the definition of following macros: `LV_USE_VECTOR_GRAPHIC`, `LV_USE_THORVE_INTERNAL` and `LV_USE_THORVE_EXTERNAL` as 
-
-    ```c
-    /*Enable Vector Graphic APIs*/
-    #ifndef LV_USE_VECTOR_GRAPHIC
-    #   define LV_USE_VECTOR_GRAPHIC  0
-    
-    /* Enable ThorVG (vector graphics library) from the src/libs folder */
-    #   define LV_USE_THORVG_INTERNAL 0
-    
-    /* Enable ThorVG by assuming that its installed and linked to the project */
-    #   define LV_USE_THORVG_EXTERNAL 0
-    #endif
-    ```
+   
+   ```c
+   /*Enable Vector Graphic APIs*/
+   #ifndef LV_USE_VECTOR_GRAPHIC
+   #   define LV_USE_VECTOR_GRAPHIC  0
+   
+   /* Enable ThorVG (vector graphics library) from the src/libs folder */
+   #   define LV_USE_THORVG_INTERNAL 0
+   
+   /* Enable ThorVG by assuming that its installed and linked to the project */
+   #   define LV_USE_THORVG_EXTERNAL 0
+   #endif
+   ```
 
 10. update the definition of following macros: `LV_USE_LZ4`, `LV_USE_LZ4_INTERNAL` and `LV_USE_LZ4_EXTERNAL` as 
-
+    
     ```c
     /*Enable LZ4 compress/decompress lib*/
     #ifndef LV_USE_LZ4
@@ -171,7 +170,6 @@ Make sure `LV_MEM_SIZE` is no less than `(128*1024U)`.
     #   define LV_USE_LZ4_EXTERNAL  0
     #endif
     ```
-
 
 11. Add the following code to `HAL SETTINGS`:
 
@@ -186,8 +184,6 @@ Make sure `LV_MEM_SIZE` is no less than `(128*1024U)`.
             } while(0)
 #endif
 ```
-
-
 
 12. Replace the macro definition:
 
@@ -217,11 +213,7 @@ with:
 #define LV_PROFILER_INCLUDE "src/misc/lv_profiler_builtin.h"
 ```
 
-
-
 14. rename '**lv_conf_template.h**' to '**lv_conf_cmsis.h**'.
-
-
 
 ## STEP 2 Check, Update and Run the 'gen_pack.sh'
 
@@ -239,8 +231,6 @@ echo $PATH_TO_ADD appended to PATH
 echo " "
 ```
 
-
-
 ### A. For Windows users
 
 Update the '**CMSIS_PACK_PATH**' accordingly (Usually just replace the name gabriel with your own windows account name is sufficient.).
@@ -254,8 +244,6 @@ enter the following command:
 ```sh
 ./gen_pack.sh
 ```
-
-
 
 ### B. For Linux Users
 

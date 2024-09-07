@@ -67,12 +67,12 @@ $$C_{6}^{1} + C_{6}^{2} \times 2  + C_{6}^{3} = 56种$$
 $$C_{m + n - 1}^{m} = \Omega ((1+ \varepsilon )^{m+n-1})$$
 即为指数函数增长的复杂度。
 
-对于排序算法及其难度估计， 参考[[📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/复习 七大排序算法|七大排序算法]], 
+对于排序算法及其难度估计， 参考[[📘ClassNotes/⌨️Programming/🌳C and Data Structure/C++基础知识/复习 七大排序算法|七大排序算法]], 
 
 ## 二、货郎问题与计算复杂性理论
 有n个城市, 已知任意两个城市， 任意两个城市的距离均给出, 求解最短的路径。
 
-实际算法参考[[📘ClassNotes/⌨️Programming/🌳Data Structure/课程笔记/第七章 图#(2) 最短路径问题|Dijkstra算法和Floyd算法]], 以及Prim算法和Kruskal算法获取最小生成树。但是往往我们可以使用bfs来解决(实际上也是比较简单的算法, 但是时间复杂度较高) 
+实际算法参考[[📘ClassNotes/⌨️Programming/🌳C and Data Structure/课程笔记/第七章 图#(2) 最短路径问题|Dijkstra算法和Floyd算法]], 以及Prim算法和Kruskal算法获取最小生成树。但是往往我们可以使用bfs来解决(实际上也是比较简单的算法, 但是时间复杂度较高) 
 
 
 ### 补充: 0-1背包问题

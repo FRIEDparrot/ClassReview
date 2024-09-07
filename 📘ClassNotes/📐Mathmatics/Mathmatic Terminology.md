@@ -1,4 +1,5 @@
 # Probability Theory
+
 reciprocal 倒数 
 cumulative distribution function 累计分布函数
 probability distribution function 概率密度分布函数 
@@ -16,5 +17,6 @@ differentation  区分, 差异化, 变异, 求导
 (需要注意:derivate 是导数$\frac{dy}{dx}$, 而differentation是差分导数$\frac{\Delta y}{\Delta x})$ 
 
 # Tensor Calculus
+
 covariant 协变基矢量
 contravariant 逆变基矢量

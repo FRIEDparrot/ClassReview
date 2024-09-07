@@ -8,7 +8,7 @@
  *********************/
 
 #include "lv_font.h"
-#include "../misc/lv_text.h"
+#include "../misc/lv_text_private.h"
 #include "../misc/lv_utils.h"
 #include "../misc/lv_log.h"
 #include "../misc/lv_assert.h"
@@ -122,7 +122,7 @@ uint16_t lv_font_get_glyph_width(const lv_font_t * font, uint32_t letter, uint32
     lv_font_glyph_dsc_t g;
 
     /*Return zero if letter is marker*/
-    if(_lv_text_is_marker(letter)) return 0;
+    if(lv_text_is_marker(letter)) return 0;
 
     lv_font_get_glyph_dsc(font, &g, letter, letter_next);
     return g.adv_w;
@@ -132,6 +132,16 @@ void lv_font_set_kerning(lv_font_t * font, lv_font_kerning_t kerning)
 {
     LV_ASSERT_NULL(font);
     font->kerning = kerning;
+}
+
+int32_t lv_font_get_line_height(const lv_font_t * font)
+{
+    return font->line_height;
+}
+
+const lv_font_t * lv_font_default(void)
+{
+    return LV_FONT_DEFAULT;
 }
 
 /**********************

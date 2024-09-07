@@ -521,7 +521,7 @@ static void _register_event_callback(void) {
 ```
 
 > [!NOTE] 函数指针与返回值的定义
-> 需要说明的是, subscribe_event 中传入 `_custom_setting_cb` 的函数类型以及返回值查看方法: 参考[[📘ClassNotes/⌨️Programming/🌳Data Structure/C++基础知识/4. 函数指针的使用|4. 函数指针的使用]], 则有:
+> 需要说明的是, subscribe_event 中传入 `_custom_setting_cb` 的函数类型以及返回值查看方法: 参考[[📘ClassNotes/⌨️Programming/🌳C and Data Structure/C++基础知识/4. 函数指针的使用|4. 函数指针的使用]], 则有:
 
 ```cpp title:.h文件中的函数指针定义
 int user_event_subscribe_event(USER_EVENT_TYPE event,_user_event_cb cb);  // 第二个是用于回调函数的函数指针

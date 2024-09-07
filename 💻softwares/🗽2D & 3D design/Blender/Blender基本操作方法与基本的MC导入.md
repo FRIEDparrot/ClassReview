@@ -18,7 +18,7 @@ shift + ~ 可以切换为飞行模式， 此时可以通过WASDQE控制前后左
 
 在导入世界之后，使用a选中所有， 并使用alt + a取消选择
 选中之后使用prep materials并更改对应的选项，可以在对应部分显示贴图
-![[attachments/Pasted image 20230821162558.png|500]]
+![[attachments/Pasted image 20230821162558.png|800]]
 通过MCprep Materials,的如下设置，可以对材料进行显示设置
 ![[attachments/Pasted image 20230821162737.png|600]]
 
@@ -59,3 +59,18 @@ b ： 进行框选
 edit 模式下: 使用p是seperate 
 
 i 键可以显示某个按钮上的帮助
+
+
+
+采用皮肤制作模型时, 需要 N > 添加 Skin , 将 Image texture 更改为我们需要的 texture. 
+![[attachments/Pasted image 20240902205556.png]]
+
+
+如果是将 STL 导出到SolidWorks 中，需要此处搜索 STL 设置import as -> solid body 
+![[attachments/Pasted image 20240902232447.png]]
+
+整体缩放采用 Insert > Molds > Scale 
+![[attachments/Pasted image 20240902234105.png]]
+
+![[attachments/Pasted image 20240903004235.png]]
+

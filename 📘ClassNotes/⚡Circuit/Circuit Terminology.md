@@ -115,6 +115,14 @@ nominal 名义上的
 monotonic  单调的
 parasitic consumption 寄生损耗
 Impedance 阻抗
+threshold 门槛
+interception  开端, 创始
+parasitic 寄生的, 依附性的
+daylight saving time 夏令时 
+deviation 偏差, 偏离  
+tamper 篡改，干预, 夯, 捣乱者, 反射器
+asynchronous  异步的, 不同时发生的
+ECU (Electronic control unit) 电子控制单元 
 
 ### FATFS
 global Partition Table 全局分区表
@@ -154,6 +162,43 @@ semaphore  信号量, 信号标, 旗语
 reentrant  可重新进入, 可再进入的
 expection  例外
 counterintuitive 反常的
+acronyms   略缩语
+isochronous 同步的， 等时的
+Schmidt 施密特 
+strobe  频闪闪光灯 
+shipment 运输  
+reel 卷轴，卷盘, 筒
+deem 认为,视为，相信 
+Mutex (es) 互斥量, 互斥锁, 互斥对象
+pseudocode 伪代码， 伪函数, 虚拟码
+
+
+### NNOM 
+fleet 舰队，车队
+deploy 部署, 调动
+dilation 膨胀, 扩张, 扩大 
+quantization  量化, 分层
+inference  推理, 推论, 推断 (do .. with) 
+fuel 提供燃料, 加强, 刺激 
+Trademark  商标, 特征，标记
+liability 负责，责任
+Warranty  担保，保证
+pointwise 逐点的,点态, CFD网格生成软件
+piler 钳子, 镊子, 
+ad-hoc **自组网的**,特别的, 对等式的
+backend 后端
+utilisation 使用, 利用
+proliferate 繁殖, 增殖
+latency 延迟, 潜伏，潜在因素
+recurrent 一再发生的,  复发的, 反复出现的
+Gated Recurrent Unit (GRU) 门控循环单元
+Quantization 量子化, 分层, 离散化 
+radix 进制，基数
+subsampling 子采样, 二次抽样 
+feed-forward 前向反馈
+luminous 夜光的, 发光的  
+antenna 天线,  电视天线
+RF (radio frequency) 射频, 无线电频率
 
 
 # 模电
@@ -175,3 +220,5 @@ Short - Circuit 短路
 Creepage distance 爬电距离
 Surface Mount Device(SMD) 表面贴装器件
 Surface Mount Technology (SMT)表面贴装技术
+
+

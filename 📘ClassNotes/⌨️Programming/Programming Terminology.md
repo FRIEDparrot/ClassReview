@@ -101,3 +101,61 @@ trade off 权衡
 astute 精明的 
 rigde regression 岭回归
 lasso regression 套索回归
+state-of-the-art 最先进的, 使用先进技术的,体现最高水平的
+curate 助理, 助理牧师
+moderator 调解人, 仲裁人,  
+harass 骚扰, 侵扰
+segmentation 分割, 划分
+versatile 多功能的, 多用途的
+gauge 判定, 测量
+benchmark 基准, 检测 
+foundational 基本的，基础的
+incite 煽动
+fraud  欺诈, 欺骗 
+defame 诽谤，污蔑, 中伤 
+defamatory 诽谤的, 造谣的 
+glyph 图示,符号,象形文字
+affine 仿射的
+concise 简明的
+ubiquitous 无处不在的, 十分普遍的
+collate 整理, 校对, 校勘
+regularize  合法化
+regularization 正则化,合法化
+implement 使生效, 贯彻, 实施
+supplement 补充 
+mitigate 减轻，缓和 
+posterior 后面的, 后部的 
+Frobenius norm 弗洛贝尼乌斯范数
+plumb  钻研, 探索, 探究
+subtly 微妙的，巧妙的
+colloquial 会话的，口语的 
+nonetheless 尽管如此
+brittle 易碎的, 脆的
+outliers 异常值, 寄居外地者,局外人
+squish 压扁, 挤坏 
+ensemble 合奏，合唱， 乐团
+prevalence 流行，卓越 
+demystify 深入浅出的解释,使明白易懂
+in a nutshell 简洁的, 简括的说
+intuition 直觉, 认知力
+nontrival 非平凡的,非零的,不容易的
+whet 刺激 ... 的欲望, 增强...的兴趣
+permutation 排列, 组合, 置换
+patch 修补 
+apparel (正式场合穿的)衣服,特殊服装
+convex 凸面 
+hull 船体
+tessellation 镶嵌技术, 曲面细分, 细分曲面 (Delaunay tessellation, voronoi tesselation) 
+dump 倾倒,抛弃, 垃圾场, 垃圾堆
+incorporate 合并, 包含 
+population parameter 总体参数, 群体参数
+unobserved 不可观测的
+prior distribution 先验分布 
+posterior ... 后验分布
+denominator 分母 
+concave 凹面的, 凹函数
+convex  凸面的
+multinomial  多项式的
+complement 补足, 补充, 使吸引
+retrieval 检索, 取回
+corpus 语料库

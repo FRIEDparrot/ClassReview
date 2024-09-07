@@ -7,6 +7,7 @@
  *      INCLUDES
  *********************/
 
+#include "../../draw/lv_image_decoder_private.h"
 #include "../lv_assert.h"
 #include "../../core/lv_global.h"
 
@@ -17,7 +18,10 @@
  *      DEFINES
  *********************/
 
+#define CACHE_NAME  "IMAGE"
+
 #define img_cache_p (LV_GLOBAL_DEFAULT()->img_cache)
+#define image_cache_draw_buf_handlers &(LV_GLOBAL_DEFAULT()->image_cache_draw_buf_handlers)
 
 /**********************
  *      TYPEDEFS
@@ -59,6 +63,8 @@ lv_result_t lv_image_cache_init(uint32_t size)
         .create_cb = NULL,
         .free_cb = (lv_cache_free_cb_t) image_cache_free_cb,
     });
+
+    lv_cache_set_name(img_cache_p, CACHE_NAME);
     return img_cache_p != NULL ? LV_RESULT_OK : LV_RESULT_INVALID;
 }
 
@@ -131,7 +137,7 @@ static void image_cache_free_cb(lv_image_cache_data_t * entry, void * user_data)
     /* Destroy the decoded draw buffer if necessary. */
     lv_draw_buf_t * decoded = (lv_draw_buf_t *)entry->decoded;
     if(lv_draw_buf_has_flag(decoded, LV_IMAGE_FLAGS_ALLOCATED)) {
-        lv_draw_buf_destroy(decoded);
+        lv_draw_buf_destroy_user(image_cache_draw_buf_handlers, decoded);
     }
 
     /*Free the duplicated file name*/

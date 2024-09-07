@@ -1,0 +1,66 @@
+name: "Static Analysis"
+
+on: [push]
+
+jobs:
+  codeql:
+    name: CodeQL
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: ['cpp']
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 1
+
+    - name: apt-get install packages
+      run: sudo apt-get update -qq &&
+           sudo apt-get install --no-install-recommends -y
+               libyaml-dev
+
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v2
+      with:
+        languages: ${{ matrix.language }}
+
+    - run: |
+       make
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
+
+  scan-build:
+    name: scan-build
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: ['cpp']
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 1
+
+    - name: apt-get install packages
+      run: sudo apt-get update -qq &&
+           sudo apt-get install --no-install-recommends -y
+               libyaml-dev
+               clang-tools
+
+    - name: scan-build
+      run: |
+       make clean
+       scan-build -sarif -o build/sarif make
+
+    - name: upload scan-build
+      uses: github/codeql-action/upload-sarif@v2
+      with:
+        sarif_file: build/sarif

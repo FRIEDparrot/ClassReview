@@ -8,7 +8,6 @@
 对于旋转编码器， **实际上也是每隔一段时间取一次计次值**, 获取编码器的旋转速度。 
 可以实现全自动的速度测量， 例如用于电机的 PID 控制， 而由于**电机的旋转速度比较高， 往往使用无接触式的霍尔传感器或者光栅进行测速**, 
 
-
 编码器接口相当于是**带有方向控制的外部时钟**， 可以同时控制 CNT 的计数时钟和计数方向。
 速度可以每一次取值并清零进行获取。 
 编码器接口可以**实现进行自增计次和自减计次**。
@@ -115,8 +114,8 @@ void Encoder_Init(){ // Init the encoder timer 3
 
     TIM_ICInitTypeDef* TIM3_ICInitStruct = new TIM_ICInitTypeDef();
     // not use ICInit to initialize 1 by 1 here 
-    TIM_ICStructInit(TIM3_ICInitStruct); 
-    TIM3_ICInitStruct ->TIM_Channel = TIM_Channel_1 ;
+    TIM_ICStructInit(TIM3_ICInitStruct);
+    TIM3_ICInitStruct ->TIM_Channel = TIM_Channel_1;
     TIM3_ICInitStruct ->TIM_ICFilter = 0xF;
     // set Rising edge here means not reverse high and low voltage level
     // if use rising edge, the corresponding port will be reversed 
@@ -160,7 +159,6 @@ TIM_SetCounter(TIM3,  0);  // 清零计数器
 我们使用定时器2来测量旋钮的速度, 首先, 基本的过程是通过TIM3的触发TIM2定时器，  每一次触发时, 都会比较与上一次触发的时间, 从而计算出旋钮的旋转速度。 
 
 首先一圈是20次旋钮, 因此旋钮一次旋转角度为 18度, 此时TIM3每一次的触发, 都会被TIM2所记录。 即获取TIM2两次触发的间隔来获取角速度。
-
 测量旋钮速度的基本方法是测频法，即使用输入捕获功能,  基本原理与测量PWM波的频率类似。
 
 测速方法是使用从模式并且以Encoder为输入源， 
@@ -187,10 +185,8 @@ TIM_SelectSlaveMode(TIM2, TIM_SlaveMode_Reset);
 ```
 
 而基本的思路是每次GetCapture(TIM3), 且在获得满时, 显示为0, 在不满时, 计算对应的角速度, 频率越高, 速度越快。
-
-我们仅考虑一种模式, 在这种模式下, 主循环会快速准确读取旋钮的位置和速度。 
-
-由于编码器作为编码之后, 就失去了触发的能力, 因此可以考虑使用软件进行计数和触发。 
+我们仅考虑一种模式, 在这种模式下, 主循环会快速准确读取旋钮的位置和速度。
+由于编码器作为编码之后, 就失去了触发的能力, 因此可以考虑使用软件进行计数和触发。
 
 ```cpp title:在主程序中,测量角速度以及位置
 #include "stm32f10x.h"

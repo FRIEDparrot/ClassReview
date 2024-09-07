@@ -13,6 +13,9 @@
 
 #include <lvgl.h>
 #include <rtthread.h>
+#ifdef PKG_USING_CPU_USAGE
+#include "cpu_usage.h"
+#endif /* PKG_USING_CPU_USAGE */
 
 #define DBG_TAG    "LVGL"
 #define DBG_LVL    DBG_INFO
@@ -34,7 +37,9 @@ extern void lv_port_disp_init(void);
 extern void lv_port_indev_init(void);
 extern void lv_user_gui_init(void);
 
+
 static struct rt_thread lvgl_thread;
+
 
 #ifdef rt_align
     rt_align(RT_ALIGN_SIZE)
@@ -50,6 +55,13 @@ static void lv_rt_log(const char *buf)
 }
 #endif /* LV_USE_LOG */
 
+#ifdef PKG_USING_CPU_USAGE
+uint32_t lv_timer_os_get_idle(void)
+{
+    return (100 - (uint32_t)cpu_load_average());
+}
+#endif /* PKG_USING_CPU_USAGE */
+
 static void lvgl_thread_entry(void *parameter)
 {
 #if LV_USE_LOG
@@ -59,13 +71,17 @@ static void lvgl_thread_entry(void *parameter)
     lv_port_disp_init();
     lv_port_indev_init();
     lv_user_gui_init();
-
+	
     lv_tick_set_cb(&rt_tick_get_millisecond);
+	
+#ifdef PKG_USING_CPU_USAGE
+    cpu_usage_init();
+#endif /* PKG_USING_CPU_USAGE */
 
     /* handle the tasks of LVGL */
     while(1)
     {
-        lv_task_handler();
+        lv_timer_handler();
         rt_thread_mdelay(PKG_LVGL_DISP_REFR_PERIOD);
     }
 }
