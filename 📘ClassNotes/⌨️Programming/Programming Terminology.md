@@ -1,3 +1,4 @@
+### 1. Algorithms
 Greedy (贪心法)：最短路经
 Divide & Conquer (分治法)：如二分法检索、Hanoi塔
 Backtracking (回溯法)：迷宫、皇后问题
@@ -159,3 +160,44 @@ multinomial  多项式的
 complement 补足, 补充, 使吸引
 retrieval 检索, 取回
 corpus 语料库
+multivariate 多变量的, 多元的
+categorically distributed 分类分布
+spectral 谱的, 光谱的
+decomposition 分解, 腐烂
+matroid 拟阵(如FUZZY拟阵, Modular拟阵等)
+Meteoroid 流星体
+Meteorite 陨石
+asteroid  小行星 
+combinatorics 集合论
+hereditary 遗传的, 遗传性的, 世袭的
+hereditary property(downward-closed property) 遗传性质
+argumentation 推论, 证据, 论证
+
+
+
+### 2. Pytorch 
+newswire 新闻专线
+augment 加强, 扩大, 提高, 补充
+quotient 商
+semantics  语义的
+taxonomy 分类学, 分类法 
+benchmark 检测(用基准问题测试) 
+
+superceded 被取代 
+suprious 虚假的, 伪造的
+hierarchical 等级的,等级制度的
+coperate ownership 法人所有权
+obituary  讣闻，讣告
+slug 少量, 一小杯
+alphanumeric 含有字母和数字的 
+anomoly 异常事物，反常现象
+demolition 拆毁，拆除 (demolish)
+ferrous 含铁的, 铁的
+obligatory 强制性的, 法律性的
+metrics 度量指标, 衡量指标 
+delimited 分隔的, 界限, 界定
+prune 修剪 
+apparel (正式场合穿的)服装, 穿衣服
+ensemble 合奏，合唱团
+demographic 人口统计学的 
+dispatch 调度, 派遣, 调遣

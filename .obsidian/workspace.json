@@ -4,40 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5913408407c1c885",
+        "id": "d5d2092a83529d30",
         "type": "tabs",
         "children": [
           {
-            "id": "f7ba71ab99a185fe",
+            "id": "3801a4c974142c6a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/1.机器学习算法基本内容.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b98a07541600b1eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/⌨️Programming/🐍Python/1. Python常用命令基础.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "07793d2279a832d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/gargets/1. Pytorch & sklearn的使用基础和基本代码.md",
+                "file": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第四章 贪心算法.md",
                 "mode": "source",
                 "source": false
               }
@@ -55,7 +31,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 54.96794871794871,
+        "dimension": 44.21148587055606,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -103,22 +79,23 @@
       {
         "id": "066eddf15a13dd56",
         "type": "tabs",
-        "dimension": 45.03205128205129,
+        "dimension": 55.78851412944393,
         "children": [
           {
-            "id": "db0ad0041a71350b",
+            "id": "7778856753ec014b",
             "type": "leaf",
             "state": {
-              "type": "recent-files",
-              "state": {}
+              "type": "outline",
+              "state": {
+                "file": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第四章 贪心算法.md"
+              }
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 373.5110321044922,
-    "collapsed": true
+    "width": 357.5110321044922
   },
   "right": {
     "id": "f7de553c162de521",
@@ -163,7 +140,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/1.机器学习算法基本内容.md",
+                "file": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第四章 贪心算法.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -246,7 +223,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
+                "file": "📘ClassNotes/🚱materials and chemicals/Chemical Terminology.md",
                 "mode": "source",
                 "source": false
               }
@@ -293,22 +270,12 @@
         "dimension": 45.06708760852407,
         "children": [
           {
-            "id": "7778856753ec014b",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/1.机器学习算法基本内容.md"
-              }
-            }
-          },
-          {
             "id": "90c56e3ca15685e0",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/1.机器学习算法基本内容.md",
+                "file": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第四章 贪心算法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -320,12 +287,20 @@
             }
           },
           {
+            "id": "db0ad0041a71350b",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
             "id": "45988039c8b25193",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/1.机器学习算法基本内容.md",
+                "file": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第四章 贪心算法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -342,12 +317,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 504.5,
-    "collapsed": true
+    "width": 504.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -372,54 +347,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f7ba71ab99a185fe",
+  "active": "3801a4c974142c6a",
   "lastOpenFiles": [
+    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/〽️ Data Structure/第六章 树和二叉树.md",
+    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第四章 贪心算法.md",
     "📘ClassNotes/⌨️Programming/Programming Terminology.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/1.机器学习算法基本内容.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/gargets/1. Pytorch & sklearn的使用基础和基本代码.md",
-    "📘ClassNotes/⌨️Programming/🐍Python/1. Python常用命令基础.md",
-    "🗒️Templates/INSERT_EXP_SYMBOL.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/补充知识/2. MAP estimation(最大单后验可能性估计).md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/补充知识/1. ML estimation 最大似然估计.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
-    "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
-    "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md",
-    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-    "📘ClassNotes/👨‍🔧Mechanics/Mechanic Terminology.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
-    "📘ClassNotes/⌨️Programming/🐍Python/2. Python 基本数据结构和可视化方法.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/补充知识",
-    "attachments/Pasted image 20240905231216.png",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习常用库及命令总结.md",
-    "attachments/Pasted image 20240905224122.png",
-    "attachments/Pasted image 20240905185037.png",
-    "📘ClassNotes/⌨️Programming/🐍Python/Python 中类和继承的使用.md",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/第五章 矩阵的相似变换.md",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/第四章 线性方程组解的结构.md",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/第二章 矩阵及其运算.md",
-    "Excalidraw/1.机器学习算法基本内容 2024-09-05 11.09.17.md",
-    "🐸 Daily Life memo/备忘录.md",
-    "🐸 Daily Life memo/一些额外知识.md",
-    "📘ClassNotes/⌨️Programming/➗MATLAB/Basic Usage/1. Matlab常用函数和概率函数示例.md",
-    "🐸 Daily Life memo/常用直接运算.md",
+    "Excalidraw/第四章 贪心算法 2024-09-17 12.30.50.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/重要定理/几何分布的说明.md",
+    "attachments/Pasted image 20240917161131.png",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理",
-    "attachments/Pasted image 20240904225717.png",
-    "attachments/Pasted image 20240903004235.png",
-    "attachments/Pasted image 20240902234105.png",
-    "attachments/Pasted image 20240902232447.png",
-    "attachments/Pasted image 20240902205556.png",
-    "attachments/Pasted image 20240901210609.png",
-    "attachments/Pasted image 20240901210525.png",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Algorithms",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Derivations/Derivation of Linear Regression.pdf",
-    "💻softwares/⚡Circuit/🤖 STM32F4和HAL库/LVGL界面设计与原理/GB2312(含有4485常用字符).txt",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/libcyaml-main/test/data/basic.yaml",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/libcyaml-main/test/units/util.c",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/libcyaml-main/test/units/utf8.c",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/libcyaml-main/test/units/ttest.h",
-    "💻softwares/⚡Circuit/🎮STM32教程/模板文件/F407/Templates/Middlewares/Third_Party/libcyaml-main/test/units/test.c",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/常见等价无穷小与极限.md",
+    "Excalidraw/第六章 树和二叉树 2023-04-25 11.31.07.md",
+    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/结构体相关/C++结构体友元运算符重载.md",
+    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/The Basics of the Data Structures.md",
+    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/结构体相关",
+    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/C++预置数据结构和用法.md",
+    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/C++自定义哈希函数.md",
+    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/4. 函数指针的使用.md",
+    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/2. 一些补充笔记.md",
+    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第三章 动态规划算法.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/gargets/torch多层神经网络.md",
+    "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
+    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/〽️ Data Structure/第七章 图.md",
+    "Excalidraw/第四章 贪心算法 2024-09-17 10.39.06.md",
+    "Excalidraw/第七章 图 2023-05-16 11.02.57.md",
+    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第二章 递归与分治算法.md",
+    "💻softwares/🗽2D & 3D design/ideaMaker/1. ideaMaker基本使用方法.md",
+    "attachments/Pasted image 20240916013839.png",
+    "attachments/Pasted image 20240916013223.png",
+    "attachments/Pasted image 20240916012713.png",
+    "attachments/Pasted image 20240916012641.png",
+    "attachments/Pasted image 20240916012507.png",
+    "💻softwares/📈Data Analysis/IBM SPSS/1. IBM SPSS 入门和基本操作.md",
+    "💻softwares/🗽2D & 3D design/ideaMaker",
+    "attachments/Pasted image 20240915225013.png",
+    "attachments/Pasted image 20240915223351.png",
+    "attachments/Pasted image 20240915212742.png",
+    "attachments/Pasted image 20240915211837.png",
+    "💻softwares/📈Data Analysis",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法原理(sklearn)/3. 推荐系统和需求搜寻算法.md",
+    "💻softwares/📈Data Analysis/IBM SPSS",
+    "Excalidraw/3. 推荐系统和需求搜寻算法 2024-09-14 18.03.57.md",
+    "📘ClassNotes/🐧Computer System/GNU Make 使用",
+    "📘ClassNotes/🐧Computer System",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/常见分布与变量函数的数学期望.pdf",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/tesseract光学识别库部分",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/推导部分/支持向量机SVM分类与回归算法推导过程.pdf",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法原理(sklearn)/补充知识",
     "Untitled.canvas",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]

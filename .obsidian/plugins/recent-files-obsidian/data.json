@@ -1,48 +1,160 @@
 {
   "recentFiles": [
     {
-      "basename": "1.机器学习算法基本内容",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/1.机器学习算法基本内容.md"
+      "basename": "第四章 贪心算法",
+      "path": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第四章 贪心算法.md"
+    },
+    {
+      "basename": "第六章 树和二叉树",
+      "path": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/〽️ Data Structure/第六章 树和二叉树.md"
     },
     {
       "basename": "Programming Terminology",
       "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
     },
     {
-      "basename": "1. Pytorch & sklearn的使用基础和基本代码",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/gargets/1. Pytorch & sklearn的使用基础和基本代码.md"
+      "basename": "第四章 贪心算法 2024-09-17 12.30.50",
+      "path": "Excalidraw/第四章 贪心算法 2024-09-17 12.30.50.md"
     },
     {
-      "basename": "1. Python常用命令基础",
-      "path": "📘ClassNotes/⌨️Programming/🐍Python/1. Python常用命令基础.md"
+      "basename": "几何分布的说明",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/重要定理/几何分布的说明.md"
     },
     {
-      "basename": "INSERT_EXP_SYMBOL",
-      "path": "🗒️Templates/INSERT_EXP_SYMBOL.md"
+      "basename": "第二章 随机变量及其分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md"
     },
     {
-      "basename": "2. MAP estimation(最大单后验可能性估计)",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/补充知识/2. MAP estimation(最大单后验可能性估计).md"
+      "basename": "常见等价无穷小与极限",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/常见等价无穷小与极限.md"
     },
     {
-      "basename": "1. ML estimation 最大似然估计",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法基本原理/补充知识/1. ML estimation 最大似然估计.md"
+      "basename": "第六章 树和二叉树 2023-04-25 11.31.07",
+      "path": "Excalidraw/第六章 树和二叉树 2023-04-25 11.31.07.md"
     },
     {
-      "basename": "第七章 参数估计",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md"
+      "basename": "C++结构体友元运算符重载",
+      "path": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/结构体相关/C++结构体友元运算符重载.md"
     },
     {
-      "basename": "第四章 随机变量的数字特征",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md"
+      "basename": "The Basics of the Data Structures",
+      "path": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/The Basics of the Data Structures.md"
+    },
+    {
+      "basename": "C++预置数据结构和用法",
+      "path": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/C++预置数据结构和用法.md"
+    },
+    {
+      "basename": "C++自定义哈希函数",
+      "path": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/C++自定义哈希函数.md"
+    },
+    {
+      "basename": "4. 函数指针的使用",
+      "path": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/4. 函数指针的使用.md"
+    },
+    {
+      "basename": "2. 一些补充笔记",
+      "path": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/2. 一些补充笔记.md"
+    },
+    {
+      "basename": "第三章 动态规划算法",
+      "path": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第三章 动态规划算法.md"
+    },
+    {
+      "basename": "torch多层神经网络",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/gargets/torch多层神经网络.md"
     },
     {
       "basename": "Mathmatic Terminology",
       "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
     },
     {
+      "basename": "第七章 图",
+      "path": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/〽️ Data Structure/第七章 图.md"
+    },
+    {
+      "basename": "第四章 贪心算法 2024-09-17 10.39.06",
+      "path": "Excalidraw/第四章 贪心算法 2024-09-17 10.39.06.md"
+    },
+    {
+      "basename": "第七章 图 2023-05-16 11.02.57",
+      "path": "Excalidraw/第七章 图 2023-05-16 11.02.57.md"
+    },
+    {
+      "basename": "第二章 递归与分治算法",
+      "path": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第二章 递归与分治算法.md"
+    },
+    {
+      "basename": "1. ideaMaker基本使用方法",
+      "path": "💻softwares/🗽2D & 3D design/ideaMaker/1. ideaMaker基本使用方法.md"
+    },
+    {
+      "basename": "1. IBM SPSS 入门和基本操作",
+      "path": "💻softwares/📈Data Analysis/IBM SPSS/1. IBM SPSS 入门和基本操作.md"
+    },
+    {
+      "basename": "3. 推荐系统和需求搜寻算法",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法原理(sklearn)/3. 推荐系统和需求搜寻算法.md"
+    },
+    {
+      "basename": "3. 推荐系统和需求搜寻算法 2024-09-14 18.03.57",
+      "path": "Excalidraw/3. 推荐系统和需求搜寻算法 2024-09-14 18.03.57.md"
+    },
+    {
+      "basename": "Pytorch & sklearn的使用基础和基本代码",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Pytorch & sklearn的使用基础和基本代码.md"
+    },
+    {
+      "basename": "4.KNN算法和KMeans算法",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法原理(sklearn)/补充知识/4.KNN算法和KMeans算法.md"
+    },
+    {
+      "basename": "5.SVM支持向量机",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法原理(sklearn)/补充知识/5.SVM支持向量机.md"
+    },
+    {
+      "basename": "学习使用图片常见操作",
+      "path": "📘ClassNotes/⌨️Programming/🐍Python/学习使用图片常见操作.md"
+    },
+    {
+      "basename": "Chapter4 Linear Neural Networks for Classification",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Chapter4 Linear Neural Networks for Classification.md"
+    },
+    {
+      "basename": "备忘录",
+      "path": "🐸 Daily Life memo/备忘录.md"
+    },
+    {
+      "basename": "Chapter3 Linear Neural  Networks for regression",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Chapter3 Linear Neural  Networks for regression.md"
+    },
+    {
+      "basename": "1. Python常用命令基础",
+      "path": "📘ClassNotes/⌨️Programming/🐍Python/1. Python常用命令基础.md"
+    },
+    {
+      "basename": "5. 最简单的 nn 库使用方法",
+      "path": "📘ClassNotes/⌨️Programming/🐍Python/5. 最简单的 nn 库使用方法.md"
+    },
+    {
+      "basename": "4. Python 正则表达式和 re 库",
+      "path": "📘ClassNotes/⌨️Programming/🐍Python/4. Python 正则表达式和 re 库.md"
+    },
+    {
+      "basename": "2. Python 基本数据结构和可视化方法",
+      "path": "📘ClassNotes/⌨️Programming/🐍Python/2. Python 基本数据结构和可视化方法.md"
+    },
+    {
+      "basename": "Cmake安装",
+      "path": "📘ClassNotes/🐧Computer System/GNU Make 使用/Cmake安装.md"
+    },
+    {
+      "basename": "2. 决策树和回归树",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法原理(sklearn)/2. 决策树和回归树.md"
+    },
+    {
       "basename": "Chemical Terminology",
-      "path": "📘ClassNotes/⚗️materials and chemicals/Chemical Terminology.md"
+      "path": "📘ClassNotes/🚱materials and chemicals/Chemical Terminology.md"
     },
     {
       "basename": "Circuit Terminology",
@@ -53,152 +165,40 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/Mechanic Terminology.md"
     },
     {
+      "basename": "常用的概率分布及数学期望和方差",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/重要定理/常用的概率分布及数学期望和方差.md"
+    },
+    {
+      "basename": "第六章 样本及抽样分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md"
+    },
+    {
       "basename": "第三章 多维随机变量及其分布",
       "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
     },
     {
-      "basename": "2. Python 基本数据结构和可视化方法",
-      "path": "📘ClassNotes/⌨️Programming/🐍Python/2. Python 基本数据结构和可视化方法.md"
+      "basename": "常见分布与变量函数的数学期望",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/常见分布与变量函数的数学期望.pdf"
     },
     {
-      "basename": "深度学习常用库及命令总结",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习常用库及命令总结.md"
+      "basename": "第四章 随机变量的数字特征",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md"
     },
     {
-      "basename": "第五章 矩阵的相似变换",
-      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第五章 矩阵的相似变换.md"
+      "basename": "1. 基本用法(namespace, Struct, Typedef)",
+      "path": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/1. 基本用法(namespace, Struct, Typedef).md"
     },
     {
-      "basename": "第四章 线性方程组解的结构",
-      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第四章 线性方程组解的结构.md"
+      "basename": "2. 决策树和回归树 2024-09-12 23.41.10",
+      "path": "Excalidraw/2. 决策树和回归树 2024-09-12 23.41.10.md"
     },
     {
-      "basename": "第二章 矩阵及其运算",
-      "path": "📘ClassNotes/📐Mathmatics/📏linear algebra/第二章 矩阵及其运算.md"
+      "basename": "2. 决策树和回归树 2024-09-11 18.13.37",
+      "path": "Excalidraw/2. 决策树和回归树 2024-09-11 18.13.37.md"
     },
     {
-      "basename": "1.机器学习算法基本内容 2024-09-05 11.09.17",
-      "path": "Excalidraw/1.机器学习算法基本内容 2024-09-05 11.09.17.md"
-    },
-    {
-      "basename": "备忘录",
-      "path": "🐸 Daily Life memo/备忘录.md"
-    },
-    {
-      "basename": "1. Matlab常用函数和概率函数示例",
-      "path": "📘ClassNotes/⌨️Programming/➗MATLAB/Basic Usage/1. Matlab常用函数和概率函数示例.md"
-    },
-    {
-      "basename": "第二章 随机变量及其分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md"
-    },
-    {
-      "basename": "Drawing 2024-09-05 10.53.07",
-      "path": "Excalidraw/Drawing 2024-09-05 10.53.07.md"
-    },
-    {
-      "basename": "4.Keras 常用函数总结",
-      "path": "💻softwares/⚡Circuit/🤖 STM32F4和HAL库/NNOM深度学习和IMU/4.Keras 常用函数总结.md"
-    },
-    {
-      "basename": "第八章 向量代数和空间解析几何",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第八章 向量代数和空间解析几何.md"
-    },
-    {
-      "basename": "Chapter4 Linear Neural Networks for Classification",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Chapter4 Linear Neural Networks for Classification.md"
-    },
-    {
-      "basename": "曲面放置文字",
-      "path": "💻softwares/🗽2D & 3D design/UG/曲面放置文字.md"
-    },
-    {
-      "basename": "Blender基本操作方法与基本的MC导入",
-      "path": "💻softwares/🗽2D & 3D design/Blender/Blender基本操作方法与基本的MC导入.md"
-    },
-    {
-      "basename": "Blender 骨骼绑定和人物设置",
-      "path": "💻softwares/🗽2D & 3D design/Blender/Blender 骨骼绑定和人物设置.md"
-    },
-    {
-      "basename": "第九章 Kriging代理模型与可靠性与局部灵敏度分析",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第九章 Kriging代理模型与可靠性与局部灵敏度分析.md"
-    },
-    {
-      "basename": "第一章 随机事件及其概率",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md"
-    },
-    {
-      "basename": "Chapter4 Linear Neural Networks for Classification 2024-09-02 09.04.51",
-      "path": "Excalidraw/Chapter4 Linear Neural Networks for Classification 2024-09-02 09.04.51.md"
-    },
-    {
-      "basename": "Chapter3 Linear Neural  Networks for regression",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Chapter3 Linear Neural  Networks for regression.md"
-    },
-    {
-      "basename": "多层感知机讲解 2022-11-26 15.27.23.excalidraw",
-      "path": "Excalidraw/多层感知机讲解 2022-11-26 15.27.23.excalidraw.md"
-    },
-    {
-      "basename": "模型选择，欠拟合，过拟合",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/gargets/Implements/模型选择，欠拟合，过拟合.md"
-    },
-    {
-      "basename": "多层感知机,神经网络",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/gargets/Implements/多层感知机,神经网络.md"
-    },
-    {
-      "basename": "torch的多层神经网络",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/gargets/Implements/torch的多层神经网络.md"
-    },
-    {
-      "basename": "softmax函数",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/gargets/Implements/softmax函数.md"
-    },
-    {
-      "basename": "Hilbert变换,HHT变换和EMD分解",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/gargets/Implements/Hilbert变换,HHT变换和EMD分解.md"
-    },
-    {
-      "basename": "CNN神经网络讲解",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/Advanced deeplearning/CNN神经网络讲解.md"
-    },
-    {
-      "basename": "线性回归",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/基本课程/线性回归.md"
-    },
-    {
-      "basename": "相关概念",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/基本课程/相关概念.md"
-    },
-    {
-      "basename": "振动信号处理",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/基本课程/振动信号处理.md"
-    },
-    {
-      "basename": "3.多层感知机讲解",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/基本课程/3.多层感知机讲解.md"
-    },
-    {
-      "basename": "1.KNN算法和KMeans算法",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Algorithms/1.KNN算法和KMeans算法.md"
-    },
-    {
-      "basename": "Derivation of Linear Regression",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Derivations/Derivation of Linear Regression.pdf"
-    },
-    {
-      "basename": "affine function",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/gargets/affine function.md"
-    },
-    {
-      "basename": "Chapter1 Introduction",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Chapter1 Introduction.md"
-    },
-    {
-      "basename": "Chapter2 Preliminaries",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/Chapter2 Preliminaries.md"
+      "basename": "2. 决策树和回归树 2024-09-13 00.25.59",
+      "path": "Excalidraw/2. 决策树和回归树 2024-09-13 00.25.59.md"
     }
   ],
   "omittedPaths": [],
