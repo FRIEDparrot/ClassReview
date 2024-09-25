@@ -1,4 +1,1 @@
-`````ad-todo
-title: 推导
-collapse: open
-`````
+> [!todo] 推导

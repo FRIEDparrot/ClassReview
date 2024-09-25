@@ -28,4 +28,6 @@ nominal 名义上的, 很小的, 象征性的
 ordinal 序数的, 依次的
 hypertension 高血压
 humidity 湿度
-outlier 异常值, 
+outlier 异常值 
+Significance 显著性
+Asymptotic 渐进的

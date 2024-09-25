@@ -641,16 +641,6 @@
       "key": "P"
     }
   ],
-  "slides:start": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod",
-        "Shift"
-      ],
-      "key": "S"
-    }
-  ],
   "templater-obsidian:🗒️Templates/INSERT_CDOT_SIGN.md": [
     {
       "modifiers": [
@@ -679,14 +669,6 @@
       "modifiers": [
         "Alt",
         "Shift"
-      ],
-      "key": "U"
-    }
-  ],
-  "templater-obsidian:🗒️Templates/INSERT_CUP_SIGN.md": [
-    {
-      "modifiers": [
-        "Alt"
       ],
       "key": "U"
     }
@@ -1588,6 +1570,44 @@
         "Mod"
       ],
       "key": "E"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_NOTIN_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": ","
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_SUM_WITH_INDEX.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "S"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/SEQUENCE_X_UNKNOWVAR.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "-"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_CUP_SIGN.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "U"
     }
   ]
 }

@@ -4,18 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "d5d2092a83529d30",
+        "id": "e65711ff22c1ed80",
         "type": "tabs",
         "children": [
           {
-            "id": "3801a4c974142c6a",
+            "id": "184b50fe92311f67",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第四章 贪心算法.md",
+                "file": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "bd7266af72e44e18",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/第五章 回溯法(DFS) 2024-09-25 14.47.42.md"
+              }
+            }
+          },
+          {
+            "id": "434b7ac4764755e3",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/第五章 回溯法(DFS) 2024-09-23 19.37.58.md"
               }
             }
           }
@@ -31,7 +51,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 44.21148587055606,
+        "dimension": 55.93065693430657,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -65,21 +85,13 @@
               "type": "bookmarks",
               "state": {}
             }
-          },
-          {
-            "id": "377f74bc4ca30883",
-            "type": "leaf",
-            "state": {
-              "type": "surfing-tab-tree",
-              "state": {}
-            }
           }
         ]
       },
       {
         "id": "066eddf15a13dd56",
         "type": "tabs",
-        "dimension": 55.78851412944393,
+        "dimension": 44.06934306569343,
         "children": [
           {
             "id": "7778856753ec014b",
@@ -87,7 +99,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第四章 贪心算法.md"
+                "file": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md"
               }
             }
           }
@@ -95,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 357.5110321044922
+    "width": 317.5110321044922
   },
   "right": {
     "id": "f7de553c162de521",
@@ -140,7 +152,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第四章 贪心算法.md",
+                "file": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -175,14 +187,6 @@
                   "close": true
                 }
               }
-            }
-          },
-          {
-            "id": "95be20126d25a8da",
-            "type": "leaf",
-            "state": {
-              "type": "mermaid-toolbar-view",
-              "state": {}
             }
           },
           {
@@ -254,7 +258,7 @@
             }
           },
           {
-            "id": "b523d89f995d7d4f",
+            "id": "0346d2ad818e4845",
             "type": "leaf",
             "state": {
               "type": "timeline",
@@ -262,7 +266,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 9
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -275,7 +279,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第四章 贪心算法.md",
+                "file": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -300,7 +304,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第四章 贪心算法.md",
+                "file": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -322,7 +326,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 504.5
+    "width": 510.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -344,56 +348,59 @@
       "templater-obsidian:Templater": false,
       "dbfolder:Create a new database table": false,
       "media-extended:Open media": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-kanban:Create new board": false
     }
   },
-  "active": "3801a4c974142c6a",
+  "active": "184b50fe92311f67",
   "lastOpenFiles": [
-    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/〽️ Data Structure/第六章 树和二叉树.md",
-    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第四章 贪心算法.md",
+    "Excalidraw/第五章 回溯法(DFS) 2024-09-25 15.43.41.md",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md",
+    "Excalidraw/第五章 回溯法(DFS) 2024-09-25 14.47.42.md",
+    "Excalidraw/第五章 回溯法(DFS) 2024-09-23 19.37.58.md",
+    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md",
+    "🗒️Templates/INSERT_TODO_DERIVATION.md",
+    "🗒️Templates/INSERT_CUP_SIGN.md",
+    "🗒️Templates/INSERT_CAP_SIGN.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第四章 线性方程组解的结构.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/等价向量组的相关定理证明.pdf",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第五章 矩阵的相似变换.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/向量的线性相关判定定理证明.pdf",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第二章 矩阵及其运算.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/方阵乘积的行列式的证明.pdf",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第三章 矩阵的初等变换.md",
+    "Excalidraw/1. 线性空间与线性变换 2024-09-25 00.04.47.md",
+    "🗒️Templates/SEQUENCE_X_UNKNOWVAR.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Pytorch & sklearn的使用基础和基本代码.md",
+    "📘ClassNotes/⌨️Programming/🐍Python/1. Python常用命令基础.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/1.机器学习算法和文本分类挖掘(Naive Bayes).md",
+    "📘ClassNotes/⌨️Programming/🐍Python/数据处理详解(np,pd,plt)/mpl toolkits库的使用.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/3. 推荐系统和需求搜寻算法(CF,PCA,SVD).md",
+    "📘ClassNotes/⌨️Programming/🐍Python/数据处理详解(np,pd,plt)/1. Numpy 命令详解.md",
     "📘ClassNotes/⌨️Programming/Programming Terminology.md",
-    "Excalidraw/第四章 贪心算法 2024-09-17 12.30.50.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/重要定理/几何分布的说明.md",
-    "attachments/Pasted image 20240917161131.png",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/常见等价无穷小与极限.md",
-    "Excalidraw/第六章 树和二叉树 2023-04-25 11.31.07.md",
-    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/结构体相关/C++结构体友元运算符重载.md",
-    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/The Basics of the Data Structures.md",
-    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/结构体相关",
-    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/C++预置数据结构和用法.md",
-    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/C++自定义哈希函数.md",
-    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/4. 函数指针的使用.md",
-    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/C++基础知识/2. 一些补充笔记.md",
-    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第三章 动态规划算法.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Dive into Deep Learning(Pytorch)/gargets/torch多层神经网络.md",
+    "attachments/Pasted image 20240924102913.png",
+    "attachments/Pasted image 20240924102001.png",
+    "📘ClassNotes/⌨️Programming/🐍Python/数据处理详解(np,pd,plt)",
+    "🗑️trash/Untitled.md",
     "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
-    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/〽️ Data Structure/第七章 图.md",
-    "Excalidraw/第四章 贪心算法 2024-09-17 10.39.06.md",
-    "Excalidraw/第七章 图 2023-05-16 11.02.57.md",
-    "📘ClassNotes/⌨️Programming/🌳C (Data Structure & Algorithms)/🛰️Algorithms/第二章 递归与分治算法.md",
-    "💻softwares/🗽2D & 3D design/ideaMaker/1. ideaMaker基本使用方法.md",
-    "attachments/Pasted image 20240916013839.png",
-    "attachments/Pasted image 20240916013223.png",
-    "attachments/Pasted image 20240916012713.png",
-    "attachments/Pasted image 20240916012641.png",
-    "attachments/Pasted image 20240916012507.png",
-    "💻softwares/📈Data Analysis/IBM SPSS/1. IBM SPSS 入门和基本操作.md",
-    "💻softwares/🗽2D & 3D design/ideaMaker",
-    "attachments/Pasted image 20240915225013.png",
-    "attachments/Pasted image 20240915223351.png",
-    "attachments/Pasted image 20240915212742.png",
-    "attachments/Pasted image 20240915211837.png",
-    "💻softwares/📈Data Analysis",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法原理(sklearn)/3. 推荐系统和需求搜寻算法.md",
-    "💻softwares/📈Data Analysis/IBM SPSS",
-    "Excalidraw/3. 推荐系统和需求搜寻算法 2024-09-14 18.03.57.md",
-    "📘ClassNotes/🐧Computer System/GNU Make 使用",
-    "📘ClassNotes/🐧Computer System",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/常见分布与变量函数的数学期望.pdf",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/tesseract光学识别库部分",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/推导部分/支持向量机SVM分类与回归算法推导过程.pdf",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/深度学习算法原理(sklearn)/补充知识",
+    "Excalidraw/第五章 回溯法(DFS) 2024-09-23 16.31.20.md",
+    "Excalidraw/第五章 回溯法(DFS) 2024-09-23 09.06.36.md",
+    "attachments/Pasted Image 20240923093641_621.png",
+    "attachments/Pasted Image 20240923093540_590.png",
+    "attachments/Pasted image 20240922162250.png",
+    "attachments/Pasted image 20240922162209.png",
+    "attachments/Pasted image 20240922105941.png",
+    "attachments/Pasted image 20240919170741.png",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/补充知识/SVD decomposition.pdf",
+    "attachments/Pasted image 20240919110305.png",
+    "attachments/Pasted image 20240919035509.png",
+    "📘ClassNotes/🐧Computer System/Shell 常用指令",
+    "📘ClassNotes/🐧Computer System/Cmake辅助生成工具",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/理论证明/带权拟阵的贪心算法证明.pdf",
+    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/理论证明",
     "Untitled.canvas",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]

@@ -1,5 +1,6 @@
 # 1. Sklearn 库的使用 
 sklearn 是最常用的机器学习库, 其包含分类, 回归算法, 聚类算法, 维度化简, 模型选择, 交叉验证, 数据预处理等等功能. 例如岭回归， 支持向量机, KNN , 朴素贝叶斯, 决策树, 特征选择, 保序回归等等算法。
+## 1) 基础部分
 ### (1) sklearn 中的 Bunch 类
 Bunch 是 sklearn 中最常用的结构, 类似于字典，具体参考 [[📘ClassNotes/⌨️Programming/🐍Python/2. Python 基本数据结构和可视化方法|2. Python 基本数据结构和可视化方法]] 
 ```python 
@@ -14,15 +15,18 @@ print(bunch.keys())
 > [!CAUTION] scipy 中的 toarray 方法
 > 需要注意的是, scipy.spare.toarray() 和 numpy.array 并不相通, 稀疏矩阵可以通过 toarray() 方法进行转换为标准的 numpy 数组
 
-
-### (2) 针对训练集和测试集常用部分
-sklearn 可以直接获取大量的学习数据集， 同时有分割训练集和测试集功能
+### (2) 数据集训练和测试部分
+sklearn 可以直接获取大量的学习数据集， 同时有分割训练集和测试集功能, 下面简介
+<mark style="background: transparent; color: red">train_test_split 分割数据集</mark> 和 <mark style="background: transparent; color: red">StandardScaler 标准化的方法</mark> 
 ```python 
 from sklearn.dataset import load_iris 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler   # 标准化器类型 
 
 X_train, X_test, y_train, y_test =  train_test_split(iris_data, iris_target, test_size=0.2, random_state=None)  
+stdsca = StandardScaler.fit(X_train)
+X_train_new = stdsca.transform(X_train)
+X_test_new = stdsca.transform(X_test)
 ```
 
 对于测试准确度, 可以采用 [sklearn.metrics 模块](https://scikit-learn.org/stable/api/sklearn.metrics.html)部分: 
@@ -33,14 +37,16 @@ from sklearn.metrics import f1_score  # F1标准, 参考sklearn 部分
 ```
 
 [`accuracy_score`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score "sklearn.metrics.accuracy_score") ,[`average_precision_score`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.average_precision_score.html#sklearn.metrics.average_precision_score "sklearn.metrics.average_precision_score"), [`balanced_accuracy_score`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced_accuracy_score.html#sklearn.metrics.balanced_accuracy_score "sklearn.metrics.balanced_accuracy_score"), [`brier_score_loss`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.brier_score_loss.html#sklearn.metrics.brier_score_loss "sklearn.metrics.brier_score_loss") , 
-
-此外, 测试 MSE, MAE 也可以采用 sklearn,metrics 的如下包进行获取:
+此外, 测试 MSE, MAE 也可以采用 sklearn,metrics 中直接import:
 
 | [`mean_squared_error`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html#sklearn.metrics.mean_squared_error "sklearn.metrics.mean_squared_error")                 | Mean squared error regression loss.(MSE)        |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
 | [`mean_squared_log_error`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_log_error.html#sklearn.metrics.mean_squared_log_error "sklearn.metrics.mean_squared_log_error") | Mean squared logarithmic error regression loss. |
 | [`mean_absolute_error`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_absolute_error.html#sklearn.metrics.mean_absolute_error "sklearn.metrics.mean_absolute_error")             | Mean absolute error regression loss.(MAE)       |
 
+
+### (3) 特征提取和分类 
+#### 1. 字符串标签编码(LabelEncoder)
 sklearn 标签编码: 例如对于如下决策树表格, 其中第一列不需要编码:
 ![[attachments/Pasted image 20240912111152.png]]
 其中采用 apply_map 的方法, 去除了每个字符串元素的空格; 同时采用strip去除了每个标签的空格。  
@@ -63,15 +69,20 @@ print(data_proceed)
 ```
 得到决策树编码结果如下:
 ![[attachments/Pasted image 20240912113356.png]]
+#### 2. 分类器: 特征选择, 提取和主成分分析
+参考 [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/1.机器学习算法和文本分类挖掘(Naive Bayes)|机器学习算法和文本分类挖掘(Naive Bayes)]], 特征提取
+其中特征提取中有 image, text 等等几个模块; 常用到 tf-idf 模型等文本 tf-idf 特征向量计算模型。
+![[attachments/Pasted image 20240910160939.png]]
 
-### (3) 特征提取和分类 
 ```python
 # 特征选择和特征提取部分
 from sklearn import feature_extraction
 from sklearn import feature_selection 
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer 
+vectorizer.fit_transform(contents_dictionary)
 ```
-其中特征提取中有 image, text 等等。
-![[attachments/Pasted image 20240910160939.png]]
+
 对于多标签分类部分, 需要采用多输出
 ```python
 from sklearn.multioutput import MultiOutputClassifier, MultiOutputEstimator
@@ -79,18 +90,47 @@ from sklearn.multioutput import MultiOutputClassifier, MultiOutputEstimator
 model = MultiOutputClassifier(MultinomialNB(alpha=0.01))
 ```
 
-主成分分析:
+2. 主成分分析(PCA模块) 参考[[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/3. 推荐系统和需求搜寻算法(CF,PCA,SVD)|3. 推荐系统和需求搜寻算法(CF,PCA,SVD)]] 部分
 ```python 
 from sklearn.decomposition import PCA
 ```
 
-```python 
-from sklearn.inspection import DecisionBoundaryDisplay 
+3. KNN, KMeans 分类器
+```python
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.cluster import KMeans
 ```
 
+#### 3. 分类边界显示和PipeLine 的使用
+PipeLine 是 sklearn 中的一个很方便的容器类,  可以直接在 PipeLine 中定义 Steps, 然后进行 fit 操作。
+而通过 set_params 方法可以对 pipeline 中的某个名称对象属性进行设置, 具体方法是采用 `__` 进行命名区分: 
+即 `set_params(name__param = new_param)` 
+
+需要分类边界显示时, 则可以采用  sklearn.inspection 中的 DecisionBoundaryDisplay 方法。
+xlabel 和 ylabel 选项和绘图 plt 设置完全相同。
+```python
+from sklearn.pipeline import Pipeline
+from sklearn.inspection import DecisionBoundaryDisplay
+
+clf = Pipeline(  
+    steps=[("scaler", StandardScaler()), ("kmeans", KMeans(n_clusters = 3))]  
+)
+clf.set_params(kmeans__max_iter = max_iter).fit(X_train, y_train)
+disp = DecisionBoundaryDisplay.from_estimator(  
+    clf,  
+    X_test,  
+    response_method="predict",  
+    plot_method="pcolormesh",  
+    xlabel=iris.feature_names[0],  
+    ylabel=iris.feature_names[1],  
+    shading="auto",  
+    alpha=0.5,  
+    ax=ax,  
+)
+```
 
 # 2. Pytorch
-## 一、基本数据操作
+## 1. 基本数据操作
 #### 1. unsqueeze,squeeze和reshape使用
 增加维度或者减少维度: 
 torch.squeeze(input,dim=0) **移除某个维度**

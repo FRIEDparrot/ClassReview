@@ -201,3 +201,12 @@ apparel (正式场合穿的)服装, 穿衣服
 ensemble 合奏，合唱团
 demographic 人口统计学的 
 dispatch 调度, 派遣, 调遣
+apriori 先验的 
+
+retail 零售的, 零售商 
+clique 小集团, 小党派, 小圈子/结派, 私党
+consortium  联盟, 财团， 联营企业
+immutable  不变的, 不可改变的 
+traverse 穿过, 横渡,  横跨
+ravel 使...缠绕, 更加复杂(缠绕, 错杂)
+singleton 单项物, 单个人, 单生幼畜

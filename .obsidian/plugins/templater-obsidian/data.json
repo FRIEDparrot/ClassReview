@@ -152,7 +152,10 @@
     "🗒️Templates/INSERT_LONGLEFTARROW.md",
     "🗒️Templates/INSERT_LONGRIGHTARROW.md",
     "🗒️Templates/INSERT_OTIMES_SYMBOL.md",
-    "🗒️Templates/INSERT_EXP_SYMBOL.md"
+    "🗒️Templates/INSERT_EXP_SYMBOL.md",
+    "🗒️Templates/INSERT_NOTIN_SYMBOL.md",
+    "🗒️Templates/INSERT_SUM_WITH_INDEX.md",
+    "🗒️Templates/SEQUENCE_X_UNKNOWVAR.md"
   ],
   "startup_templates": [
     ""

@@ -1,1 +1,1 @@
-\bigcup
+\cup 

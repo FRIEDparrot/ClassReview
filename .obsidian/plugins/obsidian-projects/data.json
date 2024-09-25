@@ -106,6 +106,9 @@
     "frontmatter": {
       "quoteStrings": "PLAIN"
     },
+    "locale": {
+      "firstDayOfWeek": "default"
+    },
     "commands": [],
     "linkBehavior": "open-editor"
   }
