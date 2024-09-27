@@ -142,6 +142,12 @@ while (!stk.empty()) {
 ```
 示例题目可见[[#(2) 批处理作业调度问题]] 
 
+### (4) 回溯法的关键与复杂度优化方案
+回溯法虽然也是一种穷举的方案, 但是<b><mark style="background: transparent; color: blue">关键是深度搜索和剪枝，即在搜索过程中判断方案的可行性, 并且剪去不需要的部分</mark></b>。而不是<mark style="background: transparent; color: red">先穷举出所有的方案，然后判断哪个方案的结果是最佳的</mark>; 因此这样的方法计算复杂度要优于穷举方法。
+
+核心是利用当前的状态计算出一个<mark style="background: transparent; color: red">穷举中的当前值并与最优值比较</mark>, 并剪去不需要的部分。
+
+
 ## 二、相关问题
 ### (1) 装载问题
 对于 n 个集装箱装入 2 个船, 载重量分别为$c_{1}, c_{2}$, 其中集装箱  $i$ 的重量为 $w_i$  确定是否有合理方案将 $n$ 个集装箱装入船。显然类似于背包问题, 我们只需将第一个尽可能装满即可。因此只要递归穷举出所有结果即可。
@@ -691,6 +697,8 @@ int main() {
 此时, 考虑每个顶点穷举 m 种颜色, 如果不行则 m++; 当解空间为 m, 节点数目 n 时, 则总检查个数复杂度是 $\sum_{i = 1}^{n} m^{i}$, 每次添加一个节点需要查重的复杂度是 $n$ , 则总复杂度为
 $$\sum_{i = 1}^{n} m^{i} \times  n  = O (nm^{n})$$
 一般问题, 我们只需考虑对于给定m, 某个图是否是 m 可着色的, 如果是可着色, 则返回其所有有效解。
+
+<b><mark style="background: transparent; color: blue">回溯过程中, 我们主要每次加入一个节点, 然后判断这个节点和之前的颜色是否冲突即可</mark></b>, 而**不需要全部举出来再判断结果**。
 ```cpp title:图m着色问题回溯方法代码
 #include <iostream>
 using namespace std;
@@ -750,4 +758,376 @@ int main() {
 4色猜想的说明: 
 ![[Excalidraw/第五章 回溯法(DFS) 2024-09-25 15.43.41|750]]
 ### (7) 圆排列问题
-给定 n 个大小不等的圆
+给定 n 个大小不等的圆 $c_1, c_2, \dots c_n$,  此时将 n 个圆排进一个矩形框中, 并要求圆与矩形框底部相切。从 n 个圆的排列中，找出到右侧圆直径长度最小的圆排列。
+
+![[Excalidraw/第五章 回溯法(DFS) 2024-09-25 16.04.44]]
+由于距离计算为:
+$$d = r1 + \sqrt{(r2 + r1)^{2} -(r2 - r1)^{2}}  + r2 = r1 + r2  + 4 \sqrt{r1 \times r2} $$
+回溯极其容易:
+```cpp 
+#include <iostream>
+#include <algorithm>
+using namespace std; 
+
+const int n = 10;
+int circuit_radius[n] = {1, 2, 10, 7, 4, 5,  3, 8, 9, 6 };
+int min_radius[n];
+
+float min_dis = 10000.0;
+
+/* cur_dis 当前圆的圆心位置 */
+void circuit_seq_traceback(int depth, float cur_dis) {
+    if (cur_dis >= min_dis) return;
+    if (depth == n) {
+        if (cur_dis < min_dis) {
+            min_dis = cur_dis;
+            memcpy(min_radius, circuit_radius, sizeof(min_radius));
+        }
+        return;
+    }
+    for (int i = depth; i < n; i++) {
+        swap(circuit_radius[depth], circuit_radius[i]);
+        float res_dis = 0;
+        if (depth != 0) {
+            res_dis = cur_dis + sqrt(4 * circuit_radius[depth] * circuit_radius[depth - 1]);
+        }
+        if (depth == 0 || depth == n - 1) {
+            res_dis += circuit_radius[depth];
+        }
+        circuit_seq_traceback(depth + 1, res_dis);
+        swap(circuit_radius[depth], circuit_radius[i]);
+    }
+}
+
+int main() {
+    memset(min_radius, 0, sizeof(min_radius));
+    circuit_seq_traceback(0, 0.0);
+
+    cout << "min_dis = " << min_dis << endl;
+    for (int i = 0; i < n; i++) {
+        cout << min_radius[i] << " ";
+    }
+    return 0;
+}
+/*
+min_dis = 92.7701
+5 7 3 9 1 10 2 8 4 6
+*/
+```
+
+上述算法的时间复杂度是 $O(n!)$, 另外对于位置对称和有部分圆半径相同的情况, 实际上不用继续取相应的排列。可以通过此进一步减小计算量。
+
+### (8) 电路板排列问题
+对于电路板排列问题, 该问题实际上是<mark style="background: transparent; color: red">将 n 块电路板以最佳方案插入带有 n 个插槽的机箱中,  而其不同的排列方式对应不同插入方案</mark>。
+设 $B = \{1,2, \dots  n\}$ 是 n块电路板集合, 且取每一个连接块 $N_i$ 为 B 的子集, 且 $N_i$ 中的电路板使**用同一根导线相连**; 
+
+取 n = 8, m = 5 时, 给定 n 块电路板及其对应的 m 个连接如下:
+$$\begin{cases}
+B = \left\{1,2,3,4,5, 6,7,8  \right\}  \\
+L =  \left\{N_{1},  N_{2} N_{3}, N_{4}  N_{5} \right\}\\
+N_{1} = \left\{ 4,5,6 \right\}  \\
+N_{2} = \left\{ 2,3 \right\} \\
+N_{3} = \left\{ 1,3 \right\} \\
+N_{4} = \left\{ 3, 6 \right\}\\
+N_{5}= \left\{ 7, 8 \right\} 
+\end{cases}$$
+如果电路板是按照 $1,2,3, \dots 8$  插入的, 则按照下面的 "跨线数" 给出每两格之间的连线数量。而<mark style="background: transparent; color: red">电路板排列密度</mark>定义为跨越相邻电路板插槽的最大连线数. 
+![[Excalidraw/第五章 回溯法(DFS) 2024-09-25 19.09.32|600]]
+求解一种最佳的电路板的排列顺序, 以使电路板具有最小排列密度(例如上图的为2), 而右侧为最佳的排列方案。
+
+为了降低复杂度, 我们不采用封装一个函数判断的方法, 例如如下虽然能够计算, 但是需要列举全部。这失去了回溯法的意义。
+```cpp
+int circuit_density(int circuit_boards[n], array<vector<int>, m> circuit_conn) {
+    int line_dense[n - 1];
+    memset(line_dense, 0, sizeof(line_dense));
+
+    for (int i = 0; i < m; i++) {
+        vector<int> conn = circuit_conn[i];
+        int min_idx = n, max_idx = 0;
+        for (int j = 0; j < n; j++) {
+            for (int k = 0; k < conn.size(); k++) {
+                if (circuit_boards[j] == conn[k]) {
+                    if (j < min_idx) min_idx = j;
+                    else if (j > max_idx) max_idx = j;
+                }
+            }
+        }
+        for (int j = min_idx; j < max_idx; j++) {
+            line_dense[j] += 1;
+        }
+    }
+    return *max_element(line_dense, line_dense + n - 1);
+}
+```
+
+因此，为了 <b><mark style="background: transparent; color: blue">每一步能够确定当前状态的</mark></b> 最小密度, 我们希望能够在交换到电路板 i 时, **查看 $i$ 在几个连接块中**, 同时将其状态存储; 
+
+显然, 当前面的节点已经确定，并且前面的排列也确定时, 在 0~i-1 之间的各个部分的连接块都已经确定了。因此我们只需对于新加的节点 i, 查询: 
+1. 节点 i 在几个区间中, 如果在这个区间中且<mark style="background: transparent; color: red">不等于该区间的开始值</mark>, 则可以将相应区间的排列密度值 +1 
+2. 由于需要记录是否在某个区间中, 不能直接通过矩阵进行判断。所以需要带一个 **conn_now数组参数**, <mark style="background: transparent; color: red">记录当前已经遍历过第 j 的选择的多少个节点(最多不超过对应选择的数量)</mark>, 而是否在其中可以<mark style="background: transparent; color: red">通过新建一个 conn_mat 矩阵来进行判断</mark>， 只要在递归过程中判断这个小区间的密度即可, 以前的部分均不需要保存。
+3. 在某个区间, 要求: 1. `conn_left[j] > 0;`   2. `conn_now[j] < conn_tot[j];`  -> 而每次只需遍历方法让 `conn_left[j] -=  conn_mat[j][idx]` 即可
+4. <b><mark style="background: transparent; color: blue">采用回溯法回退到以前的状态方法: </mark></b>只需恢复conn_left 数组, 这个只需重新遍历一遍，即 `conn_left[j] +=  conn_mat[j][idx]` 而 wire_nums 不需要恢复。
+
+
+> [!caution] 循环中进行剪枝的方法
+> 循环中剪枝，一般采用 `continue` 进行, 此时不需要将当前计算出的状态量传给下一个函数。而必须传入当前计算的状态量时, 一般在初始判断并且 `return;` 
+> 但是在两个 swap 中采用 continue 会导致最后一个 swap 无法正常进行, 因此最好还是用 return 的方式。
+
+> [!caution] memcpy 的问题
+> 在复制数组包括memset内容时, 如果是用 n 指定元素个数, 必须加上 sizeof(int) 和 sizeof(char) 等等;
+
+```cpp title:电路板排列问题(完整代码)
+#include <iostream>
+#include <array>
+#include <vector>
+#include <algorithm>
+using namespace std; 
+
+const int n = 8;
+const int m = 5;
+int circuit_boards[n];       /* 电路板的排列数组 */
+int best_circuit_boards[n];  /* 电路板排列数组的最佳结果 */
+int wire_nums[n - 1];        /* 每个区间之间的连线数量 */
+int best_wire_nums[n - 1];   /* 电路板区间之间的连线数量的最佳结果 */
+
+int conn_tot[m];             /* 记录每个方法总数量的全局变量 */
+int min_density = 10000;     
+
+const std::array<std::vector<int>, m> circuit_conn = { {
+    {3,4,5},
+    {0, 2},
+    {0, 1},
+    {2, 5},
+    {6, 7},
+}};
+
+int** init_conn_matrix(array<vector<int>,m> conn) {
+    /* 新建一个矩阵, 存储每个连接块是否有节点, 即连接块 */
+    int** conn_mat = new int*[m];   /* block m */
+    for (int i = 0; i < m; i++) {
+        conn_mat[i] = new int[n];    /* index n */
+        /* 将所有元素设置为0 */ 
+        for (int j = 0; j < n; j++) {
+            conn_mat[i][j] = 0;
+        }
+    }
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < circuit_conn[i].size(); j++) {
+            conn_mat[i][circuit_conn[i][j]] = 1;
+        }
+    }
+    return conn_mat;
+}
+
+/* 回调函数, 计算每个电路板的连接,找出最小的部分 */
+void circuit_traceback(int depth,  int **conn_mat, int *conn_left, int max_wire_num) {
+    if (max_wire_num >= min_density) return;  /* trim the branch */
+    if (depth == n) {
+        /* record minimum density */
+        if (max_wire_num < min_density) {
+            min_density = max_wire_num;
+            memcpy(best_circuit_boards, circuit_boards, n * sizeof(int));
+            memcpy(best_wire_nums, wire_nums, (n - 1)* sizeof(int));
+        }
+        return;
+    }
+    for (int i = depth; i < n; i++) {
+        int wire_num = 0;
+        swap(circuit_boards[i], circuit_boards[depth]);
+        int idx = circuit_boards[depth];  /* 当前电路板的编号 */ 
+        for (int j = 0; j < m; j++) {
+            if (conn_left[j] < conn_tot[j] && conn_left[j] > 0) {  /* 该节点在第j个连接块范围内 */
+                wire_num++;
+            }
+            conn_left[j] -= conn_mat[j][idx];
+        }
+        if (depth > 0) wire_nums[depth - 1] = wire_num; /* 记录区间线的个数(0时不需要) */
+        circuit_traceback(depth + 1, conn_mat, conn_left, max(max_wire_num, wire_num));
+        swap(circuit_boards[i], circuit_boards[depth]);
+
+        /* 每次退出一个节点搜索时, 需要恢复 conn_left 的状态 */
+        for (int j = 0; j < m; j++) {
+            conn_left[j] += conn_mat[j][idx];
+        }
+    }
+}
+
+/* 回溯法求解电路板排列问题 */
+int circuit_board_problem() {
+    memset(wire_nums, 0, sizeof(wire_nums));
+    memset(best_wire_nums, 0, sizeof(best_wire_nums));
+
+    int conn_left[m];
+    for (int i = 0; i < m; i++) conn_tot[i] = circuit_conn[i].size();
+    memcpy(conn_left, conn_tot, sizeof(conn_tot));
+    int** conn_mat = init_conn_matrix(circuit_conn); /* 生成记录矩阵 */ 
+    
+    memset(best_circuit_boards, 0, sizeof(best_circuit_boards));
+    for (int i = 0; i < n; i++) circuit_boards[i] = i;
+
+    /* 调用递归函数 */
+    circuit_traceback(0, conn_mat, conn_left, 0);
+
+    cout << "minimum density: " << min_density << endl;
+    cout << "best circuit boards: ";
+    for (int i = 0; i < n; i++) {
+        cout << best_circuit_boards[i] << " ";
+    }
+    cout << endl;
+    cout << "best wire nums: ";
+    for (int i = 0; i < n-1; i++) {
+        cout << best_wire_nums[i] << " ";
+    }
+    cout << endl;
+    return 0;
+}
+
+int main() {
+    circuit_board_problem();
+    return 0;
+}
+```
+
+得到的 1 0 2 5 4 3 6 7 实际上是密度最小的排列结果。
+```cpp
+minimum density: 1
+best circuit boards: 1 0 2 5 4 3 6 7
+best wire nums: 1 1 1 1 1 0 1
+```
+
+复杂度分析: 计算**各个节点的连线数量和恢复均需要 m 复杂度**，而根节点个数为 $n!$, 则计算密度耗时为 $O(m n!)$ , 由于每一次更新最优解最多减少1， 最优解的更新次数为 O(m), 因此更新最优解的 memcpy 需要 O(mn) 时间。总复杂度为 $O(mn!)$ 
+
+### (9) 连续邮资问题
+首先, **设某国家发行了 n 种不同面值的邮票**, 从小到大排列; 而**每个信封仅允许贴 m 张邮票**; 连续邮资问题要求对于给定的 m,n 值, <mark style="background: transparent; color: red">给出邮票面值的最佳设计</mark>, 得到<mark style="background: transparent; color: red">在 1 个信封上可贴出邮资 1 开始, 增量为 1 的最大连续邮资区间</mark>。
+
+> [!example] 示例
+> 取 n = 5, m = 4, 则采用 (1, 3, 11, 15, 32) 作为邮票面值, 可以贴出连续区间为 1-70
+
+设邮票的面值分别为 $d_1, d_2, \dots d_n$, 
+为了保证基础的连续, 不考虑 $m$ 大小, 则第二个邮票的面值必须在 $[2 * d_{1}, m + 1]$ 以内; 例如第二个为 6, 则必然不连续。
+
+另外, 考虑贴邮票的过程并不是按照贪心算法去贴的, 而是**采用类似背包问题**(如1,3,6,7 的面值, 贴18邮票应该最少 6,6,6 而非 7, 7, 3, 1);
+
+给出一种思路: <mark style="background: transparent; color: red">逐次尝试, 增加面值(例如第二张从2开始)</mark>, 并将初始面值设置为 $(1,2,\dots n)$, 停止条件是 <mark style="background: transparent; color: red">如果和前面部分面值区间产生不连续的部分， 则不继续增加</mark>;  但是这样比较复杂, 因为最后一个尝试次数可能有 $(m + 1)^{n - 1}$, 取 m = 4, n = 5, 则实际上有 $5^{4} = 625$ 种, 可以接受。
+
+下面说明回溯法的求解办法:
+1. 显然 $d[2]$ 的取值范围是 $[2: m+1]$, 而在一般情况下, 当 $x[1, i-1]$ 已经选定之后, 连续区间已经确定为 $[1:r]$ (新加一个则重新计算), 对应的第i张邮票面值**也不应当超过\[r+1\]**, 则<mark style="background: transparent; color: red">第 i 张邮票面值尝试区间</mark>为 $[x[i-1] + 1, r]$ , 然后深度优先遍历搜索即可。
+2. <mark style="background: transparent; color: red">利用一个比较大的数组 least_stamps</mark> **记录在 $d[1:r]$ 已经确定的情况下, 能够贴出 $y[j]$ 邮资所需要的最少邮票数**。一般可以将上限取为 2000 左右; 
+3. 对于 $y[j]$ 在迭代过程中, 实际上<mark style="background: transparent; color: red">在新加入邮票面值之前的凑出方式均不需要更改</mark>, 因此只需要从 $x[i-1]+1$ 开始进行检查, 然后更新后面部分获得面值得到的对应的最小邮票数即可。 截断条件(循环停止条件) 是有一个值查不到连续。
+
+4. 对于检查某个值最少需要几张邮票的问题, 可以按照背包问题的思路求解某个值最少需要几张邮票凑出: (实际上仅需要三行, 此处直接采用全部矩阵, 不考虑空间复杂度)
+![[Excalidraw/第五章 回溯法(DFS) 2024-09-26 15.23.50|700]]
+
+
+完整代码如下: 
+```cpp title:连续邮资问题回溯方法代码
+#include <iostream>
+#include <vector>
+#define MAX_VAL_TEST 2000
+
+using namespace std;
+
+const int m = 4;
+const int n = 5;
+
+int maxval = 0;    /* record the maximum continuum stamp value range */
+int d[n];    /* denomination of each stamp */
+int d_best[n];
+int  least_stamp[MAX_VAL_TEST + 1];  /* least stamp_table, each record least stamp number needed for this value */
+
+/* bag problem solution for get the minimum number for correspond value 
+* @param d: denomination of each stamp
+* @param n: number of stamps
+* @param value: the value that we want to get
+* @param max_number: the maximum number of stamps we can use 
+* @return: the minimum number of stamps (0 if no possible solution)
+*/
+int get_least_stamp_num(int d[], int n, int value, int max_number) {
+    int res = 0;
+    int *dp = new int[(value + 1) * max_number];  /* allocate buffer for dynamic programming */
+    memset(dp, 0, sizeof(int) * (value + 1) * max_number);
+    for (int k = 0; k < n; k++) dp[d[k]] = 1;  /* initialize */
+
+    for (int i = 1; i < max_number; i++) {
+        int idx = i * (value + 1);
+        int idx_pre = (i - 1) * (value + 1);  /* index of the line  before */
+        for (int j = 1; j <= value; j++) {
+            if (dp[idx_pre + j] != 0) {
+                /* inherit the value from the pre-calculated values */
+                dp[idx + j] = dp[idx_pre + j];
+                continue;
+            }
+            /* else combine the value from the pre-calculated values */
+            for (int k = 0; k < n; k++) {
+                if (d[k] < j && dp[idx_pre + (j - d[k])] != 0) {
+                    dp[idx + j] = dp[idx_pre + (j - d[k])] + dp[d[k]];
+                    break;
+                }
+            }
+        }
+        /* truncate condition judge */
+        if (dp[idx + value] != 0) {
+            res = dp[idx + value]; break;
+        }
+    }
+    return res;
+}
+
+/* 
+* @function : stamp denomination trackback function 
+* @depth : the depth (index) of the stamp denomination 
+* @param max_con_val : maximum combined continuum value that can be reached by the stamps
+*/
+void stamp_trackback(int depth, int max_con_val) {
+    if (depth == n) {
+        if (max_con_val > maxval) { 
+            maxval = max_con_val;
+            memcpy(d_best, d, sizeof(d));
+        }
+        return;
+    }
+
+    /* iterate all possible next stamp value */
+    for (int val = d[depth - 1] + 1; val <= max_con_val + 1; val++) {
+        d[depth] = val;     /* refresh the least_stamp array */ 
+        /* recalculate all possible combined value  (stop when no solution found for value j) */ 
+        int j = val, res = 1;
+        for (j = val; j < MAX_VAL_TEST && res != 0; j++) {
+            //  max number of stamps is m 
+            res = get_least_stamp_num(d, depth + 1, j, m);
+            least_stamp[j] = res;
+        }
+        /* note : it self-add after reach 0, so -2 for true result */
+        int conn_val_res = j - 2;  /* maximum possible combined value by current stamps */
+        stamp_trackback(depth + 1, conn_val_res);
+    }
+}
+
+/* continuum postage problems */ 
+void continuum_postage_problem() {
+    memset(d, 0, sizeof(d));
+    d[0] = 1;   /* first stamp must have denomination 1 */
+    /* initialize the "least_stamp" array */
+    memset(least_stamp, 0, sizeof(least_stamp));
+    least_stamp[1] = 1;           /* least stamp for combine $1 is 1 */
+    stamp_trackback(1, m);        /* for $1 and number of m */
+
+    
+    for (int i = 0; i < n; i++) {
+        cout << d_best[i] << " ";
+    }
+    cout << " max combinded number : " << maxval << endl;
+}
+
+int main()
+{
+    continuum_postage_problem();
+    return 0;
+}
+```
+
+输出为:
+```cpp
+1 3 11 15 32  max combinded number : 70
+```
+

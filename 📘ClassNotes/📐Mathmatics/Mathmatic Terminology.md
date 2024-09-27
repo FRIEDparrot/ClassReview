@@ -31,3 +31,7 @@ humidity 湿度
 outlier 异常值 
 Significance 显著性
 Asymptotic 渐进的
+percentile 百分位数
+arithmetic 算数的, 演算的
+Studentized 学生化 
+extreme Studentized deviate 极端学生化偏差

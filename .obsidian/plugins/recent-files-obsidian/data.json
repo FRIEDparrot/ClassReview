@@ -1,12 +1,44 @@
 {
   "recentFiles": [
     {
+      "basename": "1. 线性空间与线性变换",
+      "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md"
+    },
+    {
+      "basename": "basic grammar of Obsidian",
+      "path": "💻softwares/Markdown & Latex Tutorial/obsidian usage/basic grammar of Obsidian.md"
+    },
+    {
+      "basename": "Markdown documentation",
+      "path": "💻softwares/Markdown & Latex Tutorial/Markdown Tutorial/Markdown documentation.md"
+    },
+    {
+      "basename": "异常值的 Grubbs 检验",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🎯Reliability Engineering/异常值的 Grubbs 检验.md"
+    },
+    {
+      "basename": "Mathmatic Terminology",
+      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
+    },
+    {
+      "basename": "Programming Terminology",
+      "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
+    },
+    {
       "basename": "第五章 回溯法(DFS)",
       "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md"
     },
     {
-      "basename": "第五章 回溯法(DFS) 2024-09-25 15.43.41",
-      "path": "Excalidraw/第五章 回溯法(DFS) 2024-09-25 15.43.41.md"
+      "basename": "第五章 回溯法(DFS) 2024-09-26 15.23.50",
+      "path": "Excalidraw/第五章 回溯法(DFS) 2024-09-26 15.23.50.md"
+    },
+    {
+      "basename": "第三章 动态规划算法",
+      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第三章 动态规划算法.md"
+    },
+    {
+      "basename": "第五章 回溯法(DFS) 2024-09-25 19.09.32",
+      "path": "Excalidraw/第五章 回溯法(DFS) 2024-09-25 19.09.32.md"
     },
     {
       "basename": "第五章 回溯法(DFS) 2024-09-25 14.47.42",
@@ -17,8 +49,12 @@
       "path": "Excalidraw/第五章 回溯法(DFS) 2024-09-23 19.37.58.md"
     },
     {
-      "basename": "1. 线性空间与线性变换",
-      "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md"
+      "basename": "第五章 回溯法(DFS) 2024-09-25 16.04.44",
+      "path": "Excalidraw/第五章 回溯法(DFS) 2024-09-25 16.04.44.md"
+    },
+    {
+      "basename": "第五章 回溯法(DFS) 2024-09-25 15.43.41",
+      "path": "Excalidraw/第五章 回溯法(DFS) 2024-09-25 15.43.41.md"
     },
     {
       "basename": "INSERT_TODO_DERIVATION",
@@ -93,16 +129,8 @@
       "path": "📘ClassNotes/⌨️Programming/🐍Python/数据处理详解(np,pd,plt)/1. Numpy 命令详解.md"
     },
     {
-      "basename": "Programming Terminology",
-      "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
-    },
-    {
       "basename": "Untitled",
       "path": "🗑️trash/Untitled.md"
-    },
-    {
-      "basename": "Mathmatic Terminology",
-      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
     },
     {
       "basename": "第五章 回溯法(DFS) 2024-09-23 16.31.20",
@@ -171,34 +199,6 @@
     {
       "basename": "第六章 分支限界法(BFS)",
       "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第六章 分支限界法(BFS).md"
-    },
-    {
-      "basename": "第五章 回溯法 2024-09-21 07.54.06",
-      "path": "Excalidraw/第五章 回溯法 2024-09-21 07.54.06.md"
-    },
-    {
-      "basename": "第五章 回溯法 2024-09-21 07.47.35",
-      "path": "Excalidraw/第五章 回溯法 2024-09-21 07.47.35.md"
-    },
-    {
-      "basename": "第三章 动态规划算法",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第三章 动态规划算法.md"
-    },
-    {
-      "basename": "Chemical Terminology",
-      "path": "📘ClassNotes/🚱materials and chemicals/Chemical Terminology.md"
-    },
-    {
-      "basename": "Circuit Terminology",
-      "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
-    },
-    {
-      "basename": "Mechanic Terminology",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/Mechanic Terminology.md"
-    },
-    {
-      "basename": "第三章 动态规划算法 2024-02-07 13.19.34",
-      "path": "Excalidraw/第三章 动态规划算法 2024-02-07 13.19.34.md"
     }
   ],
   "omittedPaths": [],

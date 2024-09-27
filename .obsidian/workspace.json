@@ -4,38 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "e65711ff22c1ed80",
+        "id": "b36177c9f798fdd6",
         "type": "tabs",
         "children": [
           {
-            "id": "184b50fe92311f67",
+            "id": "46bcfd99bf616b51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md",
+                "file": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "bd7266af72e44e18",
+            "id": "28d6497cfd715cdb",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/第五章 回溯法(DFS) 2024-09-25 14.47.42.md"
-              }
-            }
-          },
-          {
-            "id": "434b7ac4764755e3",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/第五章 回溯法(DFS) 2024-09-23 19.37.58.md"
+                "file": "💻softwares/Markdown & Latex Tutorial/obsidian usage/basic grammar of Obsidian.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -99,7 +91,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md"
+                "file": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md"
               }
             }
           }
@@ -107,7 +99,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5110321044922
+    "width": 230.5110321044922
   },
   "right": {
     "id": "f7de553c162de521",
@@ -152,7 +144,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md",
+                "file": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -258,7 +250,7 @@
             }
           },
           {
-            "id": "0346d2ad818e4845",
+            "id": "79a84a12a09d25be",
             "type": "leaf",
             "state": {
               "type": "timeline",
@@ -266,7 +258,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 8
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -279,7 +271,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md",
+                "file": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -304,7 +296,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md",
+                "file": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -326,7 +318,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 510.5
+    "width": 497.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -353,13 +346,22 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "184b50fe92311f67",
+  "active": "46bcfd99bf616b51",
   "lastOpenFiles": [
-    "Excalidraw/第五章 回溯法(DFS) 2024-09-25 15.43.41.md",
+    "💻softwares/Markdown & Latex Tutorial/obsidian usage/basic grammar of Obsidian.md",
+    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md",
+    "💻softwares/Markdown & Latex Tutorial/Markdown Tutorial/Markdown documentation.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🎯Reliability Engineering/异常值的 Grubbs 检验.md",
+    "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
+    "📘ClassNotes/⌨️Programming/Programming Terminology.md",
     "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md",
+    "Excalidraw/第五章 回溯法(DFS) 2024-09-26 15.23.50.md",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第三章 动态规划算法.md",
+    "Excalidraw/第五章 回溯法(DFS) 2024-09-25 19.09.32.md",
     "Excalidraw/第五章 回溯法(DFS) 2024-09-25 14.47.42.md",
     "Excalidraw/第五章 回溯法(DFS) 2024-09-23 19.37.58.md",
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md",
+    "Excalidraw/第五章 回溯法(DFS) 2024-09-25 16.04.44.md",
+    "Excalidraw/第五章 回溯法(DFS) 2024-09-25 15.43.41.md",
     "🗒️Templates/INSERT_TODO_DERIVATION.md",
     "🗒️Templates/INSERT_CUP_SIGN.md",
     "🗒️Templates/INSERT_CAP_SIGN.md",
@@ -375,18 +377,9 @@
     "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第一章 集合,数列,函数,极限和连续.md",
     "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Pytorch & sklearn的使用基础和基本代码.md",
     "📘ClassNotes/⌨️Programming/🐍Python/1. Python常用命令基础.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/1.机器学习算法和文本分类挖掘(Naive Bayes).md",
-    "📘ClassNotes/⌨️Programming/🐍Python/数据处理详解(np,pd,plt)/mpl toolkits库的使用.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/3. 推荐系统和需求搜寻算法(CF,PCA,SVD).md",
-    "📘ClassNotes/⌨️Programming/🐍Python/数据处理详解(np,pd,plt)/1. Numpy 命令详解.md",
-    "📘ClassNotes/⌨️Programming/Programming Terminology.md",
     "attachments/Pasted image 20240924102913.png",
     "attachments/Pasted image 20240924102001.png",
     "📘ClassNotes/⌨️Programming/🐍Python/数据处理详解(np,pd,plt)",
-    "🗑️trash/Untitled.md",
-    "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
-    "Excalidraw/第五章 回溯法(DFS) 2024-09-23 16.31.20.md",
-    "Excalidraw/第五章 回溯法(DFS) 2024-09-23 09.06.36.md",
     "attachments/Pasted Image 20240923093641_621.png",
     "attachments/Pasted Image 20240923093540_590.png",
     "attachments/Pasted image 20240922162250.png",

@@ -210,3 +210,8 @@ immutable  不变的, 不可改变的
 traverse 穿过, 横渡,  横跨
 ravel 使...缠绕, 更加复杂(缠绕, 错杂)
 singleton 单项物, 单个人, 单生幼畜
+backtrack 回溯法
+postage 邮资 
+postage stamp 邮票
+denomination  面值, 教派, 宗派
+
