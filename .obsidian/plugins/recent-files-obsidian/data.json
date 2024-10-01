@@ -5,6 +5,78 @@
       "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md"
     },
     {
+      "basename": "曲面放置文字",
+      "path": "💻softwares/🗽2D & 3D design/UG/曲面放置文字.md"
+    },
+    {
+      "basename": "1. UG 基础操作",
+      "path": "💻softwares/🗽2D & 3D design/UG/1. UG 基础操作.md"
+    },
+    {
+      "basename": "4. 最优化方法, 梯度寻优法及其应用",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/4. 最优化方法, 梯度寻优法及其应用.md"
+    },
+    {
+      "basename": "5. 神经网络理论初步",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. 神经网络理论初步.md"
+    },
+    {
+      "basename": "BP 神经网络的反向传播计算",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/推导部分/BP 神经网络的反向传播计算.pdf"
+    },
+    {
+      "basename": "5. 神经网络理论初步 2024-09-29 15.49.56",
+      "path": "Excalidraw/5. 神经网络理论初步 2024-09-29 15.49.56.md"
+    },
+    {
+      "basename": "Mathmatic Terminology",
+      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
+    },
+    {
+      "basename": "3. 推荐系统和需求搜寻算法(CF,PCA,SVD)",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/3. 推荐系统和需求搜寻算法(CF,PCA,SVD).md"
+    },
+    {
+      "basename": "1. ML estimation 最大似然估计",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/补充知识/1. ML estimation 最大似然估计.md"
+    },
+    {
+      "basename": "第二章 随机变量及其分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md"
+    },
+    {
+      "basename": "第四章 贪心算法",
+      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第四章 贪心算法.md"
+    },
+    {
+      "basename": "第六章 分支限界法(BFS)",
+      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第六章 分支限界法(BFS).md"
+    },
+    {
+      "basename": "第三章 动态规划算法",
+      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第三章 动态规划算法.md"
+    },
+    {
+      "basename": "第五章 回溯法(DFS)",
+      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md"
+    },
+    {
+      "basename": "第六章 分支限界法(BFS) 2024-09-28 11.43.11",
+      "path": "Excalidraw/第六章 分支限界法(BFS) 2024-09-28 11.43.11.md"
+    },
+    {
+      "basename": "常用 3D 打印材料",
+      "path": "💻softwares/🗽2D & 3D design/ideaMaker/常用 3D 打印材料.md"
+    },
+    {
+      "basename": "第六章 分支限界法(BFS) 2024-09-28 10.39.36",
+      "path": "Excalidraw/第六章 分支限界法(BFS) 2024-09-28 10.39.36.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "🗑️trash/Untitled.md"
+    },
+    {
       "basename": "basic grammar of Obsidian",
       "path": "💻softwares/Markdown & Latex Tutorial/obsidian usage/basic grammar of Obsidian.md"
     },
@@ -17,24 +89,12 @@
       "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🎯Reliability Engineering/异常值的 Grubbs 检验.md"
     },
     {
-      "basename": "Mathmatic Terminology",
-      "path": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md"
-    },
-    {
       "basename": "Programming Terminology",
       "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
     },
     {
-      "basename": "第五章 回溯法(DFS)",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md"
-    },
-    {
       "basename": "第五章 回溯法(DFS) 2024-09-26 15.23.50",
       "path": "Excalidraw/第五章 回溯法(DFS) 2024-09-26 15.23.50.md"
-    },
-    {
-      "basename": "第三章 动态规划算法",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第三章 动态规划算法.md"
     },
     {
       "basename": "第五章 回溯法(DFS) 2024-09-25 19.09.32",
@@ -121,16 +181,8 @@
       "path": "📘ClassNotes/⌨️Programming/🐍Python/数据处理详解(np,pd,plt)/mpl toolkits库的使用.md"
     },
     {
-      "basename": "3. 推荐系统和需求搜寻算法(CF,PCA,SVD)",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/3. 推荐系统和需求搜寻算法(CF,PCA,SVD).md"
-    },
-    {
       "basename": "1. Numpy 命令详解",
       "path": "📘ClassNotes/⌨️Programming/🐍Python/数据处理详解(np,pd,plt)/1. Numpy 命令详解.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "🗑️trash/Untitled.md"
     },
     {
       "basename": "第五章 回溯法(DFS) 2024-09-23 16.31.20",
@@ -147,58 +199,6 @@
     {
       "basename": "【submodule】Use repo as submodule of another repo",
       "path": "💻softwares/Git/【submodule】Use repo as submodule of another repo.md"
-    },
-    {
-      "basename": "oftenly-used commands",
-      "path": "💻softwares/Git/oftenly-used commands.md"
-    },
-    {
-      "basename": "随机森林",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/随机森林.md"
-    },
-    {
-      "basename": "INSERT_SUM_WITHOUT_INDEX",
-      "path": "🗒️Templates/INSERT_SUM_WITHOUT_INDEX.md"
-    },
-    {
-      "basename": "INSERT_SUM_WITH_INDEX",
-      "path": "🗒️Templates/INSERT_SUM_WITH_INDEX.md"
-    },
-    {
-      "basename": "INSERT_SIGMA_UPPERCASE",
-      "path": "🗒️Templates/INSERT_SIGMA_UPPERCASE.md"
-    },
-    {
-      "basename": "Chapter3 Linear Neural  Networks for regression",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔦Dive into Deep Learning(Pytorch)/Chapter3 Linear Neural  Networks for regression.md"
-    },
-    {
-      "basename": "4. 最优化方法, 梯度寻优法及其应用",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/4. 最优化方法, 梯度寻优法及其应用.md"
-    },
-    {
-      "basename": "4. 最优化方法, 梯度寻优法及其应用 2024-09-21 22.28.39",
-      "path": "Excalidraw/4. 最优化方法, 梯度寻优法及其应用 2024-09-21 22.28.39.md"
-    },
-    {
-      "basename": "5. 最简单的 nn 库使用方法",
-      "path": "📘ClassNotes/⌨️Programming/🐍Python/5. 最简单的 nn 库使用方法.md"
-    },
-    {
-      "basename": "Ansys施加随着坐标变化的载荷",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Load & Analysis/Ansys施加随着坐标变化的载荷.md"
-    },
-    {
-      "basename": "4. 最优化方法, 梯度寻优法及其应用 2024-09-21 10.28.01",
-      "path": "Excalidraw/4. 最优化方法, 梯度寻优法及其应用 2024-09-21 10.28.01.md"
-    },
-    {
-      "basename": "第二章 蒙特卡洛模拟方法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第二章 蒙特卡洛模拟方法.md"
-    },
-    {
-      "basename": "第六章 分支限界法(BFS)",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第六章 分支限界法(BFS).md"
     }
   ],
   "omittedPaths": [],

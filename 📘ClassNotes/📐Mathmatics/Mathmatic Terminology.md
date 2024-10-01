@@ -35,3 +35,4 @@ percentile 百分位数
 arithmetic 算数的, 演算的
 Studentized 学生化 
 extreme Studentized deviate 极端学生化偏差
+Asymptotic 渐进的, 渐近线的
