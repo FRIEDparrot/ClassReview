@@ -1,6 +1,42 @@
 {
   "recentFiles": [
     {
+      "basename": "5. 神经网络理论初步",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. 神经网络理论初步.md"
+    },
+    {
+      "basename": "⌚近期计划书",
+      "path": "🐸 Daily Life memo/⌚近期计划书.md"
+    },
+    {
+      "basename": "第六章 分支限界法(BFS)",
+      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第六章 分支限界法(BFS).md"
+    },
+    {
+      "basename": "第五章 回溯法(DFS)",
+      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md"
+    },
+    {
+      "basename": "第七章 概率算法",
+      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第七章 概率算法.md"
+    },
+    {
+      "basename": "第六章 分支限界法(BFS) 2024-10-01 21.32.10",
+      "path": "Excalidraw/第六章 分支限界法(BFS) 2024-10-01 21.32.10.md"
+    },
+    {
+      "basename": "npm 镜像设置和 typescript 安装配置",
+      "path": "📘ClassNotes/⌨️Programming/🕸️Pre-front Programming/Node.js/npm 镜像设置和 typescript 安装配置.md"
+    },
+    {
+      "basename": "1. Cmake安装基本教程",
+      "path": "📘ClassNotes/🐧Computer System/GNU Make 使用/Cmake辅助生成工具/1. Cmake安装基本教程.md"
+    },
+    {
+      "basename": "1. GCC MakeFile 基本操作",
+      "path": "📘ClassNotes/🐧Computer System/GNU Make 使用/1. GCC MakeFile 基本操作.md"
+    },
+    {
       "basename": "1. 线性空间与线性变换",
       "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md"
     },
@@ -15,10 +51,6 @@
     {
       "basename": "4. 最优化方法, 梯度寻优法及其应用",
       "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/4. 最优化方法, 梯度寻优法及其应用.md"
-    },
-    {
-      "basename": "5. 神经网络理论初步",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. 神经网络理论初步.md"
     },
     {
       "basename": "BP 神经网络的反向传播计算",
@@ -49,16 +81,8 @@
       "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第四章 贪心算法.md"
     },
     {
-      "basename": "第六章 分支限界法(BFS)",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第六章 分支限界法(BFS).md"
-    },
-    {
       "basename": "第三章 动态规划算法",
       "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第三章 动态规划算法.md"
-    },
-    {
-      "basename": "第五章 回溯法(DFS)",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md"
     },
     {
       "basename": "第六章 分支限界法(BFS) 2024-09-28 11.43.11",
@@ -175,30 +199,6 @@
     {
       "basename": "1.机器学习算法和文本分类挖掘(Naive Bayes)",
       "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/1.机器学习算法和文本分类挖掘(Naive Bayes).md"
-    },
-    {
-      "basename": "mpl toolkits库的使用",
-      "path": "📘ClassNotes/⌨️Programming/🐍Python/数据处理详解(np,pd,plt)/mpl toolkits库的使用.md"
-    },
-    {
-      "basename": "1. Numpy 命令详解",
-      "path": "📘ClassNotes/⌨️Programming/🐍Python/数据处理详解(np,pd,plt)/1. Numpy 命令详解.md"
-    },
-    {
-      "basename": "第五章 回溯法(DFS) 2024-09-23 16.31.20",
-      "path": "Excalidraw/第五章 回溯法(DFS) 2024-09-23 16.31.20.md"
-    },
-    {
-      "basename": "第五章 回溯法(DFS) 2024-09-23 09.06.36",
-      "path": "Excalidraw/第五章 回溯法(DFS) 2024-09-23 09.06.36.md"
-    },
-    {
-      "basename": "1. C++常用字符串处理",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/C++基础知识/文件管理和字符串处理/1. C++常用字符串处理.md"
-    },
-    {
-      "basename": "【submodule】Use repo as submodule of another repo",
-      "path": "💻softwares/Git/【submodule】Use repo as submodule of another repo.md"
     }
   ],
   "omittedPaths": [],

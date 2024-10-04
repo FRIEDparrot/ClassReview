@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d31c193c23618542",
+        "id": "d2fd278170fc1a90",
         "type": "tabs",
         "children": [
           {
-            "id": "7d882a266a5992cd",
+            "id": "30c42dc80bd911c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md",
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. 神经网络理论初步.md",
                 "mode": "source",
                 "source": false
               }
@@ -79,7 +79,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md"
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. 神经网络理论初步.md"
               }
             }
           }
@@ -87,7 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 403.5110321044922,
+    "width": 359.5,
     "collapsed": true
   },
   "right": {
@@ -133,7 +133,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md",
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. 神经网络理论初步.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -239,7 +239,7 @@
             }
           },
           {
-            "id": "78a2c8f4e54554ca",
+            "id": "dc64f477428f8783",
             "type": "leaf",
             "state": {
               "type": "timeline",
@@ -260,7 +260,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md",
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. 神经网络理论初步.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -285,7 +285,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md",
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. 神经网络理论初步.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -307,7 +307,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 497.5,
+    "width": 466.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -335,14 +335,24 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "7d882a266a5992cd",
+  "active": "30c42dc80bd911c9",
   "lastOpenFiles": [
+    "🐸 Daily Life memo/⌚近期计划书.md",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第六章 分支限界法(BFS).md",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第七章 概率算法.md",
+    "Excalidraw/第六章 分支限界法(BFS) 2024-10-01 21.32.10.md",
+    "📘ClassNotes/⌨️Programming/🕸️Pre-front Programming/Node.js/npm 镜像设置和 typescript 安装配置.md",
+    "📘ClassNotes/🐧Computer System/GNU Make 使用/Cmake辅助生成工具/1. Cmake安装基本教程.md",
+    "Excalidraw/1. Cmake安装基本教程 2024-10-01 20.37.23.md",
+    "📘ClassNotes/🐧Computer System/GNU Make 使用/1. GCC MakeFile 基本操作.md",
+    "Excalidraw/npm 镜像 2024-10-01 18.58.48.md",
+    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md",
     "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/定理证明/线性空间定理证明.pdf",
     "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/定理证明",
     "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/New folder",
     "💻softwares/🗽2D & 3D design/UG/曲面放置文字.md",
     "💻softwares/🗽2D & 3D design/UG/1. UG 基础操作.md",
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md",
     "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/4. 最优化方法, 梯度寻优法及其应用.md",
     "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. 神经网络理论初步.md",
     "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/推导部分/BP 神经网络的反向传播计算.pdf",
@@ -354,21 +364,12 @@
     "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/补充知识/1. ML estimation 最大似然估计.md",
     "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md",
     "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第四章 贪心算法.md",
-    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第六章 分支限界法(BFS).md",
     "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第三章 动态规划算法.md",
-    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md",
     "Excalidraw/第六章 分支限界法(BFS) 2024-09-28 11.43.11.md",
     "attachments/Pasted image 20240928150821.png",
     "💻softwares/🗽2D & 3D design/ideaMaker/常用 3D 打印材料.md",
     "Excalidraw/第六章 分支限界法(BFS) 2024-09-28 10.39.36.md",
     "🗑️trash/Untitled.md",
-    "💻softwares/Markdown & Latex Tutorial/obsidian usage/basic grammar of Obsidian.md",
-    "💻softwares/Markdown & Latex Tutorial/Markdown Tutorial/Markdown documentation.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🎯Reliability Engineering/异常值的 Grubbs 检验.md",
-    "📘ClassNotes/⌨️Programming/Programming Terminology.md",
-    "Excalidraw/第五章 回溯法(DFS) 2024-09-26 15.23.50.md",
-    "Excalidraw/第五章 回溯法(DFS) 2024-09-25 19.09.32.md",
-    "Excalidraw/第五章 回溯法(DFS) 2024-09-25 14.47.42.md",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/等价向量组的相关定理证明.pdf",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/向量的线性相关判定定理证明.pdf",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/方阵乘积的行列式的证明.pdf",
@@ -382,7 +383,6 @@
     "attachments/Pasted image 20240922105941.png",
     "attachments/Pasted image 20240919170741.png",
     "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/补充知识/SVD decomposition.pdf",
-    "📘ClassNotes/🐧Computer System/Shell 常用指令",
     "Untitled.canvas",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]

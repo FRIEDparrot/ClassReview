@@ -23,6 +23,13 @@
 需要说明的是，分支限界法和广度优先搜索极其类似, **唯一的不同是不搜索以不可行节点为根节点的子树**。
 一般地，例如旅行商等费用最小问题可以采用最小堆的分支限界法进行解决。
 
+### (2) 关键思想
+1. <b><mark style="background: transparent; color: blue">问题基本入手的方向: 子集树建模和排列树建模方法</mark></b>
+2. 根据实际问题**确定采用最大堆或者最小堆的结构**。
+3. 采用<mark style="background: transparent; color: red">每次记录上一次的最佳搜索节点</mark>, 用于回溯最终获得最优解。
+4. 专门针对集装箱类问题的<mark style="background: transparent; color: red">子集树问题</mark>处理方案，以**最可能获得最大**进行优先，此时一旦找到根, 则必定为最优解。
+5. 在遍历子集树时，通过树结构记录最优的步骤, 从而最小化遍历解空间所需记录的路径数量。
+
 ## 二、相关问题
 ### (1) 单源最短路径问题
 Dijkstra 算法和 Floyd 算法参考[[📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第四章 贪心算法#(4) 图的最小生成树和最短路径问题|第四章 贪心算法]]
@@ -200,7 +207,7 @@ int main() {
 ```
 
 可以看出，实际上上述算法没有减少多少计算过程的复杂度(尝试次数高达800)，仅仅是对多出的部分进行了剪枝。
-除了采用剩余集装箱重量剪枝(加上剩余也不够)以外, 也可以在搜索子树的过程中保存当前构造的子集树的路径。
+除了采用**剩余集装箱重量**剪枝(加上剩余也不够)以外, 也可以在搜索子树的过程中保存当前构造的子集树的路径。
 
 `````ad-note
 title: 基于优先队列的优化
@@ -347,3 +354,213 @@ total searched times : 109
 仅用了 109 次解空间搜索, 可以看出大大提高了解空间的搜索效率。
 
 ### (3) 布线问题
+布线问题实际上是按照步数进行广度优先搜索的问题。
+首先在一个 $n \times n$ 的方格上, 其中不可布线区域采用 1 标记, 而确定从点  $A(x_1, y_1)$ 到  $B(x_2, y_2)$ 的最短布线。
+
+取如下的矩阵, 其中红色部分为不可布线区域; 
+![[Excalidraw/第六章 分支限界法(BFS) 2024-10-01 21.32.10|350]]
+
+
+> [!caution] 思想
+>  需要说明的是, 在带有重复搜索问题的情况下,一个重要方法是采用一个 steps 数组, 记录每个节点的最短搜索到的步长, 同时会根据路径短进选择权重(例如最短路径则建立最小优先队列), 这样就可以避免重复搜索（减少搜索次数）, 同时按照短的方式进行搜索
+>  
+
+问题求解代码较为简单，具体如下:
+```cpp
+#include<iostream> 
+#include<algorithm>
+#include<queue> 
+#include<vector>
+
+using namespace std;
+const int n = 7;
+
+int mat[n][n] = {
+        {0, 0, 1, 0, 0, 0, 0},
+        {0, 0, 1, 1, 0, 0, 0},
+        {0, 0, 0, 0, 1, 0, 0},
+        {0, 0, 0, 1, 1, 0, 0},
+        {1, 0, 0, 0, 1, 0, 0},
+        {1, 1, 1, 0, 0, 0, 0},
+        {1, 1, 1, 0, 0, 0, 0}
+};
+int steps[n][n];
+int best_option[n][n];
+const int fst[4] = { -1, 1, 0, 0 };
+const int scd[4] = { 0, 0, -1, 1 };
+
+/* 将各个节点中, 距离小的进行前置 */
+struct steps_cmp {
+    bool operator()(const pair<int, int>& a, const pair<int, int>& b) {
+        return mat[a.first][a.second] > mat[b.first][b.second];
+    }
+};
+
+/*  */
+void bfs(int start_x, int start_y, int end_x, int end_y) { 
+
+    // if (steps[i][j] > -1 && step > steps[i][j]) return;
+    
+    std::priority_queue<std::pair<int,int>, vector<std::pair<int, int>>, steps_cmp> q;
+    q.push(std::make_pair(start_x, start_y));
+    steps[start_x][start_y] = 0;
+
+    /* boarden search */
+    while (!q.empty()) {
+        std::pair<int, int> node = q.top();
+        q.pop();
+        int xo = node.first;
+        int yo = node.second;
+        if (xo == end_x && yo == end_y) return;
+        for (int i = 0; i < 4; i++) {
+            int x = xo + fst[i];
+            int y = yo + scd[i];
+            if (x >= 0 && x < n && y >= 0 && y < n && mat[x][y] == 0) {
+                if (steps[x][y] > -1 && steps[xo][yo] + 1 >= steps[x][y]) {
+                    continue;
+                }
+                else {
+                    steps[x][y] = steps[xo][yo] + 1;
+                    best_option[x][y] = i;
+                    q.push(std::make_pair(x, y));
+                }
+            }
+        }
+    }
+}
+
+/* 电路布线问题 */
+int main() {
+    memset(steps, 0, sizeof(steps));
+    memset(best_option, 0, sizeof(best_option));
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            steps[i][j] = -1;
+            best_option[i][j] = -1;
+        }
+    }
+    int start_x = 2, start_y = 1;
+    int end_x = 3, end_y = 5;
+
+    bfs(start_x, start_y, end_x, end_y );
+    cout << "minimum steps : " << steps[end_x][end_y] << endl;
+    int x = end_x, y = end_y;
+    if (steps[end_x][end_y] != -1) {
+        while (x != start_x || y != start_y) {
+            cout << "(" << x << "," << y << ")<-";
+            int idx = best_option[x][y];
+            if (idx < 0) break;
+            x = x - fst[idx];
+            y = y - scd[idx];
+        }
+        cout << x << "," << y << endl;
+    }
+    return 0;
+}
+```
+
+### (4) 最大团问题
+问题参考[[📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS)#(5) 最大团问题|第五章 回溯法(DFS)]] 的相同问题, 采用分支限界方法求解最大团问题。<mark style="background: transparent; color: red">采用子集树的方法</mark>对最大团问题进行遍历和求解。因此实际上是类似于集装箱问题, 可按照该问题的思路进行求解。
+
+![[Excalidraw/第五章 回溯法(DFS) 2024-09-23 19.37.58|500]]
+
+```cpp
+int adjacency_matrix[7][7] = {
+    {0, 1, 1, 1, 0, 0, 1}, // connection for node 1
+    {1, 0, 0, 0, 1, 0, 1}, // connection for node 2
+    {1, 0, 0, 1, 0, 0, 1}, // connection for node 3
+    {1, 0, 1, 0, 1, 0, 1}, // connection for node 4
+    {0, 1, 0, 1, 0, 1, 1}, // connection for node 5
+    {0, 0, 0, 0, 1, 0, 1}, // connection for node 6
+    {1, 1, 1, 1, 1, 1, 0}  // connection for node 7
+};
+```
+
+<b><mark style="background: transparent; color: blue">需要注意</mark></b>: 我们不采用每一个向量存储子集树遍历过程中的选择数组, 而是直接采用树结构进行存储, 这样能够显著减少实际的存储空间;
+
+具体代码如下所示:
+```cpp
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <queue>
+using namespace std; 
+
+const int n = 7;
+
+/* 求解最大团问题的分支限界方法 */
+int adjacency_matrix[n][n] = {
+    {0, 1, 1, 1, 0, 0, 1}, // connection for node 1
+    {1, 0, 0, 0, 1, 0, 1}, // connection for node 2
+    {1, 0, 0, 1, 0, 0, 1}, // connection for node 3
+    {1, 0, 1, 0, 1, 0, 1}, // connection for node 4
+    {0, 1, 0, 1, 0, 1, 1}, // connection for node 5
+    {0, 0, 0, 0, 1, 0, 1}, // connection for node 6
+    {1, 1, 1, 1, 1, 1, 0}  // connection for node 7
+};
+
+/* 采用树结构进行存储, 这个是为了避免每个解存储一个向量而增加复杂度 */
+typedef struct cnode {
+    cnode* parent;
+    int cur_idx;   /* 当前搜索到的层 */
+    int elem;           /* 当前搜索到的为 0 或者 1 (其中1为存在集合中) */
+    int size;           /* 当前得到的最大团大小 */
+    cnode(cnode* parent, int cur_idx, int elem, int size)  {
+        this->parent = parent;
+        this->cur_idx = cur_idx;
+        this->elem = elem;
+        this->size = size;
+    }
+}cnode;
+
+struct cmp {
+    bool operator()(const cnode *a, const cnode *b){
+        /* int idx = *max_element(vec.begin(), vec.end()) + 1; */
+        return a->size + (n-1) - a->cur_idx < b->size + (n-1) - b->cur_idx;     /* 按照当前团大小 + 剩余元素个数排序, 建立团 */
+    }
+};
+
+/* 求解最大团问题的分支限界方法 */
+cnode* get_max_clique() {
+    cnode* root = new cnode(NULL, -1, 0, 0);
+    priority_queue<cnode*, vector<cnode*>, cmp> pq;
+    pq.push(root);
+    
+    while (true) {
+        cnode* node = pq.top();
+        pq.pop();
+
+        /* check if the node can be added into the max clique */
+        int new_idx = node->cur_idx + 1;
+        if (new_idx == n) return node;   /*  reach the last layer */
+
+        bool flag = true;
+        for (cnode* c = node; c->parent != NULL; c = c->parent) {
+            /* 检查团兼容性 */
+            if (c->elem == 1 && !adjacency_matrix[c->cur_idx][new_idx]) {
+                flag = false;
+            }
+        }
+        cnode *new_node1 = new cnode(node, new_idx, 0, node->size);
+        pq.push(new_node1);
+
+        if (flag) {
+            cnode *new_node2 = new cnode(node, new_idx, 1, node->size + 1);
+            pq.push(new_node2);
+        }
+    }
+    return root;
+}
+
+int main() {
+    cnode* node = get_max_clique();
+    while (node->parent != NULL) {
+        if (node->elem) {
+            cout << node->cur_idx << " ";
+        }
+        node = node->parent;
+    }
+    return 0;
+}
+```
+
