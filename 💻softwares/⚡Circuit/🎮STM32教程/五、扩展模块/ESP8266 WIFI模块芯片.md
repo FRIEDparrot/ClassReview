@@ -82,7 +82,7 @@ AT+CWLIF       // 查看已经接入设备的IP
 
 例如设置Wifi 热点名称为FriedParrot's Wifi, 需要使用: 
 ```c
-AT+CWSAP="FriedParrot's Wifi","parrot12345",1,0 // 最后参数为0不设置密码, 2设置密码
+AT+CWSAP="FriedParrot's Wifi","123456",1,0 // 最后参数为0不设置密码, 2设置密码
 ```
 
 其中: ESP8266-WIFI 模块支持STA/AP/STA+AP三种模式: 

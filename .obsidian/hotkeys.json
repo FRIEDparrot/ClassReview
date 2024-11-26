@@ -486,10 +486,10 @@
   "templater-obsidian:🗒️Templates/INSERT_UNDERLINE_TEXT.md": [
     {
       "modifiers": [
-        "Alt",
-        "Mod"
+        "Mod",
+        "Meta"
       ],
-      "key": " "
+      "key": "-"
     }
   ],
   "templater-obsidian:🗒️Templates/INSERT_VAREPSILON_LOWERCASE.md": [
@@ -852,6 +852,13 @@
   "templater-obsidian:🗒️Templates/INSERT_VECTOR_SIGNAL.md": [
     {
       "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "ArrowRight"
+    },
+    {
+      "modifiers": [
         "Alt"
       ],
       "key": "ArrowRight"
@@ -1109,10 +1116,9 @@
   "obsidian-textgenerator-plugin:generate-text": [
     {
       "modifiers": [
-        "Alt",
         "Mod"
       ],
-      "key": "Enter"
+      "key": " "
     }
   ],
   "theme-picker:open-theme-picker": [
@@ -1292,13 +1298,6 @@
         "Mod"
       ],
       "key": "A"
-    },
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "/"
     }
   ],
   "templater-obsidian:🗒️Templates/INSERT_SIMEQUAL_SYMBOL.md": [
@@ -1503,16 +1502,6 @@
       "key": "Enter"
     }
   ],
-  "obsidian-excalidraw-plugin:insert-LaTeX-symbol": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod",
-        "Shift"
-      ],
-      "key": "Enter"
-    }
-  ],
   "mermaid-tools:open-toolbar": [
     {
       "modifiers": [
@@ -1608,6 +1597,66 @@
         "Mod"
       ],
       "key": "U"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_ORANGE_HIGHLIGHT_TEXT.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "H"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_QUARTET_VERTICAL_BAR.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "\\"
+    }
+  ],
+  "companion:toggle": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": " "
+    }
+  ],
+  "companion:accept": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "A"
+    }
+  ],
+  "companion:suggest": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "G"
+    }
+  ],
+  "various-complements:add-word-custom-dictionary": [],
+  "various-complements:reload-custom-dictionaries": [],
+  "various-complements:show-suggestions": [],
+  "templater-obsidian:🗒️Templates/INSERT_PYTHON_CODE_BLOCK.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "Enter"
     }
   ]
 }

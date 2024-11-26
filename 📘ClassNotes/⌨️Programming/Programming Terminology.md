@@ -7,11 +7,14 @@ Local searching (局部搜索法)：最优化问题
 Branch & limitation (分支限界法)：检索
 Longest Common Sequence 最长公共子序列 
 
+
 mutation 变异,突变
 metamorphosis 变质，形变
 permutation 置换, 排列, 组合
 swarm 大群，群体（昆虫）等
 prey 猎物
+regex 正则表达式
+
 
 Cross-Validation error 留一法交叉验证误差
 anisotropy 各向同性的
@@ -215,3 +218,51 @@ postage 邮资
 postage stamp 邮票
 denomination  面值, 教派, 宗派
 
+incinerate 焚化, 焚化炉 
+obnoxious   讨厌的, 令人作呕的
+mnemonic 助记符, 
+trinket  小装饰品, 小装饰物
+tumor 肿瘤 
+curricula 课程 
+radar 雷达
+venerable 可敬的, 过去的
+precursor 前身
+nimble 灵活的,敏捷的  
+grandiose 宏伟的
+indebt 责成, 负责任 
+get acquaint in 熟悉  
+mitigate 缓解, 减轻,缓和 
+flaw 缺点, 缺陷 
+oncology 肿瘤学 
+scrutiny 审查, 检查
+corpus 语料库 
+submarine 潜艇 
+disruptive 破坏性的 
+paradigm 范例 
+vendor 小贩，小摊 
+unveil 揭开 
+unprecedented 空前的 
+facricate 制造 
+zodeo (尤指美国的)牛仔竞技比赛
+lexical 词汇的
+boilerplate 样板, 模板文件
+wield  挥舞，行使， 支配, 运用 
+
+### 3. javaScript 
+transaction 交易
+ECMA Europe Computer Manufacture Association 
+(欧洲计算机制造协会)
+Emphasis 强调 
+scalable 可扩展的 
+audit 审计，审核
+embargo 禁运, 禁止贸易令
+locales 场所, 发生地点
+shim 垫片,填缝片(自定义拓展)
+alises 假名，别名
+Silhouette 轮廓
+placeholder 原始的提示显示字符
+daemon 守护程序, 精灵
+schema 纪要， 纲要
+lateral 引用同一查询上下文中的其他列或者子查询
+snippet  小段话, 小条消息
+pairwise 对偶 

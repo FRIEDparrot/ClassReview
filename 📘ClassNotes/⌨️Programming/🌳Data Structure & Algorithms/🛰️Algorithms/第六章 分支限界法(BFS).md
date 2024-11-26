@@ -30,6 +30,12 @@
 4. 专门针对集装箱类问题的<mark style="background: transparent; color: red">子集树问题</mark>处理方案，以**最可能获得最大**进行优先，此时一旦找到根, 则必定为最优解。
 5. 在遍历子集树时，通过树结构记录最优的步骤, 从而最小化遍历解空间所需记录的路径数量。
 
+> [!caution] 关键:优先队列的搜索思想
+> 在许多情况下, 使用优先队列进行分支限界方法进行搜索, **一旦搜索找到合适的路径等等，则必定得到的结果就是最优解**，此时可以较好地减少搜索的复杂度。
+
+> [!caution] 关键:限界函数的选取
+> 限界函数的选取也是分支限界法中的核心思想之一, 除了能够以当前找到的最优值进行限界以外, 也可以采用其他的限界函数构造方式
+
 ## 二、相关问题
 ### (1) 单源最短路径问题
 Dijkstra 算法和 Floyd 算法参考[[📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第四章 贪心算法#(4) 图的最小生成树和最短路径问题|第四章 贪心算法]]
@@ -150,7 +156,6 @@ int main()
 1. 当前所装载的部分大于 capacity 时, 进行剪枝
 2. 采用的优先队列用于存储最大载重量, 每次仅需记录一个 layer, 然后每次把 layer 递增, 并入队所有的活节点即可。
 3. 由于只有装和不装之分, 所以装的选择一定会达到最后, 因此可以直接剪去 
-
 
 注意：如果采用优先队列进行, 会由于小端插入, 导致小端的 0 在前， push 完毕之后, 由于是小端存储, 则较小的总是在最前端。从而每次 top 取出结果都是0, 因此可以直接采取队列的方式。具体代码如下:
 ```cpp 
@@ -563,4 +568,357 @@ int main() {
     return 0;
 }
 ```
+
+### (5) 旅行商问题
+对于旅行商问题的分支限界方法, 实际上是排列树的解空间搜索问题。一般会以最短距离为权重建立优先队列。
+
+对于排列树, 一般也有两种不的实现方式, 一种是**仅采用优先队列存储活节点**, 另一种是采用优先队列存储活节点, 同时存储当前构造出的部分排列树，此时容易通过回溯获取到解的形成方式。
+
+首先, 我们借助 python 产生范围内的需要的城市的点: 生成 20 个城市, 位置如下: 
+![[attachments/Pasted image 20241006000007.png|400]]
+
+```python
+import numpy as np  
+import matplotlib.pyplot as plt  
+  
+x_range = np.array([0, 100], dtype=np.float32)  
+y_range = np.array([0, 100], dtype=np.float32)  
+  
+city_num = 20  
+citys = np.array([[np.random.rand() * (x_range[1] - x_range[0]) + x_range[0]  for i in range(city_num)],  
+                 [np.random.rand() * (y_range[1] - y_range[0]) + y_range[0]  for i in range(city_num)]], dtype = np.float32)  
+dist_mat = np.zeros((city_num, city_num), dtype=np.float32)  
+for i in range(city_num):  
+    for j in range(city_num):  
+        dist = np.sqrt((citys[0][i] - citys[0][j])**2 + (citys[1][i] - citys[1][j])**2)  
+        dist_mat[i][j] = dist  
+for i in range(city_num):  
+    print("{", end='')  
+    for j in range(city_num):  
+        print(f"{dist_mat[i][j]:.2f},",end='')  
+    print("}")  
+  
+fig = plt.figure()  
+ax = fig.add_subplot(111)  
+ax.scatter(citys[0], citys[1], color='red')  
+for i in range(citys.shape[1]):  
+    city = citys[:, i]  
+    ax.text(city[0], city[1]-0.01, f'{i+1}', fontsize=12, ha='center', va='bottom')  
+plt.show()
+```
+
+此时, 形成排列树, 并采用分支限界方法进行搜索, 而<mark style="background: transparent; color: red">对于排列树的搜索的分支限界算法</mark>, 关键是采用何种方法进行优先搜索。
+如果我们以当前的距离为权重建立小根堆, <mark style="background: transparent; color: red">当有满节点的情况被弹出时, 则这种情况一定是最优的。</mark>因为**假设有其他解比当前解的距离小, 则加成满节点的情况后, 距离一定更小且是排在前面的**, 显然会比当前距离更长的先弹出。
+
+此外, 还有更多基于此的优化方法 : 
+1. 首先, 针对每个顶点找出每个顶点的最小距离出边，并采用 $ldist$ 进行记录, 而 rdist 记录 $x[s:n-1]$  中的<mark style="background: transparent; color: red">顶点最小出边距离和</mark>。
+2. 如果出现某个顶点没有出边, 则<mark style="background: transparent; color: red">算法即刻结束, 显然找不到回路</mark>
+
+```cpp
+#include <iostream>
+#include <queue>
+#include <vector>
+
+using namespace std;
+
+const int n = 20;
+
+/* 定义 A 的邻接矩阵 */
+float Dist[n][n] = {
+{0.00,71.65,62.79,43.82,30.01,46.88,39.27,73.31,32.98,30.35,84.60,40.74,66.95,38.10,44.93,69.53,50.89,34.97,29.19,52.60,},
+{71.65,0.00,35.36,34.45,41.77,79.43,76.31,81.59,53.78,49.49,14.49,32.70,87.82,79.78,80.09,11.70,25.59,74.53,97.95,35.68,},
+{62.79,35.36,0.00,48.56,41.32,49.90,49.28,46.41,32.28,56.28,48.25,41.66,105.08,87.10,51.31,24.16,19.22,81.82,91.98,56.67,},
+{43.82,34.45,48.56,0.00,17.39,70.57,64.70,84.99,42.85,15.84,44.21,7.67,57.15,45.36,70.07,38.59,29.34,40.08,66.12,10.83,},
+{30.01,41.77,41.32,17.39,0.00,53.58,47.47,70.42,26.42,15.57,54.60,11.60,65.62,45.79,52.94,40.94,24.31,40.50,56.54,28.12,},
+{46.88,79.43,49.90,70.57,53.58,0.00,7.61,29.46,28.02,65.82,93.84,63.47,112.12,84.60,2.61,70.76,54.08,80.87,69.13,81.40,},
+{39.27,76.31,49.28,64.70,47.47,7.61,0.00,36.07,23.15,59.00,90.79,57.86,104.69,77.02,5.87,68.43,50.73,73.34,61.98,75.52,},
+{73.31,81.59,46.41,84.99,70.42,29.46,36.07,0.00,44.94,85.19,94.66,77.32,134.51,109.26,32.05,70.57,60.05,104.90,97.95,95.25,},
+{32.98,53.78,32.28,42.85,26.42,28.02,23.15,44.94,0.00,40.42,68.25,35.58,89.58,65.20,27.88,46.96,28.28,60.55,61.65,53.65,},
+{30.35,49.49,56.28,15.84,15.57,65.82,59.00,85.19,40.42,0.00,59.98,17.30,50.08,31.68,64.77,51.83,38.12,26.28,50.38,22.58,},
+{84.60,14.49,48.25,44.21,54.60,93.84,90.79,94.66,68.25,59.98,0.00,44.38,92.07,88.40,94.53,24.14,40.08,83.37,109.76,42.12,},
+{40.74,32.70,41.66,7.67,11.60,63.47,57.86,77.32,35.58,17.30,44.38,0.00,63.49,48.78,63.10,34.55,22.55,43.39,65.47,18.18,},
+{66.95,87.82,105.08,57.15,65.62,112.12,104.69,134.51,89.58,50.08,92.07,63.49,0.00,29.95,110.55,94.74,86.04,32.03,63.75,52.27,},
+{38.10,79.78,87.10,45.36,45.79,84.60,77.02,109.26,65.20,31.68,88.40,48.78,29.95,0.00,82.79,83.28,69.59,5.40,35.45,46.57,},
+{44.93,80.09,51.31,70.07,52.94,2.61,5.87,32.05,27.88,64.77,94.53,63.10,110.55,82.79,0.00,71.68,54.62,79.16,66.70,80.90,},
+{69.53,11.70,24.16,38.59,40.94,70.76,68.43,70.57,46.96,51.83,24.14,34.55,94.74,83.28,71.68,0.00,19.32,77.90,97.34,42.68,},
+{50.89,25.59,19.22,29.34,24.31,54.08,50.73,60.05,28.28,38.12,40.08,22.55,86.04,69.59,54.62,19.32,0.00,64.22,79.34,37.69,},
+{34.97,74.53,81.82,40.08,40.50,80.87,73.34,104.90,60.55,26.28,83.37,43.39,32.03,5.40,79.16,77.90,64.22,0.00,36.57,41.73,},
+{29.19,97.95,91.98,66.12,56.54,69.13,61.98,97.95,61.65,50.38,109.76,65.47,63.75,35.45,66.70,97.34,79.34,36.57,0.00,72.16,},
+{52.60,35.68,56.67,10.83,28.12,81.40,75.52,95.25,53.65,22.58,42.12,18.18,52.27,46.57,80.90,42.68,37.69,41.73,72.16,0.00,},
+};
+
+typedef struct tree_node {
+    float cur_dist;
+    int cur_idx;    /* stop when cur_idx = 0 */
+    tree_node* parent;
+    //vector<int> node_ava_nxt;    vector<int> node_ava_nxt
+
+    tree_node(float cur_dist, int cur_idx, tree_node* parent) {
+        this->cur_dist = cur_dist;
+        this->cur_idx = cur_idx;
+        this->parent = parent;
+        // this->node_ava_nxt = node_ava_nxt;
+    } 
+}tree_node;
+
+
+/* sort each dist in node and return the index needed */
+void get_sorted_idx(int n, int** sorted_idx) {
+    for (int i = 0; i < n; i++) {
+        std::vector<std::pair<float, int>>  distances;
+        for (int j = 0; j < n; j++) {
+            distances.push_back(std::make_pair(Dist[i][j], j));
+        }
+        std::sort(distances.begin(), distances.end());
+        for (int j = 0; j < n; j++) {
+            sorted_idx[i][j] = distances[j].second;
+        }
+    }
+}
+
+vector<int> get_available_nodes(tree_node* cur_node, int** sorted_idx, int n) {
+    vector<int> ava_nodes;
+    for (int i = 0; i < n; i++) {
+        ava_nodes.push_back(sorted_idx[cur_node->cur_idx][i]);
+    }
+    tree_node* t = cur_node;
+    while (t!= NULL) {
+        auto it = std::find(ava_nodes.begin(), ava_nodes.end(), t->cur_idx);
+        if (it != ava_nodes.end()) {
+            ava_nodes.erase(it);
+        }
+        t = t->parent;
+    }
+    return ava_nodes;
+}
+
+struct cmp {
+    // sort from small to large 
+    bool operator()(tree_node* a, tree_node* b) {
+        return a->cur_dist > b->cur_dist;
+    }
+};
+
+tree_node* traveling_problem(int n) {
+    int** sorted_idx = new int*[n];
+    for (int i = 0; i < n; i++) 
+        sorted_idx[i] = new int[n];
+    get_sorted_idx(n, sorted_idx);
+
+    tree_node* root = new tree_node(0, 0, NULL);   /* start from node 0 */
+    priority_queue<tree_node*, vector<tree_node*>, cmp> pq;
+    pq.push(root);
+    
+    while (!pq.empty()) {
+        tree_node* cur_node = pq.top();
+        pq.pop();
+        if (cur_node->cur_idx == 0 && cur_node->parent != NULL) {
+            return cur_node;
+        }
+        /* note : if we need to search all the path, must add "else" after remove "return" above */
+        vector<int> ava_nodes = get_available_nodes(cur_node, sorted_idx, n);
+        if (ava_nodes.size() == 0) {
+            float new_dist = cur_node->cur_dist + Dist[cur_node->cur_idx][0];   /* return to 0 to form a loop */
+            tree_node* new_node = new tree_node(new_dist, 0, cur_node);
+            pq.push(new_node);
+        }
+        else {
+            for (int idx : ava_nodes) {
+                float new_dist = cur_node->cur_dist + Dist[cur_node->cur_idx][idx];
+                tree_node* new_node = new tree_node(new_dist, idx, cur_node);
+                pq.push(new_node);
+            }
+        }
+    }
+    return NULL;
+}
+
+const int n_srh = 10; /* only calculate the search range */
+
+int main() {
+    tree_node *cur_node =  traveling_problem(n_srh);
+    if (cur_node != NULL) {
+        cout << "find available distance loop : " << cur_node->cur_dist << endl;
+        while (cur_node != NULL) {
+            cout << cur_node->cur_idx ;
+            if (cur_node->parent != NULL) 
+                cout << "->";
+            cur_node = cur_node->parent;
+        } 
+    }
+    else {
+        cout << "no available loop" << endl;
+    }
+    return 0;
+}
+```
+
+在设定规模为10时,找到的回路为 0->8->6->5->7->2->1->3->9->4->0 (270.84)
+![[attachments/Pasted image 20241006234801.png|400]]
+
+
+### (6) 电路板排列问题
+电路板排列问题参考[[📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS)#(8) 电路板排列问题|回溯法]], 即列举全部电路板排列的问题。
+显然, 当前面的排列已经确定时, 最大值就已经确定了, 因此我们从当前排列中, 按照密度最小进行从小到大建立最小堆, 而节点记录当前的最小密度即可。
+
+回溯法中, 我们采用递归实现了排列树的遍历, 而需要注意的是 bestd(当前最优解参数)用于进行剪枝。如果当前扩展节点的 cur_dens 不小于 bestd (因为<mark style="background: transparent; color: red">我们需要考虑最后一块电路板的密度</mark>, 所以实际上和旅行商问题类似的, 我们可以采用最大的带有全部节点的排列出队时，则直接找到最优的解，而密度在最后一个节点产生时就已经确定了,可以用于剪枝)
+
+需要说明的是, 在排列树进遍历时, <b><mark style="background: transparent; color: blue">相对于回溯法, 每个节点都要记录当前的各个板剩余的线头数量</mark></b>， 因此<mark style="background: transparent; color: red">对于电路板排列问题, 分支限界法需要更多的空间消耗</mark>. 
+
+下面给出了一个简单示例, 没有加末尾的记录和剪枝:
+```cpp title:电路板排列问题,分支限界方法
+#include <iostream>
+#include <array>
+#include <vector>
+#include <queue> 
+#include <algorithm>
+using namespace std;
+
+const int n = 8;
+const int m = 5;
+int circuit_boards[n];       /* 电路板的排列数组 */
+int best_circuit_boards[n];  /* 电路板排列数组的最佳结果 */
+int wire_nums[n - 1];        /* 每个区间之间的连线数量 */
+int best_wire_nums[n - 1];   /* 电路板区间之间的连线数量的最佳结果 */
+
+// int conn_tot[m];             /* 记录每个方法总数量的全局变量 */
+
+const std::array<std::vector<int>, m> circuit_conn = { {
+    {3,4,5},
+    {0, 1},
+    {0, 2},
+    {2, 5},
+    {6, 7},
+} };
+
+int** init_conn_matrix(array<vector<int>, m> conn) {
+    /* 新建一个矩阵, 存储每个连接块是否有节点, 即连接块 */
+    int** conn_mat = new int* [m];   /* block m */
+    for (int i = 0; i < m; i++) {
+        conn_mat[i] = new int[n];    /* index n */
+        /* 将所有元素设置为0 */
+        for (int j = 0; j < n; j++) {
+            conn_mat[i][j] = 0;
+        }
+    }
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < circuit_conn[i].size(); j++) {
+            conn_mat[i][circuit_conn[i][j]] = 1;
+        }
+    }
+    return conn_mat;
+}
+int conn_tot[m];
+
+typedef struct node {
+    int density;
+    int idx;
+    node* parent;
+    int size; /* 当前排列的长度 */
+    int conn_left[m];
+    node(int density, int idx, node* parent, int size) {
+        this->density = density;
+        this->idx = idx;
+        this->parent = parent;
+        this->size = size;
+        for (int i = 0; i < m; i++) {
+            conn_left[i] = circuit_conn[i].size();
+        }
+    }
+}node;
+
+struct cmp {
+    bool operator()(const node* a,const node* b) {
+        return a->density > b->density; /* 小顶堆 */
+    }
+};
+
+node* circuit_board_problem(int n) {
+    int** conn_matrix = init_conn_matrix(circuit_conn);
+    priority_queue<node*, vector<node*>, cmp> pq;
+
+    int min_res_find = m; /* 初始化最大结果 */ 
+    /* 初始化 conn_tot 数组 */
+    for (int i = 0; i < m; i++) {
+        conn_tot[i] = circuit_conn[i].size();
+    }
+
+    for (int i = 0; i < n; i++) {
+        node* cur_node = new node(0, i, nullptr, 1);
+        for (int j = 0; j < m; j++) {
+            cur_node->conn_left[j] -= conn_matrix[j][i];
+        }
+        pq.push(cur_node);
+    }
+
+    while (!pq.empty()) {
+        node* cur_node = pq.top();
+        pq.pop();
+        /* 排列树遍历 -> 找到结果则最优 */
+        if (cur_node->size == n) {
+            return cur_node;
+        }
+        /* 枚举下一块板 */
+        
+        for (int i = 0; i < n; i++) {
+            /* 从树中搜索之前的节点 */
+            node* t = cur_node;
+            while (t != nullptr) {
+                if (t->idx == i) {
+                    break;
+                }
+                t = t->parent;
+            }
+            if (t!=nullptr) continue;  /* 如果已经存在, 则跳过 */ 
+            
+            node* new_node = new node(0, i, cur_node, 0);  /* 复制当前节点 */
+            /* 复制 parent 的 conn_left */
+            for (int k = 0; k < m; k++) {
+                new_node->conn_left[k] = cur_node->conn_left[k];
+            }
+            // memcpy(new_node->conn_left, cur_node->conn_left, m *  sizeof(int));
+            
+            /* 计算当前节点部分的连线数量 */
+            int sum = 0;
+            for (int j = 0; j < m; j++) {
+                if (new_node->conn_left[j] < conn_tot[j] && new_node->conn_left[j] > 0) {
+                    sum += 1;
+                }
+                new_node->conn_left[j] -= conn_matrix[j][i];    /* 更新当前节点 */
+            }
+            new_node->density = max(sum, cur_node->density);  /* 注意这里要和 cur_node-> density 进行比较, 以继承前面的 */
+            new_node->size = cur_node->size + 1;
+            pq.push(new_node);
+        }
+    }
+    return nullptr;
+}
+
+int main() {
+    node* node = circuit_board_problem(n);
+    if (node == nullptr) {
+        cout << "No solution" << endl;
+    }
+    else {
+        cout << "Solution: " << node->density << endl;
+    }
+    while (node != nullptr) {
+        cout << node->idx << " ";
+        node = node->parent;
+    }
+    return 0;
+}
+```
+结果为:
+```c
+6 7 4 3 5 2 0 1 
+```
+仍然是最优的结果(显然就此题效率不如回溯法)
+
+### (7) 批处理作业调度问题
+问题参考[[📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS)#(2) 批处理作业调度问题|批处理作业调度问题]], 实际上也是排列树的遍历问题。
+采用分支限界法要求得到的结果需要具有局部最优性质，而关键是<b><mark style="background: transparent; color: blue">如何确保只要搜索到叶节点, 则所得到的该结构就是最优的</mark></b>。
+
+> [!caution] 核心
+> 批处理作业调度问题的核心是<b><mark style="background: transparent; color: red">选取限界函数</mark></b>, 在本方法中, **取了每枝上的两种特殊情况, 得到该枝上的子树的完成时间和的下界**。而剪枝时, <mark style="background: transparent; color: red">只要这个下界 >= 当前找到的最优解，则进行剪枝</mark>
 

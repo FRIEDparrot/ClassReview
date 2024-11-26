@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d2fd278170fc1a90",
+        "id": "7e5388c3e2e7e54d",
         "type": "tabs",
         "children": [
           {
-            "id": "30c42dc80bd911c9",
+            "id": "afc038678e901d5a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. 神经网络理论初步.md",
+                "file": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/4. 矩阵分解.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "4. 矩阵分解"
             }
           }
         ]
@@ -31,7 +33,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 55.93065693430657,
+        "dimension": 63.08926780341023,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -40,7 +42,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -55,7 +59,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -63,7 +69,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -71,24 +79,23 @@
       {
         "id": "066eddf15a13dd56",
         "type": "tabs",
-        "dimension": 44.06934306569343,
+        "dimension": 36.91073219658977,
         "children": [
           {
-            "id": "7778856753ec014b",
+            "id": "db0ad0041a71350b",
             "type": "leaf",
             "state": {
-              "type": "outline",
-              "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. 神经网络理论初步.md"
-              }
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 359.5,
-    "collapsed": true
+    "width": 237.50260543823242
   },
   "right": {
     "id": "f7de553c162de521",
@@ -97,14 +104,16 @@
       {
         "id": "736ec7c11262503f",
         "type": "tabs",
-        "dimension": 54.93291239147593,
+        "dimension": 54.90196078431373,
         "children": [
           {
             "id": "befa702227dffd48",
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -116,7 +125,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -124,7 +135,9 @@
             "type": "leaf",
             "state": {
               "type": "QUICKSHARE_SIDE_VIEW",
-              "state": {}
+              "state": {},
+              "icon": "cloud",
+              "title": "QuickShare"
             }
           },
           {
@@ -133,7 +146,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. 神经网络理论初步.md",
+                "file": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/2. 范数理论及其应用.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -167,7 +180,9 @@
                   "scale": 0.5738575358534607,
                   "close": true
                 }
-              }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of 2. 范数理论及其应用"
             }
           },
           {
@@ -175,7 +190,9 @@
             "type": "leaf",
             "state": {
               "type": "dictionary-view",
-              "state": {}
+              "state": {},
+              "icon": "quote-glyph",
+              "title": "Dictionary"
             }
           },
           {
@@ -187,7 +204,9 @@
                 "file": "📘ClassNotes/👨‍🔧Mechanics/Mechanic Terminology.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Mechanic Terminology"
             }
           },
           {
@@ -199,7 +218,9 @@
                 "file": "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Circuit Terminology"
             }
           },
           {
@@ -211,19 +232,9 @@
                 "file": "📘ClassNotes/🚱materials and chemicals/Chemical Terminology.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "fb148714831b00a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
-                "mode": "source",
-                "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Chemical Terminology"
             }
           },
           {
@@ -235,15 +246,19 @@
                 "file": "📘ClassNotes/⌨️Programming/Programming Terminology.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Programming Terminology"
             }
           },
           {
-            "id": "dc64f477428f8783",
+            "id": "d80ff7421590f15f",
             "type": "leaf",
             "state": {
-              "type": "timeline",
-              "state": {}
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "crossed-star",
+              "title": "Timeline"
             }
           }
         ],
@@ -252,15 +267,27 @@
       {
         "id": "bdaa9cad5f6d59b7",
         "type": "tabs",
-        "dimension": 45.06708760852407,
+        "dimension": 45.09803921568628,
         "children": [
+          {
+            "id": "7778856753ec014b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/6. 最小二乘, RBF 和岭回归.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 6. 最小二乘, RBF 和岭回归"
+            }
+          },
           {
             "id": "90c56e3ca15685e0",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. 神经网络理论初步.md",
+                "file": "📘ClassNotes/⌨️ Pre-front Programming/🌀Vue/2. Vue 基本工作原理和基本语法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -268,15 +295,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "db0ad0041a71350b",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {}
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2. Vue 基本工作原理和基本语法"
             }
           },
           {
@@ -285,10 +306,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. 神经网络理论初步.md",
+                "file": "📘ClassNotes/🐧Computer System/Linux/4. AppImageLauncher 安装和MarkText.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 4. AppImageLauncher 安装和MarkText"
             }
           },
           {
@@ -299,15 +322,16 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 466.5,
+    "width": 312.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -324,65 +348,63 @@
       "zk-prefixer:Create new unique note": false,
       "obsidian-projects:Open projects": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "mermaid-tools:Open Mermaid Toolbar": false,
       "random-note:Open random note": false,
-      "obsidian-day-planner:Timeline": false,
       "templater-obsidian:Templater": false,
-      "dbfolder:Create a new database table": false,
       "media-extended:Open media": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-day-planner:Open Timeline": false,
+      "obsidian-day-planner:Open Multi-Day View": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "30c42dc80bd911c9",
+  "active": "afc038678e901d5a",
   "lastOpenFiles": [
-    "🐸 Daily Life memo/⌚近期计划书.md",
-    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第六章 分支限界法(BFS).md",
-    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md",
-    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第七章 概率算法.md",
-    "Excalidraw/第六章 分支限界法(BFS) 2024-10-01 21.32.10.md",
-    "📘ClassNotes/⌨️Programming/🕸️Pre-front Programming/Node.js/npm 镜像设置和 typescript 安装配置.md",
-    "📘ClassNotes/🐧Computer System/GNU Make 使用/Cmake辅助生成工具/1. Cmake安装基本教程.md",
-    "Excalidraw/1. Cmake安装基本教程 2024-10-01 20.37.23.md",
-    "📘ClassNotes/🐧Computer System/GNU Make 使用/1. GCC MakeFile 基本操作.md",
-    "Excalidraw/npm 镜像 2024-10-01 18.58.48.md",
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md",
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/定理证明/线性空间定理证明.pdf",
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/定理证明",
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/New folder",
-    "💻softwares/🗽2D & 3D design/UG/曲面放置文字.md",
-    "💻softwares/🗽2D & 3D design/UG/1. UG 基础操作.md",
+    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/3. 矩阵序列，矩阵级数与矩阵函数.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/6. 最小二乘, RBF, 岭回归和 Lasso 回归.md",
+    "attachments/Pasted image 20241126011042.png",
     "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/4. 最优化方法, 梯度寻优法及其应用.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. 神经网络理论初步.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/推导部分/BP 神经网络的反向传播计算.pdf",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/推导部分",
-    "Excalidraw/5. 神经网络理论初步 2024-09-29 15.49.56.md",
-    "📘ClassNotes/📐Mathmatics/Mathmatic Terminology.md",
-    "attachments/Pasted image 20240929135337.png",
+    "Excalidraw/6. 预测回归初步和 RBF 网络 2024-11-25 18.44.39.md",
+    "📘ClassNotes/⌨️Programming/🐍Python/1. Python常用命令基础.md",
+    "attachments/Pasted image 20241125171319.png",
+    "attachments/Pasted image 20241125165747.png",
+    "Excalidraw/6. 预测回归初步和 RBF 网络 2024-11-25 11.24.01.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/补充知识/5.SVM支持向量机.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. BP 神经网络, SOM 神经网络和 Boltzmann机.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🌟机器学习优化算法合集/9. 径向基函数方法(RBF).md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/1.机器学习算法和文本分类挖掘(Naive Bayes).md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🌟机器学习优化算法合集/1. 模拟退火算法(SA).md",
+    "📘ClassNotes/⌨️Programming/🐬Mysql  数据库/1. Mysql 入门和基本语法.md",
+    "📘ClassNotes/⌨️Programming/🐬Mysql  数据库/3. 查询进阶部分.md",
+    "attachments/Pasted image 20241125101726.png",
+    "📘ClassNotes/⌨️Programming/🐬Mysql  数据库/2. Mysql 常用函数.md",
+    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第一章 张量的表示.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧮固体力学基础/张量基本运算.md",
+    "💻softwares/😸Git/SSH 绑定.md",
+    "🗑️trash/Drawing 2024-11-24 10.25.20.md",
+    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/5. 特征值估计和对称矩阵的极性.md",
     "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/3. 推荐系统和需求搜寻算法(CF,PCA,SVD).md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/补充知识/1. ML estimation 最大似然估计.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md",
-    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第四章 贪心算法.md",
-    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第三章 动态规划算法.md",
-    "Excalidraw/第六章 分支限界法(BFS) 2024-09-28 11.43.11.md",
-    "attachments/Pasted image 20240928150821.png",
-    "💻softwares/🗽2D & 3D design/ideaMaker/常用 3D 打印材料.md",
-    "Excalidraw/第六章 分支限界法(BFS) 2024-09-28 10.39.36.md",
-    "🗑️trash/Untitled.md",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/等价向量组的相关定理证明.pdf",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/向量的线性相关判定定理证明.pdf",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/补充内容/方阵乘积的行列式的证明.pdf",
-    "attachments/Pasted image 20240924102913.png",
-    "attachments/Pasted image 20240924102001.png",
-    "📘ClassNotes/⌨️Programming/🐍Python/数据处理详解(np,pd,plt)",
-    "attachments/Pasted Image 20240923093641_621.png",
-    "attachments/Pasted Image 20240923093540_590.png",
-    "attachments/Pasted image 20240922162250.png",
-    "attachments/Pasted image 20240922162209.png",
-    "attachments/Pasted image 20240922105941.png",
-    "attachments/Pasted image 20240919170741.png",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/补充知识/SVD decomposition.pdf",
+    "Excalidraw/3. 推荐系统和需求搜寻算法(CF,PCA,SVD) 2024-11-24 10.24.51.md",
+    "attachments/Pasted image 20241124090503.png",
+    "📘ClassNotes/⌨️Programming/🐍Python/🌟数据集训练补充知识/2. 近似最邻近算法(kdtree,Faiss,Annoy, ScaNN).md",
+    "📘ClassNotes/⌨️Programming/🐍Python/plt 绘图方法/2. mpl toolkits库和三维绘图.md",
+    "📘ClassNotes/⌨️Programming/🐍Python/8. Python 文档生成工具 Sphinx.md",
+    "📘ClassNotes/⌨️Programming/🐍Python/2. Python 基本数据结构和可视化方法.md",
+    "attachments/Pasted image 20241120222304.png",
+    "attachments/Pasted image 20241119205143.png",
+    "attachments/Pasted image 20241119204901.png",
+    "attachments/Pasted image 20241119094515.png",
+    "attachments/Pasted image 20241118194532.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧮固体力学基础",
+    "📘ClassNotes/⌨️ Pre-front Programming/🐍Python Web",
+    "📘ClassNotes/⌨️Programming/🐬Mysql  数据库/Linux 部署 mysql 数据库",
+    "📘ClassNotes/⌨️ Pre-front Programming/🦮Ts",
+    "📘ClassNotes/⌨️ Pre-front Programming/🦐redis",
+    "📘ClassNotes/⌨️ Pre-front Programming/🐳docker",
+    "📘ClassNotes/⌨️Programming/🐬Mysql  数据库",
+    "📘ClassNotes/⌨️ Pre-front Programming/🐍Python Web 与 Flask 框架",
+    "📘ClassNotes/⌨️ Pre-front Programming/🏗️Nginx & 腾讯云服务器",
+    "📘ClassNotes/⌨️ Pre-front Programming/🍵JavaScript",
     "Untitled.canvas",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]

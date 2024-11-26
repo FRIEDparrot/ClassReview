@@ -155,7 +155,10 @@
     "🗒️Templates/INSERT_EXP_SYMBOL.md",
     "🗒️Templates/INSERT_NOTIN_SYMBOL.md",
     "🗒️Templates/INSERT_SUM_WITH_INDEX.md",
-    "🗒️Templates/SEQUENCE_X_UNKNOWVAR.md"
+    "🗒️Templates/SEQUENCE_X_UNKNOWVAR.md",
+    "🗒️Templates/INSERT_ORANGE_HIGHLIGHT_TEXT.md",
+    "🗒️Templates/INSERT_QUARTET_VERTICAL_BAR.md",
+    "🗒️Templates/INSERT_PYTHON_CODE_BLOCK.md"
   ],
   "startup_templates": [
     ""

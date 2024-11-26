@@ -5,6 +5,10 @@
   "embedUseExcalidrawFolder": true,
   "templateFilePath": "Excalidraw/Template.excalidraw",
   "scriptFolderPath": "Excalidraw/Scripts",
+  "fontAssetsPath": "Excalidraw/CJK Fonts",
+  "loadChineseFonts": false,
+  "loadJapaneseFonts": false,
+  "loadKoreanFonts": false,
   "compress": true,
   "decompressForMDView": false,
   "onceOffCompressFlagReset": true,
@@ -28,6 +32,7 @@
   "previewMatchObsidianTheme": true,
   "width": "400",
   "height": "",
+  "overrideObsidianFontSize": false,
   "dynamicStyling": "colorful",
   "isLeftHanded": true,
   "iframeMatchExcalidrawTheme": true,
@@ -37,6 +42,7 @@
   "defaultMode": "normal",
   "defaultPenMode": "never",
   "penModeDoubleTapEraser": true,
+  "penModeSingleFingerPanning": true,
   "penModeCrosshairVisible": true,
   "renderImageInMarkdownReadingMode": false,
   "renderImageInHoverPreviewForMDNotes": false,
@@ -94,7 +100,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.5.0",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.6.7",
     "libraryItems": [
       {
         "id": "FZFCrOX0jo5CRZtVgxCp4",
@@ -4718,7 +4724,7 @@
   "mdCSS": "",
   "scriptEngineSettings": {},
   "defaultTrayMode": true,
-  "previousRelease": "2.5.0",
+  "previousRelease": "2.6.7",
   "showReleaseNotes": true,
   "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",
@@ -5368,6 +5374,7 @@
   "areaZoomLimit": 1,
   "longPressDesktop": 500,
   "longPressMobile": 500,
+  "doubleClickLinkOpenViewMode": true,
   "isDebugMode": false,
   "rank": "Gold",
   "modifierKeyOverrides": [

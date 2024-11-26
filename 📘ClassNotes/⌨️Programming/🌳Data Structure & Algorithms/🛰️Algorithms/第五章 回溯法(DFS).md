@@ -820,13 +820,12 @@ min_dis = 92.7701
 ### (8) 电路板排列问题
 对于电路板排列问题, 该问题实际上是<mark style="background: transparent; color: red">将 n 块电路板以最佳方案插入带有 n 个插槽的机箱中,  而其不同的排列方式对应不同插入方案</mark>。
 设 $B = \{1,2, \dots  n\}$ 是 n块电路板集合, 且取每一个连接块 $N_i$ 为 B 的子集, 且 $N_i$ 中的电路板使**用同一根导线相连**; 
-
 取 n = 8, m = 5 时, 给定 n 块电路板及其对应的 m 个连接如下:
 $$\begin{cases}
 B = \left\{1,2,3,4,5, 6,7,8  \right\}  \\
-L =  \left\{N_{1},  N_{2} N_{3}, N_{4}  N_{5} \right\}\\
+L =  \left\{N_{1},  N_{2}, N_{3}, N_{4} , N_{5} \right\}\\
 N_{1} = \left\{ 4,5,6 \right\}  \\
-N_{2} = \left\{ 2,3 \right\} \\
+N_{2} = \left\{ 1,2 \right\} \\
 N_{3} = \left\{ 1,3 \right\} \\
 N_{4} = \left\{ 3, 6 \right\}\\
 N_{5}= \left\{ 7, 8 \right\} 
@@ -867,7 +866,6 @@ int circuit_density(int circuit_boards[n], array<vector<int>, m> circuit_conn) {
 2. 由于需要记录是否在某个区间中, 不能直接通过矩阵进行判断。所以需要带一个 **conn_now数组参数**, <mark style="background: transparent; color: red">记录当前已经遍历过第 j 的选择的多少个节点(最多不超过对应选择的数量)</mark>, 而是否在其中可以<mark style="background: transparent; color: red">通过新建一个 conn_mat 矩阵来进行判断</mark>， 只要在递归过程中判断这个小区间的密度即可, 以前的部分均不需要保存。
 3. 在某个区间, 要求: 1. `conn_left[j] > 0;`   2. `conn_now[j] < conn_tot[j];`  -> 而每次只需遍历方法让 `conn_left[j] -=  conn_mat[j][idx]` 即可
 4. <b><mark style="background: transparent; color: blue">采用回溯法回退到以前的状态方法: </mark></b>只需恢复conn_left 数组, 这个只需重新遍历一遍，即 `conn_left[j] +=  conn_mat[j][idx]` 而 wire_nums 不需要恢复。
-
 
 > [!caution] 循环中进行剪枝的方法
 > 循环中剪枝，一般采用 `continue` 进行, 此时不需要将当前计算出的状态量传给下一个函数。而必须传入当前计算的状态量时, 一般在初始判断并且 `return;` 

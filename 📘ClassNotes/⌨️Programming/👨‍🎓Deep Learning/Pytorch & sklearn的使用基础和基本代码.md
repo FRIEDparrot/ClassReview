@@ -18,6 +18,7 @@ print(bunch.keys())
 ### (2) 数据集训练和测试部分
 sklearn 可以直接获取大量的学习数据集， 同时有分割训练集和测试集功能, 下面简介
 <mark style="background: transparent; color: red">train_test_split 分割数据集</mark> 和 <mark style="background: transparent; color: red">StandardScaler 标准化的方法</mark> 
+
 ```python 
 from sklearn.dataset import load_iris 
 from sklearn.model_selection import train_test_split
@@ -43,7 +44,6 @@ from sklearn.metrics import f1_score  # F1标准, 参考sklearn 部分
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
 | [`mean_squared_log_error`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_log_error.html#sklearn.metrics.mean_squared_log_error "sklearn.metrics.mean_squared_log_error") | Mean squared logarithmic error regression loss. |
 | [`mean_absolute_error`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_absolute_error.html#sklearn.metrics.mean_absolute_error "sklearn.metrics.mean_absolute_error")             | Mean absolute error regression loss.(MAE)       |
-
 
 ### (3) 特征提取和分类 
 #### 1. 字符串标签编码(LabelEncoder)
@@ -101,13 +101,17 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.cluster import KMeans
 ```
 
-#### 3. 分类边界显示和PipeLine 的使用
+
+
+## 2. PipeLine 的使用
 PipeLine 是 sklearn 中的一个很方便的容器类,  可以直接在 PipeLine 中定义 Steps, 然后进行 fit 操作。
 而通过 set_params 方法可以对 pipeline 中的某个名称对象属性进行设置, 具体方法是采用 `__` 进行命名区分: 
 即 `set_params(name__param = new_param)` 
 
 需要分类边界显示时, 则可以采用  sklearn.inspection 中的 DecisionBoundaryDisplay 方法。
 xlabel 和 ylabel 选项和绘图 plt 设置完全相同。
+
+下图采用 pipeline 进行分类边界显示
 ```python
 from sklearn.pipeline import Pipeline
 from sklearn.inspection import DecisionBoundaryDisplay
@@ -127,6 +131,27 @@ disp = DecisionBoundaryDisplay.from_estimator(
     alpha=0.5,  
     ax=ax,  
 )
+```
+
+### (2) 重定义方法的使用
+PipeLine中的每个部分必须接受 x,y 作为 fit_predict 的参数, 因此当 fit 等仅接受一个函数 x 时
+
+```python
+class CustomSOM(SOM):  
+    """  
+    重定义 SOM 类，添加 fit_predict 方法  
+    SOM 是继承SOM类, 用于给 pipeline 进行使用  
+    """    def fit(self, X, y=None):  
+        super().fit(X)  
+        return self  
+    def fit_predict(self, X, y=None):  
+        super().fit(X)  
+        return self.predict(X)
+# 创建Pipeline  
+clf = Pipeline(steps=[  
+    ('scaler', StandardScaler()),  
+    ('som', CustomSOM(m=1, n=3, dim=4))  
+]) 
 ```
 
 # 2. Pytorch

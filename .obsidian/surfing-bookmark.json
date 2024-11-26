@@ -1,42 +1,6 @@
 {
   "bookmarks": [
     {
-      "id": "-312307766",
-      "name": "GitHub: Let’s build from here · GitHub",
-      "url": "https://github.com/",
-      "description": "",
-      "category": [
-        "ROOT"
-      ],
-      "tags": "",
-      "created": 1692432795828,
-      "modified": 1692432795828
-    },
-    {
-      "id": "468810371",
-      "name": "ChatGPT",
-      "url": "https://chat.openai.com/",
-      "description": "",
-      "category": [
-        "ROOT"
-      ],
-      "tags": "",
-      "created": 1692342005023,
-      "modified": 1692342005023
-    },
-    {
-      "id": "1734182357",
-      "name": "zhihu",
-      "url": "https://www.zhihu.com",
-      "description": "",
-      "category": [
-        "ROOT"
-      ],
-      "tags": "",
-      "created": 1692341580000,
-      "modified": 1692341640000
-    },
-    {
       "id": "-373611180",
       "name": "Translate",
       "url": "https://translate.google.com/",
@@ -46,18 +10,6 @@
       ],
       "tags": "",
       "created": 1692334380000,
-      "modified": 1692334380000
-    },
-    {
-      "id": "933747933",
-      "name": "Google",
-      "url": "https://www.google.com/",
-      "description": "",
-      "category": [
-        "ROOT"
-      ],
-      "tags": "",
-      "created": 1692333780000,
       "modified": 1692334380000
     },
     {
@@ -71,18 +23,6 @@
       "tags": "",
       "created": 1692326577277,
       "modified": 1692326577277
-    },
-    {
-      "id": "1170205316",
-      "name": "Minecraft Wiki – The Ultimate Resource for Minecraft",
-      "url": "https://minecraft.fandom.com/wiki/Minecraft_Wiki",
-      "description": "",
-      "category": [
-        "ROOT"
-      ],
-      "tags": "",
-      "created": 1692325985345,
-      "modified": 1692325985345
     }
   ],
   "categories": [

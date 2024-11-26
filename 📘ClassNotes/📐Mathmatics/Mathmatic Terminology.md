@@ -36,3 +36,5 @@ arithmetic 算数的, 演算的
 Studentized 学生化 
 extreme Studentized deviate 极端学生化偏差
 Asymptotic 渐进的, 渐近线的
+propagation 传播, 鼓吹, 宣传
+incognito  匿名的， 伪装的
