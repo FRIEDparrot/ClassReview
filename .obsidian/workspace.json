@@ -4,24 +4,81 @@
     "type": "split",
     "children": [
       {
-        "id": "7e5388c3e2e7e54d",
+        "id": "fc39afaa1d61ff2e",
         "type": "tabs",
         "children": [
           {
-            "id": "afc038678e901d5a",
+            "id": "b3d2464ae1f862cd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/4. 矩阵分解.md",
+                "file": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/1. Mysql 入门和基本语法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. 矩阵分解"
+              "title": "1. Mysql 入门和基本语法"
+            }
+          },
+          {
+            "id": "d387c1ab9ea412d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/循环级联更新问题.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "循环级联更新问题"
+            }
+          },
+          {
+            "id": "7d3f51c649094075",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/3. 查询进阶部分 GROUP BY 和 JOIN.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3. 查询进阶部分 GROUP BY 和 JOIN"
+            }
+          },
+          {
+            "id": "09c5286b18117183",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/6. 视图 View 的操作.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "6. 视图 View 的操作"
+            }
+          },
+          {
+            "id": "b17a1b93558d7d7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/系统数据库部分.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "系统数据库部分"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -33,7 +90,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 63.08926780341023,
+        "dimension": 63.0242825607064,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -79,7 +136,7 @@
       {
         "id": "066eddf15a13dd56",
         "type": "tabs",
-        "dimension": 36.91073219658977,
+        "dimension": 36.9757174392936,
         "children": [
           {
             "id": "db0ad0041a71350b",
@@ -95,7 +152,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 237.50260543823242
+    "width": 302.51103591918945
   },
   "right": {
     "id": "f7de553c162de521",
@@ -104,7 +161,7 @@
       {
         "id": "736ec7c11262503f",
         "type": "tabs",
-        "dimension": 54.90196078431373,
+        "dimension": 45.732349841938884,
         "children": [
           {
             "id": "befa702227dffd48",
@@ -146,7 +203,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/2. 范数理论及其应用.md",
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔦Dive into Deep Learning(Pytorch)/Chapter4 Linear Neural Networks for Classification.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -177,12 +234,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.5738575358534607,
+                  "scale": 0.8045384510264879,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 2. 范数理论及其应用"
+              "title": "Graph of Chapter4 Linear Neural Networks for Classification"
             }
           },
           {
@@ -252,7 +309,7 @@
             }
           },
           {
-            "id": "d80ff7421590f15f",
+            "id": "73bb4ebe2dcb3715",
             "type": "leaf",
             "state": {
               "type": "planner-timeline",
@@ -267,7 +324,7 @@
       {
         "id": "bdaa9cad5f6d59b7",
         "type": "tabs",
-        "dimension": 45.09803921568628,
+        "dimension": 54.26765015806112,
         "children": [
           {
             "id": "7778856753ec014b",
@@ -275,10 +332,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/6. 最小二乘, RBF 和岭回归.md"
+                "file": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/6. 视图 View 的操作.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 6. 最小二乘, RBF 和岭回归"
+              "title": "Outline of 6. 视图 View 的操作"
             }
           },
           {
@@ -287,7 +344,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⌨️ Pre-front Programming/🌀Vue/2. Vue 基本工作原理和基本语法.md",
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/8. SVM支持向量机.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -297,7 +354,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2. Vue 基本工作原理和基本语法"
+              "title": "Backlinks for 8. SVM支持向量机"
             }
           },
           {
@@ -306,12 +363,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/🐧Computer System/Linux/4. AppImageLauncher 安装和MarkText.md",
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/8. SVM支持向量机.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 4. AppImageLauncher 安装和MarkText"
+              "title": "Outgoing links from 8. SVM支持向量机"
             }
           },
           {
@@ -331,8 +388,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 312.5,
-    "collapsed": true
+    "width": 485.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -357,54 +413,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "afc038678e901d5a",
+  "active": "09c5286b18117183",
   "lastOpenFiles": [
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/3. 矩阵序列，矩阵级数与矩阵函数.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/6. 最小二乘, RBF, 岭回归和 Lasso 回归.md",
-    "attachments/Pasted image 20241126011042.png",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/4. 最优化方法, 梯度寻优法及其应用.md",
-    "Excalidraw/6. 预测回归初步和 RBF 网络 2024-11-25 18.44.39.md",
-    "📘ClassNotes/⌨️Programming/🐍Python/1. Python常用命令基础.md",
-    "attachments/Pasted image 20241125171319.png",
-    "attachments/Pasted image 20241125165747.png",
-    "Excalidraw/6. 预测回归初步和 RBF 网络 2024-11-25 11.24.01.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/补充知识/5.SVM支持向量机.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. BP 神经网络, SOM 神经网络和 Boltzmann机.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🌟机器学习优化算法合集/9. 径向基函数方法(RBF).md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/1.机器学习算法和文本分类挖掘(Naive Bayes).md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🌟机器学习优化算法合集/1. 模拟退火算法(SA).md",
-    "📘ClassNotes/⌨️Programming/🐬Mysql  数据库/1. Mysql 入门和基本语法.md",
-    "📘ClassNotes/⌨️Programming/🐬Mysql  数据库/3. 查询进阶部分.md",
-    "attachments/Pasted image 20241125101726.png",
-    "📘ClassNotes/⌨️Programming/🐬Mysql  数据库/2. Mysql 常用函数.md",
-    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第一章 张量的表示.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第二章：应力/1.应力基本概念,边界条件和坐标转换.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧮固体力学基础/张量基本运算.md",
-    "💻softwares/😸Git/SSH 绑定.md",
-    "🗑️trash/Drawing 2024-11-24 10.25.20.md",
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/5. 特征值估计和对称矩阵的极性.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/3. 推荐系统和需求搜寻算法(CF,PCA,SVD).md",
-    "Excalidraw/3. 推荐系统和需求搜寻算法(CF,PCA,SVD) 2024-11-24 10.24.51.md",
-    "attachments/Pasted image 20241124090503.png",
-    "📘ClassNotes/⌨️Programming/🐍Python/🌟数据集训练补充知识/2. 近似最邻近算法(kdtree,Faiss,Annoy, ScaNN).md",
-    "📘ClassNotes/⌨️Programming/🐍Python/plt 绘图方法/2. mpl toolkits库和三维绘图.md",
-    "📘ClassNotes/⌨️Programming/🐍Python/8. Python 文档生成工具 Sphinx.md",
-    "📘ClassNotes/⌨️Programming/🐍Python/2. Python 基本数据结构和可视化方法.md",
-    "attachments/Pasted image 20241120222304.png",
-    "attachments/Pasted image 20241119205143.png",
-    "attachments/Pasted image 20241119204901.png",
-    "attachments/Pasted image 20241119094515.png",
-    "attachments/Pasted image 20241118194532.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🧮固体力学基础",
-    "📘ClassNotes/⌨️ Pre-front Programming/🐍Python Web",
-    "📘ClassNotes/⌨️Programming/🐬Mysql  数据库/Linux 部署 mysql 数据库",
-    "📘ClassNotes/⌨️ Pre-front Programming/🦮Ts",
-    "📘ClassNotes/⌨️ Pre-front Programming/🦐redis",
-    "📘ClassNotes/⌨️ Pre-front Programming/🐳docker",
-    "📘ClassNotes/⌨️Programming/🐬Mysql  数据库",
-    "📘ClassNotes/⌨️ Pre-front Programming/🐍Python Web 与 Flask 框架",
-    "📘ClassNotes/⌨️ Pre-front Programming/🏗️Nginx & 腾讯云服务器",
-    "📘ClassNotes/⌨️ Pre-front Programming/🍵JavaScript",
+    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/3. 查询进阶部分 GROUP BY 和 JOIN.md",
+    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/6. 视图 View 的操作.md",
+    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/5. 存储过程Sub，存储函数和事件调度器.md",
+    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/1. Mysql 入门和基本语法.md",
+    "attachments/Pasted image 20241225114644.png",
+    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/系统数据库部分.md",
+    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/循环级联更新问题.md",
+    "📘ClassNotes/🐧Computer System/🐧 Linux/网络管理工具.md",
+    "📘ClassNotes/⌨️Programming/Programming Terminology.md",
+    "Excalidraw/5. 存储过程Sub，存储函数和事件调度器 2024-12-24 21.57.10.md",
+    "Excalidraw/5. 存储过程Sub，存储函数和事件调度器 2024-12-24 21.35.11.md",
+    "Excalidraw/5. 存储过程，存储函数和事件调度器 2024-12-24 21.26.33.md",
+    "Excalidraw/1. Mysql 入门和基本语法 2024-12-24 20.34.30.md",
+    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/2. Mysql 常用函数.md",
+    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/4. Mysql 索引部分.md",
+    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/分布式数据库方案.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter6 CNN.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter5 Essential Concepts & Heuristics.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch & sklearn的使用基础和基本代码.md",
+    "📘ClassNotes/🚱materials and chemicals/Chemical Terminology.md",
+    "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
+    "📘ClassNotes/👨‍🔧Mechanics/Mechanic Terminology.md",
+    "💻softwares/🛩️FEM/Ansys/Workbench/Load & Analysis/振动台基础激励模拟方法.md",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/理论证明/RAM 计算模型和 RASP 计算模型.md",
+    "attachments/Annotation 2024-12-23 163243.png",
+    "attachments/图片1.png",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第八章 NP 完全理论和近似算法.md",
+    "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md",
+    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第四章 贪心算法.md",
+    "attachments/Pasted image 20241223155814.png",
+    "attachments/Pasted image 20241223153227.png",
+    "💻softwares/🖥️Programming/QQ AI Bot",
+    "attachments/2024-12-22 232229.png",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔦Pytorch DeepLearning Basics",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/计算流体力学推导/高阶线性方程组推导参考.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/计算流体力学推导/流体基本控制方程的推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/计算流体力学推导/常系数线性单波方程的精确解推导.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/计算流体力学推导/体积膨胀率的推导.png",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/计算流体力学推导/Cramer 法则证明.pdf",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/计算流体力学推导",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/test",
+    "attachments/IMG_20241210_002446_edit_497445432396903.jpg",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/全概率公式和贝叶斯公式的证明.pdf",
+    "attachments/Pasted image 20241206115808.png",
+    "attachments/Pasted image 20241204222948.png",
+    "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/SQLalchemy",
     "Untitled.canvas",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]

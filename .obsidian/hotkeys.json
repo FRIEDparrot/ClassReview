@@ -1544,14 +1544,6 @@
       "key": "F12"
     }
   ],
-  "templater-obsidian:🗒️Templates/INSERT_OTIMES_SYMBOL.md": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "O"
-    }
-  ],
   "templater-obsidian:🗒️Templates/INSERT_EXP_SYMBOL.md": [
     {
       "modifiers": [
@@ -1658,5 +1650,16 @@
       ],
       "key": "Enter"
     }
-  ]
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_OTIMES_SYMBOL.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "O"
+    }
+  ],
+  "obsidian-excalidraw-plugin:insert-link": []
 }

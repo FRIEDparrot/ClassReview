@@ -4,7 +4,7 @@
    * [集合框架总览](#集合框架总览)
       * [Iterator  Iterable ListIterator](#iterator--iterable-listiterator)
       * [Map 和 Collection 接口](#map-和-collection-接口)
-   * [Map 集合体系详解](#map-集合体系详解)
+   * [Map 集合体系详解](#map-集合体系详解) 
       * [HashMap](#hashmap)
       * [LinkedHashMap](#linkedhashmap)
       * [TreeMap](#treemap)

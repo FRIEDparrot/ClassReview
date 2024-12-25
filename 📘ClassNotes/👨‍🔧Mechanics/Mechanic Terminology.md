@@ -1,7 +1,9 @@
 Nomenclature 命名法
+orthotropic  对称的,  正交各向异性的
+anisotropic  各向异性的
+Miscellaneous 混杂的 ，各种各样的 
 
 ### 疲劳与断裂
-
 循环计数法 cycle counting method 
 损伤等效 fatigue damage equivalence 
 离散傅里叶变换 DFT discrete Fourier transformation 

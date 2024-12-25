@@ -37,7 +37,7 @@ void back_track(int depth) {
 }
 ```
 
-而对于迭代回溯方法, 一般采用的是<b><mark style="background: transparent; color: blue">树的非递归深度优先遍历算法</mark></b>, 核心思想是检测当前是否遍历完, 遍历完则采用 depth-- 进行回退。具体如下:
+而对于迭代回溯方法, 一般采用的是<b><mark style="background: transparent; color: blue">树的非递归深度优先遍历算法</mark></b>, 核心思想是检测当前是否遍历完, 遍历完则采用 depth-- 进行回退。具体如下: 
 ```c
 void back_track_iter() {
     int depth = 1;
@@ -109,6 +109,7 @@ int main() {
 #include  <stack>
 stack<pair<vector<int>, int>> stk;
 ```
+
 先将初始情况加入一个以 pair 为栈的 stack: 每次出栈一个元素并且对相应的深度depth项进行加一操作。<mark style="background: transparent; color: red">最后直到深度大于相应遍历深度时,则进行遍历的实际操作</mark> (此处使用打印输出)
 ```cpp
 /* iterative method -> for the permutation */
@@ -147,7 +148,6 @@ while (!stk.empty()) {
 
 核心是利用当前的状态计算出一个<mark style="background: transparent; color: red">穷举中的当前值并与最优值比较</mark>, 并剪去不需要的部分。
 
-
 ## 二、相关问题
 ### (1) 装载问题
 对于 n 个集装箱装入 2 个船, 载重量分别为$c_{1}, c_{2}$, 其中集装箱  $i$ 的重量为 $w_i$  确定是否有合理方案将 $n$ 个集装箱装入船。显然类似于背包问题, 我们只需将第一个尽可能装满即可。因此只要递归穷举出所有结果即可。
@@ -158,7 +158,7 @@ while (!stk.empty()) {
 动态规划方法求解该问题的复杂度是 $O(\min\{c_1,2^n \})$, 因此该求解办法的复杂度为 $O(2^n)$, 此外还需要额外的 $O(n)$ 栈空间。
 
 以下算法体现的几种典型的剪枝方式:
-1. 可行性约束函数: 遍历中发现某种解方案不可行即直接剪去。即剪去不满足条件 $\sum^{m}_{i=1} w_{i} x_{i} \leq  c_{1}$ 的子树。
+1. 可行性约束函数: **遍历中发现某种解方案不可行即直接剪去。即剪去不满足条件 $\sum^{m}_{i=1} w_{i} x_{i} \leq  c_{1}$ 的子树**。
 2. <mark style="background: transparent; color: red">上界函数: 可以通过引入上界函数剪去不含最优解的子树</mark>。引入**上界函数**之后, 可以在到达叶节点之后, 不必检查该叶节点是否由于当前的最优解。例如: cw 是当前重量, 而 $r$ 是 <mark style="background: transparent; color: red">剩余的集装箱重量</mark>，显然当 $cw + r < \text{max\_capacity}$ 时, 可以剪去该分支的右子树。(体现在 current_capacity + accumulate(w + depth, w + num, 0) > max_capacity 一句, 如果小于等于, 则找不到更大, 即可删除对应的分支)
 3. 当重量到达 c1 之后, 自动退出返回的机制。
 
@@ -211,7 +211,6 @@ int main() {
         cout << i << ":" << best_x[i] << ",";
     }
     cout << endl;
-    
     return 0;
 }
 ```
@@ -224,7 +223,7 @@ int main() {
 $$f = \sum^{n}_{i=1}  F_{2i}$$
 称为该作业调度的**完成时间和**。<mark style="background: transparent; color: red">制定最佳方案, 使得完成时间和最小。</mark>(时刻之和最小)
 总结起来实际上是一个比较简单的排列树搜索问题。
-对于一个任务列, 可以采用如下的简单代码获取总的完成时间和(由于A的加工时间是可以密堆的, 而下方部分只需考虑 t_last 即可):
+对于一个任务列, 可以采用如下的简单代码获取总的完成时间和(由于A的加工时间是可以密堆的, 而下方部分只需考虑 t_last 即可): 
 ![[Excalidraw/第五章 回溯法 2024-09-21 07.47.35]]
 ```cpp
 int get_work_time_sum(vector<task*> tasks) {
@@ -582,7 +581,7 @@ int main() {
 
 #### 2. 构造法在线性复杂度求解单个解的问题
 此外, 对于 N 后问题, 如果仅需要[线性复杂度构造 N 皇后单个解](https://zhuanlan.zhihu.com/p/612041043)
-首先由于我们是求解$k$行的一个列的排列 $p_k$,根据:
+首先由于我们是求解$k$行的一个列的排列 $p_k$,根据: 
 $$\sum (k - p_{k}) = 0$$
 而同时 $k+p_{k}$ 各不相同, $k-p_{k}$ 各不相同, 此时可以构造前面 $k -p_k$ 均为正数,后面均为负数。
 $$p = \begin{cases}

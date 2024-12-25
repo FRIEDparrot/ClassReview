@@ -6,7 +6,9 @@ Dynamic programming (动态规划法)：优化问题
 Local searching (局部搜索法)：最优化问题
 Branch & limitation (分支限界法)：检索
 Longest Common Sequence 最长公共子序列 
-
+heuristic 启发式的
+asymptotic  渐进的, 渐近线的
+alchemy 炼金术, 魔力 
 
 mutation 变异,突变
 metamorphosis 变质，形变
@@ -14,7 +16,7 @@ permutation 置换, 排列, 组合
 swarm 大群，群体（昆虫）等
 prey 猎物
 regex 正则表达式
-
+intrude 闯入, 入侵 
 
 Cross-Validation error 留一法交叉验证误差
 anisotropy 各向同性的
@@ -176,15 +178,52 @@ hereditary 遗传的, 遗传性的, 世袭的
 hereditary property(downward-closed property) 遗传性质
 argumentation 推论, 证据, 论证
 
-
-
-### 2. Pytorch 
+### 2. pytorch
+paradox  悖论 
+arsenals 武器, 兵工厂, 军火库
+mainstay 支柱 , 中流砥柱 
+myraid  大量, 无数, 各式各样的
 newswire 新闻专线
+resilient 有弹性的, 能复原的
+discrepancy  差异, 不一致 
+obfuscate 故意混淆, 使困惑, 使模糊不清 
+untune 扰乱, 使跑调 
 augment 加强, 扩大, 提高, 补充
 quotient 商
 semantics  语义的
 taxonomy 分类学, 分类法 
 benchmark 检测(用基准问题测试) 
+circumvent 设法回避, 绕过, 绕行
+pesky 讨厌地, 恼人的
+sanctity 神圣不可侵犯性, 圣洁性
+formidable 可怕的,令人敬畏的
+vigilance 小心, 警惕 
+stake 冒险, 打赌，股份，桩.
+ostensible 表面的，宣称的, 假托的
+gnaw 咬，啃
+post hoc 事后归因的
+leak 漏, 渗透, 泄露
+curate 助理牧师, 副院长
+perplex 困惑, 迷惑
+hammock 吊床
+possession 所有物品, 个人财产
+contemplate 沉思, 思考, 应付
+**catastrophic  灾难性的, 糟糕的**
+insidious 阴险的, 狡诈的
+catalyst 催化剂, 引发变化的因素
+mitigate 减轻, 缓和
+stimulate 促进，激发 
+solicited 请求, 恳求的 (solicit 恳求, 征求, 索求)
+cohort 同伙,一批人,支持者
+anecdotes 轶事，趣闻
+cope with 对付, 处理
+discriminate 区分, 辨别
+taxonomy  分类学, 分类系统
+bandit 强盗, 土匪
+disentangle 理顺, 分清, 解开(结)
+slew 使突然转向, 急转
+welfare (政府给予的)福利 
+patrol 巡逻 , 巡查
 
 superceded 被取代 
 suprious 虚假的, 伪造的
@@ -205,6 +244,15 @@ ensemble 合奏，合唱团
 demographic 人口统计学的 
 dispatch 调度, 派遣, 调遣
 apriori 先验的 
+realm 领域 
+affine 仿射的, 亲和的
+monotonic 单调的, 无变化的
+doom 死亡, 注定失败
+rigorous 严格缜密的
+culprit 罪魁祸首
+resemble 看起来像, 显得像
+plausible 看似合理的
+vex 惹恼,  恼火 
 
 retail 零售的, 零售商 
 clique 小集团, 小党派, 小圈子/结派, 私党
@@ -247,6 +295,12 @@ zodeo (尤指美国的)牛仔竞技比赛
 lexical 词汇的
 boilerplate 样板, 模板文件
 wield  挥舞，行使， 支配, 运用 
+in a nut-shell 简而言之
+nontrivial 不平凡的,重要的  
+trivial 不重要的, 琐碎的, 微不足道的
+leverage  影响力， 杠杆作用 
+ubiquitous 无处不在的， 十分常见的
+versatility 多用途性, 多功能性 
 
 ### 3. javaScript 
 transaction 交易
@@ -266,3 +320,12 @@ schema 纪要， 纲要
 lateral 引用同一查询上下文中的其他列或者子查询
 snippet  小段话, 小条消息
 pairwise 对偶 
+bootstrap 独自创立, 与...相联系
+conjugate 共轭的, 
+
+concurrent  同时发生的, 并发的, 同意的,  一致的
+async 异步的, 串口的 
+sync 同步 
+built-in function 内置函数 
+
+

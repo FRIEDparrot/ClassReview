@@ -661,7 +661,6 @@ typedef struct tree_node {
     } 
 }tree_node;
 
-
 /* sort each dist in node and return the index needed */
 void get_sorted_idx(int n, int** sorted_idx) {
     for (int i = 0; i < n; i++) {
@@ -761,16 +760,16 @@ int main() {
 电路板排列问题参考[[📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS)#(8) 电路板排列问题|回溯法]], 即列举全部电路板排列的问题。
 显然, 当前面的排列已经确定时, 最大值就已经确定了, 因此我们从当前排列中, 按照密度最小进行从小到大建立最小堆, 而节点记录当前的最小密度即可。
 
-回溯法中, 我们采用递归实现了排列树的遍历, 而需要注意的是 bestd(当前最优解参数)用于进行剪枝。如果当前扩展节点的 cur_dens 不小于 bestd (因为<mark style="background: transparent; color: red">我们需要考虑最后一块电路板的密度</mark>, 所以实际上和旅行商问题类似的, 我们可以采用最大的带有全部节点的排列出队时，则直接找到最优的解，而密度在最后一个节点产生时就已经确定了,可以用于剪枝)
+回溯法中, 我们采用递归实现了排列树的遍历, 而需要注意的是 bestd(当前最优解参数)用于进行剪枝。如果当前扩展节点的 cur_dens 不小于 bestd (因为<mark style="background: transparent; color: red">我们需要考虑最后一块电路板的密度</mark>, 所以实际上和旅行商问题类似的, 我们**可以采用最大的带有全部节点的排列出队时，则直接找到最优的解，而密度在最后一个节点产生时就已经确定了,可以用于剪枝**)
 
-需要说明的是, 在排列树进遍历时, <b><mark style="background: transparent; color: blue">相对于回溯法, 每个节点都要记录当前的各个板剩余的线头数量</mark></b>， 因此<mark style="background: transparent; color: red">对于电路板排列问题, 分支限界法需要更多的空间消耗</mark>. 
+需要说明的是, 在排列树进遍历时, <b><mark style="background: transparent; color: blue">相对于回溯法, 每个节点都要记录当前的各个板剩余的线头数量</mark></b>， 因此<mark style="background: transparent; color: red">对于电路板排列问题, 分支限界法需要更多的空间消耗</mark>.
 
 下面给出了一个简单示例, 没有加末尾的记录和剪枝:
 ```cpp title:电路板排列问题,分支限界方法
 #include <iostream>
 #include <array>
 #include <vector>
-#include <queue> 
+#include <queue>
 #include <algorithm>
 using namespace std;
 
@@ -782,7 +781,6 @@ int wire_nums[n - 1];        /* 每个区间之间的连线数量 */
 int best_wire_nums[n - 1];   /* 电路板区间之间的连线数量的最佳结果 */
 
 // int conn_tot[m];             /* 记录每个方法总数量的全局变量 */
-
 const std::array<std::vector<int>, m> circuit_conn = { {
     {3,4,5},
     {0, 1},
@@ -913,12 +911,127 @@ int main() {
 ```c
 6 7 4 3 5 2 0 1 
 ```
-仍然是最优的结果(显然就此题效率不如回溯法)
+仍然是最优的结果(显然就此题效率不如回溯法快)
 
 ### (7) 批处理作业调度问题
 问题参考[[📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS)#(2) 批处理作业调度问题|批处理作业调度问题]], 实际上也是排列树的遍历问题。
-采用分支限界法要求得到的结果需要具有局部最优性质，而关键是<b><mark style="background: transparent; color: blue">如何确保只要搜索到叶节点, 则所得到的该结构就是最优的</mark></b>。
+采用**分支限界法要求得到的结果需要具有局部最优性质**，而关键是<b><mark style="background: transparent; color: blue">如何确保只要搜索到叶节点, 则所得到的该结构就是最优的</mark></b>。
+
+由于排列树遍历时, 会先将所有未剪枝, 的第3层节点加入, 再按照大小先去除第2层, 然后去除第3层, 则有长度为 3 的排列首先出队时， 即为最优解。
 
 > [!caution] 核心
 > 批处理作业调度问题的核心是<b><mark style="background: transparent; color: red">选取限界函数</mark></b>, 在本方法中, **取了每枝上的两种特殊情况, 得到该枝上的子树的完成时间和的下界**。而剪枝时, <mark style="background: transparent; color: red">只要这个下界 >= 当前找到的最优解，则进行剪枝</mark>
+
+排列树的**基本遍历思路是采用优先队列**，实际上非常好理解， 由于在两个节点时， 最优解的前 2 的节点必然会比其他非最优解的第三个节点先入队并且得到最优解。
+
+```cpp title:批处理作业调度,分支限界法
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <queue>
+
+using namespace std;
+
+/*
+* 批处理作业调度问题,采用批处理作业调度算法,即优先级调度算法 
+* 基于分支限界法(广度优先搜索) 
+*/
+
+typedef struct task {
+    char id;
+    int time1;
+    int time2;
+    task(int id, int time1, int time2) {
+        this->id = id;
+        this->time1 = time1;
+        this->time2 = time2;
+    };
+}task;
+
+int get_min_time(vector<task> seq) {
+    int time1_tot = 0;
+    int time2_tot = 0;
+    int res = 0;
+    for (int i = 0; i < seq.size(); i++) {
+        time1_tot += seq[i].time1;   // 第i 个任务的 1 的完成时间(直接计入, 可紧密排列)
+        // 计算第 i 个任务 2 的完成时间, 可能由于前一个任务 2 的完成时间而延后 
+        time2_tot = max(time2_tot, time1_tot) + seq[i].time2; 
+        // 合并初始情况下,  time2_tot = 0
+        res += time2_tot;
+    }
+    return res;
+}
+
+vector<task> tasks_g; // 全局变量, 存储所有任务
+
+// 由于 prior_queue 默认是小根堆, 因此需要自定义比较函数, 用向量构造即可
+struct cmp {
+    bool operator()(vector<int> a, vector<int> b) {
+        vector<task> ta;
+        vector<task> tb;
+        for (int i = 0; i < a.size(); i++) {
+            ta.push_back(tasks_g[a[i]]);
+        }
+        for (int i = 0; i < b.size(); i++) {
+            tb.push_back(tasks_g[b[i]]);
+        }
+        return get_min_time(ta) > get_min_time(tb);
+    }
+};
+
+void get_best_dispatch() {
+    int n = tasks_g.size();
+    priority_queue<vector<int>, vector<vector<int>>, cmp> q;   //  vector<vector<int> 是容器 
+    for (int i = 0; i < n; i++) {
+        vector<int> vec = vector<int>(1, i);
+        q.push(vec);   // 将所有的单个任务编号压入队列  
+    }
+
+    while (!q.empty()) {
+        vector<int> vec_best = q.top();
+        q.pop();
+        if (vec_best.size() == n) {
+            cout << "best sequence :" << endl;
+            for (int i = 0; i < vec_best.size(); i++) {
+                cout << tasks_g[vec_best[i]].id << " ";
+            }
+            vector<task> t;
+            for (int i = 0; i < vec_best.size(); i++) {
+                t.push_back(tasks_g[vec_best[i]]);
+            }
+            cout << "best time : " << get_min_time(t) << endl;
+            return;
+        }
+        else if (vec_best.size() < n) {
+            // 如果节点个数 < 3, 则遍历所有可以加入的任务入队 
+            for (int i = 0; i < n; i++) {
+                if (find(vec_best.begin(), vec_best.end(), i) == vec_best.end()) {
+                    vector<int> new_vec = vec_best; // 深拷贝一份
+                    new_vec.push_back(i);
+                    q.push(new_vec); 
+                }
+            }
+        }
+        else {
+            throw exception("error");
+        }
+    }
+}
+
+int main() {
+    task task1 = task('A', 2, 1);
+    task task2 = task('B', 3, 1);
+    task task3 = task('C', 2, 3);
+    
+    tasks_g.push_back(task1);
+    tasks_g.push_back(task2);
+    tasks_g.push_back(task3);
+    
+    // 实际上是遍历排列树的问题, 因此需要使用优先队列来存储中间结果
+    get_best_dispatch();
+
+    return 0;
+}
+```
+输出 ACB 为最佳的选择。
 

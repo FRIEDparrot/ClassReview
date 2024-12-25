@@ -30,6 +30,7 @@ PID 控制器 proportional integral differentiator
 二-十进制(BCD) binary cored demical 
 总线 bus 
 移位寄存器 shift register 
+蚀刻, 铭刻 etch 
 
 # MCU
 晶振 crystal oscallator 
