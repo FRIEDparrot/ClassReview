@@ -1661,5 +1661,25 @@
       "key": "O"
     }
   ],
-  "obsidian-excalidraw-plugin:insert-link": []
+  "obsidian-excalidraw-plugin:insert-link": [],
+  "tars:user#User": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": " "
+    }
+  ],
+  "tars:assistant#DeepSeek": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "="
+    }
+  ]
 }

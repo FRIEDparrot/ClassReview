@@ -369,7 +369,7 @@ Meta-IS-AK方法构建 Kriging 代理模型的步骤为:
 1. 首先由 Meta-IS 方法, **逐步逼近重要抽样函数的样本点, 迭代收敛之后，即可得到第一步的Kriging模型和相应的重要抽样样本点** 
 2. 利用 AK-IS 方法更新Kriging 模型，具体步骤和5.1中相同。
 
-其中，第一步的具体方法是: 在每一步先重要抽样, 然后<b><mark style="background: transparent; color: blue">对重要抽样样本进行K-Means聚类分析</mark></b>(参考[[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/补充知识/4. KNN算法和KMeans聚类相关算法|4. KNN算法和KMeans聚类相关算法]]), 获取K个形心, 然后**将K个形心以及对应的真实功能函数值加入训练样本集T中**, 并**使用$T$更新代理模型**。 
+其中，第一步的具体方法是: 在每一步先重要抽样, 然后<b><mark style="background: transparent; color: blue">对重要抽样样本进行K-Means聚类分析</mark></b>(参考[[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/补充知识/4. KNN算法和KMeans聚类相关算法|4. KNN算法和KMeans聚类相关算法]]), 获取K个形心, 然后**将K个形心以及对应的真实功能函数值加入训练样本集T中**, 并**使用$T$更新代理模型**。 
 
 在更新代理模型之后, 使用**交叉验证方法**判定收敛性, 具体方法是<b><mark style="background: transparent; color: blue">计算修正因子的留一法估计值</mark></b> $\hat{\alpha}_{corrLOO}$:
 $$\Large \hat{\alpha}_{corrLOO} = \frac{1}{m} \sum^{m}_{i=1}\frac{I_{F}(x_{T} ^{(i)})}{P\left\{ g_{K(T/x_{T}^{(i)})} (x_{T}^{(i)})\leq 0\right\}}$$

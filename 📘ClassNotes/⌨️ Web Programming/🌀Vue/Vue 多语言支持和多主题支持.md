@@ -1,5 +1,12 @@
 ## 一、Vue-i18n 简介
 以下是一个 `vue-i18n` 的简单示例，演示如何在 Vue 3 中使用 `vue-i18n` 实现多语言支持。
+
+统一标准:
+```ts
+$t         // vue template 中使用
+this.$t  // vue 组件部分 ts 中使用
+i18n.global.t   // 模块中使用 
+```
 ### 1. 安装 `vue-i18n`
 首先，确保在 Vue 项目中安装了 `vue-i18n`：(必须i18n 和 vuex 都是 next 版本)
 ```bash
@@ -786,3 +793,55 @@ export default {
 ### 总结
 
 `this.$emit` 是 Vue.js 中重要的事件机制，它允许子组件向其父组件传递事件和数据。这种方式能够有效地实现组件之间的通信和数据交互，使得组件的架构更加清晰和灵活。
+
+
+
+## 结合 Vuetify 的多主题支持  
+如果结合 v-btn  和 icon 部分, 我们可以更加方便地进行主题设置,  可以直接在一个组件中采用两个不同的图片,  以实现风格切换 : 
+```html 
+<v-btn
+	icon
+	class="bg-transparent"
+	variant="plain"
+	@click="ToggleDarkMode(darkmode.value)"
+>
+	<img
+		v-if="darkmode === true"
+		src="@imgs/ui/theme/mode-dark.svg"
+		alt="theme"
+		height="40px"
+	/>
+	<img
+		v-else
+		src="@imgs/ui/theme/mode-light.svg"
+		alt="theme"
+		height="40px"
+	/>
+</v-btn>
+```
+
+在需要动态获取存储的情况下, 只需要放在 compute 属性中, 利用如下几行即可实现从内存中读取即可 :  
+```ts 
+computed: {
+	darkmode: {
+		get() {
+			return store.state.darkMode;
+		},
+		set(value: boolean) {
+			store.commit("setDarkMode", value); // commit mutation to store
+		},
+	},
+},
+methods: {
+	ToggleDarkMode() {
+		this.darkmode = !this.darkmode;
+		this.$emit("theme-changed", this.darkmode); // emit event to change theme of all components
+	},
+	toggleLeftSidebar() {
+		this.$emit("toggleLeftSidebar"); // emit event to layout component
+	},
+	toggleRightSidebar() {
+		this.$emit("toggleRightSidebar");
+	},
+},
+```

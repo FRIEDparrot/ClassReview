@@ -121,6 +121,8 @@ Open(FilePath="C:/Users/Parrot/Desktop/Recent/毕设工程文件/TJP_Simulation/
 
 ```
 在matlab端， 需要修改 Ansys自带的 journal文件, 然后保存并且每一次使用ansys运行这个journal文件，就可以每一次获取到不同的分析结果了。
+注意:  -X  -R  和 -B -R 是常用的 
+
 ```matlab
 tic clc; clear; 
 %% Changing the input parameters 

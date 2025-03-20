@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "fc39afaa1d61ff2e",
+        "id": "18887ea44697061b",
         "type": "tabs",
         "children": [
           {
-            "id": "09c5286b18117183",
+            "id": "4bf606ebece1552f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/6. 视图 View 的操作.md",
+                "file": "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/基于  RabbitMQ 的跨数据库操作/3. 基于 RabbitMQ 的 2PC 的分布式事务协议和多库强原子性实现.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6. 视图 View 的操作"
+              "title": "3. 基于 RabbitMQ 的 2PC 的分布式事务协议和多库强原子性实现"
+            }
+          },
+          {
+            "id": "3338a607e4509afa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/⌨️Programming/🐍Python/⛳Python 进阶与软件架构设计相关/8. Python 异步编程,   asyncio 库与 async, await 语法.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "8. Python 异步编程,   asyncio 库与 async, await 语法"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -33,7 +48,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 63.0242825607064,
+        "dimension": 68.10154525386314,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -41,7 +56,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -79,7 +95,7 @@
       {
         "id": "066eddf15a13dd56",
         "type": "tabs",
-        "dimension": 36.9757174392936,
+        "dimension": 31.898454746136867,
         "children": [
           {
             "id": "db0ad0041a71350b",
@@ -95,7 +111,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 302.51103591918945
+    "width": 287.51103591918945
   },
   "right": {
     "id": "f7de553c162de521",
@@ -146,7 +162,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔦Dive into Deep Learning(Pytorch)/Chapter4 Linear Neural Networks for Classification.md",
+                "file": "📘ClassNotes/⌨️ Web Programming/🌀Vue/VueX 和 Pinia 的存储状态管理工具使用.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -177,12 +193,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.8045384510264879,
+                  "scale": 0.8045384510264882,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Chapter4 Linear Neural Networks for Classification"
+              "title": "Graph of VueX 和 Pinia 的存储状态管理工具使用"
             }
           },
           {
@@ -193,6 +209,20 @@
               "state": {},
               "icon": "quote-glyph",
               "title": "Dictionary"
+            }
+          },
+          {
+            "id": "9e8c15d95c721ecf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/🗣️English/YT Words.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "YT Words"
             }
           },
           {
@@ -262,7 +292,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 7
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -275,10 +305,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/6. 视图 View 的操作.md"
+                "file": "📘ClassNotes/⌨️Programming/🐍Python/⛳Python 进阶与软件架构设计相关/8. Python 异步编程,   asyncio 库与 async, await 语法.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 6. 视图 View 的操作"
+              "title": "Outline of 8. Python 异步编程,   asyncio 库与 async, await 语法"
             }
           },
           {
@@ -287,7 +320,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/8. SVM支持向量机.md",
+                "file": "📘ClassNotes/⌨️ Web Programming/🌀Vue/3. 插槽模块,  缓存组件和前端路由.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -297,7 +330,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 8. SVM支持向量机"
+              "title": "Backlinks for 3. 插槽模块,  缓存组件和前端路由"
             }
           },
           {
@@ -331,8 +364,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 485.5,
-    "collapsed": true
+    "width": 279.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -354,57 +386,57 @@
       "obsidian-git:Open Git source control": false,
       "obsidian-day-planner:Open Timeline": false,
       "obsidian-day-planner:Open Multi-Day View": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "09c5286b18117183",
+  "active": "3338a607e4509afa",
   "lastOpenFiles": [
-    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/3. 查询进阶部分 GROUP BY 和 JOIN.md",
-    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/6. 视图 View 的操作.md",
-    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/5. 存储过程Sub，存储函数和事件调度器.md",
-    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/1. Mysql 入门和基本语法.md",
-    "attachments/Pasted image 20241225114644.png",
-    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/系统数据库部分.md",
-    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/循环级联更新问题.md",
-    "📘ClassNotes/🐧Computer System/🐧 Linux/网络管理工具.md",
-    "📘ClassNotes/⌨️Programming/Programming Terminology.md",
-    "Excalidraw/5. 存储过程Sub，存储函数和事件调度器 2024-12-24 21.57.10.md",
-    "Excalidraw/5. 存储过程Sub，存储函数和事件调度器 2024-12-24 21.35.11.md",
-    "Excalidraw/5. 存储过程，存储函数和事件调度器 2024-12-24 21.26.33.md",
-    "Excalidraw/1. Mysql 入门和基本语法 2024-12-24 20.34.30.md",
-    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/2. Mysql 常用函数.md",
-    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/4. Mysql 索引部分.md",
-    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/分布式数据库方案.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter6 CNN.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter5 Essential Concepts & Heuristics.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch & sklearn的使用基础和基本代码.md",
-    "📘ClassNotes/🚱materials and chemicals/Chemical Terminology.md",
+    "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/Flask 框架入门/WSGI 服务器部署初步.md",
+    "📘ClassNotes/⌨️Programming/🐍Python/⛳Python 进阶与软件架构设计相关/8. Python 异步编程,   asyncio 库与 async, await 语法.md",
+    "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/基于  RabbitMQ 的跨数据库操作/3. 基于 RabbitMQ 的 2PC 的分布式事务协议和多库强原子性实现.md",
+    "📘ClassNotes/⌨️Programming/🐍Python/⛳Python 进阶与软件架构设计相关/7. Python 多线程, 协程和异步编程.md",
+    "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/基于  RabbitMQ 的跨数据库操作/2. 使用 RabbitMQ 实现最终一致性.md",
     "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
+    "📘ClassNotes/🚱materials and chemicals/Chemical Terminology.md",
+    "📘ClassNotes/⌨️Programming/Programming Terminology.md",
+    "📘ClassNotes/🗣️English/YT Words.md",
     "📘ClassNotes/👨‍🔧Mechanics/Mechanic Terminology.md",
-    "💻softwares/🛩️FEM/Ansys/Workbench/Load & Analysis/振动台基础激励模拟方法.md",
-    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/理论证明/RAM 计算模型和 RASP 计算模型.md",
-    "attachments/Annotation 2024-12-23 163243.png",
-    "attachments/图片1.png",
-    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第八章 NP 完全理论和近似算法.md",
-    "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md",
-    "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第四章 贪心算法.md",
-    "attachments/Pasted image 20241223155814.png",
-    "attachments/Pasted image 20241223153227.png",
-    "💻softwares/🖥️Programming/QQ AI Bot",
-    "attachments/2024-12-22 232229.png",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔦Pytorch DeepLearning Basics",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/计算流体力学推导/高阶线性方程组推导参考.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/计算流体力学推导/流体基本控制方程的推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/计算流体力学推导/常系数线性单波方程的精确解推导.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/计算流体力学推导/体积膨胀率的推导.png",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/计算流体力学推导/Cramer 法则证明.pdf",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/计算流体力学推导",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/Class Contents/test",
-    "attachments/IMG_20241210_002446_edit_497445432396903.jpg",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/补充部分/全概率公式和贝叶斯公式的证明.pdf",
-    "attachments/Pasted image 20241206115808.png",
-    "attachments/Pasted image 20241204222948.png",
-    "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/SQLalchemy",
+    "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/基于  RabbitMQ 的跨数据库操作/4. Soga 模式和补偿机制.md",
+    "attachments/Pasted image 20250319173806.png",
+    "attachments/Pasted image 20250319173803.png",
+    "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/基于  RabbitMQ 的跨数据库操作/高复用性的 2PC 事务架构设计方案.md",
+    "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/基于  RabbitMQ 的跨数据库操作/1. RabbitMQ 安装和部署办法.md",
+    "attachments/Pasted image 20250319170348.png",
+    "attachments/Pasted image 20250319165012.png",
+    "attachments/Pasted image 20250319164705.png",
+    "attachments/Pasted image 20250319164623.png",
+    "attachments/Pasted image 20250319164358.png",
+    "Excalidraw/2. 使用 RabbitMQ 实现最终一致性 2025-03-19 16.24.38.md",
+    "📘ClassNotes/⌨️ Web Programming/🏗️Nginx & 腾讯云服务器/frp 内网穿透/1. frp 部署.md",
+    "📘ClassNotes/⌨️ Web Programming/🏗️Nginx & 腾讯云服务器/frp 内网穿透/2. frp 内网穿透真实客户端传递.md",
+    "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/SQLalchemy/数据库初始化文件重构.md",
+    "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/基于  RabbitMQ 的跨数据库操作",
+    "📘ClassNotes/📐Mathmatics/数学物理方程/二、 波动方程.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第七章 微分方程.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter7 RNN.md",
+    "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/SQLalchemy/JSON 字段存储和 MutableList 修改 JSON 使用.md",
+    "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/SQLalchemy/数据库的模型类定义.md",
+    "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/SQLalchemy/在 SQLAlchemy 中使用 With 块的行为.md",
+    "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/SQLalchemy/事务回滚操作与机制.md",
+    "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/SQLalchemy/TypedDict 类型提示和字典存储定义.md",
+    "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/SQLalchemy/SQL 注入攻击概念.md",
+    "attachments/Pasted image 20250317120719.png",
+    "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/Flask 框架入门/定时任务设置",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/莱布尼兹积分规则推导.pdf",
+    "attachments/Pasted image 20250306115353.png",
+    "attachments/Pasted image 20250306115345.png",
+    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/基于 Isso 的评论系统部署",
+    "📘ClassNotes/📐Mathmatics/数学物理方程",
+    "📘ClassNotes/⌨️ Web Programming/🌀Vue/组件库",
+    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/ElasticSearch 搜索引擎",
+    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库 1/Linux 部署 mysql 数据库",
+    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库 1",
+    "📘ClassNotes/⌨️ Web Programming/🏗️Nginx & 腾讯云服务器/frp 内网穿透",
     "Untitled.canvas",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]

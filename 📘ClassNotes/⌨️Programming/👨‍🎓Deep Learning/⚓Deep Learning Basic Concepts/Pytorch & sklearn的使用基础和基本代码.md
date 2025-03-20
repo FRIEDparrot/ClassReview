@@ -107,7 +107,7 @@ print(data_proceed)
 得到决策树编码结果如下:
 ![[attachments/Pasted image 20240912113356.png|200]]
 #### 2. 分类器: 特征选择, 提取和主成分分析
-参考 [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/1.机器学习算法和文本分类挖掘(Naive Bayes)|机器学习算法和文本分类挖掘(Naive Bayes)]], 特征提取可以通过 `from sklearn import feature_extraction` 得到
+参考 [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/1.机器学习算法和文本分类挖掘(Naive Bayes)|机器学习算法和文本分类挖掘(Naive Bayes)]], 特征提取可以通过 `from sklearn import feature_extraction` 得到
 其中特征提取中有 image, text 等等几个模块; 常用到 tf-idf 模型等文本 tf-idf 特征向量计算模型。
 ![[attachments/Pasted image 20240910160939.png|300]]
 
@@ -127,7 +127,7 @@ from sklearn.multioutput import MultiOutputClassifier, MultiOutputEstimator
 model = MultiOutputClassifier(MultinomialNB(alpha=0.01))
 ```
 
-2. 主成分分析(PCA模块) 参考[[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/3. 推荐系统和需求搜寻算法(CF,PCA,SVD)|3. 推荐系统和需求搜寻算法(CF,PCA,SVD)]] 部分
+2. 主成分分析(PCA模块) 参考[[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/3. 推荐系统和需求搜寻算法(CF,PCA,SVD)|3. 推荐系统和需求搜寻算法(CF,PCA,SVD)]] 部分
 ```python 
 from sklearn.decomposition import PCA
 ```
@@ -168,7 +168,7 @@ disp = DecisionBoundaryDisplay.from_estimator(
 )
 ```
 
-需要说明,  PipeLine中的每个部分必须接受 x,y 作为 fit_predict 的参数, 因此当 fit 等仅接受一个函数 x 时, 需要重定义类型 (重定义 SOM 类), 参考[[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/5. BP 神经网络, SOM 神经网络和 Boltzmann机#(2) 采用第三方库建立 SOM 网络|5. BP 神经网络, SOM 神经网络和 Boltzmann机]] 
+需要说明,  PipeLine中的每个部分必须接受 x,y 作为 fit_predict 的参数, 因此当 fit 等仅接受一个函数 x 时, 需要重定义类型 (重定义 SOM 类), 参考[[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/5. BP 神经网络, SOM 神经网络和 Boltzmann机#(2) 采用第三方库建立 SOM 网络|5. BP 神经网络, SOM 神经网络和 Boltzmann机]] 
 ```python
 from sklearn_som.som import SOM
 clf = Pipeline(steps=[  
@@ -210,7 +210,7 @@ print("最佳参数：", grid_search.best_params_)
 print("最佳得分：", grid_search.best_score_)
 ```
 
-# 2. PyTorch
+# 2. PyTorch  
 ## 1. 数据类型转换
 取 tensor 值采用  item(): 
 `label_item = torch.Tensor(label).item()`
@@ -731,7 +731,7 @@ $$\boxed{\tanh '(x) = 1 - \tanh^{2} x}$$
 
 ![[Excalidraw/Pytorch & sklearn的使用基础和基本代码 2024-12-21 12.12.08|250]]
 #### 4. **Softmax 函数** 
-softmax 实际上不是激活函数, 是一个归一化函数, 通常放在 **输出层**，用于多分类任务的最终输出层，以将网络的输出转换为概率分布。`Softmax` 将每个类的输出转换为 `[0, 1]` 之间的概率，并确保所有类的概率和为 1(参考[[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/补充知识/9. softmax函数和交叉熵损失CrossEntropy|softmax函数和交叉熵损失]]部分). 
+softmax 实际上不是激活函数, 是一个归一化函数, 通常放在 **输出层**，用于多分类任务的最终输出层，以将网络的输出转换为概率分布。`Softmax` 将每个类的输出转换为 `[0, 1]` 之间的概率，并确保所有类的概率和为 1(参考[[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/补充知识/9. softmax函数和交叉熵损失CrossEntropy|softmax函数和交叉熵损失]]部分). 
 
 在多分类问题中，`Softmax` 主要用于 **最后一层**，用于输出每个类别的概率。( 如果是二分类问题， 则采用 `Sigmoid`，或者多标签问题)  
 示例 : 
@@ -790,7 +790,7 @@ nn.HuberLoss
 $$H(y^{(i)}, \hat{y}^{(i)}) = -\overset{q}{\underset{j = 1}{\sum}}y_j^{(i)}\log(y_j^{(i)})$$
 其中, $\hat{y}_j^{(i)}$非0即1  为分类标签;
 
-一般地, 为了防止模型过拟合， 往往会加入<b><mark style="background: transparent; color: blue">正则化参数</mark></b>， 实际上是权重损失的概念, 参考[[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/9. 正则化方法, 概率图模型和贝叶斯网络|正则化方法, 概率图模型和贝叶斯网络]] 部分;
+一般地, 为了防止模型过拟合， 往往会加入<b><mark style="background: transparent; color: blue">正则化参数</mark></b>， 实际上是权重损失的概念, 参考[[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/9. 正则化方法, 概率图模型和贝叶斯网络|正则化方法, 概率图模型和贝叶斯网络]] 部分;
 
 ### 3.  Logarithmic MSE 误差 
 对于房价等等较大的数据, 一般我们更加关心的是相对于原始价格的准确程度, 
@@ -918,3 +918,26 @@ model = EasyModule()
 model.load_state_dict(torch.load('cnn_models.pth')) 
 ```
 
+
+
+##  模型显示方法: 
+一般对于  nn.Module 类型继承的模型， 可以直接使用 
+`print(model)` 打印模型输入和输出部分， 
+
+或者 module.named_parameters() 打印
+```python
+for name, param in model.named_parameters():
+    print(f"Layer: {name}, Size: {param.size()}")
+```
+
+此外可以采用 `torchsummary`  库获取更加详细的模型结构. 
+```python
+from torchsummary import summary
+
+summary(model, input_size=(10,))
+```
+
+### Lazy 网络 
+
+> [!HINT] 为何采用 Lazy 网络
+> 常用的 Lazy 网络包括 LazyLinear,  LazyConv2d 等, 其输入数量是根据前一层的输出确定的，因此可以灵活处理不同形状的输入数据， 因此能够更好地迁移到不同的数据集上来  

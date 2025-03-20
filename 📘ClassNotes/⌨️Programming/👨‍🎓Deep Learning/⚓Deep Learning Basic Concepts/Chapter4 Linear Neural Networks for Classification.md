@@ -76,7 +76,7 @@ $$\frac{\partial l(y, \hat{y})}{\partial o_{j}} = \text{softmax}(o_{j})- y_{j}$$
 also, when we observe a entire distribution over outcomes like (0.1, 0.2, 0.7), the loss function above still works fine.
 
 ## (5)  entropy concept of Information theory 
-for <mark style="background: transparent; color: red">quantify the amount of infomation contained in data</mark>, for a distribution $P$ the entropy is defined (see [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/2. 决策树和回归树#(2) 信息熵测度|decision tree algorithm]]): 
+for <mark style="background: transparent; color: red">quantify the amount of infomation contained in data</mark>, for a distribution $P$ the entropy is defined (see [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/2. 决策树和回归树#(2) 信息熵测度|decision tree algorithm]]): 
 $$\boxed{H[P] = \sum _{j}  - P(j) \log P(j)}\tag{4.1.11}$$
 One of the Fundamental theorems is, <mark style="background: transparent; color: red">in order to encode the  data drawn randomly from distribution P, we need at least H[P] "nats" to encode it</mark>. 
 

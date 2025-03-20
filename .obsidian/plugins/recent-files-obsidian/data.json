@@ -1,209 +1,90 @@
 {
   "recentFiles": [
     {
-      "basename": "6. 视图 View 的操作",
-      "path": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/6. 视图 View 的操作.md"
+      "basename": "8. Python 异步编程,   asyncio 库与 async, await 语法",
+      "path": "📘ClassNotes/⌨️Programming/🐍Python/⛳Python 进阶与软件架构设计相关/8. Python 异步编程,   asyncio 库与 async, await 语法.md"
     },
     {
-      "basename": "3. 查询进阶部分 GROUP BY 和 JOIN",
-      "path": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/3. 查询进阶部分 GROUP BY 和 JOIN.md"
+      "basename": "WSGI 服务器部署初步",
+      "path": "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/Flask 框架入门/WSGI 服务器部署初步.md"
     },
     {
-      "basename": "5. 存储过程Sub，存储函数和事件调度器",
-      "path": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/5. 存储过程Sub，存储函数和事件调度器.md"
+      "basename": "3. 基于 RabbitMQ 的 2PC 的分布式事务协议和多库强原子性实现",
+      "path": "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/基于  RabbitMQ 的跨数据库操作/3. 基于 RabbitMQ 的 2PC 的分布式事务协议和多库强原子性实现.md"
     },
     {
-      "basename": "1. Mysql 入门和基本语法",
-      "path": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/1. Mysql 入门和基本语法.md"
+      "basename": "7. Python 多线程, 协程和异步编程",
+      "path": "📘ClassNotes/⌨️Programming/🐍Python/⛳Python 进阶与软件架构设计相关/7. Python 多线程, 协程和异步编程.md"
     },
     {
-      "basename": "系统数据库部分",
-      "path": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/系统数据库部分.md"
-    },
-    {
-      "basename": "循环级联更新问题",
-      "path": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/循环级联更新问题.md"
-    },
-    {
-      "basename": "网络管理工具",
-      "path": "📘ClassNotes/🐧Computer System/🐧 Linux/网络管理工具.md"
-    },
-    {
-      "basename": "Programming Terminology",
-      "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
-    },
-    {
-      "basename": "循环级联更新",
-      "path": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/循环级联更新.md"
-    },
-    {
-      "basename": "2. Mysql 常用函数",
-      "path": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/2. Mysql 常用函数.md"
-    },
-    {
-      "basename": "4. Mysql 索引部分",
-      "path": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/4. Mysql 索引部分.md"
-    },
-    {
-      "basename": "分布式数据库方案",
-      "path": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/分布式数据库方案.md"
-    },
-    {
-      "basename": "Chapter6 CNN",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter6 CNN.md"
-    },
-    {
-      "basename": "Chapter5 Essential Concepts & Heuristics",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter5 Essential Concepts & Heuristics.md"
-    },
-    {
-      "basename": "Pytorch & sklearn的使用基础和基本代码",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch & sklearn的使用基础和基本代码.md"
-    },
-    {
-      "basename": "Chemical Terminology",
-      "path": "📘ClassNotes/🚱materials and chemicals/Chemical Terminology.md"
+      "basename": "2. 使用 RabbitMQ 实现最终一致性",
+      "path": "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/基于  RabbitMQ 的跨数据库操作/2. 使用 RabbitMQ 实现最终一致性.md"
     },
     {
       "basename": "Circuit Terminology",
       "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
     },
     {
+      "basename": "Chemical Terminology",
+      "path": "📘ClassNotes/🚱materials and chemicals/Chemical Terminology.md"
+    },
+    {
+      "basename": "Programming Terminology",
+      "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
+    },
+    {
+      "basename": "YT Words",
+      "path": "📘ClassNotes/🗣️English/YT Words.md"
+    },
+    {
       "basename": "Mechanic Terminology",
       "path": "📘ClassNotes/👨‍🔧Mechanics/Mechanic Terminology.md"
     },
     {
-      "basename": "振动台基础激励模拟方法",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Load & Analysis/振动台基础激励模拟方法.md"
+      "basename": "4. Soga 模式和补偿机制",
+      "path": "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/基于  RabbitMQ 的跨数据库操作/4. Soga 模式和补偿机制.md"
     },
     {
-      "basename": "RAM 计算模型和 RASP 计算模型",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/理论证明/RAM 计算模型和 RASP 计算模型.md"
+      "basename": "高复用性的 2PC 事务架构设计方案",
+      "path": "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/基于  RabbitMQ 的跨数据库操作/高复用性的 2PC 事务架构设计方案.md"
     },
     {
-      "basename": "第八章 NP 完全理论和近似算法",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第八章 NP 完全理论和近似算法.md"
+      "basename": "1. RabbitMQ 安装和部署办法",
+      "path": "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/基于  RabbitMQ 的跨数据库操作/1. RabbitMQ 安装和部署办法.md"
     },
     {
-      "basename": "第二章 电路的瞬态分析",
-      "path": "📘ClassNotes/⚡Circuit/电工电子技术/第二章 电路的瞬态分析.md"
+      "basename": "2. 使用 RabbitMQ 实现最终一致性 2025-03-19 16.24.38",
+      "path": "Excalidraw/2. 使用 RabbitMQ 实现最终一致性 2025-03-19 16.24.38.md"
     },
     {
-      "basename": "第四章 贪心算法",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第四章 贪心算法.md"
+      "basename": "1. frp 部署",
+      "path": "📘ClassNotes/⌨️ Web Programming/🏗️Nginx & 腾讯云服务器/frp 内网穿透/1. frp 部署.md"
     },
     {
-      "basename": "第三章 动态规划算法",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第三章 动态规划算法.md"
+      "basename": "2. frp 内网穿透真实客户端传递",
+      "path": "📘ClassNotes/⌨️ Web Programming/🏗️Nginx & 腾讯云服务器/frp 内网穿透/2. frp 内网穿透真实客户端传递.md"
     },
     {
-      "basename": "第七章 概率算法",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第七章 概率算法.md"
+      "basename": "数据库初始化文件重构",
+      "path": "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/SQLalchemy/数据库初始化文件重构.md"
     },
     {
-      "basename": "第五章 回溯法(DFS)",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第五章 回溯法(DFS).md"
+      "basename": "二、 波动方程",
+      "path": "📘ClassNotes/📐Mathmatics/数学物理方程/二、 波动方程.md"
     },
     {
-      "basename": "螺栓预紧力注意事项",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Load & Analysis/螺栓预紧力注意事项.md"
+      "basename": "第七章 微分方程",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第七章 微分方程.md"
     },
     {
-      "basename": "接触网格和多区域法",
-      "path": "💻softwares/🛩️FEM/Ansys/Workbench/Mesh/接触网格和多区域法.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "💻softwares/🖥️Programming/QQ AI Bot/Untitled.md"
-    },
-    {
-      "basename": "第六章 分支限界法(BFS)",
-      "path": "📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/第六章 分支限界法(BFS).md"
-    },
-    {
-      "basename": "1. Python,Numpy常用命令基础",
-      "path": "📘ClassNotes/⌨️Programming/🐍Python/🌟Python 基础部分/1. Python,Numpy常用命令基础.md"
-    },
-    {
-      "basename": "2. 学习率自适应方法",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔦Pytorch DeepLearning Basics/2. 学习率自适应方法.md"
-    },
-    {
-      "basename": "3. 显存优化",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔦Pytorch DeepLearning Basics/3. 显存优化.md"
-    },
-    {
-      "basename": "Chapter3 Linear Neural  Networks for regression(back Propagation)",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter3 Linear Neural  Networks for regression(back Propagation).md"
-    },
-    {
-      "basename": "9. 正则化方法, 概率图模型和贝叶斯网络",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/9. 正则化方法, 概率图模型和贝叶斯网络.md"
-    },
-    {
-      "basename": "Pip 离线安装",
-      "path": "📘ClassNotes/⌨️Programming/🐍Python/🌟Python 基础部分/Pip 离线安装.md"
-    },
-    {
-      "basename": "torch多层神经网络",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Implements/torch多层神经网络.md"
-    },
-    {
-      "basename": "1. 深度学习基础简介",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔦Pytorch DeepLearning Basics/1. 深度学习基础简介.md"
-    },
-    {
-      "basename": "Hilbert变换,HHT变换和EMD经验模态分解",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Implements/Hilbert变换,HHT变换和EMD经验模态分解.md"
-    },
-    {
-      "basename": "Pytorch & sklearn的使用基础和基本代码 2024-12-21 12.07.40",
-      "path": "Excalidraw/Pytorch & sklearn的使用基础和基本代码 2024-12-21 12.07.40.md"
-    },
-    {
-      "basename": "Chapter5 Multilayer Perception 2024-12-21 14.24.27",
-      "path": "Excalidraw/Chapter5 Multilayer Perception 2024-12-21 14.24.27.md"
-    },
-    {
-      "basename": "⌚近期计划书",
-      "path": "🐸 Daily Life memo/⌚近期计划书.md"
-    },
-    {
-      "basename": "Pytorch & sklearn的使用基础和基本代码 2024-12-21 12.24.08",
-      "path": "Excalidraw/Pytorch & sklearn的使用基础和基本代码 2024-12-21 12.24.08.md"
-    },
-    {
-      "basename": "Pytorch & sklearn的使用基础和基本代码 2024-12-21 12.12.08",
-      "path": "Excalidraw/Pytorch & sklearn的使用基础和基本代码 2024-12-21 12.12.08.md"
-    },
-    {
-      "basename": "Chapter4 Linear Neural Networks for Classification",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter4 Linear Neural Networks for Classification.md"
-    },
-    {
-      "basename": "6. 最小二乘, RBF, 岭回归和 Lasso 回归",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/6. 最小二乘, RBF, 岭回归和 Lasso 回归.md"
-    },
-    {
-      "basename": "Chapter2 Preliminaries",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter2 Preliminaries.md"
-    },
-    {
-      "basename": "9. 径向基函数方法(RBF)",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🌟机器学习优化算法合集/9. 径向基函数方法(RBF).md"
-    },
-    {
-      "basename": "9. softmax函数和交叉熵损失CrossEntropy",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/补充知识/9. softmax函数和交叉熵损失CrossEntropy.md"
-    },
-    {
-      "basename": "6. 矩阵的广义逆",
-      "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/6. 矩阵的广义逆.md"
+      "basename": "Chapter7 RNN",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter7 RNN.md"
     }
   ],
   "omittedPaths": [],
   "omittedTags": [],
+  "updateOn": "file-open",
   "omitBookmarks": false,
-  "maxLength": null,
+  "maxLength": 20,
   "openType": "tab"
 }

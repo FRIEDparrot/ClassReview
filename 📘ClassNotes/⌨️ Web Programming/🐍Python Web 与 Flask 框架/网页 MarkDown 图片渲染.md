@@ -1,23 +1,18 @@
 ### 1. 生成图片链接
 您可以在服务器上创建一个端点（endpoint），该端点负责从数据库中检索图片数据，并返回给请求者。这个端点将生成一个URL，您可以将其嵌入到Markdown文档中。
 
-例如，假设您的服务器端点如下：
- 
-http://yourdomain.com/image/<image_id>
- 
+例如，假设您的服务器端点如下: http://yourdomain.com/image/<image_id> 
 其中`<image_id>`是数据库中图片记录的唯一标识。
 
 ### 2. 在Markdown中引用图片
-在Markdown文档中，您可以使用以下格式引用图片：
- markdown
-![描述](http://yourdomain.com/image/<image_id>)
+
  
 当Markdown文档被渲染时，浏览器会向指定的URL发送请求，服务器端点会从数据库中检索图片，并将其返回给浏览器显示。
 
 ### 3. 实现服务器端点
 以下是一个简单的服务器端点实现示例，使用Python和Flask框架：
 
- python
+```python
 from flask import Flask, Response
 import sqlite3
 
@@ -46,6 +41,7 @@ def get_image(image_id):
 
 if __name__ == '__main__':
     app.run()
+```
  
 在这个例子中，`image_data`是图片的二进制数据，`image_type`是图片的格式（如`png`、`jpg`等）。
 

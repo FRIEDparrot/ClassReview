@@ -369,7 +369,7 @@ we restrict the size of $||w||$, the loss is given by:
 $$L(w, b) =  \frac{1}{n}  \sum^{n}_{i=1} \frac{1}{2} \left( w^{T} \boldsymbol{x}^{(i)}  + b - y^{(i)}\right)^{2}$$
 To penalize the size of weight vector,  we <mark style="background: transparent; color: red">add ||w||^2  to this loss function</mark>, and **the model trade off the standard loss for additive penalty by the regularization constant $\lambda$** (where $\lambda$ is the regularization constant <b><mark style="background: transparent; color: blue">( 'lambda' here is `weight_decay` or `wd` parameter  in SGD parameters))</mark></b>:  
 $$\boxed{L(w,b)  +  \frac{\lambda}{2} ||w||^{2}}$$
-refer and compare it to [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/8. SVM支持向量机|supported vector machine]], the goal is **low model complexity + low loss**, which similar to the priciple of **minimize both loss and the plane distance in SVM**. if $\lambda >0$, we restrict the size of $\boldsymbol{w}$.  (the reason to use square is easy to compute the derivate)  
+refer and compare it to [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/8. SVM支持向量机|supported vector machine]], the goal is **low model complexity + low loss**, which similar to the priciple of **minimize both loss and the plane distance in SVM**. if $\lambda >0$, we restrict the size of $\boldsymbol{w}$.  (the reason to use square is easy to compute the derivate)  
 
 also, $l_2$-regularized linear model constitute the **classic ridge  regression algorithm**. ($l_1$-regularized or sum of abs values is **lasso regression**), and $l_2$ method places an outsize panalty on large components of the  weight vector.(more robust to measurement error in a single varibale)
 
@@ -564,7 +564,7 @@ optimizer = SGD(params=model.parameters() ,lr=0.01, weight_decay=3)
 #note : model is a class defined by super nn.Module
 ```
 
-note that by defaut, pytorch decay both weights and biases, when we disable the weight decay, the model may be overfitting (if see more about weight decay, see the part of [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/9. 正则化方法, 概率图模型和贝叶斯网络|L1, L2 normalization]])
+note that by defaut, pytorch decay both weights and biases, when we disable the weight decay, the model may be overfitting (if see more about weight decay, see the part of [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/9. 正则化方法, 概率图模型和贝叶斯网络|L1, L2 normalization]])
 
 > [!Hint] 
 > weight_decay parameter in SGD is set to 0 as default, hence we often set it to a reasonable value manually.

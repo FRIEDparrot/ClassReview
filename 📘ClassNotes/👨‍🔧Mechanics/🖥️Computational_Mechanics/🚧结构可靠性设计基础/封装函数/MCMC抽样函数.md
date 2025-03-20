@@ -1,4 +1,4 @@
-文档参考[[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/补充知识/6. 马尔科夫MCS抽样(MCMC)|马尔科夫MCS抽样(MCMC)]]和[[📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第四章 重要抽样法原理与应用#三、基于核密度估计的自适应重要抽样法|基于核密度估计的自适应重要抽样法]] 部分
+文档参考[[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/补充知识/6. 马尔科夫MCS抽样(MCMC)|马尔科夫MCS抽样(MCMC)]]和[[📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第四章 重要抽样法原理与应用#三、基于核密度估计的自适应重要抽样法|基于核密度估计的自适应重要抽样法]] 部分
 
 ```matlab
 function [xp, gx] = MCMC_Sample(x0, l_i, f_X, g, b, num_MCMC, gx0_optional)

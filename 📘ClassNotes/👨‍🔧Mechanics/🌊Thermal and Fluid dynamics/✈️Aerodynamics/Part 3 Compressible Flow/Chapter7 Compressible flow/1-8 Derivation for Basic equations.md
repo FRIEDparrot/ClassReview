@@ -20,6 +20,7 @@ $$c_{p}- c_{V} = R$$
 $$\boxed{c_{p}  = \frac{\gamma R}{\gamma - 1}} \quad \boxed{c_{p}= \frac{R}{\gamma - 1}}\tag{7.9}$$
 note $\gamma =\frac{c_{p}}{c_{v,m}} = \frac{7}{5}, c_{p,m} = \frac{7}{2} R_{m}, c_{v} = \frac{5}{2}R_{m}$ (referencing [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第三章 理想气体的性质与过程#(3) 理想气体比热容与温度的关系|calculation of specific heat capacity]]) for air $R = 287.1 J/(kg\cdot K)$, $m$ is for unit mass (If calculate total change of internal energy we should multiply mass). 
 
+
 ### (2) First Law of Thermodynamics
 The concept of *surroundings*, *system* are introduced in the [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第一章 基本概念#一、热力系统|thermodynamic system]]. and also we can review [[📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第二章 热力学第一定律#一、热力学第一定律|the first law of thermodynamics]] as : 
 $$\delta q = \delta e  + \delta w$$

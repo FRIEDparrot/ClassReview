@@ -2,6 +2,9 @@ Nomenclature 命名法
 orthotropic  对称的,  正交各向异性的
 anisotropic  各向异性的
 Miscellaneous 混杂的 ，各种各样的 
+Cofactor 辅因子
+inertial frame 惯性系 
+isochoric 等容的
 
 ### 疲劳与断裂
 循环计数法 cycle counting method 

@@ -1,9 +1,13 @@
-#words 
-# 基础
-直流电(DC) direct current 交流电(AC) alternating current 
-二极管 diode    三极管 transistor  场效应管 field effect transistor(FET) 
-电极 electrode  阻抗 Impedance 
-电阻 resistance 电感 industance 电容 capacitor 
+直流电(DC) direct current 
+交流电(AC) alternating current 
+二极管 diode    
+三极管 transistor  
+场效应管 field effect transistor(FET) 
+电极 electrode  
+阻抗 Impedance 
+电阻 resistance 
+电感 industance 
+电容 capacitor 
 AD转换器 analog/digital converter 
 编程序控制器(PLC) programmable logic controller 
 动态数码管 dynamic digital tube (DDT)
@@ -31,16 +35,12 @@ PID 控制器 proportional integral differentiator
 总线 bus 
 移位寄存器 shift register 
 蚀刻, 铭刻 etch 
-
-# MCU
 晶振 crystal oscallator 
 采样/保持电路 sample/hold circuits (S/H 电路)
-
 集成电路 integrated circuit 
 串口通信 serial communication  
 倍频 frequency doubling 
 通用异步收发器 Universal asynchronous  Reciver Transmitter (UART) 
-
 随机读写存储器 Random Access memory (RAM)
 Dual In-line Package 双列直插式封装 (DIP)
 Plastic Leaded Chip Carrier 带有引线的塑料芯片封装 (PLCC) 
@@ -51,7 +51,7 @@ hexadecimal 十六进制的
 peripheral 外围设备 
 烧录程序 program flash 
 程序状态字标志寄存器 Program status Word (PSW) 
-Small Outline Package 小外形封装(SOP) 
+小外形封装(SOP) Small Outline Package 
 舵机 servo motor 
 红外线 infrared ray
 热敏电阻 thermistor 
@@ -77,7 +77,6 @@ ETH : Ethernet 以太网
 响应优先级:  SubPriority 
 Deprecate 不赞成， 强烈反对
 escalation  升级,增加，扩大, 逐步上升
-
 输入捕获 IC, Input Capture 
 输出比较 Output Compare, OC 
 捕获/比较(用于输入捕获和输出比较的单元) Capture/Compare, CC 
@@ -124,20 +123,12 @@ deviation 偏差, 偏离
 tamper 篡改，干预, 夯, 捣乱者, 反射器
 asynchronous  异步的, 不同时发生的
 ECU (Electronic control unit) 电子控制单元 
-
-### FATFS
 global Partition Table 全局分区表
 double byte chart-set 双字节字符集(DBCS)
-
-
-### Helix
 granule 颗粒, 微粒 
 assembler language  汇编语言
-
 optimum 最好的, 最佳的
 Parse 解析, 解释
-
-# STM32F4
 Cryptographic 密码的, 密码学的
 Patch 补丁, 色斑, 斑点 (一般指裁剪后的精简版本)
 latency 延迟
@@ -172,9 +163,6 @@ reel 卷轴，卷盘, 筒
 deem 认为,视为，相信 
 Mutex (es) 互斥量, 互斥锁, 互斥对象
 pseudocode 伪代码， 伪函数, 虚拟码
-
-
-### NNOM 
 fleet 舰队，车队
 deploy 部署, 调动
 dilation 膨胀, 扩张, 扩大 
@@ -185,7 +173,7 @@ Trademark  商标, 特征，标记
 liability 负责，责任
 Warranty  担保，保证
 pointwise 逐点的,点态, CFD网格生成软件
-piler 钳子, 镊子, 
+piler 钳子, 镊子
 ad-hoc **自组网的**,特别的, 对等式的
 backend 后端
 utilisation 使用, 利用
@@ -200,9 +188,6 @@ feed-forward 前向反馈
 luminous 夜光的, 发光的  
 antenna 天线,  电视天线
 RF (radio frequency) 射频, 无线电频率
-
-
-# 模电
 掺杂 doping
 电子 electron 
 空穴 positive hole 
@@ -210,7 +195,6 @@ RF (radio frequency) 射频, 无线电频率
 扩散电筒 diffusion capacitance 
 金属氧化物半导体场效应管 Metal Oxide Semiconductor Field Effect Transistor
 开启电压 threshold voltage
-# PCB 
 polygon pour 铺铜
 <b><mark style="background: transparent; color: blue">Harness</mark></b> 线束
 footprint 封装, 覆盖区 

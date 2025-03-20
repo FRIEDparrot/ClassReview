@@ -1,15 +1,117 @@
 ### 1. Algorithms
+carousel 旋转木马， 行李传送带 
+swarm 一大群， 一大批
+calves 小腿肚,  小牛
+climax  高潮 ,  极点， 顶点
+finale  结局， 结尾
+morale 士气   
+pluck 弹， 拨，拔掉
+glitch 小差错， 小毛病 
+seize 抓住， 捉住， 夺取
+bullied 恐吓， 威胁， 欺负  
+sanctuary 鸟类保护区，
+gauntlet 金属手套,  铁手套 (可用于形容围堵或困境挑战)
+blacksmith 铁匠， 打马蹄铁者
+appetizer 开胃菜 
+penultimate 倒数第二的 
+stumble 绊倒 
+Infrared Radiation Emitter (IR Emitter) 红外发射装置  (Infrared 红外线的)
+fluke 偶然， 侥幸， 意外 
+posterity  后代， 子孙
+cork 软木 ， 软木塞， 橡胶瓶塞
+palate  上颚 ，颚  
+generosity  大方, 慷慨 
+platinum  白金
+beak 喙
+reprieve 缓刑 ， 缓解 
+bait   鱼饵， 诱饵 
+lure 诱惑 
+adversary 对手 ， 竞争对手 
+montage 蒙太奇， 剪辑
+instigate  开始， 使发生， 煽动， 鼓动
+instigator 发起人 ， 煽动者 
+warfare 战争， 冲突， 斗争，竞争
+vulture  秃鹫 
+porch  门廊， 门厅 
+loot 抢劫 
+gracious 亲切的， 仁慈的， 宽恕的
+grace 优美， 优雅， 体面 
+pacifist 和平主义者 
+levitation 
+preach 布道,  讲教 
+rampage 横冲直撞， 暴跳如雷 
+copious 大量的， 充裕的，丰富的
+glitter 闪烁， 闪耀， 闪现，灿烂的光辉 
+nugget 金块， 有价值的小东西，有用的想法 
+hindsight 事后诸葛亮， 事后的领悟
+vendetta  家族世仇 ，宿怨,  长期不和 
+crows  乌鸦 
+redeem 救赎， 赎回
+footage 镜头， 片段 
+checkmate 将死,  输棋 , 彻底击败
+remorse 悔恨， 自责，懊悔
+humble 谦虚的
+amidst 在 ... 中 
+airsoft 气枪 
+raisin 葡萄干
+wrench 扳手， 猛拉，猛扭 
+cease 停止， 终止， 结束
+encapsulate 概括， 概述 
+analogous 类似的 
+frenzy  狂热的 ， 狂暴
+osteomyelitis 骨髓炎
+radix 进制 ， 鼻根
+conjure 变魔术 , 变戏法 
+transpired   发生的， 公开的，透露， 为人所知的
+notorious  臭名昭著的
+culminate 达到顶点, 告终  
+efficacy  功效, 药效 
+whip 鞭打， 鞭笞,  猛然移动
+spike 尖峰，尖刺 
+trajectory 弹道
+intuitive 直觉的 
+latent 潜伏的，潜在的，隐藏的 
+inextricably 密不可分的
+barometer 气压计
+plethora 过多， 过量， 过剩 
+sarcophagus  (古代具有雕饰的)石棺
+albeit 尽管， 虽然
+salient 突出的， 显著的
+smorgasbord  自助餐
+indispensable 不可或缺的 
+serendipitious  偶然的， 偶然发生的 
+serendipity   巧事 ， 机缘巧合 
+postulate  假定， 假设 
+conjecture 猜想， 推测 
+drift 漂流，漂移
+hamper  阻止, 妨碍 
 Greedy (贪心法)：最短路经
 Divide & Conquer (分治法)：如二分法检索、Hanoi塔
+pagination 编页码
 Backtracking (回溯法)：迷宫、皇后问题
+prominent 重要的, 杰出的, 显眼的
 Dynamic programming (动态规划法)：优化问题
 Local searching (局部搜索法)：最优化问题
+Incidentially 顺便提一句
+ingest 摄入， 咽下
 Branch & limitation (分支限界法)：检索
 Longest Common Sequence 最长公共子序列 
+counterpart 对应方
+eponymous (与标题) 同名的 
+impediment  阻碍， 障碍， 口吃， 结巴
 heuristic 启发式的
 asymptotic  渐进的, 渐近线的
 alchemy 炼金术, 魔力 
-
+patch 打补丁, 修补 
+captcha 验证码 
+infringement 侵权
+Falsify 伪造, 篡改
+Disclaimer 免责声明, 弃权声明(书)
+negligently 疏忽大意的
+force majeure  不可抗力
+Credentials 凭据 
+imperative 迫切的， 紧急的,  继续处理的 
+mutate 改变, 变化 
 mutation 变异,突变
 metamorphosis 变质，形变
 permutation 置换, 排列, 组合
@@ -17,6 +119,17 @@ swarm 大群，群体（昆虫）等
 prey 猎物
 regex 正则表达式
 intrude 闯入, 入侵 
+resort 求助, 采取, 诉诸 
+brittle  易碎的, 无法维护的
+singleton  单项物, 单个人 
+granular 由颗粒构成的,  含颗粒的, 颗粒状的
+boilerplate 样板
+verbose 冗长的 
+daunting 令人生畏的  
+daunt 使胆怯,  威吓 
+leverage 影响力, 杠杆作用 
+slew 使突然转向， 急转 
+
 
 Cross-Validation error 留一法交叉验证误差
 anisotropy 各向同性的
@@ -177,6 +290,9 @@ combinatorics 集合论
 hereditary 遗传的, 遗传性的, 世袭的
 hereditary property(downward-closed property) 遗传性质
 argumentation 推论, 证据, 论证
+vibrant  充满活力的, 先验的, 明亮的 
+strapping  捆， 扎带 , 魁梧的
+buzzword 流行语 , 时髦术语 
 
 ### 2. pytorch
 paradox  悖论 
@@ -300,7 +416,17 @@ nontrivial 不平凡的,重要的
 trivial 不重要的, 琐碎的, 微不足道的
 leverage  影响力， 杠杆作用 
 ubiquitous 无处不在的， 十分常见的
-versatility 多用途性, 多功能性 
+versatility 多用途性, 多功能性  
+nitty-gritty 细节
+intuition 直觉, 直觉力 
+lurk 潜伏 , 埋伏
+systematize 系统化
+desiderative 渴望的， 渴求的 
+correlation 相关性 
+stimulate 刺激， 促进 
+herald 预示， 是某事的前兆 
+ubiquitous 无处不在的 
+invest 投资  
 
 ### 3. javaScript 
 transaction 交易
@@ -320,7 +446,7 @@ schema 纪要， 纲要
 lateral 引用同一查询上下文中的其他列或者子查询
 snippet  小段话, 小条消息
 pairwise 对偶 
-bootstrap 独自创立, 与...相联系
+<b><mark style="background: transparent; color: orange">bootstrap 独自创立, 与...相联系,  附属于</mark></b>
 conjugate 共轭的, 
 
 concurrent  同时发生的, 并发的, 同意的,  一致的

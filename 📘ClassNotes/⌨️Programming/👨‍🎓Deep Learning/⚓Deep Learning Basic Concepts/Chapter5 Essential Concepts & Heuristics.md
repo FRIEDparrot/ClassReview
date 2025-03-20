@@ -4,11 +4,11 @@ Multi-Layer Perception is the neural network with not more than 1 layer of  hidd
 
 Kernel methods have been used for may decades to model the nonlinear dependencies. so we often overcome the  limitations of the linear models by <mark style="background: transparent; color: red">incorporating one or more layer of hidden layers</mark>.
 
-It's easy to see that multi-layer of the linear model is equal to 1-layer linear model , see [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/9. 正则化方法, 概率图模型和贝叶斯网络#二、多层感知机|MultiLayer Perceptions]]. where we add <mark style="background: transparent; color: red">activations in the hidden layer</mark>.
+It's easy to see that multi-layer of the linear model is equal to 1-layer linear model , see [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/9. 正则化方法, 概率图模型和贝叶斯网络#二、多层感知机|MultiLayer Perceptions]]. where we add <mark style="background: transparent; color: red">activations in the hidden layer</mark>.
 $$O =\phi (XW_h + b_h)W_o + b_{o}$$
 note **after computing the linear portion of the layer , we can calculate the activation without looking at the values taken by other hidden units**. 
 
-See [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/6. 最小二乘, RBF, 岭回归和 Lasso 回归#(2) 径向基函数网络|Radial Basis Function]], if enough hidden nodes are given, any complex functions can be modeled. Note single-layer 
+See [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/6. 最小二乘, RBF, 岭回归和 Lasso 回归#(2) 径向基函数网络|Radial Basis Function]], if enough hidden nodes are given, any complex functions can be modeled. Note single-layer 
 
 The often-used activation function -> See [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch & sklearn的使用基础和基本代码#(2) 激活函数专题|Most used Activation Functions]] 
 
@@ -191,7 +191,7 @@ model.initialize_weights()
 ```
 
 ### (2) Early Stopping 
-See [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/9. 正则化方法, 概率图模型和贝叶斯网络#1. Early Stop 正则化|Early Stop Regularization]], early stopping is a classic technique for regularization deep neural networks. 
+See [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/9. 正则化方法, 概率图模型和贝叶斯网络#1. Early Stop 正则化|Early Stop Regularization]], early stopping is a classic technique for regularization deep neural networks. 
 and the most common way to determine  stop criteria is  to **monitor the validation error in training process.**
 
 typically,  we check once validation error after each epoch. and cut off training when the validation error  has not decreased by more than some small amount $\varepsilon$ for  some number of epochs. This is called <mark style="background: transparent; color: red">patience criteria</mark>. 
@@ -623,7 +623,7 @@ def init_model(self):
 
 if we want to self-define a lazy module, **Use `torch.nn.UninitializedParameter`** , Declare parameters that are not initialized immediately as instances of `torch.nn.parameter.UninitializedParameter`. and replace the `UninitializedParameter` with a properly initialized `torch.nn.Parameter` once the shape is determined.
 
-##  5. FASHION MINIST Practice 
+##  5. FASHION MINIST Practice
 We give the example of the Optimization of the  Fashion MINIST dataset, both dropout,  regularization are used, and Adam Optimizer is used instead of SGD. 
 
 ```python
@@ -658,11 +658,11 @@ class MNIST_Module(nn.Module):
             nn.Conv2d(1, 16, kernel_size=3, stride=1, padding=1, bias=True),  # 28x28 -> 16 * 28x2  
             nn.LeakyReLU(),  # Retain minor activations for subtle features  
             nn.Conv2d(16, 64, kernel_size=3, stride=1 , padding=1, bias=True),  
-            nn.LeakyReLU(),  
-  
+            nn.LeakyReLU(), 
             # add ReLU here is very good for the feature detection of images, Leaky ReLU may retain some key features  
-            # Strided Convolution for Downsampling, Replace Pooling with Strided Convolution for less feature loss            nn.Conv2d(64,128, kernel_size=3, stride=1, padding=1, bias=True),  
-            nn.BatchNorm2d(128),  
+            # Strided Convolution for Downsampling, Replace Pooling with Strided Convolution for less feature loss            
+            nn.Conv2d(64,128, kernel_size=3, stride=1, padding=1, bias=True),  
+            nn.BatchNorm2d(128),   
             nn.LeakyReLU(),  
             nn.Conv2d(128, 128, kernel_size=3, stride=2, padding=1, bias=True),  # 128x28x28 -> 128x14x14 (stride = 2 decrease the size of the image)  
             nn.BatchNorm2d(128),  
