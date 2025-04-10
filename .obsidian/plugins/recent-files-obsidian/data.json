@@ -1,84 +1,84 @@
 {
   "recentFiles": [
     {
-      "basename": "8. Python 异步编程,   asyncio 库与 async, await 语法",
-      "path": "📘ClassNotes/⌨️Programming/🐍Python/⛳Python 进阶与软件架构设计相关/8. Python 异步编程,   asyncio 库与 async, await 语法.md"
-    },
-    {
-      "basename": "WSGI 服务器部署初步",
-      "path": "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/Flask 框架入门/WSGI 服务器部署初步.md"
-    },
-    {
-      "basename": "3. 基于 RabbitMQ 的 2PC 的分布式事务协议和多库强原子性实现",
-      "path": "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/基于  RabbitMQ 的跨数据库操作/3. 基于 RabbitMQ 的 2PC 的分布式事务协议和多库强原子性实现.md"
-    },
-    {
-      "basename": "7. Python 多线程, 协程和异步编程",
-      "path": "📘ClassNotes/⌨️Programming/🐍Python/⛳Python 进阶与软件架构设计相关/7. Python 多线程, 协程和异步编程.md"
-    },
-    {
-      "basename": "2. 使用 RabbitMQ 实现最终一致性",
-      "path": "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/基于  RabbitMQ 的跨数据库操作/2. 使用 RabbitMQ 实现最终一致性.md"
-    },
-    {
-      "basename": "Circuit Terminology",
-      "path": "📘ClassNotes/⚡Circuit/Circuit Terminology.md"
-    },
-    {
-      "basename": "Chemical Terminology",
-      "path": "📘ClassNotes/🚱materials and chemicals/Chemical Terminology.md"
-    },
-    {
-      "basename": "Programming Terminology",
-      "path": "📘ClassNotes/⌨️Programming/Programming Terminology.md"
-    },
-    {
-      "basename": "YT Words",
-      "path": "📘ClassNotes/🗣️English/YT Words.md"
-    },
-    {
-      "basename": "Mechanic Terminology",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/Mechanic Terminology.md"
-    },
-    {
-      "basename": "4. Soga 模式和补偿机制",
-      "path": "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/基于  RabbitMQ 的跨数据库操作/4. Soga 模式和补偿机制.md"
-    },
-    {
-      "basename": "高复用性的 2PC 事务架构设计方案",
-      "path": "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/基于  RabbitMQ 的跨数据库操作/高复用性的 2PC 事务架构设计方案.md"
-    },
-    {
-      "basename": "1. RabbitMQ 安装和部署办法",
-      "path": "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/基于  RabbitMQ 的跨数据库操作/1. RabbitMQ 安装和部署办法.md"
-    },
-    {
-      "basename": "2. 使用 RabbitMQ 实现最终一致性 2025-03-19 16.24.38",
-      "path": "Excalidraw/2. 使用 RabbitMQ 实现最终一致性 2025-03-19 16.24.38.md"
-    },
-    {
-      "basename": "1. frp 部署",
-      "path": "📘ClassNotes/⌨️ Web Programming/🏗️Nginx & 腾讯云服务器/frp 内网穿透/1. frp 部署.md"
-    },
-    {
-      "basename": "2. frp 内网穿透真实客户端传递",
-      "path": "📘ClassNotes/⌨️ Web Programming/🏗️Nginx & 腾讯云服务器/frp 内网穿透/2. frp 内网穿透真实客户端传递.md"
-    },
-    {
-      "basename": "数据库初始化文件重构",
-      "path": "📘ClassNotes/⌨️ Web Programming/🐍Python Web 与 Flask 框架/SQLalchemy/数据库初始化文件重构.md"
-    },
-    {
-      "basename": "二、 波动方程",
-      "path": "📘ClassNotes/📐Mathmatics/数学物理方程/二、 波动方程.md"
-    },
-    {
-      "basename": "第七章 微分方程",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第七章 微分方程.md"
-    },
-    {
       "basename": "Chapter7 RNN",
       "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter7 RNN.md"
+    },
+    {
+      "basename": "使用数据集一次性加载对应几组数据",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch Basics/使用数据集一次性加载对应几组数据.md"
+    },
+    {
+      "basename": "损失函数自定义和强化学习策略梯度",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch Basics/损失函数自定义和强化学习策略梯度.md"
+    },
+    {
+      "basename": "张量提取滑动窗口",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch Basics/张量提取滑动窗口.md"
+    },
+    {
+      "basename": "Datasets 基础使用",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/HuggingFace数据集使用/Datasets 基础使用.md"
+    },
+    {
+      "basename": "Chapter8 Attention Mechanisms, Transformers",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter8 Attention Mechanisms, Transformers.md"
+    },
+    {
+      "basename": "Seq2Seq 上下文向量的传递方式",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Implements/Seq2Seq 上下文向量的传递方式.md"
+    },
+    {
+      "basename": "配合 Colab 和 Jupyter 的本地编辑运行模式配置",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/HuggingFace数据集使用/配合 Colab 和 Jupyter 的本地编辑运行模式配置.md"
+    },
+    {
+      "basename": "四、位势方程",
+      "path": "📘ClassNotes/📐Mathmatics/数学物理方程/四、位势方程.md"
+    },
+    {
+      "basename": "Inf-Sup Condition",
+      "path": "📘ClassNotes/📐Mathmatics/数学物理方程/重要定理/Inf-Sup Condition.md"
+    },
+    {
+      "basename": "第六章 共形映射",
+      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共形映射.md"
+    },
+    {
+      "basename": "四、位势方程 2025-04-05 18.54.50",
+      "path": "Excalidraw/四、位势方程 2025-04-05 18.54.50.md"
+    },
+    {
+      "basename": "四、位势方程 2025-04-05 18.33.37",
+      "path": "Excalidraw/四、位势方程 2025-04-05 18.33.37.md"
+    },
+    {
+      "basename": "1. 远程部署 Flask 后端和 MySQL 数据库",
+      "path": "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/Linux 部署 mysql 数据库/1. 远程部署 Flask 后端和 MySQL 数据库.md"
+    },
+    {
+      "basename": "Linux 休眠禁用设置",
+      "path": "📘ClassNotes/🐧Computer System/🐧 Linux/Linux 休眠禁用设置.md"
+    },
+    {
+      "basename": "Nginx 部署 Vite 项目",
+      "path": "📘ClassNotes/⌨️ Web Programming/🏗️Nginx & 腾讯云服务器/Nginx 部署 Vite 项目.md"
+    },
+    {
+      "basename": "1. Linux 常用指令解析",
+      "path": "📘ClassNotes/🐧Computer System/🐧 Linux/1. Linux 常用指令解析.md"
+    },
+    {
+      "basename": "Chapter7 RNN 2025-03-31 18.36.54",
+      "path": "Excalidraw/Chapter7 RNN 2025-03-31 18.36.54.md"
+    },
+    {
+      "basename": "备忘录",
+      "path": "🐸 Daily Life memo/备忘录.md"
+    },
+    {
+      "basename": "Chapter7 RNN 2025-03-31 17.04.39",
+      "path": "Excalidraw/Chapter7 RNN 2025-03-31 17.04.39.md"
     }
   ],
   "omittedPaths": [],

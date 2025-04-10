@@ -189,3 +189,7 @@ systemctl status sleep.target suspend.target hibernate.target hybrid-sleep.targe
 - 配合 `xset` 禁用屏幕节能，防止显示器关闭。
 
 这样设置完成后，系统将永久不进入休眠或待机状态。
+
+```sh
+systemctl list-timers
+```

@@ -44,7 +44,6 @@ for a fluid fraction, γ ,which varies continuously from zero to one, γ = 0 sta
 
 governing equations of the incompressible steady fluid flow: 
 (Navier-Stokes equation)
-
 ![[Pasted image 20221126221237.png|350]]
 
 where u is the given velocity and the F is a body force caused by the solid objects in the flow(namely, the porous media).Assuming F w is proportional to the fluid velocity, u

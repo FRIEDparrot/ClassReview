@@ -29,3 +29,12 @@ cauldren 大锅
 outplay  战胜，击败 
 kiosk 小亭， 电话亭 
 alleviate 减轻， 缓和， 缓解 
+wedge 楔子， 三角木 
+phenomenal 非凡的, 了不起的
+venom 毒液
+antivenom 抗蛇毒血清
+yarn 纱线, 纺纱 
+weird 奇怪的  
+clown 小丑
+decent 得体的, 像样的 
+freak out 吓坏了, 大吃一惊 

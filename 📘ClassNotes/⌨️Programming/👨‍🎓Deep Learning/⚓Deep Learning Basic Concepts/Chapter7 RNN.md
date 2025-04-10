@@ -20,8 +20,9 @@ for example, if we want to predict the future weather, and use the historical we
 the structure include : 
 **(i) aligned**: where the input at **each time step aligns with a corresponding target** (e.g., part of speech tagging); 
 **(ii) unaligned**: where the input and target **do not necessarily exhibit a step-for-step correspondence** (e.g., machine translation) 
+
 ### (1) Auto-regressive model 
-We consider the trade prediction, One simple strategy for estimating the conditional expectation would be  a linear regression model. <mark style="background: transparent; color: red">The trader is  interest to know the probablity distribution as follows</mark>: 
+We consider the trade prediction, One simple strategy for estimating the conditional expectation **would be a linear regression model**. <mark style="background: transparent; color: red">The trader is  interest to know the probablity distribution as follows</mark>: 
 $$P[(x_{t}  |  x_{t-1} , \dots   x_{1})]$$
 note if weonly need the prediction, we can focus more on estimating the conditional expectation :
 $$E[(x_{t}  |  x_{t-1} , \dots   x_{1})]$$
@@ -46,8 +47,7 @@ Note that if we are working with **discrete signals like words**, then the autor
 in the following case, we may predict a vibration with $\sin(x)$ with 0.01 time step and 0.2 variance like follows: 
 ![[attachments/Pasted image 20250224121740.png|400]]
 
-we can just  build the **linear regression model (1-layer Linear model)** for the prediction of the response of time $t$, we can  use the simple code as follows : 
-
+we can just  build the **linear regression model (1-layer Linear model)** for the prediction of the response of time $t$, we can  use the simple code as follows :  
 ```python
 import torch
 import torch.nn as nn
@@ -186,7 +186,7 @@ $$\Large \boxed{\text{perplexity} = \exp\left(- \frac{1}{n} \sum_{i = 1}^{n}   \
 • In the<mark style="background: transparent; color: red"> worst case scenario</mark>, the model always predicts the probability of the target token as 0. In this situation, the <mark style="background: transparent; color: red">perplexity is positive infinity</mark>. 
 • At the baseline, the model predicts a uniform distribution over all the available tokens of the vocabulary. In this case, the perplexity **equals the number of unique tokens of the vocabulary**. In fact, if we were to store the sequence without any compression, this would be the best we could do to encode it. Hence, this provides a nontrivial upper bound that any useful model must beat. 
 
-#### 4. Sequence Partition   
+#### 4. Sequence Partition 
 For a language model using neural network  and perplexity to evaluate the predicting result.  We first assume that it process a minibatch of sequences with  predefined length at a time.  
 
 we consider that  a sequece has n tokens. to iterator  all the tokens of dataset,  we discard first $d$ tokens (where d is uniformly sampled at random), 
@@ -195,7 +195,7 @@ the goal is to predict the next token based on what tokens we have seen so far, 
 ![[attachments/Pasted image 20250225212402.png|450]]
 we note that the argument `batch_size` specifies the number of subsequence examples (self.b) in each minibatch and `num_steps` is the subsequence length in tokens (self. n).  **Also, a minibatch of target sequences can be obtained by shifting the input sequences by one token.** 
 
-## 3. Basic Recurrent Neural Networks 
+## 3. Basic Recurrent Neural Networks
 ### (1) Consideration with previous state cooperation
 For the condition probablity of token  $x_t$  at time step $t$,  we depend on $n-1$ previous tokens to make predition on next token,  If we want to <mark style="background: transparent; color: red">incorporate the possible effect of tokens earlier than time step</mark> $t -  (n-1)$ on time $x_t$, we need to increase $n$, but <b><mark style="background: transparent; color: orange">the number of model parameters would also increase exponentially with parameter n</mark></b>.
 
@@ -208,6 +208,7 @@ since complex function $f$, the latent variable model is not an approximation.  
 We note that <b><mark style="background: transparent; color: orange">hidden layers and hidden states refer to two very different concepts.</mark></b> Hidden states can only be computed by looking at data at previous time steps.
 
 Recurrent neural networks (RNNs) are neural networks with <b><mark style="background: transparent; color: blue">hidden states</mark></b>. 
+
 ### (2) Hidden States 
 For nn that without  hidden state (with hidden layer), just  
 $$H = \phi (X W_{xh}  + b_{n}) \qquad  O= H W_{hp} + b_{q}$$
@@ -255,7 +256,7 @@ print("Hidden state shape:", hn.shape)  # (num_layers, batch_size, hidden_size)
 ```
 
 ![[attachments/Pasted image 20250226095726.png|400]]
-For `RNN`,  the **input is a sequence of time**,  for tensor with shape  `(seq_len,  batch_size,  input_size)`, the output sequence  size is `(seq_len, batch_size, hidden_size)` (note that **output size is same as hidden size**)
+For `RNN`,  the **input is a sequence of time**,  for tensor with shape  `(seq_len,  batch_size,  input_size)`, the output sequence  size is `(seq_len, batch_size, hidden_size)` (note that **output size is same as hidden size**) 
 
 > [!HINT] Hidden 
 > The output layer in `nn.RNN` is same  as hidden layer, which neglect the output layer, which isn't exist in RNN. 
@@ -333,7 +334,6 @@ def clip_gradients(model, grad_clip_val):
             param.grad.data.mul_(grad_clip_val / total_norm)
 ```
 
-
 > [!HINT] Lib for gradient clipping 
 > for pytorch, it has provided the library for gradient clipping, which is `torch.nn.utils.clip_grad_norm`
 
@@ -408,7 +408,7 @@ the RNN backpropagation computation graph is as follows :
 
 ## 4. Modern RNN  
 There has been a tremendous amount of innovation in RNN architectures, culminating in several complex designs that have proven successful in practice. 
-### (1) LSTM architecture 
+### (1) LSTM architecture(nn.LSTM)
 LSTM (long short term memory  architecture),  also lighter weight is called GRU (gated recurrent unit). 
 
 LSTMs resemble standard recurrent neural networks but here each ordinary <b><mark style="background: transparent; color: orange">recurrent node is replaced by a memory cell</mark></b>.
@@ -423,7 +423,7 @@ For <b><mark style="background: transparent; color: orange">Gated memory Cell</m
 
 key distinction between vanilla RNNs and LSTMs is that <b><mark style="background: transparent; color: orange">the latter support gating of the hidden state </mark></b>. so that we have dedicaed mechanisms for <mark style="background: transparent; color: red">when a hidden state should be updated or reset</mark> 
 
-#### 1. Fundamental Gates  
+#### 1. Fundamental Gates 
 For LSTM gates,  we represent that Input, Forget and Output gates as $I_t, F_t$ and  $O_t$, in the hidden layer, intput is $X_{t}$ and $H_{t-1}$  then we can calculate each gate output as : 
 $$\boxed{\begin{align*}
 I_t &= \sigma(X_t W_{xt} + H_{t-1}W_{h t} + b_t), \\
@@ -436,6 +436,7 @@ output are like this shape :
 > [!NOTE] Activation Function   
 > The activation function  $\sigma$  here is different from $tanh$ in $C_t$ activation function. 
 > $\sigma$ is  sigmoid function but not  ReLU `->` **since it's $a$ gate signal function in range (0, 1)**
+
 #### 2. Input Node 
 We firstly introduce input node (cell state) $\tilde{C}_{t}\in R^{n \times  h}$, it use  a [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch & sklearn的使用基础和基本代码#3. tanh 激活函数|tanh function]] with value range for $(-1,1)$ 
 $$C_{t} = \tanh(X_{t}W_{xc} + H_{t-1}W_{hc} + b_{c}) \tag{7.4.2}$$
@@ -632,7 +633,7 @@ we can easily get a deep gated RNN by replacing the hidden state computation by 
 and 
 ![[attachments/Pasted image 20250306115353.png]]
 
-## 5. BiDirectional Recurrent Neural Networks 
+### (4) BiDirectional Recurrent Neural Networks 
 For the  case when mask random tokens and  take the context in both directions into account and predict what in the middle,  for the RNN  layers, we can <b><mark style="background: transparent; color: orange">implement two undirectional RNN layers chained together in opposite direction. </mark></b>
 
 firstly we can create two RNNs, all receive the input from $X$ and output as $O$, but in the second layer the connection is that $W_{hh}$ is from the next Hidden Unit. 
@@ -650,11 +651,11 @@ note that we may use a mask or placeholder for  the unknown element.
 > The weights for the masked element are not removed or randomized—they are part of the model's parameters and are updated during training.
 > mask x3​ by replacing it with a placeholder (e.g., `0` or a special token).
 
-1. **Mask or Replace \( x_3 \) with a Placeholder**
-- If \( x_3 \) is unknown and you want the model to predict it, you can replace \( x_3 \) with a special placeholder token (e.g., `[MASK]`, `null`, or a zero vector) in the input sequence.
+1. **Mask or Replace $x_3$ with a Placeholder**
+- If $x_3$ is unknown and you want the model to predict it, you can replace $x_3$ with a special placeholder token (e.g., `[MASK]`, `null`, or a zero vector) in the input sequence.
 - For example: 
 $$ X = (x_1, x_2, \text{[MASK]}, x_4, x_5)$$
-- The model will process the sequence and use the bidirectional context (from \( x_1, x_2 \) and \( x_4, x_5 \)) to predict \( x_3 \).
+- The model will process the sequence and use the bidirectional context (from $x_1, x_2$ and $x_4, x_5$) to predict $x_3$.
 - <b><mark style="background: transparent; color: orange">In frameworks like TensorFlow or PyTorch, you can use a mask tensor to achieve this</mark></b>.
 
 ```python
@@ -717,3 +718,385 @@ print("Prediction for x3:", torch.argmax(predicted_x3).item())
 print("Loss:", loss.item())
 ```
 
+## 5. Machine Translation
+### (1) Encoder-Decoder Seq2Seq Architecture for machine translation
+For example,we use the encoder-decoder architecture, in which the  encoder takes a variable -length sequence  as input. ad the decoder acts like language model
+
+> [!HINT] 
+> A Seq2Seq model consists of:
+> - **Encoder**: Processes the input sequence (e.g., a sentence in the source language) and encodes it into a fixed-size context vector (hidden state).
+> - **Decoder**: Generates the output sequence (e.g., translated sentence in the target language) step-by-step, conditioned on the encoder's output.
+
+The overall architechure is like that: 
+![[attachments/Pasted image 20250331161605.png|500]]
+
+**for machine translation, both  encoder and  deoder  are  implemented by RNNs**,  
+
+the encoder RNN will take a variable-length sequence as input and transform it into a fixed-shape hidden state. Note here that the <mark style="background: transparent; color: red">Attention Machanism allow  us to access encoder inputs  without convert the  input into  fixed -length representation</mark>. 
+
+The output state, which  **consists a separate RNN**,  ==predict the target  token by the  hidden-state given by RNN encoder== 
+
+### (2) Teacher forcing mechanism
+Teacher forcing is a training technique commonly used in sequence-to-sequence (Seq2Seq) models. this training method  is **guild the model with correct tokens to output  during the decoding phase** rather than relying solely on the model's own predictions. 
+
+firstly, the  decoder would start as a sequence `<bos>` meaning beginging of the sequence. 
+
+then <b><mark style="background: transparent; color: orange">At each step,  use the true target word as input instead of the model's prediction</mark></b>, which makes sure the prediction more accurate. 
+![[Excalidraw/Chapter7 RNN 2025-03-31 17.04.39|600]]
+
+Teacher forcing **feeds the true previous target token** (from the training dataset) as input to the decoder at each step. 
+
+> [!HINT] MT datasets 
+> for machine translation datasets, we can use  https://opus.nlpl.eu/ for specific language search and sample. for example, we can use  
+> [Open Subtitles](https://opus.nlpl.eu/OpenSubtitles/en&zh-CN/v2024/OpenSubtitles)or ted dataset for a practice for machine translation. 
+
+### (3) Encoder 
+For encoder,  we can use an embedding layer to obtain the feature vector  for each token in the input sequence. The weight of an embedding layer is a matrix. 
+
+Note that we use the encoded indices rather than  original characters  as input :
+- **Encoder Input**: we compile the Original sequence `["this", "is", "a", "a", "dog"]` to <b><mark style="background: transparent; color: orange">word indices</mark></b> `[7, 4, 11, 11, 14]`. where <mark style="background: transparent; color: red">1 word mapped to 1 indices</mark>. 
+In sequence models like Seq2Seq, we need to handle variable-length sequences by **padding them to a fixed length**. like : 
+
+| Sentence (raw)            | Tokenized (word indices) | Padded/Truncated (max_len=5) |
+|---------------------------|--------------------------|------------------------------|
+| "I love NLP"              | [4, 12, 7]               | [4, 12, 7, 0, 0]             |
+| "Hello"                   | [9]                      | [9, 0, 0, 0, 0]              |
+| "This is a long sentence" | [2, 5, 1, 8, 10, 3]      | [2, 5, 1, 8, 10] (truncated) |
+we can use pytorch's  build-in tools like torchtext :
+```python
+from torchtext.data.utils import get_tokenizer
+from torchtext.vocab import build_vocab_from_iterator
+
+# Tokenizer (splits sentences into words)
+tokenizer = get_tokenizer("basic_english")
+
+# Example tokenization
+tokens = tokenizer("I love NLP")  # ['i', 'love', 'nlp']
+
+# Build vocabulary from dataset
+sentences = ["I love NLP", "Hello world", "This is a test"]
+vocab = build_vocab_from_iterator(
+    map(tokenizer, sentences),
+    specials=["<pad>", "<unk>"],
+)
+vocab.set_default_index(vocab["<unk>"])
+
+# Convert sentence to indices
+vocab(tokenizer("I love NLP"))  # Output: [2, 3, 4]
+```
+or using the state-of-the-art hugging face transformers : 
+
+```python
+from transformers import AutoTokenizer
+
+# Load a pretrained tokenizer (e.g., BERT)
+tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+
+# Tokenize a sentence
+encoded = tokenizer("I love NLP", return_tensors="pt")
+print(encoded.input_ids)  # Tensor of indices
+print(tokenizer.convert_ids_to_tokens(encoded.input_ids[0]))
+```
+
+and then, we use [nn.Embedding](https://pytorch.org/docs/stable/generated/torch.nn.Embedding.html#torch.nn.Embedding) (takes word indices and maps them to dense vectors), which is sparse matrix layer to <b><mark style="background: transparent; color: orange">obtain the  feature vector of each token  in the input sequence </mark></b>, note Embedding module ==just convert the word into a unique vector==; then we can *just input the indices array and generate a corresponding matrix* : 
+![[Excalidraw/Chapter7 RNN 2025-03-31 18.36.54]]
+
+> [!warning] 
+>  note the vocabulary size dependents on how many words dataset contains in total. and finally it would use an Linear layer to map the time-step output as argmax to remapping to the sequence **consists of all original words in train target set**. 
+>  
+>  note the vocabulary size of encoder and decoder **do not need to be identical**, but they **must be consistent with their respective input/output data** 
+
+that is the mapping **example of nn.Embedding** :  
+```python
+embedding = nn.Embedding(vocab_size=30, embed_size=3)  #
+input_indices = torch.tensor([7, 4, 11, 11, 14])  # shape: (5,)
+embedded_vectors = embedding(input_indices)  # shape: (5, 3)
+```
+
+> [!important] 
+> note the embedding layer <mark style="background: transparent; color: red">convert a variant-length sentence to a fixed length vector</mark>. which make different words/sentence have the input of same length. 
+
+we can use the parameter initialization : 
+```python
+def init_seq2seq(module): #@save
+    """Initialize weights for Seq2Seq."""
+    if type(module) == nn.Linear:
+        nn.init.xavier_uniform_(module.weight)
+    if type(module) == nn.GRU:
+        for param in module._flat_weights_names:
+            if "weight" in param:
+                nn.init.xavier_uniform_(module._parameters[param])
+```
+
+firstly, we can use a function $f$ for the transformation of the RNN's  recurrent layer. which use $x_t$ and $h_{t-1}$ as input : 
+$$h_{t} =  f(x_{t}, h_{t-1})$$
+then we generate the hidden state $h_1, h_2, \dots h_T$, the encoder <mark style="background: transparent; color: red">transforms the  hidden states at all time  into a vatiable c through custimized  function</mark> $q$ : 
+$$c =  q(h_{1}, \dots,  h_{T})$$
+We use the embedding layer as the input of  next rnn layer,  which can just be <mark style="background: transparent; color: red">implemented with a multilayer GRU</mark>. 
+
+```python
+l1 =  nn.Embedding(vocab_size, embed_size) 
+l2 = nn.GRU(embed_size,  num_hiddens,  num_layers,  dropout=0.0)
+
+input_sentence = [1,2,3,4,5, ... ] 
+encoded_vecs = l1(input_sentence) 
+output, h_n = l2(encoded_vecs)  
+```
+
+where : 
+- output is tensor of shape $(L,D∗H_{out})$ for unbatched input,  
+- **h_n** is tensor of shape (D∗num_layers,Hout) or (D∗num_layers,N,Hout) containing the final <mark style="background: transparent; color: red">hidden state for the input sequence</mark>. 
+
+
+> [!NOTE] Output of encoded layer : Context Variable 
+> After we reach the hidden layer result $h_{1}, \dots h_{T}$, we can use $q$ to calculte another context variable $c$, 
+
+### (4) Decoder 
+When training the decoder, we will give a target sequence  $y_1, y_2, \dots y_t$, for each time step $t$. we use  the  decoder **assigns a predicted probablity to the possible token occuring at time step $t+1$.** which <mark style="background: transparent; color: red">can be predicted by the context variable</mark> $\boldsymbol{c}$ and previous given $y_1, \dots y_{t'}$. 
+
+i.e., we can use an output layer to compute the predictive distribution <mark style="background: transparent; color: red">(use a softmax function)</mark> 
+$$p (y_{t +1} |y_{1}, y_{2} , \dots  y_{t} , c )$$
+over the subsequent layer. 
+> [!HINT] Output of decoder 
+>  The **final output at each time step** is typically a probability distribution over the **target vocabulary**, represented as **word indices** after applying `argmax`.
+
+Then, we can use a function $g$ to express the transformation of the decoder's hidde layer:
+$$s_{t} = g(y_{t-1} , c , s_{t-1})$$
+
+in the decoder process, it use target output sequence $X$ and **encoder state** as input. note we directly <mark style="background: transparent; color: red">use the hidden state at the final time step of the encoder to initialize the hidden state of the decoder</mark>, so the RNN encoder and the RNN decoder have the same number of layers and hidden units (but time step may have discrepancy).  
+
+![[attachments/Pasted image 20250401105929.png]]
+where X shape: (batch_size, num_steps)
+
+The following code gives an implementation :  
+```python
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+class Seq2SeqEncoder(nn.Module):
+    """Simplified RNN encoder for sequence to sequence learning"""
+    def __init__(self, vocab_size, embed_size, num_hiddens, num_layers, dropout=0):
+        super().__init__()
+        self.embedding = nn.Embedding(vocab_size, embed_size)
+        self.rnn = nn.GRU(embed_size, num_hiddens, num_layers, dropout=dropout)
+        
+        # Initialize weights
+        for name, param in self.rnn.named_parameters():
+            if 'weight' in name:
+                nn.init.xavier_uniform_(param)
+        
+    def forward(self, X):
+        # X shape: (batch_size, seq_len)
+        X = X.t()  # Transpose to (seq_len, batch_size)
+        embeddings = self.embedding(X)  # (seq_len, batch_size, embed_size)
+        outputs, hidden = self.rnn(embeddings)
+        # outputs: (seq_len, batch_size, num_hiddens)
+        # hidden: (num_layers, batch_size, num_hiddens)
+        return outputs, hidden
+```
+
+The decoder implementation is as follows : 
+```python 
+class Seq2SeqDecoder(nn.Module):
+    """Simplified RNN decoder for sequence to sequence learning"""
+    def __init__(self, vocab_size, embed_size, num_hiddens, num_layers, dropout=0):
+        super().__init__()
+        self.embedding = nn.Embedding(vocab_size, embed_size)
+        # Input is embed_size + num_hiddens (for context)
+        self.rnn = nn.GRU(embed_size + num_hiddens, num_hiddens, num_layers, dropout=dropout)
+        self.fc = nn.Linear(num_hiddens, vocab_size)
+        # Initialize weights
+        for name, param in self.rnn.named_parameters():
+            if 'weight' in name:
+                nn.init.xavier_uniform_(param)
+        nn.init.xavier_uniform_(self.fc.weight)
+        
+    def forward(self, X, hidden, context):
+        # X shape: (batch_size, seq_len)
+        X = X.t()  # Transpose to (seq_len, batch_size) 
+        embeddings = self.embedding(X)  # (seq_len, batch_size, embed_size)
+	
+		# **There we handle the  
+        context = context.unsqueeze(0).expand(embeddings.size(0), -1, -1)
+        
+        # Concatenate embeddings and context
+        rnn_input = torch.cat([embeddings, context], dim=-1)
+        
+        outputs, hidden = self.rnn(rnn_input, hidden)
+        predictions = self.fc(outputs)
+        
+        # Transpose back to (batch_size, seq_len, vocab_size)
+        predictions = predictions.transpose(0, 1)
+        return predictions, hidden
+```
+
+For seq  
+```python
+class Seq2Seq(nn.Module):
+    """Simplified Seq2Seq model"""
+    def __init__(self, encoder, decoder):
+        super().__init__()
+        self.encoder = encoder
+        self.decoder = decoder
+        
+    def forward(self, src, trg):
+        # src: (batch_size, src_seq_len)
+        # trg: (batch_size, trg_seq_len)
+        enc_outputs, hidden = self.encoder(src)
+        outputs, _ = self.decoder(trg, hidden, hidden[-1])    
+        return outputs
+```
+
+and also, in prediction process, we can  directly use the output of the timestep $t'-1$ to predict the result of timestep  $t'$. 
+![[attachments/Pasted image 20250401114238.png|450]]
+
+note that we use  `outputs, _ = self.decoder(trg, hidden, hidden[-1]) ` to <mark style="background: transparent; color: red">make the hidden state generated by the  encoder</mark> as the initial hidden state of decoder. 
+
+
+> [!CAUTION] Size match between encoder and  decoder 
+> In Seq2Seq Structure, The `hidden_num` of decoder must match the `hidden_num` of encoder. 
+> 1. We use the last layer of `hidden state` of encoder to initalize that in decoder  
+> 2. The context size is reshaped as :  `[decode_seq_len(extended), batch_size, hidden_num(encoder output)]` , <mark style="background: transparent; color: red">which is also last layer of hiddden state</mark> .  note that method duplicate the context transfer. but this method is necessary, which is analyzed in [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Implements/Seq2Seq 上下文向量的传递方式|Seq2Seq Context Transfer Method]]
+
+### (5) Precision Evaluation (n-grams criterion)
+BLEU (Bilingual Evaluation Understudy) is often used for measuring the quality of output sequences for different applications. 
+
+In principle, for any n-grams in the predicted sequence, BLEU evaluates whether this n-grams appears in the target sequence.
+
+Precision $p$ is the ratio of the number of matched n-grams in the predicted and target sequences to the number of n-grams in the predicted sequence. For example, given a target sequence $A, B, C, D, E, F$, and a predicted sequence $A, B, B, C,  D$, we have p1 = 4/5, p2 = 3/4, p3 = 1/3, and p4 = 0. 
+
+<mark style="background: transparent; color: red">where p is calculated by longest  n-grams match, maximum (3) is B,C,D, and for 2 gram match is (AB, BC, CD) in total bigrams in prediction (4)</mark>
+$$p_{n} =  \frac{\text{number of  match unigrams}}{\text{total  n-grams in prediction}}$$
+BLEU is defined as: 
+$$\text{BLEU} =  \exp\left(\min\left( 0,1  - \frac{\text{len}_{target}}{\text{len}_{pred}}\right)\right) \prod_{n=1}^{k} p_{n} ^{\frac{1}{2^{n}  }}$$
+where k is the longest n-grams for matching (in above case is 3, so the `p4=0` is neglected). also the $p_n$ is greater when hit a longer match (with the part $p_{n}^{\frac{1}{2^{n}}}$, whcih is greater than 1 when make a match). 
+
+
+In the **real application case**, we can use `bleu` library from hugging face : 
+```python
+import evaluate 
+predictions = ["hello there general kenobi", "foo bar foobar"]
+references = [
+	 ["hello there general kenobi", "hello there !"],
+	 ["foo bar foobar"]
+]
+bleu = evaluate.load("bleu")
+results = bleu.compute(predictions=predictions, references=references)
+print(results)
+```
+
+### (6) Greedy Search and Tree search 
+For greedy search, it <mark style="background: transparent; color: red">selects the token with the highest conditional probability in softmax result</mark>. 
+![[attachments/Pasted image 20250401124142.png]]
+the strategy of which is 
+$$\begin{align*}
+y_{t'}=\underset{y\in\mathcal{Y}}{\operatorname{argmax}}\,P(y\mid y_1,\ldots,y_{t'-1},c).
+\end{align*}$$
+
+In our machine translation example, if the decoder truly recovered the probabilities of the underlying generative process, then this would give us the most likely translation. ==But unfortunately, there is no guarantee that greedy search will give us this sequence==. 
+
+we note that <mark style="background: transparent; color: red">in the conditional probablity output, different time step may have different conditional probablity</mark>, hence if we choose C at second position, we may got higher probablity at next place, then it may be a better solution than before. 
+![[attachments/Pasted image 20250401132919.png]]
+
+> [!warning]
+> The best solution we want is the one that match expression 
+> $$\max \prod_{t=1}^{T} P(y_{t}| y_{1}, y_{2}, \dots  y_{t-1} , c)$$ 
+> so greedy search not give us the best result. 
+
+one way is use exhausting search, which is not  applicable.
+
+Applicably, we can use <mark style="background: transparent; color: red">beam search</mark> for better solution. we can select $k$  token with the highest predicted probabilities. and then try the possible search result.  
+
+![[attachments/Pasted image 20250401165117.png|500]]
+
+Note this method is select k top At time step 1, and it not consider the step later. 
+
+note that beam search may not gain a good result, but we can hybrid the search techniques : 
+
+**Stochastic Beam Search / Diverse Beam Search**. 
+- **Pros**: Introduces randomness or diversity to explore more paths.
+- **Cons**: Still not guaranteed to find the best sequence, but better coverage than vanilla Beam Search. 
+
+Also note we can use a trade-off way : to keep the branch within a probablity top limitation, that is : 
+$$\text{keep branch that} :  |max(p) - p_{b} | < \text{limit} $$
+and it may reach a reasonable search result. 
+
+
+we choose the sequence with the highest of the following score as the output sequence: 
+$$\begin{align*}
+\frac{1}{L^\alpha} \log P(y_1, \ldots, y_L \mid c) = \frac{1}{L^\alpha} \sum_{t'=1}^L \log P(y_{t'} \mid y_1, \ldots, y_{t'-1}, c)
+\end{align*}$$
+
+## 6. Application : English-Chinese Machine Translation 
+### (1) Introduction and data loading 
+In this application practicing, we will use `20k-en-zh-translation-pinyin-hs` dataset from hugging face to train our machine translation model to do a en-zh translation task.  
+
+firstly, we load the dataset by  `datasets` library, the description can be found at https://huggingface.co/datasets/swaption2009/20k-en-zh-translation-pinyin-hsk.  
+
+since every line starts of different prefix represent different data, we  can use following to save them to a csv file for better training : 
+```python
+import datasets 
+
+pinyin_hsk_dataset = load_dataset("swaption2009/20k-en-zh-translation-pinyin-hsk", split="train")  
+
+# region dataset preparation  
+def save_dataset_to_csv(dataset, filename):  
+    """  
+    Save the dataset to a csv file.    :param dataset:    :param filename:    :return:  
+    """    text_lines = dataset['text']  
+    total_samples = len(text_lines) // 5  
+    print("Total samples:", total_samples)  
+    english = [line.split(": ")[1] for line in text_lines if line.startswith("english: ")]  
+    hsk = [line.split(": ")[1] for line in text_lines if line.startswith("hsk: ")]  
+    mandarin = [line.split(": ")[1] for line in text_lines if line.startswith("mandarin: ")]  
+    pinyin = [line.split(": ")[1] for line in text_lines if line.startswith("pinyin: ")]  
+  
+    dataset_fields = ["english", "hsk", "mandarin", "pinyin"]  
+    dataframe_tmp = pd.DataFrame(list(zip(english, hsk, mandarin, pinyin)), columns=dataset_fields)  
+    dataframe_tmp.to_csv(filename, encoding='utf-8', index=False) 
+    
+# and then save data to csv file 
+save_dataset_to_csv(pinyin_hsk_dataset, "pinyin_hsk_dataset.csv") 
+
+# then we can load data by: 
+data = pd.read_csv("./pinyin_hsk_dataset.csv") 
+```
+
+### (2) Self-defined tokenizer 
+We give the implementation of the self-defined tokenizer :  we can define a tokenizer by  ingesting the  word just from the original dataset.  
+
+```python
+from tokenizers import Tokenizer, models, trainers 
+
+data = pd.read_csv("./pinyin_hsk_dataset.csv")  
+en_sentences = data["english"].tolist()  # list of english sentences  
+zh_sentences = data["mandarin"].tolist() 
+
+def train_tokenizer(corpus, max_size=1000):  
+    tokenizer = Tokenizer(models.WordPiece(unk_token="[UNK]"))  
+    trainer = trainers.WordPieceTrainer(  
+        vocab_size=max_size,  
+        special_tokens=["[UNK]", "[CLS]", "[SEP]", "[PAD]", "[MASK]"],  
+    )  
+    tokenizer.train_from_iterator(corpus, trainer=trainer)  
+    return tokenizer 
+
+
+```
+
+
+
+
+
+in training process, it would output the  
+![[attachments/Pasted image 20250410015144.png]]
+
+when the loss downs to about 1.28-1.3 in train process, the machine translation model can predict in a really good performance as follows : 
+```python
+English sentences:  ['[CLS]hey,randy,haveyouhadyourlunchyet?[SEP]']  
+Chinese sentences:  ['[CLS]嘿，蓝迪，你吃午饭了吗？[SEP]' ]
+Chinese predictions:  ['[CLS]嘿，蓝迪，你吃午饭了吗？[SEP]2828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828',  
+```
+
+   
