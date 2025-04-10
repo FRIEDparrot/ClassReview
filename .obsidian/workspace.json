@@ -34,34 +34,6 @@
               "icon": "lucide-file",
               "title": "Chapter7 RNN"
             }
-          },
-          {
-            "id": "ba20181304736ffd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch Basics/使用数据集一次性加载对应几组数据.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "使用数据集一次性加载对应几组数据"
-            }
-          },
-          {
-            "id": "6c5a6084d012751f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch Basics/损失函数自定义和强化学习策略梯度.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "损失函数自定义和强化学习策略梯度"
-            }
           }
         ],
         "currentTab": 1
@@ -421,6 +393,7 @@
   },
   "active": "560f7c710d6f61b1",
   "lastOpenFiles": [
+    "attachments/Pasted image 20250410101510.png",
     "attachments/Pasted image 20250410015144.png",
     "attachments/Pasted image 20250410015142.png",
     "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch Basics/使用数据集一次性加载对应几组数据.md",
@@ -448,7 +421,6 @@
     "📘ClassNotes/📐Mathmatics/数学物理方程/Untitled.md",
     "attachments/Pasted image 20250404092356.png",
     "attachments/Pasted image 20250403171015.png",
-    "attachments/Pasted image 20250403162524.png",
     "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/Linux 部署 mysql 数据库/1. 远程部署 Flask 后端和 MySQL 数据库.md",
     "📘ClassNotes/🐧Computer System/🐧 Linux/Linux 休眠禁用设置.md",
     "📘ClassNotes/⌨️ Web Programming/🏗️Nginx & 腾讯云服务器/Nginx 部署 Vite 项目.md",

@@ -1069,10 +1069,6 @@ We give the implementation of the self-defined tokenizer :  we can define a toke
 ```python
 from tokenizers import Tokenizer, models, trainers 
 
-data = pd.read_csv("./pinyin_hsk_dataset.csv")  
-en_sentences = data["english"].tolist()  # list of english sentences  
-zh_sentences = data["mandarin"].tolist() 
-
 def train_tokenizer(corpus, max_size=1000):  
     tokenizer = Tokenizer(models.WordPiece(unk_token="[UNK]"))  
     trainer = trainers.WordPieceTrainer(  
@@ -1081,16 +1077,308 @@ def train_tokenizer(corpus, max_size=1000):
     )  
     tokenizer.train_from_iterator(corpus, trainer=trainer)  
     return tokenizer 
+``` 
+
+we can use  PreTrainedTokenizerFast method, which can package the tokenizer we trained into hugging face tokenizer :  
+
+```python
+from transformers import PreTrainedTokenizerFast, BertTokenizerFast 
+
+data = pd.read_csv("./pinyin_hsk_dataset.csv")  
+en_sentences = data["english"].tolist()  # list of english sentences  
+zh_sentences = data["mandarin"].tolist()  
+
+# make the self-defined tokenizer as the pre-trained tokenizer for the model  
+english_tokenizer = PreTrainedTokenizerFast(  
+    tokenizer_object=train_tokenizer(en_sentences),  
+    pad_token="[PAD]",  
+    cls_token="[CLS]",  
+    sep_token="[SEP]",  
+    unk_token="[UNK]",  
+    mask_token="[MASK]",  
+)  
+  
+chinese_tokenizer = PreTrainedTokenizerFast(  
+    tokenizer_object=train_tokenizer(zh_sentences),  
+    pad_token="[PAD]",  
+    cls_token="[CLS]",  
+    sep_token="[SEP]",  
+    unk_token="[UNK]",  
+    mask_token="[MASK]",  
+)
+``` 
+
+we give the following api for huggingface tokenizer :  
+```python
+# for tokenizer itself 
+english_tokenizer(["hello, world", "practice doing"], 
+	padding=True,  
+	truncation=True,  
+	max_length=64,  
+	return_tensors="pt")
+# transform it in to tokens  
+english_tokenizer.tokenize("test") 
+
+vocab = english_tokenizer.get_vocab() # print the token -> id mapping 
+vocab 
+
+# decode 
+def ids_to_text(ids, tokenizer):  
+    texts = []  
+    for seq in ids:  
+        # remove padding and special tokens  
+        tokens = [tokenizer.decode([idx]) for idx in seq if  
+                  idx not in [0, 1, 2, 3]]  # [UNK] [CLS] [SEP] [PAD] [MASK]  
+        texts.append("".join(tokens))  
+    return texts 
+
+tokenizer.decode(range(30)) # show first 30 tokenized words 
 
 
+encoding_en = english_tokenizer(en_sentences) 
+encoding_en.tokens()  # print tokens  
 ```
 
+> [!WARNING] Low Precision
+> The trained tokenizer by `WordPieceTrainer` can be low-precision. Which  highly affect the later performance of the model, so for a better tokenized 
 
+### (3) DataLoader Implementation   
+see [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch Basics/使用数据集一次性加载对应几组数据|load different data by the dataset]]. 
+### (4) Model Training  
+We use the pretrained  tokenizer instead of the  
+```python
+english_tokenizer = BertTokenizerFast.from_pretrained("bert-base-uncased")  
+chinese_tokenizer = BertTokenizerFast.from_pretrained("bert-base-chinese")
+```
 
+Finally we give  the following full implementation : 
+```python title:full_Implementation_of 
+from torch.utils.data import DataLoader, Dataset  
+import pandas as pd  
+from tokenizers import Tokenizer, models, trainers  
+from transformers import PreTrainedTokenizerFast, BertTokenizerFast  
+import evaluate 
 
+  
+def load_dataset_from_csv(filename):  
+    dataframe_tmp = pd.read_csv(filename, encoding='utf-8')  
+    return dataframe_tmp  
+  
+class BasicSeq2SeqEncoder(nn.Module):  
+    """RNN Encoder """  
+  
+    def __init__(self, vocabulary_size,  
+                 embed_size=64,  
+                 num_hidden=256,  
+                 num_layers=1,  
+                 dropout=0.1):  
+        super(BasicSeq2SeqEncoder, self).__init__()  
+        self.embedding = nn.Embedding(vocabulary_size, embed_size)  
+        self.rnn = nn.GRU(input_size=embed_size,  
+                          hidden_size=num_hidden,  
+                          num_layers=num_layers,  
+                          dropout=dropout,  
+                          batch_first=True)  
+        self.__init_weights()  
+  
+    def __init_weights(self):  
+        for name, param in self.rnn.named_parameters():  
+            if 'weight' in name:  
+                nn.init.xavier_uniform_(param)  
+            elif 'bias' in name:  
+                nn.init.zeros_(param)  
+  
+    def forward(self, x):  
+        x = self.embedding(x)  # make embedding  
+        output, state = self.rnn(x)  # return output and hidden state  
+        return output, state  
+  
+  
+class BasicSeq2SeqDecoder(nn.Module):  
+    """  
+    RNN Decoder    """  
+    def __init__(self, vocabulary_size,  
+                 embed_size=64,  
+                 num_hidden=256,  
+                 num_layers=1,  
+                 dropout=0.1):  
+        super(BasicSeq2SeqDecoder, self).__init__()  
+        self.embed_size = embed_size  
+        self.num_hidden = num_hidden  
+        self.embedding = nn.Embedding(vocabulary_size, embed_size)  
+        self.rnn = nn.GRU(input_size=embed_size + num_hidden,  
+                          hidden_size=num_hidden,  
+                          num_layers=num_layers,  
+                          batch_first=True,  
+                          dropout=dropout)  
+        self.dense = nn.Linear(num_hidden, vocabulary_size)  
+  
+    def forward(self, x, enc_state):  
+        """  
+        x :  queries, which is translation result vector.        """        embs = self.embedding(x).transpose(0, 1)  
+        # we note that embeddings.shape[1] is the seq-length  
+        context = enc_state[-1].expand(embs.shape[0], -1, -1)  # use last hidden layer  
+  
+        # since we concatenate the context and embedding, we need to make sure the dimensions are correct        rnn_input = torch.cat([embs, context], dim=-1).transpose(0, 1)  
+  
+        # the hidden-num of decoder must match the hidden-num of encoder.  
+        output, state = self.rnn(rnn_input, enc_state)  # initialize  
+        """   
+        The hidden_state shape is always :  
+            [num_layers * num_directions, batch_size, hidden_size]          
+        so rnn_input need to make batch first               
+        """  
+        prediction = self.dense(output)  # map the vocabularies to output  
+        return prediction, state  
+  
+  
+class BasicSeq2SeqModule(nn.Module):  
+    def __init__(self, encoder, decoder, lr=0.001):  
+        super(BasicSeq2SeqModule, self).__init__()  
+        self.encoder = encoder  
+        self.decoder = decoder  
+        self.lr = lr  
+  
+    def forward(self, enc_x, dec_x, *args):  
+        _, enc_state = self.encoder(enc_x, *args)  
+        return self.decoder(dec_x, enc_state)  
+  
+    @staticmethod  
+    def criterion(y_pred, y_true):  
+        vocab_size = y_pred.shape[-1]  
+        return f.cross_entropy(  
+            y_pred.view(-1, vocab_size),  
+            y_true.view(-1),  
+            ignore_index=0,  
+            label_smoothing=0.1  
+        )  
+  
+    def optimizer(self):  
+        return torch.optim.Adam(self.parameters(), lr=self.lr)  
+  
+  
+class BilingualDataset(Dataset):  
+    def __init__(self, df):  
+        self.data = df  
+  
+    def __len__(self):  
+        return len(self.data)  
+  
+    def __getitem__(self, idx):  
+        en_sample = self.data.iloc[idx]["en"]  
+        zh_sample = self.data.iloc[idx]["zh"]  
+        if not isinstance(en_sample, torch.Tensor):  
+            en_sample = torch.tensor(en_sample)  
+        if not isinstance(zh_sample, torch.Tensor):  
+            zh_sample = torch.tensor(zh_sample)  
+        return {  
+            "en": en_sample,  
+            "zh": zh_sample,  
+        }  
+  
+  
+def ids_to_text(ids, tokenizer):  
+    texts = []  
+    for seq in ids:  
+        # remove padding and special tokens  
+        tokens = [tokenizer.decode([idx]) for idx in seq if  
+                  idx not in [0, 1, 2, 3]]  # [UNK] [CLS] [SEP] [PAD] [MASK]  
+        texts.append("".join(tokens))  
+    return texts  
+  
+  
+if __name__ == "__main__":  
+    data = pd.read_csv("./pinyin_hsk_dataset.csv")  
+    en_sentences = data["english"].tolist()  # list of english sentences  
+    zh_sentences = data["mandarin"].tolist()  
+  
+    english_tokenizer = BertTokenizerFast.from_pretrained("bert-base-uncased")  
+    chinese_tokenizer = BertTokenizerFast.from_pretrained("bert-base-chinese")  
+  
+    encoding_en = english_tokenizer(en_sentences,  
+                                    padding=True,  
+                                    truncation=True,  
+                                    max_length=64,  
+                                    return_tensors="pt")  
+  
+    encoding_zh = chinese_tokenizer(zh_sentences,  
+                                    padding=True,  
+                                    truncation=True,  
+                                    max_length=64,  
+                                    return_tensors="pt")
+	word_indices_en = encoding_en["input_ids"].clone().detach()  
+	word_indices_zh = encoding_zh["input_ids"].clone().detach()  
+	  
+	en_vocab_size = torch.max(word_indices_en) + 1  # since it is 0-indexed, add 1 to get the actual vocab size  
+	zh_vocab_size = torch.max(word_indices_zh) + 1  
+	print("Encoded english vocab size:", en_vocab_size)  
+	print("Encoded chinese vocab size:", zh_vocab_size)  
+	  
+	# num_hidden must match (since we use the concatenate input and also use the last hidden layer of encoder as )  
+	model_encoder = BasicSeq2SeqEncoder(en_vocab_size, embed_size=256, num_hidden=512, num_layers=1, dropout=0.2)  
+	model_decoder = BasicSeq2SeqDecoder(zh_vocab_size, embed_size=256, num_hidden=512, num_layers=1, dropout=0.2)  
+	model = BasicSeq2SeqModule(model_encoder, model_decoder, lr=0.001)  # set small learningg rate  
+	  
+	# we use this snippet to test the encoder and decoder working correctly  
+	"""  
+	_, encode_state = model_encoder(word_indices_en)  
+	print(encode_state.shape)  # (num_layers, batch_size, num_hidden) y, decode_state = model_decoder(word_indices_zh, enc_state=encode_state) """  
+	  
+	# since train the whole model in one batch is too large, we use DataLoader to load the data  
+	df = pd.DataFrame(list(zip(word_indices_en, word_indices_zh)), columns=["en", "zh"])  
+	pt_dataset = BilingualDataset(df)  
+	  
+	dataloader = DataLoader(pt_dataset, batch_size=25, shuffle=True)  
+	optimizer = model.optimizer()  
+	bleu_score = evaluate.load("bleu")  # load the bleu score function  
+	scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5, factor=0.5)  
+	  
+	max_epochs = 10  # set the max epochs  
+	for epoch in range(max_epochs):  
+	    epoch_loss_sum = 0  
+	  
+	    for i, batch in enumerate(dataloader):  
+	        batch_en = batch["en"]  
+	        batch_zh = batch["zh"]  
+	  
+	        optimizer.zero_grad()  # clear the gradients  
+	  
+	        y_pred, _ = model(batch_en, batch_zh)  
+	        loss = model.criterion(y_pred, batch_zh)  
+	        loss.backward()  # calculate the gradients  
+	  
+	        # clip the gradients to prevent the exploding gradient problem        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=5.0)  
+	  
+	        optimizer.step()  # update the parameters  
+	  
+	        epoch_loss_sum += loss.item()  
+	        print(f"Batch {i} / {len(dataloader)}, Loss: {loss.item()}")  
+	  
+	        # print  
+	        if i % 10 == 0:  
+	            print("\n=== Epoch {} Batch {} Evaluation ===".format(epoch, i))  
+	            en_texts = ids_to_text(batch_en, english_tokenizer)  
+	            zh_texts = ids_to_text(batch_zh, chinese_tokenizer)  
+	            zh_preds = ids_to_text(y_pred.argmax(dim=-1), chinese_tokenizer)  
+	            print("English sentences: ", en_texts)  
+	            print("Chinese sentences: ", zh_texts)  
+	            print("Chinese predictions: ", zh_preds)  
+	  
+	            bleu_score_value = bleu_score.compute(  
+	                predictions=zh_preds,  
+	                references=zh_texts  
+	            )  
+	            print("BLEU score: ", bleu_score_value)  
+	  
+	    with torch.no_grad():  
+	        avg_epoch_loss = epoch_loss_sum / len(dataloader)  
+	        scheduler.step(avg_epoch_loss)  # update the learning rate scheduler  
+	  
+	    print(f"========= Epoch: {epoch}, Average Loss: {avg_epoch_loss} ==========")
+```
 
-in training process, it would output the  
-![[attachments/Pasted image 20250410015144.png]]
+in training process, it would output the result training process in the loop :  
+![[attachments/Pasted image 20250410101510.png|650]] 
 
 when the loss downs to about 1.28-1.3 in train process, the machine translation model can predict in a really good performance as follows : 
 ```python
@@ -1099,4 +1387,28 @@ Chinese sentences:  ['[CLS]嘿，蓝迪，你吃午饭了吗？[SEP]' ]
 Chinese predictions:  ['[CLS]嘿，蓝迪，你吃午饭了吗？[SEP]2828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828',  
 ```
 
-   
+we note that we may cut the 
+```python
+**`[CLS]`** (classification Token)  
+**`[SEP]` (Separator Token)**,   Marks the **end of a segment**
+**`[PAD]` (Padding Token)** 
+**`[UNK]` (Unknown Token)** 
+**`[MASK]` (Mask Token)**
+``` 
+
+we note that actually <mark style="background: transparent; color: red">we can substitute the final part sentence by  the padding and cut it from SEP for making </mark>  
+
+Also, we reprensent the decoded mask bit by `attention_mask`, so here we use 
+```python
+word_masks_en = encoding_en["attention_mask"].clone().detach()  
+word_masks_zh = encoding_zh["attention_mask"].clone().detach() 
+```
+
+
+For a sentence pair (e.g., question-answering): 
+```python
+input_ids = [ [CLS], What, is, BERT?, [SEP], It, is, a, model., [SEP], [PAD], ... ]
+token_type_ids = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, ... ]  # 0=Segment A, 1=Segment B
+attention_mask = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, ... ]  # 1=real token, 0=padding  
+```
+
