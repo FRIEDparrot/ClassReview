@@ -1,6 +1,6 @@
 ## 1. Linear Regression 
 
-> [!NOTE]Torch Linear Regression
+> [!NOTE] Torch Linear Regression
 > for the linear Regression in pytorch, refer to [torch documentation](https://pytorch.org/docs/stable/generated/torch.nn.Linear.html#torch.nn.Linear)
 
 In the linear  Regression Problem, we  will use $n$ to denote the number of  examples, where $x^{(i)}$ denotes the $i$-th example, and $x_{j}$ denotes $j-th$  coordinate. 

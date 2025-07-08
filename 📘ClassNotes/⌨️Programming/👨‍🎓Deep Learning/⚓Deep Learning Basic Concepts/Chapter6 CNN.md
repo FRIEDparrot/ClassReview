@@ -392,7 +392,7 @@ import torch
 from torch import nn
 from torch.nn import functional as F 
 
-class Residual(nn.Module): #@save
+class Residual(nn.Module):
 	"""The Residual block of ResNet."""
 	def __init__(self, num_channels, use_11conv=False, strides=1):
 		super().__init__()
@@ -407,6 +407,7 @@ class Residual(nn.Module): #@save
 			self.conv3 = None
 			self.bn1 = nn.LazyBatchNorm2d()
 			self.bn2 = nn.LazyBatchNorm2d()
+	
 	def forward(self, X):
 		Y = F.relu(self.bn1(self.conv1(X)))
 		Y = self.bn2(self.conv2(Y))
@@ -415,10 +416,20 @@ class Residual(nn.Module): #@save
 		Y += X
 		return F.relu(Y)
 ```
-
-which build the network structure as follows : 
-![[Excalidraw/Chapter6 CNN 2025-02-18 12.20.14|400]]
+which build the network structure as follows, including 2 conv & norm block with ReLU activation function inside. 
+![[Excalidraw/Chapter6 CNN 2025-02-18 12.20.14|300]]
 we note the input and output dimension can be resized by change the `stride` parameter,  for `stride=2`, we got reduced dimension <mark style="background: transparent; color: red">(note in such case, we often use more output channels to retain more features)</mark>
+
+> [!NOTE] **Pre-activation Benefits**
+> In ResNet v2, the order is **BN → ReLU → Conv**. This ensures the input to each Conv layer is normalized and activated, leading to:
+> 
+> - **Smoother gradients**: BN before Conv reduces internal covariate shift.
+> - **Better generalization**: ReLU before Conv avoids non-linearity stacking, improving feature representation.
+> - If we just use 1 conv layer, the model becomes weaker, which doesn’t guarantee smooth gradient flow if `F(x)` is too simple.
+
+> [!HINT] For Deep Network
+> - **Plain CNN** (Conv → BN → ReLU) lacks residual connections, making deeper networks harder to train due to gradient issues.
+> - **ResNet** explicitly models residuals, enabling stable training of 100+ layers.
 
 for ResNet-18 network, it has the following architecture : 
 ![[attachments/Pasted image 20250220091928.png|550]]

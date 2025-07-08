@@ -346,6 +346,14 @@ var AppHelper = class {
       alias: aliases
     };
   }
+  getTagsProperty(file) {
+    var _a, _b, _c;
+    const frontMatter = (_a = this.unsafeApp.metadataCache.getFileCache(file)) == null ? void 0 : _a.frontmatter;
+    if (!frontMatter) {
+      return [];
+    }
+    return (_c = (_b = (0, import_obsidian.parseFrontMatterTags)(frontMatter)) == null ? void 0 : _b.map((x) => x.slice(1))) != null ? _c : [];
+  }
   getBoolFrontMatter(file, key) {
     var _a, _b;
     return Boolean(
@@ -443,6 +451,12 @@ var AppHelper = class {
     return Object.entries(this.unsafeApp.metadataCache.unresolvedLinks).flatMap(
       ([path, obj]) => Object.keys(obj).map((link) => ({ path, link }))
     );
+  }
+  getResolvedLinks(file) {
+    var _a, _b;
+    return (_b = Object.keys(
+      (_a = this.unsafeApp.metadataCache.resolvedLinks[file.path]) != null ? _a : {}
+    )) != null ? _b : [];
   }
   getUnresolvedLinks(file) {
     var _a;
@@ -620,6 +634,9 @@ function uniqWith(arr, fn) {
   return arr.filter(
     (element2, index) => arr.findIndex((step) => fn(element2, step)) === index
   );
+}
+function hasSameElement(arr1, arr2) {
+  return arr1.some((x) => arr2.includes(x));
 }
 function setEquals(set1, set2) {
   if (set1.size !== set2.size) {
@@ -1097,7 +1114,8 @@ function judge(word, query, queryStartWithUpper, options) {
           ...word,
           value: c,
           hit: c,
-          fuzzy: matched.type === "fuzzy_match"
+          fuzzy: matched.type === "fuzzy_match",
+          query
         },
         value: c,
         alias: false
@@ -1107,7 +1125,8 @@ function judge(word, query, queryStartWithUpper, options) {
         word: {
           ...word,
           hit: word.value,
-          fuzzy: matched.type === "fuzzy_match"
+          fuzzy: matched.type === "fuzzy_match",
+          query
         },
         value: word.value,
         alias: false
@@ -1122,7 +1141,8 @@ function judge(word, query, queryStartWithUpper, options) {
       word: {
         ...word,
         hit: matchedAlias.aliases,
-        fuzzy: matchedAlias.matched.type === "fuzzy_match"
+        fuzzy: matchedAlias.matched.type === "fuzzy_match",
+        query
       },
       value: matchedAlias.aliases,
       alias: true
@@ -1229,7 +1249,8 @@ function judgeByPartialMatch(word, query, queryStartWithUpper, options) {
           ...word,
           value: c,
           hit: c,
-          fuzzy: startsWithMatched.type === "fuzzy_match"
+          fuzzy: startsWithMatched.type === "fuzzy_match",
+          query
         },
         value: c,
         alias: false
@@ -1239,7 +1260,8 @@ function judgeByPartialMatch(word, query, queryStartWithUpper, options) {
         word: {
           ...word,
           hit: word.value,
-          fuzzy: startsWithMatched.type === "fuzzy_match"
+          fuzzy: startsWithMatched.type === "fuzzy_match",
+          query
         },
         value: word.value,
         alias: false
@@ -1254,7 +1276,8 @@ function judgeByPartialMatch(word, query, queryStartWithUpper, options) {
       word: {
         ...word,
         hit: startsWithAliasMatched.aliases,
-        fuzzy: startsWithAliasMatched.matched.type === "fuzzy_match"
+        fuzzy: startsWithAliasMatched.matched.type === "fuzzy_match",
+        query
       },
       value: startsWithAliasMatched.aliases,
       alias: true
@@ -1266,7 +1289,8 @@ function judgeByPartialMatch(word, query, queryStartWithUpper, options) {
       word: {
         ...word,
         hit: word.value,
-        fuzzy: includesMatched.type === "fuzzy_match"
+        fuzzy: includesMatched.type === "fuzzy_match",
+        query
       },
       value: word.value,
       alias: false
@@ -1280,7 +1304,8 @@ function judgeByPartialMatch(word, query, queryStartWithUpper, options) {
       word: {
         ...word,
         hit: matchedAliasIncluded.aliases,
-        fuzzy: matchedAliasIncluded.matched.type === "fuzzy_match"
+        fuzzy: matchedAliasIncluded.matched.type === "fuzzy_match",
+        query
       },
       value: matchedAliasIncluded.aliases,
       alias: true
@@ -1717,13 +1742,17 @@ var InternalLinkWordProvider = class {
       if (option.excludePathPrefixPatterns.some((x) => f.path.startsWith(x))) {
         return false;
       }
-      if (!option.frontMatterKeyForExclusion) {
-        return true;
+      const fmkfc = option.frontMatterKeyForExclusion;
+      if (fmkfc && this.appHelper.getBoolFrontMatter(f, fmkfc)) {
+        return false;
       }
-      return !this.appHelper.getBoolFrontMatter(
-        f,
-        option.frontMatterKeyForExclusion
-      );
+      if (option.tagsForExclusion.length > 0) {
+        const tags = this.appHelper.getTagsProperty(f);
+        if (hasSameElement(option.tagsForExclusion, tags)) {
+          return false;
+        }
+      }
+      return true;
     }).flatMap((x) => {
       const aliases = this.appHelper.getAliases(x);
       if (option.wordAsInternalLinkAlias) {
@@ -1939,16 +1968,25 @@ var SelectionHistoryStorage = class {
     if (!this.data[word.hit]) {
       this.data[word.hit] = {};
     }
-    if (!this.data[word.hit][word.value]) {
-      this.data[word.hit][word.value] = {};
+    let valueRef;
+    if (word.valueForHistory) {
+      if (!this.data[word.hit][word.valueForHistory]) {
+        this.data[word.hit][word.valueForHistory] = {};
+      }
+      valueRef = this.data[word.hit][word.valueForHistory];
+    } else {
+      if (!this.data[word.hit][word.value]) {
+        this.data[word.hit][word.value] = {};
+      }
+      valueRef = this.data[word.hit][word.value];
     }
-    if (this.data[word.hit][word.value][word.type]) {
-      this.data[word.hit][word.value][word.type] = {
-        count: this.data[word.hit][word.value][word.type].count + 1,
+    if (valueRef[word.type]) {
+      valueRef[word.type] = {
+        count: valueRef[word.type].count + 1,
         lastUpdated: Date.now()
       };
     } else {
-      this.data[word.hit][word.value][word.type] = {
+      valueRef[word.type] = {
         count: 1,
         lastUpdated: Date.now()
       };
@@ -3801,6 +3839,27 @@ async function selectWithCustomAlias(popup, evt) {
   item.value = input;
   return item;
 }
+function selectWithQueryAlias(popup, evt) {
+  var _a, _b;
+  if (!popup.context || evt.isComposing) {
+    return null;
+  }
+  if (popup.selectionLock) {
+    popup.close();
+    return null;
+  }
+  const item = popup.suggestions.values[popup.suggestions.selectedItem];
+  if (item.type !== "internalLink") {
+    select(popup, evt);
+    return null;
+  }
+  item.aliasMeta = {
+    origin: (_b = (_a = item.aliasMeta) == null ? void 0 : _a.origin) != null ? _b : item.value
+  };
+  item.valueForHistory = item.value;
+  item.value = item.query;
+  return item;
+}
 function insertAsText(popup, evt) {
   if (!popup.context || evt.isComposing) {
     return;
@@ -4136,6 +4195,21 @@ var AutoCompleteSuggest = class _AutoCompleteSuggest extends import_obsidian5.Ed
             return;
           }
         }
+        if (this.settings.excludeSelfInternalLink) {
+          words = words.filter(
+            (x) => {
+              var _a;
+              return x.type !== "internalLink" || x.createdPath !== ((_a = this.appHelper.getActiveFile()) == null ? void 0 : _a.path);
+            }
+          );
+        }
+        if (this.settings.excludeExistingInActiveFileInternalLinks) {
+          const activeFile = this.appHelper.getActiveFile();
+          const linkPaths = this.appHelper.getResolvedLinks(activeFile);
+          words = words.filter(
+            (x) => x.type !== "internalLink" || !linkPaths.includes(x.createdPath)
+          );
+        }
         cb(
           uniqWith(words, suggestionUniqPredicate).slice(
             0,
@@ -4214,6 +4288,16 @@ var AutoCompleteSuggest = class _AutoCompleteSuggest extends import_obsidian5.Ed
               this.selectSuggestion(item);
             }
           });
+          return false;
+        }
+      ],
+      [
+        "select with query alias",
+        (evt) => {
+          const item = selectWithQueryAlias(this, evt);
+          if (item) {
+            this.selectSuggestion(item);
+          }
           return false;
         }
       ],
@@ -4329,7 +4413,8 @@ var AutoCompleteSuggest = class _AutoCompleteSuggest extends import_obsidian5.Ed
       excludePathPrefixPatterns: this.excludeInternalLinkPrefixPathPatterns,
       makeSynonymAboutEmoji: this.settings.matchingWithoutEmoji,
       makeSynonymAboutAccentsDiacritics: this.settings.treatAccentDiacriticsAsAlphabeticCharacters,
-      frontMatterKeyForExclusion: this.settings.frontMatterKeyForExclusionInternalLink
+      frontMatterKeyForExclusion: this.settings.frontMatterKeyForExclusionInternalLink,
+      tagsForExclusion: this.settings.tagsForExclusionInternalLink
     });
     this.statusBar.setInternalLinkIndexed(
       this.internalLinkWordProvider.wordCount
@@ -4705,6 +4790,42 @@ var AutoCompleteSuggest = class _AutoCompleteSuggest extends import_obsidian5.Ed
 // src/setting/settings.ts
 var import_obsidian7 = require("obsidian");
 
+// src/keys.ts
+var import_obsidian6 = require("obsidian");
+var MOD = import_obsidian6.Platform.isMacOS ? "Cmd" : "Ctrl";
+var ALT = import_obsidian6.Platform.isMacOS ? "Option" : "Alt";
+function hotkey2String(hk) {
+  if (!hk) {
+    return "";
+  }
+  const hotkey = hk.key === " " ? "Space" : hk.key;
+  const mods = hk.modifiers.join(" ");
+  return mods ? `${mods} ${hotkey}` : hotkey;
+}
+function string2Hotkey(hotKey, hideHotkeyGuide) {
+  const keys = hotKey.split(" ");
+  if (keys.length === 0 || keys[0] === "") {
+    return null;
+  }
+  if (keys.length === 1) {
+    return {
+      modifiers: [],
+      key: keys[0].replace("Space", " "),
+      hideHotkeyGuide
+    };
+  }
+  return {
+    modifiers: keys.slice(0, -1),
+    key: keys.at(-1).replace("Space", " "),
+    hideHotkeyGuide
+  };
+}
+
+// src/types.ts
+function isPresent(arg) {
+  return arg != null;
+}
+
 // src/setting/settings-helper.ts
 var TextComponentEvent;
 ((TextComponentEvent2) => {
@@ -4722,34 +4843,6 @@ var TextComponentEvent;
   }
   TextComponentEvent2.onChange = onChange;
 })(TextComponentEvent || (TextComponentEvent = {}));
-
-// src/keys.ts
-var import_obsidian6 = require("obsidian");
-var MOD = import_obsidian6.Platform.isMacOS ? "Cmd" : "Ctrl";
-var ALT = import_obsidian6.Platform.isMacOS ? "Option" : "Alt";
-function hotkey2String(hotkey) {
-  if (!hotkey) {
-    return "";
-  }
-  const mods = hotkey.modifiers.join(" ");
-  return mods ? `${mods} ${hotkey.key}` : hotkey.key;
-}
-function string2Hotkey(hotKey, hideHotkeyGuide) {
-  const keys = hotKey.split(" ");
-  if (keys.length === 1) {
-    return keys[0] === "" ? null : { modifiers: [], key: keys[0], hideHotkeyGuide };
-  }
-  return {
-    modifiers: keys.slice(0, -1),
-    key: keys.at(-1),
-    hideHotkeyGuide
-  };
-}
-
-// src/types.ts
-function isPresent(arg) {
-  return arg != null;
-}
 
 // src/setting/settings.ts
 var DEFAULT_SETTINGS = {
@@ -4784,6 +4877,7 @@ var DEFAULT_SETTINGS = {
   hotkeys: {
     select: [{ modifiers: [], key: "Enter" }],
     "select with custom alias": [],
+    "select with query alias": [],
     up: [{ modifiers: [], key: "ArrowUp" }],
     down: [{ modifiers: [], key: "ArrowDown" }],
     "select 1st": [],
@@ -4825,6 +4919,8 @@ var DEFAULT_SETTINGS = {
   enableInternalLinkComplement: true,
   suggestInternalLinkWithAlias: false,
   excludeInternalLinkPathPrefixPatterns: "",
+  excludeSelfInternalLink: false,
+  excludeExistingInActiveFileInternalLinks: false,
   updateInternalLinksOnSave: true,
   insertAliasTransformedFromDisplayedInternalLink: {
     enabled: false,
@@ -4832,6 +4928,7 @@ var DEFAULT_SETTINGS = {
     after: ""
   },
   frontMatterKeyForExclusionInternalLink: "",
+  tagsForExclusionInternalLink: [],
   // front matter complement
   enableFrontMatterComplement: false,
   frontMatterComplementMatchStrategy: "inherit",
@@ -5139,12 +5236,24 @@ var VariousComplementsSettingTab = class extends import_obsidian7.PluginSettingT
     containerEl.append(div);
     const li = createEl("li");
     li.append(
-      "You can know the keycode at ",
+      "You can find the keycode at ",
       createEl("a", {
         text: "keycode.info",
         href: "https://keycode.info/"
       }),
-      ". (Press any key and show 'event.key')"
+      ". Press any key to see the '",
+      createEl("code", {
+        text: "event.key"
+      }),
+      "' value, ",
+      createEl("b", {
+        text: "except for the space key"
+      }),
+      ". Set the space key as '",
+      createEl("code", {
+        text: "Space"
+      }),
+      "'."
     );
     const ul = createEl("ul");
     ul.createEl("li", {
@@ -5401,6 +5510,24 @@ var VariousComplementsSettingTab = class extends import_obsidian7.PluginSettingT
           }
         );
       });
+      new import_obsidian7.Setting(containerEl).setName("Exclude self internal link").addToggle((tc) => {
+        tc.setValue(this.plugin.settings.excludeSelfInternalLink).onChange(
+          async (value) => {
+            this.plugin.settings.excludeSelfInternalLink = value;
+            await this.plugin.saveSettings({ internalLink: true });
+          }
+        );
+      });
+      new import_obsidian7.Setting(containerEl).setName("Exclude existing in active file internal links").setDesc(
+        "Exclude internal links present in the current file from the suggestions. Note that the number of excluded suggestions will reduce the total suggestions by the value set in the 'Max number of suggestions' option."
+      ).addToggle((tc) => {
+        tc.setValue(
+          this.plugin.settings.excludeExistingInActiveFileInternalLinks
+        ).onChange(async (value) => {
+          this.plugin.settings.excludeExistingInActiveFileInternalLinks = value;
+          await this.plugin.saveSettings({ internalLink: true });
+        });
+      });
       new import_obsidian7.Setting(containerEl).setName(
         "Insert an alias that is transformed from the displayed internal link"
       ).addToggle((tc) => {
@@ -5449,6 +5576,18 @@ var VariousComplementsSettingTab = class extends import_obsidian7.PluginSettingT
         }).setValue(
           this.plugin.settings.frontMatterKeyForExclusionInternalLink
         );
+      });
+      new import_obsidian7.Setting(containerEl).setName("Tags for exclusion").setDesc(
+        "Tags to exclude suggestions for internal links. If specifying multiple tags, separate them with line breaks."
+      ).addTextArea((tc) => {
+        const el = tc.setValue(
+          this.plugin.settings.tagsForExclusionInternalLink.join("\n")
+        ).onChange(async (value) => {
+          this.plugin.settings.tagsForExclusionInternalLink = smartLineBreakSplit(value);
+          await this.plugin.saveSettings();
+        });
+        el.inputEl.className = "various-complements__settings__text-area-path-mini";
+        return el;
       });
     }
   }

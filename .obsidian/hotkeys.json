@@ -38,14 +38,7 @@
   ],
   "obsidian-excalidraw-plugin:toggle-lock": [],
   "editor:open-link-in-new-leaf": [],
-  "obsidian-excalidraw-plugin:save": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "S"
-    }
-  ],
+  "obsidian-excalidraw-plugin:save": [],
   "obsidian-languagetool-plugin:ltautocheck-text": [],
   "editor:toggle-spellcheck": [
     {
@@ -405,14 +398,6 @@
         "Shift"
       ],
       "key": "9"
-    }
-  ],
-  "templater-obsidian:🗒️Templates/INSERT_RHO_LOWERCASE.md": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "R"
     }
   ],
   "templater-obsidian:🗒️Templates/INSERT_ROUND_BEACKETS.md": [
@@ -892,7 +877,6 @@
       "key": "["
     }
   ],
-  "global-search:open": [],
   "templater-obsidian:🗒️Templates/INSERT_LIMIT_SYMBOL.md": [
     {
       "modifiers": [
@@ -1439,15 +1423,6 @@
       "key": "Tab"
     }
   ],
-  "templater-obsidian:🗒️Templates/INSERT_PSI_LOWERCASE.md": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "F"
-    }
-  ],
   "templater-obsidian:🗒️Templates/INSERT_PROD_SYMBOL.md": [
     {
       "modifiers": [
@@ -1680,6 +1655,42 @@
         "Shift"
       ],
       "key": "="
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_RHO_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "R"
+    }
+  ],
+  "obsidian-excalidraw-plugin:insert-LaTeX-symbol": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "K"
+    }
+  ],
+  "editor:insert-link": [],
+  "global-search:open": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "K"
+    }
+  ],
+  "templater-obsidian:🗒️Templates/INSERT_PSI_LOWERCASE.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "F"
     }
   ]
 }

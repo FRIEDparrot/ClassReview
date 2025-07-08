@@ -10,7 +10,7 @@ note **after computing the linear portion of the layer , we can calculate the ac
 
 See [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/6. 最小二乘, RBF, 岭回归和 Lasso 回归#(2) 径向基函数网络|Radial Basis Function]], if enough hidden nodes are given, any complex functions can be modeled. Note single-layer 
 
-The often-used activation function -> See [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch & sklearn的使用基础和基本代码#(2) 激活函数专题|Most used Activation Functions]] 
+The often-used activation function -> See [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/Sklearn的使用基础和基本代码#(2) 激活函数专题|Most used Activation Functions]] 
 
 ### (2) Forward Propagation, Back Propagation and Computational Graphs
 Forward Propagation <mark style="background: transparent; color: red">refers to the calculation and storage of intermediate variables</mark>. 
@@ -30,7 +30,7 @@ $$J = l(o, y) +  s$$
 for computational graph of forward propagation, it is like: 
 ![[Excalidraw/Chapter5 Multilayer Perception 2024-12-21 14.24.27|500]]
 ### (3) Back Propagation 
-See [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔦Pytorch DeepLearning Basics/1. 深度学习基础简介#(1) 正向传播和反向传播|Back Propagation]], back propagation use the chain rule of derivation, that is 
+See [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Implements/1. 深度学习基础简介#(1) 正向传播和反向传播|Back Propagation]], back propagation use the chain rule of derivation, that is 
 $$\frac{\partial Z}{\partial X} = \prod \left(\frac{\partial Z}{\partial Y}\frac{\partial Z}{\partial X}\right)$$
 For higher dimensional tensors, with $J = s + L, L = (y - o)^{2}$ then:
 $$\frac{\partial J}{\partial o} = \frac{\partial J}{\partial L} \frac{\partial L}{\partial o}  = 2 (y -  o)$$
@@ -72,7 +72,7 @@ we define
 $$M^{(L)} = \partial_{h(L-1)} h^{(L)}  \qquad  \text{then} \qquad  \partial_{W^{(l)}}o  = M^{(L)} M^{(L- 1)} \dots M^{(l + 1)}  h^{(l)}$$
 we notice that each $M$ may have wide variety of the eigenvalues, so the product would be  var large or very small. 
 
-1. <b><mark style="background: transparent; color: blue">for vanish gradients</mark></b>, the  **frequent culprit for vanishing gradient problem is the choice of activation function $\phi$ after the linear layer**, Historically, the [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch & sklearn的使用基础和基本代码#2. **Sigmoid 激活函数**|sigmoid function]] was popular because it resembles a <b><mark style="background: transparent; color: blue">thresholding function.</mark></b> 
+1. <b><mark style="background: transparent; color: blue">for vanish gradients</mark></b>, the  **frequent culprit for vanishing gradient problem is the choice of activation function $\phi$ after the linear layer**, Historically, the [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/Sklearn的使用基础和基本代码#2. **Sigmoid 激活函数**|sigmoid function]] was popular because it resembles a <b><mark style="background: transparent; color: blue">thresholding function.</mark></b> 
 
 the <mark style="background: transparent; color: red">sigmoid function's  gradient vanishes both when the input are  large and small. </mark> that is,  **when the  inputs o many of the  sigmoid functions are close to zero**, the gradients of the overall product may vanish.  Hence <mark style="background: transparent; color: red">the ReLU function, which are more stable</mark>(but less neurally plausible) are emerged. 
 

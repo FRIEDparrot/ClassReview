@@ -1,4 +1,5 @@
 {
+  "disableDoubleClickTextEditing": false,
   "folder": "Excalidraw",
   "cropFolder": "",
   "annotateFolder": "",
@@ -21,7 +22,9 @@
   "drawingFilnameEmbedPostfix": " ",
   "drawingFilenameDateTime": "YYYY-MM-DD HH.mm.ss",
   "useExcalidrawExtension": false,
+  "cropSuffix": "",
   "cropPrefix": "cropped_",
+  "annotateSuffix": "",
   "annotatePrefix": "annotated_",
   "annotatePreserveSize": false,
   "displaySVGInPreview": true,
@@ -101,7 +104,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.8.3",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.12.4",
     "libraryItems": [
       {
         "id": "FZFCrOX0jo5CRZtVgxCp4",
@@ -156,7 +159,8 @@
                 0,
                 0
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "line",
@@ -199,7 +203,8 @@
                 -6,
                 447.60003662109375
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "line",
@@ -242,7 +247,8 @@
                 150,
                 -2.39996337890625
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "ellipse",
@@ -426,7 +432,8 @@
                 59.56828150898721,
                 0
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "line",
@@ -473,7 +480,8 @@
                 -63.12197609027916,
                 13.842544840555774
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "ellipse",
@@ -552,7 +560,8 @@
                 59.56828150898721,
                 0
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "line",
@@ -599,7 +608,8 @@
                 -63.12197609027916,
                 13.842544840555774
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "ellipse",
@@ -678,7 +688,8 @@
                 59.56828150898721,
                 0
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "line",
@@ -725,7 +736,8 @@
                 -63.12197609027916,
                 13.842544840555774
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "ellipse",
@@ -804,7 +816,8 @@
                 59.56828150898721,
                 0
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "line",
@@ -851,7 +864,8 @@
                 -63.12197609027916,
                 13.842544840555774
               ]
-            ]
+            ],
+            "polygon": false
           }
         ],
         "created": 1703643670754
@@ -933,7 +947,8 @@
                 -119.403564453125,
                 -0.000030517578125
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "ellipse",
@@ -1008,7 +1023,8 @@
                 -119.403564453125,
                 -0.000030517578125
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "ellipse",
@@ -1083,7 +1099,8 @@
                 -119.403564453125,
                 -0.000030517578125
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "ellipse",
@@ -1158,7 +1175,8 @@
                 -119.403564453125,
                 -0.000030517578125
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "line",
@@ -1203,7 +1221,8 @@
                 6.5726318359375,
                 366.9741516113281
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "line",
@@ -1248,7 +1267,8 @@
                 79.967529296875,
                 0
               ]
-            ]
+            ],
+            "polygon": false
           }
         ],
         "created": 1703643582466
@@ -1354,7 +1374,8 @@
                 108,
                 2
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "ellipse",
@@ -1425,7 +1446,8 @@
                 108,
                 2
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "line",
@@ -1468,7 +1490,8 @@
                 108,
                 1
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "ellipse",
@@ -1539,7 +1562,8 @@
                 108,
                 1
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "ellipse",
@@ -3207,7 +3231,8 @@
                 108,
                 2
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "ellipse",
@@ -3278,7 +3303,8 @@
                 108,
                 2
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "line",
@@ -3321,7 +3347,8 @@
                 108,
                 1
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "ellipse",
@@ -3392,7 +3419,8 @@
                 108,
                 1
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "ellipse",
@@ -4628,7 +4656,8 @@
                 0,
                 0
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "line",
@@ -4671,7 +4700,8 @@
                 61.628663526285834,
                 -1.9668613590537234
               ]
-            ]
+            ],
+            "polygon": false
           },
           {
             "type": "text",
@@ -4725,7 +4755,7 @@
   "mdCSS": "",
   "scriptEngineSettings": {},
   "defaultTrayMode": true,
-  "previousRelease": "2.8.3",
+  "previousRelease": "2.12.4",
   "showReleaseNotes": true,
   "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",
@@ -5080,6 +5110,7 @@
   "markdownNodeOneClickEditing": false,
   "canvasImmersiveEmbed": true,
   "startupScriptPath": "",
+  "aiEnabled": true,
   "openAIAPIToken": "",
   "openAIDefaultTextModel": "gpt-3.5-turbo-1106",
   "openAIDefaultVisionModel": "gpt-4o",

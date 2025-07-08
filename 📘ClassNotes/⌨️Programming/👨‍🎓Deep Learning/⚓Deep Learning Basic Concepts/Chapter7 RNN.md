@@ -303,16 +303,18 @@ print(f"Outputs shape: {outputs.shape}")  # Should be (num_steps, batch_size, nu
 print(f"Final state shape: {state.shape}")  # Should be (batch_size, num_hiddens)
 ```
 
-### (3) Gradient Clipping  
+### (3) Gradient Clipping 
 Dealing with vanishing and exploding gradients is a **fundamental problem when designing RNNs and has inspired some of the biggest advances in modern neural network architectures**. 
 
-Even modern RNNs still often suffer from exploding gradients.  One inelegant but ubiquitous solution is to simply clip the gradients forcing the resulting “clipped” gradients to take smaller values. we assume that  the  objective function $f$ is sufficiently smooth (objective is Lipschitz continuous). say a vector x, but **pushing it in the direction of the negative gradient $\boldsymbol{g}$**, 
+Even modern RNNs still often suffer from exploding gradients.  One inelegant but ubiquitous solution is to simply clip the gradients forcing the resulting “clipped” gradients to take smaller values. we assume that  the  objective function $f$ is sufficiently smooth (objective is Lipschitz continuous). say a vector x, but **pushing it in the direction of the negative gradient $\boldsymbol{g}$**,  
 $$f (x) -f (y) \leq L ||x - y||$$
 we can update the parameter vector  by subtracting $\eta g$  on $x$,  where $\eta$ is learning rate, and each update  takes the form  $x \leftarrow   x - \eta g$ ,  by substitute $y$ upper, we obtain : 
 $$f(x) - f (x - \eta  \boldsymbol{g }) \leq  L \eta ||g||$$
 if we adopt a gradieent clipping heuristic <mark style="background: transparent; color: red">projecting the gradients g onto a ball of some given radius θ as follows</mark> : 
 $$g \leftarrow  \min  \left(1, \frac{\theta}{||g||}\right)\boldsymbol{g}$$
 this norm method would **limit the norm of $\vec{g}$  to $\theta$.** 
+
+
 ```python
 import torch
 import torch.nn as nn
@@ -438,11 +440,11 @@ output are like this shape :
 > $\sigma$ is  sigmoid function but not  ReLU `->` **since it's $a$ gate signal function in range (0, 1)**
 
 #### 2. Input Node 
-We firstly introduce input node (cell state) $\tilde{C}_{t}\in R^{n \times  h}$, it use  a [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch & sklearn的使用基础和基本代码#3. tanh 激活函数|tanh function]] with value range for $(-1,1)$ 
+We firstly introduce input node (cell state) $\tilde{C}_{t}\in R^{n \times  h}$, it use  a [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/Sklearn的使用基础和基本代码#3. tanh 激活函数|tanh function]] with value range for $(-1,1)$ 
 $$C_{t} = \tanh(X_{t}W_{xc} + H_{t-1}W_{hc} + b_{c}) \tag{7.4.2}$$
 ![[attachments/Pasted image 20250228150003.png|400]]
 
-**Internal State**
+**Internal State**  
 1. The input gate $I_t$ governs how much we take new  data into account via $\tilde{C}_t$ 
 2. The forget gate  $F_t$ governs how much of internal state $C_{t-1} \in R^{n \times  h}$ retain.
 we can use Hadamard product to give the relation : 
@@ -452,7 +454,7 @@ for $F_t < 1$, the network forget last status, and for $I_{t} > 1$, network rece
 then we calculate the next hidden layer as : 
 $$\boxed{H_{t}  =  O_{t} \odot \tanh (C_{t})} \tag{7.4.4}$$
 so the final structure becomes : 
-![[attachments/Pasted image 20250302173744.png|600]]
+![[attachments/Pasted image 20250302173744.png|500]]
 
 we give a LSTM  cell building Process as follows **(firstly initialize each W, b randomly)** note there are 4 parameters with 2 inputs, so we initialize as follows : 
 ```python
@@ -536,6 +538,7 @@ R_t &= \sigma(X_tW_{xr}+H_{t-1}W_{hr}+b_r), \\
 Z_t &= \sigma(X_tW_{xz}+H_{t-1}W_{hz}+b_z),
 \end{align*}$$
 where $\sigma$ is also sigmoid Function that  limit output to $(0,1)$ 
+![[attachments/Pasted image 20250420200424.png|350]]
 
 #### 2. Candidate Hidden State 
 For the  $R_t$ with the regular updating mechanics, leading to tHe
@@ -643,9 +646,14 @@ $$\overrightarrow{H_t} = \phi(X_tW_{xh}^{(f)} + \overrightarrow{H_{t-1}}W_{hh}^{
 $$\overleftarrow{H_t} = \phi(X_tW_{xh}^{(b)} + \overleftarrow{H_{t+1}}W_{hh}^{(b)} + b_h^{(b)})$$
 and also the output layer calculation : 
 $$O_{t} =  \overrightarrow{H_t} W_{hq}  +  \overleftarrow{H_{t}} W_{hq}' + b_{q}$$
-where it shares the same  bias $b_q$ 
+where it shares the same  bias $b_q$, 
 
 note that we may use a mask or placeholder for  the unknown element. 
+> [!warning] Ouput Dimension 
+> for Bi-direction neural network in pytorch,  the output is  `(batch_size , seq_len, hidden_size * direcctional)`, 
+> which give the following calculation method : 
+> $$O_{t} =  H_{t}  W_{hq}  + b_{q} \quad  \text{where} H_{t} = [\overrightarrow{H}_{t}, \overleftarrow{H}_{t}] \text{ and } b_{q} \text{ is of size } 2 \times  \text{hidden\_num}$$
+> Note our Implementation is simply **the add of two dimensions** of two directions. but rnn would retain bi-direction message for better Scalability
 
 > [!NOTE]
 > The weights for the masked element are not removed or randomized—they are part of the model's parameters and are updated during training.
@@ -864,7 +872,6 @@ Then, we can use a function $g$ to express the transformation of the decoder's h
 $$s_{t} = g(y_{t-1} , c , s_{t-1})$$
 
 in the decoder process, it use target output sequence $X$ and **encoder state** as input. note we directly <mark style="background: transparent; color: red">use the hidden state at the final time step of the encoder to initialize the hidden state of the decoder</mark>, so the RNN encoder and the RNN decoder have the same number of layers and hidden units (but time step may have discrepancy).  
-
 ![[attachments/Pasted image 20250401105929.png]]
 where X shape: (batch_size, num_steps)
 
@@ -1143,7 +1150,8 @@ encoding_en.tokens()  # print tokens
 > The trained tokenizer by `WordPieceTrainer` can be low-precision. Which  highly affect the later performance of the model, so for a better tokenized 
 
 ### (3) DataLoader Implementation   
-see [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch Basics/使用数据集一次性加载对应几组数据|load different data by the dataset]]. 
+see [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔥Pytorch Basics/使用数据集一次性加载对应几组数据|load different data by the dataset]]. 
+
 ### (4) Model Training  
 We use the pretrained  tokenizer instead of the  
 ```python
@@ -1152,17 +1160,43 @@ chinese_tokenizer = BertTokenizerFast.from_pretrained("bert-base-chinese")
 ```
 
 Finally we give  the following full implementation : 
-```python title:full_Implementation_of 
+
+```python fold title:torch-implementation-for-simple-mt-task
+import torch  
+from torch import nn  
 from torch.utils.data import DataLoader, Dataset  
 import pandas as pd  
-from tokenizers import Tokenizer, models, trainers  
-from transformers import PreTrainedTokenizerFast, BertTokenizerFast  
-import evaluate 
-
+from transformers import BertTokenizerFast  
+import os  
+import pickle  
+import evaluate  
+from pathlib import Path  
   
-def load_dataset_from_csv(filename):  
-    dataframe_tmp = pd.read_csv(filename, encoding='utf-8')  
-    return dataframe_tmp  
+
+# region dataset preparation  
+def save_dataset_to_csv(dataset, filename):  
+    """  
+    Save the dataset to a csv file.    :param dataset:    :param filename:    :return:  
+    """    text_lines = dataset['text']  
+    total_samples = len(text_lines) // 5  
+    print("Total samples:", total_samples)  
+    english = [line.split(": ")[1] for line in text_lines if line.startswith("english: ")]  
+    hsk = [line.split(": ")[1] for line in text_lines if line.startswith("hsk: ")]  
+    mandarin = [line.split(": ")[1] for line in text_lines if line.startswith("mandarin: ")]  
+    pinyin = [line.split(": ")[1] for line in text_lines if line.startswith("pinyin: ")]  
+  
+    dataset_fields = ["english", "hsk", "mandarin", "pinyin"]  
+    dataframe_tmp = pd.DataFrame(list(zip(english, hsk, mandarin, pinyin)), columns=dataset_fields)  
+    dataframe_tmp.to_csv(filename, encoding='utf-8', index=False)  
+  
+  
+"""  
+this part of code is for loading the dataset and saving it to csv file   
+from datasets import load_dataset   
+pinyin_hsk_dataset = load_dataset("swaption2009/20k-en-zh-translation-pinyin-hsk", split="train")  
+save_dataset_to_csv(pinyin_hsk_dataset, "pinyin_hsk_dataset.csv") 
+"""  
+  
   
 class BasicSeq2SeqEncoder(nn.Module):  
     """RNN Encoder """  
@@ -1196,7 +1230,8 @@ class BasicSeq2SeqEncoder(nn.Module):
   
 class BasicSeq2SeqDecoder(nn.Module):  
     """  
-    RNN Decoder    """  
+    RNN Decoder   
+     """  
     def __init__(self, vocabulary_size,  
                  embed_size=64,  
                  num_hidden=256,  
@@ -1215,12 +1250,13 @@ class BasicSeq2SeqDecoder(nn.Module):
   
     def forward(self, x, enc_state):  
         """  
-        x :  queries, which is translation result vector.        """        embs = self.embedding(x).transpose(0, 1)  
+        x :  queries, which is translation result vector.        
+        """        
+        embs = self.embedding(x).transpose(0, 1)  
         # we note that embeddings.shape[1] is the seq-length  
-        context = enc_state[-1].expand(embs.shape[0], -1, -1)  # use last hidden layer  
-  
-        # since we concatenate the context and embedding, we need to make sure the dimensions are correct        rnn_input = torch.cat([embs, context], dim=-1).transpose(0, 1)  
-  
+        context = enc_state[-1].expand(embs.shape[0], -1, -1)  # use last hidden layer 
+        # since we concatenate the context and embedding, we need to make sure the dimensions are correct        
+        rnn_input = torch.cat([embs, context], dim=-1).transpose(0, 1)
         # the hidden-num of decoder must match the hidden-num of encoder.  
         output, state = self.rnn(rnn_input, enc_state)  # initialize  
         """   
@@ -1235,18 +1271,29 @@ class BasicSeq2SeqDecoder(nn.Module):
 class BasicSeq2SeqModule(nn.Module):  
     def __init__(self, encoder, decoder, lr=0.001):  
         super(BasicSeq2SeqModule, self).__init__()  
-        self.encoder = encoder  
-        self.decoder = decoder  
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")  
+        self.encoder = encoder.to(self.device)  
+        self.decoder = decoder.to(self.device)  
         self.lr = lr  
   
     def forward(self, enc_x, dec_x, *args):  
-        _, enc_state = self.encoder(enc_x, *args)  
-        return self.decoder(dec_x, enc_state)  
+        _, enc_state = self.encoder(enc_x.to(self.device), *args)  
+        return self.decoder(dec_x.to(self.device), enc_state)  
   
-    @staticmethod  
-    def criterion(y_pred, y_true):  
+    def criterion(self, y_pred, y_true, sep_idx):  
+        assert sep_idx  # make sure the [SEP] token is not None  
         vocab_size = y_pred.shape[-1]  
-        return f.cross_entropy(  
+        # mask every line after the [SEP] token  
+        y_pred = y_pred.to(self.device)  
+        y_true = y_true.to(self.device)  
+  
+        sep_mask_y_t = (y_true == sep_idx).cumsum(dim=-1) <= 1  
+        sep_mask_y_p = (y_pred.argmax(axis=-1) == sep_idx).cumsum(dim=-1) <= 1  
+  
+        y_true = y_true.masked_fill(~sep_mask_y_t, 0)  
+        y_pred = y_pred.masked_fill(~sep_mask_y_p.unsqueeze(-1), 0)  # mask the [SEP] token  
+  
+        return torch.nn.functional.cross_entropy(  
             y_pred.view(-1, vocab_size),  
             y_true.view(-1),  
             ignore_index=0,  
@@ -1267,127 +1314,150 @@ class BilingualDataset(Dataset):
     def __getitem__(self, idx):  
         en_sample = self.data.iloc[idx]["en"]  
         zh_sample = self.data.iloc[idx]["zh"]  
-        if not isinstance(en_sample, torch.Tensor):  
-            en_sample = torch.tensor(en_sample)  
-        if not isinstance(zh_sample, torch.Tensor):  
-            zh_sample = torch.tensor(zh_sample)  
+  
+        en_sample = en_sample.clone().detach()  
+        zh_sample = zh_sample.clone().detach()  
         return {  
             "en": en_sample,  
-            "zh": zh_sample,  
+            "zh": zh_sample  
         }  
   
   
-def ids_to_text(ids, tokenizer):  
+def ids_to_text(ids, tokenizer, sep_token_id=None):  
     texts = []  
-    for seq in ids:  
-        # remove padding and special tokens  
-        tokens = [tokenizer.decode([idx]) for idx in seq if  
-                  idx not in [0, 1, 2, 3]]  # [UNK] [CLS] [SEP] [PAD] [MASK]  
-        texts.append("".join(tokens))  
+    for seq in ids:  # id sequence  
+        seq_list = seq.tolist()  
+        if sep_token_id is not None:  
+            try:  
+                sep_pos = seq_list.index(sep_token_id)  
+                seq_list = seq_list[:sep_pos + 1]  # cut the sequence after the [SEP] token  
+            except ValueError:  
+                pass  
+        text = tokenizer.decode(seq_list,  
+                                skip_special_tokens=True,  
+                                clean_up_tokenization_spaces=True  
+                                )  
+        # [UNK] [CLS] [SEP] [PAD] [MASK]  
+        texts.append(text)  
     return texts  
   
   
-if __name__ == "__main__":  
+def load_datasets():  
     data = pd.read_csv("./pinyin_hsk_dataset.csv")  
-    en_sentences = data["english"].tolist()  # list of english sentences  
-    zh_sentences = data["mandarin"].tolist()  
+    cache_dir = "./data"  
+    os.makedirs(cache_dir, exist_ok=True)  
   
-    english_tokenizer = BertTokenizerFast.from_pretrained("bert-base-uncased")  
-    chinese_tokenizer = BertTokenizerFast.from_pretrained("bert-base-chinese")  
+    encoding_cache_path = os.path.join(cache_dir, "encodings.pkl")  
   
-    encoding_en = english_tokenizer(en_sentences,  
-                                    padding=True,  
-                                    truncation=True,  
-                                    max_length=64,  
-                                    return_tensors="pt")  
+    if os.path.exists(encoding_cache_path):  
+        # Load cached encodings  
+        with open(encoding_cache_path, 'rb') as f:  
+            cached_data = pickle.load(f)  
+            encoding_en = cached_data['encoding_en']  
+            encoding_zh = cached_data['encoding_zh']  
+            en_tokenizer = cached_data['en_tokenizer']  
+            zh_tokenizer = cached_data['zh_tokenizer']  
+    else:  
+        # Create new encodings  
+        en_tokenizer = BertTokenizerFast.from_pretrained("google-bert/bert-base-uncased")  
+        zh_tokenizer = BertTokenizerFast.from_pretrained("google-bert/bert-base-chinese")  
   
-    encoding_zh = chinese_tokenizer(zh_sentences,  
-                                    padding=True,  
-                                    truncation=True,  
-                                    max_length=64,  
-                                    return_tensors="pt")
-	word_indices_en = encoding_en["input_ids"].clone().detach()  
-	word_indices_zh = encoding_zh["input_ids"].clone().detach()  
-	  
-	en_vocab_size = torch.max(word_indices_en) + 1  # since it is 0-indexed, add 1 to get the actual vocab size  
-	zh_vocab_size = torch.max(word_indices_zh) + 1  
-	print("Encoded english vocab size:", en_vocab_size)  
-	print("Encoded chinese vocab size:", zh_vocab_size)  
-	  
-	# num_hidden must match (since we use the concatenate input and also use the last hidden layer of encoder as )  
-	model_encoder = BasicSeq2SeqEncoder(en_vocab_size, embed_size=256, num_hidden=512, num_layers=1, dropout=0.2)  
-	model_decoder = BasicSeq2SeqDecoder(zh_vocab_size, embed_size=256, num_hidden=512, num_layers=1, dropout=0.2)  
-	model = BasicSeq2SeqModule(model_encoder, model_decoder, lr=0.001)  # set small learningg rate  
-	  
-	# we use this snippet to test the encoder and decoder working correctly  
-	"""  
-	_, encode_state = model_encoder(word_indices_en)  
-	print(encode_state.shape)  # (num_layers, batch_size, num_hidden) y, decode_state = model_decoder(word_indices_zh, enc_state=encode_state) """  
-	  
-	# since train the whole model in one batch is too large, we use DataLoader to load the data  
-	df = pd.DataFrame(list(zip(word_indices_en, word_indices_zh)), columns=["en", "zh"])  
-	pt_dataset = BilingualDataset(df)  
-	  
-	dataloader = DataLoader(pt_dataset, batch_size=25, shuffle=True)  
-	optimizer = model.optimizer()  
-	bleu_score = evaluate.load("bleu")  # load the bleu score function  
-	scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5, factor=0.5)  
-	  
-	max_epochs = 10  # set the max epochs  
-	for epoch in range(max_epochs):  
-	    epoch_loss_sum = 0  
-	  
-	    for i, batch in enumerate(dataloader):  
-	        batch_en = batch["en"]  
-	        batch_zh = batch["zh"]  
-	  
-	        optimizer.zero_grad()  # clear the gradients  
-	  
-	        y_pred, _ = model(batch_en, batch_zh)  
-	        loss = model.criterion(y_pred, batch_zh)  
-	        loss.backward()  # calculate the gradients  
-	  
-	        # clip the gradients to prevent the exploding gradient problem        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=5.0)  
-	  
-	        optimizer.step()  # update the parameters  
-	  
-	        epoch_loss_sum += loss.item()  
-	        print(f"Batch {i} / {len(dataloader)}, Loss: {loss.item()}")  
-	  
-	        # print  
-	        if i % 10 == 0:  
-	            print("\n=== Epoch {} Batch {} Evaluation ===".format(epoch, i))  
-	            en_texts = ids_to_text(batch_en, english_tokenizer)  
-	            zh_texts = ids_to_text(batch_zh, chinese_tokenizer)  
-	            zh_preds = ids_to_text(y_pred.argmax(dim=-1), chinese_tokenizer)  
-	            print("English sentences: ", en_texts)  
-	            print("Chinese sentences: ", zh_texts)  
-	            print("Chinese predictions: ", zh_preds)  
-	  
-	            bleu_score_value = bleu_score.compute(  
-	                predictions=zh_preds,  
-	                references=zh_texts  
-	            )  
-	            print("BLEU score: ", bleu_score_value)  
-	  
-	    with torch.no_grad():  
-	        avg_epoch_loss = epoch_loss_sum / len(dataloader)  
-	        scheduler.step(avg_epoch_loss)  # update the learning rate scheduler  
-	  
-	    print(f"========= Epoch: {epoch}, Average Loss: {avg_epoch_loss} ==========")
+        en_sentences = data["english"].tolist()  
+        zh_sentences = data["mandarin"].tolist()  
+  
+        encoding_en = en_tokenizer(en_sentences,  
+                                   padding=True,  
+                                   truncation=True,  
+                                   max_length=65,  # we paddle the  size to 65 for a shift in word  
+                                   return_tensors="pt")  
+  
+        encoding_zh = zh_tokenizer(zh_sentences,  
+                                   padding=True,  
+                                   truncation=True,  
+                                   max_length=65,  # we paddle the  size to 65 for a shift in word  
+                                   return_tensors="pt")  
+  
+        # Cache the encodings and vocab sizes  
+        cached_data = {  
+            'encoding_en': encoding_en,  
+            'encoding_zh': encoding_zh,  
+            'en_tokenizer': en_tokenizer,  
+            'zh_tokenizer': zh_tokenizer,  
+        }  
+        with open(encoding_cache_path, 'wb') as fp:  # type: ignore  
+            pickle.dump(cached_data, file=fp)  
+  
+    # get all the word indices encoded by the tokenizer  
+    word_indices_en = encoding_en["input_ids"].clone().detach()  
+    word_indices_zh = encoding_zh["input_ids"].clone().detach()  
+  
+    df = pd.DataFrame(list(zip(word_indices_en,  
+                               word_indices_zh)),  
+                      columns=["en", "zh"])  
+    tokens_dataset = BilingualDataset(df)  
+  
+    return tokens_dataset, en_tokenizer, zh_tokenizer  
+  
+  
+if __name__ == "__main__":  
+    pt_dataset, english_tokenizer, chinese_tokenizer = load_datasets()  
+    en_vocab_size, zh_vocab_size = english_tokenizer.vocab_size, chinese_tokenizer.vocab_size  
+  
+    # num_hidden must match since we use the concatenate input  
+    model_encoder = BasicSeq2SeqEncoder(en_vocab_size, embed_size=256, num_hidden=512, num_layers=2, dropout=0.2)  
+    model_decoder = BasicSeq2SeqDecoder(zh_vocab_size, embed_size=256, num_hidden=512, num_layers=2, dropout=0.2)  
+    model = BasicSeq2SeqModule(model_encoder, model_decoder, lr=0.001)  # set small learning rate  
+  
+    # we use this snippet to test the encoder and decoder working correctly 
+    _, encode_state = model_encoder(word_indices_en)    print(encode_state.shape)  # (num_layers, batch_size, num_hidden)    y, decode_state = model_decoder(word_indices_zh, enc_state=encode_state)
+    dataloader = DataLoader(pt_dataset, batch_size=25, shuffle=True)  
+  
+    optimizer = model.optimizer()  
+    bleu_score = evaluate.load("bleu")  # load the bleu score function  
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5, factor=0.5)  
+  
+    max_epochs = 25  # set the max epochs  
+    for epoch in range(max_epochs):  
+        epoch_loss_sum = 0  
+        for i, batch in enumerate(dataloader):  
+            batch_en = batch["en"]  
+            batch_zh = batch["zh"]  
+  
+            optimizer.zero_grad()  # clear the gradients  
+            # forward method for RNN            predict, _ = model(batch_en[:, :-1], batch_zh[:, :-1])  
+  
+            # shift the prediction by 1 bit in sequence to match the target  
+            loss = model.criterion(predict, batch_zh[:, 1:], sep_idx=chinese_tokenizer.sep_token_id)  
+            loss.backward()  # calculate the gradients  
+  
+            # clip the gradients to prevent the exploding gradient problem            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=5.0)  
+  
+            optimizer.step()  # update the parameters  
+  
+            epoch_loss_sum += loss.item()  
+  
+            # print batch train results every 10 batches  
+            if i % 100 == 0:  
+                print(f"Batch {i} / {len(dataloader)}, Loss: {loss.item()}")  
+  
+        # statistics per epoch  
+        with torch.no_grad():  
+            avg_epoch_loss = epoch_loss_sum / len(dataloader)  
+            scheduler.step(avg_epoch_loss)  # update the learning rate scheduler  
+  
+        print(f"========= Epoch: {epoch}, Average Loss: {avg_epoch_loss} ==========")  
+        en_texts = ids_to_text(batch_en, english_tokenizer, sep_token_id=english_tokenizer.sep_token_id)  
+        zh_texts = ids_to_text(batch_zh, chinese_tokenizer, sep_token_id=chinese_tokenizer.sep_token_id)  
+        zh_pred = ids_to_text(predict.argmax(axis=-1), chinese_tokenizer,  
+                              sep_token_id=chinese_tokenizer.sep_token_id)  
+        print("English sentences: ", en_texts)  
+        print("Chinese sentences: ", zh_texts)  
+        print("Chinese predictions: ", zh_pred)
 ```
 
 in training process, it would output the result training process in the loop :  
-![[attachments/Pasted image 20250410101510.png|650]] 
-
-when the loss downs to about 1.28-1.3 in train process, the machine translation model can predict in a really good performance as follows : 
-```python
-English sentences:  ['[CLS]hey,randy,haveyouhadyourlunchyet?[SEP]']  
-Chinese sentences:  ['[CLS]嘿，蓝迪，你吃午饭了吗？[SEP]' ]
-Chinese predictions:  ['[CLS]嘿，蓝迪，你吃午饭了吗？[SEP]2828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828',  
-```
-
-we note that we may cut the 
+![[attachments/Pasted image 20250420114159.png|550]]
+we note that we may cut the following token : 
 ```python
 **`[CLS]`** (classification Token)  
 **`[SEP]` (Separator Token)**,   Marks the **end of a segment**
@@ -1395,7 +1465,6 @@ we note that we may cut the
 **`[UNK]` (Unknown Token)** 
 **`[MASK]` (Mask Token)**
 ``` 
-
 we note that actually <mark style="background: transparent; color: red">we can substitute the final part sentence by  the padding and cut it from SEP for making </mark>  
 
 Also, we reprensent the decoded mask bit by `attention_mask`, so here we use 
@@ -1403,8 +1472,7 @@ Also, we reprensent the decoded mask bit by `attention_mask`, so here we use
 word_masks_en = encoding_en["attention_mask"].clone().detach()  
 word_masks_zh = encoding_zh["attention_mask"].clone().detach() 
 ```
-
-
+![[attachments/Pasted image 20250410103155.png|250]]
 For a sentence pair (e.g., question-answering): 
 ```python
 input_ids = [ [CLS], What, is, BERT?, [SEP], It, is, a, model., [SEP], [PAD], ... ]
@@ -1412,3 +1480,498 @@ token_type_ids = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, ... ]  # 0=Segment A, 1=Segme
 attention_mask = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, ... ]  # 1=real token, 0=padding  
 ```
 
+### (5) Beam-Search Integration  
+we note that in the above case,  we use  the following supervised learning procedure to train the model : 
+![[attachments/Pasted image 20250401105929.png|450]]
+
+> [!WARNING] Token Shift
+> in the implementation structure above, My code has an error, that is, the code should use the current time step input to predict the next input <mark style="background: transparent; color: red">(the result after the sequence part need to be shifted right by 1 token)</mark>, for example , when we use  `<bos> lls  regardent .....` to train, the criterion  should compare the  output between it and ` lls  regardent .....` (in the code above it just compare `<bos> lls  regardent .....`, **which is just exactly the original sequence, so the model don't have the ability to predict forward**).  
+
+however, when we use the model for translation, we hope to use the  following method to predict forward : 
+![[attachments/Pasted image 20250401114238.png|450]]
+In the case above, the decoder just use the whole vocabulary matrix to predict the result.  
+
+Since for the input of size (1, seq_len, ) the output dimension of the model, so in the actual case, <mark style="background: transparent; color: red">we need to call the model again and  again to make the real translation prediction</mark>.  
+![[Excalidraw/Chapter7 RNN 2025-04-11 09.30.20|500]]
+
+here we give a beam-search implementation of GPT : 
+```python 
+def beam_search(model, enc_input, beam_width=5, max_len=50):
+    # 编码源句
+    _, enc_state = model.encoder(enc_input.unsqueeze(0))  # enc_state: [num_layers, 1, hidden_size] 
+    # 初始化Beam：每个元素是(sequence, score, hidden_state)
+    beams = [([chinese_tokenizer.cls_token_id], 0.0, enc_state)]
+    
+    for step in range(max_len):
+        all_candidates = []
+        for seq, score, hidden in beams:
+            if seq[-1] == chinese_tokenizer.sep_token_id:  # 已结束的序列不再扩展
+                all_candidates.append((seq, score, hidden))
+                continue 
+            
+            # 输入当前序列的最后一步（单个词）-> 其 output 
+            dec_input = torch.tensor([seq[-1]], device=enc_input.device).unsqueeze(0)
+            
+            # 预测下一步 (注意：hidden是上一个时间步的状态) 
+            logits, new_hidden = model.decoder(dec_input, hidden)
+            log_probs = torch.log_softmax(logits[:, -1, :], dim=-1)  # 取最后一个时间步的概率
+            
+            # 取top-k候选词
+            topk_scores, topk_tokens = log_probs.topk(beam_width)  
+            
+            # 生成新候选序列
+            for i in range(beam_width):
+                new_seq = seq + [topk_tokens[0, i].item()]
+                new_score = score + topk_scores[0, i].item()
+                all_candidates.append((new_seq, new_score, new_hidden)) 
+                
+        # 筛选全局top-k候选
+        all_candidates.sort(key=lambda x: -x[1])
+        beams = all_candidates[:beam_width] 
+        
+        # 检查是否所有候选都已结束
+        if all(seq[-1] == chinese_tokenizer.sep_token_id for seq, _, _ in beams):
+            break 
+        
+    # 返回最优序列
+    best_seq = beams[0][0]
+    return best_seq
+```
+
+## 7. Holistic-Improvement of the model 
+### (1) Encoder Optimization   
+For encoder,  we firstly add a bi-directional choice,  in the previous  implementation, we <b><mark style="background: transparent; color: orange">add the bidirectional option and  dropout layer</mark></b> (for preventing overfitting, Higher dropout rates reduce model capacity but may improve generalization on unseen data) in hidden.  Also, we can <b><mark style="background: transparent; color: orange">add a pack_padded_sequence optimization</mark></b>
+
+Reference : [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Implements/Dropout Tuning Techniques|Dropout Tuning Techniques]] 
+```python fold title:
+class BasicSeq2SeqEncoder(nn.Module):  
+    """RNN Encoder """
+    def __init__(self, vocabulary_size,  
+                 embed_size=64,  
+                 num_hidden=256,  
+                 num_layers=1,  
+                 dropout=0.1):  
+        super(BasicSeq2SeqEncoder, self).__init__()  
+        self.embedding = nn.Embedding(vocabulary_size, embed_size)  
+        self.rnn = nn.GRU(input_size=embed_size,  
+                          hidden_size=num_hidden,  
+                          num_layers=num_layers,  
+                          dropout=dropout,  
+                          batch_first=True)  
+        self.__init_weights()  
+	  
+    def __init_weights(self):  
+        for name, param in self.rnn.named_parameters():  
+            if 'weight' in name:  
+                nn.init.xavier_uniform_(param)  
+            elif 'bias' in name:  
+                nn.init.zeros_(param)  
+  
+    def forward(self, x):  
+        x = self.embedding(x)  # make embedding  
+        output, state = self.rnn(x)  # return output and hidden state  
+        return output, state  
+```
+
+The encoder would output a **Embedding matrix** with `vocab_size x embed_size`,  also for a bi-directional  network. also,  we add a linear layer after the  `GRU` forward function.  
+
+since GRU  output is (from [nn.GRU]))  
+1.  output  
+$$\text{batch\_{size}}\times  \text{seq\_{len}}\times (\text{directions} \times  \text{hidden\_size}) $$
+2. hidden state  ($h_{n}$, which is the final hidden state for input sequence)
+$$\text{directions}  \times \text{num\_{layers} , batchsize,  hidden\_size}$$
+
+where  the `h_n` is  (num_layers * num_directions, batch, hidden_size): 
+![[attachments/Pasted image 20250420151715.png|600]] 
+
+> [!warning] Dimension Declaration Documentation 
+> find the dimension implementation in  [Quantized Documentation](https://pytorch.org/docs/stable/quantization-support.html#module-torch.ao.nn.quantized.modules) rather than in normal nn.GRU documentation. see [Quantized GRU](https://pytorch.org/docs/main/generated/torch.ao.nn.quantized.dynamic.GRU.html)
+
+hence  we must reshape it to `(num_layers, num_directions, batch, hidden_size)` 
+
+> [!NOTE] `rnn.pack_padding_sequence`usage 
+> `rnn.pack_padding_sequence` is used for fill the vary-length sequence zero value  when calculation, which <b><mark style="background: transparent; color: orange">avoid the calculation at padding bit in RNN network</mark></b>. So consider use it when input sequence.  we give the following implementation for improve efficiency : 
+
+just pack the input into a sequence and unpack it : 
+```python fold title:pack_padding_sequence-implementation
+packed_embedded = nn.utils.rnn.pack_padded_sequence(  
+    embedded, src_length.cpu(), batch_first=True, enforce_sorted=False  
+)  
+packed_outputs, hidden = self.rnn(packed_embedded)  
+  
+# nn.utils.rnn.pack_padded_sequence()  
+# Unpack the  
+outputs, _ = nn.utils.rnn.pad_packed_sequence(  
+    packed_outputs, batch_first=True  
+)
+```
+
+So we give the full implementation of improved encoder as follows : 
+```python fold title:improved-encoder implementation
+class ImprovedEncoder(nn.Module):  
+    """Improved RNN Encoder with bidirectional GRU"""  
+  
+    def __init__(self, vocabulary_size,  
+                 embed_size=256,  
+                 hidden_size=512,  
+                 num_layers=2,  
+                 dropout=0.1,  
+                 bidirectional=True):
+        super(ImprovedEncoder, self).__init__()  
+        self.vocabulary_size = vocabulary_size  
+        self.hidden_size = hidden_size  
+        self.num_layers = num_layers  
+        self.bidirectional = bidirectional  
+        self.directions = 2 if bidirectional else 1  
+  
+        # define layer in forward  
+        self.embedding = nn.Embedding(vocabulary_size, embed_size)  
+        self.dropout = nn.Dropout(dropout)  
+  
+        self.rnn = nn.GRU(input_size=embed_size,  
+                          hidden_size=hidden_size,  
+                          num_layers=num_layers,  
+                          dropout=dropout if num_layers > 1 else 0,  
+                          bidirectional=bidirectional,  
+                          batch_first=True)  
+  
+        # If bidirectional, we need to reduce dimensionality for the decoder  
+        if bidirectional:  
+            self.linear = nn.Linear(hidden_size * self.directions, hidden_size)  
+  
+        self.__init_weights()  
+  
+    def __init_weights(self):  
+        for name, param in self.rnn.named_parameters():  
+            if 'weight' in name:  
+                nn.init.orthogonal_(param)  #  
+            elif 'bias' in name:  
+                nn.init.zeros_(param)  
+  
+    def forward(self, src, src_length=None):  
+        """  
+        src: [batch_size, src_len]        
+        src_length: [batch_size], valid length of each sequence. used for better efficiency        
+        """        
+        embedded = self.dropout(self.embedding(src))  # [batch_size, src_len, embed_size]   
+        # Pack padded batch of sequences for RNN module        if src_length is not None:  
+            # pack the embedded matrix to a sequence before input to rnn layer. 
+            packed_embedded = nn.utils.rnn.pack_padded_sequence(  
+                embedded, src_length.cpu(), batch_first=True, enforce_sorted=False  
+            )  
+            packed_outputs, hidden = self.rnn(packed_embedded)  
+  
+            # nn.utils.rnn.pack_padded_sequence()  
+            # Unpack the            outputs, _ = nn.utils.rnn.pad_packed_sequence(  
+                packed_outputs, batch_first=True  
+            )  
+        else:  
+            # hidden = h_n : [ num_layers * num_directions, batch_size, hidden_size]  
+            outputs, hidden = self.rnn(embedded)  
+  
+        # add a final linear output layer after hidden state from GRU  
+        hidden = hidden.view(self.num_layers, self.directions, -1, self.hidden_size)  # third dim is batch_size  
+        if self.bidirectional:  
+            # note : num_layers is at front while num_directions is at back  
+            forward_hidden = hidden[:, 0]  # [num_layers, batch_size, hidden_size]  
+            backward_hidden = hidden[:, 1]  # [num_layers, batch_size, hidden_size]  
+            # concat along last dim, result dim is [num_layers, batch_size, hidden_size * num_directions]            hidden = torch.cat((forward_hidden, backward_hidden), dim=-1)  
+        hidden = torch.tanh(self.linear(hidden))  
+  
+        return outputs, hidden
+```
+
+
+For <mark style="background: transparent; color: red">decoder, the input size should be </mark>
+
+### (2) PAD Token Mask Creation 
+For the BERT encoder, it would encode what used for padding into `[PAD]` token, which  can be accessed  by  `tokenizer.pad_token_id`. 
+
+for example, we  predict the sequence : 
+![[attachments/Pasted image 20250420215333.png]]
+
+```python fold title:
+chinese_tokenizer.pad_token_id
+# 0
+```
+
+For counting the length of true 
+```python fold title:
+def create_mask(self, sequence, pad_token_idx):  
+    """  
+    Create a mask for src sequence to ignore padding tokens    
+    """    
+    mask = (sequence != pad_token_idx)  
+    return mask
+
+# use following for  create word mask 
+src_mask = self.create_mask(src, self.src_pad_idx)  
+src_lengths = torch.sum(src_mask, dim=1)   # count words number for each  
+
+#  with  src_length, we can  call the encoder  as follows : 
+encoder_outputs, hidden = self.encoder(src, src_lengths) 
+```
+
+### (3) Decoder Optimization 
+In this Chapter, we <mark style="background: transparent; color: red">still use the Encoder-Decoder Structure and use an Attention machanism to help the decoder focus on relevant parts of the encoder output</mark> to optimize the rnn network. 
+
+#### 1. Attention layer 
+Since `rnn_input` of decoder is the <b><mark style="background: transparent; color: orange">last hidden layer concatenate with the embeddings of the decoder result</mark></b> (where hidden_size of encoder and decoder should be the same). ==Instead of concatenate it into embedding output directly==, we can <b><mark style="background: transparent; color: orange">add an attention layer for focus on the  different words input</mark></b>. 
+
+```python fold title:
+last_hidden_layer = hidden[-1]  # get the last hidden layer  
+```
+
+We note that this "attention layer" is not as that in attention mechanism. It just combines 2 Linear layers, <b><mark style="background: transparent; color: orange">which can represent our attention  at each token in the sentence under that the last layer hidden state is provided</mark></b>. 
+![[Excalidraw/Chapter7 RNN 2025-04-20 21.37.15|450]]
+Note the attention  layer is <b><mark style="background: transparent; color: orange">the attention layer of encoder output for hidden state </mark></b>. Which can be implemented as follows :  
+```python fold title:Attention-Layer-Implementation
+class AttentionLayer(nn.Module):
+    """
+    Attention mechanism to help the decoder focus on relevant parts of the encoder output
+
+    Calculate the attention of the encoder_output on last encoder_hidden_layers
+    """
+
+    def __init__(self, hidden_size):
+        """
+        :param hidden_size: match with hidden size of encoder and decoder
+        """
+        super(AttentionLayer, self).__init__()
+        self.hidden_size = hidden_size
+
+        # Attention layers
+        self.attn = nn.Linear(hidden_size * 2, hidden_size)
+        # mapping the hidden size to single token value
+        self.v = nn.Linear(hidden_size, 1, bias=False)
+
+    def forward(self, last_hidden, encoder_outputs, mask=None):
+        """
+        last_hidden: [batch_size, hidden_size]
+        encoder_outputs: [batch_size, seq_len, hidden_size]
+        mask: [batch_size, seq_len] , attention mask
+        """
+        seq_len = encoder_outputs.size(1)
+        # Repeat hidden across sequence length
+        last_hidden_repeat = last_hidden.unsqueeze(1).repeat(1, seq_len, 1)  # [batch_size, seq_len, hidden_size]
+
+        # Concatenate hidden and encoder outputs along the last dimension (make it 2 * hidden_size)
+        energy_input = torch.cat((last_hidden_repeat, encoder_outputs), dim=2)
+
+        # Calculate attention scores
+        energy = self.attn(energy_input)
+        scores = torch.tanh(energy)
+        attention = self.v(scores).squeeze(2)  # [batch_size, seq_len, 1] -> [batch_size, seq_len]
+
+        # Apply mask if provided
+        if mask is not None:
+            attention = attention.masked_fill(mask == 0, -1e10)
+
+        # [batch_size, seq_len] representing the attention weights for each token
+        return torch.softmax(attention,
+                             dim=1)
+```
+
+#### 2. Teaching Forcing Mechanism 
+
+> [!Error] What the decoder works while training 
+> We note that the Encoder ingest the batch once at the same time while <mark style="background: transparent; color: red">the decoder predict the token one by one </mark>,  and must predict the sequence by time step. 
+> 
+> Note that we parallel compute a batch ==with 1 token input==, which results in the dimension of decoder input `(batch_size, 1)`
+
+![[Excalidraw/Chapter7 RNN 2025-04-20 22.37.55]]
+
+which we implement with the following decoder code : 
+```python fold title:optimized-decoder
+class ImprovedDecoder(nn.Module):
+    """
+    Improved RNN Decoder with attention
+    """
+    def __init__(self, vocabulary_size,
+                 embed_size=256,
+                 hidden_size=1024,
+                 num_layers=2,
+                 dropout=0.1,
+                 attention=True):
+        super(ImprovedDecoder, self).__init__()
+        self.embed_size = embed_size
+        self.hidden_size = hidden_size
+        self.num_layers = num_layers
+
+        # whether to use attention
+        self.attention = attention
+
+        self.embedding = nn.Embedding(vocabulary_size, embed_size)
+        self.dropout = nn.Dropout(dropout)
+
+        # If using attention, the input to the GRU includes embedding + context vector
+        # we use attention instead of directly concatenate the embedding and hidden state
+        rnn_input_size = embed_size + hidden_size if attention else embed_size
+
+        self.rnn = nn.GRU(input_size=rnn_input_size,
+                          hidden_size=hidden_size,
+                          num_layers=num_layers,
+                          batch_first=True,
+                          dropout=dropout if num_layers > 1 else 0)
+
+        if attention:
+            self.attention_layer = AttentionLayer(hidden_size)
+
+        self.out = nn.Linear(hidden_size * 2 if attention else hidden_size, vocabulary_size)
+
+        # Weight initialization
+        for name, param in self.rnn.named_parameters():
+            if 'weight' in name:
+                nn.init.orthogonal_(param)
+            elif 'bias' in name:
+                nn.init.zeros_(param)
+
+    def forward(self, x, encoder_outputs, hidden, src_mask=None):
+        """
+        x: [batch_size, 1]
+        hidden: [num_layers, batch_size, hidden_size]
+        encoder_outputs: [batch_size, src_len, hidden_size]
+        src_mask: [batch_size, src_len]
+        """
+        assert encoder_outputs is not None
+        # Embedding the decoder inputs
+        embedded = self.dropout(self.embedding(x))  # [batch_size, 1, embed_size]
+        # Get the last layer hidden state
+        last_hidden = hidden[-1]  # [batch_size, hidden_size]
+
+        if self.attention:
+            # Calculate attention weights
+            attn_weights = self.attention_layer(last_hidden, encoder_outputs, src_mask)  # [batch_size, seq_len]
+            attn_weights = attn_weights.unsqueeze(1)  # [batch_size, 1, seq_len], representing
+
+            # Apply attention to encoder outputs  [batch_size, 1, seq_len] * [batch_size, seq_len, hidden_size]
+            context = torch.bmm(attn_weights, encoder_outputs)  # [batch_size, 1, hidden_size]
+            # context is the attention of each hidden state of encoder input data.
+
+            # Concatenate embedded input and context vector
+            rnn_input = torch.cat((embedded, context), dim=2)  # [batch_size, 1, embed_size + hidden_size]
+        else:
+            rnn_input = embedded
+            context = last_hidden.unsqueeze(1)
+
+        # Pass through GRU
+        output, hidden = self.rnn(rnn_input, hidden)  # output: [batch_size, 1, hidden_size]
+        output = torch.cat((output, context), dim=2)  # [batch_size, 1, hidden_size * 2]
+
+        # Project to vocabulary space
+        prediction = self.out(output.squeeze(1))  # [batch_size, vocab_size]
+
+        return prediction, hidden
+```
+
+### (4) Beam Search Translation   
+Firstly we specify a `beam_size` parameter for the beam. 
+
+**In the beam-search, we use a slightly-different method  to keep top-k candidates** : 
+1. At each time step, each of the `k` beams explores its own top `k` next tokens
+2. This creates `k*k` candidates (same as standard beam search)
+3. But then it keeps the top `k` of these new candidates (same as standard beam search)  
+![[Excalidraw/Chapter7 RNN 2025-04-21 09.55.20|500]]
+
+in the  Seq2Seq Module part :
+```python fold title:beam-search
+beams = torch.tensor([bos_token])
+```
+
+we can use beam search translate  
+```python fold title:beam-search-translation 
+def beam_search_translate(  
+        self,  
+        src,  
+        max_len=100,  
+        beam_size=3  
+):  
+    """  
+    :param src:    :param max_len:    :param beam_size:    :return:  
+    """    batch_size = src.shape[0]  
+    assert batch_size == 1, "Beam search currently only supports batch_size=1"  
+  
+    with torch.no_grad():  
+        self.eval()  
+        src_mask = self.create_mask(src, self.src_pad_idx)  
+        src_lens = torch.sum(src_mask, dim=1)  
+        # enc_hidden [1, num_layers, 1 (batch_size), hidden_size]  
+        enc_outputs, enc_hidden = self.encoder(src, src_lens)  
+  
+        bos_token_id = self.trg_cls_idx  # [CLS] token  
+        eos_token_id = self.trg_sep_idx  # [SEP] token  
+  
+        # these 3 part are needed for initialization of beam search        beams_seq = torch.tensor([[bos_token_id]]).to(self.device)  
+        beams_hidden = enc_hidden.clone().detach().unsqueeze(0).to(  
+            self.device)  # note list of tensor is not supported  
+        prediction_scores = torch.tensor([[0.0]]).to(self.device)  # [beam_size]  
+  
+        # initialize the beams for beam search        beams = zip(beams_seq, beams_hidden, prediction_scores)  
+  
+        # beam search  
+        for _ in range(max_len):  
+            new_beams = list()  
+  
+            for beam_idx, (beams_seq, last_hidden, last_score) in enumerate(beams):  
+                # tokens, last_hiddens, last_pred_scores = beam  
+                last_token = beams_seq[-1].unsqueeze(0)  # [1]  
+  
+                if last_token.item() == eos_token_id:  
+                    new_beams.append((beams_seq, last_hidden, last_score))  # append original sequence to new_beams  
+                    continue  
+  
+                decoder_output, new_hidden = self.decoder(  
+                    last_token.unsqueeze(0), last_hidden, enc_outputs  
+                )  
+                prediction_probs = torch.log_softmax(decoder_output, dim=-1)  
+                # get the log probabilities and corresponding index  
+                top_log_probs, top_indices = prediction_probs.topk(beam_size)  
+  
+                for k in range(beam_size):  
+                    token = top_indices[0, k].unsqueeze(0)  
+                    new_seq = torch.cat([beams_seq, token], dim=0)  
+                    new_score = last_score + top_log_probs[0, k].item()  
+                    # add new beams candidate to new_beams list  
+                    new_beams.append((new_seq, new_hidden, new_score))  
+  
+            # sort and keep top beam_size beams  
+            new_beams.sort(key=lambda x: x[2], reverse=True)  # sort by score  
+            beams_retain = new_beams[:beam_size]  
+            new_token_seqs, new_beams_hidden, new_beams_scores = map(torch.stack, zip(*beams_retain))  
+            # break if all beams end with EOS  
+            if all(beam[0][-1].item() == eos_token_id for beam in new_beams):  
+                break  
+            # else continue  
+            beams = zip(new_token_seqs, new_beams_hidden, new_beams_scores)  
+  
+        # then return the top beams sequence  
+        return new_token_seqs
+```
+
+
+### (5) Bleu Score Computation  
+The bleu score is only calculated in test process : 
+
+```python fold title:bleu-scoring-calculation 
+def calculate_bleu(references, hypotheses):  
+    """  
+    Calculate BLEU score as a measure of translation quality   
+     """    
+     if len(references) == 0 or len(hypotheses) == 0:  
+        raise ValueError("References and hypotheses cannot be empty")  
+  
+    bleu = evaluate.load("bleu")  
+  
+    # Convert references to list of lists for multi-bleu format  
+    try:  
+        processed_refs = [[ref] for ref in references]  
+        results = bleu.compute(predictions=hypotheses, references=processed_refs)  
+    except ZeroDivisionError:  
+        return -1  
+    except Exception as e:  
+        print(e)  # print error message  
+        return -1  
+    return results["bleu"]
+```
+
+We note that BERT criteron divides the word by the space, **so the space must be retained when given prediction.**  

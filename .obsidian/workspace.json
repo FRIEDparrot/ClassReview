@@ -4,39 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "372460d2932f2b45",
+        "id": "453f9087595763ff",
         "type": "tabs",
         "children": [
           {
-            "id": "f28143724f272e4f",
+            "id": "cc1a33898553e670",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter8 Attention Mechanisms, Transformers.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🦾Fatigue and Facture/第二章 高周疲劳.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter8 Attention Mechanisms, Transformers"
+              "title": "第二章 高周疲劳"
             }
           },
           {
-            "id": "560f7c710d6f61b1",
+            "id": "95d8ad30eafcb5c2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter7 RNN.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/断裂力学/五、疲劳裂纹扩展.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter7 RNN"
+              "title": "五、疲劳裂纹扩展"
+            }
+          },
+          {
+            "id": "a0c96f17a034fe34",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/格林公式, 高斯公式和斯托克斯公式以及几个重要概念.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "格林公式, 高斯公式和斯托克斯公式以及几个重要概念"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +62,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 68.10154525386314,
+        "dimension": 79.52917093142273,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -70,7 +84,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": true,
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -95,7 +109,7 @@
       {
         "id": "066eddf15a13dd56",
         "type": "tabs",
-        "dimension": 31.898454746136867,
+        "dimension": 20.470829068577277,
         "children": [
           {
             "id": "db0ad0041a71350b",
@@ -111,8 +125,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 265.51103591918945,
-    "collapsed": true
+    "width": 336.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -158,12 +171,22 @@
             }
           },
           {
+            "id": "ccf3c49a7ac51afd",
+            "type": "leaf",
+            "state": {
+              "type": "dictionary-view",
+              "state": {},
+              "icon": "quote-glyph",
+              "title": "Dictionary"
+            }
+          },
+          {
             "id": "f05de46e81e6540c",
             "type": "leaf",
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/⌨️ Web Programming/🌀Vue/VueX 和 Pinia 的存储状态管理工具使用.md",
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/格林公式, 高斯公式和斯托克斯公式以及几个重要概念.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -194,36 +217,22 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.8045384510264882,
+                  "scale": 0.8310443787837541,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of VueX 和 Pinia 的存储状态管理工具使用"
-            }
-          },
-          {
-            "id": "ccf3c49a7ac51afd",
-            "type": "leaf",
-            "state": {
-              "type": "dictionary-view",
-              "state": {},
-              "icon": "quote-glyph",
-              "title": "Dictionary"
+              "title": "Graph of 格林公式, 高斯公式和斯托克斯公式以及几个重要概念"
             }
           },
           {
             "id": "9e8c15d95c721ecf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/🗣️English/YT Words.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "YT Words"
+              "title": "New tab"
             }
           },
           {
@@ -283,7 +292,17 @@
             }
           },
           {
-            "id": "73bb4ebe2dcb3715",
+            "id": "f189846781babf1c",
+            "type": "leaf",
+            "state": {
+              "type": "QUICKSHARE_SIDE_VIEW",
+              "state": {},
+              "icon": "cloud",
+              "title": "QuickShare"
+            }
+          },
+          {
+            "id": "e7508a6dd6cdf0aa",
             "type": "leaf",
             "state": {
               "type": "planner-timeline",
@@ -293,7 +312,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -306,13 +325,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter7 RNN.md",
+                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/格林公式, 高斯公式和斯托克斯公式以及几个重要概念.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Chapter7 RNN"
+              "title": "Outline of 格林公式, 高斯公式和斯托克斯公式以及几个重要概念"
             }
           },
           {
@@ -321,8 +340,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⌨️ Web Programming/🌀Vue/3. 插槽模块,  缓存组件和前端路由.md",
-                "collapseAll": false,
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter7 RNN.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -331,7 +350,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 3. 插槽模块,  缓存组件和前端路由"
+              "title": "Backlinks for Chapter7 RNN"
             }
           },
           {
@@ -340,12 +359,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓深度学习算法原理(sklearn)/8. SVM支持向量机.md",
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter7 RNN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 8. SVM支持向量机"
+              "title": "Outgoing links from Chapter7 RNN"
             }
           },
           {
@@ -365,12 +384,10 @@
       }
     ],
     "direction": "horizontal",
-    "width": 346.5,
-    "collapsed": true
+    "width": 408.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "surfing:surfing-bookmark-manager": false,
       "markdown-importer:Open format converter": false,
       "graph:Open graph view": false,
       "switcher:Open quick switcher": false,
@@ -380,65 +397,65 @@
       "canvas:Create new canvas": false,
       "workspaces:Manage workspace layouts": false,
       "zk-prefixer:Create new unique note": false,
-      "obsidian-projects:Open projects": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "random-note:Open random note": false,
-      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "media-extended:Open media": false,
-      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-projects:Open projects": false,
       "obsidian-day-planner:Open Timeline": false,
       "obsidian-day-planner:Open Multi-Day View": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "surfing:surfing-bookmark-manager": false
     }
   },
-  "active": "560f7c710d6f61b1",
+  "active": "a0c96f17a034fe34",
   "lastOpenFiles": [
-    "attachments/Pasted image 20250410101510.png",
-    "attachments/Pasted image 20250410015144.png",
-    "attachments/Pasted image 20250410015142.png",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch Basics/使用数据集一次性加载对应几组数据.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch Basics/损失函数自定义和强化学习策略梯度.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch Basics/张量提取滑动窗口.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/HuggingFace数据集使用/Datasets 基础使用.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter7 RNN.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter8 Attention Mechanisms, Transformers.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Pytorch Basics",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Implements/Seq2Seq 上下文向量的传递方式.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/HuggingFace数据集使用/配合 Colab 和 Jupyter 的本地编辑运行模式配置.md",
-    "attachments/Pasted image 20250408205723.png",
-    "attachments/Pasted image 20250408205418.png",
-    "attachments/Pasted image 20250408204759.png",
-    "attachments/Pasted image 20250408171649.png",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/HuggingFace数据集使用",
-    "attachments/Pasted image 20250407104555.png",
-    "📘ClassNotes/📐Mathmatics/数学物理方程/四、位势方程.md",
-    "📘ClassNotes/📐Mathmatics/数学物理方程/重要定理/Inf-Sup Condition.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第六章 共形映射.md",
-    "Excalidraw/四、位势方程 2025-04-05 18.54.50.md",
-    "Excalidraw/四、位势方程 2025-04-05 18.33.37.md",
-    "attachments/Pasted image 20250405180906.png",
-    "📘ClassNotes/📐Mathmatics/数学物理方程/推导部分/Green 第二公式推导和基本解证明.pdf",
-    "📘ClassNotes/📐Mathmatics/数学物理方程/Untitled.md",
-    "attachments/Pasted image 20250404092356.png",
-    "attachments/Pasted image 20250403171015.png",
-    "📘ClassNotes/⌨️ Web Programming/🐬Mysql  数据库/Linux 部署 mysql 数据库/1. 远程部署 Flask 后端和 MySQL 数据库.md",
-    "📘ClassNotes/🐧Computer System/🐧 Linux/Linux 休眠禁用设置.md",
-    "📘ClassNotes/⌨️ Web Programming/🏗️Nginx & 腾讯云服务器/Nginx 部署 Vite 项目.md",
-    "📘ClassNotes/🐧Computer System/🐧 Linux/1. Linux 常用指令解析.md",
-    "Excalidraw/Chapter8 Attention Mechanisms, Transformers 2025-04-01 21.26.02.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Advanced deeplearning/GAN生成对抗网络详解.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Advanced deeplearning/NLP自然语言处理神经网络.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Advanced deeplearning/RNN神经网络.md",
-    "Excalidraw/Chapter7 RNN 2025-03-31 18.36.54.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/断裂力学/五、疲劳裂纹扩展.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md",
+    "📘ClassNotes/📐Mathmatics/🧩数学物理方程/重点整理.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/格林公式, 高斯公式和斯托克斯公式以及几个重要概念.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十一章 曲线积分和曲面积分.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🦾Fatigue and Facture/第二章 高周疲劳.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/断裂力学/二、弹塑性断裂力学.md",
+    "📘ClassNotes/🐧Computer System/🐧 Linux/📽️Cmake & Make Project Configuration/1. Cmake安装基本教程.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/断裂力学/一、引论.md",
+    "📘ClassNotes/🐧Computer System/🐧 Linux/📦Package Tools and File Operations/2. pkg-config 包的使用和包定位.md",
+    "📘ClassNotes/🐧Computer System/🐧 Linux/📝Editor & Shell Command/环境变量设置.md",
+    "📘ClassNotes/🐧Computer System/🐧 Linux/📦Package Tools and File Operations/2. Linux 环境变量设置相关.md",
+    "📘ClassNotes/🐧Computer System/🐧 Linux/📝Editor & Shell Command/1. Nano 编辑器常用操作.md",
+    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/2. 范数理论及其应用.md",
+    "📘ClassNotes/📐Mathmatics/🧩数学物理方程/四、位势方程.md",
+    "📘ClassNotes/📐Mathmatics/🧩数学物理方程/三、热传导方程.md",
+    "📘ClassNotes/📐Mathmatics/🧩数学物理方程/二、 波动方程.md",
+    "📘ClassNotes/📐Mathmatics/🧩数学物理方程/一、偏微分方程及其定解问题.md",
+    "📘ClassNotes/🐧Computer System/🐧 Linux/📝Editor & Shell Command/1. File operation and Link creation.md",
     "🐸 Daily Life memo/备忘录.md",
-    "Excalidraw/Chapter7 RNN 2025-03-31 17.04.39.md",
-    "📘ClassNotes/⌨️Programming/🐍Python/Untitled 1",
-    "📘ClassNotes/⌨️Programming/🐍Python/🥧Python优化求解库",
-    "📘ClassNotes/📐Mathmatics/数学物理方程/重要定理",
-    "📘ClassNotes/📐Mathmatics/数学物理方程/推导部分/Pisson公式求解.pdf",
-    "📘ClassNotes/📐Mathmatics/数学物理方程/推导部分/Untitled",
-    "📘ClassNotes/📐Mathmatics/数学物理方程/推导部分",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/补充内容/FourierTransformTable.pdf",
+    "Excalidraw/File operation, Output and Link creation 2025-07-05 10.17.29.md",
+    "📘ClassNotes/🐧Computer System/🐧 Linux/FireWall & Safety/用户权限管理.md",
+    "📘ClassNotes/🐧Computer System/🐧 Linux/FireWall & Safety/SSH key generation.md",
+    "📘ClassNotes/🐧Computer System/🐧 Linux/1. Linux 常用指令解析.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🪰智能优化算法与应用/2. 遗传优化算法(GA).md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🪰智能优化算法与应用/3. 粒子群优化算法(PSO).md",
+    "📘ClassNotes/⌨️Programming/🐧 Linux/🏗️Nginx & 腾讯云服务器/Untitled",
+    "📘ClassNotes/🐧Computer System/🐧 Linux/FireWall & Safety",
+    "📘ClassNotes/🐧Computer System/🐧 Linux/📝Editor & Shell Command",
+    "📘ClassNotes/🐧Computer System/🐧 Linux/Service Management",
+    "📘ClassNotes/🐧Computer System/🐧 Linux/Networks & System Info",
+    "📘ClassNotes/🐧Computer System/🐧 Linux/📦Package Tools and File Operations",
+    "📘ClassNotes/📐Mathmatics/✈️航空工程数理分析/推导部分/Euler-Lagrange 方程式推导.pdf",
+    "📘ClassNotes/📐Mathmatics/✈️航空工程数理分析/推导部分/偏微分方程的相似变换推导.pdf",
+    "attachments/Pasted image 20250626155539.png",
+    "📘ClassNotes/📐Mathmatics/✈️航空工程数理分析/推导部分/初始值问题和边界值问题.pdf",
+    "📘ClassNotes/📐Mathmatics/✈️航空工程数理分析/推导部分/Helmholtz 方程系数求解.pdf",
+    "attachments/Pasted image 20250619153446.png",
+    "attachments/Pasted image 20250618183956.png",
+    "attachments/Pasted image 20250618181753.png",
+    "attachments/Pasted image 20250618151815.png",
+    "attachments/Pasted image 20250618151758.png",
+    "attachments/Pasted image 20250617173548.png",
+    "attachments/Pasted image 20250616205541.png",
+    "attachments/Pasted image 20250616154748.png",
+    "attachments/Pasted image 20250616011325.png",
     "Untitled.canvas",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]

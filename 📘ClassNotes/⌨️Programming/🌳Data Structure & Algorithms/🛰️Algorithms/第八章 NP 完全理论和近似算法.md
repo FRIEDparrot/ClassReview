@@ -14,7 +14,7 @@ $$NP  = \left\{  L|L 为能在多项式时间内被一台 NDTM 接受的语言 \
 参考 [[📘ClassNotes/⌨️Programming/🌳Data Structure & Algorithms/🛰️Algorithms/理论证明/RAM 计算模型和 RASP 计算模型|RAM 计算模型和 RASP 计算模型]]  
 
 一般地, 对于 NP 完全问题, 常常采用如下策略: 
-1. 仅针对问题特殊实例求解  
+1. **仅针对问题特殊实例求解**  
 2. 动态规划或分支限界法  
 3. 概率算法 
 4. 求近似解  

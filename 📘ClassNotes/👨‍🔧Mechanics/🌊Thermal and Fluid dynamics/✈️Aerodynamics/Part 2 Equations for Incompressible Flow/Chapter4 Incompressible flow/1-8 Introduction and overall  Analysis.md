@@ -149,6 +149,7 @@ We consider the thin airfoils as  follows: the thin airfoil plane can be **simul
 for an airfoil  at an angle of attack $\alpha$, the distance <mark style="background: transparent; color: red">along the camber line</mark> is $s$, and shape is $z =z(x)$, Chord length is $c$. We use the figure at the right side to simulate the airfoil at left : we set $w' = w'(s)$ is the component of velocity <mark style="background: transparent; color: red">normal to the camber line</mark> induced by the vortex sheet. 
 ![[Excalidraw/1-8 Introduction and overall  Analysis 2023-09-04 20.00.17|900]]
 For a thin airfoil, Since <b><mark style="background: transparent; color: blue">the camber line is close to the chord line,</mark></b> the distribution of a vortex sheet placed on the camber line can be viewed approximately falls on the chord line. hence we can write a new function for $\gamma$ as $\gamma = \gamma(x)$ (with the Kutta condition, we have : $\gamma(c) = 0$): 
+
 For the camber line to be a streamline, the component of velocity normal to the surface of airfoil is zero, then the normal component of the velocity. then 
 $$\Large \boxed{V_{\infty,n} + w'(s) = 0}\tag{4.12}$$
 so an expression for $V_{\infty, n}$ is obtained by analyze the airfoil shape. 
@@ -169,6 +170,7 @@ $$V_{\infty, n} = - w'(s) = V_{\infty} \left(\alpha - \frac{dz}{dx}\right)= \int
 then we get 
 $$\Large\boxed{\frac{1}{2 \pi } \int_{0}^{c} \frac{\gamma (\xi) d \xi}{x - \xi} = V_{\infty} \left(\alpha - \frac{dz}{dx}\right)}\tag{4.18}$$
 This equation is the <b><mark style="background: transparent; color: blue">fundamental equation of thin airfoil theory</mark></b>, it is a statement that the camber line is a streamline of the flow. We also give important standard integral that frequently used :
+
 `````ad-caution 
 title: Essential Standard integral that frequently used in airfoil theory
 collapse: open

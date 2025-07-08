@@ -118,7 +118,7 @@ $$\vec{V} = \vec{V}(x,y,z) = \vec{V}(r,\theta, z) = \vec{V}(r,\theta,\Phi)$$
 and the $\vec{V}$ is a vector that can represent vector quantity. however, for the practical purposes and to aid in physical interpretation. Consider $V$ to be the flow velocity.
 
 In the section 2.3, we will prove **the time rate of the change of the volume of a moving liquid element** is equal to the ***divergence*** of the $\vec{V}$, which is expressed as
-***divergence*** of $\vec{V}$:
+***divergence*** of $\vec{V}$: 
 $$\nabla \cdot V$$
 note that **==the divergence of a vector is a scalar quantity==**. then the divergence in different vectors are shown as : 
 `````ad-caution 
@@ -197,7 +197,7 @@ and also consider a volume $\mathcal{V}$ enclosed by the enclosed surface $S$. t
 $$\boxed{{\Large \underset{S}{∯}} A \cdot dS ={\Large \underset{\mathcal{V}}{∰}}(\nabla \cdot A)d\mathcal{V}}$$
 and If p represents a scalar field, a vector relationship analogous to the equation above is given by the ***gradient theorem*** as: 
 $$\boxed{\underset{S}{∯}p dS = \underset{V}{∰} \nabla p \space dV}$$
-## 2.3 Model of the fluid
+## 2.3 Model of the fluid 
 
 The equation are generally based on three fundamental physical principles which are deeply entrenched in the observation of the nature:
 1. Mass is conserved 

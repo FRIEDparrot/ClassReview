@@ -131,7 +131,7 @@ a.show_data_img(fig_data1.squeeze(0))    # must be 4 dimensions for image displa
 def show_data_img(self, fig_data):  
     plt.imshow(fig_data.numpy())
 ```
-for **the basic classification Model**, we can also reference [[📘ClassNotes/⌨️Programming/🐍Python/🌟Python 基础部分/6. nn 库使用 SGD 训练MINIST 数据集|the simplest nn lib usage]]. 
+for **the basic classification Model**, we can also reference [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔥Pytorch Basics/Implements/简单 SGD 训练 MINIST 数据集示例|the simplest nn lib usage]]. 
 ```python 
 self.optim = torch.optim.SGD()
 self.net = nn.Sequential(  

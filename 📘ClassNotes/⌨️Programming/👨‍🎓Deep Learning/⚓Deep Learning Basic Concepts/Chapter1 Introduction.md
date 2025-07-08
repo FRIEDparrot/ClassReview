@@ -49,14 +49,14 @@ collapse: open
 we consider the game of playing chess, and the only reward comes at the end of the game when we win as 1, and if we lose, the reward is -1, so the reinforcement learners must deal with the *credit assignment* problem 
 `````
 
-at any given point, there may be other better polities that the agent has never tried. The reinforcement learners may also have to deal with the problem of <mark style="background: transparent; color: yellow">partial observability</mark>. Also the reinforcement learner must constantly choose whether to <mark style="background: transparent; color: yellow">exploit the best known strategy as a policy</mark>, or <mark style="background: transparent; color: red">to explore the space of strategies</mark>, potential giving up the short-run reward in exchange for knowledge, etc. 
+at any given point, there may be other better polities that the agent has never tried. The **reinforcement learners may also have to deal with the problem** of <mark style="background: transparent; color: yellow">partial observability</mark>. Also the reinforcement learner must constantly choose whether to <mark style="background: transparent; color: yellow">exploit the best known strategy as a policy</mark>, or <mark style="background: transparent; color: red">to explore the space of strategies</mark>, potential giving up the short-run reward in exchange for knowledge, etc. 
 
 > [!hint] Markov Decision and contextual bandit problem
-> If the environment is fully known, The reforcement  learning problem is a Markov decision process.
+> If **the environment is fully known, The reforcement  learning problem is a Markov decision process**.
 > If a problem <mark style="background: transparent; color: red">doesn't depend on previous action</mark>, and just depend on the current state, we call if a **contextual bandit problem**. 
 > If no state and  just a set of  actions available within initially unknown rewards, called multi-armed bandit problem 
 
-strong statistical tools such as kernel methods, decision trees and graphical models proved empirically superior in many applications. 
+strong statistical tools such **as kernel methods, decision trees and graphical models** proved empirically superior in many applications. 
 
 > [!Summary] Often-Used Python framework for deep Learning 
 > Such as Caffe,  Torch , Theano, Tensorflow, CNTK, mxnet, gluon API, Jax, etc. 
