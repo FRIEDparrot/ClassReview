@@ -1,84 +1,84 @@
 {
   "recentFiles": [
     {
-      "basename": "格林公式, 高斯公式和斯托克斯公式以及几个重要概念",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/格林公式, 高斯公式和斯托克斯公式以及几个重要概念.md"
+      "basename": "大作业笔记部分",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md"
     },
     {
-      "basename": "五、疲劳裂纹扩展",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/断裂力学/五、疲劳裂纹扩展.md"
+      "basename": "第四章 空间问题的有限元法",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题的有限元法.md"
     },
     {
-      "basename": "1-8 Fundamental Principles",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md"
+      "basename": "第二章 平面问题",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md"
     },
     {
-      "basename": "重点整理",
-      "path": "📘ClassNotes/📐Mathmatics/🧩数学物理方程/重点整理.md"
+      "basename": "三、 声学边界元方法简介",
+      "path": "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/三、 声学边界元方法简介.md"
     },
     {
-      "basename": "第十一章 曲线积分和曲面积分",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十一章 曲线积分和曲面积分.md"
+      "basename": "第一章 杆件结构",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md"
     },
     {
-      "basename": "第二章 高周疲劳",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🦾Fatigue and Facture/第二章 高周疲劳.md"
+      "basename": "第十章 热力学微分关系式与气体性质",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第十章 热力学微分关系式与气体性质.md"
     },
     {
-      "basename": "二、弹塑性断裂力学",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/断裂力学/二、弹塑性断裂力学.md"
+      "basename": "五、偏微分方程的分类",
+      "path": "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/五、偏微分方程的分类.md"
     },
     {
-      "basename": "1. Cmake安装基本教程",
-      "path": "📘ClassNotes/🐧Computer System/🐧 Linux/📽️Cmake & Make Project Configuration/1. Cmake安装基本教程.md"
-    },
-    {
-      "basename": "一、引论",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/断裂力学/一、引论.md"
-    },
-    {
-      "basename": "2. pkg-config 包的使用和包定位",
-      "path": "📘ClassNotes/🐧Computer System/🐧 Linux/📦Package Tools and File Operations/2. pkg-config 包的使用和包定位.md"
-    },
-    {
-      "basename": "环境变量设置",
-      "path": "📘ClassNotes/🐧Computer System/🐧 Linux/📝Editor & Shell Command/环境变量设置.md"
-    },
-    {
-      "basename": "1. Nano 编辑器常用操作",
-      "path": "📘ClassNotes/🐧Computer System/🐧 Linux/📝Editor & Shell Command/1. Nano 编辑器常用操作.md"
-    },
-    {
-      "basename": "2. 范数理论及其应用",
-      "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/2. 范数理论及其应用.md"
+      "basename": "第一章 偏微分方程概念与分类",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/第一章 偏微分方程概念与分类.md"
     },
     {
       "basename": "四、位势方程",
-      "path": "📘ClassNotes/📐Mathmatics/🧩数学物理方程/四、位势方程.md"
+      "path": "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/四、位势方程.md"
     },
     {
       "basename": "三、热传导方程",
-      "path": "📘ClassNotes/📐Mathmatics/🧩数学物理方程/三、热传导方程.md"
+      "path": "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/三、热传导方程.md"
     },
     {
       "basename": "二、 波动方程",
-      "path": "📘ClassNotes/📐Mathmatics/🧩数学物理方程/二、 波动方程.md"
+      "path": "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/二、 波动方程.md"
     },
     {
       "basename": "一、偏微分方程及其定解问题",
-      "path": "📘ClassNotes/📐Mathmatics/🧩数学物理方程/一、偏微分方程及其定解问题.md"
+      "path": "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/一、偏微分方程及其定解问题.md"
     },
     {
-      "basename": "1. File operation and Link creation",
-      "path": "📘ClassNotes/🐧Computer System/🐧 Linux/📝Editor & Shell Command/1. File operation and Link creation.md"
+      "basename": "四、边界积分方程",
+      "path": "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/四、边界积分方程.md"
     },
     {
-      "basename": "备忘录",
-      "path": "🐸 Daily Life memo/备忘录.md"
+      "basename": "七、量纲分析和相似理论",
+      "path": "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/七、量纲分析和相似理论.md"
     },
     {
-      "basename": "用户权限管理",
-      "path": "📘ClassNotes/🐧Computer System/🐧 Linux/FireWall & Safety/用户权限管理.md"
+      "basename": "第六章 弯曲应力",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第六章 弯曲应力.md"
+    },
+    {
+      "basename": "傅里叶级数展开方法",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/傅里叶级数展开方法.md"
+    },
+    {
+      "basename": "第八章 傅里叶变换",
+      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第八章 傅里叶变换.md"
+    },
+    {
+      "basename": "五、边界元法讲解",
+      "path": "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/五、边界元法讲解.md"
+    },
+    {
+      "basename": "重要公式部分",
+      "path": "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/重要公式/重要公式部分.md"
+    },
+    {
+      "basename": "重要导数公式",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md"
     }
   ],
   "omittedPaths": [],

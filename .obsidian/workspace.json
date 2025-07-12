@@ -4,53 +4,81 @@
     "type": "split",
     "children": [
       {
-        "id": "453f9087595763ff",
+        "id": "00490d954ba7f886",
         "type": "tabs",
         "children": [
           {
-            "id": "cc1a33898553e670",
+            "id": "7c0990e47d1c9394",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🦾Fatigue and Facture/第二章 高周疲劳.md",
+                "file": "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/五、偏微分方程的分类.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "第二章 高周疲劳"
+              "title": "五、偏微分方程的分类"
             }
           },
           {
-            "id": "95d8ad30eafcb5c2",
+            "id": "70025c6a3f922d5c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/断裂力学/五、疲劳裂纹扩展.md",
+                "file": "📘ClassNotes/📐Mathmatics/🧩数学物理方程/四、位势方程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "五、疲劳裂纹扩展"
+              "title": "四、位势方程"
             }
           },
           {
-            "id": "a0c96f17a034fe34",
+            "id": "44e41975c778b30a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/格林公式, 高斯公式和斯托克斯公式以及几个重要概念.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "格林公式, 高斯公式和斯托克斯公式以及几个重要概念"
+              "title": "第一章 杆件结构"
+            }
+          },
+          {
+            "id": "34b5b75e71704796",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "大作业笔记部分"
+            }
+          },
+          {
+            "id": "99859d89601b6cc0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "第二章 平面问题"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -71,7 +99,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -125,7 +153,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5
+    "width": 252.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -186,7 +214,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/格林公式, 高斯公式和斯托克斯公式以及几个重要概念.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -217,12 +245,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.8310443787837541,
+                  "scale": 0.8310443787837553,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 格林公式, 高斯公式和斯托克斯公式以及几个重要概念"
+              "title": "Graph of 大作业笔记部分"
             }
           },
           {
@@ -325,13 +353,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/格林公式, 高斯公式和斯托克斯公式以及几个重要概念.md",
+                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 格林公式, 高斯公式和斯托克斯公式以及几个重要概念"
+              "title": "Outline of 大作业笔记部分"
             }
           },
           {
@@ -384,7 +412,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 408.5
+    "width": 351.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -408,45 +437,45 @@
       "surfing:surfing-bookmark-manager": false
     }
   },
-  "active": "a0c96f17a034fe34",
+  "active": "34b5b75e71704796",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/断裂力学/五、疲劳裂纹扩展.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/✈️Aerodynamics/Part 1 Essential Concepts/Chapter2 Fundamental Principles and Equations/1-8 Fundamental Principles.md",
-    "📘ClassNotes/📐Mathmatics/🧩数学物理方程/重点整理.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/格林公式, 高斯公式和斯托克斯公式以及几个重要概念.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/第十一章 曲线积分和曲面积分.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🦾Fatigue and Facture/第二章 高周疲劳.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/断裂力学/二、弹塑性断裂力学.md",
-    "📘ClassNotes/🐧Computer System/🐧 Linux/📽️Cmake & Make Project Configuration/1. Cmake安装基本教程.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/断裂力学/一、引论.md",
-    "📘ClassNotes/🐧Computer System/🐧 Linux/📦Package Tools and File Operations/2. pkg-config 包的使用和包定位.md",
-    "📘ClassNotes/🐧Computer System/🐧 Linux/📝Editor & Shell Command/环境变量设置.md",
-    "📘ClassNotes/🐧Computer System/🐧 Linux/📦Package Tools and File Operations/2. Linux 环境变量设置相关.md",
-    "📘ClassNotes/🐧Computer System/🐧 Linux/📝Editor & Shell Command/1. Nano 编辑器常用操作.md",
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/2. 范数理论及其应用.md",
-    "📘ClassNotes/📐Mathmatics/🧩数学物理方程/四、位势方程.md",
-    "📘ClassNotes/📐Mathmatics/🧩数学物理方程/三、热传导方程.md",
-    "📘ClassNotes/📐Mathmatics/🧩数学物理方程/二、 波动方程.md",
-    "📘ClassNotes/📐Mathmatics/🧩数学物理方程/一、偏微分方程及其定解问题.md",
-    "📘ClassNotes/🐧Computer System/🐧 Linux/📝Editor & Shell Command/1. File operation and Link creation.md",
-    "🐸 Daily Life memo/备忘录.md",
-    "Excalidraw/File operation, Output and Link creation 2025-07-05 10.17.29.md",
-    "📘ClassNotes/🐧Computer System/🐧 Linux/FireWall & Safety/用户权限管理.md",
-    "📘ClassNotes/🐧Computer System/🐧 Linux/FireWall & Safety/SSH key generation.md",
-    "📘ClassNotes/🐧Computer System/🐧 Linux/1. Linux 常用指令解析.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🪰智能优化算法与应用/2. 遗传优化算法(GA).md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🪰智能优化算法与应用/3. 粒子群优化算法(PSO).md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题的有限元法.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md",
+    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/三、 声学边界元方法简介.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第十章 热力学微分关系式与气体性质.md",
+    "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/五、偏微分方程的分类.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/第一章 偏微分方程概念与分类.md",
+    "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/四、位势方程.md",
+    "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/三、热传导方程.md",
+    "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/二、 波动方程.md",
+    "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/一、偏微分方程及其定解问题.md",
+    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/四、边界积分方程.md",
+    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/七、量纲分析和相似理论.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第六章 弯曲应力.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/傅里叶级数展开方法.md",
+    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第八章 傅里叶变换.md",
+    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/五、边界元法讲解.md",
+    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/重要公式/重要公式部分.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第五章 弯曲内力.md",
+    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/八、变分问题和瑞利商法.md",
+    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/六、常微分方程.md",
+    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/二、非线性动力学方程的求解.md",
+    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/一、基础知识.md",
+    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/重要公式/谐波平衡方法近似公式.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第三章 流体运动概述/一、流体运动简介.md",
     "📘ClassNotes/⌨️Programming/🐧 Linux/🏗️Nginx & 腾讯云服务器/Untitled",
     "📘ClassNotes/🐧Computer System/🐧 Linux/FireWall & Safety",
     "📘ClassNotes/🐧Computer System/🐧 Linux/📝Editor & Shell Command",
     "📘ClassNotes/🐧Computer System/🐧 Linux/Service Management",
     "📘ClassNotes/🐧Computer System/🐧 Linux/Networks & System Info",
     "📘ClassNotes/🐧Computer System/🐧 Linux/📦Package Tools and File Operations",
-    "📘ClassNotes/📐Mathmatics/✈️航空工程数理分析/推导部分/Euler-Lagrange 方程式推导.pdf",
-    "📘ClassNotes/📐Mathmatics/✈️航空工程数理分析/推导部分/偏微分方程的相似变换推导.pdf",
+    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/推导部分/Euler-Lagrange 方程式推导.pdf",
+    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/推导部分/偏微分方程的相似变换推导.pdf",
     "attachments/Pasted image 20250626155539.png",
-    "📘ClassNotes/📐Mathmatics/✈️航空工程数理分析/推导部分/初始值问题和边界值问题.pdf",
-    "📘ClassNotes/📐Mathmatics/✈️航空工程数理分析/推导部分/Helmholtz 方程系数求解.pdf",
+    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/推导部分/初始值问题和边界值问题.pdf",
+    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/推导部分/Helmholtz 方程系数求解.pdf",
     "attachments/Pasted image 20250619153446.png",
     "attachments/Pasted image 20250618183956.png",
     "attachments/Pasted image 20250618181753.png",

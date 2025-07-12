@@ -35316,6 +35316,7 @@ LPRx
 LEXw
 Liouvillle
 Liou
+Lorentzian
 constitutive
 conditional
 curly
