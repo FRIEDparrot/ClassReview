@@ -4,81 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "00490d954ba7f886",
+        "id": "babd7dd7ddea0faa",
         "type": "tabs",
         "children": [
           {
-            "id": "7c0990e47d1c9394",
+            "id": "006f4624ac2f0958",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/五、偏微分方程的分类.md",
+                "file": "📘ClassNotes/📐Mathmatics/🧩Mathematical and Physical Equations/一、偏微分方程及其定解问题.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "五、偏微分方程的分类"
+              "title": "一、偏微分方程及其定解问题"
             }
           },
           {
-            "id": "70025c6a3f922d5c",
+            "id": "92f838796ae08047",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🧩数学物理方程/四、位势方程.md",
+                "file": "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/八、变分问题和瑞利商法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "四、位势方程"
+              "title": "八、变分问题和瑞利商法"
             }
           },
           {
-            "id": "44e41975c778b30a",
+            "id": "6327540d0a24dfbc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
+                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔥Pytorch Basics/2. Pytorch 基础常用代码部分.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "第一章 杆件结构"
-            }
-          },
-          {
-            "id": "34b5b75e71704796",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "大作业笔记部分"
-            }
-          },
-          {
-            "id": "99859d89601b6cc0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "第二章 平面问题"
+              "title": "2. Pytorch 基础常用代码部分"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -90,7 +62,7 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 79.52917093142273,
+        "dimension": 59.46775844421699,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -137,7 +109,7 @@
       {
         "id": "066eddf15a13dd56",
         "type": "tabs",
-        "dimension": 20.470829068577277,
+        "dimension": 40.53224155578301,
         "children": [
           {
             "id": "db0ad0041a71350b",
@@ -153,7 +125,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 331.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -214,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md",
+                "file": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第二章 张量代数和商法则.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -250,7 +222,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 大作业笔记部分"
+              "title": "Graph of 第二章 张量代数和商法则"
             }
           },
           {
@@ -340,7 +312,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "bdaa9cad5f6d59b7",
@@ -353,13 +325,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md",
+                "file": "📘ClassNotes/📐Mathmatics/🧩Mathematical and Physical Equations/一、偏微分方程及其定解问题.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 大作业笔记部分"
+              "title": "Outline of 一、偏微分方程及其定解问题"
             }
           },
           {
@@ -417,6 +389,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "markdown-importer:Open format converter": false,
       "graph:Open graph view": false,
       "switcher:Open quick switcher": false,
@@ -434,37 +407,38 @@
       "obsidian-projects:Open projects": false,
       "obsidian-day-planner:Open Timeline": false,
       "obsidian-day-planner:Open Multi-Day View": false,
-      "surfing:surfing-bookmark-manager": false
+      "surfing:surfing-bookmark-manager": false,
+      "equation-citator:Auto-number Current File Equations": false
     }
   },
-  "active": "34b5b75e71704796",
+  "active": "86820ad5b67d3064",
   "lastOpenFiles": [
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题的有限元法.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md",
-    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/三、 声学边界元方法简介.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第十章 热力学微分关系式与气体性质.md",
-    "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/五、偏微分方程的分类.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/第一章 偏微分方程概念与分类.md",
-    "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/四、位势方程.md",
-    "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/三、热传导方程.md",
-    "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/二、 波动方程.md",
-    "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/一、偏微分方程及其定解问题.md",
-    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/四、边界积分方程.md",
-    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/七、量纲分析和相似理论.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第六章 弯曲应力.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/傅里叶级数展开方法.md",
-    "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第八章 傅里叶变换.md",
-    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/五、边界元法讲解.md",
-    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/重要公式/重要公式部分.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第五章 弯曲内力.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/8. SVM支持向量机.md",
+    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔥Pytorch Basics/2. Pytorch 基础常用代码部分.md",
+    "📘ClassNotes/📐Mathmatics/🧩Mathematical and Physical Equations/一、偏微分方程及其定解问题.md",
     "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/八、变分问题和瑞利商法.md",
-    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/六、常微分方程.md",
-    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/二、非线性动力学方程的求解.md",
-    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/一、基础知识.md",
-    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/重要公式/谐波平衡方法近似公式.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/🌊fluid dynamics/第三章 流体运动概述/一、流体运动简介.md",
+    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/拉格朗日乘数法求条件极值.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
+    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
+    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第二章 张量代数和商法则.md",
+    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第三章 向量的微分积分运算法则.md",
+    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/重点总结.md",
+    "📘ClassNotes/⌨️Programming/🐍Python/⛳Python Advanced/10. Context Manager 和自定义 with 语句.md",
+    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/Untitled mindmap.md",
+    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/7. 特殊矩阵及相关性质.md",
+    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/6. 矩阵的广义逆.md",
+    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/5. 特征值估计和对称矩阵的极性.md",
+    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/4. 矩阵分解.md",
+    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/3. 矩阵序列，矩阵级数与矩阵函数.md",
+    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/2. 范数理论及其应用.md",
+    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md",
+    "📘ClassNotes/📐Mathmatics/📏linear algebra/第五章 矩阵的相似变换.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
+    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter3 Mathematical behavior of partial differential equations.md",
     "📘ClassNotes/⌨️Programming/🐧 Linux/🏗️Nginx & 腾讯云服务器/Untitled",
     "📘ClassNotes/🐧Computer System/🐧 Linux/FireWall & Safety",
     "📘ClassNotes/🐧Computer System/🐧 Linux/📝Editor & Shell Command",

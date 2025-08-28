@@ -326,7 +326,7 @@ VC dimension gives a measure of the <b><mark style="background: transparent; col
 $$P(R[p, f] - R_{emp}[X, Y, f] < \alpha )\geq  1- \delta \quad  \text{for}  \quad  \boxed{\alpha \geq  c \sqrt{\frac{VC - \log_{}  \delta }{ n}}}$$
 where $\delta$ is the probability that bound is violated. $\alpha$ is the <mark style="background: transparent; color: red">upper bound on  the generalization-gap</mark>. $n$ is dataset size.
 
-The VC dimension **quantifies the largest number of data points for which we can assign any arbitrary labeling and for each find some model $f$ in the class that agrees with that labeling**. see [[📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第八章 响应面方法和支持向量机#(1) VC维的概念|Conception of the VC dimension]]
+The VC dimension **quantifies the largest number of data points for which we can assign any arbitrary labeling and for each find some model $f$ in the class that agrees with that labeling**. see [[📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧Basics of Structural Reliability/第八章 响应面方法和支持向量机#(1) VC维的概念|Conception of the VC dimension]]
 
 For example, **linear models on d-dimensional input have VC dimension d+1**; (can perfectly fit d+1 item). 
 

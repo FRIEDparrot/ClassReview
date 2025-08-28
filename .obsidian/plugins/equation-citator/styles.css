@@ -1,0 +1,360 @@
+/*
+This is SCSS file for compile the CSS file for equation_citator plugin. 
+*/
+:root {
+  --em-math-citation-color: #cec2f4;
+  --em-math-citation-hover-color: #a18cec;
+  --em-math-citation-file-superscript-color: #8e77e1;
+  --em-math-citation-file-superscript-hover-color: #6d50e0;
+  --em-math-latex-font: "Latin Modern Roman", "Latin Modern Math", "CMU Serif",
+      "Computer Modern", serif;
+  /* Light theme colors */
+  --em-background-primary: #ffffff;
+  --em-background-secondary: #f8f9fa;
+  --em-background-primary-alt: #f5f6f7;
+  --em-background-modifier-hover: #e9ecef;
+  --em-background-modifier-border: #dee2e6;
+  --em-text-normal: #212529;
+  --em-text-muted: #6c757d;
+  --em-text-faint: #adb5bd;
+  --em-interactive-accent: #007acc;
+  --em-interactive-accent-rgb: 0, 122, 204;
+  --em-font-interface: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  /* Dark theme colors */
+  --em-background-primary-dark: #1e1e1e;
+  --em-background-secondary-dark: #2d2d2d;
+  --em-background-primary-alt-dark: #252525;
+  --em-background-modifier-hover-dark: #3a3a3a;
+  --em-background-modifier-border-dark: #404040;
+  --em-text-normal-dark: #dcddde;
+  --em-text-muted-dark: #b9bbbe;
+  --em-text-faint-dark: #72767d;
+  --em-interactive-accent-dark: #5865f2;
+  --em-interactive-accent-rgb-dark: 88, 101, 242;
+}
+
+/* Dark theme colors */
+.theme-dark {
+  --em-background-primary: var(--em-background-primary-dark);
+  --em-background-secondary: var(--em-background-secondary-dark);
+  --em-background-primary-alt: var(--em-background-primary-alt-dark);
+  --em-background-modifier-hover: var(--em-background-modifier-hover-dark);
+  --em-background-modifier-border: var(--em-background-modifier-border-dark);
+  --em-text-normal: var(--em-text-normal-dark);
+  --em-text-muted: var(--em-text-muted-dark);
+  --em-text-faint: var(--em-text-faint-dark);
+  --em-interactive-accent: var(--em-interactive-accent-dark);
+  --em-interactive-accent-rgb: var(--em-interactive-accent-rgb-dark);
+}
+
+/* Main container styles */
+.em-citation-popover-container {
+  width: 320px;
+  max-height: 400px;
+  background: var(--em-background-primary);
+  border: 1px solid var(--em-background-modifier-border);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  overflow: auto;
+  font-family: var(--em-font-interface);
+  animation: fadeInUp 0.2s ease-out;
+  width: auto;
+  max-width: 800px;
+}
+
+/* Header styles - more compact */
+.em-citation-header {
+  padding: 10px 16px 8px;
+  background: var(--em-background-secondary);
+  border-bottom: 1px solid var(--em-background-modifier-border);
+}
+
+.em-citation-title {
+  width: 100%;
+  text-align: center;
+  margin: 2px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--em-text-normal);
+  line-height: 1.3;
+}
+
+/* Content wrapper */
+.em-citation-content {
+  flex: 1;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* Equations container */
+.em-equations-container {
+  max-height: 280px;
+  overflow-x: auto;
+  overflow-y: auto;
+  padding: 2.4px 0;
+}
+
+/* Custom scrollbar */
+.em-equations-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.em-equations-container::-webkit-scrollbar-track {
+  background: var(--em-background-secondary);
+}
+
+.em-equations-container::-webkit-scrollbar-thumb {
+  background: var(--em-background-modifier-border);
+  border-radius: 3px;
+}
+
+.em-equations-container::-webkit-scrollbar-thumb:hover {
+  background: var(--em-text-faint);
+}
+
+/* Individual equation wrapper - more compact */
+.em-equation-wrapper {
+  width: fit-content;
+  min-width: 95%;
+  margin: 3px 12px;
+  padding: 2px 10px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: var(--em-background-primary);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.em-equation-wrapper:hover {
+  border-color: var(--em-interactive-accent);
+  background: var(--em-background-primary-alt);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.em-equation-label-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.em-equation-wrapper.em-equation-active {
+  border-color: var(--em-interactive-accent);
+  background: var(--em-background-modifier-hover);
+  box-shadow: 0 0 0 2px rgba(var(--em-interactive-accent-rgb), 0.2);
+}
+
+/* Equation label - more compact */
+.em-equation-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--em-text-muted);
+  margin-bottom: 2px;
+  letter-spacing: 0.5px;
+}
+
+.em-equation-number {
+  text-transform: uppercase;
+}
+
+/* Equation content */
+.em-equation-content {
+  color: var(--em-text-normal);
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+/* Math content specific styling - removed blue border */
+.em-equation-content .math {
+  font-size: 16px;
+  color: var(--em-text-normal);
+}
+
+.em-equation-content .math-block {
+  margin: 6px 0;
+  padding: 8px 0;
+  background: transparent;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.em-equation-content p {
+  margin: 4px 0;
+}
+
+.em-equation-content code {
+  background: var(--em-background-modifier-border);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+/* Footer styles - more compact */
+.em-citation-footer {
+  padding: 6px 16px 8px;
+  background: var(--em-background-secondary);
+  border-top: 1px solid var(--em-background-modifier-border);
+  font-size: 10px;
+  color: var(--em-text-muted);
+  text-align: center;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .em-citation-popover-container {
+    min-width: 280px;
+    max-width: 90vw;
+  }
+  .em-equation-wrapper {
+    margin: 3px 6px;
+    padding: 6px 10px;
+  }
+}
+/* Dark theme specific adjustments */
+.theme-dark .em-citation-popover-container {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.theme-dark .em-equation-wrapper:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation for smooth appearance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.theme-dark .em-equation-wrapper:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation for smooth appearance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* element styles  in settings tab */
+.ec-settings-title,
+.ec-settings-header {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: orange;
+}
+
+.ec-settings-title {
+  font-size: 25px;
+}
+
+.ec-settings-header {
+  font-size: 20px;
+}
+
+.ec-settings-nodelimter {
+  border-top: none;
+  margin-top: 2px;
+  padding-top: 0px;
+}
+
+.ec-delimiter-input,
+.ec-multi-delimiter-input {
+  height: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.ec-delimiter-input {
+  width: 75px;
+}
+
+.ec-multi-delimiter-input {
+  width: 120px;
+}
+
+.ec-settings-warning {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Regular citation styles for live preview and reading mode */
+.em-math-citation-container {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+
+.em-math-citation,
+.em-math-citaion-failed {
+  font-family: var(--em-math-latex-font);
+  position: relative;
+  padding: 1px 2px;
+  pointer-events: auto;
+  user-select: none;
+  display: inline-block;
+  color: var(--em-math-citation-color);
+}
+
+.em-math-citation:hover {
+  cursor: pointer;
+  color: var(--em-math-citation-hover-color);
+}
+
+.em-math-citation-file-superscript {
+  font-family: var(--em-math-latex-font);
+  font-size: 0.7em;
+  position: relative;
+  vertical-align: super;
+  margin-left: 1px;
+  color: var(--em-math-citation-file-superscript-color);
+  z-index: 10;
+}
+
+.em-math-citation-file-superscript:hover {
+  cursor: pointer;
+  color: var(--em-math-citation-file-superscript-hover-color);
+}
+
+/* 
+when generating markdown for print pdf, 
+    get following styles from stylesheets 
+    (not add font-size for it!)
+*/
+.em-math-citation-container-print {
+  cursor: default;
+}
+
+.em-math-citation-print {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.em-math-citation-file-superscript-print {
+  font-size: 0.7em;
+  vertical-align: super;
+  margin-left: 1px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */

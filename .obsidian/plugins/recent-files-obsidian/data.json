@@ -1,84 +1,84 @@
 {
   "recentFiles": [
     {
-      "basename": "大作业笔记部分",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/Homework/大作业笔记部分.md"
+      "basename": "2. Pytorch 基础常用代码部分",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔥Pytorch Basics/2. Pytorch 基础常用代码部分.md"
     },
     {
-      "basename": "第四章 空间问题的有限元法",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第四章 空间问题的有限元法.md"
-    },
-    {
-      "basename": "第二章 平面问题",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第二章 平面问题.md"
-    },
-    {
-      "basename": "三、 声学边界元方法简介",
-      "path": "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/三、 声学边界元方法简介.md"
-    },
-    {
-      "basename": "第一章 杆件结构",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🕸️FEM Analysis/Structural FEM Analysis/第一章 杆件结构.md"
-    },
-    {
-      "basename": "第十章 热力学微分关系式与气体性质",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/♨️Engineering thermodynamics/第十章 热力学微分关系式与气体性质.md"
-    },
-    {
-      "basename": "五、偏微分方程的分类",
-      "path": "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/五、偏微分方程的分类.md"
-    },
-    {
-      "basename": "第一章 偏微分方程概念与分类",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/计算流体力学技术与应用/第一章 偏微分方程概念与分类.md"
-    },
-    {
-      "basename": "四、位势方程",
-      "path": "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/四、位势方程.md"
-    },
-    {
-      "basename": "三、热传导方程",
-      "path": "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/三、热传导方程.md"
-    },
-    {
-      "basename": "二、 波动方程",
-      "path": "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/二、 波动方程.md"
+      "basename": "8. SVM支持向量机",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/8. SVM支持向量机.md"
     },
     {
       "basename": "一、偏微分方程及其定解问题",
-      "path": "📘ClassNotes/📐Mathmatics/🧩Mathmatical and Physics Equations/一、偏微分方程及其定解问题.md"
+      "path": "📘ClassNotes/📐Mathmatics/🧩Mathematical and Physical Equations/一、偏微分方程及其定解问题.md"
     },
     {
-      "basename": "四、边界积分方程",
-      "path": "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/四、边界积分方程.md"
+      "basename": "八、变分问题和瑞利商法",
+      "path": "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/八、变分问题和瑞利商法.md"
     },
     {
-      "basename": "七、量纲分析和相似理论",
-      "path": "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/七、量纲分析和相似理论.md"
+      "basename": "拉格朗日乘数法求条件极值",
+      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/拉格朗日乘数法求条件极值.md"
     },
     {
-      "basename": "第六章 弯曲应力",
-      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/第六章 弯曲应力.md"
+      "basename": "第一章 随机事件及其概率",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md"
     },
     {
-      "basename": "傅里叶级数展开方法",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/傅里叶级数展开方法.md"
+      "basename": "第七章 参数估计",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md"
     },
     {
-      "basename": "第八章 傅里叶变换",
-      "path": "📘ClassNotes/📐Mathmatics/ℹ️Complex Variables/第八章 傅里叶变换.md"
+      "basename": "第六章 样本及抽样分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md"
     },
     {
-      "basename": "五、边界元法讲解",
-      "path": "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/五、边界元法讲解.md"
+      "basename": "第二章 随机变量及其分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md"
     },
     {
-      "basename": "重要公式部分",
-      "path": "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/重要公式/重要公式部分.md"
+      "basename": "第四章 随机变量的数字特征",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md"
     },
     {
-      "basename": "重要导数公式",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/♎重要公式/重要导数公式.md"
+      "basename": "第三章 多维随机变量及其分布",
+      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
+    },
+    {
+      "basename": "第二章 张量代数和商法则",
+      "path": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第二章 张量代数和商法则.md"
+    },
+    {
+      "basename": "第三章 向量的微分积分运算法则",
+      "path": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第三章 向量的微分积分运算法则.md"
+    },
+    {
+      "basename": "重点总结",
+      "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/重点总结.md"
+    },
+    {
+      "basename": "10. Context Manager 和自定义 with 语句",
+      "path": "📘ClassNotes/⌨️Programming/🐍Python/⛳Python Advanced/10. Context Manager 和自定义 with 语句.md"
+    },
+    {
+      "basename": "Untitled mindmap",
+      "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/Untitled mindmap.md"
+    },
+    {
+      "basename": "7. 特殊矩阵及相关性质",
+      "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/7. 特殊矩阵及相关性质.md"
+    },
+    {
+      "basename": "6. 矩阵的广义逆",
+      "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/6. 矩阵的广义逆.md"
+    },
+    {
+      "basename": "5. 特征值估计和对称矩阵的极性",
+      "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/5. 特征值估计和对称矩阵的极性.md"
+    },
+    {
+      "basename": "4. 矩阵分解",
+      "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/4. 矩阵分解.md"
     }
   ],
   "omittedPaths": [],

@@ -577,15 +577,6 @@
       "key": "Q"
     }
   ],
-  "templater-obsidian:🗒️Templates/ADD_TAG_AFTER_EQUATION.md": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "T"
-    }
-  ],
   "templater-obsidian:🗒️Templates/ADD_TEXT_IN_EQUATION.md": [
     {
       "modifiers": [
@@ -1691,6 +1682,24 @@
         "Shift"
       ],
       "key": "F"
+    }
+  ],
+  "equation-citator:insert-equation-citation-on-cursor-position": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": " "
+    }
+  ],
+  "equation-citator:insert-tag-with-auto-number-on-cursor-position": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "T"
     }
   ]
 }

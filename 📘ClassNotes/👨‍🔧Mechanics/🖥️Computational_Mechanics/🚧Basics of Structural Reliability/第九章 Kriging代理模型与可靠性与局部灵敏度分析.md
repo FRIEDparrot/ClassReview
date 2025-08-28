@@ -122,7 +122,7 @@ $$\text{cov}(\hat{P}_{f})  = \sqrt{\frac{1 - \hat{P}_{f}}{(N_{MC} - 1) P_{f}}}$$
 > 先构建样本池, 保证$U_{x} \geq 2$, 然后再使用
 
 ### (2) 可靠性局部灵敏度分析的AK-MCS方法 
-首先，参考[[📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第二章 蒙特卡洛模拟方法|蒙特卡洛模拟方法]], 局部灵敏度可以定义为:
+首先，参考[[📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧Basics of Structural Reliability/第二章 蒙特卡洛模拟方法|蒙特卡洛模拟方法]], 局部灵敏度可以定义为:
 $$\frac{\partial P_{f}}{\partial \theta_{Xi}^{k}} = \int\dots\int _{F} \frac{\partial f_{X}}{\partial \theta_{X_{i}}^{(k)}} \frac{1}{f_{X}(x)} f_{X} (x) dx = \int\dots\int _{R^{n}} I_{F}(x) \frac{\partial f_{X}}{\partial \theta_{X_{i}}^{(k)}} \frac{1}{f_{X}(x)} f_{X} (x) dx$$
 我们将上式使用均值表示， 公式为:
 $$\boxed{\frac{\partial P_{f}}{\partial \theta_{X_{i}}} =E\left[ \frac{I_{F} (x)}{f_{X}(x)} \frac{\partial f_{X}(x)}{\partial \theta_{X_{i}}^{(k)}} \right]}$$
@@ -253,11 +253,11 @@ $$\text{cov}\left(\frac{\partial \hat{P}_{f}}{\partial \theta_{X_{i}}^{(k)}} \ri
 
 ## 五、结合重要抽样的代理模型方法
 ### (1) AK-IS方法
-AK-IS方法的可靠性分析主要思想为: 参考[[📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第三章 可靠性灵敏度分析的矩方法|第三章 可靠性灵敏度分析的矩方法]]，根据<mark style="background: transparent; color: red">改进一次二阶矩方法将原始的抽样密度中心平移到使用一次二阶矩方法求解得到的设计点处</mark>, 然后构造重要抽样密度概率函数 $h_{X}(x)$, 利用重要抽样密度函数构造重要抽样样本池, 采用 U 学习函数更新样本点。
+AK-IS方法的可靠性分析主要思想为: 参考[[📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧Basics of Structural Reliability/第三章 可靠性灵敏度分析的矩方法|第三章 可靠性灵敏度分析的矩方法]]，根据<mark style="background: transparent; color: red">改进一次二阶矩方法将原始的抽样密度中心平移到使用一次二阶矩方法求解得到的设计点处</mark>, 然后构造重要抽样密度概率函数 $h_{X}(x)$, 利用重要抽样密度函数构造重要抽样样本池, 采用 U 学习函数更新样本点。
 
 需要说明的是, AK-IS方法是适用于功能函数已知而且方便求导的情况的， 但是也可以用于求解功能函数未知的情况(选用初始样本点即可);
 
-失效概率计算等等参考[[📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧结构可靠性设计基础/第四章 重要抽样法原理与应用|重要抽样法原理与应用]]部分; 并需要使用 $h_{X}(x)$ 估计对应的失效概率值。
+失效概率计算等等参考[[📘ClassNotes/👨‍🔧Mechanics/🖥️Computational_Mechanics/🚧Basics of Structural Reliability/第四章 重要抽样法原理与应用|重要抽样法原理与应用]]部分; 并需要使用 $h_{X}(x)$ 估计对应的失效概率值。
 
 对应的可靠性灵敏度估计式为(4.2.1.1-4.2.1.4)
 
