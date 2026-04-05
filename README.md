@@ -108,7 +108,7 @@ VB编程基础（不建议看）
 - Matrix Theory（矩阵论）
 - Mathematical and Physical Equations（数学物理方程）
 - Tensor Calculus（张量分析）
-- Aero-engineering Mathematical Analysis（航空工程数学分析）
+- Aero-engineering Mathematical Analysis（航空工程数理分析）
 
 #### 🚱 Materials and Chemicals（材料与化学）
 - 工程化学基础
