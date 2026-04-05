@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "1.机器学习算法和文本分类挖掘(Naive Bayes)",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/1.机器学习算法和文本分类挖掘(Naive Bayes).md"
+    },
+    {
+      "basename": "Sklearn的使用基础和基本代码",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/Sklearn的使用基础和基本代码.md"
+    },
+    {
       "basename": "第三章 向量的微分积分运算法则",
       "path": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第三章 向量的微分积分运算法则.md"
     },
@@ -67,18 +79,6 @@
     {
       "basename": "1-1 ~1-2",
       "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/习题/第一章习题/1-1 ~1-2.md"
-    },
-    {
-      "basename": "将 Drafting 中覆盖注释和转为字母",
-      "path": "💻softwares/🗽2D & 3D design/UG/将 Drafting 中覆盖注释和转为字母.md"
-    },
-    {
-      "basename": "Sklearn的使用基础和基本代码",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/Sklearn的使用基础和基本代码.md"
-    },
-    {
-      "basename": "UG联合Ansys Workbench参数化建模和Matlab参数扫描教程",
-      "path": "💻softwares/🛩️FEM/Workbench/Geomrtry & Materials/UG联合Ansys Workbench参数化建模和Matlab参数扫描教程.md"
     }
   ],
   "omittedPaths": [],

@@ -40,14 +40,6 @@
   "editor:open-link-in-new-leaf": [],
   "obsidian-excalidraw-plugin:save": [],
   "obsidian-languagetool-plugin:ltautocheck-text": [],
-  "editor:toggle-spellcheck": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "R"
-    }
-  ],
   "obsidian-excalidraw-plugin:toggle-excalidraw-view": [],
   "obsidian-excalidraw-plugin:insert-link-to-element": [],
   "obsidian-excalidraw-plugin:excalidraw-autocreate": [],
@@ -1706,6 +1698,14 @@
     {
       "modifiers": [],
       "key": "F6"
+    }
+  ],
+  "app:reload": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "R"
     }
   ]
 }
