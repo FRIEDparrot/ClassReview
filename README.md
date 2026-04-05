@@ -27,7 +27,7 @@
 - AppDesigner（GUI设计）
 - Applied Numerical Methods（应用数值方法）
 - Basic Usage（基础用法）
-- Third Party 第三方库：DSP (数字信号处理)、QULab（量子计算库）
+- Third Party 第三方库：DSP (数字信号处理)、QULab（可靠性计算库）
 
 ##### 🌳 Data Structure & Algorithms（数据结构与算法）
 这一块使用的主语言是 C++ 
