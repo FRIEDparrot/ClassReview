@@ -219,7 +219,12 @@ class MyAttentionLayer(nn.Module):
         """  
         Attention layer implementation  
         note that d_model == num_hiddens  
-        :param d_model:        :param num_heads:        :param lr: learning rate        :param dropout:        """        super(MyAttentionLayer, self).__init__()  
+        :param d_model:        
+        :param num_heads:        
+        :param lr: learning rate        
+        :param dropout:        
+        """        
+        super(MyAttentionLayer, self).__init__()  
         # note that d_model is input size  
         self.d_model = d_model  
         self.num_heads = num_heads  

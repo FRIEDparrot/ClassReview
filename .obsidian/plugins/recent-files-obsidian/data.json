@@ -1,84 +1,84 @@
 {
   "recentFiles": [
     {
-      "basename": "2. Pytorch 基础常用代码部分",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔥Pytorch Basics/2. Pytorch 基础常用代码部分.md"
+      "basename": "第三章 向量的微分积分运算法则",
+      "path": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第三章 向量的微分积分运算法则.md"
     },
     {
-      "basename": "8. SVM支持向量机",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/8. SVM支持向量机.md"
-    },
-    {
-      "basename": "一、偏微分方程及其定解问题",
-      "path": "📘ClassNotes/📐Mathmatics/🧩Mathematical and Physical Equations/一、偏微分方程及其定解问题.md"
-    },
-    {
-      "basename": "八、变分问题和瑞利商法",
-      "path": "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/八、变分问题和瑞利商法.md"
-    },
-    {
-      "basename": "拉格朗日乘数法求条件极值",
-      "path": "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/拉格朗日乘数法求条件极值.md"
-    },
-    {
-      "basename": "第一章 随机事件及其概率",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md"
+      "basename": "第一章 张量的表示",
+      "path": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第一章 张量的表示.md"
     },
     {
       "basename": "第七章 参数估计",
       "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md"
     },
     {
-      "basename": "第六章 样本及抽样分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md"
+      "basename": "11. Python 文档生成工具 Sphinx",
+      "path": "📘ClassNotes/⌨️Programming/🐍Python/⛳Python Advanced/11. Python 文档生成工具 Sphinx.md"
     },
     {
-      "basename": "第二章 随机变量及其分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md"
+      "basename": "一、偏微分方程及其定解问题",
+      "path": "📘ClassNotes/📐Mathmatics/🧩Mathematical and Physical Equations/一、偏微分方程及其定解问题.md"
     },
     {
-      "basename": "第四章 随机变量的数字特征",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md"
+      "basename": "ipopt 的使用和 conda 环境配置",
+      "path": "📘ClassNotes/⌨️Programming/🐍Python/🥧Python优化求解库/ipopt 的使用和 conda 环境配置.md"
     },
     {
-      "basename": "第三章 多维随机变量及其分布",
-      "path": "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md"
+      "basename": "四、位势方程",
+      "path": "📘ClassNotes/📐Mathmatics/🧩Mathematical and Physical Equations/四、位势方程.md"
     },
     {
-      "basename": "第二章 张量代数和商法则",
-      "path": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第二章 张量代数和商法则.md"
+      "basename": "八、变分问题和瑞利商法",
+      "path": "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/八、变分问题和瑞利商法.md"
     },
     {
-      "basename": "第三章 向量的微分积分运算法则",
-      "path": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第三章 向量的微分积分运算法则.md"
+      "basename": "五、偏微分方程的分类",
+      "path": "📘ClassNotes/📐Mathmatics/🧩Mathematical and Physical Equations/五、偏微分方程的分类.md"
     },
     {
-      "basename": "重点总结",
-      "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/重点总结.md"
+      "basename": "Chapter5 Essential Concepts & Heuristics",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter5 Essential Concepts & Heuristics.md"
     },
     {
-      "basename": "10. Context Manager 和自定义 with 语句",
-      "path": "📘ClassNotes/⌨️Programming/🐍Python/⛳Python Advanced/10. Context Manager 和自定义 with 语句.md"
+      "basename": "Chapter6 CNN",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter6 CNN.md"
     },
     {
-      "basename": "Untitled mindmap",
-      "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/Untitled mindmap.md"
+      "basename": "7.  AdaBoost 图片分类和 CNN 卷积神经网络",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/7.  AdaBoost 图片分类和 CNN 卷积神经网络.md"
     },
     {
-      "basename": "7. 特殊矩阵及相关性质",
-      "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/7. 特殊矩阵及相关性质.md"
+      "basename": "2. Pytorch 基础常用代码部分",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔥Pytorch Basics/2. Pytorch 基础常用代码部分.md"
     },
     {
-      "basename": "6. 矩阵的广义逆",
-      "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/6. 矩阵的广义逆.md"
+      "basename": "6. 最小二乘, RBF, 岭回归和 Lasso 回归",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/6. 最小二乘, RBF, 岭回归和 Lasso 回归.md"
     },
     {
-      "basename": "5. 特征值估计和对称矩阵的极性",
-      "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/5. 特征值估计和对称矩阵的极性.md"
+      "basename": "损失函数自定义和强化学习策略梯度",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔥Pytorch Basics/损失函数自定义和强化学习策略梯度.md"
     },
     {
-      "basename": "4. 矩阵分解",
-      "path": "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/4. 矩阵分解.md"
+      "basename": "9. softmax函数和交叉熵损失CrossEntropy",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/补充知识/9. softmax函数和交叉熵损失CrossEntropy.md"
+    },
+    {
+      "basename": "1-1 ~1-2",
+      "path": "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🚲Mechanics of materials/习题/第一章习题/1-1 ~1-2.md"
+    },
+    {
+      "basename": "将 Drafting 中覆盖注释和转为字母",
+      "path": "💻softwares/🗽2D & 3D design/UG/将 Drafting 中覆盖注释和转为字母.md"
+    },
+    {
+      "basename": "Sklearn的使用基础和基本代码",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/Sklearn的使用基础和基本代码.md"
+    },
+    {
+      "basename": "UG联合Ansys Workbench参数化建模和Matlab参数扫描教程",
+      "path": "💻softwares/🛩️FEM/Workbench/Geomrtry & Materials/UG联合Ansys Workbench参数化建模和Matlab参数扫描教程.md"
     }
   ],
   "omittedPaths": [],

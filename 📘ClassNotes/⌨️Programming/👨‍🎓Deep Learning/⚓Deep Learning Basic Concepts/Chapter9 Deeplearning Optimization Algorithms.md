@@ -76,91 +76,91 @@ for  vanishing gradient is as follows, We note <b><mark style="background: trans
 ![[attachments/Pasted image 20250428155332.png|250]]
 ### (3) Convex and Convex functions 
 firstly we introduce the [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/4. 最优化方法, 梯度寻优法及Logistic 回归#(2) 凸集和分离定理|Convex Sets]], which is : 
-$$\alpha x_{1} + (1- \alpha)  x_{2}  \in   X , \quad  \forall x_{1} , x_{2} \in  X \quad \forall  \alpha \in [ 0.1 ]$$
+$$ \alpha x_{1} + (1- \alpha)  x_{2}  \in   X , \quad  \forall x_{1} , x_{2} \in  X \quad \forall  \alpha \in [ 0.1 ] \tag{1.3.1} $$
 we note that the <mark style="background: transparent; color: red">intersection of two  convex is also a convex</mark>.  
 ![[attachments/Pasted image 20250428160514.png|200]]
 also, if for two convex that  $X \cap Y = \emptyset$, for every $x_{1} \in  X$ and $x_{2} \in  Y$,  we have : 
-$$x_{1} + (1 - \alpha) x_{2} \notin X \cup  Y  $$
+$$ x_{1} + (1 - \alpha) x_{2} \notin X \cup  Y \tag{1.3.2} $$
 which implies that **unions of convex  sets  needn't to be convex**. 
 ![[attachments/Pasted image 20250521161759.png|250]]
 
 For <b><mark style="background: transparent; color: orange">Convex functions</mark></b>, the following equation is satisfied  :  
-$$\Large \boxed{\lambda f(x) +  (1 - \lambda) f(x') \geq   f(\lambda x  + (1 - \lambda) x')}$$
+$$ \Large \boxed{\lambda f(x) +  (1 - \lambda) f(x') \geq   f(\lambda x  + (1 - \lambda) x')} \tag{1.3.3} $$
 ![[Excalidraw/Chapter9 Deeplearning Optimization Algorithms 2025-05-21 16.21.52|250]]
 
 #### 3.1 Jensen's Inequality  
 For any convex function $f$, we have one of the most useful tool <b><mark style="background: transparent; color: orange">Jense's inequality</mark></b> : 
-$$\sum_{i} \alpha_{i} f(x_{i}) \geq  f \left( \sum_{i} \alpha_{i} x_{i} \right) \quad  \text{and} \quad  E_{X} [f(X)] \geq  f(E_{X}[X])$$
+$$ \sum_{i} \alpha_{i} f(x_{i}) \geq  f \left( \sum_{i} \alpha_{i} x_{i} \right) \quad  \text{and} \quad  E_{X} [f(X)] \geq  f(E_{X}[X]) \tag{1.3.4} $$
 where we have  
-$$\sum_{i} \alpha_{i} = 1$$
+$$ \sum_{i} \alpha_{i} = 1 \tag{1.3.5} $$
 and  $X$ is a random variable. <b><mark style="background: transparent; color: orange">the above equations elucidate that expectation of a convex function is no less than the convex function of an expectation, where the latter is usually a  simpler expression</mark></b>
 
 We give one of the common application of it as **log-likelihood of partially observed random variables**. 
 since we have : 
-$$\int P(Y) P(X|Y) dY =  P(X)$$
+$$ \int P(Y) P(X|Y) dY =  P(X) \tag{1.3.6} $$
 Here Y is typically the **unobserved random variable**, P (Y ) is the **best guess of how it might be distributed**, and **$P (X)$ is the distribution with Y integrated out**. in clustering,  $Y$ might be the cluster labels, and  $P(X|Y)$  is the generative model when applying  a cluster labels. then we have :  
-$$E_{Y \sim  P(Y)} \left[ -  \log_{}P(X|Y) \right] \geq   - \log_{} P(X)$$
+$$ E_{Y \sim  P(Y)} \left[ -  \log_{}P(X|Y) \right] \geq   - \log_{} P(X) \tag{1.3.7} $$
 
 #### 3.2 Properties 
 For convex functions, it have many properties that useful. 
 
 1.  The  Local minima of  convex functions are **also the global minima**. 
 proof : assume the local minimum at $x^{*}$ is not global minimum, and true global minimum is $x'$, then $\forall \varepsilon > 0$, we have : 
-$$f (\lambda x^{*} + (1 - \lambda) x') \leq  \lambda f(x)^{*} + (1 - \lambda) f(x') <  f(x^{*})$$
+$$ f (\lambda x^{*} + (1 - \lambda) x') \leq  \lambda f(x)^{*} + (1 - \lambda) f(x') <  f(x^{*}) \tag{1.3.8} $$
 since  $x^{*}$ is a local minimum,  for $|x - x^{*}| < \varepsilon$,  $f(x) > f(x^{*})$, we let 
-$$|\lambda x^{*} + (1 - \lambda) x'  - x^{*}| < \varepsilon \rightarrow  |(1- \lambda)( x' - x^{*} )|< \varepsilon \rightarrow   \lambda  < 1 -  \frac{\varepsilon}{|x' - x^{*}|}$$
+$$ |\lambda x^{*} + (1 - \lambda) x'  - x^{*}| < \varepsilon \rightarrow  |(1- \lambda)( x' - x^{*} )|< \varepsilon \rightarrow   \lambda  < 1 -  \frac{\varepsilon}{|x' - x^{*}|} \tag{1.3.9} $$
 then in that field we have : 
-$$ f(x^{*}) < f(\lambda x^{*}  + (1 -  \lambda) x')$$
+$$ f(x^{*}) < f(\lambda x^{*}  + (1 -  \lambda) x') \tag{1.3.10} $$
 which draws contradiction. 
 2.  **Blow Sets of convex are convex** 
 
 3.  Convexity and Second Derivates 
 a **twice- differentiable 1-D function f : $R \rightarrow R$ is convex** is and only if  second derivate 
-$$f'' > 0$$
+$$ f'' > 0 \tag{1.3.11} $$
 firstly, to see that convexity of f implies $f'' > 0$, we can simply proof it by the definition. 
 
 ### (4) Constraints  
 The  optimization problem is : 
-$$\underset{x}{\text{minimize}}\space  f(x)$$
-$$ \text{subject to}\quad   c_{i}(x)\leq 0  \space ,  \forall   i  \in  \left\{ 1, 2, \dots  n \right\}$$
+$$ \underset{x}{\text{minimize}}\space  f(x) \tag{1.4.1} $$
+$$ \text{subject to}\quad   c_{i}(x)\leq 0  \space ,  \forall   i  \in  \left\{ 1, 2, \dots  n \right\} \tag{1.4.2} $$
 we can **add the constraints together** use Lagrangian Optimization problem of the above function, which gives : 
-$$\Large\boxed{L(x, \alpha_{1}, \dots  \alpha_{n}) = f(x) + \sum_{i = 1}^{n} \alpha_{i} c_{i}(x)\qquad  \alpha_{i} \geq  0}$$
+$$ \Large\boxed{L(x, \alpha_{1}, \dots  \alpha_{n}) = f(x) + \sum_{i = 1}^{n} \alpha_{i} c_{i}(x)\qquad  \alpha_{i} \geq  0} \tag{1.4.3} $$
 $\alpha_i$ is Lagrange multiplier. 
 
 in that case, satisfying the constrained optimization problem **at least approximately** is to adapt the $L$ to **slack the constraints condition**.  note we may also use $||w||^2/2$ in SVM to prevent getting large. 
 
 Also,  an alternative  strategy for satisfying the constrains  is <b><mark style="background: transparent; color: orange">projection.</mark></b>  For example, we used [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter7 RNN#(3) Gradient Clipping|Gradient Clipping]] for 
-$$g \leftarrow  \min  \left(1, \frac{\theta}{||g||}\right)\boldsymbol{g}$$
+$$ g \leftarrow  \min  \left(1, \frac{\theta}{||g||}\right)\boldsymbol{g} \tag{1.4.4} $$
 in that case, we cast $g$  to the circle with radius $\theta$.  
 
 More generally, the projection on a convex $\mathcal{X}$ can be defined as : 
-$$\text{Proj}_{\mathcal{X}} (x) = \text{argmin}_{x' \in  \mathcal{X}} || x - x'||$$
+$$ \text{Proj}_{\mathcal{X}} (x) = \text{argmin}_{x' \in  \mathcal{X}} || x - x'|| \tag{1.4.5} $$
 ![[Excalidraw/Chapter7 RNN 2025-05-21 18.14.44|400]]
 ## 2. Gradient Descend and Adaptive  Methods 
 ### (1) General SGD method 
 for gradient descend, we can refer to [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter3 Linear Neural  Networks for regression(back Propagation)#2. Minibatch Stochastic gradient descent(SGD)|SGD Method]], and use Gradient Descend method like : 
-$$x \leftarrow  x - \eta  \nabla f(x)$$
+$$ x \leftarrow  x - \eta  \nabla f(x) \tag{2.1.1} $$
 where  
-$$\nabla f(x) =  \left[\frac{\partial f}{\partial x_{1}},  \dots  \frac{\partial f}{\partial x_{n}} \right]$$
+$$ \nabla f(x) =  \left[\frac{\partial f}{\partial x_{1}},  \dots  \frac{\partial f}{\partial x_{n}} \right] \tag{2.1.2} $$
 
 <b><mark style="background: transparent; color: orange">Newton's Method</mark></b>
 consider the Tylor Expansion, we have : 
-$$f(x + \varepsilon) = f(x) + \varepsilon \nabla f(x) + \frac{1}{2} \varepsilon^{T} [\nabla^{2} f(x)] \varepsilon +  O (\varepsilon^{3})$$
+$$ f(x + \varepsilon) = f(x) + \varepsilon \nabla f(x) + \frac{1}{2} \varepsilon^{T} [\nabla^{2} f(x)] \varepsilon +  O (\varepsilon^{3}) \tag{2.1.3} $$
 we define : 
-$$H  \equiv   \nabla^{2} f(x)$$
+$$ H  \equiv   \nabla^{2} f(x) \tag{2.1.4} $$
 We note here that  for deep neural networks,  $H$ may to prohibitively large, we note that for minimum of $f$, it satisfies  $\nabla f = 0$ 
-$$\nabla f(x) + H \varepsilon = 0 \overset{}{\longrightarrow}  \varepsilon = - H^{-1}\nabla  f(x)$$
+$$ \nabla f(x) + H \varepsilon = 0 \overset{}{\longrightarrow}  \varepsilon = - H^{-1}\nabla  f(x) \tag{2.1.5} $$
 note that the Hessian method not always converge to the global minima. One way would be to “fix” the Hessian by **taking its absolute value instead.** 
 
 ### (2) Adaptive Methods 
 #### 1) Precoinditioning 
 Since the Hessian matrix need expensive cost for store, we want to find an alternative  that <b><mark style="background: transparent; color: orange">avoid computing Hessian</mark></b>, if we can only  compute the diagonal of the  entries, it result in the following update method : 
-$$x \leftarrow   x - \eta  \text{diag} (H)^{-1} \nabla f(x)$$
+$$ x \leftarrow   x - \eta  \text{diag} (H)^{-1} \nabla f(x) \tag{2.2.1} $$
 
 For the stochastic  gradient descent method, it use  
-$$x \leftarrow  x - \eta  \nabla f_{i} (x)$$
+$$ x \leftarrow  x - \eta  \nabla f_{i} (x) \tag{2.2.2} $$
 where we uniformly sample an index $i \in  \{ 1, \dots  n\}$ at random. we note :
-$$E_{i} \nabla f_{i}(x) = \frac{1}{n} \sum_{i = 1}^{n}  \nabla f_{i} (x)  = \nabla f(x)$$
+$$ E_{i} \nabla f_{i}(x) = \frac{1}{n} \sum_{i = 1}^{n}  \nabla f_{i} (x)  = \nabla f(x) \tag{2.2.3} $$
 Which states that SGD is good estimte of gradient method on average. 
 
 Also considering that when we arrive the  minimum, we will still suffer from the uncertainty. So we may use the dynamic  learning rate $\eta$  
@@ -168,28 +168,30 @@ Also considering that when we arrive the  minimum, we will still suffer from the
 Main strategies are including : 
 
 1. exponentail decay : 
-$$\eta(t) = \eta_{0} e^{- \lambda t}$$
+$$ \eta(t) = \eta_{0} e^{- \lambda t} \tag{2.2.4} $$
 2. polynomial decay : 
-$$\eta(t) = \eta_{0} (\beta  t + 1)^{- \alpha}$$
+$$ \eta(t) = \eta_{0} (\beta  t + 1)^{- \alpha} \tag{2.2.5} $$
 Note a popular choice is polynomial decay with $\alpha = 0.5$
 
 We set $x^*$ as the minimzed point exist within the domain. Also consider   for any convex function $f$ it holds that : 
-$$f(y) \geq  f(x) + <f'(x), y - x>$$
+$$ f(y) \geq  f(x) + <f'(x), y - x> \tag{2.2.6} $$
 then we have : 
-$$f(\xi_{t}, x^{*}) \geq  f(\xi_{t}, x_{t}) + <x^{*} - x_{t}, \partial_{x} 
-f(\xi_{t}, x_{t})>$$
+$$
+f(\xi_{t}, x^{*}) \geq  f(\xi_{t}, x_{t}) + <x^{*} - x_{t}, \partial_{x}
+f(\xi_{t}, x_{t})> \tag{2.2.7}
+$$
 where  $f(\xi_t, \boldsymbol{x})$ is the **objective funcction with respect to the training example $\xi_t$**,  and  $\boldsymbol{x}$ is  model parameter. The **expected risk** is the **average error**  for all $\xi$ : 
-$$R(x) = E_{\xi} [f(\xi, \boldsymbol{x})]$$
+$$ R(x) = E_{\xi} [f(\xi, \boldsymbol{x})] \tag{2.2.8} $$
 we can derivate that :
-$$||x_{t}  - x^{*}||^{2} - ||x_{t+1} - x^{*}||^{2} \geq   2\eta_{t} (f(\xi_{t}, x_{t}) - f(\xi_{t}, x^{*})) - \eta_{t}^{2} L^{2}$$
+$$ ||x_{t}  - x^{*}||^{2} - ||x_{t+1} - x^{*}||^{2} \geq   2\eta_{t} (f(\xi_{t}, x_{t}) - f(\xi_{t}, x^{*})) - \eta_{t}^{2} L^{2} \tag{2.2.9} $$
 since we always need the result converge (left side $\geq  0$) we got that if the  difference between  current loss and  optimal loss outweights $\eta_{t} \frac{L^{2}}{2}$, the difference is bound to converge to 0. 
 
 We  can got  
-$$||x_{1} - x^{*}||^{2}  \geq   2 \left(\sum_{t = 1}^{T}  \eta_{t}\right) [E[R(\boldsymbol{x}_{t})] - R^{*}] - L\sum_{t = 1}^{T} \eta_{t}^{2}$$
+$$ ||x_{1} - x^{*}||^{2}  \geq   2 \left(\sum_{t = 1}^{T}  \eta_{t}\right) [E[R(\boldsymbol{x}_{t})] - R^{*}] - L\sum_{t = 1}^{T} \eta_{t}^{2} \tag{2.2.10} $$
 we define: 
-$$\overline{x} \xlongequal{def}\frac{\sum_{t = 1}^{T} \eta_{t}  \boldsymbol{x}_{t}}{\sum_{t=1}  ^{T}  \eta_{t}}$$
+$$ \overline{x} \xlongequal{def}\frac{\sum_{t = 1}^{T} \eta_{t}  \boldsymbol{x}_{t}}{\sum_{t=1}  ^{T}  \eta_{t}} \tag{2.2.11} $$
 we can derive  that : 
-$$[E[\overline{x}]] - R^{*}  \leq  \frac{r^{2} + L^{2} \sum_{t = 1}^{T} \eta_{t}^{2}}{2 \sum_{t = 1}^{T}  \eta_{t}}$$
+$$ [E[\overline{x}]] - R^{*}  \leq  \frac{r^{2} + L^{2} \sum_{t = 1}^{T} \eta_{t}^{2}}{2 \sum_{t = 1}^{T}  \eta_{t}} \tag{2.2.12} $$
 where  $r^{2} = ||x_{1} - x^{*}||^{2}$  is a bound  on the distance  between  the initial  choice of parameters. 
 
 Note that we want  the above part < $r$. so if  $r, L$ and  $T$ are all known, we can specify the learning rate as $\eta = r/(L \sqrt{T})$ which is  converged  with rate  $O(1/\sqrt{T})$
@@ -201,15 +203,15 @@ For stochastic gradient descent, It is <b><mark style="background: transparent; 
 Since the  SGD equation  is : 
 ![[attachments/Pasted image 20250603155618.png|350]]
 and the  gradient computation is : 
-$$x_{t} =   x_{t-1} -  \eta_{t} g_{t, t-1}$$
+$$ x_{t} =   x_{t-1} -  \eta_{t} g_{t, t-1} \tag{2.3.1} $$
 we can replace the above gradient computation  by a  `leaky average`,  and this formed  the  accelerated gradient methods, such as <b><mark style="background: transparent; color: orange">gradients with momentum</mark></b>.  
-$$\boxed{v_{t} =  \beta v_{t-1}  + g_{t, t-1 }}$$
+$$ \boxed{v_{t} =  \beta v_{t-1}  + g_{t, t-1 }} \tag{2.3.2} $$
 here $v$ is velocity (It accumulates past gradients similar to how a heavy ball rolling down the objective function landscape integrates over past forces) 
 
 where  $g = \nabla f (w^k)$  is gradient. and  <b><mark style="background: transparent; color: orange">then substitute the gradient descend method by the following equation</mark></b> : 
-$$\boxed{x_{t} = x_{t-1} - \eta_{t}  v^{t}}$$
+$$ \boxed{x_{t} = x_{t-1} - \eta_{t}  v^{t}} \tag{2.3.3} $$
 Through this equation,we can recursively expand the $v_t$ into : 
-$$v_{t} = \beta^{2} v_{t-2}  + \beta g_{t - 1,  t-2} + g_{t, t-1} = \sum_{m = 1}^{t-1}  \beta^{m}  g_{t-m, t-m - 1} $$
+$$ v_{t} = \beta^{2} v_{t-2}  + \beta g_{t - 1,  t-2} + g_{t, t-1} = \sum_{m = 1}^{t-1}  \beta^{m}  g_{t-m, t-m - 1} \tag{2.3.4} $$
 here Large $\beta$  amounts to a long-range average. We define $\beta$ as momentum, see  https://distill.pub/2017/momentum/  for details. 
 
 > [!NOTE] 
@@ -229,25 +231,25 @@ where `dampening` is dampening for momentum, `nesterov` is weather nesterov mome
 > Also, for Adam oprimizer, it use `EMA` implement a mechanism similar to the momentum. 
 
 For a general problem : 
-$$h(x) = \frac{1}{2} x^{T} Q x  + x^{T}c + b$$
+$$ h(x) = \frac{1}{2} x^{T} Q x  + x^{T}c + b \tag{2.3.5} $$
 then 
-$$h(x) = \frac{1}{2} x^{T} Q x  + x^{T}c + b$$
+$$ h(x) = \frac{1}{2} x^{T} Q x  + x^{T}c + b \tag{2.3.6} $$
 generally,  we have $x^{*} =  -(Q+ Q^{T})^{-1} c$, but here <mark style="background: transparent; color: red">we consider Q as a symmetric matrix</mark>. 
 
 Thus, we have $x = Q^{-1}c$,  the minimum is : $b -  \frac{1}{2} c^{T }Q^{-1} C$,  since  we can decompose  $Q = O^{T} \Lambda O$, then  we can write it to the following  form by completing the squre : 
-$$h(x) = \frac{1}{2} (x - Q^{-1 }c)^{T} Q (x -Q^{-1} C ) + (b -  \frac{1}{2} c^{T}  Q^{-1} c)$$
+$$ h(x) = \frac{1}{2} (x - Q^{-1 }c)^{T} Q (x -Q^{-1} C ) + (b -  \frac{1}{2} c^{T}  Q^{-1} c) \tag{2.3.7} $$
 also, applying the decomposition,  and set 
-$$z = O (x - Q^{-1} c)$$
+$$ z = O (x - Q^{-1} c) \tag{2.3.8} $$
 then we have the simple standarized expression : 
-$$h(z) = \frac{1}{2} z^{T}\Lambda z + b'$$
+$$ h(z) = \frac{1}{2} z^{T}\Lambda z + b' \tag{2.3.9} $$
 and $b' = b - \frac{1}{2} c^T Q^{-1}c$.  note O is orthogonal  matrix that doesn't pertube the gradients.  so the gradient is calculated as : 
-$$h '(z) =  \Lambda  z$$
+$$ h '(z) =  \Lambda  z \tag{2.3.10} $$
 then GD becomes :  
-$$z_{t} = z_{t-1} - \Lambda  z_{t-1} =  (I - \Lambda ) z_{t-1}$$
+$$ z_{t} = z_{t-1} - \Lambda  z_{t-1} =  (I - \Lambda ) z_{t-1} \tag{2.3.11} $$
 this <b><mark style="background: transparent; color: orange"> not mix beteween different eigen-values </mark></b>, and 
 The following equations are displayed: 
-$$ v_t = \beta v_{t-1} + A z_{t-1} $$
-$$ z_t = z_{t-1} - \eta (\beta v_{t-1} + A z_{t-1}) = (I - \eta \Lambda) z_{t-1} - \eta \beta v_{t-1} $$
+$$ v_t = \beta v_{t-1} + A z_{t-1} \tag{2.3.12} $$
+$$ z_t = z_{t-1} - \eta (\beta v_{t-1} + A z_{t-1}) = (I - \eta \Lambda) z_{t-1} - \eta \beta v_{t-1} \tag{2.3.13} $$
 > [!TIP] Theorem 
 > gradient descent with and without momentum for a convex quadratic function decomposes into **coordinate-wise optimization in the direction of the eigenvectors of the quadratic matrix** 
 
@@ -271,7 +273,7 @@ R(\beta, \eta, \lambda)
 \begin{bmatrix}
 v_t \\
 x_t
-\end{bmatrix}.
+\end{bmatrix}. \tag{2.3.14}
 $$
 so it's **up to  the eigenvalues of $R$ to determine the speed of convergence**. 
 It also suggests that ==in general large values of β are desirable==. 
@@ -281,11 +283,11 @@ It also suggests that ==in general large values of β are desirable==.
 Firstly, we can consider adjusting learning rates by a clock,  however, Given a decreasing learning rate we might end up in a situation where the parameters for common features converge rather quickly to their optimal values.  
 
 Rather than choosing a learning rate of the form 
-$$\eta = \frac{\eta_{0}}{\sqrt{t + c}}$$
+$$ \eta = \frac{\eta_{0}}{\sqrt{t + c}} \tag{3.1.1} $$
 we often use : 
-$$\eta_{i}=  \frac{\eta_{0}}{\sqrt{s(i,t) + c}}$$
+$$ \eta_{i}=  \frac{\eta_{0}}{\sqrt{s(i,t) + c}} \tag{3.1.2} $$
 For Adagrad, it use : 
-$$s(i, t + 1) = s(i, t) + (\partial_{i} f(x))^{2} $$
+$$ s(i, t + 1) = s(i, t) + (\partial_{i} f(x))^{2} \tag{3.1.3} $$
 as a mean to adjust the learning rate; 
 
 > This has two benefits: first, we no longer need to decide just when a gradient is large enough. Second, it scales automatically with the magnitude of the gradients  
@@ -298,23 +300,23 @@ For nonconvex  problem, **the learning decrease monotonically may not be ideal f
 since $s_{t} = s_{t-1} + g_{t}^{2}$, which <b><mark style="background: transparent; color: orange">keeps on growing  without bound due to lack of normalization.</mark></b> 
 
 For RMSprop  algorithm, it use : 
-$$s_{t}  = \gamma s_{t-1}  + (1 - \gamma) g_{t}^{2}$$
+$$ s_{t}  = \gamma s_{t-1}  + (1 - \gamma) g_{t}^{2} \tag{3.2.1} $$
 and then use : 
-$$x_{t} = x_{t-1}  - \frac{\eta}{\sqrt{s_{t} + \varepsilon} } \cdot  g_{t}$$
+$$ x_{t} = x_{t-1}  - \frac{\eta}{\sqrt{s_{t} + \varepsilon} } \cdot  g_{t} \tag{3.2.2} $$
 we note that  expanding the above equation $s_{t}$ yields : 
-$$s_{t} = (1- \gamma) [g_{t}^{2}  +  \gamma  g_{t-1}^{2} + \gamma^{2} g_{t-2}^{2}  + \dots  ]$$
+$$ s_{t} = (1- \gamma) [g_{t}^{2}  +  \gamma  g_{t-1}^{2} + \gamma^{2} g_{t-2}^{2}  + \dots  ] \tag{3.2.3} $$
 since : 1 + $\gamma$  + $\gamma^2$ + ... = $\frac{1}{1- \gamma}$,   it equals to 1 for any $\gamma$ chosen. 
 
 ### (3) Adadelta  
 It also use the <b><mark style="background: transparent; color: orange">normalized learning-rate decreasing factor</mark></b> :
 1.  
-$$s_{t}  = \gamma s_{t-1}  + (1 - \gamma) g_{t}^{2}$$
+$$ s_{t}  = \gamma s_{t-1}  + (1 - \gamma) g_{t}^{2} \tag{3.3.1} $$
 like RMSProp algorithm, however, it use the **rescaled** $g_t$, and perform the updates with rescaled gradient $g'$ (<mark style="background: transparent; color: red">rather than using the rate</mark> $\eta$ ):   
-$$x_{t} = x_{t-1}  - g'_{t}$$
+$$ x_{t} = x_{t-1}  - g'_{t} \tag{3.3.2} $$
 We  initialize $\Delta x_{0}$ as 0,  and update it as : 
-$$\Delta x_{t} = \rho \Delta x_{t-1}  + (1-  \rho) g_{t}^{'2}$$
+$$ \Delta x_{t} = \rho \Delta x_{t-1}  + (1-  \rho) g_{t}^{'2} \tag{3.3.3} $$
 where
-$$g_{t}' = \frac{\sqrt{\Delta x_{t-1} + \varepsilon}}{\sqrt{s_{t} + \varepsilon }}  \odot   g_{t}$$
+$$ g_{t}' = \frac{\sqrt{\Delta x_{t-1} + \varepsilon}}{\sqrt{s_{t} + \varepsilon }}  \odot   g_{t} \tag{3.3.4} $$
 we note $s_t, g_{t}'$ are two state variables. 
 > [!NOTE] 
 > Adadelta has no learning rate parameter `->` just calculate the gradient and calculate $\Delta x$ according to the gradient and state variables. 
@@ -339,8 +341,8 @@ The Initial promoted Adam Optimizer algorithm is as follows :
 We note this algorithm can diverge due to poor variance control, and Zaheer  proposed a hotfix to Adam. 
 
 Firstly, it use leaky Averaging  to obtain both momentum and  the variance:
-$$v_{t} \leftarrow  \beta_{1}  v_{t-1}  +(1- \beta_{1}) g_{t}$$
-$$m_{t} \leftarrow  \beta_{2} m_{t-1}  + (1- \beta_{2}) g_{t}^{2} =   m_{t-1}  - (1- \beta_{1} ) ( m_{t-1} -  g_{t}^{2})  $$
+$$ v_{t} \leftarrow  \beta_{1}  v_{t-1}  +(1- \beta_{1}) g_{t} \tag{4.1.1} $$
+$$ m_{t} \leftarrow  \beta_{2} m_{t-1}  + (1- \beta_{2}) g_{t}^{2} =   m_{t-1}  - (1- \beta_{1} ) ( m_{t-1} -  g_{t}^{2}) \tag{4.1.2} $$
 where $m_{t}$ is momentum. 
 > [!NOTE] weight choice 
 > common choice for the above is $\beta_{1} = 0.9$ and  $\beta_{2} = 0.999$ (<b><mark style="background: transparent; color: orange">variance moves much slowly  than the momentum term</mark></b>)
@@ -350,10 +352,10 @@ where $m_{t}$ is momentum.
 > $$\hat{v}_{t} = \frac{v_{t}}{1 - \beta_{1}^{t}}\qquad  \hat{s}_{t} = \frac{s_{t}}{1 - \beta_{2}^{t}}$$
 
 Firstly, we use : 
-$$g'_{t}  =  \frac{ \eta  \cdot  \hat{v}_{t}}{\sqrt{\hat{m }_{t}} + \epsilon }$$
+$$ g'_{t}  =  \frac{ \eta  \cdot  \hat{v}_{t}}{\sqrt{\hat{m }_{t}} + \epsilon } \tag{4.1.3} $$
 note the $\sqrt{\hat{m}_{t}} + \epsilon$ works slightly better  than $\sqrt{\hat{m}_{t}  + \epsilon}$ in practice. So it has both momentum, 
 we can update the parameter as : 
-$$x_{t} \leftarrow   x_{t-1}  - g_{t}'$$
+$$ x_{t} \leftarrow   x_{t-1}  - g_{t}' \tag{4.1.4} $$
 
 > [!HINT] Weight decay parameter 
 > The weight decay is just the [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter3 Linear Neural  Networks for regression(back Propagation)#(5) Norms and Weight decay|**L2 norm**]] after calculation. However, in AdamW the gradient and  weight decay are decouped. 
@@ -362,7 +364,7 @@ $$x_{t} \leftarrow   x_{t-1}  - g_{t}'$$
 Note for the **YOGI algorithm** (hotfix version by Zaheer) the modifications are as follows : 
 ![[attachments/Pasted image 20250611132801.png|700]]
 in above equation, it simply modifies : 
-$$ (v_{t-1} - g_{t}^{2})  \rightarrow \text{sgn}  (v_{t-1}  - g_{t}^{2}) g_{t}^{2}$$
+$$ (v_{t-1} - g_{t}^{2})  \rightarrow \text{sgn}  (v_{t-1}  - g_{t}^{2}) g_{t}^{2} \tag{4.2.1} $$
 in that case, $v_t$ can increase if $g_{t}$ is greater. so it also speed up the training process. 
 
 > [!question] why?
@@ -388,7 +390,7 @@ Common choices are polynomial decay and piecewise constant schedules. Beyond tha
 Also, <b><mark style="background: transparent; color: orange">It's benificial to warm up the optimizer using larger learning rates</mark></b>
 
 For a most simply constant , we can use  [`lr_scheduler.ConstantLR`](https://docs.pytorch.org/docs/stable/generated/torch.optim.lr_scheduler.ConstantLR.html#torch.optim.lr_scheduler.ConstantLR "torch.optim.lr_scheduler.ConstantLR")  
-$$lr_{t + 1} = k \times   lr_{t}$$
+$$ lr_{t + 1} = k \times   lr_{t} \tag{5.1.1} $$
 To see the learning rate  variation in training process, we can use the following : 
 ```python fold title:learning-rate-visualization 
 import torch  
@@ -450,7 +452,7 @@ using the above function we can obtain the following learing rate :
 • A warmup period before optimization can prevent divergence 
 ### (3) Schedulers 
 For Cosine Scheduler, we have : 
-$$\eta_{t} = \eta_{T}  + \frac{\eta_{0} - \eta_{T}}{2} \left(1 +\cos \left( \frac{ t}{T} \pi\right)\right)$$
+$$ \eta_{t} = \eta_{T}  + \frac{\eta_{0} - \eta_{T}}{2} \left(1 +\cos \left( \frac{ t}{T} \pi\right)\right) \tag{5.3.1} $$
 where $\eta_0 = \eta_\max, \eta_T = \eta_\min$
 
 Cosine schedulers are popular for some computer vision problems (see gluon-cv.mxnet.io)

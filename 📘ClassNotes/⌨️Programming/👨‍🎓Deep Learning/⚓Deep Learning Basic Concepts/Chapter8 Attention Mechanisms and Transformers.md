@@ -14,8 +14,7 @@ We consider  the  cues  where  the  only nonvolitional cues are available. We ca
 The attention mechanisms use  <mark style="background: transparent; color: red">volational cues</mark> compare to the traditional fully connected layer.  we can call the volitional cues as <b><mark style="background: transparent; color: orange">queries</mark></b>,  and when the query is given, the attention  mechanisms ==**bias selection over the sensory inputs**==  via <b><mark style="background: transparent; color: orange">attention pooling</mark></b>. where the  **sensory inputs** are called <b><mark style="background: transparent; color: orange">values</mark></b>,  every  value is paired with a <b><mark style="background: transparent; color: orange">key</mark></b> (which is **nonvolitional cues**).  
 
 ![[attachments/Pasted image 20250401200358.png|450]]
-
-the  attention pool  guides the bias selection over values (sensory inputs) 
+The attention pool  guides the bias selection over values (sensory inputs) 
 
 For the average pooling, it can be treated as a **weighted average of inputs,** (<mark style="background: transparent; color: red">weights of the average pooling are uniform</mark>) while attention pooling <b><mark style="background: transparent; color: orange">aggregates values using weighted average</mark></b>, and weights  are computed between  the given  query and different keys. 
 
@@ -36,19 +35,19 @@ plt.show()
 To recapitulate,  the **interactions between queries (volitional cues) and keys (nonvolitional cues) result in attention pooling**.  
 
 the average pooling is  just crudely average the data :  
-$$y = \frac{1}{n} \sum_{i = 1}^{n} y_{i}$$
+$$ y = \frac{1}{n} \sum_{i = 1}^{n} y_{i} \tag{1.3.1} $$
 but for the nonparametric  attention pooling, we **use the following  attention mechanism**  : 
-$$y   = \sum_{i = 1}^{n}  \frac{ K (x - x_{i})}{  \sum_{j = 1}^{n}  K (x - x_{j})} y_{i} =  \sum_{i = 1}^{n}   \alpha(x, x_{i}) y_{i} \tag{8.1.3.1}$$
+$$ y   = \sum_{i = 1}^{n}  \frac{ K (x - x_{i})}{  \sum_{j = 1}^{n}  K (x - x_{j})} y_{i} =  \sum_{i = 1}^{n}   \alpha(x, x_{i}) y_{i} \tag{1.3.2} $$
 the above  estimator is called <b><mark style="background: transparent; color: orange">Nadaraya-Waston kernel regression</mark></b>. where  **the attention weights over all the key-value pairs are a valid probability distribution: they are non-negative and sum up to one**. in the above equation, apparantly that the smaller the diff $(x - x_{i})$ is,  the `val_data` contributes more on predicting the corresponding data.   
 
 For simple Gaussian Kernel, $K$ is 
-$$K(u) = \frac{1}{\sqrt{2 \pi}} \exp  \left(- \frac{u^{2}}{2}\right)$$
+$$ K(u) = \frac{1}{\sqrt{2 \pi}} \exp  \left(- \frac{u^{2}}{2}\right) \tag{1.3.3} $$
 and the prediction calculation becomes : 
-$$y =  \frac{ \sum_{i = 1}^{n}  \exp \left(- \frac{1}{2} (x -  x_{i})^{2}\right) y_{i}}{\sum_{j = 1}^{n}  \exp (- \frac{1}{2} (x -  x_{j})^{2})} =    \sum_{i = 1}^{n}  \text{softmax} \left(- \frac{1}{2} (x - x_{i})^{2}\right) y_{i} =  \sum_{i = 1}^{n} w_{i}y_{i}$$
+$$ y =  \frac{ \sum_{i = 1}^{n}  \exp \left(- \frac{1}{2} (x -  x_{i})^{2}\right) y_{i}}{\sum_{j = 1}^{n}  \exp (- \frac{1}{2} (x -  x_{j})^{2})} =    \sum_{i = 1}^{n}  \text{softmax} \left(- \frac{1}{2} (x - x_{i})^{2}\right) y_{i} =  \sum_{i = 1}^{n} w_{i}y_{i} \tag{1.3.4} $$
 where $x$ is $x_{train}$, $y_i$ is corresponding value $y_{train}$ on $x_{train}$. which actually make a weighted sum of $y$ on each predicted point.  
 
-we calculate the `query_key_diffs` matrix to record the difference of train and validation data. which <b><mark style="background: transparent; color: orange">calculate the weight of attention as</mark></b> : 
-$$w_{i} = \text{softmax} \left(- \frac{1}{2} (x - x_{i})^{2}  \right)$$
+We calculate the `query_key_diffs` matrix to record the difference of train and validation data. which <b><mark style="background: transparent; color: orange">calculate the weight of attention as</mark></b> : 
+$$ w_{i} = \text{softmax} \left(- \frac{1}{2} (x - x_{i})^{2}  \right) \tag{1.3.5} $$
 the value of weight vector on each $x$ is the weight of $x_{train}$ at location $x_{i}$. 
 ```python 
 def diff(queries, keys) -> torch.Tensor:  
@@ -64,7 +63,7 @@ tensor([[-0.0353, -0.1191, -0.2778,  ..., -4.6282, -4.7051, -4.7224],
         [ 4.9597,  4.8759,  4.7172,  ...,  0.3668,  0.2899,  0.2726]])
 ```
 
-we give the following full implementation :  
+We give the following full implementation :  
 ```python fold
 import matplotlib.pyplot as plt  
 import torch  
@@ -127,14 +126,14 @@ which shows the weight of each  point at every validation point.
 
 We note in non-parametric pooling,   **keys and values should have the  same length**.  which ==use 1key  to mapped to 1 value==, constructing the following attention structure : 
 ![[Excalidraw/Chapter8 Attention Mechanisms, Transformers 2025-04-22 09.59.21|400]]
-we note for the later dot-product attention, we **use the hidden layer weight for the parameter in the attention**. 
+we note for the later dot-product attention, we **use the hidden layer weight for the parameter in the attention**.  
 
 ### (4)  Parametric  Attention Pooling 
 #### 1. Introduction 
 In the training process, we train the attention pool in minibatch. in which every ==**minibatch contains $n$ matrices**==, we represent it by  $X_1, X_2 ,  \dots X_n$,  and we train the  transformer module by add a learnable parameter $w$ to the original equation for the train process, which is called <b><mark style="background: transparent; color: orange">parametric attention pooling</mark></b> :  
-$$f(x) = \sum_{i = 1}^{n} \alpha(x, x_{i}) y_{i} =  \sum_{i = 1}^{n} \text{softmax} \left(-\frac{1}{2} ((x - x_{i} ) w)^{2}\right) y _{i}$$
+$$ f(x) = \sum_{i = 1}^{n} \alpha(x, x_{i}) y_{i} =  \sum_{i = 1}^{n} \text{softmax} \left(-\frac{1}{2} ((x - x_{i} ) w)^{2}\right) y _{i} \tag{1.4.1} $$
 for the learning process, we define a simple loss by 
-$$ l   = \sum_{i = 1}^{n} \frac{1}{2} (y_{i} -\hat{y}_{i} )^{2}$$
+$$ l   = \sum_{i = 1}^{n} \frac{1}{2} (y_{i} -\hat{y}_{i} )^{2} \tag{1.4.2} $$
 and define the parameter $w$  as gradient parameter.  
 
 #### 2. Batch Matrix Multiplication 
@@ -143,7 +142,7 @@ we firstly introduce the following function :
 torch.bmm(X, Y)  # batch  matrix muliplication 
 ```
 in the above function, we may use 
-$$X :  n \times  a \times  b   \text{ matrix}\qquad  Y : n  \times  b  \times  c\space  \text{matrix}$$
+$$ X :  n \times  a \times  b   \text{ matrix}\qquad  Y : n  \times  b  \times  c\space  \text{matrix} \tag{1.4.3} $$
 then the result would  be  $n \times a \times c$, which is the result of batch multiplication of matrices. 
 
 #### 3. Model Definition 
@@ -338,8 +337,8 @@ In general attention pooling process, keys and values are automatically generate
 ![[attachments/Pasted image 20250403171015.png|500]] 
 
 Then the  attention pooling  $f$ is defined  as : 
-$$f(q, (k_{1}, v_{1} ) , \dots  (k_{m}, v_{m})) =  \sum_{i = 1}^{m} \alpha (q, k_{i}) v_{i} \in  R^{v} \tag{11.3.1}$$
-where  $\alpha$ is the <mark style="background: transparent; color: red">attention scoring function</mark> to calculate the attention weights. <b><mark style="background: transparent; color: orange">Different choices of the attention scoring function a lead to different behaviors of attention pooling.</mark></b> We introduce two scoring function. 
+$$ f(q, (k_{1}, v_{1} ) , \dots  (k_{m}, v_{m})) =  \sum_{i = 1}^{m} \alpha (q, k_{i}) v_{i} \in  R^{v} \tag{2.1.1} $$
+Where  $\alpha$ is the <mark style="background: transparent; color: red">attention scoring function</mark> to calculate the attention weights. <b><mark style="background: transparent; color: orange">Different choices of the attention scoring function a lead to different behaviors of attention pooling.</mark></b> We introduce two scoring function. 
 
 #### 2.  Masked Softmax Operation  
 Subce the softmax function is for map the calcuated weights to the sum of 1. so here we implement a `masked_softmax` operation. which will  **mask any  value beyond the valid length as zero**. 
@@ -355,7 +354,7 @@ We firstly figure out the following questions :
 > - In practice those numbers all come from the **key sequence** (or encoder output) lengths.  
 
 #####  What shape can `valid_lens` take?
-Two common options :
+Two common options : 
 1. **Per‐batch** (*one length per example*)
     ```python
     valid_lens.shape == (B,)
@@ -414,7 +413,7 @@ def masked_softmax(x, valid_lens: torch.Tensor, masked_value=-1e9):
 ### 3. Scoring Functions
 #### 1) Additive attention
 We can use  additive attention as  scoring function. which is :  
-$$\boxed{\Large\alpha (q , k) = w_{v}^{T} \tanh (W_{q} q + W_{k}  k)}$$
+$$ \boxed{\Large\alpha (q , k) = w_{v}^{T} \tanh (W_{q} q + W_{k}  k)} \tag{2.3.1} $$
 where $W_q$ and $W_k$ are learnable parameters. $W_q \in R^{h \times q}$ and  $W_{k} \in R^{h \times  k}$,  also, $w_{v} \in R^{h}$, where $h$ is the hidden size. 
 
 In the textbook, the $W_{k}, W_{q}$ and $W_{v}$ are initialized by `LazyLinear` function. and the shape of samples is  `(batch size, number of steps or sequence length in tokens, feature size)` 
@@ -429,8 +428,8 @@ self.attention_weights = masked_softmax(scores, valid_length);
 ```
 
 #### 2. Scaled Dot-Product  Attention 
-the dot-product attention is using `nn.matmul(queries, keys)` as the attention function. We assume that the  product operation requires <mark style="background: transparent; color: red">both query and key have the same length</mark> $d$ (we will map the input into hidden keys and queries), then 
-$$a (q, k) = \frac{q^{T} k  }{ \sqrt{d}} \qquad  y =  \text{softmax} \left(\frac{QK^{T}}{\sqrt{d}}\right) V \in R^{n \times  v}$$
+the dot-product attention is using `nn.matmul(queries, keys)` as the attention function. We assume that the product operation requires <mark style="background: transparent; color: red">both query and key have the same length</mark> $d$ (we will map the input into hidden keys and queries), then 
+$$ a (q, k) = \frac{q^{T} k  }{ \sqrt{d}} \qquad  y =  \text{softmax} \left(\frac{QK^{T}}{\sqrt{d}}\right) V \in R^{n \times  v} \tag{2.3.2} $$
 also we use dropout for model regularization. `
 
 ```python
@@ -500,7 +499,7 @@ We recall that we use  [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learni
 Graves designed a differentiable attention model to align text characters with the much longer pen trace, where the alignment moves only in one direction. Bahdanau et al. proposed a differentiable attention model without the severe unidirectional alignment limitation. **==if not all the input tokens are relevant, the model aligns (or attends) only to parts of the input sequence that are relevant to the current prediction.==** This is achieved by treating the context variable as an output of attention pooling. 
 ### (1) Attention Modeling 
 we represent the  **context variable $c$ here by $c_{t'}$ as decoding time step** $t'$,  and <mark style="background: transparent; color: red">the context variable at decoding time step t' is the output of attention pooling</mark>  as : 
-$$c_{t'} = \sum_{t = 1}^{T} \alpha (s_{t'-1}, h_{t}) h_{t}$$
+$$ c_{t'} = \sum_{t = 1}^{T} \alpha (s_{t'-1}, h_{t}) h_{t} \tag{3.1.1} $$
 
 different from the encoder-decoder structure in chapter 7 : 
 ![[attachments/Pasted image 20250401114238.png|450]] 
@@ -619,20 +618,20 @@ In the case with same set of queries, keys and values, <mark style="background: 
 
 So it may be benificial to allow the attention  to **jointly use different representation subspaces  of queries, keys and values.**  
 
-<b><mark style="background: transparent; color: orange">Instead of performing a single  attention pooling</mark></b>, we ==transform queries, keys and values with $h$ independently learned linear projections==. which leads to the following network structure : 
-![[attachments/Pasted image 20250407104555.png|350]]
+<b><mark style="background: transparent; color: orange">Instead of performing a single  attention pooling</mark></b>, we ==transform queries, keys and values with $h$ independently learned linear projections==. which leads to the following network structure :  
+![[attachments/Pasted image 20250407104555.png|400]]
 firstly, we compute <b><mark style="background: transparent; color: orange">each attention head as</mark></b> : 
-$$h_{i}  =   f(W_{i}^{(q)}q , W_{i}^{(k)}k , W_{i}^{(v)} v) \in  R^{p_{v}}$$
+$$ h_{i}  =   f(W_{i}^{(q)}q , W_{i}^{(k)}k , W_{i}^{(v)} v) \in  R^{p_{v}} \tag{4.1.1} $$
 where $f$ is attention pooling. Also <b><mark style="background: transparent; color: orange">the  multi-head attention output</mark></b> is another linear transformation via learnable parameters $W_{o}$ ,  which <mark style="background: transparent; color: red">combine the output  value of different heads together</mark> : 
-$$W_{o} \in R^{p_{o}  \times  h p_{v}}$$
+$$ W_{o} \in R^{p_{o}  \times  h p_{v}} \tag{4.1.2} $$
 $h$ <mark style="background: transparent; color: red">attention pooling outputs are concatenated and transformed</mark>. 
-$$\text{output} = W_{o} (\boldsymbol{h}) \in  R^{p_{o}}$$
+$$ \text{output} = W_{o} (\boldsymbol{h}) \in  R^{p_{o}} \tag{4.1.3} $$
 
 > [!HINT] Pytorch `num_hiddens` initialization 
 > We note that **in pytorch,  the input dimension d_model determines the size of the hidden layer**. (For FFN, the hidden size is  `4 * d_model`)  
 > If the hidden layer need to be custimized, we can inherit `nn.TransformerEncoderLayer` and re-write the feed-forward  network. 
 
-also, in multi-head attention process, the <mark style="background: transparent; color: red">hidden_layer are split into  different  groups, </mark> 
+Also, in multi-head attention process, the <mark style="background: transparent; color: red">hidden_layer are split into  different  groups, </mark> 
 
 > [!HINT] complexity of the transformers
 > **since the input keys and queries is of shape $n \times d$**,  and we calculate W as [[#2. Scaled Dot-Product Attention]] ($Q K^T/\sqrt{d}$) , which made a  $n \times d$ mat mutplicate with $d \times n$ matrix, 
@@ -648,14 +647,14 @@ also, in multi-head attention process, the <mark style="background: transparent;
 > We note that  multi-head attention is just split the hidden-layer into num-heads  and combine it into batch_size 
 
 While using **the multi-head attention**. since queries, keys and values are shaped of  
-$$(\text{batch size} \times \text{seq len} \times \text{hidden size})$$
+$$ (\text{batch size} \times \text{seq len} \times \text{hidden size}) \tag{4.1.4} $$
 we will reshape `keys, queries` and `values` by n-heads as follows : 
 - split the data by n-heads 
 - place the head dimension on the second dimension
 - combine the heads dimension to batch_size dimension
 
 and finally resulted shape is : 
-$$(\text{batch size} \times \text{head num}) \times \text{seq len} \times    \frac{\text{hidden size}}{\text{head num}}$$
+$$ (\text{batch size} \times \text{head num}) \times \text{seq len} \times    \frac{\text{hidden size}}{\text{head num}} \tag{4.1.5} $$
 so we give the following multi-head implementaion : 
 ```python fold title:muti-head-implementation 
 def transpose_by_num_heads(X, num_heads):
@@ -666,7 +665,7 @@ def transpose_by_num_heads(X, num_heads):
     assert h % num_heads == 0, "hidden size must be the "
     X = X.reshape(b, s, num_heads, h//num_heads)
     # reshape the num-heads into the second dim 
-    X = X.permute(0, 2, 1, 3)  
+    X = X.permute(0, 2, 1, 3)    # b, num_heads, s, h//num_heads  
     X = X.reshape(b * num_heads, s, -1)
     return X
 ```
@@ -694,7 +693,7 @@ Also see [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔥Pytorch
     - Example: 
 
 For self-attention,  we have the following: 
-$$\Large  \boxed{y_{i} = f (x_{i} , (x_{1}, x_{1}),  \dots  (x_{n}, x_{n}))  \in  R^{d}}$$
+$$ \Large  \boxed{y_{i} = f (x_{i} , (x_{1}, x_{1}),  \dots  (x_{n}, x_{n}))  \in  R^{d}} \tag{4.2.1} $$
 where $x_1,  x_2, \dots$  are tokens.
 which replaces the  attention pooling f explained in [[#2. Attention Scoring Functions]] in  equation (11.3.1), which <mark style="background: transparent; color: red">just use queries as keys </mark>. 
 
@@ -707,8 +706,8 @@ However, <b><mark style="background: transparent; color: orange">the attention m
 For the input reprensentation $X\in R^{n \times  d}$, where hidden size is $d$ for $n$ token sequence, We **use a positional  embedding matrix** $P \in R^{n \times d}$ **of the same shape as $X$**. and **output $X+P$ instead of just $X$**.
 
 The element of matrix $P$ the $i^{th}$ row and  $(2j)^{th}$ column are as : 
-$$p_{i, 2j} =  \sin \left(\frac{i}{10000^{\frac{2j}{d}}}\right)$$
-$$p_{i, 2j + 1} = \cos  \left(\frac{i}{10000^{\frac{2j}{d}}}\right)$$
+$$ p_{i, 2j} =  \sin \left(\frac{i}{10000^{\frac{2j}{d}}}\right) \tag{4.3.1} $$
+$$ p_{i, 2j + 1} = \cos  \left(\frac{i}{10000^{\frac{2j}{d}}}\right) \tag{4.3.2} $$
 in the denominator part, for different rows $i$, the sin function gives different proportion (such as $\sin x, \sin 2x, \sin nx$), and the denominator gives maximum $10000^{2}$ quotient to **limit the minimum of $i$ in $\frac{\pi}{2}$ range**.  
 
 > [!warning] `max_len` and `d_model` size
@@ -719,7 +718,7 @@ in the denominator part, for different rows $i$, the sin function gives differen
 ![[Excalidraw/Chapter8 Attention Mechanisms, Transformers 2025-04-28 20.48.20|500]]
 In the positional embedding matrix P ,  <u>rows correspond to positions within a sequence and columns represent different positional encoding dimensions.</u>  
 > [!NOTE] Position and Encoded Dimension 
-> we refer **the $x$ range from 0 to `max_len` as the `position`** and the y(j) range from 0 to `num_hiddens` as `encoded_dimension` 
+> we refer **the $x$ range from 0 to `max_len` as the `position`** and the $y(j)$ range from 0 to `num_hiddens` as `encoded_dimension` 
 
 in the above figure, we see that the lower encoding dimension have higher frequency. (Frequency decreased monotonically along the encoding dimension relates to absolute positional information).  
 
@@ -736,9 +735,9 @@ in the above figure, we see that the lower encoding dimension have higher freque
 
 #### <b><mark style="background: transparent; color: orange">Real case implementation</mark></b> 
 We note we have the relationship : 
-$$\exp(a \ln b )=  \exp  (\ln b^{a} ) = b^{a}$$
+$$ \exp(a \ln b )=  \exp  (\ln b^{a} ) = b^{a} \tag{4.3.3} $$
 so we can replace the 
-$$\frac{i}{10000^{\frac{2j}{d}}}  = i \times   \exp\left(-  \frac{2j}{d } * \ln  10000  \right)$$
+$$ \frac{i}{10000^{\frac{2j}{d}}}  = i \times   \exp\left(-  \frac{2j}{d } * \ln  10000  \right) \tag{4.3.4} $$
 we can firsly calculate  $- \frac{2j}{d} * \ln 10000$. 
 
 since `10^0.001` is really small number (when $n$ is large ), which leads to the result become `inf`, so <mark style="background: transparent; color: red">the  original formula is unstable </mark>and can be substitute by the following : 
@@ -828,18 +827,22 @@ This encoding rule match the binary encode method, where <b><mark style="backgro
 The above positional encoding is not only a model gives the absolute  positional information but also a model easy for learn attend by relative position. **For any fixed positon offset $\delta$,  the position encoding at position $i + \delta$** <mark style="background: transparent; color: red">can be represented  by a  linear projection</mark>. 
 
 For any fixed offset $\delta$,  we  denote  
-$$\omega_{j}  = \frac{1}{10000^{\frac{2j}{d}}}, \quad  
-p_{i, 2j}= \sin (i \omega_{2j}) \quad p_{i,2j + 1} = \cos (i\omega_{2j + 1})\quad  j = 0, 1, \dots $$
+$$
+\omega_{j}  = \frac{1}{10000^{\frac{2j}{d}}}, \quad
+p_{i, 2j}= \sin (i \omega_{2j}) \quad p_{i,2j + 1} = \cos (i\omega_{2j + 1})\quad  j = 0, 1, \dots \tag{4.3.5}
+$$
 then for a position shift $\delta$,  <mark style="background: transparent; color: red">we have the following sin-cosine projection relation</mark> :  
-$$\Large\boxed{\left[\begin{matrix}
-\cos (\delta w_{j}) & \sin (\delta w_{j})  \\  
--\sin( \delta w_{j}) &  \cos(\delta w_{j})  
+$$
+\Large\boxed{\left[\begin{matrix}
+\cos (\delta w_{j}) & \sin (\delta w_{j})  \\
+-\sin( \delta w_{j}) &  \cos(\delta w_{j})
 \end{matrix}\right] \left[\begin{matrix}
-p_{i, 2j }   \\  p_{i, 2j + 1} 
+p_{i, 2j }   \\  p_{i, 2j + 1}
 \end{matrix}\right] =  \left[\begin{matrix}
 p_{i+ \delta, 2 j} \\
-p_{i+ \delta, 2 j + 1} 
-\end{matrix}\right]}$$
+p_{i+ \delta, 2 j + 1}
+\end{matrix}\right]} \tag{4.3.6}
+$$
 where the 2 × 2 projection matrix does not depend on any position index i.
 
 > [!warning] Problems for stacking self-attention layers 
@@ -906,7 +909,7 @@ In the layer norm  layer, <b><mark style="background: transparent; color: orange
 ```
 
 for  layer norm,  if the output of layer norm is 2, we calculate : 
-$$\text{mean} = \frac{a + b }{2} , \quad  \text{std} =  \left(\frac{1}{n} \sum_{i = 1}^{n}  (x_{i} - \mu)^{2} \right) = \frac{a - b}{2}$$
+$$ \text{mean} = \frac{a + b }{2} , \quad  \text{std} =  \left(\frac{1}{n} \sum_{i = 1}^{n}  (x_{i} - \mu)^{2} \right) = \frac{a - b}{2} \tag{5.3.1} $$
 hence for 2 number, the layer norm result  must be $[-1, 1]$   
 
 For batch norm, it <b><mark style="background: transparent; color: orange">calculate normalization through channels</mark></b>, (**second dimension**). which **normalize the second dimension**. and the  number `num_features` should be the samee as dimension. 
@@ -1275,10 +1278,12 @@ If we want to use a transformer encoder layer, use :
 For a **6 layer with 768 hidden num, 1024 FF layer Transformer**, we can estimate the parameter number as follows : 
 
 For every layer, the output have `num_hidden x num_hidden` params,  and `3 * d_model * num_hiddens`  params, where  `d_model` 
-$$\text{Parameter Number} = \text{Layers} \times (\text{Width}^{2}  + Width \times MLP(FF)  + 
-Width  \times 3)$$
+$$
+\text{Parameter Number} = \text{Layers} \times (\text{Width}^{2}  + Width \times MLP(FF)  +
+Width  \times 3) \tag{8.2.1}
+$$
 result is about :
-$$6 \times   (768^{2}  + 3 * 768 +  768  * 1024) \approx  8 Millions$$
+$$ 6 \times   (768^{2}  + 3 * 768 +  768  * 1024) \approx  8 Millions \tag{8.2.2} $$
 
 ## 9. Vision Transformer  Implementation 
 ### (1) How to make a  Good Vision Transformer  

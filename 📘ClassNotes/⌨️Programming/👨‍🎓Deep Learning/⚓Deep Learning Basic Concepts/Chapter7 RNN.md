@@ -12,7 +12,7 @@ the unfolded structure of RNN in timestamp is as follows :
 for video and sequencing model, they can be  represented as varying length sequence of fixed-length vectors 
 ## 2.  Models In RNN  
 Firstly, we consider the input as 
-$$x_{1}, x_{2}, \dots  x_{T} $$
+$$ x_{1}, x_{2}, \dots  x_{T} \tag{2.1} $$
 where **each feature $x_t$ indexed by a time step $t \in  Z^+$ lies in $R^d$** 
 
 for example, if we want to predict the future weather, and use the historical weather in a sequence. and we wish our predict a sequentially structured  target $y_1, y_2, \dots  y_t$ by given a fixed input, 
@@ -23,15 +23,15 @@ the structure include :
 
 ### (1) Auto-regressive model 
 We consider the trade prediction, One simple strategy for estimating the conditional expectation **would be a linear regression model**. <mark style="background: transparent; color: red">The trader is  interest to know the probablity distribution as follows</mark>: 
-$$P[(x_{t}  |  x_{t-1} , \dots   x_{1})]$$
+$$ P[(x_{t}  |  x_{t-1} , \dots   x_{1})] \tag{2.1.1} $$
 note if weonly need the prediction, we can focus more on estimating the conditional expectation :
-$$E[(x_{t}  |  x_{t-1} , \dots   x_{1})]$$
+$$ E[(x_{t}  |  x_{t-1} , \dots   x_{1})] \tag{2.1.2} $$
 such models that <b><mark style="background: transparent; color: orange">regress the value of a signal on the  previous values of the same signal</mark></b>, is called **auto regressive models**. Which is target at solving the  problem : 
-$$P[(x_{t}  |  x_{t-1} , \dots   x_{1})]$$
+$$ P[(x_{t}  |  x_{t-1} , \dots   x_{1})] \tag{2.1.3} $$
 in  that case, we look at the condition on some window length $\tau$, and use observation  $x_{t -1}, \dots  x _{t - \tau}$ for prediction. Since the input is fixed number, we only need to train **any linear model or deep network that requires fixed-length vectors as inputs**.
 ![[attachments/Pasted image 20250224105556.png|300]]
 it  leads to models that estimate $x_{t}$ with  $\hat{x}_t = P(x_t | h_t)$,  we note that in this network, **we should consider how to correct the prediction by observing the difference of  $\hat{x}_{t}$ and $x_{t}$** in this network, leading to the network that estimate $x_t$ and <b><mark style="background: transparent; color: blue">update the hidden layer with prediction time as follows</mark></b>: 
-$$\Large\boxed{h_{t} = g (h_{t-1}, x_{t-1})}$$
+$$ \Large\boxed{h_{t} = g (h_{t-1}, x_{t-1})} \tag{2.1.4} $$
 
 > [!NOTE] Latent Autogressive Models 
 > Since $h_t$ is never observed, these models are also called latent autoregressive models. 
@@ -40,7 +40,7 @@ To construct training data from historical data, one typically **creates example
 
 ### (2) Sequence Models  
  like an autoregressive problem, we can reduce language modeling to autoregressive prediction **by decomposing the joint density of a sequence $p(x_{t} | x_{1}, \dots  x_{T})$ into the product of  conditional densities**. 
-$$P(x_1, \ldots, x_T) = P(x_1) \prod_{t=2}^{T} P(x_t | x_{t-1}, \ldots, x_1).  $$
+$$ P(x_1, \ldots, x_T) = P(x_1) \prod_{t=2}^{T} P(x_t | x_{t-1}, \ldots, x_1). \tag{2.2.1} $$
 Note that if we are working with **discrete signals like words**, then the autoregressive model must be a probabilistic classifier, outputting a full probability distribution over the vocabulary for what word will come next, given the leftwards context. 
 
 #### Examples
@@ -122,7 +122,7 @@ Also for extracting the text from article, we can use `TfidfVectorizer` (see [[�
 
 ### (3) Markov Models
 Markov model  decomposite the joint probability to a product of probablities like follows:
-$$ P(x_1, \ldots, x_{\tau}) = P(x_1) \prod_{t=2}^{\tau} P(x_t | x_{t-1}) $$
+$$ P(x_1, \ldots, x_{\tau}) = P(x_1) \prod_{t=2}^{\tau} P(x_t | x_{t-1}) \tag{2.3.1} $$
 We often find it useful to work with models that proceed as though a Markov condition were satisfied.  
 
 Even when we know that this is only approximately true, we often find it useful to work with models that proceed as though a **Markov condition** were satisfied (**the state never relies on the previeous  state but just rely on current state**, see [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/补充知识/6. 马尔科夫MCS抽样(MCMC)|Markov MonteCarlo Sampling]]).  
@@ -133,25 +133,25 @@ Even when we know that this is only approximately true, we often find it useful 
 
 ### (4) RNN decoding order  
 We have to represent the factorization of a text sequence, as a l**eft-to-right chain** of conditional probabilities. but **we may use right-to-left-chain as follows**: 
-$$P(x_{1},  \dots  x_{T} ) =  \prod^{1}_{t=T} P(x_{t}| x_{t+1} ,  \dots x_{T})$$
+$$ P(x_{1},  \dots  x_{T} ) =  \prod^{1}_{t=T} P(x_{t}| x_{t+1} ,  \dots x_{T}) \tag{2.4.1} $$
 However, there are many reasons why factorizing text in the same directions as we read it (left-to-right for most languages, but **right-to-left for Arabic and Hebrew) is preferred for the task of language modeling**. 
 
 For converting a probablity over steps 1 to $t$ into 
-$$P(x_{t+1},  \dots  x_{1}) =  P(x_{t}, \dots  x_{1}) P(x_{t + 1} | x_{t}, \dots  x_{1})$$
+$$ P(x_{t+1},  \dots  x_{1}) =  P(x_{t}, \dots  x_{1}) P(x_{t + 1} | x_{t}, \dots  x_{1}) \tag{2.4.2} $$
 Also use stronger predictive models for predicting adjacent words versus words at arbitrary other locations. also if we change $x_t$, we may be able to influence what happens for $x_{t+1}$ going forward but not the converse.  In some contexts, this makes it easier to predict  $P(x_t+1 | x_t)$ 
 
 ### (5) Learning Language Models 
 #### 1. Model Brief 
 We assume that the tokens (say it as words num) in a text sequence of length $T$  are $x_{1}, x_{2},   \dots  x_{T}$,  
-$$ P (x_{1}, x_{2} , \dots  x_{r})$$
+$$ P (x_{1}, x_{2} , \dots  x_{r}) \tag{2.5.1} $$
 <b><mark style="background: transparent; color: orange">The Ideal Language Model</mark></b> would be able to generate natural text just on its own, just  by **drawing one token at a time** 
-$$x_{t} \sim  P(x_{t} | x_{t-1} , \dots   x_{1})$$
+$$ x_{t} \sim  P(x_{t} | x_{t-1} , \dots   x_{1}) \tag{2.5.2} $$
 also, it would be sufficient for generating a meaningful dialog, simply by conditioning the text on previous dialog fragments. Also note it would need to understand the text rather than just generate grammatically sensible content. 
 
 Nonetheless, language models are of great service even in their limited form. For instance, the phrases “to recognize speech” and “to wreck a nice beach” sound very similar. This can cause ambiguity in speech recognition, which is easily resolved through a language model that <b><mark style="background: transparent; color: orange">rejects the second translation as outlandish</mark></b>. Likewise, in a document summarization algorithm it is worthwhile knowing that “dog bites man” is much more frequent than “man bites dog”, or that “I want to eat grandma” is a rather disturbing statement, whereas “I want to eat, grandma” is much more benign. 
 
 firstly, we model a document  by a sequence of tokens,  
-$$P (x_{1},  x_{2}, \dots  x_{n} ) = \prod^{T}_{t =1}  P(x_{t}  | x_{1} , \dots   x_{t-1})$$
+$$ P (x_{1},  x_{2}, \dots  x_{n} ) = \prod^{T}_{t =1}  P(x_{t}  | x_{1} , \dots   x_{t-1}) \tag{2.5.3} $$
 with the above Markov Model applied, we got for n-grams, the conditional probablity is like that :  
 ![[attachments/Pasted image 20250224170648.png|550]]
 we need to calculate the probability of words and the conditional probability of a word given the previous few words. **Note that such probabilities are language model parameters**
@@ -161,9 +161,9 @@ for <b><mark style="background: transparent; color: orange">Word Frequency</mark
 
 #### 2) Laplace Smooth
 The Laplace smooth equation is to add a small constant to all counts, 
-$$\hat{P}(x) = \frac{n(x) + \epsilon_1 / m}{n + \epsilon_1}$$
-$$\hat{P}(x') = \frac{n(x, x') + \epsilon_2 \hat{P}(x')}{n(x) + \epsilon_2}$$
-$$\hat{P}(x'') | x, x' = \frac{n(x, x', x'') + \epsilon_3 \hat{P}(x'')}{n(x, x') + \epsilon_3}$$
+$$ \hat{P}(x) = \frac{n(x) + \epsilon_1 / m}{n + \epsilon_1} \tag{2.5.4} $$
+$$ \hat{P}(x') = \frac{n(x, x') + \epsilon_2 \hat{P}(x')}{n(x) + \epsilon_2} \tag{2.5.5} $$
+$$ \hat{P}(x'') | x, x' = \frac{n(x, x', x'') + \epsilon_3 \hat{P}(x'')}{n(x, x') + \epsilon_3} \tag{2.5.6} $$
 where we use  $\epsilon_{1}, \epsilon_{2}, \epsilon_{3}$ as the hyperparameter. when $\epsilon_{1} \rightarrow 0$, no smoothing applied, and for $\epsilon_{1}\rightarrow \infty$,  $\hat{P}(x)$ **approaches  uniform 1/m**
 
 #### 3)  Measure the quality  of model by sequence (Loss of Language Model)
@@ -172,11 +172,11 @@ Considering that if we **compute the likelihood of the sequence, to evaluate the
 We can define the <b><mark style="background: transparent; color: orange">entropy, surprisal and cross-entropy</mark></b> when we introduced the softmax regression. 
 
 the  language model allow us to spend bits in compressing   the sequence. So we can use cross-entropy  for average loss of tokens in a sequence. (**measure it by the cross-entropy loss averaged over all the n tokens of a sequence**)
-$$\frac{1}{n} \sum_{i = 1}^{n}  - \log_{}   P (x_{t} | x_{t-1} , \dots  x_{1}) $$
+$$ \frac{1}{n} \sum_{i = 1}^{n}  - \log_{}   P (x_{t} | x_{t-1} , \dots  x_{1}) \tag{2.5.7} $$
 where $x_t$ is actual **token observed at  time step $t$ from the sequence**. 
 
 The scientists often prefer to use <b><mark style="background: transparent; color: orange">perplexity</mark></b> to evaluate the likelihood that a word would happen next `->` it use $\exp(-\log_{}\overline{P})$ to project it  into range $(1, +\infty)$,**when $\overline{P} = 1$, it out as 1, and $\overline{P} = 0$ that out as inf**:    
-$$\Large \boxed{\text{perplexity} = \exp\left(- \frac{1}{n} \sum_{i = 1}^{n}   \log_{}   P (x_{t} | x_{t-1} , \dots  x_{1}) \right)}$$
+$$ \Large \boxed{\text{perplexity} = \exp\left(- \frac{1}{n} \sum_{i = 1}^{n}   \log_{}   P (x_{t} | x_{t-1} , \dots  x_{1}) \right)} \tag{2.5.8} $$
 
 > [!hint] Similarity Evaluation 
 > The smaller perplexity is, the better (more similiar) this option is. 
@@ -200,9 +200,9 @@ we note that the argument `batch_size` specifies the number of subsequence examp
 For the condition probablity of token  $x_t$  at time step $t$,  we depend on $n-1$ previous tokens to make predition on next token,  If we want to <mark style="background: transparent; color: red">incorporate the possible effect of tokens earlier than time step</mark> $t -  (n-1)$ on time $x_t$, we need to increase $n$, but <b><mark style="background: transparent; color: orange">the number of model parameters would also increase exponentially with parameter n</mark></b>.
 
 so rather than modeling it with  $P(x_t| x_{t- 1, \dots  x_{t -n + 1 }})$ we use : 
-$$\Large P(x_t| x_{t- 1, \dots  x_{t -n + 1 }})\approx  P (x_{t} |  h_{t-1} )$$
+$$ \Large P(x_t| x_{t- 1, \dots  x_{t -n + 1 }})\approx  P (x_{t} |  h_{t-1} ) \tag{3.1.1} $$
 where
-$$h_{t} = f(x_{t},  h_{t-1})$$
+$$ h_{t} = f(x_{t},  h_{t-1}) \tag{3.1.2} $$
 since complex function $f$, the latent variable model is not an approximation.  but $h_t$ may simply store all the data it has observed so far, which leads to heavy computational burden. 
 
 We note that <b><mark style="background: transparent; color: orange">hidden layers and hidden states refer to two very different concepts.</mark></b> Hidden states can only be computed by looking at data at previous time steps.
@@ -211,11 +211,11 @@ Recurrent neural networks (RNNs) are neural networks with <b><mark style="backgr
 
 ### (2) Hidden States 
 For nn that without  hidden state (with hidden layer), just  
-$$H = \phi (X W_{xh}  + b_{n}) \qquad  O= H W_{hp} + b_{q}$$
+$$ H = \phi (X W_{xh}  + b_{n}) \qquad  O= H W_{hp} + b_{q} \tag{3.2.1} $$
 We assume that  for a minibatch  of inputs $X_{t} \in  R^{n \times  d}$ at time step $t$,  each row of $X_t$  corresponds to 1 example at time step $t$ from the sequence. next, **the hidden layer output of time step $t$ is denoted by $H_{t}\in  R^{n\times  h}$,**  but <b><mark style="background: transparent; color: orange">RNN save the</mark></b> $H_{t-1}$ as a <b><mark style="background: transparent; color: orange">time parameter</mark></b> **from the previous time step**. 
 
 With $H_{t-1}$ saved, not only $W_{xh}$ we have, but also $W_{hh}$, and  we can add the two part together : 
-$$\Large \boxed{H_{t} = \phi(X_{t}  W_{xh} + H_{t-1} W_{hh}  + b_{h})}$$
+$$ \Large \boxed{H_{t} = \phi(X_{t}  W_{xh} + H_{t-1} W_{hh}  + b_{h})} \tag{3.2.2} $$
 where $W_{xh} \in  R^{d \times  h}, W_{hh} \in  R^{h \times  h}$ 
 thus we captured and retained the sequence’s historical information up to their current time step. 
 
@@ -223,7 +223,7 @@ thus we captured and retained the sequence’s historical information up to thei
 > Since we retain the sequence's  historical  infomation up to  their current  time step, such a hidden layer output is called a **hidden state**. Layers that perform the computation (above equation) in RNNs are called **recurrent layers**.
 
 and the output is : 
-$$O_{t} = H_{t} W_{hq} + b_{q}$$
+$$ O_{t} = H_{t} W_{hq} + b_{q} \tag{3.2.3} $$
 and make the following structure :  
 ![[attachments/Pasted image 20250225221840.png|450]]
 
@@ -307,11 +307,11 @@ print(f"Final state shape: {state.shape}")  # Should be (batch_size, num_hiddens
 Dealing with vanishing and exploding gradients is a **fundamental problem when designing RNNs and has inspired some of the biggest advances in modern neural network architectures**. 
 
 Even modern RNNs still often suffer from exploding gradients.  One inelegant but ubiquitous solution is to simply clip the gradients forcing the resulting “clipped” gradients to take smaller values. we assume that  the  objective function $f$ is sufficiently smooth (objective is Lipschitz continuous). say a vector x, but **pushing it in the direction of the negative gradient $\boldsymbol{g}$**,  
-$$f (x) -f (y) \leq L ||x - y||$$
+$$ f (x) -f (y) \leq L ||x - y|| \tag{3.3.1} $$
 we can update the parameter vector  by subtracting $\eta g$  on $x$,  where $\eta$ is learning rate, and each update  takes the form  $x \leftarrow   x - \eta g$ ,  by substitute $y$ upper, we obtain : 
-$$f(x) - f (x - \eta  \boldsymbol{g }) \leq  L \eta ||g||$$
+$$ f(x) - f (x - \eta  \boldsymbol{g }) \leq  L \eta ||g|| \tag{3.3.2} $$
 if we adopt a gradieent clipping heuristic <mark style="background: transparent; color: red">projecting the gradients g onto a ball of some given radius θ as follows</mark> : 
-$$g \leftarrow  \min  \left(1, \frac{\theta}{||g||}\right)\boldsymbol{g}$$
+$$ g \leftarrow  \min  \left(1, \frac{\theta}{||g||}\right)\boldsymbol{g} \tag{3.3.3} $$
 this norm method would **limit the norm of $\vec{g}$  to $\theta$.** 
 
 
@@ -363,13 +363,15 @@ Note that gradient clipping can just mitigate the problem of exploding gradients
 
 ### (4) Back Propagation Computation in RNN
 For  hidden states and outputs at each time step, they can be represented as : 
-$$\boxed{h_{t}  = f (x_{t}, h_{t-1} , w_{h})}$$
-$$o_{t} = g(h_{t}, w_{o})$$
+$$ \boxed{h_{t}  = f (x_{t}, h_{t-1} , w_{h})} \tag{3.4.1} $$
+$$ o_{t} = g(h_{t}, w_{o}) \tag{3.4.2} $$
 for that we have a chain of values : 
-$$\left\{\dots  (x_{t-1} , h_{t-1}, o_{t-1}) , (x_{t}, h_{t}, o_{t}) , \dots \right\}$$For the **discrepancy between  otuput $o_t$ and the desired target $y_t$ is evaluated by  the function of**  : 
-$$L (x_{1} , \dots  x_{t},  \dots y_{1}, \dots  y_{t} , w_{h}, w_{o}) = \frac{1}{T}\sum_{t = 1}^{T} l (y_{t} , o_{t})$$
+$$
+\left\{\dots  (x_{t-1} , h_{t-1}, o_{t-1}) , (x_{t}, h_{t}, o_{t}) , \dots \right\}$$For the **discrepancy between  otuput $o_t$ and the desired target $y_t$ is evaluated by  the function of**  :
+$$L (x_{1} , \dots  x_{t},  \dots y_{1}, \dots  y_{t} , w_{h}, w_{o}) = \frac{1}{T}\sum_{t = 1}^{T} l (y_{t} , o_{t}) \tag{3.4.3}
+$$
 we can derive that 
-$$\frac{\partial L}{\partial w_{h}} =  \frac{1}{T}  \sum_{t = 1}^{T} \frac{\partial l (y_{t}, o_{t} )}{\partial o_{t}} \frac{\partial g(h_{t}, w_{o})}{\partial h_{t}} \frac{\partial h_{t}}{\partial w_{h}}$$
+$$ \frac{\partial L}{\partial w_{h}} =  \frac{1}{T}  \sum_{t = 1}^{T} \frac{\partial l (y_{t}, o_{t} )}{\partial o_{t}} \frac{\partial g(h_{t}, w_{o})}{\partial h_{t}} \frac{\partial h_{t}}{\partial w_{h}} \tag{3.4.4} $$
 
 > [!NOTE]  Weight Share across time steps 
 > For RNN structure, the weight $w_h$  is shared across the time steps, which is : 
@@ -377,25 +379,25 @@ $$\frac{\partial L}{\partial w_{h}} =  \frac{1}{T}  \sum_{t = 1}^{T} \frac{\part
 > Different Time step use same hidden layer weight. Note $w_h$ include $w_{hf}, w_{xf},  w_{hi}, w_{xi}, \dots$ (8 weights), and <b><mark style="background: transparent; color: orange">these weights are all shared across time.</mark></b>  
 
 where the chain rule yields that the <mark style="background: transparent; color: red">back propagation process equation</mark> is : 
-$$\Large \boxed{\frac{\partial h_t}{\partial w_h} = \frac{\partial f(x_t, h_{t-1}, w_h)}{\partial w_h} + \frac{\partial f(x_t, h_{t-1}, w_h)}{\partial h_{t-1}} \frac{\partial h_{t-1}}{\partial w_{h}}}$$
+$$ \Large \boxed{\frac{\partial h_t}{\partial w_h} = \frac{\partial f(x_t, h_{t-1}, w_h)}{\partial w_h} + \frac{\partial f(x_t, h_{t-1}, w_h)}{\partial h_{t-1}} \frac{\partial h_{t-1}}{\partial w_{h}}} \tag{3.4.5} $$
 This is a recurrent expansion equation, where  $\frac{\partial h_{t-1} }{\partial w_{h} }$ can  be represented into the above equation. so after expand all the equation, we got : 
-$$a_t = b_t + \sum_{i=1}^{t-1} \left( \prod_{j=i+1}^{t} c_j \right) b_{i}$$
+$$ a_t = b_t + \sum_{i=1}^{t-1} \left( \prod_{j=i+1}^{t} c_j \right) b_{i} \tag{3.4.6} $$
 where : 
-$$\begin{align*} a_t &= \frac{\partial h_t}{\partial w_h}, \\ b_t &= \frac{\partial f(x_t, h_{t-1}, w_h)}{\partial w_h}, \\ c_t &= \frac{\partial f(x_t, h_{t-1}, w_h)}{\partial h_{t-1}}. \end{align*}$$
+$$ \begin{align*} a_t &= \frac{\partial h_t}{\partial w_h}, \\ b_t &= \frac{\partial f(x_t, h_{t-1}, w_h)}{\partial w_h}, \\ c_t &= \frac{\partial f(x_t, h_{t-1}, w_h)}{\partial h_{t-1}}. \end{align*} \tag{3.4.7} $$
 and got the final back propgation equation as : 
-$$\frac{\partial h_t}{\partial w_h} = \frac{\partial f(x_t, h_{t-1}, w_h)}{\partial w_h} + \sum_{i=1}^{t-1} \left( \prod_{j=i+1}^{t} \frac{\partial f(x_j, h_{j-1}, w_h)}{\partial h_{j-1}} \right) \frac{\partial f(x_i, h_{i-1}, w_h)}{\partial w_h}$$
+$$ \frac{\partial h_t}{\partial w_h} = \frac{\partial f(x_t, h_{t-1}, w_h)}{\partial w_h} + \sum_{i=1}^{t-1} \left( \prod_{j=i+1}^{t} \frac{\partial f(x_j, h_{j-1}, w_h)}{\partial h_{j-1}} \right) \frac{\partial f(x_i, h_{i-1}, w_h)}{\partial w_h} \tag{3.4.8} $$
 note in actual computation, if we compute full equation above, it would be very slow and gradients can blow up, so we truncate the time step to $\tau$  steps, 
 
 ### (5) Randomized Truncation 
 We can firstly replace $\frac{\partial h_t}{\partial w_h}$ by a random variable  which is correct in expectation. Then we can <mark style="background: transparent; color: red">replace  the partial part</mark> $\frac{\partial h_t}{\partial w_h}$ by $\xi_t$  which subordinate to the Bernoulli distribution : 
-$$0 \leq \pi_{t} \leq  1 \qquad   P(\xi_{t} = 0) = 1-\pi_{t}\qquad  P(\xi_{t} = \pi_{t}^{-1}) = \pi_{t}$$
+$$ 0 \leq \pi_{t} \leq  1 \qquad   P(\xi_{t} = 0) = 1-\pi_{t}\qquad  P(\xi_{t} = \pi_{t}^{-1}) = \pi_{t} \tag{3.5.1} $$
 ![[Excalidraw/Chapter7 RNN 2025-02-27 10.44.08|250]]
 we can easily got that : 
-$$E(\xi_{t}) = 1 $$
+$$ E(\xi_{t}) = 1 \tag{3.5.2} $$
 then the above back propagation process equation becomes :
-$$ z_{t} = \frac{\partial f(x_t, h_{t-1}, w_h)}{\partial w_h} + \xi_t \frac{\partial f(x_t, h_{t-1}, w_h)}{\partial h_{t-1}} \frac{\partial h_{t-1}}{\partial w_h}$$
+$$ z_{t} = \frac{\partial f(x_t, h_{t-1}, w_h)}{\partial w_h} + \xi_t \frac{\partial f(x_t, h_{t-1}, w_h)}{\partial h_{t-1}} \frac{\partial h_{t-1}}{\partial w_h} \tag{3.5.3} $$
 note the approximate result **follows the expectation rule** : 
-$$E(z_{t})  =  \frac{\partial h_{t}}{\partial w_{h}}$$
+$$ E(z_{t})  =  \frac{\partial h_{t}}{\partial w_{h}} \tag{3.5.4} $$
 > [!NOTE] 
 > Actually randomized truncation does not work much better than regular truncation 
 
@@ -427,11 +429,13 @@ key distinction between vanilla RNNs and LSTMs is that <b><mark style="backgroun
 
 #### 1. Fundamental Gates 
 For LSTM gates,  we represent that Input, Forget and Output gates as $I_t, F_t$ and  $O_t$, in the hidden layer, intput is $X_{t}$ and $H_{t-1}$  then we can calculate each gate output as : 
-$$\boxed{\begin{align*}
+$$
+\boxed{\begin{align*}
 I_t &= \sigma(X_t W_{xt} + H_{t-1}W_{h t} + b_t), \\
 F_t &= \sigma(X_t W_{xf} + H_{t-1}W_{hf} + b_f), \\
 O_t &= \sigma(X_t W_{x_0} + H_{t-1}W_{h_0} + b_0),
-\end{align*}} \tag{7.4.1}$$
+\end{align*}} \tag{4.1.1}
+$$
 output are like this shape : 
 ![[attachments/Pasted image 20250228145701.png|400]]
 
@@ -440,19 +444,19 @@ output are like this shape :
 > $\sigma$ is  sigmoid function but not  ReLU `->` **since it's $a$ gate signal function in range (0, 1)**
 
 #### 2. Input Node 
-We firstly introduce input node (cell state) $\tilde{C}_{t}\in R^{n \times  h}$, it use  a [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/Sklearn的使用基础和基本代码#3. tanh 激活函数|tanh function]] with value range for $(-1,1)$ 
-$$C_{t} = \tanh(X_{t}W_{xc} + H_{t-1}W_{hc} + b_{c}) \tag{7.4.2}$$
+We firstly introduce **input node (cell state)** $\tilde{C}_{t}\in R^{n \times  h}$, it use  a [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/Sklearn的使用基础和基本代码#3. tanh 激活函数|tanh function]] with value range for $(-1,1)$ 
+$$ C_{t} = \tanh(X_{t}W_{xc} + H_{t-1}W_{hc} + b_{c}) \tag{4.1.2} $$
 ![[attachments/Pasted image 20250228150003.png|400]]
 
 **Internal State**  
 1. The input gate $I_t$ governs how much we take new  data into account via $\tilde{C}_t$ 
 2. The forget gate  $F_t$ governs how much of internal state $C_{t-1} \in R^{n \times  h}$ retain.
 we can use Hadamard product to give the relation : 
-$$\boxed{C_{t} = F_{t} \odot C_{t}- 1   + I_{t} \odot  \tilde{C}_{t}} \tag{7.4.3}$$
+$$ \boxed{C_{t} = F_{t} \odot C_{t- 1}   + I_{t} \odot  \tilde{C}_{t}} \tag{4.1.3} $$
 for $F_t < 1$, the network forget last status, and for $I_{t} > 1$, network receive  the input layer parameters. 
 
 then we calculate the next hidden layer as : 
-$$\boxed{H_{t}  =  O_{t} \odot \tanh (C_{t})} \tag{7.4.4}$$
+$$ \boxed{H_{t}  =  O_{t} \odot \tanh (C_{t})} \tag{4.1.4} $$
 so the final structure becomes : 
 ![[attachments/Pasted image 20250302173744.png|500]]
 
@@ -533,24 +537,26 @@ where `seq_len` is the length of total sentence.  the dimension of `input_size` 
 GRU includes Reset Gate and Update Gate,  The  structure is as follows: 
 ![[attachments/Pasted image 20250306105654.png|300]]
 where the <b><mark style="background: transparent; color: orange">Reset gate and  update Gate are computed as follows : </mark></b> 
-$$\begin{align*}
+$$
+\begin{align*}
 R_t &= \sigma(X_tW_{xr}+H_{t-1}W_{hr}+b_r), \\
 Z_t &= \sigma(X_tW_{xz}+H_{t-1}W_{hz}+b_z),
-\end{align*}$$
+\end{align*} \tag{4.2.1}
+$$
 where $\sigma$ is also sigmoid Function that  limit output to $(0,1)$ 
 ![[attachments/Pasted image 20250420200424.png|350]]
 
 #### 2. Candidate Hidden State 
 For the  $R_t$ with the regular updating mechanics, leading to tHe
-$$\boxed{\tilde{H}_{t} = \tanh(X_{t}  W_{xh} + (R_{t} \,  \odot \; H_{t-1}) W_{hh} + b_{h} )}$$
+$$ \boxed{\tilde{H}_{t} = \tanh(X_{t}  W_{xh} + (R_{t} \,  \odot \; H_{t-1}) W_{hh} + b_{h} )} \tag{4.2.2} $$
 This result is a candidate hidden state,  We note that the **influence of the previous states can be reduced with the elementwise multiplication** of $R_{t}$ and $H_{t-1}$, **For $R_t$ close to 1 ,  we recover a vinilla RNN, which is**  
-$$\tilde{H}_{t} = \tanh(X_{t}  W_{xh}   + H_{t-1} W_{hh}  + b_{h}) \qquad  \text{(vinilla RNN) }$$
+$$ \tilde{H}_{t} = \tanh(X_{t}  W_{xh}   + H_{t-1} W_{hh}  + b_{h}) \qquad  \text{(vinilla RNN) } \tag{4.2.3} $$
 This is the candidate state. 
 #### 3. Hidden State 
-Incorporating the effect of update gate $Z_t$,  we combine $H_t$ and $\tilde{H}_t$ to the next state : 
-$$H_t = Z_t \odot H_{t-1} + (1 - Z_t) \odot \tilde{H}_t. \tag{10.2.3}$$
+**Incorporating the effect of update gate** $Z_t$,  we combine $H_t$ and $\tilde{H}_t$ to the next state : 
+$$ H_t = Z_t \odot H_{t-1} + (1 - Z_t) \odot \tilde{H}_t. \tag{4.2.4} $$
 where from the upper 
-$$\tilde{H}_{t} = \tanh(X_{t}  W_{xh} + (R_{t} \,  \odot \; H_{t-1}) W_{hh} + b_{h} )$$
+$$ \tilde{H}_{t} = \tanh(X_{t}  W_{xh} + (R_{t} \,  \odot \; H_{t-1}) W_{hh} + b_{h} ) \tag{4.2.5} $$
 ![[attachments/Pasted image 20250306113034.png|470]]
 
 Following gives a example for creating the  GRU unit Module as follows :
@@ -642,10 +648,10 @@ For the  case when mask random tokens and  take the context in both directions i
 firstly we can create two RNNs, all receive the input from $X$ and output as $O$, but in the second layer the connection is that $W_{hh}$ is from the next Hidden Unit. 
 ![[attachments/Pasted image 20250317120719.png]]
 which  create the following calculation equation : 
-$$\overrightarrow{H_t} = \phi(X_tW_{xh}^{(f)} + \overrightarrow{H_{t-1}}W_{hh}^{(f)} + b_h^{(f)})$$
-$$\overleftarrow{H_t} = \phi(X_tW_{xh}^{(b)} + \overleftarrow{H_{t+1}}W_{hh}^{(b)} + b_h^{(b)})$$
+$$ \overrightarrow{H_t} = \phi(X_tW_{xh}^{(f)} + \overrightarrow{H_{t-1}}W_{hh}^{(f)} + b_h^{(f)}) \tag{4.4.1} $$
+$$ \overleftarrow{H_t} = \phi(X_tW_{xh}^{(b)} + \overleftarrow{H_{t+1}}W_{hh}^{(b)} + b_h^{(b)}) \tag{4.4.2} $$
 and also the output layer calculation : 
-$$O_{t} =  \overrightarrow{H_t} W_{hq}  +  \overleftarrow{H_{t}} W_{hq}' + b_{q}$$
+$$ O_{t} =  \overrightarrow{H_t} W_{hq}  +  \overleftarrow{H_{t}} W_{hq}' + b_{q} \tag{4.4.3} $$
 where it shares the same  bias $b_q$, 
 
 note that we may use a mask or placeholder for  the unknown element. 
@@ -662,7 +668,7 @@ note that we may use a mask or placeholder for  the unknown element.
 1. **Mask or Replace $x_3$ with a Placeholder**
 - If $x_3$ is unknown and you want the model to predict it, you can replace $x_3$ with a special placeholder token (e.g., `[MASK]`, `null`, or a zero vector) in the input sequence.
 - For example: 
-$$ X = (x_1, x_2, \text{[MASK]}, x_4, x_5)$$
+$$ X = (x_1, x_2, \text{[MASK]}, x_4, x_5) \tag{4.4.4} $$
 - The model will process the sequence and use the bidirectional context (from $x_1, x_2$ and $x_4, x_5$) to predict $x_3$.
 - <b><mark style="background: transparent; color: orange">In frameworks like TensorFlow or PyTorch, you can use a mask tensor to achieve this</mark></b>.
 
@@ -837,9 +843,9 @@ def init_seq2seq(module): #@save
 ```
 
 firstly, we can use a function $f$ for the transformation of the RNN's  recurrent layer. which use $x_t$ and $h_{t-1}$ as input : 
-$$h_{t} =  f(x_{t}, h_{t-1})$$
+$$ h_{t} =  f(x_{t}, h_{t-1}) \tag{5.3.1} $$
 then we generate the hidden state $h_1, h_2, \dots h_T$, the encoder <mark style="background: transparent; color: red">transforms the  hidden states at all time  into a vatiable c through custimized  function</mark> $q$ : 
-$$c =  q(h_{1}, \dots,  h_{T})$$
+$$ c =  q(h_{1}, \dots,  h_{T}) \tag{5.3.2} $$
 We use the embedding layer as the input of  next rnn layer,  which can just be <mark style="background: transparent; color: red">implemented with a multilayer GRU</mark>. 
 
 ```python
@@ -863,13 +869,13 @@ where :
 When training the decoder, we will give a target sequence  $y_1, y_2, \dots y_t$, for each time step $t$. we use  the  decoder **assigns a predicted probablity to the possible token occuring at time step $t+1$.** which <mark style="background: transparent; color: red">can be predicted by the context variable</mark> $\boldsymbol{c}$ and previous given $y_1, \dots y_{t'}$. 
 
 i.e., we can use an output layer to compute the predictive distribution <mark style="background: transparent; color: red">(use a softmax function)</mark> 
-$$p (y_{t +1} |y_{1}, y_{2} , \dots  y_{t} , c )$$
+$$ p (y_{t +1} |y_{1}, y_{2} , \dots  y_{t} , c ) \tag{5.4.1} $$
 over the subsequent layer. 
 > [!HINT] Output of decoder 
 >  The **final output at each time step** is typically a probability distribution over the **target vocabulary**, represented as **word indices** after applying `argmax`.
 
 Then, we can use a function $g$ to express the transformation of the decoder's hidde layer:
-$$s_{t} = g(y_{t-1} , c , s_{t-1})$$
+$$ s_{t} = g(y_{t-1} , c , s_{t-1}) \tag{5.4.2} $$
 
 in the decoder process, it use target output sequence $X$ and **encoder state** as input. note we directly <mark style="background: transparent; color: red">use the hidden state at the final time step of the encoder to initialize the hidden state of the decoder</mark>, so the RNN encoder and the RNN decoder have the same number of layers and hidden units (but time step may have discrepancy).  
 ![[attachments/Pasted image 20250401105929.png]]
@@ -974,9 +980,9 @@ In principle, for any n-grams in the predicted sequence, BLEU evaluates whether 
 Precision $p$ is the ratio of the number of matched n-grams in the predicted and target sequences to the number of n-grams in the predicted sequence. For example, given a target sequence $A, B, C, D, E, F$, and a predicted sequence $A, B, B, C,  D$, we have p1 = 4/5, p2 = 3/4, p3 = 1/3, and p4 = 0. 
 
 <mark style="background: transparent; color: red">where p is calculated by longest  n-grams match, maximum (3) is B,C,D, and for 2 gram match is (AB, BC, CD) in total bigrams in prediction (4)</mark>
-$$p_{n} =  \frac{\text{number of  match unigrams}}{\text{total  n-grams in prediction}}$$
+$$ p_{n} =  \frac{\text{number of  match unigrams}}{\text{total  n-grams in prediction}} \tag{5.5.1} $$
 BLEU is defined as: 
-$$\text{BLEU} =  \exp\left(\min\left( 0,1  - \frac{\text{len}_{target}}{\text{len}_{pred}}\right)\right) \prod_{n=1}^{k} p_{n} ^{\frac{1}{2^{n}  }}$$
+$$ \text{BLEU} =  \exp\left(\min\left( 0,1  - \frac{\text{len}_{target}}{\text{len}_{pred}}\right)\right) \prod_{n=1}^{k} p_{n} ^{\frac{1}{2^{n}  }} \tag{5.5.2} $$
 where k is the longest n-grams for matching (in above case is 3, so the `p4=0` is neglected). also the $p_n$ is greater when hit a longer match (with the part $p_{n}^{\frac{1}{2^{n}}}$, whcih is greater than 1 when make a match). 
 
 
@@ -997,9 +1003,11 @@ print(results)
 For greedy search, it <mark style="background: transparent; color: red">selects the token with the highest conditional probability in softmax result</mark>. 
 ![[attachments/Pasted image 20250401124142.png]]
 the strategy of which is 
-$$\begin{align*}
+$$
+\begin{align*}
 y_{t'}=\underset{y\in\mathcal{Y}}{\operatorname{argmax}}\,P(y\mid y_1,\ldots,y_{t'-1},c).
-\end{align*}$$
+\end{align*} \tag{5.6.1}
+$$
 
 In our machine translation example, if the decoder truly recovered the probabilities of the underlying generative process, then this would give us the most likely translation. ==But unfortunately, there is no guarantee that greedy search will give us this sequence==. 
 
@@ -1026,14 +1034,16 @@ note that beam search may not gain a good result, but we can hybrid the search t
 - **Cons**: Still not guaranteed to find the best sequence, but better coverage than vanilla Beam Search. 
 
 Also note we can use a trade-off way : to keep the branch within a probablity top limitation, that is : 
-$$\text{keep branch that} :  |max(p) - p_{b} | < \text{limit} $$
+$$ \text{keep branch that} :  |max(p) - p_{b} | < \text{limit} \tag{5.6.2} $$
 and it may reach a reasonable search result. 
 
 
 we choose the sequence with the highest of the following score as the output sequence: 
-$$\begin{align*}
+$$
+\begin{align*}
 \frac{1}{L^\alpha} \log P(y_1, \ldots, y_L \mid c) = \frac{1}{L^\alpha} \sum_{t'=1}^L \log P(y_{t'} \mid y_1, \ldots, y_{t'-1}, c)
-\end{align*}$$
+\end{align*} \tag{5.6.3}
+$$
 
 ## 6. Application : English-Chinese Machine Translation 
 ### (1) Introduction and data loading 
@@ -1577,9 +1587,9 @@ The encoder would output a **Embedding matrix** with `vocab_size x embed_size`, 
 
 since GRU  output is (from [nn.GRU]))  
 1.  output  
-$$\text{batch\_{size}}\times  \text{seq\_{len}}\times (\text{directions} \times  \text{hidden\_size}) $$
+$$ \text{batch\_{size}}\times  \text{seq\_{len}}\times (\text{directions} \times  \text{hidden\_size}) \tag{7.1.1} $$
 2. hidden state  ($h_{n}$, which is the final hidden state for input sequence)
-$$\text{directions}  \times \text{num\_{layers} , batchsize,  hidden\_size}$$
+$$ \text{directions}  \times \text{num\_{layers} , batchsize,  hidden\_size} \tag{7.1.2} $$
 
 where  the `h_n` is  (num_layers * num_directions, batch, hidden_size): 
 ![[attachments/Pasted image 20250420151715.png|600]] 

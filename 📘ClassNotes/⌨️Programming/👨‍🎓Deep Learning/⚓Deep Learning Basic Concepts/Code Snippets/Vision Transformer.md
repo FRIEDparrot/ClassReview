@@ -218,7 +218,7 @@ class ImageClassifier(nn.Module):
 def main():
     # The image classification  task using transformer model.
     path = kagglehub.dataset_download("gpiosenka/sports-classification")
-
+	
     train_folder = ImageFolder(os.path.join(path, "train"), allow_empty=False)
     test_folder = ImageFolder(os.path.join(path, "test"), allow_empty=False)
     valid_folder = ImageFolder(os.path.join(path, "valid"), allow_empty=False)

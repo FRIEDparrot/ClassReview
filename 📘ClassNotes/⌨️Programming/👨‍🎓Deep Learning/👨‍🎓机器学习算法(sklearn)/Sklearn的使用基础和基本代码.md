@@ -178,8 +178,8 @@ clf = Pipeline(steps=[
 ```
 
 ### 3. 超参数调优问题方法
+使用GridSearchCV和KFold进行交叉验证 
 
-使用GridSearchCV和KFold进行交叉验证
 ```python
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import GridSearchCV, KFold

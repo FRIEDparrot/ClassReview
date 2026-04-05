@@ -5,7 +5,7 @@ Multi-Layer Perception is the neural network with not more than 1 layer of  hidd
 Kernel methods have been used for may decades to model the nonlinear dependencies. so we often overcome the  limitations of the linear models by <mark style="background: transparent; color: red">incorporating one or more layer of hidden layers</mark>.
 
 It's easy to see that multi-layer of the linear model is equal to 1-layer linear model , see [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/9. 正则化方法, 概率图模型和贝叶斯网络#二、多层感知机|MultiLayer Perceptions]]. where we add <mark style="background: transparent; color: red">activations in the hidden layer</mark>.
-$$O =\phi (XW_h + b_h)W_o + b_{o}$$
+$$ O =\phi (XW_h + b_h)W_o + b_{o} \tag{1.1.1} $$
 note **after computing the linear portion of the layer , we can calculate the activation without looking at the values taken by other hidden units**. 
 
 See [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/6. 最小二乘, RBF, 岭回归和 Lasso 回归#(2) 径向基函数网络|Radial Basis Function]], if enough hidden nodes are given, any complex functions can be modeled. Note single-layer 
@@ -17,32 +17,32 @@ Forward Propagation <mark style="background: transparent; color: red">refers to 
 In the **forward propagation**,  when it come to calculate the gradients, we invoke the backpropagation function. 
 
 we can calculate intermediate variable as:
-$$\boxed{z = W^{(1)} x}$$
+$$ \boxed{z = W^{(1)} x} \tag{1.2.1} $$
 with activation function $\phi$, we  have:
-$$\boxed{h= \phi(z) }$$
+$$ \boxed{h= \phi(z) } \tag{1.2.2} $$
 assuming the parameters  of the output layer only contains the weight $W^{(2)}$ 
-$$o = W^{(2)} h$$
+$$ o = W^{(2)} h \tag{1.2.3} $$
 then given the hyper parameter $\lambda$, the **L2 regularization term** 
-$$s = \frac{\lambda}{2} \left(||W^{(1)}||^{2} +  ||W^{(2)}||^{2} \right)$$
+$$ s = \frac{\lambda}{2} \left(||W^{(1)}||^{2} +  ||W^{(2)}||^{2} \right) \tag{1.2.4} $$
 then minimize objective function :
-$$J = l(o, y) +  s$$
+$$ J = l(o, y) +  s \tag{1.2.5} $$
 
 for computational graph of forward propagation, it is like: 
 ![[Excalidraw/Chapter5 Multilayer Perception 2024-12-21 14.24.27|500]]
 ### (3) Back Propagation 
 See [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Implements/1. 深度学习基础简介#(1) 正向传播和反向传播|Back Propagation]], back propagation use the chain rule of derivation, that is 
-$$\frac{\partial Z}{\partial X} = \prod \left(\frac{\partial Z}{\partial Y}\frac{\partial Z}{\partial X}\right)$$
+$$ \frac{\partial Z}{\partial X} = \prod \left(\frac{\partial Z}{\partial Y}\frac{\partial Z}{\partial X}\right) \tag{1.3.1} $$
 For higher dimensional tensors, with $J = s + L, L = (y - o)^{2}$ then:
-$$\frac{\partial J}{\partial o} = \frac{\partial J}{\partial L} \frac{\partial L}{\partial o}  = 2 (y -  o)$$
+$$ \frac{\partial J}{\partial o} = \frac{\partial J}{\partial L} \frac{\partial L}{\partial o}  = 2 (y -  o) \tag{1.3.2} $$
 considering that $s = \frac{\lambda}{2} \left(||W^{(1)}||^{2} +  ||W^{(2)}||^{2} \right)$,  we have: 
-$$\frac{\partial s }{\partial W^{(1)}} = \lambda W^{(1)} \qquad  \frac{\partial s}{\partial W^{(2)}} = \lambda W^{(2)}$$
+$$ \frac{\partial s }{\partial W^{(1)}} = \lambda W^{(1)} \qquad  \frac{\partial s}{\partial W^{(2)}} = \lambda W^{(2)} \tag{1.3.3} $$
 and also, we can calculate 
-$$\frac{\partial J}{\partial W^{(2)}} = \frac{\partial J}{\partial o} \frac{\partial o}{\partial W^{(2)}} +  \frac{\partial  J}{\partial s} \frac{\partial s}{\partial W^{(2)}} = 2(y- o) h^{T}  + \lambda W^{(2)} $$
+$$ \frac{\partial J}{\partial W^{(2)}} = \frac{\partial J}{\partial o} \frac{\partial o}{\partial W^{(2)}} +  \frac{\partial  J}{\partial s} \frac{\partial s}{\partial W^{(2)}} = 2(y- o) h^{T}  + \lambda W^{(2)} \tag{1.3.4} $$
 then similarly we get: 
-$$\frac{\partial J}{\partial W^{(1)}} =  \frac{\partial J}{\partial h} \frac{\partial h}{\partial W^{(1)}} +  \frac{\partial  J}{\partial s} \frac{\partial s}{\partial W^{(1)}}  = \frac{\partial J}{\partial h} \frac{\partial h}{\partial W^{(1)}} +  \lambda W_{1}$$
+$$ \frac{\partial J}{\partial W^{(1)}} =  \frac{\partial J}{\partial h} \frac{\partial h}{\partial W^{(1)}} +  \frac{\partial  J}{\partial s} \frac{\partial s}{\partial W^{(1)}}  = \frac{\partial J}{\partial h} \frac{\partial h}{\partial W^{(1)}} +  \lambda W_{1} \tag{1.3.5} $$
 where:
-$$\frac{\partial J}{\partial h} = \left(\frac{\partial J}{\partial o} \frac{\partial o}{\partial h}\right) = W^{(2)T} 2(y - o)$$
-$$\frac{\partial h}{\partial W_{1}} =  \phi'  x ^{T}$$
+$$ \frac{\partial J}{\partial h} = \left(\frac{\partial J}{\partial o} \frac{\partial o}{\partial h}\right) = W^{(2)T} 2(y - o) \tag{1.3.6} $$
+$$ \frac{\partial h}{\partial W_{1}} =  \phi'  x ^{T} \tag{1.3.7} $$
 in the real computing process, we travel the computation graph in the direction of dependencies and compute all the variables on the path.
 
 we note that the **hidden layer $h$ is a key point to calculate the derivation**. so we store the derivations of $\frac{\partial o}{\partial h}$ and $\frac{\partial h}{\partial W}$ to save the calculation time. 
@@ -65,11 +65,11 @@ If we initialize the parameters according to pre-specified distribution, <mark s
 #### 1. Vanishing and exploding gradients 
 When consider the deep network with $L$ layers, the hidden layer output is $h^{(l)}$. 
 
-$$h^{(l)} =  f_{l} (h^{(l -1)})  \qquad o = f_{L} \circ \dots \circ  f_{1}(x)$$
+$$ h^{(l)} =  f_{l} (h^{(l -1)})  \qquad o = f_{L} \circ \dots \circ  f_{1}(x) \tag{1.4.1} $$
 we note that  if the hidden layer output and the input are vectors, we have the derivation for the layer $W^{(l)}$ is :
-$$\partial_{W^{(l)}}o  =  \partial_{h(L-1)} h^{(L)} \partial_{h(L-2)}  h^{(L-1)}  \dots  \partial_{h^{(l)}}  h^{(l+1)}  \partial_{W^{(l)}}h^{(l)} $$
+$$ \partial_{W^{(l)}}o  =  \partial_{h(L-1)} h^{(L)} \partial_{h(L-2)}  h^{(L-1)}  \dots  \partial_{h^{(l)}}  h^{(l+1)}  \partial_{W^{(l)}}h^{(l)} \tag{1.4.2} $$
 we define 
-$$M^{(L)} = \partial_{h(L-1)} h^{(L)}  \qquad  \text{then} \qquad  \partial_{W^{(l)}}o  = M^{(L)} M^{(L- 1)} \dots M^{(l + 1)}  h^{(l)}$$
+$$ M^{(L)} = \partial_{h(L-1)} h^{(L)}  \qquad  \text{then} \qquad  \partial_{W^{(l)}}o  = M^{(L)} M^{(L- 1)} \dots M^{(l + 1)}  h^{(l)} \tag{1.4.3} $$
 we notice that each $M$ may have wide variety of the eigenvalues, so the product would be  var large or very small. 
 
 1. <b><mark style="background: transparent; color: blue">for vanish gradients</mark></b>, the  **frequent culprit for vanishing gradient problem is the choice of activation function $\phi$ after the linear layer**, Historically, the [[📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/Sklearn的使用基础和基本代码#2. **Sigmoid 激活函数**|sigmoid function]] was popular because it resembles a <b><mark style="background: transparent; color: blue">thresholding function.</mark></b> 
@@ -134,16 +134,16 @@ also if  the gradient vanish happens, we may use `LeakyReLU` instead of `ReLU` a
 additional  care during the optimization and regularization would further enhance stability, for the default initialization, we use the  normal distribution to initialize the values of the weights. it often works well with moderate problem size. 
 #### 1. Xavier Initialization
 for we look at the distribution of  output $o_i$  the  layer of output is given by 
-$$o_{i}=\sum_{j = 1}^{n}  w_{ij} x_{j}$$
+$$ o_{i}=\sum_{j = 1}^{n}  w_{ij} x_{j} \tag{2.1.1} $$
 we assume that the input layer has zero mean  and the variance $o_{i}$ 
-$$E[o_{i}] = \sum_{j = 1}^{n} E[w_{ij}] E[x_{j}] = 0$$
-$$\text{Var}[o_{i} ] = E[o_{i}^{2}] - (E[o_{i}])^{2} =\sum_{j = 1}^{n} E[w_{ij}^{2}] E[x_{j}^{2}] = n_{in}  \sigma^{2} \gamma^{2} $$
+$$ E[o_{i}] = \sum_{j = 1}^{n} E[w_{ij}] E[x_{j}] = 0 \tag{2.1.2} $$
+$$ \text{Var}[o_{i} ] = E[o_{i}^{2}] - (E[o_{i}])^{2} =\sum_{j = 1}^{n} E[w_{ij}^{2}] E[x_{j}^{2}] = n_{in}  \sigma^{2} \gamma^{2} \tag{2.1.3} $$
 One of the way to keep the  variance fixed is  to set $n_{in} \sigma^2  = 1$, <mark style="background: transparent; color: red">we see that the gradient's variance can blow up unless</mark> $n_{out} \sigma^2 = 1$ ($n_{out}$ is number of output) but **we can't satisfy both condition**. so we try to satisfy :
-$$\frac{1}{2} (n_{in} + n_{out}) \sigma^{2} = 1 \qquad \text{or} \qquad \sigma= \sqrt{\frac{2}{n_{in} +  n_{out}}}$$
+$$ \frac{1}{2} (n_{in} + n_{out}) \sigma^{2} = 1 \qquad \text{or} \qquad \sigma= \sqrt{\frac{2}{n_{in} +  n_{out}}} \tag{2.1.4} $$
 so  the  practically beneficial of Xavier initialization is  that it  <mark style="background: transparent; color: red">samples weights from a Gaussian distribution with zero mean and variance</mark> $\sigma$ above, or 
-$$\sigma^{2} = \frac{2}{n_{in} + n_{out}}$$
+$$ \sigma^{2} = \frac{2}{n_{in} + n_{out}} \tag{2.1.5} $$
 also if we deploy it in the uniform distribution, we get : 
-$$U \left(-\sqrt{\frac{6}{n_{in} + n_{out}}}, \sqrt{\frac{6}{n_{in } + n_{out}}}\right)$$
+$$ U \left(-\sqrt{\frac{6}{n_{in} + n_{out}}}, \sqrt{\frac{6}{n_{in } + n_{out}}}\right) \tag{2.1.6} $$
 
 note the reasoning above barely scratches the surfaces of modern approaches to parameter initialization. actually, other heuristics  such as  shared  parameters, super-resolution , sequence models, etc. 
 
@@ -213,12 +213,14 @@ nn.Dropout(p=0.4)
 the key challenge is how to<mark style="background: transparent; color: red"> inject the noise brought by co-Adaption </mark>.  
 
 In the standard  dropout regularization, with dropout probability  $p$, each  intermediate activation h is replaced by  random  variable $h'$ as :
-$$h' = \begin{cases}
+$$
+h' = \begin{cases}
 0   \qquad  \text{with probablity  } p\\
 \frac{h}{1-p}   \qquad  \text{otherwise}
-\end{cases}$$
+\end{cases} \tag{2.3.1}
+$$
 note that by design the  expectation not  changed, as : 
-$$E [h'] =h $$
+$$ E [h'] =h \tag{2.3.2} $$
 for example,  we can self-define a drop out layer module, like following format :  
 ```python
 import numpy as np  
@@ -309,12 +311,12 @@ Also, Dynamic Dropout is optional, such as gradually reduce the dropout rate dur
 
 ##  3. Error Measure and K-Fold Cross Validation
 ### (1) Logarithmic MSE Loss 
-Also note for the high house price with different level, we may consider use 
-$$\frac{y - \hat{y}}{y}$$
-than absolute error, also there may have significant outliners
+Also note for the high house price with different level, we may consider using : 
+$$ \frac{y - \hat{y}}{y} \tag{3.1.1} $$
+than absolute error, also there may have significant outliners 
 
-we can  use a small value $\delta$  for $|\log_{} y  - \log_{} \hat{y}| \leq  \delta$ , which means $e^{- \delta} \leq \frac{\hat{y}}{y} \leq e^{\delta}$  
-$$\sqrt{\frac{1}{n} \sum_{i = 1}^{n} (\log_{} y_{i}  - \log_{} \hat{y}_{i})^{2}}$$
+We can  use a small value $\delta$  for $|\log_{} y  - \log_{} \hat{y}| \leq  \delta$ , which means $e^{- \delta} \leq \frac{\hat{y}}{y} \leq e^{\delta}$  
+$$ \sqrt{\frac{1}{n} \sum_{i = 1}^{n} (\log_{} y_{i}  - \log_{} \hat{y}_{i})^{2}} \tag{3.1.2} $$
 this have good effect when $y > 0$ and have large discrepancy 
 
 Note that in the house price,  we can integrate the Loss as a module of torch like the following class : 

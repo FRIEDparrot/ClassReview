@@ -4,53 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "babd7dd7ddea0faa",
+        "id": "d79b6364f6630e5d",
         "type": "tabs",
         "children": [
           {
-            "id": "006f4624ac2f0958",
+            "id": "d121408d882ce172",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🧩Mathematical and Physical Equations/一、偏微分方程及其定解问题.md",
+                "file": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第三章 向量的微分积分运算法则.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "一、偏微分方程及其定解问题"
-            }
-          },
-          {
-            "id": "92f838796ae08047",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/八、变分问题和瑞利商法.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "八、变分问题和瑞利商法"
-            }
-          },
-          {
-            "id": "6327540d0a24dfbc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔥Pytorch Basics/2. Pytorch 基础常用代码部分.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2. Pytorch 基础常用代码部分"
+              "title": "第三章 向量的微分积分运算法则"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -62,7 +33,6 @@
       {
         "id": "4999cc07d71e978b",
         "type": "tabs",
-        "dimension": 59.46775844421699,
         "children": [
           {
             "id": "86820ad5b67d3064",
@@ -103,16 +73,9 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
-          }
-        ]
-      },
-      {
-        "id": "066eddf15a13dd56",
-        "type": "tabs",
-        "dimension": 40.53224155578301,
-        "children": [
+          },
           {
-            "id": "db0ad0041a71350b",
+            "id": "5aeea81df7e705ba",
             "type": "leaf",
             "state": {
               "type": "recent-files",
@@ -125,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 331.5
+    "width": 394.5
   },
   "right": {
     "id": "f7de553c162de521",
@@ -134,16 +97,30 @@
       {
         "id": "736ec7c11262503f",
         "type": "tabs",
-        "dimension": 45.732349841938884,
         "children": [
           {
-            "id": "befa702227dffd48",
+            "id": "7778856753ec014b",
             "type": "leaf",
             "state": {
-              "type": "advanced-tables-toolbar",
+              "type": "outline",
+              "state": {
+                "file": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第三章 向量的微分积分运算法则.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 第三章 向量的微分积分运算法则"
+            }
+          },
+          {
+            "id": "8b0fc5e28994b32f",
+            "type": "leaf",
+            "state": {
+              "type": "equation-arrange-panel",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "square-pi",
+              "title": "Equations arrange panel"
             }
           },
           {
@@ -161,32 +138,12 @@
             }
           },
           {
-            "id": "6577c7d78741ced1",
-            "type": "leaf",
-            "state": {
-              "type": "QUICKSHARE_SIDE_VIEW",
-              "state": {},
-              "icon": "cloud",
-              "title": "QuickShare"
-            }
-          },
-          {
-            "id": "ccf3c49a7ac51afd",
-            "type": "leaf",
-            "state": {
-              "type": "dictionary-view",
-              "state": {},
-              "icon": "quote-glyph",
-              "title": "Dictionary"
-            }
-          },
-          {
             "id": "f05de46e81e6540c",
             "type": "leaf",
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第二章 张量代数和商法则.md",
+                "file": "📘ClassNotes/📐Mathmatics/📏linear algebra/第五章 矩阵的相似变换.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -222,83 +179,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 第二章 张量代数和商法则"
-            }
-          },
-          {
-            "id": "9e8c15d95c721ecf",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "41828a72f523292a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/👨‍🔧Mechanics/Mechanic Terminology.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Mechanic Terminology"
-            }
-          },
-          {
-            "id": "b8575cf00c634298",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/⚡Circuit/Circuit Terminology.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Circuit Terminology"
-            }
-          },
-          {
-            "id": "5bb1bdb26eb18b06",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/🚱materials and chemicals/Chemical Terminology.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Chemical Terminology"
-            }
-          },
-          {
-            "id": "68a837d6d93b38fd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📘ClassNotes/⌨️Programming/Programming Terminology.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Programming Terminology"
-            }
-          },
-          {
-            "id": "f189846781babf1c",
-            "type": "leaf",
-            "state": {
-              "type": "QUICKSHARE_SIDE_VIEW",
-              "state": {},
-              "icon": "cloud",
-              "title": "QuickShare"
+              "title": "Graph of 第五章 矩阵的相似变换"
             }
           },
           {
@@ -310,28 +191,19 @@
               "icon": "crossed-star",
               "title": "Timeline"
             }
-          }
-        ],
-        "currentTab": 3
-      },
-      {
-        "id": "bdaa9cad5f6d59b7",
-        "type": "tabs",
-        "dimension": 54.26765015806112,
-        "children": [
+          },
           {
-            "id": "7778856753ec014b",
+            "id": "45988039c8b25193",
             "type": "leaf",
             "state": {
-              "type": "outline",
+              "type": "outgoing-link",
               "state": {
-                "file": "📘ClassNotes/📐Mathmatics/🧩Mathematical and Physical Equations/一、偏微分方程及其定解问题.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
+                "file": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第三章 向量的微分积分运算法则.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
               },
-              "icon": "lucide-list",
-              "title": "Outline of 一、偏微分方程及其定解问题"
+              "icon": "links-going-out",
+              "title": "Outgoing links from 第三章 向量的微分积分运算法则"
             }
           },
           {
@@ -340,7 +212,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter7 RNN.md",
+                "file": "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第三章 向量的微分积分运算法则.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -350,106 +222,95 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Chapter7 RNN"
+              "title": "Backlinks for 第三章 向量的微分积分运算法则"
             }
           },
           {
-            "id": "45988039c8b25193",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/⚓Deep Learning Basic Concepts/Chapter7 RNN.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from Chapter7 RNN"
-            }
-          },
-          {
-            "id": "55e2f6198cbb96c3",
+            "id": "2e2043423a8ff33a",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "标签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 351.5,
-    "collapsed": true
+    "width": 479.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
-      "markdown-importer:Open format converter": false,
-      "graph:Open graph view": false,
       "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "command-palette:Open command palette": false,
-      "audio-recorder:Start/stop recording": false,
-      "canvas:Create new canvas": false,
-      "workspaces:Manage workspace layouts": false,
+      "markdown-importer:Open format converter": false,
       "zk-prefixer:Create new unique note": false,
       "random-note:Open random note": false,
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
+      "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
+      "equation-citator:Auto-number current file equations": false,
+      "equation-citator:Auto-number current file figures": false,
+      "equation-citator:Open equation manage panel": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "media-extended:Open media": false,
       "templater-obsidian:Templater": false,
-      "obsidian-projects:Open projects": false,
       "obsidian-day-planner:Open Timeline": false,
-      "obsidian-day-planner:Open Multi-Day View": false,
-      "surfing:surfing-bookmark-manager": false,
-      "equation-citator:Auto-number Current File Equations": false
+      "obsidian-day-planner:Open Multi-Day View": false
     }
   },
   "active": "86820ad5b67d3064",
   "lastOpenFiles": [
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/8. SVM支持向量机.md",
-    "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔥Pytorch Basics/2. Pytorch 基础常用代码部分.md",
-    "📘ClassNotes/📐Mathmatics/🧩Mathematical and Physical Equations/一、偏微分方程及其定解问题.md",
-    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/八、变分问题和瑞利商法.md",
-    "📘ClassNotes/📐Mathmatics/📈Advanced Mathematics/👆重要定理/拉格朗日乘数法求条件极值.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第一章 随机事件及其概率.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第七章 参数估计.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第六章 样本及抽样分布.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第二章 随机变量及其分布.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第四章 随机变量的数字特征.md",
-    "📘ClassNotes/📐Mathmatics/🎣Probability Theory/第三章 多维随机变量及其分布.md",
-    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第二章 张量代数和商法则.md",
-    "📘ClassNotes/📐Mathmatics/♐Tensor Calculus/第三章 向量的微分积分运算法则.md",
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/重点总结.md",
-    "📘ClassNotes/⌨️Programming/🐍Python/⛳Python Advanced/10. Context Manager 和自定义 with 语句.md",
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/Untitled mindmap.md",
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/7. 特殊矩阵及相关性质.md",
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/6. 矩阵的广义逆.md",
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/5. 特征值估计和对称矩阵的极性.md",
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/4. 矩阵分解.md",
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/3. 矩阵序列，矩阵级数与矩阵函数.md",
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/2. 范数理论及其应用.md",
-    "📘ClassNotes/📐Mathmatics/✖️Matrix Theory/1. 线性空间与线性变换.md",
-    "📘ClassNotes/📐Mathmatics/📏linear algebra/第五章 矩阵的相似变换.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🕋Solid Mechanics/🔨Theory of Elasticity/弹性力学部分/第四章：广义胡克定律/一、广义胡克定律,工程弹性常数.md",
-    "📘ClassNotes/👨‍🔧Mechanics/🌊Thermal and Fluid dynamics/⛲Computational Fluid Dynamics/CFD of J.D. Anderson/Part 1 Basic Equations/Chapter3 Mathematical behavior of partial differential equations.md",
-    "📘ClassNotes/⌨️Programming/🐧 Linux/🏗️Nginx & 腾讯云服务器/Untitled",
-    "📘ClassNotes/🐧Computer System/🐧 Linux/FireWall & Safety",
-    "📘ClassNotes/🐧Computer System/🐧 Linux/📝Editor & Shell Command",
-    "📘ClassNotes/🐧Computer System/🐧 Linux/Service Management",
-    "📘ClassNotes/🐧Computer System/🐧 Linux/Networks & System Info",
-    "📘ClassNotes/🐧Computer System/🐧 Linux/📦Package Tools and File Operations",
-    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/推导部分/Euler-Lagrange 方程式推导.pdf",
-    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/推导部分/偏微分方程的相似变换推导.pdf",
+    "Daily Life memo/🖊️Learning_Notes/📖Reading_Material/Essays/4 Research on Thermofluid Topology Optimization.md",
+    "Daily Life memo/🖊️Learning_Notes/📖Reading_Material/Essays/3 Introduction  of Topology Optimization.md",
+    "Daily Life memo/🖊️Learning_Notes/📖Reading_Material/Essays/2 Topology optimization for fluid–thermal interaction problems under constant input power.md",
+    "Daily Life memo/🖊️Learning_Notes/📖Reading_Material/Essays/1 Density based topology optimization of turbulent flow heat transfer.md",
+    "Daily Life memo/🖊️Learning_Notes/📖Reading_Material/Tech",
+    "Daily Life memo/🖊️Learning_Notes/📖Reading_Material/Essays",
+    "Daily Life memo/🖊️Learning_Notes/🏁Contest/Mechanics 2.md",
+    "Daily Life memo/🖊️Learning_Notes/🏁Contest/Mechanics 1.md",
+    "Daily Life memo/🖊️Learning_Notes/❔LeeCode Problems/重复字符的查找问题.md",
+    "Daily Life memo/🖊️Learning_Notes/❔LeeCode Problems/杂务.md",
+    "Daily Life memo/🖊️Learning_Notes/❔LeeCode Problems/字符串的括号匹配问题.md",
+    "Daily Life memo/🖊️Learning_Notes/❔LeeCode Problems/判断链表是否有环.md",
+    "Daily Life memo/🖊️Learning_Notes/❔LeeCode Problems/二叉树最近公共父节点.md",
+    "Daily Life memo/🖊️Learning_Notes/❔LeeCode Problems/二叉树两数之和.md",
+    "Daily Life memo/🖊️Learning_Notes/Topology_optimization/1. 拓扑优化基本方法.md",
+    "Daily Life memo/🖊️Learning_Notes/📖Reading_Material",
+    "Daily Life memo/🖊️Learning_Notes/🏁Contest",
+    "Daily Life memo/🖊️Learning_Notes/❔LeeCode Problems",
+    "Daily Life memo/🖊️Learning_Notes/Topology_optimization",
+    "Daily Life memo/🖊️Learning_Notes/Material_Interpolation",
+    "Daily Life memo/💡Inspiration/项目.md",
+    "Daily Life memo/💡Inspiration/Turbulent flow.md",
+    "Daily Life memo/论文资料/核心期刊.md",
+    "Daily Life memo/CSDN及公众号教程存档/高阶线性方程组推导参考.md",
+    "Daily Life memo/CSDN及公众号教程存档/计算流体力学 有限差分法和有限元法.md",
+    "Daily Life memo/CSDN及公众号教程存档/常系数线性单波方程的精确解推导.md",
+    "Daily Life memo/CSDN及公众号教程存档/四元数入门, 详解与使用.md",
+    "Daily Life memo/CSDN及公众号教程存档/壳体理论建立, 本构公式与平衡方程(附完整推导过程).md",
+    "Daily Life memo/CSDN及公众号教程存档/Python 调用函数拟合疲劳曲线参数.md",
+    "Daily Life memo/CSDN及公众号教程存档/Python绘制低周疲劳试验滞回环以及应力-循环次数曲线.md",
+    "Daily Life memo/🖊️Learning_Notes",
+    "Daily Life memo/💡Inspiration",
+    "Daily Life memo/论文资料",
+    "Daily Life memo/备忘录.md",
+    "Daily Life memo/⌚近期计划书.md",
+    "Daily Life memo/powerToys 使用指南.md",
+    "Daily Life memo/ASCII码表.png",
+    "attachments/Pasted image 20250403171015.png",
     "attachments/Pasted image 20250626155539.png",
-    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/推导部分/初始值问题和边界值问题.pdf",
-    "📘ClassNotes/📐Mathmatics/✈️Aero-engineering mathematical analysis/推导部分/Helmholtz 方程系数求解.pdf",
     "attachments/Pasted image 20250619153446.png",
     "attachments/Pasted image 20250618183956.png",
     "attachments/Pasted image 20250618181753.png",
@@ -457,8 +318,6 @@
     "attachments/Pasted image 20250618151758.png",
     "attachments/Pasted image 20250617173548.png",
     "attachments/Pasted image 20250616205541.png",
-    "attachments/Pasted image 20250616154748.png",
-    "attachments/Pasted image 20250616011325.png",
     "Untitled.canvas",
     "📘ClassNotes/📐Mathmatics/📏linear algebra/重点整理/Untitled.canvas"
   ]

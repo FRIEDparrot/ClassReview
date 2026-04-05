@@ -2,9 +2,10 @@
 	"id": "equation-citator",
 	"name": "Equation Citator",
 	"author": "Fried Parrot",
-	"version": "1.2.2",
+	"version": "1.3.3",
 	"minAppVersion": "1.8.10",
-	"description": "Cite math equation blocks like in latex and preview them very easy.",
+	"description": "A powerful LaTeX-like Academic Citation Tool for equations, figures, and more.", 
 	"authorUrl": "https://github.com/friedparrot", 
-	"isDesktopOnly": true
+	"fundingUrl": "https://ko-fi.com/friedparrot",
+	"isDesktopOnly": false
 }
