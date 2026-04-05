@@ -224,7 +224,7 @@ Git 版本控制教程
 - `Ctrl+Shift+Q`：插入带框数学公式
 - `Ctrl+Shift+W`：插入分段函数
 - `Alt+H`：插入橙色高亮文本
-- `Alt+Ctrl+H`：插入蓝色高亮文本
+- `Alt+Ctrl+H`：插入红色高亮文本
 - `Ctrl+Shift+R`：插入提示框（Admonition）
 - `Alt+Shift+Enter`：插入代码块
 - `Alt+Shift+R`：插入表格
