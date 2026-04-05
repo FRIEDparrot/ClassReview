@@ -5,6 +5,10 @@
       "path": "README.md"
     },
     {
+      "basename": "2. Pytorch 基础常用代码部分",
+      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔥Pytorch Basics/2. Pytorch 基础常用代码部分.md"
+    },
+    {
       "basename": "1.机器学习算法和文本分类挖掘(Naive Bayes)",
       "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/1.机器学习算法和文本分类挖掘(Naive Bayes).md"
     },
@@ -59,10 +63,6 @@
     {
       "basename": "7.  AdaBoost 图片分类和 CNN 卷积神经网络",
       "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/👨‍🎓机器学习算法(sklearn)/7.  AdaBoost 图片分类和 CNN 卷积神经网络.md"
-    },
-    {
-      "basename": "2. Pytorch 基础常用代码部分",
-      "path": "📘ClassNotes/⌨️Programming/👨‍🎓Deep Learning/🔥Pytorch Basics/2. Pytorch 基础常用代码部分.md"
     },
     {
       "basename": "6. 最小二乘, RBF, 岭回归和 Lasso 回归",

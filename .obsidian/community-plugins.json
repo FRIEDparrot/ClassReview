@@ -10,10 +10,12 @@
   "various-complements",
   "quick-latex",
   "obsidian-latex-suite",
-  "equation-citator",
   "table-editor-obsidian",
   "obsidian-admonition",
   "obsidian-style-settings",
   "table-extended",
-  "recent-files-obsidian"
+  "recent-files-obsidian",
+  "obsidian-completr",
+  "equation-citator",
+  "obsidian-markmind"
 ]
