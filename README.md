@@ -30,6 +30,7 @@
 - Third Party 第三方库：DSP (数字信号处理)、QULab（量子计算库）
 
 ##### 🌳 Data Structure & Algorithms（数据结构与算法）
+这一块使用的主语言是 C++ 
 - Data Structure（数据结构）
 - Algorithms（算法）
 - C++基础知识（含 Boost、CGAL、Eigen 等库）
